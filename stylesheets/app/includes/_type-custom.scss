@@ -71,6 +71,14 @@ p, .p, ul { font-size: rem($font-size-base); }
   }
 }
 
+@for $i from 1 through length($breakpoints-sufix-list) {
+  .text-center-#{nth($breakpoints-sufix-list, $i)} {
+    @media #{nth($media-only-list, $i)} {
+      text-align: center !important;
+    }
+  }
+}
+
 
 // Text transforms
 .uppercase {
