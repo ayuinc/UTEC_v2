@@ -25,7 +25,7 @@ input[type="submit"].btn {
 		}
 	}
 	@for $i from 1 through length($grayscale-sufix-list) {
-		&.btn-#{nth($grayscale-sufix-list, $i)}.btn-outline {
+		&.btn-#{nth($grayscale-sufix-list, $i)}.btn-custom {
 			background: none;
 			border: 2px solid #{lighten(nth($grayscale-list, $i), 21%)};
 			border-radius: 0;
