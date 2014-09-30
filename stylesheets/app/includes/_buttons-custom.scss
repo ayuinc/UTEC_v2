@@ -6,6 +6,9 @@ input[type="submit"].btn {
 	&.form-control {
 		height: auto;
 	}
+	&.borderless {
+		border-radius: 0 !important;
+	}
 }
 a.btn,
 button.btn,
