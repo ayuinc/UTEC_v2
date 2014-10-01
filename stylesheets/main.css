@@ -5,8 +5,8 @@
   Author: @MadeByGus - G. Andres Ibarra yo@soygus.com
   Desde la consola navega hasta el directorio "stylesheets" y ejecuta: 
 
-  sass --watch ebm.scss:ebm.css main.scss:main.css
-  sass --watch ebm.scss:ebm.css main.scss:main.css -t compressed
+  sass --watch main.scss:main.css
+  sass --watch main.scss:main.css -t compressed
 
 */
 /*========================================
@@ -2288,6 +2288,22 @@ input[type="button"].btn-block {
 /*========================================
 =                EASY BOX MODEL         =
 ========================================*/
+/* 
+
+  Description: EBM or Easy Box Model allows you to easily edit your UI box model margins and paddings 
+  through the browser inspector "elements" tab and make your elements fit on their parent container without
+  recurring to your CSS too often.
+  
+  Author: @MadeByGus
+  Version: 0.5
+  GitHub: https://github.com/netpoe/EBM.git
+
+*/
+.box-shadow {
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(49, 50, 51, 0.15);
+  -moz-box-shadow: 0px 3px 3px 0px rgba(49, 50, 51, 0.15);
+  box-shadow: 0px 3px 3px 0px rgba(49, 50, 51, 0.15); }
+
 /*========================================
 =            CSS3 ANIMATIONS             =
 ========================================*/
