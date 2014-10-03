@@ -13,11 +13,12 @@
 // Set the global measure (range: 1 - 9)
 $times: 7; 
 
+// Define the em-base for rems to px conversion
+$px-to-rems: true;    // True if you want them on rems 
+$em-base: 14px; 
+
 // Include EBM in "%" units?
 $percentage: true;
-
-// Include EBM Min-Heights?
-$min-heights: true;
 
 // Include and determine box shadows:
 $box-shadows: true;
@@ -31,10 +32,6 @@ $alpha: 0.15;
 
 // Include and determine border radius:
 $rounded-borders: true;  // If no bootstrap
-
-// Define the em-base for rems to px conversion
-$px-to-rems: true;    // True if you want them on rems 
-$em-base: 14px;
 
 // Horizontal Rules Custom
 $include-hr: true;
