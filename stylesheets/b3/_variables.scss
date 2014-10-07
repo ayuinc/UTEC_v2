@@ -360,6 +360,8 @@ $container-lg:                 $container-large-desktop !default;
 
 // CUSTOM CONTAINER VARIABLE
 
+$container-xs: 								((480px + $grid-gutter-width)) !default;
+
 $container-fluid: 						 $grid-gutter-width / 2; 
 
 //== Navbar
