@@ -23,6 +23,15 @@ h5, .h5 { font-size: rem($font-size-h5); }
 h6, .h6 { font-size: rem($font-size-h6); }
 p, .p, ul { font-size: rem($font-size-base); }
 
+// REMOVE DEFAULT MARGINS MIXIN
+@mixin remove-text-margin {
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6, 
+  p, .p {
+    margin: 0;
+  }
+}
+
 // Contextual emphasis
 @for $i from 1 through length($brand-colors-list) {
   .text-#{nth($brand-colors-sufix-list, $i)} {

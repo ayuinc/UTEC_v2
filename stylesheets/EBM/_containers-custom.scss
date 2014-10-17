@@ -1,8 +1,6 @@
-.container {
-	&.container-xs {
-		width: $container-xs;
-	}
-	&.container-sm {
-		width: $container-sm;
-	}	
+.container-xs {
+	width: $container-xs;
 }
+.container-sm {
+	width: $container-sm;
+}	
