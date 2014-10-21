@@ -4,21 +4,28 @@
 
 // APP Includes
 @import 
+
   // TYPE
   "includes/fonts-custom",
   "includes/type-custom",
   "includes/icons",
-  // LAYOUT
-  "includes/layout-global",
-  "includes/layout-header",
-  "includes/layout-footer",
+
   // BUTTONS & LINKS
   "includes/buttons-custom";
+
   // FORMS
   // "includes/forms-custom",
   // "includes/forms-multiuser",
+
   // NAVS
-  // "includes/nav-off-canvas",
+
+// APP Modules
+@import 
+
+  // LAYOUT
+  "modules/global",
+  "modules/header",
+  "modules/footer";
 
 // APP Views
 // @import 
