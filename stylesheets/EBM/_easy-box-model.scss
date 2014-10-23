@@ -119,28 +119,28 @@ $box-model-ch-abbr-percentage: pp-ch, ptp-ch, prp-ch, pbp-ch, plp-ch, mp-ch, mtp
 
 @for $i from 0 through 10 {
   .ph-#{$i*$times} {
-    padding-top: #{$i*$times};
-    padding-bottom: #{$i*$times};
-    padding-top: rem($i*$times);
-    padding-bottom: rem($i*$times);
+    padding-left: #{$i*$times};
+    padding-right: #{$i*$times};
+    padding-left: rem($i*$times);
+    padding-right: rem($i*$times);
   }
   @for $k from 1 through length($breakpoints-sufix-list) {
     @media #{nth($media-only-list, $k)} {
       .ph-#{$i*$times}-#{nth($breakpoints-sufix-list, $k)} {
-        padding-top: #{$i*$times};
-        padding-bottom: #{$i*$times};
-        padding-top: rem($i*$times);
-        padding-bottom: rem($i*$times); 
+        padding-left: #{$i*$times};
+        padding-right: #{$i*$times};
+        padding-left: rem($i*$times);
+        padding-right: rem($i*$times); 
       }
       .php-#{$i*$times}-#{nth($breakpoints-sufix-list, $k)} {
-        padding-top: percentage(($i*($times/100))) !important;
-        padding-bottom: percentage(($i*($times/100))) !important;
+        padding-left: percentage(($i*($times/100))) !important;
+        padding-right: percentage(($i*($times/100))) !important;
       }
     }
   }
   @if $percentage == true {
     .php-#{$i*$times} {
-      padding-top: percentage(($i*($times/100))) !important;
+      padding-left: percentage(($i*($times/100))) !important;
       padding-bottom: percentage(($i*($times/100))) !important;
     }
   }

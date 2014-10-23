@@ -1,3 +1,11 @@
+## Issues & Improvements
+---
+
+- El EBM tiene únicamente un set de Media Queries que debe extenderse a los sufijos: _up_, _down_, _only_.
+- Los `grid-lists` del EBM necesitan extenderse para funcionar completamente con los media queries con los mismos sufijos _up_, _down_, _only_.
+- Los contenedores custom deben funcionar únicamente en `@media md-up`
+
+
 ## Ayu Consulting S.A.C.
 
 Ayu Consulting Frontend Boilerplate
