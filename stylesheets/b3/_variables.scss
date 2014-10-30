@@ -42,8 +42,8 @@ $brand-inverse: 				#081A26 !default;
 $grayscale-list: $gray-darker, $gray-dark, $gray, $gray-light, $gray-lighter, #fff;
 $brand-colors-list: $brand-primary, $brand-success, $brand-info, $brand-warning, $brand-danger;
 
-$grayscale-sufix-list: gray-darker, gray-dark, gray, gray-light, gray-lighter, white;
-$brand-colors-sufix-list: primary, success, info, warning, danger;
+$grayscale-sufix-list: 'gray-darker', 'gray-dark', 'gray', 'gray-light', 'gray-lighter', 'white';
+$brand-colors-sufix-list: 'primary', 'success', 'info', 'warning', 'danger';
 
 
 //== Scaffolding

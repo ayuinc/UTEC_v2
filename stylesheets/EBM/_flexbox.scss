@@ -12,6 +12,10 @@
 	&.flex-middle {
 		@include align-items(center);
 	}
+	&.flex-space-between {
+		@include justify-content(space-between);
+		@include list-unstyled;
+	}
 	> h1, > h2, > h3, > h4, > h5, > h6, > p, > a, > div, > strong, > span, > form {
 		// max-height: 140px;
 		&.flex-0 {
