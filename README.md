@@ -12,14 +12,25 @@ Ayu Consulting Frontend Boilerplate [@MadeByGus](http://soygus.com)
 
 #### Atajos del CLI:
 
-		# Sass Script
-		alias sw="sass --watch"
-		alias swm="sass --watch main.scss:main.css"
-		alias swebm="sass --watch ebm-loops.scss:ebm-loops.css"
-		# CoffeeScript
-		alias coffeew="coffee --watch --compile --output lib/ src/"
-		# GIT Clone EBM Boileplate
-		alias gcbp="git clone https://github.com/ayuinc/bp_fe_ayu.git"
+Si estás usando OSX, descarga [iTerm](http://iterm2.com/) e instala [Oh My ZSH](https://github.com/robbyrussell/oh-my-zsh) para poder utilizar los siguientes _aliases_ y plugins:
+
+	# ALIASES
+	# Sass Script
+	alias sw="sass --watch"
+	alias swm="sass --watch main.scss:main.css"
+	alias swebm="sass --watch ebm-loops.scss:ebm-loops.css"
+	# CoffeeScript
+	alias coffeew="coffee --watch --compile --output lib/ src/"
+	# GIT Clone EBM Boileplate
+	alias gcbp="git clone https://github.com/ayuinc/bp_fe_ayu.git"
+
+	# PLUGINS
+	# Sublime text y GIT tools
+	plugins=(git sublime)
+
+__Instalación:__
+
+Navega al directorio raíz: `cd ~` y ejecuta: `ls -a`, da click `cmd + click` en `.zshrc` para abrirlo en el editor de texto. Copia y pega el código anterior en ese documento, guarda y reinicia tu iTerm.
 
 #### Acceso rápido a utilidades de JS
 
