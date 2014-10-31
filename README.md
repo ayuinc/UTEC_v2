@@ -8,19 +8,18 @@
 
 ## Ayu Consulting S.A.C.
 
-Ayu Consulting Frontend Boilerplate
+Ayu Consulting Frontend Boilerplate [@MadeByGus](http://soygus.com)
 
-### Etapa de Desarrollo
+#### Atajos del CLI:
 
-Desde la consola navega hasta el directorio "stylesheets" y ejecuta: 
-
-  	sass --watch main.scss:main.css
-
-### Etapa de Producción
-
-Desde la consola navega hasta el directorio "stylesheets" y ejecuta: 
-
-  	sass --watch main.min.scss:main.min.css -t compressed
+			# Sass Script
+			alias sw="sass --watch"
+			alias swm="sass --watch main.scss:main.css"
+			alias swebm="sass --watch ebm-loops.scss:ebm-loops.css"
+			# CoffeeScript
+			alias coffeew="coffee --watch --compile --output lib/ src/"
+			# GIT Clone EBM Boileplate
+			alias gcbp="git clone https://github.com/ayuinc/bp_fe_ayu.git"
 
 #### Consideraciones
 
@@ -33,7 +32,7 @@ Optimiza tu editor de texto así:
 			"line_padding_bottom": 1,
 			"line_padding_top": 1,
 			"margin": 2,
-			"tab_size": 2
+			"tab_size": 2 // ESTE ES EL MÁS IMPORTANTE y RELEVANTE
 		}
 
 __Al nombrar tus clases y id's piensa:__
