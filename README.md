@@ -12,14 +12,20 @@ Ayu Consulting Frontend Boilerplate [@MadeByGus](http://soygus.com)
 
 #### Atajos del CLI:
 
-			# Sass Script
-			alias sw="sass --watch"
-			alias swm="sass --watch main.scss:main.css"
-			alias swebm="sass --watch ebm-loops.scss:ebm-loops.css"
-			# CoffeeScript
-			alias coffeew="coffee --watch --compile --output lib/ src/"
-			# GIT Clone EBM Boileplate
-			alias gcbp="git clone https://github.com/ayuinc/bp_fe_ayu.git"
+		# Sass Script
+		alias sw="sass --watch"
+		alias swm="sass --watch main.scss:main.css"
+		alias swebm="sass --watch ebm-loops.scss:ebm-loops.css"
+		# CoffeeScript
+		alias coffeew="coffee --watch --compile --output lib/ src/"
+		# GIT Clone EBM Boileplate
+		alias gcbp="git clone https://github.com/ayuinc/bp_fe_ayu.git"
+
+#### Acceso rápido a utilidades de JS
+
+- [jQuery](http://jquery.com/download/)
+- [VelocityJS](http://julian.com/research/velocity/)
+- [Bootstrap 3](http://getbootstrap.com)
 
 #### Consideraciones
 
