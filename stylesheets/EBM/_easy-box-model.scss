@@ -48,7 +48,7 @@ $media-control-list: $xs-only, $sm-up, $md-up, $lg-up;
   @for $j from 1 through length($box-model-sides) {
 
     .#{nth($box-model-ch-abbr, $j)}-#{$i*$times} {
-      > a, > div, > li, > p, > h1, > h2, > h3, > h4, > h5, > h6, > ul, > ol, > section {
+      > a, > span, > div, > li, > p, > h1, > h2, > h3, > h4, > h5, > h6, > ul, > ol, > section {
         // For <IE8
         #{nth($box-model-sides, $j)}: ($i*$times) + px !important;
         // REMs for modern browsers
@@ -59,7 +59,7 @@ $media-control-list: $xs-only, $sm-up, $md-up, $lg-up;
     }
     @if $percentage == true {
       .#{nth($box-model-ch-abbr-percentage, $j)}-#{$i*$times} {
-        > a, > div, > li, > p, > h1, > h2, > h3, > h4, > h5, > h6, > ul, > ol, > section {
+        > a, > span, > div, > li, > p, > h1, > h2, > h3, > h4, > h5, > h6, > ul, > ol, > section {
           #{nth($box-model-sides, $j)}: percentage(($i*($times/100))) !important;
         }
       }
@@ -68,7 +68,7 @@ $media-control-list: $xs-only, $sm-up, $md-up, $lg-up;
     @for $k from 1 through length($breakpoints-sufix-list) {
       @media #{nth($media-control-list, $k)} {
         .#{nth($box-model-ch-abbr, $j)}-#{$i*$times}-#{nth($breakpoints-sufix-list, $k)} {
-          > a, > div, > li, > p, > h1, > h2, > h3, > h4, > h5, > h6, > ul, > ol, > section {
+          > a, > span, > div, > li, > p, > h1, > h2, > h3, > h4, > h5, > h6, > ul, > ol, > section {
             // For <IE8
             #{nth($box-model-sides, $j)}: ($i*$times) + px !important;
             // REMs for modern browsers
@@ -79,7 +79,7 @@ $media-control-list: $xs-only, $sm-up, $md-up, $lg-up;
         }
         @if $percentage == true {
           .#{nth($box-model-ch-abbr-percentage, $j)}-#{$i*$times}-#{nth($breakpoints-sufix-list, $k)} {
-            > a, > div, > li, > p, > h1, > h2, > h3, > h4, > h5, > h6, > ul, > ol, > section {
+            > a, > span, > div, > li, > p, > h1, > h2, > h3, > h4, > h5, > h6, > ul, > ol, > section {
               #{nth($box-model-sides, $j)}: percentage(($i*($times/100))) !important;
             }
           }
