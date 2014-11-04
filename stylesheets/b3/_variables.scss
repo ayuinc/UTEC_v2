@@ -7,6 +7,7 @@ $bootstrap-sass-asset-helper: (twbs-font-path("") != unquote('twbs-font-path("")
 // CUSTOM MIXINS
 // --------------------------------------------------
 
+// EBM:REF
 // LIST UNSTYLED
 @mixin list-unstyled {
   padding-left: 0;
@@ -23,6 +24,7 @@ $bootstrap-sass-asset-helper: (twbs-font-path("") != unquote('twbs-font-path("")
 //
 //## Gray and brand colors for use across Bootstrap.
 
+// EBM:REF
 $gray-base: #262624;
 
 $gray-darker:            lighten($gray-base, 0%) !default; // #222
@@ -37,11 +39,14 @@ $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
 
+// EBM:REF
 $brand-inverse: 				#081A26 !default;
 
+// EBM:REF
 $grayscale-list: $gray-darker, $gray-dark, $gray, $gray-light, $gray-lighter, #fff;
 $brand-colors-list: $brand-primary, $brand-success, $brand-info, $brand-warning, $brand-danger;
 
+// EBM:REF
 $grayscale-sufix-list: 'gray-darker', 'gray-dark', 'gray', 'gray-light', 'gray-lighter', 'white';
 $brand-colors-sufix-list: 'primary', 'success', 'info', 'warning', 'danger';
 
@@ -287,7 +292,12 @@ $zindex-modal:             1050 !default;
 //
 //## Define the breakpoints at which your layout will change, adapting to different screen sizes.
 
-$breakpoints-sufix-list:  xs, sm, md, lg;
+// EBM:REF
+$breakpoints-sufix-list:  
+	'xs', 
+	'sm', 
+	'md', 
+	'lg';
 
 // Extra small screen / phone
 //** Deprecated `$screen-xs` as of v3.0.1
@@ -358,10 +368,9 @@ $container-large-desktop:      ((1140px + $grid-gutter-width)) !default;
 //** For `$screen-lg-min` and up.
 $container-lg:                 $container-large-desktop !default;
 
+// EBM:REF
 // CUSTOM CONTAINER VARIABLE
-
 $container-xs: 								((480px + $grid-gutter-width)) !default;
-
 $container-fluid: 						 $grid-gutter-width / 2; 
 
 //== Navbar

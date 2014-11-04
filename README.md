@@ -18,7 +18,7 @@ Si estás usando OSX, descarga [iTerm](http://iterm2.com/) e instala [Oh My ZSH]
 	# Sass Script
 	alias sw="sass --watch"
 	alias swm="sass --watch main.scss:main.css"
-	alias swebm="sass --watch ebm-loops.scss:ebm-loops.css"
+	alias swebm="sass --watch ebm.scss:ebm.css"
 	# CoffeeScript
 	alias coffeew="coffee --watch --compile --output lib/ src/"
 	# GIT Clone EBM Boileplate

@@ -1,6 +1,9 @@
 ## History
 ___
 
+- Improved `_easy-box-model.scss` padding vertical and horizontal loops to work with media queries and children elements
+- Changed EBM `.css` output to `ebm.css`
+- Updated EBM `_backgrounds.scss` for `background-color:` property
 - Added dummy images for users and items
 - Added `_type-custom.scss` disable anchor underline on hover
 - Added `@mixin normalize-text` for removing margins created by B3
