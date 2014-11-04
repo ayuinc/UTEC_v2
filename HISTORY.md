@@ -1,6 +1,7 @@
 ## History
 ___
 
+- Extended `_buttons-custom.scss` with social buttons and colors
 - Improved `_easy-box-model.scss` padding vertical and horizontal loops to work with media queries and children elements
 - Changed EBM `.css` output to `ebm.css`
 - Updated EBM `_backgrounds.scss` for `background-color:` property
