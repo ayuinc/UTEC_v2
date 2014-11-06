@@ -6,10 +6,10 @@
 	&.flex-row {
 		@include flex-direction(row);
 	}
-	&.flex-center {
+	&.flex-middle {
 		@include justify-content(center);
 	}
-	&.flex-middle {
+	&.flex-center {
 		@include align-items(center);
 	}
 	&.flex-space-between {

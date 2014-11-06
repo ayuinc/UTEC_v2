@@ -139,15 +139,15 @@ $media-control-list:
 // PADDING VERTICAL & HORIZONTAL
 @for $i from 0 through 10 {
   .pv-#{$i*$times} {
-    padding-top: #{$i*$times};
-    padding-bottom: #{$i*$times};
+    padding-top: #{$i*$times} + px;
+    padding-bottom: #{$i*$times} + px;
     padding-top: rem($i*$times);
     padding-bottom: rem($i*$times);
   }
   .pv-ch-#{$i*$times} {
     > a, > span, > div, > li, > p, > h1, > h2, > h3, > h4, > h5, > h6, > ul, > ol, > section {
-      padding-top: #{$i*$times};
-      padding-bottom: #{$i*$times};
+      padding-top: #{$i*$times} + px;
+      padding-bottom: #{$i*$times} + px;
       padding-top: rem($i*$times);
       padding-bottom: rem($i*$times);
     }
@@ -155,15 +155,15 @@ $media-control-list:
   @for $k from 1 through length($breakpoints-sufix-list) {
     @media #{nth($media-control-list, $k)} {
       .pv-#{$i*$times}-#{nth($breakpoints-sufix-list, $k)} {
-        padding-top: #{$i*$times};
-        padding-bottom: #{$i*$times};
+        padding-top: #{$i*$times} + px;
+        padding-bottom: #{$i*$times} + px;
         padding-top: rem($i*$times);
         padding-bottom: rem($i*$times);
       }
       .pv-ch-#{$i*$times}-#{nth($breakpoints-sufix-list, $k)} {
         > a, > span, > div, > li, > p, > h1, > h2, > h3, > h4, > h5, > h6, > ul, > ol, > section {
-          padding-top: #{$i*$times};
-          padding-bottom: #{$i*$times};
+          padding-top: #{$i*$times} + px;
+          padding-bottom: #{$i*$times} + px;
           padding-top: rem($i*$times);
           padding-bottom: rem($i*$times);
         }
@@ -184,15 +184,15 @@ $media-control-list:
 
 @for $i from 0 through 10 {
   .ph-#{$i*$times} {
-    padding-left: #{$i*$times};
-    padding-right: #{$i*$times};
+    padding-left: #{$i*$times} + px;
+    padding-right: #{$i*$times} + px;
     padding-left: rem($i*$times);
     padding-right: rem($i*$times);
   }
   .ph-ch-#{$i*$times} {
     > a, > span, > div, > li, > p, > h1, > h2, > h3, > h4, > h5, > h6, > ul, > ol, > section {
-      padding-left: #{$i*$times};
-      padding-right: #{$i*$times};
+      padding-left: #{$i*$times} + px;
+      padding-right: #{$i*$times} + px;
       padding-left: rem($i*$times);
       padding-right: rem($i*$times);
     }
@@ -200,15 +200,15 @@ $media-control-list:
   @for $k from 1 through length($breakpoints-sufix-list) {
     @media #{nth($media-control-list, $k)} {
       .ph-#{$i*$times}-#{nth($breakpoints-sufix-list, $k)} {
-        padding-left: #{$i*$times};
-        padding-right: #{$i*$times};
+        padding-left: #{$i*$times} + px;
+        padding-right: #{$i*$times} + px;
         padding-left: rem($i*$times);
         padding-right: rem($i*$times);
       }
       .ph-ch-#{$i*$times}-#{nth($breakpoints-sufix-list, $k)} {
         > a, > span, > div, > li, > p, > h1, > h2, > h3, > h4, > h5, > h6, > ul, > ol, > section {
-          padding-left: #{$i*$times};
-          padding-right: #{$i*$times};
+          padding-left: #{$i*$times} + px;
+          padding-right: #{$i*$times} + px;
           padding-left: rem($i*$times);
           padding-right: rem($i*$times);
         }
