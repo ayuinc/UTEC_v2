@@ -1,12 +1,3 @@
-// @media #{$md-down} {
-//   @for $i from 1 through 10 {
-//     .mhp-#{$i*10} {
-//       padding-top: $grid-gutter-width !important;
-//       padding-bottom: $grid-gutter-width !important;
-//     }
-//   }
-// }
-
 // Min-Heights
 @for $i from 1 through 10 {
   .mh-#{($i*$times)*10} {
@@ -27,7 +18,7 @@
   }
 }
 
-// Min-Heights
+// Min-Heights Percentage
 @for $i from 1 through 10 {
   .mhp-#{$i*10} {
     min-height: percentage($i*0.1) !important;

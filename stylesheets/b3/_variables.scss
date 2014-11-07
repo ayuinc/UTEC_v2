@@ -49,6 +49,8 @@ $color-twitter: 		#34CCFE !default;
 $color-pinterest: 	#D02420 !default;
 $color-google-plus: #DC4335 !default;
 $color-linkedin: 		#1C87BD !default;
+$color-youtube: 		#F23030 !default;
+$color-instagram: 	#4187FB !default;
 
 // COLOR LISTS
 // EBM:REF
@@ -72,6 +74,8 @@ $social-colors-list:
 	$color-twitter, 	
 	$color-pinterest, 
 	$color-google-plus,
+	$color-youtube,
+	$color-instagram,
 	$color-linkedin; 	
 
 // COLOR SUFIX's
@@ -96,6 +100,8 @@ $social-colors-sufix-list:
 	'twitter',	
 	'pinterest',
 	'google-plus',
+	'youtube',
+	'instagram',
 	'linkedin';
 
 

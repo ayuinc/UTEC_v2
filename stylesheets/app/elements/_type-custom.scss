@@ -50,59 +50,6 @@ h6, .h6 { &.lead {font-size: rem($font-size-h6 + 14) !important;} }
   @include normalize-text;
 }
 
-// Contextual emphasis
-@for $i from 1 through length($brand-colors-list) {
-  .text-#{nth($brand-colors-sufix-list, $i)} {
-    a {
-      color: #{nth($brand-colors-list, $i)} !important;
-      &:hover {
-        color: #{darken(nth($brand-colors-list, $i), 21%)};
-      }
-    }
-    color: #{nth($brand-colors-list, $i)} !important;
-  }
-}
-
-@for $i from 1 through length($grayscale-list) {
-  .text-#{nth($grayscale-sufix-list, $i)} {
-    a {
-      color: #{nth($grayscale-list, $i)} !important;
-      &:hover {
-        color: #{darken(nth($grayscale-list, $i), 21%)};
-      }
-    }
-    color: #{nth($grayscale-list, $i)} !important;
-  }
-}
-
-// Contextual emphasis hover
-@for $i from 1 through length($brand-colors-list) {
-  .hover-#{nth($brand-colors-sufix-list, $i)} {
-    &:hover {
-      color: #{darken(nth($brand-colors-list, $i), 12%)};
-    }
-    a {
-      &:hover {
-        color: #{darken(nth($brand-colors-list, $i), 12%)};
-      }
-    }
-  }
-}
-
-@for $i from 1 through length($grayscale-list) {
-  .hover-#{nth($grayscale-sufix-list, $i)} {
-    &:hover {
-      color: #{darken(nth($grayscale-list, $i), 12%)};
-    }
-    a {
-      &:hover {
-        color: #{darken(nth($grayscale-list, $i), 12%)};
-      }
-    }
-  }
-}
-
-
 // Alignment
 .text-left {
   text-align: left!important; 

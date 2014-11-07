@@ -1,6 +1,8 @@
 ## History
 ___
 
+- Updated EBM folder structure
+- Extended `_backgrounds.scss` to work with Social Colors 
 - Added `_panels-custom.scss`
 - Updated `_flexbox.scss` for middle & center
 - Updated `_grid-lists.scss` for grid-list-right
