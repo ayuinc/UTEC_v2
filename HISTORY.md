@@ -1,6 +1,7 @@
 ## History
 ___
 
+- Updated EBM `_grid-lists.scss` to work with media queries
 - Updated EBM folder structure
 - Extended `_backgrounds.scss` to work with Social Colors 
 - Added `_panels-custom.scss`
