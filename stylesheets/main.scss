@@ -37,9 +37,10 @@
 /*========================================
 =                EASY BOX MODEL         =
 ========================================*/
+// EBM - EasyBoxModel by @MadeByGus
 
-// Run the following command: 
-// sass --watch ebm.scss:ebm.css
+// @import "EBM/ebm-loops";
+@import "EBM/ebm";
 
 /*========================================
 =            CSS3 ANIMATIONS             =
