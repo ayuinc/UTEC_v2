@@ -4,18 +4,6 @@
 $bootstrap-sass-asset-helper: (twbs-font-path("") != unquote('twbs-font-path("")')) !default;
 
 //
-// CUSTOM MIXINS
-// --------------------------------------------------
-
-// EBM:REF
-// LIST UNSTYLED
-@mixin list-unstyled {
-  padding-left: 0;
-  list-style: none;
-  margin: 0;
-}
-
-//
 // Variables
 // --------------------------------------------------
 
@@ -38,72 +26,6 @@ $brand-success:         #5cb85c !default;
 $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
-
-// EBM:REF
-$brand-inverse: 				#081A26 !default;
-
-// EBM:REF
-// SOCIAL COLORS
-$color-facebook: 		#3B5998 !default;
-$color-twitter: 		#34CCFE !default;
-$color-pinterest: 	#D02420 !default;
-$color-google-plus: #DC4335 !default;
-$color-linkedin: 		#1C87BD !default;
-$color-youtube: 		#F23030 !default;
-$color-instagram: 	#4187FB !default;
-
-// COLOR LISTS
-// EBM:REF
-$grayscale-list: 
-	$gray-darker, 
-	$gray-dark, 
-	$gray, 
-	$gray-light, 
-	$gray-lighter, 
-	#fff;
-
-$brand-colors-list: 
-	$brand-primary, 
-	$brand-success, 
-	$brand-info, 
-	$brand-warning, 
-	$brand-danger;
-
-$social-colors-list: 
-	$color-facebook,
-	$color-twitter, 	
-	$color-pinterest, 
-	$color-google-plus,
-	$color-youtube,
-	$color-instagram,
-	$color-linkedin; 	
-
-// COLOR SUFIX's
-// EBM:REF
-$grayscale-sufix-list: 
-	'gray-darker', 
-	'gray-dark', 
-	'gray', 
-	'gray-light', 
-	'gray-lighter', 
-	'white';
-
-$brand-colors-sufix-list: 
-	'primary', 
-	'success', 
-	'info', 
-	'warning', 
-	'danger';
-
-$social-colors-sufix-list: 
-	'facebook',
-	'twitter',	
-	'pinterest',
-	'google-plus',
-	'youtube',
-	'instagram',
-	'linkedin';
-
 
 //== Scaffolding
 //
@@ -346,13 +268,6 @@ $zindex-modal:             1050 !default;
 //
 //## Define the breakpoints at which your layout will change, adapting to different screen sizes.
 
-// EBM:REF
-$breakpoints-sufix-list:  
-	'xs', 
-	'sm', 
-	'md', 
-	'lg';
-
 // Extra small screen / phone
 //** Deprecated `$screen-xs` as of v3.0.1
 $screen-xs:                  480px !default;
@@ -421,11 +336,6 @@ $container-md:                 $container-desktop !default;
 $container-large-desktop:      ((1140px + $grid-gutter-width)) !default;
 //** For `$screen-lg-min` and up.
 $container-lg:                 $container-large-desktop !default;
-
-// EBM:REF
-// CUSTOM CONTAINER VARIABLE
-$container-xs: 								((480px + $grid-gutter-width)) !default;
-$container-fluid: 						 $grid-gutter-width / 2; 
 
 //== Navbar
 //

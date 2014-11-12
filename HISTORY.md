@@ -1,6 +1,8 @@
 ## History
 ___
-
+- Updated `_color-control.scss` for text and bg hover colors
+- Added vertical & horizontal margins in the `_easy-box-model.scss` 
+- Updated `_min-heights.scss` for a new class syntax: `.minh-*`, left `_min-heights_deprecated.scss` 
 - Added `_text-responsive.scss` file to control REM's for modern browsers
 - Updated EBM `_grid-lists.scss` to work with media queries
 - Updated EBM folder structure

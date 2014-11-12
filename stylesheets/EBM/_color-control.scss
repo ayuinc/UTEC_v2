@@ -76,47 +76,90 @@
 }
 
 /* 
-	=================
-	TEXT HOVER COLOR
-	=================
+  =================
+  TEXT HOVER COLOR
+  =================
 */
 
 // Contextual emphasis hover
 @for $i from 1 through length($brand-colors-list) {
-  .hover-#{nth($brand-colors-sufix-list, $i)} {
+  .text-hover-#{nth($brand-colors-sufix-list, $i)} {
     &:hover {
-      color: #{darken(nth($brand-colors-list, $i), 12%)};
+      color: #{darken(nth($brand-colors-list, $i), 12%)} !important;
     }
-    a {
-      &:hover {
-        color: #{darken(nth($brand-colors-list, $i), 12%)};
-      }
+  }
+  a.text-hover-#{nth($brand-colors-sufix-list, $i)} {
+    &:hover {
+      color: #{darken(nth($brand-colors-list, $i), 12%)} !important;
     }
   }
 }
 
 @for $i from 1 through length($grayscale-list) {
-  .hover-#{nth($grayscale-sufix-list, $i)} {
+  .text-hover-#{nth($grayscale-sufix-list, $i)} {
     &:hover {
-      color: #{darken(nth($grayscale-list, $i), 12%)};
+      color: #{darken(nth($grayscale-list, $i), 12%)} !important;
     }
-    a {
-      &:hover {
-        color: #{darken(nth($grayscale-list, $i), 12%)};
-      }
+  }
+  a.text-hover-#{nth($grayscale-sufix-list, $i)} {
+    &:hover {
+      color: #{darken(nth($grayscale-list, $i), 12%)} !important;
     }
   }
 }
 
 @for $i from 1 through length($social-colors-list) {
-  .hover-#{nth($social-colors-sufix-list, $i)} {
+  .text-hover-#{nth($social-colors-sufix-list, $i)} {
     &:hover {
-      color: #{darken(nth($social-colors-list, $i), 12%)};
+      color: #{darken(nth($social-colors-list, $i), 12%)} !important;
     }
-    a {
-      &:hover {
-        color: #{darken(nth($social-colors-list, $i), 12%)};
-      }
+  }
+  a.text-hover-#{nth($social-colors-sufix-list, $i)} {
+    &:hover {
+      color: #{darken(nth($social-colors-list, $i), 12%)} !important;
+    }
+  }
+}
+
+// Contextual emphasis hover
+@for $i from 1 through length($brand-colors-list) {
+  .bg-hover-#{nth($brand-colors-sufix-list, $i)} {
+    &:hover {
+      background-color: #{darken(nth($brand-colors-list, $i), 12%)} !important;
+    }
+  }
+  a.bg-hover-#{nth($brand-colors-sufix-list, $i)},
+  .btn.bg-hover-#{nth($brand-colors-sufix-list, $i)} {
+    &:hover {
+      background-color: #{darken(nth($brand-colors-list, $i), 12%)} !important;
+    }
+  }
+}
+
+@for $i from 1 through length($grayscale-list) {
+  .bg-hover-#{nth($grayscale-sufix-list, $i)} {
+    &:hover {
+      background-color: #{darken(nth($grayscale-list, $i), 12%)} !important;
+    }
+  } 
+  a.bg-hover-#{nth($grayscale-sufix-list, $i)},
+  .btn.bg-hover-#{nth($grayscale-sufix-list, $i)} {
+    &:hover {
+      background-color: #{darken(nth($grayscale-list, $i), 12%)} !important;
+    }
+  }
+}
+
+@for $i from 1 through length($social-colors-list) {
+  .bg-hover-#{nth($social-colors-sufix-list, $i)} {
+    &:hover {
+      background-color: #{darken(nth($social-colors-list, $i), 12%)} !important;
+    }
+  }
+  a.bg-hover-#{nth($social-colors-sufix-list, $i)},
+  .btn.bg-hover-#{nth($social-colors-sufix-list, $i)} {
+    &:hover {
+      background-color: #{darken(nth($social-colors-list, $i), 12%)} !important;
     }
   }
 }
