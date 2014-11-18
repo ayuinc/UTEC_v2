@@ -19,6 +19,12 @@ $gray:                   lighten($gray-base, 35%) !default; // #555
 $gray-light:             lighten($gray-base, 63%) !default;   // #999
 $gray-lighter:           lighten($gray-base, 77%) !default; // #eee
 
+$brand-primary:         #428bca !default;
+$brand-success:         #5cb85c !default;
+$brand-info:            #5bc0de !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #d9534f !default;
+
 // EBM:REF
 $brand-inverse: 				#081A26 !default;
 
