@@ -51,11 +51,13 @@
 
 // HORIZONTAL DISTRIBUTION SHORTHANDS
 @mixin flex-space-between {
+	@include display(flex);
 	@include flex-direction(row);
 	@include justify-content(space-between);
 	@include list-unstyled;
 }
 @mixin space-between-break {
+	@include display(flex);
 	@include flex-direction(column);
 	@include list-unstyled;	
 }
@@ -65,7 +67,7 @@
 @for $i from 1 through length($media-control-list) {
 	@media #{nth($media-control-list, $i)} {
 		.flex-space-between-break-#{nth($breakpoints-sufix-list, $i)} {
-			@include flex-space-between-break;
+			@include space-between-break;
 		}
 	}
 }
