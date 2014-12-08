@@ -1,0 +1,154 @@
+#header {
+	@include position(relative, 0 0 null 0);
+	.tool-bar,
+	.nav-main {
+		@include clearfix;
+		position: relative;
+		z-index: 1000;
+		.left {
+			float: left;
+		}
+		.right {
+			float: right;
+		}
+	}
+	.tool-bar {}
+	.nav-main {
+		min-height: 35px;
+		background: white;
+		.logo {
+			width: 280px;
+			height: 106px;
+		}
+		.left {
+			> ul {
+				@include clearfix;
+				@include list-unstyled;
+				li {
+					float: left;
+					a {
+						display: block;
+						text-align: center;
+						padding: 21px 0;
+						padding: rem(21px) 0;
+						color: $gray;
+						background: white;
+						min-width: 135px;
+						min-width: rem(135px);
+						height: 106px;
+						&:hover,
+						&.active {
+							background: $gray-lighter;
+							color: $link-color;
+						}
+						div {
+							i {
+								font-size: $font-size-h1;
+							}
+						}
+						span {
+							display: block;
+							margin-top: $padding-base-vertical;
+							text-transform: uppercase;
+						}
+					}
+				}
+			}
+		}
+	}
+	// NAVIGATION DISPLAY
+	.nav-display {
+		@include position(absolute, null 0 0 0);
+		@include clearfix;
+		width: 100%;
+		background: rgba($gray-lighter, 0.9);
+		@include transition(all 0.2s ease-in-out);
+		@include transform(translateY(-100%));
+		.nav-display-left,
+		.nav-display-right {
+			min-height: 350px;
+			width: 50%;
+			@include flex-middle-center;
+		}
+		.nav-display-left {
+			float: left;
+			> div {
+				> h1 {
+					text-transform: uppercase;
+					@include bold;
+					color: $gray;
+					span {
+						color: $gray-darker;
+					}
+				}
+			}
+		}
+		.nav-display-right {
+			float: right;
+			> div {
+				@include clearfix;
+				ul {
+					@include list-unstyled;
+					float: left;
+					li {
+						padding: $padding-base-vertical 0;
+						padding: rem($padding-base-vertical) 0;
+						a {
+							color: $gray-darker;
+							display: block;
+							text-transform: uppercase;
+							&:hover,
+							&.active {
+
+							}
+							span {
+								display: block;
+								color: $gray;
+							}
+						}
+					}
+					&:last-child {
+						padding-left: 56px;
+						padding-left: rem(56px);
+					}
+				}
+			}
+		}
+		.nav-display-close {
+			font-size: $font-size-h3;
+			color: $gray;
+			text-transform: uppercase;
+			@include thin;
+			@include position(absolute, $container-fluid $container-fluid null null);
+		}
+	}
+}
+
+// DISPLAY CORRESPONDING NAVS
+#header {
+	@for $i from 1 through 10 {
+		&.display.nav-display-#{$i} {
+			#nav-display-#{$i} {
+				@include transition(all 0.2s ease-in-out);
+				@include transform(translateY(100%));
+			}
+		}
+	}
+}
+
+.nav-list {
+	@include clearfix;
+	@include list-unstyled;
+	li {
+		float: left;
+		a {
+			&:hover,
+			&.active {}
+		}
+	}
+	&.nav-list-right {
+		li {
+			float: right;
+		}	
+	}
+}

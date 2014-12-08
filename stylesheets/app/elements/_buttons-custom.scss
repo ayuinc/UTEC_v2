@@ -9,6 +9,11 @@ input[type="submit"].btn {
 	&.borderless {
 		border-radius: 0 !important;
 	}
+	&.btn-xs {
+		font-size: $font-size-base - 2;
+		padding: 2px 9px;
+		padding: rem(2px) rem(9px);
+	}
 	&.btn-xl {
 		font-size: $font-size-h3;
 		padding: 12px 21px;
@@ -52,6 +57,43 @@ input[type="submit"].btn {
 				border-radius: 0;
 				border: 2px solid #{nth($grayscale-list, $i)};
 				color: #{nth($grayscale-list, $i)};
+			}
+		}
+	}
+}
+
+a.btn,
+button.btn,
+input[type="submit"].btn {
+	@for $i from 1 through length($brand-colors-sufix-list) {
+		&.btn-#{nth($brand-colors-sufix-list, $i)}.btn-custom {
+			background: #{lighten(nth($brand-colors-list, $i), 21%)};
+			// border: 2px solid #{lighten(nth($brand-colors-list, $i), 21%)};
+			// border-radius: 0;
+			color: white !important;
+			// color: #{nth($brand-colors-list, $i)};
+			&:hover {
+				background: #{nth($brand-colors-list, $i)};
+				// border-radius: 0;
+				// border: 2px solid #{nth($brand-colors-list, $i)};
+				color: white !important;
+				// color: #{darken(nth($brand-colors-list, $i), 21%)};
+			}
+		}
+	}
+	@for $i from 1 through length($grayscale-sufix-list) {
+		&.btn-#{nth($grayscale-sufix-list, $i)}.btn-custom {
+			background: #{lighten(nth($grayscale-list, $i), 21%)};
+			// border: 2px solid #{lighten(nth($grayscale-list, $i), 21%)};
+			// border-radius: 0;
+			color: white !important;
+			// color: #{nth($grayscale-list, $i)};
+			&:hover {
+				background: #{nth($grayscale-list, $i)};
+				// border-radius: 0;
+				// border: 2px solid #{nth($grayscale-list, $i)};
+				color: white !important;
+				// color: #{darken(nth($grayscale-list, $i), 21%)};
 			}
 		}
 	}

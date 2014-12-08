@@ -11741,16 +11741,16 @@ hr.hr-white {
   border-top: 2px solid #fff; }
 
 .rounded-borders {
-  border-radius: 4px; }
+  border-radius: 0px; }
 
 .border-radius {
-  border-radius: 4px; }
+  border-radius: 0px; }
 
 .border-radius-sm {
-  border-radius: 3px; }
+  border-radius: 0px; }
 
 .border-radius-lg {
-  border-radius: 6px; }
+  border-radius: 0px; }
 
 .borderless {
   border: none !important; }
@@ -11977,161 +11977,230 @@ hr.hr-white {
   .text-primary a {
     color: #00a7d7 !important; }
     .text-primary a:hover {
-      color: #00546c; }
+      color: #00546c !important; }
+
+a.text-primary:hover {
+  color: #00546c !important; }
 
 .text-success {
   color: #67A042 !important; }
   .text-success a {
     color: #67A042 !important; }
     .text-success a:hover {
-      color: #365423; }
+      color: #365423 !important; }
+
+a.text-success:hover {
+  color: #365423 !important; }
 
 .text-info {
   color: #2E4372 !important; }
   .text-info a {
     color: #2E4372 !important; }
     .text-info a:hover {
-      color: #0f1626; }
+      color: #0f1626 !important; }
+
+a.text-info:hover {
+  color: #0f1626 !important; }
 
 .text-warning {
   color: #F4D333 !important; }
   .text-warning a {
     color: #F4D333 !important; }
     .text-warning a:hover {
-      color: #b2950a; }
+      color: #b2950a !important; }
+
+a.text-warning:hover {
+  color: #b2950a !important; }
 
 .text-danger {
   color: #DD5341 !important; }
   .text-danger a {
     color: #DD5341 !important; }
     .text-danger a:hover {
-      color: #982a1b; }
+      color: #982a1b !important; }
+
+a.text-danger:hover {
+  color: #982a1b !important; }
 
 .text-blue-darker {
   color: #00a7d7 !important; }
   .text-blue-darker a {
     color: #00a7d7 !important; }
     .text-blue-darker a:hover {
-      color: #00546c; }
+      color: #00546c !important; }
+
+a.text-blue-darker:hover {
+  color: #00546c !important; }
 
 .text-blue-dark {
   color: #43d5ff !important; }
   .text-blue-dark a {
     color: #43d5ff !important; }
     .text-blue-dark a:hover {
-      color: #00a7d7; }
+      color: #00a7d7 !important; }
+
+a.text-blue-dark:hover {
+  color: #00a7d7 !important; }
 
 .text-blue {
   color: #8be5ff !important; }
   .text-blue a {
     color: #8be5ff !important; }
     .text-blue a:hover {
-      color: #1fcdff; }
+      color: #1fcdff !important; }
+
+a.text-blue:hover {
+  color: #1fcdff !important; }
 
 .text-blue-light {
   color: white !important; }
   .text-blue-light a {
     color: white !important; }
     .text-blue-light a:hover {
-      color: #94e7ff; }
+      color: #94e7ff !important; }
+
+a.text-blue-light:hover {
+  color: #94e7ff !important; }
 
 .text-blue-lighter {
   color: white !important; }
   .text-blue-lighter a {
     color: white !important; }
     .text-blue-lighter a:hover {
-      color: #94e7ff; }
+      color: #94e7ff !important; }
+
+a.text-blue-lighter:hover {
+  color: #94e7ff !important; }
 
 .text-gray-darker {
   color: #191919 !important; }
   .text-gray-darker a {
     color: #191919 !important; }
     .text-gray-darker a:hover {
-      color: black; }
+      color: black !important; }
+
+a.text-gray-darker:hover {
+  color: black !important; }
 
 .text-gray-dark {
   color: #323232 !important; }
   .text-gray-dark a {
     color: #323232 !important; }
     .text-gray-dark a:hover {
-      color: black; }
+      color: black !important; }
+
+a.text-gray-dark:hover {
+  color: black !important; }
 
 .text-gray {
   color: #8f8d8e !important; }
   .text-gray a {
     color: #8f8d8e !important; }
     .text-gray a:hover {
-      color: #595858; }
+      color: #595858 !important; }
+
+a.text-gray:hover {
+  color: #595858 !important; }
 
 .text-gray-light {
   color: #e3e3e3 !important; }
   .text-gray-light a {
     color: #e3e3e3 !important; }
     .text-gray-light a:hover {
-      color: #adadad; }
+      color: #adadad !important; }
+
+a.text-gray-light:hover {
+  color: #adadad !important; }
 
 .text-gray-lighter {
   color: #f1f1f1 !important; }
   .text-gray-lighter a {
     color: #f1f1f1 !important; }
     .text-gray-lighter a:hover {
-      color: #bbbbbb; }
+      color: #bbbbbb !important; }
+
+a.text-gray-lighter:hover {
+  color: #bbbbbb !important; }
 
 .text-white {
   color: #fff !important; }
   .text-white a {
     color: #fff !important; }
     .text-white a:hover {
-      color: #c9c9c9; }
+      color: #c9c9c9 !important; }
+
+a.text-white:hover {
+  color: #c9c9c9 !important; }
 
 .text-facebook {
   color: #3B5998 !important; }
   .text-facebook a {
     color: #3B5998 !important; }
     .text-facebook a:hover {
-      color: #1d2c4b; }
+      color: #1d2c4b !important; }
+
+a.text-facebook:hover {
+  color: #1d2c4b !important; }
 
 .text-twitter {
   color: #34CCFE !important; }
   .text-twitter a {
     color: #34CCFE !important; }
     .text-twitter a:hover {
-      color: #0195c6; }
+      color: #0195c6 !important; }
+
+a.text-twitter:hover {
+  color: #0195c6 !important; }
 
 .text-pinterest {
   color: #D02420 !important; }
   .text-pinterest a {
     color: #D02420 !important; }
     .text-pinterest a:hover {
-      color: #731412; }
+      color: #731412 !important; }
+
+a.text-pinterest:hover {
+  color: #731412 !important; }
 
 .text-google-plus {
   color: #DC4335 !important; }
   .text-google-plus a {
     color: #DC4335 !important; }
     .text-google-plus a:hover {
-      color: #8d2218; }
+      color: #8d2218 !important; }
+
+a.text-google-plus:hover {
+  color: #8d2218 !important; }
 
 .text-youtube {
   color: #F23030 !important; }
   .text-youtube a {
     color: #F23030 !important; }
     .text-youtube a:hover {
-      color: #ac0b0b; }
+      color: #ac0b0b !important; }
+
+a.text-youtube:hover {
+  color: #ac0b0b !important; }
 
 .text-instagram {
   color: #4187FB !important; }
   .text-instagram a {
     color: #4187FB !important; }
     .text-instagram a:hover {
-      color: #0450cd; }
+      color: #0450cd !important; }
+
+a.text-instagram:hover {
+  color: #0450cd !important; }
 
 .text-linkedin {
   color: #1C87BD !important; }
   .text-linkedin a {
     color: #1C87BD !important; }
     .text-linkedin a:hover {
-      color: #0e4460; }
+      color: #0e4460 !important; }
+
+a.text-linkedin:hover {
+  color: #0e4460 !important; }
 
 /* 
   =================

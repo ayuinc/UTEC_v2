@@ -4,11 +4,13 @@ html {
 }
 
 // DISABLE ANCHOR UNDERLINE ON HOVER
-// a {
-//   &:hover {
-//     text-decoration: none !important;
-//   }
-// }
+a {
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none !important;
+  }
+}
 
 // .lead utility class to increase text for emphasis
 h1, .h1 { &.lead {font-size: rem($font-size-h1 + 14) !important;} }
