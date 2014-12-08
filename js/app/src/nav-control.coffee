@@ -20,6 +20,7 @@ $(document).ready ->
 	$navDisplayClose.click((e)->
 		e.preventDefault()
 		$header.attr('class', '')
+		$('a', $navDisplayTriggers).removeClass('active')
 		return
 		)
 

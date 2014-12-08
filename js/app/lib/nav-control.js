@@ -21,6 +21,7 @@
     $navDisplayClose.click(function(e) {
       e.preventDefault();
       $header.attr('class', '');
+      $('a', $navDisplayTriggers).removeClass('active');
     });
   });
 
