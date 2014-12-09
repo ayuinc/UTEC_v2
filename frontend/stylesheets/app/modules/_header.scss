@@ -4,7 +4,7 @@
 	.nav-main {
 		@include clearfix;
 		position: relative;
-		z-index: 1000;
+		z-index: 2000;
 		.left {
 			float: left;
 		}
@@ -64,6 +64,7 @@
 		background: rgba($gray-lighter, 0.9);
 		@include transition(all 0.2s ease-in-out);
 		@include transform(translateY(-100%));
+		z-index: 1990;
 		.nav-display-left,
 		.nav-display-right {
 			min-height: 350px;
