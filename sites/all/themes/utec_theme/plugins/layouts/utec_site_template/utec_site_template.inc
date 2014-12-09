@@ -6,9 +6,9 @@ $plugin = array(
   'icon' => 'utec-site-template.png',
   'category' => 'Utec Theme',
   'regions' => array(
-    'menu' => t('Menu'),
-    'menu-content' => t('Menu Content'),
-    'content' => t('Content'),
+    'header' => t('Header'),
+    'header-bottom' => t('Header Bottom'),
+    'body' => t('Body'),
     'footer' => t('Footer'),
   ),
 );
