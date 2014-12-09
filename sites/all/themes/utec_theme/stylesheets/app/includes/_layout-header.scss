@@ -1,0 +1,51 @@
+.nav {
+	position: relative;
+	&.nav-main {
+		height: 77px;
+		background: white;
+		.breadcrumbs,
+		.nav-right {
+			@include clearfix;
+			position: absolute;
+			width: 100%;
+			margin: 0;
+			li {
+				margin-right: $grid-gutter-width / 4;
+			}
+		}
+		.breadcrumbs {			
+			padding: 28px 0;
+			li {
+				text-transform: uppercase;
+				float: left;
+				&.section {
+					a {
+						@include bold;
+						color: $gray;
+						&:hover {
+							color: $gray-darker;
+							text-decoration: none;
+						}
+					}
+				}
+				&.current {
+					a {
+						@include light;
+						color: $gray-darker;
+						border-bottom: 1px solid $brand-primary;
+						&:hover {
+							text-decoration: none;
+							color: $gray-darker;							
+						}
+					}
+				}
+			}			
+		}
+		.nav-right {
+			padding: 21px 0;
+			li {
+				float: right;
+			}
+		}
+	}
+}

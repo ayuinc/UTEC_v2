@@ -1,0 +1,10 @@
+name = Utec Theme
+description = Custom theme for UTEC.
+core = 7.x
+engine = phptemplate
+
+stylesheets[all][] = stylesheets/main.css
+
+plugins[panels][layouts] = plugins/layouts
+
+
