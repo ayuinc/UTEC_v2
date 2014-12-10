@@ -109,7 +109,7 @@
 
     <div class="content" id="fullpage">
       <div class="video-wrapper">
-        <video loop="" poster="" class="hidden-xs hidden-sm hidden-md">
+        <video loop="" poster="" autoplay class="hidden-xs hidden-sm hidden-md">
           <source src="<?php print $pathfile; ?>/lechuga.mp4 " type="video/mp4;codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
         </video> 
       </div>
