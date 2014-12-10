@@ -1,0 +1,320 @@
+/******************************************************************
+* General Styles
+******************************************************************/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,
+body {
+  color: #fff;
+  height: 100%;
+  background-color: #000;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+p {
+  font-weight: 300;
+}
+p.small {
+  font-size: 80%;
+  font-weight: 300;
+}
+
+/* Styles import from base.css uthec theme */
+
+@font-face {
+  font-family: 'robotolight';
+  src: url("fonts/Roboto/Roboto-Light-webfont.eot");
+  src: url("fonts/Roboto/Roboto-Light-webfont.eot?#iefix") format('embedded-opentype'), url("fonts/Roboto/Roboto-Light-webfont.woff") format('woff'), url("fonts/Roboto/Roboto-Light-webfont.ttf") format('truetype'), url("fonts/Roboto/Roboto-Light-webfont.svg#robotolight") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#modalContent .modal-header {
+  border-bottom: 1px solid #e5e5e5;
+  min-height: 16.4286px;
+  padding: 15px;
+}
+#modalContent .modal-content {
+  font-size: 14px;
+}
+#modalContent .modal-content input {
+  background-color: #f8f8f8;
+  border-radius: 2px;
+  color: #666b70;
+  font-size: 0.9em;
+  height: 30px;
+  line-height: 16px;
+  outline-offset: 0;
+  width: 100%;
+}
+#modalContent .inline-block {
+  display: inline-block;
+}
+
+#modalContent .btn-rec {
+  color: #428bca;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/**********************/
+#messages {
+  display: none;
+}
+.section #page-title {
+  display: none;
+}
+.section .tabs {
+  display: none;
+}
+.block-block h2 {
+  display: none;
+}
+.block-login {
+  display: inline-block;
+}
+.block-login h2 {
+  display: none;
+}
+.block-login .iniciar {
+  cursor: pointer;
+  border: none;
+  padding: 0.5em 1.3em 0 0;
+}
+.block-social {
+  display: inline-block;
+}
+.block-social h2 {
+  display: none;
+}
+.division-xs .views-field-title {
+  font-size: 13px;
+  margin: 0.4em auto;
+  padding: 0 0.4em;
+  text-align: center;
+}
+.division-xs .views-field-field-titulo-corto,
+.division-xs .views-field-nid {
+  display: none;
+}
+#block-formblock-soluciones {
+  display: none;
+  color: #000000;
+}
+#breadcrumb {
+  display: none;
+}
+.node-soluciones {
+  display: none;
+}
+.node-soluciones #comments {
+  display: none;
+}
+#comment-form {
+  display: none;
+}
+.likes .rate-widget {
+  display: none;
+}
+.likes .icon-number {
+  padding-left: 0.8em;
+}
+.block-poll-blocks h2 {
+  display: none;
+}
+.block-poll-blocks .title {
+  color: #03c5f6;
+  padding-bottom: 2em;
+}
+.block-poll-blocks #edit-vote {
+  background-color: #019ec5;
+  color: #fff !important;
+  cursor: pointer;
+  font-family: "robotolight";
+  font-size: 16px;
+  padding: 0.5em 2em !important;
+  margin-top: 10px;
+}
+.block-poll-blocks .links {
+  display: none;
+}
+.encuesta-solucion .poll {
+  color: black;
+}
+#miModal {
+  top: 100px;
+  left: -156px;
+}
+#block-ajax-register-ajax-register-block {
+  display: inline-block;
+}
+#block-ajax-register-ajax-register-block .ajax-register-links li {
+  display: none;
+}
+#block-ajax-register-ajax-register-block .ajax-register-links li.first {
+  display: block;
+}
+#block-ajax-register-ajax-register-block .ajax-register-links li.first a {
+  color: transparent;
+  padding: 0.5em 1.3em;
+  text-align: center;
+  background-image: url(../images/fb_login.png);
+  background-repeat: no-repeat;
+  padding-top: inherit;
+}
+#page-wrapper #page {
+  /*background: #000 !important;*/
+}
+#modalContent
+{
+  top: 80px !important;
+}
+#modalContent .ctools-modal-content {
+  padding: 30px;
+}
+#modalContent .modal-content {
+  box-shadow: none;
+  width: auto !important;
+  border: none;
+  padding: 15px 0;
+  overflow: hidden;
+  margin-left: -30px;
+  padding: 0 30px;
+  width: 358px !important;
+}
+#modalContent .modal-content .confirm-parent,
+#modalContent .modal-content .password-parent {
+  width: 100%;
+}
+#modalContent .modal-content .password-strength {
+  width: 15em;
+}
+#modalContent .modal-content .ajax-register-links {
+  display: none;
+}
+#modalContent .modal-content .facebook {
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+  display: block;
+  margin-top: 1em;
+  text-align: center;
+  padding: 0.4em 0.6em;
+  cursor: pointer;
+  border: 1px solid #02265e;
+  margin-bottom: 3em;
+  background: #224b8a;
+}
+#modalContent .modal-content .btn-crea {
+  background-color: #019ec5;
+  color: #fff !important;
+  cursor: pointer;
+  font-family: 'robotolight';
+  font-size: 16px;
+  padding: 0.2em 1em;
+  float: right;
+  font-size: 14px !important;
+  text-decoration: none;
+}
+#modalContent .modal-content .btn-rec {
+  cursor: pointer;
+}
+#modalContent .modal-content .form-submit {
+  background: none;
+  background-color: #019ec5;
+  color: #fff !important;
+  cursor: pointer;
+  font-family: 'robotolight';
+  font-size: 16px;
+}
+#modalContent .modal-content .password-suggestions {
+  display: none!important;
+}
+#modalContent .modal-content .form-text {
+  background-color: #f8f8f8;
+  color: #666b70;
+  line-height: 16px;
+  font-size: 0.9em;
+  outline-offset: 0;
+  outline: -webkit-focus-ring-color auto 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 0.8em 2em;
+  height: auto;
+  margin-bottom: 5px;
+}
+#modalContent .description {
+  display: none;
+}
+#modalContent #user-login label,
+#modalContent #user-login .description {
+  display: none;
+}
+#modalContent .modal-header {
+  position: relative;
+  border-top: 1px solid #e5e5e5;
+  padding: 11px 15px;
+  color: #000;
+  font-weight: 700;
+  margin: 24px 0;
+  margin-bottom: 0.3em;
+  text-align: center;
+  font-family: 'robotolight';
+  font-size: 16px;
+  background: none;
+}
+#modalContent .modal-header .modal-title {
+  color: #000;
+}
+#modalContent .modal-header .close {
+  position: absolute;
+  background-color: #00aed9;
+  background-clip: padding-box;
+  color: #fff;
+  outline: none;
+  font-size: 38px;
+  right: -30px;
+  top: -96px;
+  opacity: 1;
+  padding: 0 0.35em;
+  font-weight: normal;
+  line-height: 1;
+}
+#modalContent .modal-header .close:before {
+  content: "X";
+}
+#modalContent .modal-header .close img {
+  display: none;
+}
+.dis-loader .enviar-comentario {
+  display: none;
+}
+#votacion .team-list .rate-widget{
+  display: none;
+}
+
+@media screen and (max-width:1024px){
+   #block-ajax-register-ajax-register-block {
+  display: inline-block;
+  }
+  #block-ajax-register-ajax-register-block .ajax-register-links li.first {
+    display: block;
+  }
+  #block-ajax-register-ajax-register-block .ajax-register-links li.first a {
+    color: #fff !important;
+    padding: 0.5em 1.3em;
+    text-align: center;
+    background-image: none !important;
+    padding: 1em !important;
+  }
+}

@@ -1,0 +1,7 @@
+.columns {
+  float: left;
+}
+.six.columns {
+  width: 46%;
+  margin: 0 1%;
+}

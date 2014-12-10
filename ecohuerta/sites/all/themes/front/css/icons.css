@@ -1,0 +1,82 @@
+.icon1 {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  background-image: url('../images/sprite.png');
+}
+.icon1.icon-facebook {
+  background-position: 0 0;
+}
+.icon1.icon-facebook:hover {
+  background-position: 0 -32px;
+}
+.icon1.icon-twitter {
+  background-position: -34px 0;
+}
+.icon1.icon-twitter:hover {
+  background-position: -34px -32px;
+}
+.icon1.icon-youtube {
+  background-position: 0 -199px;
+}
+.icon1.icon-youtube:hover {
+  background-position: 0 -231px;
+}
+.icon1.icon-video {
+  background-image: url('../images/icons/video.png');
+}
+.icon1.icon-like {
+  background-image: url('../images/icons/like.png');
+}
+.fb-login {
+  width: 120px;
+  height: 26px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url('../images/fb_login.png');
+
+  -webkit-transition: .29 ease-in;
+  -o-transition: .29 ease-in;
+  transition: .29 ease-in;
+}
+.fb-login:hover {
+  opacity: .85;
+}
+.icon-triangle,
+.icon-triangle-up {
+  width: 56px;
+  height: 26px;
+  display: block;
+  background-repeat: no-repeat;
+}
+.icon-triangle {
+  background-position: -111px 1px;
+}
+.icon-triangle:hover {
+  background-position: -111px -24px;
+}
+.icon-triangle-up {
+  background-position: -167px 1px;
+}
+.icon-triangle-up:hover {
+  background-position: -167px -24px;
+}
+.loading {
+  display: none;
+  padding: 4px 30px;
+  vertical-align: middle;
+  background-color: #3cc1e0;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../images/loader.gif');
+}
+.icon1.icon-play {
+  width: 116px;
+  height: 122px;
+  background-position: 0 0;
+  background-image: url('../images/icons/play_big.png');
+}
+.icon1.icon-play:hover {
+  background-position: 0 -132px;
+}

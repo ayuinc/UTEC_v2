@@ -1,0 +1,114 @@
+/******************************************************************
+* Login nav
+******************************************************************/
+.nav-login {
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  position: fixed;
+}
+
+/******************************************************************
+* Basic navegation
+******************************************************************/
+ul.nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/******************************************************************
+* Horizontal nav
+******************************************************************/
+.nav-horizontal li {
+  font-weight: 300;
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/******************************************************************
+* Secondary navegation
+******************************************************************/
+.nav-point {
+  top: 45%;
+  right: 20px;
+  width: 190px;
+  z-index: 1000;
+  position: fixed;
+  padding-right: 5px;
+}
+.nav-point li {
+  margin-bottom: 10px;
+  float: right;
+}
+/*.nav-point li a[href="#tu-solucion"] {
+  font-weight: bold;
+}*/
+.nav-point-link {
+  padding: 0;
+  float: left;
+  width: 15px;
+  height: 15px;
+  display: block;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #9bbabf;
+  background-color: #9bbabf;
+
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+.nav-point-link:hover, li.active .nav-point-link {
+  border-color: #3cc1e0;
+  background-color: #1d4c57 !important;
+}
+.nav-point-text-arrow {
+  opacity: 0.8;
+  float: left;
+  font-size: 75%;
+  display: block;
+  z-index: 100000;
+  font-weight: 500;
+  visibility: visible;
+  padding: 0 5px 5px 5px;
+}
+li.active .nav-point-text {
+  color: #fff;
+  background-color: #3cc1e0;
+}
+li.active .nav-point-arrow {
+  border-left-color: #3cc1e0;
+}
+.nav-point-arrow {
+  width: 0;
+  right: 0;
+  height: 0;
+  float: right;
+  line-height: 0;
+  margin-top: 7px;
+  border-left-color: #fff;
+
+  border-left-style: solid !important;
+  border-right: medium none !important;
+  border-top-color: transparent !important;
+  border-bottom-color: transparent !important;
+}
+.nav-point-arrow-style {
+  border: 5px dashed #fff;
+}
+.nav-point-text {
+  float: left;
+  color: #424242;
+  font-size: 88%;
+  margin-top:-4px;
+  max-width: 200px;
+  min-width: 150px;
+  text-align: left;
+  padding: 5px 9px 4px;
+  background-color: #fff;
+}
+.nav-point-arrow {
+  margin-top: 1px;
+}
