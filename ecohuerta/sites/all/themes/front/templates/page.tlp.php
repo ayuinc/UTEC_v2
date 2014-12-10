@@ -284,11 +284,6 @@
         Aplica tu ingenio
       </a>
     </li>
-    <li>
-      <a href="ecohuerta" class="">
-        Ecohuerta
-      </a>
-    </li>
   </ul>
 </nav>
 

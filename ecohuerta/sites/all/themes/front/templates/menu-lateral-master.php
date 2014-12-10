@@ -15,5 +15,10 @@
           Aplica tu ingenio
         </a>
     </li>
+    <li class="<?php if(strcmp(request_uri(), '/ecohuerta')==0){print active;}?>">
+      <a href="/ecohuerta">
+        Ecohuerta
+      </a>
+    </li>
   </ul>
 </nav>
