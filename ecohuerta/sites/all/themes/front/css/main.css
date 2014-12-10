@@ -824,9 +824,10 @@ ul.tabs li a:hover {
 * Section Overlay
 ******************************************************************/
 .video-wrapper {
-  position: relative;
-  /*margin: 0 auto;
-  padding: 0;*/
+  position: fixed;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
 }
 .video-wrapper video {
   width: 100%;
