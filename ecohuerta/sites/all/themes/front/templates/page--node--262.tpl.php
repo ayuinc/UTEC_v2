@@ -105,7 +105,7 @@
 </div>
   <?php include 'menu-lateral-master.php' ?>
 
-    <?php include 'menu-lateral-page-b.php' ?>
+    <?php include 'menu-lateral-page-ecohuerta.php' ?>
 
   <div class="content" id="fullpage">
     <section id="marea-en-accion" class="main">
