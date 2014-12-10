@@ -64,77 +64,79 @@
   </div>
   </noscript>
 <div id="page-wrapper">
-    <div id="page">
-  <div class="old-browser-message hide">
-    <p>Tu versión de tu navegador es muy antigua. Actualízala a una más moderna.</p>
-  </div>
-
-  <div class="header-fixed">
-  <div class="header-fixed-barra">
-    <div id="logo">
-      <a href="/">
-        <img src="<?php print $path; ?>/images/logo.png" alt="UTEC">
-      </a>
+  <div id="page">
+    <div class="old-browser-message hide">
+      <p>Tu versión de tu navegador es muy antigua. Actualízala a una más moderna.</p>
     </div>
 
-    <button style="display: none;" type="button" class="navbar-toggle collapsed menu-responsive" data-toggle="collapse" data-target=".navbar-collapse">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
+    <div class="header-fixed">
+      <div class="header-fixed-barra">
+        <div id="logo">
+          <a href="/">
+            <img src="<?php print $path; ?>/images/logo.png" alt="UTEC">
+          </a>
+        </div>
 
-    <ul class="nav nav-horizontal nav-login">
-      <li class="nav-login-fb">
-        <?php print render($page['header']); ?>
-      </li>
-      <li class="siguenos-text">
-        Síguenos en
-      </li>
+        <button style="display: none;" type="button" class="navbar-toggle collapsed menu-responsive" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
 
-      <li>
-        <a id="visit-facebook" href="https://www.facebook.com/ingenioenaccion" class="icon1 icon-facebook visit" target="_blank"  rel="nofollow"></a>
-      </li>
+        <ul class="nav nav-horizontal nav-login">
+          <li class="nav-login-fb">
+            <?php print render($page['header']); ?>
+          </li>
+          <li class="siguenos-text">
+            Síguenos en
+          </li>
 
-      <li>
-        <a id="visit-twitter" href="https://twitter.com/UTECedu" class="icon1 icon-twitter visit" target="_blank"  rel="nofollow"></a>
-      </li>
-    </ul>
-  </div>
+          <li>
+            <a id="visit-facebook" href="https://www.facebook.com/ingenioenaccion" class="icon1 icon-facebook visit" target="_blank"  rel="nofollow"></a>
+          </li>
 
-  <?php include 'menu-responsive.php' ?>
-</div>
-  <?php include 'menu-lateral-master.php' ?>
+          <li>
+            <a id="visit-twitter" href="https://twitter.com/UTECedu" class="icon1 icon-twitter visit" target="_blank"  rel="nofollow"></a>
+          </li>
+        </ul>
+      </div>
+
+      <?php include 'menu-responsive.php' ?>
+    </div>
+    <?php include 'menu-lateral-master.php' ?>
 
     <?php include 'menu-lateral-page-ecohuerta.php' ?>
 
-  <div class="content" id="fullpage">
-    <section id="marea-en-accion" class="main">
-  <div id="marea-en-accion-r" class="responsive-fix"></div>
+    <div class="content" id="fullpage">
+      <div class="video-wrapper">
+        <video loop="" poster="" class="hidden-xs hidden-sm hidden-md">
+          <source src="<?php print $pathfile; ?>/lechuga.mp4 " type="video/mp4;codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+        </video> 
+      </div>
+      <section id="marea-en-accion" class="main">
+        <div id="marea-en-accion-r" class="responsive-fix"></div>
+        <div class="modal modal-alone center">
+          <div class="image-holder">
+            <!-- <img src="<?php print $path; ?>/images/marea/marea_en_accion/logo.png" alt="Marea en acción" height="100"> --> 
+          </div>
 
-  <div class="modal modal-alone center">
+          <h3 class="light">
+            ¿Sabías que cada fin de semana se recogen grandes cantidades de basura en las playas?
+          </h3>
 
-    <div class="image-holder">
-      <img src="<?php print $path; ?>/images/marea/marea_en_accion/logo.png" alt="Marea en acción" height="100">
+          <a href="/marea-en-accion-causas" class="scroll-to btn btn-medium-small btn-light-blue uppercase">
+            Entérate aquí
+          </a>
+        </div>
+      </section>
     </div>
 
-    <h3 class="light">
-      ¿Sabías que cada fin de semana se recogen grandes cantidades de basura en las playas?
-    </h3>
+    <div class="hide" id="template-modal-success"></div>
 
-    <a href="/marea-en-accion-causas" class="scroll-to btn btn-medium-small btn-light-blue uppercase">
-      Entérate aquí
-    </a>
+    <div class="hide" id="template-modal-error">
+      <p>
+        Lo sentimos, ha ocurrido un error inesperado.
+      </p>
+    </div>
   </div>
-
-</section>
-      </div>
-
-  <div class="hide" id="template-modal-success"></div>
-
-<div class="hide" id="template-modal-error">
-  <p>
-    Lo sentimos, ha ocurrido un error inesperado.
-  </p>
-</div>
-</div>
 </div>
