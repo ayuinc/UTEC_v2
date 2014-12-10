@@ -1,0 +1,33 @@
+
+name = front
+description = Tema de Utec - Front.
+core = 7.x
+version = 1.1
+; stylesheets[all][] = css/vendor/jquery.bxslider.css
+; stylesheets[all][] = css/vendor/jquery.fancybox.css
+; stylesheets[all][] = css/vendor/jquery.fullPage.css
+; stylesheets[all][] = css/vendor/tipsy.css
+; stylesheets[all][] = css/accordion.css
+; stylesheets[all][] = css/buttons.css
+; stylesheets[all][] = css/form.css
+; stylesheets[all][] = css/general.css
+; stylesheets[all][] = css/grid.css
+; stylesheets[all][] = css/icons.css
+; stylesheets[all][] = css/main.css
+; stylesheets[all][] = css/nav.css
+; stylesheets[all][] = css/normalize.css
+; stylesheets[all][] = css/responsive.css
+; stylesheets[all][] = util.css
+
+regions[header] = Header
+
+regions[featured] = Featured
+regions[content] = Content
+
+regions[forums_list] = Forum list
+regions[sidebar_first] = Sidebar first
+regions[sidebar_second] = Sidebar second
+
+regions[footer] = Footer
+regions[modal] = Modal
+

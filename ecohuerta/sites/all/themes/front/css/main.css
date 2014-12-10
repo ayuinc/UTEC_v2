@@ -1,0 +1,821 @@
+/******************************************************************
+* Logo
+******************************************************************/
+#logo {
+  left: 20px;
+  top: 10px;
+  width: 287px;
+  z-index: 10;
+  margin: 7px 10px 3px 12px;
+}
+#logo img {
+  width: 100%;
+}
+
+/******************************************************************
+* Containers
+******************************************************************/
+.container {
+  width: 65%;
+  margin: 0 auto;
+}
+.container > .header {
+  padding: 60px 0;
+}
+.container > .header.low {
+  padding-bottom: 0;
+  padding-top: 70px;
+}
+.container > .header .head-footer {
+  padding-top: 10px;
+}
+.container > .header > h3 {
+  margin-bottom: 0;
+}
+.container > .header > p {
+  font-size: 100%;
+  margin-top: 5px;
+  font-weight: 300;
+  line-height: 1.8em;
+}
+#retos-ingenieria .menu {
+  padding: 0 0 68% !important;
+}
+#votacion {
+  overflow: hidden;
+}
+#votacion .big-title {
+  margin-bottom: 0;
+}
+#votacion h1,
+#votacion h3 {
+  margin: 0;
+}
+#votacion .header a {
+  text-decoration: underline;
+}
+
+/******************************************************************
+* Main sections
+******************************************************************/
+section.main {
+  position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+section.main.background-pattern {
+  background-repeat: repeat;
+  background-attachment: initial;
+
+  -webkit-background-size: initial;
+  background-size: initial;
+}
+#retos-ingenieria {
+  background-image: url('../images/backgrounds/3.jpg');
+}
+#tu-solucion {
+  background-image: url('../images/backgrounds/4.jpg');
+}
+#marea-en-accion {
+  background-image: url('../images/backgrounds/marea/utec_marea_en_accion_botes_de_pescadores.jpg');
+}
+#las-causas {
+  background-image: url('../images/backgrounds/marea/utec_marea_en_accion_mar.jpg');
+}
+#que-haremos {
+  background-image: url('../images/backgrounds/marea/utec_marea_en_accion_claqueta.jpg');
+}
+#capitulos {
+  background-image: url('../images/backgrounds/marea/4.jpg');
+}
+#votacion {
+  background-image: url('../images/backgrounds/marea/utec_marea_en_accion_botes.jpg');
+}
+#tu-solucion > .container > .header {
+  padding-top: 80px;
+  padding-bottom: 7px;
+}
+#tu-solucion .head-footer .title {
+  margin: 0;
+}
+#marea-en-accion .modal-alone {
+  top: 20%;
+}
+#marea-en-accion .image-holder {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#marea-en-accion h3.uppercase.bold {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+#marea-en-accion h3.light {
+  margin: 0 auto;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+#las-causas .header {
+  margin: 0 auto;
+  max-width: 600px;
+  margin-bottom: 50px;
+}
+#las-causas .header,
+#que-haremos .header {
+  padding-top: 160px;
+}
+#que-haremos .icon-play {
+  margin: 0 auto;
+  display: block;
+}
+#que-haremos .bottom-holder {
+  width: 100%;
+  bottom: 25%;
+  margin: 0 auto;
+  position: absolute;
+  text-align: center;
+}
+#votacion .download-pdf {
+  right: 20px;
+  bottom: 20px;
+  font-size: 70%;
+  position: absolute;
+}
+#votacion .social-networks {
+  margin-top: 40px;
+}
+#votacion .container > .header {
+  padding: 80px 0 10px 0;
+}
+
+/******************************************************************
+* Titles
+******************************************************************/
+h1.title,
+h2.title,
+h3.title,
+h4.title,
+h5.title,
+h1.title a,
+h2.title a,
+h3.title a,
+h4.title a,
+h5.title a {
+  color: #3cc1e0;
+  font-weight: normal;
+}
+h1.title {
+  font-size: 180%;
+  margin-bottom: 0;
+}
+h1.title.bold {
+  font-weight: bold;
+}
+h1.title .medium {
+  display: block;
+  font-size: 70%;
+  line-height: 70%;
+}
+h1 .mini {
+  font-size: 40%;
+}
+h1.bigger {
+  font-size: 250%;
+}
+h3 .mini {
+  display: block;
+  font-weight: 300;
+  text-transform: none;
+}
+#retos-ingenieria .header {
+    width: 100%;
+    text-align: left;
+    display: inline-block;
+}
+.big-title {
+  font-size: 4.5rem;
+}
+
+/******************************************************************
+* Main Navegation
+******************************************************************/
+nav.primary {
+  left: 20px;
+  top: 130px;
+  z-index: 100;
+  position: fixed;
+  max-width: 200px;
+}
+
+/******************************************************************
+* Menues
+******************************************************************/
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu-vertical li,
+.menu-vertical li a {
+  display: block;
+}
+/*
+ul.menu li
+{
+   margin-top: 0px !important;
+  margin-bottom: 5px !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}*/
+.menu-vertical li {
+  margin-bottom: 5px;
+}
+.menu-light-blue li a {
+  color: #fff;
+  font-size: 80%;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #888;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, .2);
+
+  -webkit-transition: .29s ease-in;
+  -o-transition: .29s ease-in;
+  transition: .29s ease-in;
+}
+.menu-light-blue li:hover a,
+.menu-light-blue li.active a {
+  background: rgb(13, 156, 193);
+}
+.menu-with-arrows {
+  margin: 10px 0;
+}
+.menu-with-arrows li {
+  font-weight: 300;
+  padding-left: 20px;
+  background-position: 0 3px;
+  background-repeat: no-repeat;
+  background-image: url('../images/icons/flecha.png');
+}
+
+/******************************************************************
+* Logout Button
+******************************************************************/
+a.logout {
+  z-index: 10;
+  font-weight: 300;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/******************************************************************
+* Next Section Button
+******************************************************************/
+.next-section {
+  left: 50%;
+  z-index: 10;
+  bottom: 10px;
+  position: fixed;
+  margin-left: -15px;
+}
+
+/******************************************************************
+* Text Holders
+******************************************************************/
+.text-content {
+  display: none;
+}
+.text-content p {
+  font-size: 89%;
+}
+.text-content strong {
+  font-weight: normal;
+}
+.text-content.active {
+  display: block;
+}
+
+/******************************************************************
+* Modals
+******************************************************************/
+.modal-alone {
+  top: 30%;
+  left: 50%;
+  width: 50%;
+  margin-left: -25%;
+  position: absolute;
+}
+.modal-inside {
+  padding: 2em 1em;
+  max-width: 600px;
+}
+
+/******************************************************************
+* Tooltips
+******************************************************************/
+.tipsy {
+  font-size: 75%;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/******************************************************************
+* Sliders
+******************************************************************/
+.slider {
+  margin: 0;
+  padding: 0;
+}
+.slide.slide-text {
+  padding: 0 5em;
+}
+.slide-text p {
+  font-size: 129%;
+  font-weight: 300;
+}
+.slide.slide-text h3 {
+  padding-bottom: 20px;
+}
+
+/******************************************************************
+* Tabs
+******************************************************************/
+ul.tabs {
+  padding: 0;
+  font-size: 0;
+  list-style: none;
+  margin: 0 0 10px 0;
+}
+ul.tabs li {
+  font-size: 14px;
+  display: inline-block;
+  border-bottom: 1px solid #fff;
+}
+ul.tabs li.active {
+  border-bottom: none;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+ul.tabs li.active.first {
+  border-left: none;
+}
+ul.tabs li:hover a,
+ul.tabs li.active a {
+  color: #3cc1e0;
+}
+ul.tabs li a {
+  display: block;
+  padding: .75em 1.5em;
+
+  -webkit-transition: .29s ease-in;
+  -o-transition: .29s ease-in;
+  transition: .29s ease-in;
+}
+ul.tabs li a:hover {
+  text-decoration: none;
+}
+.tab-content img,
+.tab-content iframe {
+  max-width: 100%;
+}
+
+/******************************************************************
+* Boxes
+******************************************************************/
+.box {
+  /*width: 32%;*/
+  width: 301px;
+  float: left;
+  margin: .5%;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #fff;
+}
+.box .overlay {
+  height: 100%;
+  top: 147px;
+  width: 100%;
+  position: absolute;
+
+  -webkit-transition: .29s ease-in;
+  -o-transition: .29s ease-in;
+  transition: .29s ease-in;
+}
+.box .overlay .title {
+  color: #fff;
+  padding: 10px;
+  font-size: 75%;
+  font-weight: 300;
+  background: rgba(0, 40, 45, .80);
+}
+.box .thumb {
+  line-height: 0;
+}
+.box .thumb img {
+  width: 100%;
+}
+.box:hover .overlay {
+  top: 0;
+  bottom: auto;
+  background: rgba(255, 255, 255, .90);
+}
+.box:hover .overlay .title {
+  color: #444;
+  margin: 0 10%;
+  font-size: 85%;
+  padding: 5px 0; /*10px*/
+  text-align: center;
+  font-weight: normal;
+  background: transparent;
+  border-bottom: 1px dashed #3cc1e0;
+}
+.box .description {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: table;
+  position: absolute;
+}
+.box .description p {
+  color: #555;
+  font-size: 80%;
+  font-weight: 300;
+  display: table-cell;
+  /*vertical-align: middle;*/
+  /*padding: 2em 1.5em 0 1.5em;*/
+  padding: 17% 1.5em 0;
+  cursor: default;
+  max-width: 200px;
+}
+.box .description .btn {
+  left: 50%;
+  bottom: 5px;
+  width: 180px;
+  position: absolute;
+  margin-left: -90px;
+  display: inline-block;
+}
+.box .description span {
+  color: #555;
+  cursor: default;
+  display: table-cell;
+  font-size: 80%;
+  font-weight: 300;
+  padding: 5% 0 0;
+  width: 100%;
+}
+.box .description span a {
+  color: #555;
+}
+.texto-superior-problematica {
+  text-align: center;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.slide-text h3.uppercase {
+  margin: 0;
+}
+
+/******************************************************************
+* Videos
+******************************************************************/
+.video-list-container {
+  bottom: 0;
+  width: 100%;
+  padding: 30px 0;
+  position: absolute;
+  background: rgba(0, 0, 0, .8);
+}
+.player-container {
+  padding-top: 80px;
+}
+.player-container .video-player-container iframe {
+  width: 540px;
+  height: 300px;
+  max-width: 100%;
+}
+.player-container .title-container {
+  margin: 10px 0;
+}
+.video-player-container {
+  position: relative;
+}
+.video-player-container .fancybox-media {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.player-container .subtitle {
+  display: block;
+}
+.player-container .share {
+  font-size: 80%;
+  vertical-align: bottom;
+}
+.player-container .share span {
+  margin: 0 5px;
+  display: inline-block;
+}
+.player-container .share iframe {
+  vertical-align: bottom;
+}
+.player-metadata .link {
+  margin-top: 10px;
+}
+.video-list {
+  font-size: 0;
+}
+.video-list li {
+  width: 20%;
+  padding: 0 1%;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+.video-list li.disabled .video-overlay {
+  display: none;
+}
+.video-list .overlay {
+  width: 100%;
+  z-index: 10;
+  height: 100%;
+  display: block;
+  position: absolute;
+}
+.video-list .thumb {
+  line-height: 0;
+  position: relative;
+  border: 1px solid gray;
+}
+.video-list img {
+  width: 100%;
+}
+.video-list .title {
+  padding: 10px 0;
+  font-size: 13px;
+  font-weight: 300;
+}
+.video-list .video-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: rgba(0, 0, 0, .35);
+  background-image: url('../images/icons/play_medium.png');
+
+  -webkit-transition: background-color .29s ease-in;
+  -o-transition: background-color .29s ease-in;
+  transition: background-color .29s ease-in;
+}
+.video-list li:hover .video-overlay {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/******************************************************************
+* Fullscreen Video
+******************************************************************/
+.video-player.fullscreen {
+  width: 100%;
+  height: 100%;
+}
+
+/******************************************************************
+* Custom selects
+******************************************************************/
+.select-wrapper {
+  float: left;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  border: 1px solid #d8d8d8;
+  background: #fff url("../images/flecha_dropdown.png") no-repeat right center;
+}
+.select-wrapper,
+.select-wrapper select {
+  width: 100%;
+  height: 26px;
+  line-height: 26px;
+}
+.select-wrapper:hover {
+  border-color: #239fdb;
+}
+.select-wrapper .holder {
+  top: 0;
+  z-index: 1;
+  color: #444;
+  display: block;
+  font-size: 80%;
+  cursor: pointer;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  margin: 0 35px 0 5px;
+}
+.select-wrapper label.error {
+  top: 16px;
+  position: absolute;
+}
+.select-wrapper select {
+  margin: 0;
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+  outline: none;
+  opacity: 0;
+
+  /* CSS hacks for older browsers */
+  _noFocusLine: expression(this.hideFocus=true);
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -khtml-opacity: 0;
+  -moz-opacity: 0;
+}
+.container > .header > p {
+  text-align: center;
+}
+#retos-ingenieria .container {
+  margin-bottom:100px;
+}
+
+.content-iniciativa {
+  display: inline-block;
+  padding: 15px 0 15px 20px;
+}
+#iniciativas-utec .container > .header {
+  padding: 90px 0 21px 0;
+}
+.header-fixed {
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+  background: black;
+  display: inline-block;
+  top: 0;
+}
+.next-section{
+    display: none \ !important;
+}
+.submit-login{
+    background: none repeat scroll 0 0 #3cc1e0;
+    border: medium none;
+    font-size: 80%;
+    font-weight: 300;
+    padding: 5px 30px;
+}
+.submenu-content-responsive{
+        display: none;
+}
+#ingenio-en-accion .title uppercase{
+  font-size: 21px;
+}
+
+/******************************************************************
+* Retos de la ingenieria galeria de fotos
+******************************************************************/
+.box{
+  margin:4px 5px;
+}
+.menu-boxes-responsive .bx-wrapper{
+    width: 300px;
+}
+.menu-boxes-responsive{
+    display: none;
+}
+.menu-boxes-default {
+    width: 100%;
+    text-align: center;
+}
+.menu-boxes-default .menu-boxes{
+    max-width: 939px;
+    display: inline-block;
+}
+.menu-boxes-responsive .bx-controls-direction{
+    display: inline-block;
+    float: left;
+    left: -83px;
+    position: relative;
+    top: -103px;
+    width: 462px;
+}
+
+/******************************************************************
+* Team List
+******************************************************************/
+.team-list {
+  margin-bottom: 20px;
+}
+.team-list .team {
+  width: 28%;
+  float: left;
+  margin-bottom: 30px;
+}
+.team-list .team > .title {
+  margin-bottom: 20px;
+}
+.team-list.voted .team .overlay .vote {
+  display: none;
+}
+.team-list.voted .team .overlay {
+  display: block;
+}
+.team-list .team.active .thumbnail {
+  border-color: rgb(13, 156, 193);
+}
+.team-list .team.active .overlay,
+.team-list .team.active:hover .overlay {
+  display: none;
+}
+.team-list .team:first-child {
+  margin-left: 7%;
+  margin-right: 1%;
+}
+.team-list .team.last {
+  margin-left: 1%;
+  margin-right: 7%;
+}
+.team-list .thumbnail {
+  max-width: 150px;
+  overflow: hidden;
+  position: relative;
+  border: 3px solid #fff;
+  margin: 0 auto 15px auto;
+
+  -webkit-border-radius: 300px;
+  -moz-border-radius: 300px;
+  border-radius: 300px;
+}
+.team-list .thumbnail img {
+  max-width: 100%;
+}
+.team-list .thumbnail .overlay {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+  background: rgba(0, 0, 0, .75);
+}
+.team-list .team.first .thumbnail .overlay {
+  background: rgba(34, 167, 131, .75);
+}
+.team-list .team.last .thumbnail .overlay {
+  background: rgba(31, 52, 105, .75);
+}
+.team-list .thumbnail:hover .overlay {
+  display: block;
+}
+.team-list .thumbnail .overlay .vote {
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 40px;
+  display: block;
+  margin-top: -20px;
+  position: absolute;
+  margin-left: -50px;
+  background-color: rgb(13, 156, 193);
+}
+.team-list .details {
+  font-size: 90%;
+  text-align: center;
+}
+.team-list .details .title {
+  font-size: 100%;
+  font-weight: bold;
+}
+.team-list .details .fancybox-media {
+  text-decoration: underline;
+}
+.team-list .votes .icon {
+  bottom: -10px;
+  position: relative;
+}
+
+/******************************************************************
+* Section Overlay
+******************************************************************/
+.overlay-container {
+  width: 100%;
+  z-index: 9;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  background: rgba(0, 0, 0, .9);
+}
+.overlay-container .overlay-content {
+  padding: 2em;
+  max-width: 500px;
+  margin-top: 200px;
+  display: inline-block;
+  vertical-align: middle;
+
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
