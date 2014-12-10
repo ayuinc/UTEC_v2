@@ -251,6 +251,16 @@
         height: auto !important;
         padding: 0 0 20% 2% !important;
     }
+    
+    /******************************************************************
+    * Ecohuerta
+    ******************************************************************/
+    .video-wrapper {
+      display: none;
+    }
+    #ecohuerta {
+      background-image: url('../images/backgrounds/ecohuerta/homehuerta.jpg');
+    }
 
 }
 @media screen and (max-width: 1024px){
@@ -306,16 +316,6 @@
     .team-list .team.last {
       margin-left: 8%;
       margin-right: 0;
-    }
-
-    /******************************************************************
-    * Ecohuerta
-    ******************************************************************/
-    .video-wrapper {
-      display: none;
-    }
-    #ecohuerta {
-      background-image: url('../images/backgrounds/ecohuerta/homehuerta.jpg');
     }
 }
 
