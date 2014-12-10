@@ -269,22 +269,26 @@
 </div>
 <nav class="primary">
   <ul class="menu menu-vertical menu-light-blue">
-          <li class="active">
-        <a href="<?php print $base_path; ?>">
-         Ingenio en acción-
-        </a>
-      </li>
-          <li class="">
-        <a href="marea-en-accion">
-          Marea en acción
-        </a>
-      </li>
-    
+    <li class="active">
+      <a href="<?php print $base_path; ?>">
+        Ingenio en acción-
+      </a>
+    </li>
+    <li class="">
+      <a href="marea-en-accion">
+        Marea en acción
+      </a>
+    </li>
     <li>
-              <a id="menu-button-tu-solucion" href="#tu-solucion" class="scroll-to">
-          Aplica tu ingenio
-        </a>
-          </li>
+      <a id="menu-button-tu-solucion" href="#tu-solucion" class="scroll-to">
+        Aplica tu ingenio
+      </a>
+    </li>
+    <li>
+      <a href="ecohuerta" class="">
+        Ecohuerta
+      </a>
+    </li>
   </ul>
 </nav>
 
