@@ -289,6 +289,11 @@ if(isset($node)){
                 Aplica tu ingenio
               </a>
             </li>
+            <li class="active">
+              <a href="/aplica-tu-ingenio" class="scroll-to">
+                Ecohuerta
+              </a>
+            </li>
         </ul>
         </nav>
         <!-- AGREGADO-->
