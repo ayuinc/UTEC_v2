@@ -217,7 +217,7 @@ $databases = array (
     array (
       'database' => 'ecohuerta',
       'username' => 'root',
-      'password' => 'root',
+      'password' => 'YhGcpxB631',
       'host' => 'localhost',
       'port' => '',
       'driver' => 'mysql',
