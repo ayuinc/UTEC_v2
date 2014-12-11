@@ -286,7 +286,12 @@ if(isset($node)){
             </li>
             <li class="active">
               <a id="menu-button-tu-solucion" href="/aplica-tu-ingenio" class="scroll-to">
-                Aplica tu ingenioo
+                Aplica tu ingenio
+              </a>
+            </li>
+            <li class="">
+              <a href="<?php print $base_path; ?>ecohuerta">
+                Ecohuerta
               </a>
             </li>
         </ul>
