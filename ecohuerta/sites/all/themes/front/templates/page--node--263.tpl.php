@@ -116,7 +116,6 @@
             <iframe width="560" height="349" src="http://www.youtube.com/embed/n_dZNLr2cME?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
-        <iframe width="560" height="315" src="//www.youtube.com/embed/ScMzIvxBSi4" frameborder="0" allowfullscreen></iframe>
       </section>
     </div>
 
