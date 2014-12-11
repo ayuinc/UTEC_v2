@@ -286,7 +286,7 @@ if(isset($node)){
             </li>
             <li class="active">
               <a id="menu-button-tu-solucion" href="/aplica-tu-ingenio" class="scroll-to">
-                Aplica tu ingenio
+                Aplica tu ingenioo
               </a>
             </li>
         </ul>
