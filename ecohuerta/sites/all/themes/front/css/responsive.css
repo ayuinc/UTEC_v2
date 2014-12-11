@@ -450,6 +450,9 @@
     .modal-alone {
 
     }
+    #sobre-ecohuerta .modal-alone {
+        width: 97%;
+    }
     ul.tabs li{
         border: none;
     }
