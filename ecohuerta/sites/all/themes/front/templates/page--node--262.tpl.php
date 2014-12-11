@@ -126,7 +126,7 @@
           </h3>
 
           <a href="/marea-en-accion-causas" class="scroll-to btn btn-medium-small btn-light-blue uppercase">
-            Entérate aquí
+            Ver más
           </a>
         </div>
       </section>
