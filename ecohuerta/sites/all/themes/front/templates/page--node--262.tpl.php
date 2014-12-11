@@ -125,7 +125,7 @@
             Unas lechugas ecológicas que podrás reservar desde ahora mismo.
           </h3>
 
-          <a href="/marea-en-accion-causas" class="scroll-to btn btn-medium-small btn-light-blue uppercase">
+          <a href="<?php print $base_path; ?>marea-en-accion-causas" class="scroll-to btn btn-medium-small btn-light-blue uppercase">
             Ver más
           </a>
         </div>
