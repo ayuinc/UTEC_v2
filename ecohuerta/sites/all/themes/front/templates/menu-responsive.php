@@ -146,14 +146,14 @@
                 </a>
               </li>
               <li>
-                <a href="<?php print $base_path; ?>sobre-ecohuerta" class="link-menu">
+                <a href="<?php print $base_path; ?>ecohuerta-video-lechugas-hidroponicas" class="link-menu">
                   <div class="submenu-single">
                     Sobre ecohuerta
                   </div>
                 </a>
               </li>
               <li>
-                <a href="<?php print $base_path; ?>recetas" class="link-menu">
+                <a href="<?php print $base_path; ?>ecohuerta-recetas" class="link-menu">
                   <div class="submenu-single">
                     Recetas
                   </div>
