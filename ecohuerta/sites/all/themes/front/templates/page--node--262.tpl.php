@@ -122,7 +122,7 @@
 
           <h3 class="light">
             <b>Te presentamos las primeras lechugas de la historia regadas con aire.</b><br>
-            Unas lechugas ecológicas que podrás reservar de ahora mismo.
+            Unas lechugas ecológicas que podrás reservar desde ahora mismo.
           </h3>
 
           <a href="/marea-en-accion-causas" class="scroll-to btn btn-medium-small btn-light-blue uppercase">
