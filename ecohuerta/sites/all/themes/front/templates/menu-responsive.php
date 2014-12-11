@@ -139,6 +139,13 @@
             </a>
             <ul class="submenu">
               <li>
+                <a href="<?php print $base_path; ?>ecohuerta" class="link-menu">
+                  <div class="submenu-single">
+                    Ecohuerta
+                  </div>
+                </a>
+              </li>
+              <li>
                 <a href="<?php print $base_path; ?>sobre-ecohuerta" class="link-menu">
                   <div class="submenu-single">
                     Sobre ecohuerta
