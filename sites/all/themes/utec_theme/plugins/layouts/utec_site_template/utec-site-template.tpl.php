@@ -9,7 +9,7 @@
 <div class="site-wrapper">
   <div class="site-content">
     <?php if (!empty($content['header'])): ?>
-      <div id="header"><?php print $content['header']; ?></div>
+      <?php print $content['header']; ?>
     <?php endif; ?>
 
     <?php if (!empty($content['header-bottom'])): ?>
