@@ -540,6 +540,7 @@ img.icon-utec {
 	height: auto;
 }
 
+<<<<<<< HEAD
 // VIDEOCOVER
 .videocover {
 	position: absolute;
@@ -573,3 +574,13 @@ img.icon-utec {
 	@include position(absolute, 0 0 0 0);
 	z-index: 7;
 }
+=======
+.gray-light {
+	color: #bbb !important;
+}
+
+
+.banner:hover {
+	background-color: #f1f1f1;
+}
+>>>>>>> 611ff101ad5c33c4eacb2df897d1fa1bf938c655
