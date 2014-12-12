@@ -4000,6 +4000,9 @@ img.icon-utec {
   width: 35px;
   height: auto; }
 
+.gray-light {
+  color: #bbb !important; }
+
 #header, #header-on-scroll {
   position: relative;
   top: 0;
@@ -4029,6 +4032,8 @@ img.icon-utec {
     #header .nav-main .right,
     #header-on-scroll .nav-main .right {
       float: right; }
+  #header .tool-bar .left .nav-list li a:hover, #header-on-scroll .tool-bar .left .nav-list li a:hover {
+    color: #595858; }
   #header .nav-main, #header-on-scroll .nav-main {
     min-height: 35px;
     background: white; }
@@ -4071,7 +4076,7 @@ img.icon-utec {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: rgba(241, 241, 241, 0.9);
+    background: rgba(241, 241, 241, 0.97);
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
@@ -4089,7 +4094,7 @@ img.icon-utec {
     #header .nav-display .nav-display-left, #header-on-scroll .nav-display .nav-display-left,
     #header .nav-display .nav-display-right,
     #header-on-scroll .nav-display .nav-display-right {
-      min-height: 350px;
+      min-height: 430px;
       width: 50%;
       display: -webkit-box;
       display: -moz-box;
@@ -4151,7 +4156,10 @@ img.icon-utec {
           #header .nav-display .nav-display-right > div ul li a, #header-on-scroll .nav-display .nav-display-right > div ul li a {
             color: #191919;
             display: block;
-            text-transform: uppercase; }
+            text-transform: uppercase;
+            border: none; }
+            #header .nav-display .nav-display-right > div ul li a:hover, #header-on-scroll .nav-display .nav-display-right > div ul li a:hover, #header .nav-display .nav-display-right > div ul li a.active, #header-on-scroll .nav-display .nav-display-right > div ul li a.active {
+              color: #02c1f5; }
             #header .nav-display .nav-display-right > div ul li a span, #header-on-scroll .nav-display .nav-display-right > div ul li a span {
               display: block;
               color: #8f8d8e; }
@@ -4388,7 +4396,7 @@ img.icon-utec {
   z-index: 3000; }
   #header-on-scroll .nav-main {
     height: 56px;
-    background: white; }
+    background-color: #f1f1f1; }
     #header-on-scroll .nav-main .logo {
       width: 280px;
       height: 56px;
@@ -4413,7 +4421,7 @@ img.icon-utec {
           padding: 12px 0;
           padding: 0.85714rem 0;
           color: #8f8d8e;
-          background: white;
+          background-color: #f1f1f1;
           min-width: 135px;
           min-width: 9.64286rem;
           height: 56px; }
