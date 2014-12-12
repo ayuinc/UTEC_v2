@@ -5095,6 +5095,616 @@ img.icon-utec {
   .admision-modalidades > li:hover > div {
     color: white; }
 
+.malla-curricular > li {
+  padding: 0 14px 0 0 !important; }
+  .malla-curricular > li .head {
+    padding-left: 0;
+    list-style: none;
+    margin: 0; }
+    .malla-curricular > li .head:before, .malla-curricular > li .head:after {
+      content: " ";
+      display: table; }
+    .malla-curricular > li .head:after {
+      clear: both; }
+    .malla-curricular > li .head > li {
+      float: left; }
+      .malla-curricular > li .head > li:first-child {
+        font-size: 36px;
+        line-height: 31px; }
+      .malla-curricular > li .head > li:last-child {
+        line-height: 16px;
+        padding-left: 7px; }
+.malla-curricular.malla-curricular-primary .body {
+  border-top: 3px solid #00a7d7;
+  margin-top: 3px; }
+  .malla-curricular.malla-curricular-primary .body > ul {
+    padding-left: 0;
+    list-style: none;
+    margin: 0; }
+    .malla-curricular.malla-curricular-primary .body > ul:before, .malla-curricular.malla-curricular-primary .body > ul:after {
+      content: " ";
+      display: table; }
+    .malla-curricular.malla-curricular-primary .body > ul:after {
+      clear: both; }
+    .malla-curricular.malla-curricular-primary .body > ul > li {
+      float: left;
+      padding-left: 7px; }
+      .malla-curricular.malla-curricular-primary .body > ul > li:first-child {
+        width: 39px; }
+      .malla-curricular.malla-curricular-primary .body > ul > li:last-child {
+        padding-top: 7px; }
+    .malla-curricular.malla-curricular-primary .body > ul:nth-child(1) > li {
+      min-height: 68px; }
+      .malla-curricular.malla-curricular-primary .body > ul:nth-child(1) > li:first-child {
+        background-color: #00aee0; }
+    .malla-curricular.malla-curricular-primary .body > ul:nth-child(2) > li {
+      min-height: 66px; }
+      .malla-curricular.malla-curricular-primary .body > ul:nth-child(2) > li:first-child {
+        background-color: #00b5e9; }
+    .malla-curricular.malla-curricular-primary .body > ul:nth-child(3) > li {
+      min-height: 64px; }
+      .malla-curricular.malla-curricular-primary .body > ul:nth-child(3) > li:first-child {
+        background-color: #00bcf2; }
+    .malla-curricular.malla-curricular-primary .body > ul:nth-child(4) > li {
+      min-height: 62px; }
+      .malla-curricular.malla-curricular-primary .body > ul:nth-child(4) > li:first-child {
+        background-color: #00c2fa; }
+    .malla-curricular.malla-curricular-primary .body > ul:nth-child(5) > li {
+      min-height: 60px; }
+      .malla-curricular.malla-curricular-primary .body > ul:nth-child(5) > li:first-child {
+        background-color: #04c7ff; }
+    .malla-curricular.malla-curricular-primary .body > ul:nth-child(6) > li {
+      min-height: 58px; }
+      .malla-curricular.malla-curricular-primary .body > ul:nth-child(6) > li:first-child {
+        background-color: #0dc9ff; }
+    .malla-curricular.malla-curricular-primary .body > ul:nth-child(7) > li {
+      min-height: 56px; }
+      .malla-curricular.malla-curricular-primary .body > ul:nth-child(7) > li:first-child {
+        background-color: #16cbff; }
+    .malla-curricular.malla-curricular-primary .body > ul:nth-child(8) > li {
+      min-height: 54px; }
+      .malla-curricular.malla-curricular-primary .body > ul:nth-child(8) > li:first-child {
+        background-color: #1fcdff; }
+    .malla-curricular.malla-curricular-primary .body > ul:nth-child(9) > li {
+      min-height: 52px; }
+      .malla-curricular.malla-curricular-primary .body > ul:nth-child(9) > li:first-child {
+        background-color: #28cfff; }
+    .malla-curricular.malla-curricular-primary .body > ul:nth-child(10) > li {
+      min-height: 50px; }
+      .malla-curricular.malla-curricular-primary .body > ul:nth-child(10) > li:first-child {
+        background-color: #31d1ff; }
+.malla-curricular.malla-curricular-success .body {
+  border-top: 3px solid #67A042;
+  margin-top: 3px; }
+  .malla-curricular.malla-curricular-success .body > ul {
+    padding-left: 0;
+    list-style: none;
+    margin: 0; }
+    .malla-curricular.malla-curricular-success .body > ul:before, .malla-curricular.malla-curricular-success .body > ul:after {
+      content: " ";
+      display: table; }
+    .malla-curricular.malla-curricular-success .body > ul:after {
+      clear: both; }
+    .malla-curricular.malla-curricular-success .body > ul > li {
+      float: left;
+      padding-left: 7px; }
+      .malla-curricular.malla-curricular-success .body > ul > li:first-child {
+        width: 39px; }
+      .malla-curricular.malla-curricular-success .body > ul > li:last-child {
+        padding-top: 7px; }
+    .malla-curricular.malla-curricular-success .body > ul:nth-child(1) > li {
+      min-height: 68px; }
+      .malla-curricular.malla-curricular-success .body > ul:nth-child(1) > li:first-child {
+        background-color: #6ba644; }
+    .malla-curricular.malla-curricular-success .body > ul:nth-child(2) > li {
+      min-height: 66px; }
+      .malla-curricular.malla-curricular-success .body > ul:nth-child(2) > li:first-child {
+        background-color: #6fac47; }
+    .malla-curricular.malla-curricular-success .body > ul:nth-child(3) > li {
+      min-height: 64px; }
+      .malla-curricular.malla-curricular-success .body > ul:nth-child(3) > li:first-child {
+        background-color: #73b249; }
+    .malla-curricular.malla-curricular-success .body > ul:nth-child(4) > li {
+      min-height: 62px; }
+      .malla-curricular.malla-curricular-success .body > ul:nth-child(4) > li:first-child {
+        background-color: #77b64e; }
+    .malla-curricular.malla-curricular-success .body > ul:nth-child(5) > li {
+      min-height: 60px; }
+      .malla-curricular.malla-curricular-success .body > ul:nth-child(5) > li:first-child {
+        background-color: #7cb954; }
+    .malla-curricular.malla-curricular-success .body > ul:nth-child(6) > li {
+      min-height: 58px; }
+      .malla-curricular.malla-curricular-success .body > ul:nth-child(6) > li:first-child {
+        background-color: #80bb5a; }
+    .malla-curricular.malla-curricular-success .body > ul:nth-child(7) > li {
+      min-height: 56px; }
+      .malla-curricular.malla-curricular-success .body > ul:nth-child(7) > li:first-child {
+        background-color: #85bd60; }
+    .malla-curricular.malla-curricular-success .body > ul:nth-child(8) > li {
+      min-height: 54px; }
+      .malla-curricular.malla-curricular-success .body > ul:nth-child(8) > li:first-child {
+        background-color: #8ac066; }
+    .malla-curricular.malla-curricular-success .body > ul:nth-child(9) > li {
+      min-height: 52px; }
+      .malla-curricular.malla-curricular-success .body > ul:nth-child(9) > li:first-child {
+        background-color: #8ec26c; }
+    .malla-curricular.malla-curricular-success .body > ul:nth-child(10) > li {
+      min-height: 50px; }
+      .malla-curricular.malla-curricular-success .body > ul:nth-child(10) > li:first-child {
+        background-color: #93c572; }
+.malla-curricular.malla-curricular-info .body {
+  border-top: 3px solid #2E4372;
+  margin-top: 3px; }
+  .malla-curricular.malla-curricular-info .body > ul {
+    padding-left: 0;
+    list-style: none;
+    margin: 0; }
+    .malla-curricular.malla-curricular-info .body > ul:before, .malla-curricular.malla-curricular-info .body > ul:after {
+      content: " ";
+      display: table; }
+    .malla-curricular.malla-curricular-info .body > ul:after {
+      clear: both; }
+    .malla-curricular.malla-curricular-info .body > ul > li {
+      float: left;
+      padding-left: 7px; }
+      .malla-curricular.malla-curricular-info .body > ul > li:first-child {
+        width: 39px; }
+      .malla-curricular.malla-curricular-info .body > ul > li:last-child {
+        padding-top: 7px; }
+    .malla-curricular.malla-curricular-info .body > ul:nth-child(1) > li {
+      min-height: 68px; }
+      .malla-curricular.malla-curricular-info .body > ul:nth-child(1) > li:first-child {
+        background-color: #314779; }
+    .malla-curricular.malla-curricular-info .body > ul:nth-child(2) > li {
+      min-height: 66px; }
+      .malla-curricular.malla-curricular-info .body > ul:nth-child(2) > li:first-child {
+        background-color: #344c81; }
+    .malla-curricular.malla-curricular-info .body > ul:nth-child(3) > li {
+      min-height: 64px; }
+      .malla-curricular.malla-curricular-info .body > ul:nth-child(3) > li:first-child {
+        background-color: #375088; }
+    .malla-curricular.malla-curricular-info .body > ul:nth-child(4) > li {
+      min-height: 62px; }
+      .malla-curricular.malla-curricular-info .body > ul:nth-child(4) > li:first-child {
+        background-color: #3a5590; }
+    .malla-curricular.malla-curricular-info .body > ul:nth-child(5) > li {
+      min-height: 60px; }
+      .malla-curricular.malla-curricular-info .body > ul:nth-child(5) > li:first-child {
+        background-color: #3d5997; }
+    .malla-curricular.malla-curricular-info .body > ul:nth-child(6) > li {
+      min-height: 58px; }
+      .malla-curricular.malla-curricular-info .body > ul:nth-child(6) > li:first-child {
+        background-color: #405d9f; }
+    .malla-curricular.malla-curricular-info .body > ul:nth-child(7) > li {
+      min-height: 56px; }
+      .malla-curricular.malla-curricular-info .body > ul:nth-child(7) > li:first-child {
+        background-color: #4362a6; }
+    .malla-curricular.malla-curricular-info .body > ul:nth-child(8) > li {
+      min-height: 54px; }
+      .malla-curricular.malla-curricular-info .body > ul:nth-child(8) > li:first-child {
+        background-color: #4666ae; }
+    .malla-curricular.malla-curricular-info .body > ul:nth-child(9) > li {
+      min-height: 52px; }
+      .malla-curricular.malla-curricular-info .body > ul:nth-child(9) > li:first-child {
+        background-color: #496bb5; }
+    .malla-curricular.malla-curricular-info .body > ul:nth-child(10) > li {
+      min-height: 50px; }
+      .malla-curricular.malla-curricular-info .body > ul:nth-child(10) > li:first-child {
+        background-color: #5071b9; }
+.malla-curricular.malla-curricular-warning .body {
+  border-top: 3px solid #F4D333;
+  margin-top: 3px; }
+  .malla-curricular.malla-curricular-warning .body > ul {
+    padding-left: 0;
+    list-style: none;
+    margin: 0; }
+    .malla-curricular.malla-curricular-warning .body > ul:before, .malla-curricular.malla-curricular-warning .body > ul:after {
+      content: " ";
+      display: table; }
+    .malla-curricular.malla-curricular-warning .body > ul:after {
+      clear: both; }
+    .malla-curricular.malla-curricular-warning .body > ul > li {
+      float: left;
+      padding-left: 7px; }
+      .malla-curricular.malla-curricular-warning .body > ul > li:first-child {
+        width: 39px; }
+      .malla-curricular.malla-curricular-warning .body > ul > li:last-child {
+        padding-top: 7px; }
+    .malla-curricular.malla-curricular-warning .body > ul:nth-child(1) > li {
+      min-height: 68px; }
+      .malla-curricular.malla-curricular-warning .body > ul:nth-child(1) > li:first-child {
+        background-color: #f4d439; }
+    .malla-curricular.malla-curricular-warning .body > ul:nth-child(2) > li {
+      min-height: 66px; }
+      .malla-curricular.malla-curricular-warning .body > ul:nth-child(2) > li:first-child {
+        background-color: #f5d63f; }
+    .malla-curricular.malla-curricular-warning .body > ul:nth-child(3) > li {
+      min-height: 64px; }
+      .malla-curricular.malla-curricular-warning .body > ul:nth-child(3) > li:first-child {
+        background-color: #f5d745; }
+    .malla-curricular.malla-curricular-warning .body > ul:nth-child(4) > li {
+      min-height: 62px; }
+      .malla-curricular.malla-curricular-warning .body > ul:nth-child(4) > li:first-child {
+        background-color: #f5d84b; }
+    .malla-curricular.malla-curricular-warning .body > ul:nth-child(5) > li {
+      min-height: 60px; }
+      .malla-curricular.malla-curricular-warning .body > ul:nth-child(5) > li:first-child {
+        background-color: #f6da52; }
+    .malla-curricular.malla-curricular-warning .body > ul:nth-child(6) > li {
+      min-height: 58px; }
+      .malla-curricular.malla-curricular-warning .body > ul:nth-child(6) > li:first-child {
+        background-color: #f6db58; }
+    .malla-curricular.malla-curricular-warning .body > ul:nth-child(7) > li {
+      min-height: 56px; }
+      .malla-curricular.malla-curricular-warning .body > ul:nth-child(7) > li:first-child {
+        background-color: #f6dc5e; }
+    .malla-curricular.malla-curricular-warning .body > ul:nth-child(8) > li {
+      min-height: 54px; }
+      .malla-curricular.malla-curricular-warning .body > ul:nth-child(8) > li:first-child {
+        background-color: #f7de64; }
+    .malla-curricular.malla-curricular-warning .body > ul:nth-child(9) > li {
+      min-height: 52px; }
+      .malla-curricular.malla-curricular-warning .body > ul:nth-child(9) > li:first-child {
+        background-color: #f7df6a; }
+    .malla-curricular.malla-curricular-warning .body > ul:nth-child(10) > li {
+      min-height: 50px; }
+      .malla-curricular.malla-curricular-warning .body > ul:nth-child(10) > li:first-child {
+        background-color: #f7e070; }
+.malla-curricular.malla-curricular-danger .body {
+  border-top: 3px solid #DD5341;
+  margin-top: 3px; }
+  .malla-curricular.malla-curricular-danger .body > ul {
+    padding-left: 0;
+    list-style: none;
+    margin: 0; }
+    .malla-curricular.malla-curricular-danger .body > ul:before, .malla-curricular.malla-curricular-danger .body > ul:after {
+      content: " ";
+      display: table; }
+    .malla-curricular.malla-curricular-danger .body > ul:after {
+      clear: both; }
+    .malla-curricular.malla-curricular-danger .body > ul > li {
+      float: left;
+      padding-left: 7px; }
+      .malla-curricular.malla-curricular-danger .body > ul > li:first-child {
+        width: 39px; }
+      .malla-curricular.malla-curricular-danger .body > ul > li:last-child {
+        padding-top: 7px; }
+    .malla-curricular.malla-curricular-danger .body > ul:nth-child(1) > li {
+      min-height: 68px; }
+      .malla-curricular.malla-curricular-danger .body > ul:nth-child(1) > li:first-child {
+        background-color: #de5847; }
+    .malla-curricular.malla-curricular-danger .body > ul:nth-child(2) > li {
+      min-height: 66px; }
+      .malla-curricular.malla-curricular-danger .body > ul:nth-child(2) > li:first-child {
+        background-color: #df5d4c; }
+    .malla-curricular.malla-curricular-danger .body > ul:nth-child(3) > li {
+      min-height: 64px; }
+      .malla-curricular.malla-curricular-danger .body > ul:nth-child(3) > li:first-child {
+        background-color: #e06252; }
+    .malla-curricular.malla-curricular-danger .body > ul:nth-child(4) > li {
+      min-height: 62px; }
+      .malla-curricular.malla-curricular-danger .body > ul:nth-child(4) > li:first-child {
+        background-color: #e16858; }
+    .malla-curricular.malla-curricular-danger .body > ul:nth-child(5) > li {
+      min-height: 60px; }
+      .malla-curricular.malla-curricular-danger .body > ul:nth-child(5) > li:first-child {
+        background-color: #e26d5d; }
+    .malla-curricular.malla-curricular-danger .body > ul:nth-child(6) > li {
+      min-height: 58px; }
+      .malla-curricular.malla-curricular-danger .body > ul:nth-child(6) > li:first-child {
+        background-color: #e37263; }
+    .malla-curricular.malla-curricular-danger .body > ul:nth-child(7) > li {
+      min-height: 56px; }
+      .malla-curricular.malla-curricular-danger .body > ul:nth-child(7) > li:first-child {
+        background-color: #e47769; }
+    .malla-curricular.malla-curricular-danger .body > ul:nth-child(8) > li {
+      min-height: 54px; }
+      .malla-curricular.malla-curricular-danger .body > ul:nth-child(8) > li:first-child {
+        background-color: #e57c6f; }
+    .malla-curricular.malla-curricular-danger .body > ul:nth-child(9) > li {
+      min-height: 52px; }
+      .malla-curricular.malla-curricular-danger .body > ul:nth-child(9) > li:first-child {
+        background-color: #e68174; }
+    .malla-curricular.malla-curricular-danger .body > ul:nth-child(10) > li {
+      min-height: 50px; }
+      .malla-curricular.malla-curricular-danger .body > ul:nth-child(10) > li:first-child {
+        background-color: #e7877a; }
+.malla-curricular.malla-curricular-blue-darker .body {
+  border-top: 3px solid #00a7d7;
+  margin-top: 3px; }
+  .malla-curricular.malla-curricular-blue-darker .body > ul {
+    padding-left: 0;
+    list-style: none;
+    margin: 0; }
+    .malla-curricular.malla-curricular-blue-darker .body > ul:before, .malla-curricular.malla-curricular-blue-darker .body > ul:after {
+      content: " ";
+      display: table; }
+    .malla-curricular.malla-curricular-blue-darker .body > ul:after {
+      clear: both; }
+    .malla-curricular.malla-curricular-blue-darker .body > ul > li {
+      float: left;
+      padding-left: 7px; }
+      .malla-curricular.malla-curricular-blue-darker .body > ul > li:first-child {
+        width: 39px; }
+      .malla-curricular.malla-curricular-blue-darker .body > ul > li:last-child {
+        padding-top: 7px; }
+    .malla-curricular.malla-curricular-blue-darker .body > ul:nth-child(1) > li {
+      min-height: 68px; }
+      .malla-curricular.malla-curricular-blue-darker .body > ul:nth-child(1) > li:first-child {
+        background-color: #00aee0; }
+    .malla-curricular.malla-curricular-blue-darker .body > ul:nth-child(2) > li {
+      min-height: 66px; }
+      .malla-curricular.malla-curricular-blue-darker .body > ul:nth-child(2) > li:first-child {
+        background-color: #00b5e9; }
+    .malla-curricular.malla-curricular-blue-darker .body > ul:nth-child(3) > li {
+      min-height: 64px; }
+      .malla-curricular.malla-curricular-blue-darker .body > ul:nth-child(3) > li:first-child {
+        background-color: #00bcf2; }
+    .malla-curricular.malla-curricular-blue-darker .body > ul:nth-child(4) > li {
+      min-height: 62px; }
+      .malla-curricular.malla-curricular-blue-darker .body > ul:nth-child(4) > li:first-child {
+        background-color: #00c2fa; }
+    .malla-curricular.malla-curricular-blue-darker .body > ul:nth-child(5) > li {
+      min-height: 60px; }
+      .malla-curricular.malla-curricular-blue-darker .body > ul:nth-child(5) > li:first-child {
+        background-color: #04c7ff; }
+    .malla-curricular.malla-curricular-blue-darker .body > ul:nth-child(6) > li {
+      min-height: 58px; }
+      .malla-curricular.malla-curricular-blue-darker .body > ul:nth-child(6) > li:first-child {
+        background-color: #0dc9ff; }
+    .malla-curricular.malla-curricular-blue-darker .body > ul:nth-child(7) > li {
+      min-height: 56px; }
+      .malla-curricular.malla-curricular-blue-darker .body > ul:nth-child(7) > li:first-child {
+        background-color: #16cbff; }
+    .malla-curricular.malla-curricular-blue-darker .body > ul:nth-child(8) > li {
+      min-height: 54px; }
+      .malla-curricular.malla-curricular-blue-darker .body > ul:nth-child(8) > li:first-child {
+        background-color: #1fcdff; }
+    .malla-curricular.malla-curricular-blue-darker .body > ul:nth-child(9) > li {
+      min-height: 52px; }
+      .malla-curricular.malla-curricular-blue-darker .body > ul:nth-child(9) > li:first-child {
+        background-color: #28cfff; }
+    .malla-curricular.malla-curricular-blue-darker .body > ul:nth-child(10) > li {
+      min-height: 50px; }
+      .malla-curricular.malla-curricular-blue-darker .body > ul:nth-child(10) > li:first-child {
+        background-color: #31d1ff; }
+.malla-curricular.malla-curricular-blue-dark .body {
+  border-top: 3px solid #43d5ff;
+  margin-top: 3px; }
+  .malla-curricular.malla-curricular-blue-dark .body > ul {
+    padding-left: 0;
+    list-style: none;
+    margin: 0; }
+    .malla-curricular.malla-curricular-blue-dark .body > ul:before, .malla-curricular.malla-curricular-blue-dark .body > ul:after {
+      content: " ";
+      display: table; }
+    .malla-curricular.malla-curricular-blue-dark .body > ul:after {
+      clear: both; }
+    .malla-curricular.malla-curricular-blue-dark .body > ul > li {
+      float: left;
+      padding-left: 7px; }
+      .malla-curricular.malla-curricular-blue-dark .body > ul > li:first-child {
+        width: 39px; }
+      .malla-curricular.malla-curricular-blue-dark .body > ul > li:last-child {
+        padding-top: 7px; }
+    .malla-curricular.malla-curricular-blue-dark .body > ul:nth-child(1) > li {
+      min-height: 68px; }
+      .malla-curricular.malla-curricular-blue-dark .body > ul:nth-child(1) > li:first-child {
+        background-color: #49d6ff; }
+    .malla-curricular.malla-curricular-blue-dark .body > ul:nth-child(2) > li {
+      min-height: 66px; }
+      .malla-curricular.malla-curricular-blue-dark .body > ul:nth-child(2) > li:first-child {
+        background-color: #4ed8ff; }
+    .malla-curricular.malla-curricular-blue-dark .body > ul:nth-child(3) > li {
+      min-height: 64px; }
+      .malla-curricular.malla-curricular-blue-dark .body > ul:nth-child(3) > li:first-child {
+        background-color: #54d9ff; }
+    .malla-curricular.malla-curricular-blue-dark .body > ul:nth-child(4) > li {
+      min-height: 62px; }
+      .malla-curricular.malla-curricular-blue-dark .body > ul:nth-child(4) > li:first-child {
+        background-color: #5adaff; }
+    .malla-curricular.malla-curricular-blue-dark .body > ul:nth-child(5) > li {
+      min-height: 60px; }
+      .malla-curricular.malla-curricular-blue-dark .body > ul:nth-child(5) > li:first-child {
+        background-color: #5fdbff; }
+    .malla-curricular.malla-curricular-blue-dark .body > ul:nth-child(6) > li {
+      min-height: 58px; }
+      .malla-curricular.malla-curricular-blue-dark .body > ul:nth-child(6) > li:first-child {
+        background-color: #65ddff; }
+    .malla-curricular.malla-curricular-blue-dark .body > ul:nth-child(7) > li {
+      min-height: 56px; }
+      .malla-curricular.malla-curricular-blue-dark .body > ul:nth-child(7) > li:first-child {
+        background-color: #6bdeff; }
+    .malla-curricular.malla-curricular-blue-dark .body > ul:nth-child(8) > li {
+      min-height: 54px; }
+      .malla-curricular.malla-curricular-blue-dark .body > ul:nth-child(8) > li:first-child {
+        background-color: #70dfff; }
+    .malla-curricular.malla-curricular-blue-dark .body > ul:nth-child(9) > li {
+      min-height: 52px; }
+      .malla-curricular.malla-curricular-blue-dark .body > ul:nth-child(9) > li:first-child {
+        background-color: #76e0ff; }
+    .malla-curricular.malla-curricular-blue-dark .body > ul:nth-child(10) > li {
+      min-height: 50px; }
+      .malla-curricular.malla-curricular-blue-dark .body > ul:nth-child(10) > li:first-child {
+        background-color: #7be2ff; }
+.malla-curricular.malla-curricular-blue .body {
+  border-top: 3px solid #8be5ff;
+  margin-top: 3px; }
+  .malla-curricular.malla-curricular-blue .body > ul {
+    padding-left: 0;
+    list-style: none;
+    margin: 0; }
+    .malla-curricular.malla-curricular-blue .body > ul:before, .malla-curricular.malla-curricular-blue .body > ul:after {
+      content: " ";
+      display: table; }
+    .malla-curricular.malla-curricular-blue .body > ul:after {
+      clear: both; }
+    .malla-curricular.malla-curricular-blue .body > ul > li {
+      float: left;
+      padding-left: 7px; }
+      .malla-curricular.malla-curricular-blue .body > ul > li:first-child {
+        width: 39px; }
+      .malla-curricular.malla-curricular-blue .body > ul > li:last-child {
+        padding-top: 7px; }
+    .malla-curricular.malla-curricular-blue .body > ul:nth-child(1) > li {
+      min-height: 68px; }
+      .malla-curricular.malla-curricular-blue .body > ul:nth-child(1) > li:first-child {
+        background-color: #8ee6ff; }
+    .malla-curricular.malla-curricular-blue .body > ul:nth-child(2) > li {
+      min-height: 66px; }
+      .malla-curricular.malla-curricular-blue .body > ul:nth-child(2) > li:first-child {
+        background-color: #91e7ff; }
+    .malla-curricular.malla-curricular-blue .body > ul:nth-child(3) > li {
+      min-height: 64px; }
+      .malla-curricular.malla-curricular-blue .body > ul:nth-child(3) > li:first-child {
+        background-color: #95e7ff; }
+    .malla-curricular.malla-curricular-blue .body > ul:nth-child(4) > li {
+      min-height: 62px; }
+      .malla-curricular.malla-curricular-blue .body > ul:nth-child(4) > li:first-child {
+        background-color: #98e8ff; }
+    .malla-curricular.malla-curricular-blue .body > ul:nth-child(5) > li {
+      min-height: 60px; }
+      .malla-curricular.malla-curricular-blue .body > ul:nth-child(5) > li:first-child {
+        background-color: #9ce9ff; }
+    .malla-curricular.malla-curricular-blue .body > ul:nth-child(6) > li {
+      min-height: 58px; }
+      .malla-curricular.malla-curricular-blue .body > ul:nth-child(6) > li:first-child {
+        background-color: #9feaff; }
+    .malla-curricular.malla-curricular-blue .body > ul:nth-child(7) > li {
+      min-height: 56px; }
+      .malla-curricular.malla-curricular-blue .body > ul:nth-child(7) > li:first-child {
+        background-color: #a3eaff; }
+    .malla-curricular.malla-curricular-blue .body > ul:nth-child(8) > li {
+      min-height: 54px; }
+      .malla-curricular.malla-curricular-blue .body > ul:nth-child(8) > li:first-child {
+        background-color: #a6ebff; }
+    .malla-curricular.malla-curricular-blue .body > ul:nth-child(9) > li {
+      min-height: 52px; }
+      .malla-curricular.malla-curricular-blue .body > ul:nth-child(9) > li:first-child {
+        background-color: #aaecff; }
+    .malla-curricular.malla-curricular-blue .body > ul:nth-child(10) > li {
+      min-height: 50px; }
+      .malla-curricular.malla-curricular-blue .body > ul:nth-child(10) > li:first-child {
+        background-color: #adedff; }
+.malla-curricular.malla-curricular-blue-light .body {
+  border-top: 3px solid white;
+  margin-top: 3px; }
+  .malla-curricular.malla-curricular-blue-light .body > ul {
+    padding-left: 0;
+    list-style: none;
+    margin: 0; }
+    .malla-curricular.malla-curricular-blue-light .body > ul:before, .malla-curricular.malla-curricular-blue-light .body > ul:after {
+      content: " ";
+      display: table; }
+    .malla-curricular.malla-curricular-blue-light .body > ul:after {
+      clear: both; }
+    .malla-curricular.malla-curricular-blue-light .body > ul > li {
+      float: left;
+      padding-left: 7px; }
+      .malla-curricular.malla-curricular-blue-light .body > ul > li:first-child {
+        width: 39px; }
+      .malla-curricular.malla-curricular-blue-light .body > ul > li:last-child {
+        padding-top: 7px; }
+    .malla-curricular.malla-curricular-blue-light .body > ul:nth-child(1) > li {
+      min-height: 68px; }
+      .malla-curricular.malla-curricular-blue-light .body > ul:nth-child(1) > li:first-child {
+        background-color: white; }
+    .malla-curricular.malla-curricular-blue-light .body > ul:nth-child(2) > li {
+      min-height: 66px; }
+      .malla-curricular.malla-curricular-blue-light .body > ul:nth-child(2) > li:first-child {
+        background-color: white; }
+    .malla-curricular.malla-curricular-blue-light .body > ul:nth-child(3) > li {
+      min-height: 64px; }
+      .malla-curricular.malla-curricular-blue-light .body > ul:nth-child(3) > li:first-child {
+        background-color: white; }
+    .malla-curricular.malla-curricular-blue-light .body > ul:nth-child(4) > li {
+      min-height: 62px; }
+      .malla-curricular.malla-curricular-blue-light .body > ul:nth-child(4) > li:first-child {
+        background-color: white; }
+    .malla-curricular.malla-curricular-blue-light .body > ul:nth-child(5) > li {
+      min-height: 60px; }
+      .malla-curricular.malla-curricular-blue-light .body > ul:nth-child(5) > li:first-child {
+        background-color: white; }
+    .malla-curricular.malla-curricular-blue-light .body > ul:nth-child(6) > li {
+      min-height: 58px; }
+      .malla-curricular.malla-curricular-blue-light .body > ul:nth-child(6) > li:first-child {
+        background-color: white; }
+    .malla-curricular.malla-curricular-blue-light .body > ul:nth-child(7) > li {
+      min-height: 56px; }
+      .malla-curricular.malla-curricular-blue-light .body > ul:nth-child(7) > li:first-child {
+        background-color: white; }
+    .malla-curricular.malla-curricular-blue-light .body > ul:nth-child(8) > li {
+      min-height: 54px; }
+      .malla-curricular.malla-curricular-blue-light .body > ul:nth-child(8) > li:first-child {
+        background-color: white; }
+    .malla-curricular.malla-curricular-blue-light .body > ul:nth-child(9) > li {
+      min-height: 52px; }
+      .malla-curricular.malla-curricular-blue-light .body > ul:nth-child(9) > li:first-child {
+        background-color: white; }
+    .malla-curricular.malla-curricular-blue-light .body > ul:nth-child(10) > li {
+      min-height: 50px; }
+      .malla-curricular.malla-curricular-blue-light .body > ul:nth-child(10) > li:first-child {
+        background-color: white; }
+.malla-curricular.malla-curricular-blue-lighter .body {
+  border-top: 3px solid white;
+  margin-top: 3px; }
+  .malla-curricular.malla-curricular-blue-lighter .body > ul {
+    padding-left: 0;
+    list-style: none;
+    margin: 0; }
+    .malla-curricular.malla-curricular-blue-lighter .body > ul:before, .malla-curricular.malla-curricular-blue-lighter .body > ul:after {
+      content: " ";
+      display: table; }
+    .malla-curricular.malla-curricular-blue-lighter .body > ul:after {
+      clear: both; }
+    .malla-curricular.malla-curricular-blue-lighter .body > ul > li {
+      float: left;
+      padding-left: 7px; }
+      .malla-curricular.malla-curricular-blue-lighter .body > ul > li:first-child {
+        width: 39px; }
+      .malla-curricular.malla-curricular-blue-lighter .body > ul > li:last-child {
+        padding-top: 7px; }
+    .malla-curricular.malla-curricular-blue-lighter .body > ul:nth-child(1) > li {
+      min-height: 68px; }
+      .malla-curricular.malla-curricular-blue-lighter .body > ul:nth-child(1) > li:first-child {
+        background-color: white; }
+    .malla-curricular.malla-curricular-blue-lighter .body > ul:nth-child(2) > li {
+      min-height: 66px; }
+      .malla-curricular.malla-curricular-blue-lighter .body > ul:nth-child(2) > li:first-child {
+        background-color: white; }
+    .malla-curricular.malla-curricular-blue-lighter .body > ul:nth-child(3) > li {
+      min-height: 64px; }
+      .malla-curricular.malla-curricular-blue-lighter .body > ul:nth-child(3) > li:first-child {
+        background-color: white; }
+    .malla-curricular.malla-curricular-blue-lighter .body > ul:nth-child(4) > li {
+      min-height: 62px; }
+      .malla-curricular.malla-curricular-blue-lighter .body > ul:nth-child(4) > li:first-child {
+        background-color: white; }
+    .malla-curricular.malla-curricular-blue-lighter .body > ul:nth-child(5) > li {
+      min-height: 60px; }
+      .malla-curricular.malla-curricular-blue-lighter .body > ul:nth-child(5) > li:first-child {
+        background-color: white; }
+    .malla-curricular.malla-curricular-blue-lighter .body > ul:nth-child(6) > li {
+      min-height: 58px; }
+      .malla-curricular.malla-curricular-blue-lighter .body > ul:nth-child(6) > li:first-child {
+        background-color: white; }
+    .malla-curricular.malla-curricular-blue-lighter .body > ul:nth-child(7) > li {
+      min-height: 56px; }
+      .malla-curricular.malla-curricular-blue-lighter .body > ul:nth-child(7) > li:first-child {
+        background-color: white; }
+    .malla-curricular.malla-curricular-blue-lighter .body > ul:nth-child(8) > li {
+      min-height: 54px; }
+      .malla-curricular.malla-curricular-blue-lighter .body > ul:nth-child(8) > li:first-child {
+        background-color: white; }
+    .malla-curricular.malla-curricular-blue-lighter .body > ul:nth-child(9) > li {
+      min-height: 52px; }
+      .malla-curricular.malla-curricular-blue-lighter .body > ul:nth-child(9) > li:first-child {
+        background-color: white; }
+    .malla-curricular.malla-curricular-blue-lighter .body > ul:nth-child(10) > li {
+      min-height: 50px; }
+      .malla-curricular.malla-curricular-blue-lighter .body > ul:nth-child(10) > li:first-child {
+        background-color: white; }
+
 .list-carreras > li:hover {
   cursor: pointer; }
   .list-carreras > li:hover i,
