@@ -1,0 +1,33 @@
+.light-blue {
+  color: #3cc1e0;
+}
+.gray {
+  color: #888;
+}
+.center {
+  text-align: center;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.clear {
+  clear: both;
+}
+.hide {
+  display: none;
+}
+.block {
+  display: block;
+}
+.light {
+  font-weight: 300;
+}
+.normal {
+  font-weight: normal;
+}
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}

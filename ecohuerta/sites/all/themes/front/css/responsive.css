@@ -1,0 +1,748 @@
+
+@media screen and (max-width: 1550px){
+
+    .nav-point{
+        right: 12px;
+    }
+    #retos-ingenieria .container{
+        width: 72%;
+    }
+    .menu-boxes-default{
+        width: 100%;
+    }
+    .menu-boxes-default .menu{
+        width: 96%;
+        display: inline-block;
+    }
+    .menu-boxes-default .box .overlay{
+        top: 80%;
+    }
+    .menu-boxes-default .box{
+        margin:0.5%;
+        width: 32%;
+    }
+    .box:hover .overlay {
+        top: 0 !important;
+    }
+    .menu-boxes-default .box .description p{
+        font-size: 80%;
+    }
+    .box .description p {
+        padding: 18% 1.5em 0;
+    }
+    .menu-boxes-default h1.title{
+        padding: 15px 0;
+    }
+    .nav-point-text {
+        min-width: 140px;
+    }
+    .menu-boxes-responsive .bx-wrapper .bx-controls-direction a{
+        z-index: 9;
+    }
+}
+@media screen and (max-width: 1350px){
+
+    .menu-boxes-default .box .description p{
+        font-size: 81%;
+    }
+}
+@media screen and (max-width: 1150px){
+
+    .menu-boxes-default .menu{
+        width: 700px;
+    }
+    .box .description p {
+        padding: 45px 1.5em 0;
+    }
+    .menu-boxes-default .box .overlay{
+        top: 104px;
+    }
+    .menu-boxes-default .box{
+        margin:1px 1px;
+        width: 230px;
+    }
+    /*.menu-boxes-default .box .description p{
+        font-size: 52%;
+    }*/
+    .box .overlay{
+        font-size: 14px;
+    }
+
+}
+@media screen and (max-width: 1100px){
+    html, body{
+        height: auto;
+        overflow: auto !important;
+    }
+    .nav-point{
+        display: none;
+    }
+    #retos-ingenieria .box .description p{
+        font-size: 80%;
+    }
+    .icon-triangle{
+        display: none !important;
+    }
+    .menu-boxes-responsive{
+        display: block;
+    }
+    .menu-boxes-default{
+        display: none;
+    }
+    .menu-boxes-responsive .box .overlay{
+        top: 148px;
+    }
+    .menu-boxes-responsive .box{
+
+    }
+    #retos-ingenieria .header{
+        width: 100%;
+    }
+    #tu-solucion > .container > .header{
+        padding-top: 2px;
+    }
+    .big-title {
+      font-size: 2.5rem;
+    }
+
+    /******************************************************************
+    * menu nuevo
+    ******************************************************************/
+    nav.primary {
+        display: none;
+    }
+    .header-fixed-barra{
+        background: none repeat scroll 0 0 black;
+        display: inline-block;
+        width: 100%;
+    }
+    #logo {
+        position: relative;
+        float: left;
+        top: 0px;
+        left: 0;
+        padding: 1% 1% 0.5% 2%;
+        max-width: 300px;
+    }
+    .submenu-content-responsive{
+        background: none repeat scroll 0 0 black;
+        border-color: #3cc1e0;
+        border-left: 1px solid #3cc1e0;
+        border-right: 1px solid #3cc1e0;
+        border-style: solid;
+        border-width: 1px;
+        margin: -4px 0 0;
+        width: 100%;
+        position: absolute;
+        z-index: 9999;
+        right: 0;
+    }
+    .submenu-single:hover, .submenu-single:active, .submenu-single:active{
+        /*background: url("/assets/images/bg-lightblue.png") repeat scroll 0 0;*/
+    }
+    .submenu-single{
+        border-bottom: 1px solid #3cc1e0;
+        padding: 3%;
+        text-align: right;
+    }
+    .link-menu-primary .submenu-single{
+        color: #000;
+        font-weight: bold;
+        background-color: #3cc1e0;
+        border-bottom: 1px solid #000;
+    }
+    .active-menu-responsive{
+        display: block;
+    }
+    .nav-login{
+        display: none;
+    }
+    ul.menu > .dropdown > ul.submenu {
+        margin: 0;
+        padding: 0;
+        display: none;
+        list-style: none;
+    }
+    ul.menu > .dropdown.active > ul.submenu {
+        display: block;
+    }
+    .navbar-toggle .icon-bar{
+        border-radius: 1px;
+        display: block;
+        height: 2px;
+        width: 22px;
+        background: white;
+        cursor: pointer;
+    }
+    .navbar-toggle .icon-bar + .icon-bar{
+        margin-top: 4px;
+    }
+    .navbar-toggle{
+        background-color: transparent;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        float: right;
+        padding: 9px 10px;
+        position: relative;
+    }
+    .menu-responsive{
+        background: #3cc1e0;
+        display: inline-block !important;
+        padding: 9px 6px;
+        position: relative;
+        z-index: 10000;
+    }
+
+    .navbar-toggle{
+        margin: 3% 4% 0 0;
+    }
+    .submenu-single{
+        padding: 1.5% 3%;
+    }
+
+    .submit-login{
+        position: relative;
+        top: 20px;
+    }
+    /******************************************************************
+    * menu nuevo
+    ******************************************************************/
+
+    /******************************************************************
+    * carrusel de imagenes solo 1
+    ******************************************************************/
+    #retos-ingenieria .bx-wrapper{
+        text-align: center;
+    }
+    #retos-ingenieria .bx-wrapper .bx-viewport{
+        display: inline-block;
+    }
+    #retos-ingenieria .bx-wrapper{
+        width: 304px;
+    }
+    #retos-ingenieria .box{
+        margin:0 0.5px;
+    }
+    /******************************************************************
+    * carrusel de imagenes solo 1
+    ******************************************************************/
+    /******************************************************************
+    * ancla en responsive
+    ******************************************************************/
+    #tu-solucion-r,
+    .responsive-fix,
+    #retos-ingenieria-r,
+    #iniciativas-utec-r {
+        top:-75px;
+        position: relative;
+    }
+    #equipos-r,
+    #votacion-r {
+        top: -30px;
+    }
+    #las-causas-r {
+        top: 30px;
+    }
+    #que-haremos-r {
+        top: 10px;
+    }
+    #tu-solucion {
+        height: auto !important;
+        padding: 0 0 20% 2% !important;
+    }
+
+}
+@media screen and (max-width: 1024px){
+
+    /******************************************************************
+    * bloque 1
+    ******************************************************************/
+    #iniciativas-utec .container{
+        width: 100%;
+    }
+    #iniciativas-utec .container > .header > h3{
+        font-size: 18px !important;
+    }
+    #iniciativas-utec .container > .header > p{
+        font-size: 19px !important;
+    }
+
+    #retos-ingenieria .container > .header > h3{
+        font-size: 18px !important;
+    }
+    #retos-ingenieria .container > .header > p{
+        font-size: 19px !important;
+    }
+    .container > .header > p{
+        line-height: 0.2;
+    }
+    #retos-ingenieria h1.title{
+        margin: 14px 0;
+    }
+    h1.title{
+        font-size: 17px;
+    }
+    .control-group{
+        margin-bottom: 8px;
+    }
+    #tu-solucion form label{
+        margin-top: 0;
+    }
+    #tu-solucion .control-group-category{
+        margin-bottom: 8px;
+    }
+    #tu-solucion .container > .header > p{
+        line-height: 1;
+    }
+
+    /******************************************************************
+    * Team List
+    ******************************************************************/
+    .team-list .team:first-child {
+      margin-left: 0;
+      margin-right: 8%;
+    }
+    .team-list .team.last {
+      margin-left: 8%;
+      margin-right: 0;
+    }
+}
+
+@media (max-width : 800px){
+    /******************************************************************
+    * bloque 1
+    ******************************************************************/
+
+    .nav-login li {
+        padding: 2% 0;
+    }
+    .nav-login{
+        position: relative;
+        float: right;
+        right: 5%;
+        top: 0px;
+        max-width: 59%;
+        padding: 1% 3% 0.5% 0 !important;
+        right: 0;
+    }
+    #retos-ingenieria .container{
+        width: 90%;
+    }
+    #iniciativas-utec .container{
+        width: 90%;
+    }
+    .header-fixed{
+        display: inline-block;
+        background: transparent;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        top: 0;
+    }
+    #logo {
+        width: 80%;
+    }
+
+    ul.tabs li a{
+        padding: 0.75em 0.5em;
+    }
+    #retos-ingenieria{
+        padding: 0 0 5%;
+        /*height: auto !important;*/
+    margin-top: 60px;
+    }
+    #iniciativas-utec{
+        padding: 0 0 5%;
+        height: auto !important;
+        margin-top: 60px;
+    }
+    #ingenio-en-accion{
+        padding: 38% 0 14%;
+        height: auto !important;
+    }
+
+    #retos-ingenieria .bx-controls-auto{
+        display: none;
+    }
+
+    #retos-ingenieria .box{
+        margin:0 0.1px;
+    }
+
+    /******************************************************************
+    * corregir centrado de contenidos con youtube
+    ******************************************************************/
+    #iniciativas-utec ul.tabs{
+        width: 100%;
+        display: inline-block;
+    }
+    #iniciativas-utec .tab-content-container{
+        width: auto;
+        display: inline-block;
+        max-width: 300px;
+    }
+    #iniciativas-utec .tabs-container{
+        text-align: center;
+    }
+    /******************************************************************
+    * corregir centrado de contenidos con youtube
+    ******************************************************************/
+    .container > .header{
+        padding: none;
+    }
+    #tu-solucion{
+        padding: 0 2%;
+        height: auto !important;
+    }
+    .container > .header{
+        padding-top: 1.5% !important;
+    margin-top: 1em;
+    }
+    #retos-ingenieria .container{
+        margin-bottom: 7%;
+    }
+
+    /******************************************************************
+    * Accordion
+    ******************************************************************/
+    #accordion-outside .controls {
+      display: block;
+    }
+    .accordion > .slide:not(.disabled) {
+      opacity: 1;
+    }
+
+    /******************************************************************
+    * Marea
+    ******************************************************************/
+    #las-causas .header,
+    #que-haremos .header {
+      padding-top: 120px !important;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #template-modal-success .title {
+        line-height: 24px;
+    }
+    #template-modal-success p {
+        padding: 0 !important;
+    }
+    #template-modal-success p span {
+        display: block;
+        text-align: center;
+        margin: 0 auto 10px auto !important;
+    }
+    #template-modal-success p > iframe {
+        width: 95px !important;
+    }
+    .modal-alone {
+
+    }
+    ul.tabs li{
+        border: none;
+    }
+    ul.tabs li.active.first {
+    }
+    .fb-login {
+        background-position: center;
+        width: 154px;
+    }
+    .siguenos-text{
+        display: none !important;
+    }
+    #ingenio-en-accion{
+        padding: 38% 0 14%;
+    }
+    #ingenio-en-accion{
+        height: 500px !important;
+        padding: 0 !important;
+    }
+    .nav-login {
+        max-width: 100%;
+        float: right;
+    }
+    .six.columns{
+        width: 68%;
+    }
+    .content-iniciativa{
+        width: 100%;
+        padding: 1% 0 6% 1%;
+    }
+    .content-iniciativa .six.columns{
+        width: 100%;
+    }
+    #iniciativas .container > .header{
+        width: 85%;
+        padding: 60px 0
+    }
+    .nav-horizontal li {
+        font-size: 15px;
+    }
+    h1.title{
+        font-size: 119%;
+    }
+    .slide-text p{
+        font-size: 17px;
+    }
+    .tabs li{
+        padding: 0 3%;
+    }
+    .text-content p{
+        font-size: 80%;
+        margin: 2% 0;
+    }
+    .slide.slide-text {
+        padding: 0 22% !important
+    }
+    #iniciativas-utec .backstretch, #iniciativas-utec .backstretch img{
+        height: 900px !important;
+    }
+
+    /******************************************************************
+    * Video List
+    ******************************************************************/
+    .video-list-container {
+        padding: 0;
+        position: static;
+        margin-top: 15px;
+    }
+    .video-list-container .container {
+        width: 100%;
+    }
+    .video-list li {
+        width: 100%;
+        border-bottom: 1px solid #fff;
+    }
+    .video-list li:last-child {
+        border-bottom: none;
+    }
+    .video-list .thumb {
+        display: none;
+    }
+    .video-list .title {
+        padding: 10px;
+    }
+    .player-container .title {
+        font-size: 100%;
+    }
+    .player-container .video-player-container iframe {
+        width: auto;
+        height: 220px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .nav-login{
+        width: 100%;
+        float: left;
+    }
+    .menu-boxes-responsive .bx-controls-direction{
+        display: none;
+    }
+    .modal-alone{
+        float: left;
+    }
+    ul.tabs li a{
+        padding: 0.75em 0 !important;
+        text-decoration: underline;
+    width: 80px !important;/*agregado*/
+    }
+    ul.tabs li a:hover{
+        text-decoration: underline;
+    }
+    .modal-alone {
+        margin-left: -48%;
+        width: 97%;
+    }
+    .container{
+        width: 100%;
+    }
+    .form-container{
+        width: 91%;
+    }
+    #tu-solucion{
+        float: left;
+        padding: 40px 0 0 0;
+    }
+    .container > .header > h3{
+        font-size: 76%;
+    }
+    #las-causas .container > .header > h3,
+    #que-haremos .container > .header > h3 {
+        padding: 0 10px;
+        font-size: 100%;
+    }
+    #iniciativas-utec > .container > .header{
+        padding-bottom: 0;
+        padding-top: 18%;
+    }
+    #retos-ingenieria .container{
+        margin-bottom: 0;
+    }
+    #tu-solucion > .container > .header {
+        padding-top: 1%;
+    }
+    .control-action{
+        padding-bottom: 35%;
+    }
+
+    .nav-login-fb{
+        float: right;
+    }
+    .logout-normal{
+        display: none;
+    }
+    .logout-responsive{
+        display: inline-block !important;
+    }
+    .nav-login{
+        padding: 0 3% 0 0 !important;
+    }
+    #iniciativas-utec .tab-content-container{
+        max-width: 300px;
+    }
+    #votacion {
+        height: auto !important;
+    margin-top: 40px;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    #retos-ingenieria .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager{
+        text-align: center !important;
+        width: 100%;
+    }
+    #tu-solucion .control-action input[type="submit"]{
+        margin: 14px 0 0 0;
+    }
+    .navbar-toggle{
+        margin: 5% 4% 0 0;
+    }
+    /******************************************************************
+    * ancla en responsive
+    ******************************************************************/
+    #tu-solucion-r{
+        position: relative;
+        top:-60px;
+    }
+    #retos-ingenieria-r{
+        position: relative;
+        top:-60px;
+    }
+    #iniciativas-utec-r{
+        position: relative;
+        top:-60px;
+    }
+    section.main {
+        background-attachment: initial;
+    margin-top: 50px
+    }
+    .big-title {
+      font-size: 2rem;
+    }
+    #que-haremos > .container {
+        padding-top: 100px !important;
+    }
+
+    /******************************************************************
+    * Team List
+    ******************************************************************/
+    .team-list .team {
+        width: 100%;
+    }
+    .team-list .team,
+    .team-list .team.last,
+    .team-list .team:first-child {
+        margin: 0 auto 20px auto;
+    }
+}
+
+@media screen and (max-width: 368px){
+    .siguenos-text{
+        //display: inline-block !important;
+    }
+    #logo{
+        width: 70%;
+    }
+    *{
+        //color:white !important;
+    }
+    #iniciativas .container > .header{
+        width:71%;
+    }
+
+    #iniciativas-utec ul.tabs{
+        width: 284px;
+    }
+
+    #iniciativas-utec .tab-content-container{
+        max-width: 232px;
+    }
+
+    #tu-solucion{
+        padding: 10% 2%;
+    }
+    .container > .header > p{
+        line-height: 1;
+    }
+    .content-iniciativa .six.columns{
+    }
+    .player-container {
+        padding-top: 10px;
+    }
+    /*agregado*/
+     ul.tabs li a{
+        padding: 0.75em 0 !important;
+        text-decoration: underline;
+    width: 70px !important;
+    font-size: small;
+    }
+}
+
+@media screen and (max-width: 320px){
+    #iniciativas-utec .tab-content-container{
+        max-width: 240px;
+    }
+    #retos-ingenieria .container{
+        margin-right: 21px;
+    }
+    #text-panel-de-agua p strong {
+        font-size: 110%;
+    }
+}
+
+h1.title .medium{
+    font-size: 17px;
+}
+
+#tu-solucion .container > .header > h3{
+    font-size: 19px;
+}
+#tu-solucion .container > .header > p{
+    font-size: 17px;
+}
+#tu-solucion .container > .header .head-footer{
+    padding: 0;
+}
+
+@media screen and (max-height: 750px) {
+    .player-container .video-player-container iframe {
+        width: 500px;
+        height: 260px;
+    }
+}
+@media screen and (max-height: 700px) {
+    .player-container .video-player-container iframe {
+        width: 400px;
+        height: 220px;
+    }
+}
+@media screen and (max-height: 650px) {
+    .player-container .video-player-container iframe {
+        width: 360px;
+        height: 180px;
+    }
+}
