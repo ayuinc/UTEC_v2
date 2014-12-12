@@ -1,3 +1,5 @@
+$list-custom-height: 20%;
+
 .list-custom {
 	ul {
 		@include list-unstyled;
@@ -21,6 +23,54 @@
 			li {
 				&:before {
 					top: 9px;
+				}
+			}
+		}
+	}
+}
+
+.list-custom-left {
+	ul {
+		@include list-unstyled;
+		@include clearfix;
+		li {
+			float: left;
+			width: 100 - $list-custom-height;
+			&:first-child {
+				width: $list-custom-height;
+				height: auto;
+			}
+		}
+	}
+}
+
+// HOVER LIST 
+.list-hover {
+	> li {
+		> div {
+			// @include flex-middle-center;
+			min-height: 350px;
+			color: $gray-dark;
+			padding: $container-fluid + 7;
+			h3 {
+				min-height: 98px;
+			}
+		}
+	}
+	@for $i from 1 through length($brand-colors-list) {
+		&.list-hover-#{nth($brand-colors-sufix-list, $i)} {
+			> li {
+				&:hover {
+					background-color: #{nth($brand-colors-list, $i)};
+				}
+			}
+		}
+	}
+	@for $i from 1 through length($grayscale-list) {
+		&.list-hover-#{nth($grayscale-sufix-list, $i)} {
+			> li {
+				&:hover {
+					background-color: #{nth($grayscale-list, $i)};
 				}
 			}
 		}
