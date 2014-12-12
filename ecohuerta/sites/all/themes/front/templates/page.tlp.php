@@ -105,6 +105,11 @@
     </button>
 
     <ul class="nav nav-horizontal nav-login">
+      <li class="postular-button">
+        <a href="http://www.utec.edu.pe/admision/SitePages/Preinscripci%C3%B3n%20Examen%20de%20Admision.aspx?Tipo=Examen%20de%20Admision#.VIsOLmSG8no">
+          postular
+        </a>
+      </li>
       <li class="nav-login-fb">
         <a href="<?php print $base_path; ?>/user" class="fb-login open-window"></a>
       </li>
