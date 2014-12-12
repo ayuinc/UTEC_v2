@@ -25,6 +25,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/*ECOHUERTA*/
+.postular-button a{
+  font-size: 12px;
+  border: 1px solid;
+  padding: 3px 25px;
+  text-transform: uppercase;
+}
+
 /*AGREGADO*/
 .margen-comentario 
 {
