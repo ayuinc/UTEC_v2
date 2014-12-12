@@ -4003,7 +4003,7 @@ img.icon-utec {
 .gray-light {
   color: #bbb !important; }
 
-#noticias .banner:hover {
+.banner:hover {
   background-color: #f1f1f1; }
 
 #header, #header-on-scroll {
@@ -4473,8 +4473,8 @@ img.icon-utec {
   .list-carreras > li:hover h2 a span {
     color: #00a7d7; }
 .list-carreras > li > div i {
-  font-size: 56px;
-  font-size: 4rem;
+  font-size: 70px;
+  font-size: 5rem;
   color: #8f8d8e; }
 .list-carreras > li > div h2 span {
   color: #8f8d8e;
