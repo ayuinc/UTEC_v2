@@ -4420,6 +4420,8 @@ body {
     height: 56px; }
   .size.lg.user-card .user-info {
     min-height: 56px; }
+.size.lg i {
+  font-size: 72px; }
 .size.lg.videoBG {
   height: 560px; }
 .size.lg.hero-unit {

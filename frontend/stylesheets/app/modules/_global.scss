@@ -444,7 +444,9 @@ $video-bg-height: 420px;
 				min-height: $user-card-height + 14;
 			}
 		}
-		i {}
+		i {
+			font-size: $font-size-h3 * 3;
+		}
 		&.videoBG {
 			height: $video-bg-height + 140;
 		}
