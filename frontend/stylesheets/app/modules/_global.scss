@@ -573,3 +573,11 @@ img.icon-utec {
 	@include position(absolute, 0 0 0 0);
 	z-index: 7;
 }
+
+.gray-light {
+	color: #bbb !important;
+}
+
+.banner:hover {
+	background-color: #f1f1f1;
+}
