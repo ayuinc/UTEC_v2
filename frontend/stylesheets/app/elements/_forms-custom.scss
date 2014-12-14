@@ -99,3 +99,12 @@ textarea {
 		text-transform: uppercase;
 	}
 }
+
+.form-custom {
+	label {
+		@include light;
+		text-transform: uppercase;
+		color: $gray;
+		font-size: $font-size-h3;
+	}
+}

@@ -3954,6 +3954,14 @@ textarea:-ms-input-placeholder {
   color: #e3e3e3;
   text-transform: uppercase; }
 
+.form-custom label {
+  font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #8f8d8e;
+  font-size: 24px; }
+
 .list-custom ul {
   padding-left: 0;
   list-style: none;
@@ -3971,8 +3979,6 @@ textarea:-ms-input-placeholder {
       width: 7px;
       height: 7px;
       background-color: #00a7d7; }
-.list-custom.lead-ch ul li:before {
-  top: 9px; }
 
 .list-custom-left ul {
   padding-left: 0;
@@ -4028,6 +4034,9 @@ textarea:-ms-input-placeholder {
   background-color: #f1f1f1; }
 .list-hover.list-hover-white > li:hover {
   background-color: #fff; }
+
+.lead-ch .list-custom ul li:before, .lead-ch.list-custom ul li:before {
+  top: 12px; }
 
 .table-custom table thead tr td {
   background-color: #8f8d8e;
