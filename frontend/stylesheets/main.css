@@ -3583,6 +3583,17 @@ body {
 .section-scroll-content {
   position: relative; }
 
+.hero-unit {
+  min-height: 420px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+  .hero-unit.video-bg {
+    overflow: hidden;
+    height: 420px; }
+  .hero-unit .overlay {
+    min-height: 420px; }
+
 #section-scroll {
   position: fixed;
   top: 42%;
@@ -3853,6 +3864,12 @@ body {
     height: 28px; }
   .size.xs.user-card .user-info {
     min-height: 28px; }
+.size.xs.videoBG {
+  height: 140px; }
+.size.xs.hero-unit {
+  min-height: 140px; }
+  .size.xs.hero-unit .overlay {
+    min-height: 140px; }
 .size.sm.scroll-down i {
   font-size: 12px; }
 .size.sm.banner .banner-content,
@@ -3865,6 +3882,12 @@ body {
     height: 35px; }
   .size.sm.user-card .user-info {
     min-height: 35px; }
+.size.sm.videoBG {
+  height: 280px; }
+.size.sm.hero-unit {
+  min-height: 280px; }
+  .size.sm.hero-unit .overlay {
+    min-height: 280px; }
 .size.lg.scroll-down i {
   font-size: 24px; }
 .size.lg.banner .banner-content,
@@ -3877,6 +3900,14 @@ body {
     height: 56px; }
   .size.lg.user-card .user-info {
     min-height: 56px; }
+.size.lg i {
+  font-size: 72px; }
+.size.lg.videoBG {
+  height: 560px; }
+.size.lg.hero-unit {
+  min-height: 560px; }
+  .size.lg.hero-unit .overlay {
+    min-height: 560px; }
 .size.xl.scroll-down i {
   font-size: 36px; }
 .size.xl.banner .banner-content,
@@ -3891,6 +3922,12 @@ body {
     min-height: 63px; }
 .size.xl i {
   font-size: 108px; }
+.size.xl.videoBG {
+  height: 630px; }
+.size.xl.hero-unit {
+  min-height: 630px; }
+  .size.xl.hero-unit .overlay {
+    min-height: 630px; }
 
 .banner .banner-pic,
 .banner .banner-content {
@@ -4000,6 +4037,45 @@ img.icon-utec {
   width: 35px;
   height: auto; }
 
+.videocover {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  overflow: hidden; }
+
+.video-js {
+  position: relative !important;
+  width: 100% !important;
+  height: auto !important; }
+  .video-js .vjs-tech {
+    position: relative !important; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10; }
+
+.video-placeholder {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 7; }
+
+.gray-light {
+  color: #bbb !important; }
+
+.banner:hover {
+  background-color: #f1f1f1; }
+
 #header, #header-on-scroll {
   position: relative;
   top: 0;
@@ -4029,6 +4105,8 @@ img.icon-utec {
     #header .nav-main .right,
     #header-on-scroll .nav-main .right {
       float: right; }
+  #header .tool-bar .left .nav-list li a:hover, #header-on-scroll .tool-bar .left .nav-list li a:hover {
+    color: #595858; }
   #header .nav-main, #header-on-scroll .nav-main {
     min-height: 35px;
     background: white; }
@@ -4071,7 +4149,7 @@ img.icon-utec {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: rgba(241, 241, 241, 0.9);
+    background: rgba(241, 241, 241, 0.97);
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
@@ -4089,7 +4167,7 @@ img.icon-utec {
     #header .nav-display .nav-display-left, #header-on-scroll .nav-display .nav-display-left,
     #header .nav-display .nav-display-right,
     #header-on-scroll .nav-display .nav-display-right {
-      min-height: 350px;
+      min-height: 430px;
       width: 50%;
       display: -webkit-box;
       display: -moz-box;
@@ -4151,7 +4229,10 @@ img.icon-utec {
           #header .nav-display .nav-display-right > div ul li a, #header-on-scroll .nav-display .nav-display-right > div ul li a {
             color: #191919;
             display: block;
-            text-transform: uppercase; }
+            text-transform: uppercase;
+            border: none; }
+            #header .nav-display .nav-display-right > div ul li a:hover, #header-on-scroll .nav-display .nav-display-right > div ul li a:hover, #header .nav-display .nav-display-right > div ul li a.active, #header-on-scroll .nav-display .nav-display-right > div ul li a.active {
+              color: #02c1f5; }
             #header .nav-display .nav-display-right > div ul li a span, #header-on-scroll .nav-display .nav-display-right > div ul li a span {
               display: block;
               color: #8f8d8e; }
@@ -4388,7 +4469,7 @@ img.icon-utec {
   z-index: 3000; }
   #header-on-scroll .nav-main {
     height: 56px;
-    background: white; }
+    background-color: #f1f1f1; }
     #header-on-scroll .nav-main .logo {
       width: 280px;
       height: 56px;
@@ -4413,7 +4494,7 @@ img.icon-utec {
           padding: 12px 0;
           padding: 0.85714rem 0;
           color: #8f8d8e;
-          background: white;
+          background-color: #f1f1f1;
           min-width: 135px;
           min-width: 9.64286rem;
           height: 56px; }
@@ -4462,8 +4543,8 @@ img.icon-utec {
   .list-carreras > li:hover h2 a span {
     color: #00a7d7; }
 .list-carreras > li > div i {
-  font-size: 56px;
-  font-size: 4rem;
+  font-size: 70px;
+  font-size: 5rem;
   color: #8f8d8e; }
 .list-carreras > li > div h2 span {
   color: #8f8d8e;

@@ -53,6 +53,10 @@
 		<script src="//use.typekit.net/fct8sgn.js"></script>
 		<script>try{Typekit.load();}catch(e){}</script>
 
+		<!-- VIDEO JS -->
+    <link href="//vjs.zencdn.net/4.10/video-js.css" rel="stylesheet">
+    <script src="//vjs.zencdn.net/4.10/video.js"></script>
+
 		<!-- APP STYLES 
 			*Compress/Minify stylesheets on production
 		-->
@@ -64,11 +68,12 @@
 			<div class="site-menu"></div>
 			<div class="site-content">
 
-				<div id="header"> <!-- HEADER -->
+				<!-- HEADER -->
+				<div id="header"> 
 					<div class="tool-bar bg-gray-lighter pt-sm pb-sm">
 						<div class="container">
 							<div class="left">
-								<ul class="uppercase thin text-gray-dark mr-ch-14 nav-list pt-sm">
+								<ul class=" thin text-gray mr-ch-14 nav-list pt-sm">
 									<li>
 										<a href="#">Alumnos</a>
 									</li>
@@ -157,7 +162,7 @@
 									<li>
 										<a href="#nav-display-6">
 											<div><i class="icon-menu-edp"></i></div>
-											<span>E.D.P.</span>
+											<span>EDP</span>
 										</a>
 									</li>
 								</ul>
@@ -398,21 +403,23 @@
 										</li>
 										<li><a href="#">Calendario</a></li>
 										<li>
-											<a href="#" class="btn btn-primary btn-custom bold">Inscríbete</a>
+											<a href="http://escuela-edp.utec.edu.pe/" class="btn btn-primary btn-custom bold">Inscríbete</a>
 										</li>
 									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div> <!-- END:Header -->
+				</div> 
+				<!-- END:Header -->
 
+				<!-- HEADER-ON-SCROLL -->
 				<div id="header-on-scroll">
 					<div class="nav-main">
 						<div class="container">
 							<div class="left">
 								<div class="logo">
-									<a href="#"><img src="assets/img/icon_UTEC.png" alt="Logo UTEC"></a>
+									<a href="#"><img src="assets/img/icon_UTEC_gs.png" alt="Logo UTEC"></a>
 								</div>
 							</div>
 							<div class="left">
@@ -444,7 +451,7 @@
 									</li>
 									<li>
 										<a href="#nav-shrink-display-6">
-											<span>E.D.P.</span>
+											<span>EDP</span>
 										</a>
 									</li>
 								</ul>
@@ -685,7 +692,7 @@
 										</li>
 										<li><a href="#">Calendario</a></li>
 										<li>
-											<a href="#" class="btn btn-primary btn-custom bold">Inscríbete</a>
+											<a href="http://escuela-edp.utec.edu.pe" class="btn btn-primary btn-custom bold">Inscríbete</a>
 										</li>
 									</ul>
 								</div>
@@ -693,9 +700,11 @@
 						</div>
 					</div>
 				</div>
+				<!-- END:HEADER-ON-SCROLL -->
 
-				<div class="hero-unit"> <!-- HERO -->
-					<div class="bg-img-block bg-img-block-lg flex-middle" style="background-image: url(assets/img/bg-header-3.jpg);">
+				<!-- HERO-UNIT -->
+				<div class="hero-unit video-bg"> 
+					<!-- <div class="bg-img-block bg-img-block-lg flex-middle" style="background-image: url(assets/img/bg-header-3.jpg);">
 						<div class="container">
 							<div class="row">
 								<div class="col-sm-6">
@@ -704,87 +713,113 @@
 							</div>
 						</div>
 						<a class="scroll-down scroll-down-sq size lg" href="#sec-1" rel="nofollow">
-							<i class="icon-arrows-down bg-white-op text-gray"></i>
+							<i class="icon-arrows-down bg-primary text-white"></i>
 						</a>
-					</div>
-				</div> <!-- END:Hero -->
+					</div> -->
+					<video
+						id="videocover"
+						autoplay
+						loop
+	          class="video-js videocover vjs-default-skin"
+	          controls
+	          preload="auto">
+	          <source src="assets/video/video_UTEC-pedal.webm" type='video/webm' />
+	          <source src="assets/video/video_UTEC-pedal.mp4" type='video/mp4' />
+	          <source src="assets/video/video_UTEC-pedal.ogg" type='video/ogg' />
+	          <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+	        </video>
+	        <!-- <div class="video-placeholder" style="background: url(assets/img/project-bg-1.jpg) no-repeat center top;"></div> -->
+	        <div class="overlay flex-middle">
+	        	<div class="container">
+							<div class="row">
+								<div class="col-sm-6">
+									<h2 class="thin text-white lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit repellat dolorem alias minus accusamus.</h2>
+								</div>
+							</div>
+						</div>
+	        </div>
+				</div>
+				<!-- END:HERO-UNIT --> 
 
-				<div class="body minhp-100 pvp-7" id="sec-1"> <!-- BODY -->
+				<!-- BODY -->
+				<div class="body minhp-100 pvp-7" id="sec-1"> 
 					<div class="container">
-						<h2 class="lead medium"><span class="text-gray-darker">¿Listo para</span> <span class="text-gray">cambiar el mundo?</span></h2>
-						<h4 class="lead">Éstas son nuestras carreras:</h4>
-						<ul class="grid-list grid-list-5 pv-21 list-carreras">
-							<li>
-								<div onclick="goTo()">
-									<div><i class="icon-ing-quimica"></i></div>
-									<h2>
-										<a href="#">
-											<span>Ingeniería</span>
-											<span>Química</span>
-											<span>Industrial</span>
-										</a>
-									</h2>
-								</div>
-							</li>
-							<li>
-								<div onclick="goTo()">
-									<div><i class="icon-ing-industrial"></i></div>
-									<h2>
-										<a href="carreras.html">
-											<span>Ingeniería</span>
-											<span>Industrial</span>
-											<span></span>
-										</a>
-									</h2>
-								</div>
-							</li>
-							<li>
-								<div onclick="goTo()">
-									<div><i class="icon-ing-energia"></i></div>
-									<h2>
-										<a href="#">
-											<span>Ingeniería</span>
-											<span>De la energía</span>
-											<span></span>
-										</a>
-									</h2>
-								</div>
-							</li>
-							<li>
-								<div onclick="goTo()">
-									<div><i class="icon-ing-electronica"></i></div>
-									<h2>
-										<a href="#">
-											<span>Ingeniería</span>
-											<span>Electrónica</span>
-											<span></span>
-										</a>
-									</h2>
-								</div>
-							</li>
-							<li>
-								<div onclick="goTo()">
-									<div><i class="icon-ing-mecanica"></i></div>
-									<h2>
-										<a href="#">
-											<span>Ingeniería</span>
-											<span>Mecánica</span>
-											<span></span>
-										</a>
-									</h2>
-								</div>
-							</li>
-						</ul>
-						<h1 class="lead medium"><span class="text-gray-darker">En la UTEC ingeniería es</span> <span class="text-gray">bienestar.</span></h1>
-						<h4 class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
-						<div class="anchor-img-grid anchor-img-grid-1 grid-block row">
+						<div class="row  mv-21 ml-0">
+							<h2 class="lead medium"><span class="text-gray-darker">¿Listo para</span> <span class="text-gray">cambiar el mundo?</span></h2>
+							<h4 class="lead mb-42">Éstas son nuestras carreras:</h4>
+							<ul class="grid-list grid-list-5 pv-70 list-carreras text-center">
+								<li>
+									<div onclick="goTo()">
+										<div><i class="icon-ing-quimica"></i></div>
+										<h2>
+											<a href="#">
+												<span>Ingeniería</span>
+												<span>Química</span>
+												<span>Industrial</span>
+											</a>
+										</h2>
+									</div>
+								</li>
+								<li>
+									<div onclick="goTo()">
+										<div><i class="icon-ing-industrial"></i></div>
+										<h2>
+											<a href="carreras.html">
+												<span>Ingeniería</span>
+												<span>Industrial</span>
+												<span></span>
+											</a>
+										</h2>
+									</div>
+								</li>
+								<li>
+									<div onclick="goTo()">
+										<div><i class="icon-ing-energia"></i></div>
+										<h2>
+											<a href="#">
+												<span>Ingeniería</span>
+												<span>De la energía</span>
+												<span></span>
+											</a>
+										</h2>
+									</div>
+								</li>
+								<li>
+									<div onclick="goTo()">
+										<div><i class="icon-ing-electronica"></i></div>
+										<h2>
+											<a href="#">
+												<span>Ingeniería</span>
+												<span>Electrónica</span>
+												<span></span>
+											</a>
+										</h2>
+									</div>
+								</li>
+								<li>
+									<div onclick="goTo()">
+										<div><i class="icon-ing-mecanica"></i></div>
+										<h2>
+											<a href="#">
+												<span>Ingeniería</span>
+												<span>Mecánica</span>
+												<span></span>
+											</a>
+										</h2>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<h1 class="lead medium mb-0"><span class="text-gray-darker">En la UTEC ingeniería es</span> <span class="text-gray">bienestar.</span></h1>
+						<h4 class="lead mt-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+						<div class="anchor-img-grid anchor-img-grid-1 grid-block row ml-0">
 	            <div class="col-sm-6">
 	              <a href="#" class="anchor-1">
 	                <img src="assets/img/anchor-img-grid-sq.png" />
 	                <div class="overlay-bg"></div>
 	                <div class="overlay-content">
 	                  <div>
-	                    <span class="text-top">Texto superior</span>
+	                    <span class="text-top mb-0">Texto superior</span>
 	                    <span class="text-bottom">Texto inferior</span>
 	                  </div>
 	                </div>
@@ -797,7 +832,7 @@
 	                  <div class="overlay-bg overlay-bg-rect"></div>
 	                  <div class="overlay-content">
 	                    <div>
-	                      <span class="text-top">Texto superior</span>
+	                      <span class="text-top mb-0">Texto superior</span>
 	                      <span class="text-bottom">Texto inferior</span>
 	                    </div>
 	                  </div>
@@ -810,7 +845,7 @@
 	                    <div class="overlay-bg"></div>
 	                    <div class="overlay-content">
 	                      <div>
-	                        <span class="text-top">Texto superior</span>
+	                        <span class="text-top mb-0">Texto superior</span>
 	                        <span class="text-bottom">Texto inferior</span>
 	                      </div>
 	                    </div>
@@ -822,7 +857,7 @@
 	                    <div class="overlay-bg"></div>
 	                    <div class="overlay-content">
 	                      <div>
-	                        <span class="text-top">Texto superior</span>
+	                        <span class="text-top mb-0">Texto superior</span>
 	                        <span class="text-bottom">Texto inferior</span>
 	                      </div>
 	                    </div>
@@ -831,21 +866,21 @@
 	              </div>
 	            </div>          
 		        </div>
-		        <div class="pv-21">
-		        	<h2 class="lead medium"><span class="text-gray-darker">Noticias: Al día con la</span> <span class="text-gray">UTEC</span></h2>
-		        	<h4 class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
-		        	<div class="banner row mb-14" data-href="//link">
+		        <div class="pv-35" id="noticias">
+		        	<h2 class="lead medium mb-0"><span class="text-gray-darker">Noticias: Al día con la</span> <span class="text-gray">UTEC</span></h2>
+		        	<h4 class="lead mb-56 mt-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+		        	<div class="banner row mb-14 ml-0" data-href="//link">
 								<div class="col-sm-3 banner-pic" style="background-image: url(assets/img/img-sq.png);">
 									<div class="banner-label bg-gray-darker text-white"><span>Emprendimiento</span></div>
 								</div>
-								<div class="col-sm-9 banner-content bg-gray-lighter">
+								<div class="col-sm-9 banner-content">
 									<div>
 										<h2><a href="#">Lorem ipsum dolor sit amet.</a></h2>
 										<p class="lead">Recusandae vitae, temporibus repudiandae veritatis aspernatur nisi harum explicabo possimus illo velit.</p>
 									</div>
 								</div>
 		        	</div>
-		        	<div class="banner row" data-href="//link">
+		        	<div class="banner row ml-0 mb-14" data-href="//link">
 								<div class="col-sm-9 banner-content">
 									<div>
 										<h2><a href="#">Lorem ipsum dolor sit amet.</a></h2>
@@ -863,7 +898,7 @@
 		        <div class="pv-21">
 		        	<h2 class="lead medium"><span class="text-gray-darker">Blog</span> <span class="text-gray">UTEC</span></h2>
 		        	<h4 class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
-		        	<div class="banner row" data-href="//link">
+		        	<div class="banner row ml-0" data-href="//link">
 		        		<div class="col-sm-3 banner-pic" style="background-image: url(assets/img/img-sq.png);"></div>
 		        		<div class="col-sm-9 banner-content">
 		        			<div>
@@ -881,9 +916,11 @@
 		        	</div>
 		        </div>
 					</div>
-				</div> <!-- END:Body -->
+				</div> 
+				<!-- END:Body -->
 
-				<div class="footer"> <!-- FOOTER -->
+				<!-- FOOTER -->
+				<div class="footer"> 
 					<div class="subscribe pv-7 bg-gray-darker">
 						<div class="container">
 							<ul class="grid-list grid-list-centered normalize-text">
@@ -914,58 +951,58 @@
 	              <li>
 	                <ul>
 	                  <li class="title"><a href="#">Somos Utec</a></li>
-	                  <li><a href="#"><span></span><span>Respaldo</span></a></li>
-	                  <li><a href="#"><span></span><span>Autoridades</span></a></li>
-	                  <li><a href="#"><span></span><span>Profesores</span></a></li>
-	                  <li><a href="#"><span></span><span>Noticias</span></a></li>
-	                  <li><a href="#"><span></span><span>Eventos</span></a></li>
-	                  <li><a href="#"><span>Trabaja en</span><span>Utec</span></a></li>
+	                  <li><a href="#" class="gray-light"><span></span><span>Respaldo</span></a></li>
+	                  <li><a href="#" class="gray-light"><span></span><span>Autoridades</span></a></li>
+	                  <li><a href="#" class="gray-light"><span></span><span>Profesores</span></a></li>
+	                  <li><a href="#" class="gray-light"><span></span><span>Noticias</span></a></li>
+	                  <li><a href="#" class="gray-light"><span></span><span>Eventos</span></a></li>
+	                  <li><a href="#" class="gray-light"><span>Trabaja en</span><span>Utec</span></a></li>
 	                </ul>
 	              </li>
 	              <li>
 	                <ul>
 	                  <li class="title"><a href="#">Vive Utec</a></li>
-	                  <li><a href="#"><span>Vida</span><span>Estudiantil</span></a></li>
-	                  <li><a href="#"><span>Metodología</span><span>Educativa</span></a></li>
-	                  <li><a href="#"><span>Campus &amp;</span><span>Laboratorios</span></a></li>
-	                  <li><a href="#"><span>Ingenio en</span><span>Acción</span></a></li>
-	                  <li><a href="#"><span>UTEC</span><span>Ventures</span></a></li>
-	                  <li><a href="#"><span>Blog &amp;</span><span>YouTube</span></a></li>
-	                  <li><a href="#"><span>Calendario</span><span>Académico</span></a></li>
+	                  <li><a href="#" class="gray-light"><span>Vida </span><span>Estudiantil</span></a></li>
+	                  <li><a href="#" class="gray-light"><span>Metodología </span><span>Educativa</span></a></li>
+	                  <li><a href="#" class="gray-light"><span>Campus &amp; </span><span>Laboratorios</span></a></li>
+	                  <li><a href="#" class="gray-light"><span>Ingenio en </span><span>Acción</span></a></li>
+	                  <li><a href="#" class="gray-light"><span>UTEC </span><span>Ventures</span></a></li>
+	                  <li><a href="#" class="gray-light"><span>Blog &amp; </span><span>YouTube</span></a></li>
+	                  <li><a href="#" class="gray-light"><span>Calendario </span><span>Académico</span></a></li>
 	                </ul>
 	              </li>
 	              <li>
 	                <ul>
 	                  <li class="title"><a href="#">Investigación</a></li>
-	                  <li><a href="#"><span></span><span>Publicaciones</span></a></li>
-	                  <li><a href="#"><span></span><span>Consultorías</span></a></li>
-	                  <li><a href="#"><span>Empresas &amp;</span><span>Clientes</span></a></li>
-	                  <li><a href="#"><span></span><span>Contacto</span></a></li>
+	                  <li><a href="#" class="gray-light"><span></span><span>Publicaciones</span></a></li>
+	                  <li><a href="#" class="gray-light"><span></span><span>Consultorías</span></a></li>
+	                  <li><a href="#" class="gray-light"><span>Empresas &amp; </span><span>Clientes</span></a></li>
+	                  <li><a href="#" class="gray-light"><span></span><span>Contacto</span></a></li>
 	                </ul>
 	              </li>
 	              <li>
 	                <ul>
 	                  <li class="title"><a href="#">Programas</a></li>
-	                  <li><a href="#"><span>Ingeniería</span><span>Química industrial</span></a></li>
-	                  <li><a href="#"><span>Ingeniería</span><span>Electrónica</span></a></li>
-	                  <li><a href="#"><span>Ingeniería</span><span>Mecánica</span></a></li>
-	                  <li><a href="#"><span>Ingeniería</span><span>de la Energía</span></a></li>
-	                  <li><a href="#"><span>Ingeniería</span><span>Industrial</span></a></li>
-	                  <li><a href="#"><span></span><span>Menciones</span></a></li>
-	                  <li><a href="#"><span>Escuela de</span><span>Desarrollo Profesional</span></a></li>
-	                  <li><a href="#"><span>Convenios de</span><span>Intercambio</span></a></li>
+	                  <li><a href="#" class="gray-light"><span>Ingeniería </span><span>Química industrial</span></a></li>
+	                  <li><a href="#" class="gray-light"><span>Ingeniería </span><span>Electrónica</span></a></li>
+	                  <li><a href="#" class="gray-light"><span>Ingeniería </span><span>Mecánica</span></a></li>
+	                  <li><a href="#" class="gray-light"><span>Ingeniería </span><span>de la Energía</span></a></li>
+	                  <li><a href="#" class="gray-light"><span>Ingeniería </span><span>Industrial</span></a></li>
+	                  <li><a href="#" class="gray-light"><span></span><span>Menciones</span></a></li>
+	                  <li><a href="#" class="gray-light"><span>Escuela de </span><span>Desarrollo Profesional</span></a></li>
+	                  <li><a href="#" class="gray-light"><span>Convenios de </span><span>Intercambio</span></a></li>
 	                </ul>
 	              </li>
 	              <li>
 	                <ul>
 	                  <li class="title"><a href="#">Admisión</a></li>
-	                  <li><a href="#"><span>Modalidades de</span><span>Admisión</span></a></li>
-	                  <li><a href="#"><span>Calendario de</span><span>Admisión</span></a></li>
-	                  <li><a href="#"><span></span><span>Presinscripción</span></a></li>
-	                  <li><a href="#"><span>Información</span><span>Económica</span></a></li>
-	                  <li><a href="#"><span>Visita</span><span>UTEC</span></a></li>
-	                  <li><a href="#"><span>Orientación</span><span>Vocacional</span></a></li>
-	                  <li><a href="#"><span></span><span>FAQ</span></a></li>
+	                  <li><a href="#" class="gray-light"><span>Modalidades de </span><span>Admisión</span></a></li>
+	                  <li><a href="#" class="gray-light"><span>Calendario de </span><span>Admisión</span></a></li>
+	                  <li><a href="#" class="gray-light"><span></span><span>Presinscripción</span></a></li>
+	                  <li><a href="#" class="gray-light"><span>Información </span><span>Económica</span></a></li>
+	                  <li><a href="#" class="gray-light"><span>Visita </span><span>UTEC </span></a></li>
+	                  <li><a href="#" class="gray-light"><span>Orientación </span><span>Vocacional</span></a></li>
+	                  <li><a href="#" class="gray-light"><span></span><span>FAQ</span></a></li>
 	                </ul>
 	              </li>
 	            </ul> 
@@ -973,8 +1010,8 @@
 					</div>
 					<div class="address pv-14 bg-gray-lighter">
 						<div class="container">
-							<nav class="text-center ml-ch-14 text-gray">
-								<span>Av. Cascanueces 2221, Santa Anita, Lima</span>
+							<nav class="text-center ml-ch-14 te xt-gray">
+								<span>Esquina de calle Medaro Silva S/N con Av. Grau y Malecon Armendariz S/N - Barranco</span>
 								<span><strong>T. </strong>51 1 354-0070</span>
 								<span><strong>W. </strong>www.utec.edu.pe</span>
 								<span><strong>C. </strong><a href="mailto:informes@utec.edu.pe" class="text-gray-dark">informes@utec.edu.pe</a></span>
@@ -988,7 +1025,8 @@
 					<div class="copyright pv-14 bg-gray-lighter text-center text-gray">
 						<img src="assets/img/icon_UTEC_gs.png" alt="" class="icon-utec mr-14"><span>Copyright &copy; 2014 UTEC. Todos los derechos reservados.</span>
 					</div>
-				</div> <!-- END:Footer -->
+				</div> 
+				<!-- END:Footer -->
 
 			</div>
 		</div>
@@ -1008,5 +1046,6 @@
 		<script src="js/app/lib/nav-control.js"></script>
 		<script src="js/app/lib/layout-control.js"></script>
 		<script src="js/app/lib/scroll-control.js"></script>
+		<script src="js/app/lib/videojs.js"></script>
 	</body>
 </html>
