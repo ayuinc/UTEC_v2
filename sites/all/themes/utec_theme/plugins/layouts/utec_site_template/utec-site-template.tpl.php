@@ -7,6 +7,7 @@
  */
 global $base_path; 
 global $theme_path;
+$Globals['base_path'];
 ?>
 <!DOCTYPE html> 
 <html>
@@ -70,8 +71,8 @@ global $theme_path;
 		<!-- APP STYLES 
 			*Compress/Minify stylesheets on production
 		-->
-		<link rel="stylesheet" href="<?php echo $Globals['base_path']; ?>/<?php echo $theme_path; ?>/stylesheets/main.css">
-		<link rel="stylesheet" href="<?php echo $Globals['base_path']; ?>/<?php echo $theme_path; ?>/stylesheets/ebm.css">
+		<link rel="stylesheet" href="<?php $base_path; ?>/<?php echo $theme_path; ?>/stylesheets/main.css">
+		<link rel="stylesheet" href="<?php $base_path; ?>/<?php echo $theme_path; ?>/stylesheets/ebm.css">
 	</head>
 	<body>
 		<div class="site-wrapper">
