@@ -324,6 +324,13 @@ if(isset($node)){
                   </li>
                 </ul>
               </li>
+              <li class="men4 dropdown">
+                <a href="http://www.utec.edu.pe/admision/SitePages/Preinscripci%C3%B3n%20Examen%20de%20Admision.aspx?Tipo=Examen%20de%20Admision#.VIsOLmSG8no" class="link-menu link-menu-primary" target="_blank">
+                  <div class="submenu-single">
+                    Postula
+                  </div>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
