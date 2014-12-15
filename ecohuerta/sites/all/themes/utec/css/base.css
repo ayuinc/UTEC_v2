@@ -33,6 +33,8 @@
   padding: 3px 25px;
   text-transform: uppercase;
   color: #fff;
+  top: 3px;
+  position: relative;
 }
 .head-login .region-header {
   margin-left: 21px;

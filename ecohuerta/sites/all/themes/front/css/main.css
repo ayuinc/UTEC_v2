@@ -859,7 +859,10 @@ ul.tabs li a:hover {
   padding: 3px 25px;
   text-transform: uppercase;
 }
-#block-ajax-register-ajax-register-block .ajax-register-links ul {
+.postular-button a:hover{
+  text-decoration: none;
+}
+#block-ajax-register-ajax-register-block .ajax-register-links {
   padding-left: 0;
 }
 
