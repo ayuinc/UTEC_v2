@@ -44,9 +44,14 @@ $video-bg-height: 420px;
 
 // HERO UNIT
 .hero-unit {
+	min-height: $video-bg-height;
+	@include bg-img-control;
 	&.video-bg {
 		overflow: hidden;
 		height: $video-bg-height;
+	}
+	.overlay {
+		min-height: $video-bg-height;
 	}
 }
 
@@ -377,6 +382,12 @@ $video-bg-height: 420px;
 		&.videoBG {
 			height: $video-bg-height - 280;
 		}
+		&.hero-unit {
+			min-height: $video-bg-height - 280;
+			.overlay {
+				min-height: $video-bg-height - 280;
+			}
+		}
 	}
 	&.sm {
 		&.scroll-down {
@@ -404,6 +415,12 @@ $video-bg-height: 420px;
 		&.videoBG {
 			height: $video-bg-height - 140;
 		}
+		&.hero-unit {
+			min-height: $video-bg-height - 140;
+			.overlay {
+				min-height: $video-bg-height - 140;
+			}
+		}
 	}
 	&.lg {
 		&.scroll-down {
@@ -427,9 +444,17 @@ $video-bg-height: 420px;
 				min-height: $user-card-height + 14;
 			}
 		}
-		i {}
+		i {
+			font-size: $font-size-h3 * 3;
+		}
 		&.videoBG {
 			height: $video-bg-height + 140;
+		}
+		&.hero-unit {
+			min-height: $video-bg-height + 140;
+			.overlay {
+				min-height: $video-bg-height + 140;
+			}
 		}
 	}
 	&.xl {
@@ -459,6 +484,12 @@ $video-bg-height: 420px;
 		}
 		&.videoBG {
 			height: $video-bg-height + 210;
+		}
+		&.hero-unit {
+			min-height: $video-bg-height + 210;
+			.overlay {
+				min-height: $video-bg-height + 210;
+			}
 		}
 	}
 }
