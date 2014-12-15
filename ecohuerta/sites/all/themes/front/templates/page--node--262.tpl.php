@@ -85,7 +85,7 @@
 
         <ul class="nav nav-horizontal nav-login">
           <li class="postular-button">
-            <a href="http://www.utec.edu.pe/admision/SitePages/Preinscripci%C3%B3n%20Examen%20de%20Admision.aspx?Tipo=Examen%20de%20Admision#.VIsOLmSG8no">
+            <a href="http://www.utec.edu.pe/admision/SitePages/Preinscripci%C3%B3n%20Examen%20de%20Admision.aspx?Tipo=Examen%20de%20Admision#.VIsOLmSG8no" target="_blank">
               postular
             </a>
           </li>
@@ -130,7 +130,7 @@
             Unas lechugas ecológicas que podrás reservar desde ahora mismo.
           </h3>
 
-          <a href="<?php print $base_path; ?>marea-en-accion-causas" class="scroll-to btn btn-medium-small btn-light-blue uppercase">
+          <a href="<?php print $base_path; ?>ecohuerta-video-lechugas-hidroponicas" class="scroll-to btn btn-medium-small btn-light-blue uppercase">
             Ver más
           </a>
         </div>

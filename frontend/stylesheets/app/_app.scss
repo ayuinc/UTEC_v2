@@ -15,10 +15,22 @@
   "elements/buttons-custom",
 
   // FORMS
-  // "elements/forms-custom",
+  "elements/forms-custom",
   // "elements/forms-multiuser",
 
   // NAVS
+
+  // BREADCRUMS
+  "elements/breadcrumbs-custom",
+
+  // LISTS
+  "elements/lists-custom",
+
+  // TABLES
+  "elements/tables-custom",
+
+  // CAROUSEL
+  "elements/carousel-custom",
 
   // PANELS
   "elements/panels-custom";
@@ -34,4 +46,6 @@
 // APP Views
 @import 
   // VIEW NAME
+  "views/admision",
+  "views/carreras",
   "views/home";

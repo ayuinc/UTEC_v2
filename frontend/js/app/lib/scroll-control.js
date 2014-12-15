@@ -16,7 +16,7 @@
     $(document).on('click', 'a[href^=#]', function(e) {
       var id;
       id = $(this).attr('href');
-      if ($(id).length > 0 && !id.match(/nav/g)) {
+      if ($(id).length > 0 && !id.match(/nav/g) && !id.match(/carousel/g)) {
         e.preventDefault();
         scrollToController.scrollTo(id);
       }

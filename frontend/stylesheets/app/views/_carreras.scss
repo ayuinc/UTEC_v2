@@ -1,0 +1,54 @@
+$malla-curricular-height: 70px;
+
+.malla-curricular {
+	> li {
+		padding: 0 $container-fluid 0 0 !important;
+		.head {
+			@include clearfix;
+			@include list-unstyled;
+			> li {
+				float: left;
+				&:first-child {
+					font-size: $font-size-h1;
+					line-height: 31px;
+				}
+				&:last-child {
+					line-height: 16px;
+					padding-left: 7px;
+				}
+			}
+		}
+	}
+	@for $z from 1 through length($brand-colors-list) {
+		&.malla-curricular-#{nth($brand-colors-sufix-list, $z)} {
+			.body {
+				border-top: 3px solid #{nth($brand-colors-list, $z)};
+				margin-top: 3px;
+				> ul {
+					@include clearfix;
+					@include list-unstyled;
+					> li {
+						float: left;
+						padding-left: 7px;
+						&:first-child {
+							width: 39px;
+						}
+						&:last-child {
+							padding-top: 7px;
+						}
+					}
+					@for $i from 1 through 10 {
+						&:nth-child(#{$i}) {
+							> li {
+								min-height: $malla-curricular-height - ($i * 2);
+								&:first-child {
+									background-color: #{scale-color(nth($brand-colors-list, $z),$lightness: ($i*3)*1% )};
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
