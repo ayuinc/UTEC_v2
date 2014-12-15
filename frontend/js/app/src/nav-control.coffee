@@ -52,7 +52,12 @@ $(document).ready ->
 		return
 		)
 
-	$('.hero-unit').append('<div class="header-trigger"></div>')
+	# APPEND THE HEADER TRIGGER TO LAYOUT
+	if $('.hero-unit').length > 0
+		$('.hero-unit').append('<div class="header-trigger"></div>')
+	else
+		console.log 'no hero-unit'
+		$('.body').append('<div class="header-trigger"></div>')
 
 	$headerScene = new ScrollScene({
 		triggerHook: 0.3
