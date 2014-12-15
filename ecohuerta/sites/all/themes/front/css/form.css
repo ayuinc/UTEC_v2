@@ -1,0 +1,93 @@
+.form-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/******************************************************************
+* Elements
+******************************************************************/
+form {
+  margin: 0;
+}
+form label {
+  color: #3cc1e0;
+  font-size: 80%;
+  margin-top: 5px;
+}
+form.disabled label {
+  color: #90938f;
+}
+select {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+option {
+  color: #444;
+}
+select,
+textarea,
+input[type="text"] {
+  color: #444;
+  width: 100%;
+  font-size: 80%;
+  background: #fff;
+  font-weight: 300;
+  padding: 5px 10px;
+}
+select:disabled,
+textarea:disabled,
+input[type="text"]:disabled {
+  border: none;
+  background: rgba(255, 255, 255, .30);
+}
+input[type="submit"] {
+  border: none;
+  font-size: 80%;
+  font-weight: 300;
+  padding: 5px 30px;
+  background: #3cc1e0;
+}
+input[type="submit"]:disabled {
+  background: rgba(255, 255, 255, .35);
+}
+textarea {
+  min-height: 80px;
+}
+
+/******************************************************************
+* Custom containers
+******************************************************************/
+.control-group {
+  margin-bottom: 20px;
+}
+.control-group > label {
+  width: 25%;
+  float: left;
+  display: block;
+}
+.control-group .control {
+  width: 75%;
+  float: left;
+}
+.control-action {
+  text-align: center;
+}
+.control-action label {
+  width: auto;
+  float: none;
+  color: #ccc;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+/******************************************************************
+* Validations
+******************************************************************/
+label.error {
+  color: red;
+}
+select.error,
+textarea.error,
+input[type="text"].error {
+  background-color: #F8E2E1;
+}

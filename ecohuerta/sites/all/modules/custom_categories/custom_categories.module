@@ -1,0 +1,39 @@
+<?php
+/**
+ * Formulario de configuración
+ *
+ * @param $data
+ * @return array The form structure.
+ */
+//function custom_categories_views_pre_render(&$view) {
+//    $array = array();
+//    $arrayTemp = array();
+////    print("<pre>");
+//    foreach ($view->result as $key => $value) {
+//        if ($key % 2 == 0) {
+//            $arrayTemp = array();
+//            array_push($arrayTemp, $value);
+//        } else {
+//            array_push($arrayTemp, $value);
+//            array_push($array, $arrayTemp);
+//        }
+//    }
+//    $view->result = $array;
+//
+//    print("</pre>");
+//    print("<pre>");
+//    print_r($view->result);
+//    print("</pre>");
+////    exit();
+//}
+
+function custom_categories_preprocess_views_view(&$variables) {
+//
+//    $view=$variables['view'];
+//    drupal_set_message('<pre>' . print_r($view->result, TRUE) . '</pre>');
+
+}
+//function hook_views_data_alter(&$data){
+//    print_r($data);
+//    exit();
+//}

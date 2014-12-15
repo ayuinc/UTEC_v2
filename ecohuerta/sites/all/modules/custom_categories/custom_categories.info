@@ -1,0 +1,6 @@
+name = Custom categories
+description = Group categories
+core = 7.x
+package = tools
+php = 5.3
+version = 7.x-1.0-dev

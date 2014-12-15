@@ -1,0 +1,21 @@
+name = Utec Theme
+description = Description.
+core = 7.x
+version = 1.2
+stylesheets[all][] = css/vendor/normalize.css
+stylesheets[all][] = css/vendor/bootstrap.min.css
+stylesheets[all][] = css/base.css
+stylesheets[all][] = css/general.css
+
+regions[header] = Header
+
+regions[featured] = Featured
+regions[content] = Content
+
+regions[forums_list] = Forum list
+regions[sidebar_first] = Sidebar first
+regions[sidebar_second] = Sidebar second
+
+regions[footer] = Footer
+regions[modal] = Modal
+

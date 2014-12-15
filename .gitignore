@@ -7,4 +7,4 @@ sites/*/private
 
 # Untracked files:
 .sass-cache
-assets/video/*
+frontend/assets/video/*
