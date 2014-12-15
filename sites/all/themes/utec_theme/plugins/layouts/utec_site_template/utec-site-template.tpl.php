@@ -713,6 +713,13 @@ global $theme_path;
 					</div>
 				</div>
 				<!-- END:HEADER-ON-SCROLL -->
+<<<<<<< HEAD
+=======
+>>>>>>> 7a6738e5a185d0ef13c07b772eb8deb28d9c3217
+    <?php endif; ?>
+
+    <?php if (!empty($content['header-bottom'])): ?>
+>>>>>>> ca0e60172aba3b4f43d2521fa6d20d75a95142fe
 				<!-- HERO-UNIT -->
 				<div class="hero-unit video-bg"> 
 					<!-- <div class="bg-img-block bg-img-block-lg flex-middle" style="background-image: url(assets/img/bg-header-3.jpg);">
