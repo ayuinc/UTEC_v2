@@ -166,8 +166,15 @@
 }
 
 // HEADER SHRINK TRIGGER
-.header-trigger {
-	@include position(absolute, null 0 70px 0);
+.hero-unit {
+	.header-trigger {
+		@include position(absolute, null 0 70px 0);
+	}
+}
+.body {
+	.header-trigger {
+		@include position(absolute, 140px 0 null 0);
+	}	
 }
 
 // HEADER ON SCROLL

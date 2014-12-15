@@ -85,4 +85,26 @@ form {
     line-height: 28px;
     // background: white url(/img/arrow-down.svg) no-repeat 98%;
   }
+	@include thin;
+	color: $gray;
+	text-transform: uppercase;
+}
+
+// PLAEHOLDERS
+input,
+textarea {
+	@include placeholder {
+		@include thin;
+		color: $gray-light;
+		text-transform: uppercase;
+	}
+}
+
+.form-custom {
+	label {
+		@include light;
+		text-transform: uppercase;
+		color: $gray;
+		font-size: $font-size-h3;
+	}
 }
