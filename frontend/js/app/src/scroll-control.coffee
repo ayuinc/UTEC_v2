@@ -53,7 +53,7 @@ $(document).ready ->
 		)
 	$(document).on('click', 'a[href^=#]', (e)->
 		id = $(this).attr('href')
-		if $(id).length > 0 && !id.match(/nav/g)
+		if $(id).length > 0 && !id.match(/nav/g) && !id.match(/carousel/g)
 			e.preventDefault()
 			scrollToController.scrollTo(id)
 		return
