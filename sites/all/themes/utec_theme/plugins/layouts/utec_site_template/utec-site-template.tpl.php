@@ -70,8 +70,8 @@ global $theme_path;
 		<!-- APP STYLES 
 			*Compress/Minify stylesheets on production
 		-->
-		<link rel="stylesheet" href="<?php echo $base_path; ?>/<?php echo $theme_path; ?>/stylesheets/main.css">
-		<link rel="stylesheet" href="<?php echo $base_path; ?>/<?php echo $theme_path; ?>/stylesheets/ebm.css">
+		<link rel="stylesheet" href="<?php $Globals['base_path']; ?>/<?php echo $theme_path; ?>/stylesheets/main.css">
+		<link rel="stylesheet" href="<?php $Globals['base_path']; ?>/<?php echo $theme_path; ?>/stylesheets/ebm.css">
 	</head>
 	<body>
 		<div class="site-wrapper">
