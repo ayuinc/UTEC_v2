@@ -12,6 +12,11 @@ jQuery(function($) {
             $('ul.menu > .men1').removeClass('active');
             $('ul.menu > .men2').addClass('active');
         });
+        $("ul.menu > .men3").on('click', function () {
+            $('ul.menu > .men1').removeClass('active');
+            $('ul.menu > .men2').removeClass('active');
+            $('ul.menu > .men3').addClass('active');
+        });
         $("#mobile-aplica-tu-ingenio").on('click', function () {
             $('ul.menu > .men1').removeClass('active');
             $('ul.menu > .men2').removeClass('active');

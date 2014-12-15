@@ -251,7 +251,17 @@
         height: auto !important;
         padding: 0 0 20% 2% !important;
     }
-
+    
+    /******************************************************************
+    * Ecohuerta
+    ******************************************************************/
+    .video-wrapper {
+      display: none;
+    }
+    #ecohuerta {
+      background-image: url('../images/backgrounds/ecohuerta/homehuerta.jpg');
+    }
+    
 }
 @media screen and (max-width: 1024px){
 
@@ -439,6 +449,10 @@
     }
     .modal-alone {
 
+    }
+    #sobre-ecohuerta .modal-alone {
+        width: 97%;
+        margin-left: -48%;
     }
     ul.tabs li{
         border: none;

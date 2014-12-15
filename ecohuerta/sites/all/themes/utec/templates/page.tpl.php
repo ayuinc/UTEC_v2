@@ -120,7 +120,14 @@ if(isset($node)){
         </button>
         <!-- #46 -->
         <div class="col-lg-5 col-md-3 col-sm-2 head-login">
-        <?php print render($page['header']); ?>
+          <ul class="nav-horizontal nav-login">
+            <li class="postular-button">
+              <a href="http://www.utec.edu.pe/admision/SitePages/Preinscripci%C3%B3n%20Examen%20de%20Admision.aspx?Tipo=Examen%20de%20Admision#.VIsOLmSG8no">
+                postular
+              </a>
+            </li>
+          </ul>  
+          <?php print render($page['header']); ?>
         </div>
         <!--<div class="col-xs-3  col-sm-4 col-md-3 contenedor-menu-xs">
             <div class="menu-xs">
@@ -287,6 +294,11 @@ if(isset($node)){
             <li class="active">
               <a id="menu-button-tu-solucion" href="/aplica-tu-ingenio" class="scroll-to">
                 Aplica tu ingenio
+              </a>
+            </li>
+            <li class="">
+              <a href="<?php print $base_path; ?>ecohuerta">
+                Ecohuerta
               </a>
             </li>
         </ul>

@@ -25,6 +25,25 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/*ECOHUERTA*/
+.postular-button a{
+  font-size: 12px;
+  border: 1px solid #fff;
+  padding: 3px 25px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.head-login .region-header {
+  margin-left: 21px;
+  display: inline-block;
+}
+.nav-horizontal.nav-login {
+  /*float: left;*/
+  margin-top: 10px;
+  display: inline-block;
+}
+
 /*AGREGADO*/
 .margen-comentario 
 {

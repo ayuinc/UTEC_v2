@@ -189,14 +189,14 @@
 
       <?php
         //View
-        $view = views_get_view('equipos_marea');
+        $view = views_get_view('recetas');
         $view->set_display('view_block_name');
         $view->set_items_per_page(3);
         $view->pre_execute();
         $view->execute();
-        $equipos_marea=$view->result;
+        $recetas=$view->result;
         $equipos_marea_vote= $view->result;
-        foreach ($equipos_marea as $key => $value) 
+        foreach ($recetas as $key => $value) 
         {
           $nid=$value->nid;
           $node = node_load($nid);
