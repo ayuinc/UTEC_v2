@@ -34,9 +34,14 @@
   text-transform: uppercase;
   color: #fff;
 }
+.head-login .region-header {
+  margin-left: 21px;
+  display: inline-block;
+}
 .nav-horizontal.nav-login {
-  float: left;
+  /*float: left;*/
   margin-top: 10px;
+  display: inline-block;
 }
 
 /*AGREGADO*/
