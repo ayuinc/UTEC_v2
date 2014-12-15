@@ -3583,6 +3583,10 @@ body {
 .section-scroll-content {
   position: relative; }
 
+.hero-unit.video-bg {
+  overflow: hidden;
+  height: 420px; }
+
 #section-scroll {
   position: fixed;
   top: 42%;
@@ -3853,6 +3857,8 @@ body {
     height: 28px; }
   .size.xs.user-card .user-info {
     min-height: 28px; }
+.size.xs.videoBG {
+  height: 140px; }
 .size.sm.scroll-down i {
   font-size: 12px; }
 .size.sm.banner .banner-content,
@@ -3865,6 +3871,8 @@ body {
     height: 35px; }
   .size.sm.user-card .user-info {
     min-height: 35px; }
+.size.sm.videoBG {
+  height: 280px; }
 .size.lg.scroll-down i {
   font-size: 24px; }
 .size.lg.banner .banner-content,
@@ -3877,6 +3885,8 @@ body {
     height: 56px; }
   .size.lg.user-card .user-info {
     min-height: 56px; }
+.size.lg.videoBG {
+  height: 560px; }
 .size.xl.scroll-down i {
   font-size: 36px; }
 .size.xl.banner .banner-content,
@@ -3891,6 +3901,8 @@ body {
     min-height: 63px; }
 .size.xl i {
   font-size: 108px; }
+.size.xl.videoBG {
+  height: 630px; }
 
 .banner .banner-pic,
 .banner .banner-content {
@@ -3999,6 +4011,39 @@ body {
 img.icon-utec {
   width: 35px;
   height: auto; }
+
+.videocover {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  overflow: hidden; }
+
+.video-js {
+  position: relative !important;
+  width: 100% !important;
+  height: auto !important; }
+  .video-js .vjs-tech {
+    position: relative !important; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10; }
+
+.video-placeholder {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 7; }
 
 .gray-light {
   color: #bbb !important; }

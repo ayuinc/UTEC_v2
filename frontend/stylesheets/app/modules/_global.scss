@@ -12,6 +12,7 @@ body {
 $bg-img-height: 350px;
 $banner-height: 293px;
 $user-card-height: 42px;
+$video-bg-height: 420px;
 
 // CONTROL GRID BLOCK IMG SIZES
 @mixin content-block {
@@ -39,6 +40,14 @@ $user-card-height: 42px;
 .hero-unit,
 .section-scroll-content {
 	position: relative;
+}
+
+// HERO UNIT
+.hero-unit {
+	&.video-bg {
+		overflow: hidden;
+		height: $video-bg-height;
+	}
 }
 
 // SECTION SCROLL
@@ -365,6 +374,9 @@ $user-card-height: 42px;
 			}
 		}
 		i {}
+		&.videoBG {
+			height: $video-bg-height - 280;
+		}
 	}
 	&.sm {
 		&.scroll-down {
@@ -389,6 +401,9 @@ $user-card-height: 42px;
 			}
 		}
 		i {}
+		&.videoBG {
+			height: $video-bg-height - 140;
+		}
 	}
 	&.lg {
 		&.scroll-down {
@@ -413,6 +428,9 @@ $user-card-height: 42px;
 			}
 		}
 		i {}
+		&.videoBG {
+			height: $video-bg-height + 140;
+		}
 	}
 	&.xl {
 		&.scroll-down {
@@ -438,6 +456,9 @@ $user-card-height: 42px;
 		}
 		i {
 			font-size: $font-size-h1 * 3;
+		}
+		&.videoBG {
+			height: $video-bg-height + 210;
 		}
 	}
 }
@@ -519,10 +540,43 @@ img.icon-utec {
 	height: auto;
 }
 
+// VIDEOCOVER
+.videocover {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	// z-index: -1000;
+	overflow: hidden;
+	// background: url(../assets/img/img.png) no-repeat center top;
+	// background-size: cover;
+}
+
+.video-js {
+  position: relative !important;
+  width: 100% !important;
+  height: auto !important;
+ 	.vjs-tech {
+  	position: relative !important;
+  }
+}
+
+.overlay {
+	@include position(absolute, 0 0 0 0);
+	z-index: 10;
+}
+
+.video-placeholder {
+	@include position(absolute, 0 0 0 0);
+	z-index: 7;
+}
+
 .gray-light {
 	color: #bbb !important;
 }
-
 
 .banner:hover {
 	background-color: #f1f1f1;
