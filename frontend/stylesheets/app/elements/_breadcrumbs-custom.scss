@@ -1,0 +1,24 @@
+// BREADCRUMBS
+.breadcrumbs-custom {
+	@include position(absolute, null 0 -70px 0);
+	z-index: 10;
+	.breadcrumb {
+		li {
+			text-transform: uppercase;
+			a {
+				color: white;
+				&:hover {
+
+				}
+			}
+			&.active {
+				a {
+					span {
+						@include bold;
+						border-bottom: 2px solid white;
+					}
+				}
+			}
+		}
+	}	
+}
