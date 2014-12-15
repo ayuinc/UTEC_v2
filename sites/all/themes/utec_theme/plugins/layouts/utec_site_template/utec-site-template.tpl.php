@@ -80,7 +80,6 @@ global $theme_path;
 
 <div class="site-wrapper">
   <div class="site-content">
-    <?php if (!empty($content['header'])): ?>
 				<!-- HEADER -->
 				<div id="header"> 
 					<div class="tool-bar bg-gray-lighter pt-sm pb-sm">
@@ -714,9 +713,6 @@ global $theme_path;
 					</div>
 				</div>
 				<!-- END:HEADER-ON-SCROLL -->
-    <?php endif; ?>
-
-    <?php if (!empty($content['header-bottom'])): ?>
 				<!-- HERO-UNIT -->
 				<div class="hero-unit video-bg"> 
 					<!-- <div class="bg-img-block bg-img-block-lg flex-middle" style="background-image: url(assets/img/bg-header-3.jpg);">
@@ -755,9 +751,6 @@ global $theme_path;
 	        </div>
 				</div>
 				<!-- END:HERO-UNIT --> 
-    <?php endif; ?>
-
-    <?php if (!empty($content['body'])): ?>
 				<!-- BODY -->
 				<div class="body minhp-100 pvp-7" id="sec-1"> 
 					<div class="container">
@@ -935,9 +928,6 @@ global $theme_path;
 					</div>
 				</div> 
 				<!-- END:Body -->
-    <?php endif; ?>
-    
-    <?php if (!empty($content['footer'])): ?>
 				<!-- FOOTER -->
 				<div class="footer"> 
 					<div class="subscribe pv-7 bg-gray-darker">
@@ -1046,7 +1036,6 @@ global $theme_path;
 					</div>
 				</div> 
 				<!-- END:Footer -->
-    <?php endif; ?>
   </div>
 </div>
 
