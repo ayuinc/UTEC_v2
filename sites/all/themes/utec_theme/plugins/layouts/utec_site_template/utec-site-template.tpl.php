@@ -5,6 +5,7 @@
  * This layout is designed to be the site template layout when using
  * the Panels Everywhere module.
  */
+global $base_path; 
 global $theme_path;
 ?>
 <!DOCTYPE html> 
@@ -69,8 +70,8 @@ global $theme_path;
 		<!-- APP STYLES 
 			*Compress/Minify stylesheets on production
 		-->
-		<link rel="stylesheet" href="<?php echo $theme_path; ?>/stylesheets/main.css">
-		<link rel="stylesheet" href="<?php echo $theme_path; ?>/stylesheets/ebm.css">
+		<link rel="stylesheet" href="<?php echo $base_path; ?>/<?php echo $theme_path; ?>/stylesheets/main.css">
+		<link rel="stylesheet" href="<?php echo $base_path; ?>/<?php echo $theme_path; ?>/stylesheets/ebm.css">
 	</head>
 	<body>
 		<div class="site-wrapper">
