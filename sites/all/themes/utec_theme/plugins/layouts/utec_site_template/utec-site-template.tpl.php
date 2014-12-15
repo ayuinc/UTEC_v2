@@ -69,8 +69,8 @@
 		<!-- APP STYLES 
 			*Compress/Minify stylesheets on production
 		-->
-		<link rel="stylesheet" href="<?php echo $base_url; ?>stylesheets/main.css">
-		<link rel="stylesheet" href="<?php echo $base_url; ?>stylesheets/ebm.css">
+		<link rel="stylesheet" href="<?php echo $base_url; ?>/stylesheets/main.css">
+		<link rel="stylesheet" href="<?php echo $base_url; ?>/stylesheets/ebm.css">
 	</head>
 	<body>
 		<div class="site-wrapper">
@@ -137,7 +137,7 @@
 						<div class="container">
 							<div class="left">
 								<div class="logo pv-21">
-									<a href="#"><img src="<?php echo $base_url; ?>assets/img/logo_horizontal_UTEC.png" alt="Logo UTEC" width="135" height="auto"></a>
+									<a href="#"><img src="<?php echo $base_url; ?>/assets/img/logo_horizontal_UTEC.png" alt="Logo UTEC" width="135" height="auto"></a>
 								</div>
 							</div>
 							<div class="left">
@@ -432,7 +432,7 @@
 						<div class="container">
 							<div class="left">
 								<div class="logo">
-									<a href="#"><img src="<?php echo $base_url; ?>assets/img/icon_UTEC_gs.png" alt="Logo UTEC"></a>
+									<a href="#"><img src="<?php echo $base_url; ?>/assets/img/icon_UTEC_gs.png" alt="Logo UTEC"></a>
 								</div>
 							</div>
 							<div class="left">
@@ -832,7 +832,7 @@
 						<div class="anchor-img-grid anchor-img-grid-1 grid-block row ml-0">
 	            <div class="col-sm-6">
 	              <a href="#" class="anchor-1">
-	                <img src="<?php echo $base_url; ?>assets/img/anchor-img-grid-sq.png" />
+	                <img src="<?php echo $base_url; ?>/assets/img/anchor-img-grid-sq.png" />
 	                <div class="overlay-bg"></div>
 	                <div class="overlay-content">
 	                  <div>
@@ -845,7 +845,7 @@
 	            <div class="col-sm-6">
 	              <div class="clearfix">
 	                <a href="#" class="anchor-2">
-	                  <img src="<?php echo $base_url; ?>assets/img/anchor-img-grid-rect.png" />
+	                  <img src="<?php echo $base_url; ?>/assets/img/anchor-img-grid-rect.png" />
 	                  <div class="overlay-bg overlay-bg-rect"></div>
 	                  <div class="overlay-content">
 	                    <div>
@@ -858,7 +858,7 @@
 	              <div class="clearfix">
 	                <div class="col-sm-6">
 	                  <a href="#" class="anchor-3">
-	                    <img src="<?php echo $base_url; ?>assets/img/anchor-img-grid-sq-1.png" />
+	                    <img src="<?php echo $base_url; ?>/assets/img/anchor-img-grid-sq-1.png" />
 	                    <div class="overlay-bg"></div>
 	                    <div class="overlay-content">
 	                      <div>
@@ -870,7 +870,7 @@
 	                </div>
 	                <div class="col-sm-6">
 	                  <a href="#" class="anchor-4">
-	                    <img src="<?php echo $base_url; ?>assets/img/anchor-img-grid-sq-2.png" />
+	                    <img src="<?php echo $base_url; ?>/assets/img/anchor-img-grid-sq-2.png" />
 	                    <div class="overlay-bg"></div>
 	                    <div class="overlay-content">
 	                      <div>
@@ -887,7 +887,7 @@
 		        	<h2 class="lead medium mb-0"><span class="text-gray-darker">Noticias: Al día con la</span> <span class="text-gray">UTEC</span></h2>
 		        	<h4 class="lead mb-56 mt-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
 		        	<div class="banner row mb-14 ml-0" data-href="//link">
-								<div class="col-sm-3 banner-pic" style="background-image: url(<?php echo $base_url; ?>assets/img/img-sq.png);">
+								<div class="col-sm-3 banner-pic" style="background-image: url(<?php echo $base_url; ?>/assets/img/img-sq.png);">
 									<div class="banner-label bg-gray-darker text-white"><span>Emprendimiento</span></div>
 								</div>
 								<div class="col-sm-9 banner-content">
@@ -904,7 +904,7 @@
 										<p class="lead">Recusandae vitae, temporibus repudiandae veritatis aspernatur nisi harum explicabo possimus illo velit.</p>
 									</div>
 								</div>
-								<div class="col-sm-3 banner-pic" style="background-image: url(<?php echo $base_url; ?>assets/img/img-sq.png);">
+								<div class="col-sm-3 banner-pic" style="background-image: url(<?php echo $base_url; ?>/assets/img/img-sq.png);">
 									<div class="banner-label bg-gray-darker text-white"><span>Innovación</span></div>
 								</div>
 		        	</div>
@@ -916,7 +916,7 @@
 		        	<h2 class="lead medium"><span class="text-gray-darker">Blog</span> <span class="text-gray">UTEC</span></h2>
 		        	<h4 class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
 		        	<div class="banner row ml-0" data-href="//link">
-		        		<div class="col-sm-3 banner-pic" style="background-image: url(<?php echo $base_url; ?>assets/img/img-sq.png);"></div>
+		        		<div class="col-sm-3 banner-pic" style="background-image: url(<?php echo $base_url; ?>/assets/img/img-sq.png);"></div>
 		        		<div class="col-sm-9 banner-content">
 		        			<div>
 			        			<div class="user-card user-card-round">
@@ -1042,7 +1042,7 @@
 						</div>
 					</div>
 					<div class="copyright pv-14 bg-gray-lighter text-center text-gray">
-						<img src="<?php echo $base_url; ?>assets/img/icon_UTEC_gs.png" alt="" class="icon-utec mr-14"><span>Copyright &copy; 2014 UTEC. Todos los derechos reservados.</span>
+						<img src="<?php echo $base_url; ?>/assets/img/icon_UTEC_gs.png" alt="" class="icon-utec mr-14"><span>Copyright &copy; 2014 UTEC. Todos los derechos reservados.</span>
 					</div>
 				</div> 
 				<!-- END:Footer -->
@@ -1051,10 +1051,10 @@
 </div>
 
 		<!-- VENDOR SCRIPTS -->
-		<script src="<?php echo $base_url; ?>js/app/vendor/jquery-2.1.1.min.js"></script>
-		<script src="<?php echo $base_url; ?>js/app/vendor/TweenMax.min.js"></script>
-		<script src="<?php echo $base_url; ?>js/app/vendor/ScrollToPlugin.min.js"></script>
-		<script src="<?php echo $base_url; ?>js/app/vendor/jquery.scrollmagic.min.js"></script>
+		<script src="<?php echo $base_url; ?>/js/app/vendor/jquery-2.1.1.min.js"></script>
+		<script src="<?php echo $base_url; ?>/js/app/vendor/TweenMax.min.js"></script>
+		<script src="<?php echo $base_url; ?>/js/app/vendor/ScrollToPlugin.min.js"></script>
+		<script src="<?php echo $base_url; ?>/js/app/vendor/jquery.scrollmagic.min.js"></script>
 		
 		<!-- 
 		<script src="js/app/vendor/jquery.scrollmagic.debug.js"></script>
@@ -1063,9 +1063,9 @@
 		<!-- DEVELOPMENT & PRODUCTION SCRIPTS
 			*Compress scripts on production
 		-->
-		<script src="<?php echo $base_url; ?>js/app/lib/nav-control.js"></script>
-		<script src="<?php echo $base_url; ?>js/app/lib/layout-control.js"></script>
-		<script src="<?php echo $base_url; ?>js/app/lib/scroll-control.js"></script>
-		<script src="<?php echo $base_url; ?>js/app/lib/videojs.js"></script>
+		<script src="<?php echo $base_url; ?>/js/app/lib/nav-control.js"></script>
+		<script src="<?php echo $base_url; ?>/js/app/lib/layout-control.js"></script>
+		<script src="<?php echo $base_url; ?>/js/app/lib/scroll-control.js"></script>
+		<script src="<?php echo $base_url; ?>/js/app/lib/videojs.js"></script>
 	</body>
 </html>
