@@ -7,6 +7,77 @@
  */
  global $base_url;
 ?>
+<!DOCTYPE html> 
+<html>
+<!-- ===========================================================
+ ______     __  __     __  __        __     __   __     ______    
+/\  __ \   /\ \_\ \   /\ \/\ \      /\ \   /\ "-.\ \   /\  ___\   
+\ \  __ \  \ \____ \  \ \ \_\ \     \ \ \  \ \ \-.  \  \ \ \____  
+ \ \_\ \_\  \/\_____\  \ \_____\     \ \_\  \ \_\\"\_\  \ \_____\ 
+	\/_/\/_/   \/_____/   \/_____/      \/_/   \/_/ \/_/   \/_____/ 
+================================================================== -->
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- Project SEO -->
+		<meta name="description" content="">
+		<meta name="keywords" content="" /> 
+		<meta name="author" content="@MadeByGus &amp; Ayu Consulting S.A.C" />
+
+		<!-- Responsiveness -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+		<!-- Open Graph -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="">
+		<meta property="og:title" content="">
+		<meta property="og:site_name" content="">
+		<meta property="og:description" content="">
+		<meta property="og:image" content="">
+
+		<!-- Twitter Cards -->
+		<meta name="twitter:card" content="">
+		<meta name="twitter:title" content="">
+		<meta name="twitter:url" content="">
+		<meta name="twitter:description" content="">
+		<meta name="twitter:site" content="">
+		<meta name="twitter:creator" content="">
+		<meta name="twitter:image" content="">
+
+		<!-- FAVICON -->
+		<link rel="shortcut icon" href="img/favicon.ico">
+
+		<!-- Apple Mobile -->
+		<meta name="apple-mobile-web-app-title" content="">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!-- Apple icons -->
+		<link rel="apple-touch-icon" sizes="156x156" href="#">
+		<link rel="apple-touch-icon" sizes="128x128" href="#">
+		<link rel="apple-touch-icon" sizes="76x76" href="#">
+		<link rel="apple-touch-icon" href="#">
+
+		<!-- WebFonts -->
+		<script src="//use.typekit.net/fct8sgn.js"></script>
+		<script>try{Typekit.load();}catch(e){}</script>
+
+		<!-- VIDEO JS -->
+    <link href="//vjs.zencdn.net/4.10/video-js.css" rel="stylesheet">
+    <script src="//vjs.zencdn.net/4.10/video.js"></script>
+
+		<!-- APP STYLES 
+			*Compress/Minify stylesheets on production
+		-->
+		<link rel="stylesheet" href="<?php $base_url; ?>stylesheets/main.css">
+		<link rel="stylesheet" href="<?php $base_url; ?>stylesheets/ebm.css">
+	</head>
+	<body>
+		<div class="site-wrapper">
+			<div class="site-menu"></div>
+			<div class="site-content">
+
+
 <div class="site-wrapper">
   <div class="site-content">
     <?php if (!empty($content['header'])): ?>
@@ -978,3 +1049,23 @@
     <?php endif; ?>
   </div>
 </div>
+
+		<!-- VENDOR SCRIPTS -->
+		<script src="<?php $base_url; ?>js/app/vendor/jquery-2.1.1.min.js"></script>
+		<script src="<?php $base_url; ?>js/app/vendor/TweenMax.min.js"></script>
+		<script src="<?php $base_url; ?>js/app/vendor/ScrollToPlugin.min.js"></script>
+		<script src="<?php $base_url; ?>js/app/vendor/jquery.scrollmagic.min.js"></script>
+		
+		<!-- 
+		<script src="js/app/vendor/jquery.scrollmagic.debug.js"></script>
+		-->
+		
+		<!-- DEVELOPMENT & PRODUCTION SCRIPTS
+			*Compress scripts on production
+		-->
+		<script src="<?php $base_url; ?>js/app/lib/nav-control.js"></script>
+		<script src="<?php $base_url; ?>js/app/lib/layout-control.js"></script>
+		<script src="<?php $base_url; ?>js/app/lib/scroll-control.js"></script>
+		<script src="<?php $base_url; ?>js/app/lib/videojs.js"></script>
+	</body>
+</html>
