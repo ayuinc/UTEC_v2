@@ -14,4 +14,3 @@
     <a class="nav-point-link" href="<?php print $base_path; ?>ecohuerta-recetas" rel="tipsy" original-title="Recetas"></a>
   </li>
 </ul>
-
