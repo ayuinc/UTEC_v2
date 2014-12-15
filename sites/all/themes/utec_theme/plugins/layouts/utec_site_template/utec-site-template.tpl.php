@@ -915,7 +915,7 @@ $Globals['base_path'];
 		        		<div class="col-sm-9 banner-content">
 		        			<div>
 			        			<div class="user-card user-card-round">
-			        				<div class="user-pic"><img src="assets/img/user.jpg" alt=""></div>
+			        				<div class="user-pic"><img src="<?php echo $theme_path; ?>/assets/img/user.jpg" alt=""></div>
 			        				<div class="user-info"><h4>Alberto Iturralde</h4><small>Ingeniero Mecánico</small></div>
 			        			</div>
 			        			<h2><a href="#">Lorem ipsum dolor sit amet.</a></h2>
