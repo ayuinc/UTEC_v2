@@ -273,7 +273,7 @@ if(isset($node)){
                   </div>
                 </a>
               </li>
-              <li class="men3 dropdown <?php if(strcmp(request_uri(), '/ecohuerta')==0){print active;}?>">
+              <li class="dropdown men3 <?php if(strcmp(request_uri(), '/ecohuerta')==0){print active;}?>">
                 <a href="javascript:void(0)" class="link-menu link-menu-primary">
                   <div class="submenu-single">
                     Ecohuerta

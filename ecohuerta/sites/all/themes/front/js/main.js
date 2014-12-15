@@ -6,10 +6,12 @@ jQuery(function($) {
               });
         $("ul.menu > .men1").on('click', function () {
             $('ul.menu > .men2').removeClass('active');
+            $('ul.menu > .men3').removeClass('active');
             $('ul.menu > .men1').addClass('active');
         });
         $("ul.menu > .men2").on('click', function () {
             $('ul.menu > .men1').removeClass('active');
+            $('ul.menu > .men3').removeClass('active');
             $('ul.menu > .men2').addClass('active');
         });
         $("ul.menu > .men3").on('click', function () {
