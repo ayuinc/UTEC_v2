@@ -5,6 +5,7 @@
  * This layout is designed to be the site template layout when using
  * the Panels Everywhere module.
  */
+ global $base_url;
 ?>
 <div class="site-wrapper">
   <div class="site-content">
@@ -65,7 +66,7 @@
 						<div class="container">
 							<div class="left">
 								<div class="logo pv-21">
-									<a href="#"><img src="assets/img/logo_horizontal_UTEC.png" alt="Logo UTEC" width="135" height="auto"></a>
+									<a href="#"><img src="<?php $base_url; ?>assets/img/logo_horizontal_UTEC.png" alt="Logo UTEC" width="135" height="auto"></a>
 								</div>
 							</div>
 							<div class="left">
