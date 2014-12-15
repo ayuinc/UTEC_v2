@@ -3,6 +3,17 @@
   global $theme_path;
   $path = $base_url.'/'.$theme_path;
   $pathfile= variable_get('file_public_path', conf_path() . '/files/');
+
+  // $imgpath = image_style_url('YOUR_STYLE', $YOUR_FIELD[0]['uri']);
+  // $element = array(
+  //   '#tag' => 'meta', 
+  //   '#attributes' => array(
+  //     'property' => 'og:image',
+  //     'content' => $imgpath,
+  //   ),
+  // );
+  // drupal_add_html_head($element, 'og_image');
+
 ?>
 <style type="text/css">
     @import url("<?php print $path; ?>/css/normalize.css");
@@ -113,25 +124,14 @@
     <?php include 'menu-lateral-page-ecohuerta.php' ?>
 
     <div class="content" id="fullpage">
-      <div class="video-wrapper">
-        <video loop="" poster="" autoplay class="hidden-xs hidden-sm hidden-md">
-          <source src="<?php print $pathfile; ?>/lechuga.mp4 " type="video/mp4;codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
-        </video> 
-      </div>
-      <section id="ecohuerta" class="main">
+      <section id="sobre-ecohuerta" class="main">
         <div id="marea-en-accion-r" class="responsive-fix"></div>
         <div class="modal modal-alone center">
-          <div class="image-holder">
-            <img src="<?php print $path; ?>/images/ecohuerta/homepage/ecohuerta-image.png" alt="Marea en acción" height="100"> 
+          <div class="videoWrapper">
+            <iframe width="560" height="349" src="http://www.youtube.com/embed/n_dZNLr2cME?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
           </div>
-
-          <h3 class="light">
-            <b>Te presentamos las primeras lechugas de la historia regadas con aire.</b><br>
-            Unas lechugas ecológicas que podrás reservar desde ahora mismo.
-          </h3>
-
-          <a href="<?php print $base_path; ?>marea-en-accion-causas" class="scroll-to btn btn-medium-small btn-light-blue uppercase">
-            Ver más
+          <a style="margin-top:1rem;" href="<?php print $base_path; ?>ecohuerta-recetas" class="scroll-to btn btn-medium-small btn-light-blue uppercase">
+            Ver recetas
           </a>
         </div>
       </section>

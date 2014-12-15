@@ -127,9 +127,60 @@
           <li>
             <a id="mobile-aplica-tu-ingenio" href="/aplica-tu-ingenio" class="link-menu link-menu-primary">
               <div class="submenu-single">
-                  Aplica tu ingenio
+                Aplica tu ingenio
               </div>
             </a>
+          </li>
+          <li class="men3 dropdown <?php if(strcmp(request_uri(), '/ecohuerta')==0){print active;}?>">
+            <a href="javascript:void(0)" class="link-menu link-menu-primary">
+              <div class="submenu-single">
+                Ecohuerta
+              </div>
+            </a>
+            <ul class="submenu">
+              <li>
+                <a href="<?php print $base_path; ?>ecohuerta" class="link-menu">
+                  <div class="submenu-single">
+                    Ecohuerta
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="<?php print $base_path; ?>ecohuerta-video-lechugas-hidroponicas" class="link-menu">
+                  <div class="submenu-single">
+                    Sobre ecohuerta
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="<?php print $base_path; ?>ecohuerta-recetas" class="link-menu">
+                  <div class="submenu-single">
+                    Recetas
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a target="_blank"  href="https://www.facebook.com/ingenioenaccion">
+                  <div class="submenu-single stores" style="text-decoration: underline;">
+                    Facebook
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a target="_blank"  href="https://twitter.com/UTECedu">
+                  <div class="submenu-single stores" style="text-decoration: underline;">
+                      Twitter
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a style="cursor: pointer;"  class="fb-login-active"  >
+                  <div class="submenu-single stores">
+                    Iniciar sesión
+                  </div>
+                </a>
+              </li>
+            </ul>
           </li>
       </ul>
     </div>
