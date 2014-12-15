@@ -3,6 +3,17 @@
   global $theme_path;
   $path = $base_url.'/'.$theme_path;
   $pathfile= variable_get('file_public_path', conf_path() . '/files/');
+
+  // $imgpath = image_style_url('YOUR_STYLE', $YOUR_FIELD[0]['uri']);
+  // $element = array(
+  //   '#tag' => 'meta', 
+  //   '#attributes' => array(
+  //     'property' => 'og:image',
+  //     'content' => $imgpath,
+  //   ),
+  // );
+  // drupal_add_html_head($element, 'og_image');
+
 ?>
 <style type="text/css">
     @import url("<?php print $path; ?>/css/normalize.css");
