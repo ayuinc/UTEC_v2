@@ -1058,5 +1058,4 @@ $Globals['base_path'];
 		<script src="<?php echo $theme_path; ?>/js/app/lib/layout-control.js"></script>
 		<script src="<?php echo $theme_path; ?>/js/app/lib/scroll-control.js"></script>
 		<script src="<?php echo $theme_path; ?>/js/app/lib/videojs.js"></script>
-	</body>
-</html>
+
