@@ -361,7 +361,7 @@
 						<div class="container">
 							<div class="left">
 								<div class="logo">
-									<a href="#"><img src="assets/img/icon_UTEC_gs.png" alt="Logo UTEC"></a>
+									<a href="#"><img src="<?php $base_url; ?>assets/img/icon_UTEC_gs.png" alt="Logo UTEC"></a>
 								</div>
 							</div>
 							<div class="left">
@@ -761,7 +761,7 @@
 						<div class="anchor-img-grid anchor-img-grid-1 grid-block row ml-0">
 	            <div class="col-sm-6">
 	              <a href="#" class="anchor-1">
-	                <img src="assets/img/anchor-img-grid-sq.png" />
+	                <img src="<?php $base_url; ?>assets/img/anchor-img-grid-sq.png" />
 	                <div class="overlay-bg"></div>
 	                <div class="overlay-content">
 	                  <div>
@@ -774,7 +774,7 @@
 	            <div class="col-sm-6">
 	              <div class="clearfix">
 	                <a href="#" class="anchor-2">
-	                  <img src="assets/img/anchor-img-grid-rect.png" />
+	                  <img src="<?php $base_url; ?>assets/img/anchor-img-grid-rect.png" />
 	                  <div class="overlay-bg overlay-bg-rect"></div>
 	                  <div class="overlay-content">
 	                    <div>
@@ -787,7 +787,7 @@
 	              <div class="clearfix">
 	                <div class="col-sm-6">
 	                  <a href="#" class="anchor-3">
-	                    <img src="assets/img/anchor-img-grid-sq-1.png" />
+	                    <img src="<?php $base_url; ?>assets/img/anchor-img-grid-sq-1.png" />
 	                    <div class="overlay-bg"></div>
 	                    <div class="overlay-content">
 	                      <div>
@@ -799,7 +799,7 @@
 	                </div>
 	                <div class="col-sm-6">
 	                  <a href="#" class="anchor-4">
-	                    <img src="assets/img/anchor-img-grid-sq-2.png" />
+	                    <img src="<?php $base_url; ?>assets/img/anchor-img-grid-sq-2.png" />
 	                    <div class="overlay-bg"></div>
 	                    <div class="overlay-content">
 	                      <div>
@@ -816,7 +816,7 @@
 		        	<h2 class="lead medium mb-0"><span class="text-gray-darker">Noticias: Al día con la</span> <span class="text-gray">UTEC</span></h2>
 		        	<h4 class="lead mb-56 mt-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
 		        	<div class="banner row mb-14 ml-0" data-href="//link">
-								<div class="col-sm-3 banner-pic" style="background-image: url(assets/img/img-sq.png);">
+								<div class="col-sm-3 banner-pic" style="background-image: url(<?php $base_url; ?>assets/img/img-sq.png);">
 									<div class="banner-label bg-gray-darker text-white"><span>Emprendimiento</span></div>
 								</div>
 								<div class="col-sm-9 banner-content">
@@ -833,7 +833,7 @@
 										<p class="lead">Recusandae vitae, temporibus repudiandae veritatis aspernatur nisi harum explicabo possimus illo velit.</p>
 									</div>
 								</div>
-								<div class="col-sm-3 banner-pic" style="background-image: url(assets/img/img-sq.png);">
+								<div class="col-sm-3 banner-pic" style="background-image: url(<?php $base_url; ?>assets/img/img-sq.png);">
 									<div class="banner-label bg-gray-darker text-white"><span>Innovación</span></div>
 								</div>
 		        	</div>
@@ -845,7 +845,7 @@
 		        	<h2 class="lead medium"><span class="text-gray-darker">Blog</span> <span class="text-gray">UTEC</span></h2>
 		        	<h4 class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
 		        	<div class="banner row ml-0" data-href="//link">
-		        		<div class="col-sm-3 banner-pic" style="background-image: url(assets/img/img-sq.png);"></div>
+		        		<div class="col-sm-3 banner-pic" style="background-image: url(<?php $base_url; ?>assets/img/img-sq.png);"></div>
 		        		<div class="col-sm-9 banner-content">
 		        			<div>
 			        			<div class="user-card user-card-round">
@@ -971,7 +971,7 @@
 						</div>
 					</div>
 					<div class="copyright pv-14 bg-gray-lighter text-center text-gray">
-						<img src="assets/img/icon_UTEC_gs.png" alt="" class="icon-utec mr-14"><span>Copyright &copy; 2014 UTEC. Todos los derechos reservados.</span>
+						<img src="<?php $base_url; ?>assets/img/icon_UTEC_gs.png" alt="" class="icon-utec mr-14"><span>Copyright &copy; 2014 UTEC. Todos los derechos reservados.</span>
 					</div>
 				</div> 
 				<!-- END:Footer -->
