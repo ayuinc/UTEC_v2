@@ -13,7 +13,7 @@
     <?php endif; ?>
 
     <?php if (!empty($content['header-bottom'])): ?>
-      <div class="hero-unit"><?php print $content['header-bottom']; ?></div>
+      <div class="hero-unit video-bg"><?php print $content['header-bottom']; ?></div>
     <?php endif; ?>
 
     <?php if (!empty($content['body'])): ?>
