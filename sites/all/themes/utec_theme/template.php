@@ -1,5 +1,25 @@
 <?php
 
+	drupal_add_css("//vjs.zencdn.net/4.10/video-js.css", 'external');
+	
+	drupal_add_js('try{Typekit.load();}catch(e){}', 'inline'));
+
+  drupal_add_js('//use.typekit.net/fct8sgn.js', array(
+  	'type' => 'external',
+	  'scope' => 'header',
+	  'group' => JS_THEME,
+	  'every_page' => TRUE,
+	  'weight' => 1,
+	));
+
+	drupal_add_js('//vjs.zencdn.net/4.10/video.js', array(
+		'type' => 'external',
+	  'scope' => 'header',
+	  'group' => JS_THEME,
+	  'every_page' => TRUE,
+	  'weight' => 2,
+	));
+
 	drupal_add_js(path_to_theme() . '/js/app/vendor/jquery-2.1.1.min.js', array(
 	  'scope' => 'footer',
 	  'group' => JS_THEME,
