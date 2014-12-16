@@ -8,24 +8,18 @@
 ?>
 <div class="site-wrapper">
   <div class="site-content">
-    <?php if (!empty($content['header'])): ?>
-      <div id="header"><?php print $content['header']; ?></div>
-    <?php endif; ?>
 
-    <?php if (!empty($content['header-bottom'])): ?>
-      <div class="hero-unit video-bg"><?php print $content['header-bottom']; ?></div>
-    <?php endif; ?>
+    <?php print $content['header']; ?>
 
-    <?php if (!empty($content['body'])): ?>
-      <div class="body minhp-100 pvp-7" id="sec-1">
-        <div class="container">
-          <?php print $content['body']; ?>
-        </div>
+    <div class="hero-unit video-bg"><?php print $content['header-bottom']; ?></div>
+
+    <div class="body minhp-100 pvp-7" id="sec-1">
+      <div class="container">
+        <?php print $content['body']; ?>
       </div>
-    <?php endif; ?>
+    </div>
 
-    <?php if (!empty($content['footer'])): ?>
-      <div class="footer"><?php print $content['footer']; ?></div>
-    <?php endif; ?>
+    <div class="footer"><?php print $content['footer']; ?></div>
+    
   </div>
 </div>
