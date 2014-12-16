@@ -1,3 +1,10 @@
+<?php  
+
+// $node = node_load($nid);
+// $node->getField('body')
+die(print_r($node));
+
+?>
 <!-- HERO-UNIT -->
 <video
 	id="videocover"
