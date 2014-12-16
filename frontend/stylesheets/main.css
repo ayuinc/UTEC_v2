@@ -4815,6 +4815,8 @@ body {
   padding: 0 28px; }
 .banner a {
   color: #8f8d8e; }
+.banner:hover {
+  background-color: #f1f1f1; }
 
 .user-card {
   position: relative;
@@ -4908,9 +4910,6 @@ img.icon-utec {
 
 .gray-light {
   color: #bbb !important; }
-
-.banner:hover {
-  background-color: #f1f1f1; }
 
 #header, #header-on-scroll {
   position: relative;

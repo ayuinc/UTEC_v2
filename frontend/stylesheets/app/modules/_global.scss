@@ -527,6 +527,9 @@ $video-bg-height: 420px;
 	a {
 		color: $gray;
 	}
+	&:hover {
+		background-color: $gray-lighter;
+	}
 }
 
 // USER CARD
@@ -607,8 +610,4 @@ img.icon-utec {
 
 .gray-light {
 	color: #bbb !important;
-}
-
-.banner:hover {
-	background-color: #f1f1f1;
 }
