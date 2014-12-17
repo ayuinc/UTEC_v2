@@ -22,10 +22,6 @@
   $izquierdo_link = $fields[4]->field_link['und'][0]['value'];
   $izquierdo_img  = $fields[4]->field_imagen['und'][0]['filename'];
 
-  // die(print_r($derecho_inferior_izq_img));
-  // die(print_r($derecho_inferior_der_img));
-  die(print_r($izquierdo_img));
-
 ?>
 <h1 class="lead medium mb-0"><span class="text-gray-darker">En la UTEC ingeniería es</span> <span class="text-gray">bienestar.</span></h1>
 	<h4 class="lead mt-0 mb-42">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
@@ -57,25 +53,25 @@
       </div>
       <div class="clearfix">
         <div class="col-sm-6">
-          <a href="<?php print $base_path; ?>/<?php print $derecho_superior_link; ?>" class="anchor-3">
-            <img src="assets/img/anchor-img-grid-sq-1.png" />
+          <a href="<?php print $base_path; ?>/<?php print $derecho_inferior_izq_link; ?>" class="anchor-3">
+            <img src="sites/default/files/<?php print $$derecho_inferior_izq_img; ?>" />
             <div class="overlay-bg"></div>
             <div class="overlay-content">
               <div>
-                <span class="text-top mb-0">Texto superior</span>
-                <span class="text-bottom">Texto inferior</span>
+                <span class="text-top mb-0"><?php print $$derecho_inferior_izq_txt1; ?></span>
+                <span class="text-bottom"><?php print $$derecho_inferior_izq_txt2; ?></span>
               </div>
             </div>
           </a>
         </div>
         <div class="col-sm-6">
-          <a href="#" class="anchor-4">
-            <img src="assets/img/anchor-img-grid-sq-2.png" />
+          <a href="<?php print $base_path; ?>/<?php print $derecho_inferior_der_link; ?>" class="anchor-4">
+            <img src="sites/default/files/<?php print $derecho_inferior_der_img; ?>" />
             <div class="overlay-bg"></div>
             <div class="overlay-content">
               <div>
-                <span class="text-top mb-0">Texto superior</span>
-                <span class="text-bottom">Texto inferior</span>
+                <span class="text-top mb-0"><?php print $$derecho_inferior_der_txt1; ?></span>
+                <span class="text-bottom"><?php print $$derecho_inferior_der_txt2; ?></span>
               </div>
             </div>
           </a>
