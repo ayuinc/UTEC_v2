@@ -1,8 +1,5 @@
 <?php  
 
-// $node = node_load($nid);
-// $node->getField('body')
-// die(print_r($node));
 $video_name = $node->field_video['und']['0']['filename'];
 
 ?>

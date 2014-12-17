@@ -12,21 +12,9 @@ body {
 $bg-img-height: 350px;
 $banner-height: 293px;
 $user-card-height: 42px;
+$video-bg-height: 420px;
 
-.site-wrapper,
-.site-content {
-	min-height: 100%;
-	height: 100%;
-}
-
-.body {
-	position: relative;
-}
-
-[data-href]{
-	cursor: pointer;
-}
-
+// CONTROL GRID BLOCK IMG SIZES
 @mixin content-block {
 	$container-fluid-sm: $container-fluid / 2;
 	$container-fluid-lg: $container-fluid-sm * 3;
@@ -34,11 +22,101 @@ $user-card-height: 42px;
 	padding: rem($container-fluid) 0 rem($container-fluid-lg) 0;
 }
 
+// CONTROL FULL WIDTH BG IMAGES
 @mixin bg-img-control {
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
 }
+
+.site-wrapper,
+.site-content {
+	min-height: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.body,
+.hero-unit,
+.section-scroll-content {
+	position: relative;
+}
+
+// HERO UNIT
+.hero-unit {
+	min-height: $video-bg-height;
+	@include bg-img-control;
+	&.video-bg {
+		overflow: hidden;
+		height: $video-bg-height;
+	}
+	.overlay {
+		min-height: $video-bg-height;
+	}
+}
+
+// SECTION SCROLL
+#section-scroll {
+	@include position(fixed, 42% 0 null null);
+	ul {
+		@include list-unstyled;
+		min-height: 91px;
+		// background: $blue-lighter;
+		// padding-right: $container-fluid;
+		li {
+			text-align: right;
+			padding: 3px 7px;
+			@include border-style(null solid null null);
+			@include border-width(null 1px null null);
+			@include border-color(null $blue null null);
+			// margin-bottom: $container-fluid / 2;
+			a {
+				display: block;
+				text-align: right;
+				color: $gray;
+				position: relative;
+				padding-right: 18px;
+				&:hover,
+				&.active {
+					color: $brand-primary;
+					&:before {
+						background: $brand-primary;	
+					}
+				}
+				&:before,
+				&:after {
+					@include position(absolute, 7px 0 null null);
+					content: "";
+					background-color: $gray;
+					margin-left: 7px;
+				}
+				&:before {
+					width: 7px;
+					height: 7px;
+				}
+				&:after {
+					width: 3px;
+					height: 1px;
+				}
+			}
+		}
+	}
+}
+
+.btn-apply {
+	@include transform(translateX(110%));
+}
+
+.section-scroll-content {
+	padding: 7% 0;
+	@include bg-img-control;
+}
+
+// CLICKABLE DIV
+[data-href]{
+	cursor: pointer;
+}
+
 
 // BG IMAGE BLOCKS
 .bg-img-block {
@@ -262,7 +340,7 @@ $user-card-height: 42px;
 	display: block;
 	text-align: center;
 	cursor: pointer;
-	@include position(absolute, null 0 0 0);
+	@include position(absolute, null 0 4px 0);
 	i {
 		content: "\e600";
 		font-family: 'icomoon';
@@ -300,6 +378,16 @@ $user-card-height: 42px;
 				min-height: $user-card-height - 14;
 			}
 		}
+		i {}
+		&.videoBG {
+			height: $video-bg-height - 280;
+		}
+		&.hero-unit {
+			min-height: $video-bg-height - 280;
+			.overlay {
+				min-height: $video-bg-height - 280;
+			}
+		}
 	}
 	&.sm {
 		&.scroll-down {
@@ -321,6 +409,16 @@ $user-card-height: 42px;
 			}
 			.user-info {
 				min-height: $user-card-height - 7;
+			}
+		}
+		i {}
+		&.videoBG {
+			height: $video-bg-height - 140;
+		}
+		&.hero-unit {
+			min-height: $video-bg-height - 140;
+			.overlay {
+				min-height: $video-bg-height - 140;
 			}
 		}
 	}
@@ -346,6 +444,18 @@ $user-card-height: 42px;
 				min-height: $user-card-height + 14;
 			}
 		}
+		i {
+			font-size: $font-size-h3 * 2;
+		}
+		&.videoBG {
+			height: $video-bg-height + 140;
+		}
+		&.hero-unit {
+			min-height: $video-bg-height + 140;
+			.overlay {
+				min-height: $video-bg-height + 140;
+			}
+		}
 	}
 	&.xl {
 		&.scroll-down {
@@ -367,6 +477,18 @@ $user-card-height: 42px;
 			}
 			.user-info {
 				min-height: $user-card-height + 21;
+			}
+		}
+		i {
+			font-size: $font-size-h1 * 3;
+		}
+		&.videoBG {
+			height: $video-bg-height + 210;
+		}
+		&.hero-unit {
+			min-height: $video-bg-height + 210;
+			.overlay {
+				min-height: $video-bg-height + 210;
 			}
 		}
 	}
@@ -405,6 +527,9 @@ $user-card-height: 42px;
 	a {
 		color: $gray;
 	}
+	&:hover {
+		background-color: $gray-lighter;
+	}
 }
 
 // USER CARD
@@ -441,4 +566,48 @@ $user-card-height: 42px;
 			}
 		}
 	}
+}
+
+// ICON UTEC
+img.icon-utec {
+	width: 35px;
+	height: auto;
+}
+
+// VIDEOCOVER
+.videocover {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	// z-index: -1000;
+	overflow: hidden;
+	// background: url(../assets/img/img.png) no-repeat center top;
+	// background-size: cover;
+}
+
+.video-js {
+  position: relative !important;
+  width: 100% !important;
+  height: auto !important;
+ 	.vjs-tech {
+  	position: relative !important;
+  }
+}
+
+.overlay {
+	@include position(absolute, 0 0 0 0);
+	z-index: 10;
+}
+
+.video-placeholder {
+	@include position(absolute, 0 0 0 0);
+	z-index: 7;
+}
+
+.gray-light {
+	color: #bbb !important;
 }
