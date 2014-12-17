@@ -54,7 +54,7 @@
       <div class="clearfix">
         <div class="col-sm-6">
           <a href="<?php print $base_path; ?>/<?php print $derecho_inferior_izq_link; ?>" class="anchor-3">
-            <img src="sites/default/files/<?php print $$derecho_inferior_izq_img; ?>" />
+            <img src="sites/default/files/<?php print $derecho_inferior_izq_img; ?>" />
             <div class="overlay-bg"></div>
             <div class="overlay-content">
               <div>
