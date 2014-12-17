@@ -22,7 +22,9 @@
   $izquierdo_link = $fields[4]->field_link['und'][0]['value'];
   $izquierdo_img  = $fields[4]->field_imagen['und'][0]['filename'];
 
-  die(print_r($derecho_superior_img));
+  die(print_r($derecho_inferior_izq_img));
+  // die(print_r($derecho_inferior_der_img));
+  // die(print_r($izquierdo_img));
 
 ?>
 <h1 class="lead medium mb-0"><span class="text-gray-darker">En la UTEC ingeniería es</span> <span class="text-gray">bienestar.</span></h1>
