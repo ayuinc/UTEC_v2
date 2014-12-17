@@ -22,8 +22,8 @@
   $izquierdo_link = $fields[4]->field_link['und'][0]['value'];
   $izquierdo_img  = $fields[4]->field_imagen['und'][0]['filename'];
 
-  die(print_r($derecho_inferior_izq_img));
-  // die(print_r($derecho_inferior_der_img));
+  // die(print_r($derecho_inferior_izq_img));
+  die(print_r($derecho_inferior_der_img));
   // die(print_r($izquierdo_img));
 
 ?>
