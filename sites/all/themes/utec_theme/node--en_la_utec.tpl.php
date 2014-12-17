@@ -6,7 +6,7 @@
 	$wrapper = entity_metadata_wrapper('node', $node);
   $formtype = field_get_items('node', $node, 'field_bloque_izquierdo');
 
-  $fields = entity_load('field_collection_item', array($node->field_bloque_derecho['und'][0]['value']));
+  // $fields = entity_load('field_collection_item', array($node->field_bloque_derecho['und'][0]['value']));
   // $track_2 = entity_load('field_collection_item', array($node->field_track[LANGUAGE_NONE][1]['value']));
 // $field_bloque_derecho
 // $field_bloque_izquierdo
@@ -16,7 +16,7 @@
   $value = $fields[1]['FieldCollectionItemEntity'];
 
   $item = field_collection_field_get_entity(1);
-	die(print_r($item));
+	die(print_r($formtype));
 	// die(print_r($value));
 
   foreach($formtype as $itemid) { 
