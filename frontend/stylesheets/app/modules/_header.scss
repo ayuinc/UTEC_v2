@@ -201,7 +201,7 @@ $header-on-scroll-height: 56px;
 	z-index: 3000;
 	.nav-main {
 		height: $header-on-scroll-height;
-		background-color: #f1f1f1;
+		background-color: $gray-lighter;
 		.logo {
 			width: 280px;
 			height: $header-on-scroll-height;
@@ -223,7 +223,7 @@ $header-on-scroll-height: 56px;
 						padding: 12px 0;
 						padding: rem(12px) 0;
 						color: $gray;
-						background-color: #f1f1f1;
+						background-color: $gray-lighter;
 						min-width: 135px;
 						min-width: rem(135px);
 						height: $header-on-scroll-height;
