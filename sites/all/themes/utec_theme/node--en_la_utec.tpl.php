@@ -58,8 +58,8 @@
             <div class="overlay-bg"></div>
             <div class="overlay-content">
               <div>
-                <span class="text-top mb-0"><?php print $$derecho_inferior_izq_txt1; ?></span>
-                <span class="text-bottom"><?php print $$derecho_inferior_izq_txt2; ?></span>
+                <span class="text-top mb-0"><?php print $derecho_inferior_izq_txt1; ?></span>
+                <span class="text-bottom"><?php print $derecho_inferior_izq_txt2; ?></span>
               </div>
             </div>
           </a>
@@ -70,8 +70,8 @@
             <div class="overlay-bg"></div>
             <div class="overlay-content">
               <div>
-                <span class="text-top mb-0"><?php print $$derecho_inferior_der_txt1; ?></span>
-                <span class="text-bottom"><?php print $$derecho_inferior_der_txt2; ?></span>
+                <span class="text-top mb-0"><?php print $derecho_inferior_der_txt1; ?></span>
+                <span class="text-bottom"><?php print $derecho_inferior_der_txt2; ?></span>
               </div>
             </div>
           </a>
