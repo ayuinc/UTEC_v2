@@ -13,8 +13,10 @@
 // $field_bloque_derecho_inferior
 // $field_bloque_derecho_inferior_de
 
-  // $value = $fields[1]['FieldCollectionItemEntity'];
-	die(print_r($fields));
+  $value = $fields[1]['FieldCollectionItemEntity'];
+
+  $item = field_collection_field_get_entity(1);
+	die(print_r($item));
 	// die(print_r($value));
 
   foreach($formtype as $itemid) { 
