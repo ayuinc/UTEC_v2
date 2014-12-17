@@ -4,7 +4,7 @@
 	$video_name = $node->field_video['und']['0']['filename'];
 	
 	$wrapper = entity_metadata_wrapper('node', $node);
-  $formtype = field_get_items('node', $node, 'field_texto_superior_1');
+  $formtype = field_get_items('node', $node, 'field_bloque_derecho');
 
   // $fields = entity_load('field_collection_item', array($node->field_bloque_derecho['und'][0]['value']));
   // $track_2 = entity_load('field_collection_item', array($node->field_track[LANGUAGE_NONE][1]['value']));
