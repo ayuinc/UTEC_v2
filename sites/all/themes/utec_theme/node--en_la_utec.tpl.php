@@ -1,11 +1,18 @@
 <?php 
 
+	global $base_path;
+
   $fields = entity_load('field_collection_item');
 
   $derecho_superior_txt1 = $fields[1]->field_texto_superior_1['und'][0]['value'];
   $derecho_superior_txt2 = $fields[1]->field_texto_superior_2['und'][0]['value'];
   $derecho_superior_link = $fields[1]->field_link['und'][0]['value'];
   $derecho_superior_img = $fields[1]->field_imagen['und'][0]['filename'];
+
+  $izquierdo_txt1 = $fields[2]->field_texto_superior_1['und'][0]['value'];
+  $izquierdo_txt2 = $fields[2]->field_texto_superior_2['und'][0]['value'];
+  $izquierdo_link = $fields[2]->field_link['und'][0]['value'];
+  $izquierdo_img  = $fields[2]->field_imagen['und'][0]['filename'];
 
   $derecho_inferior_izq_txt1 = $fields[3]->field_texto_superior_1['und'][0]['value'];
   $derecho_inferior_izq_txt2 = $fields[3]->field_texto_superior_2['und'][0]['value'];
@@ -16,11 +23,6 @@
   $derecho_inferior_der_txt2 = $fields[4]->field_texto_superior_2['und'][0]['value'];
   $derecho_inferior_der_link = $fields[4]->field_link['und'][0]['value'];
   $derecho_inferior_der_img  = $fields[4]->field_imagen['und'][0]['filename'];
-
-  $izquierdo_txt1 = $fields[2]->field_texto_superior_1['und'][0]['value'];
-  $izquierdo_txt2 = $fields[2]->field_texto_superior_2['und'][0]['value'];
-  $izquierdo_link = $fields[2]->field_link['und'][0]['value'];
-  $izquierdo_img  = $fields[2]->field_imagen['und'][0]['filename'];
 
 ?>
 <h1 class="lead medium mb-0"><span class="text-gray-darker">En la UTEC ingeniería es</span> <span class="text-gray">bienestar.</span></h1>
