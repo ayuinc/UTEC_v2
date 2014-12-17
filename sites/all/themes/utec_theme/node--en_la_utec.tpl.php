@@ -9,7 +9,7 @@
   $fields = entity_load('field_collection_item');
   // $track_2 = entity_load('field_collection_item', array($node->field_track[LANGUAGE_NONE][1]['value']));
 
-  $value = $fields[1];
+  $value = $fields[1]->$FieldCollectionItemEntity['field_texto_superior_1'];
 	die(print_r($value));
 
   foreach($formtype as $itemid) { 
