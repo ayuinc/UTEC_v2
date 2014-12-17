@@ -1,8 +1,18 @@
 <?php 
 
 	$theme_path = drupal_get_path('theme', 'utec_theme');
-	die(print_r($node));
 	$video_name = $node->field_video['und']['0']['filename'];
+	
+	$wrapper = entity_metadata_wrapper('node', $node);
+  $formtype = field_get_items('node', $node, 'field_references');
+
+	die(print_r($formtype));
+
+  foreach($formtype as $itemid) { 
+    $item = field_collection_field_get_entity($itemid);
+	  print $item->field_reference_title['und'][0]['safe_value'];
+	  print $item->field_reference_location['und'][0]['safe_value'];
+	}
 
 ?>
 <h1 class="lead medium mb-0"><span class="text-gray-darker">En la UTEC ingeniería es</span> <span class="text-gray">bienestar.</span></h1>
