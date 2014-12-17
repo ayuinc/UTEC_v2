@@ -1,3 +1,8 @@
+<?php 
+
+	$theme_path = drupal_get_path('theme', 'utec_theme');
+
+?>
 <!-- HEADER -->
 <div id="header"> 
 	<div class="tool-bar bg-gray-lighter pt-sm pb-sm">
@@ -54,7 +59,7 @@
 		<div class="container">
 			<div class="left">
 				<div class="logo pv-21">
-					<a href="#"><img src="<?php echo path_to_theme() ?>/assets/img/logo_horizontal_UTEC.png" alt="Logo UTEC" width="135" height="auto"></a>
+					<a href="#"><img src="<?php print $theme_path; ?>/assets/img/logo_horizontal_UTEC.png" alt="Logo UTEC" width="135" height="auto"></a>
 				</div>
 			</div>
 			<div class="left">
@@ -349,7 +354,7 @@
 		<div class="container">
 			<div class="left">
 				<div class="logo">
-					<a href="#"><img src="<?php path_to_theme(); ?>/assets/img/icon_UTEC_gs.png" alt="Logo UTEC"></a>
+					<a href="#"><img src="<?php print $theme_path; ?>/assets/img/icon_UTEC_gs.png" alt="Logo UTEC"></a>
 				</div>
 			</div>
 			<div class="left">
