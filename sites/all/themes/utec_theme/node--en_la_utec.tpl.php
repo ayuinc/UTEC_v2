@@ -6,7 +6,10 @@
 	$wrapper = entity_metadata_wrapper('node', $node);
   $formtype = field_get_items('node', $node, 'field_bloque_izquierdo');
 
-	die(print_r($formtype));
+  $track_1 = entity_load('field_collection_item');
+  // $track_2 = entity_load('field_collection_item', array($node->field_track[LANGUAGE_NONE][1]['value']));
+
+	die(print_r($track_1));
 
   foreach($formtype as $itemid) { 
     $item = field_collection_field_get_entity($itemid);
@@ -14,8 +17,6 @@
 	  print $item->field_reference_location['und'][0]['safe_value'];
 	}
 
-  $track_1 = entity_load('field_collection_item', array($node->field_track[LANGUAGE_NONE][0]['value']));
-  $track_2 = entity_load('field_collection_item', array($node->field_track[LANGUAGE_NONE][1]['value']));
 
 ?>
 <h1 class="lead medium mb-0"><span class="text-gray-darker">En la UTEC ingeniería es</span> <span class="text-gray">bienestar.</span></h1>
