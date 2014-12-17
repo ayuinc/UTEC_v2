@@ -1,20 +1,20 @@
 <?php 
 
-	$theme_path = drupal_get_path('theme', 'utec_theme');
-	$video_name = $node->field_video['und']['0']['filename'];
+	// $theme_path = drupal_get_path('theme', 'utec_theme');
+	// $video_name = $node->field_video['und']['0']['filename'];
 	
-	$wrapper = entity_metadata_wrapper('node', $node);
-  $formtype = field_get_items('node', $node, 'field_bloque_derecho');
+	// $wrapper = entity_metadata_wrapper('node', $node);
+ //  $formtype = field_get_items('node', $node, 'field_bloque_derecho');
 
-  // $fields = entity_load('field_collection_item', array($node->field_bloque_derecho['und'][0]['value']));
+  $fields = entity_load('field_collection_item');
   // $track_2 = entity_load('field_collection_item', array($node->field_track[LANGUAGE_NONE][1]['value']));
 // $field_bloque_derecho
 // $field_bloque_izquierdo
 // $field_bloque_derecho_inferior
 // $field_bloque_derecho_inferior_de
 
-	die(print_r($formtype));
-  $value = $fields[1]['FieldCollectionItemEntity'];
+  $value = $fields[1]->field_texto_superior_1;
+	die(print_r($value));
 
   $item = field_collection_field_get_entity(1);
 	// die(print_r($value));
