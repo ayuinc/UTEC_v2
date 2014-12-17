@@ -1,0 +1,21 @@
+.calendar {
+	.row {
+		> div {
+			min-height: 140px; 
+			@include flex-middle-center;
+			.title {
+				margin-bottom: $container-fluid;
+				span {
+					
+				}
+			}
+			.date {
+				span {
+					font-size: $font-size-h3;
+					@include light;
+					color: $gray;
+				}
+			}
+		}
+	}
+}
