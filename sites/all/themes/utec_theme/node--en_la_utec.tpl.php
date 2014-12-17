@@ -4,7 +4,7 @@
 	$video_name = $node->field_video['und']['0']['filename'];
 	
 	$wrapper = entity_metadata_wrapper('node', $node);
-  $formtype = field_get_items('node', $node, 'field_references');
+  $formtype = field_get_items('node', $node, 'field_bloque_izquierdo');
 
 	die(print_r($formtype));
 
@@ -13,6 +13,9 @@
 	  print $item->field_reference_title['und'][0]['safe_value'];
 	  print $item->field_reference_location['und'][0]['safe_value'];
 	}
+
+  $track_1 = entity_load('field_collection_item', array($node->field_track[LANGUAGE_NONE][0]['value']));
+  $track_2 = entity_load('field_collection_item', array($node->field_track[LANGUAGE_NONE][1]['value']));
 
 ?>
 <h1 class="lead medium mb-0"><span class="text-gray-darker">En la UTEC ingeniería es</span> <span class="text-gray">bienestar.</span></h1>
