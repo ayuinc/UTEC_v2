@@ -10,6 +10,7 @@
 
 	global $user;
 	$user_fields = user_load($user_id);
+	print_r($user_fields);
 	$user_name = $user->name;
 	$user_image = $user->picture;
 ?>
