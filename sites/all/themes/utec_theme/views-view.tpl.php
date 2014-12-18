@@ -27,5 +27,6 @@
  * @ingroup views_templates
  */
 ?>
+<?php die(print_r($fields)); ?>
 <?php print $rows; ?>
 
