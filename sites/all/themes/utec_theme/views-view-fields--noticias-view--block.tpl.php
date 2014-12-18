@@ -7,7 +7,7 @@
 	$image = $fields['field_imagen']->content;
 	$category = $fields['field_categor_a']->content;
 	$texto_corto = $fields['field_texto_corto']->content;
-	$count = 0;
+	global $count;
 ?>
 <?php if ($count == 0) :?>
 <div class="banner row mb-14 ml-0" data-href="//link">
@@ -35,4 +35,3 @@
 	</div>
 </div>
 <?php endif; ?>
-<?php $count = 1; ?>
