@@ -8,7 +8,7 @@
 	$texto_corto = $fields['field_texto_corto']->content;
 	global $count;
 ?>
-<?php die(var_dump($count)); ?>
+<?php //die(var_dump($count)); ?>
 <?php if ($count == 0) :?>
 <div class="banner row mb-14 ml-0" data-href="//link">
 	<div class="col-sm-3 banner-pic" style="background-image: url(<?php print $image ?>);">
