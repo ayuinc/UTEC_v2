@@ -1,1 +1,1 @@
-<?php dpm($fields); ?>
+<?php die(print_r($fields)); ?>
