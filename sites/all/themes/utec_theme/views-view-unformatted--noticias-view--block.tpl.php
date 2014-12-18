@@ -12,7 +12,9 @@
 	<h4 class="lead mb-56 mt-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
     <?php foreach ($rows as $id => $row): ?>
 		    <?php
+		    	$count = 123;
 			    print $row;
+			    $count = 1234;
 		    ?>
 		<?php endforeach; ?>
 	<div>

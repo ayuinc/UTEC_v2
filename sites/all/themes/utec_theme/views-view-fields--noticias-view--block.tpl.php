@@ -1,3 +1,4 @@
+<?php die(var_dump($count)); ?>
 <?php //die(print_r($fields)); ?>
 <?php 
 	// kpr($fields); 
