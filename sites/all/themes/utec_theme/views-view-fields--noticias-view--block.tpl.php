@@ -1,6 +1,6 @@
 <?php //die(print_r($fields)); ?>
 <?php 
-	kpr($fields); 
+	// kpr($fields); 
 	$title = $fields['title']->content;
 	$body = $fields['body']->content;
 	$image = $fields['field_imagen']->content;
@@ -10,7 +10,7 @@
 <?php if ($count == 0) :?>
 	<?php $count == 1; ?>
 <div class="banner row mb-14 ml-0" data-href="//link">
-	<div class="col-sm-3 banner-pic" style="background-image: url(sites/default/files/noticias/<?php print $image ?>);">
+	<div class="col-sm-3 banner-pic" style="background-image: url(<?php print $image ?>);">
 		<div class="banner-label bg-gray-darker text-white"><span><?php print $category ?></span></div>
 	</div>
 	<div class="col-sm-9 banner-content">
@@ -29,7 +29,7 @@
 			<p class="lead"><?php print $body ?></p>
 		</div>
 	</div>
-	<div class="col-sm-3 banner-pic" style="background-image: url(assets/img/img-sq.png);">
+	<div class="col-sm-3 banner-pic" style="background-image: url(<?php print $image ?>);">
 		<div class="banner-label bg-gray-darker text-white"><span><?php print $category ?></span></div>
 	</div>
 </div>
