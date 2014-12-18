@@ -5,6 +5,7 @@
 	$body = $fields['body']->content;
 	$image = $fields['field_imagen']->content;
 	$category = $fields['field_categor_a']->content;
+	$texto_corto = $fields['field_texto_corto']->content;
 	$count = 0;
 ?>
 <?php if ($count == 0) :?>
@@ -15,7 +16,7 @@
 	<div class="col-sm-9 banner-content">
 		<div>
 			<h2><a href="#"><?php print $title ?></a></h2>
-			<p class="lead"><?php print $body ?></p>
+			<p class="lead"><?php print $texto_corto ?></p>
 		</div>
 	</div>
 </div>
@@ -25,7 +26,7 @@
 	<div class="col-sm-9 banner-content">
 		<div>
 			<h2><a href="#"><?php print $title ?></a></h2>
-			<p class="lead"><?php print $body ?></p>
+			<p class="lead"><?php print $texto_corto ?></p>
 		</div>
 	</div>
 	<div class="col-sm-3 banner-pic" style="background-image: url(<?php print $image ?>);">
