@@ -1,5 +1,7 @@
 <?php 
 
+	global $base_url;
+
   $fields = entity_load('field_collection_item');
 
   $derecho_superior_txt1 = $fields[1]->field_texto_superior_1['und'][0]['value'];
@@ -40,7 +42,7 @@
     </div>
     <div class="col-sm-6">
       <div class="clearfix">
-        <a href="<?php print $base_path; ?>/<?php print $derecho_superior_link; ?>" class="anchor-2">
+        <a href="<?php print $base_url; ?>/<?php print $derecho_superior_link; ?>" class="anchor-2">
           <img src="sites/default/files/<?php print $derecho_superior_img; ?>" />
           <div class="overlay-bg overlay-bg-rect"></div>
           <div class="overlay-content">
