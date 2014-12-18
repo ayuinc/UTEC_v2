@@ -1,6 +1,6 @@
 <?php //die(print_r($fields)); ?>
-<?php kpr($fields); ?>
-<?php kpr($rows); ?>
+<?php //kpr($fields); ?>
+<?php //kpr($rows); ?>
 
 <!-- <div class="pv-35" id="noticias">
 	<h2 class="lead medium mb-0"><span class="text-gray-darker">Noticias: Al día con la</span> <span class="text-gray">UTEC</span></h2>
