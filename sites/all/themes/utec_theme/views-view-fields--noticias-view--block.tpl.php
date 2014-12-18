@@ -1,1 +1,1 @@
-<?php print "testing"; ?>
+<?php dpm($fields); ?>
