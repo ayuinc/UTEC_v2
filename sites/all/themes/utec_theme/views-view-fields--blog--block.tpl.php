@@ -10,9 +10,9 @@
 
 	global $user;
 	$user_fields = user_load($user_id);
-	print_r($user_fields);
-	$user_name = $user->name;
-	$user_image = $user->picture;
+	// print_r($user_fields);
+	$user_name = $user_fields->name;
+	$user_image = $user_fields->picture;
 ?>
 <div class="pv-21">
 	<h2 class="lead medium mb-0"><span class="text-gray-darker">Blog</span> <span class="text-gray">UTEC</span></h2>
