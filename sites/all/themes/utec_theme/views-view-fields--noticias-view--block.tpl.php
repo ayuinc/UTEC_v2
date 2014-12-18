@@ -6,7 +6,7 @@
 	$image = $fields['field_imagen']->content;
 	$category = $fields['field_categor_a']->content;
 	$texto_corto = $fields['field_texto_corto']->content;
-	// global $count;
+	global $count;
 ?>
 <?php die(var_dump($count)); ?>
 <?php if ($count == 0) :?>
