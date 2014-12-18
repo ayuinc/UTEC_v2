@@ -8,4 +8,4 @@
  */
 ?>
 
-    <?php kpr($rows); ?>
+    <?php print_r($rows); ?>
