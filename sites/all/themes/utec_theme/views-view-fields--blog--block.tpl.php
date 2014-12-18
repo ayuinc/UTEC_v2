@@ -1,4 +1,8 @@
-<?php //die(print_r($fields)); ?>
+<?php 
+	global $user;
+	print_r($user);
+	$username = $user->name;
+?>
 <?php 
 	kpr($fields); 
 	$title = $fields['title']->content;
@@ -6,6 +10,7 @@
 	$image = $fields['field_imagen']->content;
 	$category = $fields['field_categor_a']->content;
 	$texto_corto = $fields['field_texto_corto']->content;
+	$user_id = $fields['uid']->content;
 ?>
 <div class="pv-21">
 	<h2 class="lead medium mb-0"><span class="text-gray-darker">Blog</span> <span class="text-gray">UTEC</span></h2>
@@ -15,11 +20,11 @@
 		<div class="col-sm-9 banner-content">
 			<div>
   			<div class="user-card user-card-round">
-  				<div class="user-pic"><img src="assets/img/user.jpg" alt=""></div>
+  				<div class="user-pic"><img src="<?php print $image; ?>" alt=""></div>
   				<div class="user-info"><h4>Alberto Iturralde</h4><small>Ingeniero Mecánico</small></div>
   			</div>
-  			<h2><a href="#">Lorem ipsum dolor sit amet.</a></h2>
-				<p class="lead">Recusandae vitae, temporibus repudiandae veritatis aspernatur nisi harum explicabo possimus illo velit.</p>
+  			<h2><a href="#"><?php print $title; ?></a></h2>
+				<p class="lead"><?php print $texto_corto; ?></p>
 				<div class="text-right pv-14">
 					<button class="see-more btn btn-lg btn-primary uppercase">Leer más</button>
 				</div>
