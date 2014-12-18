@@ -24,4 +24,4 @@
  * @ingroup views_templates
  */
 ?>
-<?php print 'test'; ?>
+<?php print $fields; ?>
