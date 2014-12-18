@@ -13,8 +13,7 @@
   	<?php $count = 0; ?>
     <?php foreach ($rows as $id => $row): ?>
 		    <?php
-			    print $row; 
-			    $count = 1;
+			    print $row;
 		    ?>
 		<?php endforeach; ?>
 	<div>

@@ -32,3 +32,4 @@
 	</div>
 </div>
 <?php endif; ?>
+<?php $count = 1; ?>
