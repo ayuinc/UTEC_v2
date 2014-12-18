@@ -24,5 +24,5 @@
  * @ingroup views_templates
  */
 ?>
-<?php kpr($fields); ?>
+<?php print "test"; ?>
 
