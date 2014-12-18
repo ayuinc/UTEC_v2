@@ -24,5 +24,6 @@
  * @ingroup views_templates
  */
 ?>
+<?php die(); ?>
 <?php print "test"; ?>
 
