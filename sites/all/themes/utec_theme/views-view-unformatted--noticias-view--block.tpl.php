@@ -12,7 +12,6 @@
 	<h4 class="lead mb-56 mt-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
     <?php foreach ($rows as $id => $row): ?>
 		    <?php
-		    	$GLOBAL['count']
 		    	$count = 0;
 			    print $row;
 			    $count = 1;
