@@ -29,7 +29,7 @@
 	<h4 class="lead mt-0 mb-42">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
 	<div class="anchor-img-grid anchor-img-grid-1 grid-block row ml-0">
 		<div class="col-sm-6">
-      <a href="<?php print $GLOBALS['base_url']; ?>/<?php print $izquierdo_link; ?>" class="anchor-1">
+      <a href="<?php print $base_url; ?>/<?php print $izquierdo_link; ?>" class="anchor-1">
         <img src="sites/default/files/<?php print $izquierdo_img; ?>" />
         <div class="overlay-bg"></div>
         <div class="overlay-content">
@@ -55,7 +55,7 @@
       </div>
       <div class="clearfix">
         <div class="col-sm-6">
-          <a href="<?php print $base_path; ?>/<?php print $derecho_inferior_izq_link; ?>" class="anchor-3">
+          <a href="<?php print $base_url; ?>/<?php print $derecho_inferior_izq_link; ?>" class="anchor-3">
             <img src="sites/default/files/<?php print $derecho_inferior_izq_img; ?>" />
             <div class="overlay-bg"></div>
             <div class="overlay-content">
@@ -67,7 +67,7 @@
           </a>
         </div>
         <div class="col-sm-6">
-          <a href="<?php print $base_path; ?>/<?php print $derecho_inferior_der_link; ?>" class="anchor-4">
+          <a href="<?php print $base_url; ?>/<?php print $derecho_inferior_der_link; ?>" class="anchor-4">
             <img src="sites/default/files/<?php print $derecho_inferior_der_img; ?>" />
             <div class="overlay-bg"></div>
             <div class="overlay-content">
