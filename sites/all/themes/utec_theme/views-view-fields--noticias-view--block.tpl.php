@@ -8,7 +8,7 @@
 	$count = 0;
 ?>
 <?php if ($count == 0) :?>
-	<?php $count == 1; ?>
+	<?php $count = 1; ?>
 <div class="banner row mb-14 ml-0" data-href="//link">
 	<div class="col-sm-3 banner-pic" style="background-image: url(<?php print $image ?>);">
 		<div class="banner-label bg-gray-darker text-white"><span><?php print $category ?></span></div>
