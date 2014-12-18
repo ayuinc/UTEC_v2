@@ -1,9 +1,4 @@
 <?php 
-	global $user;
-	print_r($user);
-	$username = $user->name;
-?>
-<?php 
 	kpr($fields); 
 	$title = $fields['title']->content;
 	$body = $fields['body']->content;
@@ -11,6 +6,11 @@
 	$category = $fields['field_categor_a']->content;
 	$texto_corto = $fields['field_texto_corto']->content;
 	$user_id = $fields['uid']->content;
+
+	global $user;
+	$user_fields = user_load($user_uid);
+	print_r($user_fields);
+	// $username = $user->name;
 ?>
 <div class="pv-21">
 	<h2 class="lead medium mb-0"><span class="text-gray-darker">Blog</span> <span class="text-gray">UTEC</span></h2>
