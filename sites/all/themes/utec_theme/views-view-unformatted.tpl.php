@@ -8,5 +8,5 @@
  */
 ?>
 
-    <?php print $row; ?>
+    <?php print $rows; ?>
 
