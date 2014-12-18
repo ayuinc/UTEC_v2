@@ -5,6 +5,7 @@
 	$body = $fields['body']->content;
 	$image = $fields['field_imagen']->content;
 	$category = $fields['field_categor_a']->content;
+	$count = 0;
 ?>
 <?php if ($count == 0) :?>
 <div class="banner row mb-14 ml-0" data-href="//link">
@@ -19,7 +20,7 @@
 	</div>
 </div>
 <?php endif; ?>
-<?php if ($count != 0) :?>
+<?php if ($count == 1) :?>
 <div class="banner row ml-0 mb-14" data-href="//link">
 	<div class="col-sm-9 banner-content">
 		<div>
