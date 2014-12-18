@@ -8,7 +8,7 @@
 	$user_id = $fields['uid']->content;
 
 	global $user;
-	$user_fields = user_load($user_uid);
+	$user_fields = user_load($user_id);
 	print_r($user_fields);
 	// $username = $user->name;
 ?>
