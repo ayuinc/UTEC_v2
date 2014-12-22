@@ -119,12 +119,13 @@
   left: 0;
   background-image: none;
   padding: 30px;
-  float: left;
+
 }
 .recetas-cont{
   width: 49%;
   display: inline-block;
   padding: 10px;
+  float: left;
 }
 .desc-container h3.title {
   margin-top: 0;
