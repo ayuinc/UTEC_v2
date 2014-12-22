@@ -15,10 +15,8 @@
       <?php print $content['header-bottom']; ?>
     </div>
 
-    <div class="body minhp-100 pvp-7" id="sec-1">
-      <div class="container">
+    <div class="body minhp-100" id="sec-1">
         <?php print $content['body']; ?>
-      </div>
     </div>
 
     <div class="footer"><?php print $content['footer']; ?></div>
