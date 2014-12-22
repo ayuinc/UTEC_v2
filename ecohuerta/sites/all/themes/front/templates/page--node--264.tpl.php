@@ -222,7 +222,7 @@
                 <?php print($preparacion);?>
               </div>
             </div>
-            <div class="preparacion">
+            <div class="recetas-cont">
               <div class="project-title">
                 <h3 class="title uppercase">
                    <?php print($nombre_receta);?>
