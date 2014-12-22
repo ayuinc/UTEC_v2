@@ -218,6 +218,7 @@
                 <?php foreach ($ingredientes as $key => $value) : ?>
                   <p>
                    <?php print($key['value']); ?>
+                   <?php print_r($key); ?>
                   </p>
                 <?php endforeach; ?>
               </div>
@@ -239,6 +240,7 @@
               <div class="prep">
                 <?php foreach ($preparacion as $key => $value) : ?>
                   <?php print($key['value']); ?>
+                  <?php print_r($key); ?>
                 <?php endforeach; ?>
               </div>
             </div>
