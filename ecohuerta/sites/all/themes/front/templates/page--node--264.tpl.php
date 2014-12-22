@@ -180,8 +180,8 @@
         {
           $nid=$value->nid;
           $node = node_load($nid);
-          // die(print_r($node));  
-          kpr($node);  
+          die(print_r($node));  
+          // kpr($node);  
           $nombre_receta = $node->field_recipe_name['und'][0]['value'];
           $ingredientes = $node->field_ingredientes['und'][0]['value'];
           $preparacion = $node->field_preparacion['und'][0]['value'];
