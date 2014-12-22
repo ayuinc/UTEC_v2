@@ -144,7 +144,7 @@
     <?php include 'menu-lateral-page-b.php' ?>
 
   <div class="content" id="fullpage">
-<section id="equipos" class="main">
+<section id="equipos" class="main recetas">
   <div id="equipos-r" class="responsive-fix"></div>
 
   <div id="accordion-outside">
@@ -207,20 +207,35 @@
         <div class="desc-container">
           <div class="desc-content">
             <img class="project-close"  src="<?php print $path; ?>/images/icons/close_light_blue.jpg" alt="project-close" />
-            <div class="project-title">
-              <h3 class="title uppercase">
-                 <?php print($nombre_receta);?>
-              </h3>
+            <div class="ingredientes">
+              <div class="project-title">
+                <h3 class="title uppercase">
+                   <?php print($nombre_receta);?>
+                </h3>
+              </div>
+              <div class="project-desc">
+                <p>
+                   <?php print($ingredientes);?>
+                </p>
+              </div>
+              <div class="prep">
+                <?php print($preparacion);?>
+              </div>
             </div>
-            <div class="project-desc">
-              <p>
-                 <?php print($ingredientes);?>
-              </p>
-
-              <a href="/aplica-tu-ingenio">Tú también puedes proponer una solución</a>
-            </div>
-            <div class="prep">
-              <?php print($preparacion);?>
+            <div class="preparacion">
+              <div class="project-title">
+                <h3 class="title uppercase">
+                   <?php print($nombre_receta);?>
+                </h3>
+              </div>
+              <div class="project-desc">
+                <p>
+                   <?php print($ingredientes);?>
+                </p>
+              </div>
+              <div class="prep">
+                <?php print($preparacion);?>
+              </div>
             </div>
           </div>
         </div>
