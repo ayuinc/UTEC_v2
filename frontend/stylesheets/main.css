@@ -4696,8 +4696,7 @@ body {
 .size.xs.user-card {
   margin-bottom: 11px; }
   .size.xs.user-card .user-pic {
-    width: 28px;
-    height: 28px; }
+    width: 28px; }
   .size.xs.user-card .user-info {
     min-height: 28px; }
 .size.xs.videoBG {
@@ -4714,8 +4713,7 @@ body {
 .size.sm.user-card {
   margin-bottom: 12px; }
   .size.sm.user-card .user-pic {
-    width: 35px;
-    height: 35px; }
+    width: 35px; }
   .size.sm.user-card .user-info {
     min-height: 35px; }
 .size.sm.videoBG {
@@ -4724,18 +4722,21 @@ body {
   min-height: 280px; }
   .size.sm.hero-unit .overlay {
     min-height: 280px; }
+.size.sm.grid-list-hover > li > div {
+  height: 210px; }
 .size.lg.scroll-down i {
   font-size: 24px; }
 .size.lg.banner .banner-content,
 .size.lg.banner .banner-pic {
   min-height: 503px; }
 .size.lg.user-card {
-  margin-bottom: 21px; }
+  margin-bottom: 21px;
+  width: 350px; }
   .size.lg.user-card .user-pic {
-    width: 56px;
-    height: 56px; }
+    width: 40%; }
   .size.lg.user-card .user-info {
-    min-height: 56px; }
+    width: 60%;
+    min-height: 140px; }
 .size.lg i {
   font-size: 48px; }
 .size.lg.videoBG {
@@ -4752,8 +4753,7 @@ body {
 .size.xl.user-card {
   margin-bottom: 28px; }
   .size.xl.user-card .user-pic {
-    width: 63px;
-    height: 63px; }
+    width: 63px; }
   .size.xl.user-card .user-info {
     min-height: 63px; }
 .size.xl i {
@@ -4820,7 +4820,8 @@ body {
 
 .user-card {
   position: relative;
-  margin-bottom: 14px; }
+  margin-bottom: 14px;
+  width: 210px; }
   .user-card:before, .user-card:after {
     content: " ";
     display: table; }
@@ -4834,8 +4835,8 @@ body {
   .user-card .user-info {
     float: left; }
   .user-card .user-pic {
-    width: 42px;
-    height: 42px; }
+    width: 33.33333%;
+    height: auto; }
     .user-card .user-pic img {
       width: 100%;
       height: auto;
@@ -4864,8 +4865,14 @@ body {
     -o-justify-content: center;
     justify-content: center;
     -ms-flex-pack: center;
-    min-height: 42px;
+    min-height: 84px;
+    width: 66.66667%;
     padding-left: 14px; }
+    .user-card .user-info > a, .user-card .user-info > span, .user-card .user-info > div,
+    .user-card .user-info > li, .user-card .user-info > p,
+    .user-card .user-info > h1, .user-card .user-info > h2, .user-card .user-info > h3, .user-card .user-info > h4, .user-card .user-info > h5, .user-card .user-info > h6,
+    .user-card .user-info > ul, .user-card .user-info > ol, .user-card .user-info > section, .user-card .user-info > small {
+      display: block; }
     .user-card .user-info span {
       color: #e3e3e3; }
   .user-card.user-card-round .user-pic img {
@@ -5423,7 +5430,7 @@ img.icon-utec {
       .footer .site-map .container > ul li > ul li a {
         color: #e3e3e3; }
 
-.admision-modalidades > li > div {
+.grid-list-hover > li > div {
   border: 1px solid #e3e3e3;
   display: -webkit-box;
   display: -moz-box;
@@ -5461,11 +5468,11 @@ img.icon-utec {
   color: #323232;
   text-align: center;
   padding: 21px; }
-  .admision-modalidades > li > div h3 {
+  .grid-list-hover > li > div h3 {
     min-height: 98px; }
-.admision-modalidades > li:hover {
+.grid-list-hover > li:hover {
   background-color: rgba(46, 67, 114, 0.7); }
-  .admision-modalidades > li:hover > div {
+  .grid-list-hover > li:hover > div {
     color: white; }
 
 .malla-curricular > li {
