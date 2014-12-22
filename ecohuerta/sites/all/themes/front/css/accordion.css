@@ -115,6 +115,11 @@
   padding: 30px 30px 30px 170px;
   background-image: url('../images/marea/equipos/logo.png');
 }
+.recetas .desc-content{
+  right: 0;
+  background-image: none;
+  padding: 30px;
+}
 .desc-container h3.title {
   margin-top: 0;
 }
