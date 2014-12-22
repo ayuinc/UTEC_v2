@@ -5468,6 +5468,17 @@ img.icon-utec {
   .admision-modalidades > li:hover > div {
     color: white; }
 
+.respaldo li {
+  border: 1px solid #e3e3e3;
+  padding-top: 78px !important;
+  text-align: center;
+  min-height: 264px;
+  margin-left: 14px;
+  margin-bottom: 89px;
+  width: 35.7% !important; }
+  .respaldo li:hover {
+    background-color: #e3e3e3; }
+
 .malla-curricular > li {
   padding: 0 14px 0 0 !important; }
   .malla-curricular > li .head {
