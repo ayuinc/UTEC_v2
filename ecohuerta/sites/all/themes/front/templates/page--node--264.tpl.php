@@ -180,11 +180,11 @@
         {
           $nid=$value->nid;
           $node = node_load($nid);
-          die(print_r($node));  
+          // die(print_r($node));  
           // kpr($node);  
           $nombre_receta = $node->field_recipe_name['und'][0]['value'];
-          $ingredientes = $node->field_ingredientes['und'][0]['value'];
-          $preparacion = $node->field_preparacion['und'][0]['value'];
+          $ingredientes = $node->field_ingredientes['und'];
+          $preparacion = $node->field_preparacion['und'];
           $imagen_receta = $node->field_imagen_receta['und'][0]['filename'];
           $icono_receta = $node->field_icono['und'][0]['filename'];
 
@@ -215,9 +215,11 @@
                 </h3>
               </div>
               <div class="project-desc">
-                <p>
-                   <?php print_r($ingredientes);?>
-                </p>
+                <?php foreach ($ingredientes as $key => $value) : ?>
+                  <p>
+                   <?php print($value[$key]['value']); ?>
+                  </p>
+                <?php endforeach; ?>
               </div>
               <!-- <div class="prep">
                 <?php //print($preparacion);?>
@@ -235,7 +237,9 @@
                 </p> -->
               </div>
               <div class="prep">
-                <?php print_r($preparacion);?>
+                <?php foreach ($preparacion as $key => $value) : ?>
+                  <?php print($value[$key]['value']); ?>
+                <?php endforeach; ?>
               </div>
             </div>
           </div>
