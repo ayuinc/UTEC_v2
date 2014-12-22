@@ -238,7 +238,9 @@
               </div>
               <div class="prep">
                 <?php foreach ($preparacion as $key => $value) : ?>
+                <p>
                   <?php print($value['value']); ?>
+                </p>  
                 <?php endforeach; ?>
               </div>
             </div>
