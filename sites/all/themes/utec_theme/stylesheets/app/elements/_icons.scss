@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('../assets/icons/icomoon.eot?8ecg9e');
-	src:url('../assets/icons/icomoon.eot?#iefix8ecg9e') format('embedded-opentype'),
-		url('../assets/icons/icomoon.woff?8ecg9e') format('woff'),
-		url('../assets/icons/icomoon.ttf?8ecg9e') format('truetype'),
-		url('../assets/icons/icomoon.svg?8ecg9e#icomoon') format('svg');
+	src:url('../assets/icons/icomoon.eot?-cksa35');
+	src:url('../assets/icons/icomoon.eot?#iefix-cksa35') format('embedded-opentype'),
+		url('../assets/icons/icomoon.woff?-cksa35') format('woff'),
+		url('../assets/icons/icomoon.ttf?-cksa35') format('truetype'),
+		url('../assets/icons/icomoon.svg?-cksa35#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,93 +23,147 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-pause:before {
-	content: "\e61a";
+.icon-inscripcion-promedio:before {
+	content: "\e628";
 }
-.icon-pdf:before {
-	content: "\e61b";
-}
-.icon-play:before {
-	content: "\e61c";
-}
-.icon-arrows-down:before {
-	content: "\e600";
+.icon-arrows-up:before {
+	content: "\e629";
 }
 .icon-arrows-right:before {
+	content: "\e62a";
+}
+.icon-inscripcion-certificado:before {
+	content: "\e62b";
+}
+.icon-inscripcion-descargar-documento:before {
+	content: "\e62c";
+}
+.icon-inscripcion-dni:before {
+	content: "\e62d";
+}
+.icon-inscripcion-fotografia:before {
+	content: "\e62e";
+}
+.icon-inscripcion-resolucion:before {
+	content: "\e62f";
+}
+.icon-admisiones-alto-rendimiento:before {
+	content: "\e600";
+}
+.icon-admisiones-bachillerato:before {
 	content: "\e601";
 }
-.icon-carreras-malla:before {
+.icon-admisiones-centro-pre:before {
 	content: "\e602";
 }
-.icon-carreras-menciones:before {
+.icon-admisiones-examen:before {
 	content: "\e603";
 }
-.icon-carreras-perfil:before {
+.icon-admisiones-primeros-puestos:before {
 	content: "\e604";
 }
-.icon-carreras-profesores:before {
+.icon-admisiones-traslado:before {
 	content: "\e605";
 }
-.icon-carreras-que-es:before {
+.icon-arrow-down:before {
 	content: "\e606";
 }
-.icon-footer-book:before {
+.icon-arrow-left:before {
 	content: "\e607";
 }
-.icon-footer-email:before {
+.icon-arrow-right:before {
 	content: "\e608";
 }
-.icon-footer-facebook:before {
+.icon-arrow-up:before {
 	content: "\e609";
 }
-.icon-footer-gt:before {
+.icon-arrows-down:before {
 	content: "\e60a";
 }
-.icon-footer-linkedin:before {
+.icon-arrows-left:before {
 	content: "\e60b";
 }
-.icon-footer-plus:before {
+.icon-carreras-malla:before {
 	content: "\e60c";
 }
-.icon-footer-twitter:before {
+.icon-carreras-menciones:before {
 	content: "\e60d";
 }
-.icon-ing-electronica:before {
+.icon-carreras-perfil:before {
 	content: "\e60e";
 }
-.icon-ing-energia:before {
+.icon-carreras-profesores:before {
 	content: "\e60f";
 }
-.icon-ing-industrial:before {
+.icon-carreras-que-es:before {
 	content: "\e610";
 }
-.icon-ing-mecanica:before {
+.icon-footer-book:before {
 	content: "\e611";
 }
-.icon-ing-quimica:before {
+.icon-footer-email:before {
 	content: "\e612";
 }
-.icon-menu-admision:before {
+.icon-footer-facebook:before {
 	content: "\e613";
 }
-.icon-menu-carreras:before {
+.icon-footer-gt:before {
 	content: "\e614";
 }
-.icon-menu-convenios:before {
+.icon-footer-linkedin:before {
 	content: "\e615";
 }
-.icon-menu-edp:before {
+.icon-footer-plus:before {
 	content: "\e616";
 }
-.icon-menu-investigacion:before {
+.icon-footer-twitter:before {
 	content: "\e617";
 }
-.icon-menu-somos-utec:before {
+.icon-ing-electronica:before {
 	content: "\e618";
 }
-.icon-subscribe:before {
+.icon-ing-energia:before {
 	content: "\e619";
 }
-.icon-search:before {
+.icon-ing-industrial:before {
+	content: "\e61a";
+}
+.icon-ing-mecanica:before {
+	content: "\e61b";
+}
+.icon-ing-quimica:before {
+	content: "\e61c";
+}
+.icon-menu-admision:before {
 	content: "\e61d";
+}
+.icon-menu-carreras:before {
+	content: "\e61e";
+}
+.icon-menu-convenios:before {
+	content: "\e61f";
+}
+.icon-menu-edp:before {
+	content: "\e620";
+}
+.icon-menu-investigacion:before {
+	content: "\e621";
+}
+.icon-menu-somos-utec:before {
+	content: "\e622";
+}
+.icon-pause:before {
+	content: "\e624";
+}
+.icon-pdf:before {
+	content: "\e625";
+}
+.icon-play:before {
+	content: "\e626";
+}
+.icon-subscribe:before {
+	content: "\e627";
+}
+.icon-search:before {
+	content: "\e623";
 }
