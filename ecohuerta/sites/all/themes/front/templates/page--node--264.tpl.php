@@ -217,9 +217,7 @@
               <div class="project-desc">
                 <?php foreach ($ingredientes as $key => $value) : ?>
                   <p>
-                   <?php print($key['value']); ?>
-                   <?php print_r($key); ?>
-                   <?php print_r($value); ?>
+                   <?php print($value['value']); ?>
                   </p>
                 <?php endforeach; ?>
               </div>
@@ -240,8 +238,7 @@
               </div>
               <div class="prep">
                 <?php foreach ($preparacion as $key => $value) : ?>
-                  <?php print($key['value']); ?>
-                  <?php print_r($key); ?>
+                  <?php print($value['value']); ?>
                 <?php endforeach; ?>
               </div>
             </div>
