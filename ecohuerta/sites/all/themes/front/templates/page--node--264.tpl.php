@@ -207,7 +207,7 @@
         <div class="desc-container">
           <div class="desc-content">
             <img class="project-close"  src="<?php print $path; ?>/images/icons/close_light_blue.jpg" alt="project-close" />
-            <div class="ingredientes">
+            <div class="recetas-cont">
               <div class="project-title">
                 <h3 class="title uppercase">
                    <?php print($nombre_receta);?>
