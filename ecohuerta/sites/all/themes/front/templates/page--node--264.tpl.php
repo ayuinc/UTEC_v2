@@ -215,6 +215,7 @@
                 </h3>
               </div>
               <div class="project-desc">
+                <?php print_r($ingredientes); ?>
                 <?php foreach ($ingredientes as $key => $value) : ?>
                   <p>
                    <?php print($value[$key]['value']); ?>
@@ -237,6 +238,7 @@
                 </p> -->
               </div>
               <div class="prep">
+                <?php print_r($preparacion); ?>
                 <?php foreach ($preparacion as $key => $value) : ?>
                   <?php print($value[$key]['value']); ?>
                 <?php endforeach; ?>
