@@ -15,10 +15,24 @@
   "elements/buttons-custom",
 
   // FORMS
-  // "elements/forms-custom",
+  "elements/forms-custom",
   // "elements/forms-multiuser",
 
   // NAVS
+
+  // BREADCRUMS
+  "elements/breadcrumbs-custom",
+
+  // LISTS
+  "elements/lists-custom",
+
+  // TABLES
+  "elements/tables-custom",
+
+  // CAROUSEL
+  "elements/carousel-custom",
+
+  // CALENDAR
 
   // PANELS
   "elements/panels-custom";
@@ -29,9 +43,12 @@
   // LAYOUT
   "modules/global",
   "modules/header",
+  "modules/calendar-custom",
   "modules/footer";
 
 // APP Views
 @import 
   // VIEW NAME
+  "views/admision",
+  "views/carreras",
   "views/home";

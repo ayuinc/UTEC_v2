@@ -12,7 +12,19 @@
 			float: right;
 		}
 	}
-	.tool-bar {}
+	.tool-bar {
+		.left {
+			.nav-list {
+				li {
+					a {
+						&:hover {
+							color: #595858;
+						}
+					}
+				}
+			}
+		}
+	}
 	.nav-main {
 		min-height: 35px;
 		background: white;
@@ -61,13 +73,13 @@
 		@include position(absolute, null 0 0 0);
 		@include clearfix;
 		width: 100%;
-		background: rgba($gray-lighter, 0.9);
+		background: rgba($gray-lighter, 0.97);
 		@include transition(all 0.2s ease-in-out);
 		@include transform(translateY(-100%));
 		z-index: 1990;
 		.nav-display-left,
 		.nav-display-right {
-			min-height: 350px;
+			min-height: 430px;
 			width: 50%;
 			@include flex-middle-center;
 		}
@@ -98,9 +110,10 @@
 							color: $gray-darker;
 							display: block;
 							text-transform: uppercase;
+							border: none;
 							&:hover,
 							&.active {
-
+								color: #02c1f5;	
 							}
 							span {
 								display: block;
@@ -166,8 +179,15 @@
 }
 
 // HEADER SHRINK TRIGGER
-.header-trigger {
-	@include position(absolute, null 0 70px 0);
+.hero-unit {
+	.header-trigger {
+		@include position(absolute, null 0 70px 0);
+	}
+}
+.body {
+	.header-trigger {
+		@include position(absolute, 140px 0 null 0);
+	}	
 }
 
 // HEADER ON SCROLL
@@ -181,7 +201,7 @@ $header-on-scroll-height: 56px;
 	z-index: 3000;
 	.nav-main {
 		height: $header-on-scroll-height;
-		background: white;
+		background-color: $gray-lighter;
 		.logo {
 			width: 280px;
 			height: $header-on-scroll-height;
@@ -203,7 +223,7 @@ $header-on-scroll-height: 56px;
 						padding: 12px 0;
 						padding: rem(12px) 0;
 						color: $gray;
-						background: white;
+						background-color: $gray-lighter;
 						min-width: 135px;
 						min-width: rem(135px);
 						height: $header-on-scroll-height;

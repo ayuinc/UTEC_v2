@@ -4,7 +4,7 @@
     $('.disable-anchors a').click(function(e) {
       e.preventDefault();
     });
-    $('div[data-href]').click(function(e) {
+    $('[data-href]').click(function(e) {
       console.log($(this).data('href'));
       document.location.replace($(this).data('href'));
     });

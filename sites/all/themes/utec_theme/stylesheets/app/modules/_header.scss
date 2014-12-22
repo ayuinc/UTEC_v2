@@ -12,7 +12,19 @@
 			float: right;
 		}
 	}
-	.tool-bar {}
+	.tool-bar {
+		.left {
+			.nav-list {
+				li {
+					a {
+						&:hover {
+							color: #595858;
+						}
+					}
+				}
+			}
+		}
+	}
 	.nav-main {
 		min-height: 35px;
 		background: white;
@@ -61,13 +73,13 @@
 		@include position(absolute, null 0 0 0);
 		@include clearfix;
 		width: 100%;
-		background: rgba($gray-lighter, 0.9);
+		background: rgba($gray-lighter, 0.97);
 		@include transition(all 0.2s ease-in-out);
 		@include transform(translateY(-100%));
 		z-index: 1990;
 		.nav-display-left,
 		.nav-display-right {
-			min-height: 350px;
+			min-height: 430px;
 			width: 50%;
 			@include flex-middle-center;
 		}
@@ -98,9 +110,10 @@
 							color: $gray-darker;
 							display: block;
 							text-transform: uppercase;
+							border: none;
 							&:hover,
 							&.active {
-
+								color: #02c1f5;	
 							}
 							span {
 								display: block;
@@ -137,6 +150,17 @@
 	}
 }
 
+#header-on-scroll {
+	@for $i from 1 through 10 {
+		&.display.nav-shrink-display-#{$i} {
+			#nav-shrink-display-#{$i} {
+				@include transition(all 0.2s ease-in-out);
+				@include transform(translateY(100%));
+			}
+		}
+	}
+}
+
 .nav-list {
 	@include clearfix;
 	@include list-unstyled;
@@ -151,5 +175,88 @@
 		li {
 			float: right;
 		}	
+	}
+}
+
+// HEADER SHRINK TRIGGER
+.hero-unit {
+	.header-trigger {
+		@include position(absolute, null 0 70px 0);
+	}
+}
+.body {
+	.header-trigger {
+		@include position(absolute, 140px 0 null 0);
+	}	
+}
+
+// HEADER ON SCROLL
+$header-on-scroll-height: 56px;
+#header-on-scroll {
+	@extend #header;
+	@include position(fixed, 0 0 null 0);
+	width: 100%;
+	@include transform(translateY(-150%));
+	@include transition(all 0.2s ease-in-out);
+	z-index: 3000;
+	.nav-main {
+		height: $header-on-scroll-height;
+		background-color: $gray-lighter;
+		.logo {
+			width: 280px;
+			height: $header-on-scroll-height;
+			padding: 4px 0;
+			img {
+				width: 35px;
+				height: auto;
+			}
+		}
+		.left {
+			> ul {
+				@include clearfix;
+				@include list-unstyled;
+				li {
+					float: left;
+					a {
+						display: block;
+						text-align: center;
+						padding: 12px 0;
+						padding: rem(12px) 0;
+						color: $gray;
+						background-color: $gray-lighter;
+						min-width: 135px;
+						min-width: rem(135px);
+						height: $header-on-scroll-height;
+						&:hover,
+						&.active {
+							background: $gray-lighter;
+							color: $link-color;
+						}
+						div {
+							i {
+								font-size: $font-size-h1;
+							}
+						}
+						span {
+							display: block;
+							margin-top: $padding-base-vertical;
+							text-transform: uppercase;
+						}
+					}
+				}
+			}
+		}
+	}
+	.nav-display {
+		z-index: 2990;
+	}
+}
+
+.site-wrapper {
+	&.header-shrink {
+		#header-on-scroll {
+			@include transform(translateY(0%));
+			@include transition(all 0.2s ease-in-out);
+		}
 	}
 }

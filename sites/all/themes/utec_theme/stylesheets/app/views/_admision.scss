@@ -1,0 +1,21 @@
+.admision-modalidades {
+	> li {
+		> div {
+			border: 1px solid $gray-light;
+			@include flex-middle-center;
+			height: 350px;
+			color: $gray-dark;
+			text-align: center;
+			padding: $container-fluid + 7;
+			h3 {
+				min-height: 98px;
+			}
+		}
+		&:hover {
+			background-color: rgba($brand-info, 0.7);
+			> div {
+				color: white;
+			}
+		}
+	}
+}

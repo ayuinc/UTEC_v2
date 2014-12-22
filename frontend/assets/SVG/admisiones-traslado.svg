@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="52px" height="52px" viewBox="0 0 52 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2 (9961) - http://www.bohemiancoding.com/sketch -->
+    <title>admisiones-traslado</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop" sketch:type="MSArtboardGroup" transform="translate(-370.000000, -98.000000)" fill="#666666">
+            <g id="admisiones-traslado" sketch:type="MSLayerGroup" transform="translate(370.000000, 98.000000)">
+                <path d="M21.109,44.518 C21.109,40.7287743 18.0372257,37.657 14.248,37.657 C10.4587743,37.657 7.387,40.7287743 7.387,44.518 C7.387,48.3072257 10.4587743,51.379 14.248,51.379 C18.0372257,51.379 21.109,48.3072257 21.109,44.518 Z M8.387,44.518 C8.387,41.2810591 11.0110591,38.657 14.248,38.657 C17.4849409,38.657 20.109,41.2810591 20.109,44.518 C20.109,47.7549409 17.4849409,50.379 14.248,50.379 C11.0110591,50.379 8.387,47.7549409 8.387,44.518 Z" id="Oval" sketch:type="MSShapeGroup"></path>
+                <path d="M17.772,9.994 L18.031938,9.99299624 L18.03,9.493 L17.53,9.493 L17.53,39.529 L18.53,39.529 L18.53,9.493 L18.53,8.99105826 L18.028062,8.99300376 L17.770062,8.99400376 L13.152,8.994 L13.152,9.994 L17.772,9.994 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+                <path d="M35.6524047,47.9436154 L35.5022832,47.756 L35.262,47.756 L19.444,47.756 L19.444,48.756 L35.262,48.756 L34.8715953,48.5683846 L36.9255953,51.1353846 L37.7064047,50.5106154 L35.6524047,47.9436154 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+                <path d="M38.648,27.158 L38.148,26.658 L38.148,42.88 L38.648,42.38 L20.765,42.38 L21.265,42.88 L21.265,26.658 L20.765,27.158 L38.648,27.158 Z M20.265,26.158 L20.265,26.658 L20.265,42.88 L20.265,43.38 L20.765,43.38 L38.648,43.38 L39.148,43.38 L39.148,42.88 L39.148,26.658 L39.148,26.158 L38.648,26.158 L20.765,26.158 L20.265,26.158 Z" id="Rectangle-path" sketch:type="MSShapeGroup"></path>
+                <path d="M32.56,16.466 L32.06,15.966 L32.06,26.666 L32.56,26.166 L20.765,26.166 L21.265,26.666 L21.265,15.966 L20.765,16.466 L32.56,16.466 Z M20.265,15.466 L20.265,15.966 L20.265,26.666 L20.265,27.166 L20.765,27.166 L32.56,27.166 L33.06,27.166 L33.06,26.666 L33.06,15.966 L33.06,15.466 L32.56,15.466 L20.765,15.466 L20.265,15.466 Z" id="Rectangle-path" sketch:type="MSShapeGroup"></path>
+                <path d="M32.396,30.298 L32.396,29.298 L27.163,29.298 L27.163,30.298 L32.396,30.298 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+                <path d="M29.354,19.244 L29.354,18.244 L24.124,18.244 L24.124,19.244 L29.354,19.244 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+                <path d="M50.913,1.626 L50.913,0.626 L1.217,0.626 L1.217,1.626 L50.913,1.626 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+                <path d="M1.717,1.126 L0.717,1.126 L0.717,50.801 L1.717,50.801 L1.717,1.126 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+                <path d="M51.717,1.126 L50.717,1.126 L50.717,50.801 L51.717,50.801 L51.717,1.126 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+                <path d="M12.606,51.301 L12.606,50.301 L1.217,50.301 L1.217,51.301 L12.606,51.301 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
