@@ -1,5 +1,5 @@
 <ul class="nav nav-point">
-  <li class="<?php if(strcmp(request_uri(),'/ecohuerta')==0){print active;}?>">
+  <li class="<?php if(strcmp(request_uri(),'/ecohuerta/ecohuerta')==0){print active;}?>">
     <div class="nav-point-text-arrow">
       <a class="nav-point-text"  href="<?php print $base_path; ?>">Inicio</a>
       <div class="nav-point-arrow nav-point-arrow-style"></div>
