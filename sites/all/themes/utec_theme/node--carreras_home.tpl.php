@@ -2,20 +2,20 @@
 kpr($node);
 // $video_name = $node->field_video['und']['0']['filename'];
 
-// $titulo = $node->title   
-// $carrera_txt = $node->body
-// $carrera_link = $node->field_carrera_link
-// $malla_titulo = $node->field_malla_curricular_titulo
-// $malla_txt = $node->field_malla_curricular_body
-// $malla_link = $node->field_malla_curricular_link 
-// $menciones_txt = $node->field_menciones_titulo  
-// $menciones_txt = $node->field_menciones_body
-// $menciones_txt = $node->field_menciones_link  
-// $carrera_txt = $node->field_profesor
-// $carrera_txt = $node->field_profesor_texto
-// $carrera_txt = $node->field_profesor_link 
-// $carrera_txt = $node->field_perfil_egresado_texto
-// $carrera_txt = $node->field_perfil_egresado_link
+$titulo = $node->title;   
+$carrera_txt = $node->body['und']['0']['value'];
+$carrera_link = $node->field_carrera_link['und']['0']['value'];
+$malla_titulo = $node->field_malla_curricular_titulo['und']['0']['value'];
+$malla_txt = $node->field_malla_curricular_body['und']['0']['value'];
+$malla_link = $node->field_malla_curricular_link ['und']['0']['value'];
+$menciones_titulo = $node->field_menciones_titulo  ['und']['0']['value'];
+$menciones_txt = $node->field_menciones_body['und']['0']['value'];
+$menciones_link = $node->field_menciones_link  ['und']['0']['value'];
+$profesor_titulo = $node->field_profesor['und']['0']['value'];
+$profesor_txt = $node->field_profesor_texto['und']['0']['value'];
+$profesor_link = $node->field_profesor_link ['und']['0']['value'];
+$perfil_txt = $node->field_perfil_egresado_texto['und']['0']['value'];
+$perfil_link = $node->field_perfil_egresado_link['und']['0']['value'];
 
 ?>
 <div class="hero-unit"> <!-- HERO -->
@@ -24,7 +24,7 @@ kpr($node);
       <div class="row">
         <div class="col-sm-6 text-white normalize-text">
           <h2 class="thin">¿Qué es la</h2>
-          <h1 class="thin">Ingeniería Electrónica?</h1>
+          <h1 class="thin"><?php print $titulo ?>?</h1>
           <hr class="hr-white">
           <div class="row">
             <div class="col-sm-3">
@@ -33,7 +33,7 @@ kpr($node);
               </div>
             </div>
             <div class="col-sm-9">
-              <h2 class="lead thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+              <h2 class="lead thin"><?php print $carrera_txt ?></h2>
             </div>
           </div>
         </div>
@@ -50,8 +50,8 @@ kpr($node);
     <hr class="hr-gray">
     <div class="row">
       <div class="col-sm-9">
-        <h2 class="lead thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga, dicta dolor. Odit non, adipisci eveniet, dolorem, maxime sint beatae quam quae optio, incidunt iure modi cupiditate quaerat perspiciatis necessitatibus!</p>
+        <h2 class="lead thin"><?php print $malla_titulo ?></h2>
+        <p><?php print $malla_txt ?></p>
       </div>
       <div class="col-sm-3">
         <div class="size xl">
@@ -75,8 +75,8 @@ kpr($node);
         </div>
       </div>
       <div class="col-sm-9">
-        <h2 class="lead thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga, dicta dolor. Odit non, adipisci eveniet, dolorem, maxime sint beatae quam quae optio, incidunt iure modi cupiditate quaerat perspiciatis necessitatibus!</p>
+        <h2 class="lead thin"><?php print $menciones_titulo ?></h2>
+        <p><?php print $menciones_txt ?></p>
       </div>
     </div>
   </div>
@@ -96,7 +96,7 @@ kpr($node);
     <ul class="grid-list grid-list-centered grid-list-4 grid-list-anchors pv-21">
       <li class="mb-ch-14">
         <div class="grid-list-pic"><img src="assets/img/user.jpg" alt="" width="180px" height="auto" class="img-circle"></div>
-        <a href="#" class="h3 thin">Rosa María Llosa Demartini</a>
+        <a href="#" class="h3 thin"><?php print $profesor_titulo ?></a>
       </li>
       <li class="mb-ch-14">
         <div class="grid-list-pic"><img src="assets/img/user.jpg" alt="" width="180px" height="auto" class="img-circle"></div>
@@ -111,7 +111,7 @@ kpr($node);
         <a href="#" class="h3 thin">Rosa María Llosa Demartini</a>
       </li>
     </ul>
-    <h3 class="lead thin text-gray"><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit tempore dolorum est veritatis at itaque provident, veniam eos autem fuga rem ad sint quaerat culpa hic, debitis officiis amet perspiciatis.</em></h3>
+    <h3 class="lead thin text-gray"><em><?php print $profesor_txt ?></em></h3>
   </div>
   <a class="scroll-down scroll-down-sq size lg" rel="nofollow">
     <i class="icon-arrows-down bg-info text-white"></i>
@@ -130,14 +130,14 @@ kpr($node);
             </div>
           </div>
           <div class="col-sm-9">
-            <h2 class="lead thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+            <h2 class="lead thin"><?php print $perfil_txt ?></h2>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<div class="pvp-7">
+<!-- <div class="pvp-7">
   <div class="container">
     <h2 class="lead medium"><span class="text-gray-darker">¿Listo para</span> <span class="text-gray">cambiar el mundo?</span></h2>
     <h4 class="lead">Éstas son nuestras carreras:</h4>
@@ -204,4 +204,4 @@ kpr($node);
       </li>
     </ul>
   </div>
-</div>
+</div> -->
