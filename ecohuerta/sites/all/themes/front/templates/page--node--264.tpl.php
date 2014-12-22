@@ -219,6 +219,7 @@
                   <p>
                    <?php print($key['value']); ?>
                    <?php print_r($key); ?>
+                   <?php print_r($value); ?>
                   </p>
                 <?php endforeach; ?>
               </div>
