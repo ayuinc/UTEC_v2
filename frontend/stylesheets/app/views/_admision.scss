@@ -1,9 +1,9 @@
-.admision-modalidades {
+.grid-list-hover {
 	> li {
 		> div {
 			border: 1px solid $gray-light;
 			@include flex-middle-center;
-			height: 350px;
+			height: $grid-list-hover-height;
 			color: $gray-dark;
 			text-align: center;
 			padding: $container-fluid + 7;

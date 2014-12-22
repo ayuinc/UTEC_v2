@@ -12,7 +12,9 @@ body {
 $bg-img-height: 350px;
 $banner-height: 293px;
 $user-card-height: 42px;
+$user-card-width: 210px;
 $video-bg-height: 420px;
+$grid-list-hover-height: 350px;
 
 // CONTROL GRID BLOCK IMG SIZES
 @mixin content-block {
@@ -371,8 +373,7 @@ $video-bg-height: 420px;
 		&.user-card {
 			margin-bottom: $container-fluid - 3;
 			.user-pic {
-				width: $user-card-height - 14;
-				height: $user-card-height - 14;
+				width: $user-card-height - 14;				
 			}
 			.user-info {
 				min-height: $user-card-height - 14;
@@ -404,8 +405,7 @@ $video-bg-height: 420px;
 		&.user-card {
 			margin-bottom: $container-fluid - 2;
 			.user-pic {
-				width: $user-card-height - 7;
-				height: $user-card-height - 7;
+				width: $user-card-height - 7;				
 			}
 			.user-info {
 				min-height: $user-card-height - 7;
@@ -419,6 +419,13 @@ $video-bg-height: 420px;
 			min-height: $video-bg-height - 140;
 			.overlay {
 				min-height: $video-bg-height - 140;
+			}
+		}
+		&.grid-list-hover {
+			> li {
+				> div {
+					height: $grid-list-hover-height - 140;
+				}
 			}
 		}
 	}
@@ -436,16 +443,18 @@ $video-bg-height: 420px;
 		}
 		&.user-card {
 			margin-bottom: $container-fluid + 7;
+			$user-card-width-lg: $user-card-width + 140;
+			width: $user-card-width-lg;
 			.user-pic {
-				width: $user-card-height + 14;
-				height: $user-card-height + 14;
+				width: rule-of-three($user-card-width-lg, 140);
 			}
 			.user-info {
-				min-height: $user-card-height + 14;
+				width: rule-of-three($user-card-width-lg, 210);
+				min-height: $user-card-width - 70;
 			}
 		}
 		i {
-			font-size: $font-size-h3 * 3;
+			font-size: $font-size-h3 * 2;
 		}
 		&.videoBG {
 			height: $video-bg-height + 140;
@@ -473,7 +482,6 @@ $video-bg-height: 420px;
 			margin-bottom: $container-fluid + 14;
 			.user-pic {
 				width: $user-card-height + 21;
-				height: $user-card-height + 21;
 			}
 			.user-info {
 				min-height: $user-card-height + 21;
@@ -527,6 +535,9 @@ $video-bg-height: 420px;
 	a {
 		color: $gray;
 	}
+	&:hover {
+		background-color: $gray-lighter;
+	}
 }
 
 // USER CARD
@@ -535,13 +546,14 @@ $video-bg-height: 420px;
 	@include clearfix;
 	@include normalize-text;
 	margin-bottom: $container-fluid;
+	width: $user-card-width;
 	.user-pic,
 	.user-info {
 		float: left;
 	}
 	.user-pic {
-		width: $user-card-height;
-		height: $user-card-height;
+		width: rule-of-three($user-card-width, 70);
+		height: auto;
 		img {
 			width: 100%;
 			height: auto;
@@ -550,8 +562,12 @@ $video-bg-height: 420px;
 	}
 	.user-info {
 		@include flex-middle;
-		min-height: $user-card-height;
+		min-height: $user-card-height * 2;
+		width: rule-of-three($user-card-width, 140);
 		padding-left: $container-fluid;
+		@include children-elements {
+			display: block;
+		}
 		span {
 			color: $gray-light;
 		}
@@ -607,8 +623,4 @@ img.icon-utec {
 
 .gray-light {
 	color: #bbb !important;
-}
-
-.banner:hover {
-	background-color: #f1f1f1;
 }
