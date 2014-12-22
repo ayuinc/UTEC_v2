@@ -210,31 +210,31 @@
             <div class="recetas-cont">
               <div class="project-title">
                 <h3 class="title uppercase">
-                   <?php print($nombre_receta);?>
+                   ingredientes
                 </h3>
               </div>
               <div class="project-desc">
                 <p>
-                   <?php print($ingredientes);?>
+                   <?php print_r($ingredientes);?>
                 </p>
               </div>
-              <div class="prep">
-                <?php print($preparacion);?>
-              </div>
+              <!-- <div class="prep">
+                <?php //print($preparacion);?>
+              </div> -->
             </div>
             <div class="recetas-cont">
               <div class="project-title">
                 <h3 class="title uppercase">
-                   <?php print($nombre_receta);?>
+                   preparación
                 </h3>
               </div>
               <div class="project-desc">
-                <p>
-                   <?php print($ingredientes);?>
-                </p>
+                <!-- <p>
+                   <?php //print_r($ingredientes);?>
+                </p> -->
               </div>
               <div class="prep">
-                <?php print($preparacion);?>
+                <?php print_r($preparacion);?>
               </div>
             </div>
           </div>
