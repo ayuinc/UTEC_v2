@@ -1,20 +1,21 @@
 <?php 
 kpr($node);
 // $video_name = $node->field_video['und']['0']['filename'];
-$titulo = $node->title   
-$carrera_txt = $node->body
-$carrera_link = $node->field_carrera_link
-$malla_titulo = $node->field_malla_curricular_titulo
-$malla_txt = $node->field_malla_curricular_body
-$malla_link = $node->field_malla_curricular_link 
-$menciones_txt = $node->field_menciones_titulo  
-$menciones_txt = $node->field_menciones_body
-$menciones_txt = $node->field_menciones_link  
-$carrera_txt = $node->field_profesor
-$carrera_txt = $node->field_profesor_texto
-$carrera_txt = $node->field_profesor_link 
-$carrera_txt = $node->field_perfil_egresado_texto
-$carrera_txt = $node->field_perfil_egresado_link
+
+// $titulo = $node->title   
+// $carrera_txt = $node->body
+// $carrera_link = $node->field_carrera_link
+// $malla_titulo = $node->field_malla_curricular_titulo
+// $malla_txt = $node->field_malla_curricular_body
+// $malla_link = $node->field_malla_curricular_link 
+// $menciones_txt = $node->field_menciones_titulo  
+// $menciones_txt = $node->field_menciones_body
+// $menciones_txt = $node->field_menciones_link  
+// $carrera_txt = $node->field_profesor
+// $carrera_txt = $node->field_profesor_texto
+// $carrera_txt = $node->field_profesor_link 
+// $carrera_txt = $node->field_perfil_egresado_texto
+// $carrera_txt = $node->field_perfil_egresado_link
 
 ?>
 <div class="hero-unit"> <!-- HERO -->
