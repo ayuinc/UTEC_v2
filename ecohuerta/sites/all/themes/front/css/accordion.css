@@ -27,7 +27,7 @@
 .accordion > .slide {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: 51% center;
 }
 .accordion > .slide:not(.disabled) {
   opacity: .5;
@@ -145,7 +145,7 @@
   background-color: #000;
 }
 .accordion > .slide2 {
-  background-position: -420px 0;
+  /*background-position: -420px 0;*/
   /*background-image: url('/images/marea/equipos/utec_marea_en_accion_atlantis.jpg');*/
 }
 .accordion > .slide3 {
