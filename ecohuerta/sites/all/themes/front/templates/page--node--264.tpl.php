@@ -184,7 +184,7 @@
           $nombre_receta = $node->field_recipe_name['und'][0]['value'];
           $ingredientes = $node->field_ingredientes['und'][0]['value'];
           $preparacion = $node->field_preparacion['und'][0]['value'];
-          $imagen_receta = $node->field_imagen_receta['und'][0]['value'];
+          $imagen_receta = $node->field_imagen_receta['und'][0]['filename'];
 
       ?>
       <div class="slide slide2" style="background-image: url('<?php print $pathfile.'/'.$imagen_receta; ?>');">
