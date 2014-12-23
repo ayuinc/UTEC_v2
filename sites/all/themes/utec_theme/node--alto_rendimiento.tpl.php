@@ -27,7 +27,6 @@ $field_temario_alto = $node->field_temario_alto['und']['0']['value'];
 					<?php  print $field_como_postular_alto ?>
 				<div>
 			</div>
-			
 			<!--<div>
 				<ul class="grid-list grid-list-3 text-center pv-42 mb-ch-21">
 					<li>
@@ -80,7 +79,6 @@ $field_temario_alto = $node->field_temario_alto['und']['0']['value'];
 					</li>
 				</ul>
 			</div>-->
-			
 			<div>
 				<h3>Costos:</h3>
 				<div class="list-custom">
@@ -93,95 +91,9 @@ $field_temario_alto = $node->field_temario_alto['und']['0']['value'];
 					<?php print $field_temario_alto ?>
 				</div>
 			</div>
-			<div class="gbo calendar">
-				<h3>Calendario:</h3>
-				<div class="row">
-					<div class="col-sm-3" data-href="admision_evento-detalle.html">
-						<div class="title">
-							<span>Inicio de inscripciones</span>
-						</div>
-						<div class="date">
-							<span>01/04/2014</span>
-						</div>
-					</div>
-					<div class="col-sm-3" data-href="#">
-						<div class="title">
-							<span>Inicio de inscripciones</span>
-						</div>
-						<div class="date">
-							<span>01/04/2014</span>
-						</div>
-					</div>
-					<div class="col-sm-3" data-href="#">
-						<div class="title">
-							<span>Inicio de inscripciones</span>
-						</div>
-						<div class="date">
-							<span>01/04/2014</span>
-						</div>
-					</div>
-					<div class="col-sm-3" data-href="#">
-						<div class="title">
-							<span>Inicio de inscripciones</span>
-						</div>
-						<div class="date">
-							<span>01/04/2014</span>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-3" data-href="#">
-						<div class="title">
-							<span>Inicio de inscripciones</span>
-						</div>
-						<div class="date">
-							<span>01/04/2014</span>
-						</div>
-					</div>
-					<div class="col-sm-3" data-href="#">
-						<div class="title">
-							<span>Inicio de inscripciones</span>
-						</div>
-						<div class="date">
-							<span>01/04/2014</span>
-						</div>
-					</div>
-					<div class="col-sm-3" data-href="#">
-						<div class="title">
-							<span>Inicio de inscripciones</span>
-						</div>
-						<div class="date">
-							<span>01/04/2014</span>
-						</div>
-					</div>
-					<div class="col-sm-3" data-href="#">
-						<div class="title">
-							<span>Inicio de inscripciones</span>
-						</div>
-						<div class="date">
-							<span>01/04/2014</span>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-3" data-href="#">
-						<div class="title">
-							<span>Inicio de inscripciones</span>
-						</div>
-						<div class="date">
-							<span>01/04/2014</span>
-						</div>
-					</div>
-					<div class="col-sm-3" data-href="#">
-						<div class="title">
-							<span>Inicio de inscripciones</span>
-						</div>
-						<div class="date">
-							<span>01/04/2014</span>
-						</div>
-					</div>
-				</div>
-			</div>
+
+			kjsfalkjflskdj
+
 			</div>
 		</div>
 	</div>
