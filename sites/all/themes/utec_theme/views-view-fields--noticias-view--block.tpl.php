@@ -7,8 +7,8 @@
 	$path = $fields['path']->content;
 	global $count;
 ?>
-<?php print_r($zebra) ?>
-<?php if ($count == 0) :?>
+<?php //print_r($zebra) ?>
+<?php if ($zebra == 'odd') :?>
 <div class="banner row mb-14 ml-0" data-href="<?php print $path; ?>">
 	<div class="col-sm-3 banner-pic" style="background-image: url(<?php print $image ?>);">
 		<div class="banner-label bg-gray-darker text-white"><span><?php print $category ?></span></div>
@@ -21,7 +21,7 @@
 	</div>
 </div>
 <?php endif; ?>
-<?php if ($count == 1) :?>
+<?php if ($zebra == 'even') :?>
 <div class="banner row ml-0 mb-14" data-href="<?php print $path; ?>">
 	<div class="col-sm-9 banner-content">
 		<div>
