@@ -16,22 +16,14 @@ $field_temario_alto = $node->field_temario_alto['und']['0']['value'];
 ?>
 <div class="container-sm">
 	<div>
-		<h1 class="light"><?php print $titulo ?></h1>
+		<h1 class="light">Alto Renidmiento</h1>
 		<div class="separator-gray separator-md"></div>
 		<div>
 		<p class="lead text-gray"><?php print $field_descripcion_corta_alto ?></p>
 		<div class="mb-ch-42">
 			<div>
 				<h3>¿Cómo postular?</h3>
-				<p class="lead">Procedimiento</p>
-				<div class="list-custom">
-					<ul>
-						<li>Completar el <a href="#">formulario de datos personales</a></li>
-						<li>Efectuar el depósito bancario por el Derecho de Inscripción a la Evaluación de Alto Rendimiento</li>
-						<li>Presentar el voucher del depósito o enviar el voucher electrónico al e-mail <a href="#">inscripciones@utec.edu.pe</a></li>
-						<li>Presentar los siguientes documentos en la oficina de admisión:</li>
-					</ul>
-				</div>
+				<?php  print $field_como_postular_alto ?>
 			</div>
 			
 			<!--<div>
