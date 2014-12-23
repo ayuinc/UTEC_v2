@@ -5430,8 +5430,53 @@ img.icon-utec {
       .footer .site-map .container > ul li > ul li a {
         color: #e3e3e3; }
 
-.grid-list-hover > li > div {
-  border: 1px solid #e3e3e3;
+.grid-list-hover > li {
+  position: relative; }
+  .grid-list-hover > li > div:not(.date) {
+    border: 1px solid #e3e3e3;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -ms-flex-align: center;
+    height: 350px;
+    color: #323232;
+    text-align: center;
+    padding: 21px; }
+    .grid-list-hover > li > div:not(.date) h3 {
+      min-height: 98px; }
+  .grid-list-hover > li:hover {
+    background-color: rgba(46, 67, 114, 0.7); }
+    .grid-list-hover > li:hover > div {
+      color: white; }
+.grid-list-hover.grid-list-hover-left > li > div {
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -5455,25 +5500,31 @@ img.icon-utec {
   -o-justify-content: center;
   justify-content: center;
   -ms-flex-pack: center;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  box-align: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  -o-align-items: center;
-  align-items: center;
-  -ms-flex-align: center;
-  height: 350px;
-  color: #323232;
-  text-align: center;
-  padding: 21px; }
-  .grid-list-hover > li > div h3 {
-    min-height: 98px; }
-.grid-list-hover > li:hover {
-  background-color: rgba(46, 67, 114, 0.7); }
-  .grid-list-hover > li:hover > div {
-    color: white; }
+  text-align: left; }
+.grid-list-hover.grid-list-hover-calendar .date {
+  position: absolute;
+  top: 0;
+  left: 14px;
+  background: #8f8d8e;
+  padding: 14px; }
+  .grid-list-hover.grid-list-hover-calendar .date .num,
+  .grid-list-hover.grid-list-hover-calendar .date .month {
+    color: white;
+    text-transform: uppercase; }
+  .grid-list-hover.grid-list-hover-calendar .date .num {
+    font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
+    font-weight: 700;
+    font-style: normal; }
+  .grid-list-hover.grid-list-hover-calendar .date .month {
+    font-size: 24px; }
+.grid-list-hover.grid-list-hover-calendar > li:hover {
+  background-color: #e3e3e3; }
+  .grid-list-hover.grid-list-hover-calendar > li:hover > div:not(.date) {
+    color: #323232; }
+    .grid-list-hover.grid-list-hover-calendar > li:hover > div:not(.date) small {
+      color: #8f8d8e; }
+  .grid-list-hover.grid-list-hover-calendar > li:hover .date {
+    background-color: #00a7d7; }
 
 .malla-curricular > li {
   padding: 0 14px 0 0 !important; }
