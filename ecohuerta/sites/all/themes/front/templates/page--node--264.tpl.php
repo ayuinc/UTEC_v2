@@ -205,11 +205,11 @@
           </div>
         </div>
 
-        <div class="desc-container">
-          <div>
-            <?php print $nombre_receta ?>
-          </div>
-          <div class="desc-content">
+        <div class="desc-container">        
+          <div class="desc-content"> 
+            <div style="position: relative; bottom: 53px; color: white;">
+              <h2> <?php print $nombre_receta ?></h2>
+            </div>
             <img class="project-close"  src="<?php print $path; ?>/images/icons/close_light_blue.jpg" alt="project-close" />
             <div class="recetas-cont">
               <div class="project-title">
