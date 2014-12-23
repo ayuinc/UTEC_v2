@@ -2,7 +2,7 @@
 // $video_name = $node->field_video['und']['0']['filename'];
 
 $titulo = $node->title;   
-$field_descripcion_corta_alto = $node->field_descripcion_corta_alto['und']['0']['value'];
+$field_fecha_calendario = $node->field_fecha_calendario['und']['0']['value'];
 
 
 ?>
