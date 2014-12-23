@@ -131,7 +131,7 @@
           </h3>
 
           <a href="<?php print $base_path; ?>ecohuerta-video-lechugas-hidroponicas" class="scroll-to btn btn-medium-small btn-light-blue uppercase">
-            Ver más
+            Ver más prueba uno
           </a>
         </div>
       </section>
