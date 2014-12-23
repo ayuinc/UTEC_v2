@@ -8,7 +8,7 @@ $field_contenido_generica = $node->field_contenido_generica['und']['0']['value']
 
 ?>
 <div class="container-sm">
-	<h1 class="light">Charlas informativas</h1>
+	<h1 class="light"><?php print $title ?></h1>
 	<div class="separator-gray separator-lg"></div>
 	<div>
 		<?php print $field_contenido_generica ?>
