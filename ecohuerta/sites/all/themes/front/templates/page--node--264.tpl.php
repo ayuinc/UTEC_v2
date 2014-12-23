@@ -215,13 +215,13 @@
                 </h3>
               </div>
               <div class="project-desc">
-                <ul>
+                <ol>
                 <?php foreach ($ingredientes as $key => $value) : ?>
                   <li>
                    <?php print($value['value']); ?>
                   </li>
                 <?php endforeach; ?>
-                </ul>
+                </ol>
               </div>
               <!-- <div class="prep">
                 <?php //print($preparacion);?>
@@ -239,13 +239,13 @@
                 </p> -->
               </div>
               <div class="prep">
-                <ul>
+                <ol>
                   <?php foreach ($preparacion as $key => $value) : ?>
                   <li>
                     <?php print($value['value']); ?>
                   </li>  
                   <?php endforeach; ?>
-                </ul>
+                </ol>
               </div>
             </div>
           </div>
