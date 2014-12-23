@@ -11,9 +11,11 @@
 
     <?php print $content['header']; ?>
 
-    <div class="hero-unit video-bg">
-      <?php print $content['header-bottom']; ?>
-    </div>
+    <?php if ($content['header-bottom']) :?>
+      <div class="hero-unit video-bg">
+        <?php print $content['header-bottom']; ?>
+      </div>
+    <?php endif; ?>
 
     <div class="body minhp-100" id="sec-1">
         <?php print $content['body']; ?>
