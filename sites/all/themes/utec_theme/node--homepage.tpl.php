@@ -26,4 +26,7 @@ $video_name = $node->field_video['und']['0']['filename'];
 		</div>
 	</div>
 </div>
+<a class="scroll-down scroll-down-sq size lg" href="#sec-1" rel="nofollow">
+	<i class="icon-arrows-down bg-white-op text-gray"></i>
+</a>
 <!-- END:HERO-UNIT --> 
