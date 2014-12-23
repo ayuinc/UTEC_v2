@@ -10,7 +10,7 @@
 		.container {
 			> ul {
 				@include list-unstyled;
-				li {
+				li {					
 					> ul {
 						@include list-unstyled;
 						li {
@@ -19,9 +19,12 @@
 								text-transform: uppercase;
 								font-size: $font-size-h4;
 								margin-bottom: $padding-base-horizontal;
+								a {
+									color: white;
+								}
 							}
 							a {
-								color: white;
+								color: $gray-light;
 							}
 						}
 					}
