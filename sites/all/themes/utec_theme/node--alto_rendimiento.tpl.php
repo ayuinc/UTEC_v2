@@ -23,7 +23,9 @@ $field_temario_alto = $node->field_temario_alto['und']['0']['value'];
 		<div class="mb-ch-42">
 			<div>
 				<h3>¿Cómo postular?</h3>
-				<?php  print $field_como_postular_alto ?>
+				<div class="list-custom">
+					<?php  print $field_como_postular_alto ?>
+				<div>
 			</div>
 			
 			<!--<div>
@@ -82,29 +84,13 @@ $field_temario_alto = $node->field_temario_alto['und']['0']['value'];
 			<div>
 				<h3>Costos:</h3>
 				<div class="list-custom">
-					<ul><li>El costo por Derecho de Inscripción es de S/.450</li></ul>
+					<ul><li><?php print $field_costa_alto ?></li></ul>
 				</div>
 			</div>
 			<div>
 				<h3>Temario:</h3>
 				<div class="list-custom">
-					<ul>
-						<li>
-							Prueba de conocimientos (Razonamiento Matemático y Ciencias):
-							<ul class="mt-21">
-								<li>
-									Física: Análisis vectorial
-								</li>
-								<li>
-									Química: Matería y composición, lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos itaque aut eum vel deleniti quod laudantium fugit illum at officia modi, cupiditate inventore nam, repellendus obcaecati tempora animi deserunt minus!
-								</li>
-							</ul>
-						</li>
-						<li>Lectura crítica y Redacción</li>
-						<li>Inglés</li>
-						<li>Prueba Práctica</li>
-						<li>Entrevista personal</li>
-					</ul>
+					<?php print $field_temario_alto ?>
 				</div>
 			</div>
 			<div class="gbo calendar">
