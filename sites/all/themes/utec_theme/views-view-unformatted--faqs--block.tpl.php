@@ -11,15 +11,13 @@
 	<h1 class="light">Preguntas frecuentes</h1>
 	<div class="separator-gray separator-lg"></div>
 	<div class="list-custom pv-42 lead-ch p-ch-gray">
-	<ul>
-		<?php //global $count; ?>
-    <?php foreach ($rows as $id => $row): ?>
-		    <?php
-		    	$count = 0;
-			    print $row;
-			    $count = 1;
-		    ?>
-		<?php endforeach; ?>
-	</ul>
+		<ul>
+			<?php //global $count; ?>
+	    <?php foreach ($rows as $id => $row): ?>
+		    	<li>
+				    <?php print $row; ?>
+				  </li>
+			<?php endforeach; ?>
+		</ul>
 	</div>
 </div>
