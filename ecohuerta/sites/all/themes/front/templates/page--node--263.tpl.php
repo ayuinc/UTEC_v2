@@ -131,7 +131,7 @@
             <iframe width="560" height="349" src="http://www.youtube.com/embed/n_dZNLr2cME?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
           </div> -->
           <div>
-            <img src="<?php print $path; ?>/images/ecohuerta/homepage/ecohuerta-image.png" alt="Marea en acción" height="100" class="img-responsive">
+            <img src="<?php print $path; ?>/images/ecohuerta/unnamed.png" alt="Marea en acción" height="100" class="img-responsive">
           </div>
           <a style="margin-top:1rem;" href="<?php print $base_path; ?>ecohuerta-recetas" class="scroll-to btn btn-medium-small btn-light-blue uppercase">
             Pronto AIR lechugas

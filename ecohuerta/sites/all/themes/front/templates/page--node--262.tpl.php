@@ -122,7 +122,7 @@
         <div id="marea-en-accion-r" class="responsive-fix"></div>
         <div class="modal modal-alone center">
           <div class="image-holder">
-            <img src="<?php print $path; ?>/images/ecohuerta/homepage/ecohuerta-image.png" alt="Marea en acción" height="100"> 
+            <img src="<?php print $path; ?>/images/ecohuerta/homepage/ecohuerta-image.png" alt="Marea en acción" height="160"> 
           </div>
 
           <h3 class="light">
@@ -131,7 +131,7 @@
           </h3>
 
           <a href="<?php print $base_path; ?>ecohuerta-video-lechugas-hidroponicas" class="scroll-to btn btn-medium-small btn-light-blue uppercase">
-            Ver más prueba uno
+            Ver más
           </a>
         </div>
       </section>
