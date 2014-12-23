@@ -14,9 +14,9 @@
 		<ul>
 			<?php //global $count; ?>
 	    <?php foreach ($rows as $id => $row): ?>
-			    <?php
-				    print $row;
-			    ?>
+		    	<li>
+				    <?php print $row; ?>
+				  </li>
 			<?php endforeach; ?>
 		</ul>
 	</div>
