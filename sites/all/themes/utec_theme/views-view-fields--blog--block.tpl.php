@@ -1,5 +1,4 @@
 <?php 
-	kpr($fields); 
 	$title = $fields['title']->content;
 	$body = $fields['body']->content;
 	$image = $fields['field_imagen']->content;

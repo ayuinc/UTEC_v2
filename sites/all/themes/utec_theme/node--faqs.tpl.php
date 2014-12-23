@@ -1,5 +1,4 @@
 <?php 
-kpr($node);
 // $video_name = $node->field_video['und']['0']['filename'];
 
 $titulo = $node->title;   
