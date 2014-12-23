@@ -27,7 +27,7 @@
 .accordion > .slide {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: 51% center;
 }
 .accordion > .slide:not(.disabled) {
   opacity: .5;
@@ -37,6 +37,32 @@
   filter: gray; /* IE6-9 */
 }
 .accordion > .slide:not(.disabled):hover {
+  opacity: 1;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  filter: none;
+}
+.recetas .accordion > .slide:not(.disabled) {
+  opacity: 1;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  filter: none;
+}
+.recetas .accordion > .slide:not(.disabled):hover {
+  opacity: .5;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+  filter: gray; /* IE6-9 */
+}
+.recetas .accordion > .slide.active{
+  opacity: .5;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+  filter: gray; /* IE6-9 */
+}
+.recetas .accordion > .slide.active:hover{
   opacity: 1;
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
@@ -115,6 +141,25 @@
   padding: 30px 30px 30px 170px;
   background-image: url('../images/marea/equipos/logo.png');
 }
+.recetas .desc-content.right-side{
+  right: 0;
+  left: inherit;
+  width: 20%;
+  background: rgba(0,0,0,0.9);  
+  color: #fff;
+}
+.recetas .desc-content{
+  left: 0;
+  background-image: none;
+  padding: 30px;
+
+}
+.recetas-cont{
+  width: 49%;
+  display: inline-block;
+  padding: 10px;
+  float: left;
+}
 .desc-container h3.title {
   margin-top: 0;
 }
@@ -133,7 +178,7 @@
   background-color: #000;
 }
 .accordion > .slide2 {
-  background-position: -420px 0;
+  /*background-position: -420px 0;*/
   /*background-image: url('/images/marea/equipos/utec_marea_en_accion_atlantis.jpg');*/
 }
 .accordion > .slide3 {
