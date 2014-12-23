@@ -12,6 +12,6 @@
 	$field_descripcion_corta_pregunta = $fields['field_descripcion_corta_pregunta']->content;
 ?>
 
-<?php print $title ?>
-<?php print $field_descripcion_corta_pregunta ?>
+<h5><?php print $title ?></h5>
+<p><?php print $field_descripcion_corta_pregunta ?></p>
 
