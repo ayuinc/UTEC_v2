@@ -206,6 +206,9 @@
         </div>
 
         <div class="desc-container">
+          <div>
+            <?php print $nombre_receta ?>
+          </div>
           <div class="desc-content">
             <img class="project-close"  src="<?php print $path; ?>/images/icons/close_light_blue.jpg" alt="project-close" />
             <div class="recetas-cont">
@@ -215,13 +218,13 @@
                 </h3>
               </div>
               <div class="project-desc">
-                <ol>
+                <ul>
                 <?php foreach ($ingredientes as $key => $value) : ?>
                   <li>
                    <?php print($value['value']); ?>
                   </li>
                 <?php endforeach; ?>
-                </ol>
+                </ul>
               </div>
               <!-- <div class="prep">
                 <?php //print($preparacion);?>
