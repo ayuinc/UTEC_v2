@@ -1,9 +1,10 @@
-.admision-modalidades {
+.grid-list-hover {
 	> li {
-		> div {
+		position: relative;
+		> div:not(.date) {
 			border: 1px solid $gray-light;
 			@include flex-middle-center;
-			height: 350px;
+			height: $grid-list-hover-height;
 			color: $gray-dark;
 			text-align: center;
 			padding: $container-fluid + 7;
@@ -15,6 +16,46 @@
 			background-color: rgba($brand-info, 0.7);
 			> div {
 				color: white;
+			}
+		}
+	}
+	&.grid-list-hover-left {
+		> li {
+			> div {
+				@include flex-middle;
+				text-align: left;
+			}
+		}
+	}
+	&.grid-list-hover-calendar {
+		.date {
+			@include position(absolute, 0 null null $container-fluid);	
+			background: $gray;
+			padding: $container-fluid;
+			.num,
+			.month {
+				color: white;
+				text-transform: uppercase;
+			}
+			.num {
+				@include bold;
+			}
+			.month {
+				font-size: $font-size-h3;
+			}
+		}
+		> li {
+			&:hover {
+				background-color: $gray-light;
+				> div:not(.date) {
+					color: $gray-dark;
+					small {
+						color: $gray;
+					}
+				}
+				.date {
+					background-color: $brand-primary;
+				}
 			}
 		}
 	}
