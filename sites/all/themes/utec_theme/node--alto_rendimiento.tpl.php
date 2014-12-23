@@ -92,7 +92,95 @@ $field_temario_alto = $node->field_temario_alto['und']['0']['value'];
 				</div>
 			</div>
 
-			kjsfalkjflskdj
+			<div class="gbo calendar">
+				<h3>Calendario:</h3>
+				<div class="row">
+					<div class="col-sm-3" data-href="admision_evento-detalle.html">
+						<div class="title">
+							<span>Inicio de inscripciones</span>
+						</div>
+						<div class="date">
+							<span>4/1/2014, 12:00:00 AM</span>
+						</div>
+					</div>
+					<div class="col-sm-3" data-href="#">
+						<div class="title">
+							<span>Evaluación</span>
+						</div>
+						<div class="date">
+							<span>4/30/2014, 12:00:00 AM</span>
+						</div>
+					</div>
+					<div class="col-sm-3" data-href="#">
+						<div class="title">
+							<span>Evaluación</span>
+						</div>
+						<div class="date">
+							<span>5/26/2014, 12:00:00 AM</span>
+						</div>
+					</div>
+					<div class="col-sm-3" data-href="#">
+						<div class="title">
+							<span>Evaluación</span>
+						</div>
+						<div class="date">
+							<span>6/26/2014, 12:00:00 AM</span>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3" data-href="#">
+						<div class="title">
+							<span>Evaluación</span>
+						</div>
+						<div class="date">
+							<span>8/28/2014, 12:00:00 AM</span>
+						</div>
+					</div>
+					<div class="col-sm-3" data-href="#">
+						<div class="title">
+							<span>Evaluación</span>
+						</div>
+						<div class="date">
+							<span>9/25/2014, 12:00:00 AM</span>
+						</div>
+					</div>
+					<div class="col-sm-3" data-href="#">
+						<div class="title">
+							<span>Evaluación</span>
+						</div>
+						<div class="date">
+							<span>10/30/2014, 12:00:00 AM</span>
+						</div>
+					</div>
+					<div class="col-sm-3" data-href="#">
+						<div class="title">
+							<span>Evaluación</span>
+						</div>
+						<div class="date">
+							<span>11/27/2014, 12:00:00 AM</span>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3" data-href="#">
+						<div class="title">
+							<span>Evaluación</span>
+						</div>
+						<div class="date">
+							<span>1/29/2015, 12:00:00 AM</span>
+						</div>
+					</div>
+					<div class="col-sm-3" data-href="#">
+						<div class="title">
+							<span>Evaluación</span>
+						</div>
+						<div class="date">
+							<span>2/20/2015</span>
+						</div>
+					</div>
+				</div>
+			</div>
 
 			</div>
 		</div>
