@@ -7,7 +7,7 @@
 	$path = $fields['path']->content;
 	global $count;
 ?>
-<?php //die(var_dump($count)); ?>
+<?php print_r($zebra) ?>
 <?php if ($count == 0) :?>
 <div class="banner row mb-14 ml-0" data-href="<?php print $path; ?>">
 	<div class="col-sm-3 banner-pic" style="background-image: url(<?php print $image ?>);">
