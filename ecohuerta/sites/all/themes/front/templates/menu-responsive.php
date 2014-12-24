@@ -148,7 +148,7 @@
               <li>
                 <a href="<?php print $base_path; ?>ecohuerta-video-lechugas-hidroponicas" class="link-menu">
                   <div class="submenu-single">
-                    Sobre ecohuerta
+                    Sobre Air Lechugas
                   </div>
                 </a>
               </li>
