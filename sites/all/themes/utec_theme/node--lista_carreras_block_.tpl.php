@@ -1,7 +1,7 @@
-<div class="row  mv-21 ml-0">
-	<h2 class="lead medium mb-0"><span class="text-gray-darker">¿Listo para</span> <span class="text-gray">cambiar el mundo?</span></h2>
-	<h4 class="lead mb-28">Éstas son nuestras carreras:</h4>
-	<ul class="grid-list grid-list-5 pv-70 list-carreras text-center">
+<div class="row  mv-70 ml-0">
+	<h2 class="lead medium"><span class="text-gray-darker">¿Listo para</span> <span class="text-gray">cambiar el mundo?</span></h2>
+	<h4 class="lead mb-0 mt-0">Éstas son nuestras carreras:</h4>
+	<ul class="grid-list grid-list-5 list-carreras text-center">
 		<li>
 			<div onclick="goTo()">
 				<div><i class="icon-ing-quimica"></i></div>
