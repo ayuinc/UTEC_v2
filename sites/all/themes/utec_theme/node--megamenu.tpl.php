@@ -261,7 +261,7 @@
 							<a href="/admision/informacion-economica"><span>Información</span>económica</a>
 						</li>
 						<li>
-							<a href="admision/centro-pre" class="btn btn-primary btn-custom bold">Postular a la pre</a>
+							<a href="/admision/centro-pre" class="btn btn-primary btn-custom bold">Postular a la pre</a>
 						</li>
 					</ul>
 					<ul>
