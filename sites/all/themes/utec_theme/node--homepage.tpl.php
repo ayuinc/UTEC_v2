@@ -24,7 +24,7 @@ $video_name = $node->field_video['und']['0']['filename'];
     controls
     preload="auto">
     <source src="assets/video/video_UTEC-pedal.webm" type='video/webm' />
-    <source src="sites/default/files/<?php echo $video_name ?>" type='video/mp4' />
+    <source src="assets/video/video_UTEC-pedal.mp4" type='video/mp4' />
     <source src="assets/video/video_UTEC-pedal.ogg" type='video/ogg' />
     <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
   </video>
