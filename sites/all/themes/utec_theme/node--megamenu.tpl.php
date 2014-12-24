@@ -59,7 +59,7 @@
 		<div class="container">
 			<div class="left">
 				<div class="logo pv-21">
-					<a href="#"><img src="/<?php print $theme_path; ?>/assets/img/logo_horizontal_UTEC.png" alt="Logo UTEC" width="135" height="auto"></a>
+					<a href="/"><img src="/<?php print $theme_path; ?>/assets/img/logo_horizontal_UTEC.png" alt="Logo UTEC" width="135" height="auto"></a>
 				</div>
 			</div>
 			<div class="left">
