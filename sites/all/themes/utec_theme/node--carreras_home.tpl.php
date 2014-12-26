@@ -96,7 +96,7 @@ $perfil_link = $node->field_perfil_egresado_link['und']['0']['value'];
     <ul class="grid-list grid-list-centered grid-list-4 grid-list-anchors pv-21">
       <?php foreach ($node->field_profesor as $key => $profesor) :?>
       <?php 
-        $rol = $profesor['und'][$key]$entity->roles['1']; 
+        $rol = $profesor['und'][$key]['entity']->roles['1']; 
       ?>
       <li class="mb-ch-14">
         <div class="grid-list-pic"><img src="/<?php print $theme_path?>/assets/img/user.jpg" alt="" width="180px" height="auto" class="img-circle"></div>
