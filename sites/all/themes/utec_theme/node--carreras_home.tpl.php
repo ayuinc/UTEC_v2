@@ -102,7 +102,7 @@ $perfil_link = $node->field_perfil_egresado_link['und']['0']['value'];
         <?php   
 
           $name = $value['entity']->name; 
-          $pic = $value['entity']->$picture->filename; 
+          $pic = $value['entity']->picture->filename; 
           $desc = $value['entity']->field_descripci_n['und'][0]['value'];
           //die(print_r($value));
         ?>
