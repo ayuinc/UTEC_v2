@@ -38,7 +38,7 @@
 						<li class="pt-xs">
 							<a href="#" class="text-gray">Contacto</a>
 						</li>
-						<li class="pt-xs">
+						<!--<li class="pt-xs">
 							<a href="#" class="text-gray">Blog</a>
 						</li>
 						<li>
@@ -46,9 +46,9 @@
 						</li>
 						<li>
 							<a href="#" class="btn btn-xs btn-custom btn-gray" rel="nofollow">ES</a>
-						</li>
+						</li>-->
 						<li>
-							<a href="#" class="btn btn-xs btn-custom btn-gray" rel="nofollow">Login</a>
+							<a href="#" class="btn btn-xs btn-custom btn-gray" rel="nofollow">Intranet</a>
 						</li>
 					</ul>
 				</div>
@@ -59,7 +59,7 @@
 		<div class="container">
 			<div class="left">
 				<div class="logo pv-21">
-					<a href="#"><img src="/<?php print $theme_path; ?>/assets/img/logo_horizontal_UTEC.png" alt="Logo UTEC" width="135" height="auto"></a>
+					<a href="/"><img src="/<?php print $theme_path; ?>/assets/img/logo_horizontal_UTEC.png" alt="Logo UTEC" width="135" height="auto"></a>
 				</div>
 			</div>
 			<div class="left">
@@ -112,7 +112,7 @@
 			<div class="nav-display-left">
 				<div>
 					<h1>Conoce<br><span>Quiénes</span> Somos</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit itaque dolorum fugiat.</p>
+					<p>La universidad que potencia el ingenio, la innovación y el emprendimiento</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
@@ -169,7 +169,7 @@
 			<div class="nav-display-left">
 				<div>
 					<h1>Experiencia<br><span>en</span> Investigación</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit itaque dolorum fugiat.</p>
+					<p>El paso decisivo para encontrar las mejores soluciones</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
@@ -200,37 +200,37 @@
 			<div class="nav-display-left">
 				<div>
 					<h1>Nuestra <span>oferta</span><br>Académica</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit itaque dolorum fugiat.</p>
+					<p>Lleva a nuestros estudiantes a experimentar la ingeniería desde el día uno a través de nuestra metodología de aprendizaje activo.</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
 				<div>
 					<ul>
 						<li>
-							<a href="#"><span>Ingeniería</span>Industrial</a>
+							<a href="carreras/ingenieria-industrial"><span>Ingeniería</span>Industrial</a>
 						</li>
 						<li>
-							<a href="#"><span>Ingeniería</span>De la Energía</a>
+							<a href="carreras/ingenieria-de-la-energia"><span>Ingeniería</span>De la Energía</a>
 						</li>
 						<li>
-							<a href="#"><span>Ingeniería</span>Química Industrial</a>
+							<a href="carreras/ingenieria-quimica-industrial"><span>Ingeniería</span>Química Industrial</a>
 						</li>
 						<li>
-							<a href="#"><span>Ingeniería</span>Mecánica</a>
+							<a href="carreras/ingenieria-mecanica"><span>Ingeniería</span>Mecánica</a>
 						</li>
 					</ul>
 					<ul>
 						<li>
-							<a href="#"><span>Ingeniería</span>Electrónica</a>
+							<a href="carreras/ingenieria-electronica"><span>Ingeniería</span>Electrónica</a>
 						</li>
 						<li>
-							<a href="#">Menciones</a>
+							<a href="carreras/menciones">Menciones</a>
 						</li>
 						<li>
-							<a href="#"><span>Escuela de</span>Desarollo</a>
+							<a href="carreras/escuela-de-desarrollo"><span>Escuela de</span>Desarollo</a>
 						</li>
 						<li>
-							<a href="#" class="btn btn-primary btn-custom bold">Postular</a>
+							<a href="/admision/modalidades" class="btn btn-primary btn-custom bold">Postula</a>
 						</li>
 					</ul>
 				</div>
@@ -244,28 +244,28 @@
 		<div class="container-sm">
 			<div class="nav-display-left">
 				<div>
-					<h1>Talento<br><span>vocación</span> y<br><span>aspiración</span><br>a la excelencia</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit itaque dolorum fugiat.</p>
+					<h1>Ingenio<br><span>vocación</span> y<br><span>aspiración</span><br>a la excelencia</h1>
+					<p>Ese es el ADN de nuestros estudiantes: alcanzar el más alto nivel académico y desarrollo personal</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
 				<div>
 					<ul>
 						<li>
-							<a href="#"><span>Modalidades</span>de admisión</a>
+							<a href="/admision/modalidades"><span>Modalidades</span>de admisión</a>
 						</li>
 						<li>
-							<a href="#"><span>Charlas</span>informativas</a>
+							<a href="/admision/charlas-informativas"><span>Charlas</span>informativas</a>
 						</li>
 						<li>
-							<a href="#"><span>Información</span>económica</a>
+							<a href="/admision/informacion-economica"><span>Información</span>económica</a>
 						</li>
 						<li>
-							<a href="#" class="btn btn-primary btn-custom bold">Postular a la pre</a>
+							<a href="/admision/modalidades" class="btn btn-primary btn-custom bold">Postula</a>
 						</li>
 					</ul>
 					<ul>
-						<li>
+						<!--<li>
 							<a href="#"><span>Calendario</span>de admisión</a>
 						</li>
 						<li>
@@ -273,9 +273,9 @@
 						</li>
 						<li>
 							<a href="#"><span>Orientación</span>Vocacional</a>
-						</li>
+						</li>-->
 						<li>
-							<a href="#"><span>Preguntas</span>Frecuentes</a>
+							<a href="/admision/preguntas-frecuentes"><span>Preguntas</span>Frecuentes</a>
 						</li>
 					</ul>
 				</div>
@@ -289,8 +289,8 @@
 		<div class="container-sm">
 			<div class="nav-display-left">
 				<div>
-					<h1>Lorem <span>ipsum</span><br>dolor sit amet</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit itaque dolorum fugiat.</p>
+					<h1><span>Convenios y alianzas</span><br>internacionales</h1>
+					<p>Generamos conexiones con las mejores instituciones educativas del mundo</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
@@ -318,7 +318,7 @@
 			<div class="nav-display-left">
 				<div>
 					<h1>Escuela de<br><span>desarollo</span><br>profesional</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit itaque dolorum fugiat.</p>
+					<p>Potencia tus habilidades y alcanza el éxito profesional a través de nuestros cursos</p>
 				</div>
 			</div>
 			<div class="nav-display-right">

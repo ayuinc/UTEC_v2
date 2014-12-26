@@ -25,64 +25,81 @@
 	</div>
 	<div class="site-map pv-14 bg-gray-dark">
 		<div class="container">
-			<ul class="grid-list grid-list-5">
+			<ul class="grid-list grid-list-4">
         <li>
           <ul>
             <li class="title"><a href="#">Somos Utec</a></li>
-            <li><a href="#"><span></span><span>Respaldo</span></a></li>
-            <li><a href="#"><span></span><span>Autoridades</span></a></li>
-            <li><a href="#"><span></span><span>Profesores</span></a></li>
-            <li><a href="#"><span></span><span>Noticias</span></a></li>
-            <li><a href="#"><span></span><span>Eventos</span></a></li>
+            <li><a href="#"><span>Metodología</span><span>Educativa</span></a></li>
+            <li><a href="#"><span>Vida</span><span>Estudiantil</span></a></li>
+            <li><a href="#"><span>Campus &amp;</span><span>Laboratorios</span></a></li>
+            <li><a href="#"><span>Ingenio en</span><span>Acción</span></a></li>
+            <li><a href="#"><span>UTEC</span><span>Ventures</span></a></li>
+            <li><a href="#"><span>Calendario</span><span>Académico</span></a></li>
+            <li><a href="#"><span>Respaldo</span></a></li>
+            <li><a href="#"><span>Autoridades</span></a></li>
+            <li><a href="#"><span>Concejo Directivo</span></a></li>
+            <li><a href="#"><span>Profesores</span></a></li>
+            <!--<li><a href="#"><span></span><span>Noticias</span></a></li>-->
+            <!--<li><a href="#"><span></span><span>Eventos</span></a></li>-->
             <li><a href="#"><span>Trabaja en</span><span>Utec</span></a></li>
           </ul>
         </li>
-        <li>
+        <!--<li>
           <ul>
             <li class="title"><a href="#">Vive Utec</a></li>
             <li><a href="#"><span>Vida</span><span>Estudiantil</span></a></li>
-            <li><a href="#"><span>Metodología</span><span>Educativa</span></a></li>
             <li><a href="#"><span>Campus &amp;</span><span>Laboratorios</span></a></li>
             <li><a href="#"><span>Ingenio en</span><span>Acción</span></a></li>
             <li><a href="#"><span>UTEC</span><span>Ventures</span></a></li>
             <li><a href="#"><span>Blog &amp;</span><span>YouTube</span></a></li>
             <li><a href="#"><span>Calendario</span><span>Académico</span></a></li>
           </ul>
-        </li>
+        </li>-->
         <li>
           <ul>
             <li class="title"><a href="#">Investigación</a></li>
-            <li><a href="#"><span></span><span>Publicaciones</span></a></li>
-            <li><a href="#"><span></span><span>Consultorías</span></a></li>
+            <li><a href="#"><span>Publicaciones</span></a></li>
+            <li><a href="#"><span>Consultorías</span></a></li>
             <li><a href="#"><span>Empresas &amp;</span><span>Clientes</span></a></li>
             <li><a href="#"><span></span><span>Contacto</span></a></li>
           </ul>
         </li>
         <li>
           <ul>
-            <li class="title"><a href="#">Programas</a></li>
-            <li><a href="#"><span>Ingeniería</span><span>Química industrial</span></a></li>
-            <li><a href="#"><span>Ingeniería</span><span>Electrónica</span></a></li>
-            <li><a href="#"><span>Ingeniería</span><span>Mecánica</span></a></li>
-            <li><a href="#"><span>Ingeniería</span><span>de la Energía</span></a></li>
-            <li><a href="#"><span>Ingeniería</span><span>Industrial</span></a></li>
-            <li><a href="#"><span></span><span>Menciones</span></a></li>
-            <li><a href="#"><span>Escuela de</span><span>Desarrollo Profesional</span></a></li>
-            <li><a href="#"><span>Convenios de</span><span>Intercambio</span></a></li>
+            <li class="title"><a href="#">Carreras</a></li>
+            <li><a href="carreras/ingenieria-quimica-industrial"><span>Ingeniería</span><span>Química industrial</span></a></li>
+            <li><a href="carreras/ingenieria-electronica"><span>Ingeniería</span><span>Electrónica</span></a></li>
+            <li><a href="carreras/ingenieria-mecanica"><span>Ingeniería</span><span>Mecánica</span></a></li>
+            <li><a href="carreras/ingenieria-de-la-energia"><span>Ingeniería</span><span>de la Energía</span></a></li>
+            <li><a href="carreras/ingenieria-industrial"><span>Ingeniería</span><span>Industrial</span></a></li>
+            <li><a href="carreras/menciones"><span></span><span>Menciones</span></a></li>
+            <li><a href="carreras/escuela-de-desarrollo"><span>Escuela de</span><span>Desarrollo Profesional</span></a></li>
+            <li><a href="convenios"><span>Convenios de</span><span>Intercambio</span></a></li>
           </ul>
         </li>
         <li>
           <ul>
             <li class="title"><a href="#">Admisión</a></li>
-            <li><a href="#"><span>Modalidades de</span><span>Admisión</span></a></li>
-            <li><a href="#"><span>Calendario de</span><span>Admisión</span></a></li>
-            <li><a href="#"><span></span><span>Presinscripción</span></a></li>
-            <li><a href="#"><span>Información</span><span>Económica</span></a></li>
-            <li><a href="#"><span>Visita</span><span>UTEC</span></a></li>
-            <li><a href="#"><span>Orientación</span><span>Vocacional</span></a></li>
-            <li><a href="#"><span></span><span>FAQ</span></a></li>
+            <li><a href="/admision/modalidades"><span>Modalidades de</span><span>Admisión</span></a></li>
+            <li><a href="/admision/charlas-informativas"><span>Charlas Informativas</span></a></li>
+            <!--<li><a href="#"><span>Calendario de</span><span>Admisión</span></a></li>-->
+            <li><a href="/admision/centro-pre"><span></span><span>Presinscripción</span></a></li>
+            <li><a href="/admision/informacion-economica"><span>Información</span><span>Económica</span></a></li>
+            <!--<li><a href="#"><span>Visita</span><span>UTEC</span></a></li>
+            <li><a href="#"><span>Orientación</span><span>Vocacional</span></a></li>-->
+            <li><a href="/admision/preguntas-frecuentes"><span></span><span>FAQ</span></a></li>
           </ul>
         </li>
+        <li>
+          <ul>
+            <li class="title"><a href="#">Convenios</a></li>
+          </ul>
+        </li>  
+        <li>
+          <ul>
+            <li class="title"><a href="#">EDP</a></li>
+          </ul>
+        </li>                
       </ul> 
 		</div>
 	</div>

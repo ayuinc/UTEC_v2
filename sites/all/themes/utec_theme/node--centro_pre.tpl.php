@@ -2,12 +2,19 @@
 // $video_name = $node->field_video['und']['0']['filename'];
 
 $titulo = $node->title;   
-$field_descripcion_corta_alto = $node->field_descripcion_corta_alto['und']['0']['value'];
+$field_que_es_descripcion_cp = $node->field_que_es_descripcion_cp['und']['0']['value'];
+$field_que_es_intro_cp = $node->field_que_es_intro_cp['und']['0']['value'];
+$field_calendario_fecha = $node->field_calendario_fecha['und']['0']['value'];
+$field_calendario_hora = $node->field_calendario_hora['und']['0']['value'];
+$field_calendario_pago = $node->field_calendario_pago['und']['0']['value'];
+$field_calendario_lugar = $node->field_calendario_lugar['und']['0']['value'];
+$field_inscripcion_pre_extensive = $node->field_inscripcion_pre_extensive['und']['0']['value'];
+$field_inscripcion_pre_intensiva = $node->field_inscripcion_pre_intensiva['und']['0']['value'];
 
 ?>
 <div class="container">
 	<div data-section-scroll="Cursos" class="section-scroll-content">
-		<h3 class="lead thin text-center ml-70 mr-70">A través de una metodología lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam omnis repudiandae ex temporibus! Officia, voluptatum, et sunt esse mollitia ducimus maxime placeat accusantium nobis nam quisquam necessitatibus sint dolorem tempore!</h3>
+		<h3 class="lead thin text-center ml-70 mr-70"><?php print $field_que_es_intro_cp ?></h3>
 		<div class="pt-42 ml-70 mr-70">
 			<h3 class="thin lead ml-7">Cursos</h3>
 			<ul class="grid-list grid-list-4 list-hover list-hover-gray-light">
@@ -72,9 +79,7 @@ $field_descripcion_corta_alto = $node->field_descripcion_corta_alto['und']['0'][
 						Fecha
 					</li>
 					<li class="pl-21">
-						<p>Martes 06 de enero 2015 a lunes 16 de febrero 2015.</p>
-						<p><strong>Clases regulares:</strong> lunes a viernes</p>
-						<p><strong>Examen final:</strong> Miércoles 18 de enero 2015</p>
+						<p><?php print $field_calendario_fecha ?></p>
 					</li>
 				</ul>
 				<ul>
@@ -82,7 +87,7 @@ $field_descripcion_corta_alto = $node->field_descripcion_corta_alto['und']['0'][
 						Hora
 					</li>
 					<li class="pl-21">
-						<p>Por confirmar</p>
+						<p><?php print $field_calendario_hora ?></p>
 					</li>
 				</ul>
 				<ul>
@@ -90,8 +95,7 @@ $field_descripcion_corta_alto = $node->field_descripcion_corta_alto['und']['0'][
 						Pago
 					</li>
 					<li class="pl-21">
-						<p><strong>Al contado:</strong>S/. 3,500 nuevos soles</p>
-						<p><strong>Financiado:</strong>3 cuotas de S/. 1300.00 nuevos soles</p>
+						<p><?php print $field_calendario_pago ?></p>
 					</li>
 				</ul>
 				<ul>
@@ -99,13 +103,13 @@ $field_descripcion_corta_alto = $node->field_descripcion_corta_alto['und']['0'][
 						Lugar
 					</li>
 					<li class="pl-21">
-						<p>Colegio Santa María Eufrasia: Av. Las Palmeras no 591 Camacho, La Molina, Lima.</p>
+						<p><?php print $field_calendario_lugar ?></p>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</div>
-	<div data-section-scroll="Inscripcion" class="container-sm section-scroll-content">
+	<!--<div data-section-scroll="Inscripcion" class="container-sm section-scroll-content">
 		<h3 class="thin lead ml-70 mr-70">Inscripción</h3>
 		<div class="list-custom lead-ch">
 			<ul>
@@ -118,7 +122,7 @@ $field_descripcion_corta_alto = $node->field_descripcion_corta_alto['und']['0'][
 			</ul>
 		</div>
 		<a href="#" class="btn btn-lg btn-primary see-more uppercase ml-70 mr-70">Ver Requisitos</a>
-	</div>
+	</div>-->
 	<div data-section-scroll="Solicita informacion" class="container-sm section-scroll-content">
 		<h3 class="thin lead mb-49 ml-70">Solicita información</h3>
 		<form action="">
