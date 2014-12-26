@@ -7,7 +7,7 @@
 				<div onclick="goTo()">
 					<div><i class="icon-ing-quimica"></i></div>
 					<h2>
-						<a href="#">
+						<a href="/carreras/ingenieria-quimica-industrial">
 							<span>Ingeniería</span>
 							<span>Química</span>
 							<span>Industrial</span>
@@ -19,7 +19,7 @@
 				<div onclick="goTo()">
 					<div><i class="icon-ing-industrial"></i></div>
 					<h2>
-						<a href="carreras.html">
+						<a href="/carreras/ingenieria-industrial">
 							<span>Ingeniería</span>
 							<span>Industrial</span>
 							<span></span>
@@ -31,7 +31,7 @@
 				<div onclick="goTo()">
 					<div><i class="icon-ing-energia"></i></div>
 					<h2>
-						<a href="#">
+						<a href="/carreras/ingenieria-de-la-energia">
 							<span>Ingeniería</span>
 							<span>De la energía</span>
 							<span></span>
@@ -43,7 +43,7 @@
 				<div onclick="goTo()">
 					<div><i class="icon-ing-electronica"></i></div>
 					<h2>
-						<a href="#">
+						<a href="/carreras/ingenieria-electronica">
 							<span>Ingeniería</span>
 							<span>Electrónica</span>
 							<span></span>
@@ -55,7 +55,7 @@
 				<div onclick="goTo()">
 					<div><i class="icon-ing-mecanica"></i></div>
 					<h2>
-						<a href="#">
+						<a href="/carreras/ingenieria-mecanica">
 							<span>Ingeniería</span>
 							<span>Mecánica</span>
 							<span></span>
