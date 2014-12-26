@@ -318,3 +318,9 @@ p.small {
     padding: 1em !important;
   }
 }
+
+.icon-receta {
+  position: relative;
+  width: 50%;
+  left: 30%;
+}

@@ -191,6 +191,9 @@
       ?>
       <div class="slide slide2" style="background-image: url('<?php print $pathfile.'/'.$imagen_receta; ?>');">
         <div class="desc-front">
+          <div class="icon-receta">
+            <img src="<?php print $pathfile.'/'.$icono_receta; ?>">
+          </div>
           <div class="down">
             <h1 class="uppercase light">
               Receta :
