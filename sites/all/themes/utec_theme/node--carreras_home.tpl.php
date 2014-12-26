@@ -101,10 +101,10 @@ $perfil_link = $node->field_perfil_egresado_link['und']['0']['value'];
       <?php $count = 0; ?>  
       <?php foreach ($node->field_profesor['und'] as $key => $value) :?>
         <?php   
-          die(print_r($value));
-          $name = $value['und'][$count]['entity']->name; 
-          $pic = $value['und'][$count]['entity']->picture; 
-          $desc = $value['und'][$count]['entity']->field_descripci_n['und'][0]['value']; 
+          $name = $value->name; 
+          $pic = $value->picture; 
+          $desc = $value[->field_descripci_n['und'][0]['value']; 
+          die(print_r($name));
 
         ?>
       <li class="mb-ch-14">
