@@ -101,7 +101,7 @@ $perfil_link = $node->field_perfil_egresado_link['und']['0']['value'];
       <li class="mb-ch-14">
         <div class="grid-list-pic"><img src="/<?php print $theme_path?>/assets/img/user.jpg" alt="" width="180px" height="auto" class="img-circle"></div>
         <a href="#" class="h3 thin"><?php print $rol ?></a>
-        <p class="h4 thin"><?php print ?></p>
+        <p class="h4 thin"><?php //print ?></p>
       </li>
       <?php endforeach; ?>
     </ul>
