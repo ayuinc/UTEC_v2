@@ -101,7 +101,7 @@ $perfil_link = $node->field_perfil_egresado_link['und']['0']['value'];
       <?php $count = 0; ?>  
       <?php foreach ($node->field_profesor['und'] as $key => $value) :?>
         <?php   
-        print_r($value);
+        
           $name = $value['entity']->name; 
           $pic = $value['entity']->picture; 
           $desc = $value['entity']->field_descripci_n['und'][0]['value'];
