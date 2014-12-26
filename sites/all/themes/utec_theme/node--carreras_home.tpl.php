@@ -104,13 +104,14 @@ $perfil_link = $node->field_perfil_egresado_link['und']['0']['value'];
         $name = $value['und'][$count]['entity']->name; 
         $pic = $value['und'][$count]['entity']->picture; 
         $desc = $value['und'][$count]['entity']->field_descripci_n['und'][0]['value']; 
-
+        print($name);
       ?>
       <li class="mb-ch-14">
         <div class="grid-list-pic"><img src="/<?php print('/'.$pathfile.$pic)?>" alt="" width="180px" height="auto" class="img-circle"></div>
         <a href="#" class="h3 thin"><?php print $name ?></a>
         <p class="h4 thin"><?php print $desc ?></p>
       </li>
+      <?php $count++; ?>
       <?php endforeach; ?>
     </ul>
     <h3 class="lead thin text-gray"><em><?php print $profesor_txt ?></em></h3>
