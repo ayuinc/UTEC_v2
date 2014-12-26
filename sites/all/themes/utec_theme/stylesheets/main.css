@@ -4743,15 +4743,15 @@ body {
   position: relative; }
 
 .hero-unit {
-  min-height: 420px;
+  min-height: 491px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
   .hero-unit.video-bg {
     overflow: hidden;
-    height: 420px; }
+    height: 491px; }
   .hero-unit .overlay {
-    min-height: 420px; }
+    min-height: 491px; }
 
 #section-scroll {
   position: fixed;
@@ -5023,11 +5023,11 @@ body {
   .size.xs.user-card .user-info {
     min-height: 28px; }
 .size.xs.videoBG {
-  height: 140px; }
+  height: 211px; }
 .size.xs.hero-unit {
-  min-height: 140px; }
+  min-height: 211px; }
   .size.xs.hero-unit .overlay {
-    min-height: 140px; }
+    min-height: 211px; }
 .size.sm.scroll-down i {
   font-size: 12px; }
 .size.sm.banner .banner-content,
@@ -5040,11 +5040,11 @@ body {
   .size.sm.user-card .user-info {
     min-height: 35px; }
 .size.sm.videoBG {
-  height: 280px; }
+  height: 351px; }
 .size.sm.hero-unit {
-  min-height: 280px; }
+  min-height: 351px; }
   .size.sm.hero-unit .overlay {
-    min-height: 280px; }
+    min-height: 351px; }
 .size.sm.grid-list-hover > li > div {
   height: 210px; }
 .size.lg.scroll-down i {
@@ -5063,11 +5063,11 @@ body {
 .size.lg i {
   font-size: 48px; }
 .size.lg.videoBG {
-  height: 560px; }
+  height: 631px; }
 .size.lg.hero-unit {
-  min-height: 560px; }
+  min-height: 631px; }
   .size.lg.hero-unit .overlay {
-    min-height: 560px; }
+    min-height: 631px; }
 .size.xl.scroll-down i {
   font-size: 36px; }
 .size.xl.banner .banner-content,
@@ -5082,11 +5082,11 @@ body {
 .size.xl i {
   font-size: 108px; }
 .size.xl.videoBG {
-  height: 630px; }
+  height: 701px; }
 .size.xl.hero-unit {
-  min-height: 630px; }
+  min-height: 701px; }
   .size.xl.hero-unit .overlay {
-    min-height: 630px; }
+    min-height: 701px; }
 
 .banner .banner-pic,
 .banner .banner-content {
