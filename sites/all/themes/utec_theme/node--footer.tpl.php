@@ -74,7 +74,6 @@
             <li><a href="carreras/ingenieria-industrial"><span>Ingeniería Industrial</span></a></li>
             <li><a href="carreras/menciones"><span>Menciones</span></a></li>
             <li><a href="carreras/escuela-de-desarrollo"><span>Escuela de Desarrollo Profesional</span></a></li>
-            <li><a href="convenios"><span>Convenios de Intercambio</span></a></li>
           </ul>
         </li>
         <li>
@@ -93,6 +92,7 @@
         <li>
           <ul>
             <li class="title"><a href="#">Convenios</a></li>
+            <li><a href="convenios"><span>Convenios de Intercambio</span></a></li>
           </ul>
         </li>  
         <li>
