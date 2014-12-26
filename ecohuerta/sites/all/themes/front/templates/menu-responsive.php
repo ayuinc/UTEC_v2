@@ -134,14 +134,14 @@
           <li class="men3 dropdown <?php if(strcmp(request_uri(), '/ecohuerta')==0){print active;}?>">
             <a href="javascript:void(0)" class="link-menu link-menu-primary">
               <div class="submenu-single">
-                Ecohuerta
+                Air Lechugas
               </div>
             </a>
             <ul class="submenu">
               <li>
                 <a href="<?php print $base_path; ?>ecohuerta" class="link-menu">
                   <div class="submenu-single">
-                    Ecohuerta
+                    Air Lechugas
                   </div>
                 </a>
               </li>
