@@ -101,14 +101,14 @@ $perfil_link = $node->field_perfil_egresado_link['und']['0']['value'];
       <?php $count = 0; ?>  
       <?php foreach ($node->field_profesor['und'] as $key => $value) :?>
         <?php   
-        
+
           $name = $value['entity']->name; 
           $pic = $value['entity']->picture; 
           $desc = $value['entity']->field_descripci_n['und'][0]['value'];
 
         ?>
       <li class="mb-ch-14">
-        <div class="grid-list-pic"><img src="/<?php print($pathfile.'pictures/'.$pic)?>" alt="" width="180px" height="auto" class="img-circle"></div>
+        <div class="grid-list-pic"><img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="" width="180px" height="auto" class="img-circle"></div>
         <a href="#" class="h3 thin"><?php print $name ?></a>
         <p class="h4 thin"><?php print $desc ?></p>
       </li>
