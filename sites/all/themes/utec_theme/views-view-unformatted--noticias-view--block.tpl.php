@@ -18,7 +18,7 @@
 			    $count = 1;
 		    ?>
 		<?php endforeach; ?>
-	<div>
+	<!--<div>
 		<button class="btn btn-lg btn-primary see-more uppercase">Ver más noticias</button>
-	</div>
+	</div>-->
 </div>

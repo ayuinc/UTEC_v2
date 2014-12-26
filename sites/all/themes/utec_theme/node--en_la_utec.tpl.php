@@ -25,8 +25,8 @@
   $derecho_inferior_der_img  = $fields[4]->field_imagen['und'][0]['filename'];
 
 ?>
-<h1 class="lead medium pt-70 mb-0"><span class="text-gray-darker">En la UTEC ingeniería es</span> <span class="text-gray">bienestar.</span></h1>
-	<h4 class="lead mt-0 mb-42">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+<h1 class="lead medium pt-70 mb-0"><span class="text-gray-darker">En UTEC ingeniería es</span> <span class="text-gray">bienestar.</span></h1>
+	<!--<h4 class="lead mt-0 mb-42">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>-->
 	<div class="anchor-img-grid anchor-img-grid-1 grid-block row ml-0 mb-70">
 		<div class="col-sm-6">
       <a href="<?php print $base_url; ?>/<?php print $izquierdo_link; ?>" class="anchor-1">
