@@ -207,30 +207,30 @@
 				<div>
 					<ul>
 						<li>
-							<a href="#"><span>Ingeniería</span>Industrial</a>
+							<a href="carreras/ingenieria-industrial"><span>Ingeniería</span>Industrial</a>
 						</li>
 						<li>
-							<a href="#"><span>Ingeniería</span>De la Energía</a>
+							<a href="carreras/ingenieria-de-la-energia"><span>Ingeniería</span>De la Energía</a>
 						</li>
 						<li>
-							<a href="#"><span>Ingeniería</span>Química Industrial</a>
+							<a href="carreras/ingenieria-quimica-industrial"><span>Ingeniería</span>Química Industrial</a>
 						</li>
 						<li>
-							<a href="#"><span>Ingeniería</span>Mecánica</a>
+							<a href="carreras/ingenieria-mecanica"><span>Ingeniería</span>Mecánica</a>
 						</li>
 					</ul>
 					<ul>
 						<li>
-							<a href="#"><span>Ingeniería</span>Electrónica</a>
+							<a href="carreras/ingenieria-electronica"><span>Ingeniería</span>Electrónica</a>
 						</li>
 						<li>
-							<a href="#">Menciones</a>
+							<a href="carreras/menciones">Menciones</a>
 						</li>
 						<li>
-							<a href="#"><span>Escuela de</span>Desarollo</a>
+							<a href="carreras/escuela-de-desarrollo"><span>Escuela de</span>Desarollo</a>
 						</li>
 						<li>
-							<a href="#" class="btn btn-primary btn-custom bold">Postular</a>
+							<a href="/admision/modalidades" class="btn btn-primary btn-custom bold">Postula</a>
 						</li>
 					</ul>
 				</div>
@@ -261,7 +261,7 @@
 							<a href="/admision/informacion-economica"><span>Información</span>económica</a>
 						</li>
 						<li>
-							<a href="/admision/centro-pre" class="btn btn-primary btn-custom bold">Postular a la pre</a>
+							<a href="/admision/modalidades" class="btn btn-primary btn-custom bold">Postula</a>
 						</li>
 					</ul>
 					<ul>
