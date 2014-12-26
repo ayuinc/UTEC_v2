@@ -112,7 +112,7 @@
 			<div class="nav-display-left">
 				<div>
 					<h1>Conoce<br><span>Quiénes</span> Somos</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit itaque dolorum fugiat.</p>
+					<p>La universidad que potencia el ingenio, la innovación y el emprendimiento</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
@@ -169,7 +169,7 @@
 			<div class="nav-display-left">
 				<div>
 					<h1>Experiencia<br><span>en</span> Investigación</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit itaque dolorum fugiat.</p>
+					<p>El paso decisivo para encontrar las mejores soluciones</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
@@ -200,7 +200,7 @@
 			<div class="nav-display-left">
 				<div>
 					<h1>Nuestra <span>oferta</span><br>Académica</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit itaque dolorum fugiat.</p>
+					<p>Lleva a nuestros estudiantes a experimentar la ingeniería desde el día uno a través de nuestra metodología de aprendizaje activo.</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
@@ -244,8 +244,8 @@
 		<div class="container-sm">
 			<div class="nav-display-left">
 				<div>
-					<h1>Talento<br><span>vocación</span> y<br><span>aspiración</span><br>a la excelencia</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit itaque dolorum fugiat.</p>
+					<h1>Ingenio<br><span>vocación</span> y<br><span>aspiración</span><br>a la excelencia</h1>
+					<p>Ese es el ADN de nuestros estudiantes: alcanzar el más alto nivel académico y desarrollo personal</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
@@ -289,8 +289,8 @@
 		<div class="container-sm">
 			<div class="nav-display-left">
 				<div>
-					<h1>Lorem <span>ipsum</span><br>dolor sit amet</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit itaque dolorum fugiat.</p>
+					<h1><span>Convenios y alianzas</span><br>internacionales</h1>
+					<p>Generamos conexiones con las mejores instituciones educativas del mundo</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
@@ -318,7 +318,7 @@
 			<div class="nav-display-left">
 				<div>
 					<h1>Escuela de<br><span>desarollo</span><br>profesional</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit itaque dolorum fugiat.</p>
+					<p>Potencia tus habilidades y alcanza el éxito profesional a través de nuestros cursos</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
