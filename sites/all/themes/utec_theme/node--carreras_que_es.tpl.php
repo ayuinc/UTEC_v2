@@ -16,7 +16,7 @@
 		<h3><?php print $cuerpo ?></h3>
 	</div>
 	<div>
-		<img src="<?php print($pathfile.'/'.$imagen)?>" class="img-responsive">
+		<img src="<?php print $pathfile.$imagen ?>" class="img-responsive">
 	</div>
 </div>
 
