@@ -319,8 +319,15 @@ p.small {
   }
 }
 
-.icon-receta {
+.slide2 .icon-receta img {
   position: relative;
   width: 50%;
-  left: 30%;
+  left: 10%;
+  top: 30%; 
+}
+
+.slide2.active .icon-receta img {
+  width: 500px;
+  left: 60%;
+  top: 30%; 
 }
