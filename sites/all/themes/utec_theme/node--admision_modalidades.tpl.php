@@ -40,7 +40,7 @@ $titulo = $node->title;
 				</div>
 			</div>
 		</li>
-		<li data-href="//">
+		<li data-href="http://app.utec.edu.pe/admision/alto-rendimiento/informacion.php">
 			<div>
 				<h3 class="thin lead">Bachillerato internacional</h3>
 				<div class="size xl">
@@ -57,7 +57,7 @@ $titulo = $node->title;
 			</div>
 		</li>
 	</ul>
-	<h3>Si postulaste a una de estas modalidades consulta tus resultados.</h3>
+	<h3>Si postulaste a una de estas modalidades, consulta tus resultados.</h3>
 	<a href="#" class="btn btn-primary btn-lg uppercase see-more">Ver resultados aquí</a>
 </div>
 

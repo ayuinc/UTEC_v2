@@ -38,7 +38,7 @@
 						<li class="pt-xs">
 							<a href="#" class="text-gray">Contacto</a>
 						</li>
-						<li class="pt-xs">
+						<!--<li class="pt-xs">
 							<a href="#" class="text-gray">Blog</a>
 						</li>
 						<li>
@@ -46,9 +46,9 @@
 						</li>
 						<li>
 							<a href="#" class="btn btn-xs btn-custom btn-gray" rel="nofollow">ES</a>
-						</li>
+						</li>-->
 						<li>
-							<a href="#" class="btn btn-xs btn-custom btn-gray" rel="nofollow">Login</a>
+							<a href="#" class="btn btn-xs btn-custom btn-gray" rel="nofollow">Intranet</a>
 						</li>
 					</ul>
 				</div>
@@ -59,7 +59,7 @@
 		<div class="container">
 			<div class="left">
 				<div class="logo pv-21">
-					<a href="#"><img src="/<?php print $theme_path; ?>/assets/img/logo_horizontal_UTEC.png" alt="Logo UTEC" width="135" height="auto"></a>
+					<a href="/"><img src="/<?php print $theme_path; ?>/assets/img/logo_horizontal_UTEC.png" alt="Logo UTEC" width="135" height="auto"></a>
 				</div>
 			</div>
 			<div class="left">
@@ -252,20 +252,20 @@
 				<div>
 					<ul>
 						<li>
-							<a href="#"><span>Modalidades</span>de admisión</a>
+							<a href="/admision/modalidades"><span>Modalidades</span>de admisión</a>
 						</li>
 						<li>
-							<a href="#"><span>Charlas</span>informativas</a>
+							<a href="/admision/charlas-informativas"><span>Charlas</span>informativas</a>
 						</li>
 						<li>
-							<a href="#"><span>Información</span>económica</a>
+							<a href="/admision/informacion-economica"><span>Información</span>económica</a>
 						</li>
 						<li>
-							<a href="#" class="btn btn-primary btn-custom bold">Postular a la pre</a>
+							<a href="/admision/centro-pre" class="btn btn-primary btn-custom bold">Postular a la pre</a>
 						</li>
 					</ul>
 					<ul>
-						<li>
+						<!--<li>
 							<a href="#"><span>Calendario</span>de admisión</a>
 						</li>
 						<li>
@@ -273,9 +273,9 @@
 						</li>
 						<li>
 							<a href="#"><span>Orientación</span>Vocacional</a>
-						</li>
+						</li>-->
 						<li>
-							<a href="#"><span>Preguntas</span>Frecuentes</a>
+							<a href="/admision/preguntas-frecuentes"><span>Preguntas</span>Frecuentes</a>
 						</li>
 					</ul>
 				</div>
