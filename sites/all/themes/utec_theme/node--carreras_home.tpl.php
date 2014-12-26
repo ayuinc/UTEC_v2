@@ -97,7 +97,7 @@ $perfil_link = $node->field_perfil_egresado_link['und']['0']['value'];
       <?php foreach ($node->field_profesor as $key => $value) :?>
       <?php   
         // print $key;
-        // die(print_r($value['$key']));
+        die(print_r($key));
         // $rol = $profesor['und'][$key]['entity']->name; 
       ?>
       <li class="mb-ch-14">
