@@ -66,6 +66,17 @@ $list-custom-height: 20%;
 			}
 		}
 	}
+	&.list-hover-unstyled {
+		> li {
+			> div {
+				min-height: 0;
+				padding: 0;
+				h3 {
+					min-height: 0;
+				}
+			}
+		}
+	}
 }
 
 // LIST CUSTOM FOR LEAD CHILDREN 

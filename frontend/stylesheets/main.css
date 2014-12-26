@@ -4644,6 +4644,11 @@ textarea:-ms-input-placeholder {
   background-color: #f1f1f1; }
 .list-hover.list-hover-white > li:hover {
   background-color: #fff; }
+.list-hover.list-hover-unstyled > li > div {
+  min-height: 0;
+  padding: 0; }
+  .list-hover.list-hover-unstyled > li > div h3 {
+    min-height: 0; }
 
 .lead-ch .list-custom ul li:before, .lead-ch.list-custom ul li:before {
   top: 12px; }
@@ -5028,6 +5033,8 @@ body {
   min-height: 140px; }
   .size.xs.hero-unit .overlay {
     min-height: 140px; }
+.size.xs.grid-list-hover > li > div {
+  height: 140px; }
 .size.sm.scroll-down i {
   font-size: 12px; }
 .size.sm.banner .banner-content,
@@ -5039,6 +5046,8 @@ body {
     width: 35px; }
   .size.sm.user-card .user-info {
     min-height: 35px; }
+.size.sm i {
+  font-size: 24px; }
 .size.sm.videoBG {
   height: 280px; }
 .size.sm.hero-unit {
