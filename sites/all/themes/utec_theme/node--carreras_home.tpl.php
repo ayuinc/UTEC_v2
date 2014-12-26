@@ -1,4 +1,8 @@
 <?php 
+  global $base_url;
+  global $theme_path;
+  $path = $base_url.'/'.$theme_path;
+  $pathfile= variable_get('file_public_path', conf_path() . '/files/');
 
 $theme_path = drupal_get_path('theme', 'utec_theme');  
 
@@ -94,22 +98,21 @@ $perfil_link = $node->field_perfil_egresado_link['und']['0']['value'];
   </div>
   <div class="container text-center">
     <ul class="grid-list grid-list-centered grid-list-4 grid-list-anchors pv-21">
+      <?php $count = 0; ?>  
+      <?php foreach ($node->field_profesor['und'] as $key => $value) :?>
+        <?php   
+          $name = $value['entity']->name; 
+          $pic = $value['entity']->picture; 
+          $desc = $value['entity']->field_descripci_n['und'][0]['value'];
+
+        ?>
       <li class="mb-ch-14">
-        <div class="grid-list-pic"><img src="/<?php print $theme_path?>/assets/img/user.jpg" alt="" width="180px" height="auto" class="img-circle"></div>
-        <a href="#" class="h3 thin"><?php print $profesor_titulo ?></a>
+        <div class="grid-list-pic"><img src="/<?php print($pathfile.'pictures/'.$pic)?>" alt="" width="180px" height="auto" class="img-circle"></div>
+        <a href="#" class="h3 thin"><?php print $name ?></a>
+        <p class="h4 thin"><?php print $desc ?></p>
       </li>
-      <li class="mb-ch-14">
-        <div class="grid-list-pic"><img src="/<?php print $theme_path?>/assets/img/user.jpg" alt="" width="180px" height="auto" class="img-circle"></div>
-        <a href="#" class="h3 thin">Rosa María Llosa Demartini</a>
-      </li>
-      <li class="mb-ch-14">
-        <div class="grid-list-pic"><img src="/<?php print $theme_path?>/assets/img/user.jpg" alt="" width="180px" height="auto" class="img-circle"></div>
-        <a href="#" class="h3 thin">Rosa María Llosa Demartini</a>
-      </li>
-      <li class="mb-ch-14">
-        <div class="grid-list-pic"><img src="/<?php print $theme_path?>/assets/img/user.jpg" alt="" width="180px" height="auto" class="img-circle"></div>
-        <a href="#" class="h3 thin">Rosa María Llosa Demartini</a>
-      </li>
+      <?php $count++; ?>
+      <?php endforeach ?>
     </ul>
     <h3 class="lead thin text-gray"><em><?php print $profesor_txt ?></em></h3>
   </div>
