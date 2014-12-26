@@ -159,7 +159,7 @@
         <div class="desc-front">
           <div class="down">
             <div class="image-holder">
-              <img src="<?php print $path; ?>/images/ecohuerta/homepage/ecohuerta-image.png" alt="Marea en acción" height="100">
+              <img src="<?php print $path; ?>/images/ecohuerta/homepage/ecohuerta-img.png" alt="Marea en acción" height="100">
             </div>
             <p class="uppercase">recoje tu lechuga</p>
             <p>En el kilómetro 74 de la Panamericana Sur de Martes a Domingo de 9 am - 7 pm</p>
