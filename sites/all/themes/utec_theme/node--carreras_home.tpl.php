@@ -100,19 +100,20 @@ $perfil_link = $node->field_perfil_egresado_link['und']['0']['value'];
     <ul class="grid-list grid-list-centered grid-list-4 grid-list-anchors pv-21">
       <?php $count = 0; ?>  
       <?php foreach ($node->field_profesor as $key => $value) :?>
-      <?php   
-        $name = $value['und'][$count]['entity']->name; 
-        $pic = $value['und'][$count]['entity']->picture; 
-        $desc = $value['und'][$count]['entity']->field_descripci_n['und'][0]['value']; 
-        print($name);
-      ?>
+        <?php   
+          die(print_r($node->field_profesor));
+          $name = $value['und'][$count]['entity']->name; 
+          $pic = $value['und'][$count]['entity']->picture; 
+          $desc = $value['und'][$count]['entity']->field_descripci_n['und'][0]['value']; 
+
+        ?>
       <li class="mb-ch-14">
         <div class="grid-list-pic"><img src="/<?php print('/'.$pathfile.$pic)?>" alt="" width="180px" height="auto" class="img-circle"></div>
         <a href="#" class="h3 thin"><?php print $name ?></a>
         <p class="h4 thin"><?php print $desc ?></p>
       </li>
       <?php $count++; ?>
-      <?php endforeach; ?>
+      <?php endforeach ?>
     </ul>
     <h3 class="lead thin text-gray"><em><?php print $profesor_txt ?></em></h3>
   </div>
