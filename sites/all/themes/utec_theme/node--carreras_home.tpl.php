@@ -2,28 +2,30 @@
   global $base_url;
   global $theme_path;
   $path = $base_url.'/'.$theme_path;
-  $pathfile= variable_get('file_public_path', conf_path() . '/files/');
-
-$theme_path = drupal_get_path('theme', 'utec_theme');  
-
-$titulo = $node->title;   
-$carrera_txt = $node->body['und']['0']['value'];
-$carrera_link = $node->field_carrera_link['und']['0']['value'];
-$malla_titulo = $node->field_malla_curricular_titulo['und']['0']['value'];
-$malla_txt = $node->field_malla_curricular_body['und']['0']['value'];
-$malla_link = $node->field_malla_curricular_link ['und']['0']['value'];
-$menciones_titulo = $node->field_menciones_titulo  ['und']['0']['value'];
-$menciones_txt = $node->field_menciones_body['und']['0']['value'];
-$menciones_link = $node->field_menciones_link  ['und']['0']['value'];
-// $profesor_titulo = $node->field_profesor['und']['0']['value'];
-$profesor_txt = $node->field_profesor_texto['und']['0']['value'];
-$profesor_link = $node->field_profesor_link ['und']['0']['value'];
-$perfil_txt = $node->field_perfil_egresado_texto['und']['0']['value'];
-$perfil_link = $node->field_perfil_egresado_link['und']['0']['value'];
+  $pathfile= variable_get('file_public_path', conf_path() . '/files/'); 
+  
+	$theme_path = drupal_get_path('theme', 'utec_theme');  
+	
+	$titulo = $node->title;   
+	$carrera_txt = $node->body['und']['0']['value'];
+	$carrera_link = $node->field_carrera_link['und']['0']['value'];
+	$field_carrera_imagen = $node->field_carrera_imagen['und']['0']['filename'];
+	$malla_titulo = $node->field_malla_curricular_titulo['und']['0']['value'];
+	$malla_txt = $node->field_malla_curricular_body['und']['0']['value'];
+	$malla_link = $node->field_malla_curricular_link ['und']['0']['value'];
+	$menciones_titulo = $node->field_menciones_titulo  ['und']['0']['value'];
+	$menciones_txt = $node->field_menciones_body['und']['0']['value'];
+	$menciones_link = $node->field_menciones_link  ['und']['0']['value'];
+	// $profesor_titulo = $node->field_profesor['und']['0']['value'];
+	$profesor_txt = $node->field_profesor_texto['und']['0']['value'];
+	$profesor_link = $node->field_profesor_link ['und']['0']['value'];
+	$perfil_txt = $node->field_perfil_egresado_texto['und']['0']['value'];
+	$perfil_link = $node->field_perfil_egresado_link['und']['0']['value'];
+	$field_perfil_egresado_imagen = $node->field_perfil_egresado_imagen['und']['0']['filename'];
 
 ?>
 <div class="hero-unit"> <!-- HERO -->
-  <div data-section-scroll="Que es" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(/<?php print $theme_path?>/assets/img/bg-header-3.jpg);">
+  <div data-section-scroll="Que es" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print $theme_path?><?php print('/'.$pathfile.$field_carrera_imagen)?>);">
     <div class="container">
       <div class="row">
         <div class="col-sm-6 text-white normalize-text">
@@ -119,7 +121,7 @@ $perfil_link = $node->field_perfil_egresado_link['und']['0']['value'];
     <i class="icon-arrows-down bg-info text-white"></i>
   </a>
 </div>
-<div data-section-scroll="Perfil del egresado" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(/<?php print $theme_path?>/assets/img/bg-header-4.jpg);">
+<div data-section-scroll="Perfil del egresado" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print $theme_path?><?php print('/'.$pathfile.$field_perfil_egresado_imagen)?>);">
   <div class="container">
     <div class="row">
       <div class="col-sm-6 text-white normalize-text">
