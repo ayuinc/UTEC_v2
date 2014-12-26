@@ -25,7 +25,7 @@
 	</div>
 	<div class="site-map pv-14 bg-gray-dark">
 		<div class="container">
-			<ul class="grid-list grid-list-4">
+			<ul class="grid-list grid-list-6">
         <li>
           <ul>
             <li class="title"><a href="#">Somos Utec</a></li>
