@@ -96,13 +96,13 @@ $perfil_link = $node->field_perfil_egresado_link['und']['0']['value'];
     <ul class="grid-list grid-list-centered grid-list-4 grid-list-anchors pv-21">
       <?php foreach ($node->field_profesor as $key => $value) :?>
       <?php   
-        print $key;
-        die(print_r($value['$key']));
-        $rol = $profesor['und'][$key]['entity']->name; 
+        // print $key;
+        // die(print_r($value['$key']));
+        // $rol = $profesor['und'][$key]['entity']->name; 
       ?>
       <li class="mb-ch-14">
         <div class="grid-list-pic"><img src="/<?php print $theme_path?>/assets/img/user.jpg" alt="" width="180px" height="auto" class="img-circle"></div>
-        <a href="#" class="h3 thin"><?php print $rol ?></a>
+        <a href="#" class="h3 thin"><?php //print $rol ?></a>
         <p class="h4 thin"><?php //print ?></p>
       </li>
       <?php endforeach; ?>
