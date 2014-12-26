@@ -35,9 +35,10 @@
             <li><a href="#"><span>Ingenio en</span><span>Acción</span></a></li>
             <li><a href="#"><span>UTEC</span><span>Ventures</span></a></li>
             <li><a href="#"><span>Calendario</span><span>Académico</span></a></li>
-            <li><a href="#"><span></span><span>Respaldo</span></a></li>
-            <li><a href="#"><span></span><span>Autoridades</span></a></li>
-            <li><a href="#"><span></span><span>Profesores</span></a></li>
+            <li><a href="#"><span>Respaldo</span></a></li>
+            <li><a href="#"><span>Autoridades</span></a></li>
+            <li><a href="#"><span>Concejo Directivo</span></a></li>
+            <li><a href="#"><span>Profesores</span></a></li>
             <!--<li><a href="#"><span></span><span>Noticias</span></a></li>-->
             <!--<li><a href="#"><span></span><span>Eventos</span></a></li>-->
             <li><a href="#"><span>Trabaja en</span><span>Utec</span></a></li>
@@ -57,8 +58,8 @@
         <li>
           <ul>
             <li class="title"><a href="#">Investigación</a></li>
-            <li><a href="#"><span></span><span>Publicaciones</span></a></li>
-            <li><a href="#"><span></span><span>Consultorías</span></a></li>
+            <li><a href="#"><span>Publicaciones</span></a></li>
+            <li><a href="#"><span>Consultorías</span></a></li>
             <li><a href="#"><span>Empresas &amp;</span><span>Clientes</span></a></li>
             <li><a href="#"><span></span><span>Contacto</span></a></li>
           </ul>
