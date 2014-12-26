@@ -207,27 +207,27 @@
 				<div>
 					<ul>
 						<li>
-							<a href="carreras/ingenieria-industrial"><span>Ingeniería</span>Industrial</a>
+							<a href="/carreras/ingenieria-industrial"><span>Ingeniería</span>Industrial</a>
 						</li>
 						<li>
-							<a href="carreras/ingenieria-de-la-energia"><span>Ingeniería</span>De la Energía</a>
+							<a href="/carreras/ingenieria-de-la-energia"><span>Ingeniería</span>De la Energía</a>
 						</li>
 						<li>
-							<a href="carreras/ingenieria-quimica-industrial"><span>Ingeniería</span>Química Industrial</a>
+							<a href="/carreras/ingenieria-quimica-industrial"><span>Ingeniería</span>Química Industrial</a>
 						</li>
 						<li>
-							<a href="carreras/ingenieria-mecanica"><span>Ingeniería</span>Mecánica</a>
+							<a href="/carreras/ingenieria-mecanica"><span>Ingeniería</span>Mecánica</a>
 						</li>
 					</ul>
 					<ul>
 						<li>
-							<a href="carreras/ingenieria-electronica"><span>Ingeniería</span>Electrónica</a>
+							<a href="/carreras/ingenieria-electronica"><span>Ingeniería</span>Electrónica</a>
 						</li>
 						<li>
-							<a href="carreras/menciones">Menciones</a>
+							<a href="/carreras/menciones">Menciones</a>
 						</li>
 						<li>
-							<a href="carreras/escuela-de-desarrollo"><span>Escuela de</span>Desarollo</a>
+							<a href="/carreras/escuela-de-desarrollo"><span>Escuela de</span>Desarollo</a>
 						</li>
 						<li>
 							<a href="/admision/modalidades" class="btn btn-primary btn-custom bold">Postula</a>
