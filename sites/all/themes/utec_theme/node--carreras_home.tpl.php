@@ -12,10 +12,6 @@ $menciones_titulo = $node->field_menciones_titulo  ['und']['0']['value'];
 $menciones_txt = $node->field_menciones_body['und']['0']['value'];
 $menciones_link = $node->field_menciones_link  ['und']['0']['value'];
 $profesor_titulo = $node->field_profesor['und']['0']['value'];
-
-print_r($node->field_profesor['und']['0']['value']);
-// print_r($node->field_profesor);
-
 $profesor_txt = $node->field_profesor_texto['und']['0']['value'];
 $profesor_link = $node->field_profesor_link ['und']['0']['value'];
 $perfil_txt = $node->field_perfil_egresado_texto['und']['0']['value'];
@@ -98,22 +94,16 @@ $perfil_link = $node->field_perfil_egresado_link['und']['0']['value'];
   </div>
   <div class="container text-center">
     <ul class="grid-list grid-list-centered grid-list-4 grid-list-anchors pv-21">
+      <?php foreach ($node->field_profesor as $key => $profesor) :?>
+      <?php 
+        $rol = $profesor['und'][$key]$entity->roles['1']; 
+      ?>
       <li class="mb-ch-14">
         <div class="grid-list-pic"><img src="/<?php print $theme_path?>/assets/img/user.jpg" alt="" width="180px" height="auto" class="img-circle"></div>
-        <a href="#" class="h3 thin"><?php print $profesor_titulo ?></a>
+        <a href="#" class="h3 thin"><?php print $rol ?></a>
+        <p class="h4 thin"><?php print ?></p>
       </li>
-      <li class="mb-ch-14">
-        <div class="grid-list-pic"><img src="/<?php print $theme_path?>/assets/img/user.jpg" alt="" width="180px" height="auto" class="img-circle"></div>
-        <a href="#" class="h3 thin">Rosa María Llosa Demartini</a>
-      </li>
-      <li class="mb-ch-14">
-        <div class="grid-list-pic"><img src="/<?php print $theme_path?>/assets/img/user.jpg" alt="" width="180px" height="auto" class="img-circle"></div>
-        <a href="#" class="h3 thin">Rosa María Llosa Demartini</a>
-      </li>
-      <li class="mb-ch-14">
-        <div class="grid-list-pic"><img src="/<?php print $theme_path?>/assets/img/user.jpg" alt="" width="180px" height="auto" class="img-circle"></div>
-        <a href="#" class="h3 thin">Rosa María Llosa Demartini</a>
-      </li>
+      <?php endforeach; ?>
     </ul>
     <h3 class="lead thin text-gray"><em><?php print $profesor_txt ?></em></h3>
   </div>
