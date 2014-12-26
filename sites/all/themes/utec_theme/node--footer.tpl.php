@@ -90,6 +90,16 @@
             <li><a href="/admision/preguntas-frecuentes"><span></span><span>FAQ</span></a></li>
           </ul>
         </li>
+        <li>
+          <ul>
+            <li class="title"><a href="#">Convenios</a></li>
+          </ul>
+        </li>  
+        <li>
+          <ul>
+            <li class="title"><a href="#">EDP</a></li>
+          </ul>
+        </li>                
       </ul> 
 		</div>
 	</div>
