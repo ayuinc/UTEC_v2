@@ -25,7 +25,7 @@
 	</div>
 	<div class="site-map pv-14 bg-gray-dark">
 		<div class="container">
-			<ul class="grid-list grid-list-5">
+			<ul class="grid-list grid-list-6">
         <li>
           <ul>
             <li class="title"><a href="#">Somos Utec</a></li>
@@ -90,6 +90,16 @@
             <li><a href="/admision/preguntas-frecuentes"><span></span><span>FAQ</span></a></li>
           </ul>
         </li>
+        <li>
+          <ul>
+            <li class="title"><a href="#">Convenios</a></li>
+          </ul>
+        </li>  
+        <li>
+          <ul>
+            <li class="title"><a href="#">EDP</a></li>
+          </ul>
+        </li>                
       </ul> 
 		</div>
 	</div>
