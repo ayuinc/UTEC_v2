@@ -12,6 +12,9 @@ $menciones_titulo = $node->field_menciones_titulo  ['und']['0']['value'];
 $menciones_txt = $node->field_menciones_body['und']['0']['value'];
 $menciones_link = $node->field_menciones_link  ['und']['0']['value'];
 $profesor_titulo = $node->field_profesor['und']['0']['value'];
+
+print_r($node);
+
 $profesor_txt = $node->field_profesor_texto['und']['0']['value'];
 $profesor_link = $node->field_profesor_link ['und']['0']['value'];
 $perfil_txt = $node->field_perfil_egresado_texto['und']['0']['value'];
