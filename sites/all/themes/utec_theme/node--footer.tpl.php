@@ -61,14 +61,14 @@
         <li>
           <ul>
             <li class="title"><a href="#">Programas</a></li>
-            <li><a href="#"><span>Ingeniería</span><span>Química industrial</span></a></li>
-            <li><a href="#"><span>Ingeniería</span><span>Electrónica</span></a></li>
-            <li><a href="#"><span>Ingeniería</span><span>Mecánica</span></a></li>
-            <li><a href="#"><span>Ingeniería</span><span>de la Energía</span></a></li>
-            <li><a href="#"><span>Ingeniería</span><span>Industrial</span></a></li>
-            <li><a href="#"><span></span><span>Menciones</span></a></li>
-            <li><a href="#"><span>Escuela de</span><span>Desarrollo Profesional</span></a></li>
-            <li><a href="#"><span>Convenios de</span><span>Intercambio</span></a></li>
+            <li><a href="carreras/ingenieria-quimica-industrial"><span>Ingeniería</span><span>Química industrial</span></a></li>
+            <li><a href="carreras/ingenieria-electronica"><span>Ingeniería</span><span>Electrónica</span></a></li>
+            <li><a href="carreras/ingenieria-mecanica"><span>Ingeniería</span><span>Mecánica</span></a></li>
+            <li><a href="carreras/ingenieria-de-la-energia"><span>Ingeniería</span><span>de la Energía</span></a></li>
+            <li><a href="carreras/ingenieria-industrial"><span>Ingeniería</span><span>Industrial</span></a></li>
+            <li><a href="carreras/menciones"><span></span><span>Menciones</span></a></li>
+            <li><a href="carreras/escuela-de-desarrollo"><span>Escuela de</span><span>Desarrollo Profesional</span></a></li>
+            <li><a href="convenios"><span>Convenios de</span><span>Intercambio</span></a></li>
           </ul>
         </li>
         <li>
