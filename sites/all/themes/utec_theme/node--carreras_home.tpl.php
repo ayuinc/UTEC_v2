@@ -94,22 +94,18 @@ $perfil_link = $node->field_perfil_egresado_link['und']['0']['value'];
   </div>
   <div class="container text-center">
     <ul class="grid-list grid-list-centered grid-list-4 grid-list-anchors pv-21">
+      <?php foreach ($node->field_profesor as $key => $value) :?>
+      <?php   
+        // print $key;
+        // die(print_r($value['$key']));
+        // $rol = $profesor['und'][$key]['entity']->name; 
+      ?>
       <li class="mb-ch-14">
         <div class="grid-list-pic"><img src="/<?php print $theme_path?>/assets/img/user.jpg" alt="" width="180px" height="auto" class="img-circle"></div>
-        <a href="#" class="h3 thin"><?php print $profesor_titulo ?></a>
+        <a href="#" class="h3 thin"><?php //print $rol ?></a>
+        <p class="h4 thin"><?php //print ?></p>
       </li>
-      <li class="mb-ch-14">
-        <div class="grid-list-pic"><img src="/<?php print $theme_path?>/assets/img/user.jpg" alt="" width="180px" height="auto" class="img-circle"></div>
-        <a href="#" class="h3 thin">Rosa María Llosa Demartini</a>
-      </li>
-      <li class="mb-ch-14">
-        <div class="grid-list-pic"><img src="/<?php print $theme_path?>/assets/img/user.jpg" alt="" width="180px" height="auto" class="img-circle"></div>
-        <a href="#" class="h3 thin">Rosa María Llosa Demartini</a>
-      </li>
-      <li class="mb-ch-14">
-        <div class="grid-list-pic"><img src="/<?php print $theme_path?>/assets/img/user.jpg" alt="" width="180px" height="auto" class="img-circle"></div>
-        <a href="#" class="h3 thin">Rosa María Llosa Demartini</a>
-      </li>
+      <?php endforeach; ?>
     </ul>
     <h3 class="lead thin text-gray"><em><?php print $profesor_txt ?></em></h3>
   </div>
