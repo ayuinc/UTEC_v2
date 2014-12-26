@@ -205,8 +205,11 @@
           </div>
         </div>
 
-        <div class="desc-container">
-          <div class="desc-content">
+        <div class="desc-container">        
+          <div class="desc-content"> 
+            <div style="position: relative; bottom: 53px; color: white; font-size: 22px;">
+             <?php print $nombre_receta ?>
+            </div>
             <img class="project-close"  src="<?php print $path; ?>/images/icons/close_light_blue.jpg" alt="project-close" />
             <div class="recetas-cont">
               <div class="project-title">
@@ -239,13 +242,13 @@
                 </p> -->
               </div>
               <div class="prep">
-                <ul>
+                <ol>
                   <?php foreach ($preparacion as $key => $value) : ?>
                   <li>
                     <?php print($value['value']); ?>
                   </li>  
                   <?php endforeach; ?>
-                </ul>
+                </ol>
               </div>
             </div>
           </div>

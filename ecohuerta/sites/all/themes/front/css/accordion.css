@@ -43,17 +43,18 @@
   filter: none;
 }
 .recetas .accordion > .slide:not(.disabled) {
-  opacity: 1;
+  /*opacity: 1;*/
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
   filter: none;
 }
 .recetas .accordion > .slide:not(.disabled):hover {
-  opacity: .5;
+ /* opacity: .5;*/
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
   filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
   filter: gray; /* IE6-9 */
+  background-color: rgba(0,0,0,0.9);
 }
 .recetas .accordion > .slide.active{
   opacity: .5;
@@ -84,7 +85,7 @@
 .accordion > .slide .desc-front .down {
   width: 100%;
   position: absolute;
-  padding: 2em 2em 3em 2em;
+  padding: 2em 0.5em 3em 2em;
 }
 .accordion > .slide .desc-front .up {
   top: 50px;
@@ -151,7 +152,7 @@
 .recetas .desc-content{
   left: 0;
   background-image: none;
-  padding: 30px;
+  padding: 21px;
 
 }
 .recetas-cont{
