@@ -25,7 +25,7 @@
 
 ?>
 <div class="hero-unit"> <!-- HERO -->
-  <div data-section-scroll="Que es" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print $theme_path?><?php print('/'.$pathfile.$field_carrera_imagen)?>);">
+  <div data-section-scroll="Que es" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
     <div class="container">
       <div class="row">
         <div class="col-sm-6 text-white normalize-text">
