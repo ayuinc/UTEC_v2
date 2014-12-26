@@ -29,26 +29,31 @@
         <li>
           <ul>
             <li class="title"><a href="#">Somos Utec</a></li>
+            <li><a href="#"><span>Metodología</span><span>Educativa</span></a></li>
+            <li><a href="#"><span>Vida</span><span>Estudiantil</span></a></li>
+            <li><a href="#"><span>Campus &amp;</span><span>Laboratorios</span></a></li>
+            <li><a href="#"><span>Ingenio en</span><span>Acción</span></a></li>
+            <li><a href="#"><span>UTEC</span><span>Ventures</span></a></li>
+            <li><a href="#"><span>Calendario</span><span>Académico</span></a></li>
             <li><a href="#"><span></span><span>Respaldo</span></a></li>
             <li><a href="#"><span></span><span>Autoridades</span></a></li>
             <li><a href="#"><span></span><span>Profesores</span></a></li>
-            <li><a href="#"><span></span><span>Noticias</span></a></li>
-            <li><a href="#"><span></span><span>Eventos</span></a></li>
+            <!--<li><a href="#"><span></span><span>Noticias</span></a></li>-->
+            <!--<li><a href="#"><span></span><span>Eventos</span></a></li>-->
             <li><a href="#"><span>Trabaja en</span><span>Utec</span></a></li>
           </ul>
         </li>
-        <li>
+        <!--<li>
           <ul>
             <li class="title"><a href="#">Vive Utec</a></li>
             <li><a href="#"><span>Vida</span><span>Estudiantil</span></a></li>
-            <li><a href="#"><span>Metodología</span><span>Educativa</span></a></li>
             <li><a href="#"><span>Campus &amp;</span><span>Laboratorios</span></a></li>
             <li><a href="#"><span>Ingenio en</span><span>Acción</span></a></li>
             <li><a href="#"><span>UTEC</span><span>Ventures</span></a></li>
             <li><a href="#"><span>Blog &amp;</span><span>YouTube</span></a></li>
             <li><a href="#"><span>Calendario</span><span>Académico</span></a></li>
           </ul>
-        </li>
+        </li>-->
         <li>
           <ul>
             <li class="title"><a href="#">Investigación</a></li>
@@ -60,7 +65,7 @@
         </li>
         <li>
           <ul>
-            <li class="title"><a href="#">Programas</a></li>
+            <li class="title"><a href="#">Carreras</a></li>
             <li><a href="carreras/ingenieria-quimica-industrial"><span>Ingeniería</span><span>Química industrial</span></a></li>
             <li><a href="carreras/ingenieria-electronica"><span>Ingeniería</span><span>Electrónica</span></a></li>
             <li><a href="carreras/ingenieria-mecanica"><span>Ingeniería</span><span>Mecánica</span></a></li>
