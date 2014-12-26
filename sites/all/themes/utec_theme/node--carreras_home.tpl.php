@@ -96,7 +96,7 @@ $perfil_link = $node->field_perfil_egresado_link['und']['0']['value'];
       <i class="icon-carreras-profesores"></i>
     </div>
   </div>
-  <div class="container text-center">
+  <div class="container text-center" >
     <ul class="grid-list grid-list-centered grid-list-4 grid-list-anchors pv-21">
       <?php $count = 0; ?>  
       <?php foreach ($node->field_profesor['und'] as $key => $value) :?>
