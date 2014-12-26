@@ -15,7 +15,7 @@ $malla_link = $node->field_malla_curricular_link ['und']['0']['value'];
 $menciones_titulo = $node->field_menciones_titulo  ['und']['0']['value'];
 $menciones_txt = $node->field_menciones_body['und']['0']['value'];
 $menciones_link = $node->field_menciones_link  ['und']['0']['value'];
-$profesor_titulo = $node->field_profesor['und']['0']['value'];
+// $profesor_titulo = $node->field_profesor['und']['0']['value'];
 $profesor_txt = $node->field_profesor_texto['und']['0']['value'];
 $profesor_link = $node->field_profesor_link ['und']['0']['value'];
 $perfil_txt = $node->field_perfil_egresado_texto['und']['0']['value'];
@@ -96,24 +96,23 @@ $perfil_link = $node->field_perfil_egresado_link['und']['0']['value'];
       <i class="icon-carreras-profesores"></i>
     </div>
   </div>
-  <div class="container text-center">
-    <ul class="grid-list grid-list-centered grid-list-4 grid-list-anchors pv-21">
-      <?php $count = 0; ?>  
+  <div class="container text-center" >
+    <ul class="grid-list grid-list-centered grid-list-4 grid-list-anchors pv-21"> 
       <?php foreach ($node->field_profesor['und'] as $key => $value) :?>
         <?php   
-          $name = $value['entity']->name; 
-          $pic = $value['entity']->picture; 
-          $desc = $value['entity']->field_descripci_n['und'][0]['value'];
 
+          $name = $value['entity']->name; 
+          $pic = $value['entity']->picture->filename; 
+          $desc = $value['entity']->field_descripci_n['und'][0]['value'];
+          //die(print_r($value));
         ?>
       <li class="mb-ch-14">
-        <div class="grid-list-pic"><img src="/<?php print($pathfile.'pictures/'.$pic)?>" alt="" width="180px" height="auto" class="img-circle"></div>
+        <div class="grid-list-pic"><img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="" width="180px" height="auto" class="img-circle"></div>
         <a href="#" class="h3 thin"><?php print $name ?></a>
         <p class="h4 thin"><?php print $desc ?></p>
       </li>
-      <?php $count++; ?>
       <?php endforeach ?>
-    </ul>
+    </ul> 
     <h3 class="lead thin text-gray"><em><?php print $profesor_txt ?></em></h3>
   </div>
   <a class="scroll-down scroll-down-sq size lg" rel="nofollow">
