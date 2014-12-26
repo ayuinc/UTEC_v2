@@ -110,9 +110,8 @@
         ?>
       <li class="mb-ch-14">
         <div class="grid-list-pic"><img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="" width="180px" height="auto" class="img-circle"></div>
-        <!--<a href="#" class="h3 thin"><?php print $name ?></a>-->
-        <p class="thin"><?php print $name ?></p>
-        <small><?php print $desc ?></small>
+        <a href="" class="h4 thin"><?php print $name ?></a>
+        <p class="h5 thin"><?php print $desc ?></p>
       </li>
       <?php endforeach ?>
     </ul> 
