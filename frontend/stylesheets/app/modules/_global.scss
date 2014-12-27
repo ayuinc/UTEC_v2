@@ -389,6 +389,13 @@ $grid-list-hover-height: 350px;
 				min-height: $video-bg-height - 280;
 			}
 		}
+		&.grid-list-hover {
+			> li {
+				> div {
+					height: $grid-list-hover-height - 210;
+				}
+			}
+		}
 	}
 	&.sm {
 		&.scroll-down {
@@ -411,7 +418,9 @@ $grid-list-hover-height: 350px;
 				min-height: $user-card-height - 7;
 			}
 		}
-		i {}
+		i {
+			font-size: $font-size-h3;
+		}
 		&.videoBG {
 			height: $video-bg-height - 140;
 		}
