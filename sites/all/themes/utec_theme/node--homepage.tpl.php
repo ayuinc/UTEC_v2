@@ -20,6 +20,7 @@ $video_name = $node->field_video['und']['0']['filename'];
 		id="videocover"
 		autoplay
 		loop
+		muted	
     class="video-js videocover vjs-default-skin"
     controls
     preload="auto">
