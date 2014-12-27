@@ -327,6 +327,7 @@ p.small {
 
 .slide2.active .icon-receta img {
   position: relative;
-  left: 10%;
-  top: 165px;
+  left: 46%;
+  top: 50px;
+  width: 43%;
 }
