@@ -51,6 +51,7 @@ $grid-list-hover-height: 350px;
 	&.video-bg {
 		overflow: hidden;
 		height: $video-bg-height;
+		top:-500px;
 	}
 	.overlay {
 		min-height: $video-bg-height;
