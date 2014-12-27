@@ -118,14 +118,14 @@
           <source src="<?php print $pathfile; ?>/lechuga.mp4 " type="video/mp4;codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
         </video> 
       </div>
-      <section id="ecohuerta" class="main">
+      <section id="ecohuerta" class="main ovarlay">
         <div id="marea-en-accion-r" class="responsive-fix"></div>
         <div class="modal modal-alone center">
           <div class="image-holder">
-            <img src="<?php print $path; ?>/images/ecohuerta/homepage/LOGO-LECHUGAS.png" alt="Marea en acción" height="160"> 
+            <img src="<?php print $path; ?>/images/ecohuerta/homepage/LOGO-LECHUGAS.png" alt="Marea en acción" height="250"> 
           </div>
 
-          <h3 class="light">
+          <h3 class="light" style="margin-top: 0;">
             <b>Te presentamos las primeras lechugas de la historia regadas con aire.</b><br>
             Unas lechugas ecológicas que podrás reservar desde ahora mismo.
           </h3>
