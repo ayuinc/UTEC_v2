@@ -322,11 +322,11 @@ p.small {
 .slide2 .icon-receta img {
   position: relative;
   left: 10%;
-  top: 30%; 
+  top: 165px; 
 }
 
 .slide2.active .icon-receta img {
-  width: 500px;
-  left: 60%;
-  top: 165px; 
+  width: 100%;
+  height: 100%;
+  position: relative;
 }

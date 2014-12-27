@@ -119,7 +119,7 @@
   background-position: center center;
 }
 .accordion > .slide.active .desc-front {
-  display: none;
+  /* display: none; */
 }
 .accordion > .slide.active .desc-container {
   display: block;
