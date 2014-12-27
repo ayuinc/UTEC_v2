@@ -133,11 +133,11 @@
           <!-- <div>
             <img src="<?php print $path; ?>/images/ecohuerta/unnamed.png" alt="Marea en acción" height="300" class="img-responsive">
           </div> -->
-          <h3 class="light" styl="margin-top: 150px;">
+          <h3 class="light" style="margin-top: 150px;">
             <b>Pronto las primeras lechugas regadas por aire.</b>
           </h3>
           <a style="margin-top:1rem;" href="<?php print $base_path; ?>ecohuerta-recetas" class="scroll-to btn btn-medium-small btn-light-blue uppercase">
-            Pronto AIR lechugas
+            Ver recetas
           </a>
         </div>
       </section>
