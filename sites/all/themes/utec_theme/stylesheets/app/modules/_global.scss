@@ -291,7 +291,7 @@ $grid-list-hover-height: 350px;
 				}
 				&.anchor-3,
 				&.anchor-4 {
-					width: (($container-md / 2) / 2) + 3;
+					width: ($container-md / 2) / 2;
 					height: ($container-md / 2) / 2;
 				}
 				&.anchor-3 {
