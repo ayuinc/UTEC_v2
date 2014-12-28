@@ -9,7 +9,7 @@
 ?>
 <?php //print_r($zebra) ?>
 <?php if ($zebra == 'odd') :?>
-<div class="banner row mb-14 ml-0" data-href="<?php print $path; ?>">
+<div class="banner row mb-56 ml-0" data-href="<?php print $path; ?>">
 	<div class="col-sm-3 banner-pic" style="background-image: url(<?php print $image ?>);">
 		<div class="banner-label bg-gray-darker text-white"><span><?php print $category ?></span></div>
 	</div>
