@@ -27,21 +27,17 @@
 <div class="hero-unit"> <!-- HERO -->
   <div data-section-scroll="Que es" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
     <div class="container-sm">
+      <h2 class="thin h4 medium">¿Qué es la</h2>
+      <h1 class="thin"><?php print $titulo ?>?</h1>
+      <hr class="hr-white">
       <div class="row">
-        <div class="col-sm-6 text-white normalize-text">
-          <h2 class="thin">¿Qué es la</h2>
-          <h1 class="thin"><?php print $titulo ?>?</h1>
-          <hr class="hr-white">
-          <div class="row">
-            <div class="col-sm-3">
-              <div class="size xl">
-                <i class="icon-carreras-que-es"></i>
-              </div>
-            </div>
-            <div class="col-sm-9">
-              <h2 class="lead thin"><?php print $carrera_txt ?></h2>
-            </div>
+        <div class="col-sm-3">
+          <div class="size xl">
+            <i class="icon-carreras-que-es"></i>
           </div>
+        </div>
+        <div class="col-sm-9">
+          <h2 class="lead thin"><?php print $carrera_txt ?></h2>
         </div>
       </div>
     </div>
