@@ -26,7 +26,7 @@
 ?>
 <div class="hero-unit"> <!-- HERO -->
   <div data-section-scroll="Que es" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
-    <div class="container">
+    <div class="container-sm">
       <div class="row">
         <div class="col-sm-6 text-white normalize-text">
           <h2 class="thin">¿Qué es la</h2>
@@ -56,7 +56,7 @@
     <hr class="hr-gray">
     <div class="row">
       <div class="col-sm-9">
-        <h2 class="lead thin"><?php print $malla_titulo ?></h2>
+        <h2 class="lead thin mb-14"><?php print $malla_titulo ?></h2>
         <p><?php print $malla_txt ?></p>
       </div>
       <div class="col-sm-3">
