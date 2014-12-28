@@ -13,6 +13,7 @@ $bg-img-height: 350px;
 $banner-height: 293px;
 $user-card-height: 42px;
 $user-card-width: 210px;
+$container-bg-height: 30rem;
 $video-bg-height: 35rem;
 $grid-list-hover-height: 350px;
 
@@ -46,7 +47,7 @@ $grid-list-hover-height: 350px;
 
 // HERO UNIT
 .hero-unit {
-	min-height: $video-bg-height;
+	min-height: $container-bg-height;
 	@include bg-img-control;
 	&.video-bg {
 		overflow: hidden;
