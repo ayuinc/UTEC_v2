@@ -41,13 +41,13 @@
         </div>
       </div>
     </div>
-    <a class="scroll-down scroll-down-sq size lg" href="#sec-1" rel="nofollow">
+    <a class="scroll-down scroll-down-sq size lg" href="#malla-curricular" rel="nofollow">
       <i class="icon-arrows-down bg-white-op text-gray"></i>
     </a>
   </div>
   <div class="overlay"></div>
 </div> <!-- END:Hero -->
-<div data-section-scroll="Malla curricular" class="section-scroll-content minh-560 flex-middle-center">
+<div data-section-scroll="Malla curricular" id="malla-curricular" class="malla-curricular section-scroll-content minh-560 flex-middle-center">
   <div class="container-sm text-right normalize-text">
     <h2 class="lead thin">Malla curricular</h2>
     <hr class="hr-gray">
@@ -63,11 +63,11 @@
       </div>
     </div>
   </div>
-  <a class="scroll-down scroll-down-sq size lg" rel="nofollow">
+  <a class="scroll-down scroll-down-sq size lg" href="#menciones" rel="nofollow">
     <i class="icon-arrows-down bg-info text-white"></i>
   </a>
 </div>
-<div data-section-scroll="Menciones" class="section-scroll-content minh-560 flex-middle-center bg-info-op">
+<div data-section-scroll="Menciones" id="menciones" class="section-scroll-content minh-560 flex-middle-center bg-info-op">
   <div class="container-sm text-left text-white normalize-text">
     <h2 class="lead thin">Menciones</h2>
     <hr class="hr-white">
@@ -83,11 +83,11 @@
       </div>
     </div>
   </div>
-  <a class="scroll-down scroll-down-sq size lg" rel="nofollow">
+  <a class="scroll-down scroll-down-sq size lg" href="#profesores" rel="nofollow">
     <i class="icon-arrows-down bg-info text-white"></i>
   </a>
 </div>
-<div data-section-scroll="Profesores" class="section-scroll-content minh-560 flex-middle-center">
+<div data-section-scroll="Profesores" id="profesores" class="section-scroll-content minh-560 flex-middle-center">
   <div class="container-sm text-center normalize-text">
     <h2 class="lead thin">Profesores</h2>
     <hr class="hr-gray">
@@ -111,11 +111,11 @@
     </ul> 
     <h3 class="lead thin text-gray"><em><?php print $profesor_txt ?></em></h3>
   </div>
-  <a class="scroll-down scroll-down-sq size lg" rel="nofollow">
+  <a class="scroll-down scroll-down-sq size lg" href="#perfil-egresado" rel="nofollow">
     <i class="icon-arrows-down bg-info text-white"></i>
   </a>
 </div>
-<div data-section-scroll="Perfil del egresado" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_perfil_egresado_imagen)?>);">
+<div data-section-scroll="Perfil del egresado" id="perfil-egresado" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_perfil_egresado_imagen)?>);">
   <div class="container">
     <div class="row">
       <div class="col-sm-6 normalize-text">

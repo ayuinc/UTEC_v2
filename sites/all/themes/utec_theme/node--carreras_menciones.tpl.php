@@ -6,8 +6,10 @@
 
 	$titulo = $node->title;
 	$cuerpo = $node->body['und']['0']['value'];
-	$mencion = $node->field_menci_n_['und']['0']['value'];
-	print_r($node);
+	$mencion = $node->field_mencion['und']['0']['value'];
+	$electivo = $node->field_electivo['und'];
+	
+	// print_r($node);
 ?>
 <div class="container-sm">
 	<h1 class="light">Menciones</h1>
@@ -23,102 +25,19 @@
 					</tr>
 				</thead>
 				<tbody>
+					<?php $count = 0; ?>
+					<?php foreach ($electivo as $key => $value) : ?>
 					<tr>
-						<td class="highlight text-center">Mineralurgia</td>
-						<td>Mineralurgia aplicada</td>
+						<?php if ($count == 0): ?>	
+							<td class="highlight text-center"><?php print $mencion ?></td>
+						<?php elseif ?>	
+							<td class="highlight text-center"></td>
+						<?php endif ?>
+
+						<td><?php print $value['value'] ?></td>
 					</tr>
-					<tr>
-						<td></td>
-						<td>Geometalurgia</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>Mineralurgia aplicada</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>Geometalurgia</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>Mineralurgia aplicada</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>Geometalurgia</td>
-					</tr>
-					<tr>
-						<td class="highlight text-center">Mineralurgia</td>
-						<td>Mineralurgia aplicada</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>Geometalurgia</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>Mineralurgia aplicada</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>Geometalurgia</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>Mineralurgia aplicada</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>Geometalurgia</td>
-					</tr>
-					<tr>
-						<td class="highlight text-center">Mineralurgia</td>
-						<td>Mineralurgia aplicada</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>Geometalurgia</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>Mineralurgia aplicada</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>Geometalurgia</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>Mineralurgia aplicada</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>Geometalurgia</td>
-					</tr>
-					<tr>
-						<td class="highlight text-center">Mineralurgia</td>
-						<td>Mineralurgia aplicada</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>Geometalurgia</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>Mineralurgia aplicada</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>Geometalurgia</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>Mineralurgia aplicada</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>Geometalurgia</td>
-					</tr>
+					<?php $count++; ?>
+					<?php endforeach; ?>	
 				</tbody>
 			</table>
 		</div>
