@@ -11,7 +11,7 @@
 
   $bloque = $fields['field_numero_de_bloque']->content;
 
-  $curso = $fields['field_curso']->content;
+  $curso = $fields['field_cursos']->content;
 
   $node = node_load($curso);
 
