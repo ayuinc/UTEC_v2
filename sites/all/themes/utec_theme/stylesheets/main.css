@@ -4755,7 +4755,8 @@ body {
       position: relative;
       z-index: 9; }
   .hero-unit .overlay {
-    min-height: 35rem; }
+    min-height: 35rem;
+    background-color: rgba(100, 100, 100, 0.7); }
 
 #section-scroll {
   position: fixed;

@@ -37,7 +37,7 @@
           </div>
         </div>
         <div class="col-sm-9">
-          <h2 class="lead thin text-white"><?php print $carrera_txt ?></h2>
+          <h2 class="lead thin text-white h3"><?php print $carrera_txt ?></h2>
         </div>
       </div>
     </div>
@@ -53,7 +53,7 @@
     <hr class="hr-gray">
     <div class="row">
       <div class="col-sm-9">
-        <h2 class="lead thin mb-14"><?php print $malla_titulo ?></h2>
+        <h2 class="lead thin mb-14 h3"><?php print $malla_titulo ?></h2>
         <p><?php print $malla_txt ?></p>
       </div>
       <div class="col-sm-3">
@@ -78,7 +78,7 @@
         </div>
       </div>
       <div class="col-sm-9">
-        <h2 class="lead thin"><?php print $menciones_titulo ?></h2>
+        <h2 class="lead thin h3"><?php print $menciones_titulo ?></h2>
         <p><?php print $menciones_txt ?></p>
       </div>
     </div>
@@ -131,7 +131,7 @@
             </div>
           </div>
           <div class="col-sm-9">
-            <h2 class="lead thin"><?php print $perfil_txt ?></h2>
+            <h2 class="lead thin h3"><?php print $perfil_txt ?></h2>
           </div>
         </div>
       </div>
