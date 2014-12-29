@@ -357,7 +357,7 @@
 		<div class="container">
 			<div class="left">
 				<div class="logo">
-					<a href="#"><img src="/<?php print $theme_path; ?>/assets/img/icon_UTEC_gs.png" alt="Logo UTEC"></a>
+					<a href="#"><img src="/<?php print $theme_path; ?>/assets/img/icon_UTEC.png" alt="Logo UTEC"></a>
 				</div>
 			</div>
 			<div class="left">
