@@ -1,7 +1,7 @@
 <?php global $base_url; ?>
 <?php global $theme_path; ?>
 <?php $path = $base_url.'/'.$theme_path; ?>
-<?php $pathfile= variable_get('file_public_path', conf_path() . '/files/ingenio-en-accion'); ?>
+<?php $pathfile= variable_get('file_public_path', conf_path() . '/files/ingenio-en-accion/'); ?>
 
 <?php $title = $node->title; ?>  
 <?php $field_frase_autor = $node->field_frase_autor['und']['0']['value']; ?>
