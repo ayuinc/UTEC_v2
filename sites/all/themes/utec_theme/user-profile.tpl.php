@@ -1,4 +1,4 @@
-<?php echo $account ?>
+<?php print_r ($account); ?>
 
 <li class="mb-ch-14">
 	<div class="grid-list-pic"><img src="assets/img/user.jpg" alt="" width="98px" height="auto" class="img-circle"></div>
