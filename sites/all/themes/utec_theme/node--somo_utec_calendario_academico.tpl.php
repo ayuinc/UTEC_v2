@@ -1,8 +1,8 @@
 <?php $title = $node->title; ?>  
 <?php //$field_fecha_calendario = $node->field_fecha_calendario['und']['0']['value']; ?>
-
+<?php print_r($node); ?>
 <div class="container-sm">
-	<h1 class="light"><?php print $title ?></h1>
+	<h1 class="light">Calendario Académico;</h1>
 	<div class="separator-gray separator-lg"></div>
 	<div class="pv-42 lead-ch">
 		<h3>Lorem ipsum dolor sit amet, consectetur so adipisicing elit, sed sil do eiusmod
