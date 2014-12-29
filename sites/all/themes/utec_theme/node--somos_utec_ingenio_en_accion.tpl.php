@@ -37,7 +37,7 @@
 	</div>
 </div> <!-- END:Hero -->
 <div data-section-scroll="Un panel" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle hero-unit" style="background-image: url(<?php print('/'.$pathfile.$field_foto_causa)?>);">
-	<div class="container">
+	<div class="container hero-text">
 		<div class="row">
 			<div class="col-sm-6 text-white normalize-text">
 				<h2 class="thin"><?php print $field_titulo_causa ?></h2>
@@ -61,7 +61,7 @@
 	</div>
 </div>
 <div data-section-scroll="Tres acciones" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle hero-unit" style="background-image: url(<?php print('/'.$pathfile.$field_foto_tres_acciones)?>);">
-	<div class="container">
+	<div class="container hero-text">
 		<div class="row">
 			<div class="col-sm-6 text-white normalize-text">
 				<h2 class="thin"><?php print $field_titulo_tres_acciones ?></h2>
@@ -94,9 +94,9 @@
 	</a>
 </div>
 <div data-section-scroll="Descubre más" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_foto_redes_sociales)?>);">
-	<div class="container-xs text-white text-center">
-		<h3 class="lead">A todo esto le llamamos <strong>Ingenio en Acción</strong></h3>
-		<p class="thin">Descubre más de #ingenioenaccion en:</p>
+	<div class="container-xs text-white text-center hero-text">
+		<h2 class="h3">A todo esto le llamamos </h2> <h1 class="thin mt-0">Ingenio en Acción</h1>
+		<p class="thin font-carreras">Descubre más de #ingenioenaccion en:</p>
 		<ul class="grid-list grid-list-centered">
 			<li>
 				<a href="https://www.facebook.com/ingenioenaccion" class="btn btn-facebook btn-circle"><i class="icon-footer-facebook"></i></a>
