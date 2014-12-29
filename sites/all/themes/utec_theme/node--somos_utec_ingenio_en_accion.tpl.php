@@ -99,10 +99,10 @@
 		<p class="thin">Descubre más de #ingenioenaccion en:</p>
 		<ul class="grid-list grid-list-centered">
 			<li>
-				<a href="#" class="btn btn-facebook btn-circle"><i class="icon-footer-facebook"></i></a>
+				<a href="https://www.facebook.com/ingenioenaccion" class="btn btn-facebook btn-circle"><i class="icon-footer-facebook"></i></a>
 			</li>
 			<li>
-				<a href="#" class="btn btn-twitter btn-circle"><i class="icon-footer-twitter"></i></a>
+				<a href="https://twitter.com/UTECedu" class="btn btn-twitter btn-circle"><i class="icon-footer-twitter"></i></a>
 			</li>
 		</ul>
 	</div>
