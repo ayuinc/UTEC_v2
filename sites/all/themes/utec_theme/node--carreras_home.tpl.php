@@ -128,7 +128,7 @@
             </div>
           </div>
           <div class="col-sm-9">
-            <h2 class="lead thin h3"><?php print $perfil_txt ?></h2>
+            <h2 class="lead thin h3 ph-14"><?php print $perfil_txt ?></h2>
           </div>
         </div>
       </div>
