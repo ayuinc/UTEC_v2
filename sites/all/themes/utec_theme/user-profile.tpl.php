@@ -1,4 +1,4 @@
-<?php print render($user_profile); ?>
+<?php print_r ($user_profile); ?>
 
 <li class="mb-ch-14">
 	<div class="grid-list-pic"><img src="assets/img/user.jpg" alt="" width="98px" height="auto" class="img-circle"></div>
