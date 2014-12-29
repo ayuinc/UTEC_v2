@@ -3,30 +3,23 @@
 <?php $path = $base_url.'/'.$theme_path; ?>
 <?php $pathfile= variable_get('file_public_path', conf_path() . '/files/'); ?>
 <?php $title = $node->title; ?>  
-<?php $field_introduccion_autoridades = $node->field_introduccion_autoridades['und']['0']['value']; ?>
+<?php $field_introduccion_campus = $node->field_introduccion_campus['und']['0']['value']; ?>
+<?php $field_foto_campus = $node->field_foto_campus['und']['0']['value']; ?>
+<?php $field_contenido_campus = $node->field_contenido_campus['und']['0']['value']; ?>
+<?php $field_introduccion_labs = $node->field_introduccion_labs['und']['0']['value']; ?>
+<?php $field_foto_labs = $node->field_foto_labs['und']['0']['value']; ?>
+<?php $field_contenido_labs = $node->field_contenido_labs['und']['0']['value']; ?>
 
 <div class="container-sm">
 	<h1 class="light">Campus y laboratorios</h1>
 	<div class="separator-gray separator-sm"></div>
 	<div class="pv-ch-42 lead-ch p-ch-gray">
-		<h3>Lorem ipsum dolor sit amet, consectetur so adipisicing elit, sed sil do eiusmod
-		tempor.</h3>
-		<img src="assets/img/bg_header-1.png" class="img-responsive">
-		<h3>Lorem ipsum dolor sit amet, consectetur so adipisicing elit, sed sil do eiusmod
-		tempor.</h3>
-		<img src="assets/img/bg_header-1.png" class="img-responsive">
-		<h3>Lorem ipsum dolor sit amet, consectetur so adipisicing elit, sed sil do eiusmod
-		tempor.</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed sil do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua.
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed sil do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua.
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit.</p>
-		<h3>Lorem ipsum dolor sit amet, consectetur so adipisicing elit, sed sil do eiusmod
-		tempor.</h3>
+		<h3><?php print $field_introduccion_campus ?></h3>
+		<img src="<?php print('/'.$pathfile.$field_carrera_imagen)?>" class="img-responsive">
+		<p class="lead text-gray mb-35"><?php print $field_contenido_campus ?>
+		<h3><?php print $field_introduccion_labs ?></h3>
+		<img src="<?php print('/'.$pathfile.$field_carrera_imagen)?>" class="img-responsive">
+		<p class="lead text-gray mb-35"><?php print $field_contenido_labs ?>
 	</div>
 </div>
 
