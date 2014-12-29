@@ -4824,9 +4824,9 @@ body {
   background-size: cover;
   min-height: 350px; }
   .bg-img-block.bg-img-block-sm {
-    min-height: 517px; }
-  .bg-img-block.bg-img-block-lg {
     min-height: 490px; }
+  .bg-img-block.bg-img-block-lg {
+    min-height: 517px; }
   .bg-img-block.bg-img-block-xl {
     min-height: 630px; }
 
