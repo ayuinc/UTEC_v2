@@ -36,7 +36,7 @@
 		</a>
 	</div>
 </div> <!-- END:Hero -->
-<div data-section-scroll="Un panel" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_foto_causa)?>);">
+<div data-section-scroll="Un panel" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle hero-unit" style="background-image: url(<?php print('/'.$pathfile.$field_foto_causa)?>);">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6 text-white normalize-text">
@@ -60,7 +60,7 @@
 		<p class="lead"><?php print $field_frase_causa ?></p>
 	</div>
 </div>
-<div data-section-scroll="Tres acciones" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_foto_tres_acciones)?>);">
+<div data-section-scroll="Tres acciones" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle hero-unit" style="background-image: url(<?php print('/'.$pathfile.$field_foto_tres_acciones)?>);">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6 text-white normalize-text">
@@ -79,7 +79,7 @@
 	</div>
 	<div class="overlay"></div>
 </div>
-<div data-section-scroll="Purificando el agua" class="section-scroll-content minh-560 flex-middle-center">
+<div data-section-scroll="Purificando el agua" class="section-scroll-content minh-560 flex-middle-center hero-unit">
 	<div class="container-xs text-center normalize-text">
 		<h2 class="lead thin"><?php print $field_titulo_proyecto ?></h2>
 		<hr class="hr-gray">
