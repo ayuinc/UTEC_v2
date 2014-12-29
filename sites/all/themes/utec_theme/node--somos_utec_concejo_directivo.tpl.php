@@ -6,7 +6,7 @@
 <?php $field_introduccion_concejo = $node->field_introduccion_concejo['und']['0']['value']; ?>
 
 <div class="container-sm">
-	<h1 class="light">Concejo directivo</h1>
+	<h1 class="light">Consejo directivo</h1>
 	<div class="separator-gray separator-lg"></div>
 	<p class="lead text-gray"><?php print $field_introduccion_concejo ?></p>
 	<ul class="grid-list grid-list-4 grid-list-centered grid-list-anchors pv-21">
