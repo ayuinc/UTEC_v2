@@ -4751,7 +4751,7 @@ body {
   background-size: cover; }
   .hero-unit.video-bg {
     overflow: hidden;
-    height: 37rem; }
+    height: 35rem; }
     .hero-unit.video-bg h2 {
       position: relative;
       z-index: 9; }
@@ -4760,7 +4760,7 @@ body {
     z-index: 100; }
   .hero-unit .overlay {
     min-height: 35rem;
-    background-color: rgba(5, 5, 5, 0.25); }
+    background-color: rgba(5, 5, 5, 0.35); }
 
 #section-scroll {
   position: fixed;
@@ -4824,9 +4824,9 @@ body {
   background-size: cover;
   min-height: 350px; }
   .bg-img-block.bg-img-block-sm {
-    min-height: 490px; }
+    min-height: 210px; }
   .bg-img-block.bg-img-block-lg {
-    min-height: 517px; }
+    min-height: 490px; }
   .bg-img-block.bg-img-block-xl {
     min-height: 630px; }
 
@@ -5090,7 +5090,7 @@ body {
   .size.xl.user-card .user-info {
     min-height: 63px; }
 .size.xl i {
-  font-size: 150px; }
+  font-size: 108px; }
 .size.xl.videoBG {
   height: 245rem; }
 .size.xl.hero-unit {
@@ -5251,6 +5251,13 @@ img.icon-utec {
 
 .gray-light {
   color: #bbb !important; }
+
+.font-carreras {
+  font-size: 1.3rem; }
+
+.font-profesores {
+  font-size: 0.9rem;
+  color: #8f8d8e; }
 
 #header, #header-on-scroll {
   position: relative;
