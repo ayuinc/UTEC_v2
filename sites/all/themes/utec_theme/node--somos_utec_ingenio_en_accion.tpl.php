@@ -8,12 +8,12 @@
 <?php $field_nombre_autor = $node->field_nombre_autor['und']['0']['value']; ?>
 <?php $field_titulo_del_autor = $node->field_titulo_del_autor['und']['0']['value']; ?>
 <?php $field_quote = $node->field_quote['und']['0']['value']; ?>
-<?php $field_foto_causa = $node->field_foto_causa['und']['0']['value']; ?>
+<?php $field_foto_causa = $node->field_foto_causa['und']['0']['filename']; ?>
 <?php $field_titulo_causa = $node->field_titulo_causa['und']['0']['value']; ?>
 <?php $field_descripcion_causa = $node->field_descripcion_causa['und']['0']['value']; ?>
 <?php $field_link_causa = $node->field_link_causa['und']['0']['value']; ?>
 <?php $field_frase_causa = $node->field_frase_causa['und']['0']['value']; ?>
-<?php $field_foto_tres_acciones = $node->field_foto_tres_acciones['und']['0']['value']; ?>
+<?php $field_foto_tres_acciones = $node->field_foto_tres_acciones['und']['0']['filename']; ?>
 <?php $field_titulo_tres_acciones = $node->field_titulo_tres_acciones['und']['0']['value']; ?>
 <?php $field_subitulo_tres_acciones = $node->field_subitulo_tres_acciones['und']['0']['value']; ?>
 <?php $field_link_tres_acciones = $node->field_link_tres_acciones['und']['0']['value']; ?>
@@ -21,7 +21,7 @@
 <?php $field_subtitulo_proyecto = $node->field_subtitulo_proyecto['und']['0']['value']; ?>
 <?php $field_descripcion_proyecto = $node->field_descripcion_proyecto['und']['0']['value']; ?>
 <?php $field_link_proyecto = $node->field_link_proyecto['und']['0']['value']; ?>
-<?php $field_foto_redes_sociales = $node->field_foto_redes_sociales['und']['0']['value']; ?>
+<?php $field_foto_redes_sociales = $node->field_foto_redes_sociales['und']['0']['filename']; ?>
 
 <div class="hero-unit">
 	<div data-section-scroll="Que es" class="section-scroll-content flex-middle-center">
