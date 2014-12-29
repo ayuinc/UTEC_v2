@@ -26,22 +26,18 @@
 ?>
 <div class="hero-unit"> <!-- HERO -->
   <div data-section-scroll="Que es" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
-    <div class="container">
+    <div class="container-sm hero-text">
+      <h2 class="thin h3 text-white mb-7">¿Qué es la</h2>
+      <h1 class="thin text-white mt-0"><?php print $titulo ?>?</h1>
+      <hr class="hr-white">
       <div class="row">
-        <div class="col-sm-6 text-white normalize-text">
-          <h2 class="thin">¿Qué es la</h2>
-          <h1 class="thin"><?php print $titulo ?>?</h1>
-          <hr class="hr-white">
-          <div class="row">
-            <div class="col-sm-3">
-              <div class="size xl">
-                <i class="icon-carreras-que-es"></i>
-              </div>
-            </div>
-            <div class="col-sm-9">
-              <h2 class="lead thin"><?php print $carrera_txt ?></h2>
-            </div>
+        <div class="col-sm-3">
+          <div class="size xl">
+            <i class="icon-carreras-que-es text-white"></i>
           </div>
+        </div>
+        <div class="col-sm-9">
+          <h2 class="lead thin text-white h3 mt-0"><?php print $carrera_txt ?></h2>
         </div>
       </div>
     </div>
@@ -49,6 +45,7 @@
       <i class="icon-arrows-down bg-white-op text-gray"></i>
     </a>
   </div>
+  <div class="overlay"></div>
 </div> <!-- END:Hero -->
 <div data-section-scroll="Malla curricular" class="section-scroll-content minh-560 flex-middle-center">
   <div class="container-sm text-right normalize-text">
@@ -56,7 +53,7 @@
     <hr class="hr-gray">
     <div class="row">
       <div class="col-sm-9">
-        <h2 class="lead thin"><?php print $malla_titulo ?></h2>
+        <h2 class="lead thin mb-14 h3"><?php print $malla_titulo ?></h2>
         <p><?php print $malla_txt ?></p>
       </div>
       <div class="col-sm-3">
@@ -81,7 +78,7 @@
         </div>
       </div>
       <div class="col-sm-9">
-        <h2 class="lead thin"><?php print $menciones_titulo ?></h2>
+        <h2 class="lead thin h3"><?php print $menciones_titulo ?></h2>
         <p><?php print $menciones_txt ?></p>
       </div>
     </div>
@@ -101,18 +98,15 @@
   <div class="container text-center" >
     <ul class="grid-list grid-list-centered grid-list-4 grid-list-anchors pv-21"> 
       <?php foreach ($node->field_profesor['und'] as $key => $value) :?>
-        <?php   
-
-          $name = $value['entity']->name; 
-          $pic = $value['entity']->picture->filename; 
-          $desc = $value['entity']->field_descripci_n['und'][0]['value'];
-          //die(print_r($value));
-        ?>
-      <li class="mb-ch-14">
-        <div class="grid-list-pic"><img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="" width="180px" height="auto" class="img-circle"></div>
-        <a href="" class="h4 thin"><?php print $name ?></a>
-        <p class="h5 thin"><?php print $desc ?></p>
-      </li>
+        <?php $name = $value['entity']->name; ?>   
+				<?php $pic = $value['entity']->picture->filename; ?>
+        <?php $desc = $value['entity']->field_descripci_n['und'][0]['value']; ?>
+        <?php //die(print_r($value)); ?>
+	      <li class="mb-ch-14">
+	        <div class="grid-list-pic"><img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="" width="180px" height="auto" class="img-circle"></div>
+	        <a href="" class="h4 mb-0"><?php print $name ?></a>
+	        <p><?php print $desc ?></p>
+	      </li>
       <?php endforeach ?>
     </ul> 
     <h3 class="lead thin text-gray"><em><?php print $profesor_txt ?></em></h3>
@@ -124,9 +118,9 @@
 <div data-section-scroll="Perfil del egresado" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_perfil_egresado_imagen)?>);">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6 text-white normalize-text">
+      <div class="col-sm-6 normalize-text">
         <h2 class="thin">Perfil del egresado</h2>
-        <hr class="hr-white">
+        <hr class="hr-gray">
         <div class="row">
           <div class="col-sm-3">
             <div class="size xl">
@@ -134,7 +128,7 @@
             </div>
           </div>
           <div class="col-sm-9">
-            <h2 class="lead thin"><?php print $perfil_txt ?></h2>
+            <h2 class="lead thin h3"><?php print $perfil_txt ?></h2>
           </div>
         </div>
       </div>

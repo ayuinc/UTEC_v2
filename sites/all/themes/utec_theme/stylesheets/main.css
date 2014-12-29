@@ -3220,7 +3220,8 @@ a:hover, a:focus, a:active {
   text-decoration: none !important; }
 
 p, li, span, a {
-  font-weight: 300; }
+  font-weight: 300;
+  line-height: 125%; }
 
 h1, .h1,
 h2, .h2,
@@ -3228,7 +3229,8 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-weight: 300; }
+  font-weight: 300;
+  line-height: 125% !important; }
 
 h1.lead, .h1.lead {
   font-size: 3.125rem !important; }
@@ -4743,15 +4745,22 @@ body {
   position: relative; }
 
 .hero-unit {
-  min-height: 491px;
+  min-height: 30rem;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
   .hero-unit.video-bg {
     overflow: hidden;
-    height: 491px; }
+    height: 35rem; }
+    .hero-unit.video-bg h2 {
+      position: relative;
+      z-index: 9; }
+  .hero-unit .hero-text {
+    position: relative;
+    z-index: 100; }
   .hero-unit .overlay {
-    min-height: 491px; }
+    min-height: 35rem;
+    background-color: rgba(5, 5, 5, 0.35); }
 
 #section-scroll {
   position: fixed;
@@ -5002,7 +5011,8 @@ body {
   position: absolute;
   right: 0;
   bottom: 4px;
-  left: 0; }
+  left: 0;
+  z-index: 100; }
   .scroll-down i {
     content: "\e600";
     font-family: 'icomoon'; }
@@ -5023,11 +5033,11 @@ body {
   .size.xs.user-card .user-info {
     min-height: 28px; }
 .size.xs.videoBG {
-  height: 211px; }
+  height: -245rem; }
 .size.xs.hero-unit {
-  min-height: 211px; }
+  min-height: -245rem; }
   .size.xs.hero-unit .overlay {
-    min-height: 211px; }
+    min-height: -245rem; }
 .size.sm.scroll-down i {
   font-size: 12px; }
 .size.sm.banner .banner-content,
@@ -5040,11 +5050,11 @@ body {
   .size.sm.user-card .user-info {
     min-height: 35px; }
 .size.sm.videoBG {
-  height: 351px; }
+  height: -105rem; }
 .size.sm.hero-unit {
-  min-height: 351px; }
+  min-height: -105rem; }
   .size.sm.hero-unit .overlay {
-    min-height: 351px; }
+    min-height: -105rem; }
 .size.sm.grid-list-hover > li > div {
   height: 210px; }
 .size.lg.scroll-down i {
@@ -5063,11 +5073,11 @@ body {
 .size.lg i {
   font-size: 48px; }
 .size.lg.videoBG {
-  height: 631px; }
+  height: 175rem; }
 .size.lg.hero-unit {
-  min-height: 631px; }
+  min-height: 175rem; }
   .size.lg.hero-unit .overlay {
-    min-height: 631px; }
+    min-height: 175rem; }
 .size.xl.scroll-down i {
   font-size: 36px; }
 .size.xl.banner .banner-content,
@@ -5082,11 +5092,11 @@ body {
 .size.xl i {
   font-size: 108px; }
 .size.xl.videoBG {
-  height: 701px; }
+  height: 245rem; }
 .size.xl.hero-unit {
-  min-height: 701px; }
+  min-height: 245rem; }
   .size.xl.hero-unit .overlay {
-    min-height: 701px; }
+    min-height: 245rem; }
 
 .banner .banner-pic,
 .banner .banner-content {
@@ -5213,7 +5223,8 @@ img.icon-utec {
   min-height: 100%;
   width: auto;
   height: auto;
-  overflow: hidden; }
+  overflow: hidden;
+  top: -550px; }
 
 .video-js {
   position: relative !important;

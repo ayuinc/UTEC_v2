@@ -29,70 +29,70 @@
         <li>
           <ul>
             <li class="title"><a href="#">Somos Utec</a></li>
-            <li><a href="#"><span>Metodología Educativa</span></a></li>
-            <li><a href="#"><span>Vida Estudiantil</span></a></li>
-            <li><a href="#"><span>Campus &amp; Laboratorios</span></a></li>
-            <li><a href="#"><span>Ingenio en Acción</span></a></li>
-            <li><a href="#"><span>UTEC Ventures</span></a></li>
-            <li><a href="#"><span>Calendario Académico</span></a></li>
-            <li><a href="#"><span>Respaldo</span></a></li>
-            <li><a href="#"><span>Autoridades</span></a></li>
-            <li><a href="#"><span>Concejo Directivo</span></a></li>
-            <li><a href="#"><span>Profesores</span></a></li>
-            <!--<li><a href="#"><span></span><span>Noticias</span></a></li>-->
-            <!--<li><a href="#"><span></span><span>Eventos</span></a></li>-->
-            <li><a href="#"><span>Trabaja en Utec</span></a></li>
+            <li><a href="#"><small>Metodología Educativa</small></a></li>
+            <li><a href="#"><small>Vida Estudiantil</small></a></li>
+            <li><a href="#"><small>Campus &amp; Laboratorios</small></a></li>
+            <li><a href="#"><small>Ingenio en Acción</small></a></li>
+            <li><a href="#"><small>UTEC Ventures</small></a></li>
+            <li><a href="#"><small>Calendario Académico</small></a></li>
+            <li><a href="#"><small>Respaldo</small></a></li>
+            <li><a href="#"><small>Autoridades</small></a></li>
+            <li><a href="#"><small>Concejo Directivo</small></a></li>
+            <li><a href="#"><small>Profesores</small></a></li>
+            <!--<li><a href="#"><small></small><small>Noticias</small></a></li>-->
+            <!--<li><a href="#"><small></small><small>Eventos</small></a></li>-->
+            <li><a href="#"><small>Trabaja en Utec</small></a></li>
           </ul>
         </li>
         <!--<li>
           <ul>
             <li class="title"><a href="#">Vive Utec</a></li>
-            <li><a href="#"><span>Vida</span><span>Estudiantil</span></a></li>
-            <li><a href="#"><span>Campus &amp;</span><span>Laboratorios</span></a></li>
-            <li><a href="#"><span>Ingenio en</span><span>Acción</span></a></li>
-            <li><a href="#"><span>UTEC</span><span>Ventures</span></a></li>
-            <li><a href="#"><span>Blog &amp;</span><span>YouTube</span></a></li>
-            <li><a href="#"><span>Calendario</span><span>Académico</span></a></li>
+            <li><a href="#"><small>Vida</small><small>Estudiantil</small></a></li>
+            <li><a href="#"><small>Campus &amp;</small><small>Laboratorios</small></a></li>
+            <li><a href="#"><small>Ingenio en</small><small>Acción</small></a></li>
+            <li><a href="#"><small>UTEC</small><small>Ventures</small></a></li>
+            <li><a href="#"><small>Blog &amp;</small><small>YouTube</small></a></li>
+            <li><a href="#"><small>Calendario</small><small>Académico</small></a></li>
           </ul>
         </li>-->
         <li>
           <ul>
             <li class="title"><a href="#">Investigación</a></li>
-            <li><a href="#"><span>Publicaciones</span></a></li>
-            <li><a href="#"><span>Consultorías</span></a></li>
-            <li><a href="#"><span>Empresas &amp; Clientes</span></a></li>
-            <li><a href="#"><span>Contacto</span></a></li>
+            <li><a href="#"><small>Publicaciones</small></a></li>
+            <li><a href="#"><small>Consultorías</small></a></li>
+            <li><a href="#"><small>Empresas &amp; Clientes</small></a></li>
+            <li><a href="#"><small>Contacto</small></a></li>
           </ul>
         </li>
         <li>
           <ul>
             <li class="title"><a href="#">Carreras</a></li>
-            <li><a href="carreras/ingenieria-quimica-industrial"><span>Ingeniería Química industrial</span></a></li>
-            <li><a href="carreras/ingenieria-electronica"><span>Ingeniería Electrónica</span></a></li>
-            <li><a href="carreras/ingenieria-mecanica"><span>Ingeniería Mecánica</span></a></li>
-            <li><a href="carreras/ingenieria-de-la-energia"><span>Ingeniería de la Energía</span></a></li>
-            <li><a href="carreras/ingenieria-industrial"><span>Ingeniería Industrial</span></a></li>
-            <li><a href="carreras/menciones"><span>Menciones</span></a></li>
-            <li><a href="carreras/escuela-de-desarrollo"><span>Escuela de Desarrollo Profesional</span></a></li>
+            <li><a href="carreras/ingenieria-quimica-industrial"><small>Ingeniería Química industrial</small></a></li>
+            <li><a href="carreras/ingenieria-electronica"><small>Ingeniería Electrónica</small></a></li>
+            <li><a href="carreras/ingenieria-mecanica"><small>Ingeniería Mecánica</small></a></li>
+            <li><a href="carreras/ingenieria-de-la-energia"><small>Ingeniería de la Energía</small></a></li>
+            <li><a href="carreras/ingenieria-industrial"><small>Ingeniería Industrial</small></a></li>
+            <li><a href="carreras/menciones"><small>Menciones</small></a></li>
+            <li><a href="carreras/escuela-de-desarrollo"><small>Escuela de Desarrollo Profesional</small></a></li>
           </ul>
         </li>
         <li>
           <ul>
             <li class="title"><a href="#">Admisión</a></li>
-            <li><a href="/admision/modalidades"><span>Modalidades de Admisión</span></a></li>
-            <li><a href="/admision/charlas-informativas"><span>Charlas Informativas</span></a></li>
-            <!--<li><a href="#"><span>Calendario de</span><span>Admisión</span></a></li>-->
-            <li><a href="/admision/centro-pre"><span>Presinscripción</span></a></li>
-            <li><a href="/admision/informacion-economica"><span>Información Económica</span></a></li>
-            <!--<li><a href="#"><span>Visita</span><span>UTEC</span></a></li>
-            <li><a href="#"><span>Orientación</span><span>Vocacional</span></a></li>-->
-            <li><a href="/admision/preguntas-frecuentes"><span>FAQ</span></a></li>
+            <li><a href="/admision/modalidades"><small>Modalidades de Admisión</small></a></li>
+            <li><a href="/admision/charlas-informativas"><small>Charlas Informativas</small></a></li>
+            <!--<li><a href="#"><small>Calendario de</small><small>Admisión</small></a></li>-->
+            <li><a href="/admision/centro-pre"><small>Presinscripción</small></a></li>
+            <li><a href="/admision/informacion-economica"><small>Información Económica</small></a></li>
+            <!--<li><a href="#"><small>Visita</small><small>UTEC</small></a></li>
+            <li><a href="#"><small>Orientación</small><small>Vocacional</small></a></li>-->
+            <li><a href="/admision/preguntas-frecuentes"><small>FAQ</small></a></li>
           </ul>
         </li>
         <li>
           <ul>
             <li class="title"><a href="#">Convenios</a></li>
-            <li><a href="convenios"><span>Convenios de Intercambio</span></a></li>
+            <li><a href="convenios"><small>Convenios de Intercambio</small></a></li>
           </ul>
         </li>  
         <li>
@@ -103,7 +103,7 @@
       </ul> 
 		</div>
 	</div>
-	<div class="address pv-14 bg-gray-lighter">
+	<div class="address pt-14 bg-gray-lighter">
 		<div class="container">
 			<nav class="text-center ml-ch-14 text-gray">
 				<span>Av. Cascanueces 2221, Santa Anita, Lima</span>
@@ -117,7 +117,7 @@
 			</nav>
 		</div>
 	</div>
-	<div class="copyright pv-14 bg-gray-lighter text-center text-gray">
-		<span>Copyright &copy; 2014 UTEC. Todos los derechos reservados.</span>
+	<div class="copyright pt-7 pb-14 bg-gray-lighter text-center text-gray">
+		<small>Copyright &copy; 2014 UTEC. Todos los derechos reservados.</small>
 	</div>
 <!-- END:Footer -->

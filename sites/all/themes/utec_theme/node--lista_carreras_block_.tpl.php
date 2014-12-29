@@ -1,4 +1,4 @@
-<div class="pvp-7">
+<div class="pvp-0">
 	<div class="container">
 		<h2 class="lead medium mb-0"><span class="text-gray-darker">¿Listo para</span> <span class="text-gray">cambiar el mundo?</span></h2>
 		<h4 class="lead mb-35 mt-0">Éstas son nuestras carreras:</h4>
