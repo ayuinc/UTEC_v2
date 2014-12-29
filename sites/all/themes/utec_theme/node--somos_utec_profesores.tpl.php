@@ -5,8 +5,6 @@
 <?php $title = $node->title; ?>  
 <?php $field_introduccion_su_profesores = $node->field_introduccion_su_profesores['und']['0']['value']; ?>
 
-<?php print_r($node); ?>
-
 <div class="container-sm">
 	<h1 class="light">Profesores</h1>
 	<div class="separator-gray separator-lg"></div>
