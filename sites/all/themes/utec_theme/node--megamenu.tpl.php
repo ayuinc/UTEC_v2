@@ -35,10 +35,10 @@
 								</div>
 							</form>
 						</li>-->
-						<li class="pt-xs">
+						<li class="pt-7">
 							<a href="#" class="text-gray">Contacto</a>
 						</li>
-						<!--<li class="pt-xs">
+						<!--<li class="pt-7">
 							<a href="#" class="text-gray">Blog</a>
 						</li>
 						<li>
