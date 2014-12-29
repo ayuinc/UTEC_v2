@@ -5,7 +5,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-6">
-					<h2 class="thin text-white lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit repellat dolorem alias minus accusamus.</h2>
+					<!--<h2 class="thin text-white lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit repellat dolorem alias minus accusamus.</h2>-->
 				</div>
 			</div>
 		</div>
