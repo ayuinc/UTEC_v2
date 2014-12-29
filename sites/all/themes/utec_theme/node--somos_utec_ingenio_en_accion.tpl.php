@@ -77,6 +77,7 @@
 			</div>
 		</div>
 	</div>
+	<div class="overlay"></div>
 </div>
 <div data-section-scroll="Purificando el agua" class="section-scroll-content minh-560 flex-middle-center">
 	<div class="container-xs text-center normalize-text">
@@ -105,5 +106,6 @@
 			</li>
 		</ul>
 	</div>
+	<div class="overlay"></div>
 </div>
 
