@@ -5,16 +5,13 @@
   $pathfile= variable_get('file_public_path', conf_path() . '/files/');
 
 	$curso = $node->title;
-	$area = $node->field_area['und']['0']['value'];
+	$area = $node->field_area['und']['0']['taxonomy_term']->tid;
 	$creditos = $node->field_n_mero_creditos['und']['0']['value'];
-	print_r($node);
-	#8dc63f
-  #ffdd00
-  #afdfe4
+	// print_r($node);
 
 ?>
 <ul>
-  <li style="background-color: <?php if ($area == '17'){print '#8dc63f';} ?>"></li>
+  <li style="background-color: <?php if ($area == '17'){print '#8dc63f';}elseif($area == '18'){print '#ffdd00'}else print '#afdfe4'; ?>"></li>
   <li><?php print $curso; ?></li>
 </ul>
 

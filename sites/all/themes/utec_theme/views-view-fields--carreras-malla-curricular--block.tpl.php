@@ -13,16 +13,6 @@
 
   $curso = $fields['field_cursos']->content;
 
-  //$node = node_load($curso);
-  kpr($fields);
-  print_r($node);
-  //$area = $node['field_area']['und']['0']['value'];
-
-  
-
-  //$creditos = $node['field_n_mero_creditos']['und']['0']['value'];
-
-  // $carrera = $fields['field_carrera_referencia']->content;
   
 ?>
 
