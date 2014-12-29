@@ -16,16 +16,14 @@
   $curso = $fields['field_cursos']->content;
 
   
-?>
-
-  <ul class="grid-list grid-list-5 malla-curricular malla-curricular-primary">
-    <li>
-      <ul class="head">
-        <li><?php print $bloque; ?></li>
-        <li><?php print $total_creditos; ?><br>Créditos</li>
-      </ul>
-      <div class="body">
-        <?php print $curso ?>
-      </div>
-    </li>
+?>  
+<li>
+  <ul class="head">
+    <li><?php print $bloque; ?></li>
+    <li><?php print $total_creditos; ?><br>Créditos</li>
   </ul>
+  <div class="body">
+    <?php print $curso ?>
+  </div>
+</li>
+  
