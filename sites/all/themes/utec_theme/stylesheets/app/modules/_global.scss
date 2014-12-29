@@ -57,6 +57,10 @@ $grid-list-hover-height: 350px;
 			z-index:9;
 		}
 	}
+	&.hero-text {
+		position:relative;
+		z-index:100;
+	}
 	.overlay {
 		min-height: $video-bg-height;
 		background-color: rgba(100,100,100,0.7);

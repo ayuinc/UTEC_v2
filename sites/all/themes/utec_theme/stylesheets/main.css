@@ -4754,6 +4754,9 @@ body {
     .hero-unit.video-bg h2 {
       position: relative;
       z-index: 9; }
+  .hero-unit.hero-text {
+    position: relative;
+    z-index: 100; }
   .hero-unit .overlay {
     min-height: 35rem;
     background-color: rgba(100, 100, 100, 0.7); }
