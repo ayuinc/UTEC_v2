@@ -37,7 +37,7 @@
           </div>
         </div>
         <div class="col-sm-9">
-          <h2 class="lead thin text-white h3 mt-0"><?php print $carrera_txt ?></h2>
+          <h2 class="lead thin text-white h5 mt-0"><?php print $carrera_txt ?></h2>
         </div>
       </div>
     </div>
