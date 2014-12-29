@@ -8,7 +8,7 @@
 	<div class="tool-bar bg-gray-lighter pt-sm pb-sm">
 		<div class="container">
 			<div class="left">
-				<ul class=" thin text-gray mr-ch-14 nav-list pt-sm">
+				<ul class=" thin text-gray mr-ch-14 nav-list pt-7">
 					<li>
 						<a href="#">Alumnos</a>
 					</li>
@@ -26,7 +26,7 @@
 			<div class="right">
 				<div class="inline-block pt-xs">
 					<ul class="small ml-ch-7 nav-list">
-						<li class="form-search">
+						<!--<li class="form-search">
 							<form action="" class="form-inline mr-14">
 								<div class="form-group mb-0">
 									<label for="search" class="sr-only">Buscar</label>
@@ -34,7 +34,7 @@
 									<button type="submit" class="btn btn-default btn-xs" value="S"><i class="icon-search"></i></button>
 								</div>
 							</form>
-						</li>
+						</li>-->
 						<li class="pt-xs">
 							<a href="#" class="text-gray">Contacto</a>
 						</li>
