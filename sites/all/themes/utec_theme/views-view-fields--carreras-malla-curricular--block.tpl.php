@@ -15,7 +15,7 @@
 
   $node = node_load($curso);
 
-  kpr($node);
+  print_r($node);
   
 
   $area = $fields['field_area']->content;
