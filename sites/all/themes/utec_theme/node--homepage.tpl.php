@@ -26,7 +26,7 @@
     <source src="/sites/all/themes/utec_theme/assets/video/UTEC_FULLHD_MP4.ogg" type='video/ogg' />
     <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
   </video>
-  <!--<div class="video-placeholder" style="background: url(http://104.131.4.19/sites/all/themes/utec_theme/assets/img/project-bg-1.jpg) no-repeat center top;"></div>
+  <div class="video-placeholder" style="background: url(http://104.131.4.19/sites/all/themes/utec_theme/assets/img/project-bg-1.jpg) no-repeat center top;"></div>
   <div class="overlay flex-middle">
   	<div class="container">
 			<div class="row">
@@ -35,5 +35,5 @@
 				</div>
 			</div>
 		</div>
-  </div>-->
+  </div>
 </div>
