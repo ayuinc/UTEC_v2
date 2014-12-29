@@ -54,7 +54,7 @@
     <div class="row">
       <div class="col-sm-9">
         <h2 class="lead thin mb-14 h3"><?php print $malla_titulo ?></h2>
-        <p><?php print $malla_txt ?></p>
+        <p style="font-size: 1.3rem;"><?php print $malla_txt ?></p>
       </div>
       <div class="col-sm-3">
         <div class="size xl">
@@ -79,7 +79,7 @@
       </div>
       <div class="col-sm-9">
         <h2 class="lead thin h3"><?php print $menciones_titulo ?></h2>
-        <p><?php print $menciones_txt ?></p>
+        <p style="font-size: 1.3rem;"><?php print $menciones_txt ?></p>
       </div>
     </div>
   </div>
@@ -104,8 +104,8 @@
         <?php //die(print_r($value)); ?>
 	      <li class="mb-ch-14">
 	        <div class="grid-list-pic"><img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="" width="180px" height="auto" class="img-circle"></div>
-	        <a href="" class="h4 mb-0"><?php print $name ?></a>
-	        <p><?php print $desc ?></p>
+	        <!-- <a href="" class="h4 mb-0"> --><h4 class="mb-0"><?php print $name ?></h4><!-- </a> -->
+	        <p style="font-size: 0.9rem; color: #8f8d8e;"><?php print $desc ?></p>
 	      </li>
       <?php endforeach ?>
     </ul> 
@@ -128,7 +128,7 @@
             </div>
           </div>
           <div class="col-sm-9">
-            <h2 class="lead thin h3"><?php print $perfil_txt ?></h2>
+            <h2 class="lead thin h3 ph-14"><?php print $perfil_txt ?></h2>
           </div>
         </div>
       </div>
