@@ -15,7 +15,7 @@
 	</div>
 	<div class="col-sm-9 banner-content">
 		<div>
-			<h2 class="medium"><a href="<?php print $path; ?>"><?php print $title ?></a></h2>
+			<h2 class="medium text-gray-dark"><a href="<?php print $path; ?>"><?php print $title ?></a></h2>
 			<p class="lead text-gray"><?php print $texto_corto ?></p>
 		</div>
 	</div>
@@ -25,7 +25,7 @@
 <div class="banner row ml-0 mb-14" data-href="<?php print $path; ?>">
 	<div class="col-sm-9 banner-content">
 		<div>
-			<h2 class="medium"><a href="<?php print $path; ?>"><?php print $title ?></a></h2>
+			<h2 class="medium text-gray-dark"><a href="<?php print $path; ?>"><?php print $title ?></a></h2>
 			<p class="lead text-gray"><?php print $texto_corto ?></p>
 		</div>
 	</div>
