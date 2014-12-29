@@ -67,7 +67,7 @@
           </a>
         </div>
         <div class="col-sm-6">
-          <a href="<?php print $base_url; ?>/<?php print $derecho_inferior_der_link; ?>" class="anchor-4" style="width: 295px;">
+          <a href="<?php print $base_url; ?>/<?php print $derecho_inferior_der_link; ?>" class="anchor-4 grid-col-6">
             <img src="sites/default/files/<?php print $derecho_inferior_der_img; ?>" />
             <div class="overlay-bg"></div>
             <div class="overlay-content">
