@@ -4751,7 +4751,7 @@ body {
   background-size: cover; }
   .hero-unit.video-bg {
     overflow: hidden;
-    height: 35rem; }
+    height: 37rem; }
     .hero-unit.video-bg h2 {
       position: relative;
       z-index: 9; }
@@ -4826,7 +4826,7 @@ body {
   .bg-img-block.bg-img-block-sm {
     min-height: 210px; }
   .bg-img-block.bg-img-block-lg {
-    min-height: 490px; }
+    min-height: 517px; }
   .bg-img-block.bg-img-block-xl {
     min-height: 630px; }
 
