@@ -4751,7 +4751,7 @@ body {
   background-size: cover; }
   .hero-unit.video-bg {
     overflow: hidden;
-    height: 35rem; }
+    height: 37rem; }
     .hero-unit.video-bg h2 {
       position: relative;
       z-index: 9; }
@@ -4760,7 +4760,7 @@ body {
     z-index: 100; }
   .hero-unit .overlay {
     min-height: 35rem;
-    background-color: rgba(5, 5, 5, 0.35); }
+    background-color: rgba(5, 5, 5, 0.25); }
 
 #section-scroll {
   position: fixed;
@@ -4824,7 +4824,7 @@ body {
   background-size: cover;
   min-height: 350px; }
   .bg-img-block.bg-img-block-sm {
-    min-height: 210px; }
+    min-height: 517px; }
   .bg-img-block.bg-img-block-lg {
     min-height: 490px; }
   .bg-img-block.bg-img-block-xl {
