@@ -26,7 +26,7 @@
 ?>
 <div class="hero-unit"> <!-- HERO -->
   <div data-section-scroll="Que es" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
-    <div class="container-sm">
+    <div class="container-sm hero-text">
       <h2 class="thin h3 text-white mb-7">¿Qué es la</h2>
       <h1 class="thin text-white mt-0"><?php print $titulo ?>?</h1>
       <hr class="hr-white">
