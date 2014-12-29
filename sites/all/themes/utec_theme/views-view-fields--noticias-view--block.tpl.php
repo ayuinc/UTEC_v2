@@ -29,7 +29,7 @@
 			<p class="lead text-gray"><?php print $texto_corto ?></p>
 		</div>
 	</div>
-	<div class="col-sm-3 banner-pic" style="background-image: url(<?php print $image ?>);">
+	<div class="col-sm-3 banner-pic" style="background-image: url(<?php print $image ?>); min-height: 299px;">
 		<div class="banner-label bg-gray-darker text-white"><span><?php print $category ?></span></div>
 	</div>
 </div>
