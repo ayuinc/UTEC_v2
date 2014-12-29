@@ -30,7 +30,7 @@
 					<tr>
 						<?php if ($count == 0): ?>	
 							<td class="highlight text-center"><?php print $mencion ?></td>
-						<?php else ?>	
+							<?php else : ?>	
 							<td class="highlight text-center"></td>
 						<?php endif ?>
 
