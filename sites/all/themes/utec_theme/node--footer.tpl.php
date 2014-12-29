@@ -103,13 +103,13 @@
       </ul> 
 		</div>
 	</div>
-	<div class="address pv-14 bg-gray-lighter">
+	<div class="address pt-14 bg-gray-lighter">
 		<div class="container">
 			<nav class="text-center ml-ch-14 text-gray">
-				<small>Av. Cascanueces 2221, Santa Anita, Lima</small>
-				<small><strong>T. </strong>51 1 354-0070</small>
-				<small><strong>W. </strong>www.utec.edu.pe</small>
-				<small><strong>C. </strong><a href="mailto:informes@utec.edu.pe" class="text-gray-dark">informes@utec.edu.pe</a></small>
+				<span>Av. Cascanueces 2221, Santa Anita, Lima</span>
+				<span><strong>T. </strong>51 1 354-0070</span>
+				<span><strong>W. </strong>www.utec.edu.pe</span>
+				<span><strong>C. </strong><a href="mailto:informes@utec.edu.pe" class="text-gray-dark">informes@utec.edu.pe</a></span>
 				<a href="#" class="btn btn-outline btn-xs btn-gray-dark"><i class="icon-footer-book"></i></a>
 				<a href="#" class="btn btn-outline btn-xs btn-gray-dark"><i class="icon-footer-gt"></i></a>
 				<a href="#" class="btn btn-outline btn-xs btn-gray-dark"><i class="icon-footer-facebook"></i></a>
@@ -117,7 +117,7 @@
 			</nav>
 		</div>
 	</div>
-	<div class="copyright pv-14 bg-gray-lighter text-center text-gray">
+	<div class="copyright pb-14 bg-gray-lighter text-center text-gray">
 		<small>Copyright &copy; 2014 UTEC. Todos los derechos reservados.</small>
 	</div>
 <!-- END:Footer -->
