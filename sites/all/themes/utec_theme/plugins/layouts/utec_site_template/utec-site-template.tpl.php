@@ -9,7 +9,7 @@
 <div class="site-wrapper">
   <div class="site-content">
 
-    <?php print $content['header']; ?>
+  <?php print $content['header']; ?>
 
   <?php if ($content['header-bottom']) :?>
     <div class="hero-unit video-bg">
