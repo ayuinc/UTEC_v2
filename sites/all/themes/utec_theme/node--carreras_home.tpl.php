@@ -27,17 +27,17 @@
 <div class="hero-unit"> <!-- HERO -->
   <div data-section-scroll="Que es" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
     <div class="container-sm">
-      <h2 class="thin h4 medium">¿Qué es la</h2>
-      <h1 class="thin"><?php print $titulo ?>?</h1>
+      <h2 class="thin h4 text-white">¿Qué es la</h2>
+      <h1 class="thin text-white"><?php print $titulo ?>?</h1>
       <hr class="hr-white">
       <div class="row">
         <div class="col-sm-3">
           <div class="size xl">
-            <i class="icon-carreras-que-es"></i>
+            <i class="icon-carreras-que-es text-white"></i>
           </div>
         </div>
         <div class="col-sm-9">
-          <h2 class="lead thin"><?php print $carrera_txt ?></h2>
+          <h2 class="lead thin text-white"><?php print $carrera_txt ?></h2>
         </div>
       </div>
     </div>
@@ -120,9 +120,9 @@
 <div data-section-scroll="Perfil del egresado" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_perfil_egresado_imagen)?>);">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6 text-white normalize-text">
+      <div class="col-sm-6 normalize-text">
         <h2 class="thin">Perfil del egresado</h2>
-        <hr class="hr-white">
+        <hr class="hr-gray">
         <div class="row">
           <div class="col-sm-3">
             <div class="size xl">
