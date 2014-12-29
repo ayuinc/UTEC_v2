@@ -7,12 +7,12 @@
 	$titulo = $node->title;
 	$cuerpo = $node->body['und']['0']['value'];
 	$mencion = $node->field_menci_n_['und']['0']['value'];
-
+	print_r($node);
 ?>
 <div class="container-sm">
 	<h1 class="light">Menciones</h1>
 	<div class="separator-gray separator-sm"></div>
-	<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis praesentium minus ratione eum et voluptates quam magnam sit, alias nam rerum in doloribus soluta fugit quo suscipit. Alias, ad, sit.</h3>
+	<h3><?php print $cuerpo ?></h3>
 	<div class="pv-ch-42">
 		<div class="table-responsive table-custom pv-42">
 			<table class="table">
