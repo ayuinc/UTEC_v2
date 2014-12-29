@@ -25,11 +25,18 @@
 					</tr>
 				</thead>
 				<tbody>
+					<?php $count = 0; ?>
 					<?php foreach ($electivo as $key => $value) : ?>
 					<tr>
-						<td class="highlight text-center"><?php print $mencion ?></td>
+						<?php if ($count == 0): ?>	
+							<td class="highlight text-center"><?php print $mencion ?></td>
+						<?php elseif : ?>	
+							<td class="highlight text-center"></td>
+						<?php endif ?>
+
 						<td><?php print $value['value'] ?></td>
 					</tr>
+					<?php $count++; ?>
 					<?php endforeach; ?>	
 				</tbody>
 			</table>
