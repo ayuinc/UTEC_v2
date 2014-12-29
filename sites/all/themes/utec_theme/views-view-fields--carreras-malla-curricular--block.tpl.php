@@ -13,16 +13,16 @@
 
   $curso = $fields['field_cursos']->content;
 
-  $node = node_load($curso);
+  //$node = node_load($curso);
   kpr($fields);
   print_r($node);
-  $area = $node['field_area']['und']['0']['value'];
+  //$area = $node['field_area']['und']['0']['value'];
 
   #8dc63f
   #ffdd00
   #afdfe4
 
-  $creditos = $node['field_n_mero_creditos']['und']['0']['value'];
+  //$creditos = $node['field_n_mero_creditos']['und']['0']['value'];
 
   // $carrera = $fields['field_carrera_referencia']->content;
   
@@ -35,26 +35,7 @@
         <li>20<br>Créditos</li>
       </ul>
       <div class="body">
-        <ul>
-          <li></li>
-          <li><?php print $curso; ?><br><?php print $creditos ?> CRD</li>
-        </ul>
-        <ul>
-          <li></li>
-          <li>Cálculo 1<br>6 CRD</li>
-        </ul>
-        <ul>
-          <li></li>
-          <li>Cálculo 1<br>6 CRD</li>
-        </ul>
-        <ul>
-          <li></li>
-          <li>Cálculo 1<br>6 CRD</li>
-        </ul>
-        <ul>
-          <li></li>
-          <li>Cálculo 1<br>6 CRD</li>
-        </ul>
+        <?php print $curso ?>
       </div>
     </li>
   </ul>
