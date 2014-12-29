@@ -95,7 +95,7 @@
 </div>
 <div data-section-scroll="Descubre más" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_foto_redes_sociales)?>);">
 	<div class="container-xs text-white text-center hero-text">
-		<h2 class="h3">A todo esto le llamamos </h2> <h1 class="thin mt-0">Ingenio en Acción</h1>
+		<h2 class="h3 mb-0">A todo esto le llamamos </h2> <h1 class="thin mt-0">Ingenio en Acción</h1>
 		<p class="thin font-carreras">Descubre más de #ingenioenaccion en:</p>
 		<ul class="grid-list grid-list-centered">
 			<li class="p-0">
