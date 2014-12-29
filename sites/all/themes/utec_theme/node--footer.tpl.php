@@ -117,7 +117,7 @@
 			</nav>
 		</div>
 	</div>
-	<div class="copyright pb-14 bg-gray-lighter text-center text-gray">
+	<div class="copyright pt-7 pb-14 bg-gray-lighter text-center text-gray">
 		<small>Copyright &copy; 2014 UTEC. Todos los derechos reservados.</small>
 	</div>
 <!-- END:Footer -->
