@@ -4754,7 +4754,7 @@ body {
     .hero-unit.video-bg h2 {
       position: relative;
       z-index: 9; }
-  .hero-unit.hero-text {
+  .hero-unit .hero-text {
     position: relative;
     z-index: 100; }
   .hero-unit .overlay {
