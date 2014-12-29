@@ -8,9 +8,9 @@
 <div class="container-sm">
 	<h1 class="light">Profesores</h1>
 	<div class="separator-gray separator-lg"></div>
-	<p class="lead text-gray"><?php print $field_introduccion_autoridades ?></p>
+	<p class="lead text-gray"><?php print $field_introduccion_su_profesores ?></p>
 	<ul class="pv-35 grid-list grid-list-2">
-    <?php foreach ($node->field_profesor['und'] as $key => $value) :?>
+    <?php foreach ($node->field_lista_profesores['und'] as $key => $value) :?>
       <?php $name = $value['entity']->name; ?>   
 			<?php $pic = $value['entity']->picture->filename; ?>
       <?php $desc = $value['entity']->field_descripci_n['und'][0]['value']; ?>
