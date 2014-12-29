@@ -11,15 +11,19 @@
 
   $bloque = $fields['field_numero_de_bloque']->content;
 
+  $curso = $fields['field_curso']->content;
+
+  $node = node_load($curso);
+
+  kpr($node);
+  
+
   $area = $fields['field_area']->content;
 
   $creditos = $fields['field_n_mero_creditos']->content;
 
-  $curso = $fields['field_curso']->content;
-
   $carrera = $fields['field_carrera_referencia']->content;
   
-  kpr($fields);
 ?>
 
   <ul class="grid-list grid-list-5 malla-curricular malla-curricular-primary">
