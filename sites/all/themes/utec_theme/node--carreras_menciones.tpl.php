@@ -9,7 +9,7 @@
 	$mencion = $node->field_mencion['und']['0']['value'];
 	$electivo = $node->field_electivo['und'];
 	
-	print_r($node);
+	// print_r($node);
 ?>
 <div class="container-sm">
 	<h1 class="light">Menciones</h1>
@@ -30,7 +30,7 @@
 					<tr>
 						<?php if ($count == 0): ?>	
 							<td class="highlight text-center"><?php print $mencion ?></td>
-						<?php elseif : ?>	
+						<?php elseif ?>	
 							<td class="highlight text-center"></td>
 						<?php endif ?>
 
