@@ -17,8 +17,8 @@
 		<h3><?php print $field_introduccion ?></h3>
 		<?php print $field_contenido ?>
 	</div>
-	<!--<div class="pv-42 lead-ch">
-		<h3>Links de interés</h3>
+	<div class="pv-42 lead-ch">
+		<!--<h3>Links de interés</h3>
 		<ul class="list-unstyled">
 			<li class="pt-21">
 				<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
@@ -32,7 +32,7 @@
 			<li>
 				<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
 			</li>
-		</ul>
-	</div>-->
+		</ul>-->
+	</div>
 </div>
 
