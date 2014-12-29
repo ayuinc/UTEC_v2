@@ -104,8 +104,8 @@
         <?php //die(print_r($value)); ?>
 	      <li class="mb-ch-14">
 	        <div class="grid-list-pic"><img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="" width="180px" height="auto" class="img-circle"></div>
-	        <a href="" class="h5"><?php print $name ?></a>
-	        <p class="h6 thin"><?php print $desc ?></p>
+	        <a href="" class="h4 mb-0"><?php print $name ?></a>
+	        <p><?php print $desc ?></p>
 	      </li>
       <?php endforeach ?>
     </ul> 
