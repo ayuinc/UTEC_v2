@@ -11,7 +11,7 @@
 
 ?>
 <ul>
-  <li style="background-color: <?php if ($area == '17'){print '#8dc63f';}elseif($area == '18'){print '#ffdd00'}else print '#afdfe4'; ?>"></li>
+  <li style="background-color: <?php if ($area == '17'){print '#8dc63f';}elseif($area == '18'){print '#ffdd00';}else print '#afdfe4'; ?>"></li>
   <li><?php print $curso; ?></li>
 </ul>
 
