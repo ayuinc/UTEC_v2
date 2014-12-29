@@ -5,7 +5,9 @@
 		<ul class="grid-list grid-list-5 list-carreras text-center">
 			<li>
 				<div onclick="goTo()">
-					<div><i class="icon-ing-quimica"></i></div>
+					<a href="/carreras/ingenieria-quimica-industrial">
+						<div><i class="icon-ing-quimica"></i></div>
+					</a>
 					<h2>
 						<a href="/carreras/ingenieria-quimica-industrial">
 							<span>Ingeniería</span>
@@ -17,7 +19,9 @@
 			</li>
 			<li>
 				<div onclick="goTo()">
-					<div><i class="icon-ing-industrial"></i></div>
+					<a href="/carreras/ingenieria-industrial">
+						<div><i class="icon-ing-industrial"></i></div>
+					</a>
 					<h2>
 						<a href="/carreras/ingenieria-industrial">
 							<span>Ingeniería</span>
@@ -29,7 +33,9 @@
 			</li>
 			<li>
 				<div onclick="goTo()">
-					<div><i class="icon-ing-energia"></i></div>
+					<a href="/carreras/ingenieria-de-la-energia">
+						<div><i class="icon-ing-energia"></i></div>
+					</a>
 					<h2>
 						<a href="/carreras/ingenieria-de-la-energia">
 							<span>Ingeniería</span>
@@ -41,7 +47,9 @@
 			</li>
 			<li>
 				<div onclick="goTo()">
-					<div><i class="icon-ing-electronica"></i></div>
+					<a href="/carreras/ingenieria-electronica">
+						<div><i class="icon-ing-electronica"></i></div>
+					</a>
 					<h2>
 						<a href="/carreras/ingenieria-electronica">
 							<span>Ingeniería</span>
@@ -53,7 +61,9 @@
 			</li>
 			<li>
 				<div onclick="goTo()">
-					<div><i class="icon-ing-mecanica"></i></div>
+					<a href="/carreras/ingenieria-mecanica">
+						<div><i class="icon-ing-mecanica"></i></div>
+					</a>
 					<h2>
 						<a href="/carreras/ingenieria-mecanica">
 							<span>Ingeniería</span>
