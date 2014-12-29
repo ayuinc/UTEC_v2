@@ -16,13 +16,15 @@
   $node = node_load($curso);
 
   print_r($node);
-  
+  $area = $node['field_area']['und']['0']['value'];
 
-  $area = $fields['field_area']->content;
+  #8dc63f
+  #ffdd00
+  #afdfe4
 
-  $creditos = $fields['field_n_mero_creditos']->content;
+  $creditos = $node['field_n_mero_creditos']['und']['0']['value'];
 
-  $carrera = $fields['field_carrera_referencia']->content;
+  // $carrera = $fields['field_carrera_referencia']->content;
   
 ?>
 
