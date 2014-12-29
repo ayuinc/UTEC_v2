@@ -80,11 +80,11 @@
 	<div class="overlay"></div>
 </div>
 <div data-section-scroll="Purificando el agua" class="section-scroll-content minh-560 flex-middle-center hero-unit">
-	<div class="container-xs text-center normalize-text">
+	<div class="container-sm text-center normalize-text">
 		<h2 class="lead thin"><?php print $field_titulo_proyecto ?></h2>
 		<hr class="hr-gray">
 		<p class="lead gray"><?php print $field_subtitulo_proyecto ?></p>
-		<p class="gray mb-42"><?php print $field_descripcion_proyecto ?></p>
+		<p class="gray mb-42 lead"><?php print $field_descripcion_proyecto ?></p>
 		<?php if ($field_link_proyecto!='') { ?>
 			<a href="<?php print $field_link_proyecto ?>" class="btn btn-outline btn-primary see-more btn-sm">Ver más</a>
 		<?php } ?>
@@ -98,10 +98,10 @@
 		<h2 class="h3">A todo esto le llamamos </h2> <h1 class="thin mt-0">Ingenio en Acción</h1>
 		<p class="thin font-carreras">Descubre más de #ingenioenaccion en:</p>
 		<ul class="grid-list grid-list-centered">
-			<li>
+			<li class="p-0">
 				<a href="https://www.facebook.com/ingenioenaccion" class="btn btn-facebook btn-circle"><i class="icon-footer-facebook"></i></a>
 			</li>
-			<li>
+			<li class="pl-7">
 				<a href="https://twitter.com/UTECedu" class="btn btn-twitter btn-circle"><i class="icon-footer-twitter"></i></a>
 			</li>
 		</ul>
