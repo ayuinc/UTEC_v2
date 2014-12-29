@@ -53,6 +53,7 @@
 			</div>
 		</div>
 	</div>
+	<div class="overlay"></div>
 </div>
 <div class="pvp-7">
 	<div class="container-sm text-center">
