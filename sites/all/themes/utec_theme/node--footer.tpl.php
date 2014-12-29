@@ -82,8 +82,9 @@
             <li><a href="/admision/modalidades"><small>Modalidades de Admisión</small></a></li>
             <li><a href="/admision/charlas-informativas"><small>Charlas Informativas</small></a></li>
             <!--<li><a href="#"><small>Calendario de</small><small>Admisión</small></a></li>-->
-            <li><a href="/admision/centro-pre"><small>Presinscripción</small></a></li>
+            <li><a href="/admision/modalidades"><small>Presinscripción</small></a></li>
             <li><a href="/admision/informacion-economica"><small>Información Económica</small></a></li>
+            <li><a href="/admision/inscripcion"><small>Inscripción</small></a></li>
             <!--<li><a href="#"><small>Visita</small><small>UTEC</small></a></li>
             <li><a href="#"><small>Orientación</small><small>Vocacional</small></a></li>-->
             <li><a href="/admision/preguntas-frecuentes"><small>FAQ</small></a></li>

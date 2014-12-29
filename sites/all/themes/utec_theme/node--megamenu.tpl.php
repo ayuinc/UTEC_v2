@@ -265,6 +265,9 @@
 						</li>
 					</ul>
 					<ul>
+						<li>
+							<a href="/admision/inscripcion">Inscripción</a>
+						</li>
 						<!--<li>
 							<a href="#"><span>Calendario</span>de admisión</a>
 						</li>
