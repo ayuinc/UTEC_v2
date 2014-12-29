@@ -5,12 +5,10 @@
 <?php $title = $node->title; ?>  
 <?php $field_introduccion_autoridades = $node->field_introduccion_autoridades['und']['0']['value']; ?>
 
-<?php print_r($node); ?>
-
 <div class="container-sm">
 	<h1 class="light">Autoridades</h1>
 	<div class="separator-gray separator-lg"></div>
-	<p><?php print $field_introduccion_autoridades ?></p>
+	<p class="lead text-gray"><?php print $field_introduccion_autoridades ?></p>
 	<ul class="grid-list grid-list-2">
     <?php foreach ($node->field_profesor['und'] as $key => $value) :?>
       <?php $name = $value['entity']->name; ?>   
