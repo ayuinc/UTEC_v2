@@ -18,9 +18,7 @@
   print_r($node);
   //$area = $node['field_area']['und']['0']['value'];
 
-  #8dc63f
-  #ffdd00
-  #afdfe4
+  
 
   //$creditos = $node['field_n_mero_creditos']['und']['0']['value'];
 
