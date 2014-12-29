@@ -27,8 +27,8 @@
 <div class="hero-unit"> <!-- HERO -->
   <div data-section-scroll="Que es" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
     <div class="container-sm">
-      <h2 class="thin h4 text-white">¿Qué es la</h2>
-      <h1 class="thin text-white"><?php print $titulo ?>?</h1>
+      <h2 class="thin h3 text-white mb-7">¿Qué es la</h2>
+      <h1 class="thin text-white mt-0"><?php print $titulo ?>?</h1>
       <hr class="hr-white">
       <div class="row">
         <div class="col-sm-3">
@@ -45,6 +45,7 @@
       <i class="icon-arrows-down bg-white-op text-gray"></i>
     </a>
   </div>
+  <div class="overlay"></div>
 </div> <!-- END:Hero -->
 <div data-section-scroll="Malla curricular" class="section-scroll-content minh-560 flex-middle-center">
   <div class="container-sm text-right normalize-text">
