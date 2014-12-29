@@ -7,7 +7,7 @@
 	$curso = $node->title;
 	$area = $node->field_area['und']['0']['value'];
 	$creditos = $node->field_n_mero_creditos['und']['0']['value'];
-	
+	print_r($node);
 	#8dc63f
   #ffdd00
   #afdfe4
