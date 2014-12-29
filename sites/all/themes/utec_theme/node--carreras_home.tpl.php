@@ -37,7 +37,7 @@
           </div>
         </div>
         <div class="col-sm-9">
-          <h2 class="lead thin text-white h3"><?php print $carrera_txt ?></h2>
+          <h2 class="lead thin text-white h3 mt-0"><?php print $carrera_txt ?></h2>
         </div>
       </div>
     </div>
@@ -98,18 +98,15 @@
   <div class="container text-center" >
     <ul class="grid-list grid-list-centered grid-list-4 grid-list-anchors pv-21"> 
       <?php foreach ($node->field_profesor['und'] as $key => $value) :?>
-        <?php   
-
-          $name = $value['entity']->name; 
-          $pic = $value['entity']->picture->filename; 
-          $desc = $value['entity']->field_descripci_n['und'][0]['value'];
-          //die(print_r($value));
-        ?>
-      <li class="mb-ch-14">
-        <div class="grid-list-pic"><img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="" width="180px" height="auto" class="img-circle"></div>
-        <a href="" class="h4 thin"><?php print $name ?></a>
-        <p class="h5 thin"><?php print $desc ?></p>
-      </li>
+        <?php $name = $value['entity']->name; ?>   
+				<?php $pic = $value['entity']->picture->filename; ?>
+        <?php $desc = $value['entity']->field_descripci_n['und'][0]['value']; ?>
+        <?php //die(print_r($value)); ?>
+	      <li class="mb-ch-14">
+	        <div class="grid-list-pic"><img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="" width="180px" height="auto" class="img-circle"></div>
+	        <a href="" class="h5"><?php print $name ?></a>
+	        <p class="h6 thin"><?php print $desc ?></p>
+	      </li>
       <?php endforeach ?>
     </ul> 
     <h3 class="lead thin text-gray"><em><?php print $profesor_txt ?></em></h3>
