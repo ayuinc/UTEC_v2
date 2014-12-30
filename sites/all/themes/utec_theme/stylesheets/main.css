@@ -4824,13 +4824,13 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  min-height: 350px; }
+  min-height: 35rem; }
   .bg-img-block.bg-img-block-sm {
-    min-height: 210px; }
+    min-height: -105rem; }
   .bg-img-block.bg-img-block-lg {
-    min-height: 490px; }
+    min-height: 175rem; }
   .bg-img-block.bg-img-block-xl {
-    min-height: 630px; }
+    min-height: 315rem; }
 
 .anchor-img-grid [class*="col-"] {
   padding: 0 !important; }
