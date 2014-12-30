@@ -22,7 +22,7 @@
 	
 	<!--SOLO PARA RESPALDO-->
 	<?php if ($end == 'proyectos') { ?>
-		<table class="table">
+		<table class="table mt-35">
 			<thead>
 				<tr>
 					<td>Investigador</td>
