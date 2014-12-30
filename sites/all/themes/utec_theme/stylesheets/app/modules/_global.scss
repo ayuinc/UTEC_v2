@@ -14,7 +14,7 @@ $banner-height: 293px;
 $user-card-height: 42px;
 $user-card-width: 210px;
 $container-bg-height: 30rem;
-$video-bg-height: 35rem;
+$video-bg-height: 500px;
 $grid-list-hover-height: 350px;
 
 // CONTROL GRID BLOCK IMG SIZES
@@ -147,7 +147,7 @@ $grid-list-hover-height: 350px;
 		min-height: $bg-img-height - 140;
 	}
 	&.bg-img-block-lg {
-		min-height: $bg-img-height + 210;
+		min-height: $bg-img-height + 150;
 	}
 	&.bg-img-block-xl {
 		min-height: $bg-img-height + 280;

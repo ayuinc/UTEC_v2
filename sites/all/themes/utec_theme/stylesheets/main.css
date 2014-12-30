@@ -4751,7 +4751,7 @@ body {
   background-size: cover; }
   .hero-unit.video-bg {
     overflow: hidden;
-    height: 35rem; }
+    height: 500px; }
     .hero-unit.video-bg h2 {
       position: relative;
       z-index: 9; }
@@ -4759,7 +4759,7 @@ body {
     position: relative;
     z-index: 100; }
   .hero-unit .overlay {
-    min-height: 35rem;
+    min-height: 500px;
     background: linear-gradient(115deg, transparent 50%, rgba(35, 35, 35, 0.2) 5%) 0 0, linear-gradient(245deg, transparent 50%, rgba(35, 35, 35, 0.2) 25%) 0 0, linear-gradient(115deg, transparent 50%, rgba(35, 35, 35, 0.2) 25%) 7px -15px, linear-gradient(245deg, transparent 50%, rgba(35, 35, 35, 0.2) 25%) 7px -15px, #555;
     background-size: 15px 30px;
     opacity: 0.2; }
@@ -4828,7 +4828,7 @@ body {
   .bg-img-block.bg-img-block-sm {
     min-height: 210px; }
   .bg-img-block.bg-img-block-lg {
-    min-height: 560px; }
+    min-height: 500px; }
   .bg-img-block.bg-img-block-xl {
     min-height: 630px; }
 
@@ -5035,11 +5035,11 @@ body {
   .size.xs.user-card .user-info {
     min-height: 28px; }
 .size.xs.videoBG {
-  height: -245rem; }
+  height: 220px; }
 .size.xs.hero-unit {
-  min-height: -245rem; }
+  min-height: 220px; }
   .size.xs.hero-unit .overlay {
-    min-height: -245rem; }
+    min-height: 220px; }
 .size.sm.scroll-down i {
   font-size: 14px; }
 .size.sm.banner .banner-content,
@@ -5052,11 +5052,11 @@ body {
   .size.sm.user-card .user-info {
     min-height: 35px; }
 .size.sm.videoBG {
-  height: -105rem; }
+  height: 360px; }
 .size.sm.hero-unit {
-  min-height: -105rem; }
+  min-height: 360px; }
   .size.sm.hero-unit .overlay {
-    min-height: -105rem; }
+    min-height: 360px; }
 .size.sm.grid-list-hover > li > div {
   height: 210px; }
 .size.lg.scroll-down i {
@@ -5075,11 +5075,11 @@ body {
 .size.lg i {
   font-size: 56px; }
 .size.lg.videoBG {
-  height: 175rem; }
+  height: 640px; }
 .size.lg.hero-unit {
-  min-height: 175rem; }
+  min-height: 640px; }
   .size.lg.hero-unit .overlay {
-    min-height: 175rem; }
+    min-height: 640px; }
 .size.xl.scroll-down i {
   font-size: 41px; }
 .size.xl.banner .banner-content,
@@ -5094,11 +5094,11 @@ body {
 .size.xl i {
   font-size: 123px; }
 .size.xl.videoBG {
-  height: 245rem; }
+  height: 710px; }
 .size.xl.hero-unit {
-  min-height: 245rem; }
+  min-height: 710px; }
   .size.xl.hero-unit .overlay {
-    min-height: 245rem; }
+    min-height: 710px; }
 
 .banner .banner-pic,
 .banner .banner-content {
