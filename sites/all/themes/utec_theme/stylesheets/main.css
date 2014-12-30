@@ -4834,8 +4834,6 @@ body {
       background: linear-gradient(115deg, transparent 50%, rgba(35, 35, 35, 0.2) 5%) 0 0, linear-gradient(245deg, transparent 50%, rgba(35, 35, 35, 0.2) 25%) 0 0, linear-gradient(115deg, transparent 50%, rgba(35, 35, 35, 0.2) 25%) 7px -15px, linear-gradient(245deg, transparent 50%, rgba(35, 35, 35, 0.2) 25%) 7px -15px, #555;
       background-size: 15px 30px;
       opacity: 0.2; }
-    .bg-img-block.bg-img-block-lg .icon-arrows-down {
-      bottom: -4px; }
   .bg-img-block.bg-img-block-xl {
     min-height: 630px; }
 
