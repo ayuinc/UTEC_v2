@@ -336,3 +336,7 @@ p.small {
 .slide2.active .desc-front .down {
   bottom: -178px !important;
 }
+
+.z-10000 {
+  z-index: 10000;
+}
