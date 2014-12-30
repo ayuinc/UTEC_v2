@@ -44,7 +44,7 @@
 				<hr class="hr-white">
 				<div class="row">
 					<div class="col-sm-9">
-						<h2 class="lead thin"><?php print $field_descripcion_causa ?></h2>
+						<h3 class="lead thin"><?php print $field_descripcion_causa ?></h3>
 						<?php if ($field_link_causa!='') { ?>
 							<a href="<?php print $field_link_causa ?>" class="btn btn-white btn-outline btn-sm see-more">Ver más</a>
 						<?php } ?>
