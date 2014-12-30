@@ -12,8 +12,9 @@
 
   // $link = $fields[5]->field_link_['und'][0]['value'];
   //$logo  = $fields[5]->field_imagen['und'][0]['filename'];
-
+die(print_r($node));
   $fields = entity_load('field_collection_item', array($node->field_convenio['und'][0]['value']));
+  $fields = entity_load('field_collection_item', array($node->field_convenio['und'][1]['value']));
   print_r($fields);
 ?>
 
