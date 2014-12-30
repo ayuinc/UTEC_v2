@@ -110,7 +110,7 @@
       </ul> 
 		</div>
 	</div>
-	<div class="address bg-gray-lighter pt-5">
+	<div class="address bg-gray-lighter pt-14">
 		<div class="container">
 			<nav class="text-center ml-ch-14 text-gray">
 				<span>Av. Cascanueces 2221, Santa Anita, Lima</span>
