@@ -23,12 +23,12 @@
 	<!--SOLO PARA RESPALDO-->
 	<?php if ($end == 'respaldo') { ?>
 	<ul class="grid-list grid-list-2 grid-list-hover">
-		<li data-href="//">
+		<li data-href="somos-utec/consejo-directivo">
 			<div>
 				<h3 class="thin lead">Consejo directivo</h3>
 			</div>
 		</li>
-		<li data-href="//">
+		<li data-href="convenios">
 			<div>
 				<h3 class="thin lead">Gestión educativa interinstitucional</h3>
 			</div>
