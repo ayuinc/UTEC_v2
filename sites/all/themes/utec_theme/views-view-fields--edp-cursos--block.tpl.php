@@ -14,7 +14,8 @@
 	$titulo = $fields['title']->content;
 	$sub_titulo = $fields['field_subtitulo']->content;		 		
 	// $cuerpo = $node->body['und']['0']['value'];	
-	$imagen = $fields['field_image']->content;	
+	$imagen = $fields['field_image']->content;
+	$path = $fields['path']->content;	
 	// $texto_imagen = $node->field_texto_imagen['und']['0']['value'];
 	// $fecha = $node->field_fecha['und']['0']['value'];		 		
 	// $hora = $node->field_hora['und']['0']['value'];		 		
@@ -24,7 +25,7 @@
  //  $profesores = $node->field_profesor['und']['0']['value'];
 
 ?>
-<li data-href="//">
+<li data-href="<?php print $path; ?>">
 	<div>
 		<?php if ($imagen == '') :?>
 			<img src="<?php print('/'.$pathfile)?>img.png" alt="#" class="img-responsive">
