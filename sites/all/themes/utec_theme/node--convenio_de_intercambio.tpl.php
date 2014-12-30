@@ -7,7 +7,7 @@
   $titulo = $node->title;
   $cuerpo = $node->body['und']['0']['value'];
   $fids   = $node->field_convenio['und'];
-  print_r($fids);
+  // print_r($fids);
   
 ?>
 
@@ -20,11 +20,12 @@
       <ul class="grid-list grid-list-3 grid-list-hover size sm">
         <?php foreach ($fids as $fid) : ?>
           <?php 
-          print_r($fid['value']);
+          // print_r($fid['value']);
             $field = entity_load('field_collection_item', array($fid['value']));
-            print_r($field);
-            $image = $field->field_image['und'][0]['value']; 
+            // print_r($field);
+            $image = $field->field_image['und'][0]['filename']; 
             $link = $field->field_link_['und'][0]['value']; 
+            die(print_r($image));
           ?>
         <li data-href="<?php print $link ?>">
           <div>
