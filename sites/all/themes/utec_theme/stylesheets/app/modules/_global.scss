@@ -355,7 +355,7 @@ $grid-list-hover-height: 350px;
 	display: block;
 	text-align: center;
 	cursor: pointer;
-	@include position(absolute, null 0 -4px 0);
+	@include position(absolute, null 0 0 0);
 	z-index:100;
 	i {
 		content: "\e600";
