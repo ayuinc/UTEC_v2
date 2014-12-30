@@ -334,5 +334,5 @@ p.small {
 }
 
 .slide2.active .desc-front .down {
-  bottom: -178px;
+  bottom: -178px !important;
 }
