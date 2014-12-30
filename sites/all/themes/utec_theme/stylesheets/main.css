@@ -6500,22 +6500,23 @@ img.icon-utec {
   cursor: pointer; }
   .list-carreras > li:hover i,
   .list-carreras > li:hover h2 a span {
-    color: #00BFDF;
-    font-size: 20px; }
+    color: #00BFDF; }
 .list-carreras > li > div i {
   font-size: 70px;
   font-size: 4.375rem;
   color: #8f8d8e; }
-.list-carreras > li > div h2 span {
-  color: #8f8d8e;
-  display: block;
-  text-transform: uppercase; }
-  .list-carreras > li > div h2 span:first-child {
-    font-size: 16px; }
-  .list-carreras > li > div h2 span:nth-child(2) {
-    font-size: 28px; }
-  .list-carreras > li > div h2 span:last-child {
-    font-size: 14px;
-    color: #e3e3e3; }
+.list-carreras > li > div h2 {
+  font-size: 20px; }
+  .list-carreras > li > div h2 span {
+    color: #8f8d8e;
+    display: block;
+    text-transform: uppercase; }
+    .list-carreras > li > div h2 span:first-child {
+      font-size: 16px; }
+    .list-carreras > li > div h2 span:nth-child(2) {
+      font-size: 28px; }
+    .list-carreras > li > div h2 span:last-child {
+      font-size: 14px;
+      color: #e3e3e3; }
 
 /*# sourceMappingURL=main.css.map */

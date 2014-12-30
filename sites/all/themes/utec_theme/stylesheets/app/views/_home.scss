@@ -4,7 +4,6 @@
 			i,
 			h2 a span {
 				color: $brand-primary;
-				font-size: $font-size-h4;
 			}
 			cursor: pointer;
 		}
@@ -15,6 +14,7 @@
 				color: $gray;
 			}
 			h2 {
+				font-size: $font-size-h4;
 				span {
 					color: $gray;
 					display: block;
