@@ -22,6 +22,7 @@
           <?php 
           print_r($fid['value']);
             $field = entity_load('field_collection_item', array($fid['value']));
+            print_r($field);
             $image = $field->field_image['und'][0]['value']; 
             $link = $field->field_link_['und'][0]['value']; 
           ?>
