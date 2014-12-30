@@ -148,6 +148,13 @@ $grid-list-hover-height: 350px;
 	}
 	&.bg-img-block-lg {
 		min-height: $bg-img-height + 150;
+		.overlay {
+			min-height: $video-bg-height;
+			//background-color: rgba(5,5,5,0.35);
+			background: linear-gradient(115deg, transparent 50%, rgba(35, 35, 35, 0.2) 5%) 0 0, linear-gradient(245deg, transparent 50%, rgba(35, 35, 35, 0.2) 25%) 0 0, linear-gradient(115deg, transparent 50%, rgba(35, 35, 35, 0.2) 25%) 7px -15px, linear-gradient(245deg, transparent 50%, rgba(35, 35, 35, 0.2) 25%) 7px -15px, #555;
+			background-size: 15px 30px;
+			opacity: 0.2;
+		}
 	}
 	&.bg-img-block-xl {
 		min-height: $bg-img-height + 280;
