@@ -20,6 +20,7 @@
       <ul class="grid-list grid-list-3 grid-list-hover size sm">
         <?php foreach ($fids as $fid) : ?>
           <?php 
+          print_r($fid['value']);
             $field = entity_load('field_collection_item', array($fid['value']));
             $image = $field->field_image['und'][0]['value']; 
             $link = $field->field_link_['und'][0]['value']; 
