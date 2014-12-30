@@ -2,68 +2,31 @@
   global $base_url;
   global $theme_path;
   $path = $base_url.'/'.$theme_path;
-  $pathfile= variable_get('file_public_path', conf_path() . '/files/');
+  $pathfile = variable_get('file_public_path', conf_path() . '/files/');
 
 	$titulo = $node->title;
   $cuerpo = $node->body['und']['0']['value'];
 	$link = $node->field_link_['und']['0']['value'];
   $imagen = $node->field_image['und']['0']['filename'];
 
+  $fields = entity_load('field_collection_item');
+  print_r($fields);
+
 ?>
 
 <div class="container-sm">
-  <h1 class="light">Modalidades de admisión</h1>
-  <div class="separator-gray separator-lg"></div>
-  <ul class="grid-list grid-list-3 grid-list-hover">
-    <li data-href="//">
-      <div>
-        <h3 class="thin lead">Primeros puestos</h3>
-        <div class="size xl">
-          <i class="icon-admisiones-primeros-puestos"></i>
-        </div>
-      </div>
-    </li>
-    <li data-href="//">
-      <div>
-        <h3 class="thin lead">Alto rendimiento</h3>
-        <div class="size xl">
-          <i class="icon-admisiones-alto-rendimiento"></i>
-        </div>
-      </div>
-    </li>
-    <li data-href="//">
-      <div>
-        <h3 class="thin lead">Traslado</h3>
-        <div class="size xl">
-          <i class="icon-admisiones-traslado"></i>
-        </div>
-      </div>
-    </li>
-    <li data-href="//">
-      <div>
-        <h3 class="thin lead">Centro PRE</h3>
-        <div class="size xl">
-          <i class="icon-admisiones-centro-pre"></i>
-        </div>
-      </div>
-    </li>
-    <li data-href="//">
-      <div>
-        <h3 class="thin lead">Bachillerato internacional</h3>
-        <div class="size xl">
-          <i class="icon-admisiones-bachillerato"></i>
-        </div>
-      </div>
-    </li>
-    <li data-href="//">
-      <div>
-        <h3 class="thin lead">Examen de admisión</h3>
-        <div class="size xl">
-          <i class="icon-admisiones-examen"></i>
-        </div>
-      </div>
-    </li>
-  </ul>
-  <h3>Si postulaste a una de estas modalidades consulta tus resultados.</h3>
-  <a href="#" class="btn btn-primary btn-lg uppercase see-more">Ver resultados aquí</a>
+  <h1 class="light">Convenios de intercambio</h1>
+  <div class="separator-gray separator-sm"></div>
+  <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis praesentium minus ratione eum et voluptates quam magnam sit, alias nam rerum in doloribus soluta fugit quo suscipit. Alias, ad, sit.</h3>
+  <div class="pv-ch-42">
+    <div>
+      <ul class="grid-list grid-list-3 grid-list-hover size sm">
+        <li data-href="//">
+          <div>
+            <img src="assets/img/logo_horizontal_UTEC.png" alt="" width="112px" height="auto">
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
