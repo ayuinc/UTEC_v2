@@ -31,8 +31,8 @@
   	<div class="container">
 			<div class="row mt-70 pt-70">
 				<div class="col-sm-8 col-sm-offset-2">
-					<h1 class="medium text-white lead text-center">APRENDE, EMPRENDE E INNOVA</h1>
-					<h5 class="thin text-white text-center">Somos tu plataforma, descubre la UTEC</h5>
+					<h1 class="thin text-white lead text-center mb-0">Descubre el ingenio en acción</h1>
+					<!--<h3 class="thin text-white text-center">Somos tu plataforma, descubre la UTEC</h3>-->
 				</div>
 			</div>
 		</div>
