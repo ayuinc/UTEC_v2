@@ -26,7 +26,11 @@
 ?>
 <li data-href="//">
 	<div>
-		<img src="<?php print('/'.$pathfile.$imagen)?>" alt="#" class="img-responsive">
+		<?php if ($imagen == '') :?>
+			<img src="<?php print('/'.$pathfile)?>img.png" alt="#" class="img-responsive">
+		<?php else :?>
+			<img src="<?php print('/'.$pathfile.$imagen)?>" alt="#" class="img-responsive">
+		<?php endif; ?>	
 	</div>
 	<div>
 		<h3 class="bold"><?php print $titulo ?></h3>
