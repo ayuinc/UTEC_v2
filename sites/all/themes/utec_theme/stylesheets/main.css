@@ -6517,4 +6517,9 @@ img.icon-utec {
     font-size: 14px;
     color: #e3e3e3; }
 
+.home-introduccion {
+  top: -1200px;
+  z-index: 99999;
+  left: 0; }
+
 /*# sourceMappingURL=main.css.map */
