@@ -29,9 +29,10 @@
   <div class="video-placeholder" style="background: url(http://104.131.4.19/sites/all/themes/utec_theme/assets/img/project-bg-1.jpg) no-repeat center top;"></div>
   <div class="overlay flex-middle">
   	<div class="container">
-			<div class="row">
-				<div class="col-sm-6">
-					<!-- <h2 class="thin text-white lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit repellat dolorem alias minus accusamus.</h2> -->
+			<div class="row mt-70 pt-70">
+				<div class="col-sm-8 col-sm-offset-2">
+					<h2 class="medium text-white lead text-center">Aprende, emprende e innova</h2>
+					<h5 class="thin text-white text-center">VIVE UTEC</h5>
 				</div>
 			</div>
 		</div>
