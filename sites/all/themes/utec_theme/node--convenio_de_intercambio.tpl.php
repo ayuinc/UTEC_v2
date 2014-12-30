@@ -6,18 +6,19 @@
 
 	$titulo = $node->title;
   $cuerpo = $node->body['und']['0']['value'];
-	$link = $node->field_link_['und']['0']['value'];
-  $imagen = $node->field_image['und']['0']['filename'];
 
   $fields = entity_load('field_collection_item');
   print_r($fields);
+
+  $link = $fields[5]->field_link_['und'][0]['value'];
+  $logo  = $fields[5]->field_imagen['und'][0]['filename'];
 
 ?>
 
 <div class="container-sm">
   <h1 class="light">Convenios de intercambio</h1>
   <div class="separator-gray separator-sm"></div>
-  <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis praesentium minus ratione eum et voluptates quam magnam sit, alias nam rerum in doloribus soluta fugit quo suscipit. Alias, ad, sit.</h3>
+  <h3><?php print $cuerpo ?></h3>
   <div class="pv-ch-42">
     <div>
       <ul class="grid-list grid-list-3 grid-list-hover size sm">

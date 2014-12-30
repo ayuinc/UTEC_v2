@@ -11,36 +11,19 @@
 	
 	// print_r($node);
 ?>
-<div class="container-sm">
-	<h1 class="light">Menciones</h1>
-	<div class="separator-gray separator-sm"></div>
-	<h3><?php print $cuerpo ?></h3>
-	<div class="pv-ch-42">
-		<div class="table-responsive table-custom pv-42">
-			<table class="table">
-				<thead>
-					<tr>
-						<td>Mención</td>
-						<td>Electivo</td>
-					</tr>
-				</thead>
-				<tbody>
-					<?php $count = 0; ?>
-					<?php foreach ($electivo as $key => $value) : ?>
-					<tr>
-						<?php if ($count == 0): ?>	
-							<td class="highlight text-center"><?php print $mencion ?></td>
-							<?php else : ?>	
-							<td></td>
-						<?php endif ?>
 
-						<td><?php print $value['value'] ?></td>
-					</tr>
-					<?php $count++; ?>
-					<?php endforeach; ?>	
-				</tbody>
-			</table>
-		</div>
-	</div>
-</div>
+<?php $count = 0; ?>
+<?php foreach ($electivo as $key => $value) : ?>
+<tr>
+	<?php if ($count == 0): ?>	
+		<td class="highlight text-center"><?php print $mencion ?></td>
+		<?php else : ?>	
+		<td></td>
+	<?php endif ?>
+
+	<td><?php print $value['value'] ?></td>
+</tr>
+<?php $count++; ?>
+<?php endforeach; ?>	
+
 
