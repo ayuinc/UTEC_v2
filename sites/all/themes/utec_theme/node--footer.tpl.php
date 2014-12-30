@@ -104,7 +104,7 @@
       </ul> 
 		</div>
 	</div>
-	<div class="address bg-gray-lighter" style="padding-top:5px;">
+	<div class="address bg-gray-lighter pt-5">
 		<div class="container">
 			<nav class="text-center ml-ch-14 text-gray">
 				<span>Av. Cascanueces 2221, Santa Anita, Lima</span>
@@ -118,7 +118,7 @@
 			</nav>
 		</div>
 	</div>
-	<div class="copyright pt-7 bg-gray-lighter text-center text-gray" style="padding-bottom:5px;">
+	<div class="copyright pt-7 bg-gray-lighter text-center text-gray pb-5">
 		<small>Copyright &copy; 2014 UTEC. Todos los derechos reservados.</small>
 	</div>
 <!-- END:Footer -->

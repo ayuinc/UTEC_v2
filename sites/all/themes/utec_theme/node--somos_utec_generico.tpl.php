@@ -8,14 +8,31 @@
 <?php $field_contenido_su_generico = $node->field_contenido_su_generico['und']['0']['value']; ?>
 <?php $field_foto_su_generico = $node->field_foto_su_generico['und']['0']['filename']; ?>
 
+<?php $url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>
+<?php $end = end((explode('/', $url))); ?>
 
-
-
-<div class="container-sm">
+<div class="container-sm mb-35">
 	<h1 class="light"><?php print $title ?></h1>
 	<div class="separator-gray separator-lg"></div>
 	<p class="lead text-gray"><?php print $field_introduccion_su_generico ?></p>
 	<?php if ($field_foto_su_generico!='') { ?>
 		<img src="<?php print('/'.$pathfile.$field_foto_su_generico)?>">
+	<?php } ?>
+	<?php print $field_contenido_su_generico ?>
+	
+	<!--SOLO PARA RESPALDO-->
+	<?php if ($end == 'respaldo') { ?>
+	<ul class="grid-list grid-list-2 grid-list-hover">
+		<li data-href="/somos-utec/consejo-directivo">
+			<div>
+				<h3 class="thin lead">Consejo directivo</h3>
+			</div>
+		</li>
+		<li data-href="/convenios">
+			<div>
+				<h3 class="thin lead">Gestión educativa interinstitucional</h3>
+			</div>
+		</li>
+	</ul>
 	<?php } ?>
 </div>
