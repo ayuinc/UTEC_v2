@@ -26,7 +26,7 @@
 <div class="hero-unit">
 	<div data-section-scroll="Que es" class="section-scroll-content flex-middle-center">
 		<div class="container-sm text-center">
-			<h3><?php print $field_frase_autor ?></h3>
+			<h2 class="mb-7"><?php print $field_frase_autor ?></h2>
 			<p><em><?php print $field_nombre_autor ?></em></p>
 			<p class="gray"><em><?php print $field_titulo_del_autor ?></em></p>
 			<p class="gray mb-35"><?php print $field_quote ?></p>
