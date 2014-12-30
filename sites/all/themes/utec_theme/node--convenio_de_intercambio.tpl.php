@@ -26,7 +26,7 @@
             $image = $field[$num]->field_image['und'][0]['filename']; 
             $link = $field[$num]->field_link_['und'][0]['value'];
           ?>
-        <li data-href="<?php print $link ?>">
+        <li data-href="<?php print $link ?>" target="_blank">
           <div>
             <img src="<?php print('/'.$pathfile.$image)?>" alt="" width="112px" height="auto">
           </div>
