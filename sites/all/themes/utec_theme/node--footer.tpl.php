@@ -29,19 +29,19 @@
         <li>
           <ul>
             <li class="title"><a href="#">Somos Utec</a></li>
-            <li><a href="somos-utec/metodologia-educativa"><small>Metodología Educativa</small></a></li>
-            <li><a href="somos-utec/vida-estudiantil"><small>Vida Estudiantil</small></a></li>
-            <li><a href="somos-utec/campus-y-laboratorios"><small>Campus &amp; Laboratorios</small></a></li>
-            <li><a href="somos-utec/ingenio-en-accion"><small>Ingenio en Acción</small></a></li>
+            <li><a href="/somos-utec/metodologia-educativa"><small>Metodología Educativa</small></a></li>
+            <li><a href="/somos-utec/vida-estudiantil"><small>Vida Estudiantil</small></a></li>
+            <li><a href="/somos-utec/campus-y-laboratorios"><small>Campus &amp; Laboratorios</small></a></li>
+            <li><a href="/somos-utec/ingenio-en-accion"><small>Ingenio en Acción</small></a></li>
             <!--<li><a href="#"><small>UTEC Ventures</small></a></li>
             <li><a href="#"><small>Calendario Académico</small></a></li>-->
-            <li><a href="somos-utec/respaldo"><small>Respaldo</small></a></li>
-            <li><a href="somos-utec/autoridades"><small>Autoridades</small></a></li>
-            <li><a href="somos-utec/consejo-directivo"><small>Concejo Directivo</small></a></li>
-            <li><a href="somos-utec/profesores"><small>Profesores</small></a></li>
+            <li><a href="/somos-utec/respaldo"><small>Respaldo</small></a></li>
+            <li><a href="/somos-utec/autoridades"><small>Autoridades</small></a></li>
+            <li><a href="/somos-utec/consejo-directivo"><small>Concejo Directivo</small></a></li>
+            <li><a href="/somos-utec/profesores"><small>Profesores</small></a></li>
             <!--<li><a href="#"><small></small><small>Noticias</small></a></li>-->
             <!--<li><a href="#"><small></small><small>Eventos</small></a></li>-->
-            <li><a href="somos-utec/trabaja-en-utec"><small>Trabaja en Utec</small></a></li>
+            <li><a href="/somos-utec/trabaja-en-utec"><small>Trabaja en Utec</small></a></li>
           </ul>
         </li>
         <!--<li>
@@ -68,13 +68,13 @@
         <li>
           <ul>
             <li class="title"><a href="#">Carreras</a></li>
-            <li><a href="carreras/ingenieria-quimica-industrial"><small>Ingeniería Química industrial</small></a></li>
-            <li><a href="carreras/ingenieria-electronica"><small>Ingeniería Electrónica</small></a></li>
-            <li><a href="carreras/ingenieria-mecanica"><small>Ingeniería Mecánica</small></a></li>
-            <li><a href="carreras/ingenieria-de-la-energia"><small>Ingeniería de la Energía</small></a></li>
-            <li><a href="carreras/ingenieria-industrial"><small>Ingeniería Industrial</small></a></li>
-            <li><a href="carreras/menciones"><small>Menciones</small></a></li>
-            <li><a href="carreras/escuela-de-desarrollo"><small>Escuela de Desarrollo Profesional</small></a></li>
+            <li><a href="/carreras/ingenieria-quimica-industrial"><small>Ingeniería Química industrial</small></a></li>
+            <li><a href="/carreras/ingenieria-electronica"><small>Ingeniería Electrónica</small></a></li>
+            <li><a href="/carreras/ingenieria-mecanica"><small>Ingeniería Mecánica</small></a></li>
+            <li><a href="/carreras/ingenieria-de-la-energia"><small>Ingeniería de la Energía</small></a></li>
+            <li><a href="/carreras/ingenieria-industrial"><small>Ingeniería Industrial</small></a></li>
+            <li><a href="/carreras/menciones"><small>Menciones</small></a></li>
+            <li><a href="/carreras/escuela-de-desarrollo"><small>Escuela de Desarrollo Profesional</small></a></li>
           </ul>
         </li>
         <li>
@@ -94,7 +94,7 @@
         <li>
           <ul>
             <li class="title"><a href="#">Convenios</a></li>
-            <li><a href="convenios"><small>Convenios de Intercambio</small></a></li>
+            <li><a href="/convenios"><small>Convenios de Intercambio</small></a></li>
           </ul>
         </li>  
         <li>
