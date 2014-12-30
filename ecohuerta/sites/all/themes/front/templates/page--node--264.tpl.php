@@ -256,9 +256,9 @@
             </div>
           </div>
           <div class="desc-content right-side">
-            <div class="uppercase text-cyan bold">Recoge tu lechuga</div>
+            <div class="uppercase title-side-right bold">Recoge tu lechuga</div>
              <img src="<?php print $path; ?>/images/ecohuerta/homepage/ecohuerta-img.png" alt="Marea en acción" height="100">
-            <p class="mt-0 text-black mt-0">
+            <p>
               En el kilómetro 74 de la Panamericamna Sur de Martes a Domingo de 9 am - 7 pm
             </p>
           </div>

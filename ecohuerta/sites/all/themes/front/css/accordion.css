@@ -145,7 +145,7 @@
 .recetas .desc-content.right-side{
   right: 0;
   left: inherit;
-  width: 20%;
+  width: 26%;
   background: rgba(0,0,0,0.3);
   color: #fff;
 }
@@ -231,9 +231,6 @@
   margin-top: 27px;
 }
 
-.text-black {
-  color: black
-}
 
 .mt-0 {
   margin-top: 0;
