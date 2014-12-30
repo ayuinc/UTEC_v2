@@ -8,6 +8,12 @@
 <?php $field_contenido_su_generico = $node->field_contenido_su_generico['und']['0']['value']; ?>
 <?php $field_foto_su_generico = $node->field_foto_su_generico['und']['0']['filename']; ?>
 
+<?php
+    $url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+    echo $url;
+    echo $end = end((explode('/', $url)));
+?>
+
 <div class="container-sm mb-35">
 	<h1 class="light"><?php print $title ?></h1>
 	<div class="separator-gray separator-lg"></div>
