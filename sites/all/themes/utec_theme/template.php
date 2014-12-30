@@ -14,14 +14,6 @@
 	  'weight' => 1,
 	));
 
-  drupal_add_js("(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    '//www.googletagmanager.com/gtm.js?id='+i+dl+'&nc='+new Date().getTime();f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MHF4TM');", array(
-	  'scope' => 'footer',
-	));
-
 	drupal_add_js('//vjs.zencdn.net/4.10/video.js', array(
 		'type' => 'external',
 	  'scope' => 'header',
