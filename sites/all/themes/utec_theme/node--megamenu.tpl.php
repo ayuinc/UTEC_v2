@@ -17,16 +17,16 @@
 			<div class="left">
 				<ul class=" thin text-gray mr-ch-14 nav-list pt-7">
 					<li>
-						<a href="#">Alumnos</a>
+						<a href="#" class="atm-menu-superior">Alumnos</a>
 					</li>
 					<li>
-						<a href="#">Profesores</a>
+						<a href="#" class="atm-menu-superior">Profesores</a>
 					</li>
 					<li>
-						<a href="#">Empresas</a>
+						<a href="#" class="atm-menu-superior">Empresas</a>
 					</li>
 					<li>
-						<a href="#">Postulantes</a>
+						<a href="#" class="atm-menu-superior">Postulantes</a>
 					</li>
 				</ul>
 			</div>
@@ -55,7 +55,7 @@
 							<a href="#" class="btn btn-xs btn-custom btn-gray" rel="nofollow">ES</a>
 						</li>-->
 						<li>
-							<a href="#" class="btn btn-xs btn-custom btn-gray" rel="nofollow">Intranet</a>
+							<a href="#" class="btn btn-xs btn-custom btn-gray atm-login" rel="nofollow">Intranet</a>
 						</li>
 					</ul>
 				</div>
@@ -66,43 +66,43 @@
 		<div class="container">
 			<div class="left">
 				<div class="logo pv-21">
-					<a href="/"><img src="/<?php print $theme_path; ?>/assets/img/logo_horizontal_UTEC.png" alt="Logo UTEC" width="135" height="auto"></a>
+					<a href="/" class="atm-logo"><img src="/<?php print $theme_path; ?>/assets/img/logo_horizontal_UTEC.png" alt="Logo UTEC" width="135" height="auto"></a>
 				</div>
 			</div>
 			<div class="left">
 				<ul class="nav-display-triggers">
 					<li>
-						<a href="#nav-display-1">
+						<a href="#nav-display-1" class="atm-menu-principal">
 							<div><i class="icon-menu-somos-utec"></i></div>
 							<span>Somos Utec</span>
 						</a>
 					</li>
 					<li>
-						<a href="#nav-display-2">
+						<a href="#nav-display-2" class="atm-menu-principal">
 							<div><i class="icon-menu-investigacion"></i></div>
 							<span>Investigación</span>
 						</a>
 					</li>
 					<li>
-						<a href="#nav-display-3">
+						<a href="#nav-display-3" class="atm-menu-principal">
 							<div><i class="icon-menu-carreras"></i></div>
 							<span>Carreras</span>
 						</a>
 					</li>
 					<li>
-						<a href="#nav-display-4">
+						<a href="#nav-display-4" class="atm-menu-principal">
 							<div><i class="icon-menu-admision"></i></div>
 							<span>Admisión</span>
 						</a>
 					</li>
 					<li>
-						<a href="#nav-display-5">
+						<a href="#nav-display-5" class="atm-menu-principal">
 							<div><i class="icon-menu-convenios"></i></div>
 							<span>Convenios</span>
 						</a>
 					</li>
 					<li>
-						<a href="#nav-display-6">
+						<a href="#nav-display-6" class="atm-menu-principal">
 							<div><i class="icon-menu-edp"></i></div>
 							<span>EDP</span>
 						</a>
@@ -183,6 +183,9 @@
 				<div>
 					<ul>
 						<li>
+							<a href="/investigacion/proyectos">Proyectos</a>
+						</li>
+						<!--<li>
 							<a href="#">Publicaciones</a>
 						</li>
 						<li>
@@ -193,7 +196,7 @@
 						</li>
 						<li>
 							<a href="#">Contacto</a>
-						</li>
+						</li>-->
 					</ul>
 				</div>
 			</div>
@@ -334,22 +337,22 @@
 			<div class="nav-display-right">
 				<div>
 					<ul>
-						<li><a href="#">Diplomados</a></li>
+						<li><a href="/edp/cursos/diplomados">Diplomados</a></li>
 						<li>
-							<a href="#"><span>Cursos</span>online</a>
+							<a href="/edp/cursos/cursos-online"><span>Cursos</span>online</a>
 						</li>
 						<li>
-							<a href="#"><span>Cursos</span>Cortos</a>
+							<a href="/edp/cursos/cursos-cortos"><span>Cursos</span>Cortos</a>
 						</li>
 					</ul>
 					<ul>
 						<li>
-							<a href="#"><span>Cursos</span>Adhoc</a>
+							<a href="/edp/cursos/cursos-adhoc"><span>Cursos</span>Adhoc</a>
 						</li>
-						<li><a href="#">Calendario</a></li>
+						<!--<li><a href="#">Calendario</a></li>
 						<li>
 							<a href="http://escuela-edp.utec.edu.pe/" class="btn btn-primary btn-custom bold">Inscríbete</a>
-						</li>
+						</li>-->
 					</ul>
 				</div>
 			</div>
