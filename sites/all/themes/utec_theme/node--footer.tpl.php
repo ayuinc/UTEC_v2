@@ -29,19 +29,19 @@
         <li>
           <ul>
             <li class="title"><a href="#">Somos Utec</a></li>
-            <li><a href="#"><small>Metodología Educativa</small></a></li>
-            <li><a href="#"><small>Vida Estudiantil</small></a></li>
-            <li><a href="#"><small>Campus &amp; Laboratorios</small></a></li>
-            <li><a href="#"><small>Ingenio en Acción</small></a></li>
-            <li><a href="#"><small>UTEC Ventures</small></a></li>
-            <li><a href="#"><small>Calendario Académico</small></a></li>
-            <li><a href="#"><small>Respaldo</small></a></li>
-            <li><a href="#"><small>Autoridades</small></a></li>
-            <li><a href="#"><small>Concejo Directivo</small></a></li>
-            <li><a href="#"><small>Profesores</small></a></li>
+            <li><a href="somos-utec/metodologia-educativa"><small>Metodología Educativa</small></a></li>
+            <li><a href="somos-utec/vida-estudiantil"><small>Vida Estudiantil</small></a></li>
+            <li><a href="somos-utec/campus-y-laboratorios"><small>Campus &amp; Laboratorios</small></a></li>
+            <li><a href="somos-utec/ingenio-en-accion"><small>Ingenio en Acción</small></a></li>
+            <!--<li><a href="#"><small>UTEC Ventures</small></a></li>
+            <li><a href="#"><small>Calendario Académico</small></a></li>-->
+            <li><a href="somos-utec/respaldo"><small>Respaldo</small></a></li>
+            <li><a href="somos-utec/autoridades"><small>Autoridades</small></a></li>
+            <li><a href="somos-utec/consejo-directivo"><small>Concejo Directivo</small></a></li>
+            <li><a href="somos-utec/profesores"><small>Profesores</small></a></li>
             <!--<li><a href="#"><small></small><small>Noticias</small></a></li>-->
             <!--<li><a href="#"><small></small><small>Eventos</small></a></li>-->
-            <li><a href="#"><small>Trabaja en Utec</small></a></li>
+            <li><a href="somos-utec/trabaja-en-utec"><small>Trabaja en Utec</small></a></li>
           </ul>
         </li>
         <!--<li>
@@ -58,10 +58,11 @@
         <li>
           <ul>
             <li class="title"><a href="#">Investigación</a></li>
-            <li><a href="#"><small>Publicaciones</small></a></li>
+            <li><a href="#"><small>Proyectos</small></a></li>
+            <!--<li><a href="#"><small>Publicaciones</small></a></li>
             <li><a href="#"><small>Consultorías</small></a></li>
             <li><a href="#"><small>Empresas &amp; Clientes</small></a></li>
-            <li><a href="#"><small>Contacto</small></a></li>
+            <li><a href="#"><small>Contacto</small></a></li>-->
           </ul>
         </li>
         <li>
