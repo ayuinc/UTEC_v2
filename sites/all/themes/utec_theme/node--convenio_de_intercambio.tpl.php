@@ -7,6 +7,7 @@
   $titulo = $node->title;
   $cuerpo = $node->body['und']['0']['value'];
   $fids   = $node->field_convenio['und'];
+  print_r($fids);
   
 ?>
 
