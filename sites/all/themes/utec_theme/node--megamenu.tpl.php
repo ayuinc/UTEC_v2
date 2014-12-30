@@ -35,10 +35,10 @@
 								</div>
 							</form>
 						</li>-->
-						<li class="pt-7">
+						<!--<li class="pt-7">
 							<a href="#" class="text-gray">Contacto</a>
 						</li>
-						<!--<li class="pt-7">
+						<li class="pt-7">
 							<a href="#" class="text-gray">Blog</a>
 						</li>
 						<li>
@@ -119,43 +119,43 @@
 				<div>
 					<ul>
 						<li>
-							<a href="#">Respaldo</a>
+							<a href="/somos-utec/respaldo">Respaldo</a>
 						</li>
 						<li>
-							<a href="#">Autoridades</a>
+							<a href="/somos-utec/autoridades">Autoridades</a>
 						</li>
 						<li>
-							<a href="#">Profesores</a>
+							<a href="/somos-utec/profesores">Profesores</a>
 						</li>
 						<li>
-							<a href="#"><span>Ingenio</span>en acción</a>
+							<a href="/somos-utec/ingenio-en-accion"><span>Ingenio</span>en acción</a>
 						</li>
 						<li>
-							<a href="#"><span>Metodología</span>Educativa</a>
+							<a href="/somos-utec/metodologia-educativa"><span>Metodología</span>Educativa</a>
 						</li>
-						<li>
+						<!--<li>
 							<a href="#"><span>Calendario</span>Académico</a>
-						</li>
+						</li>-->
 					</ul>
 					<ul>
-						<li>
+						<!--<li>
 							<a href="#">Noticias</a>
 						</li>
 						<li>
 							<a href="#">Eventos</a>
+						</li>-->
+						<li>
+							<a href="/somos-utec/vida-estudiantil"><span>Vida</span>Estudiantil</a>
 						</li>
 						<li>
-							<a href="#"><span>Vida</span>Estudiantil</a>
+							<a href="/somos-utec/campus-y-laboratorios"><span>Campus y</span>Laboratorios</a>
 						</li>
 						<li>
-							<a href="#"><span>Campus y</span>Laboratorios</a>
+							<a href="/somos-utec/trabaja-en-utec"><span>Trabaja</span>en UTEC</a>
 						</li>
-						<li>
-							<a href="#"><span>Trabaja</span>en UTEC</a>
-						</li>
-						<li>
+						<!--<li>
 							<a href="#" class="btn btn-primary btn-custom bold">Postular</a>
-						</li>
+						</li>-->
 					</ul>
 				</div>
 			</div>
