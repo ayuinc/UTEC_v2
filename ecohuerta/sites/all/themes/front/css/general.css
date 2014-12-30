@@ -332,3 +332,7 @@ p.small {
   top: 50px;
   width: 43%;
 }
+
+.slide2.active .desc-front .down {
+  bottom: -178px;
+}
