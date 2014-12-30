@@ -5264,6 +5264,9 @@ img.icon-utec {
 .grid-col-6 {
   width: 295px; }
 
+.on-top {
+  z-index: 99999; }
+
 .pb-5 {
   padding-bottom: 5px; }
 
