@@ -8,7 +8,7 @@
 					<a href="/carreras/ingenieria-quimica-industrial">
 						<div><i class="icon-ing-quimica"></i></div>
 					</a>
-					<h2 class="h3">
+					<h2>
 						<a href="/carreras/ingenieria-quimica-industrial">
 							<span>Ingeniería</span>
 							<span>Química</span>
@@ -22,7 +22,7 @@
 					<a href="/carreras/ingenieria-industrial">
 						<div><i class="icon-ing-industrial"></i></div>
 					</a>
-					<h2 class="h3">
+					<h2>
 						<a href="/carreras/ingenieria-industrial">
 							<span>Ingeniería</span>
 							<span>Industrial</span>
@@ -36,7 +36,7 @@
 					<a href="/carreras/ingenieria-de-la-energia">
 						<div><i class="icon-ing-energia"></i></div>
 					</a>
-					<h2 class="h3">
+					<h2>
 						<a href="/carreras/ingenieria-de-la-energia">
 							<span>Ingeniería</span>
 							<span>De la energía</span>
@@ -50,7 +50,7 @@
 					<a href="/carreras/ingenieria-electronica">
 						<div><i class="icon-ing-electronica"></i></div>
 					</a>
-					<h2 class="h3">
+					<h2>
 						<a href="/carreras/ingenieria-electronica">
 							<span>Ingeniería</span>
 							<span>Electrónica</span>
@@ -64,7 +64,7 @@
 					<a href="/carreras/ingenieria-mecanica">
 						<div><i class="icon-ing-mecanica"></i></div>
 					</a>
-					<h2 class="h3">
+					<h2>
 						<a href="/carreras/ingenieria-mecanica">
 							<span>Ingeniería</span>
 							<span>Mecánica</span>

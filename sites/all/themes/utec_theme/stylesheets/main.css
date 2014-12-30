@@ -6500,7 +6500,8 @@ img.icon-utec {
   cursor: pointer; }
   .list-carreras > li:hover i,
   .list-carreras > li:hover h2 a span {
-    color: #00BFDF; }
+    color: #00BFDF;
+    font-size: 20px; }
 .list-carreras > li > div i {
   font-size: 70px;
   font-size: 4.375rem;
