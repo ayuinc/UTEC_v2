@@ -285,7 +285,7 @@ html {
 
 body {
   font-family: "museo-sans", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.42857;
   color: #323232;
   background-color: #fff; }
@@ -340,8 +340,8 @@ img {
   border-radius: 50%; }
 
 hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 21px;
+  margin-bottom: 21px;
   border: 0;
   border-top: 1px solid #f1f1f1; }
 
@@ -390,8 +390,8 @@ h1, h2, h3, h4, h5, h6,
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-  margin-top: 20px;
-  margin-bottom: 10px; }
+  margin-top: 21px;
+  margin-bottom: 10.5px; }
   h1 small,
   h1 .small, .h1 small,
   .h1 .small,
@@ -406,8 +406,8 @@ h3, .h3 {
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  margin-top: 10px;
-  margin-bottom: 10px; }
+  margin-top: 10.5px;
+  margin-bottom: 10.5px; }
   h4 small,
   h4 .small, .h4 small,
   .h4 .small,
@@ -420,38 +420,38 @@ h6, .h6 {
     font-size: 75%; }
 
 h1, .h1 {
-  font-size: 36px; }
+  font-size: 39px; }
 
 h2, .h2 {
-  font-size: 30px; }
+  font-size: 32px; }
 
 h3, .h3 {
-  font-size: 24px; }
+  font-size: 26px; }
 
 h4, .h4 {
-  font-size: 18px; }
+  font-size: 19px; }
 
 h5, .h5 {
-  font-size: 14px; }
+  font-size: 15px; }
 
 h6, .h6 {
-  font-size: 12px; }
+  font-size: 13px; }
 
 p {
-  margin: 0 0 10px; }
+  margin: 0 0 10.5px; }
 
 .lead {
-  margin-bottom: 20px;
-  font-size: 16px;
+  margin-bottom: 21px;
+  font-size: 17px;
   font-weight: 300;
   line-height: 1.4; }
   @media (min-width: 768px) {
     .lead {
-      font-size: 21px; } }
+      font-size: 22.5px; } }
 
 small,
 .small {
-  font-size: 85%; }
+  font-size: 86%; }
 
 mark,
 .mark {
@@ -549,14 +549,14 @@ a.bg-danger:hover {
   background-color: #e4b9b9; }
 
 .page-header {
-  padding-bottom: 9px;
-  margin: 40px 0 20px;
+  padding-bottom: 9.5px;
+  margin: 42px 0 21px;
   border-bottom: 1px solid #f1f1f1; }
 
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: 10px; }
+  margin-bottom: 10.5px; }
   ul ul,
   ul ol,
   ol ul,
@@ -578,7 +578,7 @@ ol {
 
 dl {
   margin-top: 0;
-  margin-bottom: 20px; }
+  margin-bottom: 21px; }
 
 dt,
 dd {
@@ -617,9 +617,9 @@ abbr[data-original-title] {
   text-transform: uppercase; }
 
 blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
-  font-size: 17.5px;
+  padding: 10.5px 21px;
+  margin: 0 0 21px;
+  font-size: 18.75px;
   border-left: 5px solid #f1f1f1; }
   blockquote p:last-child,
   blockquote ul:last-child,
@@ -660,7 +660,7 @@ blockquote.pull-right {
     content: '\00A0 \2014'; }
 
 address {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   font-style: normal;
   line-height: 1.42857; }
 
@@ -1349,7 +1349,7 @@ th {
 .table {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 20px; }
+  margin-bottom: 21px; }
   .table > thead > tr > th,
   .table > thead > tr > td,
   .table > tbody > tr > th,
@@ -1499,7 +1499,7 @@ table th[class*="col-"] {
   @media screen and (max-width: 767px) {
     .table-responsive {
       width: 100%;
-      margin-bottom: 15px;
+      margin-bottom: 15.75px;
       overflow-y: hidden;
       -ms-overflow-style: -ms-autohiding-scrollbar;
       border: 1px solid #ddd; }
@@ -1544,8 +1544,8 @@ legend {
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 20px;
-  font-size: 21px;
+  margin-bottom: 21px;
+  font-size: 22.5px;
   line-height: inherit;
   color: #323232;
   border: 0;
@@ -1589,16 +1589,16 @@ input[type="checkbox"]:focus {
 output {
   display: block;
   padding-top: 7px;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.42857;
   color: #8f8d8e; }
 
 .form-control {
   display: block;
   width: 100%;
-  height: 34px;
+  height: 35px;
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.42857;
   color: #8f8d8e;
   background-color: #fff;
@@ -1638,7 +1638,7 @@ input[type="search"] {
   input[type="time"],
   input[type="datetime-local"],
   input[type="month"] {
-    line-height: 34px; }
+    line-height: 35px; }
 
   input[type="date"].input-sm,
   input[type="time"].input-sm,
@@ -1650,7 +1650,7 @@ input[type="search"] {
   input[type="time"].input-lg,
   input[type="datetime-local"].input-lg,
   input[type="month"].input-lg {
-    line-height: 46px; } }
+    line-height: 48px; } }
 .form-group {
   margin-bottom: 15px; }
 
@@ -1662,7 +1662,7 @@ input[type="search"] {
   margin-bottom: 10px; }
   .radio label,
   .checkbox label {
-    min-height: 20px;
+    min-height: 21px;
     padding-left: 20px;
     margin-bottom: 0;
     font-weight: normal;
@@ -1721,7 +1721,7 @@ input[type="checkbox"] {
 .input-sm {
   height: 24px;
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.5;
   border-radius: 0px; }
 
@@ -1736,7 +1736,7 @@ select[multiple].input-sm {
 .form-group-sm .form-control {
   height: 24px;
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.5;
   border-radius: 0px; }
 
@@ -1749,30 +1749,30 @@ select[multiple].form-group-sm .form-control {
   height: auto; }
 
 .input-lg {
-  height: 46px;
+  height: 48px;
   padding: 10px 16px;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 1.33;
   border-radius: 0px; }
 
 select.input-lg {
-  height: 46px;
-  line-height: 46px; }
+  height: 48px;
+  line-height: 48px; }
 
 textarea.input-lg,
 select[multiple].input-lg {
   height: auto; }
 
 .form-group-lg .form-control {
-  height: 46px;
+  height: 48px;
   padding: 10px 16px;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 1.33;
   border-radius: 0px; }
 
 select.form-group-lg .form-control {
-  height: 46px;
-  line-height: 46px; }
+  height: 48px;
+  line-height: 48px; }
 
 textarea.form-group-lg .form-control,
 select[multiple].form-group-lg .form-control {
@@ -1781,7 +1781,7 @@ select[multiple].form-group-lg .form-control {
 .has-feedback {
   position: relative; }
   .has-feedback .form-control {
-    padding-right: 42.5px; }
+    padding-right: 43.75px; }
 
 .form-control-feedback {
   position: absolute;
@@ -1789,16 +1789,16 @@ select[multiple].form-group-lg .form-control {
   right: 0;
   z-index: 2;
   display: block;
-  width: 34px;
-  height: 34px;
-  line-height: 34px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
   text-align: center;
   pointer-events: none; }
 
 .input-lg + .form-control-feedback {
-  width: 46px;
-  height: 46px;
-  line-height: 46px; }
+  width: 48px;
+  height: 48px;
+  line-height: 48px; }
 
 .input-sm + .form-control-feedback {
   width: 24px;
@@ -1872,7 +1872,7 @@ select[multiple].form-group-lg .form-control {
   color: #a94442; }
 
 .has-feedback label ~ .form-control-feedback {
-  top: 25px; }
+  top: 26px; }
 .has-feedback label.sr-only ~ .form-control-feedback {
   top: 0; }
 
@@ -1930,7 +1930,7 @@ select[multiple].form-group-lg .form-control {
   padding-top: 7px; }
 .form-horizontal .radio,
 .form-horizontal .checkbox {
-  min-height: 27px; }
+  min-height: 28px; }
 .form-horizontal .form-group {
   margin-left: -14px;
   margin-right: -14px; }
@@ -1965,7 +1965,7 @@ select[multiple].form-group-lg .form-control {
   border: 1px solid transparent;
   white-space: nowrap;
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.42857;
   border-radius: 0px;
   -webkit-user-select: none;
@@ -2114,19 +2114,19 @@ select[multiple].form-group-lg .form-control {
 
 .btn-lg {
   padding: 10px 16px;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 1.33;
   border-radius: 0px; }
 
 .btn-sm {
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.5;
   border-radius: 0px; }
 
 .btn-xs {
   padding: 1px 5px;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.5;
   border-radius: 0px; }
 
@@ -2176,7 +2176,7 @@ tbody.collapse.in {
 
 .breadcrumb {
   padding: 7px 0px;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   list-style: none;
   background-color: none;
   border-radius: 0px; }
@@ -3233,37 +3233,37 @@ h6, .h6 {
   line-height: 125% !important; }
 
 h1.lead, .h1.lead {
-  font-size: 3.125rem !important; }
+  font-size: 3.3125rem !important; }
 
 h2.lead, .h2.lead {
-  font-size: 2.75rem !important; }
+  font-size: 2.875rem !important; }
 
 h3.lead, .h3.lead {
-  font-size: 2.375rem !important; }
+  font-size: 2.5rem !important; }
 
 h4.lead, .h4.lead {
-  font-size: 2rem !important; }
+  font-size: 2.0625rem !important; }
 
 h5.lead, .h5.lead {
-  font-size: 1.75rem !important; }
+  font-size: 1.8125rem !important; }
 
 h6.lead, .h6.lead {
-  font-size: 1.625rem !important; }
+  font-size: 1.6875rem !important; }
 
 .lead-ch h1, .lead-ch .h1 {
-  font-size: 3.125rem !important; }
+  font-size: 3.3125rem !important; }
 .lead-ch h2, .lead-ch .h2 {
-  font-size: 2.75rem !important; }
+  font-size: 2.875rem !important; }
 .lead-ch h3, .lead-ch .h3 {
-  font-size: 2.375rem !important; }
+  font-size: 2.5rem !important; }
 .lead-ch h4, .lead-ch .h4 {
-  font-size: 2rem !important; }
+  font-size: 2.0625rem !important; }
 .lead-ch h5, .lead-ch .h5 {
-  font-size: 1.75rem !important; }
+  font-size: 1.8125rem !important; }
 .lead-ch h6, .lead-ch .h6 {
-  font-size: 1.625rem !important; }
+  font-size: 1.6875rem !important; }
 .lead-ch p, .lead-ch li {
-  font-size: 1.75rem !important; }
+  font-size: 1.8125rem !important; }
 
 .normalize-text h1, .normalize-text h2, .normalize-text h3, .normalize-text h4, .normalize-text h5, .normalize-text h6,
 .normalize-text .h1, .normalize-text .h2, .normalize-text .h3, .normalize-text .h4, .normalize-text .h5, .normalize-text .h6,
@@ -3356,104 +3356,104 @@ a.not-underline:hover {
   line-height: 1.75rem; }
 
 html {
-  font-size: 14px; }
+  font-size: 15px; }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     html {
-      font-size: 12px; } }
+      font-size: 13px; } }
   @media only screen and (max-width: 480px) {
     html {
-      font-size: 11px; } }
+      font-size: 12px; } }
 
 h1, .h1 {
-  font-size: 2.57143rem; }
+  font-size: 2.6rem; }
 
 h2, .h2 {
-  font-size: 2.14286rem; }
+  font-size: 2.13333rem; }
 
 h3, .h3 {
-  font-size: 1.71429rem; }
+  font-size: 1.73333rem; }
 
 h4, .h4 {
-  font-size: 1.28571rem; }
+  font-size: 1.26667rem; }
 
 h5, .h5 {
   font-size: 1rem; }
 
 h6, .h6 {
-  font-size: 0.85714rem; }
+  font-size: 0.86667rem; }
 
 p, .p, ul {
   font-size: 1rem; }
 
 small {
-  font-size: 0.85714rem; }
+  font-size: 0.86667rem; }
 
 @media only screen and (max-width: 480px) {
   h1.lead, .h1.lead {
-    font-size: 2.78571rem !important; }
+    font-size: 2.8rem !important; }
 
   h2.lead, .h2.lead {
-    font-size: 2.35714rem !important; }
+    font-size: 2.33333rem !important; }
 
   h3.lead, .h3.lead {
-    font-size: 1.92857rem !important; }
+    font-size: 1.93333rem !important; }
 
   h4.lead, .h4.lead {
-    font-size: 1.5rem !important; }
+    font-size: 1.46667rem !important; }
 
   h5.lead, .h5.lead {
-    font-size: 1.21429rem !important; }
+    font-size: 1.2rem !important; }
 
   h6.lead, .h6.lead {
-    font-size: 1.07143rem !important; }
+    font-size: 1.06667rem !important; }
 
   .lead-ch h1, .lead-ch .h1 {
-    font-size: 2.78571rem !important; }
+    font-size: 2.8rem !important; }
   .lead-ch h2, .lead-ch .h2 {
-    font-size: 2.35714rem !important; }
+    font-size: 2.33333rem !important; }
   .lead-ch h3, .lead-ch .h3 {
-    font-size: 1.92857rem !important; }
+    font-size: 1.93333rem !important; }
   .lead-ch h4, .lead-ch .h4 {
-    font-size: 1.5rem !important; }
+    font-size: 1.46667rem !important; }
   .lead-ch h5, .lead-ch .h5 {
-    font-size: 1.21429rem !important; }
+    font-size: 1.2rem !important; }
   .lead-ch h6, .lead-ch .h6 {
-    font-size: 1.07143rem !important; }
+    font-size: 1.06667rem !important; }
   .lead-ch p, .lead-ch li {
-    font-size: 1.21429rem !important; } }
+    font-size: 1.2rem !important; } }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   h1.lead, .h1.lead {
-    font-size: 3.42857rem !important; }
+    font-size: 3.4rem !important; }
 
   h2.lead, .h2.lead {
-    font-size: 3rem !important; }
+    font-size: 2.93333rem !important; }
 
   h3.lead, .h3.lead {
-    font-size: 2.57143rem !important; }
+    font-size: 2.53333rem !important; }
 
   h4.lead, .h4.lead {
-    font-size: 2.14286rem !important; }
+    font-size: 2.06667rem !important; }
 
   h5.lead, .h5.lead {
-    font-size: 1.85714rem !important; }
+    font-size: 1.8rem !important; }
 
   h6.lead, .h6.lead {
-    font-size: 1.71429rem !important; }
+    font-size: 1.66667rem !important; }
 
   .lead-ch h1, .lead-ch .h1 {
-    font-size: 3.42857rem !important; }
+    font-size: 3.4rem !important; }
   .lead-ch h2, .lead-ch .h2 {
-    font-size: 3rem !important; }
+    font-size: 2.93333rem !important; }
   .lead-ch h3, .lead-ch .h3 {
-    font-size: 2.57143rem !important; }
+    font-size: 2.53333rem !important; }
   .lead-ch h4, .lead-ch .h4 {
-    font-size: 2.14286rem !important; }
+    font-size: 2.06667rem !important; }
   .lead-ch h5, .lead-ch .h5 {
-    font-size: 1.85714rem !important; }
+    font-size: 1.8rem !important; }
   .lead-ch h6, .lead-ch .h6 {
-    font-size: 1.71429rem !important; }
+    font-size: 1.66667rem !important; }
   .lead-ch p, .lead-ch li {
-    font-size: 1.85714rem !important; } }
+    font-size: 1.8rem !important; } }
 @font-face {
   font-family: 'icomoon';
   src: url("../assets/icons/icomoon.eot?-cksa35");
@@ -3627,15 +3627,15 @@ input[type="submit"].btn.borderless {
 a.btn.btn-xs,
 button.btn.btn-xs,
 input[type="submit"].btn.btn-xs {
-  font-size: 12px;
+  font-size: 13px;
   padding: 2px 9px;
-  padding: 0.14286rem 0.64286rem; }
+  padding: 0.13333rem 0.6rem; }
 a.btn.btn-xl,
 button.btn.btn-xl,
 input[type="submit"].btn.btn-xl {
-  font-size: 24px;
+  font-size: 26px;
   padding: 12px 21px;
-  padding: 0.85714rem 1.5rem; }
+  padding: 0.8rem 1.4rem; }
 a.btn.btn-facebook,
 button.btn.btn-facebook,
 input[type="submit"].btn.btn-facebook {
@@ -4500,7 +4500,7 @@ form.left-border-input .form-group button {
   form.left-border-input .form-group input[type="submit"].btn-lg, form.left-border-input .form-group input[type="submit"].input-lg,
   form.left-border-input .form-group button.btn-lg,
   form.left-border-input .form-group button.input-lg {
-    height: 46px;
+    height: 48px;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none; }
@@ -4556,7 +4556,7 @@ textarea:-ms-input-placeholder {
   font-style: normal;
   text-transform: uppercase;
   color: #8f8d8e;
-  font-size: 24px; }
+  font-size: 26px; }
 
 .breadcrumbs-custom {
   position: absolute;
@@ -4582,7 +4582,7 @@ textarea:-ms-input-placeholder {
   .list-custom ul li {
     position: relative;
     margin-bottom: 21px;
-    margin-bottom: 1.5rem; }
+    margin-bottom: 1.4rem; }
     .list-custom ul li:before {
       content: "";
       position: absolute;
@@ -4926,27 +4926,27 @@ body {
       .anchor-img-grid a .overlay-content div span,
       .anchor-img-grid a .overlay-content div img {
         margin-bottom: 21px;
-        margin-bottom: 1.5rem; }
+        margin-bottom: 1.4rem; }
       .anchor-img-grid a .overlay-content div span {
         display: block; }
         .anchor-img-grid a .overlay-content div span.text-top {
           font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
           font-weight: 300;
           font-style: normal;
-          font-size: 24px;
-          font-size: 1.71429rem; }
+          font-size: 26px;
+          font-size: 1.73333rem; }
         .anchor-img-grid a .overlay-content div span.text-bottom {
           font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
           font-weight: 300;
           font-style: normal;
-          font-size: 36px;
-          font-size: 2.57143rem; }
+          font-size: 39px;
+          font-size: 2.6rem; }
 .anchor-img-grid.anchor-img-grid-1 a.anchor-2 .overlay-content div span.text-top, .anchor-img-grid.anchor-img-grid-1 a.anchor-3 .overlay-content div span.text-top, .anchor-img-grid.anchor-img-grid-1 a.anchor-4 .overlay-content div span.text-top {
-  font-size: 14px;
+  font-size: 15px;
   font-size: 1rem; }
 .anchor-img-grid.anchor-img-grid-1 a.anchor-2 .overlay-content div span.text-bottom, .anchor-img-grid.anchor-img-grid-1 a.anchor-3 .overlay-content div span.text-bottom, .anchor-img-grid.anchor-img-grid-1 a.anchor-4 .overlay-content div span.text-bottom {
-  font-size: 24px;
-  font-size: 1.71429rem; }
+  font-size: 26px;
+  font-size: 1.73333rem; }
 @media only screen and (max-width: 768px) {
   .anchor-img-grid.anchor-img-grid-1 a {
     min-height: 70px; } }
@@ -4984,7 +4984,7 @@ body {
     background-color: #e3e3e3; } }
 @media only screen and (min-width: 1200px) {
   .anchor-img-grid.anchor-img-grid-1 a.anchor-1 {
-    font-size: 0.85714rem;
+    font-size: 0.8rem;
     background-color: #191919;
     width: 584px;
     height: 584px; }
@@ -5002,7 +5002,7 @@ body {
 
 .grid-block {
   padding: 14px 0 21px 0;
-  padding: 1rem 0 1.5rem 0; }
+  padding: 0.93333rem 0 1.4rem 0; }
   .grid-block.grid-block-full .container {
     width: 100%; }
 
@@ -5020,11 +5020,11 @@ body {
     font-family: 'icomoon'; }
   .scroll-down.scroll-down-sq i {
     padding: 7px 12px;
-    padding: 0.5rem 0.85714rem; }
+    padding: 0.46667rem 0.8rem; }
 
 .size.xs.scroll-down i {
   font-size: 9px;
-  font-size: 0.64286rem; }
+  font-size: 0.6rem; }
 .size.xs.banner .banner-content,
 .size.xs.banner .banner-pic {
   min-height: 83px; }
@@ -5041,7 +5041,7 @@ body {
   .size.xs.hero-unit .overlay {
     min-height: -245rem; }
 .size.sm.scroll-down i {
-  font-size: 12px; }
+  font-size: 13px; }
 .size.sm.banner .banner-content,
 .size.sm.banner .banner-pic {
   min-height: 153px; }
@@ -5060,7 +5060,7 @@ body {
 .size.sm.grid-list-hover > li > div {
   height: 210px; }
 .size.lg.scroll-down i {
-  font-size: 24px; }
+  font-size: 26px; }
 .size.lg.banner .banner-content,
 .size.lg.banner .banner-pic {
   min-height: 503px; }
@@ -5073,7 +5073,7 @@ body {
     width: 60%;
     min-height: 140px; }
 .size.lg i {
-  font-size: 48px; }
+  font-size: 52px; }
 .size.lg.videoBG {
   height: 175rem; }
 .size.lg.hero-unit {
@@ -5081,7 +5081,7 @@ body {
   .size.lg.hero-unit .overlay {
     min-height: 175rem; }
 .size.xl.scroll-down i {
-  font-size: 36px; }
+  font-size: 39px; }
 .size.xl.banner .banner-content,
 .size.xl.banner .banner-pic {
   min-height: 573px; }
@@ -5092,7 +5092,7 @@ body {
   .size.xl.user-card .user-info {
     min-height: 63px; }
 .size.xl i {
-  font-size: 108px; }
+  font-size: 117px; }
 .size.xl.videoBG {
   height: 245rem; }
 .size.xl.hero-unit {
@@ -5322,17 +5322,17 @@ img.icon-utec {
           display: block;
           text-align: center;
           padding: 21px 0;
-          padding: 1.5rem 0;
+          padding: 1.4rem 0;
           color: #8f8d8e;
           background: white;
           min-width: 135px;
-          min-width: 9.64286rem;
+          min-width: 9rem;
           height: 106px; }
           #header .nav-main .left > ul li a:hover, #header-on-scroll .nav-main .left > ul li a:hover, #header .nav-main .left > ul li a.active, #header-on-scroll .nav-main .left > ul li a.active {
             background: #f1f1f1;
             color: #00BFDF; }
           #header .nav-main .left > ul li a div i, #header-on-scroll .nav-main .left > ul li a div i {
-            font-size: 36px; }
+            font-size: 39px; }
           #header .nav-main .left > ul li a span, #header-on-scroll .nav-main .left > ul li a span {
             display: block;
             margin-top: 6px;
@@ -5419,7 +5419,7 @@ img.icon-utec {
         float: left; }
         #header .nav-display .nav-display-right > div ul li, #header-on-scroll .nav-display .nav-display-right > div ul li {
           padding: 6px 0;
-          padding: 0.42857rem 0; }
+          padding: 0.4rem 0; }
           #header .nav-display .nav-display-right > div ul li a, #header-on-scroll .nav-display .nav-display-right > div ul li a {
             color: #191919;
             display: block;
@@ -5432,9 +5432,9 @@ img.icon-utec {
               color: #8f8d8e; }
         #header .nav-display .nav-display-right > div ul:last-child, #header-on-scroll .nav-display .nav-display-right > div ul:last-child {
           padding-left: 56px;
-          padding-left: 4rem; }
+          padding-left: 3.73333rem; }
     #header .nav-display .nav-display-close, #header-on-scroll .nav-display .nav-display-close {
-      font-size: 24px;
+      font-size: 26px;
       color: #8f8d8e;
       text-transform: uppercase;
       font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
@@ -5692,17 +5692,17 @@ img.icon-utec {
           display: block;
           text-align: center;
           padding: 12px 0;
-          padding: 0.85714rem 0;
+          padding: 0.8rem 0;
           color: #8f8d8e;
           background-color: #f1f1f1;
           min-width: 135px;
-          min-width: 9.64286rem;
+          min-width: 9rem;
           height: 56px; }
           #header-on-scroll .nav-main .left > ul li a:hover, #header-on-scroll .nav-main .left > ul li a.active {
             background: #f1f1f1;
             color: #00BFDF; }
           #header-on-scroll .nav-main .left > ul li a div i {
-            font-size: 36px; }
+            font-size: 39px; }
           #header-on-scroll .nav-main .left > ul li a span {
             display: block;
             margin-top: 6px;
@@ -5757,7 +5757,7 @@ img.icon-utec {
   .calendar .row > div .title {
     margin-bottom: 14px; }
   .calendar .row > div .date span {
-    font-size: 24px;
+    font-size: 26px;
     font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
     font-weight: 300;
     font-style: normal;
@@ -5775,7 +5775,7 @@ img.icon-utec {
       margin-bottom: 9px; }
       .footer .site-map .container > ul li > ul li.title {
         text-transform: uppercase;
-        font-size: 18px;
+        font-size: 19px;
         margin-bottom: 12px; }
         .footer .site-map .container > ul li > ul li.title a {
           color: white; }
@@ -5868,7 +5868,7 @@ img.icon-utec {
     font-weight: 700;
     font-style: normal; }
   .grid-list-hover.grid-list-hover-calendar .date .month {
-    font-size: 24px; }
+    font-size: 26px; }
 .grid-list-hover.grid-list-hover-calendar > li:hover {
   background-color: #e3e3e3; }
   .grid-list-hover.grid-list-hover-calendar > li:hover > div:not(.date) {
@@ -5892,7 +5892,7 @@ img.icon-utec {
     .malla-curricular > li .head > li {
       float: left; }
       .malla-curricular > li .head > li:first-child {
-        font-size: 36px;
+        font-size: 39px;
         line-height: 31px; }
       .malla-curricular > li .head > li:last-child {
         line-height: 16px;
@@ -6495,18 +6495,18 @@ img.icon-utec {
     color: #00BFDF; }
 .list-carreras > li > div i {
   font-size: 70px;
-  font-size: 5rem;
+  font-size: 4.66667rem;
   color: #8f8d8e; }
 .list-carreras > li > div h2 span {
   color: #8f8d8e;
   display: block;
   text-transform: uppercase; }
   .list-carreras > li > div h2 span:first-child {
-    font-size: 14px; }
+    font-size: 15px; }
   .list-carreras > li > div h2 span:nth-child(2) {
-    font-size: 24px; }
+    font-size: 26px; }
   .list-carreras > li > div h2 span:last-child {
-    font-size: 12px;
+    font-size: 13px;
     color: #e3e3e3; }
 
 /*# sourceMappingURL=main.css.map */
