@@ -74,7 +74,7 @@
             <li><a href="/carreras/ingenieria-de-la-energia" class="atm-menu-inferior"><small>Ingeniería de la Energía</small></a></li>
             <li><a href="/carreras/ingenieria-industrial" class="atm-menu-inferior"><small>Ingeniería Industrial</small></a></li>
             <li><a href="/carreras/menciones" class="atm-menu-inferior"><small>Menciones</small></a></li>
-            <li><a href="/carreras/escuela-de-desarrollo" class="atm-menu-inferior"><small>Escuela de Desarrollo Profesional</small></a></li>
+            <li><a href="/carreras/escuela-de-desarrollo" class="atm-menu-inferior"><small>EDP</small></a></li>
           </ul>
         </li>
         <li>
