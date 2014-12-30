@@ -3221,7 +3221,7 @@ a:hover, a:focus, a:active {
 
 p, li, span, a {
   font-weight: 300;
-  line-height: 125%; }
+  line-height: 120%; }
 
 h1, .h1,
 h2, .h2,
@@ -3230,7 +3230,7 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   font-weight: 300;
-  line-height: 110% !important; }
+  line-height: 100% !important; }
 
 h1.lead, .h1.lead {
   font-size: 3.4375rem !important; }
