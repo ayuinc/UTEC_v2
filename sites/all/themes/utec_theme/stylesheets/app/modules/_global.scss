@@ -155,6 +155,9 @@ $grid-list-hover-height: 350px;
 			background-size: 15px 30px;
 			opacity: 0.2;
 		}
+		.icon-arrows-down {
+			botom:-4px;
+		}
 	}
 	&.bg-img-block-xl {
 		min-height: $bg-img-height + 280;
