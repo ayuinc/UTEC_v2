@@ -14,7 +14,6 @@
 				color: $gray;
 			}
 			h2 {
-				font-size: $font-size-h4;
 				span {
 					color: $gray;
 					display: block;
@@ -23,7 +22,7 @@
 						font-size: $font-size-h5;
 					}
 					&:nth-child(2) {
-						font-size: $font-size-h3;
+						font-size: $font-size-h4;
 					}
 					&:last-child {
 						font-size: $font-size-h6;
