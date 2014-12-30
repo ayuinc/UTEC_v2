@@ -27,8 +27,8 @@
 	<div data-section-scroll="Que es" class="section-scroll-content flex-middle-center">
 		<div class="container-sm text-center">
 			<h1 class="mb-7"><?php print $field_frase_autor ?></h1>
-			<p><em><?php print $field_nombre_autor ?></em></p>
-			<p class="gray"><em><?php print $field_titulo_del_autor ?></em></p>
+			<p><?php print $field_nombre_autor ?></p>
+			<small class="gray"><em><?php print $field_titulo_del_autor ?></em></small>
 			<p class="gray mb-35"><?php print $field_quote ?></p>
 		</div>
 		<a class="scroll-down scroll-down-sq size lg" href="#sec-1" rel="nofollow">
