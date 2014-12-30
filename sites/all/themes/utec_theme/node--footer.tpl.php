@@ -94,7 +94,7 @@
         <li>
           <ul>
             <li class="title">Convenios</li>
-            <li><a href="/convenios" class="atm-menu-inferior"><small>Convenios de Intercambio</small></a></li>
+            <li><a href="/convenios/convenios-de-intercambio" class="atm-menu-inferior"><small>Convenios de Intercambio</small></a></li>
           </ul>
         </li>  
         <li>

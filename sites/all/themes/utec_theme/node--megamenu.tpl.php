@@ -309,14 +309,14 @@
 			<div class="nav-display-right">
 				<div>
 					<ul>
-						<li>
+						<!--<li>
 							<a href="#"><span>Proceso de</span>ampliación</a>
 						</li>
 						<li>
 							<a href="#"><span>Ven a</span>la utec</a>
-						</li>
+						</li>-->
 						<li>
-							<a href="#"><span>Convenios de</span>Intercambio</a>
+							<a href="/convenios/convenios-de-intercambio"><span>Convenios de</span>Intercambio</a>
 						</li>
 					</ul>
 				</div>
