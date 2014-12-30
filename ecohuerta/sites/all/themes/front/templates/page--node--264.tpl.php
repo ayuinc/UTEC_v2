@@ -100,7 +100,7 @@
     <p>Tu versión de tu navegador es muy antigua. Actualízala a una más moderna.</p>
   </div>
 
-  <div class="header-fixed">
+  <div class="header-fixed z-10000">
   <div class="header-fixed-barra">
     <div id="logo">
       <a href="/">
