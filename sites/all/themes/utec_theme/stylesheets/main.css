@@ -3223,6 +3223,9 @@ p, li, span, a {
   font-weight: 300;
   line-height: 120%; }
 
+li {
+  margin-bottom: 7px; }
+
 h1, .h1,
 h2, .h2,
 h3, .h3,
