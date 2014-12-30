@@ -23,10 +23,8 @@
           // print_r($fid['value']);
             $num = $fid['value'];
             $field = entity_load('field_collection_item', array($fid['value']));
-            // print_r($field);
-            $image = $field->$num['field_image']['und'][0]['filename']; 
-            $link = $field->field_link_['und'][0]['value']; 
-            die(print_r($field[5]));
+            $image = $field[$num]->field_image['und'][0]['filename']; 
+            $link = $field[$num]->field_link_['und'][0]['value'];
           ?>
         <li data-href="<?php print $link ?>">
           <div>
