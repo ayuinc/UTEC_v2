@@ -28,7 +28,7 @@
 			<ul class="grid-list grid-list-6">
         <li>
           <ul>
-            <li class="title">Somos Utec</li>
+            <li class="title text-gray-lighter">Somos Utec</li>
             <li><a href="/somos-utec/metodologia-educativa" class="atm-menu-inferior"><small>Metodología Educativa</small></a></li>
             <li><a href="/somos-utec/vida-estudiantil" class="atm-menu-inferior"><small>Vida Estudiantil</small></a></li>
             <li><a href="/somos-utec/campus-y-laboratorios" class="atm-menu-inferior"><small>Campus &amp; Laboratorios</small></a></li>
@@ -57,7 +57,7 @@
         </li>-->
         <li>
           <ul>
-            <li class="title">Investigación</li>
+            <li class="title text-gray-lighter">Investigación</li>
             <li><a href="/investigacion/proyectos" class="atm-menu-inferior"><small>Proyectos</small></a></li>
             <!--<li><a href="#"><small>Publicaciones</small></a></li>
             <li><a href="#"><small>Consultorías</small></a></li>
@@ -67,7 +67,7 @@
         </li>
         <li>
           <ul>
-            <li class="title">Carreras</li>
+            <li class="title text-gray-lighter">Carreras</li>
             <li><a href="/carreras/ingenieria-quimica-industrial" class="atm-menu-inferior"><small>Ingeniería Química industrial</small></a></li>
             <li><a href="/carreras/ingenieria-electronica" class="atm-menu-inferior"><small>Ingeniería Electrónica</small></a></li>
             <li><a href="/carreras/ingenieria-mecanica" class="atm-menu-inferior"><small>Ingeniería Mecánica</small></a></li>
@@ -79,7 +79,7 @@
         </li>
         <li>
           <ul>
-            <li class="title">Admisión</li>
+            <li class="title text-gray-lighter">Admisión</li>
             <li><a href="/admision/modalidades" class="atm-menu-inferior"><small>Modalidades de Admisión</small></a></li>
             <li><a href="/admision/charlas-informativas" class="atm-menu-inferior"><small>Charlas Informativas</small></a></li>
             <!--<li><a href="#"><small>Calendario de</small><small>Admisión</small></a></li>-->
@@ -93,13 +93,13 @@
         </li>
         <li>
           <ul>
-            <li class="title">Convenios</li>
+            <li class="title text-gray-lighter">Convenios</li>
             <li><a href="/convenios/convenios-de-intercambio" class="atm-menu-inferior"><small>Convenios de Intercambio</small></a></li>
           </ul>
         </li>  
         <li>
           <ul>
-            <li class="title">EDP</li>
+            <li class="title text-gray-lighter">EDP</li>
             <!--<li><a href="/edp/cursos/diplomados" class="atm-menu-inferior"><small>Diplomados</small></a></li>
             <li><a href="/edp/cursos/cursos-online" class="atm-menu-inferior"><small>Cursos Online</small></a></li>-->
             <li><a href="/edp/cursos/cursos-cortos" class="atm-menu-inferior"><small>Cursos Cortos</small></a></li>
