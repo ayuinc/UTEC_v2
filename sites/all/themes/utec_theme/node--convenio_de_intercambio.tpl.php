@@ -21,11 +21,12 @@
         <?php foreach ($fids as $fid) : ?>
           <?php 
           // print_r($fid['value']);
+            $num = $fid['value'];
             $field = entity_load('field_collection_item', array($fid['value']));
             // print_r($field);
-            $image = $field->field_image['und'][0]['filename']; 
+            $image = $field->$num['field_image']['und'][0]['filename']; 
             $link = $field->field_link_['und'][0]['value']; 
-            die(print_r($field_image));
+            die(print_r($field[6]));
           ?>
         <li data-href="<?php print $link ?>">
           <div>
