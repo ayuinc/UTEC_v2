@@ -4751,7 +4751,7 @@ body {
   background-size: cover; }
   .hero-unit.video-bg {
     overflow: hidden;
-    height: 37rem; }
+    height: 35rem; }
     .hero-unit.video-bg h2 {
       position: relative;
       z-index: 9; }
@@ -4826,7 +4826,7 @@ body {
   .bg-img-block.bg-img-block-sm {
     min-height: 210px; }
   .bg-img-block.bg-img-block-lg {
-    min-height: 517px; }
+    min-height: 490px; }
   .bg-img-block.bg-img-block-xl {
     min-height: 630px; }
 
@@ -5090,7 +5090,7 @@ body {
   .size.xl.user-card .user-info {
     min-height: 63px; }
 .size.xl i {
-  font-size: 150px; }
+  font-size: 108px; }
 .size.xl.videoBG {
   height: 245rem; }
 .size.xl.hero-unit {
