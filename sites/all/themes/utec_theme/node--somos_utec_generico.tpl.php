@@ -18,4 +18,5 @@
 	<?php if ($field_foto_su_generico!='') { ?>
 		<img src="<?php print('/'.$pathfile.$field_foto_su_generico)?>">
 	<?php } ?>
+	<?php print $field_contenido_su_generico ?>
 </div>
