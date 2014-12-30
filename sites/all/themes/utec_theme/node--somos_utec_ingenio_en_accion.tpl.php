@@ -28,8 +28,8 @@
 		<div class="container-sm text-center">
 			<h1 class="mb-7"><?php print $field_frase_autor ?></h1>
 			<p class="mb-0 pb-0"><?php print $field_nombre_autor ?></p>
-			<small class="gray-light mb-14"><em><?php print $field_titulo_del_autor ?></em></small>
-			<p class="gray mb-35"><?php print $field_quote ?></p>
+			<small class="gray-light light"><em><?php print $field_titulo_del_autor ?></em></small>
+			<p class="gray mb-35 mt-21"><?php print $field_quote ?></p>
 		</div>
 		<a class="scroll-down scroll-down-sq size lg" href="#sec-1" rel="nofollow">
 			<i class="icon-arrows-down bg-info-op text-white"></i>
