@@ -337,23 +337,23 @@
 			<div class="nav-display-right">
 				<div>
 					<ul>
-						<li><a href="/edp/cursos/diplomados">Diplomados</a></li>
+						<!--<li><a href="/edp/cursos/diplomados">Diplomados</a></li>
 						<li>
 							<a href="/edp/cursos/cursos-online"><span>Cursos</span>online</a>
-						</li>
+						</li>-->
 						<li>
 							<a href="/edp/cursos/cursos-cortos"><span>Cursos</span>Cortos</a>
 						</li>
 					</ul>
-					<ul>
+					<!--<ul>
 						<li>
 							<a href="/edp/cursos/cursos-adhoc"><span>Cursos</span>Adhoc</a>
 						</li>
-						<!--<li><a href="#">Calendario</a></li>
+						<li><a href="#">Calendario</a></li>
 						<li>
 							<a href="http://escuela-edp.utec.edu.pe/" class="btn btn-primary btn-custom bold">Inscríbete</a>
-						</li>-->
-					</ul>
+						</li>
+					</ul>-->
 				</div>
 			</div>
 		</div>
