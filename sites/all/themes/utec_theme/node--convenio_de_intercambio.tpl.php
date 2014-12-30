@@ -25,7 +25,7 @@
             // print_r($field);
             $image = $field->field_image['und'][0]['filename']; 
             $link = $field->field_link_['und'][0]['value']; 
-            die(print_r($field->field_image));
+            die(print_r($field_image));
           ?>
         <li data-href="<?php print $link ?>">
           <div>
