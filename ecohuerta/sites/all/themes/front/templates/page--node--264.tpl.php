@@ -256,8 +256,11 @@
             </div>
           </div>
           <div class="desc-content right-side">
-            <div class="uppercase">Recoge tu lechuga</div>
-            En el kilómetro 74 de la Panamericamna Sur de Martes a Domingo de 9 am - 7 pm
+            <div class="uppercase text-cyan bold">Recoge tu lechuga</div>
+             <img src="<?php print $pathfile.'/'.$icono_receta; ?>">
+            <p class="mt-0 text-black mt-0">
+              En el kilómetro 74 de la Panamericamna Sur de Martes a Domingo de 9 am - 7 pm
+            </p>
           </div>
         </div>
       </div>
