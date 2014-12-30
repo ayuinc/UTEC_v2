@@ -31,7 +31,7 @@
   	<div class="container">
 			<div class="row mt-70 pt-70">
 				<div class="col-sm-8 col-sm-offset-2">
-					<h1 class="thin text-white lead text-center  mb-0 pt-70">Descubre el Ingenio en Acción</h1>
+					<h1 class="thin text-white lead text-center mt-56 mb-0 pt-70">Descubre el Ingenio en Acción</h1>
 					<h4 class="thin text-white text-center mt-7">- VIVE UTEC -</h4>
 				</div>
 			</div>

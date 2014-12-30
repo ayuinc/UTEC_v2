@@ -4760,7 +4760,9 @@ body {
     z-index: 100; }
   .hero-unit .overlay {
     min-height: 35rem;
-    background-color: rgba(5, 5, 5, 0.35); }
+    background: #36c;
+    background: linear-gradient(115deg, transparent 75%, rgba(255, 255, 255, 0.8) 75%) 0 0, linear-gradient(245deg, transparent 75%, rgba(255, 255, 255, 0.8) 75%) 0 0, linear-gradient(115deg, transparent 75%, rgba(255, 255, 255, 0.8) 75%) 7px -15px, linear-gradient(245deg, transparent 75%, rgba(255, 255, 255, 0.8) 75%) 7px -15px, #36c;
+    background-size: 15px 30px; }
 
 #section-scroll {
   position: fixed;
