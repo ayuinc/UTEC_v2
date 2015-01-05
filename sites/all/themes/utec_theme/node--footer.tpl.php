@@ -3,7 +3,7 @@
 		<div class="container">
 			<ul class="grid-list grid-list-centered normalize-text">
 				<li>
-					<h3 class="thin text-white pt-7"><i class="icon-subscribe"></i> Suscríbete al newsletter</h3>
+					<h3 class="thin text-white pt-7"><i class="icon-subscribe"></i> Suscríbete a la UTEC</h3>
 				</li>
 				<li>
 					<div class="form-subscribe">
