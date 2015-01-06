@@ -16,12 +16,11 @@
 ?>
 
 <h3><a href="<?php print $link ?>" target="_blank"><?php print $titulo ?></a></h3>
-<div><span>Investigador: <?php print $investigador ?></span><span>Año: <?php print $anio ?></span></div>
-<div><span>Tipo: <?php print $tipo ?></span><span>Departamento: <?php print $departamento ?></span></div>
-<div><span>Publicado en: <?php print $publicado ?></span></div>
-
-
-
+<div><span class="lead bold">Investigador: </span><span class="lead"><?php print $investigador ?></span></div>
+<div><span class="lead bold">Tipo: </span><span class="lead"><?php print $tipo ?></span></div>
+<div><span class="lead bold">Departamento: </span><span class="lead"><?php print $departamento ?></span></div>
+<div><span class="lead bold">Publicado en: </span><span class="lead"><?php print $publicado ?></span></div>
+<div><span class="lead bold">Año: </span><span class="lead"><?php print $anio ?></span></div>
 
 
 
