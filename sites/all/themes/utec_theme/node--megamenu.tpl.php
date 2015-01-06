@@ -188,10 +188,10 @@
 						<li>
 							<a href="/investigacion/proyectos">Proyectos</a>
 						</li>
-						<!--<li>
-							<a href="#">Publicaciones</a>
-						</li>
 						<li>
+							<a href="/investigacion/publicaciones">Publicaciones</a>
+						</li>
+						<!--<li>
 							<a href="#"><span>Empresas</span>y clientes</a>
 						</li>
 						<li>
