@@ -20,7 +20,7 @@
 <div><span class="lead bold">Tipo: </span><span class="lead"><?php print $tipo ?></span></div>
 <div><span class="lead bold">Departamento: </span><span class="lead"><?php print $departamento ?></span></div>
 <div><span class="lead bold">Publicado en: </span><span class="lead"><?php print $publicado ?></span></div>
-<div><span class="lead bold">Año: </span><span class="lead"><?php print $anio ?></span></div>
+<!-- <div><span class="lead bold">Año: </span><span class="lead"><?php print $anio ?></span></div> -->
 
 
 
