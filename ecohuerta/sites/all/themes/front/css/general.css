@@ -344,3 +344,10 @@ p.small {
 .bg-opacity {
   background: rgba(0,0,0,0.3) !important;
 }
+
+.truncate { 
+  width: 259px; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+}

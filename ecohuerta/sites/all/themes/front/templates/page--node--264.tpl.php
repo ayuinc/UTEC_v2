@@ -195,7 +195,7 @@
             <img src="<?php print $pathfile.'/'.$icono_receta; ?>">
           </div>
           <div class="down">
-            <h1 class="uppercase light">
+            <h1 class="uppercase light truncate">
               Receta :
             </h1>
             <h1 class="uppercase">
@@ -210,7 +210,7 @@
 
         <div class="desc-container">        
           <div class="desc-content"> 
-            <div style="position: relative; bottom: 53px; color: white; font-size: 22px;">
+            <div style="position: relative; bottom: 67px; color: white; font-size: 22px;">
              <?php print $nombre_receta ?>
             </div>
             <img class="project-close"  src="<?php print $path; ?>/images/icons/close_light_blue.jpg" alt="project-close" />
