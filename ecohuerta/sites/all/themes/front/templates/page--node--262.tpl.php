@@ -129,8 +129,8 @@
             Las primeras Lechugas regadas con aire
           </h3>
 
-          <a href="<?php print $base_path; ?>ecohuerta-video-lechugas-hidroponicas" class="scroll-to btn btn-medium-small btn-light-blue uppercase">
-            Ver más
+          <a style="margin-top:1rem;" href="<?php print $base_path; ?>ecohuerta-recetas" class="scroll-to btn btn-medium-small btn-light-blue uppercase">
+            Ver recetas
           </a>
         </div>
       </section>

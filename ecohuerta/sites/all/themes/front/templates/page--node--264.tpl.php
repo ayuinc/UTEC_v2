@@ -258,8 +258,8 @@
           <div class="desc-content right-side">
             <div class="uppercase title-side-right bold">Recoge tu lechuga</div>
              <img src="<?php print $path; ?>/images/ecohuerta/homepage/ecohuerta-img.png" alt="Marea en acción" height="100">
-            <p>
-              En el kilómetro 74 de la Panamericamna Sur de Martes a Domingo de 9 am - 7 pm
+            <p>              
+              En el kilómetro 89.5 de la Panamericamna Sur referencial de Sabados y Domingos de 9 am - 7 pm
             </p>
           </div>
         </div>
