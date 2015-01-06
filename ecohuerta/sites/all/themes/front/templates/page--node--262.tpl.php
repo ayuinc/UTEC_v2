@@ -122,10 +122,10 @@
         <div id="marea-en-accion-r" class="responsive-fix"></div>
         <div class="modal modal-alone center">
           <div class="image-holder">
-            <img src="<?php print $path; ?>/images/ecohuerta/homepage/LOGO-LECHUGAS-final_03.png" alt="Marea en acción" height="250"> 
+            <img src="<?php print $path; ?>/images/ecohuerta/homepage/LOGO-LECHUGAS-final_03.png" alt="Marea en acción" height="175"> 
           </div>
 
-          <h3 class="light">
+          <h3 class="light" style="margin-top: 0px;">
             Las primeras Lechugas regadas con aire
           </h3>
 
