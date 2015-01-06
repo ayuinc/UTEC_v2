@@ -145,13 +145,13 @@
                   </div>
                 </a>
               </li>
-              <li>
+              <!-- <li>
                 <a href="<?php print $base_path; ?>ecohuerta-video-lechugas-hidroponicas" class="link-menu">
                   <div class="submenu-single">
                     Sobre Air Lechugas
                   </div>
                 </a>
-              </li>
+              </li> -->
               <li>
                 <a href="<?php print $base_path; ?>ecohuerta-recetas" class="link-menu">
                   <div class="submenu-single">

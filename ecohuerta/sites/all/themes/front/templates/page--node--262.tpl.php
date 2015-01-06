@@ -125,9 +125,8 @@
             <img src="<?php print $path; ?>/images/ecohuerta/homepage/LOGO-LECHUGAS.png" alt="Marea en acción" height="250"> 
           </div>
 
-          <h3 class="light" style="margin-top: 0;">
-            <b>Te presentamos las primeras lechugas de la historia regadas con aire.</b><br>
-            Unas lechugas ecológicas que podrás reservar desde ahora mismo.
+          <h3 class="light">
+            Las primeras Lechugas regadas con aire
           </h3>
 
           <a href="<?php print $base_path; ?>ecohuerta-video-lechugas-hidroponicas" class="scroll-to btn btn-medium-small btn-light-blue uppercase">
