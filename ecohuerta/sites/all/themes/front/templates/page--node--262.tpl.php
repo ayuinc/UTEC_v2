@@ -118,7 +118,7 @@
           <source src="<?php print $pathfile; ?>/lechuga.mp4 " type="video/mp4;codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
         </video> 
       </div>
-      <section id="ecohuerta" class="main ovarlay">
+      <section id="ecohuerta" class="main ovarlay bg-opacity">
         <div id="marea-en-accion-r" class="responsive-fix"></div>
         <div class="modal modal-alone center">
           <div class="image-holder">
