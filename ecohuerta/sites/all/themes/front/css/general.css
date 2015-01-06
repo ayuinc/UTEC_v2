@@ -334,7 +334,7 @@ p.small {
 }
 
 .slide2.active .desc-front .down {
-  bottom: -178px !important;
+  opacity: 0 !important;
 }
 
 .z-10000 {
