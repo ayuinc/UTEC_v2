@@ -160,6 +160,9 @@
 						<li>
 							<a href="/somos-utec/trabaja-en-utec"><span>Trabaja</span>en UTEC</a>
 						</li>
+						<li>
+							<a href="/somos-utec/utec-garage"><span>Utec</span>garage</a>
+						</li>
 						<!--<li>
 							<a href="#" class="btn btn-primary btn-custom bold">Postular</a>
 						</li>-->

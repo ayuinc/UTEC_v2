@@ -34,6 +34,7 @@
         <div class="col-sm-3">
           <div class="size xl">
             <i class="icon-carreras-que-es text-white"></i>
+            <a href="<?php print $carrera_link ?>" class="btn btn-white btn-outline see-more mt-7">Ver más</a>
           </div>
         </div>
         <div class="col-sm-9">
@@ -59,6 +60,7 @@
       <div class="col-sm-3">
         <div class="size xl">
           <i class="icon-carreras-malla"></i>
+          <a href="<?php print $malla_link ?>" class="btn btn-primary btn-outline see-more mt-7">Ver más</a>
         </div>
       </div>
     </div>
@@ -75,6 +77,7 @@
       <div class="col-sm-3">
         <div class="size xl">
           <i class="icon-carreras-menciones"></i>
+          <a href="<?php print $menciones_link ?>" class="btn btn-primary btn-outline see-more mt-7">Ver más</a>
         </div>
       </div>
       <div class="col-sm-9">
