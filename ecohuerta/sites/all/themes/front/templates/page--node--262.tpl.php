@@ -126,7 +126,7 @@
           </div>
 
           <h3 class="light" style="margin-top: 0px;">
-            <b>Las primeras Lechugas regadas con aire</b>
+            <b>Las primeras Lechugas regadas con aire</b><br>
             Lechugas orgánicas que podrás recoger en el kilómetro 89.5 de la Panamericana Sur
           </h3>
 
