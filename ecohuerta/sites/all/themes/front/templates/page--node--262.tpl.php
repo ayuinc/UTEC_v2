@@ -127,7 +127,7 @@
 
           <h3 class="light" style="margin-top: 0px;">
             <b>Las primeras Lechugas regadas con aire</b><br>
-            Lechugas orgánicas que podrás recoger en el kilómetro 89.5 de la Panamericana Sur
+            Lechugas orgánicas que podrás recoger en el km. 89.5 de la Panamericana Sur
           </h3>
 
           <a style="margin-top:1rem;" href="<?php print $base_path; ?>ecohuerta-recetas" class="scroll-to btn btn-medium-small btn-light-blue uppercase">
