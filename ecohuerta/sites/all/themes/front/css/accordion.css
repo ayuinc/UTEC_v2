@@ -85,7 +85,7 @@
 .accordion > .slide .desc-front .down {
   width: 100%;
   position: absolute;
-  padding: 2em 0.5em 3em 2em;
+  padding: 2em 3em 2em 3em;
 }
 .accordion > .slide .desc-front .up {
   top: 50px;
