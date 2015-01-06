@@ -126,7 +126,8 @@
           </div>
 
           <h3 class="light" style="margin-top: 0px;">
-            Las primeras Lechugas regadas con aire
+            <b>Las primeras Lechugas regadas con aire<b>
+            Lechugas orgánicas que podrás recoger en el kilómetro 89.5 de la Panamericana Sur
           </h3>
 
           <a style="margin-top:1rem;" href="<?php print $base_path; ?>ecohuerta-recetas" class="scroll-to btn btn-medium-small btn-light-blue uppercase">
