@@ -259,7 +259,7 @@
             <div class="uppercase title-side-right bold">Recoge tu lechuga</div>
              <img src="<?php print $path; ?>/images/ecohuerta/homepage/ecohuerta-img.png" alt="Marea en acción" height="100">
             <p>              
-              En el kilómetro 89.5 de la Panamericana Sur de Sabados y Domingos de 9 am - 7 pm
+              En el kilómetro 89.5 de la Panamericana Sur los sábados y domingos de 10 am - 11 am 
             </p>
           </div>
         </div>
