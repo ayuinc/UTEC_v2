@@ -346,8 +346,9 @@ p.small {
 }
 
 .truncate { 
-  width: 259px; 
-  white-space: nowrap; 
-  overflow: hidden; 
-  text-overflow: ellipsis; 
+  width: 279px;
+  white-space: pre-line;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 84px;
 }
