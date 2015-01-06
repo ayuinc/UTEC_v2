@@ -96,6 +96,7 @@
     <hr class="hr-gray">
     <div class="size xl">
       <i class="icon-carreras-profesores"></i>
+      <a href="<?php print $profesor_link ?>" class="btn btn-primary btn-outline see-more mt-7">Ver más</a>
     </div>
   </div>
   <div class="container text-center" >
@@ -128,6 +129,7 @@
           <div class="col-sm-3">
             <div class="size xl">
               <i class="icon-carreras-perfil"></i>
+              <a href="<?php print $perfil_link ?>" class="btn btn-white btn-outline see-more mt-7">Ver más</a>
             </div>
           </div>
           <div class="col-sm-9">
