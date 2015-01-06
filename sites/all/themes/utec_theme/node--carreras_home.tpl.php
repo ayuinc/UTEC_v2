@@ -96,7 +96,6 @@
     <hr class="hr-gray">
     <div class="size xl">
       <i class="icon-carreras-profesores"></i>
-      <a href="<?php print $profesor_link ?>" class="btn btn-primary btn-outline see-more mt-7">Ver más</a>
     </div>
   </div>
   <div class="container text-center" >
