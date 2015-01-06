@@ -10,7 +10,7 @@
 	$departamento = $node->field_departamento['und']['0']['value'];		 		
 	$publicado = $node->field_publicado_en['und']['0']['value'];		 		
 	$anio = $node->field_a_o['und']['0']['value'];		 		
-	$estado = $node->field_estado'und']['0']['value'];
+	$estado = $node->field_estado['und']['0']['value'];
 	$link = $node->field_link['und']['0']['value'];
 	
 	// print_r($node);
