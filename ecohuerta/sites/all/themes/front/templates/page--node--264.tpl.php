@@ -195,10 +195,10 @@
             <img src="<?php print $pathfile.'/'.$icono_receta; ?>">
           </div>
           <div class="down">
-            <h1 class="uppercase light truncate">
+            <h1 class="uppercase light">
               Receta :
             </h1>
-            <h1 class="uppercase">
+            <h1 class="uppercase truncate">
               <?php print($nombre_receta);?>
             </h1>
             <br><br>
