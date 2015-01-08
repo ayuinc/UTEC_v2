@@ -318,3 +318,37 @@ p.small {
     padding: 1em !important;
   }
 }
+
+.slide2 .icon-receta img {
+  position: relative;
+  left: 10%;
+  top: 165px; 
+  width: 80%;
+}
+
+.slide2.active .icon-receta img {
+  position: relative;
+  left: 46%;
+  top: 50px;
+  width: 43%;
+}
+
+.slide2.active .desc-front .down {
+  opacity: 0 !important;
+}
+
+.z-10000 {
+  z-index: 10000 !important;
+}
+
+.bg-opacity {
+  background: rgba(0,0,0,0.3) !important;
+}
+
+.truncate { 
+  width: 279px;
+  white-space: pre-line;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 84px;
+}

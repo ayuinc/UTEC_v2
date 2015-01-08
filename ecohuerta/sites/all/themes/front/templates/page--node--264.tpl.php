@@ -100,7 +100,7 @@
     <p>Tu versión de tu navegador es muy antigua. Actualízala a una más moderna.</p>
   </div>
 
-  <div class="header-fixed">
+  <div class="header-fixed z-10000">
   <div class="header-fixed-barra">
     <div id="logo">
       <a href="/">
@@ -159,7 +159,7 @@
         <div class="desc-front">
           <div class="down">
             <div class="image-holder">
-              <img src="<?php print $path; ?>/images/ecohuerta/homepage/ecohuerta-image.png" alt="Marea en acción" height="100">
+              <img src="<?php print $path; ?>/images/ecohuerta/homepage/ecohuerta-img.png" alt="Marea en acción" height="100">
             </div>
             <p class="uppercase">recoje tu lechuga</p>
             <p>En el kilómetro 74 de la Panamericana Sur de Martes a Domingo de 9 am - 7 pm</p>
@@ -191,11 +191,14 @@
       ?>
       <div class="slide slide2" style="background-image: url('<?php print $pathfile.'/'.$imagen_receta; ?>');">
         <div class="desc-front">
+          <div class="icon-receta">
+            <img src="<?php print $pathfile.'/'.$icono_receta; ?>">
+          </div>
           <div class="down">
             <h1 class="uppercase light">
               Receta :
             </h1>
-            <h1 class="uppercase">
+            <h1 class="uppercase truncate">
               <?php print($nombre_receta);?>
             </h1>
             <br><br>
@@ -205,8 +208,11 @@
           </div>
         </div>
 
-        <div class="desc-container">
-          <div class="desc-content">
+        <div class="desc-container">        
+          <div class="desc-content"> 
+            <div style="position: relative; bottom: 67px; color: white; font-size: 22px;">
+             <?php print $nombre_receta ?>
+            </div>
             <img class="project-close"  src="<?php print $path; ?>/images/icons/close_light_blue.jpg" alt="project-close" />
             <div class="recetas-cont">
               <div class="project-title">
@@ -239,19 +245,22 @@
                 </p> -->
               </div>
               <div class="prep">
-                <ul>
+                <ol>
                   <?php foreach ($preparacion as $key => $value) : ?>
                   <li>
                     <?php print($value['value']); ?>
                   </li>  
                   <?php endforeach; ?>
-                </ul>
+                </ol>
               </div>
             </div>
           </div>
           <div class="desc-content right-side">
-            <div class="uppercase">Recoge tu lechuga</div>
-            En el kilómetro 74 de la Panamericamna Sur de Martes a Domingo de 9 am - 7 pm
+            <div class="uppercase title-side-right bold">Recoge tu lechuga</div>
+             <img src="<?php print $path; ?>/images/ecohuerta/homepage/ecohuerta-img.png" alt="Marea en acción" height="100">
+            <p>              
+              En el kilómetro 89.5 de la Panamericana Sur los sábados y domingos de 10 am - 11 am 
+            </p>
           </div>
         </div>
       </div>
