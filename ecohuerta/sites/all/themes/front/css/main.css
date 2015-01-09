@@ -314,7 +314,7 @@ a.logout {
   max-width: 600px;
 }
 #sobre-ecohuerta .modal-alone {
-  top: 20%;
+  top: 10%;
 }
 /******************************************************************
 * Tooltips
@@ -838,7 +838,7 @@ ul.tabs li a:hover {
   display: block;
 }
 #sobre-ecohuerta {
-  background-color: black;
+  background-image: url('../images/backgrounds/ecohuerta/fondo_video_02.png');
 }
 .videoWrapper {
   position: relative;
