@@ -127,7 +127,7 @@
 
           <h3 class="light" style="margin-top: 0px;">
             <!-- <b>Las primeras Lechugas regadas con aire</b> -->
-            Lechugas orgánicas que podrás recoger en la Panamericana Sur de el km. 89.5 <br>
+            Recoge tus lechugas orgánicas en la Panamericana Sur km. 89.5 <br>
             Viernes de 2 pm  a 8 pm , sábados y domingos de 10 am  a 6 pm
           </h3>
 
