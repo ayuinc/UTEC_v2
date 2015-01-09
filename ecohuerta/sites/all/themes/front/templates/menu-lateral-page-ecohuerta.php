@@ -8,7 +8,7 @@
   </li>
   <li class="<?php if(strcmp(request_uri(),'ecohuerta-video-lechugas-hidroponicas')==0){print active;}?>">
     <div class="nav-point-text-arrow">
-      <a class="nav-point-text"  href="<?php print $base_path; ?>ecohuerta-video-lechugas-hidroponicas">Una Nueva Solución</a>
+      <a class="nav-point-text"  href="<?php print $base_path; ?>ecohuerta-video-lechugas-hidroponicas">Una nueva solución</a>
       <div class="nav-point-arrow nav-point-arrow-style"></div>
     </div>
     <a class="nav-point-link" href="<?php print $base_path; ?>ecohuerta-video-lechugas-hidroponicas" rel="tipsy" original-title="Sobre ecohuerta"></a>

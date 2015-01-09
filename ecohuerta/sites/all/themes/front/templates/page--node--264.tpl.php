@@ -163,8 +163,8 @@
             <div class="image-holder">
               <img src="<?php print $path; ?>/images/ecohuerta/homepage/ecohuerta-img.png" alt="Marea en acción" height="100">
             </div>
-            <p class="uppercase">recoje tu lechuga</p>
-            <p>En el kilómetro 74 de la Panamericana Sur de Martes a Domingo de 9 am - 7 pm</p>
+            <p class="uppercase">recoge tu lechuga</p>
+            <p>En la Panamericana Sur kilómetro 89.5. Viernes de 2 pm a 8 pm, sábados y domingos de 10 am  a 6 pm</p>
           </div>
         </div>
       </div>
@@ -198,7 +198,7 @@
           </div>
           <div class="down">
             <h1 class="uppercase light">
-              Receta :
+              Receta:
             </h1>
             <h1 class="uppercase truncate">
               <?php print($nombre_receta);?>
@@ -261,7 +261,7 @@
             <div class="uppercase title-side-right bold">Recoge tu lechuga</div>
              <img src="<?php print $path; ?>/images/ecohuerta/homepage/ecohuerta-img.png" alt="Marea en acción" height="100">
             <p>              
-              En el kilómetro 89.5 de la Panamericana Sur los Viernes de 2pm a 8pm, sábado y domingo de 10am  a 6 pm
+              En la Panamericana Sur kilómetro 89.5. Viernes de 2 pm a 8 pm, sábados y domingos de 10 am  a 6 pm
             </p>
           </div>
         </div>

@@ -131,7 +131,7 @@
           <h3><b>Pronto una nueva solución</b></h3>
           <div class="videoWrapper">
             <!-- <iframe width="560" height="349" src="http://www.youtube.com/embed/n_dZNLr2cME?rel=0&hd=1" frameborder="0" allowfullscreen></iframe> -->
-            <iframe width="560" height="349" src="//www.youtube.com/embed/4XF_SoR_hWU" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="349" src="//www.youtube.com/embed/4XF_SoR_hWU?rel=0&amp;controls=0&amp;showinfo=0&amp;modestbranding=1" frameborder="0" allowfullscreen></iframe>
           </div>
         <!--   <h3 class="light" style="margin-top: 150px;">
             <b>Pronto una nueva solución</b>
