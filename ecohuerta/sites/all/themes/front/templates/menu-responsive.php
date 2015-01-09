@@ -131,27 +131,27 @@
               </div>
             </a>
           </li>
-          <li class="men3 dropdown <?php if(strcmp(request_uri(), '/ecohuerta')==0){print active;}?>">
+          <li class="men3 dropdown <?php if(strcmp(request_uri(), '/air-huerta')==0){print active;}?>">
             <a href="javascript:void(0)" class="link-menu link-menu-primary">
               <div class="submenu-single">
-                Ecohuerta
+                Air Lechugas
               </div>
             </a>
             <ul class="submenu">
               <li>
-                <a href="<?php print $base_path; ?>ecohuerta" class="link-menu">
+                <a href="<?php print $base_path; ?>air-huerta" class="link-menu">
                   <div class="submenu-single">
-                    Ecohuerta
+                    Air Lechugas
                   </div>
                 </a>
               </li>
-              <li>
+              <!-- <li>
                 <a href="<?php print $base_path; ?>ecohuerta-video-lechugas-hidroponicas" class="link-menu">
                   <div class="submenu-single">
-                    Sobre ecohuerta
+                    Sobre Air Lechugas
                   </div>
                 </a>
-              </li>
+              </li> -->
               <li>
                 <a href="<?php print $base_path; ?>ecohuerta-recetas" class="link-menu">
                   <div class="submenu-single">

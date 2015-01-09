@@ -45,8 +45,7 @@ $box-model-ch-abbr-percentage:
   'mtp-ch', 
   'mrp-ch', 
   'mbp-ch', 
-
-$children-elements: "> a, > span, > div, > li, > p, > h1, > h2, > h3, > h4, > h5, > h6, > ul, > ol, > section"; 
+  'mlp-ch';
 
 @for $i from 0 through 10 {
   @for $j from 1 through length($box-model-sides) {

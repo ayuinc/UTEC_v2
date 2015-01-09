@@ -69,7 +69,7 @@
       <p>Tu versión de tu navegador es muy antigua. Actualízala a una más moderna.</p>
     </div>
 
-    <div class="header-fixed">
+    <div class="header-fixed z-10000">
       <div class="header-fixed-barra">
         <div id="logo">
           <a href="/">
@@ -114,24 +114,24 @@
 
     <div class="content" id="fullpage">
       <div class="video-wrapper">
-        <video loop="" poster="" autoplay class="hidden-xs hidden-sm hidden-md">
+        <video loop="" poster="" muted autoplay class="hidden-xs hidden-sm hidden-md">
           <source src="<?php print $pathfile; ?>/lechuga.mp4 " type="video/mp4;codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
         </video> 
       </div>
-      <section id="ecohuerta" class="main">
+      <section id="ecohuerta" class="main ovarlay bg-opacity">
         <div id="marea-en-accion-r" class="responsive-fix"></div>
         <div class="modal modal-alone center">
           <div class="image-holder">
-            <img src="<?php print $path; ?>/images/ecohuerta/homepage/ecohuerta-image.png" alt="Marea en acción" height="100"> 
+            <img src="<?php print $path; ?>/images/ecohuerta/homepage/LOGO-LECHUGAS-final_03.png" alt="Marea en acción" height="175"> 
           </div>
 
-          <h3 class="light">
-            <b>Te presentamos las primeras lechugas de la historia regadas con aire.</b><br>
-            Unas lechugas ecológicas que podrás reservar desde ahora mismo.
+          <h3 class="light" style="margin-top: 0px;">
+            <b>Las primeras Lechugas regadas con aire</b><br>
+            Lechugas orgánicas que podrás recoger en el km. 89.5 de la Panamericana Sur
           </h3>
 
-          <a href="<?php print $base_path; ?>ecohuerta-video-lechugas-hidroponicas" class="scroll-to btn btn-medium-small btn-light-blue uppercase">
-            Ver más
+          <a style="margin-top:1rem;" href="<?php print $base_path; ?>ecohuerta-recetas" class="scroll-to btn btn-medium-small btn-light-blue uppercase">
+            Ver recetas
           </a>
         </div>
       </section>

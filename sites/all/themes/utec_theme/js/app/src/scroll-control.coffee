@@ -49,12 +49,11 @@ $(document).ready ->
 	# SCROLL TO
 	scrollToController.scrollTo((newpos)->
 		TweenMax.to(window, 0.5, {scrollTo: {y: newpos}})
-		# $('body').animate({scrollTop: newpos})
 		return
 		)
 	$(document).on('click', 'a[href^=#]', (e)->
 		id = $(this).attr('href')
-		if $(id).length > 0
+		if $(id).length > 0 && !id.match(/nav/g) && !id.match(/carousel/g)
 			e.preventDefault()
 			scrollToController.scrollTo(id)
 		return

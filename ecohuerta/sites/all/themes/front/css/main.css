@@ -303,7 +303,7 @@ a.logout {
 * Modals
 ******************************************************************/
 .modal-alone {
-  top: 30%;
+  top: 29%;
   left: 50%;
   width: 50%;
   margin-left: -25%;
@@ -828,8 +828,8 @@ ul.tabs li a:hover {
 .video-wrapper {
   position: fixed;
   z-index: 0;
-  height: 100%;
   width: 100%;
+  height: auto;
 }
 .video-wrapper video {
   width: 100%;
@@ -838,7 +838,7 @@ ul.tabs li a:hover {
   display: block;
 }
 #sobre-ecohuerta {
-  background-image: url('../images/backgrounds/ecohuerta/sobre-ecohuerta.jpg');
+  background-image: url('../images/backgrounds/ecohuerta/fondo_video_02.png');
 }
 .videoWrapper {
   position: relative;

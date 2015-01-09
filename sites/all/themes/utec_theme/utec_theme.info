@@ -8,11 +8,3 @@ stylesheets[all][] = stylesheets/ebm.css
 
 plugins[panels][layouts] = plugins/layouts
 
-scripts[] = js/app/vendor/jquery-2.1.1.min.js
-scripts[] = js/app/vendor/TweenMax.min.js
-scripts[] = js/app/vendor/ScrollToPlugin.min.js
-scripts[] = js/app/vendor/jquery.scrollmagic.min.js
-
-scripts[] = js/app/lib/nav-control.js
-scripts[] = js/app/lib/layout-control.js
-scripts[] = js/app/lib/scroll-control.js

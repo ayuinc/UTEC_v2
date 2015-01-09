@@ -100,7 +100,7 @@
     <p>Tu versión de tu navegador es muy antigua. Actualízala a una más moderna.</p>
   </div>
 
-  <div class="header-fixed">
+  <div class="header-fixed z-10000">
   <div class="header-fixed-barra">
     <div id="logo">
       <a href="/">
@@ -141,10 +141,10 @@
 </div>
   <?php include 'menu-lateral-master.php' ?>
 
-    <?php include 'menu-lateral-page-b.php' ?>
+    <?php include 'menu-lateral-page-ecohuerta.php' ?>
 
   <div class="content" id="fullpage">
-<section id="equipos" class="main">
+<section id="equipos" class="main recetas">
   <div id="equipos-r" class="responsive-fix"></div>
 
   <div id="accordion-outside">
@@ -159,30 +159,10 @@
         <div class="desc-front">
           <div class="down">
             <div class="image-holder">
-              <img src="<?php print $path; ?>/images/marea/equipos/logo.png" alt="Marea en acción" height="100">
+              <img src="<?php print $path; ?>/images/ecohuerta/homepage/ecohuerta-img.png" alt="Marea en acción" height="100">
             </div>
-
-            <ul class="menu menu-vertical menu-with-arrows uppercase">
-              <li>
-                12 ingeniosos escolares
-              </li>
-              <li>
-                3 especialistas
-              </li>
-              <li>
-                5 capítulos
-              </li>
-              <li>
-                3 meses para solucionar el problema
-              </li>
-              <li>
-
-              </li>
-            </ul>
-
-            <p class="uppercase">
-              ¡El reto comenzó!
-            </p>
+            <p class="uppercase">recoje tu lechuga</p>
+            <p>En el kilómetro 74 de la Panamericana Sur de Martes a Domingo de 9 am - 7 pm</p>
           </div>
         </div>
       </div>
@@ -195,53 +175,92 @@
         $view->pre_execute();
         $view->execute();
         $recetas=$view->result;
-        $equipos_marea_vote= $view->result;
+        $recetas= $view->result;
         foreach ($recetas as $key => $value) 
         {
           $nid=$value->nid;
           $node = node_load($nid);
-          $group_name = $node->field_group_name['und'][0]['value'];
-          $name_panel = nl2br($node->field_name_panel['und'][0]['value']);
-          $image_panel = $node->field_image_panel['und'][0]['filename'];
-          $info_card = $node->field_info_card['und'][0]['value'];
-          $quote_card = $node->field_quote_card['und'][0]['value'];
-          $name_vote = $node->field_name_vote['und'][0]['value'];
-          $image_vote = $node->field_image_vote['und'][0]['filename'];
-          $video = $node->field_video['und'][0]['input'];
-          //$category = $node->field_category['und'][0]['value'];
+          // die(print_r($node));  
+          // kpr($node);  
+          $nombre_receta = $node->field_recipe_name['und'][0]['value'];
+          $ingredientes = $node->field_ingredientes['und'];
+          $preparacion = $node->field_preparacion['und'];
+          $imagen_receta = $node->field_imagen_receta['und'][0]['filename'];
+          $icono_receta = $node->field_icono['und'][0]['filename'];
+
       ?>
-      <div class="slide slide2" style="background-image: url('<?php print $pathfile.'/'.$image_panel; ?>');">
+      <div class="slide slide2" style="background-image: url('<?php print $pathfile.'/'.$imagen_receta; ?>');">
         <div class="desc-front">
+          <div class="icon-receta">
+            <img src="<?php print $pathfile.'/'.$icono_receta; ?>">
+          </div>
           <div class="down">
             <h1 class="uppercase light">
-              Equipo
+              Receta :
             </h1>
-            <h1 class="uppercase">
-              <?php print($group_name);?>
+            <h1 class="uppercase truncate">
+              <?php print($nombre_receta);?>
             </h1>
-            <?php print($name_panel);?>
             <br><br>
             <a href="javascript:void(0)" class="btn btn-small btn-dark uppercase">
-              Ingresar
+              Ver receta
             </a>
           </div>
         </div>
 
-        <div class="desc-container">
-          <div class="desc-content">
+        <div class="desc-container">        
+          <div class="desc-content"> 
+            <div style="position: relative; bottom: 67px; color: white; font-size: 22px;">
+             <?php print $nombre_receta ?>
+            </div>
             <img class="project-close"  src="<?php print $path; ?>/images/icons/close_light_blue.jpg" alt="project-close" />
-            <div class="project-title">
-              <h3 class="title uppercase">
-                 <?php print($info_card);?>
-              </h3>
+            <div class="recetas-cont">
+              <div class="project-title">
+                <h3 class="title uppercase">
+                   ingredientes
+                </h3>
+              </div>
+              <div class="project-desc">
+                <ul>
+                <?php foreach ($ingredientes as $key => $value) : ?>
+                  <li>
+                   <?php print($value['value']); ?>
+                  </li>
+                <?php endforeach; ?>
+                </ul>
+              </div>
+              <!-- <div class="prep">
+                <?php //print($preparacion);?>
+              </div> -->
             </div>
-            <div class="project-desc">
-              <p>
-                 <?php print($quote_card);?>
-              </p>
-
-              <a href="/aplica-tu-ingenio">Tú también puedes proponer una solución</a>
+            <div class="recetas-cont">
+              <div class="project-title">
+                <h3 class="title uppercase">
+                   preparación
+                </h3>
+              </div>
+              <div class="project-desc">
+                <!-- <p>
+                   <?php //print_r($ingredientes);?>
+                </p> -->
+              </div>
+              <div class="prep">
+                <ol>
+                  <?php foreach ($preparacion as $key => $value) : ?>
+                  <li>
+                    <?php print($value['value']); ?>
+                  </li>  
+                  <?php endforeach; ?>
+                </ol>
+              </div>
             </div>
+          </div>
+          <div class="desc-content right-side">
+            <div class="uppercase title-side-right bold">Recoge tu lechuga</div>
+             <img src="<?php print $path; ?>/images/ecohuerta/homepage/ecohuerta-img.png" alt="Marea en acción" height="100">
+            <p>              
+              En el kilómetro 89.5 de la Panamericana Sur los Viernes de 2pm a 8pm, sábado y domingo de 10am  a 6 pm
+            </p>
           </div>
         </div>
       </div>
