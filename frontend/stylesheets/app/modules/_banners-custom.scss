@@ -1,0 +1,43 @@
+// BANNERS
+.banner {
+	.banner-pic,
+	.banner-content {
+		position: relative;
+	}
+	.banner-pic {
+		@include bg-img-control;
+		min-height: $banner-height;
+		@media #{$sm-up} {
+			padding: 0;
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	.banner-label {
+		@include position(absolute, -14px null null $container-fluid);
+		text-align: center;
+		padding: 3px 7px;
+		span {
+			text-transform: uppercase;
+		}
+	}
+	.banner-content {
+		min-height: $banner-height;
+		@include flex-middle;
+		padding: 0 $container-fluid * 2;
+	}
+	a {
+		color: $gray;
+	}
+	&:hover {
+		background-color: $gray-lighter;
+	}
+	&.banner-label-bottom {
+		.banner-label {
+			@include position(absolute, null null 0 $container-fluid);
+			top: inherit;
+		}
+	}
+}
