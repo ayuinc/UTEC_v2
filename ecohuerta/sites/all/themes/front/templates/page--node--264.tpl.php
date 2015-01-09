@@ -4,7 +4,7 @@
   $path = $base_url.'/'.$theme_path;
   $pathfile= variable_get('file_public_path', conf_path() . '/files/');
   
-  render($page['content']['metatags']; 
+  render($page['content']['metatags']); 
 
 ?>
   <style type="text/css">
