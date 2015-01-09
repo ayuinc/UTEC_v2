@@ -8,7 +8,7 @@ $titulo = $node->title;
 	<h1 class="light">Modalidades de admisión</h1>
 	<div class="separator-gray separator-lg"></div>
 	<ul class="grid-list grid-list-3 grid-list-hover">
-		<li data-href="http://app.utec.edu.pe/admision/primeros-puestos/informacion.php">
+		<li data-href="/admision/modalidades/primeros-puestos">
 			<div>
 				<h3 class="thin lead">Primeros puestos</h3>
 				<div class="size xl">
