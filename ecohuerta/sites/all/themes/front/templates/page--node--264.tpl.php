@@ -5,12 +5,93 @@
   $pathfile= variable_get('file_public_path', conf_path() . '/files/');
 
 ?>
+  <style type="text/css">
+    @import url("<?php print $path; ?>/css/normalize.css");
+    @import url("<?php print $path; ?>/css/vendor/tipsy.css");
+    @import url("<?php print $path; ?>/css/vendor/jquery.fancybox.css");
+    @import url("<?php print $path; ?>/css/vendor/jquery.bxslider.css");
+    @import url("<?php print $path; ?>/css/vendor/jquery.fullPage.css");
+    @import url("<?php print $path; ?>/css/general.css");
+    @import url("<?php print $path; ?>/css/nav.css");
+    @import url("<?php print $path; ?>/css/util.css");
+    @import url("<?php print $path; ?>/css/grid.css");
+    @import url("<?php print $path; ?>/css/form.css");
+    @import url("<?php print $path; ?>/css/icons.css");
+    @import url("<?php print $path; ?>/css/buttons.css");
+    @import url("<?php print $path; ?>/css/accordion.css");
+    @import url("<?php print $path; ?>/css/main.css");
+    @import url("<?php print $path; ?>/css/responsive.css");
+    @import url("http://fonts.googleapis.com/css?family=Roboto:400,700,300,100");
+  </style>
 
-  <noscript>
+  <script type="text/javascript"> var url = "<?php print $path ?>"; </script>
+  <script>App = {}</script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="<?php print $path; ?>/js/vendor/waypoints.min.js"></script>
+  <script src="<?php print $path; ?>/js/vendor/jquery.bxslider.min.js"></script>
+  <script src="<?php print $path; ?>/js/vendor/jquery.tipsy.js"></script>
+  <script src="<?php print $path; ?>/js/vendor/jquery.backstretch.min.js"></script>
+  <script src="<?php print $path; ?>/js/vendor/jquery.validate.min.js"></script>
+  <script src="<?php print $path; ?>/js/vendor/jquery.validate.messages_es.js"></script>
+  <script src="<?php print $path; ?>/js/vendor/jquery.history.js"></script>
+  <script src="<?php print $path; ?>/js/vendor/jquery.fancybox.pack.js"></script>
+  <script src="<?php print $path; ?>/js/vendor/jquery.fancybox-media.js"></script>
+  <!--<script src="<?php print $path; ?>/js/vendor/jquery.fullPage.min.js"></script>-->
+  <script src="<?php print $path; ?>/js/vendor/jquery.cookie.js"></script>
+  <script src="<?php print $path; ?>/js/vendor/jquery.mustache.js"></script>
+  <script src="<?php print $path; ?>/js/util.js"></script>
+  <script src="<?php print $path; ?>/js/modal.js"></script>
+  <script src="<?php print $path; ?>/js/youtube.js"></script>
+  <script src="<?php print $path; ?>/js/components/video_gallery.js"></script>
+  <script src="<?php print $path; ?>/js/components/accordion.js"></script>
+  <script src="<?php print $path; ?>/js/vendor/hash.js"></script>
+  <script src="<?php print $path; ?>/js/main.js"></script>
+  <script src="<?php print $path; ?>/js/analytics.js"></script>
+  <script src="<?php print $path; ?>/js/responsive.js"></script>
+
+  <!-- Youtube iframe Player API -->
+  <script>
+    var tag = document.createElement('script');
+    tag.src = "//www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  </script>
+
+  <!-- Facebook remarketing -->
+  <script>(function() {
+    var _fbq = window._fbq || (window._fbq = []);
+    if (!_fbq.loaded) {
+      var fbds = document.createElement('script');
+      fbds.async = true;
+      fbds.src = '//connect.facebook.net/en_US/fbds.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(fbds, s);
+      _fbq.loaded = true;
+    }
+      _fbq.push(['addPixelId', '770393432971325']);
+    })();
+    window._fbq = window._fbq || [];
+    window._fbq.push(['track', 'PixelInitialized', {}]);
+  </script>
+  <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=770393432971325&amp;ev=PixelInitialized" /></noscript>
+
+
+  <!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+  <script type="text/javascript">
+  /* <![CDATA[ */
+  var google_conversion_id = 976155597;
+  var google_conversion_label = "dFPVCMLUtVYQzee70QM";
+  var google_custom_params = window.google_tag_params;
+  var google_remarketing_only = true;
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+  </script>
+  <!-- <noscript>
   <div style="display:inline;">
   <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/976155597/?value=1.00&amp;currency_code=USD&amp;label=dFPVCMLUtVYQzee70QM&amp;guid=ON&amp;script=0"/>
   </div>
-  </noscript>
+  </noscript> -->
 
   <div id="page-wrapper">
     <div id="page">
