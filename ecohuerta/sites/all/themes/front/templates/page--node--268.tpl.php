@@ -3,6 +3,17 @@
   global $theme_path;
   $path = $base_url.'/'.$theme_path;
   $pathfile= variable_get('file_public_path', conf_path() . '/files/');
+
+  // $imgpath = image_style_url('YOUR_STYLE', $YOUR_FIELD[0]['uri']);
+  // $element = array(
+  //   '#tag' => 'meta', 
+  //   '#attributes' => array(
+  //     'property' => 'og:image',
+  //     'content' => $imgpath,
+  //   ),
+  // );
+  // drupal_add_html_head($element, 'og_image');
+
 ?>
 <style type="text/css">
     @import url("<?php print $path; ?>/css/normalize.css");
@@ -69,7 +80,7 @@
       <p>Tu versión de tu navegador es muy antigua. Actualízala a una más moderna.</p>
     </div>
 
-    <div class="header-fixed z-10000">
+    <div class="header-fixed">
       <div class="header-fixed-barra">
         <div id="logo">
           <a href="/">
@@ -85,8 +96,8 @@
 
         <ul class="nav nav-horizontal nav-login">
           <li class="postular-button">
-            <a href="http://app.utec.edu.pe/admision/index.php" target="_blank">
-              postula
+            <a href="http://www.utec.edu.pe/admision/SitePages/Preinscripci%C3%B3n%20Examen%20de%20Admision.aspx?Tipo=Examen%20de%20Admision#.VIsOLmSG8no" target="_blank">
+              postular
             </a>
           </li>
           <li class="nav-login-fb">
@@ -113,27 +124,25 @@
     <?php include 'menu-lateral-page-ecohuerta.php' ?>
 
     <div class="content" id="fullpage">
-      <div class="video-wrapper">
-        <video loop="" poster="" muted autoplay class="hidden-xs hidden-sm hidden-md">
-          <source src="<?php print $pathfile; ?>/lechuga.mp4 " type="video/mp4;codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
-        </video> 
-      </div>
-      <section id="ecohuerta" class="main ovarlay bg-opacity">
+      <section id="sobre-ecohuerta" class="main">
         <div id="marea-en-accion-r" class="responsive-fix"></div>
-        <div class="modal modal-alone center">
-          <div class="image-holder">
-            <img src="<?php print $path; ?>/images/ecohuerta/homepage/LOGO-LECHUGAS-final_03.png" alt="Marea en acción" height="175"> 
+        <div class="">
+          <!-- <div class="videoWrapper">
+            <iframe width="560" height="349" src="http://www.youtube.com/embed/n_dZNLr2cME?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
+          </div> -->
+          <div class="container">
+            <?php
+              $imagen = $node->field_imagen['und'][0]['filename']; 
+
+            ?>
+            <img src="<?php print $base_url; ?>/sites/default/files/<?php print $imagen ?>" alt="Marea en acción" height="550" class="img-responsive img-como-funciona">
           </div>
-
-          <h3 class="light" style="margin-top: 0px;">
-            <!-- <b>Las primeras Lechugas regadas con aire</b> -->
-            Lechugas orgánicas que podrás recoger en el km. 89.5 de la Panamericana Sur<br>
-            Viernes de 2 pm  a 8 pm , sábado y domingo de 10 am  a 6 pm
+          <!-- <h3 class="light" style="margin-top: 150px;">
+            <b>Pronto las primeras lechugas regadas por aire.</b>
           </h3>
-
           <a style="margin-top:1rem;" href="<?php print $base_path; ?>ecohuerta-recetas" class="scroll-to btn btn-medium-small btn-light-blue uppercase">
             Ver recetas
-          </a>
+          </a> -->
         </div>
       </section>
     </div>

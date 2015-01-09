@@ -49,10 +49,6 @@
 <head profile="<?php print $grddl_profile; ?>">
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
-  <meta name="viewport" content="initial-scale=1, user-scalable=no">
-  <meta name="description" content="Encuentra en aplica tu ingenio de la universidad de ingeniería y tecnología Utec, la plataforma para prevenir la contaminación en el mar de lima , contaminación sonora en lima, deforestación en el Perú, huaycos en la sierra, transito en lima, friaje en puno">
-  <meta name="keywords" content="utec ingenio en acción, utec ingenio, trafico lima peru, transito vehicular, contaminacion del mar, contaminacion del mar peruano, basura en el mar, la deforestaciòn, causas de deforestacion, deforestación en la amazonia, huaycos en el peru, desastres naturales huaycos, desastre natural, prevención de desastres naturales, contaminación sonora, contaminación acústica, friaje en el peru, el friaje en el peru, friaje en puno, clima en puno, proyectos productivos escolares, proyectos participativos escolares, tráfico lima, huaycos, friaje">
-  <meta name="google-site-verification" content="uLP_7mbsBlPWqaugBhRhXu_1ofgR0gfMLnvHobOT-bE">
   <?php print $styles; ?>
   <?php print $scripts; ?>
 </head>
