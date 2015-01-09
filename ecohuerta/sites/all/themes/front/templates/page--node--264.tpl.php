@@ -198,7 +198,7 @@
           </div>
           <div class="down">
             <h1 class="uppercase light">
-              Receta :
+              Receta:
             </h1>
             <h1 class="uppercase truncate">
               <?php print($nombre_receta);?>
