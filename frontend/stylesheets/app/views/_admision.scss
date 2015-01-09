@@ -28,6 +28,9 @@
 		}
 	}
 	&.grid-list-hover-calendar {
+		div:not(.date) {
+			border: none;
+		}
 		.date {
 			@include position(absolute, 0 null null $container-fluid);	
 			background: $gray;
