@@ -135,7 +135,7 @@
               $imagen = $node->field_imagen['und'][0]['filename']; 
 
             ?>
-            <img src="<?php print $base_url; ?>/default/files/<?php print $imagen ?>" alt="Marea en acción" height="300" class="img-responsive">
+            <img src="<?php print $base_url; ?>/sites/default/files/<?php print $imagen ?>" alt="Marea en acción" height="300" class="img-responsive">
           </div>
           <!-- <h3 class="light" style="margin-top: 150px;">
             <b>Pronto las primeras lechugas regadas por aire.</b>
