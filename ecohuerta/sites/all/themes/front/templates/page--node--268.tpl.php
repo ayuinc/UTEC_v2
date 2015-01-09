@@ -132,7 +132,7 @@
           </div> -->
           <div>
             <?php 
-
+              print_r($node);
               $imagen = $node->field_image['und'][0]['filename']; 
 
             ?>
