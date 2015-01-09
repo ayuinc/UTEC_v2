@@ -17,7 +17,7 @@
     </li>
     <li class="<?php if(strcmp(request_uri(), '/air-huerta')==0){print active;}?>">
       <a href="<?php print $base_path; ?>air-huerta">
-        Air Lechugas
+        Air Huerta
       </a>
     </li>
   </ul>

@@ -85,8 +85,8 @@
 
         <ul class="nav nav-horizontal nav-login">
           <li class="postular-button">
-            <a href="http://www.utec.edu.pe/admision/SitePages/Preinscripci%C3%B3n%20Examen%20de%20Admision.aspx?Tipo=Examen%20de%20Admision#.VIsOLmSG8no" target="_blank">
-              postular
+            <a href="http://app.utec.edu.pe/admision/index.php" target="_blank">
+              postula
             </a>
           </li>
           <li class="nav-login-fb">
@@ -126,8 +126,9 @@
           </div>
 
           <h3 class="light" style="margin-top: 0px;">
-            <b>Las primeras Lechugas regadas con aire</b><br>
-            Lechugas orgánicas que podrás recoger en el km. 89.5 de la Panamericana Sur
+            <!-- <b>Las primeras Lechugas regadas con aire</b> -->
+            Lechugas orgánicas que podrás recoger en el km. 89.5 de la Panamericana Sur<br>
+            Viernes de 2 pm  a 8 pm , sábado y domingo de 10 am  a 6 pm
           </h3>
 
           <a style="margin-top:1rem;" href="<?php print $base_path; ?>ecohuerta-recetas" class="scroll-to btn btn-medium-small btn-light-blue uppercase">
