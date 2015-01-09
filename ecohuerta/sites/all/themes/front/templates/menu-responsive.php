@@ -145,20 +145,20 @@
                   </div>
                 </a>
               </li>
-              <!-- <li>
+              <li>
                 <a href="<?php print $base_path; ?>ecohuerta-video-lechugas-hidroponicas" class="link-menu">
                   <div class="submenu-single">
-                    Sobre Air Lechugas
+                    Una Nueva Solución
                   </div>
                 </a>
-              </li> -->
-              <li>
+              </li>
+              <!-- <li>
                 <a href="<?php print $base_path; ?>air-huerta-como-funciona" class="link-menu">
                   <div class="submenu-single">
                     ¿Cómo Funciona?
                   </div>
                 </a>
-              </li>
+              </li> -->
               <li>
                 <a href="<?php print $base_path; ?>ecohuerta-recetas" class="link-menu">
                   <div class="submenu-single">
