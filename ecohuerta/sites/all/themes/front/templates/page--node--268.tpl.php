@@ -130,12 +130,12 @@
           <!-- <div class="videoWrapper">
             <iframe width="560" height="349" src="http://www.youtube.com/embed/n_dZNLr2cME?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
           </div> -->
-          <div>
+          <div class="container">
             <?php
               $imagen = $node->field_imagen['und'][0]['filename']; 
 
             ?>
-            <img src="<?php print $base_url; ?>/sites/default/files/<?php print $imagen ?>" alt="Marea en acción" height="" class="img-responsive">
+            <img src="<?php print $base_url; ?>/sites/default/files/<?php print $imagen ?>" alt="Marea en acción" height="550" class="img-responsive img-como-funciona">
           </div>
           <!-- <h3 class="light" style="margin-top: 150px;">
             <b>Pronto las primeras lechugas regadas por aire.</b>

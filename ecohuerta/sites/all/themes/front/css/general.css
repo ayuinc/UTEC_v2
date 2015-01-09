@@ -352,3 +352,9 @@ p.small {
   text-overflow: ellipsis;
   height: 84px;
 }
+
+.img-como-funciona {
+  position: relative;
+  top: 64px;
+  left: 2%;
+}
