@@ -838,7 +838,7 @@ ul.tabs li a:hover {
   display: block;
 }
 #sobre-ecohuerta {
-  background-image: url('../images/backgrounds/ecohuerta/fondo_video_02.png');
+  background-color: black;
 }
 .videoWrapper {
   position: relative;

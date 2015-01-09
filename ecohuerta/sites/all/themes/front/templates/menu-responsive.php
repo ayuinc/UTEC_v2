@@ -155,7 +155,7 @@
               <li>
                 <a href="<?php print $base_path; ?>air-huerta-como-funciona" class="link-menu">
                   <div class="submenu-single">
-                    Como Funciona
+                    ¿Cómo Funciona?
                   </div>
                 </a>
               </li>
