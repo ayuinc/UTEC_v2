@@ -131,9 +131,8 @@
             <iframe width="560" height="349" src="http://www.youtube.com/embed/n_dZNLr2cME?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
           </div> -->
           <div>
-            <?php 
-              print_r($node);
-              $imagen = $node->field_image['und'][0]['filename']; 
+            <?php
+              $imagen = $node->field_imagen['und'][0]['filename']; 
 
             ?>
             <img src="<?php print $base_url; ?>/default/files/<?php print $image ?>" alt="Marea en acción" height="300" class="img-responsive">
