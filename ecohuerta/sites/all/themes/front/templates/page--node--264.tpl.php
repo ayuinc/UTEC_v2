@@ -3,6 +3,7 @@
   global $theme_path;
   $path = $base_url.'/'.$theme_path;
   $pathfile= variable_get('file_public_path', conf_path() . '/files/');
+  render($content['metatags']);
 
 ?>
   <style type="text/css">
@@ -87,11 +88,11 @@
   </script>
   <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
   </script>
-  <!-- <noscript>
+  <noscript>
   <div style="display:inline;">
   <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/976155597/?value=1.00&amp;currency_code=USD&amp;label=dFPVCMLUtVYQzee70QM&amp;guid=ON&amp;script=0"/>
   </div>
-  </noscript> -->
+  </noscript>
 
   <div id="page-wrapper">
     <div id="page">
