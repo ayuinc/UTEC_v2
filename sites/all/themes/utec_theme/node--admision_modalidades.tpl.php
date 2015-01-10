@@ -24,7 +24,7 @@ $titulo = $node->title;
 				</div>
 			</div>
 		</li>
-		<li data-href="http://app.utec.edu.pe/admision/traslado-externo/informacion.php">
+		<li data-href="/admision/modalidades/traslados">
 			<div>
 				<h3 class="thin lead">Traslado</h3>
 				<div class="size xl">
