@@ -8,7 +8,6 @@
 	$sub_titulo = $node->field_subtitulo['und']['0']['value'];		 		
 	$cuerpo = $node->body['und']['0']['value'];	
 	$imagen = $node->field_image['und']['0']['filename'];	
-	die(print_r($imagen));
 	$texto_imagen = $node->field_texto_imagen['und']['0']['value'];
 	$fecha = $node->field_fecha['und']['0']['value'];		 		
 	$hora = $node->field_hora['und']['0']['value'];		 		
