@@ -16,8 +16,6 @@
 	// $cuerpo = $node->body['und']['0']['value'];	
 	$imagen = $fields['field_image']->content;
 
-	print_r($fields['field_image']);
-
 	$path = $fields['path']->content;	
 	// $texto_imagen = $node->field_texto_imagen['und']['0']['value'];
 	// $fecha = $node->field_fecha['und']['0']['value'];		 		
@@ -33,7 +31,7 @@
 		<?php if ($imagen == '') :?>
 			<img src="<?php print('/'.$pathfile)?>img.png" alt="#" class="img-responsive">
 		<?php else :?>
-			<img src="<?php print('/'.$pathfile.$imagen)?>" alt="#" class="img-responsive">
+			<img src="<?php print($imagen)?>" alt="#" class="img-responsive">
 		<?php endif; ?>	
 	</div>
 	<div>
