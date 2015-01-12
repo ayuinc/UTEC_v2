@@ -13,7 +13,9 @@ $field_contenido_generica = $node->field_contenido_generica['und']['0']['value']
 	<?php if ($field_descripcion_corta_generica!='') { ?>
 		<p class="lead"><?php print $field_descripcion_corta_generica ?></p>
 	<?php } ?>
-	<p class="lead text-gray mb-42"><?php print $field_contenido_generica ?></p>
+	<?php if ($field_contenido_generica!='') { ?>
+		<p class="lead text-gray mb-42"><?php print $field_contenido_generica ?></p>
+	<?php } ?>
 </div>
 
 
