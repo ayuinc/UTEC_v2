@@ -28,10 +28,10 @@
     <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
   </video>
   <div class="video-placeholder" style="background: url(http://104.131.4.19/sites/all/themes/utec_theme/assets/img/project-bg-1.jpg) no-repeat center top;"></div>
-  <div class="overlay flex-middle-center text-center text-white">
-  	<div class="container relative home-introduccion">
-			<h1 class="thin lead mt-56 mb-0 pt-70">UTEC, plataforma abierta para innovar</h1>
-			<h4 class="thin mt-7 uppercase">- DESCÚBRELO -</h4>
+  <div class="overlay flex-middle-end text-center text-white">
+  	<div class="container relative home-introduccion normalize-text">
+			<h1 class="thin lead">UTEC, plataforma abierta para innovar</h1>
+			<h4 class="thin pv-7 uppercase">- DESCÚBRELO -</h4>
 		</div>
   </div>
   <a class="scroll-down scroll-down-sq size lg" href="#home-sec-1" rel="nofollow">
