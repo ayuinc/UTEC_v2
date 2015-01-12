@@ -28,7 +28,6 @@
 		<?php if ($imagen!='') { ?>
 			<img src="<?php print('/'.$pathfile.$imagen); ?>" alt="#" class="img-responsive">
 		<?php } ?>
-		<p><?php print('/'.$pathfile.$imagen); ?></p>
 		<p><?php print $texto_imagen ?></p>
 	</div>
 	<div class="pv-ch-42">

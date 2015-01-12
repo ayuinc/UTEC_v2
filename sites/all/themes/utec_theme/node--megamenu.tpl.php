@@ -283,11 +283,11 @@
 						</li>
 						<!--<li>
 							<a href="#"><span>Calendario</span>de admisión</a>
-						</li>
+						</li>-->
 						<li>
-							<a href="#"><span>Visita</span>UTEC</a>
+							<a href="/admision/visita-utec"><span>Visita</span>UTEC</a>
 						</li>
-						<li>
+						<!--<li>
 							<a href="#"><span>Orientación</span>Vocacional</a>
 						</li>-->
 						<li>
