@@ -9,7 +9,7 @@
 
 ?>
 <div class="item">
-	<img src="<?php print $image ?>" alt="...">
+	<img src="<?php print $image ?>" alt="..." height="479" width="720">
 	<h3 class="light"><em><?php print $title ?></em></h3>
 	<p class="text-gray"><?php print $texto_corto ?></p>
 	<a href="<?php print $path; ?>" class="btn btn-primary btn-outline see-more">Ver más</a>
