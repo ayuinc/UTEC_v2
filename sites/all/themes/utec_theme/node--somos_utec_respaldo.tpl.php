@@ -7,7 +7,7 @@
   $titulo = $node->title;
   $field_introduccion_respaldo = $node->field_introduccion_respaldo;
   $fids   = $node->field_empresa_respaldo['und'];
-  // print_r($fids);
+  print_r($node);
   
 ?>
 
