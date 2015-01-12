@@ -13,7 +13,7 @@ global $base_url;
 	$user_id = $fields['uid']->content;
 
 ?>
-kpr($fields);
+<?php kpr($fields); ?>
 <li class="banner banner-label-bottom mb-14 ml-0" data-href="<?php print $path ?>">
 	<div class="banner-pic" style="background-image: url(<?php print $image?>);">
 		<div class="banner-label bg-primary text-white"><span><?php print $category ?></span></div>
