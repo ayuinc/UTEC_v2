@@ -25,12 +25,12 @@
 	<ul class="grid-list grid-list-2 grid-list-hover">
 		<li data-href="/somos-utec/consejo-directivo">
 			<div>
-				<h3 class="thin lead">Consejo directivo</h3>
+				<h3 class="thin lead h4">Consejo directivo</h3>
 			</div>
 		</li>
-		<li data-href="/convenios">
+		<li data-href="/convenios/convenios-de-intercambio">
 			<div>
-				<h3 class="thin lead">Gestión educativa interinstitucional</h3>
+				<h3 class="thin lead h4">Gestión educativa interinstitucional</h3>
 			</div>
 		</li>
 	</ul>
