@@ -13,10 +13,16 @@ global $base_url;
 	$user_id = $fields['uid']->content;
 
 ?>
-
-<div class="item">
-	<img src="<?php print $image ?>" alt="..." height="509" width="509">
-	<h3 class="light"><em><?php print $title ?></em></h3>
-	<p class="text-gray"><?php print $texto_corto ?></p>
-	<a href="<?php print $path; ?>" class="btn btn-primary btn-outline see-more">Ver más</a>
-</div>
+kpr($fields);
+<li class="banner banner-label-bottom mb-14 ml-0" data-href="<?php print $path ?>">
+	<div class="banner-pic" style="background-image: url(<?php print $image?>);">
+		<div class="banner-label bg-primary text-white"><span><?php print $category ?></span></div>
+	</div>
+	<div class="banner-content">
+		<div>
+			<h2><a href="#"><?php print $title ?></a></h2>
+			<em class="text-primary">27 octubre 2014</em>
+			<p class="lead"><?php print $texto_corto ?></p>
+		</div>
+	</div>
+</li>
