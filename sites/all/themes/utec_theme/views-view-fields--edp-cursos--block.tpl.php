@@ -31,7 +31,7 @@
 		<?php if ($imagen == '') :?>
 			<img src="<?php print('/'.$pathfile)?>img.png" alt="#" class="img-responsive">
 		<?php else :?>
-			<img src="<?php print('/'.$pathfile.$imagen)?>" alt="#" class="img-responsive">
+			<img src="<?php print($imagen)?>" alt="#" class="img-responsive">
 		<?php endif; ?>	
 	</div>
 	<div>
