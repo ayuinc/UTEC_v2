@@ -19,7 +19,7 @@
 
 
 
-<div class="container-sm">
+<!-- <div class="container-sm"> -->
 	<h1 class="light"><?php print $titulo ?></h1>
 	<div class="separator-gray separator-sm"></div>						
 	<h3><?php print $sub_titulo ?></h3>
@@ -129,4 +129,4 @@
 			</ul>
 		</div>
 	</div>
-</div>
+<!-- </div> -->
