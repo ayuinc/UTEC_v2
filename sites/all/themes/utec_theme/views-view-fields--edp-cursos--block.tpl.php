@@ -15,11 +15,9 @@
 	$sub_titulo = $fields['field_subtitulo']->content;		 		
 	// $cuerpo = $node->body['und']['0']['value'];	
 	$imagen = $fields['field_image']->content;
-<<<<<<< HEAD
-	die(print_r($imagen));
-=======
-	die(print_r($fields['field_image']));
->>>>>>> 4c523a6777b78d3c56e733d7c55813494bbd754b
+
+	print_r($fields['field_image']);
+
 	$path = $fields['path']->content;	
 	// $texto_imagen = $node->field_texto_imagen['und']['0']['value'];
 	// $fecha = $node->field_fecha['und']['0']['value'];		 		
