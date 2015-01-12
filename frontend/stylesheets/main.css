@@ -4863,6 +4863,8 @@ body {
   height: 211px; }
 .size.xs.hero-unit {
   min-height: 211px; }
+  .size.xs.hero-unit.video-bg {
+    min-height: 211px; }
   .size.xs.hero-unit .overlay {
     min-height: 211px; }
 .size.xs.grid-list-hover > li > div {
@@ -4884,6 +4886,8 @@ body {
   height: 351px; }
 .size.sm.hero-unit {
   min-height: 351px; }
+  .size.sm.hero-unit.video-bg {
+    min-height: 351px; }
   .size.sm.hero-unit .overlay {
     min-height: 351px; }
 .size.sm.grid-list-hover > li > div {
@@ -4907,6 +4911,8 @@ body {
   height: 631px; }
 .size.lg.hero-unit {
   min-height: 631px; }
+  .size.lg.hero-unit.video-bg {
+    min-height: 631px; }
   .size.lg.hero-unit .overlay {
     min-height: 631px; }
 .size.xl.scroll-down i {
@@ -4926,6 +4932,8 @@ body {
   height: 701px; }
 .size.xl.hero-unit {
   min-height: 701px; }
+  .size.xl.hero-unit.video-bg {
+    min-height: 701px; }
   .size.xl.hero-unit .overlay {
     min-height: 701px; }
 
