@@ -4748,15 +4748,15 @@ body {
   position: relative; }
 
 .hero-unit {
-  min-height: 491px;
+  height: 491px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
   .hero-unit.video-bg {
     overflow: hidden;
-    min-height: 491px; }
+    height: 491px; }
   .hero-unit .overlay {
-    min-height: 491px; }
+    height: 491px; }
 
 #section-scroll {
   position: fixed;
@@ -4862,11 +4862,11 @@ body {
 .size.xs.videoBG {
   height: 211px; }
 .size.xs.hero-unit {
-  min-height: 211px; }
+  height: 211px; }
   .size.xs.hero-unit.video-bg {
-    min-height: 211px; }
+    height: 211px; }
   .size.xs.hero-unit .overlay {
-    min-height: 211px; }
+    height: 211px; }
 .size.xs.grid-list-hover > li > div {
   height: 140px; }
 .size.sm.scroll-down i {
@@ -4885,11 +4885,11 @@ body {
 .size.sm.videoBG {
   height: 351px; }
 .size.sm.hero-unit {
-  min-height: 351px; }
+  height: 351px; }
   .size.sm.hero-unit.video-bg {
-    min-height: 351px; }
+    height: 351px; }
   .size.sm.hero-unit .overlay {
-    min-height: 351px; }
+    height: 351px; }
 .size.sm.grid-list-hover > li > div {
   height: 210px; }
 .size.lg.scroll-down i {
@@ -4910,11 +4910,11 @@ body {
 .size.lg.videoBG {
   height: 631px; }
 .size.lg.hero-unit {
-  min-height: 631px; }
+  height: 631px; }
   .size.lg.hero-unit.video-bg {
-    min-height: 631px; }
+    height: 631px; }
   .size.lg.hero-unit .overlay {
-    min-height: 631px; }
+    height: 631px; }
 .size.xl.scroll-down i {
   font-size: 36px; }
 .size.xl.banner .banner-content,
@@ -4931,11 +4931,11 @@ body {
 .size.xl.videoBG {
   height: 701px; }
 .size.xl.hero-unit {
-  min-height: 701px; }
+  height: 701px; }
   .size.xl.hero-unit.video-bg {
-    min-height: 701px; }
+    height: 701px; }
   .size.xl.hero-unit .overlay {
-    min-height: 701px; }
+    height: 701px; }
 
 .user-card {
   position: relative;

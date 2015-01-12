@@ -1,6 +1,6 @@
 <?php $video_name = $node->field_video['und']['0']['filename']; ?>
 
-<div class="hero-unit video-bg size sm"> 
+<div class="hero-unit video-bg "> 
 	<!-- <div class="overlay"></div> -->
 	<!-- <div class="bg-img-block bg-img-block-lg flex-middle">
 		<div class="container">

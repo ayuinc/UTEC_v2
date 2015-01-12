@@ -46,14 +46,14 @@ $grid-list-hover-height: 350px;
 
 // HERO UNIT
 .hero-unit {
-	min-height: $video-bg-height;
+	height: $video-bg-height;
 	@include bg-img-control;
 	&.video-bg {
 		overflow: hidden;
-		min-height: $video-bg-height;
+		height: $video-bg-height;
 	}
 	.overlay {
-		min-height: $video-bg-height;
+		height: $video-bg-height;
 	}
 }
 
@@ -198,12 +198,12 @@ $grid-list-hover-height: 350px;
 			height: $video-bg-height - 280;
 		}
 		&.hero-unit {
-			min-height: $video-bg-height - 280;
+			height: $video-bg-height - 280;
 			&.video-bg {
-				min-height: $video-bg-height - 280;
+				height: $video-bg-height - 280;
 			}
 			.overlay {
-				min-height: $video-bg-height - 280;
+				height: $video-bg-height - 280;
 			}
 		}
 		&.grid-list-hover {
@@ -242,12 +242,12 @@ $grid-list-hover-height: 350px;
 			height: $video-bg-height - 140;
 		}
 		&.hero-unit {
-			min-height: $video-bg-height - 140;
+			height: $video-bg-height - 140;
 			&.video-bg {
-				min-height: $video-bg-height - 140;
+				height: $video-bg-height - 140;
 			}
 			.overlay {
-				min-height: $video-bg-height - 140;
+				height: $video-bg-height - 140;
 			}
 		}
 		&.grid-list-hover {
@@ -289,12 +289,12 @@ $grid-list-hover-height: 350px;
 			height: $video-bg-height + 140;
 		}
 		&.hero-unit {
-			min-height: $video-bg-height + 140;
+			height: $video-bg-height + 140;
 			&.video-bg {
-				min-height: $video-bg-height + 140;
+				height: $video-bg-height + 140;
 			}
 			.overlay {
-				min-height: $video-bg-height + 140;
+				height: $video-bg-height + 140;
 			}
 		}
 	}
@@ -326,12 +326,12 @@ $grid-list-hover-height: 350px;
 			height: $video-bg-height + 210;
 		}
 		&.hero-unit {
-			min-height: $video-bg-height + 210;
+			height: $video-bg-height + 210;
 			&.video-bg {
-				min-height: $video-bg-height + 210;
+				height: $video-bg-height + 210;
 			}
 			.overlay {
-				min-height: $video-bg-height + 210;
+				height: $video-bg-height + 210;
 			}
 		}
 	}
