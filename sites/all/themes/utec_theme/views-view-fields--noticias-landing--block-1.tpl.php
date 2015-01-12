@@ -14,7 +14,7 @@ global $base_url;
 
 ?>
 
-<div class="item ">
+<div class="item">
 	<img src="<?php print $image ?>" alt="...">
 	<h3 class="light"><em><?php print $title ?></em></h3>
 	<p class="text-gray"><?php print $texto_corto ?></p>
