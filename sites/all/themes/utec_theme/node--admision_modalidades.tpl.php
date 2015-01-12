@@ -16,7 +16,7 @@ $titulo = $node->title;
 				</div>
 			</div>
 		</li>
-		<li data-href="http://app.utec.edu.pe/admision/alto-rendimiento/informacion.php">
+		<li data-href="/admision/alto-rendimiento">
 			<div>
 				<h3 class="thin lead">Alto rendimiento</h3>
 				<div class="size xl">
@@ -32,7 +32,7 @@ $titulo = $node->title;
 				</div>
 			</div>
 		</li>
-		<li data-href="http://app.utec.edu.pe/admision/centro-preuniversitario/informacion.php">
+		<li data-href="/admision/centro-pre">
 			<div>
 				<h3 class="thin lead">Centro PRE</h3>
 				<div class="size xl">
