@@ -5,8 +5,8 @@
   $pathfile = variable_get('file_public_path', conf_path() . '/files/');
 
   $titulo = $node->title;
-  $cuerpo = $node->body['und']['0']['value'];
-  $fids   = $node->field_convenio['und'];
+  $field_introduccion_respaldo = $node->field_introduccion_respaldo;
+  $fids   = $node->field_empresa_respaldo['und'];
   // print_r($fids);
   
 ?>
@@ -14,7 +14,7 @@
 <div class="container-sm">
   <h1 class="light"><?php print $titulo ?></h1>
   <div class="separator-gray separator-sm"></div>
-  <h3><?php print $cuerpo ?></h3>
+  <p class="lead text-gray"><?php print $field_introduccion_respaldo ?></p>
   <div class="pv-ch-42">
     <div>
       <ul class="grid-list grid-list-3 grid-list-hover size sm">
@@ -23,8 +23,8 @@
           // print_r($fid['value']);
             $num = $fid['value'];
             $field = entity_load('field_collection_item', array($fid['value']));
-            $image = $field[$num]->field_image['und'][0]['filename']; 
-            $link = $field[$num]->field_link_['und'][0]['value'];
+            $image = $field[$num]->field_logo_respaldo['und'][0]['filename']; 
+            $link = $field[$num]->field_link_respaldo['und'][0]['value'];
           ?>
         <li data-href="<?php print $link ?>" target="_blank">
           <div>
@@ -36,3 +36,7 @@
     </div>
   </div>
 </div>
+
+
+
+
