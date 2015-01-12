@@ -76,14 +76,14 @@
 	  'weight' => 8,
 	));
 
-	drupal_add_js(path_to_theme() . 'js/b3/transition.js', array(
+	drupal_add_js(path_to_theme() . '/js/b3/transition.js', array(
 	  'scope' => 'footer',
 	  'group' => JS_THEME,
 	  'every_page' => TRUE,
 	  'weight' => 9,
 	));
 
-	drupal_add_js(path_to_theme() . 'js/b3/carousel.js', array(
+	drupal_add_js(path_to_theme() . '/js/b3/carousel.js', array(
 	  'scope' => 'footer',
 	  'group' => JS_THEME,
 	  'every_page' => TRUE,
