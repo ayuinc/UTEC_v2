@@ -199,6 +199,9 @@ $grid-list-hover-height: 350px;
 		}
 		&.hero-unit {
 			min-height: $video-bg-height - 280;
+			&.video-bg {
+				min-height: $video-bg-height - 280;
+			}
 			.overlay {
 				min-height: $video-bg-height - 280;
 			}
@@ -240,6 +243,9 @@ $grid-list-hover-height: 350px;
 		}
 		&.hero-unit {
 			min-height: $video-bg-height - 140;
+			&.video-bg {
+				min-height: $video-bg-height - 140;
+			}
 			.overlay {
 				min-height: $video-bg-height - 140;
 			}
@@ -284,6 +290,9 @@ $grid-list-hover-height: 350px;
 		}
 		&.hero-unit {
 			min-height: $video-bg-height + 140;
+			&.video-bg {
+				min-height: $video-bg-height + 140;
+			}
 			.overlay {
 				min-height: $video-bg-height + 140;
 			}
@@ -318,6 +327,9 @@ $grid-list-hover-height: 350px;
 		}
 		&.hero-unit {
 			min-height: $video-bg-height + 210;
+			&.video-bg {
+				min-height: $video-bg-height + 210;
+			}
 			.overlay {
 				min-height: $video-bg-height + 210;
 			}
