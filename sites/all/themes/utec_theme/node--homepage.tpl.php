@@ -1,19 +1,19 @@
 <?php $video_name = $node->field_video['und']['0']['filename']; ?>
 
-<div class="hero-unit video-bg"> 
-	<div class="overlay"></div>
-	<div class="bg-img-block bg-img-block-lg flex-middle">
+<div class="hero-unit video-bg size xl"> 
+	<!-- <div class="overlay"></div> -->
+	<!-- <div class="bg-img-block bg-img-block-lg flex-middle">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-6">
-					<!--<h2 class="thin text-white lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit repellat dolorem alias minus accusamus.</h2>-->
+					<h2 class="thin text-white lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit repellat dolorem alias minus accusamus.</h2>
 				</div>
 			</div>
 		</div>
 		<a class="scroll-down scroll-down-sq size lg" href="#sec-1" rel="nofollow">
 			<i class="icon-arrows-down bg-primary text-white"></i>
 		</a>
-	</div>
+	</div> -->
 	<video
 		id="videocover"
 		autoplay
