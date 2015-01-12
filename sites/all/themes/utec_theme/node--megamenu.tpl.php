@@ -287,9 +287,9 @@
 						<li>
 							<a href="/admision/visita-utec"><span>Visita</span>UTEC</a>
 						</li>
-						<!--<li>
-							<a href="#"><span>Orientación</span>Vocacional</a>
-						</li>-->
+						<li>
+							<a href="/admision/orientacion-vocacional"><span>Orientación</span>Vocacional</a>
+						</li>
 						<li>
 							<a href="/admision/preguntas-frecuentes"><span>Preguntas</span>Frecuentes</a>
 						</li>
