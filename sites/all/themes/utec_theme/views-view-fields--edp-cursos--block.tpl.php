@@ -15,7 +15,7 @@
 	$sub_titulo = $fields['field_subtitulo']->content;		 		
 	// $cuerpo = $node->body['und']['0']['value'];	
 	$imagen = $fields['field_image']->content;
-	die(print_r($fields['field_image']));
+	kpr($fields);
 	$path = $fields['path']->content;	
 	// $texto_imagen = $node->field_texto_imagen['und']['0']['value'];
 	// $fecha = $node->field_fecha['und']['0']['value'];		 		
