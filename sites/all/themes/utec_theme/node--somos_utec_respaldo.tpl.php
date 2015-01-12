@@ -5,10 +5,8 @@
   $pathfile = variable_get('file_public_path', conf_path() . '/files/');
 
   $titulo = $node->title;
-  $field_introduccion_respaldo = $node->field_introduccion_respaldo;
+  $field_introduccion_respaldo = $node->field_introduccion_respaldo['und']['0']['value'];
   $fids   = $node->field_empresa_respaldo['und'];
-  print_r($node);
-  
 ?>
 
 <div class="container-sm">
