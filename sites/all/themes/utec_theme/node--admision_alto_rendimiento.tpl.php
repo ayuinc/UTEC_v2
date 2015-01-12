@@ -23,7 +23,6 @@ $field_temario_alto = $node->field_temario_alto['und']['0']['value'];
 		<div class="mb-ch-42">
 			<div>
 				<h3>¿Cómo postular?</h3>
-				<p class="lead">Procedimiento</p>
 				<div class="list-custom">
 					<?php  print $field_como_postular_alto ?>
 				</div>
