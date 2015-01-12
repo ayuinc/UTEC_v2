@@ -48,6 +48,15 @@
 .flex-middle-center {
 	@include flex-middle-center;
 }
+@mixin flex-middle-end {
+	@include display(flex);
+	@include flex-direction(column);
+	@include justify-content(flex-end);
+	@include align-items(center);
+}
+.flex-middle-end {
+	@include flex-middle-end;
+}
 
 // HORIZONTAL DISTRIBUTION SHORTHANDS
 @mixin flex-space-between {
