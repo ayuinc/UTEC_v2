@@ -13,8 +13,12 @@
 	<div id="carousel-custom" class="carousel carousel-custom slide mb-42" data-ride="carousel">
 		<!-- Wrapper for slides -->
 	  <div class="carousel-inner" role="listbox">
+	  	<?php $count = 0; ?>
 		  <?php foreach ($rows as $id => $row): ?>
+		  <div class="item <?php if($count == 0){print 'active'} ?>">
 		    <?php print $row;?>
+		  </div>
+		  <?php $count++; ?>
 			<?php endforeach; ?>
 		</div>
 		<!-- Controls -->
