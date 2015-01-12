@@ -4839,7 +4839,8 @@ body {
   position: absolute;
   right: 0;
   bottom: 4px;
-  left: 0; }
+  left: 0;
+  z-index: 1000; }
   .scroll-down i {
     content: "\e600";
     font-family: 'icomoon'; }
