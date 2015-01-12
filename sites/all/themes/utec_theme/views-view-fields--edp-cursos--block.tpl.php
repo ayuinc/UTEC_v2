@@ -16,7 +16,7 @@
 	// $cuerpo = $node->body['und']['0']['value'];	
 	$imagen = $fields['field_image']->content;
 
-	kpr($fields);
+	print_r($fields['field_image']);
 
 	$path = $fields['path']->content;	
 	// $texto_imagen = $node->field_texto_imagen['und']['0']['value'];
