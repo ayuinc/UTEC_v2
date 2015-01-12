@@ -4754,7 +4754,7 @@ body {
   background-size: cover; }
   .hero-unit.video-bg {
     overflow: hidden;
-    height: 491px; }
+    min-height: 491px; }
   .hero-unit .overlay {
     min-height: 491px; }
 
