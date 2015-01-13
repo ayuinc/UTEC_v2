@@ -70,6 +70,7 @@ $sidebar-block-height: 210px;
 // SECTION SCROLL
 #section-scroll {
 	@include position(fixed, 42% 0 null null);
+	z-index: 10000;
 	ul {
 		@include list-unstyled;
 		min-height: 91px;

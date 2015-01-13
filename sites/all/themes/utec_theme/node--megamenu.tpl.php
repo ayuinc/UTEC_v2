@@ -11,7 +11,7 @@
 <!-- End Google Tag Manager -->
 
 <!-- HEADER -->
-<div id="header"> 
+<div id="header" class="hidden-xs hidden-sm"> 
 	<div class="tool-bar bg-gray-lighter pt-sm pb-sm">
 		<div class="container">
 			<div class="left">
@@ -376,7 +376,7 @@
 					<a href="#"><img src="/<?php print $theme_path; ?>/assets/img/icon_UTEC.png" alt="Logo UTEC"></a>
 				</div>
 			</div>
-			<div class="left">
+			<div class="left hidden-xs hidden-sm">
 				<ul class="nav-display-triggers">
 					<li>
 						<a href="#nav-shrink-display-1">
@@ -409,6 +409,9 @@
 						</a>
 					</li>
 				</ul>
+			</div>
+			<div class="right visible-xs-block visible-sm-block">
+				<a href="#" class="menu-trigger icon-menu"></a>
 			</div>
 		</div>
 	</div>

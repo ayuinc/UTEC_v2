@@ -48,7 +48,6 @@
       </a>
     </div>
   </div>
-  <div class="overlay"></div>
 </div> <!-- END:Hero -->
 <div data-section-scroll="Malla curricular" id="malla-curricular" class="malla-curricular section-scroll-content minh-560 flex-middle-center">
   <div class="container-sm text-right normalize-text">

@@ -7,6 +7,7 @@ $plugin = array(
   'category' => 'Utec Theme',
   'regions' => array(
     'header' => t('Header'),
+    'menu-mobile' => t('Menu Mobile'),
     'header-bottom' => t('Header Bottom'),
     'body' => t('Body'),
     'footer' => t('Footer'),

@@ -4853,7 +4853,8 @@ body {
 #section-scroll {
   position: fixed;
   top: 42%;
-  right: 0; }
+  right: 0;
+  z-index: 10000; }
   #section-scroll ul {
     padding-left: 0;
     list-style: none;
