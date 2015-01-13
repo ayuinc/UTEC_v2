@@ -91,6 +91,7 @@
 					@include bold;
 					color: $gray;
 					span {
+						@include bold;
 						color: $gray-darker;
 					}
 				}
@@ -113,7 +114,10 @@
 							border: none;
 							&:hover,
 							&.active {
-								color: #02c1f5;	
+								color: $brand-primary;
+								span {
+									color: $brand-primary;
+								}
 							}
 							span {
 								display: block;
