@@ -13,7 +13,6 @@
 	<h1 class="light"><?php print $titulo ?></h1>
 	<div class="separator-gray separator-sm"></div>
 	<div class="pv-ch-42 lead-ch p-ch-gray">
-		<img src="<?php print '/'.$pathfile.'noticias/'.$imagen ?>" alt="#" class="img-responsive">
 		<div id="carousel-custom" class="carousel carousel-custom slide mb-42" data-ride="carousel">
 			<!-- Wrapper for slides -->
 		  <div class="carousel-inner" role="listbox">
@@ -21,8 +20,6 @@
 			  <?php foreach ($images as $image): ?>
 			  <div class="item <?php if($count == 0){print 'active';} ?>">
 			    <img src="<?php print '/'.$pathfile.'noticias/'.$image['filename'] ?>" alt="..." height="479" width="720">
-					<h3 class="light"><em><?php print $title ?></em></h3>
-					<p class="text-gray"><?php print $texto_corto ?></p>
 			  </div>
 			  <?php $count++; ?>
 				<?php endforeach; ?>
