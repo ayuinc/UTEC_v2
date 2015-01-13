@@ -15,6 +15,7 @@ $user-card-height: 42px;
 $user-card-width: 210px;
 $video-bg-height: 491px;
 $grid-list-hover-height: 350px;
+$sidebar-block-height: 210px;
 
 // CONTROL GRID BLOCK IMG SIZES
 @mixin content-block {
@@ -224,7 +225,7 @@ $grid-list-hover-height: 350px;
 		&.banner {
 			.banner-content,
 			.banner-pic {
-				min-height: $banner-height - 140;
+				min-height: $banner-height - 83;
 			}
 		}
 		&.user-card {
@@ -421,4 +422,72 @@ img.icon-utec {
 
 .gray-light {
 	color: #bbb !important;
+}
+
+// SOCIAL LINKS
+.social-links {
+	@include clearfix;
+	@include list-unstyled;
+	> li {
+		float: left;
+		text-align: center;
+		a {
+			display: block;
+			// padding: 7px;
+			color: white;
+			width: 31px;
+			height: 31px;
+			@include flex-middle-center;
+		}
+		&:nth-child(odd) {
+			a {
+				background-color: $gray-dark;
+				&:hover {
+					background-color: darken($gray-dark, 3%);
+				}
+			}
+		}
+		&:nth-child(even) {
+			a {
+				background-color: $gray-darker;
+				&:hover {
+					background-color: darken($gray-darker, 3%);
+				}
+			}
+		}
+	}
+}
+
+// SIDEBAR BLOCK
+.sidebar-block {
+	border: 1px solid $gray;
+	@include bg-img-control;
+	min-height: $sidebar-block-height;
+	> div {
+		padding: 28px;
+	}
+	.categories-list {
+		@include list-unstyled;
+		li {
+			text-transform: uppercase;
+			margin-bottom: 12px;
+			a {
+				color: $gray-dark;
+				@include thin;
+				&:hover {
+					color: $gray-darker;
+				}
+			}
+		}
+	}
+	.title {
+		h3 {
+			text-transform: uppercase;
+			@include bold;
+			color: $gray-darker;
+			span {
+				color: $gray;
+			}
+		}
+	}
 }
