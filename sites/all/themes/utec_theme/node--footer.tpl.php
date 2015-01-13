@@ -86,8 +86,8 @@
             <li><a href="/admision/modalidades" class="atm-menu-inferior"><small>Presinscripción</small></a></li>
             <li><a href="/admision/informacion-economica" class="atm-menu-inferior"><small>Información Económica</small></a></li>
             <li><a href="/admision/inscripcion" class="atm-menu-inferior"><small>Inscripción</small></a></li>
-            <li><a href="/admision/visita-utec" class="atm-menu-inferior"><small>Visita</small><small>UTEC</small></a></li>
-            <li><a href="/admision/orientacion-vocacional" class="atm-menu-inferior"><small>Orientación</small><small>Vocacional</small></a></li>
+            <li><a href="/admision/visita-utec" class="atm-menu-inferior"><small>Visita UTEC</small></a></li>
+            <li><a href="/admision/orientacion-vocacional" class="atm-menu-inferior"><small>Orientación Vocacional</small></a></li>
             <li><a href="/admision/preguntas-frecuentes" class="atm-menu-inferior"><small>FAQ</small></a></li>
           </ul>
         </li>
