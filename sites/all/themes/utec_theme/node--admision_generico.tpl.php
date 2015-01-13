@@ -19,7 +19,6 @@
 	<?php } ?>	
 	<?php if ($field_contenido_generica!='') { ?>
 		<p class="lead text-gray mb-42"><?php print $field_contenido_generica ?></p>
-	<?php } ?>
+	<?php } ?>	
 </div>
-
 

@@ -33,7 +33,7 @@
 			<div class="right">
 				<div class="inline-block pt-xs">
 					<ul class="small ml-ch-7 nav-list">
-						<!--<li class="form-search">
+						<li class="form-search">
 							<form action="" class="form-inline mr-14">
 								<div class="form-group mb-0">
 									<label for="search" class="sr-only">Buscar</label>
@@ -41,19 +41,19 @@
 									<button type="submit" class="btn btn-default btn-xs" value="S"><i class="icon-search"></i></button>
 								</div>
 							</form>
-						</li>-->
-						<!--<li class="pt-7">
+						</li>
+						<li class="pt-7">
 							<a href="#" class="text-gray">Contacto</a>
 						</li>
 						<li class="pt-7">
 							<a href="#" class="text-gray">Blog</a>
 						</li>
 						<li>
-							<a href="#" class="btn btn-xs btn-custom btn-gray" rel="nofollow">EN</a>
+							<a href="/en" class="btn btn-xs btn-custom btn-gray" rel="nofollow">EN</a>
 						</li>
 						<li>
-							<a href="#" class="btn btn-xs btn-custom btn-gray" rel="nofollow">ES</a>
-						</li>-->
+							<a href="/es" class="btn btn-xs btn-custom btn-gray" rel="nofollow">ES</a>
+						</li>
 						<li>
 							<a href="#" class="btn btn-xs btn-custom btn-gray atm-login" rel="nofollow">Intranet</a>
 						</li>
@@ -145,12 +145,12 @@
 						</li>-->
 					</ul>
 					<ul>
-						<!--<li>
-							<a href="#">Noticias</a>
+						<li>
+							<a href="/somos-utec/noticias">Noticias</a>
 						</li>
 						<li>
-							<a href="#">Eventos</a>
-						</li>-->
+							<a href="/somos-utec/eventos-utec">Eventos UTEC</a>
+						</li>
 						<li>
 							<a href="/somos-utec/vida-estudiantil"><span>Vida</span>Estudiantil</a>
 						</li>
@@ -162,6 +162,9 @@
 						</li>
 						<li>
 							<a href="/somos-utec/utec-garage"><span>Utec</span>garage</a>
+						</li>
+						<li>
+							<a href="http://utecventures.com/" target="_blank" ><span>Utec</span>Ventures</a>
 						</li>
 						<!--<li>
 							<a href="#" class="btn btn-primary btn-custom bold">Postular</a>
