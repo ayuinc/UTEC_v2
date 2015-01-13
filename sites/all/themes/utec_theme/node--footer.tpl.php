@@ -120,9 +120,9 @@
 				<a href="#" class="btn btn-outline btn-xs btn-gray-dark"><i class="icon-footer-book"></i></a>
 				<a href="https://www.facebook.com/utecuniversidad" target="_blank" class="btn btn-outline btn-xs btn-gray-dark"><i class="icon-footer-facebook"></i></a>
 				<a href="https://twitter.com/utecedu" target="_blank" class="btn btn-outline btn-xs btn-gray-dark"><i class="icon-footer-twitter"></i></a>
-        <a href="#" target="_blank"  class="btn btn-outline btn-xs btn-gray-dark"><i class="icon-footer-gt"></i></a>
-        <a href="#" target="_blank"  class="btn btn-outline btn-xs btn-gray-dark"><i class="icon-footer-gt"></i></a>
-        <a href="#" target="_blank"  class="btn btn-outline btn-xs btn-gray-dark"><i class="icon-footer-gt"></i></a>
+        <a href="https://www.linkedin.com/pub/utec-universidad-de-ingenier%C3%ADa-y-tecnolog%C3%ADa/71/a64/690/en" target="_blank"  class="btn btn-outline btn-xs btn-gray-dark"><i class="icon-footer-linkedin"></i></a>
+        <a href="http://instagram.com/utecedu" target="_blank"  class="btn btn-outline btn-xs btn-gray-dark"><i class="icon-footer-instagram"></i></a>
+        <a href="https://www.youtube.com/user/universidadutec" target="_blank"  class="btn btn-outline btn-xs btn-gray-dark"><i class="icon-footer-youtube"></i></a>
 			</nav>
 		</div>
 	</div>

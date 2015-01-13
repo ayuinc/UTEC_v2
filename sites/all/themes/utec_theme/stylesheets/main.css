@@ -3600,6 +3600,12 @@ small {
 .icon-footer-twitter:before {
   content: "\e617"; }
 
+.icon-footer-instagram:before {
+  content: "\ea90"; }
+
+.icon-footer-youtube:before {
+  content: "\ea97"; }
+
 .icon-ing-electronica:before {
   content: "\e618"; }
 
