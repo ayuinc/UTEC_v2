@@ -37,7 +37,7 @@
             <!--<li><a href="#" class="atm-menu-inferior"><small>Calendario Académico</small></a></li>-->
             <li><a href="/somos-utec/respaldo" class="atm-menu-inferior"><small>Respaldo</small></a></li>
             <li><a href="/somos-utec/autoridades" class="atm-menu-inferior"><small>Autoridades</small></a></li>
-            <li><a href="/somos-utec/consejo-directivo" class="atm-menu-inferior"><small>Concejo Directivo</small></a></li>
+            <li><a href="/somos-utec/consejo-directivo" class="atm-menu-inferior"><small>Consejo Directivo</small></a></li>
             <li><a href="/somos-utec/profesores" class="atm-menu-inferior"><small>Profesores</small></a></li>
             <li><a href="/somos-utec/noticias" class="atm-menu-inferior"><small></small><small>Noticias</small></a></li>
             <li><a href="/somos-utec/eventos-utec" class="atm-menu-inferior"><small>Eventos</small><small>Utec</small></a></li>
@@ -118,9 +118,11 @@
 				<span><strong>W. </strong>www.utec.edu.pe</span>
 				<span><strong>C. </strong><a href="mailto:informes@utec.edu.pe" class="text-gray-dark">informes@utec.edu.pe</a></span>
 				<a href="#" class="btn btn-outline btn-xs btn-gray-dark"><i class="icon-footer-book"></i></a>
-				<a href="#" class="btn btn-outline btn-xs btn-gray-dark"><i class="icon-footer-gt"></i></a>
-				<a href="#" class="btn btn-outline btn-xs btn-gray-dark"><i class="icon-footer-facebook"></i></a>
-				<a href="#" class="btn btn-outline btn-xs btn-gray-dark"><i class="icon-footer-twitter"></i></a>
+				<a href="https://www.facebook.com/utecuniversidad" target="_blank" class="btn btn-outline btn-xs btn-gray-dark"><i class="icon-footer-facebook"></i></a>
+				<a href="https://twitter.com/utecedu" target="_blank" class="btn btn-outline btn-xs btn-gray-dark"><i class="icon-footer-twitter"></i></a>
+        <a href="#" target="_blank"  class="btn btn-outline btn-xs btn-gray-dark"><i class="icon-footer-gt"></i></a>
+        <a href="#" target="_blank"  class="btn btn-outline btn-xs btn-gray-dark"><i class="icon-footer-gt"></i></a>
+        <a href="#" target="_blank"  class="btn btn-outline btn-xs btn-gray-dark"><i class="icon-footer-gt"></i></a>
 			</nav>
 		</div>
 	</div>

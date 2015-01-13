@@ -651,7 +651,7 @@
 						<li>
 							<a href="/edp/cursos/cursos-cortos"><span>Cursos</span>Cortos</a>
 						</li>
-					</ul>
+					</ul> 
 					<ul>
 						<!--<li>
 							<a href="/edp/cursos/cursos-adhoc"><span>Cursos</span>Adhoc</a>
