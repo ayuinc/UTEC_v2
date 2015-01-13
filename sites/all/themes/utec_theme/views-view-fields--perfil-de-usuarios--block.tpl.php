@@ -18,5 +18,5 @@
 </div>
 <h3 class="thin"><?php print $name ?></h3>
 <a href="#" rel="nofollow" class="block"><em><?php if($twitter){print $twitter;} else print $mail;  ?></em></a>
-<p>Profesor de <a href="#"><?php print $descripcion ?></a> a Tiempo Completo</p>
+<p><?php print $descripcion ?></p>
 <p><?php print $resenia ?></p>
