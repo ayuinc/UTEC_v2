@@ -8,7 +8,7 @@
 	$mail = $fields['mail']->content;
 	$picture = $fields['picture']->content;
 	$descripcion = $fields['field_descripci_n']->content;
-	$resenia = $fields['field_rese_']->content;
+	$resenia = $fields['field_rese_a']->content;
 	$twitter = $fields['field_twitter']->content;
 
 ?>
