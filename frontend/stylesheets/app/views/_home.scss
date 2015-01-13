@@ -31,5 +31,16 @@
 				}
 			}
 		}
+		@media #{$xs-only} {
+			@include normalize-text;
+			[onClick] > div,
+			h2 {
+				float: left;
+				display: block;			
+			}
+			h2 {
+				padding: 14px 0 0 14px;
+			}
+		}
 	}
 }

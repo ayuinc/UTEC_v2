@@ -8,6 +8,15 @@ body {
 	}
 }
 
+html {}
+
+body {
+	overflow-x: hidden;
+	&.scroll-y-off {
+		overflow: hidden;
+	}
+}
+
 // HEIGHT CONTROL
 $bg-img-height: 350px;
 $banner-height: 293px;
@@ -184,6 +193,7 @@ $sidebar-block-height: 210px;
 			.banner-content,
 			.banner-pic {
 				min-height: $banner-height - 210;
+				min-height: rem($banner-height - 210);
 			}
 		}
 		&.user-card {
@@ -226,6 +236,7 @@ $sidebar-block-height: 210px;
 			.banner-content,
 			.banner-pic {
 				min-height: $banner-height - 83;
+				min-height: rem($banner-height - 83);
 			}
 		}
 		&.user-card {
@@ -270,6 +281,7 @@ $sidebar-block-height: 210px;
 			.banner-content,
 			.banner-pic {
 				min-height: $banner-height + 210;
+				min-height: rem($banner-height + 210);
 			}
 		}
 		&.user-card {
@@ -310,6 +322,7 @@ $sidebar-block-height: 210px;
 			.banner-content,
 			.banner-pic {
 				min-height: $banner-height + 280;
+				min-height: rem($banner-height + 280);
 			}
 		}
 		&.user-card {

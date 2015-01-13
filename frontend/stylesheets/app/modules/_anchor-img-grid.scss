@@ -18,6 +18,10 @@
 			text-align: center;
 			opacity: 0;
 			color: white;
+			background-color: rgba($gray-dark, 0.9);
+			@media #{$xs-only} {
+				opacity: 1;
+			}
 			> a {
 				color: white;
 				h4, h2 {
@@ -27,7 +31,6 @@
 		}
 		&:hover {
 			.overlay {
-				background-color: rgba($gray-dark, 0.9);
 				opacity: 1;
 			}
 		}

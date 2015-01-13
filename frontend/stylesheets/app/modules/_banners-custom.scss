@@ -1,5 +1,6 @@
 // BANNERS
 .banner {
+	@include make-row;
 	.banner-pic,
 	.banner-content {
 		position: relative;
@@ -25,6 +26,7 @@
 	}
 	.banner-content {
 		min-height: $banner-height;
+		min-height: rem($banner-height);
 		@include flex-middle;
 		padding: 0 $container-fluid * 2;
 	}
