@@ -48,7 +48,7 @@ $titulo = $node->title;
 				</div>
 			</div>
 		</li>
-		<li data-href="http://app.utec.edu.pe/admision/examen-admision/informacion.php">
+		<li data-href="/admision/examen-de-admision">
 			<div>
 				<h3 class="thin lead">Examen de admisión</h3>
 				<div class="size xl">
