@@ -25,26 +25,28 @@
 
 ?>
 <div class="hero-unit"> <!-- HERO -->
-  <div data-section-scroll="Que es" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
-    <div class="container-sm hero-text">
-      <h2 class="thin h3 text-white mb-7">¿Qué es la</h2>
-      <h1 class="thin text-white mt-0"><?php print $titulo ?>?</h1>
-      <hr class="hr-white">
-      <div class="row">
-        <div class="col-sm-3">
-          <div class="size xl">
-            <i class="icon-carreras-que-es text-white"></i>
-            <a href="<?php print $carrera_link ?>" class="btn btn-white btn-outline see-more mt-7">Ver más</a>
+  <div data-section-scroll="Que es" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
+    <div class="overlay flex-middle bg-gray-op">
+      <div class="container-sm hero-text">
+        <h2 class="thin h3 text-white mb-7">¿Qué es la</h2>
+        <h1 class="thin text-white mt-0"><?php print $titulo ?>?</h1>
+        <hr class="hr-white">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="size xl">
+              <i class="icon-carreras-que-es text-white"></i>
+              <a href="<?php print $carrera_link ?>" class="btn btn-white btn-outline see-more mt-7">Ver más</a>
+            </div>
+          </div>
+          <div class="col-sm-9">
+            <h2 class="lead thin text-white h5 mt-0"><?php print $carrera_txt ?></h2>
           </div>
         </div>
-        <div class="col-sm-9">
-          <h2 class="lead thin text-white h5 mt-0"><?php print $carrera_txt ?></h2>
-        </div>
       </div>
+      <a class="scroll-down scroll-down-sq size lg" href="#malla-curricular" rel="nofollow">
+        <i class="icon-arrows-down bg-white-op text-gray"></i>
+      </a>
     </div>
-    <a class="scroll-down scroll-down-sq size lg" href="#malla-curricular" rel="nofollow">
-      <i class="icon-arrows-down bg-white-op text-gray"></i>
-    </a>
   </div>
   <div class="overlay"></div>
 </div> <!-- END:Hero -->
