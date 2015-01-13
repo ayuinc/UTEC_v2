@@ -13,7 +13,7 @@
 	<h1 class="light"><?php print $titulo ?></h1>
 	<div class="separator-gray separator-sm"></div>
 	<div class="pv-ch-42 lead-ch p-ch-gray">
-		<img src="<?php print $pathfile.$imagen ?>" alt="#" class="img-responsive">
+		<img src="<?php print '/'.$pathfile.'noticias/'.$imagen ?>" alt="#" class="img-responsive">
 		<p><?php print $cuerpo ?></p>
 	</div>
 </div>
