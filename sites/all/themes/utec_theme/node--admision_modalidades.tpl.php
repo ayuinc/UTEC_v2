@@ -40,7 +40,7 @@ $titulo = $node->title;
 				</div>
 			</div>
 		</li>
-		<li data-href="http://app.utec.edu.pe/admision/alto-rendimiento/informacion.php">
+		<li data-href="/admision/bachillerato-internacional">
 			<div>
 				<h3 class="thin lead">Bachillerato internacional</h3>
 				<div class="size xl">
