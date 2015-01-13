@@ -4,26 +4,19 @@
   $path = $base_url.'/'.$theme_path;
   $pathfile= variable_get('file_public_path', conf_path() . '/files/');
 
-  kpr($fields);
-	$title = $fields['title']->content;
-	$body = $fields['body']->content;
-	$image = $fields['field_imagen']->content;
-	$category = $fields['field_categor_a']->content;
-	$texto_corto = $fields['field_texto_corto']->content;
-	$path = $fields['path']->content;
-	$user_id = $fields['uid']->content;
-	$created = $fields['created']->content;
+	$name = $fields['name']->content;
+	$mail = $fields['mail']->content;
+	$picture = $fields['picture']->content;
+	$descripcion = $fields['field_descripci_n']->content;
+	$resenia = $fields['field_rese_a']->content;
+	$twitter = $fields['field_twitter']->content;
 
 ?>
-<li class="banner banner-label-bottom mb-14 ml-0" data-href="<?php print $path ?>">
-	<div class="banner-pic" style="background-image: url(<?php print $image?>);">
-		<div class="banner-label bg-primary text-white"><span><?php print $category ?></span></div>
-	</div>
-	<div class="banner-content">
-		<div>
-			<h2><a href="#"><?php print $title ?></a></h2>
-			<em class="text-primary"><?php print $created ?></em>
-			<p class="lead"><?php print $texto_corto ?></p>
-		</div>
-	</div>
-</li>
+
+<div>
+	<?php print $picture ?>
+</div>
+<h3 class="thin"><?php print $name ?></h3>
+<a href="#" rel="nofollow" class="block"><em><?php if($twitter){print $twitter;} else print $mail;  ?></em></a>
+<p>Profesor de <a href="#"><?php print $descripcion ?></a> a Tiempo Completo</p>
+<p><?php print $resenia ?></p>
