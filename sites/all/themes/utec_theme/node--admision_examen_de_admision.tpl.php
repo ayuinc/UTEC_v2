@@ -10,7 +10,7 @@ $field_temario_examen = $node->field_temario_examen['und']['0']['value'];
 ?>
 	<div class="container-sm">
 	<div>
-		<h1 class="light">Alto rendimiento</h1>
+		<h1 class="light"><?php print $titulo ?></h1>
 		<div class="separator-gray separator-md"></div>
 		<div>
 		<p class="lead text-gray"><?php print $field_descripcion_corta_examen ?></p>
