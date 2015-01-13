@@ -33,14 +33,14 @@
             <li><a href="/somos-utec/vida-estudiantil" class="atm-menu-inferior"><small>Vida Estudiantil</small></a></li>
             <li><a href="/somos-utec/campus-y-laboratorios" class="atm-menu-inferior"><small>Campus &amp; Laboratorios</small></a></li>
             <li><a href="/somos-utec/ingenio-en-accion" class="atm-menu-inferior"><small>Ingenio en Acción</small></a></li>
-            <!--<li><a href="#" class="atm-menu-inferior"><small>UTEC Ventures</small></a></li>
-            <li><a href="#" class="atm-menu-inferior"><small>Calendario Académico</small></a></li>-->
+            <li><a href="http://utecventures.com/" target="_blank" class="atm-menu-inferior"><small>UTEC Ventures</small></a></li>
+            <!--<li><a href="#" class="atm-menu-inferior"><small>Calendario Académico</small></a></li>-->
             <li><a href="/somos-utec/respaldo" class="atm-menu-inferior"><small>Respaldo</small></a></li>
             <li><a href="/somos-utec/autoridades" class="atm-menu-inferior"><small>Autoridades</small></a></li>
             <li><a href="/somos-utec/consejo-directivo" class="atm-menu-inferior"><small>Concejo Directivo</small></a></li>
             <li><a href="/somos-utec/profesores" class="atm-menu-inferior"><small>Profesores</small></a></li>
-            <!--<li><a href="#" class="atm-menu-inferior"><small></small><small>Noticias</small></a></li>-->
-            <!--<li><a href="#" class="atm-menu-inferior"><small></small><small>Eventos</small></a></li>-->
+            <li><a href="/somos-utec/noticias" class="atm-menu-inferior"><small></small><small>Noticias</small></a></li>
+            <li><a href="/somos-utec/eventos-utec" class="atm-menu-inferior"><small>Eventos</small><small>Utec</small></a></li>
             <li><a href="/somos-utec/trabaja-en-utec" class="atm-menu-inferior"><small>Trabaja en Utec</small></a></li>
           </ul>
         </li>

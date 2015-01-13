@@ -145,12 +145,12 @@
 						</li>-->
 					</ul>
 					<ul>
-						<!--<li>
-							<a href="#">Noticias</a>
+						<li>
+							<a href="/somos-utec/noticias">Noticias</a>
 						</li>
 						<li>
-							<a href="#">Eventos</a>
-						</li>-->
+							<a href="/somos-utec/eventos-utec">Eventos UTEC</a>
+						</li>
 						<li>
 							<a href="/somos-utec/vida-estudiantil"><span>Vida</span>Estudiantil</a>
 						</li>
@@ -162,6 +162,9 @@
 						</li>
 						<li>
 							<a href="/somos-utec/utec-garage"><span>Utec</span>garage</a>
+						</li>
+						<li>
+							<a href="http://utecventures.com/" target="_blank" ><span>Utec</span>Ventures</a>
 						</li>
 						<!--<li>
 							<a href="#" class="btn btn-primary btn-custom bold">Postular</a>
