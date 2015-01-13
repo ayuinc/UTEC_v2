@@ -3913,6 +3913,12 @@ input[type="submit"].btn.btn-gray-dark.btn-outline {
     border-radius: 0;
     border: 1px solid #323232;
     color: #323232; }
+
+a.btn.btn-gray-dark.btn-rrss{
+  width: 35px;
+  margin-left: 0.7rem !important;
+}
+
 a.btn.btn-gray.btn-outline,
 button.btn.btn-gray.btn-outline,
 input[type="submit"].btn.btn-gray.btn-outline {
