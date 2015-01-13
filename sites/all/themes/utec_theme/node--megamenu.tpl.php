@@ -420,50 +420,56 @@
 			<div class="nav-display-left">
 				<div>
 					<h1>Conoce<br><span>Quiénes</span> Somos</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit itaque dolorum fugiat.</p>
+					<p>La universidad que potencia el ingenio, la innovación y el emprendimiento</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
 				<div>
 					<ul>
 						<li>
-							<a href="#">Respaldo</a>
+							<a href="/somos-utec/respaldo">Respaldo</a>
 						</li>
 						<li>
-							<a href="#">Autoridades</a>
+							<a href="/somos-utec/autoridades">Autoridades</a>
 						</li>
 						<li>
-							<a href="#">Profesores</a>
+							<a href="/somos-utec/profesores">Profesores</a>
 						</li>
 						<li>
-							<a href="#"><span>Ingenio</span>en acción</a>
+							<a href="/somos-utec/ingenio-en-accion"><span>Ingenio</span>en acción</a>
 						</li>
 						<li>
-							<a href="#"><span>Metodología</span>Educativa</a>
+							<a href="/somos-utec/metodologia-educativa"><span>Metodología</span>Educativa</a>
 						</li>
-						<li>
+						<!--<li>
 							<a href="#"><span>Calendario</span>Académico</a>
-						</li>
+						</li>-->
 					</ul>
 					<ul>
 						<li>
-							<a href="#">Noticias</a>
+							<a href="/somos-utec/noticias">Noticias</a>
 						</li>
 						<li>
-							<a href="#">Eventos</a>
+							<a href="/somos-utec/eventos-utec">Eventos UTEC</a>
 						</li>
 						<li>
-							<a href="#"><span>Vida</span>Estudiantil</a>
+							<a href="/somos-utec/vida-estudiantil"><span>Vida</span>Estudiantil</a>
 						</li>
 						<li>
-							<a href="#"><span>Campus y</span>Laboratorios</a>
+							<a href="/somos-utec/campus-y-laboratorios"><span>Campus y</span>Laboratorios</a>
 						</li>
 						<li>
-							<a href="#"><span>Trabaja</span>en UTEC</a>
+							<a href="/somos-utec/trabaja-en-utec"><span>Trabaja</span>en UTEC</a>
 						</li>
 						<li>
+							<a href="/somos-utec/utec-garage"><span>Utec</span>garage</a>
+						</li>
+						<li>
+							<a href="http://utecventures.com/" target="_blank" ><span>Utec</span>Ventures</a>
+						</li>
+						<!--<li>
 							<a href="#" class="btn btn-primary btn-custom bold">Postular</a>
-						</li>
+						</li>-->
 					</ul>
 				</div>
 			</div>
@@ -477,16 +483,19 @@
 			<div class="nav-display-left">
 				<div>
 					<h1>Experiencia<br><span>en</span> Investigación</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit itaque dolorum fugiat.</p>
+					<p>El paso decisivo para encontrar las mejores soluciones</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
 				<div>
 					<ul>
 						<li>
-							<a href="#">Publicaciones</a>
+							<a href="/investigacion/proyectos">Proyectos</a>
 						</li>
 						<li>
+							<a href="/investigacion/publicaciones">Publicaciones</a>
+						</li>
+						<!--<li>
 							<a href="#"><span>Empresas</span>y clientes</a>
 						</li>
 						<li>
@@ -494,7 +503,7 @@
 						</li>
 						<li>
 							<a href="#">Contacto</a>
-						</li>
+						</li>-->
 					</ul>
 				</div>
 			</div>
@@ -508,37 +517,37 @@
 			<div class="nav-display-left">
 				<div>
 					<h1>Nuestra <span>oferta</span><br>Académica</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit itaque dolorum fugiat.</p>
+					<p>Lleva a nuestros estudiantes a experimentar la ingeniería desde el día uno a través de nuestra metodología de aprendizaje activo.</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
 				<div>
 					<ul>
 						<li>
-							<a href="#"><span>Ingeniería</span>Industrial</a>
+							<a href="/carreras/ingenieria-industrial"><span>Ingeniería</span>Industrial</a>
 						</li>
 						<li>
-							<a href="#"><span>Ingeniería</span>De la Energía</a>
+							<a href="/carreras/ingenieria-de-la-energia"><span>Ingeniería</span>De la Energía</a>
 						</li>
 						<li>
-							<a href="#"><span>Ingeniería</span>Química Industrial</a>
+							<a href="/carreras/ingenieria-quimica-industrial"><span>Ingeniería</span>Química Industrial</a>
 						</li>
 						<li>
-							<a href="#"><span>Ingeniería</span>Mecánica</a>
+							<a href="/carreras/ingenieria-mecanica"><span>Ingeniería</span>Mecánica</a>
 						</li>
 					</ul>
 					<ul>
 						<li>
-							<a href="#"><span>Ingeniería</span>Electrónica</a>
+							<a href="/carreras/ingenieria-electronica"><span>Ingeniería</span>Electrónica</a>
 						</li>
 						<li>
-							<a href="#">Menciones</a>
+							<a href="/carreras/menciones">Menciones</a>
 						</li>
 						<li>
-							<a href="#"><span>Escuela de</span>Desarollo</a>
+							<a href="/carreras/escuela-de-desarrollo"><span>Escuela de</span>Desarollo</a>
 						</li>
 						<li>
-							<a href="#" class="btn btn-primary btn-custom bold">Postular</a>
+							<a href="/admision/modalidades" class="btn btn-primary btn-custom bold">Postula</a>
 						</li>
 					</ul>
 				</div>
@@ -552,38 +561,41 @@
 		<div class="container-sm">
 			<div class="nav-display-left">
 				<div>
-					<h1>Talento<br><span>vocación</span> y<br><span>aspiración</span><br>a la excelencia</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit itaque dolorum fugiat.</p>
+					<h1>Ingenio<br><span>vocación</span> y<br><span>aspiración</span><br>a la excelencia</h1>
+					<p>Ese es el ADN de nuestros estudiantes: alcanzar el más alto nivel académico y desarrollo personal</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
 				<div>
 					<ul>
 						<li>
-							<a href="#"><span>Modalidades</span>de admisión</a>
+							<a href="/admision/modalidades"><span>Modalidades</span>de admisión</a>
 						</li>
 						<li>
-							<a href="#"><span>Charlas</span>informativas</a>
+							<a href="/admision/charlas-informativas"><span>Charlas</span>informativas</a>
 						</li>
 						<li>
-							<a href="#"><span>Información</span>económica</a>
+							<a href="/admision/informacion-economica"><span>Información</span>económica</a>
 						</li>
 						<li>
-							<a href="#" class="btn btn-primary btn-custom bold">Postular a la pre</a>
+							<a href="/admision/modalidades" class="btn btn-primary btn-custom bold">Postula</a>
 						</li>
 					</ul>
 					<ul>
 						<li>
+							<a href="/admision/inscripcion">Inscripción</a>
+						</li>
+						<!--<li>
 							<a href="#"><span>Calendario</span>de admisión</a>
+						</li>-->
+						<li>
+							<a href="/admision/visita-utec"><span>Visita</span>UTEC</a>
 						</li>
 						<li>
-							<a href="#"><span>Visita</span>UTEC</a>
+							<a href="/admision/orientacion-vocacional"><span>Orientación</span>Vocacional</a>
 						</li>
 						<li>
-							<a href="#"><span>Orientación</span>Vocacional</a>
-						</li>
-						<li>
-							<a href="#"><span>Preguntas</span>Frecuentes</a>
+							<a href="/admision/preguntas-frecuentes"><span>Preguntas</span>Frecuentes</a>
 						</li>
 					</ul>
 				</div>
@@ -597,21 +609,21 @@
 		<div class="container-sm">
 			<div class="nav-display-left">
 				<div>
-					<h1>Lorem <span>ipsum</span><br>dolor sit amet</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit itaque dolorum fugiat.</p>
+					<h1><span>Convenios y alianzas</span><br>internacionales</h1>
+					<p>Generamos conexiones con las mejores instituciones educativas del mundo</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
 				<div>
 					<ul>
-						<li>
+						<!--<li>
 							<a href="#"><span>Proceso de</span>ampliación</a>
 						</li>
 						<li>
 							<a href="#"><span>Ven a</span>la utec</a>
-						</li>
+						</li>-->
 						<li>
-							<a href="#"><span>Convenios de</span>Intercambio</a>
+							<a href="/convenios/convenios-de-intercambio"><span>Convenios de</span>Intercambio</a>
 						</li>
 					</ul>
 				</div>
@@ -626,27 +638,27 @@
 			<div class="nav-display-left">
 				<div>
 					<h1>Escuela de<br><span>desarollo</span><br>profesional</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit itaque dolorum fugiat.</p>
+					<p>Potencia tus habilidades y alcanza el éxito profesional a través de nuestros cursos</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
 				<div>
 					<ul>
-						<li><a href="#">Diplomados</a></li>
+						<!--<li><a href="/edp/cursos/diplomados">Diplomados</a></li>
 						<li>
-							<a href="#"><span>Cursos</span>online</a>
-						</li>
+							<a href="/edp/cursos/cursos-online"><span>Cursos</span>online</a>
+						</li>-->
 						<li>
-							<a href="#"><span>Cursos</span>Cortos</a>
+							<a href="/edp/cursos/cursos-cortos"><span>Cursos</span>Cortos</a>
 						</li>
-					</ul>
+					</ul> 
 					<ul>
-						<li>
-							<a href="#"><span>Cursos</span>Adhoc</a>
+						<!--<li>
+							<a href="/edp/cursos/cursos-adhoc"><span>Cursos</span>Adhoc</a>
 						</li>
-						<li><a href="#">Calendario</a></li>
+						<li><a href="#">Calendario</a></li>-->
 						<li>
-							<a href="http://escuela-edp.utec.edu.pe" class="btn btn-primary btn-custom bold">Inscríbete</a>
+							<a href="http://escuela-edp.utec.edu.pe/" class="btn btn-primary btn-custom bold">Inscríbete</a>
 						</li>
 					</ul>
 				</div>
