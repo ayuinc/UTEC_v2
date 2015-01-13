@@ -7,6 +7,7 @@
 	$titulo = $node->title;	 		
 	$cuerpo = $node->body['und']['0']['value'];	
 	$imagen = $node->field_imagen['und']['0']['filename'];
+	print_r($node->field_imagen);
 ?>
 
 <div class="container-sm">
