@@ -4,10 +4,8 @@
 		<h4 class="lead mb-35">Éstas son nuestras carreras:</h4>
 		<ul class="grid-list grid-list-5 grid-list-1-xs pt-21 list-carreras text-center text-left-xs mb-ch-70 mb-70">
 			<li>
-				<div onclick="goTo()">
-					<a href="/carreras/ingenieria-quimica-industrial">
-						<div><i class="icon-ing-quimica"></i></div>
-					</a>
+				<div data-href="/carreras/ingenieria-quimica-industrial">
+					<div><i class="icon-ing-quimica"></i></div>
 					<h2>
 						<a href="/carreras/ingenieria-quimica-industrial">
 							<span>Ingeniería</span>
@@ -18,10 +16,8 @@
 				</div>
 			</li>
 			<li>
-				<div onclick="goTo()">
-					<a href="/carreras/ingenieria-industrial">
-						<div><i class="icon-ing-industrial"></i></div>
-					</a>
+				<div data-href="/carreras/ingenieria-industrial">
+					<div><i class="icon-ing-industrial"></i></div>
 					<h2>
 						<a href="/carreras/ingenieria-industrial">
 							<span>Ingeniería</span>
@@ -32,10 +28,8 @@
 				</div>
 			</li>
 			<li>
-				<div onclick="goTo()">
-					<a href="/carreras/ingenieria-de-la-energia">
-						<div><i class="icon-ing-energia"></i></div>
-					</a>
+				<div data-href="/carreras/ingenieria-de-la-energia">
+					<div><i class="icon-ing-energia"></i></div>
 					<h2>
 						<a href="/carreras/ingenieria-de-la-energia">
 							<span>Ingeniería</span>
@@ -46,10 +40,8 @@
 				</div>
 			</li>
 			<li>
-				<div onclick="goTo()">
-					<a href="/carreras/ingenieria-electronica">
-						<div><i class="icon-ing-electronica"></i></div>
-					</a>
+				<div data-href="/carreras/ingenieria-electronica">
+					<div><i class="icon-ing-electronica"></i></div>
 					<h2>
 						<a href="/carreras/ingenieria-electronica">
 							<span>Ingeniería</span>
@@ -60,10 +52,8 @@
 				</div>
 			</li>
 			<li>
-				<div onclick="goTo()">
-					<a href="/carreras/ingenieria-mecanica">
-						<div><i class="icon-ing-mecanica"></i></div>
-					</a>
+				<div data-href="/carreras/ingenieria-mecanica">
+					<div><i class="icon-ing-mecanica"></i></div>
 					<h2>
 						<a href="/carreras/ingenieria-mecanica">
 							<span>Ingeniería</span>
