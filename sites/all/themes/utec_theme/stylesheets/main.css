@@ -3538,8 +3538,8 @@ small {
     font-size: 1.85714rem !important; } }
 @font-face {
   font-family: 'icomoon';
-  src: url("../assets/icons/icomoon-13.01.15.eot?-von12");
-  src: url("../assets/icons/icomoon-13.01.15.eot?#iefix-von12") format("embedded-opentype"), url("../assets/icons/icomoon-13.01.15.woff?-von12") format("woff"), url("../assets/icons/icomoon-13.01.15.ttf?-von12") format("truetype"), url("../assets/icons/icomoon-13.01.15.svg?-von12#icomoon") format("svg");
+  src: url("fonts/icomoon-14.01.15.eot?23bv2t");
+  src: url("fonts/icomoon-14.01.15.eot?#iefix23bv2t") format("embedded-opentype"), url("fonts/icomoon-14.01.15.woff?23bv2t") format("woff"), url("fonts/icomoon-14.01.15.ttf?23bv2t") format("truetype"), url("fonts/icomoon-14.01.15.svg?23bv2t#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 [class^="icon-"], [class*=" icon-"] {
@@ -3700,6 +3700,12 @@ small {
 
 .icon-menu:before {
   content: "\e9bd"; }
+
+.icon-footer-instagram:before {
+  content: "\ea90"; }
+
+.icon-footer-youtube:before {
+  content: "\ea99"; }
 
 a.btn.form-control,
 button.btn.form-control,
