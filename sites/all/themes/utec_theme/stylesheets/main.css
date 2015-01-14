@@ -5177,6 +5177,9 @@ img.icon-utec {
     .sidebar-block .title h3 span {
       color: #8f8d8e; }
 
+.text-shadow {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.75); }
+
 #header, #header-on-scroll {
   position: relative;
   top: 0;
@@ -5884,7 +5887,9 @@ img.icon-utec {
     padding-left: 0;
     list-style: none;
     margin: 0;
-    min-height: 91px; }
+    min-height: 91px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 9px 0 9px 9px; }
     #section-scroll ul li {
       text-align: right;
       padding: 3px 7px;
@@ -5894,7 +5899,7 @@ img.icon-utec {
       #section-scroll ul li a {
         display: block;
         text-align: right;
-        color: #04dbff;
+        color: #323232;
         position: relative;
         padding-right: 18px; }
         #section-scroll ul li a:hover, #section-scroll ul li a.active {
@@ -5906,7 +5911,7 @@ img.icon-utec {
           top: 7px;
           right: 0;
           content: "";
-          border: 1px solid #00BFDF;
+          background-color: #8f8d8e;
           margin-left: 7px; }
         #section-scroll ul li a:before {
           width: 7px;
