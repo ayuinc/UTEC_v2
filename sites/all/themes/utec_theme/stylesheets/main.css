@@ -3538,8 +3538,8 @@ small {
     font-size: 1.85714rem !important; } }
 @font-face {
   font-family: 'icomoon';
-  src: url("fonts/icomoon-14.01.15.eot?23bv2t");
-  src: url("fonts/icomoon-14.01.15.eot?#iefix23bv2t") format("embedded-opentype"), url("fonts/icomoon-14.01.15.woff?23bv2t") format("woff"), url("fonts/icomoon-14.01.15.ttf?23bv2t") format("truetype"), url("fonts/icomoon-14.01.15.svg?23bv2t#icomoon") format("svg");
+  src: url("../assets/icons/icomoon-14.01.15.eot?23bv2t");
+  src: url("../assets/icons/icomoon-14.01.15.eot?#iefix23bv2t") format("embedded-opentype"), url("../assets/icons/icomoon-14.01.15.woff?23bv2t") format("woff"), url("../assets/icons/icomoon-14.01.15.ttf?23bv2t") format("truetype"), url("../assets/icons/icomoon-14.01.15.svg?23bv2t#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 [class^="icon-"], [class*=" icon-"] {
