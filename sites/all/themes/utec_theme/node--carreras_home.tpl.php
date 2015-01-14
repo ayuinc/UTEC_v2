@@ -142,14 +142,14 @@
 </div>
 
 <div id="section-scroll">
-          <ul>
-            <li><a href="#que-es" class="animated bounceInRight ad-0 scroll-ref-0 active">Que es</a></li>
-            <li><a href="#malla-curricular" class="animated bounceInRight ad-2 scroll-ref-1">Malla curricular</a></li>
-            <li><a href="#menciones" class="animated bounceInRight ad-4 scroll-ref-2">Menciones</a></li>
-            <li><a href="#profesores" class="animated bounceInRight ad-6 scroll-ref-3">Profesores</a></li>
-            <li><a href="#perfil-egresado" class="animated bounceInRight ad-8 scroll-ref-4">Perfil del egresado</a></li>
-          </ul>
-          <div class="text-right pv-21 btn-apply animated bounceInRight">
-            <a href="#" class="btn btn-primary uppercase">Postular</a>
-          </div>
+  <ul>
+    <!-- <li><a href="#que-es" class="animated bounceInRight ad-0 scroll-ref-0 active">Que es</a></li>
+    <li><a href="#malla-curricular" class="animated bounceInRight ad-2 scroll-ref-1">Malla curricular</a></li>
+    <li><a href="#menciones" class="animated bounceInRight ad-4 scroll-ref-2">Menciones</a></li>
+    <li><a href="#profesores" class="animated bounceInRight ad-6 scroll-ref-3">Profesores</a></li>
+    <li><a href="#perfil-egresado" class="animated bounceInRight ad-8 scroll-ref-4">Perfil del egresado</a></li> -->
+  </ul>
+  <div class="text-right pv-21 btn-apply animated bounceInRight">
+    <a href="#" class="btn btn-primary uppercase">Postular</a>
+  </div>
 </div>
