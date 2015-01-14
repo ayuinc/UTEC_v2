@@ -60,9 +60,9 @@
             <li class="title text-gray-lighter">Investigación</li>
             <li><a href="/investigacion/proyectos" class="atm-menu-inferior"><small>Proyectos</small></a></li>
             <!--<li><a href="#"><small>Publicaciones</small></a></li>
-            <li><a href="#"><small>Consultorías</small></a></li>
-            <li><a href="#"><small>Empresas &amp; Clientes</small></a></li>
-            <li><a href="#"><small>Contacto</small></a></li>-->
+            <li><a href="#"><small>Consultorías</small></a></li>-->
+            <li><a href="/investigacion/empresas-y-clientes"><small>Empresas &amp; Clientes</small></a></li>
+            <!--<li><a href="#"><small>Contacto</small></a></li>-->
           </ul>
         </li>
         <li>
