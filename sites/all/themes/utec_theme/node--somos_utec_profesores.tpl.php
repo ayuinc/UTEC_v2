@@ -13,12 +13,13 @@
     <?php foreach ($node->field_lista_profesores['und'] as $key => $value) :?>
     <?php $name = $value['entity']->name; ?>   
 		<?php $pic = $value['entity']->picture->filename; ?>
+		<?php $uid = $value['entity']->uid; ?>
     <?php $desc = $value['entity']->field_descripci_n['und'][0]['value']; ?>		
 			<li class="mb-ch-14">
 				<div class="grid-list-pic"><img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="" width="98px" height="auto" class="img-circle"></div>
 				<div>
 					<!--<a href="#">Rosa María Llosa Demartini</a>-->
-					<?php print $name ?> 					
+					<a href="/user/<?php print $uid ?>"><?php print $name ?></a> 					
 					<span><?php print $desc?></span>
 				</div>
 			</li>

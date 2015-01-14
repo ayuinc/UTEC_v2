@@ -10,11 +10,13 @@
 	<div class="separator-gray separator-lg"></div>
 	<p class="lead text-gray"><?php print $field_introduccion_autoridades ?></p>
 	<ul class="pv-35 grid-list grid-list-2">
+		<?php //kpr($node); ?>
     <?php foreach ($node->field_profesor['und'] as $key => $value) :?>
       <?php $name = $value['entity']->name; ?>   
 			<?php $pic = $value['entity']->picture->filename; ?>
+			<?php $uid = $value['entity']->uid; ?>
       <?php $desc = $value['entity']->field_descripci_n['und'][0]['value']; ?>
-			<li data-href="//">
+			<li data-href="/user/<?php print $uid ?>">
 				<div class="user-card user-card-round size lg">
 					<div class="user-pic"><img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt=""></div>
 					<div class="user-info">

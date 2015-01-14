@@ -70,7 +70,7 @@
       <a href="#">Publicaciones</a>
     </li>
     <li>
-      <a href="#"><span>Empresas</span> y clientes</a>
+      <a href="/investigacion/empresas-y-clientes"><span>Empresas</span> y clientes</a>
     </li>
     <li>
       <a href="#">Proyectos</a>

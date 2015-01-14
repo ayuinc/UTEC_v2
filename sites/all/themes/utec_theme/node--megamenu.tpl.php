@@ -17,16 +17,16 @@
 			<div class="left">
 				<ul class=" thin text-gray mr-ch-14 nav-list pt-7">
 					<li>
-						<a href="#" class="atm-menu-superior">Alumnos</a>
+						<a href="/enlaces-rapidos/alumnos" class="atm-menu-superior">Alumnos</a>
 					</li>
 					<li>
-						<a href="#" class="atm-menu-superior">Profesores</a>
+						<a href="/enlaces-rapidos/profesores" class="atm-menu-superior">Profesores</a>
 					</li>
 					<li>
-						<a href="#" class="atm-menu-superior">Empresas</a>
+						<a href="/enlaces-rapidos/empresas" class="atm-menu-superior">Empresas</a>
 					</li>
 					<li>
-						<a href="#" class="atm-menu-superior">Postulantes</a>
+						<a href="/enlaces-rapidos/postulantes" class="atm-menu-superior">Postulantes</a>
 					</li>
 				</ul>
 			</div>
@@ -46,7 +46,7 @@
 							<a href="#" class="text-gray">Contacto</a>
 						</li>
 						<li class="pt-7">
-							<a href="#" class="text-gray">Blog</a>
+							<a href="/blog" class="text-gray">Blog</a>
 						</li>
 						<li>
 							<a href="/en" class="btn btn-xs btn-custom btn-gray" rel="nofollow">EN</a>
