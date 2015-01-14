@@ -15,7 +15,9 @@
 		</div>
 		<ul class="categories-list">
 			<?php 
-				$terms = taxonomy_vocabulary_machine_name_load('blog_tags');
+				$term = taxonomy_vocabulary_machine_name_load('blog_tags');
+				$vid = $term->vid;
+				$terms = taxonomy_get_tree($vid);
 				print_r($terms);
 			?>
 			<?php //foreach ($rows as $id => $row): ?>
