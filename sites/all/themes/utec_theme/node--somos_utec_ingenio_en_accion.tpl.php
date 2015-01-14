@@ -24,7 +24,7 @@
 <?php $field_link_proyecto = $node->field_link_proyecto['und']['0']['value']; ?>
 <?php $field_foto_redes_sociales = $node->field_foto_redes_sociales['und']['0']['filename']; ?>
 
-<div class="hero-unit">
+<div class="hero-unit size lg">
 	<div data-section-scroll="Que es" class="section-scroll-content flex-middle-center">
 		<div class="container-sm text-center">
 			<h1 class="mb-7"><?php print $field_frase_autor ?></h1>
@@ -40,50 +40,52 @@
 		</a>-->
 	</div>
 </div> <!-- END:Hero -->
-<div data-section-scroll="Un panel" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle hero-unit" style="background-image: url(<?php print('/'.$pathfile.$field_foto_causa)?>);">
-	<div class="container hero-text">
-		<div class="row">
-			<div class="col-sm-6 text-white normalize-text">
-				<h2 class="thin"><?php print $field_titulo_causa ?></h2>
-				<hr class="hr-white">
-				<div class="row">
-					<div class="col-sm-9">
-						<h3 class="lead thin"><?php print $field_descripcion_causa ?></h3>
-						<?php if ($field_link_causa!='') { ?>
-							<a href="<?php print $field_link_causa ?>" class="btn btn-white btn-outline btn-sm see-more">Ver más</a>
-						<?php } ?>
+<div data-section-scroll="Un panel" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_foto_causa)?>);">
+	<div class="overlay flex-middle">
+		<div class="container hero-text">
+			<div class="row">
+				<div class="col-sm-6 text-white normalize-text">
+					<h2 class="thin"><?php print $field_titulo_causa ?></h2>
+					<hr class="hr-white">
+					<div class="row">
+						<div class="col-sm-9">
+							<h3 class="lead thin"><?php print $field_descripcion_causa ?></h3>
+							<?php if ($field_link_causa!='') { ?>
+								<a href="<?php print $field_link_causa ?>" class="btn btn-white btn-outline btn-sm see-more">Ver más</a>
+							<?php } ?>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="overlay"></div>
 </div>
 <div class="pvp-7">
 	<div class="container-sm text-center">
 		<p class="lead"><?php print $field_frase_causa ?></p>
 	</div>
 </div>
-<div data-section-scroll="Tres acciones" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle hero-unit" style="background-image: url(<?php print('/'.$pathfile.$field_foto_tres_acciones)?>);">
-	<div class="container hero-text">
-		<div class="row">
-			<div class="col-sm-6 text-white normalize-text">
-				<h2 class="thin"><?php print $field_titulo_tres_acciones ?></h2>
-				<hr class="hr-white">
-				<div class="row">
-					<div class="col-sm-9">
-						<h2 class="lead thin"><?php print $field_subitulo_tres_acciones ?></h2>
-						<?php if ($field_link_tres_acciones!='')  { ?>
-							<a href="<?php print $field_link_tres_acciones ?>" class="btn btn-white btn-outline btn-sm see-more">Ver más</a>
-						<?php } ?>
+<div data-section-scroll="Tres acciones" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_foto_tres_acciones)?>);">
+	<div class="overlay flex-middle">
+		<div class="container hero-text">
+			<div class="row">
+				<div class="col-sm-6 text-white normalize-text">
+					<h2 class="thin"><?php print $field_titulo_tres_acciones ?></h2>
+					<hr class="hr-white">
+					<div class="row">
+						<div class="col-sm-9">
+							<h2 class="lead thin"><?php print $field_subitulo_tres_acciones ?></h2>
+							<?php if ($field_link_tres_acciones!='')  { ?>
+								<a href="<?php print $field_link_tres_acciones ?>" class="btn btn-white btn-outline btn-sm see-more">Ver más</a>
+							<?php } ?>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="overlay"></div>
 </div>
-<div data-section-scroll="Purificando el agua" class="section-scroll-content minh-560 flex-middle-center hero-unit">
+<div data-section-scroll="Purificando el agua" class="section-scroll-content minh-560 flex-middle-center">
 	<div class="container-sm text-center normalize-text">
 		<h2 class="lead thin"><?php print $field_titulo_proyecto ?></h2>
 		<hr class="hr-gray">
@@ -97,19 +99,20 @@
 		<i class="icon-arrows-down bg-info text-white"></i>
 	</a>
 </div>
-<div data-section-scroll="Descubre más" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_foto_redes_sociales)?>);">
-	<div class="container-xs text-white text-center hero-text relative on-top">
-		<h2 class="h3 mb-0">A todo esto le llamamos </h2> <h1 class="thin mt-0">Ingenio en Acción</h1>
-		<p class="thin font-carreras">Descubre más de #ingenioenaccion en:</p>
-		<ul class="grid-list grid-list-centered">
-			<li class="p-0">
-				<a href="https://www.facebook.com/ingenioenaccion" class="btn btn-facebook btn-circle"><i class="icon-footer-facebook"></i></a>
-			</li>
-			<li class="pl-7">
-				<a href="https://twitter.com/UTECedu" class="btn btn-twitter btn-circle"><i class="icon-footer-twitter"></i></a>
-			</li>
-		</ul>
+<div data-section-scroll="Descubre más" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_foto_redes_sociales)?>);">
+	<div class="overlay flex-middle">
+		<div class="container-xs text-white text-center hero-text relative on-top">
+			<h2 class="h3 mb-0">A todo esto le llamamos </h2> <h1 class="thin mt-0">Ingenio en Acción</h1>
+			<p class="thin font-carreras">Descubre más de #ingenioenaccion en:</p>
+			<ul class="grid-list grid-list-centered">
+				<li class="p-0">
+					<a href="https://www.facebook.com/ingenioenaccion" class="btn btn-facebook btn-circle"><i class="icon-footer-facebook"></i></a>
+				</li>
+				<li class="pl-7">
+					<a href="https://twitter.com/UTECedu" class="btn btn-twitter btn-circle"><i class="icon-footer-twitter"></i></a>
+				</li>
+			</ul>
+		</div>
 	</div>
-	<div class="overlay"></div>
 </div>
 
