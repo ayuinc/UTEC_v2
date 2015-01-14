@@ -46,7 +46,7 @@
 							<a href="#" class="text-gray">Contacto</a>
 						</li>
 						<li class="pt-7">
-							<a href="#" class="text-gray">Blog</a>
+							<a href="/blog" class="text-gray">Blog</a>
 						</li>
 						<li>
 							<a href="/en" class="btn btn-xs btn-custom btn-gray" rel="nofollow">EN</a>
