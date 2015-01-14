@@ -100,19 +100,15 @@
     </div>
   </div>
   <div class="container text-center" >
-    <ul class="grid-list grid-list-centered grid-list-4 grid-list-anchors pv-21"> 
+    <ul class="grid-list grid-list-centered grid-list-4 grid-list-anchors pv-21">
       <?php foreach ($node->field_profesor['und'] as $key => $value) :?>
-        <?php $name = $value['entity']->name; ?>   
+        <?php $name = $value['entity']->name; ?>
 				<?php $pic = $value['entity']->picture->filename; ?>
         <?php $desc = $value['entity']->field_descripci_n['und'][0]['value']; ?>
         <?php //die(print_r($value)); ?>
-	      <li class="mb-ch-14">
-	        <div class="grid-list-pic"><img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="" width="180px" height="auto" class="img-circle"></div>
-	        <!-- <a href="" class="h4 mb-0"> --><h4 class="mb-0"><?php print $name ?></h4><!-- </a> -->
-	        <p class="font-profesores"><?php print $desc ?></p>
-	      </li>
+        <li class="mb-ch-14"><div class="grid-list-pic"><img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="" width="180px" height="auto" class="img-circle"></div><!-- <a href="" class="h4 mb-0"> --><h4 class="mb-0"><?php print $name ?></h4><!-- </a> --><p class="font-profesores"><?php print $desc ?></p></li>
       <?php endforeach ?>
-    </ul> 
+    </ul>
     <h3 class="lead thin text-gray"><em><?php print $profesor_txt ?></em></h3>
   </div>
   <a class="scroll-down scroll-down-sq size lg" href="#perfil-egresado" rel="nofollow">
