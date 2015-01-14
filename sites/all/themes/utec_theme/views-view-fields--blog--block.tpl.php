@@ -6,6 +6,7 @@
 	$texto_corto = $fields['field_texto_corto']->content;
 	$path = $fields['path']->content;
 	$user_id = $fields['uid']->content;
+	$blogger_id = $fields['field_blogger']->content;
 
 	global $user;
 	$user_fields = user_load($user_id);
@@ -14,6 +15,8 @@
 	$user_image = $user_fields->picture;
 
 	 kpr($fields);
+	 $blogger = user_load($blogger_id);
+	 kpr($blogger);
 
 ?>
 <div class="pv-21 mt-70">
