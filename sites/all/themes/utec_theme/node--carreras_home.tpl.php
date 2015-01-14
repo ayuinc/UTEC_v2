@@ -26,7 +26,7 @@
 ?>
 <div class="hero-unit"> <!-- HERO -->
   <div data-section-scroll="Que es" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
-    <div class="overlay flex-middle bg-gray-op">
+    <div class="overlay flex-middle bg-gray-darker-op">
       <div class="container-sm hero-text">
         <h2 class="thin h3 text-white mb-7"><?php print t('¿Qué es la') ?></h2>
         <h1 class="thin text-white mt-0"><?php print $titulo ?>?</h1>
@@ -142,14 +142,8 @@
 </div>
 
 <div id="section-scroll">
-          <ul>
-            <li><a href="#que-es" class="animated bounceInRight ad-0 scroll-ref-0 active">Qué es</a></li>
-            <li><a href="#malla-curricular" class="animated bounceInRight ad-2 scroll-ref-1">Malla curricular</a></li>
-            <li><a href="#menciones" class="animated bounceInRight ad-4 scroll-ref-2">Menciones</a></li>
-            <li><a href="#profesores" class="animated bounceInRight ad-6 scroll-ref-3">Profesores</a></li>
-            <li><a href="#perfil-egresado" class="animated bounceInRight ad-8 scroll-ref-4">Perfil del egresado</a></li>
-          </ul>
-          <div class="text-right pv-21 btn-apply animated bounceInRight">
-            <a href="#" class="btn btn-primary uppercase">Postular</a>
-          </div>
+  <ul></ul>
+  <div class="text-right pv-21 btn-apply animated">
+    <a href="#" class="btn btn-primary uppercase">Postular</a>
+  </div>
 </div>

@@ -1,5 +1,5 @@
 <!-- FOOTER -->
-	<div class="subscribe pv-7 bg-gray-darker">
+	<div class="subscribe pv-7 bg-gray-darker hidden-xs">
 		<div class="container">
 			<ul class="grid-list grid-list-centered normalize-text">
 				<li>
@@ -23,9 +23,9 @@
 			</ul>
 		</div>
 	</div>
-	<div class="site-map pv-14 bg-gray-dark">
+	<div class="site-map pv-14 bg-gray-dark hidden-xs">
 		<div class="container">
-			<ul class="grid-list grid-list-6">
+			<ul class="grid-list grid-list-6 grid-list-2-xs">
         <li>
           <ul>
             <li class="title text-gray-lighter">Somos Utec</li>
@@ -110,7 +110,7 @@
       </ul> 
 		</div>
 	</div>
-	<div class="address bg-gray-lighter pt-14">
+	<div class="address pv-14 bg-gray-lighter">
 		<div class="container">
 			<nav class="text-center ml-ch-14 text-gray">
 				<span>Av. Cascanueces 2221, Santa Anita, Lima</span>
@@ -126,7 +126,7 @@
 			</nav>
 		</div>
 	</div>
-	<div class="copyright pt-7 bg-gray-lighter text-center text-gray pb-14">
+	<div class="copyright pv-14 bg-gray-lighter text-center text-gray">
 		<small>Copyright &copy; 2014 UTEC. Todos los derechos reservados.</small>
 	</div>
 <!-- END:Footer -->
