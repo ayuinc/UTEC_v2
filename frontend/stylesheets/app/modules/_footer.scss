@@ -32,6 +32,22 @@
 			}
 		}
 	}
-	.address {}
-	.copyright {}
+	.address {
+		@media #{$xs-only} {
+			span {
+				display: block;
+				&:last-child {
+					margin-bottom: 7px;
+				}
+			}
+		}
+	}
+	.copyright {
+		@media #{$xs-only} {
+			span {
+				display: block;
+				margin-top: 9px;
+			}
+		}
+	}
 }

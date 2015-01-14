@@ -25,28 +25,29 @@
 
 ?>
 <div class="hero-unit"> <!-- HERO -->
-  <div data-section-scroll="Que es" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
-    <div class="container-sm hero-text">
-      <h2 class="thin h3 text-white mb-7">¿Qué es la</h2>
-      <h1 class="thin text-white mt-0"><?php print $titulo ?>?</h1>
-      <hr class="hr-white">
-      <div class="row">
-        <div class="col-sm-3">
-          <div class="size xl">
-            <i class="icon-carreras-que-es text-white"></i>
-            <a href="<?php print $carrera_link ?>" class="btn btn-white btn-outline see-more mt-7">Ver más</a>
+  <div data-section-scroll="Que es" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
+    <div class="overlay flex-middle bg-gray-op">
+      <div class="container-sm hero-text">
+        <h2 class="thin h3 text-white mb-7">¿Qué es la</h2>
+        <h1 class="thin text-white mt-0"><?php print $titulo ?>?</h1>
+        <hr class="hr-white">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="size xl">
+              <i class="icon-carreras-que-es text-white"></i>
+              <a href="<?php print $carrera_link ?>" class="btn btn-white btn-outline see-more mt-7">Ver más</a>
+            </div>
+          </div>
+          <div class="col-sm-9">
+            <h2 class="lead thin text-white h5 mt-0"><?php print $carrera_txt ?></h2>
           </div>
         </div>
-        <div class="col-sm-9">
-          <h2 class="lead thin text-white h5 mt-0"><?php print $carrera_txt ?></h2>
-        </div>
       </div>
+      <a class="scroll-down scroll-down-sq size lg" href="#malla-curricular" rel="nofollow">
+        <i class="icon-arrows-down bg-white-op text-gray"></i>
+      </a>
     </div>
-    <a class="scroll-down scroll-down-sq size lg" href="#malla-curricular" rel="nofollow">
-      <i class="icon-arrows-down bg-white-op text-gray"></i>
-    </a>
   </div>
-  <div class="overlay"></div>
 </div> <!-- END:Hero -->
 <div data-section-scroll="Malla curricular" id="malla-curricular" class="malla-curricular section-scroll-content minh-560 flex-middle-center">
   <div class="container-sm text-right normalize-text">
@@ -138,4 +139,17 @@
       </div>
     </div>
   </div>
+</div>
+
+<div id="section-scroll">
+          <ul>
+            <li><a href="#que-es" class="animated bounceInRight ad-0 scroll-ref-0 active">Que es</a></li>
+            <li><a href="#malla-curricular" class="animated bounceInRight ad-2 scroll-ref-1">Malla curricular</a></li>
+            <li><a href="#menciones" class="animated bounceInRight ad-4 scroll-ref-2">Menciones</a></li>
+            <li><a href="#profesores" class="animated bounceInRight ad-6 scroll-ref-3">Profesores</a></li>
+            <li><a href="#perfil-egresado" class="animated bounceInRight ad-8 scroll-ref-4">Perfil del egresado</a></li>
+          </ul>
+          <div class="text-right pv-21 btn-apply animated bounceInRight">
+            <a href="#" class="btn btn-primary uppercase">Postular</a>
+          </div>
 </div>

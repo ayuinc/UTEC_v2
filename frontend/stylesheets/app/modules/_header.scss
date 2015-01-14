@@ -91,6 +91,7 @@
 					@include bold;
 					color: $gray;
 					span {
+						@include bold;
 						color: $gray-darker;
 					}
 				}
@@ -113,7 +114,10 @@
 							border: none;
 							&:hover,
 							&.active {
-								color: #02c1f5;	
+								color: $brand-primary;
+								span {
+									color: $brand-primary;
+								}
 							}
 							span {
 								display: block;
@@ -204,6 +208,9 @@ $header-on-scroll-height: 56px;
 		background-color: $gray-lighter;
 		.logo {
 			width: 280px;
+			@media #{$sm-down} {
+				width: 100%;
+			}
 			height: $header-on-scroll-height;
 			padding: 4px 0;
 			img {
@@ -245,6 +252,19 @@ $header-on-scroll-height: 56px;
 					}
 				}
 			}
+		}
+		.right {
+			height: $header-on-scroll-height;			
+			padding: 9px 0;
+		}
+		.menu-trigger {
+			width: 35px;
+			height: 35px;
+			padding: 7px 0;
+			font-size: 21px; 
+			text-align: center;
+			display: block;
+			// border: 1px solid $brand-primary;
 		}
 	}
 	.nav-display {

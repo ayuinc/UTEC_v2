@@ -2,9 +2,11 @@ $(document).ready ->
 
 	# HEADER CONTROL
 	$header = $('#header')
+	$siteWrapper = $('.site-wrapper')
 	$navDisplay = $('.nav-display', $header)
 	$navDisplayTriggers = $('.nav-display-triggers', $header)
 	$navDisplayClose = $('.nav-display-close')
+	$mobileNavDisplayTriggers = $('.mobile-nav-display-triggers')
 
 	$navDisplayTriggers.on('click', '[href^=#]', (e)->
 		$navRef = $(this).attr('href')
@@ -24,6 +26,27 @@ $(document).ready ->
 		$('a', $navDisplayTriggers).removeClass('active')
 		return
 		)
+
+	# MOBILE NAV DISPLAY CONTROL
+	$mobileNavRefGlobal = ''
+	$mobileNavDisplayTriggers.on('click', '[href^=#]', (e)->
+		$navRef = $(this).attr('href')
+		$mobileNavRefGlobal = $navRef.slice(1)
+		console.log $mobileNavRefGlobal
+		# $siteWrapper.attr('class', '')
+		# $('a', $mobileNavDisplayTriggers).removeClass('active')
+		if $navRef.length > 0
+			e.preventDefault()
+			# $(this).addClass('active')
+			$navRefClass = $navRef.slice(1)
+			$siteWrapper.addClass('display ' + $navRefClass)
+		return
+		)
+	$('.mobile-nav-display .back').click (e)->
+		e.preventDefault()
+		$siteWrapper.removeClass('display')
+		$siteWrapper.removeClass($mobileNavRefGlobal)
+		return
 
 	# HEADER ON SCROLL CONTROL
 	$headerSm = $('#header-on-scroll')
@@ -68,6 +91,7 @@ $(document).ready ->
 
 	$headerScene.on('leave', (e)->
 		$headerSm.attr('class', '')
+		$siteWrapper.removeClass('menu-on')
 		$('a', $navDisplayShrinkTriggers).removeClass('active')
 		return
 		)

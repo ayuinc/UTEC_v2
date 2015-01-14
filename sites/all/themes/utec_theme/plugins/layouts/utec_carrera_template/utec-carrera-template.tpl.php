@@ -7,6 +7,9 @@
  */
 ?>
 <div class="site-wrapper">
+  <div class="site-menu">
+    <?php print $content['menu-mobile']; ?>
+  </div>
   <div class="site-content">
 
     <?php print $content['header']; ?>

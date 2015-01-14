@@ -8,6 +8,15 @@ body {
 	}
 }
 
+html {}
+
+body {
+	overflow-x: hidden;
+	&.scroll-y-off {
+		overflow: hidden;
+	}
+}
+
 // HEIGHT CONTROL
 $bg-img-height: 350px;
 $banner-height: 293px;
@@ -56,63 +65,6 @@ $sidebar-block-height: 210px;
 	.overlay {
 		height: $video-bg-height;
 	}
-}
-
-// SECTION SCROLL
-#section-scroll {
-	@include position(fixed, 42% 0 null null);
-	ul {
-		@include list-unstyled;
-		min-height: 91px;
-		// background: $blue-lighter;
-		// padding-right: $container-fluid;
-		li {
-			text-align: right;
-			padding: 3px 7px;
-			@include border-style(null solid null null);
-			@include border-width(null 1px null null);
-			@include border-color(null $blue null null);
-			// margin-bottom: $container-fluid / 2;
-			a {
-				display: block;
-				text-align: right;
-				color: $gray;
-				position: relative;
-				padding-right: 18px;
-				&:hover,
-				&.active {
-					color: $brand-primary;
-					&:before {
-						background: $brand-primary;	
-					}
-				}
-				&:before,
-				&:after {
-					@include position(absolute, 7px 0 null null);
-					content: "";
-					background-color: $gray;
-					margin-left: 7px;
-				}
-				&:before {
-					width: 7px;
-					height: 7px;
-				}
-				&:after {
-					width: 3px;
-					height: 1px;
-				}
-			}
-		}
-	}
-}
-
-.btn-apply {
-	@include transform(translateX(110%));
-}
-
-.section-scroll-content {
-	padding: 7% 0;
-	@include bg-img-control;
 }
 
 // CLICKABLE DIV
@@ -184,6 +136,7 @@ $sidebar-block-height: 210px;
 			.banner-content,
 			.banner-pic {
 				min-height: $banner-height - 210;
+				min-height: rem($banner-height - 210);
 			}
 		}
 		&.user-card {
@@ -226,6 +179,7 @@ $sidebar-block-height: 210px;
 			.banner-content,
 			.banner-pic {
 				min-height: $banner-height - 83;
+				min-height: rem($banner-height - 83);
 			}
 		}
 		&.user-card {
@@ -270,6 +224,7 @@ $sidebar-block-height: 210px;
 			.banner-content,
 			.banner-pic {
 				min-height: $banner-height + 210;
+				min-height: rem($banner-height + 210);
 			}
 		}
 		&.user-card {
@@ -310,6 +265,7 @@ $sidebar-block-height: 210px;
 			.banner-content,
 			.banner-pic {
 				min-height: $banner-height + 280;
+				min-height: rem($banner-height + 280);
 			}
 		}
 		&.user-card {
@@ -368,7 +324,7 @@ $sidebar-block-height: 210px;
 			display: block;
 		}
 		span {
-			color: $gray-light;
+			color: $gray;
 		}
 	}
 	&.user-card-round {
