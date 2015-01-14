@@ -2,7 +2,7 @@
 	<div class="container">
 		<h2 class="lead medium mb-7"><span class="text-gray-darker">¿Listo para</span> <span class="text-gray">cambiar el mundo?</span></h2>
 		<h4 class="lead mb-35">Éstas son nuestras carreras:</h4>
-		<ul class="grid-list grid-list-5 list-carreras text-center">
+		<ul class="grid-list grid-list-5 grid-list-1-xs pt-21 list-carreras text-center text-left-xs mb-ch-70 mb-70">
 			<li>
 				<div onclick="goTo()">
 					<a href="/carreras/ingenieria-quimica-industrial">
