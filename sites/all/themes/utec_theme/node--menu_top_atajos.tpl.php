@@ -14,8 +14,7 @@
 <div class="container-sm">
   <h1 class="light"><?php print $titulo ?></h1>
   <div class="separator-gray separator-sm"></div>
-  <h3><?php print $cuerpo ?></h3>
-
+  
   <div class="col-sm-6 list-custom mb-ch-42">
         <div>
           <ul>
@@ -32,5 +31,7 @@
           </ul>
         </div>
   </div>
+
+  <?php print $cuerpo ?>
 
 </div>
