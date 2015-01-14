@@ -354,8 +354,8 @@
 					<ul>
 						<!--<li>
 							<a href="/edp/cursos/cursos-adhoc"><span>Cursos</span>Adhoc</a>
-						</li>
-						<li><a href="#">Calendario</a></li>-->
+						</li>-->
+						<li><a href="/edp/calendario">Calendario</a></li>
 						<li>
 							<a href="http://escuela-edp.utec.edu.pe/" class="btn btn-primary btn-custom bold">Inscríbete</a>
 						</li>
