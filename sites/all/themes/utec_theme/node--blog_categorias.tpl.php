@@ -18,11 +18,13 @@
 				$term = taxonomy_vocabulary_machine_name_load('blog_tags');
 				$vid = $term->vid;
 				$terms = taxonomy_get_tree($vid);
-				print_r($terms);
+				//print_r($terms);
 			?>
-			<?php //foreach ($rows as $id => $row): ?>
-		    <?php //print $row;?>
-			<?php //endforeach; ?>
+			<?php foreach ($terms as $term): ?>
+				<?php $name = $term->name; ?>
+				<?php $tid = $term->tid; ?>
+		    <li><a href=""><?php print $name ?></a></li>
+			<?php endforeach; ?>
 		</ul>
 	</div>
 </div>
