@@ -30,12 +30,12 @@
 			<h1 class="mb-7"><?php print $field_frase_autor ?></h1>
 			<p class="mb-0 pb-0"><?php print $field_nombre_autor ?></p>
 			<small class="gray-light light"><em><?php print $field_titulo_del_autor ?></em></small>
-			<p class="gray mb-35 mt-21"><?php print $field_quote ?></p>
-			<p class="gray"><?php print $field_introduccion_autor ?></p>
+			<p class="gray mb-35"><?php print $field_quote ?></p>
+			<p class="gray mb-21"><?php print $field_introduccion_autor ?></p>
 		</div>
-		<a class="scroll-down scroll-down-sq size lg" href="#sec-1" rel="nofollow">
+		<!--<a class="scroll-down scroll-down-sq size lg" href="#sec-1" rel="nofollow">
 			<i class="icon-arrows-down bg-info-op text-white"></i>
-		</a>
+		</a>-->
 	</div>
 </div> <!-- END:Hero -->
 <div data-section-scroll="Un panel" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle hero-unit" style="background-image: url(<?php print('/'.$pathfile.$field_foto_causa)?>);">
