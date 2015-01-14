@@ -12,6 +12,9 @@
 	// print_r($user_fields);
 	$user_name = $user_fields->name;
 	$user_image = $user_fields->picture;
+
+	 kpr($fields);
+
 ?>
 <div class="pv-21 mt-70">
 	<h2 class="lead medium mb-0"><span class="text-gray-darker">Blog</span> <span class="text-gray">UTEC</span></h2>
