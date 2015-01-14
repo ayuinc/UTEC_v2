@@ -60,9 +60,9 @@
             <li class="title text-gray-lighter">Investigación</li>
             <li><a href="/investigacion/proyectos" class="atm-menu-inferior"><small>Proyectos</small></a></li>
             <!--<li><a href="#"><small>Publicaciones</small></a></li>
-            <li><a href="#"><small>Consultorías</small></a></li>
-            <li><a href="#"><small>Empresas &amp; Clientes</small></a></li>
-            <li><a href="#"><small>Contacto</small></a></li>-->
+            <li><a href="#"><small>Consultorías</small></a></li>-->
+            <li><a href="/investigacion/empresas-y-clientes"><small>Empresas &amp; Clientes</small></a></li>
+            <!--<li><a href="#"><small>Contacto</small></a></li>-->
           </ul>
         </li>
         <li>
@@ -103,6 +103,7 @@
             <!--<li><a href="/edp/cursos/diplomados" class="atm-menu-inferior"><small>Diplomados</small></a></li>
             <li><a href="/edp/cursos/cursos-online" class="atm-menu-inferior"><small>Cursos Online</small></a></li>-->
             <li><a href="/edp/cursos/cursos-cortos" class="atm-menu-inferior"><small>Cursos Cortos</small></a></li>
+            <li><a href="/edp/calendario" class="atm-menu-inferior"><small>Calendario</small></a></li>
             <!--<li><a href="/edp/cursos/cursos-adhoc" class="atm-menu-inferior"><small>Cursos Adoc</small></a></li>
             <li><a href="/convenios" class="atm-menu-inferior"><small>Cursos Adoc</small></a></li>-->
           </ul>

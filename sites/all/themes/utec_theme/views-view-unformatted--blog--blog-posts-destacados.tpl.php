@@ -6,18 +6,12 @@
 	$texto_corto = $fields['field_texto_corto']->content;
 	$path = $fields['path']->content;
 	$user_id = $fields['uid']->content;
-	$blogger_id = $fields['field_blogger']->content;
 
 	global $user;
 	$user_fields = user_load($user_id);
 	// print_r($user_fields);
 	$user_name = $user_fields->name;
 	$user_image = $user_fields->picture;
-
-	 kpr($fields);
-	 $blogger = user_load($blogger_id);
-	 kpr($blogger);
-
 ?>
 <div class="pv-21 mt-70">
 	<h2 class="lead medium mb-0"><span class="text-gray-darker">Blog</span> <span class="text-gray">UTEC</span></h2>
