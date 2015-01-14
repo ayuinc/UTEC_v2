@@ -8,8 +8,8 @@
 	global $count;
 ?>
 <?php //print_r($zebra) ?>
-<?php if ($zebra == 'odd') :?>
 <div class="mb-ch-14">
+<?php if ($zebra == 'odd') :?>
 	<div class="banner" data-href="<?php print $path; ?>">
 		<div class="col-sm-3 banner-pic" style="background-image: url(<?php print $image ?>);">
 			<div class="banner-label bg-gray-darker text-white"><span><?php print $category ?></span></div>
