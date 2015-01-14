@@ -217,7 +217,7 @@ $databases = array (
     array (
       'database' => 'utec_db',
       'username' => 'root',
-      'password' => 'YhGcpxB631',
+      'password' => 'R5vibxUv9S',
       'host' => 'localhost',
       'port' => '',
       'driver' => 'mysql',
