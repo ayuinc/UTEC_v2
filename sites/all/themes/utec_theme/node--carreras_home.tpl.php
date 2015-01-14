@@ -28,7 +28,7 @@
   <div data-section-scroll="Que es" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
     <div class="overlay flex-middle bg-gray-darker-op">
       <div class="container-sm hero-text">
-        <h2 class="thin h3 text-white mb-7">¿Qué es la</h2>
+        <h2 class="thin h3 text-white mb-7"><?php print t('¿Qué es la') ?></h2>
         <h1 class="thin text-white mt-0"><?php print $titulo ?>?</h1>
         <hr class="hr-white">
         <div class="row">
@@ -51,7 +51,7 @@
 </div> <!-- END:Hero -->
 <div data-section-scroll="Malla curricular" id="malla-curricular" class="malla-curricular section-scroll-content minh-560 flex-middle-center">
   <div class="container-sm text-right normalize-text">
-    <h2 class="lead thin">Malla curricular</h2>
+    <h2 class="lead thin"><?php print t('Malla curricular') ?></h2>
     <hr class="hr-gray">
     <div class="row">
       <div class="col-sm-9">
@@ -72,7 +72,7 @@
 </div>
 <div data-section-scroll="Menciones" id="menciones" class="section-scroll-content minh-560 flex-middle-center bg-info-op">
   <div class="container-sm text-left text-white normalize-text">
-    <h2 class="lead thin">Menciones</h2>
+    <h2 class="lead thin"><?php print t('Menciones') ?></h2>
     <hr class="hr-white">
     <div class="row">
       <div class="col-sm-3">
@@ -93,7 +93,7 @@
 </div>
 <div data-section-scroll="Profesores" id="profesores" class="section-scroll-content minh-560 flex-middle-center">
   <div class="container-sm text-center normalize-text">
-    <h2 class="lead thin">Profesores</h2>
+    <h2 class="lead thin"><?php print t('Profesores') ?></h2>
     <hr class="hr-gray">
     <div class="size xl">
       <i class="icon-carreras-profesores"></i>
@@ -123,7 +123,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-6 normalize-text">
-        <h2 class="thin">Perfil del egresado</h2>
+        <h2 class="thin"><?php print t('Perfil del egresado') ?></h2>
         <hr class="hr-gray">
         <div class="row">
           <div class="col-sm-3">
