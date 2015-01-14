@@ -6876,7 +6876,7 @@ img.icon-utec {
   .list-carreras > li .h1, .list-carreras > li .h2, .list-carreras > li .h3, .list-carreras > li .h4, .list-carreras > li .h5, .list-carreras > li .h6,
   .list-carreras > li p, .list-carreras > li .p {
     margin: 0; }
-  .list-carreras > li [onClick] > div,
+  .list-carreras > li [data-href] > div,
   .list-carreras > li h2 {
     float: left;
     display: block; }
