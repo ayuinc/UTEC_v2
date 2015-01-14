@@ -30,7 +30,7 @@
 			<h1 class="mb-7"><?php print $field_frase_autor ?></h1>
 			<p class="mb-0 pb-0"><?php print $field_nombre_autor ?></p>
 			<small class="gray-light light"><em><?php print $field_titulo_del_autor ?></em></small>
-			<p class="gray mb-35"><?php print $field_quote ?></p>
+			<p class="gray mt-21"><?php print $field_quote ?></p>
 			<p class="gray mb-21"><?php print $field_introduccion_autor ?></p>
 		</div>
 		<!--<a class="scroll-down scroll-down-sq size lg" href="#sec-1" rel="nofollow">
