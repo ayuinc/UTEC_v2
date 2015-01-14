@@ -24,13 +24,12 @@
       <div class="container">
         <h1 class="light"><?php print t('Blog UTEC') ?></h1>
         <div class="separator-gray separator-sm"></div>
-        <?php print $content['body']; ?>
         <div class="row">
           <div class="col-sm-8">
-            <?php print $content['body']; ?>
+            <?php print $content['left-side']; ?>
           </div>
           <div class="col-sm-4 mb-ch-42">
-            <?php print $content['body']; ?>
+            <?php print $content['right-side']; ?>
           </div>
         </div>
       </div>
