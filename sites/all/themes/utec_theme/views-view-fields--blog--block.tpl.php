@@ -15,7 +15,7 @@
 	$user_image = $user_fields->picture;
 
 	 kpr($fields);
-	 $blogger = $user_load($blogger_id);
+	 $blogger = user_load($blogger_id);
 	 kpr($blogger);
 
 ?>
