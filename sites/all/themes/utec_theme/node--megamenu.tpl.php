@@ -194,10 +194,10 @@
 						<li>
 							<a href="/investigacion/publicaciones">Publicaciones</a>
 						</li>
-						<!--<li>
-							<a href="#"><span>Empresas</span>y clientes</a>
-						</li>
 						<li>
+							<a href="/investigacion/empresas-y-clientes"><span>Empresas</span>y clientes</a>
+						</li>
+						<!--<li>
 							<a href="#">Proyectos</a>
 						</li>
 						<li>
