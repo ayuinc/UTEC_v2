@@ -22,6 +22,7 @@
 	
 	<!--SOLO PARA RESPALDO-->
 	<?php if ($end == 'calendario') { ?>
+		<h3>Cursos Cortos</h3>
 		<table class="table mt-35">
 			<thead>
 				<tr>
