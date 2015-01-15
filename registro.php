@@ -1,6 +1,8 @@
 
 <?php
 
+echo "12345";
+
 session_start();
 
 require_once( 'nusoap2/nusoap.php' );
