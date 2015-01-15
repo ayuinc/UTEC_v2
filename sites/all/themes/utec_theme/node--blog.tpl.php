@@ -9,7 +9,7 @@
 	$imagen = $node->field_imagen['und']['0']['filename'];
 	$blogger_name = $node->field_blogger['und']['0']['entity']->name;
 	$blogger_cargo = $node->field_blogger['und']['0']['entity']->field_descripci_n['und']['0']['value'];
-	$created = date('dFY', strtotime($node->created));
+	$created = date('d F Y', strtotime($node->created));
 
 	//print_r($node);
 ?>
@@ -31,7 +31,7 @@
 		</ul>
 	</div>
 </div>
-<img class="img-responsive" src="assets/img/img.png" alt="#">
+<img class="img-responsive" src="<?php print $pathfile.$imagen ?>" alt="#">
 <h3 class="lead"><?php //print $title ?></h3>
 <p><?php print $cuerpo ?></p>
 
