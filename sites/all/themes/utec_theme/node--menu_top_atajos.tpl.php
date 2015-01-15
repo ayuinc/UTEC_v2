@@ -19,9 +19,7 @@
         <div>
           <ul>
             <?php if($node->nid == "717") : ?>  
-                  <?php echo "111"; ?>
                   <?php
-                      print_r($node);
                       $subnode = node_load(749);
                       $subtitulo = $subnode->title;
                       $subcuerpo = $subnode->body['und']['0']['value'];
