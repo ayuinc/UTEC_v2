@@ -6153,7 +6153,7 @@ img.icon-utec {
     justify-content: center;
     -ms-flex-pack: center;
     padding: 0 28px; }
-  .banner a {
+  .banner a:not(.btn) {
     color: #8f8d8e; }
   .banner:hover {
     background-color: #f1f1f1; }
@@ -6314,7 +6314,11 @@ img.icon-utec {
   .malla-curricular.malla-curricular-primary .body > ul {
     padding-left: 0;
     list-style: none;
-    margin: 0; }
+    margin: 0;
+    -webkit-flex-grow: 0;
+    -moz-flex-grow: 0;
+    flex-grow: 0;
+    -ms-flex-positive: 0; }
     .malla-curricular.malla-curricular-primary .body > ul:before, .malla-curricular.malla-curricular-primary .body > ul:after {
       content: " ";
       display: table; }
@@ -6322,10 +6326,12 @@ img.icon-utec {
       clear: both; }
     .malla-curricular.malla-curricular-primary .body > ul > li {
       float: left;
-      padding-left: 7px; }
+      padding-left: 7px;
+      font-size: 9px; }
       .malla-curricular.malla-curricular-primary .body > ul > li:first-child {
-        width: 39px; }
+        width: 21%; }
       .malla-curricular.malla-curricular-primary .body > ul > li:last-child {
+        width: 79%;
         padding-top: 7px; }
     .malla-curricular.malla-curricular-primary .body > ul:nth-child(1) > li {
       min-height: 68px; }
@@ -6373,7 +6379,11 @@ img.icon-utec {
   .malla-curricular.malla-curricular-success .body > ul {
     padding-left: 0;
     list-style: none;
-    margin: 0; }
+    margin: 0;
+    -webkit-flex-grow: 0;
+    -moz-flex-grow: 0;
+    flex-grow: 0;
+    -ms-flex-positive: 0; }
     .malla-curricular.malla-curricular-success .body > ul:before, .malla-curricular.malla-curricular-success .body > ul:after {
       content: " ";
       display: table; }
@@ -6381,10 +6391,12 @@ img.icon-utec {
       clear: both; }
     .malla-curricular.malla-curricular-success .body > ul > li {
       float: left;
-      padding-left: 7px; }
+      padding-left: 7px;
+      font-size: 9px; }
       .malla-curricular.malla-curricular-success .body > ul > li:first-child {
-        width: 39px; }
+        width: 21%; }
       .malla-curricular.malla-curricular-success .body > ul > li:last-child {
+        width: 79%;
         padding-top: 7px; }
     .malla-curricular.malla-curricular-success .body > ul:nth-child(1) > li {
       min-height: 68px; }
@@ -6432,7 +6444,11 @@ img.icon-utec {
   .malla-curricular.malla-curricular-info .body > ul {
     padding-left: 0;
     list-style: none;
-    margin: 0; }
+    margin: 0;
+    -webkit-flex-grow: 0;
+    -moz-flex-grow: 0;
+    flex-grow: 0;
+    -ms-flex-positive: 0; }
     .malla-curricular.malla-curricular-info .body > ul:before, .malla-curricular.malla-curricular-info .body > ul:after {
       content: " ";
       display: table; }
@@ -6440,10 +6456,12 @@ img.icon-utec {
       clear: both; }
     .malla-curricular.malla-curricular-info .body > ul > li {
       float: left;
-      padding-left: 7px; }
+      padding-left: 7px;
+      font-size: 9px; }
       .malla-curricular.malla-curricular-info .body > ul > li:first-child {
-        width: 39px; }
+        width: 21%; }
       .malla-curricular.malla-curricular-info .body > ul > li:last-child {
+        width: 79%;
         padding-top: 7px; }
     .malla-curricular.malla-curricular-info .body > ul:nth-child(1) > li {
       min-height: 68px; }
@@ -6491,7 +6509,11 @@ img.icon-utec {
   .malla-curricular.malla-curricular-warning .body > ul {
     padding-left: 0;
     list-style: none;
-    margin: 0; }
+    margin: 0;
+    -webkit-flex-grow: 0;
+    -moz-flex-grow: 0;
+    flex-grow: 0;
+    -ms-flex-positive: 0; }
     .malla-curricular.malla-curricular-warning .body > ul:before, .malla-curricular.malla-curricular-warning .body > ul:after {
       content: " ";
       display: table; }
@@ -6499,10 +6521,12 @@ img.icon-utec {
       clear: both; }
     .malla-curricular.malla-curricular-warning .body > ul > li {
       float: left;
-      padding-left: 7px; }
+      padding-left: 7px;
+      font-size: 9px; }
       .malla-curricular.malla-curricular-warning .body > ul > li:first-child {
-        width: 39px; }
+        width: 21%; }
       .malla-curricular.malla-curricular-warning .body > ul > li:last-child {
+        width: 79%;
         padding-top: 7px; }
     .malla-curricular.malla-curricular-warning .body > ul:nth-child(1) > li {
       min-height: 68px; }
@@ -6550,7 +6574,11 @@ img.icon-utec {
   .malla-curricular.malla-curricular-danger .body > ul {
     padding-left: 0;
     list-style: none;
-    margin: 0; }
+    margin: 0;
+    -webkit-flex-grow: 0;
+    -moz-flex-grow: 0;
+    flex-grow: 0;
+    -ms-flex-positive: 0; }
     .malla-curricular.malla-curricular-danger .body > ul:before, .malla-curricular.malla-curricular-danger .body > ul:after {
       content: " ";
       display: table; }
@@ -6558,10 +6586,12 @@ img.icon-utec {
       clear: both; }
     .malla-curricular.malla-curricular-danger .body > ul > li {
       float: left;
-      padding-left: 7px; }
+      padding-left: 7px;
+      font-size: 9px; }
       .malla-curricular.malla-curricular-danger .body > ul > li:first-child {
-        width: 39px; }
+        width: 21%; }
       .malla-curricular.malla-curricular-danger .body > ul > li:last-child {
+        width: 79%;
         padding-top: 7px; }
     .malla-curricular.malla-curricular-danger .body > ul:nth-child(1) > li {
       min-height: 68px; }
@@ -6609,7 +6639,11 @@ img.icon-utec {
   .malla-curricular.malla-curricular-blue-darker .body > ul {
     padding-left: 0;
     list-style: none;
-    margin: 0; }
+    margin: 0;
+    -webkit-flex-grow: 0;
+    -moz-flex-grow: 0;
+    flex-grow: 0;
+    -ms-flex-positive: 0; }
     .malla-curricular.malla-curricular-blue-darker .body > ul:before, .malla-curricular.malla-curricular-blue-darker .body > ul:after {
       content: " ";
       display: table; }
@@ -6617,10 +6651,12 @@ img.icon-utec {
       clear: both; }
     .malla-curricular.malla-curricular-blue-darker .body > ul > li {
       float: left;
-      padding-left: 7px; }
+      padding-left: 7px;
+      font-size: 9px; }
       .malla-curricular.malla-curricular-blue-darker .body > ul > li:first-child {
-        width: 39px; }
+        width: 21%; }
       .malla-curricular.malla-curricular-blue-darker .body > ul > li:last-child {
+        width: 79%;
         padding-top: 7px; }
     .malla-curricular.malla-curricular-blue-darker .body > ul:nth-child(1) > li {
       min-height: 68px; }
@@ -6668,7 +6704,11 @@ img.icon-utec {
   .malla-curricular.malla-curricular-blue-dark .body > ul {
     padding-left: 0;
     list-style: none;
-    margin: 0; }
+    margin: 0;
+    -webkit-flex-grow: 0;
+    -moz-flex-grow: 0;
+    flex-grow: 0;
+    -ms-flex-positive: 0; }
     .malla-curricular.malla-curricular-blue-dark .body > ul:before, .malla-curricular.malla-curricular-blue-dark .body > ul:after {
       content: " ";
       display: table; }
@@ -6676,10 +6716,12 @@ img.icon-utec {
       clear: both; }
     .malla-curricular.malla-curricular-blue-dark .body > ul > li {
       float: left;
-      padding-left: 7px; }
+      padding-left: 7px;
+      font-size: 9px; }
       .malla-curricular.malla-curricular-blue-dark .body > ul > li:first-child {
-        width: 39px; }
+        width: 21%; }
       .malla-curricular.malla-curricular-blue-dark .body > ul > li:last-child {
+        width: 79%;
         padding-top: 7px; }
     .malla-curricular.malla-curricular-blue-dark .body > ul:nth-child(1) > li {
       min-height: 68px; }
@@ -6727,7 +6769,11 @@ img.icon-utec {
   .malla-curricular.malla-curricular-blue .body > ul {
     padding-left: 0;
     list-style: none;
-    margin: 0; }
+    margin: 0;
+    -webkit-flex-grow: 0;
+    -moz-flex-grow: 0;
+    flex-grow: 0;
+    -ms-flex-positive: 0; }
     .malla-curricular.malla-curricular-blue .body > ul:before, .malla-curricular.malla-curricular-blue .body > ul:after {
       content: " ";
       display: table; }
@@ -6735,10 +6781,12 @@ img.icon-utec {
       clear: both; }
     .malla-curricular.malla-curricular-blue .body > ul > li {
       float: left;
-      padding-left: 7px; }
+      padding-left: 7px;
+      font-size: 9px; }
       .malla-curricular.malla-curricular-blue .body > ul > li:first-child {
-        width: 39px; }
+        width: 21%; }
       .malla-curricular.malla-curricular-blue .body > ul > li:last-child {
+        width: 79%;
         padding-top: 7px; }
     .malla-curricular.malla-curricular-blue .body > ul:nth-child(1) > li {
       min-height: 68px; }
@@ -6786,7 +6834,11 @@ img.icon-utec {
   .malla-curricular.malla-curricular-blue-light .body > ul {
     padding-left: 0;
     list-style: none;
-    margin: 0; }
+    margin: 0;
+    -webkit-flex-grow: 0;
+    -moz-flex-grow: 0;
+    flex-grow: 0;
+    -ms-flex-positive: 0; }
     .malla-curricular.malla-curricular-blue-light .body > ul:before, .malla-curricular.malla-curricular-blue-light .body > ul:after {
       content: " ";
       display: table; }
@@ -6794,10 +6846,12 @@ img.icon-utec {
       clear: both; }
     .malla-curricular.malla-curricular-blue-light .body > ul > li {
       float: left;
-      padding-left: 7px; }
+      padding-left: 7px;
+      font-size: 9px; }
       .malla-curricular.malla-curricular-blue-light .body > ul > li:first-child {
-        width: 39px; }
+        width: 21%; }
       .malla-curricular.malla-curricular-blue-light .body > ul > li:last-child {
+        width: 79%;
         padding-top: 7px; }
     .malla-curricular.malla-curricular-blue-light .body > ul:nth-child(1) > li {
       min-height: 68px; }
@@ -6845,7 +6899,11 @@ img.icon-utec {
   .malla-curricular.malla-curricular-blue-lighter .body > ul {
     padding-left: 0;
     list-style: none;
-    margin: 0; }
+    margin: 0;
+    -webkit-flex-grow: 0;
+    -moz-flex-grow: 0;
+    flex-grow: 0;
+    -ms-flex-positive: 0; }
     .malla-curricular.malla-curricular-blue-lighter .body > ul:before, .malla-curricular.malla-curricular-blue-lighter .body > ul:after {
       content: " ";
       display: table; }
@@ -6853,10 +6911,12 @@ img.icon-utec {
       clear: both; }
     .malla-curricular.malla-curricular-blue-lighter .body > ul > li {
       float: left;
-      padding-left: 7px; }
+      padding-left: 7px;
+      font-size: 9px; }
       .malla-curricular.malla-curricular-blue-lighter .body > ul > li:first-child {
-        width: 39px; }
+        width: 21%; }
       .malla-curricular.malla-curricular-blue-lighter .body > ul > li:last-child {
+        width: 79%;
         padding-top: 7px; }
     .malla-curricular.malla-curricular-blue-lighter .body > ul:nth-child(1) > li {
       min-height: 68px; }
