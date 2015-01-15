@@ -8,10 +8,12 @@
  */
 ?>
 
-<div class="container-sm mb-35">
-	<h1 class="light">Proyectos</h1>
-	<div class="separator-gray separator-lg"></div>
-    <?php foreach ($rows as $id => $row): ?>
+<h1 class="light">Proyectos</h1>
+<div class="separator-gray separator-sm"></div>						
+<div>
+	<ul class="grid-list grid-list-2 list-hover list-hover-gray-light list-hover-unstyled">
+		<?php foreach ($rows as $id => $row): ?>
 	    <?php print $row;?>
 		<?php endforeach; ?>
+	</ul>
 </div>
