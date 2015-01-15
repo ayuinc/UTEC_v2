@@ -6290,7 +6290,8 @@ img.icon-utec {
     background-color: #00BFDF; }
 
 .malla-curricular > li {
-  padding: 0 14px 0 0 !important; }
+  padding: 0 14px 0 0 !important;
+  margin-top: 21px; }
   .malla-curricular > li .head {
     padding-left: 0;
     list-style: none;

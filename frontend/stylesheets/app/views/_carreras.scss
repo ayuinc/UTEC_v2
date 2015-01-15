@@ -3,6 +3,7 @@ $malla-curricular-height: 70px;
 .malla-curricular {
 	> li {
 		padding: 0 $container-fluid 0 0 !important;
+		margin-top: 21px;
 		.head {
 			@include clearfix;
 			@include list-unstyled;
