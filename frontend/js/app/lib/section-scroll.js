@@ -27,6 +27,7 @@
         suffix: index
       });
     });
+    $sectionScrollList.find('li:first-child a').addClass('active');
     $applyScene = new ScrollScene({
       triggerHook: 'onEnter',
       triggerElement: '.section-scroll-3'
