@@ -22,7 +22,7 @@
 	//kpr($fields);
 ?>
 <div class="banner" data-href="//link">
-	<div class="banner-pic" style="background-image: url(<?php print $pathfile.'pictures/'.$user_image; ?>);">
+	<div class="banner-pic" style="background-image: url(<?php print $pathfile.'blog/'.$image; ?>);">
 	</div>
 	<div class="banner-content">
 		<div>
