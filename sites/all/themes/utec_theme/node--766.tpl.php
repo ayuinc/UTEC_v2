@@ -186,10 +186,11 @@
 <?php
 
 session_start();
+
 require_once( 'nusoap2/nusoap.php' );
 
 //consumir web service:
-$client = new nusoap_client( "http://192.168.200.13:8380/inscripcionutecws3/services/InscripcionServicePort?wsdl", true ); 
+$client = new nusoap_client( "http://app.utec.edu.pe/inscripcionutecws3/services/InscripcionServicePort?wsdl", true ); 
 
 $programacion = "2015-1";
 $origen ="landing-examen-admision";
