@@ -19,7 +19,7 @@
 	$user_image = $blogger->picture->filename;
 	$user_charge = $blogger->field_descripci_n['und']['0']['value'];
 
-	//kpr($fields);
+	kpr($fields);
 ?>
 <li class="banner size sm" data-href="<?php print $path ?>">
 	<div class="banner-pic" style="background-image: url(<?php print $image ?>);"></div>
