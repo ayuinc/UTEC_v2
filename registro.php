@@ -14,7 +14,7 @@ $origen ="landing-examen-admision";
 $v0 = "EXAMEN";
 $v1 = "Angel AYU 123"; //utf8_decode($_POST['nombres']);
 $v2 = "Pacheco"; //utf8_decode($_POST['apellidos']);
-$v3 = ""; //utf8_decode($_POST['apellidom']);
+$v3 = "M"; //utf8_decode($_POST['apellidom']);
 $v4 = "";
 $v5 = "";
 $v6 = "M";
@@ -28,13 +28,13 @@ $v13 = "";
 $v14 = "";
 $v15 = "";
 $v16 = "";
-$v17 = ""; //utf8_decode($direccion);
+$v17 = "123"; //utf8_decode($direccion);
 $v18 = "angelpa38@gmail.com"; //utf8_decode($_POST['email']);
-$v19 = ""; //utf8_decode($celular);
+$v19 = "222"; //utf8_decode($celular);
 $v20 = "";
 $v21 = "123333"; //$_POST['telefono'];
 $v22 = "";
-$v23 = "";//utf8_decode($_POST['colegio']);//24
+$v23 = "1";//utf8_decode($_POST['colegio']);//24
 $v24 = "";//25
 $v25 = $_SERVER['REMOTE_ADDR'];//26
 $v26 = "48500";//27
@@ -71,7 +71,7 @@ if($error){
 	
 }else{
 
-	ECHO "exito";
+	ECHO "exito 123";
   //$message.="  <p>Comunícate con UTEC más fácil:<br/><a href='http://guia.com.pe/estara/estara_popup.asp?advertiseId=411234&status=P&phone=51013731000&addressId=876727&' target='_blank'><img src='img/llama_gratis.jpg' alt='LLama gratis'></a></p>";
   //Flash::setInfo($message);
 }
