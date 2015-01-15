@@ -2,7 +2,7 @@
 
 <!-- Google Tag Manager -->
   <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MHF4TM"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  height="0" width="0" style="display:none;visibility:hidden;"></iframe></noscript>
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -10,8 +10,7 @@
   })(window,document,'script','dataLayer','GTM-MHF4TM');</script>
 <!-- End Google Tag Manager -->
 
-<!-- HEADER -->
-<div id="header" class="hidden-xs hidden-sm"> 
+<div id="header" class="hidden-xs hidden-sm"> <!-- HEADER -->
 	<div class="tool-bar bg-gray-lighter pt-sm pb-sm">
 		<div class="container">
 			<div class="left">
@@ -49,16 +48,16 @@
 							<a href="/blog" class="text-gray">Blog</a>
 						</li>
 						<li>
-							<a href="/en" class="btn btn-xs btn-custom btn-gray" rel="nofollow">EN</a>
+							<?php print block_render('locale', 'language'); ?>
+							<!-- <a href="/en" class="btn btn-xs btn-custom btn-gray" rel="nofollow">EN</a> -->
 						</li>
 						<li>
-							<a href="/es" class="btn btn-xs btn-custom btn-gray" rel="nofollow">ES</a>
+							<!-- <a href="/es" class="btn btn-xs btn-custom btn-gray" rel="nofollow">ES</a> -->
 						</li>
 						<li>
 							<a href="http://utec-portal.appspot.com" target="_blank" class="btn btn-xs btn-custom btn-gray atm-login" rel="nofollow">Intranet</a>
 						</li>
 					</ul>
-					<?php print block_render('locale', 'language'); ?>
 				</div>
 			</div>
 		</div>
@@ -362,11 +361,9 @@
 			</div>
 		</div>
 	</div>
-</div> 
-<!-- END:Header -->
+</div> <!-- END:Header -->
 
-<!-- HEADER-ON-SCROLL -->
-<div id="header-on-scroll">
+<div id="header-on-scroll"> <!-- HEADER-ON-SCROLL -->
 	<div class="nav-main">
 		<div class="container">
 			<div class="left">
@@ -666,5 +663,4 @@
 			</div>
 		</div>
 	</div>
-</div>
-<!-- END:HEADER-ON-SCROLL -->
+</div> <!-- END:HEADER-ON-SCROLL -->

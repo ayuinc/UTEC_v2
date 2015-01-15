@@ -67,6 +67,8 @@
 				}
 			}
 		}
+		.right {
+		}
 	}
 	// NAVIGATION DISPLAY
 	.nav-display {
@@ -277,6 +279,38 @@ $header-on-scroll-height: 56px;
 		#header-on-scroll {
 			@include transform(translateY(0%));
 			@include transition(all 0.2s ease-in-out);
+		}
+	}
+}
+
+// LANGUAGE SELECTOR
+.title.block-title {
+	display: none;
+}
+
+.language-switcher-locale-url {
+	@include list-unstyled;
+	@include clearfix;
+	li {
+		float: left;
+		a.language-link {
+			@extend .btn;
+			@extend .btn-sm;
+			@include box-shadow(none);
+			outline: none;
+			background-image: none;
+			background-color: $gray;
+			color: white;
+			padding: 2px 9px;
+			padding: rem(2px) rem(9px);
+			&:hover,
+			&.active {
+				@include box-shadow(none);
+				outline: none;
+				background-image: none;
+				background-color: $gray;
+				color: $brand-primary;
+			}
 		}
 	}
 }
