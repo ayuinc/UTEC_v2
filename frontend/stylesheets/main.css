@@ -6232,7 +6232,8 @@ img.icon-utec {
     text-align: center;
     padding: 21px; }
     .grid-list-hover > li > div:not(.date) h3 {
-      min-height: 98px; }
+      min-height: 77px;
+      font-size: 28px !important; }
   .grid-list-hover > li:hover {
     background-color: rgba(46, 67, 114, 0.7); }
     .grid-list-hover > li:hover > div {
