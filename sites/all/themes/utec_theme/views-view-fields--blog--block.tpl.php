@@ -24,7 +24,7 @@
 	<h4 class="lead mt-0 mb-56">Lorem ipsum sit amet, consectetur adipisicing elit.</h4>
 	<div class="banner row ml-0" data-href="<?php print $path; ?>">
 		<div class="col-sm-3 banner-pic" style="background-image: url(<?php print $image; ?>);"></div>
-		<div class="col-sm-9 banner-content">
+		<div class="col-sm-9 banner-content pv-14-xs pt-14-sm">
 			<div>
   			<div class="user-card user-card-round">
   				<div class="user-pic"><img src="<?php print $pathfile.'pictures/'.$user_image; ?>" alt=""></div>
