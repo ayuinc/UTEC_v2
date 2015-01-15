@@ -67,6 +67,28 @@
 				}
 			}
 		}
+		.right {
+			.nav-list {
+				> li {
+					> ul {
+						&.language-switcher-locale-url {
+							@include list-unstyled;
+							@include clearfix;
+							> li {
+								a.language-link {
+									@extend .btn;
+									@extend .btn-sm;
+									&:hover,
+									&.active {
+
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 	// NAVIGATION DISPLAY
 	.nav-display {
@@ -279,4 +301,8 @@ $header-on-scroll-height: 56px;
 			@include transition(all 0.2s ease-in-out);
 		}
 	}
+}
+
+.title.block-title {
+	display: none;
 }
