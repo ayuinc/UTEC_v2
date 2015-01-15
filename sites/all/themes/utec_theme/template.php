@@ -105,4 +105,18 @@
 	  'weight' => 11,
 	));
 
+	drupal_add_js(path_to_theme() . '/js/app/vendor/isotope.pkgd.min.js', array(
+	  'scope' => 'footer',
+	  'group' => JS_THEME,
+	  'every_page' => TRUE,
+	  'weight' => 12,
+	));
+
+	drupal_add_js(path_to_theme() . '/js/app/lib/isotope.js', array(
+	  'scope' => 'footer',
+	  'group' => JS_THEME,
+	  'every_page' => TRUE,
+	  'weight' => 13,
+	));
+
 ?>
