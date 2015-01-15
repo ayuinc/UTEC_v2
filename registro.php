@@ -1,8 +1,6 @@
 
 <?php
 
-echo "12345";
-
 session_start();
 
 require_once( 'nusoap2/nusoap.php' );
@@ -47,7 +45,7 @@ $v30 = "";
 $v31 = "";
 $v32 = "";
 $v33 = "";
-$v34 = "Ingeniria Industrial"; //utf8_decode($_POST['carrera']);
+$v34 = "Ingenieria Industrial"; //utf8_decode($_POST['carrera']);
 $v35 = $programacion;
 $v36 = "";
 $v37 = $origen;
