@@ -58,6 +58,7 @@
 							<a href="#" class="btn btn-xs btn-custom btn-gray atm-login" rel="nofollow">Intranet</a>
 						</li>
 					</ul>
+					<?php print block_render('locale', 'language'); ?>
 				</div>
 			</div>
 		</div>
