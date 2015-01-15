@@ -18,7 +18,7 @@
 	<h3 class="thin text-gray pt-21 pb-56">Datos del participante:</h3>
 </div>
 <div class="container-sm form-custom">
-	<form action="/sites/themes/utec_theme/registro.php" class="mb-ch-28" data-submit="Formulario de inscripcion">
+	<form action="/registro.php" class="mb-ch-28" data-submit="Formulario de inscripcion">
 			<div class="row">
 				<div class="form-group col-sm-7">
 					<label for="" class="sr-only">Nombres</label>
