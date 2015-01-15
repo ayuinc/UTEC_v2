@@ -78,9 +78,9 @@
     <li>
       <a href="/investigacion/proyectos">Proyectos</a>
     </li>
-    <!--<li>
-      <a href="#">Contacto</a>
-    </li>-->
+    <li>
+      <a href="/investigacion/contacto">Contacto</a>
+    </li>
   </ul>
 </div>
 <div class="mobile-nav-display" id="mobile-nav-display-3">

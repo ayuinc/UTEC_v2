@@ -68,25 +68,6 @@
 			}
 		}
 		.right {
-			.nav-list {
-				> li {
-					.language-switcher-locale-url {
-						@include list-unstyled;
-						@include clearfix;
-						li {
-							float: left;
-							a.language-link {
-								@extend .btn;
-								@extend .btn-sm;
-								&:hover,
-								&.active {
-
-								}
-							}
-						}
-					}
-				}
-			}
 		}
 	}
 	// NAVIGATION DISPLAY
@@ -302,6 +283,34 @@ $header-on-scroll-height: 56px;
 	}
 }
 
+// LANGUAGE SELECTOR
 .title.block-title {
 	display: none;
+}
+
+.language-switcher-locale-url {
+	@include list-unstyled;
+	@include clearfix;
+	li {
+		float: left;
+		a.language-link {
+			@extend .btn;
+			@extend .btn-sm;
+			@include box-shadow(none);
+			outline: none;
+			background-image: none;
+			background-color: $gray;
+			color: white;
+			padding: 2px 9px;
+			padding: rem(2px) rem(9px);
+			&:hover,
+			&.active {
+				@include box-shadow(none);
+				outline: none;
+				background-image: none;
+				background-color: $gray;
+				color: $brand-primary;
+			}
+		}
+	}
 }
