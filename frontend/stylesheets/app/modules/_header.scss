@@ -296,6 +296,9 @@ $header-on-scroll-height: 56px;
 		a.language-link {
 			@extend .btn;
 			@extend .btn-sm;
+			@include box-shadow(none);
+			outline: none;
+			background-image: none;
 			&:hover,
 			&.active {
 

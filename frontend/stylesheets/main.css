@@ -5706,6 +5706,12 @@ img.icon-utec {
     clear: both; }
   .language-switcher-locale-url li {
     float: left; }
+    .language-switcher-locale-url li a.language-link {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      outline: none;
+      background-image: none; }
 
 .site-menu {
   position: fixed;
