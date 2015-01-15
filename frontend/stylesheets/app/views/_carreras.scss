@@ -3,6 +3,7 @@ $malla-curricular-height: 70px;
 .malla-curricular {
 	> li {
 		padding: 0 $container-fluid 0 0 !important;
+		margin-top: 21px;
 		.head {
 			@include clearfix;
 			@include list-unstyled;
@@ -27,17 +28,20 @@ $malla-curricular-height: 70px;
 				> ul {
 					@include clearfix;
 					@include list-unstyled;
+					@include flex-grow;
 					> li {
 						float: left;
 						padding-left: 7px;
+						font-size: 9px;
 						&:first-child {
-							width: 39px;
+							width: 21%;
 						}
 						&:last-child {
+							width: 79%;
 							padding-top: 7px;
 						}
 					}
-					@for $i from 1 through 10 {
+					@for $i from 1 through 30 {
 						&:nth-child(#{$i}) {
 							> li {
 								min-height: $malla-curricular-height - ($i * 2);

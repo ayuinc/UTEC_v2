@@ -18,50 +18,49 @@
 	<h3 class="thin text-gray pt-21 pb-56">Datos del participante:</h3>
 </div>
 <div class="container-sm form-custom">
-	<form action="" class="mb-ch-28" data-submit="Formulario de inscripcion">
-		<div class="row">
-			<div class="form-group col-sm-6">
-				<label for="" class="sr-only">Nombres</label>
-				<input type="text" class="form-control" placeholder="Nombres">
+	<form action="/registro.php" class="mb-ch-28" data-submit="Formulario de inscripcion">
+			<div class="row">
+				<div class="form-group col-sm-7">
+					<label for="" class="sr-only">Nombres</label>
+					<input type="text" class="form-control" placeholder="Nombres" name="nombres" id="nombres">
+				</div>
 			</div>
-			<div class="form-group col-sm-6">
-				<label for="" class="sr-only">Apellidos</label>
-				<input type="text" class="form-control" placeholder="Apellidos">
+			<div class="row">
+				<div class="form-group col-sm-7">
+					<label for="" class="sr-only">Apellidos</label>
+					<input type="text" class="form-control" placeholder="Apellidos" name="apellidos" id="apellidos">
+				</div>
+			</div>		
+			<div class="row">
+				<div class="col-sm-7 form-group">
+					<label for="" class="sr-only">E-Mail</label>
+					<input type="email" class="form-control" placeholder="e-mail" name="email" id="email">
+				</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">Carrera de interés</label>
-				<select name="" id="" class="form-control select-override">
-					<option value="Carrera de interés">Carrera de interés</option>
-				</select>
+			<div class="row">
+				<div class="form-group col-sm-7">
+					<label for="" class="sr-only">Tel&eacute;fono</label>
+					<input type="text" class="form-control" placeholder="Telefono" name="telefono" id="telefono">
+				</div>
+			</div>			
+			<div class="row">
+				<div class="form-group col-sm-7">
+					<label for="" class="sr-only">Carrera de interés</label>
+					<select name="carrera" id="carrera" class="form-control select-override">
+						<option value="Carrera de interés">Carrera de interés</option>
+					</select>
+				</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-7 form-group">
-				<input type="email" class="form-control" placeholder="e-mail">
+			<div class="row">
+				<div class="form-group col-sm-7">
+					<label for="" class="sr-only">Consulta</label>
+					<textarea class="form-control" placeholder="Consulta" name="consulta" id="consulta"></textarea>
+				</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-12">
-				<label for="" class="block">Teléfonos</label>
-			</div>
-			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">Celular 1</label>
-				<input type="text" class="form-control" placeholder="Celular 1">
-			</div>
-		</div>
 
-		<div class="row">
-			<div class="form-group col-sm-6">
-				<label for="" class="sr-only">Consulta</label>
-				<input type="text" class="form-control" placeholder="Consulta">
+			<div class="text-right">
+				<button type="submit" class="btn btn-primary btn-lg">Enviar</button>
 			</div>
-		</div>
-
-		<div class="text-right">
-			<button type="submit" class="btn btn-primary btn-lg">Enviar</button>
-		</div>
 	</form>						
 </div>
 <div class="container pt-42">
@@ -82,17 +81,18 @@ require_once( 'nusoap2/nusoap.php' );
 //consumir web service:
 $client = new nusoap_client( "http://app.utec.edu.pe/inscripcionutecws3/services/InscripcionServicePort?wsdl", true ); 
 
+
 $programacion = "2015-1";
 $origen ="landing-examen-admision";
 
 $v0 = "EXAMEN";
-$v1 = "ANGEL EXAMEN";
-$v2 = "aaaa";
-$v3 = "BBBB";
+$v1 = "Angel AYU 123"; //utf8_decode($_POST['nombres']);
+$v2 = "Pacheco"; //utf8_decode($_POST['apellido']);
+$v3 = "Masias"; //utf8_decode($_POST['apellidom']);
 $v4 = "";
 $v5 = "";
 $v6 = "M";
-$v7 = "WWW";
+$v7 = "123"; //utf8_decode($carreras[$carrera_elegida]);
 $v8 = "";
 $v9 = "";
 $v10 = "";
@@ -103,14 +103,14 @@ $v14 = "";
 $v15 = "";
 $v16 = "";
 $v17 = ""; //utf8_decode($direccion);
-$v18 = "AAA";
+$v18 = "angelpa38@gmail.com"; //utf8_decode($_POST['emailx']);
 $v19 = ""; //utf8_decode($celular);
 $v20 = "";
-$v21 = "1111";
+$v21 = "12345678"; //$_POST['telefono'];
 $v22 = "";
-$v23 = "1111";//24
+$v23 = "12"; //utf8_decode($_POST['colegio']);//24
 $v24 = "";//25
-$v25 = "11111";//26
+$v25 = $_SERVER['REMOTE_ADDR'];//26
 $v26 = "48500";//27
 $v27 = "N";
 $v28 = "";
@@ -119,7 +119,7 @@ $v30 = "";
 $v31 = "";
 $v32 = "";
 $v33 = "";
-$v34 = "1111";
+$v34 = "Ingenieria Industrial"; //utf8_decode($_POST['carrera']);
 $v35 = $programacion;
 $v36 = "";
 $v37 = $origen;
@@ -130,8 +130,6 @@ $param = array('familia' => $v0, 'nombres' => $v1, 'apelPat' => $v2, 'apelMat' =
                                         'diaNaci' => $v11, 'mesNaci' => $v12, 'anhoNaci' => $v13, 'dptoActual' => $v14, 'provActual' => $v15, 'distActual' => $v16, 'direccion' => $v17, 'email' => $v18, 'celular1' => $v19, 'celular2' => $v20,
                                         'telfFijo' => $v21, 'anhoEstudios' => $v22, 'colegio' => $v23, 'rendimiento' => $v24, 'ip' => $v25, 'codActividad' => $v26, 'esEstudiante' => $v27, 'gradoInstruccion' => $v28, 'gradoColegio' => $v29, 'movilOperador' => $v30,
                                         'codPais' => $v31, 'numRPM' => $v32, 'comoSupoNosotros' => $v33, 'codigoProducto' => $v34, 'codigoProgramacion' => $v35, 'comentario' => $v36, 'origenOportunidad' => $v37, 'univProcedencia' => $v38);
-
-
 
 $response = $client->call( 'registrarInscripcion', $param );
 
