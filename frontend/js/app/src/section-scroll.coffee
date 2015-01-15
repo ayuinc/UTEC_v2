@@ -23,7 +23,7 @@ $(document).ready ->
 			})
 			.setClassToggle(scrollRef, 'active')
 			.addTo($sectionScrollController)
-		# $sectionScrollScene.addIndicators({zindex: 1000, suffix: index})
+		$sectionScrollScene.addIndicators({zindex: 1000, suffix: index})
 		return
 		)
 
