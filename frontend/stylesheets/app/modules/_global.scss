@@ -355,6 +355,10 @@ img.icon-utec {
 	overflow: hidden;
 	// background: url(../assets/img/img.png) no-repeat center top;
 	// background-size: cover;
+	@media #{$md-down} {
+		width: auto;
+		height: 100%;
+	}
 }
 
 .video-js {
@@ -364,6 +368,13 @@ img.icon-utec {
  	.vjs-tech {
   	position: relative !important;
   }
+  @media #{$md-down} {
+		width: auto !important;
+		height: 100% !important;
+		.vjs-tech {
+			width: auto !important;
+		}
+	}
 }
 
 .overlay {

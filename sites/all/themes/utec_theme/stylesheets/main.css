@@ -5061,6 +5061,10 @@ img.icon-utec {
   width: auto;
   height: auto;
   overflow: hidden; }
+  @media only screen and (max-width: 992px) {
+    .videocover {
+      width: auto;
+      height: 100%; } }
 
 .video-js {
   position: relative !important;
@@ -5068,6 +5072,12 @@ img.icon-utec {
   height: auto !important; }
   .video-js .vjs-tech {
     position: relative !important; }
+  @media only screen and (max-width: 992px) {
+    .video-js {
+      width: auto !important;
+      height: 100% !important; }
+      .video-js .vjs-tech {
+        width: auto !important; } }
 
 .overlay {
   position: absolute;
