@@ -252,10 +252,10 @@ th {
   .navbar {
     display: none; }
 
-  .btn > .caret, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.language-link > .caret, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.language-link > .caret,
+  .btn > .caret, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.language-link > .caret, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.language-link > .caret,
   .dropup > .btn > .caret,
-  #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li .dropup > a.language-link > .caret,
-  #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li .dropup > a.language-link > .caret {
+  #header .nav-main .right .nav-list > li .language-switcher-locale-url li .dropup > a.language-link > .caret,
+  #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li .dropup > a.language-link > .caret {
     border-top-color: #000 !important; }
 
   .label {
@@ -1955,7 +1955,7 @@ select[multiple].form-group-lg .form-control {
   .form-horizontal .form-group-sm .control-label {
     padding-top: 6px; } }
 
-.btn, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.language-link {
+.btn, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.language-link {
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -1974,19 +1974,19 @@ select[multiple].form-group-lg .form-control {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
-  .btn:focus, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.language-link:focus, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.language-link:focus, .btn.focus, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.focus.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.focus.language-link, .btn:active:focus, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.language-link:active:focus, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.language-link:active:focus, .btn:active.focus, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.language-link:active.focus, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.language-link:active.focus, .btn.active:focus, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.active.language-link:focus, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.active.language-link:focus, .btn.active.focus, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.active.focus.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.active.focus.language-link {
+  .btn:focus, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.language-link:focus, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.language-link:focus, .btn.focus, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.focus.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.focus.language-link, .btn:active:focus, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.language-link:active:focus, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.language-link:active:focus, .btn:active.focus, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.language-link:active.focus, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.language-link:active.focus, .btn.active:focus, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.active.language-link:focus, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.active.language-link:focus, .btn.active.focus, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.active.focus.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.active.focus.language-link {
     outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px; }
-  .btn:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.language-link:hover, .btn:focus, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.language-link:focus, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.language-link:focus, .btn.focus, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.focus.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.focus.language-link {
+  .btn:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.language-link:hover, .btn:focus, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.language-link:focus, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.language-link:focus, .btn.focus, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.focus.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.focus.language-link {
     color: #333;
     text-decoration: none; }
-  .btn:active, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.language-link:active, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.language-link:active, .btn.active, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.active.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.active.language-link {
+  .btn:active, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.language-link:active, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.language-link:active, .btn.active, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.active.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.active.language-link {
     outline: 0;
     background-image: none;
     -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
-  .btn.disabled, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.disabled.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.disabled.language-link, .btn[disabled], #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a[disabled].language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a[disabled].language-link, fieldset[disabled] .btn, fieldset[disabled] #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.language-link, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li fieldset[disabled] a.language-link, fieldset[disabled] #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li fieldset[disabled] a.language-link {
+  .btn.disabled, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.disabled.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.disabled.language-link, .btn[disabled], #header .nav-main .right .nav-list > li .language-switcher-locale-url li a[disabled].language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a[disabled].language-link, fieldset[disabled] .btn, fieldset[disabled] #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.language-link, #header .nav-main .right .nav-list > li .language-switcher-locale-url li fieldset[disabled] a.language-link, fieldset[disabled] #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li fieldset[disabled] a.language-link {
     cursor: not-allowed;
     pointer-events: none;
     opacity: 0.65;
@@ -2120,7 +2120,7 @@ select[multiple].form-group-lg .form-control {
   line-height: 1.33;
   border-radius: 0px; }
 
-.btn-sm, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.language-link {
+.btn-sm, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.language-link {
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
@@ -2344,7 +2344,7 @@ tbody.collapse.in {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
-  .carousel-caption .btn, .carousel-caption #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.language-link, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li .carousel-caption a.language-link, .carousel-caption #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li .carousel-caption a.language-link {
+  .carousel-caption .btn, .carousel-caption #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.language-link, #header .nav-main .right .nav-list > li .language-switcher-locale-url li .carousel-caption a.language-link, .carousel-caption #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li .carousel-caption a.language-link {
     text-shadow: none; }
 
 @media screen and (min-width: 768px) {
@@ -3728,90 +3728,90 @@ small {
 .icon-footer-youtube:before {
   content: "\ea99"; }
 
-a.btn.form-control, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.form-control.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.form-control.language-link,
+a.btn.form-control, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.form-control.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.form-control.language-link,
 button.btn.form-control,
 input[type="submit"].btn.form-control {
   height: auto; }
-a.btn.borderless, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.borderless.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.borderless.language-link,
+a.btn.borderless, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.borderless.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.borderless.language-link,
 button.btn.borderless,
 input[type="submit"].btn.borderless {
   border-radius: 0 !important; }
-a.btn.btn-xs, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-xs.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-xs.language-link,
+a.btn.btn-xs, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-xs.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-xs.language-link,
 button.btn.btn-xs,
 input[type="submit"].btn.btn-xs {
   font-size: 12px;
   padding: 2px 9px;
   padding: 0.14286rem 0.64286rem; }
-a.btn.btn-xl, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-xl.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-xl.language-link,
+a.btn.btn-xl, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-xl.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-xl.language-link,
 button.btn.btn-xl,
 input[type="submit"].btn.btn-xl {
   font-size: 24px;
   padding: 12px 21px;
   padding: 0.85714rem 1.5rem; }
-a.btn.btn-facebook, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-facebook.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-facebook.language-link,
+a.btn.btn-facebook, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-facebook.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-facebook.language-link,
 button.btn.btn-facebook,
 input[type="submit"].btn.btn-facebook {
   background: #3B5998;
   color: white; }
-  a.btn.btn-facebook:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-facebook.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-facebook.language-link:hover,
+  a.btn.btn-facebook:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-facebook.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-facebook.language-link:hover,
   button.btn.btn-facebook:hover,
   input[type="submit"].btn.btn-facebook:hover {
     background: #273b65; }
-a.btn.btn-twitter, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-twitter.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-twitter.language-link,
+a.btn.btn-twitter, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-twitter.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-twitter.language-link,
 button.btn.btn-twitter,
 input[type="submit"].btn.btn-twitter {
   background: #34CCFE;
   color: white; }
-  a.btn.btn-twitter:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-twitter.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-twitter.language-link:hover,
+  a.btn.btn-twitter:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-twitter.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-twitter.language-link:hover,
   button.btn.btn-twitter:hover,
   input[type="submit"].btn.btn-twitter:hover {
     background: #01b0e9; }
-a.btn.btn-pinterest, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-pinterest.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-pinterest.language-link,
+a.btn.btn-pinterest, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-pinterest.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-pinterest.language-link,
 button.btn.btn-pinterest,
 input[type="submit"].btn.btn-pinterest {
   background: #D02420;
   color: white; }
-  a.btn.btn-pinterest:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-pinterest.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-pinterest.language-link:hover,
+  a.btn.btn-pinterest:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-pinterest.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-pinterest.language-link:hover,
   button.btn.btn-pinterest:hover,
   input[type="submit"].btn.btn-pinterest:hover {
     background: #921916; }
-a.btn.btn-google-plus, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-google-plus.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-google-plus.language-link,
+a.btn.btn-google-plus, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-google-plus.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-google-plus.language-link,
 button.btn.btn-google-plus,
 input[type="submit"].btn.btn-google-plus {
   background: #DC4335;
   color: white; }
-  a.btn.btn-google-plus:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-google-plus.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-google-plus.language-link:hover,
+  a.btn.btn-google-plus:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-google-plus.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-google-plus.language-link:hover,
   button.btn.btn-google-plus:hover,
   input[type="submit"].btn.btn-google-plus:hover {
     background: #ac2a1e; }
-a.btn.btn-youtube, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-youtube.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-youtube.language-link,
+a.btn.btn-youtube, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-youtube.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-youtube.language-link,
 button.btn.btn-youtube,
 input[type="submit"].btn.btn-youtube {
   background: #F23030;
   color: white; }
-  a.btn.btn-youtube:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-youtube.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-youtube.language-link:hover,
+  a.btn.btn-youtube:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-youtube.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-youtube.language-link:hover,
   button.btn.btn-youtube:hover,
   input[type="submit"].btn.btn-youtube:hover {
     background: #ce0d0d; }
-a.btn.btn-instagram, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-instagram.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-instagram.language-link,
+a.btn.btn-instagram, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-instagram.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-instagram.language-link,
 button.btn.btn-instagram,
 input[type="submit"].btn.btn-instagram {
   background: #4187FB;
   color: white; }
-  a.btn.btn-instagram:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-instagram.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-instagram.language-link:hover,
+  a.btn.btn-instagram:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-instagram.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-instagram.language-link:hover,
   button.btn.btn-instagram:hover,
   input[type="submit"].btn.btn-instagram:hover {
     background: #055df0; }
-a.btn.btn-linkedin, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-linkedin.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-linkedin.language-link,
+a.btn.btn-linkedin, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-linkedin.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-linkedin.language-link,
 button.btn.btn-linkedin,
 input[type="submit"].btn.btn-linkedin {
   background: #1C87BD;
   color: white; }
-  a.btn.btn-linkedin:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-linkedin.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-linkedin.language-link:hover,
+  a.btn.btn-linkedin:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-linkedin.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-linkedin.language-link:hover,
   button.btn.btn-linkedin:hover,
   input[type="submit"].btn.btn-linkedin:hover {
     background: #135b7f; }
-a.btn.see-more:after, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.see-more.language-link:after, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.see-more.language-link:after,
+a.btn.see-more:after, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.see-more.language-link:after, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.see-more.language-link:after,
 button.btn.see-more:after,
 input[type="submit"].btn.see-more:after {
   content: "\e62a";
@@ -3819,224 +3819,224 @@ input[type="submit"].btn.see-more:after {
   font-weight: bold;
   margin-left: 14px; }
 
-a.btn.btn-primary.btn-outline, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-primary.btn-outline.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-primary.btn-outline.language-link,
+a.btn.btn-primary.btn-outline, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-primary.btn-outline.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-primary.btn-outline.language-link,
 button.btn.btn-primary.btn-outline,
 input[type="submit"].btn.btn-primary.btn-outline {
   background: none;
   border: 1px solid #4be5ff;
   border-radius: 0;
   color: #4be5ff; }
-  a.btn.btn-primary.btn-outline:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-primary.btn-outline.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-primary.btn-outline.language-link:hover,
+  a.btn.btn-primary.btn-outline:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-primary.btn-outline.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-primary.btn-outline.language-link:hover,
   button.btn.btn-primary.btn-outline:hover,
   input[type="submit"].btn.btn-primary.btn-outline:hover {
     background: none;
     border-radius: 0;
     border: 1px solid #00BFDF;
     color: #00BFDF; }
-a.btn.btn-success.btn-outline, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-success.btn-outline.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-success.btn-outline.language-link,
+a.btn.btn-success.btn-outline, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-success.btn-outline.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-success.btn-outline.language-link,
 button.btn.btn-success.btn-outline,
 input[type="submit"].btn.btn-success.btn-outline {
   background: none;
   border: 1px solid #bedf92;
   border-radius: 0;
   color: #bedf92; }
-  a.btn.btn-success.btn-outline:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-success.btn-outline.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-success.btn-outline.language-link:hover,
+  a.btn.btn-success.btn-outline:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-success.btn-outline.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-success.btn-outline.language-link:hover,
   button.btn.btn-success.btn-outline:hover,
   input[type="submit"].btn.btn-success.btn-outline:hover {
     background: none;
     border-radius: 0;
     border: 1px solid #8DC63F;
     color: #8DC63F; }
-a.btn.btn-info.btn-outline, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-info.btn-outline.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-info.btn-outline.language-link,
+a.btn.btn-info.btn-outline, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-info.btn-outline.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-info.btn-outline.language-link,
 button.btn.btn-info.btn-outline,
 input[type="submit"].btn.btn-info.btn-outline {
   background: none;
   border: 1px solid #5272b9;
   border-radius: 0;
   color: #5272b9; }
-  a.btn.btn-info.btn-outline:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-info.btn-outline.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-info.btn-outline.language-link:hover,
+  a.btn.btn-info.btn-outline:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-info.btn-outline.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-info.btn-outline.language-link:hover,
   button.btn.btn-info.btn-outline:hover,
   input[type="submit"].btn.btn-info.btn-outline:hover {
     background: none;
     border-radius: 0;
     border: 1px solid #2E4372;
     color: #2E4372; }
-a.btn.btn-warning.btn-outline, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-warning.btn-outline.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-warning.btn-outline.language-link,
+a.btn.btn-warning.btn-outline, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-warning.btn-outline.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-warning.btn-outline.language-link,
 button.btn.btn-warning.btn-outline,
 input[type="submit"].btn.btn-warning.btn-outline {
   background: none;
   border: 1px solid #ffeb6b;
   border-radius: 0;
   color: #ffeb6b; }
-  a.btn.btn-warning.btn-outline:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-warning.btn-outline.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-warning.btn-outline.language-link:hover,
+  a.btn.btn-warning.btn-outline:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-warning.btn-outline.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-warning.btn-outline.language-link:hover,
   button.btn.btn-warning.btn-outline:hover,
   input[type="submit"].btn.btn-warning.btn-outline:hover {
     background: none;
     border-radius: 0;
     border: 1px solid #FFDD00;
     color: #FFDD00; }
-a.btn.btn-danger.btn-outline, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-danger.btn-outline.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-danger.btn-outline.language-link,
+a.btn.btn-danger.btn-outline, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-danger.btn-outline.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-danger.btn-outline.language-link,
 button.btn.btn-danger.btn-outline,
 input[type="submit"].btn.btn-danger.btn-outline {
   background: none;
   border: 1px solid #eda59c;
   border-radius: 0;
   color: #eda59c; }
-  a.btn.btn-danger.btn-outline:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-danger.btn-outline.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-danger.btn-outline.language-link:hover,
+  a.btn.btn-danger.btn-outline:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-danger.btn-outline.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-danger.btn-outline.language-link:hover,
   button.btn.btn-danger.btn-outline:hover,
   input[type="submit"].btn.btn-danger.btn-outline:hover {
     background: none;
     border-radius: 0;
     border: 1px solid #DD5341;
     color: #DD5341; }
-a.btn.btn-blue-darker.btn-outline, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue-darker.btn-outline.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue-darker.btn-outline.language-link,
+a.btn.btn-blue-darker.btn-outline, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue-darker.btn-outline.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue-darker.btn-outline.language-link,
 button.btn.btn-blue-darker.btn-outline,
 input[type="submit"].btn.btn-blue-darker.btn-outline {
   background: none;
   border: 1px solid #43d5ff;
   border-radius: 0;
   color: #43d5ff; }
-  a.btn.btn-blue-darker.btn-outline:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue-darker.btn-outline.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue-darker.btn-outline.language-link:hover,
+  a.btn.btn-blue-darker.btn-outline:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue-darker.btn-outline.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue-darker.btn-outline.language-link:hover,
   button.btn.btn-blue-darker.btn-outline:hover,
   input[type="submit"].btn.btn-blue-darker.btn-outline:hover {
     background: none;
     border-radius: 0;
     border: 1px solid #00a7d7;
     color: #00a7d7; }
-a.btn.btn-blue-dark.btn-outline, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue-dark.btn-outline.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue-dark.btn-outline.language-link,
+a.btn.btn-blue-dark.btn-outline, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue-dark.btn-outline.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue-dark.btn-outline.language-link,
 button.btn.btn-blue-dark.btn-outline,
 input[type="submit"].btn.btn-blue-dark.btn-outline {
   background: none;
   border: 1px solid #aeedff;
   border-radius: 0;
   color: #aeedff; }
-  a.btn.btn-blue-dark.btn-outline:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue-dark.btn-outline.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue-dark.btn-outline.language-link:hover,
+  a.btn.btn-blue-dark.btn-outline:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue-dark.btn-outline.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue-dark.btn-outline.language-link:hover,
   button.btn.btn-blue-dark.btn-outline:hover,
   input[type="submit"].btn.btn-blue-dark.btn-outline:hover {
     background: none;
     border-radius: 0;
     border: 1px solid #43d5ff;
     color: #43d5ff; }
-a.btn.btn-blue.btn-outline, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue.btn-outline.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue.btn-outline.language-link,
+a.btn.btn-blue.btn-outline, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue.btn-outline.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue.btn-outline.language-link,
 button.btn.btn-blue.btn-outline,
 input[type="submit"].btn.btn-blue.btn-outline {
   background: none;
   border: 1px solid #f6fdff;
   border-radius: 0;
   color: #f6fdff; }
-  a.btn.btn-blue.btn-outline:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue.btn-outline.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue.btn-outline.language-link:hover,
+  a.btn.btn-blue.btn-outline:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue.btn-outline.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue.btn-outline.language-link:hover,
   button.btn.btn-blue.btn-outline:hover,
   input[type="submit"].btn.btn-blue.btn-outline:hover {
     background: none;
     border-radius: 0;
     border: 1px solid #8be5ff;
     color: #8be5ff; }
-a.btn.btn-blue-light.btn-outline, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue-light.btn-outline.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue-light.btn-outline.language-link,
+a.btn.btn-blue-light.btn-outline, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue-light.btn-outline.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue-light.btn-outline.language-link,
 button.btn.btn-blue-light.btn-outline,
 input[type="submit"].btn.btn-blue-light.btn-outline {
   background: none;
   border: 1px solid white;
   border-radius: 0;
   color: white; }
-  a.btn.btn-blue-light.btn-outline:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue-light.btn-outline.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue-light.btn-outline.language-link:hover,
+  a.btn.btn-blue-light.btn-outline:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue-light.btn-outline.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue-light.btn-outline.language-link:hover,
   button.btn.btn-blue-light.btn-outline:hover,
   input[type="submit"].btn.btn-blue-light.btn-outline:hover {
     background: none;
     border-radius: 0;
     border: 1px solid white;
     color: white; }
-a.btn.btn-blue-lighter.btn-outline, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue-lighter.btn-outline.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue-lighter.btn-outline.language-link,
+a.btn.btn-blue-lighter.btn-outline, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue-lighter.btn-outline.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue-lighter.btn-outline.language-link,
 button.btn.btn-blue-lighter.btn-outline,
 input[type="submit"].btn.btn-blue-lighter.btn-outline {
   background: none;
   border: 1px solid white;
   border-radius: 0;
   color: white; }
-  a.btn.btn-blue-lighter.btn-outline:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue-lighter.btn-outline.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue-lighter.btn-outline.language-link:hover,
+  a.btn.btn-blue-lighter.btn-outline:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue-lighter.btn-outline.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue-lighter.btn-outline.language-link:hover,
   button.btn.btn-blue-lighter.btn-outline:hover,
   input[type="submit"].btn.btn-blue-lighter.btn-outline:hover {
     background: none;
     border-radius: 0;
     border: 1px solid white;
     color: white; }
-a.btn.btn-gray-darker.btn-outline, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray-darker.btn-outline.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray-darker.btn-outline.language-link,
+a.btn.btn-gray-darker.btn-outline, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray-darker.btn-outline.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray-darker.btn-outline.language-link,
 button.btn.btn-gray-darker.btn-outline,
 input[type="submit"].btn.btn-gray-darker.btn-outline {
   background: none;
   border: 1px solid #4f4f4f;
   border-radius: 0;
   color: #4f4f4f; }
-  a.btn.btn-gray-darker.btn-outline:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray-darker.btn-outline.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray-darker.btn-outline.language-link:hover,
+  a.btn.btn-gray-darker.btn-outline:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray-darker.btn-outline.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray-darker.btn-outline.language-link:hover,
   button.btn.btn-gray-darker.btn-outline:hover,
   input[type="submit"].btn.btn-gray-darker.btn-outline:hover {
     background: none;
     border-radius: 0;
     border: 1px solid #191919;
     color: #191919; }
-a.btn.btn-gray-dark.btn-outline, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray-dark.btn-outline.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray-dark.btn-outline.language-link,
+a.btn.btn-gray-dark.btn-outline, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray-dark.btn-outline.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray-dark.btn-outline.language-link,
 button.btn.btn-gray-dark.btn-outline,
 input[type="submit"].btn.btn-gray-dark.btn-outline {
   background: none;
   border: 1px solid #686868;
   border-radius: 0;
   color: #686868; }
-  a.btn.btn-gray-dark.btn-outline:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray-dark.btn-outline.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray-dark.btn-outline.language-link:hover,
+  a.btn.btn-gray-dark.btn-outline:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray-dark.btn-outline.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray-dark.btn-outline.language-link:hover,
   button.btn.btn-gray-dark.btn-outline:hover,
   input[type="submit"].btn.btn-gray-dark.btn-outline:hover {
     background: none;
     border-radius: 0;
     border: 1px solid #323232;
     color: #323232; }
-a.btn.btn-gray.btn-outline, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray.btn-outline.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray.btn-outline.language-link,
+a.btn.btn-gray.btn-outline, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray.btn-outline.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray.btn-outline.language-link,
 button.btn.btn-gray.btn-outline,
 input[type="submit"].btn.btn-gray.btn-outline {
   background: none;
   border: 1px solid #c4c3c4;
   border-radius: 0;
   color: #c4c3c4; }
-  a.btn.btn-gray.btn-outline:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray.btn-outline.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray.btn-outline.language-link:hover,
+  a.btn.btn-gray.btn-outline:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray.btn-outline.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray.btn-outline.language-link:hover,
   button.btn.btn-gray.btn-outline:hover,
   input[type="submit"].btn.btn-gray.btn-outline:hover {
     background: none;
     border-radius: 0;
     border: 1px solid #8f8d8e;
     color: #8f8d8e; }
-a.btn.btn-gray-light.btn-outline, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray-light.btn-outline.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray-light.btn-outline.language-link,
+a.btn.btn-gray-light.btn-outline, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray-light.btn-outline.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray-light.btn-outline.language-link,
 button.btn.btn-gray-light.btn-outline,
 input[type="submit"].btn.btn-gray-light.btn-outline {
   background: none;
   border: 1px solid white;
   border-radius: 0;
   color: white; }
-  a.btn.btn-gray-light.btn-outline:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray-light.btn-outline.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray-light.btn-outline.language-link:hover,
+  a.btn.btn-gray-light.btn-outline:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray-light.btn-outline.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray-light.btn-outline.language-link:hover,
   button.btn.btn-gray-light.btn-outline:hover,
   input[type="submit"].btn.btn-gray-light.btn-outline:hover {
     background: none;
     border-radius: 0;
     border: 1px solid #e3e3e3;
     color: #e3e3e3; }
-a.btn.btn-gray-lighter.btn-outline, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray-lighter.btn-outline.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray-lighter.btn-outline.language-link,
+a.btn.btn-gray-lighter.btn-outline, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray-lighter.btn-outline.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray-lighter.btn-outline.language-link,
 button.btn.btn-gray-lighter.btn-outline,
 input[type="submit"].btn.btn-gray-lighter.btn-outline {
   background: none;
   border: 1px solid white;
   border-radius: 0;
   color: white; }
-  a.btn.btn-gray-lighter.btn-outline:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray-lighter.btn-outline.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray-lighter.btn-outline.language-link:hover,
+  a.btn.btn-gray-lighter.btn-outline:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray-lighter.btn-outline.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray-lighter.btn-outline.language-link:hover,
   button.btn.btn-gray-lighter.btn-outline:hover,
   input[type="submit"].btn.btn-gray-lighter.btn-outline:hover {
     background: none;
     border-radius: 0;
     border: 1px solid #f1f1f1;
     color: #f1f1f1; }
-a.btn.btn-white.btn-outline, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-white.btn-outline.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-white.btn-outline.language-link,
+a.btn.btn-white.btn-outline, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-white.btn-outline.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-white.btn-outline.language-link,
 button.btn.btn-white.btn-outline,
 input[type="submit"].btn.btn-white.btn-outline {
   background: none;
   border: 1px solid white;
   border-radius: 0;
   color: white; }
-  a.btn.btn-white.btn-outline:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-white.btn-outline.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-white.btn-outline.language-link:hover,
+  a.btn.btn-white.btn-outline:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-white.btn-outline.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-white.btn-outline.language-link:hover,
   button.btn.btn-white.btn-outline:hover,
   input[type="submit"].btn.btn-white.btn-outline:hover {
     background: none;
@@ -4044,168 +4044,168 @@ input[type="submit"].btn.btn-white.btn-outline {
     border: 1px solid #fff;
     color: #fff; }
 
-a.btn.btn-primary.btn-custom, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-primary.btn-custom.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-primary.btn-custom.language-link,
+a.btn.btn-primary.btn-custom, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-primary.btn-custom.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-primary.btn-custom.language-link,
 button.btn.btn-primary.btn-custom,
 input[type="submit"].btn.btn-primary.btn-custom {
   background: #4be5ff;
   color: white !important; }
-  a.btn.btn-primary.btn-custom:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-primary.btn-custom.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-primary.btn-custom.language-link:hover,
+  a.btn.btn-primary.btn-custom:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-primary.btn-custom.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-primary.btn-custom.language-link:hover,
   button.btn.btn-primary.btn-custom:hover,
   input[type="submit"].btn.btn-primary.btn-custom:hover {
     background: #00BFDF;
     color: white !important; }
-a.btn.btn-success.btn-custom, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-success.btn-custom.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-success.btn-custom.language-link,
+a.btn.btn-success.btn-custom, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-success.btn-custom.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-success.btn-custom.language-link,
 button.btn.btn-success.btn-custom,
 input[type="submit"].btn.btn-success.btn-custom {
   background: #bedf92;
   color: white !important; }
-  a.btn.btn-success.btn-custom:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-success.btn-custom.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-success.btn-custom.language-link:hover,
+  a.btn.btn-success.btn-custom:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-success.btn-custom.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-success.btn-custom.language-link:hover,
   button.btn.btn-success.btn-custom:hover,
   input[type="submit"].btn.btn-success.btn-custom:hover {
     background: #8DC63F;
     color: white !important; }
-a.btn.btn-info.btn-custom, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-info.btn-custom.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-info.btn-custom.language-link,
+a.btn.btn-info.btn-custom, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-info.btn-custom.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-info.btn-custom.language-link,
 button.btn.btn-info.btn-custom,
 input[type="submit"].btn.btn-info.btn-custom {
   background: #5272b9;
   color: white !important; }
-  a.btn.btn-info.btn-custom:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-info.btn-custom.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-info.btn-custom.language-link:hover,
+  a.btn.btn-info.btn-custom:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-info.btn-custom.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-info.btn-custom.language-link:hover,
   button.btn.btn-info.btn-custom:hover,
   input[type="submit"].btn.btn-info.btn-custom:hover {
     background: #2E4372;
     color: white !important; }
-a.btn.btn-warning.btn-custom, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-warning.btn-custom.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-warning.btn-custom.language-link,
+a.btn.btn-warning.btn-custom, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-warning.btn-custom.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-warning.btn-custom.language-link,
 button.btn.btn-warning.btn-custom,
 input[type="submit"].btn.btn-warning.btn-custom {
   background: #ffeb6b;
   color: white !important; }
-  a.btn.btn-warning.btn-custom:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-warning.btn-custom.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-warning.btn-custom.language-link:hover,
+  a.btn.btn-warning.btn-custom:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-warning.btn-custom.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-warning.btn-custom.language-link:hover,
   button.btn.btn-warning.btn-custom:hover,
   input[type="submit"].btn.btn-warning.btn-custom:hover {
     background: #FFDD00;
     color: white !important; }
-a.btn.btn-danger.btn-custom, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-danger.btn-custom.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-danger.btn-custom.language-link,
+a.btn.btn-danger.btn-custom, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-danger.btn-custom.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-danger.btn-custom.language-link,
 button.btn.btn-danger.btn-custom,
 input[type="submit"].btn.btn-danger.btn-custom {
   background: #eda59c;
   color: white !important; }
-  a.btn.btn-danger.btn-custom:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-danger.btn-custom.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-danger.btn-custom.language-link:hover,
+  a.btn.btn-danger.btn-custom:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-danger.btn-custom.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-danger.btn-custom.language-link:hover,
   button.btn.btn-danger.btn-custom:hover,
   input[type="submit"].btn.btn-danger.btn-custom:hover {
     background: #DD5341;
     color: white !important; }
-a.btn.btn-blue-darker.btn-custom, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue-darker.btn-custom.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue-darker.btn-custom.language-link,
+a.btn.btn-blue-darker.btn-custom, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue-darker.btn-custom.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue-darker.btn-custom.language-link,
 button.btn.btn-blue-darker.btn-custom,
 input[type="submit"].btn.btn-blue-darker.btn-custom {
   background: #43d5ff;
   color: white !important; }
-  a.btn.btn-blue-darker.btn-custom:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue-darker.btn-custom.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue-darker.btn-custom.language-link:hover,
+  a.btn.btn-blue-darker.btn-custom:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue-darker.btn-custom.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue-darker.btn-custom.language-link:hover,
   button.btn.btn-blue-darker.btn-custom:hover,
   input[type="submit"].btn.btn-blue-darker.btn-custom:hover {
     background: #00a7d7;
     color: white !important; }
-a.btn.btn-blue-dark.btn-custom, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue-dark.btn-custom.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue-dark.btn-custom.language-link,
+a.btn.btn-blue-dark.btn-custom, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue-dark.btn-custom.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue-dark.btn-custom.language-link,
 button.btn.btn-blue-dark.btn-custom,
 input[type="submit"].btn.btn-blue-dark.btn-custom {
   background: #aeedff;
   color: white !important; }
-  a.btn.btn-blue-dark.btn-custom:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue-dark.btn-custom.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue-dark.btn-custom.language-link:hover,
+  a.btn.btn-blue-dark.btn-custom:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue-dark.btn-custom.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue-dark.btn-custom.language-link:hover,
   button.btn.btn-blue-dark.btn-custom:hover,
   input[type="submit"].btn.btn-blue-dark.btn-custom:hover {
     background: #43d5ff;
     color: white !important; }
-a.btn.btn-blue.btn-custom, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue.btn-custom.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue.btn-custom.language-link,
+a.btn.btn-blue.btn-custom, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue.btn-custom.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue.btn-custom.language-link,
 button.btn.btn-blue.btn-custom,
 input[type="submit"].btn.btn-blue.btn-custom {
   background: #f6fdff;
   color: white !important; }
-  a.btn.btn-blue.btn-custom:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue.btn-custom.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue.btn-custom.language-link:hover,
+  a.btn.btn-blue.btn-custom:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue.btn-custom.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue.btn-custom.language-link:hover,
   button.btn.btn-blue.btn-custom:hover,
   input[type="submit"].btn.btn-blue.btn-custom:hover {
     background: #8be5ff;
     color: white !important; }
-a.btn.btn-blue-light.btn-custom, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue-light.btn-custom.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue-light.btn-custom.language-link,
+a.btn.btn-blue-light.btn-custom, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue-light.btn-custom.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue-light.btn-custom.language-link,
 button.btn.btn-blue-light.btn-custom,
 input[type="submit"].btn.btn-blue-light.btn-custom {
   background: white;
   color: white !important; }
-  a.btn.btn-blue-light.btn-custom:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue-light.btn-custom.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue-light.btn-custom.language-link:hover,
+  a.btn.btn-blue-light.btn-custom:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue-light.btn-custom.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue-light.btn-custom.language-link:hover,
   button.btn.btn-blue-light.btn-custom:hover,
   input[type="submit"].btn.btn-blue-light.btn-custom:hover {
     background: white;
     color: white !important; }
-a.btn.btn-blue-lighter.btn-custom, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue-lighter.btn-custom.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue-lighter.btn-custom.language-link,
+a.btn.btn-blue-lighter.btn-custom, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue-lighter.btn-custom.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue-lighter.btn-custom.language-link,
 button.btn.btn-blue-lighter.btn-custom,
 input[type="submit"].btn.btn-blue-lighter.btn-custom {
   background: white;
   color: white !important; }
-  a.btn.btn-blue-lighter.btn-custom:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue-lighter.btn-custom.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-blue-lighter.btn-custom.language-link:hover,
+  a.btn.btn-blue-lighter.btn-custom:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue-lighter.btn-custom.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-blue-lighter.btn-custom.language-link:hover,
   button.btn.btn-blue-lighter.btn-custom:hover,
   input[type="submit"].btn.btn-blue-lighter.btn-custom:hover {
     background: white;
     color: white !important; }
-a.btn.btn-gray-darker.btn-custom, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray-darker.btn-custom.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray-darker.btn-custom.language-link,
+a.btn.btn-gray-darker.btn-custom, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray-darker.btn-custom.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray-darker.btn-custom.language-link,
 button.btn.btn-gray-darker.btn-custom,
 input[type="submit"].btn.btn-gray-darker.btn-custom {
   background: #4f4f4f;
   color: white !important; }
-  a.btn.btn-gray-darker.btn-custom:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray-darker.btn-custom.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray-darker.btn-custom.language-link:hover,
+  a.btn.btn-gray-darker.btn-custom:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray-darker.btn-custom.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray-darker.btn-custom.language-link:hover,
   button.btn.btn-gray-darker.btn-custom:hover,
   input[type="submit"].btn.btn-gray-darker.btn-custom:hover {
     background: #191919;
     color: white !important; }
-a.btn.btn-gray-dark.btn-custom, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray-dark.btn-custom.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray-dark.btn-custom.language-link,
+a.btn.btn-gray-dark.btn-custom, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray-dark.btn-custom.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray-dark.btn-custom.language-link,
 button.btn.btn-gray-dark.btn-custom,
 input[type="submit"].btn.btn-gray-dark.btn-custom {
   background: #686868;
   color: white !important; }
-  a.btn.btn-gray-dark.btn-custom:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray-dark.btn-custom.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray-dark.btn-custom.language-link:hover,
+  a.btn.btn-gray-dark.btn-custom:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray-dark.btn-custom.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray-dark.btn-custom.language-link:hover,
   button.btn.btn-gray-dark.btn-custom:hover,
   input[type="submit"].btn.btn-gray-dark.btn-custom:hover {
     background: #323232;
     color: white !important; }
-a.btn.btn-gray.btn-custom, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray.btn-custom.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray.btn-custom.language-link,
+a.btn.btn-gray.btn-custom, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray.btn-custom.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray.btn-custom.language-link,
 button.btn.btn-gray.btn-custom,
 input[type="submit"].btn.btn-gray.btn-custom {
   background: #c4c3c4;
   color: white !important; }
-  a.btn.btn-gray.btn-custom:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray.btn-custom.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray.btn-custom.language-link:hover,
+  a.btn.btn-gray.btn-custom:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray.btn-custom.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray.btn-custom.language-link:hover,
   button.btn.btn-gray.btn-custom:hover,
   input[type="submit"].btn.btn-gray.btn-custom:hover {
     background: #8f8d8e;
     color: white !important; }
-a.btn.btn-gray-light.btn-custom, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray-light.btn-custom.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray-light.btn-custom.language-link,
+a.btn.btn-gray-light.btn-custom, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray-light.btn-custom.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray-light.btn-custom.language-link,
 button.btn.btn-gray-light.btn-custom,
 input[type="submit"].btn.btn-gray-light.btn-custom {
   background: white;
   color: white !important; }
-  a.btn.btn-gray-light.btn-custom:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray-light.btn-custom.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray-light.btn-custom.language-link:hover,
+  a.btn.btn-gray-light.btn-custom:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray-light.btn-custom.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray-light.btn-custom.language-link:hover,
   button.btn.btn-gray-light.btn-custom:hover,
   input[type="submit"].btn.btn-gray-light.btn-custom:hover {
     background: #e3e3e3;
     color: white !important; }
-a.btn.btn-gray-lighter.btn-custom, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray-lighter.btn-custom.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray-lighter.btn-custom.language-link,
+a.btn.btn-gray-lighter.btn-custom, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray-lighter.btn-custom.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray-lighter.btn-custom.language-link,
 button.btn.btn-gray-lighter.btn-custom,
 input[type="submit"].btn.btn-gray-lighter.btn-custom {
   background: white;
   color: white !important; }
-  a.btn.btn-gray-lighter.btn-custom:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray-lighter.btn-custom.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-gray-lighter.btn-custom.language-link:hover,
+  a.btn.btn-gray-lighter.btn-custom:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray-lighter.btn-custom.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-gray-lighter.btn-custom.language-link:hover,
   button.btn.btn-gray-lighter.btn-custom:hover,
   input[type="submit"].btn.btn-gray-lighter.btn-custom:hover {
     background: #f1f1f1;
     color: white !important; }
-a.btn.btn-white.btn-custom, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-white.btn-custom.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-white.btn-custom.language-link,
+a.btn.btn-white.btn-custom, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-white.btn-custom.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-white.btn-custom.language-link,
 button.btn.btn-white.btn-custom,
 input[type="submit"].btn.btn-white.btn-custom {
   background: white;
   color: white !important; }
-  a.btn.btn-white.btn-custom:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-white.btn-custom.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-white.btn-custom.language-link:hover,
+  a.btn.btn-white.btn-custom:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-white.btn-custom.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-white.btn-custom.language-link:hover,
   button.btn.btn-white.btn-custom:hover,
   input[type="submit"].btn.btn-white.btn-custom:hover {
     background: #fff;
     color: white !important; }
 
-a.btn.btn-facebook.btn-circle, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-facebook.btn-circle.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-facebook.btn-circle.language-link,
+a.btn.btn-facebook.btn-circle, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-facebook.btn-circle.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-facebook.btn-circle.language-link,
 button.btn.btn-facebook.btn-circle,
 input[type="submit"].btn.btn-facebook.btn-circle {
   background-color: #7590c9;
@@ -4246,12 +4246,12 @@ input[type="submit"].btn.btn-facebook.btn-circle {
   -o-align-items: center;
   align-items: center;
   -ms-flex-align: center; }
-  a.btn.btn-facebook.btn-circle:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-facebook.btn-circle.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-facebook.btn-circle.language-link:hover,
+  a.btn.btn-facebook.btn-circle:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-facebook.btn-circle.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-facebook.btn-circle.language-link:hover,
   button.btn.btn-facebook.btn-circle:hover,
   input[type="submit"].btn.btn-facebook.btn-circle:hover {
     background-color: #3B5998;
     color: white !important; }
-a.btn.btn-twitter.btn-circle, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-twitter.btn-circle.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-twitter.btn-circle.language-link,
+a.btn.btn-twitter.btn-circle, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-twitter.btn-circle.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-twitter.btn-circle.language-link,
 button.btn.btn-twitter.btn-circle,
 input[type="submit"].btn.btn-twitter.btn-circle {
   background-color: #9fe7ff;
@@ -4292,12 +4292,12 @@ input[type="submit"].btn.btn-twitter.btn-circle {
   -o-align-items: center;
   align-items: center;
   -ms-flex-align: center; }
-  a.btn.btn-twitter.btn-circle:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-twitter.btn-circle.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-twitter.btn-circle.language-link:hover,
+  a.btn.btn-twitter.btn-circle:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-twitter.btn-circle.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-twitter.btn-circle.language-link:hover,
   button.btn.btn-twitter.btn-circle:hover,
   input[type="submit"].btn.btn-twitter.btn-circle:hover {
     background-color: #34CCFE;
     color: white !important; }
-a.btn.btn-pinterest.btn-circle, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-pinterest.btn-circle.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-pinterest.btn-circle.language-link,
+a.btn.btn-pinterest.btn-circle, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-pinterest.btn-circle.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-pinterest.btn-circle.language-link,
 button.btn.btn-pinterest.btn-circle,
 input[type="submit"].btn.btn-pinterest.btn-circle {
   background-color: #e97572;
@@ -4338,12 +4338,12 @@ input[type="submit"].btn.btn-pinterest.btn-circle {
   -o-align-items: center;
   align-items: center;
   -ms-flex-align: center; }
-  a.btn.btn-pinterest.btn-circle:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-pinterest.btn-circle.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-pinterest.btn-circle.language-link:hover,
+  a.btn.btn-pinterest.btn-circle:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-pinterest.btn-circle.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-pinterest.btn-circle.language-link:hover,
   button.btn.btn-pinterest.btn-circle:hover,
   input[type="submit"].btn.btn-pinterest.btn-circle:hover {
     background-color: #D02420;
     color: white !important; }
-a.btn.btn-google-plus.btn-circle, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-google-plus.btn-circle.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-google-plus.btn-circle.language-link,
+a.btn.btn-google-plus.btn-circle, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-google-plus.btn-circle.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-google-plus.btn-circle.language-link,
 button.btn.btn-google-plus.btn-circle,
 input[type="submit"].btn.btn-google-plus.btn-circle {
   background-color: #ec9890;
@@ -4384,12 +4384,12 @@ input[type="submit"].btn.btn-google-plus.btn-circle {
   -o-align-items: center;
   align-items: center;
   -ms-flex-align: center; }
-  a.btn.btn-google-plus.btn-circle:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-google-plus.btn-circle.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-google-plus.btn-circle.language-link:hover,
+  a.btn.btn-google-plus.btn-circle:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-google-plus.btn-circle.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-google-plus.btn-circle.language-link:hover,
   button.btn.btn-google-plus.btn-circle:hover,
   input[type="submit"].btn.btn-google-plus.btn-circle:hover {
     background-color: #DC4335;
     color: white !important; }
-a.btn.btn-youtube.btn-circle, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-youtube.btn-circle.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-youtube.btn-circle.language-link,
+a.btn.btn-youtube.btn-circle, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-youtube.btn-circle.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-youtube.btn-circle.language-link,
 button.btn.btn-youtube.btn-circle,
 input[type="submit"].btn.btn-youtube.btn-circle {
   background-color: #f89595;
@@ -4430,12 +4430,12 @@ input[type="submit"].btn.btn-youtube.btn-circle {
   -o-align-items: center;
   align-items: center;
   -ms-flex-align: center; }
-  a.btn.btn-youtube.btn-circle:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-youtube.btn-circle.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-youtube.btn-circle.language-link:hover,
+  a.btn.btn-youtube.btn-circle:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-youtube.btn-circle.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-youtube.btn-circle.language-link:hover,
   button.btn.btn-youtube.btn-circle:hover,
   input[type="submit"].btn.btn-youtube.btn-circle:hover {
     background-color: #F23030;
     color: white !important; }
-a.btn.btn-instagram.btn-circle, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-instagram.btn-circle.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-instagram.btn-circle.language-link,
+a.btn.btn-instagram.btn-circle, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-instagram.btn-circle.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-instagram.btn-circle.language-link,
 button.btn.btn-instagram.btn-circle,
 input[type="submit"].btn.btn-instagram.btn-circle {
   background-color: #aac9fd;
@@ -4476,12 +4476,12 @@ input[type="submit"].btn.btn-instagram.btn-circle {
   -o-align-items: center;
   align-items: center;
   -ms-flex-align: center; }
-  a.btn.btn-instagram.btn-circle:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-instagram.btn-circle.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-instagram.btn-circle.language-link:hover,
+  a.btn.btn-instagram.btn-circle:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-instagram.btn-circle.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-instagram.btn-circle.language-link:hover,
   button.btn.btn-instagram.btn-circle:hover,
   input[type="submit"].btn.btn-instagram.btn-circle:hover {
     background-color: #4187FB;
     color: white !important; }
-a.btn.btn-linkedin.btn-circle, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-linkedin.btn-circle.language-link, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-linkedin.btn-circle.language-link,
+a.btn.btn-linkedin.btn-circle, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-linkedin.btn-circle.language-link, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-linkedin.btn-circle.language-link,
 button.btn.btn-linkedin.btn-circle,
 input[type="submit"].btn.btn-linkedin.btn-circle {
   background-color: #5db9e7;
@@ -4522,7 +4522,7 @@ input[type="submit"].btn.btn-linkedin.btn-circle {
   -o-align-items: center;
   align-items: center;
   -ms-flex-align: center; }
-  a.btn.btn-linkedin.btn-circle:hover, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-linkedin.btn-circle.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url > li a.btn-linkedin.btn-circle.language-link:hover,
+  a.btn.btn-linkedin.btn-circle:hover, #header .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-linkedin.btn-circle.language-link:hover, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li a.btn-linkedin.btn-circle.language-link:hover,
   button.btn.btn-linkedin.btn-circle:hover,
   input[type="submit"].btn.btn-linkedin.btn-circle:hover {
     background-color: #1C87BD;
@@ -5292,15 +5292,17 @@ img.icon-utec {
             display: block;
             margin-top: 6px;
             text-transform: uppercase; }
-    #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url {
+    #header .nav-main .right .nav-list > li .language-switcher-locale-url, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url {
       padding-left: 0;
       list-style: none;
       margin: 0; }
-      #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url:before, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url:before, #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url:after, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url:after {
+      #header .nav-main .right .nav-list > li .language-switcher-locale-url:before, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url:before, #header .nav-main .right .nav-list > li .language-switcher-locale-url:after, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url:after {
         content: " ";
         display: table; }
-      #header .nav-main .right .nav-list > li > ul.language-switcher-locale-url:after, #header-on-scroll .nav-main .right .nav-list > li > ul.language-switcher-locale-url:after {
+      #header .nav-main .right .nav-list > li .language-switcher-locale-url:after, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url:after {
         clear: both; }
+      #header .nav-main .right .nav-list > li .language-switcher-locale-url li, #header-on-scroll .nav-main .right .nav-list > li .language-switcher-locale-url li {
+        float: left; }
   #header .nav-display, #header-on-scroll .nav-display {
     position: absolute;
     right: 0;
