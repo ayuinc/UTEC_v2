@@ -12,11 +12,7 @@
 	$path = $fields['path']->content;
 	$user_id = $fields['uid']->content;
 	$blogger_id = $fields['field_blogger']->content;
-
-	kpr($fields);
 	$blogger = user_load($blogger_id);
-	kpr($blogger);
-
 	$user_name = $blogger->name;
 	$user_image = $blogger->picture->filename;
 	$user_charge = $blogger->field_descripci_n['und']['0']['value'];

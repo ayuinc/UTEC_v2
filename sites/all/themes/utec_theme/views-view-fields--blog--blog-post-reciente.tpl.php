@@ -1,4 +1,9 @@
 <?php 
+  global $base_url;
+  global $theme_path;
+  $path = $base_url.'/'.$theme_path;
+  $pathfile = variable_get('file_public_path', conf_path() . '/files/'); 
+
 	$title = $fields['title']->content;
 	$body = $fields['body']->content;
 	$image = $fields['field_imagen']->content;
@@ -6,10 +11,16 @@
 	$texto_corto = $fields['field_texto_corto']->content;
 	$path = $fields['path']->content;
 	$user_id = $fields['uid']->content;
+	$blogger_id = $fields['field_blogger']->content;
+	$blogger = user_load($blogger_id);
+	$user_name = $blogger->name;
+	$user_image = $blogger->picture->filename;
+	$user_charge = $blogger->field_descripci_n['und']['0']['value'];
+
 	kpr($fields);
 ?>
 <div class="banner" data-href="//link">
-	<div class="banner-pic" style="background-image: url(assets/img/img-sq.png);">
+	<div class="banner-pic" style="background-image: url(<?php print $pathfile.'pictures/'.$user_image; ?>);">
 		<!-- <div class="banner-label bg-primary text-white"><span>Emprendimiento</span></div> -->
 	</div>
 	<div class="banner-content">
