@@ -37,7 +37,7 @@
   			<h2><a href="#"><?php print $title; ?></a></h2>
 				<p class="lead"><?php print $texto_corto; ?></p>
 				<div class="text-right pv-14">
-					<a href="/<?php print $path ?>" class="see-more btn btn-lg btn-primary uppercase">Leer más</a>
+					<a href="<?php print $path ?>" class="see-more btn btn-lg btn-primary uppercase">Leer más</a>
 				</div>
 			</div>
 		</div>
