@@ -22,10 +22,6 @@
         triggerElement: triggerRef,
         duration: $(item).height()
       }).setClassToggle(scrollRef, 'active').addTo($sectionScrollController);
-      $sectionScrollScene.addIndicators({
-        zindex: 1000,
-        suffix: index
-      });
     });
     $sectionScrollList.find('li:first-child a').addClass('active');
     $applyScene = new ScrollScene({
