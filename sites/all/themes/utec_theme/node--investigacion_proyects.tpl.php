@@ -9,7 +9,7 @@
 	$profesor = $node->field_profesor['und']['0']['value'];		 		
 	$image = $node->field_image['und']['0']['value']['filename'];
 	
-	// print_r($node);
+	kpr($node);
 ?>
 
 <li>
