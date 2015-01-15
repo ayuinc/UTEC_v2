@@ -1,4 +1,9 @@
 <?php 
+  global $base_url;
+  global $theme_path;
+  $path = $base_url.'/'.$theme_path;
+  $pathfile = variable_get('file_public_path', conf_path() . '/files/'); 
+
 	$title = $fields['title']->content;
 	$body = $fields['body']->content;
 	$image = $fields['field_imagen']->content;
@@ -7,16 +12,11 @@
 	$path = $fields['path']->content;
 	$user_id = $fields['uid']->content;
 	$blogger_id = $fields['field_blogger']->content;
+	$blogger = user_load($blogger_id);
+	$user_name = $blogger->name;
+	$user_image = $blogger->picture->filename;
+	$user_charge = $blogger->field_descripci_n['und']['0']['value'];
 
-	global $user;
-	$user_fields = user_load($user_id);
-	// print_r($user_fields);
-	$user_name = $user_fields->name;
-	$user_image = $user_fields->picture;
-
-	 kpr($fields);
-	 $blogger = user_load($blogger_id);
-	 kpr($blogger);
 
 ?>
 <div class="pv-21 mt-70">
@@ -27,13 +27,13 @@
 		<div class="col-sm-9 banner-content">
 			<div>
   			<div class="user-card user-card-round">
-  				<div class="user-pic"><img src="<?php print $user_image; ?>" alt=""></div>
-  				<div class="user-info"><h4><?php print $user_name; ?></h4><small>Ingeniero Mecánico</small></div>
+  				<div class="user-pic"><img src="<?php print $pathfile.'pictures/'.$user_image; ?>" alt=""></div>
+  				<div class="user-info"><h4><?php print $user_name; ?></h4><small><?php print $user_charge ?></small></div>
   			</div>
   			<h2><a href="#"><?php print $title; ?></a></h2>
 				<p class="lead"><?php print $texto_corto; ?></p>
 				<div class="text-right pv-14">
-					<button class="see-more btn btn-lg btn-primary uppercase">Leer más</button>
+					<a href="<?php print $path ?>" class="see-more btn btn-lg btn-primary uppercase">Leer más</a>
 				</div>
 			</div>
 		</div>

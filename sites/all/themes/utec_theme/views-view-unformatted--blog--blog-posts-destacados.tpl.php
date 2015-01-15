@@ -1,35 +1,13 @@
 <?php 
-	$title = $fields['title']->content;
-	$body = $fields['body']->content;
-	$image = $fields['field_imagen']->content;
-	$category = $fields['field_categor_a']->content;
-	$texto_corto = $fields['field_texto_corto']->content;
-	$path = $fields['path']->content;
-	$user_id = $fields['uid']->content;
 
-	global $user;
-	$user_fields = user_load($user_id);
-	// print_r($user_fields);
-	$user_name = $user_fields->name;
-	$user_image = $user_fields->picture;
 ?>
-<div class="pv-21 mt-70">
-	<h2 class="lead medium mb-0"><span class="text-gray-darker">Blog</span> <span class="text-gray">UTEC</span></h2>
-	<h4 class="lead mt-0 mb-56">Lorem ipsum sit amet, consectetur adipisicing elit.</h4>
-	<div class="banner row ml-0" data-href="<?php print $path; ?>">
-		<div class="col-sm-3 banner-pic" style="background-image: url(<?php print $image; ?>);"></div>
-		<div class="col-sm-9 banner-content">
-			<div>
-  			<div class="user-card user-card-round">
-  				<div class="user-pic"><img src="<?php print $user_image; ?>" alt=""></div>
-  				<div class="user-info"><h4><?php print $user_name; ?></h4><small>Ingeniero Mecánico</small></div>
-  			</div>
-  			<h2><a href="#"><?php print $title; ?></a></h2>
-				<p class="lead"><?php print $texto_corto; ?></p>
-				<div class="text-right pv-14">
-					<button class="see-more btn btn-lg btn-primary uppercase">Leer más</button>
-				</div>
-			</div>
-		</div>
-	</div>
+<h3 class="light">Blogs destacados</h3>
+<div class="separator-gray separator-sm"></div>
+<ul class="grid-list grid-list-2 row p-ch-7 mb-ch-21">
+	<?php foreach ($rows as $id => $row): ?>
+    <?php print $row;?>
+	<?php endforeach; ?>
+</ul>
+<div>
+	<a href="#" class="btn btn-custom btn-primary see-more uppercase">Ver todos</a>
 </div>

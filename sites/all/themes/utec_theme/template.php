@@ -1,5 +1,13 @@
 <?php
 
+	function block_render($module, $block_id) {
+	  $block = block_load($module, $block_id);
+	  $block_content = _block_render_blocks(array($block));
+	  $build = _block_get_renderable_array($block_content);
+	  $block_rendered = drupal_render($build);
+	  return $block_rendered;
+	}
+
 	drupal_add_css("//vjs.zencdn.net/4.10/video-js.css", 'external');
 	
 	//drupal_add_js('try{Typekit.load();}catch(e){}', 'inline');
