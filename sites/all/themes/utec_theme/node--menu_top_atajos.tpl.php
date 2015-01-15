@@ -18,7 +18,7 @@
   <div class="col-sm-6 list-custom mb-ch-42">
         <div>
           <ul>
-            <?php if($node->id == "717") : ?>  
+            <?php if($node->nid == "717") : ?>  
                   <?php
                       $subnode = node_load(749);
                       $subtitulo = $subnode->title;
