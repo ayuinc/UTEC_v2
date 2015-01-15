@@ -27,13 +27,16 @@ $malla-curricular-height: 70px;
 				> ul {
 					@include clearfix;
 					@include list-unstyled;
+					@include flex-grow;
 					> li {
 						float: left;
 						padding-left: 7px;
+						font-size: 9px;
 						&:first-child {
-							width: 39px;
+							width: 21%;
 						}
 						&:last-child {
+							width: 79%;
 							padding-top: 7px;
 						}
 					}
