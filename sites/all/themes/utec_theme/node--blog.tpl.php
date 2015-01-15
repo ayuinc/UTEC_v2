@@ -31,7 +31,7 @@
 		</ul>
 	</div>
 </div>
-<img class="img-responsive" src="<?php print $pathfile.$imagen ?>" alt="#">
+<img class="img-responsive" src="<?php print '/'.$pathfile.'blog/'.$imagen ?>" alt="#">
 <h3 class="lead"><?php //print $title ?></h3>
 <p><?php print $cuerpo ?></p>
 
