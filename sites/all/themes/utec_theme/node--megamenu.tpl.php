@@ -197,10 +197,9 @@
 						<li>
 							<a href="/investigacion/empresas-y-clientes"><span>Empresas</span>y clientes</a>
 						</li>
-						<!--
 						<li>
-							<a href="#">Contacto</a>
-						</li>-->
+							<a href="/investigacion/contacto">Contacto</a>
+						</li>
 					</ul>
 				</div>
 			</div>

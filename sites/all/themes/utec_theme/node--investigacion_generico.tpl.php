@@ -164,4 +164,9 @@
 			</tbody>
 		</table>
 	<?php } ?>
+	
+	<!--SOLO PARA CONTACTO-->
+	<?php if ($end == 'contacto') { ?>
+		<!--FORMULARIO--> 
+	<?php } ?>
 </div>

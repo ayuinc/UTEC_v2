@@ -301,12 +301,14 @@ $header-on-scroll-height: 56px;
 			background-image: none;
 			background-color: $gray;
 			color: white;
+			padding: 2px 9px;
+			padding: rem(2px) rem(9px);
 			&:hover,
 			&.active {
 				@include box-shadow(none);
 				outline: none;
 				background-image: none;
-				background-color: $gray-dark;
+				background-color: $gray;
 				color: $brand-primary;
 			}
 		}
