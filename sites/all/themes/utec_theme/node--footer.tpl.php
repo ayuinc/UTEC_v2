@@ -82,7 +82,7 @@
             <li class="title text-gray-lighter">Admisión</li>
             <li><a href="/admision/modalidades" class="atm-menu-inferior"><small>Modalidades de Admisión</small></a></li>
             <li><a href="/admision/charlas-informativas" class="atm-menu-inferior"><small>Charlas Informativas</small></a></li>
-            <!--<li><a href="#"><small>Calendario de</small><small>Admisión</small></a></li>-->
+            <li><a href="/admision/calendario-academico"><small>Calendario de</small><small>Admisión</small></a></li>
             <li><a href="/admision/modalidades" class="atm-menu-inferior"><small>Presinscripción</small></a></li>
             <li><a href="/admision/informacion-economica" class="atm-menu-inferior"><small>Información Económica</small></a></li>
             <li><a href="/admision/inscripcion" class="atm-menu-inferior"><small>Inscripción</small></a></li>

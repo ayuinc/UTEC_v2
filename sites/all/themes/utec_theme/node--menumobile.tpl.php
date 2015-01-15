@@ -132,9 +132,9 @@
 		<li>
 			<a href="/admision/inscripcion">Inscripción</a>
 		</li>
-		<!--<li>
-			<a href="#"><span>Calendario</span>de admisión</a>
-		</li>-->
+		<li>
+			<a href="/admision/calendario-academico"><span>Calendario</span>de admisión</a>
+		</li>
 		<li>
 			<a href="/admision/visita-utec"><span>Visita</span>UTEC</a>
 		</li>
@@ -152,10 +152,10 @@
   <ul>
 		<!--<li>
 			<a href="#"><span>Proceso de</span>ampliación</a>
-		</li>
-		<li>
-			<a href="#"><span>Ven a</span>la utec</a>
 		</li>-->
+		<li>
+			<a href="/convenios/ven-a-la-utec"><span>Ven a</span>la utec</a>
+		</li>
 		<li>
 			<a href="/convenios/convenios-de-intercambio"><span>Convenios de</span>Intercambio</a>
 		</li>
