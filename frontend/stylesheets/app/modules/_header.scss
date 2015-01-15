@@ -299,9 +299,15 @@ $header-on-scroll-height: 56px;
 			@include box-shadow(none);
 			outline: none;
 			background-image: none;
+			background-color: $gray;
+			color: white;
 			&:hover,
 			&.active {
-
+				@include box-shadow(none);
+				outline: none;
+				background-image: none;
+				background-color: $gray-dark;
+				color: $brand-primary;
 			}
 		}
 	}
