@@ -5711,7 +5711,17 @@ img.icon-utec {
       -moz-box-shadow: none;
       box-shadow: none;
       outline: none;
-      background-image: none; }
+      background-image: none;
+      background-color: #8f8d8e;
+      color: white; }
+      .language-switcher-locale-url li a.language-link:hover, .language-switcher-locale-url li a.language-link.active {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        outline: none;
+        background-image: none;
+        background-color: #323232;
+        color: #00BFDF; }
 
 .site-menu {
   position: fixed;
