@@ -6153,7 +6153,7 @@ img.icon-utec {
     justify-content: center;
     -ms-flex-pack: center;
     padding: 0 28px; }
-  .banner a {
+  .banner a:not(.btn) {
     color: #8f8d8e; }
   .banner:hover {
     background-color: #f1f1f1; }
