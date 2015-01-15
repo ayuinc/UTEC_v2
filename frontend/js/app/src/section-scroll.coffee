@@ -26,6 +26,7 @@ $(document).ready ->
 		# $sectionScrollScene.addIndicators({zindex: 1000, suffix: index})
 		return
 		)
+	$sectionScrollList.find('li:first-child a').addClass('active')
 
 	$applyScene = new ScrollScene({
 		triggerHook: 'onEnter'

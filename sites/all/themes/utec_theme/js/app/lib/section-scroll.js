@@ -23,6 +23,7 @@
         duration: $(item).height()
       }).setClassToggle(scrollRef, 'active').addTo($sectionScrollController);
     });
+    $sectionScrollList.find('li:first-child a').addClass('active');
     $applyScene = new ScrollScene({
       triggerHook: 'onEnter',
       triggerElement: '.section-scroll-3'
