@@ -103,6 +103,7 @@
             <!--<li><a href="/edp/cursos/diplomados" class="atm-menu-inferior"><small>Diplomados</small></a></li>
             <li><a href="/edp/cursos/cursos-online" class="atm-menu-inferior"><small>Cursos Online</small></a></li>-->
             <li><a href="/edp/cursos/cursos-cortos" class="atm-menu-inferior"><small>Cursos Cortos</small></a></li>
+            <li><a href="/edp/calendario" class="atm-menu-inferior"><small>Calendario</small></a></li>
             <!--<li><a href="/edp/cursos/cursos-adhoc" class="atm-menu-inferior"><small>Cursos Adoc</small></a></li>
             <li><a href="/convenios" class="atm-menu-inferior"><small>Cursos Adoc</small></a></li>-->
           </ul>

@@ -19,18 +19,17 @@
 	$user_image = $blogger->picture->filename;
 	$user_charge = $blogger->field_descripci_n['und']['0']['value'];
 
-	//kpr($fields);
+	kpr($fields);
 ?>
-<div class="banner" data-href="//link">
-	<div class="banner-pic" style="background-image: url(<?php print $pathfile.'pictures/'.$user_image; ?>);">
-	</div>
+<li class="banner size sm" data-href="<?php print $path ?>">
+	<div class="banner-pic" style="background-image: url(<?php print $image ?>);"></div>
 	<div class="banner-content">
 		<div>
 			<h2><a href="#"><?php print $title ?></a></h2>
-			<em class="text-primary"><?php print $created ?></em>
-			<p class="lead"><?php print $texto_corto ?></p>
+			<em class="block"><?php print $user_name ?></em>
+			<small class="text-gray"><?php print $user_charge ?></small>
 		</div>
-		<div class="flex-space-between">
+		<div class="flex-space-between mt-14">
 			<div class="left">
 				<a href="<?php print $path ?>" class="btn btn-sm btn-primary btn-outline see-more">Leer más</a>
 			</div>
@@ -44,4 +43,4 @@
 			</div>
 		</div>
 	</div>
-</div>
+</li>

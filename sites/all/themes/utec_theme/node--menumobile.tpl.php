@@ -159,17 +159,17 @@
   <a class="back">Regresar</a>
   <h1>Escuela de<br><span>desarollo</span><br>profesional</h1>
   <ul>
-    <li><a href="#">Diplomados</a></li>
+    <!--<li><a href="#">Diplomados</a></li>
     <li>
       <a href="#"><span>Cursos</span> online</a>
-    </li>
+    </li>-->
     <li>
-      <a href="#"><span>Cursos</span> Cortos</a>
+      <a href="/edp/cursos/cursos-cortos"><span>Cursos</span> Cortos</a>
     </li>
-    <li>
+    <!--<li>
       <a href="#"><span>Cursos</span> Adhoc</a>
-    </li>
-    <li><a href="#">Calendario</a></li>
+    </li>-->
+    <li><a href="/edp/calendario">Calendario</a></li>
     <li>
       <a href="http://escuela-edp.utec.edu.pe/" class="btn btn-primary btn-custom bold">Inscríbete</a>
     </li>
