@@ -40,7 +40,7 @@ $malla-curricular-height: 70px;
 							padding-top: 7px;
 						}
 					}
-					@for $i from 1 through 10 {
+					@for $i from 1 through 30 {
 						&:nth-child(#{$i}) {
 							> li {
 								min-height: $malla-curricular-height - ($i * 2);
