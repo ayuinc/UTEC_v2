@@ -19,9 +19,9 @@ body {
 
 // HEIGHT CONTROL
 $bg-img-height: 350px;
-$banner-height: 293px;
+$banner-height: 350px;
 $user-card-height: 42px;
-$user-card-width: 210px;
+$user-card-width: 70px;
 $video-bg-height: 491px;
 $grid-list-hover-height: 350px;
 $sidebar-block-height: 210px;
@@ -142,7 +142,8 @@ $sidebar-block-height: 210px;
 		&.user-card {
 			margin-bottom: $container-fluid - 3;
 			.user-pic {
-				width: $user-card-height - 14;				
+				width: $user-card-height - 14;
+				// height: $user-card-height - 14;
 			}
 			.user-info {
 				min-height: $user-card-height - 14;
@@ -185,7 +186,8 @@ $sidebar-block-height: 210px;
 		&.user-card {
 			margin-bottom: $container-fluid - 2;
 			.user-pic {
-				width: $user-card-height - 7;				
+				width: $user-card-height - 7;
+				// height: $user-card-height - 7;		
 			}
 			.user-info {
 				min-height: $user-card-height - 7;
@@ -230,12 +232,15 @@ $sidebar-block-height: 210px;
 		&.user-card {
 			margin-bottom: $container-fluid + 7;
 			$user-card-width-lg: $user-card-width + 140;
-			width: $user-card-width-lg;
+			// width: $user-card-width-lg;
 			.user-pic {
-				width: rule-of-three($user-card-width-lg, 140);
+				// width: rule-of-three($user-card-width-lg, 140);
+				// height: rule-of-three($user-card-width-lg, 140);
+				width: $user-card-width-lg;
+				// height: $user-card-width-lg;
 			}
 			.user-info {
-				width: rule-of-three($user-card-width-lg, 210);
+				// width: rule-of-three($user-card-width-lg, 210);
 				min-height: $user-card-width - 70;
 			}
 		}
@@ -272,6 +277,7 @@ $sidebar-block-height: 210px;
 			margin-bottom: $container-fluid + 14;
 			.user-pic {
 				width: $user-card-height + 21;
+				// height: $user-card-height + 21;
 			}
 			.user-info {
 				min-height: $user-card-height + 21;
@@ -300,15 +306,19 @@ $sidebar-block-height: 210px;
 	position: relative;
 	@include clearfix;
 	@include normalize-text;
-	margin-bottom: $container-fluid;
-	width: $user-card-width;
+	margin-bottom: $container-fluid / 2;
+	width: 100%;
+	@include flex-row;
 	.user-pic,
 	.user-info {
-		float: left;
+		// float: left;
 	}
 	.user-pic {
-		width: rule-of-three($user-card-width, 70);
-		height: auto;
+		// width: rule-of-three($user-card-width, 70);
+		width: $user-card-width;
+		// height: $user-card-width;
+		// @include bg-img-control;
+		// border-radius: 50%;
 		img {
 			width: 100%;
 			height: auto;
@@ -318,7 +328,7 @@ $sidebar-block-height: 210px;
 	.user-info {
 		@include flex-middle;
 		min-height: $user-card-height * 2;
-		width: rule-of-three($user-card-width, 140);
+		// width: rule-of-three($user-card-width, 140);
 		padding-left: $container-fluid;
 		@include children-elements {
 			display: block;

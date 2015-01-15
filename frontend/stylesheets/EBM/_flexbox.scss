@@ -65,6 +65,12 @@
 	@include justify-content(space-between);
 	@include list-unstyled;
 }
+@mixin flex-row {
+	@include display(flex);
+	@include flex-direction(row);
+	// @include justify-content(space-between);
+	@include list-unstyled;
+}
 @mixin space-between-break {
 	@include display(flex);
 	@include flex-direction(column);
@@ -72,6 +78,9 @@
 }
 .flex-space-between {
 	@include flex-space-between;
+}
+.flex-row {
+	@include flex-row;
 }
 @for $i from 1 through length($media-control-list) {
 	@media #{nth($media-control-list, $i)} {

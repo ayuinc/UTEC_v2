@@ -1,6 +1,7 @@
 
 <?php
-ECHO "1111";
+
+echo "12345";
 
 session_start();
 

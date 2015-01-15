@@ -2807,6 +2807,25 @@ tbody.collapse.in {
   list-style: none;
   margin: 0; }
 
+.flex-row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  padding-left: 0;
+  list-style: none;
+  margin: 0; }
+
 @media only screen and (max-width: 480px) {
   .flex-space-between-break-xs {
     display: -webkit-box;
@@ -4899,8 +4918,8 @@ body {
   font-size: 0.64286rem; }
 .size.xs.banner .banner-content,
 .size.xs.banner .banner-pic {
-  min-height: 83px;
-  min-height: 5.92857rem; }
+  min-height: 140px;
+  min-height: 10rem; }
 .size.xs.user-card {
   margin-bottom: 11px; }
   .size.xs.user-card .user-pic {
@@ -4921,8 +4940,8 @@ body {
   font-size: 12px; }
 .size.sm.banner .banner-content,
 .size.sm.banner .banner-pic {
-  min-height: 210px;
-  min-height: 15rem; }
+  min-height: 267px;
+  min-height: 19.07143rem; }
 .size.sm.user-card {
   margin-bottom: 12px; }
   .size.sm.user-card .user-pic {
@@ -4945,16 +4964,14 @@ body {
   font-size: 24px; }
 .size.lg.banner .banner-content,
 .size.lg.banner .banner-pic {
-  min-height: 503px;
-  min-height: 35.92857rem; }
+  min-height: 560px;
+  min-height: 40rem; }
 .size.lg.user-card {
-  margin-bottom: 21px;
-  width: 350px; }
+  margin-bottom: 21px; }
   .size.lg.user-card .user-pic {
-    width: 40%; }
+    width: 210px; }
   .size.lg.user-card .user-info {
-    width: 60%;
-    min-height: 140px; }
+    min-height: 0px; }
 .size.lg i {
   font-size: 48px; }
 .size.lg.videoBG {
@@ -4969,8 +4986,8 @@ body {
   font-size: 36px; }
 .size.xl.banner .banner-content,
 .size.xl.banner .banner-pic {
-  min-height: 573px;
-  min-height: 40.92857rem; }
+  min-height: 630px;
+  min-height: 45rem; }
 .size.xl.user-card {
   margin-bottom: 28px; }
   .size.xl.user-card .user-pic {
@@ -4990,8 +5007,25 @@ body {
 
 .user-card {
   position: relative;
-  margin-bottom: 14px;
-  width: 210px; }
+  margin-bottom: 7px;
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  padding-left: 0;
+  list-style: none;
+  margin: 0; }
   .user-card:before, .user-card:after {
     content: " ";
     display: table; }
@@ -5001,12 +5035,8 @@ body {
   .user-card .h1, .user-card .h2, .user-card .h3, .user-card .h4, .user-card .h5, .user-card .h6,
   .user-card p, .user-card .p {
     margin: 0; }
-  .user-card .user-pic,
-  .user-card .user-info {
-    float: left; }
   .user-card .user-pic {
-    width: 33.33333%;
-    height: auto; }
+    width: 70px; }
     .user-card .user-pic img {
       width: 100%;
       height: auto;
@@ -5036,7 +5066,6 @@ body {
     justify-content: center;
     -ms-flex-pack: center;
     min-height: 84px;
-    width: 66.66667%;
     padding-left: 14px; }
     .user-card .user-info > a, .user-card .user-info > span, .user-card .user-info > div,
     .user-card .user-info > li, .user-card .user-info > p,
@@ -6082,7 +6111,7 @@ img.icon-utec {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    min-height: 293px; }
+    min-height: 350px; }
     @media only screen and (min-width: 768px) {
       .banner .banner-pic {
         padding: 0; } }
@@ -6098,8 +6127,8 @@ img.icon-utec {
     .banner .banner-label span {
       text-transform: uppercase; }
   .banner .banner-content {
-    min-height: 293px;
-    min-height: 20.92857rem;
+    min-height: 350px;
+    min-height: 25rem;
     display: -webkit-box;
     display: -moz-box;
     display: box;
@@ -6124,7 +6153,7 @@ img.icon-utec {
     justify-content: center;
     -ms-flex-pack: center;
     padding: 0 28px; }
-  .banner a {
+  .banner a:not(.btn) {
     color: #8f8d8e; }
   .banner:hover {
     background-color: #f1f1f1; }
