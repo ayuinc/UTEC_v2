@@ -17,5 +17,5 @@
   }elseif ($area == '18'){
   	print '#ffdd00';
   }else print '#afdfe4'; ?>"></li>
-  <li><?php print $curso; ?></li>
+  <li><?php print $curso; ?><br><?php print $creditos ?></li>
 </ul>
