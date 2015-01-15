@@ -135,6 +135,8 @@ $response = $client->call( 'registrarInscripcion', $param );
 
 $error = $client->getError();
 
+print_r($response);
+
 if($error){
 
 	//Flash::setError("<p class='nom'>Error enviando el formulario por CRM, vuelve a intentarlo porfavor</p>");
