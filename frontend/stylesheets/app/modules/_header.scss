@@ -70,18 +70,17 @@
 		.right {
 			.nav-list {
 				> li {
-					> ul {
-						&.language-switcher-locale-url {
-							@include list-unstyled;
-							@include clearfix;
-							> li {
-								a.language-link {
-									@extend .btn;
-									@extend .btn-sm;
-									&:hover,
-									&.active {
+					.language-switcher-locale-url {
+						@include list-unstyled;
+						@include clearfix;
+						li {
+							float: left;
+							a.language-link {
+								@extend .btn;
+								@extend .btn-sm;
+								&:hover,
+								&.active {
 
-									}
 								}
 							}
 						}
