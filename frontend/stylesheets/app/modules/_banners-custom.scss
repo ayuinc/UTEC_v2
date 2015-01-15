@@ -30,7 +30,7 @@
 		@include flex-middle;
 		padding: 0 $container-fluid * 2;
 	}
-	a {
+	a:not(.btn) {
 		color: $gray;
 	}
 	&:hover {
