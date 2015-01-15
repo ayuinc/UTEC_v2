@@ -55,7 +55,7 @@
 							<a href="/es" class="btn btn-xs btn-custom btn-gray" rel="nofollow">ES</a>
 						</li>
 						<li>
-							<a href="#" class="btn btn-xs btn-custom btn-gray atm-login" rel="nofollow">Intranet</a>
+							<a href="http://utec-portal.appspot.com" target="_blank" class="btn btn-xs btn-custom btn-gray atm-login" rel="nofollow">Intranet</a>
 						</li>
 					</ul>
 					<?php print block_render('locale', 'language'); ?>
@@ -198,9 +198,7 @@
 						<li>
 							<a href="/investigacion/empresas-y-clientes"><span>Empresas</span>y clientes</a>
 						</li>
-						<!--<li>
-							<a href="#">Proyectos</a>
-						</li>
+						<!--
 						<li>
 							<a href="#">Contacto</a>
 						</li>-->
