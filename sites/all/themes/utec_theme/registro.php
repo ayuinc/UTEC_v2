@@ -1,5 +1,6 @@
 
 <?php
+ECHO "1111";
 
 session_start();
 
