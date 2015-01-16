@@ -16,16 +16,16 @@
 			<div class="left">
 				<ul class=" thin text-gray mr-ch-14 nav-list pt-7">
 					<li>
-						<a href="/enlaces-rapidos/alumnos" class="atm-menu-superior"><?php print t('Students') ?></a>
+						<a href="/enlaces-rapidos/alumnos" class="atm-menu-superior">Alumnos</a>
 					</li>
 					<li>
-						<a href="/enlaces-rapidos/profesores" class="atm-menu-superior"><?php print t('Faculty') ?></a>
+						<a href="/enlaces-rapidos/profesores" class="atm-menu-superior">Profesores</a>
 					</li>
 					<li>
-						<a href="/enlaces-rapidos/empresas" class="atm-menu-superior"><?php print t('Companies') ?></a>
+						<a href="/enlaces-rapidos/empresas" class="atm-menu-superior">Empresas</a>
 					</li>
 					<li>
-						<a href="/enlaces-rapidos/postulantes" class="atm-menu-superior"><?php print t('Applicants') ?></a>
+						<a href="/enlaces-rapidos/postulantes" class="atm-menu-superior">Postulantes</a>
 					</li>
 				</ul>
 			</div>
@@ -35,18 +35,17 @@
 						<li class="form-search">
 							<form action="" class="form-inline mr-14">
 								<div class="form-group mb-0">
-									<label for="search" class="sr-only"><?php print t('Search') ?></label>
+									<label for="search" class="sr-only">Buscar</label>
 									<input type="search" class="input-sm form-control" width="210" placeholder="Buscar...">
 									<button type="submit" class="btn btn-default btn-xs" value="S"><i class="icon-search"></i></button>
 								</div>
 							</form>
-							<?php //print $search_box; ?> 
 						</li>
 						<li class="pt-7">
-							<a href="#" class="text-gray"><?php print t('Contact us') ?></a>
+							<a href="#" class="text-gray">Contacto</a>
 						</li>
 						<li class="pt-7">
-							<a href="/blog" class="text-gray"><?php print t('Blog') ?></a>
+							<a href="/blog" class="text-gray">Blog</a>
 						</li>
 						<li>
 							<?php print block_render('locale', 'language'); ?>
@@ -75,37 +74,37 @@
 					<li>
 						<a href="#nav-display-1" class="atm-menu-principal">
 							<div><i class="icon-menu-somos-utec"></i></div>
-							<span><?php print t('We are Utec') ?></span>
+							<span>Somos Utec</span>
 						</a>
 					</li>
 					<li>
 						<a href="#nav-display-2" class="atm-menu-principal">
 							<div><i class="icon-menu-investigacion"></i></div>
-							<span><?php print t('Research') ?></span>
+							<span>Investigación</span>
 						</a>
 					</li>
 					<li>
 						<a href="#nav-display-3" class="atm-menu-principal">
 							<div><i class="icon-menu-carreras"></i></div>
-							<span><?php print t('Undergraduate Programs') ?></span>
+							<span>Carreras</span>
 						</a>
 					</li>
 					<li>
 						<a href="#nav-display-4" class="atm-menu-principal">
 							<div><i class="icon-menu-admision"></i></div>
-							<span><?php print t('Admission') ?></span>
+							<span>Admisión</span>
 						</a>
 					</li>
 					<li>
 						<a href="#nav-display-5" class="atm-menu-principal">
 							<div><i class="icon-menu-convenios"></i></div>
-							<span><?php print t('Agreements') ?></span>
+							<span>Convenios</span>
 						</a>
 					</li>
 					<li>
 						<a href="#nav-display-6" class="atm-menu-principal">
 							<div><i class="icon-menu-edp"></i></div>
-							<span><?php print t('SPD') ?></span>
+							<span>EDP</span>
 						</a>
 					</li>
 				</ul>
@@ -120,20 +119,20 @@
 			<div class="nav-display-left">
 				<div>
 					<h1>Conoce<br><span>Quiénes</span> Somos</h1>
-					<p><?php t('The university that promotes ingenuity, innovation and entrepreneurship.') ?></p>
+					<p>La universidad que potencia el ingenio, la innovación y el emprendimiento</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
 				<div>
 					<ul>
 						<li>
-							<a href="/somos-utec/respaldo"><?php t('Backing') ?></a>
+							<a href="/somos-utec/respaldo">Respaldo</a>
 						</li>
 						<li>
-							<a href="/somos-utec/autoridades"><?php t('Authorities') ?></a>
+							<a href="/somos-utec/autoridades">Autoridades</a>
 						</li>
 						<li>
-							<a href="/somos-utec/profesores"><?php t('Faculty') ?></a>
+							<a href="/somos-utec/profesores">Profesores</a>
 						</li>
 						<li>
 							<a href="/somos-utec/ingenio-en-accion"><span>Ingenio</span>en acción</a>
@@ -147,10 +146,10 @@
 					</ul>
 					<ul>
 						<li>
-							<a href="/somos-utec/noticias"><?php t('News') ?></a>
+							<a href="/somos-utec/noticias">Noticias</a>
 						</li>
 						<li>
-							<a href="/somos-utec/eventos-utec"><?php t('UTEC Events') ?></a>
+							<a href="/somos-utec/eventos-utec">Eventos UTEC</a>
 						</li>
 						<li>
 							<a href="/somos-utec/vida-estudiantil"><span>Vida</span>Estudiantil</a>
@@ -182,7 +181,7 @@
 		<div class="container-sm">
 			<div class="nav-display-left">
 				<div>
-					<h1>Experiencia<br><span>en</span> <?php print t('Research') ?></h1>
+					<h1>Experiencia<br><span>en</span> Investigación</h1>
 					<p>El paso decisivo para encontrar las mejores soluciones</p>
 				</div>
 			</div>
@@ -190,10 +189,10 @@
 				<div>
 					<ul>
 						<li>
-							<a href="/investigacion/proyectos"><?php t('Projects') ?></a>
+							<a href="/investigacion/proyectos">Proyectos</a>
 						</li>
 						<li>
-							<a href="/investigacion/publicaciones"><?php t('Publications') ?></a>
+							<a href="/investigacion/publicaciones">Publicaciones</a>
 						</li>
 						<li>
 							<a href="/investigacion/empresas-y-clientes"><span>Empresas</span>y clientes</a>
@@ -214,7 +213,7 @@
 			<div class="nav-display-left">
 				<div>
 					<h1>Nuestra <span>oferta</span><br>Académica</h1>
-					<p><?php print t('Have our students experience engineering from day one thanks to our active learning methodology.') ?></p>
+					<p>Lleva a nuestros estudiantes a experimentar la ingeniería desde el día uno a través de nuestra metodología de aprendizaje activo.</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
@@ -259,7 +258,7 @@
 			<div class="nav-display-left">
 				<div>
 					<h1>Ingenio<br><span>vocación</span> y<br><span>aspiración</span><br>a la excelencia</h1>
-					<p><?php print t("Our students' DNA: reach high academic performance and personal development.") ?></p>
+					<p>Ese es el ADN de nuestros estudiantes: alcanzar el más alto nivel académico y desarrollo personal</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
@@ -280,7 +279,7 @@
 					</ul>
 					<ul>
 						<li>
-							<a href="/admision/inscripcion"><?php print t('Registration') ?></a>
+							<a href="/admision/inscripcion">Inscripción</a>
 						</li>
 						<li>
 							<a href="/admision/calendario-academico"><span>Calendario</span>de admisión</a>
@@ -307,7 +306,7 @@
 			<div class="nav-display-left">
 				<div>
 					<h1><span>Convenios y alianzas</span><br>internacionales</h1>
-					<p><?php print t('We create connections with the best educational institutions in the world.') ?></p>
+					<p>Generamos conexiones con las mejores instituciones educativas del mundo</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
@@ -335,7 +334,7 @@
 			<div class="nav-display-left">
 				<div>
 					<h1>Escuela de<br><span>desarollo</span><br>profesional</h1>
-					<p><?php print t('Enhance your skills and reach professional sucess with our courses.') ?></p>
+					<p>Potencia tus habilidades y alcanza el éxito profesional a través de nuestros cursos</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
@@ -353,9 +352,9 @@
 						<!--<li>
 							<a href="/edp/cursos/cursos-adhoc"><span>Cursos</span>Adhoc</a>
 						</li>-->
-						<li><a href="/edp/calendario"><?php print t('Calendar') ?></a></li>
+						<li><a href="/edp/calendario">Calendario</a></li>
 						<li>
-							<a href="http://escuela-edp.utec.edu.pe/" class="btn btn-primary btn-custom bold"><?php print t('Register') ?></a>
+							<a href="http://escuela-edp.utec.edu.pe/" class="btn btn-primary btn-custom bold">Inscríbete</a>
 						</li>
 					</ul>
 				</div>
@@ -376,32 +375,32 @@
 				<ul class="nav-display-triggers">
 					<li>
 						<a href="#nav-shrink-display-1">
-							<span><?php print t('We are Utec') ?></span>
+							<span>Somos Utec</span>
 						</a>
 					</li>
 					<li>
 						<a href="#nav-shrink-display-2">
-							<span><?php print t('Research') ?></span>
+							<span>Investigación</span>
 						</a>
 					</li>
 					<li>
 						<a href="#nav-shrink-display-3">
-							<span><?php print t('Undergraduate programs') ?></span>
+							<span>Carreras</span>
 						</a>
 					</li>
 					<li>
 						<a href="#nav-shrink-display-4">
-							<span><?php print t('Admission') ?></span>
+							<span>Admisión</span>
 						</a>
 					</li>
 					<li>
 						<a href="#nav-shrink-display-5">
-							<span><?php print t('Agreements') ?></span>
+							<span>Convenios</span>
 						</a>
 					</li>
 					<li>
 						<a href="#nav-shrink-display-6">
-							<span><?php print t('SPD') ?></span>
+							<span>EDP</span>
 						</a>
 					</li>
 				</ul>
@@ -419,20 +418,20 @@
 			<div class="nav-display-left">
 				<div>
 					<h1>Conoce<br><span>Quiénes</span> Somos</h1>
-					<p><?php t('The university that promotes ingenuity, innovation and entrepreneurship.') ?></p>
+					<p>La universidad que potencia el ingenio, la innovación y el emprendimiento</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
 				<div>
 					<ul>
 						<li>
-							<a href="/somos-utec/respaldo"><?php t('Backing') ?></a>
+							<a href="/somos-utec/respaldo">Respaldo</a>
 						</li>
 						<li>
-							<a href="/somos-utec/autoridades"><?php t('Authorities') ?></a>
+							<a href="/somos-utec/autoridades">Autoridades</a>
 						</li>
 						<li>
-							<a href="/somos-utec/profesores"><?php t('Faculty') ?></a>
+							<a href="/somos-utec/profesores">Profesores</a>
 						</li>
 						<li>
 							<a href="/somos-utec/ingenio-en-accion"><span>Ingenio</span>en acción</a>
@@ -444,12 +443,12 @@
 							<a href="#"><span>Calendario</span>Académico</a>
 						</li>-->
 						<li>
-							<a href="/somos-utec/noticias"><?php t('News') ?></a>
-						</li>
+							<a href="/somos-utec/noticias">Noticias</a>
+						</li>						
 					</ul>
 					<ul>
 						<li>
-							<a href="/somos-utec/eventos-utec"><?php t('UTEC Events') ?></a>
+							<a href="/somos-utec/eventos-utec">Eventos UTEC</a>
 						</li>
 						<li>
 							<a href="/somos-utec/vida-estudiantil"><span>Vida</span>Estudiantil</a>
@@ -481,18 +480,18 @@
 		<div class="container-sm">
 			<div class="nav-display-left">
 				<div>
-					<h1>Experiencia<br><span>en</span> <?php print t('Research') ?></h1>
-					<p><?php print t('The decisive step to find the right solutions.') ?></p>
+					<h1>Experiencia<br><span>en</span> Investigación</h1>
+					<p>El paso decisivo para encontrar las mejores soluciones</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
 				<div>
 					<ul>
 						<li>
-							<a href="/investigacion/proyectos"><?php t('Projects') ?></a>
+							<a href="/investigacion/proyectos">Proyectos</a>
 						</li>
 						<li>
-							<a href="/investigacion/publicaciones"><?php t('Publications') ?></a>
+							<a href="/investigacion/publicaciones">Publicaciones</a>
 						</li>
 						<!--<li>
 							<a href="#"><span>Empresas</span>y clientes</a>
@@ -516,7 +515,7 @@
 			<div class="nav-display-left">
 				<div>
 					<h1>Nuestra <span>oferta</span><br>Académica</h1>
-					<p><?php print t('Have our students experience engineering from day one thanks to our active learning methodology.') ?></p>
+					<p>Lleva a nuestros estudiantes a experimentar la ingeniería desde el día uno a través de nuestra metodología de aprendizaje activo.</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
@@ -561,7 +560,7 @@
 			<div class="nav-display-left">
 				<div>
 					<h1>Ingenio<br><span>vocación</span> y<br><span>aspiración</span><br>a la excelencia</h1>
-					<p><?php print t("Our students' DNA: reach high academic performance and personal development.") ?></p>
+					<p>Ese es el ADN de nuestros estudiantes: alcanzar el más alto nivel académico y desarrollo personal</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
@@ -582,7 +581,7 @@
 					</ul>
 					<ul>
 						<li>
-							<a href="/admision/inscripcion"><?php print t('Registration') ?></a>
+							<a href="/admision/inscripcion">Inscripción</a>
 						</li>
 						<li>
 							<a href="/admision/calendario-academico"><span>Calendario</span>Académico</a>
@@ -609,7 +608,7 @@
 			<div class="nav-display-left">
 				<div>
 					<h1><span>Convenios y alianzas</span><br>internacionales</h1>
-					<p><?php print t('We create connections with the best educational institutions in the world.') ?></p>
+					<p>Generamos conexiones con las mejores instituciones educativas del mundo</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
@@ -637,7 +636,7 @@
 			<div class="nav-display-left">
 				<div>
 					<h1>Escuela de<br><span>desarollo</span><br>profesional</h1>
-					<p><?php print t('Enhance your skills and reach professional sucess with our courses.') ?></p>
+					<p>Potencia tus habilidades y alcanza el éxito profesional a través de nuestros cursos</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
@@ -657,7 +656,7 @@
 						</li>
 						<li><a href="#">Calendario</a></li>-->
 						<li>
-							<a href="http://escuela-edp.utec.edu.pe/" class="btn btn-primary btn-custom bold"><?php print t('Registration') ?></a>
+							<a href="http://escuela-edp.utec.edu.pe/" class="btn btn-primary btn-custom bold">Inscríbete</a>
 						</li>
 					</ul>
 				</div>
