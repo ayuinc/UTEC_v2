@@ -6,6 +6,23 @@ session_start();
 include_once( 'PHPMailer/class.phpmailer.php' );
 require_once( 'nusoap2/nusoap.php' );
 
+if ( $_POST['celular-2'] == 'Nº Celular 2' ) {
+  $celular2 = "No Ingresado";
+} else {
+  $celular2 = $_POST['celular-2'];
+}
+
+$fecha_n = $_POST['dia']." de ".$_POST['mes']." Del ".$_POST['ano'];
+
+$carrera_elegida = $_POST['carreras'];
+$carreras = array(
+    '14864' => 'Ingeniería Mecánica',
+    '15964' => 'Ingeniería Electrónica',
+    '15966' => 'Ingeniería Química Industrial',
+    '15968' => 'Ingeniería de la Energía',
+    '15970' => 'Ingeniería Industrial', 
+);
+
 $mail = new PHPMailer();
 $destinatarios = array(
 'ebardales@utec.edu.pe' => 'Ebert Alexander Bardales Castro',
@@ -13,18 +30,225 @@ $destinatarios = array(
 'apacheco@utec.edu.pe'  => 'Angel Pacheco Masías',
 );
 
+$tituloTelemarketing = "";
+$subjectTelemarketing = "";
+$fromTelemarketing = "";
+$fromNameTelemarketing = "";
+$tituloCliente = "";
+$subjectCliente = "";
+$fromCliente = "";
+$fromNameCliente = "";
+$familia = "";
+$origen = "";
+
+
+$origen = utf8_decode($_POST['origen']);
+
+if($origen == "solicitud-examen" || $origen == "solicitud-primeros-puestos" || $origen = "solicitud-alto-rendimiento" || 
+   $origen = "solicitud-traslado-externo" || $origen = "solicitud-centro-pre" || $origen = "solicitud-bachillerato" )
+{
+    if ($origen == "solicitud-examen")
+    {
+        $tituloTelemarketing = "EXAMEN ADMISION - Datos Personales";
+        $subjectTelemarketing = "Solicitud - Examen Admision UTEC";
+        $familia = "EXAMEN-ADMISION";
+        $origen = "pagina-examen-admision";
+    }
+
+    if ($origen == "solicitud-primeros-puestos")
+    {
+        $tituloTelemarketing = "PRIMEROS PUESTOS - Datos Personales";
+        $subjectTelemarketing = "Solicitud - Primeros Puestos UTEC";
+        $familia = "PRIMEROS-PUESTOS";
+        $origen = "pagina-primeros-puestos";
+    }
+
+    if ($origen == "solicitud-alto-rendimiento")
+    {
+        $tituloTelemarketing = "ALTO RENDIMIENTO - Datos Personales";
+        $subjectTelemarketing = "Solicitud - Alto Rendimiento UTEC";
+        $familia = "ALTO-RENDIMIENTO";
+        $origen = "pagina-alto-rendimiento";
+    }
+
+    if ($origen == "solicitud-traslado-externo")
+    {
+        $tituloTelemarketing = "TRASLADO EXTERNO - Datos Personales";
+        $subjectTelemarketing = "Solicitud - Traslado Externo UTEC";
+        $familia = "TRASLADO-EXTERNO";
+        $origen = "pagina-traslado-externo";
+    }
+
+    if ($origen == "solicitud-centro-pre")
+    {
+        $tituloTelemarketing = "CENTRO PRE - Datos Personales";
+        $subjectTelemarketing = "Solicitud - Centro Preuniversitario UTEC";
+        $familia = "CENTRO-PRE";
+        $origen = "pagina-centro-pre";
+    }
+
+    if ($origen == "solicitud-bachillerato")
+    {
+        $tituloTelemarketing = "CENTRO PRE - Datos Personales";
+        $subjectTelemarketing = "Solicitud - Centro Preuniversitario UTEC";
+        $familia = "BACHILLERATO";
+        $origen = "pagina-bachillerato";
+    }
+
+    $fromTelemarketing = "informes@utec.edu.pe";
+    $fromNameTelemarketing = "UTEC";
+    $tituloCliente = "¡Gracias por tu interés en UTEC.!";
+    $subjectCliente = "Gracias por tu Interés en UTEC";
+    $fromCliente = "admision@utec.edu.pe";
+    $fromNameCliente = "UTEC – Admisión";
+    
+}
+
+
+if($origen == "charlas-informativas")
+{
+    $tituloTelemarketing = "Charlas Informativas";
+    $subjectTelemarketing = "Charlas Informativas UTEC";
+    $fromTelemarketing = "webmaster@utec.edu.pe";
+    $fromNameTelemarketing = "UTEC";
+    $tituloCliente = "¡Gracias por tu interés en UTEC.!";
+    $subjectCliente = "Charlas Informativas UTEC";
+    $fromCliente = "informes@utec.edu.pe";
+    $fromNameCliente = "Universidad de Ingeniería & Tecnología";
+
+    $familia = "CHARLAS-INFORMATIVAS";
+    $origen = "pagina-charlas";
+}
+
+
+
 $mensaje_html ="";
-$mensaje_html .= '<html><body>
-        <table>
-            <tr>
-                <td colspan="2"><b>EXAMEN ADMISION - Datos Personales</b></td>
-            </tr>
-            <tr>
-                <td>EXITO!</td>
-            </tr>
-        </table>
+$mensaje_html .= '<html><body><table><tr>
+        <td colspan="2"><b>'.$tituloTelemarketing.'</b></td>
+       </tr>
+       <tr>
+                            <td>Nombres:</td>
+                            <td>'.utf8_decode($_POST['nombres']).'</td>
+                         </tr>
+                         <tr>
+                            <td>Apellido Paterno:</td>
+                            <td>'.utf8_decode($_POST['apellidop']).'</td>
+       </tr>
+       <tr>
+                            <td>Apellido Materno:</td>
+                            <td>'.utf8_decode($_POST['materno']).'</td>
+       </tr>
+       <tr>
+                            <td>G&eacute;nero:</td>
+                            <td>'.utf8_decode($_POST['genero']).'</td>
+       </tr>
+       <tr>
+                            <td>Carrera de Interes:</td>
+                            <td>'.$carreras[$carrera_elegida].'</td>
+       </tr>
+       <tr>
+                            <td>Tipo de Documento: </td>
+                            <td>'.$_POST['tipo-documento'].'</td>
+       </tr>
+       <tr>
+                            <td>Nro de Documento: </td>
+                            <td>'.utf8_decode($_POST['documento']).'</td>
+       </tr>
+       <tr>
+                            <td>Pa&iacute;s de Nacimiento :</td>
+                            <td>'.utf8_decode($_POST['pais']).'</td>
+       </tr>
+       <tr>
+                            <td>Ciudad de Nacimiento :</td>
+                            <td>'.utf8_decode($_POST['ciudad']).'</td>
+       </tr>
+       <tr>
+                            <td>Fecha de Nacimiento:</td>
+                            <td>'.utf8_decode($fecha_n).'</td>
+       </tr>
+       <tr>
+                            <td>Departamento de Nacimiento:</td>
+                            <td>'.utf8_decode($_POST['depto']).'</td>
+       </tr>
+       <tr>
+                            <td>Provincia de Nacimiento:</td>
+                            <td>'.utf8_decode($_POST['provincia']).'</td>
+       </tr>
+       <tr>
+                            <td>Distrito de Nacimiento:</td>
+                            <td>'.utf8_decode($_POST['distrito']).'</td>
+       </tr>
+       <tr>
+                            <td>Direccion Actual:</td>
+                            <td>'.utf8_decode($_POST['direccion-actual']).'</td>
+       </tr>
+       <tr>
+                            <td>Correo Electronico:</td>
+                            <td>'.utf8_decode($_POST['email']).'</td>
+       </tr>
+       <tr>
+                            <td>1er Nro de Celular:</td>
+                            <td>'.$_POST['celular-1'].'</td>
+       </tr>
+       <tr>
+                            <td>2er Nro de Celular:</td>
+                            <td>'.utf8_decode($celular2).'</td>
+       </tr>
+       <tr>
+                            <td>Telefono Fijo:</td>
+                            <td>'.$_POST['telefono-fijo'].'</td>
+       </tr>
+                         <tr>
+                            <td colspan="2"><b>Estudios</b></td> 
+                         </tr>
+       <tr>
+                            <td>A&ntilde;o en que culmino sus estudios secundarios o bachillerato:</td>
+                            <td>'.$_POST['ano-culminacion'].'</td>
+       </tr>
+       <tr>
+                            <td>Colegio de Procedencia:</td>
+                            <td>'.utf8_decode($_POST['colegio-procedencia']).'</td>
+       </tr>
+                         <tr>
+                            <td>Departamento del Colegio de Procedencia:</td>
+                            <td>'.utf8_decode($_POST['estudios-dpto']).'</td>
+       </tr>
+                         
+                         <tr>
+                            <td>Provincia del Colegio de Procedencia:</td>
+                            <td>'.utf8_decode($_POST['estudios-provincia']).'</td>
+       </tr>
+                         <tr>
+                            <td>Distrito del Colegio de Procedencia:</td>
+                            <td>'.utf8_decode($_POST['estudios-distrito']).'</td>
+       </tr>
+                         <tr>
+                            <td>Rendimiento Academico:</td>
+                            <td>'.utf8_decode($_POST['estudios-rendimiento']).'</td>
+       </tr>
+                         <tr>
+                            <td>Es o ha sido estudiante de esta universidad:</td>
+                            <td>'.utf8_decode($_POST['estudiante']).'</td>
+       </tr>
+                         <tr>
+                            <td colspan="2"><b>Datos Adicionales</b></td> 
+                         </tr>
+                         <tr>
+                            <td>Fecha de Envio:</td>
+                            <td>'.date("d/m/Y").'</td>
+       </tr>
+                         <tr>
+                            <td>Hora de Envio:</td>
+                            <td>'.date("h:i:s a").'</td>
+       </tr>
+                         <tr>
+                            <td>IP:</td>
+                            <td>'.$_SERVER['REMOTE_ADDR'].'</td>
+       </tr>
+                         </table>
     </body>
     </html>';
+
 
 $mail->From     = 'informes@utec.edu.pe';
 $mail->FromName = 'UTEC';
@@ -41,7 +265,8 @@ foreach ( $destinatarios as $destinatario_email => $destinatario_nombre ) {
       
 $mail->Send();
 
-$mailrpta = "angelpa38@gmail.com";
+
+$mailrpta = utf8_decode($_POST['email']);
 $mail_1 = new PHPMailer();
 $mail_1->CharSet = 'UTF-8';
 $mail_1->From     = 'admision@utec.edu.pe';
@@ -97,47 +322,48 @@ $mail_1->Send();
 $client = new nusoap_client( "http://app.utec.edu.pe/inscripcionutecws3/services/InscripcionServicePort?wsdl", true ); 
 
 $programacion = "2015-1";
-$origen ="landing-examen-admision";
 
-$v0 = "ADMISION";
-$v1 = "Angel Ayu 789"; //$_POST['nombres'];
-$v2 = "Pacheco"; //$_POST['apellidop'];
-$v3 = "ApellidoM";
-$v4 = "";
-$v5 = "";
-$v6 = "M";
-$v7 = "Ingeniería Electrónica"; //utf8_decode($carreras[$carrera_elegida]);
-$v8 = "";
-$v9 = "";
-$v10 = "";
-$v11 = "";
-$v12 = "";
-$v13 = "";
-$v14 = "";
-$v15 = "";
-$v16 = "";
-$v17 = ""; //utf8_decode($direccion);
-$v18 = "Mail"; //$_POST['email'];
-$v19 = ""; //utf8_decode($celular);
-$v20 = "";
-$v21 = "1111888881"; //$_POST['telefono'];
-$v22 = "";
-$v23 = "";//24
-$v24 = "";//25
-$v25 = $_SERVER['REMOTE_ADDR'];//26
-$v26 = "48500";//27
-$v27 = "N";
+
+$v0 = $origen;
+$v1 = utf8_decode($_POST['nombres']);
+$v2 = utf8_decode($_POST['apellidop']);
+$v3 = utf8_decode($_POST['apellidom']);
+$v4 = utf8_decode($_POST['tipo-documento']);
+$v5 = utf8_decode($_POST['documento']);
+$v6 = utf8_decode($_POST['genero']);
+$v7 = utf8_decode($carreras[$carrera_elegida]);
+$v8 = "-"; //utf8_decode($_POST['carrera2']);
+$v9 = utf8_decode($_POST['pais']);
+$v10 = utf8_decode($_POST['ciudad']);
+$v11 = $_POST['dia_n'];
+$v12 = $_POST['mes_n'];
+$v13 = $_POST['anio_n'];
+$v14 = utf8_decode($_POST['depto']);
+$v15 = utf8_decode($_POST['provincia']);
+$v16 = utf8_decode($_POST['distrito']);
+$v17 = utf8_decode($_POST['direccion-actual']);
+$v18 = utf8_decode($_POST['email']);
+$v19 = $_POST['celular-1'];
+$v20 = utf8_decode($celular2);
+$v21 = $_POST['telefono-fijo'];
+$v22 = $_POST['ano-culminacion'];
+$v23 = utf8_decode($_POST['colegio-procedencia']);
+$v24 = utf8_decode($_POST['estudios-rendimiento']);
+$v25 = $_SERVER['REMOTE_ADDR'];
+$v26 = "0";
+$v27 = utf8_decode($_POST['estudiante']);
 $v28 = "";
 $v29 = "";
 $v30 = "";
 $v31 = "";
 $v32 = "";
 $v33 = "";
-$v34 = "15964"; //utf8_decode($_POST['carrera']);
+$v34 = utf8_decode($_POST['carreras']);
 $v35 = $programacion;
 $v36 = "";
 $v37 = $origen;
 $v38 = "";
+
 
 $param = array('familia' => $v0, 'nombres' => $v1, 'apelPat' => $v2, 'apelMat' => $v3, 'tipDoc' => $v4, 'numDoc' => $v5, 'genero' => $v6, 'carrera1' => $v7, 'carrera2' => $v8, 'paisNaci' => $v9, 'ciudadNaci' => $v10,
                                         'diaNaci' => $v11, 'mesNaci' => $v12, 'anhoNaci' => $v13, 'dptoActual' => $v14, 'provActual' => $v15, 'distActual' => $v16, 'direccion' => $v17, 'email' => $v18, 'celular1' => $v19, 'celular2' => $v20,
@@ -163,4 +389,6 @@ if($error){
   //Flash::setInfo($message);
 }
 //header( 'Location: https://app.utec.edu.pe/centro-preuniversitario/' ) ;
+
+
 ?>
