@@ -35,4 +35,4 @@
 <p><?php print $cuerpo ?></p>
 
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54b856a63c788032" async="async"></script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54b856007af4c9e3" async="async"></script>
