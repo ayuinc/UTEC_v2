@@ -27,7 +27,7 @@ if (!isset($_POST['celular-1'])) {$_POST['celular-1'] = "";};
 if (!isset($_POST['celular-2'])) {$_POST['celular-2'] = ""; $celular2 = ""; };
 if (!isset($_POST['telefono'])) {$_POST['telefono'] = "";};
 if (!isset($_POST['ano-culminacion'])) {$_POST['ano-culminacion'] = "";};
-if (!isset($_POST['colegio-procedencia'])) {$_POST['colegio-procedencia'] = "";};
+if (!isset($_POST['colegio'])) {$_POST['colegio'] = "";};
 if (!isset($_POST['estudios-rendimiento'])) {$_POST['estudios-rendimiento'] = "";};
 if (!isset($_POST['estudiante'])) {$_POST['estudiante'] = "N";};
 if (!isset($_POST['consulta'])) {$_POST['consulta'] = "";};
@@ -254,7 +254,7 @@ $mensaje_html .= '<html><body><table><tr>
        </tr>
        <tr>
                             <td>Colegio de Procedencia:</td>
-                            <td>'.utf8_decode($_POST['colegio-procedencia']).'</td>
+                            <td>'.utf8_decode($_POST['colegio']).'</td>
        </tr>
                          <tr>
                             <td>Departamento del Colegio de Procedencia:</td>
@@ -393,7 +393,7 @@ $v19 = $_POST['celular-1'];
 $v20 = utf8_decode($celular2);
 $v21 = $_POST['telefono'];
 $v22 = $_POST['ano-culminacion'];
-$v23 = utf8_decode($_POST['colegio-procedencia']);
+$v23 = utf8_decode($_POST['colegio']);
 $v24 = utf8_decode($_POST['estudios-rendimiento']);
 $v25 = $_SERVER['REMOTE_ADDR']; 
 $v26 = "0";

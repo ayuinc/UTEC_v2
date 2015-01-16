@@ -14,34 +14,34 @@
 		<div class="row">
 			<div class="form-group col-sm-4">
 				<label for="" class="sr-only">Nombres</label>
-				<input id="nombres" type="text" class="form-control" placeholder="Nombres">
+				<input id="nombres" name="nombres" type="text" class="form-control" placeholder="Nombres">
 			</div>
 			<div class="form-group col-sm-4">
 				<label for="" class="sr-only">Apellidos Paterno</label>
-				<input id="apellidop" type="text" class="form-control" placeholder="Apellido paterno">
+				<input id="apellidop" name="apellidop" type="text" class="form-control" placeholder="Apellido paterno">
 			</div>
 			<div class="form-group col-sm-4">
 				<label for="" class="sr-only">Apellido Materno</label>
-				<input id="apellidom" type="text" class="form-control" placeholder="Apellido materno">
+				<input id="apellidom" name="apellidom" type="text" class="form-control" placeholder="Apellido materno">
 			</div>
 		</div>
 		<div class="row">
 			<div class="form-group col-sm-4">
 				<label for="" class="sr-only">Email</label>
-				<input id="email" type="text" class="form-control" placeholder="Email">
+				<input id="email" name="email" type="text" class="form-control" placeholder="Email">
 			</div>
 			<div class="form-group col-sm-4">
 				<label for="" class="sr-only">Teléfono</label>
-				<input id="telefono" type="text" class="form-control" placeholder="Teléfono">
+				<input id="telefono" name="telefono" type="text" class="form-control" placeholder="Teléfono">
 			</div>
 			<div class="form-group col-sm-4">
 				<label for="" class="sr-only">Colegio</label>
-				<input id="colegio" type="text" class="form-control" placeholder="Colegio">
+				<input id="colegio" name="colegio" type="text" class="form-control" placeholder="Colegio">
 			</div>
 		</div>
 		<div class="form-group">
 			<label for="" class="sr-only">Consulta</label>
-			<textarea id="consulta" rows="3" class="form-control" placeholder="Escribe tu consulta"></textarea>
+			<textarea id="consulta" name="consulta" rows="3" class="form-control" placeholder="Escribe tu consulta"></textarea>
 		</div>
 		<div class="text-right">
 			<button type="submit" class="btn btn-primary btn-lg">Enviar</button>
