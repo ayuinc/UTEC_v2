@@ -2141,7 +2141,7 @@ select[multiple].form-group-lg #header-on-scroll .tool-bar .search-form .form-te
   line-height: 1.33;
   border-radius: 0px; }
 
-.btn-sm, .language-switcher-locale-url li a.language-link {
+.btn-sm, .language-switcher-locale-url li a.language-link, #header .tool-bar .search-form .form-submit, #header-on-scroll .tool-bar .search-form .form-submit {
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;

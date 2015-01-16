@@ -340,6 +340,7 @@ $header-on-scroll-height: 56px;
 			}
 			.form-submit {
 				@extend .btn;
+				@extend .btn-sm;
 				background-color: lighten($gray, 21%);
 				color: white;
 				padding: 2px 9px;
