@@ -14,14 +14,17 @@
 	$lugar = $node->field_lugar['und']['0']['value'];		 		
   $obejtivos = $node->field_objetivos['und']['0']['value'];	
   $dirigido = $node->field_dirigido_a['und']['0']['value'];	
-  $profesores = $node->field_profesor['und']['0']['value'];
+  $profesor_name = $node->field_profesor['und']['0']['entity']['name'];
+  $profesor_cargo = $node->field_profesor['und']['0']['entity']['field_descripci_n']['und']['0']['value'];
+  $profesor_resenia = $node->field_profesor['und']['0']['entity']['field_rese_a']['und']['0']['value'];
+  $profesor_pic = $node->field_profesor['und']['0']['entity']['picture']['filename'];
   $field_requisito = $node->field_requisito['und']['0']['value'];
   $field_temario = $node->field_temario['und']['0']['value'];
   $field_inscribete = $node->field_inscribete['und']['0']['value'];
   $field_contactanos = $node->field_contactanos['und']['0']['value'];
   $field_brochure = $node->field_brochure['und']['0']['value'];
 
-  print_r($node);
+  //print_r($node);
 ?>
 
 
@@ -81,13 +84,13 @@
 			<div class="list-custom-left">
 				<ul>
 					<li class="text-center">
-						<div class="grid-list-pic"><img src="assets/img/user.jpg" alt="" width="98px" height="auto" class="img-circle"></div>
+						<div class="grid-list-pic"><img src="<?php print $pathfile.'pictures/'$profesor_pic. ?>" alt="" width="98px" height="auto" class="img-circle"></div>
 						<div>
-							<a href="#" class="thin">Rosa María Llosa Demartini</a>
-							<span><?php print t('Board member') ?></span>
+							<a href="#" class="thin"><?php print $profesor_name ?></a>
+							<span><?php print $profesor_cargo ?></span>
 						</div>
 					</li>
-					<li class="lead pl-21 text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, quae totam tempora? Quo ex neque odio vero porro delectus doloremque repudiandae similique, sequi architecto illo quos, provident aspernatur, aut sapiente.</li>
+					<li class="lead pl-21 text-gray"><?php print $profesor_resenia ?></li>
 				</ul>
 			</div>
 		</div>
