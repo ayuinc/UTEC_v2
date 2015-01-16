@@ -8,7 +8,7 @@
  */
 ?>
 <div class="container-sm">	
-	<ul class="grid-list grid-list-4 grid-list-centered grid-list-anchors pv-21">
+	<ul class="grid-list grid-list-4 grid-list-item-height grid-list-anchors pv-21">
     <?php foreach ($rows as $id => $row): ?>
 	    <?php print $row;?>
 		<?php endforeach; ?>
