@@ -11,7 +11,7 @@ if (!isset($_POST['apellidop'])) {$_POST['apellidop'] = "";};
 if (!isset($_POST['apellidom'])) {$_POST['apellidom'] = "";};
 if (!isset($_POST['tipo-documento'])) {$_POST['tipo-documento'] = "";};
 if (!isset($_POST['documento'])) {$_POST['documento'] = "";};
-if (!isset($_POST['genero'])) {$_POST['genero'] = "";};
+if (!isset($_POST['genero'])) {$_POST['genero'] = "M";};
 if (!isset($_POST['carrera'])) {$_POST['carrera'] = "";};
 if (!isset($_POST['pais'])) {$_POST['pais'] = "";};
 if (!isset($_POST['ciudad'])) {$_POST['ciudad'] = "";};
@@ -29,7 +29,7 @@ if (!isset($_POST['telefono'])) {$_POST['telefono'] = "";};
 if (!isset($_POST['ano-culminacion'])) {$_POST['ano-culminacion'] = "";};
 if (!isset($_POST['colegio-procedencia'])) {$_POST['colegio-procedencia'] = "";};
 if (!isset($_POST['estudios-rendimiento'])) {$_POST['estudios-rendimiento'] = "";};
-if (!isset($_POST['estudiante'])) {$_POST['estudiante'] = "";};
+if (!isset($_POST['estudiante'])) {$_POST['estudiante'] = "N";};
 if (!isset($_POST['consulta'])) {$_POST['consulta'] = "";};
 
 if ( $_POST['celular-2'] == 'Nº Celular 2' ) {
@@ -133,6 +133,7 @@ if($origen == "solicitud-examen" || $origen == "solicitud-primeros-puestos" || $
     
 }
 
+
 if($origen == "Charlas informativas")
 {
     $tituloTelemarketing = "Charlas Informativas";
@@ -147,6 +148,22 @@ if($origen == "Charlas informativas")
     $familia = "CHARLAS-INFORMATIVAS";
     $origen = "pagina-charlas";
 }
+
+if($origen == "Contacto")
+{
+    $tituloTelemarketing = "Formulario de Contacto - Datos Personales";
+    $subjectTelemarketing = "Solicitud - Formulario de Contacto UTEC";
+    $fromTelemarketing = "webmaster@utec.edu.pe";
+    $fromNameTelemarketing = "UTEC";
+    $tituloCliente = "¡Gracias por tu interés en UTEC.!";
+    $subjectCliente = "Gracias por tu Interés en UTEC";
+    $fromCliente = "informes@utec.edu.pe";
+    $fromNameCliente = "Universidad de Ingeniería & Tecnología";
+
+    $familia = "CONTACTO";
+    $origen = "pagina-contacto";  
+}
+
 
 $mensaje_html ="";
 $mensaje_html .= '<html><body><table><tr>
