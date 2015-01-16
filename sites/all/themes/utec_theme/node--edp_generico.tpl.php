@@ -5,6 +5,7 @@
 
 <?php $titulo = $node->title; ?>   
 <?php $body = $node->body['und']['0']['value']; ?>
+<?php $field_fotos_edp_generico = $node->field_fotos_edp_generico['und']['0']['filename']; ?>
 
 <?php $url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>
 <?php $end = end((explode('/', $url))); ?>
