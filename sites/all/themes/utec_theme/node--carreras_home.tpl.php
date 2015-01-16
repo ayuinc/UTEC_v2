@@ -27,12 +27,12 @@
 <div class="hero-unit"> <!-- HERO -->
   <div data-section-scroll="Acerca de" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
     <div class="overlay flex-middle">
-      <div class="container-sm hero-text">
+      <div class="container-sm hero-text" data-href="<?php print $carrera_link ?>">
         <h2 class="thin h3 text-white mb-7"><?php print t('¿Qué es la') ?></h2>
         <h1 class="thin text-white mt-0"><?php print $titulo ?>?</h1>
         <hr class="hr-white">
         <div class="row">
-          <div class="col-sm-3">
+          <div class="col-sm-3 hidden-xs">
             <div class="size xl">
               <i class="icon-carreras-que-es text-white"></i>
               <a href="<?php print $carrera_link ?>" class="btn btn-white btn-outline see-more mt-7"><?php print t('See more') ?></a>
@@ -50,7 +50,7 @@
   </div>
 </div> <!-- END:Hero -->
 <div data-section-scroll="Malla curricular" id="malla-curricular" class="malla-curricular section-scroll-content minh-560 flex-middle-center">
-  <div class="container-sm text-right normalize-text">
+  <div class="container-sm text-right normalize-text" data-href="<?php print $malla_link ?>">
     <h2 class="lead thin"><?php print t('Malla curricular') ?></h2>
     <hr class="hr-gray">
     <div class="row">
@@ -58,7 +58,7 @@
         <h2 class="lead thin mb-14 h3"><?php print $malla_titulo ?></h2>
         <p clas="font-carreras"><?php print $malla_txt ?></p>
       </div>
-      <div class="col-sm-3">
+      <div class="col-sm-3 hidden-xs">
         <div class="size xl">
           <i class="icon-carreras-malla"></i>
           <a href="<?php print $malla_link ?>" class="btn btn-primary btn-outline see-more mt-7"><?php print t('See more') ?></a>
@@ -71,11 +71,11 @@
   </a>
 </div>
 <div data-section-scroll="Menciones" id="menciones" class="section-scroll-content minh-560 flex-middle-center bg-info-op">
-  <div class="container-sm text-left text-white normalize-text">
+  <div class="container-sm text-left text-white normalize-text" data-href="<?php print $menciones_link ?>">
     <h2 class="lead thin"><?php print t('Menciones') ?></h2>
     <hr class="hr-white">
     <div class="row">
-      <div class="col-sm-3">
+      <div class="col-sm-3 hidden-xs">
         <div class="size xl">
           <i class="icon-carreras-menciones"></i>
           <a href="<?php print $menciones_link ?>" class="btn btn-primary btn-outline see-more mt-7"><?php print t('See more') ?></a>
@@ -100,13 +100,21 @@
     </div>
   </div>
   <div class="container text-center" >
-    <ul class="grid-list grid-list-item-height grid-list-4 grid-list-2-xs grid-list-anchors pv-21">
+    <ul class="grid-list grid-list-item-height grid-list-4 grid-list-1-xs grid-list-anchors pv-21">
       <?php foreach ($node->field_profesor['und'] as $key => $value) :?>
         <?php $name = $value['entity']->name; ?>
 				<?php $pic = $value['entity']->picture->filename; ?>
         <?php $desc = $value['entity']->field_descripci_n['und'][0]['value']; ?>
         <?php //die(print_r($value)); ?>
-        <li class="mb-ch-14"><div class="grid-list-pic"><img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="" width="180px" height="auto" class="img-circle"></div><!-- <a href="" class="h4 mb-0"> --><h4 class="mb-0"><?php print $name ?></h4><!-- </a> --><p class="font-profesores"><?php print $desc ?></p></li>
+        <li class="mb-ch-14">
+          <div class="grid-list-pic">
+            <img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="" width="180px" height="auto" class="img-circle">
+          </div>
+          <!-- <a href="" class="h4 mb-0"> -->
+            <h4 class="mb-0"><?php print $name ?></h4>
+          <!-- </a> -->
+          <p class="font-profesores"><?php print $desc ?></p>
+        </li>
       <?php endforeach ?>
     </ul>
     <h3 class="lead thin text-gray"><em><?php print $profesor_txt ?></em></h3>
@@ -116,13 +124,13 @@
   </a>
 </div>
 <div data-section-scroll="Perfil del egresado" id="perfil-egresado" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_perfil_egresado_imagen)?>);">
-  <div class="container">
+  <div class="container" data-href="<?php print $perfil_link ?>">
     <div class="row">
       <div class="col-sm-6 normalize-text">
         <h2 class="thin"><?php print t('Perfil del egresado') ?></h2>
         <hr class="hr-gray">
         <div class="row">
-          <div class="col-sm-3">
+          <div class="col-sm-3 hidden-xs">
             <div class="size xl">
               <i class="icon-carreras-perfil"></i>
               <a href="<?php print $perfil_link ?>" class="btn btn-white btn-outline see-more mt-7"><?php print t('See more') ?></a>
@@ -137,7 +145,7 @@
   </div>
 </div>
 
-<div id="section-scroll">
+<div id="section-scroll" class="hidden-sm hidden-xs">
   <ul></ul>
   <div class="text-right pv-21 btn-apply animated">
     <a href="#" class="btn btn-primary uppercase"><?php print t('Apply') ?></a>

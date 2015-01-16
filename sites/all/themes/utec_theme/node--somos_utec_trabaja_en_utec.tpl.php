@@ -14,7 +14,7 @@
 <div class="container-sm">
 	<h1 class="light"><?php print $title ?></h1>
 	<div class="separator-gray separator-sm"></div>
-	<div class="pv-ch-21 lead-ch p-ch-gray">
+	<div>
 		<h3>Nuestra filosofía</h3>
 		<p><?php print $field_su_filosofia ?></p>
 		<img src="<?php print('/'.$pathfile.$field_su_foto)?>" class="img-responsive">

@@ -6682,7 +6682,9 @@ img.icon-utec {
     margin-top: 9px; } }
 
 .grid-list-hover > li {
-  position: relative; }
+  position: relative;
+  padding: 7px !important;
+  padding: 0.5rem !important; }
   .grid-list-hover > li > div:not(.date) {
     border: 1px solid #e3e3e3;
     display: -webkit-box;
@@ -6727,7 +6729,40 @@ img.icon-utec {
   .grid-list-hover > li:hover {
     background-color: rgba(46, 67, 114, 0.7); }
     .grid-list-hover > li:hover > div {
-      color: white; }
+      color: white;
+      border: none; }
+.grid-list-hover.grid-list-hover-primary > li:hover {
+  background-color: #00BFDF; }
+.grid-list-hover.grid-list-hover-success > li:hover {
+  background-color: #8DC63F; }
+.grid-list-hover.grid-list-hover-info > li:hover {
+  background-color: #2E4372; }
+.grid-list-hover.grid-list-hover-warning > li:hover {
+  background-color: #FFDD00; }
+.grid-list-hover.grid-list-hover-danger > li:hover {
+  background-color: #DD5341; }
+.grid-list-hover.grid-list-hover-blue-darker > li:hover {
+  background-color: #00a7d7; }
+.grid-list-hover.grid-list-hover-blue-dark > li:hover {
+  background-color: #43d5ff; }
+.grid-list-hover.grid-list-hover-blue > li:hover {
+  background-color: #8be5ff; }
+.grid-list-hover.grid-list-hover-blue-light > li:hover {
+  background-color: white; }
+.grid-list-hover.grid-list-hover-blue-lighter > li:hover {
+  background-color: white; }
+.grid-list-hover.grid-list-hover-gray-darker > li:hover {
+  background-color: #191919; }
+.grid-list-hover.grid-list-hover-gray-dark > li:hover {
+  background-color: #323232; }
+.grid-list-hover.grid-list-hover-gray > li:hover {
+  background-color: #8f8d8e; }
+.grid-list-hover.grid-list-hover-gray-light > li:hover {
+  background-color: #e3e3e3; }
+.grid-list-hover.grid-list-hover-gray-lighter > li:hover {
+  background-color: #f1f1f1; }
+.grid-list-hover.grid-list-hover-white > li:hover {
+  background-color: #fff; }
 .grid-list-hover.grid-list-hover-left > li > div {
   display: -webkit-box;
   display: -moz-box;
