@@ -25,7 +25,7 @@
 	<?php } ?>	
 </div>
 
-<?php if (($end!='charlas-informativas') AND ($end!='informacion-economica') AND ($end!='orientacion-vocacional') AND ($end!='visita-utec')) { ?>
+<?php if (($end!='charlas-informativas') AND ($end!='informacion-economica') AND ($end!='orientacion-vocacional') AND ($end!='visita-utec') AND ($end!='eventos-utec')) { ?>
 <div class="container-sm form-custom mt-35"> 
 	<h3><?php print t("Admission Path") ?></h3>
 	<form action="" data-submit="Formulario de inscripcion">
