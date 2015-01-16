@@ -1,3 +1,5 @@
+<?php global $language ?>
+<?php print $language ?>
 <div class="pt-14 pb-42" id="home-sec-1">
 	<div class="container">
 		<h2 class="lead medium mb-7"><span class="text-gray-darker"><?php print t('Ready to') ?></span> <span class="text-gray"><?php print t('change the world?') ?></span></h2>
@@ -8,9 +10,15 @@
 					<div><i class="icon-ing-quimica"></i></div>
 					<h2>
 						<a href="/carreras/ingenieria-quimica-industrial">
-							<span><?php print t('Industrial') ?></span>
-							<span><?php print t('Chemistry') ?></span>
-							<span><?php print t('Engineering') ?></span>
+							<?php if ($language == 'en'): ?>
+								<span><?php print t('Industrial') ?></span>
+								<span><?php print t('Chemical') ?></span>
+								<span><?php print t('Engineering') ?></span>
+							<?php elseif ($language == 'es'): ?>
+								<span><?php print t('Engineering') ?></span>
+								<span><?php print t('Chemical') ?></span>
+								<span><?php print t('Industrial') ?></span>
+							<?php endif ?>
 						</a>
 					</h2>
 				</div>
