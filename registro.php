@@ -15,7 +15,7 @@ if (!isset($_POST['genero'])) {$_POST['genero'] = "";};
 if (!isset($_POST['carrera'])) {$_POST['carrera'] = "";};
 if (!isset($_POST['pais'])) {$_POST['pais'] = "";};
 if (!isset($_POST['ciudad'])) {$_POST['ciudad'] = "";};
-if (!isset($_POST['dia'])) {$_POST['dia'] = "";};
+if (!isset($_POST['dia'])) {$_POST['dia'] = ""; $fecha_n = ""; };
 if (!isset($_POST['mes'])) {$_POST['mes'] = "";};
 if (!isset($_POST['ano'])) {$_POST['ano'] = "";};
 if (!isset($_POST['depto'])) {$_POST['depto'] = "";};
@@ -24,7 +24,7 @@ if (!isset($_POST['distrito'])) {$_POST['distrito'] = "";};
 if (!isset($_POST['direccion-actual'])) {$_POST['direccion-actual'] = "";};
 if (!isset($_POST['email'])) {$_POST['email'] = "";};
 if (!isset($_POST['celular-1'])) {$_POST['celular-1'] = "";};
-if (!isset($_POST['celular-2'])) {$_POST['celular-2'] = "";};
+if (!isset($_POST['celular-2'])) {$_POST['celular-2'] = ""; $celular2 = ""; };
 if (!isset($_POST['telefono'])) {$_POST['telefono'] = "";};
 if (!isset($_POST['ano-culminacion'])) {$_POST['ano-culminacion'] = "";};
 if (!isset($_POST['colegio-procedencia'])) {$_POST['colegio-procedencia'] = "";};
@@ -38,11 +38,10 @@ if ( $_POST['celular-2'] == 'Nº Celular 2' ) {
   $celular2 = $_POST['celular-2'];
 }
 
-
-
-$fecha_n = $_POST['dia']." de ".$_POST['mes']." Del ".$_POST['ano'];
-
-
+if ($_POST['dia'] != "")
+{
+  $fecha_n = $_POST['dia']." de ".$_POST['mes']." Del ".$_POST['ano'];
+}
 
 $carrera_elegida = $_POST['carrera'];
 $carreras = array(
@@ -355,42 +354,42 @@ $client = new nusoap_client( "http://app.utec.edu.pe/inscripcionutecws3/services
 $programacion = "2015-1";
 
 $v0 = $familia;
-$v1 = utf8_decode($_POST['nombres']); echo $_POST['nombres']; echo "||";
-$v2 = utf8_decode($_POST['apellidop']); echo $_POST['apellidop']; echo "||";
-$v3 = utf8_decode($_POST['apellidom']); echo $_POST['apellidom']; echo "||";
-$v4 = utf8_decode($_POST['tipo-documento']); echo $_POST['tipo-documento']; echo "||";
-$v5 = utf8_decode($_POST['documento']); echo $_POST['documento']; echo "||";
-$v6 = utf8_decode($_POST['genero']); echo $_POST['genero']; echo "||";
-$v7 = utf8_decode($carreras[$carrera_elegida]); echo $carreras[$carrera_elegida]; echo "||";
+$v1 = utf8_decode($_POST['nombres']);
+$v2 = utf8_decode($_POST['apellidop']);
+$v3 = utf8_decode($_POST['apellidom']);
+$v4 = utf8_decode($_POST['tipo-documento']);
+$v5 = utf8_decode($_POST['documento']);
+$v6 = utf8_decode($_POST['genero']);
+$v7 = utf8_decode($carreras[$carrera_elegida]);
 $v8 = "-"; //utf8_decode($_POST['carrera2']);
-$v9 = utf8_decode($_POST['pais']); echo $_POST['pais']; echo "||";
-$v10 = utf8_decode($_POST['ciudad']); echo $_POST['ciudad']; echo "||";
-$v11 = $_POST['dia']; echo $_POST['dia']; echo "||";
-$v12 = $_POST['mes'];echo $_POST['mes']; echo "||";
-$v13 = $_POST['ano']; echo $_POST['ano']; echo "||";
-$v14 = utf8_decode($_POST['depto']); echo $_POST['depto']; echo "||";
-$v15 = utf8_decode($_POST['provincia']); echo $_POST['provincia']; echo "||";
-$v16 = utf8_decode($_POST['distrito']); echo $_POST['distrito']; echo "||";
-$v17 = utf8_decode($_POST['direccion-actual']); echo $_POST['direccion-actual']; echo "||";
-$v18 = utf8_decode($_POST['email']); echo $_POST['email']; echo "||";
-$v19 = $_POST['celular-1']; echo $_POST['celular-1']; echo "||";
-$v20 = utf8_decode($celular2); echo $celular2; echo "||";
-$v21 = $_POST['telefono']; echo $_POST['telefono']; echo "||";
-$v22 = $_POST['ano-culminacion']; echo $_POST['ano-culminacion']; echo "||";
-$v23 = utf8_decode($_POST['colegio-procedencia']); echo $_POST['colegio-procedencia']; echo "||";
-$v24 = utf8_decode($_POST['estudios-rendimiento']); echo $_POST['estudios-rendimiento']; echo "||";
+$v9 = utf8_decode($_POST['pais']);
+$v10 = utf8_decode($_POST['ciudad']);
+$v11 = $_POST['dia'];
+$v12 = $_POST['mes'];
+$v13 = $_POST['ano'];
+$v14 = utf8_decode($_POST['depto']);
+$v15 = utf8_decode($_POST['provincia']);
+$v16 = utf8_decode($_POST['distrito']);
+$v17 = utf8_decode($_POST['direccion-actual']);
+$v18 = utf8_decode($_POST['email']);
+$v19 = $_POST['celular-1'];
+$v20 = utf8_decode($celular2);
+$v21 = $_POST['telefono'];
+$v22 = $_POST['ano-culminacion'];
+$v23 = utf8_decode($_POST['colegio-procedencia']);
+$v24 = utf8_decode($_POST['estudios-rendimiento']);
 $v25 = $_SERVER['REMOTE_ADDR']; 
 $v26 = "0";
-$v27 = utf8_decode($_POST['estudiante']); echo $_POST['estudiante']; echo "||";
+$v27 = utf8_decode($_POST['estudiante']);
 $v28 = "";
 $v29 = "";
 $v30 = "";
 $v31 = "";
 $v32 = "";
 $v33 = "";
-$v34 = utf8_decode($_POST['carrera']); echo $_POST['carrera']; echo "||";
+$v34 = utf8_decode($_POST['carrera']);
 $v35 = $programacion;
-$v36 = utf8_decode($_POST['consulta']); echo $_POST['consulta']; echo "||";
+$v36 = utf8_decode($_POST['consulta']);
 $v37 = $origen;
 $v38 = "";
 
