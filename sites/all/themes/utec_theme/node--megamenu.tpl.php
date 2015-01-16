@@ -280,7 +280,7 @@
 					</ul>
 					<ul>
 						<li>
-							<a href="/admision/pre-inscripcion">Inscripción</a>
+							<a href="/admision/pre-inscripcion">Pre-Inscripción</a>
 						</li>
 						<li>
 							<a href="/admision/calendario-academico"><span>Calendario</span>de admisión</a>
