@@ -737,8 +737,13 @@
 		<div class="container-sm">
 			<div class="nav-display-left">
 				<div>
-					<h1>Escuela de<br><span>desarollo</span><br>profesional</h1>
-					<p>Potencia tus habilidades y alcanza el éxito profesional a través de nuestros cursos.</p>
+					<?php if ($language->prefix == 'en'): ?>
+						<h1>School of<br><span>professional</span><br>development</h1>
+						<p>Strenghthen your skills and achieve professional success.</p>
+					<?php elseif ($language->prefix == 'es'): ?>
+						<h1>Escuela de<br><span>desarollo</span><br>profesional</h1>
+						<p>Potencia tus habilidades y alcanza el éxito profesional a través de nuestros cursos.</p>
+					<?php endif ?>
 				</div>
 			</div>
 			<div class="nav-display-right">
@@ -762,7 +767,7 @@
 						</li>
 						<li><a href="#">Calendario</a></li>-->
 						<li>
-							<a href="http://escuela-edp.utec.edu.pe/" class="btn btn-primary btn-custom bold"><?php print t('Sign up') ?></a>
+							<a href="http://escuela-edp.utec.edu.pe/" class="btn btn-primary btn-custom bold"><?php print t('Contact us') ?></a>
 						</li>
 					</ul>
 				</div>
