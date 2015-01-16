@@ -5,7 +5,7 @@
   $pathfile = variable_get('file_public_path', conf_path() . '/files/investigacion-proyectos');
 
 	$titulo = $node->title;
-	$tags = $node->field_tags['und']['0']['value'];		 		
+	$tags = $node->field_tags['und'];		 		
 	$profesor = $node->field_profesor['und']['0']['entity']->name;		 		
 	$field_pdf_proyectos= $node->field_pdf_proyectos['und']['0']['value']['filename'];
 	
@@ -30,7 +30,11 @@
 		<div><span class="lead bold">Profesor: </span><span class="lead"><?php print $profesor ?></span></div>
 	<?php } ?>
 	<?php if ($tags!='') { ?>
-		<div><span class="lead bold">Tags: </span><span class="lead"><?php print $tags ?></span></div>
+		<div><span class="lead bold">Tags: </span>
+			<?php foreach ($tags as $key => $value) : ?>
+				<span class="lead"><?php print $value['taxonomy_term']->name; ?></span>
+			<?php endforeach; ?>
+		</div>
 	<?php } ?>
 </div>
 
