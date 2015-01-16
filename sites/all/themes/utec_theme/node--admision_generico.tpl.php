@@ -22,7 +22,7 @@
 	<?php } ?>	
 </div>
 
-<div class="container-sm form-custom"> 
+<div class="container-sm form-custom mt-35"> 
 	<h3>Modalidades de solicitud de admisión</h3>
 	<form action="" data-submit="Formulario de inscripcion">
 		<div class="row">
