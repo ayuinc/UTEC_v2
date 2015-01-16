@@ -19,7 +19,9 @@
 
 	//Search
 	function utec_theme_preprocess_page(&$variables){
+	  //die('entro!!!');
 	  $search_box = drupal_render(drupal_get_form('search_form'));
+	  die(print_r($search_box));
 	  $variables['search_box'] = $search_box;
 	}
 
