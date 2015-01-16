@@ -14,15 +14,6 @@ $destinatarios = array(
 'apacheco@utec.edu.pe'  => 'Angel Pacheco Masías',
 );
 
-$carrera_elegida = $_POST['carrera'];
-$carreras = array(
-    '14864' => 'Ingeniería Mecánica',
-    '15964' => 'Ingeniería Electrónica',
-    '15966' => 'Ingeniería Química Industrial',
-    '15968' => 'Ingeniería de la Energía',
-    '15970' => 'Ingeniería Industrial', 
-);
-
 $mensaje_html ="";
 $mensaje_html .= '<html><body>
         <table>
