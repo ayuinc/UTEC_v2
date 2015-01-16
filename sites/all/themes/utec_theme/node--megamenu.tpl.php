@@ -42,7 +42,7 @@
 							</form>
 						</li>
 						<li class="pt-7">
-							<a href="#" class="text-gray">Contacto</a>
+							<a href="/contacto" class="text-gray">Contacto</a>
 						</li>
 						<li class="pt-7">
 							<a href="/blog" class="text-gray">Blog</a>
@@ -238,10 +238,10 @@
 						</li>
 						<!--<li>
 							<a href="/carreras/menciones">Menciones</a>
-						</li>-->
+						</li>
 						<li>
 							<a href="/carreras/escuela-de-desarrollo"><span>Escuela de</span>Desarollo</a>
-						</li>
+						</li>-->
 						<li>
 							<a href="/admision/modalidades" class="btn btn-primary btn-custom bold">Postula</a>
 						</li>
@@ -354,7 +354,7 @@
 						</li>-->
 						<li><a href="/edp/calendario">Calendario</a></li>
 						<li>
-							<a href="http://escuela-edp.utec.edu.pe/" class="btn btn-primary btn-custom bold">Inscríbete</a>
+							<a href="/edp/inscripcion" class="btn btn-primary btn-custom bold">Inscríbete</a>
 						</li>
 					</ul>
 				</div>
