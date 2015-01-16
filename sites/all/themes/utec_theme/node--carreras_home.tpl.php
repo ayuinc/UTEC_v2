@@ -25,7 +25,11 @@
 
 ?>
 <div class="hero-unit"> <!-- HERO -->
-  <div data-section-scroll="<?php print t('About') ?>" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
+  <?php if ($language->prefix == 'en'): ?>
+    <div data-section-scroll="Overview" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
+  <?php elseif ($language->prefix == 'es'): ?>
+    <div data-section-scroll="Acerca de" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
+  <?php endif ?>
     <div class="overlay flex-middle">
       <div class="container-sm hero-text" data-href="<?php print $carrera_link ?>">
         <h2 class="thin h3 text-white mb-7"><?php print t('What is') ?></h2>
