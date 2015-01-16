@@ -596,10 +596,10 @@
 				<div>
 					<ul>
 						<li>
-							<a href="/<?php print $language->prefix ?>/investigacion/proyectos">Proyectos</a>
+							<a href="/<?php print $language->prefix ?>/investigacion/proyectos"><?php print t('Projects') ?></a>
 						</li>
 						<li>
-							<a href="/<?php print $language->prefix ?>/investigacion/publicaciones">Publicaciones</a>
+							<a href="/<?php print $language->prefix ?>/investigacion/publicaciones"><?php print t('Publications') ?></a>
 						</li>
 						<!--<li>
 							<a href="#"><span>Empresas</span>y clientes</a>
