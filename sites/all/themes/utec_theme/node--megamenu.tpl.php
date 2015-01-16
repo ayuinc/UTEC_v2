@@ -40,7 +40,7 @@
 									<button type="submit" class="btn btn-default btn-xs" value="S"><i class="icon-search"></i></button>
 								</div>
 							</form> -->
-							<?php print $search_box; ?>
+							<?php print_r($search_box); ?>
 						</li>
 						<li class="pt-7">
 							<a href="#" class="text-gray">Contacto</a>
