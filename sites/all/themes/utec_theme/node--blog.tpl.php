@@ -10,7 +10,7 @@
 	$blogger_name = $node->field_blogger['und']['0']['entity']->name;
 	$blogger_cargo = $node->field_blogger['und']['0']['entity']->field_descripci_n['und']['0']['value'];
 	$created = date('d F Y', strtotime($node->created));
-	$share_blog = $node->field_share_blog['und']['0']['value'];
+	$addblock = module_invoke('addthis','block_view','addthis_block');
 
 	// print_r($node);
 ?>
@@ -25,18 +25,7 @@
 	</div>
 	<div class="right">
 		<ul class="social-links">
-			<?php print _addthis_create_button($node); ?>
-			<!-- <div class="addthis_toolbox addthis_default_style"
-				addthis:title="<?php $share_blog[0]["attributes"]["addthis:title"]; ?>"
-				addthis:url="<?php $share_blog[0]["attributes"]["addthis:url"]; ?>">
-				<a href="http://www.addthis.com/bookmark.php?v=300" class="addthis_button_facebook at300b" title="Facebook">
-					<span class="at16nc at300bs at15nc at15t_facebook at16t_facebook"><span class="at_a11y">Share on facebook</span></span>
-				</a>
-				<a href="http://www.addthis.com/bookmark.php?v=300" class="addthis_button_twitter at300b" title="Tweet">
-				<span class="at16nc at300bs at15nc at15t_twitter at16t_twitter"><span class="at_a11y">Share on twitter</span></span>
-				</a>
-				<div class="atclear"></div>
-			</div> -->
+			<?php print render($addblock['content']); ?>
 		</ul>
 	</div>
 </div>

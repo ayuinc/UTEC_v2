@@ -25,7 +25,7 @@
 
 ?>
 <div class="hero-unit"> <!-- HERO -->
-  <div data-section-scroll="Que es" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
+  <div data-section-scroll="Acerca de" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
     <div class="overlay flex-middle">
       <div class="container-sm hero-text">
         <h2 class="thin h3 text-white mb-7"><?php print t('¿Qué es la') ?></h2>
@@ -100,7 +100,7 @@
     </div>
   </div>
   <div class="container text-center" >
-    <ul class="grid-list grid-list-centered grid-list-4 grid-list-anchors pv-21">
+    <ul class="grid-list grid-list-item-height grid-list-4 grid-list-2-xs grid-list-anchors pv-21">
       <?php foreach ($node->field_profesor['und'] as $key => $value) :?>
         <?php $name = $value['entity']->name; ?>
 				<?php $pic = $value['entity']->picture->filename; ?>

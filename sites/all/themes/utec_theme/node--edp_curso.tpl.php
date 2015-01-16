@@ -115,14 +115,14 @@
 						<small class="thin">Inscríbete</small>
 					</div>
 				</li>
-				<li data-href="<?php print $field_contactanos ?>">
+				<!--<li data-href="<?php print $field_contactanos ?>">
 					<div>
 						<div class="size sm">
 							<i class="icon-admisiones-centro-pre"></i>
 						</div>
 						<small class="thin">Contáctanos</small>
 					</div>
-				</li>
+				</li>-->
 				<li data-href="<?php print $field_brochure ?>">
 					<div>
 						<div class="size sm">
