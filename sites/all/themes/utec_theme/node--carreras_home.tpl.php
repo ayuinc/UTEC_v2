@@ -54,7 +54,7 @@
     </div>
   </div>
 </div> <!-- END:Hero -->
-<div data-section-scroll="Malla curricular" id="malla-curricular" class="malla-curricular section-scroll-content minh-560 flex-middle-center">
+<div data-section-scroll="<?php print t('Curriculum') ?>" id="malla-curricular" class="malla-curricular section-scroll-content minh-560 flex-middle-center">
   <div class="container-sm text-right normalize-text" data-href="<?php print $malla_link ?>">
     <h2 class="lead thin"><?php print t('Curriculum') ?></h2>
     <hr class="hr-gray">
@@ -75,7 +75,7 @@
     <i class="icon-arrows-down bg-info text-white"></i>
   </a>
 </div>
-<div data-section-scroll="Menciones" id="menciones" class="section-scroll-content minh-560 flex-middle-center bg-info-op">
+<div data-section-scroll="<?php print t('Majors') ?>" id="menciones" class="section-scroll-content minh-560 flex-middle-center bg-info-op">
   <div class="container-sm text-left text-white normalize-text" data-href="<?php print $menciones_link ?>">
     <h2 class="lead thin"><?php print t('Majors') ?></h2>
     <hr class="hr-white">
@@ -96,7 +96,7 @@
     <i class="icon-arrows-down bg-info text-white"></i>
   </a>
 </div>
-<div data-section-scroll="Profesores" id="profesores" class="section-scroll-content minh-560 flex-middle-center">
+<div data-section-scroll="<?php print t('Faculty') ?>" id="profesores" class="section-scroll-content minh-560 flex-middle-center">
   <div class="container-sm text-center normalize-text">
     <h2 class="lead thin"><?php print t('Faculty') ?></h2>
     <hr class="hr-gray">
