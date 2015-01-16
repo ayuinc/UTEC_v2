@@ -6,9 +6,7 @@ session_start();
 include_once( 'PHPMailer/class.phpmailer.php' );
 require_once( 'nusoap2/nusoap.php' );
 
-echo "A";
 echo $_POST['nombres'];
-echo "E";
 
 if (!isset($_POST['nombres'])) {$_POST['nombres'] = "";};
 if (!isset($_POST['apellidop'])) {$_POST['apellidop'] = "";};
