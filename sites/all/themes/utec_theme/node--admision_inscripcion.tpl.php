@@ -35,9 +35,9 @@ $field_condiciones_inscripcion = $node->field_condiciones_inscripcion['und']['0'
 		<?php print $field_detalles_inscripcion ?>
 		<a href="#" class="btn btn-primary see-more btn-lg uppercase"><?php print t('Complete the form') ?></a>
 	</div>
-	<div class="lead-ch p-ch-gray li-ch-gray pb-42">
+	<div class="pb-42">
 		<h3 class="thin"><?php print t('Conditions for admission') ?></h3>
-		<?php print $field_condiciones_inscripcion ?>
+		<p><?php print $field_condiciones_inscripcion ?></p>
 	</div>
 </div>
 <!--<div class="lead-ch p-ch-gray li-ch-gray">
