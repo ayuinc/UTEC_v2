@@ -30,7 +30,7 @@
           <ul>
             <li class="title text-gray-lighter"><?php print t('We are UTEC') ?></li>
             <li><a href="/somos-utec/metodologia-educativa" class="atm-menu-inferior"><small><?php print t('Educational Methodology') ?></small></a></li>
-            <li><a href="/somos-utec/vida-estudiantil" class="atm-menu-inferior"><small><?php print t('Student life') ?></small></a></li>
+            <li><a href="/somos-utec/vida-estudiantil" class="atm-menu-inferior"><small><?php print t('Student Life') ?></small></a></li>
             <li><a href="/somos-utec/campus-y-laboratorios" class="atm-menu-inferior"><small><?php print t('Campus and Labs') ?></small></a></li>
             <li><a href="/somos-utec/ingenio-en-accion" class="atm-menu-inferior"><small><?php print t('Ingenio en Acción') ?></small></a></li>
             <li><a href="http://utecventures.com/" target="_blank" class="atm-menu-inferior"><small><?php print t('UTEC Ventures') ?></small></a></li>
