@@ -128,10 +128,10 @@
 				<div>
 					<ul>
 						<li>
-							<a href="/somos-utec/respaldo"><?php print t('Backing') ?></a>
+							<a href="/<?php print $language->prefix ?>/somos-utec/respaldo"><?php print t('Backing') ?></a>
 						</li>
 						<li>
-							<a href="/somos-utec/autoridades"><?php print t('Authorities') ?></a>
+							<a href="/<?php print $language->prefix ?>/somos-utec/autoridades"><?php print t('Authorities') ?></a>
 						</li>
 						<li>
 							<a href="/somos-utec/profesores"><?php print t('Faculty') ?></a>
@@ -478,7 +478,7 @@
 				<ul class="nav-display-triggers">
 					<li>
 						<a href="#nav-shrink-display-1">
-							<span>Somos Utec</span>
+							<span><?php print t('We are Utec') ?></span>
 						</a>
 					</li>
 					<li>
@@ -528,13 +528,13 @@
 				<div>
 					<ul>
 						<li>
-							<a href="/somos-utec/respaldo">Respaldo</a>
+							<a href="/<?php print $language->prefix ?>/somos-utec/respaldo"><?php print t('Backing') ?></a>
 						</li>
 						<li>
-							<a href="/somos-utec/autoridades">Autoridades</a>
+							<a href="/<?php print $language->prefix ?>/somos-utec/autoridades"><?php print t('Authorities') ?></a>
 						</li>
 						<li>
-							<a href="/somos-utec/profesores">Profesores</a>
+							<a href="/<?php print $language->prefix ?>/somos-utec/profesores"><?php print t('Faculty') ?></a>
 						</li>
 						<li>
 							<a href="/somos-utec/ingenio-en-accion"><span>Ingenio</span>en acción</a>
@@ -546,12 +546,12 @@
 							<a href="#"><span>Calendario</span>Académico</a>
 						</li>-->
 						<li>
-							<a href="/somos-utec/noticias">Noticias</a>
+							<a href="/<?php print $language->prefix ?>/somos-utec/noticias"><?php print t('News') ?></a>
 						</li>						
 					</ul>
 					<ul>
 						<li>
-							<a href="/somos-utec/eventos-utec">Eventos UTEC</a>
+							<a href="/<?php print $language->prefix ?>/somos-utec/eventos-utec"><?php print t('UTEC Events') ?></a>
 						</li>
 						<li>
 							<a href="/somos-utec/vida-estudiantil"><span>Vida</span>Estudiantil</a>
