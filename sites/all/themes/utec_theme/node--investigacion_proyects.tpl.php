@@ -6,10 +6,10 @@
 
 	$titulo = $node->title;
 	$tags = $node->field_tags['und']['0']['value'];		 		
-	$profesor = $node->field_profesor['und']['0']['value'];		 		
+	$profesor = $node->field_profesor['und']['0']['entity']->name;		 		
 	$field_pdf_proyectos= $node->field_pdf_proyectos['und']['0']['value']['filename'];
 	
-	print_r($node);
+	print_r($node->field_tags);
 ?>
 
 
@@ -33,5 +33,6 @@
 		<div><span class="lead bold">Tags: </span><span class="lead"><?php print $tags ?></span></div>
 	<?php } ?>
 </div>
+
 
 

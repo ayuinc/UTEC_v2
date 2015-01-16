@@ -25,7 +25,7 @@
 	<?php } ?>	
 </div>
 
-<?php if (($end!='charlas-informativas') AND ($end!='informacion-economica') AND ($end!='orientacion-vocacional') AND ($end!='orientacion-vocacional')) { ?>
+<?php if (($end!='charlas-informativas') AND ($end!='informacion-economica') AND ($end!='orientacion-vocacional') AND ($end!='visita-utec')) { ?>
 <div class="container-sm form-custom mt-35"> 
 	<h3>Modalidades de solicitud de admisión</h3>
 	<form action="" data-submit="Formulario de inscripcion">
@@ -35,11 +35,11 @@
 				<input id="nombres" type="text" class="form-control" placeholder="Nombres">
 			</div>
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">Apellidos Paterno</label>
+				<label for="" class="sr-only"><?php print t("Father's Last Name") ?></label>
 				<input id="apellidop" type="text" class="form-control" placeholder="Apellido paterno">
 			</div>
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">Apellido Materno</label>
+				<label for="" class="sr-only"><?php print t("Mother's Last Name") ?></label>
 				<input id="apellidom" type="text" class="form-control" placeholder="Apellido materno">
 			</div>
 		</div>
@@ -49,31 +49,31 @@
 				<input id="email" type="text" class="form-control" placeholder="Email">
 			</div>
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">Teléfono</label>
+				<label for="" class="sr-only"><?php print t('Phone') ?></label>
 				<input id="telefono" type="text" class="form-control" placeholder="Teléfono">
 			</div>
 		</div>
 		<div class="row">
 			<div class="form-group col-sm-6">
-				<label for="" class="sr-only">Carrera de interés</label>
+				<label for="" class="sr-only"><?php print t('Path of Interest') ?></label>
 				<select name="" id="carrera" class="form-control select-override">
 					<option value="Carrera de interés">Carrera de interés</option>
 				</select>
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="" class="sr-only">Consulta</label>
+			<label for="" class="sr-only"><?php print t('Check') ?></label>
 			<textarea id="consulta" rows="3" class="form-control" placeholder="Escribe tu consulta"></textarea>
 		</div>
 		<div class="text-right">
-			<button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+			<button type="submit" class="btn btn-primary btn-lg"><?php print t('Send') ?></button>
 		</div>
 	</form>						
 	<p class="text-gray pt-42">De conformidad con los artículos lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut at, veritatis tempore ipsa voluptate neque lorem exercitationem impedit aperiam? Veritatis recusandae dolorem, ullam repellendus minus expedita consequatur doloremque iusto fugiat maxime!</p>
 </div>	
 <?php } ?>
 
-
+<?php if ($end=='charlas-informativas') { ?>
 <div class="container-sm">
 	<h3><?php print t('Fill the form') ?></h1>
 	<p><?php print t('Applicant Information') ?></p>
@@ -81,31 +81,27 @@
 <div class="container-sm form-custom">
 	<form action="/registro.php" data-submit="Formulario de inscripcion">
 			<div class="row">
-				<div class="form-group col-sm-7">
+				<div class="form-group col-sm-6">
 					<label for="" class="sr-only"><?php print t('Names') ?></label>
 					<input type="text" class="form-control" placeholder="Nombres" name="nombres" id="nombres">
 				</div>
-			</div>
-			<div class="row">
-				<div class="form-group col-sm-7">
+				<div class="form-group col-sm-6">
 					<label for="" class="sr-only"><?php print t('Last Name') ?></label>
 					<input type="text" class="form-control" placeholder="Apellidos" name="apellidop" id="apellidop">
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-7 form-group">
+				<div class="col-sm-6 form-group">
 					<label for="" class="sr-only"><?php print t('E-Mail') ?></label>
 					<input type="email" class="form-control" placeholder="e-mail" name="email" id="email">
 				</div>
-			</div>
-			<div class="row">
-				<div class="form-group col-sm-7">
+				<div class="form-group col-sm-6">
 					<label for="" class="sr-only"><?php print t('Phone') ?></label>
 					<input type="text" class="form-control" placeholder="Telefono" name="telefono" id="telefono">
 				</div>
 			</div>
 			<div class="row">
-				<div class="form-group col-sm-7">
+				<div class="form-group col-sm-6">
 					<label for="" class="sr-only"><?php print t('Undergrad Program') ?></label>
 					<select name="carrera" id="carrera" class="form-control select-override">
 						<option value="Carrera de interés"><?php print t('Undergrad Program') ?></option>
@@ -118,16 +114,15 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="form-group col-sm-7">
+				<div class="form-group col-sm-6">
 					<label for="" class="sr-only"><?php print t('Check') ?></label>
 					<textarea class="form-control" placeholder="Consulta" name="consulta" id="consulta"></textarea>
 				</div>
 			</div>
-
-			<div class="text-right">
+			<div class="text-left">
 				<button type="submit" class="btn btn-primary btn-lg"><?php print t('Send') ?></button>
 			</div>
 	</form>						
-	<p class="text-gray">De conformidad con los artículos lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut at, veritatis tempore ipsa voluptate neque lorem exercitationem impedit aperiam? Veritatis recusandae dolorem, ullam repellendus minus expedita consequatur doloremque iusto fugiat maxime!</p>
+	<p class="text-gray pt-42">De conformidad con los artículos lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut at, veritatis tempore ipsa voluptate neque lorem exercitationem impedit aperiam? Veritatis recusandae dolorem, ullam repellendus minus expedita consequatur doloremque iusto fugiat maxime!</p>
 </div>
-
+<?php } ?>
