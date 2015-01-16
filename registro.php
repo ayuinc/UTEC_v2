@@ -225,6 +225,10 @@ $mensaje_html .= '<html><body><table><tr>
                             <td>Telefono Fijo:</td>
                             <td>'.$_POST['telefono'].'</td>
        </tr>
+       <tr>
+                            <td>Consulta:</td>
+                            <td>'.utf8_decode($_POST['consulta']).'</td>
+       </tr>
                          <tr>
                             <td colspan="2"><b>Estudios</b></td> 
                          </tr>
@@ -257,10 +261,7 @@ $mensaje_html .= '<html><body><table><tr>
                             <td>Es o ha sido estudiante de esta universidad:</td>
                             <td>'.utf8_decode($_POST['estudiante']).'</td>
        </tr>
-       <tr>
-                            <td>Consulta:</td>
-                            <td>'.utf8_decode($_POST['consulta']).'</td>
-       </tr>
+
                          <tr>
                             <td colspan="2"><b>Datos Adicionales</b></td> 
                          </tr>
@@ -389,10 +390,9 @@ $v32 = "";
 $v33 = "";
 $v34 = utf8_decode($_POST['carrera']);
 $v35 = $programacion;
-$v36 = "";
+$v36 = utf8_decode($_POST['consulta']);
 $v37 = $origen;
 $v38 = "";
-
 
 $param = array('familia' => $v0, 'nombres' => $v1, 'apelPat' => $v2, 'apelMat' => $v3, 'tipDoc' => $v4, 'numDoc' => $v5, 'genero' => $v6, 'carrera1' => $v7, 'carrera2' => $v8, 'paisNaci' => $v9, 'ciudadNaci' => $v10,
                                         'diaNaci' => $v11, 'mesNaci' => $v12, 'anhoNaci' => $v13, 'dptoActual' => $v14, 'provActual' => $v15, 'distActual' => $v16, 'direccion' => $v17, 'email' => $v18, 'celular1' => $v19, 'celular2' => $v20,
