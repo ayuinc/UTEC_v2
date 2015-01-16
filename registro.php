@@ -6,6 +6,8 @@ session_start();
 include_once( 'PHPMailer/class.phpmailer.php' );
 require_once( 'nusoap2/nusoap.php' );
 
+echo $_POST['nombres'];
+
 if (!isset($_POST['nombres'])) {$_POST['nombres'] = "";};
 if (!isset($_POST['apellidop'])) {$_POST['apellidop'] = "";};
 if (!isset($_POST['apellidom'])) {$_POST['apellidom'] = "";};
@@ -31,7 +33,8 @@ if (!isset($_POST['colegio-procedencia'])) {$_POST['colegio-procedencia'] = "";}
 if (!isset($_POST['estudios-rendimiento'])) {$_POST['estudios-rendimiento'] = "";};
 if (!isset($_POST['estudiante'])) {$_POST['estudiante'] = "";};
 
-echo $_POST['nombres'];
+echo "//";
+print_r($_POST['nombres']);
 echo "Llego";
 
 
