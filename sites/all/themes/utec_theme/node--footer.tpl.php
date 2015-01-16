@@ -3,7 +3,7 @@
 		<div class="container">
 			<ul class="grid-list grid-list-centered normalize-text">
 				<li>
-					<h3 class="thin text-white pt-7"><i class="icon-subscribe"></i><?php print t('Suscribe to UTEC') ?></h3>
+					<h3 class="thin text-white pt-7"><i class="icon-subscribe mr-7"></i><?php print t('Suscribe to UTEC') ?></h3>
 				</li>
 				<li>
 					<div class="form-subscribe">
@@ -30,7 +30,7 @@
           <ul>
             <li class="title text-gray-lighter"><?php print t('We are UTEC') ?></li>
             <li><a href="/somos-utec/metodologia-educativa" class="atm-menu-inferior"><small><?php print t('Educational Methodology') ?></small></a></li>
-            <li><a href="/somos-utec/vida-estudiantil" class="atm-menu-inferior"><small><?php print t('Student life') ?></small></a></li>
+            <li><a href="/somos-utec/vida-estudiantil" class="atm-menu-inferior"><small><?php print t('Student Life') ?></small></a></li>
             <li><a href="/somos-utec/campus-y-laboratorios" class="atm-menu-inferior"><small><?php print t('Campus and Labs') ?></small></a></li>
             <li><a href="/somos-utec/ingenio-en-accion" class="atm-menu-inferior"><small><?php print t('Ingenio en Acción') ?></small></a></li>
             <li><a href="http://utecventures.com/" target="_blank" class="atm-menu-inferior"><small><?php print t('UTEC Ventures') ?></small></a></li>
@@ -62,7 +62,7 @@
             <!--<li><a href="#"><small>Publicaciones</small></a></li>
             <li><a href="#"><small>Consultorías</small></a></li>-->
             <li><a href="/investigacion/empresas-y-clientes"><small><?php print t('Companies and Clients') ?></small></a></li>
-            <li><a href="#"><small>Contacto</small></a></li>
+            <li><a href="/investigacion/contacto"><small><?php print t('Contact us') ?></small></a></li>
 
           </ul>
         </li>
@@ -71,7 +71,7 @@
             <li class="title text-gray-lighter"><?php print t('Degrees') ?></li>
             <li><a href="/carreras/ingenieria-quimica-industrial" class="atm-menu-inferior"><small><?php print t('Industrial and Chemical Engineering') ?></small></a></li>
             <li><a href="/carreras/ingenieria-electronica" class="atm-menu-inferior"><small><?php print t('Electronic Engineering') ?></small></a></li>
-            <li><a href="/carreras/ingenieria-mecanica" class="atm-menu-inferior"><small><?php print t('Mechanic Engineering') ?></small></a></li>
+            <li><a href="/carreras/ingenieria-mecanica" class="atm-menu-inferior"><small><?php print t('Mechanical Engineering') ?></small></a></li>
             <li><a href="/carreras/ingenieria-de-la-energia" class="atm-menu-inferior"><small><?php print t('Energy Engineering') ?></small></a></li>
             <li><a href="/carreras/ingenieria-industrial" class="atm-menu-inferior"><small><?php print t('Industrial Engineering') ?></small></a></li>
             <!--<li><a href="/carreras/menciones" class="atm-menu-inferior"><small><?php print t('Mentions') ?></small></a></li>-->
@@ -86,7 +86,7 @@
             <li><a href="/admision/calendario-academico"><small><?php print t('Admission Calendar') ?></small></a></li>
             <li><a href="/admision/modalidades" class="atm-menu-inferior"><small><?php print t('Pre registration') ?></small></a></li>
             <li><a href="/admision/informacion-economica" class="atm-menu-inferior"><small><?php print t('Financial Information') ?></small></a></li>
-            <li><a href="/admision/inscripcion" class="atm-menu-inferior"><small><?php print t('Registration') ?></small></a></li>
+            <li><a href="/admision/pre-inscripcion" class="atm-menu-inferior"><small><?php print t('Registration') ?></small></a></li>
             <li><a href="/admision/visita-utec" class="atm-menu-inferior"><small><?php print t('Visit UTEC') ?></small></a></li>
             <li><a href="/admision/orientacion-vocacional" class="atm-menu-inferior"><small><?php print t('Vocational Guidance') ?></small></a></li>
             <li><a href="/admision/preguntas-frecuentes" class="atm-menu-inferior"><small><?php print t('FAQ') ?></small></a></li>
@@ -119,12 +119,12 @@
 				<span><strong><?php print t('P.') ?></strong>51 1 354-0070</span>
 				<span><strong><?php print t('W.') ?></strong>www.utec.edu.pe</span>
 				<span><strong><?php print t('C.') ?></strong><a href="mailto:informes@utec.edu.pe" class="text-gray-dark">informes@utec.edu.pe</a></span>
-				<a href="#" class="btn btn-outline btn-xs btn-gray-dark"><i class="icon-footer-book"></i></a>
-				<a href="https://www.facebook.com/utecuniversidad" target="_blank" class="btn btn-outline btn-xs btn-gray-dark btn-rrss"><i class="icon-footer-facebook"></i></a>
-				<a href="https://twitter.com/utecedu" target="_blank" class="btn btn-outline btn-xs btn-gray-dark btn-rrss"><i class="icon-footer-twitter"></i></a>
-        <a href="https://www.linkedin.com/pub/utec-universidad-de-ingenier%C3%ADa-y-tecnolog%C3%ADa/71/a64/690/en" target="_blank"  class="btn btn-outline btn-xs btn-gray-dark btn-rrss"><i class="icon-footer-linkedin"></i></a>
-        <a href="http://instagram.com/utecedu" target="_blank"  class="btn btn-outline btn-xs btn-gray-dark btn-rrss"><i class="icon-footer-instagram"></i></a>
-        <a href="https://www.youtube.com/user/universidadutec   " target="_blank"  class="btn btn-outline btn-xs btn-gray-dark btn-rrss"><i class="icon-footer-youtube"></i></a>
+				<a href="#" class="btn btn-outline btn-xs btn-gray-dark mt-7-xs"><i class="icon-footer-book"></i></a>
+				<a href="https://www.facebook.com/utecuniversidad" target="_blank" class="btn btn-outline btn-xs btn-gray-dark mt-7-xs btn-rrss"><i class="icon-footer-facebook"></i></a>
+				<a href="https://twitter.com/utecedu" target="_blank" class="btn btn-outline btn-xs btn-gray-dark mt-7-xs btn-rrss"><i class="icon-footer-twitter"></i></a>
+        <a href="https://www.linkedin.com/pub/utec-universidad-de-ingenier%C3%ADa-y-tecnolog%C3%ADa/71/a64/690/en" target="_blank"  class="btn btn-outline btn-xs btn-gray-dark mt-7-xs btn-rrss"><i class="icon-footer-linkedin"></i></a>
+        <a href="http://instagram.com/utecedu" target="_blank"  class="btn btn-outline btn-xs btn-gray-dark mt-7-xs btn-rrss"><i class="icon-footer-instagram"></i></a>
+        <a href="https://www.youtube.com/user/universidadutec   " target="_blank"  class="btn btn-outline btn-xs btn-gray-dark mt-7-xs btn-rrss"><i class="icon-footer-youtube"></i></a>
 			</nav>
 		</div>
 	</div>

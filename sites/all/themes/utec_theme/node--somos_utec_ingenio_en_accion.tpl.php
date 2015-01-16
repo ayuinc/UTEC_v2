@@ -116,7 +116,7 @@
 	</div>
 </div>
 
-<div id="section-scroll">
+<div id="section-scroll" class="hidden-xs hidden-sm">
 	<ul></ul>
 	<div class="text-right pv-21 btn-apply animated">
 		<a href="#" class="btn btn-primary uppercase">Postular</a>

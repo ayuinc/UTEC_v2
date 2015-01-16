@@ -130,7 +130,7 @@
 			<a href="/admision/modalidades" class="btn btn-primary btn-custom bold">Postula</a>
 		</li>
 		<li>
-			<a href="/admision/inscripcion"><?php print t('Registration') ?></a>
+			<a href="/admision/pre-inscripcion"><?php print t('Registration') ?></a>
 		</li>
 		<li>
 			<a href="/admision/calendario-academico"><span>Calendario</span>de admisión</a>

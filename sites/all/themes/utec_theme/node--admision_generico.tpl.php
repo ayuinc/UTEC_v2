@@ -11,7 +11,7 @@
 <?php $url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>
 <?php $end = end((explode('/', $url))); ?>
 
-<div class="container-sm">
+<div class="container-sm mb-35">
 	<h1 class="light"><?php print $title ?></h1>
 	<div class="separator-gray separator-lg"></div>
 	<?php if ($field_descripcion_corta_generica!='') { ?>
@@ -25,14 +25,14 @@
 	<?php } ?>	
 </div>
 
-<?php if (($end!='charlas-informativas') AND ($end!='informacion-economica') AND ($end!='orientacion-vocacional') AND ($end!='visita-utec')) { ?>
+<?php if (($end!='charlas-informativas') AND ($end!='informacion-economica') AND ($end!='orientacion-vocacional') AND ($end!='visita-utec') AND ($end!='eventos-utec')) { ?>
 <div class="container-sm form-custom mt-35"> 
-	<h3>Modalidades de solicitud de admisión</h3>
+	<h3><?php print t("Admission Path") ?></h3>
 	<form action="" data-submit="Formulario de inscripcion">
 		<input type="hidden" name="origen" value="<?php print $title ?>">
 		<div class="row">
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">Nombres</label>
+				<label for="" class="sr-only"><?php print t("Names") ?></label>
 				<input id="nombres" type="text" class="form-control" placeholder="Nombres">
 			</div>
 			<div class="form-group col-sm-4">
@@ -46,7 +46,7 @@
 		</div>
 		<div class="row">
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">Email</label>
+				<label for="" class="sr-only"><?php print t("Email") ?></label>
 				<input id="email" type="text" class="form-control" placeholder="Email">
 			</div>
 			<div class="form-group col-sm-4">
@@ -58,7 +58,7 @@
 			<div class="form-group col-sm-6">
 				<label for="" class="sr-only"><?php print t('Path of Interest') ?></label>
 				<select name="" id="carrera" class="form-control select-override">
-					<option value="Carrera de interés">Carrera de interés</option>
+					<option value="Carrera de interés"><?php print t("Undergraduate Programs") ?></option>
 				</select>
 			</div>
 		</div>
@@ -70,7 +70,7 @@
 			<button type="submit" class="btn btn-primary btn-lg"><?php print t('Send') ?></button>
 		</div>
 	</form>						
-	<p class="text-gray pt-42">De conformidad con los artículos lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut at, veritatis tempore ipsa voluptate neque lorem exercitationem impedit aperiam? Veritatis recusandae dolorem, ullam repellendus minus expedita consequatur doloremque iusto fugiat maxime!</p>
+	<p class="text-gray pt-42 pb-56">De conformidad con los artículos lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut at, veritatis tempore ipsa voluptate neque lorem exercitationem impedit aperiam? Veritatis recusandae dolorem, ullam repellendus minus expedita consequatur doloremque iusto fugiat maxime!</p>
 </div>	
 <?php } ?>
 
@@ -107,11 +107,11 @@
 					<label for="" class="sr-only"><?php print t('Undergrad Program') ?></label>
 					<select name="carrera" id="carrera" class="form-control select-override">
 						<option value="Carrera de interés"><?php print t('Undergrad Program') ?></option>
-					  <option value="15970">Ingeniería Industrial</option>
-            <option value="14864">Ingeniería Mecánica</option>
-            <option value="15968">Ingeniería de la Energía</option>
-            <option value="15964">Ingeniería Electrónica</option>
-            <option value="15966">Ingeniería Química Industrial</option>
+					  <option value="15970"><?php print t('Industrial Engineering') ?></option>
+            <option value="14864"><?php print t('Mechanical Engineering') ?></option>
+            <option value="15968"><?php print t('Energy Engineering') ?></option>
+            <option value="15964"><?php print t('Electronic Engineering') ?></option>
+            <option value="15966"><?php print t('Industrial and Chemical Engineering') ?></option>
 					</select>
 				</div>
 			</div>
@@ -125,6 +125,6 @@
 				<button type="submit" class="btn btn-primary btn-lg"><?php print t('Send') ?></button>
 			</div>
 	</form>						
-	<p class="text-gray pt-42">De conformidad con los artículos lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut at, veritatis tempore ipsa voluptate neque lorem exercitationem impedit aperiam? Veritatis recusandae dolorem, ullam repellendus minus expedita consequatur doloremque iusto fugiat maxime!</p>
+	<p class="text-gray pt-42 pb-56">De conformidad con los artículos lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut at, veritatis tempore ipsa voluptate neque lorem exercitationem impedit aperiam? Veritatis recusandae dolorem, ullam repellendus minus expedita consequatur doloremque iusto fugiat maxime!</p>
 </div>
 <?php } ?>
