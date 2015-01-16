@@ -1,4 +1,4 @@
-<div class="mobile-nav-display-triggers">
+<div class="mobile-nav-display-triggers"> 
   <ul>
     <li>
       <a href="#mobile-nav-display-1"><?php print t('We are Utec') ?></a>
