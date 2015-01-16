@@ -452,7 +452,7 @@
 							<a href="/<?php print $language->prefix ?>/edp/calendario"><?php print t('Calendar') ?></a>
 						</li>
 						<li>
-							<a href="/<?php print $language->prefix ?>/edp/inscripcion" class="btn btn-primary btn-custom bold"><?php print t('Sign up') ?></a>
+							<a href="/<?php print $language->prefix ?>/edp/inscripcion" class="btn btn-primary btn-custom bold"><?php print t('Contact us') ?></a>
 						</li>
 					</ul>
 				</div>
