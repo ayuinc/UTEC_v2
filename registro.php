@@ -12,7 +12,7 @@ if (!isset($_POST['apellidom'])) {$_POST['apellidom'] = "";};
 if (!isset($_POST['tipo-documento'])) {$_POST['tipo-documento'] = "";};
 if (!isset($_POST['documento'])) {$_POST['documento'] = "";};
 if (!isset($_POST['genero'])) {$_POST['genero'] = "";};
-if (!isset($_POST['carreras'])) {$_POST['carreras'] = "";};
+if (!isset($_POST['carrera'])) {$_POST['carrera'] = "";};
 if (!isset($_POST['pais'])) {$_POST['pais'] = "";};
 if (!isset($_POST['ciudad'])) {$_POST['ciudad'] = "";};
 if (!isset($_POST['dia'])) {$_POST['dia'] = "";};
@@ -39,7 +39,7 @@ if ( $_POST['celular-2'] == 'Nº Celular 2' ) {
 
 $fecha_n = $_POST['dia']." de ".$_POST['mes']." Del ".$_POST['ano'];
 
-$carrera_elegida = $_POST['carreras'];
+$carrera_elegida = $_POST['carrera'];
 $carreras = array(
     '14864' => 'Ingeniería Mecánica',
     '15964' => 'Ingeniería Electrónica',
@@ -69,8 +69,8 @@ $origen = "";
 
 $origen = utf8_decode($_POST['origen']);
 
-if($origen == "solicitud-examen" || $origen == "solicitud-primeros-puestos" || $origen = "solicitud-alto-rendimiento" || 
-   $origen = "solicitud-traslado-externo" || $origen = "solicitud-centro-pre" || $origen = "solicitud-bachillerato" )
+if($origen == "solicitud-examen" || $origen == "solicitud-primeros-puestos" || $origen == "solicitud-alto-rendimiento" || 
+   $origen == "solicitud-traslado-externo" || $origen == "solicitud-centro-pre" || $origen == "solicitud-bachillerato" )
 {
     if ($origen == "solicitud-examen")
     {
@@ -308,7 +308,7 @@ $contenidorpta.="<p><img src='http://app.utec.edu.pe/admision/img/cabeceraWEB.jp
     <area shape='rect' coords='3,3,597,86' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
   </map>
 </p>";
-$contenidorpta.="<p>Hola que hace?, </p>
+$contenidorpta.="<p>Hola ".utf8_decode($_POST['nombres']).", </p>
                  <p><h2>".$tituloCliente."</h2>
                  <br />Hemos recibido tu consulta correctamente. 
                  <br />Pronto atenderemos tu consulta.</p>
@@ -379,7 +379,7 @@ $v30 = "";
 $v31 = "";
 $v32 = "";
 $v33 = "";
-$v34 = utf8_decode($_POST['carreras']);
+$v34 = utf8_decode($_POST['carrera']);
 $v35 = $programacion;
 $v36 = "";
 $v37 = $origen;
