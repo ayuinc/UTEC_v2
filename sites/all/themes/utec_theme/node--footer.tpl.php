@@ -84,7 +84,7 @@
             <li class="title text-gray-lighter"><?php print t('Admissions') ?></li>
             <li><a href="/<?php print $language->prefix ?>/admision/modalidades" class="atm-menu-inferior"><small><?php print t('Admissions Methods') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/admision/charlas-informativas" class="atm-menu-inferior"><small><?php print t('Informative Talks') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/admision/calendario-academico"><small><?php print t('Admission Calendar') ?></small></a></li>
+            <!--<li><a href="/<?php print $language->prefix ?>/admision/calendario-academico"><small><?php print t('Admission Calendar') ?></small></a></li>-->
             <li><a href="/<?php print $language->prefix ?>/admision/modalidades" class="atm-menu-inferior"><small><?php print t('Pre-registration') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/admision/informacion-economica" class="atm-menu-inferior"><small><?php print t('Financial Information') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/admision/visita-utec" class="atm-menu-inferior"><small><?php print t('Visit UTEC') ?></small></a></li>
@@ -103,6 +103,7 @@
             <li class="title text-gray-lighter"><?php print t('SPD') ?></li>
             <!--<li><a href="/edp/cursos/diplomados" class="atm-menu-inferior"><small>Diplomados</small></a></li>
             <li><a href="/edp/cursos/cursos-online" class="atm-menu-inferior"><small>Cursos Online</small></a></li>-->
+            <li><a href="/edp/la-escuela" class="atm-menu-inferior"><small><?php print t('The School') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/edp/cursos/cursos-cortos" class="atm-menu-inferior"><small><?php print t('Short Courses') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/edp/calendario" class="atm-menu-inferior"><small><?php print t('Calendar') ?></small></a></li>
             <!--<li><a href="/edp/cursos/cursos-adhoc" class="atm-menu-inferior"><small>Cursos Adoc</small></a></li>

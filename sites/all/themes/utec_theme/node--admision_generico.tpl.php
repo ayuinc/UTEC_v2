@@ -28,7 +28,7 @@
 <?php if (($end!='charlas-informativas') AND ($end!='informacion-economica') AND ($end!='orientacion-vocacional') AND ($end!='visita-utec') AND ($end!='eventos-utec')) { ?>
 <div class="container-sm form-custom mt-35"> 
 	<h3><?php print t("For more informaction:") ?></h3>
-	<form action="" data-submit="Formulario de inscripcion">
+	<form action="/registro.php" data-submit="Formulario de inscripcion">
 		<input type="hidden" name="origen" value="<?php print $title ?>">
 		<div class="row">
 			<div class="form-group col-sm-4">
@@ -70,7 +70,6 @@
 			<button type="submit" class="btn btn-primary btn-lg"><?php print t('Send') ?></button>
 		</div>
 	</form>						
-	<p class="text-gray pt-42 pb-56">De conformidad con los artículos lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut at, veritatis tempore ipsa voluptate neque lorem exercitationem impedit aperiam? Veritatis recusandae dolorem, ullam repellendus minus expedita consequatur doloremque iusto fugiat maxime!</p>
 </div>	
 <?php } ?>
 
@@ -128,6 +127,5 @@
 				<button type="submit" class="btn btn-primary btn-lg"><?php print t('Send') ?></button>
 			</div>
 	</form>						
-	<p class="text-gray pt-42 pb-56">De conformidad con los artículos lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut at, veritatis tempore ipsa voluptate neque lorem exercitationem impedit aperiam? Veritatis recusandae dolorem, ullam repellendus minus expedita consequatur doloremque iusto fugiat maxime!</p>
 </div>
 <?php } ?>

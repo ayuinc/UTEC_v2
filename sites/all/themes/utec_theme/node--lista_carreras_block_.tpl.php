@@ -1,9 +1,9 @@
 <?php global $language ?>
-<div class="pt-14 pb-42" id="home-sec-1">
+<div class="pv-42" id="home-sec-1">
 	<div class="container">
 		<h2 class="lead medium mb-7"><span class="text-gray-darker"><?php print t('Ready to') ?></span> <span class="text-gray"><?php print t('change the world?') ?></span></h2>
 		<h4 class="lead mb-35"><?php print t('These are our undergraduate programs:') ?></h4>
-		<ul class="grid-list grid-list-5 grid-list-1-xs pt-21 list-carreras text-center text-left-xs">
+		<ul class="grid-list grid-list-5 grid-list-1-xs pt-21 list-carreras text-center text-left-xs mb-ch-21-xs">
 			<li>
 				<div data-href="/carreras/ingenieria-quimica-industrial">
 					<div><i class="icon-ing-quimica"></i></div>
