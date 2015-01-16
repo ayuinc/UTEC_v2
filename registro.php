@@ -31,6 +31,9 @@ if (!isset($_POST['colegio-procedencia'])) {$_POST['colegio-procedencia'] = "";}
 if (!isset($_POST['estudios-rendimiento'])) {$_POST['estudios-rendimiento'] = "";};
 if (!isset($_POST['estudiante'])) {$_POST['estudiante'] = "";};
 
+echo $_POST['nombres'];
+echo "Llego";
+
 
 if ( $_POST['celular-2'] == 'Nº Celular 2' ) {
   $celular2 = "No Ingresado";
@@ -144,6 +147,10 @@ if($origen == "Charlas informativas")
     $familia = "CHARLAS-INFORMATIVAS";
     $origen = "pagina-charlas";
 }
+
+echo "LLego 2";
+
+/*
 
 $mensaje_html ="";
 $mensaje_html .= '<html><body><table><tr>
@@ -411,6 +418,6 @@ if($error){
   //Flash::setInfo($message);
 }
 //header( 'Location: https://app.utec.edu.pe/centro-preuniversitario/' ) ;
-
+*/
 
 ?>
