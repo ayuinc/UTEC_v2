@@ -15,7 +15,7 @@ if (!isset($_POST['genero'])) {$_POST['genero'] = "";};
 if (!isset($_POST['carrera'])) {$_POST['carrera'] = "";};
 if (!isset($_POST['pais'])) {$_POST['pais'] = "";};
 if (!isset($_POST['ciudad'])) {$_POST['ciudad'] = "";};
-if (!isset($_POST['dia'])) {$_POST['dia'] = "";};
+if (!isset($_POST['dia'])) {$_POST['dia'] = ""; $fecha_n = ""; };
 if (!isset($_POST['mes'])) {$_POST['mes'] = "";};
 if (!isset($_POST['ano'])) {$_POST['ano'] = "";};
 if (!isset($_POST['depto'])) {$_POST['depto'] = "";};
@@ -24,7 +24,7 @@ if (!isset($_POST['distrito'])) {$_POST['distrito'] = "";};
 if (!isset($_POST['direccion-actual'])) {$_POST['direccion-actual'] = "";};
 if (!isset($_POST['email'])) {$_POST['email'] = "";};
 if (!isset($_POST['celular-1'])) {$_POST['celular-1'] = "";};
-if (!isset($_POST['celular-2'])) {$_POST['celular-2'] = "";};
+if (!isset($_POST['celular-2'])) {$_POST['celular-2'] = ""; $celular2 = ""; };
 if (!isset($_POST['telefono'])) {$_POST['telefono'] = "";};
 if (!isset($_POST['ano-culminacion'])) {$_POST['ano-culminacion'] = "";};
 if (!isset($_POST['colegio-procedencia'])) {$_POST['colegio-procedencia'] = "";};
@@ -38,11 +38,10 @@ if ( $_POST['celular-2'] == 'Nº Celular 2' ) {
   $celular2 = $_POST['celular-2'];
 }
 
-
-
-$fecha_n = $_POST['dia']." de ".$_POST['mes']." Del ".$_POST['ano'];
-
-
+if ($_POST['dia'] != "")
+{
+  $fecha_n = $_POST['dia']." de ".$_POST['mes']." Del ".$_POST['ano'];
+}
 
 $carrera_elegida = $_POST['carrera'];
 $carreras = array(
@@ -379,7 +378,7 @@ $v21 = $_POST['telefono'];
 $v22 = $_POST['ano-culminacion'];
 $v23 = utf8_decode($_POST['colegio-procedencia']);
 $v24 = utf8_decode($_POST['estudios-rendimiento']);
-$v25 = $_SERVER['REMOTE_ADDR'];
+$v25 = $_SERVER['REMOTE_ADDR']; 
 $v26 = "0";
 $v27 = utf8_decode($_POST['estudiante']);
 $v28 = "";
