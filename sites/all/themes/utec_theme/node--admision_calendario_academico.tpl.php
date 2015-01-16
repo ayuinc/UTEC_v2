@@ -6,7 +6,7 @@
 	<div class="separator-gray separator-lg"></div>
 	<h3><?php print $field_introduccion_calendario ?></h3>	
 	<div class="pv-35">
-		<div>
+		<div class="table-responsive">
 			<table class="table">
 				<thead>
 					<tr>
