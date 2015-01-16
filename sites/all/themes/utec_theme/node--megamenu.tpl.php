@@ -421,7 +421,7 @@
 				<div>
 					<?php if ($language->prefix == 'en'): ?>
 						<h1>School of<br><span>profesional</span><br>development</h1>
-						<p>Strenghthen your skills and achieve professional success.</p>
+						<p>Strengthen your skills and achieve professional success.</p>
 					<?php elseif ($language->prefix == 'es'): ?>
 						<h1>Escuela de<br><span>desarollo</span><br>profesional</h1>
 						<p>Potencia tus habilidades y alcanza el éxito profesional a través de nuestros cursos.</p>
