@@ -8,7 +8,7 @@
 	$body = $fields['body']->content;
 	$logo = $fields['field_image']->content;
 	$path = $fields['path']->content;
-  kpr($fields);
+  //kpr($fields);
 ?>
 <li data-href="<?php print $path ?>">
   <div>
