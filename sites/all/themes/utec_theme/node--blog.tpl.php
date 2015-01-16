@@ -12,7 +12,7 @@
 	$created = date('d F Y', strtotime($node->created));
 	$share_blog = $node->field_share_blog['und']['0']['value'];
 
-	print_r($node);
+	// print_r($node);
 ?>
 
 <h3 class="lead"><?php print $title ?></h3>
@@ -25,7 +25,18 @@
 	</div>
 	<div class="right">
 		<ul class="social-links">
-			<div class="addthis_toolbox"></div>
+			<?php print _addthis_create_button($node); ?>
+			<!-- <div class="addthis_toolbox addthis_default_style"
+				addthis:title="<?php $share_blog[0]["attributes"]["addthis:title"]; ?>"
+				addthis:url="<?php $share_blog[0]["attributes"]["addthis:url"]; ?>">
+				<a href="http://www.addthis.com/bookmark.php?v=300" class="addthis_button_facebook at300b" title="Facebook">
+					<span class="at16nc at300bs at15nc at15t_facebook at16t_facebook"><span class="at_a11y">Share on facebook</span></span>
+				</a>
+				<a href="http://www.addthis.com/bookmark.php?v=300" class="addthis_button_twitter at300b" title="Tweet">
+				<span class="at16nc at300bs at15nc at15t_twitter at16t_twitter"><span class="at_a11y">Share on twitter</span></span>
+				</a>
+				<div class="atclear"></div>
+			</div> -->
 		</ul>
 	</div>
 </div>
