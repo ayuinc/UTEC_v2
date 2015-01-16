@@ -359,9 +359,6 @@
 					</ul>
 					<ul>
 						<li>
-							<a href="/<?php print $language->prefix ?>/admision/visita-utec"><span><?php print t('Visit') ?></span>UTEC</a>
-						</li>
-						<li>
 							<a href="/<?php print $language->prefix ?>/admision/orientacion-vocacional">
 								<?php if ($language->prefix == 'es'): ?>
 									<span>Orientación</span>Vocacional
@@ -396,21 +393,19 @@
 						<p>Generamos conexiones con las mejores instituciones educativas del mundo.</p>
 					<?php elseif ($language->prefix == 'en'): ?>
 						<h1><span>International</span><br>alliances</h1>
-						<p>We hold links with the best educational institutions in the world.</p>
+						<p>We've built strong relationships with the best educational institutions in the world.</p>
 					<?php endif ?>
 				</div>
 			</div>
 			<div class="nav-display-right">
 				<div>
 					<ul>
-						<!--<li>
-							<a href="#"><span>Proceso de</span>ampliación</a>
-						</li>-->
 						<li>
-							<a href="/<?php print $language->prefix ?>/convenios/ven-a-la-utec"><span>Ven a</span>la utec</a>
-						</li>
-						<li>
-							<a href="/<?php print $language->prefix ?>/convenios/convenios-de-intercambio"><span>Convenios de</span>Intercambio</a>
+							<?php if ($language->prefix == 'es'): ?>
+								<a href="/<?php print $language->prefix ?>/convenios/convenios-de-intercambio"><span>Convenios de</span>Intercambio</a>
+							<?php elseif ($language->prefix == 'en'): ?>
+								<a href="/<?php print $language->prefix ?>/convenios/convenios-de-intercambio"><span>Alliances</span></a>
+							<?php endif ?>
 						</li>
 					</ul>
 				</div>
