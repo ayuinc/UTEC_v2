@@ -3,7 +3,7 @@
 		<div class="container">
 			<ul class="grid-list grid-list-centered normalize-text">
 				<li>
-					<h3 class="thin text-white pt-7"><i class="icon-subscribe"></i><?php print t('Suscribe to UTEC') ?></h3>
+					<h3 class="thin text-white pt-7"><i class="icon-subscribe mr-7"></i><?php print t('Suscribe to UTEC') ?></h3>
 				</li>
 				<li>
 					<div class="form-subscribe">

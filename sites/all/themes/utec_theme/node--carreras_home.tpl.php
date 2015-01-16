@@ -137,7 +137,7 @@
   </div>
 </div>
 
-<div id="section-scroll">
+<div id="section-scroll" class="hidden-sm hidden-xs">
   <ul></ul>
   <div class="text-right pv-21 btn-apply animated">
     <a href="#" class="btn btn-primary uppercase"><?php print t('Apply') ?></a>
