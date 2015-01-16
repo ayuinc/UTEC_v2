@@ -10,7 +10,7 @@
 	$blogger_name = $node->field_blogger['und']['0']['entity']->name;
 	$blogger_cargo = $node->field_blogger['und']['0']['entity']->field_descripci_n['und']['0']['value'];
 	$created = date('d F Y', strtotime($node->created));
-	$output = field_view_field('node', $node, 'field_share_blog');
+	$addblock = module_invoke('addthis','block_view','addthis_block');
 
 	// print_r($node);
 ?>
@@ -25,7 +25,8 @@
 	</div>
 	<div class="right">
 		<ul class="social-links">
-			<?php print $output; ?>
+			<!-- Go to www.addthis.com/dashboard to customize your tools -->
+			<div class="addthis_sharing_toolbox"></div>
 		</ul>
 	</div>
 </div>
@@ -33,3 +34,5 @@
 <h3 class="lead"><?php //print $title ?></h3>
 <p><?php print $cuerpo ?></p>
 
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54b856007af4c9e3" async="async"></script>

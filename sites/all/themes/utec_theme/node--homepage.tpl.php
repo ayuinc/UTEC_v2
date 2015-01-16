@@ -31,7 +31,7 @@
   <div class="overlay flex-middle-end text-center text-white">
   	<div class="container relative home-introduccion normalize-text pv-70">
 			<h1 class="thin lead">UTEC, plataforma abierta para innovar</h1>
-			<h4 class="thin pv-7 uppercase">- DESCÚBRELO -</h4>
+			<h4 class="thin pv-7 uppercase">- DESCÚBRELA -</h4>
 		</div>
   </div>
   <a class="scroll-down scroll-down-sq size lg" href="#home-sec-1" rel="nofollow">
