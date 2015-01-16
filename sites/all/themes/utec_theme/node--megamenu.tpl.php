@@ -33,16 +33,17 @@
 				<div class="inline-block pt-xs">
 					<ul class="small ml-ch-7 nav-list">
 						<li class="form-search">
-							<form action="" class="form-inline mr-14">
+							<!-- <form action="" class="form-inline mr-14">
 								<div class="form-group mb-0">
 									<label for="search" class="sr-only">Buscar</label>
 									<input type="search" class="input-sm form-control" width="210" placeholder="Buscar...">
 									<button type="submit" class="btn btn-default btn-xs" value="S"><i class="icon-search"></i></button>
 								</div>
-							</form>
+							</form> -->
+							<?php print drupal_render(drupal_get_form('search_form')); ?>
 						</li>
 						<li class="pt-7">
-							<a href="#" class="text-gray">Contacto</a>
+							<a href="/contacto" class="text-gray">Contacto</a>
 						</li>
 						<li class="pt-7">
 							<a href="/blog" class="text-gray">Blog</a>
@@ -141,13 +142,13 @@
 							<a href="/somos-utec/metodologia-educativa"><span>Metodología</span>Educativa</a>
 						</li>
 						<li>
+							<a href="/somos-utec/noticias">Noticias</a>
+						</li>						
+						<!--<li>
 							<a href="/somos-utec/calendario-academico"><span>Calendario</span>Académico</a>
-						</li>
+						</li>-->
 					</ul> 
 					<ul>
-						<li>
-							<a href="/somos-utec/noticias">Noticias</a>
-						</li>
 						<li>
 							<a href="/somos-utec/eventos-utec">Eventos UTEC</a>
 						</li>
@@ -238,10 +239,10 @@
 						</li>
 						<!--<li>
 							<a href="/carreras/menciones">Menciones</a>
-						</li>-->
+						</li>
 						<li>
 							<a href="/carreras/escuela-de-desarrollo"><span>Escuela de</span>Desarollo</a>
-						</li>
+						</li>-->
 						<li>
 							<a href="/admision/modalidades" class="btn btn-primary btn-custom bold">Postula</a>
 						</li>
@@ -279,7 +280,7 @@
 					</ul>
 					<ul>
 						<li>
-							<a href="/admision/inscripcion">Inscripción</a>
+							<a href="/admision/pre-inscripcion">Pre-Inscripción</a>
 						</li>
 						<li>
 							<a href="/admision/calendario-academico"><span>Calendario</span>de admisión</a>
@@ -354,7 +355,7 @@
 						</li>-->
 						<li><a href="/edp/calendario">Calendario</a></li>
 						<li>
-							<a href="http://escuela-edp.utec.edu.pe/" class="btn btn-primary btn-custom bold">Inscríbete</a>
+							<a href="/edp/inscripcion" class="btn btn-primary btn-custom bold">Inscríbete</a>
 						</li>
 					</ul>
 				</div>
@@ -581,7 +582,7 @@
 					</ul>
 					<ul>
 						<li>
-							<a href="/admision/inscripcion">Inscripción</a>
+							<a href="/admision/pre-inscripcion">Pre-Inscripción</a>
 						</li>
 						<li>
 							<a href="/admision/calendario-academico"><span>Calendario</span>Académico</a>
