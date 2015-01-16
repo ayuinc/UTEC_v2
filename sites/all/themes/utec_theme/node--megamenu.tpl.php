@@ -106,7 +106,7 @@
 					<li>
 						<a href="#nav-display-6" class="atm-menu-principal">
 							<div><i class="icon-menu-edp"></i></div>
-							<span><?php print t('SPD') ?></span>
+							<span><?php print t('Executive Education') ?></span>
 						</a>
 					</li>
 				</ul>
@@ -318,7 +318,7 @@
 					<?php if ($language->prefix == 'es'): ?>
 						<h1>Ingenio<br><span>vocación</span> y<br><span>aspiración</span><br>a la excelencia</h1>
 					<?php elseif ($language->prefix == 'en'): ?>
-						<h1>Ingenuity<br><span>dedication</span> and<br><span>pursuit</span><br>of excellence</h1>
+						<h1>Ingenuity,<br><span>dedication,</span> and<br><span>the pursuit</span><br>of excellence</h1>
 					<?php endif ?>
 					<p><?php print t("Our students' DNA: achieving highest academic achievement and personal development.") ?></p>
 				</div>
@@ -359,18 +359,6 @@
 					</ul>
 					<ul>
 						<li>
-							<a href="/<?php print $language->prefix ?>/admision/pre-inscripcion"><?php print t('Pre-registration') ?></a>
-						</li>
-						<!--<li>
-							<a href="/<?php print $language->prefix ?>/admision/calendario-academico">
-								<?php if ($language->prefix == 'es'): ?>
-									<span>Calendario</span>de admisión
-								<?php elseif ($language->prefix == 'en'): ?>
-									<span>Admissions</span>calendar
-								<?php endif ?>
-							</a>
-						</li>-->
-						<li>
 							<a href="/<?php print $language->prefix ?>/admision/visita-utec"><span><?php print t('Visit') ?></span>UTEC</a>
 						</li>
 						<li>
@@ -378,7 +366,7 @@
 								<?php if ($language->prefix == 'es'): ?>
 									<span>Orientación</span>Vocacional
 								<?php elseif ($language->prefix == 'en'): ?>
-									<span>Vocational</span>Guidance
+									<span>Guidance</span>
 								<?php endif ?>
 							</a>
 						</li>
@@ -515,7 +503,7 @@
 					</li>
 					<li>
 						<a href="#nav-shrink-display-6">
-							<span><?php print t('SPD') ?></span>
+							<span><?php print t('Executive Education') ?></span>
 						</a>
 					</li>
 				</ul>
