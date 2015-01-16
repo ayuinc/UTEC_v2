@@ -9,7 +9,7 @@
 	$profesor = $node->field_profesor['und']['0']['value'];		 		
 	$field_pdf_proyectos= $node->field_pdf_proyectos['und']['0']['value']['filename'];
 	
-	print_r($node->tags);
+	print_r($node);
 ?>
 
 
