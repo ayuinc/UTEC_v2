@@ -17,6 +17,6 @@
     <?php endforeach; ?>
   </ul>
   <div class="text-right">
-    <a href="#" class="btn btn-lg btn-outline btn-gray see-more uppercase light"><?php print t('See all news') ?></a>
+    <a href="#" class="btn btn-lg btn-primary btn-gray see-more uppercase light"><?php print t('See all news') ?></a>
   </div>
 </div>  
