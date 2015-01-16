@@ -10,14 +10,6 @@ $carreras = array(
     '15970' => 'Ingeniería Industrial', 
 );
 
-
-echo $_POST['nombres'];
-echo $_POST['apellidop'];
-echo $carreras[$carrera_elegida];
-echo $_POST['email'];
-echo $_POST['telefono'];
-echo $_POST['carrera'];
-
 session_start();
 
 require_once( 'nusoap2/nusoap.php' );
@@ -29,8 +21,8 @@ $programacion = "2015-1";
 $origen ="landing-examen-admision";
 
 $v0 = "ADMISION";
-$v1 = $_POST['nombres'];
-$v2 = $_POST['apellidop'];
+$v1 = "Angel Ayu 789"; //$_POST['nombres'];
+$v2 = "Pacheco"; //$_POST['apellidop'];
 $v3 = "ApellidoM";
 $v4 = "";
 $v5 = "";
@@ -46,10 +38,10 @@ $v14 = "";
 $v15 = "";
 $v16 = "";
 $v17 = ""; //utf8_decode($direccion);
-$v18 = $_POST['email'];
+$v18 = "Mail"; //$_POST['email'];
 $v19 = ""; //utf8_decode($celular);
 $v20 = "";
-$v21 = $_POST['telefono'];
+$v21 = "1111888881"; //$_POST['telefono'];
 $v22 = "";
 $v23 = "";//24
 $v24 = "";//25
