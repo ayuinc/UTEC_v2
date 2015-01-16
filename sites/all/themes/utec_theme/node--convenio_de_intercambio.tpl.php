@@ -6,16 +6,16 @@
 
   $titulo = $node->title;
   $cuerpo = $node->body['und']['0']['value'];
-  $logo = $node->field_image['und']['0']['value']['filename'];
-  $banner = $node->field_banner['und']['0']['value']['filename'];
+  $logo = $node->field_image['und']['0']['filename'];
+  $banner = $node->field_banner['und']['0']['filename'];
   //$fids   = $node->field_convenio['und'];
-  // print_r($fids);
+  // print_r($node);
   
 ?>
 
 <div class="container-sm">
   <h1 class="light"><?php print $titulo ?></h1>
   <div class="separator-gray separator-sm"></div>
-  <img class="img-responsive" src="<?php print '/'.$pathfile.$imagen ?>" alt="#">
+  <img class="img-responsive" src="<?php print '/'.$pathfile.$banner ?>" alt="#">
   <h3><?php print $cuerpo ?></h3>
 </div>

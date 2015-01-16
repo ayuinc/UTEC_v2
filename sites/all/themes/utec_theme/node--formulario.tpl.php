@@ -59,6 +59,7 @@
 	<p class="text-gray">De conformidad con los artículos lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut at, veritatis tempore ipsa voluptate neque lorem exercitationem impedit aperiam? Veritatis recusandae dolorem, ullam repellendus minus expedita consequatur doloremque iusto fugiat maxime!</p>
 </div>
 
+
 <?php
 
 session_start();
@@ -69,10 +70,10 @@ require_once( 'nusoap2/nusoap.php' );
 $client = new nusoap_client( "http://app.utec.edu.pe/inscripcionutecws3/services/InscripcionServicePort?wsdl", true ); 
 
 $programacion = "2015-1";
-$origen ="landing-alto-rendimiento";
+$origen = "landing-alto-rendimiento";
 
 $v0 = "ALTO RENDIMIENTO";
-$v1 = "Angel Ayu New"; //utf8_decode($_POST['nombres']);
+$v1 = "Angel Ayu"; //utf8_decode($_POST['nombres']);
 $v2 = "Pacheco"; //utf8_decode($_POST['apellido']);
 $v3 = "Masias"; //utf8_decode($_POST['apellidom']);
 $v4 = "";
@@ -90,11 +91,11 @@ $v15 = "";
 $v16 = "";
 $v17 = ""; //utf8_decode($direccion);
 $v18 = "111"; //utf8_decode($_POST['emailx']);
-$v19 = ""; //utf8_decode($celular);
+$v19 = "454545"; //utf8_decode($celular);
 $v20 = "";
 $v21 = "123456789"; //$_POST['telefono'];
 $v22 = "";
-$v23 = "343434"; //utf8_decode($_POST['colegio']);//24
+$v23 = "nombre"; //utf8_decode($_POST['colegio']);//24
 $v24 = "";//25
 $v25 = $_SERVER['REMOTE_ADDR'];//26
 $v26 = "48500";//27
