@@ -25,7 +25,8 @@
 	</div>
 	<div class="right">
 		<ul class="social-links">
-			<?php print render($addblock['content']); ?>
+			<!-- Go to www.addthis.com/dashboard to customize your tools -->
+			<div class="addthis_sharing_toolbox"></div>
 		</ul>
 	</div>
 </div>
@@ -33,3 +34,5 @@
 <h3 class="lead"><?php //print $title ?></h3>
 <p><?php print $cuerpo ?></p>
 
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54b856a63c788032" async="async"></script>
