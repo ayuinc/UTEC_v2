@@ -17,7 +17,13 @@
 	);
 	drupal_add_html_head($viewport, 'viewport');
 
-	drupal_add_css("//vjs.zencdn.net/4.10/video-js.css", 'external');
+	//Search
+	function MYTHEME_preprocess_page(&$variables){
+	  $search_box = drupal_render(drupal_get_form('search_form'));
+	  $variables['search_box'] = $search_box;
+	}
+
+	drupal_add_css("//vjs.zencdn.net/4.10/video-js.css", 'external');	
 	
 	//drupal_add_js('try{Typekit.load();}catch(e){}', 'inline');
 
