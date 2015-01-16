@@ -25,7 +25,7 @@
 	<?php } ?>	
 </div>
 
-<?php if (($end!='charlas-informativas') AND ($end!='informacion-economica') AND ($end!='orientacion-vocacional') AND ($end!='orientacion-vocacional')) { ?>
+<?php if (($end!='charlas-informativas') AND ($end!='informacion-economica') AND ($end!='orientacion-vocacional') AND ($end!='visita-utec')) { ?>
 <div class="container-sm form-custom mt-35"> 
 	<h3>Modalidades de solicitud de admisión</h3>
 	<form action="" data-submit="Formulario de inscripcion">
@@ -73,7 +73,7 @@
 </div>	
 <?php } ?>
 
-
+<?php if ($end=='charlas-informativas') { ?>
 <div class="container-sm">
 	<h3><?php print t('Fill the form') ?></h1>
 	<p><?php print t('Applicant Information') ?></p>
@@ -125,4 +125,4 @@
 	</form>						
 	<p class="text-gray pt-42">De conformidad con los artículos lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut at, veritatis tempore ipsa voluptate neque lorem exercitationem impedit aperiam? Veritatis recusandae dolorem, ullam repellendus minus expedita consequatur doloremque iusto fugiat maxime!</p>
 </div>
-
+<?php } ?>
