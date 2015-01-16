@@ -70,14 +70,14 @@
 			</div>
 		</div>
 		<div>
-			<h3>Profesores:</h3>
+			<h3><?php print t('Faculty:') ?></h3>
 			<div class="list-custom-left">
 				<ul>
 					<li class="text-center">
 						<div class="grid-list-pic"><img src="assets/img/user.jpg" alt="" width="98px" height="auto" class="img-circle"></div>
 						<div>
 							<a href="#" class="thin">Rosa María Llosa Demartini</a>
-							<span>Miembro del consejo directivo</span>
+							<span><?php print t('Board member') ?></span>
 						</div>
 					</li>
 					<li class="lead pl-21 text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, quae totam tempora? Quo ex neque odio vero porro delectus doloremque repudiandae similique, sequi architecto illo quos, provident aspernatur, aut sapiente.</li>
@@ -91,7 +91,7 @@
 						<div class="size sm">
 							<i class="icon-admisiones-primeros-puestos"></i>
 						</div>
-						<small class="thin">Requisitos</small>
+						<small class="thin"><?php print t('Requirements') ?></small>
 					</div>
 				</li>
 				<li data-href="//">
@@ -99,7 +99,7 @@
 						<div class="size sm">
 							<i class="icon-admisiones-alto-rendimiento"></i>
 						</div>
-						<small class="thin">Temario</small>
+						<small class="thin"><?php print t('Agenda') ?></small>
 					</div>
 				</li>
 				<li data-href="//">
@@ -107,7 +107,7 @@
 						<div class="size sm">
 							<i class="icon-admisiones-traslado"></i>
 						</div>
-						<small class="thin">Inscríbete</small>
+						<small class="thin"><?php print t('Sign up') ?></small>
 					</div>
 				</li>
 				<li data-href="//">
@@ -115,7 +115,7 @@
 						<div class="size sm">
 							<i class="icon-admisiones-centro-pre"></i>
 						</div>
-						<small class="thin">Contáctanos</small>
+						<small class="thin"><?php print t('Contact us') ?></small>
 					</div>
 				</li>
 				<li data-href="//">
@@ -123,7 +123,7 @@
 						<div class="size sm">
 							<i class="icon-admisiones-bachillerato"></i>
 						</div>
-						<small class="thin">Brochure</small>
+						<small class="thin"><?php print t('Brochure') ?></small>
 					</div>
 				</li>
 			</ul>
