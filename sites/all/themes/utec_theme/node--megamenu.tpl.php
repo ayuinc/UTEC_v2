@@ -140,9 +140,9 @@
 						<li>
 							<a href="/somos-utec/metodologia-educativa"><span>Metodología</span>Educativa</a>
 						</li>
-						<!--<li>
-							<a href="#"><span>Calendario</span>Académico</a>
-						</li>-->
+						<li>
+							<a href="/somos-utec/calendario-academico"><span>Calendario</span>Académico</a>
+						</li>
 					</ul>
 					<ul>
 						<li>
@@ -442,11 +442,11 @@
 						<!--<li>
 							<a href="#"><span>Calendario</span>Académico</a>
 						</li>-->
-					</ul>
-					<ul>
 						<li>
 							<a href="/somos-utec/noticias">Noticias</a>
-						</li>
+						</li>						
+					</ul>
+					<ul>
 						<li>
 							<a href="/somos-utec/eventos-utec">Eventos UTEC</a>
 						</li>
@@ -583,9 +583,9 @@
 						<li>
 							<a href="/admision/inscripcion">Inscripción</a>
 						</li>
-						<!--<li>
-							<a href="#"><span>Calendario</span>de admisión</a>
-						</li>-->
+						<li>
+							<a href="/admision/calendario-academico"><span>Calendario</span>Académico</a>
+						</li>
 						<li>
 							<a href="/admision/visita-utec"><span>Visita</span>UTEC</a>
 						</li>
@@ -616,10 +616,10 @@
 					<ul>
 						<!--<li>
 							<a href="#"><span>Proceso de</span>ampliación</a>
-						</li>
-						<li>
-							<a href="#"><span>Ven a</span>la utec</a>
 						</li>-->
+						<li>
+							<a href="/convenios/ven-a-la-utec"><span>Ven a</span>la utec</a>
+						</li>
 						<li>
 							<a href="/convenios/convenios-de-intercambio"><span>Convenios de</span>Intercambio</a>
 						</li>
