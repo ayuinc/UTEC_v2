@@ -4,6 +4,7 @@
 session_start();
 
 include_once( 'PHPMailer/class.phpmailer.php' );
+require_once( 'PHPMailer/class.smtp.php');
 require_once( 'nusoap2/nusoap.php' );
 
 $mail = new PHPMailer();
