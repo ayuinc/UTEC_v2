@@ -6,6 +6,32 @@ session_start();
 include_once( 'PHPMailer/class.phpmailer.php' );
 require_once( 'nusoap2/nusoap.php' );
 
+if (!isset($_POST['nombres'])) {$_POST['nombres'] = "";};
+if (!isset($_POST['apellidop'])) {$_POST['apellidop'] = "";};
+if (!isset($_POST['apellidom'])) {$_POST['apellidom'] = "";};
+if (!isset($_POST['tipo-documento'])) {$_POST['tipo-documento'] = "";};
+if (!isset($_POST['documento'])) {$_POST['documento'] = "";};
+if (!isset($_POST['genero'])) {$_POST['genero'] = "";};
+if (!isset($_POST['carreras'])) {$_POST['carreras'] = "";};
+if (!isset($_POST['pais'])) {$_POST['pais'] = "";};
+if (!isset($_POST['ciudad'])) {$_POST['ciudad'] = "";};
+if (!isset($_POST['dia'])) {$_POST['dia'] = "";};
+if (!isset($_POST['mes'])) {$_POST['mes'] = "";};
+if (!isset($_POST['ano'])) {$_POST['ano'] = "";};
+if (!isset($_POST['depto'])) {$_POST['depto'] = "";};
+if (!isset($_POST['provincia'])) {$_POST['provincia'] = "";};
+if (!isset($_POST['distrito'])) {$_POST['distrito'] = "";};
+if (!isset($_POST['direccion-actual'])) {$_POST['direccion-actual'] = "";};
+if (!isset($_POST['email'])) {$_POST['email'] = "";};
+if (!isset($_POST['celular-1'])) {$_POST['celular-1'] = "";};
+if (!isset($_POST['celular-2'])) {$_POST['celular-2'] = "";};
+if (!isset($_POST['telefono-fijo'])) {$_POST['telefono-fijo'] = "";};
+if (!isset($_POST['ano-culminacion'])) {$_POST['ano-culminacion'] = "";};
+if (!isset($_POST['colegio-procedencia'])) {$_POST['colegio-procedencia'] = "";};
+if (!isset($_POST['estudios-rendimiento'])) {$_POST['estudios-rendimiento'] = "";};
+if (!isset($_POST['estudiante'])) {$_POST['estudiante'] = "";};
+
+
 if ( $_POST['celular-2'] == 'Nº Celular 2' ) {
   $celular2 = "No Ingresado";
 } else {
@@ -104,8 +130,7 @@ if($origen == "solicitud-examen" || $origen == "solicitud-primeros-puestos" || $
     
 }
 
-
-if($origen == "charlas-informativas")
+if($origen == "Charlas informativas")
 {
     $tituloTelemarketing = "Charlas Informativas";
     $subjectTelemarketing = "Charlas Informativas UTEC";
@@ -119,8 +144,6 @@ if($origen == "charlas-informativas")
     $familia = "CHARLAS-INFORMATIVAS";
     $origen = "pagina-charlas";
 }
-
-
 
 $mensaje_html ="";
 $mensaje_html .= '<html><body><table><tr>
@@ -136,7 +159,7 @@ $mensaje_html .= '<html><body><table><tr>
        </tr>
        <tr>
                             <td>Apellido Materno:</td>
-                            <td>'.utf8_decode($_POST['materno']).'</td>
+                            <td>'.utf8_decode($_POST['apellidom']).'</td>
        </tr>
        <tr>
                             <td>G&eacute;nero:</td>
@@ -250,10 +273,10 @@ $mensaje_html .= '<html><body><table><tr>
     </html>';
 
 
-$mail->From     = 'informes@utec.edu.pe';
-$mail->FromName = 'UTEC';
+$mail->From     = $fromTelemarketing;
+$mail->FromName = $fromNameTelemarketing;
 $mail->Host = "545c0f422c16364190cd270f517e9d.mail.outlook.com";
-$mail->Subject  = 'Solicitud - Examen Admision UTEC';
+$mail->Subject  = $subjectTelemarketing;
 $mail->AltBody  = "Para ver este correo, utilize un visor de correo compatible con HTML"; // optional, comment out and test
 $mail->IsHTML(true);
 $mail->Body = $mensaje_html;
@@ -261,19 +284,18 @@ $mail->Body = $mensaje_html;
 
 foreach ( $destinatarios as $destinatario_email => $destinatario_nombre ) {
         $mail->AddAddress( $destinatario_email, $destinatario_nombre );
-      }
+}
       
 $mail->Send();
-
 
 $mailrpta = utf8_decode($_POST['email']);
 $mail_1 = new PHPMailer();
 $mail_1->CharSet = 'UTF-8';
-$mail_1->From     = 'admision@utec.edu.pe';
-$mail_1->FromName = 'UTEC – Admisión';
+$mail_1->From     = $fromCliente;
+$mail_1->FromName = $fromNameCliente;
 $mail_1->IsHTML(true); 
 $mail_1->Host = "545c0f422c16364190cd270f517e9d.mail.outlook.com";
-$mail_1->Subject  = 'Gracias por tu Interés en UTEC';
+$mail_1->Subject  = $subjectCliente;
 $mail_1->AddAddress($mailrpta);
 $mail_1->AltBody  = "Para ver este correo, utilize un visor de correo compatible con HTML";
 //$mail_1->AddEmbeddedImage('http://app.utec.edu.pe/admision/img/llama_gratis.jpg', 'llama_gratis');
@@ -288,7 +310,7 @@ $contenidorpta.="<p><img src='http://app.utec.edu.pe/admision/img/cabeceraWEB.jp
   </map>
 </p>";
 $contenidorpta.="<p>Hola que hace?, </p>
-                 <p><h2>¡Gracias por tu interés en UTEC.!</h2>
+                 <p><h2>".$tituloCliente."</h2>
                  <br />Hemos recibido tu consulta correctamente. 
                  <br />Pronto atenderemos tu consulta.</p>
                  <p>¿Quieres conocer más acerca de UTEC?</p>
@@ -335,9 +357,9 @@ $v7 = utf8_decode($carreras[$carrera_elegida]);
 $v8 = "-"; //utf8_decode($_POST['carrera2']);
 $v9 = utf8_decode($_POST['pais']);
 $v10 = utf8_decode($_POST['ciudad']);
-$v11 = $_POST['dia_n'];
-$v12 = $_POST['mes_n'];
-$v13 = $_POST['anio_n'];
+$v11 = $_POST['dia'];
+$v12 = $_POST['mes'];
+$v13 = $_POST['ano'];
 $v14 = utf8_decode($_POST['depto']);
 $v15 = utf8_decode($_POST['provincia']);
 $v16 = utf8_decode($_POST['distrito']);

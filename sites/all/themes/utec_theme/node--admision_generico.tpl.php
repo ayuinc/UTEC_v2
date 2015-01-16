@@ -11,7 +11,7 @@
 <?php $url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>
 <?php $end = end((explode('/', $url))); ?>
 
-<div class="container-sm">
+<div class="container-sm mb-35">
 	<h1 class="light"><?php print $title ?></h1>
 	<div class="separator-gray separator-lg"></div>
 	<?php if ($field_descripcion_corta_generica!='') { ?>
