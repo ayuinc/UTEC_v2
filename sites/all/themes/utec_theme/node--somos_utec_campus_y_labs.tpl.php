@@ -19,7 +19,7 @@
 		<?php if ($field_foto_campus!='') { ?>
 			<img src="<?php print('/'.$pathfile.$field_foto_campus)?>" class="img-responsive">
 		<?php } ?>
-		<p class="lead text-gray mb-35"><?php print $field_contenido_campus ?>
+		<?php print $field_contenido_campus ?>
 		<h3 class="text-gray-darker"><?php print t('Labs') ?></h3>
 		<?php print $field_introduccion_labs ?>
 		<?php if ($field_foto_labs!='') { ?>
