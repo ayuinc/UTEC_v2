@@ -5195,10 +5195,10 @@ textarea:-ms-input-placeholder {
   background-color: #f1f1f1; }
 .list-hover.list-hover-white > li:hover {
   background-color: #fff; }
-.list-hover.list-hover-unstyled > li > div {
+.list-hover.list-hover-unstyled > li > div:not(.banner-pic) {
   min-height: 0;
   padding: 0; }
-  .list-hover.list-hover-unstyled > li > div h3 {
+  .list-hover.list-hover-unstyled > li > div:not(.banner-pic) h3 {
     min-height: 0; }
 
 .lead-ch .list-custom ul li:before, .lead-ch.list-custom ul li:before {
