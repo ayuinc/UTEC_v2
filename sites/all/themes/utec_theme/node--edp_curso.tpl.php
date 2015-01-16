@@ -31,7 +31,7 @@
   $nodo_id = $node->field_menu_edp_detalles['und']['0']['entity']->nid;
   $nodo_id = $node->field_menu_edp_detalles['und']['0']['entity']->nid;
 	
-	$detalles = $node->field_menu_edp_detalles['und']['0'];
+	$detalles = $node->field_menu_edp_detalles['und'];
   //kpr($node);
 ?>
 
@@ -104,7 +104,7 @@
 		</div>
 		<div>
 			<ul class="grid-list grid-list-5 grid-list-hover size xs">
-				<?php foreach ($detalles as $detalle) : ?>
+				<?php foreach ($detalles as $key => $detalle) : ?>
 					<?php 
 						$tid = $detalle['entity']->field_tipo_de_detalle['und']['0']['tid'];
 					?>
