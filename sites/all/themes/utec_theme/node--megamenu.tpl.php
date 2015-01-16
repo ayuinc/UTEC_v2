@@ -361,7 +361,7 @@
 						<li>
 							<a href="/<?php print $language->prefix ?>/admision/pre-inscripcion"><?php print t('Pre-registration') ?></a>
 						</li>
-						<li>
+						<!--<li>
 							<a href="/<?php print $language->prefix ?>/admision/calendario-academico">
 								<?php if ($language->prefix == 'es'): ?>
 									<span>Calendario</span>de admisión
@@ -369,7 +369,7 @@
 									<span>Admissions</span>calendar
 								<?php endif ?>
 							</a>
-						</li>
+						</li>-->
 						<li>
 							<a href="/<?php print $language->prefix ?>/admision/visita-utec"><span><?php print t('Visit') ?></span>UTEC</a>
 						</li>
@@ -697,9 +697,9 @@
 						<li>
 							<a href="/<?php print $language->prefix ?>/admision/pre-inscripcion">Pre-Inscripción</a>
 						</li>
-						<li>
+						<!--<li>
 							<a href="/<?php print $language->prefix ?>/admision/calendario-academico"><span>Calendario</span>Académico</a>
-						</li>
+						</li>-->
 						<li>
 							<a href="/<?php print $language->prefix ?>/admision/visita-utec"><span>Visita</span>UTEC</a>
 						</li>

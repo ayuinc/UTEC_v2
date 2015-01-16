@@ -22,3 +22,27 @@
 		}
 	}	
 }
+
+.breadcrumbs-light,
+.breadcrumbs-dark {
+	.pane-page-breadcrumb {
+		@include position(absolute, 28px null null null);
+		z-index: 1980;
+		width: 100%;
+		@media #{$sm-down} {
+			display: none;
+		}
+		.pane-content {
+			@extend .container;
+			.breadcrumb {
+				@include list-unstyled;
+			}
+		}
+	}
+}
+
+.breadcrumbs-light {
+	.breadcrumb {
+		color: white;
+	}
+}
