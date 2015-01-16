@@ -14,10 +14,10 @@
 	$lugar = $node->field_lugar['und']['0']['value'];		 		
   $obejtivos = $node->field_objetivos['und']['0']['value'];	
   $dirigido = $node->field_dirigido_a['und']['0']['value'];	
-  $profesor_name = $node->field_profesor['und']['0']['entity']['name'];
-  $profesor_cargo = $node->field_profesor['und']['0']['entity']['field_descripci_n']['und']['0']['value'];
-  $profesor_resenia = $node->field_profesor['und']['0']['entity']['field_rese_a']['und']['0']['value'];
-  $profesor_pic = $node->field_profesor['und']['0']['entity']['picture']['filename'];
+  $profesor_name = $node->field_profesor['und']['0']['entity']->name;
+  $profesor_cargo = $node->field_profesor['und']['0']['entity']->field_descripci_n['und']['0']['value'];
+  $profesor_resenia = $node->field_profesor['und']['0']['entity']->field_rese_a['und']['0']['value'];
+  $profesor_pic = $node->field_profesor['und']['0']['entity']->picture['filename'];
   $field_requisito = $node->field_requisito['und']['0']['value'];
   $field_temario = $node->field_temario['und']['0']['value'];
   $field_inscribete = $node->field_inscribete['und']['0']['value'];
