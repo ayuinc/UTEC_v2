@@ -58,7 +58,7 @@ $titulo = $node->title;
 		</li>
 	</ul>
 	<h3><?php print t('If you applied via one of these paths, check your results here.') ?></h3>
-	<a href="#" class="btn btn-primary btn-lg uppercase see-more"><?php print t('See results here.') ?></a>
+	<a href="https://utec.desire2learn.com/" target="_blank" class="btn btn-primary btn-lg uppercase see-more"><?php print t('See results here.') ?></a>
 </div>
 
 

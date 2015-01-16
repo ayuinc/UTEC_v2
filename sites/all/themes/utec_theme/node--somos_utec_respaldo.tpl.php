@@ -15,7 +15,7 @@
   <p class="lead text-gray"><?php print $field_introduccion_respaldo ?></p>
   <div class="pv-ch-42">
     <div>
-      <ul class="grid-list grid-list-2 grid-list-1-xs grid-list-hover">
+      <ul class="grid-list grid-list-2 grid-list-1-xs grid-list-hover grid-list-hover-white">
         <?php foreach ($fids as $fid) : ?>
           <?php 
           // print_r($fid['value']);

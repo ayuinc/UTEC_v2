@@ -30,7 +30,7 @@
 			<em class="text-primary"><?php print $created ?></em>
 			<p class="lead"><?php print $texto_corto ?></p>
 		</div>
-		<div class="flex-space-between">
+		<div class="flex-space-between pb-21">
 			<div class="left">
 				<a href="<?php print $path ?>" class="btn btn-sm btn-primary btn-outline see-more">Leer más</a>
 			</div>

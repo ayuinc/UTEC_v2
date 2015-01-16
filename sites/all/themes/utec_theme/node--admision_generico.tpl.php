@@ -27,7 +27,7 @@
 
 <?php if (($end!='charlas-informativas') AND ($end!='informacion-economica') AND ($end!='orientacion-vocacional') AND ($end!='visita-utec') AND ($end!='eventos-utec')) { ?>
 <div class="container-sm form-custom mt-35"> 
-	<h3><?php print t("Admission Path") ?></h3>
+	<h3><?php print t("For more informaction:") ?></h3>
 	<form action="" data-submit="Formulario de inscripcion">
 		<input type="hidden" name="origen" value="<?php print $title ?>">
 		<div class="row">
@@ -76,8 +76,7 @@
 
 <?php if (($end=='charlas-informativas') OR ($end=='visita-utec')) { ?>
 <div class="container-sm">
-	<h3><?php print t('Fill the form') ?></h1>
-	<p><?php print t('Applicant Information') ?></p>
+	<h3><?php print t('Send us your information') ?></h1>
 </div>
 <div class="container-sm form-custom">
 	<form action="/registro.php" data-submit="Formulario de inscripcion" method="post">
@@ -88,30 +87,34 @@
 					<input type="text" class="form-control" placeholder="Nombres" name="nombres" id="nombres">
 				</div>
 				<div class="form-group col-sm-6">
-					<label for="" class="sr-only"><?php print t('Last Name') ?></label>
+					<label for="" class="sr-only"><?php print t('Middle Name') ?></label>
 					<input type="text" class="form-control" placeholder="Apellidos" name="apellidop" id="apellidop">
 				</div>
 			</div>
 			<div class="row">
+				<div class="form-group col-sm-6">
+					<label for="" class="sr-only"><?php print t('Last Name') ?></label>
+					<input type="text" class="form-control" placeholder="Apellidos" name="apellidom" id="apellidom">
+				</div>
 				<div class="col-sm-6 form-group">
 					<label for="" class="sr-only"><?php print t('E-Mail') ?></label>
 					<input type="email" class="form-control" placeholder="e-mail" name="email" id="email">
 				</div>
+			</div>
+			<div class="row">
 				<div class="form-group col-sm-6">
 					<label for="" class="sr-only"><?php print t('Phone') ?></label>
 					<input type="text" class="form-control" placeholder="Telefono" name="telefono" id="telefono">
-				</div>
-			</div>
-			<div class="row">
+				</div>				
 				<div class="form-group col-sm-6">
 					<label for="" class="sr-only"><?php print t('Undergrad Program') ?></label>
 					<select name="carrera" id="carrera" class="form-control select-override">
 						<option value="Carrera de interés"><?php print t('Undergrad Program') ?></option>
 					  <option value="15970"><?php print t('Industrial Engineering') ?></option>
-            <option value="14864"><?php print t('Mechanical Engineering') ?></option>
-            <option value="15968"><?php print t('Energy Engineering') ?></option>
-            <option value="15964"><?php print t('Electronic Engineering') ?></option>
-            <option value="15966"><?php print t('Industrial and Chemical Engineering') ?></option>
+			            <option value="14864"><?php print t('Mechanical Engineering') ?></option>
+			            <option value="15968"><?php print t('Energy Engineering') ?></option>
+			            <option value="15964"><?php print t('Electronic Engineering') ?></option>
+			            <option value="15966"><?php print t('Industrial and Chemical Engineering') ?></option>
 					</select>
 				</div>
 			</div>
