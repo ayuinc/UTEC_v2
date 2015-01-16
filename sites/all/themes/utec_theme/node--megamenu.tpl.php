@@ -33,14 +33,14 @@
 				<div class="inline-block pt-xs">
 					<ul class="small ml-ch-7 nav-list">
 						<li class="form-search">
-							<!--<form action="" class="form-inline mr-14">
+							<form action="" class="form-inline mr-14">
 								<div class="form-group mb-0">
 									<label for="search" class="sr-only"><?php print t('Search') ?></label>
 									<input type="search" class="input-sm form-control" width="210" placeholder="Buscar...">
 									<button type="submit" class="btn btn-default btn-xs" value="S"><i class="icon-search"></i></button>
 								</div>
-							</form>-->
-							<?php print $search_box; ?> 
+							</form>
+							<?php //print $search_box; ?> 
 						</li>
 						<li class="pt-7">
 							<a href="#" class="text-gray"><?php print t('Contact us') ?></a>
