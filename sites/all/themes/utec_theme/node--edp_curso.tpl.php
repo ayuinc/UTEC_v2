@@ -25,7 +25,7 @@
   $field_contactanos = $node->field_contactanos['und']['0']['value'];
   $field_brochure = $node->field_brochure['und']['0']['value'];
 
-  //print_r($node);
+  kpr($node);
 ?>
 
 
