@@ -58,7 +58,7 @@
       <a href="/somos-utec/trabaja-en-utec"><span>Trabaja</span> en UTEC</a>
     </li>
 		<li>
-			<a href="/somos-utec/utec-garage"><span>Utec</span>garage</a>
+			<a href="/somos-utec/utec-garage"><span>Utec</span> garage</a>
 		</li>
 		<li>
 			<a href="http://utecventures.com/" target="_blank" ><span>Utec</span>Ventures</a>
