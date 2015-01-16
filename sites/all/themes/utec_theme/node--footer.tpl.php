@@ -62,7 +62,7 @@
             <!--<li><a href="#"><small>Publicaciones</small></a></li>
             <li><a href="#"><small>Consultorías</small></a></li>-->
             <li><a href="/investigacion/empresas-y-clientes"><small><?php print t('Companies and Clients') ?></small></a></li>
-            <li><a href="#"><small><?php print t('Contact us') ?></small></a></li>
+            <li><a href="/investigacion/contacto"><small><?php print t('Contact us') ?></small></a></li>
 
           </ul>
         </li>
