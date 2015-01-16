@@ -4,6 +4,7 @@
   $path = $base_url.'/'.$theme_path;
   $pathfile= variable_get('file_public_path', conf_path() . '/files/');
 
+  render($page['content']['metatags']); 
   // $imgpath = image_style_url('YOUR_STYLE', $YOUR_FIELD[0]['uri']);
   // $element = array(
   //   '#tag' => 'meta', 
