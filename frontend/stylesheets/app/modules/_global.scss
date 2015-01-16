@@ -488,30 +488,13 @@ img.icon-utec {
 		);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// USER PICTURE in teacher's profile
+.user-picture {
+	img {
+		border-radius: 50%;
+		width: 140px;
+		height: 140px;
+		padding: 3px;
+		background-color: $gray-lighter;
+	}
+}
