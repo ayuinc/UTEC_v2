@@ -204,16 +204,16 @@
 				<div>
 					<ul>
 						<li>
-							<a href="/investigacion/proyectos"><?php print t('Projects') ?></a>
+							<a href="/<?php print $language->prefix ?>/investigacion/proyectos"><?php print t('Projects') ?></a>
 						</li>
 						<li>
-							<a href="/investigacion/publicaciones"><?php print t('Publications') ?></a>
+							<a href="/<?php print $language->prefix ?>/investigacion/publicaciones"><?php print t('Publications') ?></a>
 						</li>
 						<li>
-							<a href="/investigacion/empresas-y-clientes"><span><?php print t('Companies') ?></span><?php print t('and clients') ?></a>
+							<a href="/<?php print $language->prefix ?>/investigacion/empresas-y-clientes"><span><?php print t('Companies') ?></span><?php print t('and clients') ?></a>
 						</li>
 						<li>
-							<a href="/investigacion/contacto"><?php print t('Contact us') ?></a>
+							<a href="/<?php print $language->prefix ?>/investigacion/contacto"><?php print t('Contact us') ?></a>
 						</li>
 					</ul>
 				</div>
