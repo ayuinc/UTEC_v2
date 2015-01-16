@@ -5123,7 +5123,10 @@ img.icon-utec {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 7; }
+  z-index: 7;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
 
 .gray-light {
   color: #bbb !important; }
@@ -5712,16 +5715,20 @@ img.icon-utec {
       box-shadow: none;
       outline: none;
       background-image: none;
-      background-color: #8f8d8e;
-      color: white; }
+      background-color: #c4c3c4;
+      color: white;
+      padding: 2px 9px;
+      padding: 0.14286rem 0.64286rem; }
       .language-switcher-locale-url li a.language-link:hover, .language-switcher-locale-url li a.language-link.active {
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
         box-shadow: none;
         outline: none;
         background-image: none;
-        background-color: #323232;
-        color: #00BFDF; }
+        background-color: #8f8d8e;
+        color: white; }
+    .language-switcher-locale-url li:first-child a.language-link {
+      margin-right: 7px; }
 
 .site-menu {
   position: fixed;

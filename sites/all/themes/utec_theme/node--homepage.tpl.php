@@ -27,7 +27,7 @@
     <source src="/sites/all/themes/utec_theme/assets/video/UTEC_home.ogg" type='video/ogg' />
     <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
   </video>
-  <div class="video-placeholder" style="background: url(http://104.131.4.19/sites/all/themes/utec_theme/assets/img/project-bg-1.jpg) no-repeat center top;"></div>
+  <div class="video-placeholder visible-xs-block" style="background-image: url(http://104.131.4.19/sites/all/themes/utec_theme/assets/img/project-bg-1.jpg);"></div>
   <div class="overlay flex-middle-end text-center text-white">
   	<div class="container relative home-introduccion normalize-text pv-70">
 			<h1 class="thin lead">UTEC, plataforma abierta para innovar</h1>

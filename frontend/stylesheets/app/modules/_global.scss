@@ -395,6 +395,7 @@ img.icon-utec {
 .video-placeholder {
 	@include position(absolute, 0 0 0 0);
 	z-index: 7;
+	@include bg-img-control;
 }
 
 .gray-light {
