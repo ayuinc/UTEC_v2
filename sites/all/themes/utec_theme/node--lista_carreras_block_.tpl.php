@@ -10,11 +10,11 @@
 					<div><i class="icon-ing-quimica"></i></div>
 					<h2>
 						<a href="/carreras/ingenieria-quimica-industrial">
-							<?php if ($language == 'en'): ?>
+							<?php if ($language->prefix == 'en'): ?>
 								<span><?php print t('Industrial') ?></span>
 								<span><?php print t('Chemical') ?></span>
 								<span><?php print t('Engineering') ?></span>
-							<?php elseif ($language == 'es'): ?>
+							<?php elseif ($language->prefix == 'es'): ?>
 								<span><?php print t('Engineering') ?></span>
 								<span><?php print t('Chemical') ?></span>
 								<span><?php print t('Industrial') ?></span>
