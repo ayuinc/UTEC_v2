@@ -9,7 +9,7 @@
 	$profesor = $node->field_profesor['und']['0']['entity']->name;		 		
 	$field_pdf_proyectos= $node->field_pdf_proyectos['und']['0']['value']['filename'];
 	
-	print_r($node->field_tags);
+	//print_r($node->field_tags);
 ?>
 
 
@@ -32,7 +32,7 @@
 	<?php if ($tags!='') { ?>
 		<div><span class="lead bold">Tags: </span>
 			<?php foreach ($tags as $key => $value) : ?>
-				<span class="lead"><?php print $value['taxonomy_term']->name; ?></span>
+				<span class="lead">- <?php print $value['taxonomy_term']->name; ?></span>
 			<?php endforeach; ?>
 		</div>
 	<?php } ?>
