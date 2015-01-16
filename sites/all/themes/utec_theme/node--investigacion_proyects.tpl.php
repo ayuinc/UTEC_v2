@@ -12,16 +12,14 @@
 	print_r($node->tags);
 ?>
 
-<li>
-	<!--<div>
-		<img src="<?php print $pathfile.$image; ?>" alt="#" class="img-responsive">
-	</div>-->
-	<div>
-		<h3 class="bold"><?php print $title ?></h3>
-		<div><span class="lead bold">Profesor: </span><span class="lead"><?php print $profesor ?></span></div>
-		<div><span class="lead bold">Tags: </span><span class="lead"><?php print $tags ?></span></div>
-	</div>
-</li>
 
+<!--<div>
+	<img src="<?php print $pathfile.$image; ?>" alt="#" class="img-responsive">
+</div>-->
+<div class="pb-49">
+	<h3><?php print $title ?></h3>
+	<div><span class="lead bold">Profesor: </span><span class="lead"><?php print $profesor ?></span></div>
+	<div><span class="lead bold">Tags: </span><span class="lead"><?php print $tags ?></span></div>
+</div>
 
 
