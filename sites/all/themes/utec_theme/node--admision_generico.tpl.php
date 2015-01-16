@@ -81,25 +81,21 @@
 <div class="container-sm form-custom">
 	<form action="/registro.php" data-submit="Formulario de inscripcion">
 			<div class="row">
-				<div class="form-group col-sm-7">
+				<div class="form-group col-sm-6">
 					<label for="" class="sr-only"><?php print t('Names') ?></label>
 					<input type="text" class="form-control" placeholder="Nombres" name="nombres" id="nombres">
 				</div>
-			</div>
-			<div class="row">
-				<div class="form-group col-sm-7">
+				<div class="form-group col-sm-6">
 					<label for="" class="sr-only"><?php print t('Last Name') ?></label>
 					<input type="text" class="form-control" placeholder="Apellidos" name="apellidop" id="apellidop">
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-7 form-group">
+				<div class="col-sm-6 form-group">
 					<label for="" class="sr-only"><?php print t('E-Mail') ?></label>
 					<input type="email" class="form-control" placeholder="e-mail" name="email" id="email">
 				</div>
-			</div>
-			<div class="row">
-				<div class="form-group col-sm-7">
+				<div class="form-group col-sm-6">
 					<label for="" class="sr-only"><?php print t('Phone') ?></label>
 					<input type="text" class="form-control" placeholder="Telefono" name="telefono" id="telefono">
 				</div>
@@ -115,12 +111,6 @@
             <option value="15964">Ingeniería Electrónica</option>
             <option value="15966">Ingeniería Química Industrial</option>
 					</select>
-				</div>
-			</div>
-			<div class="row">
-				<div class="form-group col-sm-7">
-					<label for="" class="sr-only"><?php print t('Check') ?></label>
-					<textarea class="form-control" placeholder="Consulta" name="consulta" id="consulta"></textarea>
 				</div>
 			</div>
 			<div class="row">
