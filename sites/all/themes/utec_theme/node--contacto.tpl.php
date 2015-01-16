@@ -9,8 +9,8 @@
 </div>
 <div class="container-sm form-custom"> 
 	<h3>Contacto general</h3>
-	<form action="" data-submit="Formulario de inscripcion">
-		<input type="hidden" name="origen" value="<?php print $title ?>">
+	<form action="/registro.php" data-submit="Formulario de inscripcion" method="post">
+		<input type="hidden" name="origen" value="<?php print $title ?>"> 
 		<div class="row">
 			<div class="form-group col-sm-4">
 				<label for="" class="sr-only">Nombres</label>
