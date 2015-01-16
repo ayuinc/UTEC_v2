@@ -6,6 +6,8 @@
 
   $titulo = $node->title;
   $cuerpo = $node->body['und']['0']['value'];
+  $logo = $node->field_image['und']['0']['value']['filename'];
+  $banner = $node->field_banner['und']['0']['value']['filename'];
   //$fids   = $node->field_convenio['und'];
   // print_r($fids);
   
