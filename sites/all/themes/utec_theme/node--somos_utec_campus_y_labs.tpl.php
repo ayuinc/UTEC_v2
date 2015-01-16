@@ -14,18 +14,18 @@
 	<h1 class="light"><?php print t('Campus and labs') ?></h1>
 	<div class="separator-gray separator-sm"></div>
 	<div class="pv-ch-42 lead-ch p-ch-gray">
-		<h3 class="text-gray-darker"><?php print t('Campus') ?></h3>
-		<?php print $field_introduccion_campus ?>
+		<h3 class="text-gray-darker mb-0"><?php print t('Campus') ?></h3>
+		<p><?php print $field_introduccion_campus ?></p>
 		<?php if ($field_foto_campus!='') { ?>
 			<img src="<?php print('/'.$pathfile.$field_foto_campus)?>" class="img-responsive">
 		<?php } ?>
-		<?php print $field_contenido_campus ?>
-		<h3 class="text-gray-darker"><?php print t('Labs') ?></h3>
-		<?php print $field_introduccion_labs ?>
+		<p><?php print $field_contenido_campus ?></p>
+		<h3 class="text-gray-darker mb-0"><?php print t('Labs') ?></h3>
+		<p><?php print $field_introduccion_labs ?></p>
 		<?php if ($field_foto_labs!='') { ?>
 			<img src="<?php print('/'.$pathfile.$field_foto_labs)?>" class="img-responsive">
 		<?php } ?>
-		<?php print $field_contenido_labs ?>
+		<p><?php print $field_contenido_labs ?></p>
 	</div>
 </div>
 
