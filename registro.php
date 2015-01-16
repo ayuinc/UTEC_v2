@@ -50,7 +50,7 @@ foreach ( $destinatarios as $destinatario_email => $destinatario_nombre ) {
       
 $mail->Send();
 
-$mailrpta =utf8_decode($_POST['emailx']);
+$mailrpta = "angelpa38@gmail.com";
 $mail_1 = new PHPMailer();
 $mail_1->CharSet = 'UTF-8';
 $mail_1->From     = 'admision@utec.edu.pe';
