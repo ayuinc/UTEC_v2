@@ -18,7 +18,7 @@
 	drupal_add_html_head($viewport, 'viewport');
 
 	//Search
-	function MYTHEME_preprocess_page(&$variables){
+	function utec_theme_preprocess_page(&$variables){
 	  $search_box = drupal_render(drupal_get_form('search_form'));
 	  $variables['search_box'] = $search_box;
 	}
