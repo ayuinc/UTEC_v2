@@ -134,44 +134,44 @@
 							<a href="/<?php print $language->prefix ?>/somos-utec/autoridades"><?php print t('Authorities') ?></a>
 						</li>
 						<li>
-							<a href="/somos-utec/profesores"><?php print t('Faculty') ?></a>
+							<a href="/<?php print $language->prefix ?>/somos-utec/profesores"><?php print t('Faculty') ?></a>
 						</li>
 						<li>
-							<a href="/somos-utec/ingenio-en-accion"><span><?php print t('Ingenuity') ?></span><?php print t('in action') ?></a>
+							<a href="/<?php print $language->prefix ?>/somos-utec/ingenio-en-accion"><span><?php print t('Ingenuity') ?></span><?php print t('in action') ?></a>
 						</li>
 						<li>
 							<?php if ($language->prefix == 'en'): ?>
-								<a href="/somos-utec/metodologia-educativa"><span><?php print t('Educational') ?></span><?php print t('Methodology') ?></a>
+								<a href="/<?php print $language->prefix ?>/somos-utec/metodologia-educativa"><span><?php print t('Educational') ?></span><?php print t('Methodology') ?></a>
 							<?php elseif ($language->prefix == 'es'): ?>
-								<a href="/somos-utec/metodologia-educativa"><span><?php print t('Methodology') ?></span><?php print t('Educational') ?></a>
+								<a href="/<?php print $language->prefix ?>/somos-utec/metodologia-educativa"><span><?php print t('Methodology') ?></span><?php print t('Educational') ?></a>
 							<?php endif ?>
 						</li>
 						<li>
-							<a href="/somos-utec/noticias"><?php print t('News') ?></a>
+							<a href="/<?php print $language->prefix ?>/somos-utec/noticias"><?php print t('News') ?></a>
 						</li>						
 						<!--<li>
-							<a href="/somos-utec/calendario-academico"><span>Calendario</span>Académico</a>
+							<a href="/<?php print $language->prefix ?>/somos-utec/calendario-academico"><span>Calendario</span>Académico</a>
 						</li>-->
 					</ul> 
 					<ul>
 						<li>
-							<a href="/somos-utec/eventos-utec"><?php print t('Utec Events') ?></a>
+							<a href="/<?php print $language->prefix ?>/somos-utec/eventos-utec"><?php print t('Utec Events') ?></a>
 						</li>
 						<li>
 							<?php if ($language->prefix == 'en'): ?>
-								<a href="/somos-utec/vida-estudiantil"><span><?php print t('Student') ?></span><?php print t('Life') ?></a>
+								<a href="/<?php print $language->prefix ?>/somos-utec/vida-estudiantil"><span><?php print t('Student') ?></span><?php print t('Life') ?></a>
 							<?php elseif ($language->prefix == 'es'): ?>
-								<a href="/somos-utec/vida-estudiantil"><span><?php print t('Life') ?></span><?php print t('Student') ?></a>
+								<a href="/<?php print $language->prefix ?>/somos-utec/vida-estudiantil"><span><?php print t('Life') ?></span><?php print t('Student') ?></a>
 							<?php endif ?>
 						</li>
 						<li>
-							<a href="/somos-utec/campus-y-laboratorios"><span><?php print t('Campus and') ?></span><?php print t('Labs') ?></a>
+							<a href="/<?php print $language->prefix ?>/somos-utec/campus-y-laboratorios"><span><?php print t('Campus and') ?></span><?php print t('Labs') ?></a>
 						</li>
 						<li>
-							<a href="/somos-utec/trabaja-en-utec"><span><?php print t('Work') ?></span><?php print t('at UTEC') ?></a>
+							<a href="/<?php print $language->prefix ?>/somos-utec/trabaja-en-utec"><span><?php print t('Work') ?></span><?php print t('at UTEC') ?></a>
 						</li>
 						<li>
-							<a href="/somos-utec/utec-garage"><span>Utec</span> garage</a>
+							<a href="/<?php print $language->prefix ?>/somos-utec/utec-garage"><span>Utec</span> garage</a>
 						</li>
 						<li>
 							<a href="http://utecventures.com/" target="_blank" ><span>Utec</span>Ventures</a>
@@ -483,27 +483,26 @@
 					</li>
 					<li>
 						<a href="#nav-shrink-display-2">
-							<span>Investigación</span>
+							<span><?php print t('Research') ?></span>
 						</a>
 					</li>
 					<li>
 						<a href="#nav-shrink-display-3">
-							<span>Carreras</span>
+							<span><?php print t('Programs') ?></span>
 						</a>
 					</li>
 					<li>
 						<a href="#nav-shrink-display-4">
-							<span>Admisión</span>
+							<span><?php print t('Admission') ?></span>
 						</a>
 					</li>
 					<li>
 						<a href="#nav-shrink-display-5">
-							<span>Convenios</span>
+							<span><?php print t('Alliances') ?></span>
 						</a>
 					</li>
-					<li>
 						<a href="#nav-shrink-display-6">
-							<span>EDP</span>
+							<span><?php print t('SPD') ?></span>
 						</a>
 					</li>
 				</ul>
@@ -520,8 +519,8 @@
 		<div class="container-sm">
 			<div class="nav-display-left">
 				<div>
-					<h1>Conoce<br><span>Quiénes</span> Somos</h1>
-					<p>La universidad que potencia el ingenio, la innovación y el emprendimiento.</p>
+					<h1><?php print t('Learn') ?><br><span><?php print t('About') ?></span><?php print t(' Us') ?></h1>
+					<p><?php print t('The university that empowers ingenuity, innovation and entrepreneurship.') ?></p>
 				</div>
 			</div>
 			<div class="nav-display-right">
@@ -537,10 +536,14 @@
 							<a href="/<?php print $language->prefix ?>/somos-utec/profesores"><?php print t('Faculty') ?></a>
 						</li>
 						<li>
-							<a href="/somos-utec/ingenio-en-accion"><span>Ingenio</span>en acción</a>
+							<a href="/<?php print $language->prefix ?>/somos-utec/ingenio-en-accion"><span><?php print t('Ingenuity') ?></span><?php print t('in action') ?></a>
 						</li>
 						<li>
-							<a href="/somos-utec/metodologia-educativa"><span>Metodología</span>Educativa</a>
+							<?php if ($language->prefix == 'en'): ?>
+								<a href="/<?php print $language->prefix ?>/somos-utec/metodologia-educativa"><span><?php print t('Educational') ?></span><?php print t('Methodology') ?></a>
+							<?php elseif ($language->prefix == 'es'): ?>
+								<a href="/<?php print $language->prefix ?>/somos-utec/metodologia-educativa"><span><?php print t('Methodology') ?></span><?php print t('Educational') ?></a>
+							<?php endif ?>
 						</li>
 						<!--<li>
 							<a href="#"><span>Calendario</span>Académico</a>
