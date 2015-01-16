@@ -12,7 +12,7 @@ if (!isset($_POST['apellidom'])) {$_POST['apellidom'] = "";};
 if (!isset($_POST['tipo-documento'])) {$_POST['tipo-documento'] = "";};
 if (!isset($_POST['documento'])) {$_POST['documento'] = "";};
 if (!isset($_POST['genero'])) {$_POST['genero'] = "M";};
-if (!isset($_POST['carrera'])) {$_POST['carrera'] = "";};
+if (!isset($_POST['carrera'])) {$_POST['carrera'] = "00000";};
 if (!isset($_POST['pais'])) {$_POST['pais'] = "";};
 if (!isset($_POST['ciudad'])) {$_POST['ciudad'] = "";};
 if (!isset($_POST['dia'])) {$_POST['dia'] = ""; $fecha_n = ""; };
@@ -50,6 +50,7 @@ $carreras = array(
     '15966' => 'Ingeniería Química Industrial',
     '15968' => 'Ingeniería de la Energía',
     '15970' => 'Ingeniería Industrial', 
+    '00000' => 'N/S', 
 );
 
 $mail = new PHPMailer();
@@ -162,6 +163,51 @@ if($origen == "Contacto")
 
     $familia = "CONTACTO";
     $origen = "pagina-contacto";  
+}
+
+if($origen == "Visita Utec")
+{
+    $tituloTelemarketing = "Formulario de Visita UTEC - Datos Personales";
+    $subjectTelemarketing = "Solicitud - Formulario de Visita UTEC";
+    $fromTelemarketing = "webmaster@utec.edu.pe";
+    $fromNameTelemarketing = "UTEC";
+    $tituloCliente = "¡Gracias por tu interés en visitar UTEC.!";
+    $subjectCliente = "Gracias por tu Interés en visitar UTEC";
+    $fromCliente = "informes@utec.edu.pe";
+    $fromNameCliente = "Universidad de Ingeniería & Tecnología";
+
+    $familia = "CONTACTO";
+    $origen = "pagina-visita-utec";  
+}
+
+if($origen == "Ven a la UTEC")
+{
+    $tituloTelemarketing = "Formulario de Ven a la UTEC - Datos Personales";
+    $subjectTelemarketing = "Solicitud - Formulario de Ven a la UTEC";
+    $fromTelemarketing = "webmaster@utec.edu.pe";
+    $fromNameTelemarketing = "UTEC";
+    $tituloCliente = "¡Gracias por tu interés en venir a la UTEC.!";
+    $subjectCliente = "Gracias por tu Interés en venir a la UTEC";
+    $fromCliente = "informes@utec.edu.pe";
+    $fromNameCliente = "Universidad de Ingeniería & Tecnología";
+
+    $familia = "CONTACTO";
+    $origen = "pagina-ven-a-la-utec";  
+}
+
+if($origen == "Trabaja en UTEC")
+{
+    $tituloTelemarketing = "Formulario de Trabaja en UTEC - Datos Personales";
+    $subjectTelemarketing = "Solicitud - Formulario de Trabaja en UTEC";
+    $fromTelemarketing = "webmaster@utec.edu.pe";
+    $fromNameTelemarketing = "UTEC";
+    $tituloCliente = "¡Gracias por tu interés en UTEC.!";
+    $subjectCliente = "Gracias por tu Interés en UTEC";
+    $fromCliente = "informes@utec.edu.pe";
+    $fromNameCliente = "Universidad de Ingeniería & Tecnología";
+
+    $familia = "CONTACTO";
+    $origen = "pagina-trabaja-en-utec";  
 }
 
 
