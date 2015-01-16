@@ -18,6 +18,6 @@
 	</div>
 	<div class="pv-ch-42 lead-ch p-ch-gray">
 		<p>Ver el PDF:</p>
-		<p><a href="<?php '/'.$pathfile.$pdf ?>"><?php print $pdf ?></a></p>
+		<p><a href="<?php print('/'.$pathfile.$pdf); ?>"><?php print $pdf ?></a></p>
 	</div>
 </div>
