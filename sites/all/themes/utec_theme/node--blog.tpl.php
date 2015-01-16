@@ -10,9 +10,9 @@
 	$blogger_name = $node->field_blogger['und']['0']['entity']->name;
 	$blogger_cargo = $node->field_blogger['und']['0']['entity']->field_descripci_n['und']['0']['value'];
 	$created = date('d F Y', strtotime($node->created));
-	$share_blog = $node->field_share_blog['und']['0']['value'];
+	$output = field_view_field('node', $node, 'field_share_blog');
 
-	print_r($node);
+	// print_r($node);
 ?>
 
 <h3 class="lead"><?php print $title ?></h3>
@@ -25,7 +25,7 @@
 	</div>
 	<div class="right">
 		<ul class="social-links">
-			<div class="addthis_toolbox"></div>
+			<?php print $output; ?>
 		</ul>
 	</div>
 </div>
