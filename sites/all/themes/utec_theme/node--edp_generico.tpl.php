@@ -8,7 +8,6 @@
 	<?php print $body ?>	
 </div>
 <div class="container-sm form-custom"> 
-	<h3>Contacto general</h3>
 	<form action="" data-submit="Formulario de inscripcion">
 		<input type="hidden" name="origen" value="<?php print $title ?>">
 		<div class="row">
