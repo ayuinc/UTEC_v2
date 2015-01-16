@@ -6,6 +6,9 @@ session_start();
 include_once( 'PHPMailer/class.phpmailer.php' );
 require_once( 'nusoap2/nusoap.php' );
 
+$nombres = $_POST['nombres'];
+echo $nombres;
+
 echo utf8_decode($_POST['nombres']);
 
 if (!isset($_POST['nombres'])) {$_POST['nombres'] = "";};

@@ -227,29 +227,72 @@
 		<div class="container-sm">
 			<div class="nav-display-left">
 				<div>
-					<h1>Nuestra <span>oferta</span><br>Académica</h1>
-					<p>Lleva a nuestros estudiantes a experimentar la ingeniería desde el día uno a través de nuestra metodología de aprendizaje activo.</p>
+					<?php if ($language->prefix == 'en'): ?>
+						<h1><?php print t('Our ') ?> <span><?php print t('Academic') ?></span><br><?php print  t('Offer') ?></h1>
+					<?php elseif ($language->prefix == 'es'): ?>
+						<h1><?php print t('Our ') ?> <span><?php print t('Offer') ?></span><br><?php print  t('Academic') ?></h1>
+					<?php endif ?>
+					<p><?php print t('With our active learning methodology, our students experience engineering from day one.') ?></p>
 				</div>
 			</div>
 			<div class="nav-display-right">
 				<div>
 					<ul>
 						<li>
-							<a href="/carreras/ingenieria-industrial"><span>Ingeniería</span>Industrial</a>
+							<a href="/carreras/ingenieria-industrial">
+								<?php if ($language->prefix == 'en'): ?>
+									<span><?php print t('Industrial') ?></span><?php print t('Engineering') ?>
+								<?php elseif ($language->prefix == 'es'): ?>
+									<span><?php print t('Engineering') ?></span>
+									<?php print t('Industrial') ?>
+								<?php endif ?>
+							</a>
 						</li>
 						<li>
-							<a href="/carreras/ingenieria-de-la-energia"><span>Ingeniería</span>De la Energía</a>
+							<a href="/carreras/ingenieria-de-la-energia">
+								<?php if ($language->prefix == 'en'): ?>
+									<span><?php print t('Energy') ?></span>
+									<?php print t('Engineering') ?>
+								<?php elseif ($language->prefix == 'es'): ?>
+									<span><?php print t('Engineering') ?></span>
+									<?php print t('Energy') ?>
+								<?php endif ?>
+							</a>
 						</li>
 						<li>
-							<a href="/carreras/ingenieria-quimica-industrial"><span>Ingeniería</span>Química Industrial</a>
+							<a href="/carreras/ingenieria-quimica-industrial">
+								<?php if ($language->prefix == 'en'): ?>
+									<span><?php print t('Industrial Chemical') ?></span>
+									<?php print t('Engineering') ?>
+								<?php elseif ($language->prefix == 'es'): ?>
+									<span><?php print t('Engineering') ?></span>
+									<?php print t('Industrial Chemical') ?>
+								<?php endif ?>
+							</a>	
 						</li>
 						<li>
-							<a href="/carreras/ingenieria-mecanica"><span>Ingeniería</span>Mecánica</a>
+							<a href="/carreras/ingenieria-mecanica">
+								<?php if ($language->prefix == 'en'): ?>
+									<span><?php print t('Mechanical') ?></span>
+									<?php print t('Engineering') ?>
+								<?php elseif ($language->prefix == 'es'): ?>
+									<span><?php print t('Engineering') ?></span>
+									<?php print t('Mechanical') ?>
+								<?php endif ?>
+							</a>
 						</li>
 					</ul>
 					<ul>
 						<li>
-							<a href="/carreras/ingenieria-electronica"><span>Ingeniería</span>Electrónica</a>
+							<a href="/carreras/ingenieria-electronica">
+								<?php if ($language->prefix == 'en'): ?>
+									<span><?php print t('Electronic') ?></span>
+									<?php print t('Engineering') ?>
+								<?php elseif ($language->prefix == 'es'): ?>
+									<span><?php print t('Engineering') ?></span>
+									<?php print t('Electronic') ?>
+								<?php endif ?>
+							</a>
 						</li>
 						<!--<li>
 							<a href="/carreras/menciones">Menciones</a>
