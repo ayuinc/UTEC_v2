@@ -154,10 +154,10 @@
 			<a href="#"><span>Proceso de</span>ampliación</a>
 		</li>-->
 		<li>
-			<a href="/convenios/ven-a-la-utec"><span>Ven a</span>la utec</a>
+			<a href="/convenios/ven-a-la-utec"><span>Ven a</span> la utec</a>
 		</li>
 		<li>
-			<a href="/convenios/convenios-de-intercambio"><span>Convenios de</span>Intercambio</a>
+			<a href="/convenios/convenios-de-intercambio"><span>Convenios de</span> Intercambio</a>
 		</li>
   </ul>
 </div>
@@ -170,7 +170,7 @@
 			<a href="/edp/cursos/cursos-online"><span>Cursos</span>online</a>
 		</li>-->
 		<li>
-			<a href="/edp/cursos/cursos-cortos"><span>Cursos</span>Cortos</a>
+			<a href="/edp/cursos/cursos-cortos"><span>Cursos</span> Cortos</a>
 		</li>
 		<!--<li>
 			<a href="/edp/cursos/cursos-adhoc"><span>Cursos</span>Adhoc</a>
