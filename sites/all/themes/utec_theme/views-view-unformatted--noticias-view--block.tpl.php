@@ -9,7 +9,7 @@
 ?>
 <div class="pv-28" id="noticias">
 	<h2 class="lead medium mb-0"><span class="text-gray-darker">Noticias: Al día con la</span> <span class="text-gray">UTEC</span></h2>
-	<h4 class="lead mb-56 mt-0">Alentamos el emprendimiento y la innovación.</h4>
+	<h4 class="lead mb-56 mt-0"><?php print t('We encourage entrepreneurship and innovation.') ?></h4>
 		<?php //global $count; ?>
     <?php foreach ($rows as $id => $row): ?>
 		    <?php

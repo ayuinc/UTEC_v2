@@ -5,7 +5,7 @@
 <?php $field_contenido = $node->field_contenido['und']['0']['value']; ?>
 
 <div class="container-sm">
-	<h1 class="light">Calendario Académico</h1>
+	<h1 class="light"><?php print t('Academic Calendar') ?></h1>
 	<div class="separator-gray separator-lg"></div>
 	<div class="pv-42 lead-ch">
 		<h3><?php print $field_titulo_del_evento ?></h3>

@@ -18,17 +18,17 @@ $perfil_link = $node->field_perfil_egresado_link['und']['0']['value'];
 
 ?>
 <div class="container-sm">
-	<h1 class="light">Preguntas frecuentes</h1>
+	<h1 class="light"><?php print t('Frequently Asked Questions') ?></h1>
 	<div class="separator-gray separator-lg"></div>
 	<div class="list-custom pv-42 lead-ch p-ch-gray">
 	<ul>
 		<li>
-			<h5>¿Dónde queda el campus?</h5>
-			<p>Actualmente las clases son dictadas en el Campus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste mollitia quibusdam esse enim recusandae labore eos magni saepe explicabo, possimus a, quae dolor, adipisci minus ipsum corporis harum neque at.</p>
+			<h5><?php print t('Where is the campus located?') ?></h5>
+			<p><?php print t('Currenty, classes are held in Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste mollitia quibusdam esse enim recusandae labore eos magni saepe explicabo, possimus a, quae dolor, adipisci minus ipsum corporis harum neque at.') ?></p>
 		</li>
 		<li>
-			<h5>¿Cuándo terminan el campus Barranco?</h5>
-			<p>Actualmente las clases son dictadas en el Campus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste mollitia quibusdam esse enim recusandae labore eos magni saepe explicabo, possimus a, quae dolor, adipisci minus ipsum corporis harum neque at.</p>
+			<h5><?php print t('When will the campus located in Barranco be ready?') ?></h5>
+			<p><?php print t('Currenty, classes are held in Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste mollitia quibusdam esse enim recusandae labore eos magni saepe explicabo, possimus a, quae dolor, adipisci minus ipsum corporis harum neque at.') ?></p>
 		</li>
 	</ul>
 	</div>

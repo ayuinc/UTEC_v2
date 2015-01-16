@@ -30,9 +30,9 @@
   <div class="video-placeholder visible-xs-block" style="background-image: url(http://104.131.4.19/sites/all/themes/utec_theme/assets/img/project-bg-1.jpg);"></div>
   <div class="overlay flex-middle-end text-center text-white">
   	<div class="container relative home-introduccion normalize-text pv-70">
-			<h1 class="thin lead">UTEC, plataforma abierta para innovar</h1>
-			<h4 class="thin pv-7 uppercase">- DESCÚBRELA -</h4>
-		</div>
+		<h1 class="thin lead"><?php print t('UTEC, the open platform to innovate') ?></h1>
+		<h4 class="thin pv-7 uppercase"><?php print t('- DISCOVER IT -') ?></h4>
+	</div>
   </div>
   <a class="scroll-down scroll-down-sq size lg" href="#home-sec-1" rel="nofollow">
 		<i class="icon-arrows-down bg-primary text-white"></i>

@@ -16,7 +16,7 @@ $field_temario_examen = $node->field_temario_examen['und']['0']['value'];
 		<p class="lead text-gray"><?php print $field_descripcion_corta_examen ?></p>
 		<div class="mb-ch-42">
 			<div>
-				<h3>¿Cómo postular?</h3>
+				<h3><?php print t('How to apply?') ?>v</h3>
 				<div class="list-custom">
 					<?php  print $field_como_postula_examen ?>
 				</div>
@@ -74,7 +74,7 @@ $field_temario_examen = $node->field_temario_examen['und']['0']['value'];
 				</ul>
 			</div>-->
 			<div>
-				<h3>Costos:</h3>
+				<h3><?php print t('Costs:') ?></h3>
 					<div class="list-custom">
 						<ul><li><?php print $field_costos_examen ?></li></ul>
 					</div>
@@ -91,21 +91,21 @@ $field_temario_examen = $node->field_temario_examen['und']['0']['value'];
 					<table class="table">
 						<thead>
 							<tr>
-								<td>Evento</td>
-								<td>Fecha</td>
+								<td><?php print t('Event') ?></td>
+								<td><?php print t('Date') ?></td>
 							</tr>
 						</thead>
 					<tbody>
 						<tr>
-							<td class="highlight text-center">Inicio de inscripciones</td>
+							<td class="highlight text-center"><?php print t('Registration starts') ?></td>
 							<td>01/04/2014</td>
 						</tr>
 						<tr>
-							<td class="highlight text-center">Cierre de inscripciones</td>
+							<td class="highlight text-center"><?php print t('Registration ends') ?></td>
 							<td>01/03/2015</td>
 						</tr>
 						<tr>
-							<td class="highlight text-center">Examen de Admisión</td>
+							<td class="highlight text-center"><?php print t('Admissions Exam') ?></td>
 							<td>04/03/2015</td>
 						</tr>
 					</tbody>
