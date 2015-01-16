@@ -42,8 +42,9 @@
 </div>
 
 <div class="container-sm form-custom"> 
-	<h3>Trabaja en utec</h3>
+	<h3>Aplica a UTEC</h3>
 	<form action="" data-submit="Formulario de inscripcion">
+		<input type="hidden" name="origen" value="<?php print $title ?>">
 		<div class="row">
 			<div class="form-group col-sm-4">
 				<label for="" class="sr-only">Nombres</label>

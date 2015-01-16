@@ -29,6 +29,7 @@
 <div class="container-sm form-custom mt-35"> 
 	<h3>Modalidades de solicitud de admisión</h3>
 	<form action="" data-submit="Formulario de inscripcion">
+		<input type="hidden" name="origen" value="<?php print $title ?>">
 		<div class="row">
 			<div class="form-group col-sm-4">
 				<label for="" class="sr-only">Nombres</label>
@@ -73,13 +74,14 @@
 </div>	
 <?php } ?>
 
-<?php if ($end=='charlas-informativas') { ?>
+<?php if (($end=='charlas-informativas') OR ($end=='visita-utec')) { ?>
 <div class="container-sm">
 	<h3><?php print t('Fill the form') ?></h1>
 	<p><?php print t('Applicant Information') ?></p>
 </div>
 <div class="container-sm form-custom">
 	<form action="/registro.php" data-submit="Formulario de inscripcion">
+			<input type="hidden" name="origen" value="<?php print $title ?>">
 			<div class="row">
 				<div class="form-group col-sm-6">
 					<label for="" class="sr-only"><?php print t('Names') ?></label>
