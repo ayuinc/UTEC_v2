@@ -319,3 +319,24 @@ $header-on-scroll-height: 56px;
 		}
 	}
 }
+
+// TOOL BAR SEARCH FORM 
+#header {
+	.tool-bar {
+		.search-form {
+			.form-item {
+				label {
+					display: none;
+				}
+			}
+			.form-text {
+				width: 210px;
+				@extend .form-control;
+				@extend .input-sm;
+			}
+			.form-submit {
+
+			}
+		}
+	}
+} 

@@ -240,6 +240,7 @@ $sidebar-block-height: 210px;
 				// height: $user-card-width-lg;
 			}
 			.user-info {
+				width: 75%;
 				// width: rule-of-three($user-card-width-lg, 210);
 				min-height: $user-card-width - 70;
 			}
