@@ -13,10 +13,10 @@
 <div class="container-sm">
 	<h1 class="light"><?php print $titulo ?></h1>
 	<div class="separator-gray separator-sm"></div>
-	<div class="pv-ch-42 lead-ch p-ch-gray">
+	<div class="pv-ch-7 lead-ch p-ch-gray">
 		<p><?php print $cuerpo ?></p>
 	</div>
-	<div class="pv-ch-42 lead-ch p-ch-gray">
+	<div class="pv-ch-7 lead-ch p-ch-gray">
 		<p>Ver el PDF:</p>
 		<p><a href="<?php print('/'.$pathfile.$pdf); ?>"><?php print $pdf ?></a></p>
 	</div>
