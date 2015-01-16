@@ -38,6 +38,10 @@ $list-custom-height: 20%;
 				&:first-child {
 					width: 100%;
 				}
+				&:last-child {
+					padding-top: 14px;
+					padding-top: rem(14px);
+				}
 			}
 		}
 	}
