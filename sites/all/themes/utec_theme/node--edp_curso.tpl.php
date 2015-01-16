@@ -103,7 +103,7 @@
 			</div>
 		</div>
 		<div>
-			<ul class="grid-list grid-list-5 grid-list-hover size xs">
+			<ul class="grid-list grid-list-5 grid-list-1-xs grid-list-hover size xs">
 				<?php foreach ($detalles as $key => $detalle) : ?>
 					<?php 
 						$tid = $detalle['entity']->field_tipo_de_detalle['und']['0']['tid'];
