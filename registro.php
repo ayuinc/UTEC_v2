@@ -46,7 +46,7 @@ $v30 = "";
 $v31 = "";
 $v32 = "";
 $v33 = "";
-$v34 = "Ingenieria Industrial"; //utf8_decode($_POST['carrera']);
+$v34 = "1222"; //utf8_decode($_POST['carrera']);
 $v35 = $programacion;
 $v36 = "";
 $v37 = $origen;
@@ -61,6 +61,9 @@ $param = array('familia' => $v0, 'nombres' => $v1, 'apelPat' => $v2, 'apelMat' =
 $response = $client->call( 'registrarInscripcion', $param );
 
 $error = $client->getError();
+
+print_r($response);
+print_r($error);
 
 if($error){
 

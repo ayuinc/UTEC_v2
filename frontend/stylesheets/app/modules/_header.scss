@@ -299,7 +299,7 @@ $header-on-scroll-height: 56px;
 			@include box-shadow(none);
 			outline: none;
 			background-image: none;
-			background-color: $gray;
+			background-color: lighten($gray, 21%);
 			color: white;
 			padding: 2px 9px;
 			padding: rem(2px) rem(9px);
@@ -310,6 +310,11 @@ $header-on-scroll-height: 56px;
 				background-image: none;
 				background-color: $gray;
 				color: $brand-primary;
+			}
+		}
+		&:first-child {
+			a.language-link {
+				margin-right: 7px;
 			}
 		}
 	}

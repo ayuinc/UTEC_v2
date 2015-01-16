@@ -5712,7 +5712,7 @@ img.icon-utec {
       box-shadow: none;
       outline: none;
       background-image: none;
-      background-color: #8f8d8e;
+      background-color: #c4c3c4;
       color: white;
       padding: 2px 9px;
       padding: 0.14286rem 0.64286rem; }
@@ -5724,6 +5724,8 @@ img.icon-utec {
         background-image: none;
         background-color: #8f8d8e;
         color: #00BFDF; }
+    .language-switcher-locale-url li:first-child a.language-link {
+      margin-right: 7px; }
 
 .site-menu {
   position: fixed;

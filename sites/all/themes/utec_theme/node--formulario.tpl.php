@@ -18,31 +18,27 @@
 	<h3 class="thin text-gray pt-21 pb-56">Datos del participante:</h3>
 </div>
 <div class="container-sm form-custom">
-	<form action="/registro.php" class="mb-ch-28" data-submit="Formulario de inscripcion">
+	<form action="/registro.php" data-submit="Formulario de inscripcion">
 			<div class="row">
-				<div class="form-group col-sm-7">
+				<div class="form-group col-sm-6">
 					<label for="" class="sr-only">Nombres</label>
 					<input type="text" class="form-control" placeholder="Nombres" name="nombres" id="nombres">
 				</div>
-			</div>
-			<div class="row">
-				<div class="form-group col-sm-7">
+				<div class="form-group col-sm-6">
 					<label for="" class="sr-only">Apellidos</label>
 					<input type="text" class="form-control" placeholder="Apellidos" name="apellidos" id="apellidos">
 				</div>
-			</div>		
+			</div>
 			<div class="row">
-				<div class="col-sm-7 form-group">
+				<div class="form-group col-sm-6">
 					<label for="" class="sr-only">E-Mail</label>
 					<input type="email" class="form-control" placeholder="e-mail" name="email" id="email">
 				</div>
-			</div>
-			<div class="row">
-				<div class="form-group col-sm-7">
+				<div class="form-group col-sm-6">
 					<label for="" class="sr-only">Tel&eacute;fono</label>
 					<input type="text" class="form-control" placeholder="Telefono" name="telefono" id="telefono">
 				</div>
-			</div>			
+			</div>
 			<div class="row">
 				<div class="form-group col-sm-7">
 					<label for="" class="sr-only">Carrera de interés</label>
@@ -51,11 +47,9 @@
 					</select>
 				</div>
 			</div>
-			<div class="row">
-				<div class="form-group col-sm-7">
-					<label for="" class="sr-only">Consulta</label>
-					<textarea class="form-control" placeholder="Consulta" name="consulta" id="consulta"></textarea>
-				</div>
+			<div class="form-group">
+				<label for="" class="sr-only">Consulta</label>
+				<textarea class="form-control" placeholder="Consulta" name="consulta" id="consulta"></textarea>
 			</div>
 
 			<div class="text-right">
@@ -81,18 +75,17 @@ require_once( 'nusoap2/nusoap.php' );
 //consumir web service:
 $client = new nusoap_client( "http://app.utec.edu.pe/inscripcionutecws3/services/InscripcionServicePort?wsdl", true ); 
 
-
 $programacion = "2015-1";
 $origen ="landing-examen-admision";
 
 $v0 = "EXAMEN";
-$v1 = "Angel AYU 123"; //utf8_decode($_POST['nombres']);
+$v1 = "Angel AYU 5"; //utf8_decode($_POST['nombres']);
 $v2 = "Pacheco"; //utf8_decode($_POST['apellido']);
 $v3 = "Masias"; //utf8_decode($_POST['apellidom']);
 $v4 = "";
 $v5 = "";
 $v6 = "M";
-$v7 = "123"; //utf8_decode($carreras[$carrera_elegida]);
+$v7 = "14864"; //utf8_decode($carreras[$carrera_elegida]);
 $v8 = "";
 $v9 = "";
 $v10 = "";
@@ -119,11 +112,12 @@ $v30 = "";
 $v31 = "";
 $v32 = "";
 $v33 = "";
-$v34 = "Ingenieria Industrial"; //utf8_decode($_POST['carrera']);
+$v34 = "14864"; //utf8_decode($_POST['carrera']);
 $v35 = $programacion;
 $v36 = "";
 $v37 = $origen;
 $v38 = "";
+
 
 
 $param = array('familia' => $v0, 'nombres' => $v1, 'apelPat' => $v2, 'apelMat' => $v3, 'tipDoc' => $v4, 'numDoc' => $v5, 'genero' => $v6, 'carrera1' => $v7, 'carrera2' => $v8, 'paisNaci' => $v9, 'ciudadNaci' => $v10,
@@ -134,6 +128,10 @@ $param = array('familia' => $v0, 'nombres' => $v1, 'apelPat' => $v2, 'apelMat' =
 $response = $client->call( 'registrarInscripcion', $param );
 
 $error = $client->getError();
+
+print_r($response);
+print_r($error);
+
 
 if($error){
 
