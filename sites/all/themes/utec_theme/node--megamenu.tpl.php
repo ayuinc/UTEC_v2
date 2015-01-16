@@ -40,7 +40,7 @@
 									<button type="submit" class="btn btn-default btn-xs" value="S"><i class="icon-search"></i></button>
 								</div>
 							</form> -->
-							<?php print_r($search_box); ?>
+							<?php print drupal_render(drupal_get_form('search_form')); ?>
 						</li>
 						<li class="pt-7">
 							<a href="/contacto" class="text-gray">Contacto</a>
