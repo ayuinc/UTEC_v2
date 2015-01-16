@@ -100,7 +100,7 @@
     </div>
   </div>
   <div class="container text-center" >
-    <ul class="grid-list grid-list-item-height grid-list-4 grid-list-2-xs grid-list-anchors pv-21">
+    <ul class="grid-list grid-list-item-height grid-list-4 grid-list-1-xs grid-list-anchors pv-21">
       <?php foreach ($node->field_profesor['und'] as $key => $value) :?>
         <?php $name = $value['entity']->name; ?>
 				<?php $pic = $value['entity']->picture->filename; ?>
