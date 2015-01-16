@@ -14,6 +14,7 @@ $(document).ready ->
 	$container.imagesLoaded ->
 		$container.isotope({
 			itemSelector: '.isotope-item'
+			layoutMode: 'fitRows'
 			})
 		return
 

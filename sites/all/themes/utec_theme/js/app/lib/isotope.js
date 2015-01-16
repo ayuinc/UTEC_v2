@@ -12,7 +12,8 @@
     });
     $container.imagesLoaded(function() {
       $container.isotope({
-        itemSelector: '.isotope-item'
+        itemSelector: '.isotope-item',
+        layoutMode: 'fitRows'
       });
     });
   });
