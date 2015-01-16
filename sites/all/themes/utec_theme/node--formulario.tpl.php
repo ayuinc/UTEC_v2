@@ -91,7 +91,7 @@ $v3 = "Masias"; //utf8_decode($_POST['apellidom']);
 $v4 = "";
 $v5 = "";
 $v6 = "M";
-$v7 = "123"; //utf8_decode($carreras[$carrera_elegida]);
+$v7 = "14864"; //utf8_decode($carreras[$carrera_elegida]);
 $v8 = "";
 $v9 = "";
 $v10 = "";
@@ -118,7 +118,7 @@ $v30 = "";
 $v31 = "";
 $v32 = "";
 $v33 = "";
-$v34 = "111"; //utf8_decode($_POST['carrera']);
+$v34 = "14864"; //utf8_decode($_POST['carrera']);
 $v35 = $programacion;
 $v36 = "";
 $v37 = $origen;
@@ -135,6 +135,8 @@ $response = $client->call( 'registrarInscripcion', $param );
 $error = $client->getError();
 
 print_r($response);
+print_r($error);
+
 
 if($error){
 
