@@ -62,7 +62,7 @@
             <!--<li><a href="#"><small>Publicaciones</small></a></li>
             <li><a href="#"><small>Consultorías</small></a></li>-->
             <li><a href="/investigacion/empresas-y-clientes"><small>Empresas &amp; Clientes</small></a></li>
-            <!--<li><a href="#"><small>Contacto</small></a></li>-->
+            <li><a href="/investigacion/contacto"><small>Contacto</small></a></li>
           </ul>
         </li>
         <li>
