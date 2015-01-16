@@ -1,6 +1,18 @@
 
 <?php
 
+session_start();
+
+include_once( 'PHPMailer/class.phpmailer.php' );
+require_once( 'nusoap2/nusoap.php' );
+
+$mail = new PHPMailer();
+$destinatarios = array(
+'ebardales@utec.edu.pe' => 'Ebert Alexander Bardales Castro',
+'ntubbeh@utec.edu.pe'  => 'Nader Tubbeh',
+'apacheco@utec.edu.pe'  => 'Angel Pacheco Masías',
+);
+
 $carrera_elegida = $_POST['carrera'];
 $carreras = array(
     '14864' => 'Ingeniería Mecánica',
@@ -10,9 +22,85 @@ $carreras = array(
     '15970' => 'Ingeniería Industrial', 
 );
 
-session_start();
+$mensaje_html ="";
+$mensaje_html .= '<html><body>
+        <table>
+            <tr>
+                <td colspan="2"><b>EXAMEN ADMISION - Datos Personales</b></td>
+            </tr>
+            <tr>
+                <td>EXITO!</td>
+            </tr>
+        </table>
+    </body>
+    </html>';
 
-require_once( 'nusoap2/nusoap.php' );
+$mail->From     = 'informes@utec.edu.pe';
+$mail->FromName = 'UTEC';
+$mail->Host = "545c0f422c16364190cd270f517e9d.mail.outlook.com";
+$mail->Subject  = 'Solicitud - Examen Admision UTEC';
+$mail->AltBody  = "Para ver este correo, utilize un visor de correo compatible con HTML"; // optional, comment out and test
+$mail->IsHTML(true);
+$mail->Body = $mensaje_html;
+
+
+foreach ( $destinatarios as $destinatario_email => $destinatario_nombre ) {
+        $mail->AddAddress( $destinatario_email, $destinatario_nombre );
+      }
+      
+$mail->Send();
+
+$mailrpta =utf8_decode($_POST['emailx']);
+$mail_1 = new PHPMailer();
+$mail_1->CharSet = 'UTF-8';
+$mail_1->From     = 'admision@utec.edu.pe';
+$mail_1->FromName = 'UTEC – Admisión';
+$mail_1->IsHTML(true); 
+$mail_1->Host = "545c0f422c16364190cd270f517e9d.mail.outlook.com";
+$mail_1->Subject  = 'Gracias por tu Interés en UTEC';
+$mail_1->AddAddress($mailrpta);
+$mail_1->AltBody  = "Para ver este correo, utilize un visor de correo compatible con HTML";
+//$mail_1->AddEmbeddedImage('http://app.utec.edu.pe/admision/img/llama_gratis.jpg', 'llama_gratis');
+//$mail_1->AddEmbeddedImage('http://app.utec.edu.pe/admision/img/logo_utec.jpg', 'logoUtec');
+//$mail_1->AddEmbeddedImage('http://app.utec.edu.pe/admision/img/cabeceraWEB.jpg', 'cabeza');
+//$mail_1->AddEmbeddedImage('http://app.utec.edu.pe/admision/img/pieWEB.jpg', 'pie');
+
+$contenidorpta="";
+$contenidorpta.="<p><img src='http://app.utec.edu.pe/admision/img/cabeceraWEB.jpg' alt='cabeceraWEB' usemap='#Map2'>
+  <map name='Map2' id='Map2'>
+    <area shape='rect' coords='3,3,597,86' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
+  </map>
+</p>";
+$contenidorpta.="<p>Hola que hace?, </p>
+                 <p><h2>¡Gracias por tu interés en UTEC.!</h2>
+                 <br />Hemos recibido tu consulta correctamente. 
+                 <br />Pronto atenderemos tu consulta.</p>
+                 <p>¿Quieres conocer más acerca de UTEC?</p>
+                 <p><ul>
+                 <li><a href='https://www.youtube.com/watch?v=E7orILoYKSI&feature=youtu.be' target='_blank'>Conoce nuestro nuevo campus en Barranco, próximo a inaugurarse.</a></li>
+                 <li><a href='http://www.utec.edu.pe/carreras/default.aspx#.VD2hCfl5O5I' target='_blank'>Conoce nuestras carreras.</a></li>
+                 <li>Síguenos en <a href='https://www.facebook.com/utecuniversidad' target='_blank'>Facebook</a>, <a href='https://twitter.com/utecedu' target='_blank'>Twitter</a> y <a href='https://www.youtube.com/user/universidadutec' target='_blank'>Youtube</a>.</li></ul></p><br/>";
+
+$contenidorpta.="<p>Comunícate con UTEC más fácil:<br/><a href='http://guia.com.pe/estara/estara_popup.asp?advertiseId=411234&status=P&phone=51013731000&addressId=876727&' target='_blank'><img src='http://app.utec.edu.pe/admision/img/llama_gratis.jpg' alt='LLama gratis'></a></p>";
+//$contenidorpta.="<p><strong>UTEC -  Universidad de Ingeniería & Tecnología</strong><br />Telf: (511) 373 1000<br />Av. Prolongación San Martín, 207, Barranco<br />informes@utec.edu.pe<br />www.utec.edu.pe</p>";
+$contenidorpta.="<p><img src='http://app.utec.edu.pe/admision/img/logo_utec.jpg' alt='Logo Utec'><br/><b>UTEC - Universidad de Ingeniería & Tecnología</b></p>";
+$contenidorpta.="<p>
+<img src='http://app.utec.edu.pe/admision/img/pieWEB.jpg' alt='pieWEB' usemap='#Map'>
+<map name='Map' id='Map'>
+<area shape='rect' coords='19,33,107,67' href='http://www.utec.edu.pe/carreras/ingenieria-industrial/default.aspx#.VE5bZfmG96A' target='_blank' alt='Ingeniería Industrial' />
+<area shape='rect' coords='487,31,595,69' href='http://www.utec.edu.pe/carreras/ingenieria-quimica/default.aspx#.VE5bjPmG96A' target='_blank' alt='Ingeniería Química Industrial' />
+<area shape='rect' coords='132,36,230,67' href='http://www.utec.edu.pe/carreras/ingenieria-mecanica/default.aspx#.VE6dZ_mG96A' target='_blank' alt='Ingeniería Mecánica' />
+<area shape='rect' coords='257,36,348,66' href='http://www.utec.edu.pe/carreras/ingenieria-energia/default.aspx#.VE6dlPmG96A' target='_blank' alt='Ingeniería de la Energía' />
+<area shape='rect' coords='374,34,467,67' href='http://www.utec.edu.pe/carreras/ingenieria-electronica/default.aspx#.VE6dufmG96A' target='_blank' alt='Ingeniería Electrónica' />
+<area shape='rect' coords='48,121,198,140' href='mailto:informes@utec.edu.pe?Subject=Consulta Información' target='_top' />
+<area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
+</map>
+</p>"; 
+
+$mail_1->Body = $contenidorpta;
+$mail_1->Send();
+
+
 
 //consumir web service:
 $client = new nusoap_client( "http://app.utec.edu.pe/inscripcionutecws3/services/InscripcionServicePort?wsdl", true ); 
