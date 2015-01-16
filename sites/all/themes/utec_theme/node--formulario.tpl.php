@@ -91,7 +91,7 @@ $programacion = "2015-1";
 $origen = "landing-alto-rendimiento";
 
 $v0 = "ALTO RENDIMIENTO";
-$v1 = "Angel Ayu"; //utf8_decode($_POST['nombres']);
+$v1 = utf8_decode($_POST['nombres']);
 $v2 = "Pacheco"; //utf8_decode($_POST['apellido']);
 $v3 = "Masias"; //utf8_decode($_POST['apellidom']);
 $v4 = "";

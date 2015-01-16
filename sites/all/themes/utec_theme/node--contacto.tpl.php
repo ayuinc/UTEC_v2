@@ -1,48 +1,14 @@
-<?php global $base_url; ?>
-<?php global $theme_path; ?>
-<?php $path = $base_url.'/'.$theme_path; ?>
-<?php $pathfile= variable_get('file_public_path', conf_path() . '/files/trabaja-utec/'); ?>
-<?php $title = $node->title; ?>  
-<?php $field_su_filosofia = $node->field_su_filosofia['und']['0']['value']; ?>
-<?php $field_su_foto = $node->field_su_foto['und']['0']['filename']; ?>
-<?php $field_su_universidad = $node->field_su_universidad['und']['0']['value']; ?>
-<?php $field_transcendencia = $node->field_transcendencia['und']['0']['value']; ?>
-<?php $field_excelencia = $node->field_excelencia['und']['0']['value']; ?>
-<?php $field_su_creatividad = $node->field_su_creatividad['und']['0']['value']; ?>
-<?php $field_su_contacto = $node->field_su_contacto['und']['0']['value']; ?>
+<?php $titulo = $node->title; ?>   
+<?php $body = $node->body['und']['0']['value']; ?>
+
 
 <div class="container-sm">
 	<h1 class="light"><?php print $title ?></h1>
-	<div class="separator-gray separator-sm"></div>
-	<div class="pv-ch-21 lead-ch p-ch-gray">
-		<h3>Nuestra filosofía</h3>
-		<p><?php print $field_su_filosofia ?></p>
-		<img src="<?php print('/'.$pathfile.$field_su_foto)?>" class="img-responsive">
-		<div>
-			<h3>Universalidad</h3>
-			<p><?php print $field_su_universidad ?></p>
-		</div>
-		<div>
-			<h3>Trascendencia</h3>
-			<p><?php print $field_transcendencia ?></p>
-		</div>
-		<div>
-			<h3>Excelencia</h3>
-			<p><?php print $field_excelencia ?></p>
-		</div>
-		<div>
-			<h3>Creatividad</h3>
-			<p><?php print $field_su_creatividad ?></p>
-		</div>
-		<div>
-			<h3>Contacto</h3>
-			<?php print $field_su_contacto ?>
-		</div>
-	</div>
+	<div class="separator-gray separator-lg"></div>
+	<?php print $body ?>	
 </div>
-
 <div class="container-sm form-custom"> 
-	<h3>Trabaja en utec</h3>
+	<h3>Contacto general</h3>
 	<form action="" data-submit="Formulario de inscripcion">
 		<div class="row">
 			<div class="form-group col-sm-4">
@@ -75,10 +41,6 @@
 		<div class="form-group">
 			<label for="" class="sr-only">Consulta</label>
 			<textarea id="consulta" rows="3" class="form-control" placeholder="Escribe tu consulta"></textarea>
-		</div>
-		<div class="form-group">
-			<label>Adjunta un documento</label>
-			<input id="documento" type="file" class="form-control" placeholder="Colegio">
 		</div>
 		<div class="text-right">
 			<button type="submit" class="btn btn-primary btn-lg">Enviar</button>

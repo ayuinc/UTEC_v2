@@ -119,7 +119,7 @@
 			<div class="nav-display-left">
 				<div>
 					<h1>Conoce<br><span>Quiénes</span> Somos</h1>
-					<p>La universidad que potencia el ingenio, la innovación y el emprendimiento</p>
+					<p>La universidad que potencia el ingenio, la innovación y el emprendimiento.</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
@@ -182,7 +182,7 @@
 			<div class="nav-display-left">
 				<div>
 					<h1>Experiencia<br><span>en</span> Investigación</h1>
-					<p>El paso decisivo para encontrar las mejores soluciones</p>
+					<p>El paso decisivo para encontrar las mejores soluciones.</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
@@ -236,9 +236,9 @@
 						<li>
 							<a href="/carreras/ingenieria-electronica"><span>Ingeniería</span>Electrónica</a>
 						</li>
-						<li>
+						<!--<li>
 							<a href="/carreras/menciones">Menciones</a>
-						</li>
+						</li>-->
 						<li>
 							<a href="/carreras/escuela-de-desarrollo"><span>Escuela de</span>Desarollo</a>
 						</li>
@@ -258,7 +258,7 @@
 			<div class="nav-display-left">
 				<div>
 					<h1>Ingenio<br><span>vocación</span> y<br><span>aspiración</span><br>a la excelencia</h1>
-					<p>Ese es el ADN de nuestros estudiantes: alcanzar el más alto nivel académico y desarrollo personal</p>
+					<p>Ese es el ADN de nuestros estudiantes: alcanzar el más alto nivel académico y desarrollo personal.</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
@@ -306,7 +306,7 @@
 			<div class="nav-display-left">
 				<div>
 					<h1><span>Convenios y alianzas</span><br>internacionales</h1>
-					<p>Generamos conexiones con las mejores instituciones educativas del mundo</p>
+					<p>Generamos conexiones con las mejores instituciones educativas del mundo.</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
@@ -334,7 +334,7 @@
 			<div class="nav-display-left">
 				<div>
 					<h1>Escuela de<br><span>desarollo</span><br>profesional</h1>
-					<p>Potencia tus habilidades y alcanza el éxito profesional a través de nuestros cursos</p>
+					<p>Potencia tus habilidades y alcanza el éxito profesional a través de nuestros cursos.</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
@@ -418,7 +418,7 @@
 			<div class="nav-display-left">
 				<div>
 					<h1>Conoce<br><span>Quiénes</span> Somos</h1>
-					<p>La universidad que potencia el ingenio, la innovación y el emprendimiento</p>
+					<p>La universidad que potencia el ingenio, la innovación y el emprendimiento.</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
@@ -481,7 +481,7 @@
 			<div class="nav-display-left">
 				<div>
 					<h1>Experiencia<br><span>en</span> Investigación</h1>
-					<p>El paso decisivo para encontrar las mejores soluciones</p>
+					<p>El paso decisivo para encontrar las mejores soluciones.</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
@@ -560,7 +560,7 @@
 			<div class="nav-display-left">
 				<div>
 					<h1>Ingenio<br><span>vocación</span> y<br><span>aspiración</span><br>a la excelencia</h1>
-					<p>Ese es el ADN de nuestros estudiantes: alcanzar el más alto nivel académico y desarrollo personal</p>
+					<p>Ese es el ADN de nuestros estudiantes: alcanzar el más alto nivel académico y desarrollo personal.</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
@@ -608,7 +608,7 @@
 			<div class="nav-display-left">
 				<div>
 					<h1><span>Convenios y alianzas</span><br>internacionales</h1>
-					<p>Generamos conexiones con las mejores instituciones educativas del mundo</p>
+					<p>Generamos conexiones con las mejores instituciones educativas del mundo.</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
@@ -636,7 +636,7 @@
 			<div class="nav-display-left">
 				<div>
 					<h1>Escuela de<br><span>desarollo</span><br>profesional</h1>
-					<p>Potencia tus habilidades y alcanza el éxito profesional a través de nuestros cursos</p>
+					<p>Potencia tus habilidades y alcanza el éxito profesional a través de nuestros cursos.</p>
 				</div>
 			</div>
 			<div class="nav-display-right">
