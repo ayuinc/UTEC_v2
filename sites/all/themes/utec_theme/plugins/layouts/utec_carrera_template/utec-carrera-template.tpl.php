@@ -20,7 +20,7 @@
       </div>
     <?php endif; ?>
 
-    <div class="body minhp-100 pv-63" id="sec-1">
+    <div class="body minhp-100 pb-63 breadcrumbs-light" id="sec-1">
         <?php print $content['body']; ?>
     </div>
 

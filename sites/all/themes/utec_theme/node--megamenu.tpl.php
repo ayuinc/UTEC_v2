@@ -691,9 +691,9 @@
 						<li>
 							<a href="/<?php print $language->prefix ?>/admision/pre-inscripcion">Pre-Inscripción</a>
 						</li>
-						<li>
+						<!--<li>
 							<a href="/<?php print $language->prefix ?>/admision/calendario-academico"><span>Calendario</span>Académico</a>
-						</li>
+						</li>-->
 						<li>
 							<a href="/<?php print $language->prefix ?>/admision/visita-utec"><span>Visita</span>UTEC</a>
 						</li>
