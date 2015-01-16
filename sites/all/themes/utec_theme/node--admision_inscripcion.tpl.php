@@ -39,9 +39,10 @@ $field_condiciones_inscripcion = $node->field_condiciones_inscripcion['und']['0'
 		<h3 class="thin"><?php print t('Conditions for admission') ?></h3>
 		<?php print $field_condiciones_inscripcion ?>
 	</div>
-	<h3 class="light">Formulario</h3>
-	<div clsass="separator-gray separator-lg"></div>
-	<h4 class="thin text-gray pt-21 pb-56">Datos del participante:</h4>
+	<div class="lead-ch p-ch-gray li-ch-gray">
+		<h3 class="thin">Formulario</h3>
+		<p>Datos del participante:</p>
+	</div>
 </div>
 <div class="container-sm form-custom">
 	<form action="" class="mb-ch-28" data-submit="Formulario de inscripcion">
