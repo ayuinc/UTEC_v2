@@ -86,7 +86,7 @@
             <li><a href="/admision/calendario-academico"><small><?php print t('Admission Calendar') ?></small></a></li>
             <li><a href="/admision/modalidades" class="atm-menu-inferior"><small><?php print t('Pre registration') ?></small></a></li>
             <li><a href="/admision/informacion-economica" class="atm-menu-inferior"><small><?php print t('Financial Information') ?></small></a></li>
-            <li><a href="/admision/inscripcion" class="atm-menu-inferior"><small><?php print t('Registration') ?></small></a></li>
+            <li><a href="/admision/pre-inscripcion" class="atm-menu-inferior"><small><?php print t('Registration') ?></small></a></li>
             <li><a href="/admision/visita-utec" class="atm-menu-inferior"><small><?php print t('Visit UTEC') ?></small></a></li>
             <li><a href="/admision/orientacion-vocacional" class="atm-menu-inferior"><small><?php print t('Vocational Guidance') ?></small></a></li>
             <li><a href="/admision/preguntas-frecuentes" class="atm-menu-inferior"><small><?php print t('FAQ') ?></small></a></li>
