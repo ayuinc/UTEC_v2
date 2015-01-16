@@ -478,7 +478,7 @@
 				<ul class="nav-display-triggers">
 					<li>
 						<a href="#nav-shrink-display-1">
-							<span>Somos Utec</span>
+							<span><?php print t('We are Utec') ?></span>
 						</a>
 					</li>
 					<li>
