@@ -13,7 +13,7 @@
 	$link = $node->field_link['und']['0']['value'];
 	$field_pdf_publicaciones_= $node->field_pdf_publicaciones_['und']['0']['value']['filename'];
 	
-	print_r($node);
+	//print_r($node);
 ?>
 
 <h3><a href="<?php print $link ?>" target="_blank"><?php print $titulo ?></a></h3>
