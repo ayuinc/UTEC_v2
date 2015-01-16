@@ -16,7 +16,7 @@
 <!--<div>
 	<img src="<?php print $pathfile.$image; ?>" alt="#" class="img-responsive">
 </div>-->
-<div class="pb-28">
+<div class="pb-14">
 	<h3><a href="<?php print $link ?>" target="_blank"><?php print $title ?></a></h3>
 	<?php if ($profesor!='') { ?>
 		<div><span class="lead bold">Profesor: </span><span class="lead"><?php print $profesor ?></span></div>
