@@ -58,6 +58,7 @@
 	</form>						
 	<p class="text-gray">De conformidad con los artículos lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut at, veritatis tempore ipsa voluptate neque lorem exercitationem impedit aperiam? Veritatis recusandae dolorem, ullam repellendus minus expedita consequatur doloremque iusto fugiat maxime!</p>
 </div>
+
 <?php
 
 session_start();
@@ -68,10 +69,10 @@ require_once( 'nusoap2/nusoap.php' );
 $client = new nusoap_client( "http://app.utec.edu.pe/inscripcionutecws3/services/InscripcionServicePort?wsdl", true ); 
 
 $programacion = "2015-1";
-$origen ="landing-examen-admision";
+$origen ="landing-alto-rendimiento";
 
-$v0 = "EXAMEN";
-$v1 = "Angel AYU 555"; //utf8_decode($_POST['nombres']);
+$v0 = "ALTO RENDIMIENTO";
+$v1 = "Angel Ayu New"; //utf8_decode($_POST['nombres']);
 $v2 = "Pacheco"; //utf8_decode($_POST['apellido']);
 $v3 = "Masias"; //utf8_decode($_POST['apellidom']);
 $v4 = "";
@@ -88,12 +89,12 @@ $v14 = "";
 $v15 = "";
 $v16 = "";
 $v17 = ""; //utf8_decode($direccion);
-$v18 = "angelpa38gmail.com"; //utf8_decode($_POST['emailx']);
+$v18 = "angel@gmail.com"; //utf8_decode($_POST['emailx']);
 $v19 = ""; //utf8_decode($celular);
 $v20 = "";
-$v21 = "12345678"; //$_POST['telefono'];
+$v21 = "123456789"; //$_POST['telefono'];
 $v22 = "";
-$v23 = "12"; //utf8_decode($_POST['colegio']);//24
+$v23 = "aaa"; //utf8_decode($_POST['colegio']);//24
 $v24 = "";//25
 $v25 = $_SERVER['REMOTE_ADDR'];//26
 $v26 = "48500";//27
@@ -116,22 +117,17 @@ $param = array('familia' => $v0, 'nombres' => $v1, 'apelPat' => $v2, 'apelMat' =
                                         'codPais' => $v31, 'numRPM' => $v32, 'comoSupoNosotros' => $v33, 'codigoProducto' => $v34, 'codigoProgramacion' => $v35, 'comentario' => $v36, 'origenOportunidad' => $v37, 'univProcedencia' => $v38);
 
 $response = $client->call( 'registrarInscripcion', $param );
-
 $error = $client->getError();
-
-print_r($response);
-print_r($error);
-
 
 if($error){
 
 	//Flash::setError("<p class='nom'>Error enviando el formulario por CRM, vuelve a intentarlo porfavor</p>");
-	echo "ERROR";
+	echo "error";
 	//log4php
 	
 }else{
 
-	ECHO "exito";
+	echo "exito";
   //$message.="  <p>Comunícate con UTEC más fácil:<br/><a href='http://guia.com.pe/estara/estara_popup.asp?advertiseId=411234&status=P&phone=51013731000&addressId=876727&' target='_blank'><img src='img/llama_gratis.jpg' alt='LLama gratis'></a></p>";
   //Flash::setInfo($message);
 }
