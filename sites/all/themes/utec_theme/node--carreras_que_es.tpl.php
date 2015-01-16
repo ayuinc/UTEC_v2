@@ -7,6 +7,7 @@
 	$titulo = $node->title;
 	$cuerpo = $node->body['und']['0']['value'];
 	$imagen = $node->field_image['und']['0']['filename'];
+	$infografia = $node->field_infografia['und']['0']['filename'];
 
 ?>
 <div class="container-sm">
@@ -17,6 +18,9 @@
 	</div>
 	<div class="mb-63">
 		<img src="<?php print('/'.$pathfile.$imagen)?>" class="img-responsive">
+	</div>
+	<div class="mb-63">
+		<img src="<?php print('/'.$pathfile.$infografia)?>" class="img-responsive">
 	</div>
 </div>
 
