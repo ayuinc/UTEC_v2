@@ -21,7 +21,7 @@ $programacion = "2015-1";
 $origen ="landing-examen-admision";
 
 $v0 = "ADMISION";
-$v1 = "Angel Ayu"; //$_POST['nombres'];
+$v1 = "Angel Ayu 789"; //$_POST['nombres'];
 $v2 = "Pacheco"; //$_POST['apellidop'];
 $v3 = "ApellidoM";
 $v4 = "";
