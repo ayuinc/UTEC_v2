@@ -128,7 +128,7 @@
     <i class="icon-arrows-down bg-info text-white"></i>
   </a>
 </div>
-<div data-section-scroll="Perfil del egresado" id="perfil-egresado" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_perfil_egresado_imagen)?>);">
+<div data-section-scroll="<?php print t('Graduate profile') ?>" id="perfil-egresado" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_perfil_egresado_imagen)?>);">
   <div class="container" data-href="<?php print $perfil_link ?>">
     <div class="row">
       <div class="col-sm-6 normalize-text">
