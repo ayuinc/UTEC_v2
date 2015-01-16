@@ -1,4 +1,5 @@
 <?php global $language ?>
+<?php var_dump($language) ?>
 <div class="pt-14 pb-42" id="home-sec-1">
 	<div class="container">
 		<h2 class="lead medium mb-7"><span class="text-gray-darker"><?php print t('Ready to') ?></span> <span class="text-gray"><?php print t('change the world?') ?></span></h2>
@@ -9,11 +10,11 @@
 					<div><i class="icon-ing-quimica"></i></div>
 					<h2>
 						<a href="/carreras/ingenieria-quimica-industrial">
-							<?php if ($language == 'en'): ?>
+							<?php if ($language->prefix == 'en'): ?>
 								<span><?php print t('Industrial') ?></span>
 								<span><?php print t('Chemical') ?></span>
 								<span><?php print t('Engineering') ?></span>
-							<?php elseif ($language == 'es'): ?>
+							<?php elseif ($language->prefix == 'es'): ?>
 								<span><?php print t('Engineering') ?></span>
 								<span><?php print t('Chemical') ?></span>
 								<span><?php print t('Industrial') ?></span>
