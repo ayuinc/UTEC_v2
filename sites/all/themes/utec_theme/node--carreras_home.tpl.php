@@ -32,7 +32,7 @@
         <h1 class="thin text-white mt-0"><?php print $titulo ?>?</h1>
         <hr class="hr-white">
         <div class="row">
-          <div class="col-sm-3">
+          <div class="col-sm-3 hidden-xs">
             <div class="size xl">
               <i class="icon-carreras-que-es text-white"></i>
               <a href="<?php print $carrera_link ?>" class="btn btn-white btn-outline see-more mt-7"><?php print t('See more') ?></a>
@@ -58,7 +58,7 @@
         <h2 class="lead thin mb-14 h3"><?php print $malla_titulo ?></h2>
         <p clas="font-carreras"><?php print $malla_txt ?></p>
       </div>
-      <div class="col-sm-3">
+      <div class="col-sm-3 hidden-xs">
         <div class="size xl">
           <i class="icon-carreras-malla"></i>
           <a href="<?php print $malla_link ?>" class="btn btn-primary btn-outline see-more mt-7"><?php print t('See more') ?></a>
@@ -75,7 +75,7 @@
     <h2 class="lead thin"><?php print t('Menciones') ?></h2>
     <hr class="hr-white">
     <div class="row">
-      <div class="col-sm-3">
+      <div class="col-sm-3 hidden-xs">
         <div class="size xl">
           <i class="icon-carreras-menciones"></i>
           <a href="<?php print $menciones_link ?>" class="btn btn-primary btn-outline see-more mt-7"><?php print t('See more') ?></a>
@@ -122,7 +122,7 @@
         <h2 class="thin"><?php print t('Perfil del egresado') ?></h2>
         <hr class="hr-gray">
         <div class="row">
-          <div class="col-sm-3">
+          <div class="col-sm-3 hidden-xs">
             <div class="size xl">
               <i class="icon-carreras-perfil"></i>
               <a href="<?php print $perfil_link ?>" class="btn btn-white btn-outline see-more mt-7"><?php print t('See more') ?></a>
