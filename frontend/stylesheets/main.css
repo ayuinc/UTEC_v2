@@ -3306,39 +3306,6 @@ h5, .h5,
 h6, .h6 {
   font-weight: 300; }
 
-h1.lead, .h1.lead {
-  font-size: 3.125rem !important; }
-
-h2.lead, .h2.lead {
-  font-size: 2.75rem !important; }
-
-h3.lead, .h3.lead {
-  font-size: 2.375rem !important; }
-
-h4.lead, .h4.lead {
-  font-size: 2rem !important; }
-
-h5.lead, .h5.lead {
-  font-size: 1.75rem !important; }
-
-h6.lead, .h6.lead {
-  font-size: 1.625rem !important; }
-
-.lead-ch h1, .lead-ch .h1 {
-  font-size: 3.125rem !important; }
-.lead-ch h2, .lead-ch .h2 {
-  font-size: 2.75rem !important; }
-.lead-ch h3, .lead-ch .h3 {
-  font-size: 2.375rem !important; }
-.lead-ch h4, .lead-ch .h4 {
-  font-size: 2rem !important; }
-.lead-ch h5, .lead-ch .h5 {
-  font-size: 1.75rem !important; }
-.lead-ch h6, .lead-ch .h6 {
-  font-size: 1.625rem !important; }
-.lead-ch p, .lead-ch li {
-  font-size: 1.75rem !important; }
-
 .normalize-text h1, .normalize-text h2, .normalize-text h3, .normalize-text h4, .normalize-text h5, .normalize-text h6,
 .normalize-text .h1, .normalize-text .h2, .normalize-text .h3, .normalize-text .h4, .normalize-text .h5, .normalize-text .h6,
 .normalize-text p, .normalize-text .p {
@@ -3464,120 +3431,375 @@ html {
         margin-top: 0.71429rem;
         margin-bottom: 0.71429rem; } }
 
-h1, .h1 {
-  font-size: 2.57143rem; }
-
-h2, .h2 {
-  font-size: 2.14286rem; }
-
-h3, .h3 {
-  font-size: 1.71429rem; }
-
-h4, .h4 {
-  font-size: 1.28571rem; }
-
-h5, .h5 {
-  font-size: 1rem; }
-
-h6, .h6 {
-  font-size: 0.85714rem; }
-
-p, .p, ul {
-  font-size: 1rem; }
-
-small {
-  font-size: 0.85714rem; }
-
+/* TEXT IN REMS */
+p.lead, .p.lead, span.lead, em.lead, strong.lead, i.lead, ul.lead, ol.lead, li.lead {
+  font-size: 21px !important;
+  font-size: 1.5rem !important;
+  line-height: 1.3; }
 @media only screen and (max-width: 480px) {
-  h1.lead, .h1.lead {
-    font-size: 2.78571rem !important;
-    line-height: 1.1; }
-
-  h2.lead, .h2.lead {
-    font-size: 2.35714rem !important;
-    line-height: 1.1; }
-
-  h3.lead, .h3.lead {
-    font-size: 1.92857rem !important;
-    line-height: 1.1; }
-
-  h4.lead, .h4.lead {
-    font-size: 1.5rem !important;
-    line-height: 1.1; }
-
-  h5.lead, .h5.lead {
+  p.lead, .p.lead, span.lead, em.lead, strong.lead, i.lead, ul.lead, ol.lead, li.lead {
+    font-size: 17px !important;
     font-size: 1.21429rem !important;
-    line-height: 1.1; }
-
-  h6.lead, .h6.lead {
-    font-size: 1.07143rem !important;
-    line-height: 1.1; }
-
-  .lead-ch h1, .lead-ch .h1 {
-    font-size: 2.78571rem !important;
-    line-height: 1.1; }
-  .lead-ch h2, .lead-ch .h2 {
-    font-size: 2.35714rem !important;
-    line-height: 1.1; }
-  .lead-ch h3, .lead-ch .h3 {
-    font-size: 1.92857rem !important;
-    line-height: 1.1; }
-  .lead-ch h4, .lead-ch .h4 {
-    font-size: 1.5rem !important;
-    line-height: 1.1; }
-  .lead-ch h5, .lead-ch .h5 {
-    font-size: 1.21429rem !important;
-    line-height: 1.1; }
-  .lead-ch h6, .lead-ch .h6 {
-    font-size: 1.07143rem !important;
-    line-height: 1.1; }
-  .lead-ch p, .lead-ch li {
-    font-size: 1.21429rem !important; } }
+    line-height: 1.1; } }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
-  h1.lead, .h1.lead {
-    font-size: 3.42857rem !important;
-    line-height: 1.2; }
+  p.lead, .p.lead, span.lead, em.lead, strong.lead, i.lead, ul.lead, ol.lead, li.lead {
+    font-size: 19px !important;
+    font-size: 1.35714rem !important;
+    line-height: 1.2; } }
 
-  h2.lead, .h2.lead {
-    font-size: 3rem !important;
-    line-height: 1.2; }
+.lead-ch p, .lead-ch .p, .lead-ch span, .lead-ch em, .lead-ch strong, .lead-ch i, .lead-ch ul, .lead-ch ol, .lead-ch li {
+  font-size: 21px !important;
+  font-size: 1.5rem !important;
+  line-height: 1.3; }
+  @media only screen and (max-width: 480px) {
+    .lead-ch p, .lead-ch .p, .lead-ch span, .lead-ch em, .lead-ch strong, .lead-ch i, .lead-ch ul, .lead-ch ol, .lead-ch li {
+      font-size: 17px !important;
+      font-size: 1.21429rem !important;
+      line-height: 1.1; } }
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
+    .lead-ch p, .lead-ch .p, .lead-ch span, .lead-ch em, .lead-ch strong, .lead-ch i, .lead-ch ul, .lead-ch ol, .lead-ch li {
+      font-size: 19px !important;
+      font-size: 1.35714rem !important;
+      line-height: 1.2; } }
 
-  h3.lead, .h3.lead {
-    font-size: 2.57143rem !important;
-    line-height: 1.2; }
+h1.lead {
+  font-size: 43px !important;
+  font-size: 3.07143rem !important;
+  line-height: 1.3; }
+@media only screen and (max-width: 480px) {
+  h1.lead {
+    font-size: 39px !important;
+    font-size: 2.78571rem !important;
+    line-height: 1.1; } }
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  h1.lead {
+    font-size: 41px !important;
+    font-size: 2.92857rem !important;
+    line-height: 1.2; } }
 
-  h4.lead, .h4.lead {
-    font-size: 2.14286rem !important;
-    line-height: 1.2; }
+h2.lead {
+  font-size: 37px !important;
+  font-size: 2.64286rem !important;
+  line-height: 1.3; }
+@media only screen and (max-width: 480px) {
+  h2.lead {
+    font-size: 33px !important;
+    font-size: 2.35714rem !important;
+    line-height: 1.1; } }
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  h2.lead {
+    font-size: 35px !important;
+    font-size: 2.5rem !important;
+    line-height: 1.2; } }
 
-  h5.lead, .h5.lead {
-    font-size: 1.85714rem !important;
-    line-height: 1.2; }
+h3.lead {
+  font-size: 31px !important;
+  font-size: 2.21429rem !important;
+  line-height: 1.3; }
+@media only screen and (max-width: 480px) {
+  h3.lead {
+    font-size: 27px !important;
+    font-size: 1.92857rem !important;
+    line-height: 1.1; } }
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  h3.lead {
+    font-size: 29px !important;
+    font-size: 2.07143rem !important;
+    line-height: 1.2; } }
 
-  h6.lead, .h6.lead {
-    font-size: 1.71429rem !important;
-    line-height: 1.2; }
+h4.lead {
+  font-size: 25px !important;
+  font-size: 1.78571rem !important;
+  line-height: 1.3; }
+@media only screen and (max-width: 480px) {
+  h4.lead {
+    font-size: 21px !important;
+    font-size: 1.5rem !important;
+    line-height: 1.1; } }
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  h4.lead {
+    font-size: 23px !important;
+    font-size: 1.64286rem !important;
+    line-height: 1.2; } }
 
-  .lead-ch h1, .lead-ch .h1 {
-    font-size: 3.42857rem !important;
-    line-height: 1.2; }
-  .lead-ch h2, .lead-ch .h2 {
-    font-size: 3rem !important;
-    line-height: 1.2; }
-  .lead-ch h3, .lead-ch .h3 {
-    font-size: 2.57143rem !important;
-    line-height: 1.2; }
-  .lead-ch h4, .lead-ch .h4 {
-    font-size: 2.14286rem !important;
-    line-height: 1.2; }
-  .lead-ch h5, .lead-ch .h5 {
-    font-size: 1.85714rem !important;
-    line-height: 1.2; }
-  .lead-ch h6, .lead-ch .h6 {
-    font-size: 1.71429rem !important;
-    line-height: 1.2; }
-  .lead-ch p, .lead-ch li {
-    font-size: 1.85714rem !important; } }
+h5.lead {
+  font-size: 21px !important;
+  font-size: 1.5rem !important;
+  line-height: 1.3; }
+@media only screen and (max-width: 480px) {
+  h5.lead {
+    font-size: 17px !important;
+    font-size: 1.21429rem !important;
+    line-height: 1.1; } }
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  h5.lead {
+    font-size: 19px !important;
+    font-size: 1.35714rem !important;
+    line-height: 1.2; } }
+
+h6.lead {
+  font-size: 19px !important;
+  font-size: 1.35714rem !important;
+  line-height: 1.3; }
+@media only screen and (max-width: 480px) {
+  h6.lead {
+    font-size: 15px !important;
+    font-size: 1.07143rem !important;
+    line-height: 1.1; } }
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  h6.lead {
+    font-size: 17px !important;
+    font-size: 1.21429rem !important;
+    line-height: 1.2; } }
+
+.h1.lead {
+  font-size: 43px !important;
+  font-size: 3.07143rem !important;
+  line-height: 1.3; }
+@media only screen and (max-width: 480px) {
+  .h1.lead {
+    font-size: 39px !important;
+    font-size: 2.78571rem !important;
+    line-height: 1.1; } }
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .h1.lead {
+    font-size: 41px !important;
+    font-size: 2.92857rem !important;
+    line-height: 1.2; } }
+
+.h2.lead {
+  font-size: 37px !important;
+  font-size: 2.64286rem !important;
+  line-height: 1.3; }
+@media only screen and (max-width: 480px) {
+  .h2.lead {
+    font-size: 33px !important;
+    font-size: 2.35714rem !important;
+    line-height: 1.1; } }
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .h2.lead {
+    font-size: 35px !important;
+    font-size: 2.5rem !important;
+    line-height: 1.2; } }
+
+.h3.lead {
+  font-size: 31px !important;
+  font-size: 2.21429rem !important;
+  line-height: 1.3; }
+@media only screen and (max-width: 480px) {
+  .h3.lead {
+    font-size: 27px !important;
+    font-size: 1.92857rem !important;
+    line-height: 1.1; } }
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .h3.lead {
+    font-size: 29px !important;
+    font-size: 2.07143rem !important;
+    line-height: 1.2; } }
+
+.h4.lead {
+  font-size: 25px !important;
+  font-size: 1.78571rem !important;
+  line-height: 1.3; }
+@media only screen and (max-width: 480px) {
+  .h4.lead {
+    font-size: 21px !important;
+    font-size: 1.5rem !important;
+    line-height: 1.1; } }
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .h4.lead {
+    font-size: 23px !important;
+    font-size: 1.64286rem !important;
+    line-height: 1.2; } }
+
+.h5.lead {
+  font-size: 21px !important;
+  font-size: 1.5rem !important;
+  line-height: 1.3; }
+@media only screen and (max-width: 480px) {
+  .h5.lead {
+    font-size: 17px !important;
+    font-size: 1.21429rem !important;
+    line-height: 1.1; } }
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .h5.lead {
+    font-size: 19px !important;
+    font-size: 1.35714rem !important;
+    line-height: 1.2; } }
+
+.h6.lead {
+  font-size: 19px !important;
+  font-size: 1.35714rem !important;
+  line-height: 1.3; }
+@media only screen and (max-width: 480px) {
+  .h6.lead {
+    font-size: 15px !important;
+    font-size: 1.07143rem !important;
+    line-height: 1.1; } }
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .h6.lead {
+    font-size: 17px !important;
+    font-size: 1.21429rem !important;
+    line-height: 1.2; } }
+
+.lead-ch h1 {
+  font-size: 43px !important;
+  font-size: 3.07143rem !important; }
+  @media only screen and (max-width: 480px) {
+    .lead-ch h1 {
+      font-size: 39px !important;
+      font-size: 2.78571rem !important;
+      line-height: 1.1; } }
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
+    .lead-ch h1 {
+      font-size: 41px !important;
+      font-size: 2.92857rem !important;
+      line-height: 1.2; } }
+.lead-ch h2 {
+  font-size: 37px !important;
+  font-size: 2.64286rem !important; }
+  @media only screen and (max-width: 480px) {
+    .lead-ch h2 {
+      font-size: 33px !important;
+      font-size: 2.35714rem !important;
+      line-height: 1.1; } }
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
+    .lead-ch h2 {
+      font-size: 35px !important;
+      font-size: 2.5rem !important;
+      line-height: 1.2; } }
+.lead-ch h3 {
+  font-size: 31px !important;
+  font-size: 2.21429rem !important; }
+  @media only screen and (max-width: 480px) {
+    .lead-ch h3 {
+      font-size: 27px !important;
+      font-size: 1.92857rem !important;
+      line-height: 1.1; } }
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
+    .lead-ch h3 {
+      font-size: 29px !important;
+      font-size: 2.07143rem !important;
+      line-height: 1.2; } }
+.lead-ch h4 {
+  font-size: 25px !important;
+  font-size: 1.78571rem !important; }
+  @media only screen and (max-width: 480px) {
+    .lead-ch h4 {
+      font-size: 21px !important;
+      font-size: 1.5rem !important;
+      line-height: 1.1; } }
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
+    .lead-ch h4 {
+      font-size: 23px !important;
+      font-size: 1.64286rem !important;
+      line-height: 1.2; } }
+.lead-ch h5 {
+  font-size: 21px !important;
+  font-size: 1.5rem !important; }
+  @media only screen and (max-width: 480px) {
+    .lead-ch h5 {
+      font-size: 17px !important;
+      font-size: 1.21429rem !important;
+      line-height: 1.1; } }
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
+    .lead-ch h5 {
+      font-size: 19px !important;
+      font-size: 1.35714rem !important;
+      line-height: 1.2; } }
+.lead-ch h6 {
+  font-size: 19px !important;
+  font-size: 1.35714rem !important; }
+  @media only screen and (max-width: 480px) {
+    .lead-ch h6 {
+      font-size: 15px !important;
+      font-size: 1.07143rem !important;
+      line-height: 1.1; } }
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
+    .lead-ch h6 {
+      font-size: 17px !important;
+      font-size: 1.21429rem !important;
+      line-height: 1.2; } }
+
+.lead-ch .h1 {
+  font-size: 43px !important;
+  font-size: 3.07143rem !important; }
+  @media only screen and (max-width: 480px) {
+    .lead-ch .h1 {
+      font-size: 39px !important;
+      font-size: 2.78571rem !important;
+      line-height: 1.1; } }
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
+    .lead-ch .h1 {
+      font-size: 41px !important;
+      font-size: 2.92857rem !important;
+      line-height: 1.2; } }
+.lead-ch .h2 {
+  font-size: 37px !important;
+  font-size: 2.64286rem !important; }
+  @media only screen and (max-width: 480px) {
+    .lead-ch .h2 {
+      font-size: 33px !important;
+      font-size: 2.35714rem !important;
+      line-height: 1.1; } }
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
+    .lead-ch .h2 {
+      font-size: 35px !important;
+      font-size: 2.5rem !important;
+      line-height: 1.2; } }
+.lead-ch .h3 {
+  font-size: 31px !important;
+  font-size: 2.21429rem !important; }
+  @media only screen and (max-width: 480px) {
+    .lead-ch .h3 {
+      font-size: 27px !important;
+      font-size: 1.92857rem !important;
+      line-height: 1.1; } }
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
+    .lead-ch .h3 {
+      font-size: 29px !important;
+      font-size: 2.07143rem !important;
+      line-height: 1.2; } }
+.lead-ch .h4 {
+  font-size: 25px !important;
+  font-size: 1.78571rem !important; }
+  @media only screen and (max-width: 480px) {
+    .lead-ch .h4 {
+      font-size: 21px !important;
+      font-size: 1.5rem !important;
+      line-height: 1.1; } }
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
+    .lead-ch .h4 {
+      font-size: 23px !important;
+      font-size: 1.64286rem !important;
+      line-height: 1.2; } }
+.lead-ch .h5 {
+  font-size: 21px !important;
+  font-size: 1.5rem !important; }
+  @media only screen and (max-width: 480px) {
+    .lead-ch .h5 {
+      font-size: 17px !important;
+      font-size: 1.21429rem !important;
+      line-height: 1.1; } }
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
+    .lead-ch .h5 {
+      font-size: 19px !important;
+      font-size: 1.35714rem !important;
+      line-height: 1.2; } }
+.lead-ch .h6 {
+  font-size: 19px !important;
+  font-size: 1.35714rem !important; }
+  @media only screen and (max-width: 480px) {
+    .lead-ch .h6 {
+      font-size: 15px !important;
+      font-size: 1.07143rem !important;
+      line-height: 1.1; } }
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
+    .lead-ch .h6 {
+      font-size: 17px !important;
+      font-size: 1.21429rem !important;
+      line-height: 1.2; } }
+
 @font-face {
   font-family: 'icomoon';
   src: url("../assets/icons/icomoon-14.01.15.eot?23bv2t");
