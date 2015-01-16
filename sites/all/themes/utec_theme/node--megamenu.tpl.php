@@ -359,9 +359,6 @@
 					</ul>
 					<ul>
 						<li>
-							<a href="/<?php print $language->prefix ?>/admision/visita-utec"><span><?php print t('Visit') ?></span>UTEC</a>
-						</li>
-						<li>
 							<a href="/<?php print $language->prefix ?>/admision/orientacion-vocacional">
 								<?php if ($language->prefix == 'es'): ?>
 									<span>Orientación</span>Vocacional
@@ -396,21 +393,19 @@
 						<p>Generamos conexiones con las mejores instituciones educativas del mundo.</p>
 					<?php elseif ($language->prefix == 'en'): ?>
 						<h1><span>International</span><br>alliances</h1>
-						<p>We hold links with the best educational institutions in the world.</p>
+						<p>We've built strong relationships with the best educational institutions in the world.</p>
 					<?php endif ?>
 				</div>
 			</div>
 			<div class="nav-display-right">
 				<div>
 					<ul>
-						<!--<li>
-							<a href="#"><span>Proceso de</span>ampliación</a>
-						</li>-->
 						<li>
-							<a href="/<?php print $language->prefix ?>/convenios/ven-a-la-utec"><span>Ven a</span>la utec</a>
-						</li>
-						<li>
-							<a href="/<?php print $language->prefix ?>/convenios/convenios-de-intercambio"><span>Convenios de</span>Intercambio</a>
+							<?php if ($language->prefix == 'es'): ?>
+								<a href="/<?php print $language->prefix ?>/convenios/convenios-de-intercambio"><span>Convenios de</span>Intercambio</a>
+							<?php elseif ($language->prefix == 'en'): ?>
+								<a href="/<?php print $language->prefix ?>/convenios/convenios-de-intercambio"><span>Alliances</span></a>
+							<?php endif ?>
 						</li>
 					</ul>
 				</div>
@@ -426,10 +421,10 @@
 				<div>
 					<?php if ($language->prefix == 'en'): ?>
 						<h1>School of<br><span>profesional</span><br>development</h1>
-						<p>Potencia tus habilidades y alcanza el éxito profesional a través de nuestros cursos.</p>
+						<p>Strenghthen your skills and achieve professional success.</p>
 					<?php elseif ($language->prefix == 'es'): ?>
 						<h1>Escuela de<br><span>desarollo</span><br>profesional</h1>
-						<p>Enhance your skills and boost your career through our courses.</p>
+						<p>Potencia tus habilidades y alcanza el éxito profesional a través de nuestros cursos.</p>
 					<?php endif ?>
 				</div>
 			</div>
@@ -457,7 +452,7 @@
 							<a href="/<?php print $language->prefix ?>/edp/calendario"><?php print t('Calendar') ?></a>
 						</li>
 						<li>
-							<a href="/<?php print $language->prefix ?>/edp/inscripcion" class="btn btn-primary btn-custom bold"><?php print t('Sign up') ?></a>
+							<a href="/<?php print $language->prefix ?>/edp/inscripcion" class="btn btn-primary btn-custom bold"><?php print t('Contact us') ?></a>
 						</li>
 					</ul>
 				</div>
@@ -742,8 +737,13 @@
 		<div class="container-sm">
 			<div class="nav-display-left">
 				<div>
-					<h1>Escuela de<br><span>desarollo</span><br>profesional</h1>
-					<p>Potencia tus habilidades y alcanza el éxito profesional a través de nuestros cursos.</p>
+					<?php if ($language->prefix == 'en'): ?>
+						<h1>School of<br><span>professional</span><br>development</h1>
+						<p>Strenghthen your skills and achieve professional success.</p>
+					<?php elseif ($language->prefix == 'es'): ?>
+						<h1>Escuela de<br><span>desarollo</span><br>profesional</h1>
+						<p>Potencia tus habilidades y alcanza el éxito profesional a través de nuestros cursos.</p>
+					<?php endif ?>
 				</div>
 			</div>
 			<div class="nav-display-right">
@@ -767,7 +767,7 @@
 						</li>
 						<li><a href="#">Calendario</a></li>-->
 						<li>
-							<a href="http://escuela-edp.utec.edu.pe/" class="btn btn-primary btn-custom bold"><?php print t('Sign up') ?></a>
+							<a href="http://escuela-edp.utec.edu.pe/" class="btn btn-primary btn-custom bold"><?php print t('Contact us') ?></a>
 						</li>
 					</ul>
 				</div>
