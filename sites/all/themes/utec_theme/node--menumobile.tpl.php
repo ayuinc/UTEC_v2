@@ -104,10 +104,10 @@
 		</li>
 		<!--<li>
 			<a href="/carreras/menciones">Menciones</a>
-		</li>-->
+		</li>
 		<li>
 			<a href="/carreras/escuela-de-desarrollo"><span>Escuela de</span>Desarollo</a>
-		</li>
+		</li>-->
 		<li>
 			<a href="/admision/modalidades" class="btn btn-primary btn-custom bold">Postula</a>
 		</li>
@@ -177,7 +177,7 @@
 		</li>-->
 		<li><a href="/edp/calendario"><?php print t('Calendar') ?></a></li>
 		<li>
-			<a href="http://escuela-edp.utec.edu.pe/" class="btn btn-primary btn-custom bold"><?php print t('Registration') ?></a>
+			<a href="/edp/inscripcion" class="btn btn-primary btn-custom bold"><?php print t('Registration') ?></a>
 		</li>
   </ul>
 </div>
