@@ -1,6 +1,16 @@
 
 <?php
 
+$carrera_elegida = $_POST['carrera'];
+$carreras = array(
+    '14864' => 'Ingeniería Mecánica',
+    '15964' => 'Ingeniería Electrónica',
+    '15966' => 'Ingeniería Química Industrial',
+    '15968' => 'Ingeniería de la Energía',
+    '15970' => 'Ingeniería Industrial', 
+);
+
+
 session_start();
 
 require_once( 'nusoap2/nusoap.php' );
@@ -11,14 +21,14 @@ $client = new nusoap_client( "http://app.utec.edu.pe/inscripcionutecws3/services
 $programacion = "2015-1";
 $origen ="landing-examen-admision";
 
-$v0 = "EXAMEN";
-$v1 = "Angel AYU 256"; //utf8_decode($_POST['nombres']);
-$v2 = "Pacheco"; //utf8_decode($_POST['apellido']);
-$v3 = "Masias"; //utf8_decode($_POST['apellidom']);
+$v0 = "ADMISION";
+$v1 = utf8_decode($_POST['nombres']);
+$v2 = utf8_decode($_POST['apellidop']);
+$v3 = utf8_decode($_POST['apellidom']);
 $v4 = "";
 $v5 = "";
 $v6 = "M";
-$v7 = "14864"; //utf8_decode($carreras[$carrera_elegida]);
+$v7 = utf8_decode($carreras[$carrera_elegida]);
 $v8 = "";
 $v9 = "";
 $v10 = "";
@@ -29,12 +39,12 @@ $v14 = "";
 $v15 = "";
 $v16 = "";
 $v17 = ""; //utf8_decode($direccion);
-$v18 = "angelpa38hotmail.com"; //utf8_decode($_POST['emailx']);
+$v18 = utf8_decode($_POST['email']);
 $v19 = ""; //utf8_decode($celular);
 $v20 = "";
-$v21 = "12345678"; //$_POST['telefono'];
+$v21 = $_POST['telefono'];
 $v22 = "";
-$v23 = "12"; //utf8_decode($_POST['colegio']);//24
+$v23 = "";//24
 $v24 = "";//25
 $v25 = $_SERVER['REMOTE_ADDR'];//26
 $v26 = "48500";//27
@@ -45,7 +55,7 @@ $v30 = "";
 $v31 = "";
 $v32 = "";
 $v33 = "";
-$v34 = "14864"; //utf8_decode($_POST['carrera']);
+$v34 = utf8_decode($_POST['carrera']);
 $v35 = $programacion;
 $v36 = "";
 $v37 = $origen;
