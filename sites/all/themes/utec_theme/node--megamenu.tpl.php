@@ -100,7 +100,7 @@
 					<li>
 						<a href="#nav-display-5" class="atm-menu-principal">
 							<div><i class="icon-menu-convenios"></i></div>
-							<span><?php print t('Agreements') ?></span>
+							<span><?php print t('Alliances') ?></span>
 						</a>
 					</li>
 					<li>
@@ -171,7 +171,7 @@
 							<a href="/somos-utec/trabaja-en-utec"><span><?php print t('Work') ?></span><?php print t('at UTEC') ?></a>
 						</li>
 						<li>
-							<a href="/somos-utec/utec-garage"><span>Utec</span>garage</a>
+							<a href="/somos-utec/utec-garage"><span>Utec</span> garage</a>
 						</li>
 						<li>
 							<a href="http://utecventures.com/" target="_blank" ><span>Utec</span>Ventures</a>
@@ -301,7 +301,7 @@
 							<a href="/carreras/escuela-de-desarrollo"><span>Escuela de</span>Desarollo</a>
 						</li>-->
 						<li>
-							<a href="/admision/modalidades" class="btn btn-primary btn-custom bold">Postula</a>
+							<a href="/admision/modalidades" class="btn btn-primary btn-custom bold"><?php print t('Apply') ?></a>
 						</li>
 					</ul>
 				</div>
@@ -315,41 +315,81 @@
 		<div class="container-sm">
 			<div class="nav-display-left">
 				<div>
-					<h1>Ingenio<br><span>vocación</span> y<br><span>aspiración</span><br>a la excelencia</h1>
-					<p>Ese es el ADN de nuestros estudiantes: alcanzar el más alto nivel académico y desarrollo personal.</p>
+					<?php if ($language->prefix == 'es'): ?>
+						<h1>Ingenio<br><span>vocación</span> y<br><span>aspiración</span><br>a la excelencia</h1>
+					<?php elseif ($language->prefix == 'en'): ?>
+						<h1>Ingenuity<br><span>dedication</span> and<br><span>pursuit</span><br>of excellence</h1>
+					<?php endif ?>
+					<p><?php print t("Our students' DNA: achieving highest academic achievement and personal development.") ?></p>
 				</div>
 			</div>
 			<div class="nav-display-right">
 				<div>
 					<ul>
 						<li>
-							<a href="/admision/modalidades"><span>Modalidades</span>de admisión</a>
+							<a href="/admision/modalidades">
+								<?php if ($language->prefix == 'es'): ?>
+									<span>Modalidades</span>de admisión
+								<?php elseif ($language->prefix == 'en'): ?>
+									<span>Admissions</span>
+								<?php endif ?>
+							</a>
 						</li>
 						<li>
-							<a href="/admision/charlas-informativas"><span>Charlas</span>informativas</a>
+							<a href="/admision/charlas-informativas">
+								<?php if ($language->prefix == 'es'): ?>
+									<span>Charlas</span>informativas
+								<?php elseif ($language->prefix == 'en'): ?>
+									<span>Informative</span>talks
+								<?php endif ?>
+							</a>
 						</li>
 						<li>
-							<a href="/admision/informacion-economica"><span>Información</span>económica</a>
+							<a href="/admision/informacion-economica">
+								<?php if ($language->prefix == 'es'): ?>
+									<span>Información</span>económica
+								<?php elseif ($language->prefix == 'en'): ?>
+									<span>Financial</span>information
+								<?php endif ?>
+							</a>
 						</li>
 						<li>
-							<a href="/admision/modalidades" class="btn btn-primary btn-custom bold">Postula</a>
+							<a href="/admision/modalidades" class="btn btn-primary btn-custom bold"><?php print t('Apply') ?></a>
 						</li>
 					</ul>
 					<ul>
 						<li>
-							<a href="/admision/pre-inscripcion">Pre-Inscripción</a>
+							<a href="/admision/pre-inscripcion"><?php print t('Pre-registration') ?></a>
 						</li>
 						<li>
-							<a href="/admision/calendario-academico"><span>Calendario</span>de admisión</a>
+							<a href="/admision/calendario-academico">
+								<?php if ($language->prefix == 'es'): ?>
+									<span>Calendario</span>de admisión
+								<?php elseif ($language->prefix == 'en'): ?>
+									<span>Admissions</span>calendar
+								<?php endif ?>
+							</a>
 						</li>
 						<li>
-							<a href="/admision/visita-utec"><span>Visita</span>UTEC</a>
+							<a href="/admision/visita-utec"><span><?php print t('Visit') ?></span>UTEC</a>
 						</li>
 						<li>
-							<a href="/admision/orientacion-vocacional"><span>Orientación</span>Vocacional</a>
+							<a href="/admision/orientacion-vocacional">
+								<?php if ($language->prefix == 'es'): ?>
+									<span>Orientación</span>Vocacional
+								<?php elseif ($language->prefix == 'en'): ?>
+									<span>Vocational</span>Guidance
+								<?php endif ?>
+							</a>
 						</li>
 						<li>
-							<a href="/admision/preguntas-frecuentes"><span>Preguntas</span>Frecuentes</a>
+							<a href="/admision/preguntas-frecuentes">
+								<?php if ($language->prefix == 'es'): ?>
+									<span>Preguntas</span>Frecuentes
+								<?php elseif ($language->prefix == 'en'): ?>
+									<span>Frequently Asked</span>Questions
+								<?php endif ?>
+							</a>
 						</li>
 					</ul>
 				</div>
@@ -363,8 +403,13 @@
 		<div class="container-sm">
 			<div class="nav-display-left">
 				<div>
-					<h1><span>Convenios y alianzas</span><br>internacionales</h1>
-					<p>Generamos conexiones con las mejores instituciones educativas del mundo.</p>
+					<?php if ($language->prefix == 'es'): ?>
+						<h1><span>Convenios y alianzas</span><br>internacionales</h1>
+						<p>Generamos conexiones con las mejores instituciones educativas del mundo.</p>
+					<?php elseif ($language->prefix == 'en'): ?>
+						<h1><span>International</span><br>alliances</h1>
+						<p>We hold links with the best educational institutions in the world.</p>
+					<?php endif ?>
 				</div>
 			</div>
 			<div class="nav-display-right">
@@ -426,7 +471,7 @@
 		<div class="container">
 			<div class="left">
 				<div class="logo">
-					<a href="#"><img src="/<?php print $theme_path; ?>/assets/img/icon_UTEC.png" alt="Logo UTEC"></a>
+					<a href="/"><img src="/<?php print $theme_path; ?>/assets/img/icon_UTEC.png" alt="Logo UTEC"></a>
 				</div>
 			</div>
 			<div class="left hidden-xs hidden-sm">

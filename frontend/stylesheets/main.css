@@ -5148,6 +5148,14 @@ textarea:-ms-input-placeholder {
     .list-custom-left ul li:first-child {
       width: 20%;
       height: auto; }
+  @media only screen and (max-width: 768px) {
+    .list-custom-left ul li {
+      width: 100%; }
+      .list-custom-left ul li:first-child {
+        width: 100%; }
+      .list-custom-left ul li:last-child {
+        padding-top: 14px;
+        padding-top: 1rem; } }
 
 .list-hover > li > div {
   min-height: 350px;
