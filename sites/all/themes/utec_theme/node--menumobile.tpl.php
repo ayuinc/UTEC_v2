@@ -118,7 +118,7 @@
   <h1>Talento<br><span>vocación</span> y<br><span>aspiración</span><br>a la excelencia</h1>
   <ul>
 		<li>
-			<a href="/admision/modalidades"><span>Modalidades</span>de admisión</a>
+			<a href="/admision/modalidades"><span>Modalidades</span> de admisión</a>
 		</li>
 		<li>
 			<a href="/admision/charlas-informativas"><span>Charlas</span>informativas</a>
@@ -126,23 +126,23 @@
 		<li>
 			<a href="/admision/informacion-economica"><span>Información</span>económica</a>
 		</li>
+    <li>
+      <a href="/admision/pre-inscripcion"><?php print t('Registration') ?></a>
+    </li>
+    <li>
+      <a href="/admision/calendario-academico"><span>Calendario</span>de admisión</a>
+    </li>
+    <li>
+      <a href="/admision/visita-utec"><span>Visita</span>UTEC</a>
+    </li>
+    <li>
+      <a href="/admision/orientacion-vocacional"><span>Orientación</span>Vocacional</a>
+    </li>
+    <li>
+      <a href="/admision/preguntas-frecuentes"><span>Preguntas</span>Frecuentes</a>
+    </li>
 		<li>
 			<a href="/admision/modalidades" class="btn btn-primary btn-custom bold">Postula</a>
-		</li>
-		<li>
-			<a href="/admision/pre-inscripcion"><?php print t('Registration') ?></a>
-		</li>
-		<li>
-			<a href="/admision/calendario-academico"><span>Calendario</span>de admisión</a>
-		</li>
-		<li>
-			<a href="/admision/visita-utec"><span>Visita</span>UTEC</a>
-		</li>
-		<li>
-			<a href="/admision/orientacion-vocacional"><span>Orientación</span>Vocacional</a>
-		</li>
-		<li>
-			<a href="/admision/preguntas-frecuentes"><span>Preguntas</span>Frecuentes</a>
 		</li>
   </ul>
 </div>
