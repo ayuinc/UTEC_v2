@@ -12,7 +12,7 @@ $programacion = "2015-1";
 $origen ="landing-examen-admision";
 
 $v0 = "EXAMEN";
-$v1 = "Angel AYU 5"; //utf8_decode($_POST['nombres']);
+$v1 = "Angel AYU 256"; //utf8_decode($_POST['nombres']);
 $v2 = "Pacheco"; //utf8_decode($_POST['apellido']);
 $v3 = "Masias"; //utf8_decode($_POST['apellidom']);
 $v4 = "";
@@ -29,7 +29,7 @@ $v14 = "";
 $v15 = "";
 $v16 = "";
 $v17 = ""; //utf8_decode($direccion);
-$v18 = "angelpa38@gmail.com"; //utf8_decode($_POST['emailx']);
+$v18 = "angelpa38hotmail.com"; //utf8_decode($_POST['emailx']);
 $v19 = ""; //utf8_decode($celular);
 $v20 = "";
 $v21 = "12345678"; //$_POST['telefono'];
