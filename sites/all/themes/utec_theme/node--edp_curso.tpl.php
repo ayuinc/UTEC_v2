@@ -15,6 +15,7 @@
   $obejtivos = $node->field_objetivos['und']['0']['value'];	
   $dirigido = $node->field_dirigido_a['und']['0']['value'];	
   $profesor_name = $node->field_profesor['und']['0']['entity']->name;
+  $profesor_id = $node->field_profesor['und']['0']['entity']->uid;
   $profesor_cargo = $node->field_profesor['und']['0']['entity']->field_descripci_n['und']['0']['value'];
   $profesor_resenia = $node->field_profesor['und']['0']['entity']->field_rese_a['und']['0']['value'];
   $profesor_pic = $node->field_profesor['und']['0']['entity']->picture->filename;
@@ -86,7 +87,7 @@
 					<li class="text-center">
 						<div class="grid-list-pic"><img src="<?php print '/'.$pathfile.'pictures/'.$profesor_pic; ?>" alt="" width="98px" height="auto" class="img-circle"></div>
 						<div>
-							<a href="#" class="thin"><?php print $profesor_name ?></a>
+							<a href="/user/<?php print $profesor_id ?>" class="thin"><?php print $profesor_name ?></a>
 							<span><?php print $profesor_cargo ?></span>
 						</div>
 					</li>
