@@ -21,9 +21,9 @@
     </div>
   <?php endif; ?>
     <div class="body minhp-100 pv-63 breadcrumbs-dark" id="sec-1">
-      <div class="container">
+      <!-- <div class="container"> -->
         <?php print $content['body']; ?>
-      </div>
+      <!-- </div> -->
     </div>
 
     <div class="footer"><?php print $content['footer']; ?></div>
