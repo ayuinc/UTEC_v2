@@ -421,7 +421,7 @@
 				<div>
 					<?php if ($language->prefix == 'en'): ?>
 						<h1>School of<br><span>profesional</span><br>development</h1>
-						<p>Enhance your skills and boost your career through our courses.</p>
+						<p>Strenghthen your skills and achieve professional success.</p>
 					<?php elseif ($language->prefix == 'es'): ?>
 						<h1>Escuela de<br><span>desarollo</span><br>profesional</h1>
 						<p>Potencia tus habilidades y alcanza el éxito profesional a través de nuestros cursos.</p>
@@ -452,7 +452,7 @@
 							<a href="/<?php print $language->prefix ?>/edp/calendario"><?php print t('Calendar') ?></a>
 						</li>
 						<li>
-							<a href="/<?php print $language->prefix ?>/edp/inscripcion" class="btn btn-primary btn-custom bold"><?php print t('Sign up') ?></a>
+							<a href="/<?php print $language->prefix ?>/edp/inscripcion" class="btn btn-primary btn-custom bold"><?php print t('Contact us') ?></a>
 						</li>
 					</ul>
 				</div>
