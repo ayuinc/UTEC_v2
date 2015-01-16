@@ -15,11 +15,16 @@
   $obejtivos = $node->field_objetivos['und']['0']['value'];	
   $dirigido = $node->field_dirigido_a['und']['0']['value'];	
   $profesores = $node->field_profesor['und']['0']['value'];
+  $field_requisito = $node->field_requisito['und']['0']['value'];
+  $field_temario = $node->field_temario['und']['0']['value'];
+  $field_inscribete = $node->field_inscribete['und']['0']['value'];
+  $field_contactanos = $node->field_contactanos['und']['0']['value'];
+  $field_brochure = $node->field_brochure['und']['0']['value'];
 ?>
 
 
 
-<!-- <div class="container-sm"> -->
+<div class="container-sm"> 
 	<h1 class="light"><?php print $titulo ?></h1>
 	<div class="separator-gray separator-sm"></div>						
 	<h3><?php print $sub_titulo ?></h3>
@@ -86,7 +91,7 @@
 		</div>
 		<div>
 			<ul class="grid-list grid-list-5 grid-list-hover size xs">
-				<li data-href="//">
+				<li data-href="<?php print $field_requisito ?>">
 					<div>
 						<div class="size sm">
 							<i class="icon-admisiones-primeros-puestos"></i>
@@ -94,7 +99,7 @@
 						<small class="thin"><?php print t('Requirements') ?></small>
 					</div>
 				</li>
-				<li data-href="//">
+				<li data-href="<?php print $field_temario ?>">
 					<div>
 						<div class="size sm">
 							<i class="icon-admisiones-alto-rendimiento"></i>
@@ -102,7 +107,7 @@
 						<small class="thin"><?php print t('Agenda') ?></small>
 					</div>
 				</li>
-				<li data-href="//">
+				<li data-href="<?php print $field_inscribete ?>">
 					<div>
 						<div class="size sm">
 							<i class="icon-admisiones-traslado"></i>
@@ -110,15 +115,15 @@
 						<small class="thin"><?php print t('Sign up') ?></small>
 					</div>
 				</li>
-				<li data-href="//">
+				<!--<li data-href="<?php print $field_contactanos ?>">
 					<div>
 						<div class="size sm">
 							<i class="icon-admisiones-centro-pre"></i>
 						</div>
 						<small class="thin"><?php print t('Contact us') ?></small>
 					</div>
-				</li>
-				<li data-href="//">
+				</li>-->
+				<li data-href="<?php print $field_brochure ?>">
 					<div>
 						<div class="size sm">
 							<i class="icon-admisiones-bachillerato"></i>
@@ -129,4 +134,4 @@
 			</ul>
 		</div>
 	</div>
-<!-- </div> -->
+</div>

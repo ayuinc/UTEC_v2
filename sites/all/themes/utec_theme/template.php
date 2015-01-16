@@ -8,6 +8,15 @@
 	  return $block_rendered;
 	}
 
+	$viewport = array(
+	  '#tag' => 'meta', 
+	  '#attributes' => array(
+	    'name' => 'viewport', 
+	    'content' => 'width=device-width, initial-scale=1.0, user-scalable=no',
+	  ),
+	);
+	drupal_add_html_head($viewport, 'viewport');
+
 	drupal_add_css("//vjs.zencdn.net/4.10/video-js.css", 'external');
 	
 	//drupal_add_js('try{Typekit.load();}catch(e){}', 'inline');

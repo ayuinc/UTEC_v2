@@ -20,7 +20,7 @@
       <?php print $content['header-bottom']; ?>
     </div>
   <?php endif; ?>
-    <div class="body minhp-100 pvp-7" id="sec-1">
+    <div class="body minhp-100 pv-63" id="sec-1">
       <div class="container">
         <h1 class="light"><?php print t('Blog UTEC') ?></h1>
         <div class="separator-gray separator-sm"></div>
