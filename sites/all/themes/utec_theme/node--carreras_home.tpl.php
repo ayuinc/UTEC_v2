@@ -51,7 +51,7 @@
 </div> <!-- END:Hero -->
 <div data-section-scroll="Malla curricular" id="malla-curricular" class="malla-curricular section-scroll-content minh-560 flex-middle-center">
   <div class="container-sm text-right normalize-text" data-href="<?php print $malla_link ?>">
-    <h2 class="lead thin"><?php print t('Malla curricular') ?></h2>
+    <h2 class="lead thin"><?php print t('Curriculum') ?></h2>
     <hr class="hr-gray">
     <div class="row">
       <div class="col-sm-9">
@@ -72,7 +72,7 @@
 </div>
 <div data-section-scroll="Menciones" id="menciones" class="section-scroll-content minh-560 flex-middle-center bg-info-op">
   <div class="container-sm text-left text-white normalize-text" data-href="<?php print $menciones_link ?>">
-    <h2 class="lead thin"><?php print t('Menciones') ?></h2>
+    <h2 class="lead thin"><?php print t('Majors') ?></h2>
     <hr class="hr-white">
     <div class="row">
       <div class="col-sm-3 hidden-xs">
@@ -93,7 +93,7 @@
 </div>
 <div data-section-scroll="Profesores" id="profesores" class="section-scroll-content minh-560 flex-middle-center">
   <div class="container-sm text-center normalize-text">
-    <h2 class="lead thin"><?php print t('Profesores') ?></h2>
+    <h2 class="lead thin"><?php print t('Faculty') ?></h2>
     <hr class="hr-gray">
     <div class="size xl">
       <i class="icon-carreras-profesores"></i>
@@ -127,7 +127,7 @@
   <div class="container" data-href="<?php print $perfil_link ?>">
     <div class="row">
       <div class="col-sm-6 normalize-text">
-        <h2 class="thin"><?php print t('Perfil del egresado') ?></h2>
+        <h2 class="thin"><?php print t('Graduate profile') ?></h2>
         <hr class="hr-gray">
         <div class="row">
           <div class="col-sm-3 hidden-xs">
