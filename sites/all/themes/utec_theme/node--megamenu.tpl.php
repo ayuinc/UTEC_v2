@@ -447,6 +447,7 @@
 						<li>
 							<a href="/edp/cursos/cursos-online"><span>Cursos</span>online</a>
 						</li>-->
+						<li><a href="/edp/la-escuela"><?php print t('The School') ?></a></li>
 						<li>
 							<a href="/<?php print $language->prefix ?>/edp/cursos/cursos-cortos"><span>Cursos</span>Cortos</a>
 						</li>
@@ -595,10 +596,10 @@
 				<div>
 					<ul>
 						<li>
-							<a href="/<?php print $language->prefix ?>/investigacion/proyectos">Proyectos</a>
+							<a href="/<?php print $language->prefix ?>/investigacion/proyectos"><?php print t('Projects') ?></a>
 						</li>
 						<li>
-							<a href="/<?php print $language->prefix ?>/investigacion/publicaciones">Publicaciones</a>
+							<a href="/<?php print $language->prefix ?>/investigacion/publicaciones"><?php print t('Publications') ?></a>
 						</li>
 						<!--<li>
 							<a href="#"><span>Empresas</span>y clientes</a>
@@ -690,9 +691,9 @@
 						<li>
 							<a href="/<?php print $language->prefix ?>/admision/pre-inscripcion">Pre-Inscripción</a>
 						</li>
-						<li>
+						<!--<li>
 							<a href="/<?php print $language->prefix ?>/admision/calendario-academico"><span>Calendario</span>Académico</a>
-						</li>
+						</li>-->
 						<li>
 							<a href="/<?php print $language->prefix ?>/admision/visita-utec"><span>Visita</span>UTEC</a>
 						</li>

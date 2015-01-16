@@ -39,7 +39,7 @@ $titulo = $node->title;
 		</li>
 		<li data-href="/admision/centro-pre">
 			<div>
-				<h3 class="thin lead lh-lg"><?php print t('Centro PRE') ?></h3>
+				<h3 class="thin lead lh-lg"><?php print t('Pre University Center') ?></h3>
 				<div class="size lg">
 					<i class="icon-admisiones-centro-pre"></i>
 				</div>
