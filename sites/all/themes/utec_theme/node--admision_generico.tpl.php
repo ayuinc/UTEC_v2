@@ -101,7 +101,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="form-group col-sm-7">
+				<div class="form-group col-sm-6">
 					<label for="" class="sr-only"><?php print t('Undergrad Program') ?></label>
 					<select name="carrera" id="carrera" class="form-control select-override">
 						<option value="Carrera de interés"><?php print t('Undergrad Program') ?></option>
@@ -114,7 +114,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="form-group col-sm-7">
+				<div class="form-group col-sm-6">
 					<label for="" class="sr-only"><?php print t('Check') ?></label>
 					<textarea class="form-control" placeholder="Consulta" name="consulta" id="consulta"></textarea>
 				</div>
