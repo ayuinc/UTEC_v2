@@ -25,11 +25,12 @@ if (!isset($_POST['direccion-actual'])) {$_POST['direccion-actual'] = "";};
 if (!isset($_POST['email'])) {$_POST['email'] = "";};
 if (!isset($_POST['celular-1'])) {$_POST['celular-1'] = "";};
 if (!isset($_POST['celular-2'])) {$_POST['celular-2'] = "";};
-if (!isset($_POST['telefono-fijo'])) {$_POST['telefono-fijo'] = "";};
+if (!isset($_POST['telefono'])) {$_POST['telefono'] = "";};
 if (!isset($_POST['ano-culminacion'])) {$_POST['ano-culminacion'] = "";};
 if (!isset($_POST['colegio-procedencia'])) {$_POST['colegio-procedencia'] = "";};
 if (!isset($_POST['estudios-rendimiento'])) {$_POST['estudios-rendimiento'] = "";};
 if (!isset($_POST['estudiante'])) {$_POST['estudiante'] = "";};
+if (!isset($_POST['consulta'])) {$_POST['consulta'] = "";};
 
 if ( $_POST['celular-2'] == 'Nº Celular 2' ) {
   $celular2 = "No Ingresado";
@@ -37,7 +38,11 @@ if ( $_POST['celular-2'] == 'Nº Celular 2' ) {
   $celular2 = $_POST['celular-2'];
 }
 
+
+
 $fecha_n = $_POST['dia']." de ".$_POST['mes']." Del ".$_POST['ano'];
+
+
 
 $carrera_elegida = $_POST['carrera'];
 $carreras = array(
@@ -218,7 +223,7 @@ $mensaje_html .= '<html><body><table><tr>
        </tr>
        <tr>
                             <td>Telefono Fijo:</td>
-                            <td>'.$_POST['telefono-fijo'].'</td>
+                            <td>'.$_POST['telefono'].'</td>
        </tr>
                          <tr>
                             <td colspan="2"><b>Estudios</b></td> 
@@ -251,6 +256,10 @@ $mensaje_html .= '<html><body><table><tr>
                          <tr>
                             <td>Es o ha sido estudiante de esta universidad:</td>
                             <td>'.utf8_decode($_POST['estudiante']).'</td>
+       </tr>
+       <tr>
+                            <td>Consulta:</td>
+                            <td>'.utf8_decode($_POST['consulta']).'</td>
        </tr>
                          <tr>
                             <td colspan="2"><b>Datos Adicionales</b></td> 
@@ -344,8 +353,7 @@ $client = new nusoap_client( "http://app.utec.edu.pe/inscripcionutecws3/services
 
 $programacion = "2015-1";
 
-
-$v0 = $origen;
+$v0 = $familia;
 $v1 = utf8_decode($_POST['nombres']);
 $v2 = utf8_decode($_POST['apellidop']);
 $v3 = utf8_decode($_POST['apellidom']);
@@ -366,7 +374,7 @@ $v17 = utf8_decode($_POST['direccion-actual']);
 $v18 = utf8_decode($_POST['email']);
 $v19 = $_POST['celular-1'];
 $v20 = utf8_decode($celular2);
-$v21 = $_POST['telefono-fijo'];
+$v21 = $_POST['telefono'];
 $v22 = $_POST['ano-culminacion'];
 $v23 = utf8_decode($_POST['colegio-procedencia']);
 $v24 = utf8_decode($_POST['estudios-rendimiento']);
