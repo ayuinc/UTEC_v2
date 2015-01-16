@@ -25,25 +25,34 @@
 					<input type="text" class="form-control" placeholder="Nombres" name="nombres" id="nombres">
 				</div>
 				<div class="form-group col-sm-6">
-					<label for="" class="sr-only">Apellidos</label>
-					<input type="text" class="form-control" placeholder="Apellidos" name="apellidos" id="apellidos">
+					<label for="" class="sr-only">Apellido paterno</label>
+					<input type="text" class="form-control" placeholder="Apellidos" name="apellidop" id="apellidop">
 				</div>
 			</div>
 			<div class="row">
+				<div class="form-group col-sm-6">
+					<label for="" class="sr-only">Apellido materno</label>
+					<input type="text" class="form-control" placeholder="Apellidos" name="apellidom" id="apellidom">
+				</div>				
 				<div class="form-group col-sm-6">
 					<label for="" class="sr-only">E-Mail</label>
 					<input type="email" class="form-control" placeholder="e-mail" name="email" id="email">
 				</div>
-				<div class="form-group col-sm-6">
-					<label for="" class="sr-only">Tel&eacute;fono</label>
-					<input type="text" class="form-control" placeholder="Telefono" name="telefono" id="telefono">
-				</div>
 			</div>
 			<div class="row">
 				<div class="form-group col-sm-6">
+					<label for="" class="sr-only">Tel&eacute;fono</label>
+					<input type="text" class="form-control" placeholder="Telefono" name="telefono" id="telefono">
+				</div>				
+				<div class="form-group col-sm-6">
 					<label for="" class="sr-only">Carrera de interés</label>
 					<select name="carrera" id="carrera" class="form-control select-override">
-						<option value="Carrera de interés">Carrera de interés</option>
+						      <option value="">Carrera de Interés*</option>
+			                  <option value="15970">Ingeniería Industrial</option>
+			                  <option value="14864">Ingeniería Mecánica</option>
+			                  <option value="15968">Ingeniería de la Energía</option>
+			                  <option value="15964">Ingeniería Electrónica</option>
+			                  <option value="15966">Ingeniería Química Industrial</option>
 					</select>
 				</div>
 			</div>
