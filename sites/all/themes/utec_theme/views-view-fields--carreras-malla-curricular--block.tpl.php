@@ -24,6 +24,6 @@
   </ul>
   <div class="body">
     <?php print $curso ?>
-  </div>
+  </div>  
 </li>
   
