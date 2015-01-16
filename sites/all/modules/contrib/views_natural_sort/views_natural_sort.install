@@ -14,11 +14,18 @@ function views_natural_sort_schema() {
   $schema['views_natural_sort'] = array(
     'description' => t('Compressed titles for natural sorting.'),
     'fields' => array(
-      'nid' => array(
-        'description' => t('Node id'),
+      'eid' => array(
+        'description' => t('Entity id'),
         'type' => 'int',
         'unsigned' => TRUE,
         'not null' => TRUE,
+      ),
+      'entity_type' => array(
+        'description' => t('Entity Type'),
+        'type' => 'varchar',
+        'length' => 128,
+        'not null' => TRUE,
+        'default' => 'node',
       ),
       'field' => array(
         'description' => t('The field name. This will be title or some cck text field, etc.'),
@@ -26,6 +33,13 @@ function views_natural_sort_schema() {
         'length' => 32,
         'not null' => TRUE,
         'default' => '',
+      ),
+      'delta' => array(
+        'description' => t('The sequence number for this data item, used for multi-value fields'),
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
       ),
       'content' => array(
         'description' => t('Filtered content used for sorting.'),
@@ -35,8 +49,7 @@ function views_natural_sort_schema() {
         'default' => '',
       ),
     ),
-    'key' => array('nid', 'field', 'content'),
-    'primary key' => array('nid', 'field'),
+    'primary key' => array('eid', 'entity_type', 'field', 'delta'),
   );
 
   return $schema;
@@ -93,4 +106,49 @@ function views_natural_sort_uninstall() {
 function views_natural_sort_update_7001() {
   module_load_include('inc', 'views_natural_sort', 'views_natural_sort.admin');
   views_natural_sort_rebuild_index_submit();
+}
+
+/**
+ * Impliments hook_update_N().
+ *
+ * Upgrade the 7.x-1.x table structure to the 7.x-2.x table structure.
+ */
+function views_natural_sort_update_7200() {
+  db_drop_primary_key('views_natural_sort');
+  db_add_field(
+    'views_natural_sort',
+    'entity_type',
+    array(
+      'description' => t('Entity Type'),
+      'type' => 'varchar',
+      'length' => 128,
+      'not null' => TRUE,
+      'default' => 'node'
+    )
+  );
+  db_add_field(
+    'views_natural_sort',
+    'delta',
+    array(
+      'description' => t('The sequence number for this data item, used for multi-value fields'),
+      'type' => 'int',
+      'unsigned' => TRUE,
+      'not null' => TRUE,
+      'default' => 0,
+    )
+  );
+  db_change_field(
+    'views_natural_sort',
+    'nid',
+    'eid',
+    array(
+      'description' => t('Entity id'),
+      'type' => 'int',
+      'unsigned' => TRUE,
+      'not null' => TRUE,
+    ),
+    array(
+      'primary key' => array('eid', 'entity_type', 'field', 'delta'),
+    )
+  );
 }
