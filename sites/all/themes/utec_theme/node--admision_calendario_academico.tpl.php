@@ -18,7 +18,7 @@
 				<tbody>
 					<tr>
 						<td class="highlight"><?php print t('High Performance Assessment') ?></td>
-						<td><?php print t('Registration Start') ?></td>
+						<td><?php print t('Registration Starts') ?></td>
 						<td>01/04/2014</td>
 					</tr>
 					<tr>

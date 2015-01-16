@@ -34,7 +34,7 @@
 			padding: $container-fluid;
 			.num,
 			.month {
-				color: white;
+				color: white !important;
 				text-transform: uppercase;
 			}
 			.num {
