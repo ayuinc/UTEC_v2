@@ -20,7 +20,7 @@
 
 ?>
 <div class="pv-21 mt-70">
-	<h2 class="lead medium mb-0"><span class="text-gray-darker">Blog</span> <span class="text-gray">UTEC</span></h2>
+	<h2 class="lead medium mb-56"><span class="text-gray-darker">Blog</span> <span class="text-gray">UTEC</span></h2>
 	<!--<h4 class="lead mt-0 mb-56">Lorem ipsum sit amet, consectetur adipisicing elit.</h4>-->
 	<div class="banner" data-href="<?php print $path; ?>">
 		<div class="col-sm-3 banner-pic" style="background-image: url(<?php print $image; ?>);"></div>
