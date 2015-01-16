@@ -420,10 +420,10 @@
 			<div class="nav-display-left">
 				<div>
 					<?php if ($language->prefix == 'en'): ?>
-						<h1>Escuela de<br><span>desarollo</span><br>profesional</h1>
+						<h1>School of<br><span>profesional</span><br>development</h1>
 						<p>Enhance your skills and boost your career through our courses.</p>
 					<?php elseif ($language->prefix == 'es'): ?>
-						<h1>School of<br><span>profesional</span><br>development</h1>
+						<h1>Escuela de<br><span>desarollo</span><br>profesional</h1>
 						<p>Potencia tus habilidades y alcanza el éxito profesional a través de nuestros cursos.</p>
 					<?php endif ?>
 				</div>
