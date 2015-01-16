@@ -16,9 +16,9 @@
 	<div class="pv-42 lead-ch">
 		<h3><?php print $cuerpo ?></h3>
 	</div>
-	<div class="mb-63">
-		<img src="<?php print('/'.$pathfile.$imagen)?>" class="img-responsive">
-	</div>
+	<!-- <div class="mb-63">
+		<img src="<?php //print('/'.$pathfile.$imagen)?>" class="img-responsive">
+	</div> -->
 	<div class="mb-63">
 		<img src="<?php print('/'.$pathfile.$infografia)?>" class="img-responsive">
 	</div>
