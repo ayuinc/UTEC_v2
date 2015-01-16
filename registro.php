@@ -11,12 +11,12 @@ $carreras = array(
 );
 
 
-echo utf8_decode($_POST['nombres']);
-echo utf8_decode($_POST['apellidop']);
-echo utf8_decode($carreras[$carrera_elegida]);
-echo utf8_decode($_POST['email']);
+echo $_POST['nombres'];
+echo $_POST['apellidop'];
+echo $carreras[$carrera_elegida];
+echo $_POST['email'];
 echo $_POST['telefono'];
-echo utf8_decode($_POST['carrera']);
+echo $_POST['carrera'];
 
 session_start();
 
@@ -29,8 +29,8 @@ $programacion = "2015-1";
 $origen ="landing-examen-admision";
 
 $v0 = "ADMISION";
-$v1 = utf8_decode($_POST['nombres']);
-$v2 = utf8_decode($_POST['apellidop']);
+$v1 = $_POST['nombres'];
+$v2 = $_POST['apellidop'];
 $v3 = "ApellidoM";
 $v4 = "";
 $v5 = "";
@@ -46,7 +46,7 @@ $v14 = "";
 $v15 = "";
 $v16 = "";
 $v17 = ""; //utf8_decode($direccion);
-$v18 = utf8_decode($_POST['email']);
+$v18 = $_POST['email'];
 $v19 = ""; //utf8_decode($celular);
 $v20 = "";
 $v21 = $_POST['telefono'];
