@@ -1,3 +1,4 @@
+<?php global $language ?>
 <div class="pt-14 pb-42" id="home-sec-1">
 	<div class="container">
 		<h2 class="lead medium mb-7"><span class="text-gray-darker"><?php print t('Ready to') ?></span> <span class="text-gray"><?php print t('change the world?') ?></span></h2>
