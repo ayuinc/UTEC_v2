@@ -27,7 +27,7 @@
 .breadcrumbs-dark {
 	.pane-page-breadcrumb {
 		@include position(absolute, 28px null null null);
-		z-index: 3000;
+		z-index: 1980;
 		width: 100%;
 		@media #{$sm-down} {
 			display: none;

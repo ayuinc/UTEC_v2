@@ -5348,7 +5348,7 @@ textarea:-ms-input-placeholder {
 .breadcrumbs-dark .pane-page-breadcrumb {
   position: absolute;
   top: 28px;
-  z-index: 3000;
+  z-index: 1980;
   width: 100%; }
   @media only screen and (max-width: 768px) {
     .breadcrumbs-light .pane-page-breadcrumb,
