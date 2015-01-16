@@ -10,14 +10,6 @@ $carreras = array(
     '15970' => 'Ingeniería Industrial', 
 );
 
-
-echo utf8_decode($_POST['nombres']);
-echo utf8_decode($_POST['apellidop']);
-echo utf8_decode($carreras[$carrera_elegida]);
-echo utf8_decode($_POST['email']);
-echo $_POST['telefono'];
-echo utf8_decode($_POST['carrera']);
-
 session_start();
 
 require_once( 'nusoap2/nusoap.php' );
@@ -29,8 +21,8 @@ $programacion = "2015-1";
 $origen ="landing-examen-admision";
 
 $v0 = "ADMISION";
-$v1 = utf8_decode($_POST['nombres']);
-$v2 = utf8_decode($_POST['apellidop']);
+$v1 = "Angel Ayu"; //$_POST['nombres'];
+$v2 = "Pacheco"; //$_POST['apellidop'];
 $v3 = "ApellidoM";
 $v4 = "";
 $v5 = "";
@@ -46,10 +38,10 @@ $v14 = "";
 $v15 = "";
 $v16 = "";
 $v17 = ""; //utf8_decode($direccion);
-$v18 = utf8_decode($_POST['email']);
+$v18 = "Mail"; //$_POST['email'];
 $v19 = ""; //utf8_decode($celular);
 $v20 = "";
-$v21 = $_POST['telefono'];
+$v21 = "11111"; //$_POST['telefono'];
 $v22 = "";
 $v23 = "";//24
 $v24 = "";//25
