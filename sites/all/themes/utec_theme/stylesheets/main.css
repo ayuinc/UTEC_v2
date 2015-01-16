@@ -1594,7 +1594,7 @@ output {
   line-height: 1.42857;
   color: #8f8d8e; }
 
-.form-control {
+.form-control, #header .tool-bar .search-form .form-text, #header-on-scroll .tool-bar .search-form .form-text {
   display: block;
   width: 100%;
   height: 34px;
@@ -1611,24 +1611,24 @@ output {
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
-  .form-control:focus {
+  .form-control:focus, #header .tool-bar .search-form .form-text:focus, #header-on-scroll .tool-bar .search-form .form-text:focus {
     border-color: #66afe9;
     outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
-  .form-control::-moz-placeholder {
+  .form-control::-moz-placeholder, #header .tool-bar .search-form .form-text::-moz-placeholder, #header-on-scroll .tool-bar .search-form .form-text::-moz-placeholder {
     color: #999;
     opacity: 1; }
-  .form-control:-ms-input-placeholder {
+  .form-control:-ms-input-placeholder, #header .tool-bar .search-form .form-text:-ms-input-placeholder, #header-on-scroll .tool-bar .search-form .form-text:-ms-input-placeholder {
     color: #999; }
-  .form-control::-webkit-input-placeholder {
+  .form-control::-webkit-input-placeholder, #header .tool-bar .search-form .form-text::-webkit-input-placeholder, #header-on-scroll .tool-bar .search-form .form-text::-webkit-input-placeholder {
     color: #999; }
-  .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+  .form-control[disabled], #header .tool-bar .search-form [disabled].form-text, #header-on-scroll .tool-bar .search-form [disabled].form-text, .form-control[readonly], #header .tool-bar .search-form [readonly].form-text, #header-on-scroll .tool-bar .search-form [readonly].form-text, fieldset[disabled] .form-control, fieldset[disabled] #header .tool-bar .search-form .form-text, #header .tool-bar .search-form fieldset[disabled] .form-text, fieldset[disabled] #header-on-scroll .tool-bar .search-form .form-text, #header-on-scroll .tool-bar .search-form fieldset[disabled] .form-text {
     cursor: not-allowed;
     background-color: #f1f1f1;
     opacity: 1; }
 
-textarea.form-control {
+textarea.form-control, #header .tool-bar .search-form textarea.form-text, #header-on-scroll .tool-bar .search-form textarea.form-text {
   height: auto; }
 
 input[type="search"] {
@@ -1641,10 +1641,16 @@ input[type="search"] {
   input[type="month"] {
     line-height: 34px; }
 
-  input[type="date"].input-sm,
+  input[type="date"].input-sm, #header .tool-bar .search-form input[type="date"].form-text, #header-on-scroll .tool-bar .search-form input[type="date"].form-text,
   input[type="time"].input-sm,
+  #header .tool-bar .search-form input[type="time"].form-text,
+  #header-on-scroll .tool-bar .search-form input[type="time"].form-text,
   input[type="datetime-local"].input-sm,
-  input[type="month"].input-sm {
+  #header .tool-bar .search-form input[type="datetime-local"].form-text,
+  #header-on-scroll .tool-bar .search-form input[type="datetime-local"].form-text,
+  input[type="month"].input-sm,
+  #header .tool-bar .search-form input[type="month"].form-text,
+  #header-on-scroll .tool-bar .search-form input[type="month"].form-text {
     line-height: 24px; }
 
   input[type="date"].input-lg,
@@ -1715,38 +1721,44 @@ input[type="checkbox"] {
   padding-top: 7px;
   padding-bottom: 7px;
   margin-bottom: 0; }
-  .form-control-static.input-lg, .form-control-static.input-sm {
+  .form-control-static.input-lg, .form-control-static.input-sm, #header .tool-bar .search-form .form-control-static.form-text, #header-on-scroll .tool-bar .search-form .form-control-static.form-text {
     padding-left: 0;
     padding-right: 0; }
 
-.input-sm {
+.input-sm, #header .tool-bar .search-form .form-text, #header-on-scroll .tool-bar .search-form .form-text {
   height: 24px;
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 0px; }
 
-select.input-sm {
+select.input-sm, #header .tool-bar .search-form select.form-text, #header-on-scroll .tool-bar .search-form select.form-text {
   height: 24px;
   line-height: 24px; }
 
-textarea.input-sm,
-select[multiple].input-sm {
+textarea.input-sm, #header .tool-bar .search-form textarea.form-text, #header-on-scroll .tool-bar .search-form textarea.form-text,
+select[multiple].input-sm,
+#header .tool-bar .search-form select[multiple].form-text,
+#header-on-scroll .tool-bar .search-form select[multiple].form-text {
   height: auto; }
 
-.form-group-sm .form-control {
+.form-group-sm .form-control, .form-group-sm #header .tool-bar .search-form .form-text, #header .tool-bar .search-form .form-group-sm .form-text, .form-group-sm #header-on-scroll .tool-bar .search-form .form-text, #header-on-scroll .tool-bar .search-form .form-group-sm .form-text {
   height: 24px;
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 0px; }
 
-select.form-group-sm .form-control {
+select.form-group-sm .form-control, select.form-group-sm #header .tool-bar .search-form .form-text, #header .tool-bar .search-form select.form-group-sm .form-text, select.form-group-sm #header-on-scroll .tool-bar .search-form .form-text, #header-on-scroll .tool-bar .search-form select.form-group-sm .form-text {
   height: 24px;
   line-height: 24px; }
 
-textarea.form-group-sm .form-control,
-select[multiple].form-group-sm .form-control {
+textarea.form-group-sm .form-control, textarea.form-group-sm #header .tool-bar .search-form .form-text, #header .tool-bar .search-form textarea.form-group-sm .form-text, textarea.form-group-sm #header-on-scroll .tool-bar .search-form .form-text, #header-on-scroll .tool-bar .search-form textarea.form-group-sm .form-text,
+select[multiple].form-group-sm .form-control,
+select[multiple].form-group-sm #header .tool-bar .search-form .form-text,
+#header .tool-bar .search-form select[multiple].form-group-sm .form-text,
+select[multiple].form-group-sm #header-on-scroll .tool-bar .search-form .form-text,
+#header-on-scroll .tool-bar .search-form select[multiple].form-group-sm .form-text {
   height: auto; }
 
 .input-lg {
@@ -1764,24 +1776,28 @@ textarea.input-lg,
 select[multiple].input-lg {
   height: auto; }
 
-.form-group-lg .form-control {
+.form-group-lg .form-control, .form-group-lg #header .tool-bar .search-form .form-text, #header .tool-bar .search-form .form-group-lg .form-text, .form-group-lg #header-on-scroll .tool-bar .search-form .form-text, #header-on-scroll .tool-bar .search-form .form-group-lg .form-text {
   height: 46px;
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.33;
   border-radius: 0px; }
 
-select.form-group-lg .form-control {
+select.form-group-lg .form-control, select.form-group-lg #header .tool-bar .search-form .form-text, #header .tool-bar .search-form select.form-group-lg .form-text, select.form-group-lg #header-on-scroll .tool-bar .search-form .form-text, #header-on-scroll .tool-bar .search-form select.form-group-lg .form-text {
   height: 46px;
   line-height: 46px; }
 
-textarea.form-group-lg .form-control,
-select[multiple].form-group-lg .form-control {
+textarea.form-group-lg .form-control, textarea.form-group-lg #header .tool-bar .search-form .form-text, #header .tool-bar .search-form textarea.form-group-lg .form-text, textarea.form-group-lg #header-on-scroll .tool-bar .search-form .form-text, #header-on-scroll .tool-bar .search-form textarea.form-group-lg .form-text,
+select[multiple].form-group-lg .form-control,
+select[multiple].form-group-lg #header .tool-bar .search-form .form-text,
+#header .tool-bar .search-form select[multiple].form-group-lg .form-text,
+select[multiple].form-group-lg #header-on-scroll .tool-bar .search-form .form-text,
+#header-on-scroll .tool-bar .search-form select[multiple].form-group-lg .form-text {
   height: auto; }
 
 .has-feedback {
   position: relative; }
-  .has-feedback .form-control {
+  .has-feedback .form-control, .has-feedback #header .tool-bar .search-form .form-text, #header .tool-bar .search-form .has-feedback .form-text, .has-feedback #header-on-scroll .tool-bar .search-form .form-text, #header-on-scroll .tool-bar .search-form .has-feedback .form-text {
     padding-right: 42.5px; }
 
 .form-control-feedback {
@@ -1801,7 +1817,7 @@ select[multiple].form-group-lg .form-control {
   height: 46px;
   line-height: 46px; }
 
-.input-sm + .form-control-feedback {
+.input-sm + .form-control-feedback, #header .tool-bar .search-form .form-text + .form-control-feedback, #header-on-scroll .tool-bar .search-form .form-text + .form-control-feedback {
   width: 24px;
   height: 24px;
   line-height: 24px; }
@@ -1813,11 +1829,11 @@ select[multiple].form-group-lg .form-control {
 .has-success .radio-inline,
 .has-success .checkbox-inline, .has-success.radio label, .has-success.checkbox label, .has-success.radio-inline label, .has-success.checkbox-inline label {
   color: #3c763d; }
-.has-success .form-control {
+.has-success .form-control, .has-success #header .tool-bar .search-form .form-text, #header .tool-bar .search-form .has-success .form-text, .has-success #header-on-scroll .tool-bar .search-form .form-text, #header-on-scroll .tool-bar .search-form .has-success .form-text {
   border-color: #3c763d;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
-  .has-success .form-control:focus {
+  .has-success .form-control:focus, .has-success #header .tool-bar .search-form .form-text:focus, #header .tool-bar .search-form .has-success .form-text:focus, .has-success #header-on-scroll .tool-bar .search-form .form-text:focus, #header-on-scroll .tool-bar .search-form .has-success .form-text:focus {
     border-color: #2b542c;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168; }
@@ -1835,11 +1851,11 @@ select[multiple].form-group-lg .form-control {
 .has-warning .radio-inline,
 .has-warning .checkbox-inline, .has-warning.radio label, .has-warning.checkbox label, .has-warning.radio-inline label, .has-warning.checkbox-inline label {
   color: #8a6d3b; }
-.has-warning .form-control {
+.has-warning .form-control, .has-warning #header .tool-bar .search-form .form-text, #header .tool-bar .search-form .has-warning .form-text, .has-warning #header-on-scroll .tool-bar .search-form .form-text, #header-on-scroll .tool-bar .search-form .has-warning .form-text {
   border-color: #8a6d3b;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
-  .has-warning .form-control:focus {
+  .has-warning .form-control:focus, .has-warning #header .tool-bar .search-form .form-text:focus, #header .tool-bar .search-form .has-warning .form-text:focus, .has-warning #header-on-scroll .tool-bar .search-form .form-text:focus, #header-on-scroll .tool-bar .search-form .has-warning .form-text:focus {
     border-color: #66512c;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b; }
@@ -1857,11 +1873,11 @@ select[multiple].form-group-lg .form-control {
 .has-error .radio-inline,
 .has-error .checkbox-inline, .has-error.radio label, .has-error.checkbox label, .has-error.radio-inline label, .has-error.checkbox-inline label {
   color: #a94442; }
-.has-error .form-control {
+.has-error .form-control, .has-error #header .tool-bar .search-form .form-text, #header .tool-bar .search-form .has-error .form-text, .has-error #header-on-scroll .tool-bar .search-form .form-text, #header-on-scroll .tool-bar .search-form .has-error .form-text {
   border-color: #a94442;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
-  .has-error .form-control:focus {
+  .has-error .form-control:focus, .has-error #header .tool-bar .search-form .form-text:focus, #header .tool-bar .search-form .has-error .form-text:focus, .has-error #header-on-scroll .tool-bar .search-form .form-text:focus, #header-on-scroll .tool-bar .search-form .has-error .form-text:focus {
     border-color: #843534;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483; }
@@ -1888,7 +1904,7 @@ select[multiple].form-group-lg .form-control {
     display: inline-block;
     margin-bottom: 0;
     vertical-align: middle; }
-  .form-inline .form-control {
+  .form-inline .form-control, .form-inline #header .tool-bar .search-form .form-text, #header .tool-bar .search-form .form-inline .form-text, .form-inline #header-on-scroll .tool-bar .search-form .form-text, #header-on-scroll .tool-bar .search-form .form-inline .form-text {
     display: inline-block;
     width: auto;
     vertical-align: middle; }
@@ -1899,9 +1915,13 @@ select[multiple].form-group-lg .form-control {
     vertical-align: middle; }
     .form-inline .input-group .input-group-addon,
     .form-inline .input-group .input-group-btn,
-    .form-inline .input-group .form-control {
+    .form-inline .input-group .form-control,
+    .form-inline .input-group #header .tool-bar .search-form .form-text,
+    #header .tool-bar .search-form .form-inline .input-group .form-text,
+    .form-inline .input-group #header-on-scroll .tool-bar .search-form .form-text,
+    #header-on-scroll .tool-bar .search-form .form-inline .input-group .form-text {
       width: auto; }
-  .form-inline .input-group > .form-control {
+  .form-inline .input-group > .form-control, .form-inline #header .tool-bar .search-form .input-group > .form-text, #header .tool-bar .search-form .form-inline .input-group > .form-text, .form-inline #header-on-scroll .tool-bar .search-form .input-group > .form-text, #header-on-scroll .tool-bar .search-form .form-inline .input-group > .form-text {
     width: 100%; }
   .form-inline .control-label {
     margin-bottom: 0;
@@ -3727,9 +3747,13 @@ small {
 .icon-footer-youtube:before {
   content: "\ea99"; }
 
-a.btn.form-control, .language-switcher-locale-url li a.form-control.language-link,
+a.btn.form-control, .language-switcher-locale-url li a.form-control.language-link, .language-switcher-locale-url li #header .tool-bar .search-form a.language-link.form-text, #header .tool-bar .search-form .language-switcher-locale-url li a.language-link.form-text, .language-switcher-locale-url li #header-on-scroll .tool-bar .search-form a.language-link.form-text, #header-on-scroll .tool-bar .search-form .language-switcher-locale-url li a.language-link.form-text, #header .tool-bar .search-form a.btn.form-text, #header-on-scroll .tool-bar .search-form a.btn.form-text,
 button.btn.form-control,
-input[type="submit"].btn.form-control {
+#header .tool-bar .search-form button.btn.form-text,
+#header-on-scroll .tool-bar .search-form button.btn.form-text,
+input[type="submit"].btn.form-control,
+#header .tool-bar .search-form input[type="submit"].btn.form-text,
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn.form-text {
   height: auto; }
 a.btn.borderless, .language-switcher-locale-url li a.borderless.language-link,
 button.btn.borderless,
@@ -4543,7 +4567,7 @@ input[type="submit"].btn.btn-linkedin.btn-circle {
   .custom-form-wrapper form {
     margin: 35px 0; }
 
-form.left-border-input .form-group .form-control {
+form.left-border-input .form-group .form-control, form.left-border-input .form-group #header .tool-bar .search-form .form-text, #header .tool-bar .search-form form.left-border-input .form-group .form-text, form.left-border-input .form-group #header-on-scroll .tool-bar .search-form .form-text, #header-on-scroll .tool-bar .search-form form.left-border-input .form-group .form-text {
   border-radius: 0px;
   -webkit-box-shadow: inset 3px 0px 0px 0px whitesmoke;
   -moz-box-shadow: inset 3px 0px 0px 0px whitesmoke;
@@ -4551,14 +4575,14 @@ form.left-border-input .form-group .form-control {
   -webkit-transition: box-shadow 0.3s ease-in;
   -moz-transition: box-shadow 0.3s ease-in;
   transition: box-shadow 0.3s ease-in; }
-  form.left-border-input .form-group .form-control:focus {
+  form.left-border-input .form-group .form-control:focus, form.left-border-input .form-group #header .tool-bar .search-form .form-text:focus, #header .tool-bar .search-form form.left-border-input .form-group .form-text:focus, form.left-border-input .form-group #header-on-scroll .tool-bar .search-form .form-text:focus, #header-on-scroll .tool-bar .search-form form.left-border-input .form-group .form-text:focus {
     -webkit-box-shadow: inset 4px 0px 0px 0px #04dbff;
     -moz-box-shadow: inset 4px 0px 0px 0px #04dbff;
     box-shadow: inset 4px 0px 0px 0px #04dbff;
     -webkit-transition: box-shadow 0.3s ease-in;
     -moz-transition: box-shadow 0.3s ease-in;
     transition: box-shadow 0.3s ease-in; }
-form.left-border-input .form-group.has-success .form-control {
+form.left-border-input .form-group.has-success .form-control, form.left-border-input .form-group.has-success #header .tool-bar .search-form .form-text, #header .tool-bar .search-form form.left-border-input .form-group.has-success .form-text, form.left-border-input .form-group.has-success #header-on-scroll .tool-bar .search-form .form-text, #header-on-scroll .tool-bar .search-form form.left-border-input .form-group.has-success .form-text {
   border-radius: 0px;
   -webkit-box-shadow: inset 3px 0px 0px 0px #cee7ad;
   -moz-box-shadow: inset 3px 0px 0px 0px #cee7ad;
@@ -4566,14 +4590,14 @@ form.left-border-input .form-group.has-success .form-control {
   -webkit-transition: box-shadow 0.3s ease-in;
   -moz-transition: box-shadow 0.3s ease-in;
   transition: box-shadow 0.3s ease-in; }
-  form.left-border-input .form-group.has-success .form-control:focus {
+  form.left-border-input .form-group.has-success .form-control:focus, form.left-border-input .form-group.has-success #header .tool-bar .search-form .form-text:focus, #header .tool-bar .search-form form.left-border-input .form-group.has-success .form-text:focus, form.left-border-input .form-group.has-success #header-on-scroll .tool-bar .search-form .form-text:focus, #header-on-scroll .tool-bar .search-form form.left-border-input .form-group.has-success .form-text:focus {
     -webkit-box-shadow: inset 4px 0px 0px 0px #9dce5b;
     -moz-box-shadow: inset 4px 0px 0px 0px #9dce5b;
     box-shadow: inset 4px 0px 0px 0px #9dce5b;
     -webkit-transition: box-shadow 0.3s ease-in;
     -moz-transition: box-shadow 0.3s ease-in;
     transition: box-shadow 0.3s ease-in; }
-form.left-border-input .form-group.has-warning .form-control {
+form.left-border-input .form-group.has-warning .form-control, form.left-border-input .form-group.has-warning #header .tool-bar .search-form .form-text, #header .tool-bar .search-form form.left-border-input .form-group.has-warning .form-text, form.left-border-input .form-group.has-warning #header-on-scroll .tool-bar .search-form .form-text, #header-on-scroll .tool-bar .search-form form.left-border-input .form-group.has-warning .form-text {
   border-radius: 0px;
   -webkit-box-shadow: inset 3px 0px 0px 0px #fff08f;
   -moz-box-shadow: inset 3px 0px 0px 0px #fff08f;
@@ -4581,14 +4605,14 @@ form.left-border-input .form-group.has-warning .form-control {
   -webkit-transition: box-shadow 0.3s ease-in;
   -moz-transition: box-shadow 0.3s ease-in;
   transition: box-shadow 0.3s ease-in; }
-  form.left-border-input .form-group.has-warning .form-control:focus {
+  form.left-border-input .form-group.has-warning .form-control:focus, form.left-border-input .form-group.has-warning #header .tool-bar .search-form .form-text:focus, #header .tool-bar .search-form form.left-border-input .form-group.has-warning .form-text:focus, form.left-border-input .form-group.has-warning #header-on-scroll .tool-bar .search-form .form-text:focus, #header-on-scroll .tool-bar .search-form form.left-border-input .form-group.has-warning .form-text:focus {
     -webkit-box-shadow: inset 4px 0px 0px 0px #ffe224;
     -moz-box-shadow: inset 4px 0px 0px 0px #ffe224;
     box-shadow: inset 4px 0px 0px 0px #ffe224;
     -webkit-transition: box-shadow 0.3s ease-in;
     -moz-transition: box-shadow 0.3s ease-in;
     transition: box-shadow 0.3s ease-in; }
-form.left-border-input .form-group.has-error .form-control {
+form.left-border-input .form-group.has-error .form-control, form.left-border-input .form-group.has-error #header .tool-bar .search-form .form-text, #header .tool-bar .search-form form.left-border-input .form-group.has-error .form-text, form.left-border-input .form-group.has-error #header-on-scroll .tool-bar .search-form .form-text, #header-on-scroll .tool-bar .search-form form.left-border-input .form-group.has-error .form-text {
   border-radius: 0px;
   -webkit-box-shadow: inset 3px 0px 0px 0px #f3c1ba;
   -moz-box-shadow: inset 3px 0px 0px 0px #f3c1ba;
@@ -4596,7 +4620,7 @@ form.left-border-input .form-group.has-error .form-control {
   -webkit-transition: box-shadow 0.3s ease-in;
   -moz-transition: box-shadow 0.3s ease-in;
   transition: box-shadow 0.3s ease-in; }
-  form.left-border-input .form-group.has-error .form-control:focus {
+  form.left-border-input .form-group.has-error .form-control:focus, form.left-border-input .form-group.has-error #header .tool-bar .search-form .form-text:focus, #header .tool-bar .search-form form.left-border-input .form-group.has-error .form-text:focus, form.left-border-input .form-group.has-error #header-on-scroll .tool-bar .search-form .form-text:focus, #header-on-scroll .tool-bar .search-form form.left-border-input .form-group.has-error .form-text:focus {
     -webkit-box-shadow: inset 4px 0px 0px 0px #e26e5f;
     -moz-box-shadow: inset 4px 0px 0px 0px #e26e5f;
     box-shadow: inset 4px 0px 0px 0px #e26e5f;
@@ -4972,6 +4996,7 @@ body {
   .size.lg.user-card .user-pic {
     width: 210px; }
   .size.lg.user-card .user-info {
+    width: 75%;
     min-height: 0px; }
 .size.lg i {
   font-size: 48px; }
@@ -5729,6 +5754,11 @@ img.icon-utec {
         color: white; }
     .language-switcher-locale-url li:first-child a.language-link {
       margin-right: 7px; }
+
+#header .tool-bar .search-form .form-item label, #header-on-scroll .tool-bar .search-form .form-item label {
+  display: none; }
+#header .tool-bar .search-form .form-text, #header-on-scroll .tool-bar .search-form .form-text {
+  width: 210px; }
 
 .site-menu {
   position: fixed;
