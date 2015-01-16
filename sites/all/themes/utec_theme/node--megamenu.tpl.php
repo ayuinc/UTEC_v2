@@ -171,7 +171,7 @@
 							<a href="/somos-utec/trabaja-en-utec"><span><?php print t('Work') ?></span><?php print t('at UTEC') ?></a>
 						</li>
 						<li>
-							<a href="/somos-utec/utec-garage"><span>Utec</span>garage</a>
+							<a href="/somos-utec/utec-garage"><span>Utec</span> garage</a>
 						</li>
 						<li>
 							<a href="http://utecventures.com/" target="_blank" ><span>Utec</span>Ventures</a>
@@ -471,7 +471,7 @@
 		<div class="container">
 			<div class="left">
 				<div class="logo">
-					<a href="#"><img src="/<?php print $theme_path; ?>/assets/img/icon_UTEC.png" alt="Logo UTEC"></a>
+					<a href="/"><img src="/<?php print $theme_path; ?>/assets/img/icon_UTEC.png" alt="Logo UTEC"></a>
 				</div>
 			</div>
 			<div class="left hidden-xs hidden-sm">
