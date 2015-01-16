@@ -449,16 +449,22 @@
 						</li>-->
 						<li><a href="/edp/la-escuela"><?php print t('The School') ?></a></li>
 						<li>
-							<a href="/<?php print $language->prefix ?>/edp/cursos/cursos-cortos"><span>Cursos</span>Cortos</a>
+							<?php if ($language->prefix == 'en'): ?>
+								<a href="/<?php print $language->prefix ?>/edp/cursos/cursos-cortos"><span>Short</span>Courses</a>
+							<?php elseif ($language->prefix == 'es'): ?>
+								<a href="/<?php print $language->prefix ?>/edp/cursos/cursos-cortos"><span>Cursos</span>Cortos</a>
+							<?php endif ?>
 						</li>
 					</ul>
 					<ul>
 						<!--<li>
 							<a href="/<?php print $language->prefix ?>/edp/cursos/cursos-adhoc"><span>Cursos</span>Adhoc</a>
 						</li>-->
-						<li><a href="/<?php print $language->prefix ?>/edp/calendario">Calendario</a></li>
 						<li>
-							<a href="/<?php print $language->prefix ?>/edp/inscripcion" class="btn btn-primary btn-custom bold">Inscríbete</a>
+							<a href="/<?php print $language->prefix ?>/edp/calendario"><?php print t('Calendar') ?></a>
+						</li>
+						<li>
+							<a href="/<?php print $language->prefix ?>/edp/inscripcion" class="btn btn-primary btn-custom bold"><?php print t('Sign up') ?></a>
 						</li>
 					</ul>
 				</div>
@@ -755,7 +761,11 @@
 							<a href="/edp/cursos/cursos-online"><span>Cursos</span>online</a>
 						</li>-->
 						<li>
-							<a href="/<?php print $language->prefix ?>/edp/cursos/cursos-cortos"><span>Cursos</span>Cortos</a>
+							<?php if ($language->prefix == 'en'): ?>
+								<a href="/<?php print $language->prefix ?>/edp/cursos/cursos-cortos"><span>Short</span>Courses</a>
+							<?php elseif ($language->prefix == 'es'): ?>
+								<a href="/<?php print $language->prefix ?>/edp/cursos/cursos-cortos"><span>Cursos</span>Cortos</a>
+							<?php endif ?>
 						</li>
 					</ul> 
 					<ul>
@@ -764,7 +774,7 @@
 						</li>
 						<li><a href="#">Calendario</a></li>-->
 						<li>
-							<a href="http://escuela-edp.utec.edu.pe/" class="btn btn-primary btn-custom bold">Inscríbete</a>
+							<a href="http://escuela-edp.utec.edu.pe/" class="btn btn-primary btn-custom bold"><?php print t('Sign up') ?></a>
 						</li>
 					</ul>
 				</div>
