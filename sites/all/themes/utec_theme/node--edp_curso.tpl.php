@@ -19,13 +19,20 @@
   $profesor_cargo = $node->field_profesor['und']['0']['entity']->field_descripci_n['und']['0']['value'];
   $profesor_resenia = $node->field_profesor['und']['0']['entity']->field_rese_a['und']['0']['value'];
   $profesor_pic = $node->field_profesor['und']['0']['entity']->picture->filename;
+
   $field_requisito = $node->field_requisito['und']['0']['value'];
   $field_temario = $node->field_temario['und']['0']['value'];
   $field_inscribete = $node->field_inscribete['und']['0']['value'];
   $field_contactanos = $node->field_contactanos['und']['0']['value'];
   $field_brochure = $node->field_brochure['und']['0']['value'];
 
-  kpr($node);
+  $nodo_id = $node->field_menu_edp_detalles['und']['0']['entity']->nid;
+  $nodo_id = $node->field_menu_edp_detalles['und']['0']['entity']->nid;
+  $nodo_id = $node->field_menu_edp_detalles['und']['0']['entity']->nid;
+  $nodo_id = $node->field_menu_edp_detalles['und']['0']['entity']->nid;
+	
+	$detalles = $node->field_menu_edp_detalles['und']['0'];
+  //kpr($node);
 ?>
 
 
@@ -97,46 +104,66 @@
 		</div>
 		<div>
 			<ul class="grid-list grid-list-5 grid-list-hover size xs">
-				<li data-href="<?php print $field_requisito ?>">
-					<div>
-						<div class="size sm">
-							<i class="icon-admisiones-primeros-puestos"></i>
+				<?php foreach ($detalles as $detalle) : ?>
+					<?php 
+						$tid = $detalle['entity']->field_tipo_de_detalle['und']['0']['tid'];
+					?>
+					<?php if ($tid == '88') :?>
+						<?php $nid = $detalle['entity']->nid;?>
+					<li data-href="<?php print '/node/'.$nid ?>">
+						<div>
+							<div class="size sm">
+								<i class="icon-admisiones-primeros-puestos"></i>
+							</div>
+							<small class="thin"><?php print t('Requirements') ?></small>
 						</div>
-						<small class="thin"><?php print t('Requirements') ?></small>
-					</div>
-				</li>
-				<li data-href="<?php print $field_temario ?>">
-					<div>
-						<div class="size sm">
-							<i class="icon-admisiones-alto-rendimiento"></i>
+					</li>
+					<?php endif; ?>
+					<?php if ($tid == '90') :?>
+						<?php $nid = $detalle['entity']->nid;?>
+					<li data-href="<?php print '/node/'.$nid ?>">
+						<div>
+							<div class="size sm">
+								<i class="icon-admisiones-alto-rendimiento"></i>
+							</div>
+							<small class="thin"><?php print t('Agenda') ?></small>
 						</div>
-						<small class="thin"><?php print t('Agenda') ?></small>
-					</div>
-				</li>
-				<li data-href="<?php print $field_inscribete ?>">
-					<div>
-						<div class="size sm">
-							<i class="icon-admisiones-traslado"></i>
+					</li>
+					<?php endif; ?>
+					<?php if ($tid == '92') :?>
+						<?php $nid = $detalle['entity']->nid;?>
+					<li data-href="<?php print '/node/'.$nid ?>">
+						<div>
+							<div class="size sm">
+								<i class="icon-admisiones-traslado"></i>
+							</div>
+							<small class="thin"><?php print t('Sign up') ?></small>
 						</div>
-						<small class="thin"><?php print t('Sign up') ?></small>
-					</div>
-				</li>
-				<!--<li data-href="<?php print $field_contactanos ?>">
-					<div>
-						<div class="size sm">
-							<i class="icon-admisiones-centro-pre"></i>
+					</li>
+					<?php endif; ?>
+					<?php if ($tid == '91') :?>
+						<?php $nid = $detalle['entity']->nid;?>
+					<li data-href="<?php print '/node/'.$nid ?>">
+						<div>
+							<div class="size sm">
+								<i class="icon-admisiones-centro-pre"></i>
+							</div>
+							<small class="thin"><?php print t('Contact us') ?></small>
 						</div>
-						<small class="thin"><?php print t('Contact us') ?></small>
-					</div>
-				</li>-->
-				<li data-href="<?php print $field_brochure ?>">
-					<div>
-						<div class="size sm">
-							<i class="icon-admisiones-bachillerato"></i>
+					</li>
+					<?php endif; ?>
+					<?php if ($tid == '89') :?>
+						<?php $nid = $detalle['entity']->nid;?>
+					<li data-href="<?php print '/node/'.$nid ?>">
+						<div>
+							<div class="size sm">
+								<i class="icon-admisiones-bachillerato"></i>
+							</div>
+							<small class="thin"><?php print t('Brochure') ?></small>
 						</div>
-						<small class="thin"><?php print t('Brochure') ?></small>
-					</div>
-				</li>
+					</li>
+					<?php endif; ?>
+				<?php endforeach; ?>
 			</ul>
 		</div>
 	</div>
