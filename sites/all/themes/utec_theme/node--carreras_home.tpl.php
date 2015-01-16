@@ -1,3 +1,4 @@
+<?php global $language ?>
 <?php 
   global $base_url;
   global $theme_path;
