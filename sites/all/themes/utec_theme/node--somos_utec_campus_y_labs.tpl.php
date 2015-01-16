@@ -14,13 +14,13 @@
 	<h1 class="light"><?php print t('Campus and labs') ?></h1>
 	<div class="separator-gray separator-sm"></div>
 	<div class="pv-49">
-		<h3 class="text-gray-darker mb-0"><?php print t('Campus') ?></h3>
+		<h3 class="text-gray-darker"><?php print t('Campus') ?></h3>
 		<p><?php print $field_introduccion_campus ?></p>
 		<?php if ($field_foto_campus!='') { ?>
 			<img src="<?php print('/'.$pathfile.$field_foto_campus)?>" class="img-responsive">
 		<?php } ?>
 		<p><?php print $field_contenido_campus ?></p>
-		<h3 class="text-gray-darker mb-0"><?php print t('Labs') ?></h3>
+		<h3 class="text-gray-darker"><?php print t('Labs') ?></h3>
 		<p><?php print $field_introduccion_labs ?></p>
 		<?php if ($field_foto_labs!='') { ?>
 			<img src="<?php print('/'.$pathfile.$field_foto_labs)?>" class="img-responsive">
