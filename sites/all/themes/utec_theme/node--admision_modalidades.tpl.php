@@ -4,7 +4,7 @@
 $titulo = $node->title;   
 
 ?>
-<div class="container-sm">
+<div class="container-sm h3-ch-gray">
 	<h1 class="light">Modalidades de admisión</h1>
 	<div class="separator-gray separator-lg"></div>
 	<ul class="grid-list grid-list-3 grid-list-1-xs grid-list-hover size sm">
