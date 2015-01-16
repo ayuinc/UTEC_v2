@@ -71,19 +71,16 @@ $response = $client->call( 'registrarInscripcion', $param );
 $error = $client->getError();
 
 print_r($response);
-print_r($error);
 
 if($error){
 
 	//Flash::setError("<p class='nom'>Error enviando el formulario por CRM, vuelve a intentarlo porfavor</p>");
-	$message = "<p class='nom'>Error enviando el formulario. Por favor, vuelve a intentarlo.</p><br/>".$error;
+	echo "error";
 	//log4php
 	
 }else{
 
-  $message = '<p><strong>'.strtoupper($_POST['nombres']).'</strong>, gracias por tu interés en UTEC.</p>';
-  $message .= '<p>Hemos recibido tus datos correctamente.</p>';
-  $message .= '<p>Pronto te atenderemos. Recibirás un email en breve.</p><br/>';
+  echo "exito";
   //$message.="  <p>Comunícate con UTEC más fácil:<br/><a href='http://guia.com.pe/estara/estara_popup.asp?advertiseId=411234&status=P&phone=51013731000&addressId=876727&' target='_blank'><img src='img/llama_gratis.jpg' alt='LLama gratis'></a></p>";
   //Flash::setInfo($message);
 }
