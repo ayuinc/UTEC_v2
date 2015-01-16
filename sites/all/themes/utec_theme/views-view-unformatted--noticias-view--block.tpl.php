@@ -19,6 +19,6 @@
 		    ?>
 		<?php endforeach; ?>
 	<div>
-		<a href="/somos-utec/noticias" class="btn btn-lg btn-primary see-more uppercase">Ver más noticias</a>
+		<a href="/somos-utec/noticias" class="btn btn-lg btn-primary see-more uppercase"><?php print t('View more news') ?></a>
 	</div>
 </div>

@@ -30,9 +30,11 @@
 							<?php if ($language->prefix == 'en'): ?>
 								<span><?php print t('Industrial') ?></span>
 								<span><?php print t('Engineering') ?></span>
+								<span></span>
 							<?php elseif ($language->prefix == 'es'): ?>
 								<span><?php print t('Engineering') ?></span>
 								<span><?php print t('Industrial') ?></span>
+								<span></span>
 							<?php endif ?>
 						</a>
 					</h2>
@@ -46,9 +48,11 @@
 							<?php if ($language->prefix == 'en'): ?>
 								<span><?php print t('Energy') ?></span>
 								<span><?php print t('Engineering') ?></span>
+								<span></span>
 							<?php elseif ($language->prefix == 'es'): ?>
 								<span><?php print t('Engineering') ?></span>
 								<span><?php print t('Energy') ?></span>
+								<span></span>
 							<?php endif ?>
 						</a>
 					</h2>
@@ -62,9 +66,11 @@
 							<?php if ($language->prefix == 'en'): ?>
 							<span><?php print t('Electronic') ?></span>
 								<span><?php print t('Engineering') ?></span>
+								<span></span>
 							<?php elseif ($language->prefix == 'es'): ?>
 								<span><?php print t('Engineering') ?></span>
-							<span><?php print t('Electronic') ?></span>
+								<span><?php print t('Electronic') ?></span>
+								<span></span>
 							<?php endif ?>
 						</a>
 					</h2>
@@ -78,9 +84,11 @@
 							<?php if ($language->prefix == 'en'): ?>
 								<span><?php print t('Mechanical') ?></span>
 								<span><?php print t('Engineering') ?></span>
+								<span></span>
 							<?php elseif ($language->prefix == 'es'): ?>
 								<span><?php print t('Engineering') ?></span>
 								<span><?php print t('Mechanical') ?></span>
+								<span></span>
 							<?php endif ?>
 						</a>
 					</h2>

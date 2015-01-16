@@ -8,7 +8,7 @@
  */
 ?>
 <div class="container-sm">
-	<h1 class="light">Noticias</h1>
+	<h1 class="light"><?php print t('News') ?></h1>
 	<div class="separator-gray separator-sm"></div>	
 	<div id="carousel-custom" class="carousel carousel-custom slide mb-42" data-ride="carousel">
 		<!-- Wrapper for slides -->

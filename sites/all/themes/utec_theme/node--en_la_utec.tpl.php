@@ -1,3 +1,4 @@
+<?php global $language ?>
 <?php 
 
 	global $base_url;
@@ -25,7 +26,7 @@
   $derecho_inferior_der_img  = $fields[4]->field_imagen['und'][0]['filename'];
 
 ?>
-<h1 class="lead medium pt-21 mb-7"><span class="text-gray-darker">En UTEC ingeniería es</span> <span class="text-gray">bienestar</span></h1>
+<h1 class="lead medium pt-21 mb-7"><span class="text-gray-darker"><?php print t('At UTEC, engineering is') ?></span> <span class="text-gray"><?php print t('well-being') ?></span></h1>
 	<!--<h4 class="lead mt-0 mb-42">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>-->
   <div class="anchor-img-grid anchor-img-grid-1">
     <div class="col-sm-6">
