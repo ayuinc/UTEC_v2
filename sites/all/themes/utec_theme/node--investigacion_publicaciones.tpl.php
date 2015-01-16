@@ -16,10 +16,18 @@
 ?>
 
 <h3><a href="<?php print $link ?>" target="_blank"><?php print $titulo ?></a></h3>
-<div><span class="lead bold">Investigador: </span><span class="lead"><?php print $investigador ?></span></div>
-<div><span class="lead bold">Tipo: </span><span class="lead"><?php print $tipo ?></span></div>
-<div><span class="lead bold">Departamento: </span><span class="lead"><?php print $departamento ?></span></div>
-<div class="pb-49"><span class="lead bold">Publicado en: </span><span class="lead"><?php print $publicado ?></span></div>
+<?php if ($investigador!='') { ?>
+	<div><span class="lead bold">Investigador: </span><span class="lead"><?php print $investigador ?></span></div>
+<?php } ?>
+<?php if ($tipo!='') { ?>
+	<div><span class="lead bold">Tipo: </span><span class="lead"><?php print $tipo ?></span></div>
+<?php } ?>
+<?php if ($departamento!='') { ?>
+	<div><span class="lead bold">Departamento: </span><span class="lead"><?php print $departamento ?></span></div>
+<?php } ?>
+<?php if ($publicado!='') { ?>
+	<div class="pb-49"><span class="lead bold">Publicado en: </span><span class="lead"><?php print $publicado ?></span></div>
+<?php } ?>
 <!-- <div><span class="lead bold">Año: </span><span class="lead"><?php print $anio ?></span></div> -->
 
 
