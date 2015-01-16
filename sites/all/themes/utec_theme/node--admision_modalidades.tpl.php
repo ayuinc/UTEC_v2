@@ -5,7 +5,11 @@ $titulo = $node->title;
 
 ?>
 <div class="container-sm">
-	<h1 class="light">Modalidades de admisión</h1>
+	<?php if ($language->prefix == 'en'): ?>
+		<h1 class="light">Admissions</h1>
+	<?php elseif ($language->prefix == 'es'): ?>
+		<h1 class="light">Modalidades de admisión</h1>
+	<?php endif ?>
 	<div class="separator-gray separator-lg"></div>
 	<ul class="grid-list grid-list-3 grid-list-1-xs grid-list-hover size sm">
 		<li data-href="/admision/modalidades/primeros-puestos">
