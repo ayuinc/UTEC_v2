@@ -12,7 +12,7 @@
 	$created = date('d F Y', strtotime($node->created));
 	$share_blog = $node->field_share_blog['und']['0']['value'];
 
-	// print_r($node);
+	print_r($node);
 ?>
 
 <h3 class="lead"><?php print $title ?></h3>
