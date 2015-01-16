@@ -14,6 +14,6 @@
 		<ul class="grid-list grid-list-5 grid-list-1-xs malla-curricular malla-curricular-primary">
     <?php foreach ($rows as $id => $row): ?>
 	    <?php print $row;?>
-		<?php endforeach; ?>
+		<?php endforeach; ?> 
 		</ul>	
 	</div>
