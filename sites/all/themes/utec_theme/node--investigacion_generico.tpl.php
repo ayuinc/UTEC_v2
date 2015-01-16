@@ -12,14 +12,7 @@
 <?php $end = end((explode('/', $url))); ?>
 
 <div class="container-sm mb-35">
-	<h1 class="light">
-		<?php if ($end == 'proyectos') { ?>
-		Proyectos
-		<?php } ?>
-		<?php if ($end == 'publicaciones') { ?>
-		Publicaciones
-		<?php } ?>		
-	</h1>
+	<h1 class="light"><?php print $title ?></h1>
 	<div class="separator-gray separator-lg"></div>
 	<p class="lead text-gray"><?php print $field_introduccion_inv_generico ?></p>
 	<?php if ($field_foto_inv_generico!='') { ?>
