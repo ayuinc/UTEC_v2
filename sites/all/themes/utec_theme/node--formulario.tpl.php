@@ -18,31 +18,27 @@
 	<h3 class="thin text-gray pt-21 pb-56">Datos del participante:</h3>
 </div>
 <div class="container-sm form-custom">
-	<form action="/registro.php" class="mb-ch-28" data-submit="Formulario de inscripcion">
+	<form action="/registro.php" data-submit="Formulario de inscripcion">
 			<div class="row">
-				<div class="form-group col-sm-7">
+				<div class="form-group col-sm-6">
 					<label for="" class="sr-only">Nombres</label>
 					<input type="text" class="form-control" placeholder="Nombres" name="nombres" id="nombres">
 				</div>
-			</div>
-			<div class="row">
-				<div class="form-group col-sm-7">
+				<div class="form-group col-sm-6">
 					<label for="" class="sr-only">Apellidos</label>
 					<input type="text" class="form-control" placeholder="Apellidos" name="apellidos" id="apellidos">
 				</div>
-			</div>		
+			</div>
 			<div class="row">
-				<div class="col-sm-7 form-group">
+				<div class="form-group col-sm-6">
 					<label for="" class="sr-only">E-Mail</label>
 					<input type="email" class="form-control" placeholder="e-mail" name="email" id="email">
 				</div>
-			</div>
-			<div class="row">
-				<div class="form-group col-sm-7">
+				<div class="form-group col-sm-6">
 					<label for="" class="sr-only">Tel&eacute;fono</label>
 					<input type="text" class="form-control" placeholder="Telefono" name="telefono" id="telefono">
 				</div>
-			</div>			
+			</div>
 			<div class="row">
 				<div class="form-group col-sm-7">
 					<label for="" class="sr-only">Carrera de interés</label>
@@ -51,11 +47,9 @@
 					</select>
 				</div>
 			</div>
-			<div class="row">
-				<div class="form-group col-sm-7">
-					<label for="" class="sr-only">Consulta</label>
-					<textarea class="form-control" placeholder="Consulta" name="consulta" id="consulta"></textarea>
-				</div>
+			<div class="form-group">
+				<label for="" class="sr-only">Consulta</label>
+				<textarea class="form-control" placeholder="Consulta" name="consulta" id="consulta"></textarea>
 			</div>
 
 			<div class="text-right">
