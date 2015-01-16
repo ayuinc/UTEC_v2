@@ -142,13 +142,13 @@
 							<a href="/somos-utec/metodologia-educativa"><span>Metodología</span>Educativa</a>
 						</li>
 						<li>
+							<a href="/somos-utec/noticias">Noticias</a>
+						</li>						
+						<!--<li>
 							<a href="/somos-utec/calendario-academico"><span>Calendario</span>Académico</a>
-						</li>
+						</li>-->
 					</ul> 
 					<ul>
-						<li>
-							<a href="/somos-utec/noticias">Noticias</a>
-						</li>
 						<li>
 							<a href="/somos-utec/eventos-utec">Eventos UTEC</a>
 						</li>
@@ -280,7 +280,7 @@
 					</ul>
 					<ul>
 						<li>
-							<a href="/admision/inscripcion">Inscripción</a>
+							<a href="/admision/pre-inscripcion">Pre-Inscripción</a>
 						</li>
 						<li>
 							<a href="/admision/calendario-academico"><span>Calendario</span>de admisión</a>
@@ -582,7 +582,7 @@
 					</ul>
 					<ul>
 						<li>
-							<a href="/admision/inscripcion">Inscripción</a>
+							<a href="/admision/pre-inscripcion">Pre-Inscripción</a>
 						</li>
 						<li>
 							<a href="/admision/calendario-academico"><span>Calendario</span>Académico</a>
