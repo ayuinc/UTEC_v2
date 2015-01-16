@@ -1,3 +1,4 @@
+<?php global $language ?>
 <?php 
   global $base_url;
   global $theme_path;
@@ -25,7 +26,11 @@
 
 ?>
 <div class="hero-unit"> <!-- HERO -->
-  <div data-section-scroll="Acerca de" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
+  <?php if ($language->prefix == 'en'): ?>
+    <div data-section-scroll="Overview" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
+  <?php elseif ($language->prefix == 'es'): ?>
+    <div data-section-scroll="Acerca de" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
+  <?php endif ?>
     <div class="overlay flex-middle">
       <div class="container-sm hero-text" data-href="<?php print $carrera_link ?>">
         <h2 class="thin h3 text-white mb-7"><?php print t('What is') ?></h2>
@@ -49,9 +54,9 @@
     </div>
   </div>
 </div> <!-- END:Hero -->
-<div data-section-scroll="Malla curricular" id="malla-curricular" class="malla-curricular section-scroll-content minh-560 flex-middle-center">
+<div data-section-scroll="<?php print t('Curriculum') ?>" id="malla-curricular" class="malla-curricular section-scroll-content minh-560 flex-middle-center">
   <div class="container-sm text-right normalize-text" data-href="<?php print $malla_link ?>">
-    <h2 class="lead thin"><?php print t('Malla curricular') ?></h2>
+    <h2 class="lead thin"><?php print t('Curriculum') ?></h2>
     <hr class="hr-gray">
     <div class="row">
       <div class="col-sm-9">
@@ -70,9 +75,9 @@
     <i class="icon-arrows-down bg-info text-white"></i>
   </a>
 </div>
-<div data-section-scroll="Menciones" id="menciones" class="section-scroll-content minh-560 flex-middle-center bg-info-op">
+<div data-section-scroll="<?php print t('Majors') ?>" id="menciones" class="section-scroll-content minh-560 flex-middle-center bg-info-op">
   <div class="container-sm text-left text-white normalize-text" data-href="<?php print $menciones_link ?>">
-    <h2 class="lead thin"><?php print t('Menciones') ?></h2>
+    <h2 class="lead thin"><?php print t('Majors') ?></h2>
     <hr class="hr-white">
     <div class="row">
       <div class="col-sm-3 hidden-xs">
@@ -91,9 +96,9 @@
     <i class="icon-arrows-down bg-info text-white"></i>
   </a>
 </div>
-<div data-section-scroll="Profesores" id="profesores" class="section-scroll-content minh-560 flex-middle-center">
+<div data-section-scroll="<?php print t('Faculty') ?>" id="profesores" class="section-scroll-content minh-560 flex-middle-center">
   <div class="container-sm text-center normalize-text">
-    <h2 class="lead thin"><?php print t('Profesores') ?></h2>
+    <h2 class="lead thin"><?php print t('Faculty') ?></h2>
     <hr class="hr-gray">
     <div class="size xl">
       <i class="icon-carreras-profesores"></i>
@@ -123,11 +128,11 @@
     <i class="icon-arrows-down bg-info text-white"></i>
   </a>
 </div>
-<div data-section-scroll="Perfil del egresado" id="perfil-egresado" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_perfil_egresado_imagen)?>);">
+<div data-section-scroll="<?php print t('Graduate profile') ?>" id="perfil-egresado" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_perfil_egresado_imagen)?>);">
   <div class="container" data-href="<?php print $perfil_link ?>">
     <div class="row">
       <div class="col-sm-6 normalize-text">
-        <h2 class="thin"><?php print t('Perfil del egresado') ?></h2>
+        <h2 class="thin"><?php print t('Graduate profile') ?></h2>
         <hr class="hr-gray">
         <div class="row">
           <div class="col-sm-3 hidden-xs">

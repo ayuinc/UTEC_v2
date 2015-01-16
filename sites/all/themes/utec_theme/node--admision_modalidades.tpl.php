@@ -1,3 +1,4 @@
+<?php global $language ?>
 <?php 
 // $video_name = $node->field_video['und']['0']['filename'];
 
@@ -5,7 +6,11 @@ $titulo = $node->title;
 
 ?>
 <div class="container-sm">
-	<h1 class="light">Modalidades de admisión</h1>
+	<?php if ($language->prefix == 'en'): ?>
+		<h1 class="light">Admissions</h1>
+	<?php elseif ($language->prefix == 'es'): ?>
+		<h1 class="light">Modalidades de admisión</h1>
+	<?php endif ?>
 	<div class="separator-gray separator-lg"></div>
 	<ul class="grid-list grid-list-3 grid-list-1-xs grid-list-hover size sm">
 		<li data-href="/admision/modalidades/primeros-puestos">
@@ -34,7 +39,7 @@ $titulo = $node->title;
 		</li>
 		<li data-href="/admision/centro-pre">
 			<div>
-				<h3 class="thin lead lh-lg"><?php print t('Centro PRE') ?></h3>
+				<h3 class="thin lead lh-lg"><?php print t('Pre University Center') ?></h3>
 				<div class="size lg">
 					<i class="icon-admisiones-centro-pre"></i>
 				</div>
@@ -58,7 +63,7 @@ $titulo = $node->title;
 		</li>
 	</ul>
 	<h3><?php print t('If you applied via one of these paths, check your results here.') ?></h3>
-	<a href="#" class="btn btn-primary btn-lg uppercase see-more"><?php print t('See results here.') ?></a>
+	<a href="https://utec.desire2learn.com/" target="_blank" class="btn btn-primary btn-lg uppercase see-more"><?php print t('See results here.') ?></a>
 </div>
 
 

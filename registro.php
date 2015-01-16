@@ -11,11 +11,11 @@ if (!isset($_POST['apellidop'])) {$_POST['apellidop'] = "";};
 if (!isset($_POST['apellidom'])) {$_POST['apellidom'] = "";};
 if (!isset($_POST['tipo-documento'])) {$_POST['tipo-documento'] = "";};
 if (!isset($_POST['documento'])) {$_POST['documento'] = "";};
-if (!isset($_POST['genero'])) {$_POST['genero'] = "";};
+if (!isset($_POST['genero'])) {$_POST['genero'] = "M";};
 if (!isset($_POST['carrera'])) {$_POST['carrera'] = "";};
 if (!isset($_POST['pais'])) {$_POST['pais'] = "";};
 if (!isset($_POST['ciudad'])) {$_POST['ciudad'] = "";};
-if (!isset($_POST['dia'])) {$_POST['dia'] = "";};
+if (!isset($_POST['dia'])) {$_POST['dia'] = ""; $fecha_n = ""; };
 if (!isset($_POST['mes'])) {$_POST['mes'] = "";};
 if (!isset($_POST['ano'])) {$_POST['ano'] = "";};
 if (!isset($_POST['depto'])) {$_POST['depto'] = "";};
@@ -24,12 +24,12 @@ if (!isset($_POST['distrito'])) {$_POST['distrito'] = "";};
 if (!isset($_POST['direccion-actual'])) {$_POST['direccion-actual'] = "";};
 if (!isset($_POST['email'])) {$_POST['email'] = "";};
 if (!isset($_POST['celular-1'])) {$_POST['celular-1'] = "";};
-if (!isset($_POST['celular-2'])) {$_POST['celular-2'] = "";};
+if (!isset($_POST['celular-2'])) {$_POST['celular-2'] = ""; $celular2 = ""; };
 if (!isset($_POST['telefono'])) {$_POST['telefono'] = "";};
 if (!isset($_POST['ano-culminacion'])) {$_POST['ano-culminacion'] = "";};
-if (!isset($_POST['colegio-procedencia'])) {$_POST['colegio-procedencia'] = "";};
+if (!isset($_POST['colegio'])) {$_POST['colegio'] = "";};
 if (!isset($_POST['estudios-rendimiento'])) {$_POST['estudios-rendimiento'] = "";};
-if (!isset($_POST['estudiante'])) {$_POST['estudiante'] = "";};
+if (!isset($_POST['estudiante'])) {$_POST['estudiante'] = "N";};
 if (!isset($_POST['consulta'])) {$_POST['consulta'] = "";};
 
 if ( $_POST['celular-2'] == 'Nº Celular 2' ) {
@@ -38,11 +38,10 @@ if ( $_POST['celular-2'] == 'Nº Celular 2' ) {
   $celular2 = $_POST['celular-2'];
 }
 
-
-
-$fecha_n = $_POST['dia']." de ".$_POST['mes']." Del ".$_POST['ano'];
-
-
+if ($_POST['dia'] != "")
+{
+  $fecha_n = $_POST['dia']." de ".$_POST['mes']." Del ".$_POST['ano'];
+}
 
 $carrera_elegida = $_POST['carrera'];
 $carreras = array(
@@ -134,6 +133,7 @@ if($origen == "solicitud-examen" || $origen == "solicitud-primeros-puestos" || $
     
 }
 
+
 if($origen == "Charlas informativas")
 {
     $tituloTelemarketing = "Charlas Informativas";
@@ -148,6 +148,22 @@ if($origen == "Charlas informativas")
     $familia = "CHARLAS-INFORMATIVAS";
     $origen = "pagina-charlas";
 }
+
+if($origen == "Contacto")
+{
+    $tituloTelemarketing = "Formulario de Contacto - Datos Personales";
+    $subjectTelemarketing = "Solicitud - Formulario de Contacto UTEC";
+    $fromTelemarketing = "webmaster@utec.edu.pe";
+    $fromNameTelemarketing = "UTEC";
+    $tituloCliente = "¡Gracias por tu interés en UTEC.!";
+    $subjectCliente = "Gracias por tu Interés en UTEC";
+    $fromCliente = "informes@utec.edu.pe";
+    $fromNameCliente = "Universidad de Ingeniería & Tecnología";
+
+    $familia = "CONTACTO";
+    $origen = "pagina-contacto";  
+}
+
 
 $mensaje_html ="";
 $mensaje_html .= '<html><body><table><tr>
@@ -238,7 +254,7 @@ $mensaje_html .= '<html><body><table><tr>
        </tr>
        <tr>
                             <td>Colegio de Procedencia:</td>
-                            <td>'.utf8_decode($_POST['colegio-procedencia']).'</td>
+                            <td>'.utf8_decode($_POST['colegio']).'</td>
        </tr>
                          <tr>
                             <td>Departamento del Colegio de Procedencia:</td>
@@ -377,9 +393,9 @@ $v19 = $_POST['celular-1'];
 $v20 = utf8_decode($celular2);
 $v21 = $_POST['telefono'];
 $v22 = $_POST['ano-culminacion'];
-$v23 = utf8_decode($_POST['colegio-procedencia']);
+$v23 = utf8_decode($_POST['colegio']);
 $v24 = utf8_decode($_POST['estudios-rendimiento']);
-$v25 = $_SERVER['REMOTE_ADDR'];
+$v25 = $_SERVER['REMOTE_ADDR']; 
 $v26 = "0";
 $v27 = utf8_decode($_POST['estudiante']);
 $v28 = "";
