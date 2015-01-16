@@ -35,8 +35,8 @@
 		<?php endif; ?>	
 	</div>
 	<div>
-		<h3 class="bold"><?php print $titulo ?></h3>
-		<h3><?php print $sub_titulo ?></h3>
+		<h3 class="bold text-gray"><?php print $titulo ?></h3>
+		<h4><?php print $sub_titulo ?></h4>
 	</div>
 </li>
 
