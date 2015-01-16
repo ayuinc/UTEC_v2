@@ -25,7 +25,7 @@
 	</div>
 	<div class="right">
 		<ul class="social-links">
-			<?php print $share_blog; ?>
+			<div class="addthis_toolbox"></div>
 		</ul>
 	</div>
 </div>
