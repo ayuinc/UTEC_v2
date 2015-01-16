@@ -10,7 +10,7 @@ $titulo = $node->title;
 	<ul class="grid-list grid-list-3 grid-list-hover size sm">
 		<li data-href="/admision/modalidades/primeros-puestos">
 			<div>
-				<h3 class="thin lead"><?php print t('Top Academic Rankings') ?></h3>
+				<h3 class="thin lead lh-lg"><?php print t('Top Academic Rankings') ?></h3>
 				<div class="size lg">
 					<i class="icon-admisiones-primeros-puestos"></i>
 				</div>
@@ -18,7 +18,7 @@ $titulo = $node->title;
 		</li>
 		<li data-href="/admision/alto-rendimiento">
 			<div>
-				<h3 class="thin lead"><?php print t('High Performance Assessment') ?></h3>
+				<h3 class="thin lead lh-lg"><?php print t('High Performance Assessment') ?></h3>
 				<div class="size lg">
 					<i class="icon-admisiones-alto-rendimiento"></i>
 				</div>
@@ -26,7 +26,7 @@ $titulo = $node->title;
 		</li>
 		<li data-href="/admision/modalidades/traslados">
 			<div>
-				<h3 class="thin lead"><?php print t('Transfer') ?></h3>
+				<h3 class="thin lead lh-lg"><?php print t('Transfer') ?></h3>
 				<div class="size lg">
 					<i class="icon-admisiones-traslado"></i>
 				</div>
@@ -34,7 +34,7 @@ $titulo = $node->title;
 		</li>
 		<li data-href="/admision/centro-pre">
 			<div>
-				<h3 class="thin lead"><?php print t('Centro PRE') ?></h3>
+				<h3 class="thin lead lh-lg"><?php print t('Centro PRE') ?></h3>
 				<div class="size lg">
 					<i class="icon-admisiones-centro-pre"></i>
 				</div>
@@ -42,7 +42,7 @@ $titulo = $node->title;
 		</li>
 		<li data-href="/admision/bachillerato-internacional">
 			<div>
-				<h3 class="thin lead"><?php print t('International Baccalaureate') ?></h3>
+				<h3 class="thin lead lh-lg"><?php print t('International Baccalaureate') ?></h3>
 				<div class="size lg">
 					<i class="icon-admisiones-bachillerato"></i>
 				</div>
@@ -50,7 +50,7 @@ $titulo = $node->title;
 		</li>
 		<li data-href="/admision/examen-de-admision">
 			<div>
-				<h3 class="thin lead"><?php print t('Admission Exam') ?></h3>
+				<h3 class="thin lead lh-lg"><?php print t('Admission Exam') ?></h3>
 				<div class="size lg">
 					<i class="icon-admisiones-examen"></i>
 				</div>
