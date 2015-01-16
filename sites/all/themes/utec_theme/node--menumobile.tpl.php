@@ -102,9 +102,9 @@
 		<li>
 			<a href="/carreras/ingenieria-electronica"><span>Ingeniería</span>Electrónica</a>
 		</li>
-		<li>
+		<!--<li>
 			<a href="/carreras/menciones">Menciones</a>
-		</li>
+		</li>-->
 		<li>
 			<a href="/carreras/escuela-de-desarrollo"><span>Escuela de</span>Desarollo</a>
 		</li>
