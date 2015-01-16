@@ -88,30 +88,34 @@
 					<input type="text" class="form-control" placeholder="Nombres" name="nombres" id="nombres">
 				</div>
 				<div class="form-group col-sm-6">
-					<label for="" class="sr-only"><?php print t('Last Name') ?></label>
+					<label for="" class="sr-only"><?php print t('Middle Name') ?></label>
 					<input type="text" class="form-control" placeholder="Apellidos" name="apellidop" id="apellidop">
 				</div>
 			</div>
 			<div class="row">
+				<div class="form-group col-sm-6">
+					<label for="" class="sr-only"><?php print t('Last Name') ?></label>
+					<input type="text" class="form-control" placeholder="Apellidos" name="apellidom" id="apellidom">
+				</div>
 				<div class="col-sm-6 form-group">
 					<label for="" class="sr-only"><?php print t('E-Mail') ?></label>
 					<input type="email" class="form-control" placeholder="e-mail" name="email" id="email">
 				</div>
+			</div>
+			<div class="row">
 				<div class="form-group col-sm-6">
 					<label for="" class="sr-only"><?php print t('Phone') ?></label>
 					<input type="text" class="form-control" placeholder="Telefono" name="telefono" id="telefono">
-				</div>
-			</div>
-			<div class="row">
+				</div>				
 				<div class="form-group col-sm-6">
 					<label for="" class="sr-only"><?php print t('Undergrad Program') ?></label>
 					<select name="carrera" id="carrera" class="form-control select-override">
 						<option value="Carrera de interés"><?php print t('Undergrad Program') ?></option>
 					  <option value="15970"><?php print t('Industrial Engineering') ?></option>
-            <option value="14864"><?php print t('Mechanical Engineering') ?></option>
-            <option value="15968"><?php print t('Energy Engineering') ?></option>
-            <option value="15964"><?php print t('Electronic Engineering') ?></option>
-            <option value="15966"><?php print t('Industrial and Chemical Engineering') ?></option>
+			            <option value="14864"><?php print t('Mechanical Engineering') ?></option>
+			            <option value="15968"><?php print t('Energy Engineering') ?></option>
+			            <option value="15964"><?php print t('Electronic Engineering') ?></option>
+			            <option value="15966"><?php print t('Industrial and Chemical Engineering') ?></option>
 					</select>
 				</div>
 			</div>

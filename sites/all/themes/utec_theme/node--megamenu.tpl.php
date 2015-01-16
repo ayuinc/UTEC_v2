@@ -134,44 +134,44 @@
 							<a href="/<?php print $language->prefix ?>/somos-utec/autoridades"><?php print t('Authorities') ?></a>
 						</li>
 						<li>
-							<a href="/somos-utec/profesores"><?php print t('Faculty') ?></a>
+							<a href="/<?php print $language->prefix ?>/somos-utec/profesores"><?php print t('Faculty') ?></a>
 						</li>
 						<li>
-							<a href="/somos-utec/ingenio-en-accion"><span><?php print t('Ingenuity') ?></span><?php print t('in action') ?></a>
+							<a href="/<?php print $language->prefix ?>/somos-utec/ingenio-en-accion"><span><?php print t('Ingenuity') ?></span><?php print t('in action') ?></a>
 						</li>
 						<li>
 							<?php if ($language->prefix == 'en'): ?>
-								<a href="/somos-utec/metodologia-educativa"><span><?php print t('Educational') ?></span><?php print t('Methodology') ?></a>
+								<a href="/<?php print $language->prefix ?>/somos-utec/metodologia-educativa"><span><?php print t('Educational') ?></span><?php print t('Methodology') ?></a>
 							<?php elseif ($language->prefix == 'es'): ?>
-								<a href="/somos-utec/metodologia-educativa"><span><?php print t('Methodology') ?></span><?php print t('Educational') ?></a>
+								<a href="/<?php print $language->prefix ?>/somos-utec/metodologia-educativa"><span><?php print t('Methodology') ?></span><?php print t('Educational') ?></a>
 							<?php endif ?>
 						</li>
 						<li>
-							<a href="/somos-utec/noticias"><?php print t('News') ?></a>
+							<a href="/<?php print $language->prefix ?>/somos-utec/noticias"><?php print t('News') ?></a>
 						</li>						
 						<!--<li>
-							<a href="/somos-utec/calendario-academico"><span>Calendario</span>Académico</a>
+							<a href="/<?php print $language->prefix ?>/somos-utec/calendario-academico"><span>Calendario</span>Académico</a>
 						</li>-->
 					</ul> 
 					<ul>
 						<li>
-							<a href="/somos-utec/eventos-utec"><?php print t('Utec Events') ?></a>
+							<a href="/<?php print $language->prefix ?>/somos-utec/eventos-utec"><?php print t('Utec Events') ?></a>
 						</li>
 						<li>
 							<?php if ($language->prefix == 'en'): ?>
-								<a href="/somos-utec/vida-estudiantil"><span><?php print t('Student') ?></span><?php print t('Life') ?></a>
+								<a href="/<?php print $language->prefix ?>/somos-utec/vida-estudiantil"><span><?php print t('Student') ?></span><?php print t('Life') ?></a>
 							<?php elseif ($language->prefix == 'es'): ?>
-								<a href="/somos-utec/vida-estudiantil"><span><?php print t('Life') ?></span><?php print t('Student') ?></a>
+								<a href="/<?php print $language->prefix ?>/somos-utec/vida-estudiantil"><span><?php print t('Life') ?></span><?php print t('Student') ?></a>
 							<?php endif ?>
 						</li>
 						<li>
-							<a href="/somos-utec/campus-y-laboratorios"><span><?php print t('Campus and') ?></span><?php print t('Labs') ?></a>
+							<a href="/<?php print $language->prefix ?>/somos-utec/campus-y-laboratorios"><span><?php print t('Campus and') ?></span><?php print t('Labs') ?></a>
 						</li>
 						<li>
-							<a href="/somos-utec/trabaja-en-utec"><span><?php print t('Work') ?></span><?php print t('at UTEC') ?></a>
+							<a href="/<?php print $language->prefix ?>/somos-utec/trabaja-en-utec"><span><?php print t('Work') ?></span><?php print t('at UTEC') ?></a>
 						</li>
 						<li>
-							<a href="/somos-utec/utec-garage"><span>Utec</span> garage</a>
+							<a href="/<?php print $language->prefix ?>/somos-utec/utec-garage"><span>Utec</span> garage</a>
 						</li>
 						<li>
 							<a href="http://utecventures.com/" target="_blank" ><span>Utec</span>Ventures</a>
@@ -204,16 +204,16 @@
 				<div>
 					<ul>
 						<li>
-							<a href="/investigacion/proyectos"><?php print t('Projects') ?></a>
+							<a href="/<?php print $language->prefix ?>/investigacion/proyectos"><?php print t('Projects') ?></a>
 						</li>
 						<li>
-							<a href="/investigacion/publicaciones"><?php print t('Publications') ?></a>
+							<a href="/<?php print $language->prefix ?>/investigacion/publicaciones"><?php print t('Publications') ?></a>
 						</li>
 						<li>
-							<a href="/investigacion/empresas-y-clientes"><span><?php print t('Companies') ?></span><?php print t('and clients') ?></a>
+							<a href="/<?php print $language->prefix ?>/investigacion/empresas-y-clientes"><span><?php print t('Companies') ?></span><?php print t('and clients') ?></a>
 						</li>
 						<li>
-							<a href="/investigacion/contacto"><?php print t('Contact us') ?></a>
+							<a href="/<?php print $language->prefix ?>/investigacion/contacto"><?php print t('Contact us') ?></a>
 						</li>
 					</ul>
 				</div>
@@ -239,7 +239,7 @@
 				<div>
 					<ul>
 						<li>
-							<a href="/carreras/ingenieria-industrial">
+							<a href="/<?php print $language->prefix ?>/carreras/ingenieria-industrial">
 								<?php if ($language->prefix == 'en'): ?>
 									<span><?php print t('Industrial') ?></span><?php print t('Engineering') ?>
 								<?php elseif ($language->prefix == 'es'): ?>
@@ -249,7 +249,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="/carreras/ingenieria-de-la-energia">
+							<a href="/<?php print $language->prefix ?>/carreras/ingenieria-de-la-energia">
 								<?php if ($language->prefix == 'en'): ?>
 									<span><?php print t('Energy') ?></span>
 									<?php print t('Engineering') ?>
@@ -260,7 +260,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="/carreras/ingenieria-quimica-industrial">
+							<a href="/<?php print $language->prefix ?>/carreras/ingenieria-quimica-industrial">
 								<?php if ($language->prefix == 'en'): ?>
 									<span><?php print t('Industrial Chemical') ?></span>
 									<?php print t('Engineering') ?>
@@ -271,7 +271,7 @@
 							</a>	
 						</li>
 						<li>
-							<a href="/carreras/ingenieria-mecanica">
+							<a href="/<?php print $language->prefix ?>/carreras/ingenieria-mecanica">
 								<?php if ($language->prefix == 'en'): ?>
 									<span><?php print t('Mechanical') ?></span>
 									<?php print t('Engineering') ?>
@@ -284,7 +284,7 @@
 					</ul>
 					<ul>
 						<li>
-							<a href="/carreras/ingenieria-electronica">
+							<a href="/<?php print $language->prefix ?>/carreras/ingenieria-electronica">
 								<?php if ($language->prefix == 'en'): ?>
 									<span><?php print t('Electronic') ?></span>
 									<?php print t('Engineering') ?>
@@ -301,7 +301,7 @@
 							<a href="/carreras/escuela-de-desarrollo"><span>Escuela de</span>Desarollo</a>
 						</li>-->
 						<li>
-							<a href="/admision/modalidades" class="btn btn-primary btn-custom bold"><?php print t('Apply') ?></a>
+							<a href="/<?php print $language->prefix ?>/admision/modalidades" class="btn btn-primary btn-custom bold"><?php print t('Apply') ?></a>
 						</li>
 					</ul>
 				</div>
@@ -327,7 +327,7 @@
 				<div>
 					<ul>
 						<li>
-							<a href="/admision/modalidades">
+							<a href="/<?php print $language->prefix ?>/admision/modalidades">
 								<?php if ($language->prefix == 'es'): ?>
 									<span>Modalidades</span>de admisión
 								<?php elseif ($language->prefix == 'en'): ?>
@@ -336,7 +336,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="/admision/charlas-informativas">
+							<a href="/<?php print $language->prefix ?>/admision/charlas-informativas">
 								<?php if ($language->prefix == 'es'): ?>
 									<span>Charlas</span>informativas
 								<?php elseif ($language->prefix == 'en'): ?>
@@ -345,7 +345,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="/admision/informacion-economica">
+							<a href="/<?php print $language->prefix ?>/admision/informacion-economica">
 								<?php if ($language->prefix == 'es'): ?>
 									<span>Información</span>económica
 								<?php elseif ($language->prefix == 'en'): ?>
@@ -354,15 +354,15 @@
 							</a>
 						</li>
 						<li>
-							<a href="/admision/modalidades" class="btn btn-primary btn-custom bold"><?php print t('Apply') ?></a>
+							<a href="/<?php print $language->prefix ?>/admision/modalidades" class="btn btn-primary btn-custom bold"><?php print t('Apply') ?></a>
 						</li>
 					</ul>
 					<ul>
 						<li>
-							<a href="/admision/pre-inscripcion"><?php print t('Pre-registration') ?></a>
+							<a href="/<?php print $language->prefix ?>/admision/pre-inscripcion"><?php print t('Pre-registration') ?></a>
 						</li>
 						<li>
-							<a href="/admision/calendario-academico">
+							<a href="/<?php print $language->prefix ?>/admision/calendario-academico">
 								<?php if ($language->prefix == 'es'): ?>
 									<span>Calendario</span>de admisión
 								<?php elseif ($language->prefix == 'en'): ?>
@@ -371,10 +371,10 @@
 							</a>
 						</li>
 						<li>
-							<a href="/admision/visita-utec"><span><?php print t('Visit') ?></span>UTEC</a>
+							<a href="/<?php print $language->prefix ?>/admision/visita-utec"><span><?php print t('Visit') ?></span>UTEC</a>
 						</li>
 						<li>
-							<a href="/admision/orientacion-vocacional">
+							<a href="/<?php print $language->prefix ?>/admision/orientacion-vocacional">
 								<?php if ($language->prefix == 'es'): ?>
 									<span>Orientación</span>Vocacional
 								<?php elseif ($language->prefix == 'en'): ?>
@@ -383,7 +383,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="/admision/preguntas-frecuentes">
+							<a href="/<?php print $language->prefix ?>/admision/preguntas-frecuentes">
 								<?php if ($language->prefix == 'es'): ?>
 									<span>Preguntas</span>Frecuentes
 								<?php elseif ($language->prefix == 'en'): ?>
@@ -419,10 +419,10 @@
 							<a href="#"><span>Proceso de</span>ampliación</a>
 						</li>-->
 						<li>
-							<a href="/convenios/ven-a-la-utec"><span>Ven a</span>la utec</a>
+							<a href="/<?php print $language->prefix ?>/convenios/ven-a-la-utec"><span>Ven a</span>la utec</a>
 						</li>
 						<li>
-							<a href="/convenios/convenios-de-intercambio"><span>Convenios de</span>Intercambio</a>
+							<a href="/<?php print $language->prefix ?>/convenios/convenios-de-intercambio"><span>Convenios de</span>Intercambio</a>
 						</li>
 					</ul>
 				</div>
@@ -448,16 +448,16 @@
 							<a href="/edp/cursos/cursos-online"><span>Cursos</span>online</a>
 						</li>-->
 						<li>
-							<a href="/edp/cursos/cursos-cortos"><span>Cursos</span>Cortos</a>
+							<a href="/<?php print $language->prefix ?>/edp/cursos/cursos-cortos"><span>Cursos</span>Cortos</a>
 						</li>
 					</ul>
 					<ul>
 						<!--<li>
-							<a href="/edp/cursos/cursos-adhoc"><span>Cursos</span>Adhoc</a>
+							<a href="/<?php print $language->prefix ?>/edp/cursos/cursos-adhoc"><span>Cursos</span>Adhoc</a>
 						</li>-->
-						<li><a href="/edp/calendario">Calendario</a></li>
+						<li><a href="/<?php print $language->prefix ?>/edp/calendario">Calendario</a></li>
 						<li>
-							<a href="/edp/inscripcion" class="btn btn-primary btn-custom bold">Inscríbete</a>
+							<a href="/<?php print $language->prefix ?>/edp/inscripcion" class="btn btn-primary btn-custom bold">Inscríbete</a>
 						</li>
 					</ul>
 				</div>
@@ -483,27 +483,27 @@
 					</li>
 					<li>
 						<a href="#nav-shrink-display-2">
-							<span>Investigación</span>
+							<span><?php print t('Research') ?></span>
 						</a>
 					</li>
 					<li>
 						<a href="#nav-shrink-display-3">
-							<span>Carreras</span>
+							<span><?php print t('Programs') ?></span>
 						</a>
 					</li>
 					<li>
 						<a href="#nav-shrink-display-4">
-							<span>Admisión</span>
+							<span><?php print t('Admission') ?></span>
 						</a>
 					</li>
 					<li>
 						<a href="#nav-shrink-display-5">
-							<span>Convenios</span>
+							<span><?php print t('Alliances') ?></span>
 						</a>
 					</li>
 					<li>
 						<a href="#nav-shrink-display-6">
-							<span>EDP</span>
+							<span><?php print t('SPD') ?></span>
 						</a>
 					</li>
 				</ul>
@@ -520,8 +520,8 @@
 		<div class="container-sm">
 			<div class="nav-display-left">
 				<div>
-					<h1>Conoce<br><span>Quiénes</span> Somos</h1>
-					<p>La universidad que potencia el ingenio, la innovación y el emprendimiento.</p>
+					<h1><?php print t('Learn') ?><br><span><?php print t('About') ?></span><?php print t(' Us') ?></h1>
+					<p><?php print t('The university that empowers ingenuity, innovation and entrepreneurship.') ?></p>
 				</div>
 			</div>
 			<div class="nav-display-right">
@@ -537,10 +537,14 @@
 							<a href="/<?php print $language->prefix ?>/somos-utec/profesores"><?php print t('Faculty') ?></a>
 						</li>
 						<li>
-							<a href="/somos-utec/ingenio-en-accion"><span>Ingenio</span>en acción</a>
+							<a href="/<?php print $language->prefix ?>/somos-utec/ingenio-en-accion"><span><?php print t('Ingenuity') ?></span><?php print t('in action') ?></a>
 						</li>
 						<li>
-							<a href="/somos-utec/metodologia-educativa"><span>Metodología</span>Educativa</a>
+							<?php if ($language->prefix == 'en'): ?>
+								<a href="/<?php print $language->prefix ?>/somos-utec/metodologia-educativa"><span><?php print t('Educational') ?></span><?php print t('Methodology') ?></a>
+							<?php elseif ($language->prefix == 'es'): ?>
+								<a href="/<?php print $language->prefix ?>/somos-utec/metodologia-educativa"><span><?php print t('Methodology') ?></span><?php print t('Educational') ?></a>
+							<?php endif ?>
 						</li>
 						<!--<li>
 							<a href="#"><span>Calendario</span>Académico</a>
@@ -554,16 +558,16 @@
 							<a href="/<?php print $language->prefix ?>/somos-utec/eventos-utec"><?php print t('UTEC Events') ?></a>
 						</li>
 						<li>
-							<a href="/somos-utec/vida-estudiantil"><span>Vida</span>Estudiantil</a>
+							<a href="/<?php print $language->prefix ?>/somos-utec/vida-estudiantil"><span>Vida</span>Estudiantil</a>
 						</li>
 						<li>
-							<a href="/somos-utec/campus-y-laboratorios"><span>Campus y</span>Laboratorios</a>
+							<a href="/<?php print $language->prefix ?>/somos-utec/campus-y-laboratorios"><span>Campus y</span>Laboratorios</a>
 						</li>
 						<li>
-							<a href="/somos-utec/trabaja-en-utec"><span>Trabaja</span>en UTEC</a>
+							<a href="/<?php print $language->prefix ?>/somos-utec/trabaja-en-utec"><span>Trabaja</span>en UTEC</a>
 						</li>
 						<li>
-							<a href="/somos-utec/utec-garage"><span>Utec</span>garage</a>
+							<a href="/<?php print $language->prefix ?>/somos-utec/utec-garage"><span>Utec</span>garage</a>
 						</li>
 						<li>
 							<a href="http://utecventures.com/" target="_blank" ><span>Utec</span>Ventures</a>
@@ -591,10 +595,10 @@
 				<div>
 					<ul>
 						<li>
-							<a href="/investigacion/proyectos">Proyectos</a>
+							<a href="/<?php print $language->prefix ?>/investigacion/proyectos">Proyectos</a>
 						</li>
 						<li>
-							<a href="/investigacion/publicaciones">Publicaciones</a>
+							<a href="/<?php print $language->prefix ?>/investigacion/publicaciones">Publicaciones</a>
 						</li>
 						<!--<li>
 							<a href="#"><span>Empresas</span>y clientes</a>
@@ -625,30 +629,30 @@
 				<div>
 					<ul>
 						<li>
-							<a href="/carreras/ingenieria-industrial"><span>Ingeniería</span>Industrial</a>
+							<a href="/<?php print $language->prefix ?>/carreras/ingenieria-industrial"><span>Ingeniería</span>Industrial</a>
 						</li>
 						<li>
-							<a href="/carreras/ingenieria-de-la-energia"><span>Ingeniería</span>De la Energía</a>
+							<a href="/<?php print $language->prefix ?>/carreras/ingenieria-de-la-energia"><span>Ingeniería</span>De la Energía</a>
 						</li>
 						<li>
-							<a href="/carreras/ingenieria-quimica-industrial"><span>Ingeniería</span>Química Industrial</a>
+							<a href="/<?php print $language->prefix ?>/carreras/ingenieria-quimica-industrial"><span>Ingeniería</span>Química Industrial</a>
 						</li>
 						<li>
-							<a href="/carreras/ingenieria-mecanica"><span>Ingeniería</span>Mecánica</a>
+							<a href="/<?php print $language->prefix ?>/carreras/ingenieria-mecanica"><span>Ingeniería</span>Mecánica</a>
 						</li>
 					</ul>
 					<ul>
 						<li>
-							<a href="/carreras/ingenieria-electronica"><span>Ingeniería</span>Electrónica</a>
+							<a href="/<?php print $language->prefix ?>/carreras/ingenieria-electronica"><span>Ingeniería</span>Electrónica</a>
 						</li>
 						<li>
-							<a href="/carreras/menciones">Menciones</a>
+							<a href="/<?php print $language->prefix ?>/carreras/menciones">Menciones</a>
 						</li>
 						<li>
-							<a href="/carreras/escuela-de-desarrollo"><span>Escuela de</span>Desarollo</a>
+							<a href="/<?php print $language->prefix ?>/carreras/escuela-de-desarrollo"><span>Escuela de</span>Desarollo</a>
 						</li>
 						<li>
-							<a href="/admision/modalidades" class="btn btn-primary btn-custom bold">Postula</a>
+							<a href="/<?php print $language->prefix ?>/admision/modalidades" class="btn btn-primary btn-custom bold">Postula</a>
 						</li>
 					</ul>
 				</div>
@@ -670,33 +674,33 @@
 				<div>
 					<ul>
 						<li>
-							<a href="/admision/modalidades"><span>Modalidades</span>de admisión</a>
+							<a href="/<?php print $language->prefix ?>/admision/modalidades"><span>Modalidades</span>de admisión</a>
 						</li>
 						<li>
-							<a href="/admision/charlas-informativas"><span>Charlas</span>informativas</a>
+							<a href="/<?php print $language->prefix ?>/admision/charlas-informativas"><span>Charlas</span>informativas</a>
 						</li>
 						<li>
-							<a href="/admision/informacion-economica"><span>Información</span>económica</a>
+							<a href="/<?php print $language->prefix ?>/admision/informacion-economica"><span>Información</span>económica</a>
 						</li>
 						<li>
-							<a href="/admision/modalidades" class="btn btn-primary btn-custom bold">Postula</a>
+							<a href="/<?php print $language->prefix ?>/admision/modalidades" class="btn btn-primary btn-custom bold">Postula</a>
 						</li>
 					</ul>
 					<ul>
 						<li>
-							<a href="/admision/pre-inscripcion">Pre-Inscripción</a>
+							<a href="/<?php print $language->prefix ?>/admision/pre-inscripcion">Pre-Inscripción</a>
 						</li>
 						<li>
-							<a href="/admision/calendario-academico"><span>Calendario</span>Académico</a>
+							<a href="/<?php print $language->prefix ?>/admision/calendario-academico"><span>Calendario</span>Académico</a>
 						</li>
 						<li>
-							<a href="/admision/visita-utec"><span>Visita</span>UTEC</a>
+							<a href="/<?php print $language->prefix ?>/admision/visita-utec"><span>Visita</span>UTEC</a>
 						</li>
 						<li>
-							<a href="/admision/orientacion-vocacional"><span>Orientación</span>Vocacional</a>
+							<a href="/<?php print $language->prefix ?>/admision/orientacion-vocacional"><span>Orientación</span>Vocacional</a>
 						</li>
 						<li>
-							<a href="/admision/preguntas-frecuentes"><span>Preguntas</span>Frecuentes</a>
+							<a href="/<?php print $language->prefix ?>/admision/preguntas-frecuentes"><span>Preguntas</span>Frecuentes</a>
 						</li>
 					</ul>
 				</div>
@@ -721,10 +725,10 @@
 							<a href="#"><span>Proceso de</span>ampliación</a>
 						</li>-->
 						<li>
-							<a href="/convenios/ven-a-la-utec"><span>Ven a</span>la utec</a>
+							<a href="/<?php print $language->prefix ?>/convenios/ven-a-la-utec"><span>Ven a</span>la utec</a>
 						</li>
 						<li>
-							<a href="/convenios/convenios-de-intercambio"><span>Convenios de</span>Intercambio</a>
+							<a href="/<?php print $language->prefix ?>/convenios/convenios-de-intercambio"><span>Convenios de</span>Intercambio</a>
 						</li>
 					</ul>
 				</div>
@@ -750,7 +754,7 @@
 							<a href="/edp/cursos/cursos-online"><span>Cursos</span>online</a>
 						</li>-->
 						<li>
-							<a href="/edp/cursos/cursos-cortos"><span>Cursos</span>Cortos</a>
+							<a href="/<?php print $language->prefix ?>/edp/cursos/cursos-cortos"><span>Cursos</span>Cortos</a>
 						</li>
 					</ul> 
 					<ul>
