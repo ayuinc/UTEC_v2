@@ -74,7 +74,7 @@
 </div>	
 <?php } ?>
 
-<?php if ($end=='charlas-informativas') { ?>
+<?php if (($end=='charlas-informativas') AND ($end!='visita-utec')) { ?>
 <div class="container-sm">
 	<h3><?php print t('Fill the form') ?></h1>
 	<p><?php print t('Applicant Information') ?></p>
