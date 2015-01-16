@@ -8,6 +8,9 @@
 <?php $field_contenido_generica = $node->field_contenido_generica['und']['0']['value']; ?>
 <?php $field_foto_generica_admision = $node->field_foto_generica_admision['und']['0']['filename']; ?>
 
+<?php $url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>
+<?php $end = end((explode('/', $url))); ?>
+
 <div class="container-sm">
 	<h1 class="light"><?php print $title ?></h1>
 	<div class="separator-gray separator-lg"></div>
@@ -22,6 +25,7 @@
 	<?php } ?>	
 </div>
 
+<?php if (($end!='charlas-informativas') AND ($end!='informacion-economica') AND ($end!='orientacion-vocacional') AND ($end!='orientacion-vocacional')) { ?>
 <div class="container-sm form-custom mt-35"> 
 	<h3>Modalidades de solicitud de admisión</h3>
 	<form action="" data-submit="Formulario de inscripcion">
@@ -67,4 +71,5 @@
 	</form>						
 	<p class="text-gray pt-42">De conformidad con los artículos lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut at, veritatis tempore ipsa voluptate neque lorem exercitationem impedit aperiam? Veritatis recusandae dolorem, ullam repellendus minus expedita consequatur doloremque iusto fugiat maxime!</p>
 </div>	
+<?php } ?>
 
