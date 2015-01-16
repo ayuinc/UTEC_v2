@@ -11,6 +11,13 @@ $carreras = array(
 );
 
 
+echo utf8_decode($_POST['nombres']);
+echo utf8_decode($_POST['apellidop']);
+echo utf8_decode($carreras[$carrera_elegida]);
+echo utf8_decode($_POST['email']);
+echo $_POST['telefono'];
+echo utf8_decode($_POST['carrera']);
+
 session_start();
 
 require_once( 'nusoap2/nusoap.php' );
