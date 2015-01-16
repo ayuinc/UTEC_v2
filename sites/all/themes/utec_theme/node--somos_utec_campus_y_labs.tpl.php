@@ -13,7 +13,7 @@
 <div class="container-sm">
 	<h1 class="light"><?php print t('Campus and labs') ?></h1>
 	<div class="separator-gray separator-sm"></div>
-	<div class="pv-ch-42 lead-ch p-ch-gray">
+	<div class="pv-49">
 		<h3 class="text-gray-darker mb-0"><?php print t('Campus') ?></h3>
 		<p><?php print $field_introduccion_campus ?></p>
 		<?php if ($field_foto_campus!='') { ?>
