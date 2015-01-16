@@ -501,6 +501,7 @@
 							<span><?php print t('Alliances') ?></span>
 						</a>
 					</li>
+					<li>
 						<a href="#nav-shrink-display-6">
 							<span><?php print t('SPD') ?></span>
 						</a>
