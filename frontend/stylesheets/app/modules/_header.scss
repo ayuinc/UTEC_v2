@@ -324,7 +324,11 @@ $header-on-scroll-height: 56px;
 #header {
 	.tool-bar {
 		.search-form {
+			margin: 0;
 			.form-item {
+				@extend .form-group;
+				display: inline-block;
+				margin: 0;
 				label {
 					display: none;
 				}
@@ -335,7 +339,19 @@ $header-on-scroll-height: 56px;
 				@extend .input-sm;
 			}
 			.form-submit {
-
+				@extend .btn;
+				@extend .btn-sm;
+				background-color: lighten($gray, 21%);
+				color: white;
+				padding: 2px 9px;
+				padding: rem(2px) rem(9px);
+				&:hover {
+					@include box-shadow(none);
+					outline: none;
+					background-image: none;
+					background-color: $gray;
+					color: white;
+				}
 			}
 		}
 	}
