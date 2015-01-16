@@ -143,7 +143,7 @@
 						<li>
 							<a href="/somos-utec/calendario-academico"><span>Calendario</span>Académico</a>
 						</li>
-					</ul>
+					</ul> 
 					<ul>
 						<li>
 							<a href="/somos-utec/noticias">Noticias</a>
