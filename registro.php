@@ -130,8 +130,7 @@ if($origen == "solicitud-examen" || $origen == "solicitud-primeros-puestos" || $
     
 }
 
-
-if($origen == "charlas-informativas")
+if($origen == "Charlas informativas")
 {
     $tituloTelemarketing = "Charlas Informativas";
     $subjectTelemarketing = "Charlas Informativas UTEC";
@@ -145,8 +144,6 @@ if($origen == "charlas-informativas")
     $familia = "CHARLAS-INFORMATIVAS";
     $origen = "pagina-charlas";
 }
-
-
 
 $mensaje_html ="";
 $mensaje_html .= '<html><body><table><tr>
