@@ -32,6 +32,14 @@ $list-custom-height: 20%;
 				height: auto;
 			}
 		}
+		@media #{$sm-down} {
+			li {
+				width: 100%;
+				&:first-child {
+					width: 100%;
+				}
+			}
+		}
 	}
 }
 
