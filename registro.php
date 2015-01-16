@@ -12,7 +12,7 @@ if (!isset($_POST['apellidom'])) {$_POST['apellidom'] = "";};
 if (!isset($_POST['tipo-documento'])) {$_POST['tipo-documento'] = "";};
 if (!isset($_POST['documento'])) {$_POST['documento'] = "";};
 if (!isset($_POST['genero'])) {$_POST['genero'] = "";};
-if (!isset($_POST['carreras'])) {$_POST['carreras'] = "";};
+if (!isset($_POST['carrera'])) {$_POST['carrera'] = "";};
 if (!isset($_POST['pais'])) {$_POST['pais'] = "";};
 if (!isset($_POST['ciudad'])) {$_POST['ciudad'] = "";};
 if (!isset($_POST['dia'])) {$_POST['dia'] = "";};
@@ -25,12 +25,12 @@ if (!isset($_POST['direccion-actual'])) {$_POST['direccion-actual'] = "";};
 if (!isset($_POST['email'])) {$_POST['email'] = "";};
 if (!isset($_POST['celular-1'])) {$_POST['celular-1'] = "";};
 if (!isset($_POST['celular-2'])) {$_POST['celular-2'] = "";};
-if (!isset($_POST['telefono-fijo'])) {$_POST['telefono-fijo'] = "";};
+if (!isset($_POST['telefono'])) {$_POST['telefono'] = "";};
 if (!isset($_POST['ano-culminacion'])) {$_POST['ano-culminacion'] = "";};
 if (!isset($_POST['colegio-procedencia'])) {$_POST['colegio-procedencia'] = "";};
 if (!isset($_POST['estudios-rendimiento'])) {$_POST['estudios-rendimiento'] = "";};
 if (!isset($_POST['estudiante'])) {$_POST['estudiante'] = "";};
-
+if (!isset($_POST['consulta'])) {$_POST['consulta'] = "";};
 
 if ( $_POST['celular-2'] == 'Nº Celular 2' ) {
   $celular2 = "No Ingresado";
@@ -38,9 +38,13 @@ if ( $_POST['celular-2'] == 'Nº Celular 2' ) {
   $celular2 = $_POST['celular-2'];
 }
 
+
+
 $fecha_n = $_POST['dia']." de ".$_POST['mes']." Del ".$_POST['ano'];
 
-$carrera_elegida = $_POST['carreras'];
+
+
+$carrera_elegida = $_POST['carrera'];
 $carreras = array(
     '14864' => 'Ingeniería Mecánica',
     '15964' => 'Ingeniería Electrónica',
@@ -70,8 +74,8 @@ $origen = "";
 
 $origen = utf8_decode($_POST['origen']);
 
-if($origen == "solicitud-examen" || $origen == "solicitud-primeros-puestos" || $origen = "solicitud-alto-rendimiento" || 
-   $origen = "solicitud-traslado-externo" || $origen = "solicitud-centro-pre" || $origen = "solicitud-bachillerato" )
+if($origen == "solicitud-examen" || $origen == "solicitud-primeros-puestos" || $origen == "solicitud-alto-rendimiento" || 
+   $origen == "solicitud-traslado-externo" || $origen == "solicitud-centro-pre" || $origen == "solicitud-bachillerato" )
 {
     if ($origen == "solicitud-examen")
     {
@@ -219,7 +223,11 @@ $mensaje_html .= '<html><body><table><tr>
        </tr>
        <tr>
                             <td>Telefono Fijo:</td>
-                            <td>'.$_POST['telefono-fijo'].'</td>
+                            <td>'.$_POST['telefono'].'</td>
+       </tr>
+       <tr>
+                            <td>Consulta:</td>
+                            <td>'.utf8_decode($_POST['consulta']).'</td>
        </tr>
                          <tr>
                             <td colspan="2"><b>Estudios</b></td> 
@@ -253,6 +261,7 @@ $mensaje_html .= '<html><body><table><tr>
                             <td>Es o ha sido estudiante de esta universidad:</td>
                             <td>'.utf8_decode($_POST['estudiante']).'</td>
        </tr>
+
                          <tr>
                             <td colspan="2"><b>Datos Adicionales</b></td> 
                          </tr>
@@ -309,7 +318,7 @@ $contenidorpta.="<p><img src='http://app.utec.edu.pe/admision/img/cabeceraWEB.jp
     <area shape='rect' coords='3,3,597,86' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
   </map>
 </p>";
-$contenidorpta.="<p>Hola que hace?, </p>
+$contenidorpta.="<p>Hola ".utf8_decode($_POST['nombres']).", </p>
                  <p><h2>".$tituloCliente."</h2>
                  <br />Hemos recibido tu consulta correctamente. 
                  <br />Pronto atenderemos tu consulta.</p>
@@ -345,8 +354,7 @@ $client = new nusoap_client( "http://app.utec.edu.pe/inscripcionutecws3/services
 
 $programacion = "2015-1";
 
-
-$v0 = $origen;
+$v0 = $familia;
 $v1 = utf8_decode($_POST['nombres']);
 $v2 = utf8_decode($_POST['apellidop']);
 $v3 = utf8_decode($_POST['apellidom']);
@@ -367,7 +375,7 @@ $v17 = utf8_decode($_POST['direccion-actual']);
 $v18 = utf8_decode($_POST['email']);
 $v19 = $_POST['celular-1'];
 $v20 = utf8_decode($celular2);
-$v21 = $_POST['telefono-fijo'];
+$v21 = $_POST['telefono'];
 $v22 = $_POST['ano-culminacion'];
 $v23 = utf8_decode($_POST['colegio-procedencia']);
 $v24 = utf8_decode($_POST['estudios-rendimiento']);
@@ -380,12 +388,11 @@ $v30 = "";
 $v31 = "";
 $v32 = "";
 $v33 = "";
-$v34 = utf8_decode($_POST['carreras']);
+$v34 = utf8_decode($_POST['carrera']);
 $v35 = $programacion;
-$v36 = "";
+$v36 = utf8_decode($_POST['consulta']);
 $v37 = $origen;
 $v38 = "";
-
 
 $param = array('familia' => $v0, 'nombres' => $v1, 'apelPat' => $v2, 'apelMat' => $v3, 'tipDoc' => $v4, 'numDoc' => $v5, 'genero' => $v6, 'carrera1' => $v7, 'carrera2' => $v8, 'paisNaci' => $v9, 'ciudadNaci' => $v10,
                                         'diaNaci' => $v11, 'mesNaci' => $v12, 'anhoNaci' => $v13, 'dptoActual' => $v14, 'provActual' => $v15, 'distActual' => $v16, 'direccion' => $v17, 'email' => $v18, 'celular1' => $v19, 'celular2' => $v20,
@@ -411,6 +418,5 @@ if($error){
   //Flash::setInfo($message);
 }
 //header( 'Location: https://app.utec.edu.pe/centro-preuniversitario/' ) ;
-
 
 ?>

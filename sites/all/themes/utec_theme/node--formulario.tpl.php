@@ -18,8 +18,9 @@
 	<h3 class="thin text-gray pt-21 pb-56"><?php  ?><?php print t('Applicant Information') ?></h3>
 </div>
 <div class="container-sm form-custom">
-	<form action="/registro.php" data-submit="Formulario de inscripcion">
+	<form action="/registro.php" data-submit="Formulario de inscripcion" method="post">
 			<input type="hidden" name="origen" value="<?php print $title ?>">
+			<input type="hidden" name="origen2" value="<?php print $title ?>">
 			<div class="row">
 				<div class="form-group col-sm-7">
 					<label for="" class="sr-only"><?php print t('Names') ?></label>

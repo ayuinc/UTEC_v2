@@ -32,6 +32,18 @@ $list-custom-height: 20%;
 				height: auto;
 			}
 		}
+		@media #{$sm-down} {
+			li {
+				width: 100%;
+				&:first-child {
+					width: 100%;
+				}
+				&:last-child {
+					padding-top: 14px;
+					padding-top: rem(14px);
+				}
+			}
+		}
 	}
 }
 
@@ -68,7 +80,7 @@ $list-custom-height: 20%;
 	}
 	&.list-hover-unstyled {
 		> li {
-			> div {
+			> div:not(.banner-pic) {
 				min-height: 0;
 				padding: 0;
 				h3 {

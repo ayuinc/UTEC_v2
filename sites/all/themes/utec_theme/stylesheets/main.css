@@ -5148,6 +5148,14 @@ textarea:-ms-input-placeholder {
     .list-custom-left ul li:first-child {
       width: 20%;
       height: auto; }
+  @media only screen and (max-width: 768px) {
+    .list-custom-left ul li {
+      width: 100%; }
+      .list-custom-left ul li:first-child {
+        width: 100%; }
+      .list-custom-left ul li:last-child {
+        padding-top: 14px;
+        padding-top: 1rem; } }
 
 .list-hover > li > div {
   min-height: 350px;
@@ -5187,10 +5195,10 @@ textarea:-ms-input-placeholder {
   background-color: #f1f1f1; }
 .list-hover.list-hover-white > li:hover {
   background-color: #fff; }
-.list-hover.list-hover-unstyled > li > div {
+.list-hover.list-hover-unstyled > li > div:not(.banner-pic) {
   min-height: 0;
   padding: 0; }
-  .list-hover.list-hover-unstyled > li > div h3 {
+  .list-hover.list-hover-unstyled > li > div:not(.banner-pic) h3 {
     min-height: 0; }
 
 .lead-ch .list-custom ul li:before, .lead-ch.list-custom ul li:before {
@@ -5657,6 +5665,13 @@ img.icon-utec {
 .hero-gradient {
   background-image: -webkit-linear-gradient(90deg, rgba(169, 132, 113, 0.1) 3%, rgba(169, 132, 113, 0.7) 35%, rgba(169, 132, 113, 0.7) 65%, rgba(169, 132, 113, 0.1) 97%);
   background-image: linear-gradient(90deg, rgba(169, 132, 113, 0.1) 3%, rgba(169, 132, 113, 0.7) 35%, rgba(169, 132, 113, 0.7) 65%, rgba(169, 132, 113, 0.1) 97%); }
+
+.user-picture img {
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  padding: 3px;
+  background-color: #f1f1f1; }
 
 #header, #header-on-scroll {
   position: relative;
@@ -6682,7 +6697,9 @@ img.icon-utec {
     margin-top: 9px; } }
 
 .grid-list-hover > li {
-  position: relative; }
+  position: relative;
+  padding: 7px !important;
+  padding: 0.5rem !important; }
   .grid-list-hover > li > div:not(.date) {
     border: 1px solid #e3e3e3;
     display: -webkit-box;
@@ -6727,7 +6744,40 @@ img.icon-utec {
   .grid-list-hover > li:hover {
     background-color: rgba(46, 67, 114, 0.7); }
     .grid-list-hover > li:hover > div {
-      color: white; }
+      color: white;
+      border: none; }
+.grid-list-hover.grid-list-hover-primary > li:hover {
+  background-color: #00BFDF; }
+.grid-list-hover.grid-list-hover-success > li:hover {
+  background-color: #8DC63F; }
+.grid-list-hover.grid-list-hover-info > li:hover {
+  background-color: #2E4372; }
+.grid-list-hover.grid-list-hover-warning > li:hover {
+  background-color: #FFDD00; }
+.grid-list-hover.grid-list-hover-danger > li:hover {
+  background-color: #DD5341; }
+.grid-list-hover.grid-list-hover-blue-darker > li:hover {
+  background-color: #00a7d7; }
+.grid-list-hover.grid-list-hover-blue-dark > li:hover {
+  background-color: #43d5ff; }
+.grid-list-hover.grid-list-hover-blue > li:hover {
+  background-color: #8be5ff; }
+.grid-list-hover.grid-list-hover-blue-light > li:hover {
+  background-color: white; }
+.grid-list-hover.grid-list-hover-blue-lighter > li:hover {
+  background-color: white; }
+.grid-list-hover.grid-list-hover-gray-darker > li:hover {
+  background-color: #191919; }
+.grid-list-hover.grid-list-hover-gray-dark > li:hover {
+  background-color: #323232; }
+.grid-list-hover.grid-list-hover-gray > li:hover {
+  background-color: #8f8d8e; }
+.grid-list-hover.grid-list-hover-gray-light > li:hover {
+  background-color: #e3e3e3; }
+.grid-list-hover.grid-list-hover-gray-lighter > li:hover {
+  background-color: #f1f1f1; }
+.grid-list-hover.grid-list-hover-white > li:hover {
+  background-color: #fff; }
 .grid-list-hover.grid-list-hover-left > li > div {
   display: -webkit-box;
   display: -moz-box;

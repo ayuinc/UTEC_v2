@@ -20,9 +20,9 @@
 	</div>
 	<div class="banner-content">
 		<div>
-			<h2><a href="#"><?php print $title ?></a></h2>
+			<h3><a href="#"><?php print $title ?></a></h3>
 			<em class="text-primary"><?php print $created ?></em>
-			<p class="lead"><?php print $texto_corto ?></p>
+			<p><?php print $texto_corto ?></p>
 		</div>
 	</div>
 </li>
