@@ -13,13 +13,13 @@
 ?>
 
 <li>
-	<div>
+	<!--<div>
 		<img src="<?php print $pathfile.$image; ?>" alt="#" class="img-responsive">
-	</div>
+	</div>-->
 	<div>
 		<h3 class="bold"><?php print $title ?></h3>
-		<h3><?php print $profesor ?></h3>
-		<h3><?php print $tags ?></h3>
+		<div><span class="lead bold">Profesor: </span><span class="lead"><?php print $profesor ?></span></div>
+		<div><span class="lead bold">Tags: </span><span class="lead"><?php print $tags ?></span></div>
 	</div>
 </li>
 
