@@ -1,37 +1,37 @@
 <div class="mobile-nav-display-triggers">
   <ul>
     <li>
-      <a href="#mobile-nav-display-1">Somos Utec</a>
+      <a href="#mobile-nav-display-1"><?php print t('We are Utec') ?></a>
     </li>
     <li>
-      <a href="#mobile-nav-display-2">Investigación</a>
+      <a href="#mobile-nav-display-2"><?php print t('Research') ?></a>
     </li>
     <li>
-      <a href="#mobile-nav-display-3">Carreras</a>
+      <a href="#mobile-nav-display-3"><?php print t('Undergraduate Admissions') ?></a>
     </li>
     <li>
-      <a href="#mobile-nav-display-4">Admisión</a>
+      <a href="#mobile-nav-display-4"><?php print t('Admissions') ?></a>
     </li>
     <li>
-      <a href="#mobile-nav-display-5">Convenios</a>
+      <a href="#mobile-nav-display-5"><?php print t('Agreements') ?></a>
     </li>
     <li>
-      <a href="#mobile-nav-display-6">EDP</a>
+      <a href="#mobile-nav-display-6"><?php print t('SPD') ?></a>
     </li>
   </ul>
 </div>
 <div class="mobile-nav-display" id="mobile-nav-display-1">
-  <a class="back">Regresar</a>
+  <a class="back"><?php print t('Go Back') ?></a>
   <h1>Conoce<br><span>Quiénes</span> Somos</h1>
   <ul>
     <li>
       <a href="/somos-utec/respaldo">Respaldo</a>
     </li>
     <li>
-      <a href="/somos-utec/autoridades">Autoridades</a>
+      <a href="/somos-utec/autoridades"><?php print t('Authorities') ?></a>
     </li>
     <li>
-      <a href="/somos-utec/profesores">Profesores</a>
+      <a href="/somos-utec/profesores"><?php print t('Faculty') ?></a>
     </li>
     <li>
       <a href="/somos-utec/ingenio-en-accion"><span>Ingenio</span> en acción</a>
@@ -43,10 +43,10 @@
       <a href="#"><span>Calendario</span> Académico</a>
     </li>
     <li>
-      <a href="/somos-utec/noticias">Noticias</a>
+      <a href="/somos-utec/noticias"><?php print t('News') ?></a>
     </li>
     <li>
-      <a href="/somos-utec/eventos-utec">Eventos</a>
+      <a href="/somos-utec/eventos-utec"><?php print t('Events') ?></a>
     </li>
     <li>
       <a href="/somos-utec/vida-estudiantil"><span>Vida</span> Estudiantil</a>
@@ -66,17 +66,17 @@
   </ul>
 </div>
 <div class="mobile-nav-display" id="mobile-nav-display-2">
-  <a class="back">Regresar</a>
-  <h1>Experiencia<br><span>en</span> Investigación</h1>
+  <a class="back"><?php print t('Go Back') ?></a>
+  <h1>Experiencia<br><span>en</span> <?php print t('Research') ?></h1>
   <ul>
     <li>
-      <a href="#">Publicaciones</a>
+      <a href="#"><?php print t('Publications') ?></a>
     </li>
     <li>
       <a href="/investigacion/empresas-y-clientes"><span>Empresas</span> y clientes</a>
     </li>
     <li>
-      <a href="/investigacion/proyectos">Proyectos</a>
+      <a href="/investigacion/proyectos"><?php print t('Projects') ?></a>
     </li>
     <li>
       <a href="/investigacion/contacto">Contacto</a>
@@ -84,7 +84,7 @@
   </ul>
 </div>
 <div class="mobile-nav-display" id="mobile-nav-display-3">
-  <a class="back">Regresar</a>
+  <a class="back"><?php print t('Go Back') ?></a>
   <h1>Nuestra <span>oferta</span><br>Académica</h1>
   <ul>
 		<li>
@@ -114,7 +114,7 @@
   </ul>
 </div>
 <div class="mobile-nav-display" id="mobile-nav-display-4">
-  <a class="back">Regresar</a>
+  <a class="back"><?php print t('Go Back') ?></a>
   <h1>Talento<br><span>vocación</span> y<br><span>aspiración</span><br>a la excelencia</h1>
   <ul>
 		<li>
@@ -130,7 +130,7 @@
 			<a href="/admision/modalidades" class="btn btn-primary btn-custom bold">Postula</a>
 		</li>
 		<li>
-			<a href="/admision/inscripcion">Inscripción</a>
+			<a href="/admision/inscripcion"><?php print t('Registration') ?></a>
 		</li>
 		<li>
 			<a href="/admision/calendario-academico"><span>Calendario</span>de admisión</a>
@@ -147,7 +147,7 @@
   </ul>
 </div>
 <div class="mobile-nav-display" id="mobile-nav-display-5">
-  <a class="back">Regresar</a>
+  <a class="back"><?php print t('Go Back') ?></a>
   <h1>Lorem <span>ipsum</span><br>dolor sit amet</h1>
   <ul>
 		<!--<li>
@@ -162,7 +162,7 @@
   </ul>
 </div>
 <div class="mobile-nav-display" id="mobile-nav-display-6">
-  <a class="back">Regresar</a>
+  <a class="back"><?php print t('Go Back') ?></a>
   <h1>Escuela de<br><span>desarollo</span><br>profesional</h1>
   <ul>
 		<!--<li><a href="/edp/cursos/diplomados">Diplomados</a></li>
@@ -175,9 +175,9 @@
 		<!--<li>
 			<a href="/edp/cursos/cursos-adhoc"><span>Cursos</span>Adhoc</a>
 		</li>-->
-		<li><a href="/edp/calendario">Calendario</a></li>
+		<li><a href="/edp/calendario"><?php print t('Calendar') ?></a></li>
 		<li>
-			<a href="http://escuela-edp.utec.edu.pe/" class="btn btn-primary btn-custom bold">Inscríbete</a>
+			<a href="http://escuela-edp.utec.edu.pe/" class="btn btn-primary btn-custom bold"><?php print t('Registration') ?></a>
 		</li>
   </ul>
 </div>

@@ -22,30 +22,30 @@
 	
 	<!--SOLO PARA RESPALDO-->
 	<?php if ($end == 'calendario') { ?>
-		<h3 class="mt-35 mb-0">Cursos Cortos</h3>
+		<h3 class="mt-35 mb-0"><?php print t('Short courses') ?></h3>
 		<table class="table mt-35">
 			<thead>
 				<tr>
-					<td class="medium">Programa​</td>
-					<td class="medium">Expositor</td>
-					<td class="medium">Fecha</td>
+					<td class="medium"><?php print t('Program') ?></td>
+					<td class="medium"><?php print t('Speaker') ?></td>
+					<td class="medium"><?php print t('Date') ?></td>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
 					<td class="highlight">Optimización de la  Le​y de ​Corte en Operaciones Mineras​</td>
-					<td class="text-gray">Antonio Nieto, PhD</td>
-					<td class="text-gray">26, 27 y 28 de noviembre de 2014</td>
+					<td class="text-gray"><?php print t('Antonio Nieto, PhD') ?></td>
+					<td class="text-gray"><?php print t('November 26th, 27th and 28th, 2014') ?></td>
 				</tr>
 				<tr>
 					<td class="highlight">Gestion de Riesgos en Proyectos de Infraestructura (Finalizado)​</td>
-					<td class="text-gray">Edgardo Mímica, PhD., Francisco Vallés.</td>
-					<td class="text-gray">2 y 3 de octubre de 201</td>
+					<td class="text-gray"><?php print t('Edgardo Mímica, PhD., Francisco Vallés.') ?></td>
+					<td class="text-gray"><?php print t('October 2nd and 3rd, 2014') ?></td>
 				</tr>
 				<tr>
 					<td class="highlight">Gest​ión Inteligente de Operaciones  y Cie​rre ​Sosteniblede Minas​ (Finalizado)​</td>
-					<td class="text-gray">Thomas Baumgartl, PhD., Mansour Edraki, PhD., Oscar Matallana-Tost, doctorando</td>
-					<td class="text-gray">3, 4 y 5 de septiembre de 2014</td>
+					<td class="text-gray"><?php print t('Thomas Baumgartl, PhD., Mansour Edraki, PhD., Oscar Matallana-Tost, doctorando') ?></td>
+					<td class="text-gray"><?php print t('September 3rd, 4th and 5th, 2014') ?></td>
 				</tr>																																							
 			</tbody>
 		</table>
