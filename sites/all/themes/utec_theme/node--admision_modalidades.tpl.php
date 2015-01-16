@@ -1,3 +1,4 @@
+<?php global $language ?>
 <?php 
 // $video_name = $node->field_video['und']['0']['filename'];
 
