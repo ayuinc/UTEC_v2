@@ -40,7 +40,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="form-group col-sm-7">
+				<div class="form-group col-sm-6">
 					<label for="" class="sr-only">Carrera de interés</label>
 					<select name="carrera" id="carrera" class="form-control select-override">
 						<option value="Carrera de interés">Carrera de interés</option>
@@ -56,16 +56,8 @@
 				<button type="submit" class="btn btn-primary btn-lg">Enviar</button>
 			</div>
 	</form>						
+	<p class="text-gray">De conformidad con los artículos lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut at, veritatis tempore ipsa voluptate neque lorem exercitationem impedit aperiam? Veritatis recusandae dolorem, ullam repellendus minus expedita consequatur doloremque iusto fugiat maxime!</p>
 </div>
-<div class="container pt-42">
-	<div class="col-md-1"></div>
-	<div class="col-md-10">
-		<p class="text-gray">De conformidad con los artículos lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut at, veritatis tempore ipsa voluptate neque lorem exercitationem impedit aperiam? Veritatis recusandae dolorem, ullam repellendus minus expedita consequatur doloremque iusto fugiat maxime!</p>
-	</div>
-	<div class="col-md-1"></div>
-</div>
-
-
 <?php
 
 session_start();
