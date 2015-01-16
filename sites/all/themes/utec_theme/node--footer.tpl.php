@@ -74,7 +74,7 @@
             <li><a href="/carreras/ingenieria-mecanica" class="atm-menu-inferior"><small><?php print t('Mechanic Engineering') ?></small></a></li>
             <li><a href="/carreras/ingenieria-de-la-energia" class="atm-menu-inferior"><small><?php print t('Energy Engineering') ?></small></a></li>
             <li><a href="/carreras/ingenieria-industrial" class="atm-menu-inferior"><small><?php print t('Industrial Engineering') ?></small></a></li>
-            <li><a href="/carreras/menciones" class="atm-menu-inferior"><small><?php print t('Mentions') ?></small></a></li>
+            <!--<li><a href="/carreras/menciones" class="atm-menu-inferior"><small><?php print t('Mentions') ?></small></a></li>-->
             <li><a href="/carreras/escuela-de-desarrollo" class="atm-menu-inferior"><small><?php print t('SPD') ?></small></a></li>
           </ul>
         </li>
