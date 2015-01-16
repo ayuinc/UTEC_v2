@@ -28,7 +28,7 @@
 			<div class="row">
 				<div class="form-group col-sm-7">
 					<label for="" class="sr-only"><?php print t('Last Name') ?></label>
-					<input type="text" class="form-control" placeholder="Apellidos" name="apellidos" id="apellidos">
+					<input type="text" class="form-control" placeholder="Apellidos" name="apellidop" id="apellidop">
 				</div>
 			</div>
 			<div class="row">
@@ -48,6 +48,11 @@
 					<label for="" class="sr-only"><?php print t('Undergrad Program') ?></label>
 					<select name="carrera" id="carrera" class="form-control select-override">
 						<option value="Carrera de interés"><?php print t('Undergrad Program') ?></option>
+						  <option value="15970">Ingeniería Industrial</option>
+		                  <option value="14864">Ingeniería Mecánica</option>
+		                  <option value="15968">Ingeniería de la Energía</option>
+		                  <option value="15964">Ingeniería Electrónica</option>
+		                  <option value="15966">Ingeniería Química Industrial</option>
 					</select>
 				</div>
 			</div>
