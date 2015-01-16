@@ -436,8 +436,13 @@
 		<div class="container-sm">
 			<div class="nav-display-left">
 				<div>
-					<h1>Escuela de<br><span>desarollo</span><br>profesional</h1>
-					<p>Potencia tus habilidades y alcanza el éxito profesional a través de nuestros cursos.</p>
+					<?php if ($language->prefix == 'en'): ?>
+						<h1>School of<br><span>profesional</span><br>development</h1>
+						<p>Potencia tus habilidades y alcanza el éxito profesional a través de nuestros cursos.</p>
+					<?php elseif ($language->prefix == 'es'): ?>
+						<h1>Escuela de<br><span>desarollo</span><br>profesional</h1>
+						<p>Enhance your skills and boost your career through our courses.</p>
+					<?php endif ?>
 				</div>
 			</div>
 			<div class="nav-display-right">
