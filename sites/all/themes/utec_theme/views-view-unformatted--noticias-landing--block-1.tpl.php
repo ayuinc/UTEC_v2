@@ -11,7 +11,7 @@
   <div>
     <h3 class="text-primary">Últimas noticias</h3>
   </div>
-  <ul class="grid-list grid-list-2">
+  <ul class="grid-list grid-list-2 grid-list-1-xs">
     <?php foreach ($rows as $id => $row): ?>
       <?php print $row;?>
     <?php endforeach; ?>
