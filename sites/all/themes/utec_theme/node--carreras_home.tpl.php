@@ -28,7 +28,7 @@
   <div data-section-scroll="Acerca de" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
     <div class="overlay flex-middle">
       <div class="container-sm hero-text" data-href="<?php print $carrera_link ?>">
-        <h2 class="thin h3 text-white mb-7"><?php print t('¿Qué es la') ?></h2>
+        <h2 class="thin h3 text-white mb-7"><?php print t('What is') ?></h2>
         <h1 class="thin text-white mt-0"><?php print $titulo ?>?</h1>
         <hr class="hr-white">
         <div class="row">
