@@ -89,7 +89,7 @@ $v14 = "";
 $v15 = "";
 $v16 = "";
 $v17 = ""; //utf8_decode($direccion);
-$v18 = "angel@gmail.com"; //utf8_decode($_POST['emailx']);
+$v18 = "angelgmail.com"; //utf8_decode($_POST['emailx']);
 $v19 = ""; //utf8_decode($celular);
 $v20 = "";
 $v21 = "123456789"; //$_POST['telefono'];
@@ -105,7 +105,7 @@ $v30 = "";
 $v31 = "";
 $v32 = "";
 $v33 = "";
-$v34 = "14864"; //utf8_decode($_POST['carrera']);
+$v34 = "1486wew4"; //utf8_decode($_POST['carrera']);
 $v35 = $programacion;
 $v36 = "";
 $v37 = $origen;
@@ -118,6 +118,8 @@ $param = array('familia' => $v0, 'nombres' => $v1, 'apelPat' => $v2, 'apelMat' =
 
 $response = $client->call( 'registrarInscripcion', $param );
 $error = $client->getError();
+
+print_r($response);
 
 if($error){
 
