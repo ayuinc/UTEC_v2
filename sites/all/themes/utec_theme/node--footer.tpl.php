@@ -62,7 +62,7 @@
             <!--<li><a href="#"><small>Publicaciones</small></a></li>
             <li><a href="#"><small>Consultorías</small></a></li>-->
             <li><a href="/investigacion/empresas-y-clientes"><small><?php print t('Companies and Clients') ?></small></a></li>
-            <li><a href="#"><small>Contacto</small></a></li>
+            <li><a href="#"><small><?php print t('Contact us') ?></small></a></li>
 
           </ul>
         </li>
@@ -71,7 +71,7 @@
             <li class="title text-gray-lighter"><?php print t('Degrees') ?></li>
             <li><a href="/carreras/ingenieria-quimica-industrial" class="atm-menu-inferior"><small><?php print t('Industrial and Chemical Engineering') ?></small></a></li>
             <li><a href="/carreras/ingenieria-electronica" class="atm-menu-inferior"><small><?php print t('Electronic Engineering') ?></small></a></li>
-            <li><a href="/carreras/ingenieria-mecanica" class="atm-menu-inferior"><small><?php print t('Mechanic Engineering') ?></small></a></li>
+            <li><a href="/carreras/ingenieria-mecanica" class="atm-menu-inferior"><small><?php print t('Mechanical Engineering') ?></small></a></li>
             <li><a href="/carreras/ingenieria-de-la-energia" class="atm-menu-inferior"><small><?php print t('Energy Engineering') ?></small></a></li>
             <li><a href="/carreras/ingenieria-industrial" class="atm-menu-inferior"><small><?php print t('Industrial Engineering') ?></small></a></li>
             <!--<li><a href="/carreras/menciones" class="atm-menu-inferior"><small><?php print t('Mentions') ?></small></a></li>-->
