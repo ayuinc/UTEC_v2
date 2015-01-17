@@ -1,5 +1,3 @@
-<?php 
-// $video_name = $node->field_video['und']['0']['filename'];
 
 <?php global $base_url; ?>
 <?php global $theme_path; ?>
