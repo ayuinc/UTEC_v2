@@ -37,7 +37,7 @@
             <li><a href="/<?php print $language->prefix ?>/somos-utec/respaldo" class="atm-menu-inferior"><small><?php print t('A Solid Foundation') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/somos-utec/autoridades" class="atm-menu-inferior"><small><?php print t('Authorities') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/somos-utec/profesores" class="atm-menu-inferior"><small><?php print t('Faculty') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/somos-utec/ingenio-en-accion" class="atm-menu-inferior"><small><?php print t('Ingenio en Acción') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/somos-utec/ingenio-en-accion" class="atm-menu-inferior"><small><?php print t('Ingenuity in Action') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/somos-utec/metodologia-educativa" class="atm-menu-inferior"><small><?php print t('Educational Methodology') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/somos-utec/noticias" class="atm-menu-inferior"><small></small><small><?php print t('News') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/somos-utec/eventos-utec" class="atm-menu-inferior"><small><?php print t('Events') ?></small></a></li>
