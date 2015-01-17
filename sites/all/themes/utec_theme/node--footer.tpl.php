@@ -86,7 +86,7 @@
         <li>
           <ul>
             <li class="title text-gray-lighter"><?php print t('Admissions') ?></li>
-            <li><a href="/<?php print $language->prefix ?>/admision/modalidades" class="atm-menu-inferior"><small><?php print t('Admissions Methods') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/admision/modalidades" class="atm-menu-inferior"><small><?php print t('Admissions') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/admision/charlas-informativas" class="atm-menu-inferior"><small><?php print t('Informative Talks') ?></small></a></li>
             <!--<li><a href="/<?php print $language->prefix ?>/admision/calendario-academico"><small><?php print t('Admission Calendar') ?></small></a></li>-->
             <li><a href="/<?php print $language->prefix ?>/admision/modalidades" class="atm-menu-inferior"><small><?php print t('Pre-registration') ?></small></a></li>
