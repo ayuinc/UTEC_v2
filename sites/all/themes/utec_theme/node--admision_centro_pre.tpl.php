@@ -21,8 +21,7 @@ $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 	  <div data-section-scroll="Overview" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_fotos_centro_pre)?>);">
 	    <div class="overlay flex-middle">
 	      <div class="container-sm hero-text">
-	        <h2 class="thin h3 text-white mb-7"><?php print t('What is') ?></h2>
-	        <h1 class="thin text-white mt-0"><?php print $titulo ?>?</h1>
+	        <h1 class="thin text-white mt-0"><?php print $titulo ?></h1>
 	        <hr class="hr-white">
 	        <div class="row">
 	          <div class="col-sm-3 hidden-xs">
@@ -32,7 +31,7 @@ $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 	            </div>
 	          </div>
 	          <div class="col-sm-9">
-	            <h2 class="lead thin text-white h5 mt-0"><?php print $carrera_txt ?></h2>
+	            <h2 class="lead thin text-white h5 mt-0"><?php print $field_que_es_descripcion_cp ?></h2>
 	          </div>
 	        </div>
 	      </div>
