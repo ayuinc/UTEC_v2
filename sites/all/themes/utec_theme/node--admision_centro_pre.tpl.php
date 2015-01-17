@@ -19,11 +19,7 @@ $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 ?>
 <?php kpr($node); ?>
 	<div class="hero-unit"> <!-- HERO -->
-	  <?php if ($language->prefix == 'en'): ?>
-	    <div data-section-scroll="Overview" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_fotos_centro_pre)?>);">
-	  <?php elseif ($language->prefix == 'es'): ?>
-	    <div data-section-scroll="Acerca de" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_fotos_centro_pre)?>);">
-	  <?php endif ?>
+	  <div data-section-scroll="Overview" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_fotos_centro_pre)?>);">
 	    <div class="overlay flex-middle">
 	      <div class="container-sm hero-text">
 	        <h2 class="thin h3 text-white mb-7"><?php print t('What is') ?></h2>
