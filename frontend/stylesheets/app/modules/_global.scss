@@ -3,9 +3,9 @@ body {
 	min-height: 100%;
 	height: 100%;
 	background-color: $body-bg;
-	&::-webkit-scrollbar { 
-    display: none; 
-	}
+	// &::-webkit-scrollbar { 
+ //    display: none; 
+	// }
 }
 
 html {}
@@ -285,7 +285,7 @@ $sidebar-block-height: 210px;
 			}
 		}
 		i {
-			font-size: $font-size-h1 * 3;
+			font-size: 117px;
 		}
 		&.videoBG {
 			height: $video-bg-height + 210;
