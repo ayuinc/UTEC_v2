@@ -71,7 +71,7 @@
 			<a href="/<?php print $language->prefix ?>/somos-utec/utec-garage"><span>UTEC</span> Garage</a>
 		</li>
 		<li>
-			<a href="http://utecventures.com/" target="_blank" ><span>UTEC</span>Ventures</a>
+			<a href="http://utecventures.com/" target="_blank" ><span>UTEC</span> Ventures</a>
 		</li>
   </ul>
 </div>
