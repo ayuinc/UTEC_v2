@@ -5,6 +5,7 @@
 
 <?php $titulo = $node->title; ?>   
 <?php $body = $node->body['und']['0']['value']; ?>
+<?php $field_fotos_edp_generico = $node->field_fotos_edp_generico['und']['0']['filename']; ?>
 
 <?php $url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>
 <?php $end = end((explode('/', $url))); ?>
@@ -12,15 +13,15 @@
 <div class="container-sm">
 	<h1 class="light"><?php print $title ?></h1>
 	<div class="separator-gray separator-lg"></div>
-	<?php if ($field_fotos!='') { ?>
-		<img src="<?php print('/'.$pathfile.$field_fotos)?>" class="img-responsive mb-35">
+	<?php if ($field_fotos_edp_generico!='') { ?>
+		<img src="<?php print('/'.$pathfile.$field_fotos_edp_generico)?>" class="img-responsive mb-35">
 	<?php } ?>	
 	<?php print $body ?>	
 </div>
 
 
-<?php if (($end!='diplomados')) { ?>
-<div class="container-sm form-custom"> 
+<?php if (($end!='diplomados') AND ($end!='cursos-adhoc')) { ?>
+<div class="container-sm form-custom mt-35"> 
 	<form action="" data-submit="Formulario de inscripcion">
 		<input type="hidden" name="origen" value="<?php print $title ?>">
 		<div class="row">
