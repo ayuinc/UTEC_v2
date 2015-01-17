@@ -163,30 +163,27 @@
 		<li>
       <a href="/<?php print $language->prefix ?>/admision/charlas-informativas">
         <?php if ($language->prefix == 'es'): ?>
-          <span>Charlas</span>informativas
+          <span>Charlas </span>informativas
         <?php elseif ($language->prefix == 'en'): ?>
-          <span>Informative</span>talks
+          <span>Informative </span>talks
         <?php endif ?>
       </a>
 		</li>
 		<li>
       <a href="/<?php print $language->prefix ?>/admision/informacion-economica">
         <?php if ($language->prefix == 'es'): ?>
-          <span>Información</span>económica
+          <span>Información </span>económica
         <?php elseif ($language->prefix == 'en'): ?>
-          <span>Financial</span>information
+          <span>Financial </span>information
         <?php endif ?>
       </a>
 		</li>
     <li>
-      <a href="/<?php print $language->prefix ?>/admision/pre-inscripcion"><?php print t('Pre-registration') ?></a>
-    </li>
-    <li>
       <a href="/<?php print $language->prefix ?>/admision/calendario-admision">
       <?php if ($language->prefix == 'es'): ?>
-        <span>Calendario de</span>Admisión</a>
+        <span>Calendario de </span>Admisión</a>
       <?php elseif ($language->prefix == 'en'): ?>
-        <span>Admissions</span>Calendar</a>
+        <span>Admissions </span>Calendar</a>
       <?php endif ?>
       </a>
     </li>
@@ -204,7 +201,7 @@
         <?php if ($language->prefix == 'es'): ?>
           <span>Preguntas</span>Frecuentes
         <?php elseif ($language->prefix == 'en'): ?>
-          <span>Frequently Asked</span>Questions
+          <span>Frequently Asked </span>Questions
         <?php endif ?>
       </a>  
     </li>
