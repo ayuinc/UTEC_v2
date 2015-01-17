@@ -1,5 +1,3 @@
-<?php 
-// $video_name = $node->field_video['und']['0']['filename'];
 
 <?php global $base_url; ?>
 <?php global $theme_path; ?>
@@ -19,17 +17,11 @@ $field_inscripcion_pre_extensive = $node->field_inscripcion_pre_extensive['und']
 $field_inscripcion_pre_intensiva = $node->field_inscripcion_pre_intensiva['und']['0']['value'];
 $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 ?>
-
 	<div class="hero-unit"> <!-- HERO -->
-	  <?php if ($language->prefix == 'en'): ?>
-	    <div data-section-scroll="Overview" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_fotos_centro_pre)?>);">
-	  <?php elseif ($language->prefix == 'es'): ?>
-	    <div data-section-scroll="Acerca de" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_fotos_centro_pre)?>);">
-	  <?php endif ?>
+	  <div data-section-scroll="Overview" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_fotos_centro_pre)?>);">
 	    <div class="overlay flex-middle">
 	      <div class="container-sm hero-text">
-	        <h2 class="thin h3 text-white mb-7"><?php print t('What is') ?></h2>
-	        <h1 class="thin text-white mt-0"><?php print $titulo ?>?</h1>
+	        <h1 class="thin text-white mt-0"><?php print $titulo ?></h1>
 	        <hr class="hr-white">
 	        <div class="row">
 	          <div class="col-sm-3 hidden-xs">
@@ -39,7 +31,7 @@ $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 	            </div>
 	          </div>
 	          <div class="col-sm-9">
-	            <h2 class="lead thin text-white h5 mt-0"><?php print $carrera_txt ?></h2>
+	            <h2 class="lead thin text-white h5 mt-0"><?php print $field_que_es_descripcion_cp ?></h2>
 	          </div>
 	        </div>
 	      </div>

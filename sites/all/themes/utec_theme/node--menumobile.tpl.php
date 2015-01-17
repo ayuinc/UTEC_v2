@@ -129,9 +129,9 @@
     <li>
       <a href="/admision/pre-inscripcion"><?php print t('Registration') ?></a>
     </li>
-    <!--<li>
-      <a href="/admision/calendario-academico"><span>Calendario</span> de admisión</a>
-    </li>-->
+    <li>
+      <a href="/admision/calendario-admision"><span>Calendario</span> de admisión</a>
+    </li>
     <li>
       <a href="/admision/visita-utec"><span>Visita</span> UTEC</a>
     </li>
