@@ -362,11 +362,13 @@
 					</ul>
 					<ul>
 						<li>
+							<a href="/<?php print $language->prefix ?>/admision/calendario-admision">
 							<?php if ($language->prefix == 'es'): ?>
-								<a href="/<?php print $language->prefix ?>/admision/calendario-admision"><span>Calendario de</span>Admisión</a>
+								<span>Calendario de</span>Admisión</a>
 							<?php elseif ($language->prefix == 'en'): ?>
-								<a href="/<?php print $language->prefix ?>/admision/calendario-admision"><span>Admissions</span>Calendar</a>
+								<span>Admissions</span>Calendar</a>
 							<?php endif ?>
+							</a>
 						</li>
 						<li>
 							<a href="/<?php print $language->prefix ?>/admision/visita-utec"><span><?php print t('Visit') ?></span>UTEC</a>
@@ -414,11 +416,13 @@
 				<div>
 					<ul>
 						<li>
+							<a href="/<?php print $language->prefix ?>/convenios/convenios-de-intercambio">
 							<?php if ($language->prefix == 'es'): ?>
-								<a href="/<?php print $language->prefix ?>/convenios/convenios-de-intercambio"><span>Convenios de</span>Intercambio</a>
+								<span>Convenios de</span>Intercambio</a>
 							<?php elseif ($language->prefix == 'en'): ?>
-								<a href="/<?php print $language->prefix ?>/convenios/convenios-de-intercambio"><span>Alliances</span></a>
+								<span>Alliances</span></a>
 							<?php endif ?>
+							</a>
 						</li>
 					</ul>
 				</div>
@@ -450,11 +454,13 @@
 						</li>-->
 						<li><a href="/edp/la-escuela"><?php print t('The School') ?></a></li>
 						<li>
+							<a href="/<?php print $language->prefix ?>/edp/cursos/cursos-cortos">
 							<?php if ($language->prefix == 'en'): ?>
-								<a href="/<?php print $language->prefix ?>/edp/cursos/cursos-cortos"><span>Short</span>Courses</a>
+								<span>Short</span>Courses</a>
 							<?php elseif ($language->prefix == 'es'): ?>
-								<a href="/<?php print $language->prefix ?>/edp/cursos/cursos-cortos"><span>Cursos</span>Cortos</a>
+								<span>Cursos</span>Cortos</a>
 							<?php endif ?>
+							</a>
 						</li>
 					</ul>
 					<ul>
@@ -465,7 +471,7 @@
 							<a href="/<?php print $language->prefix ?>/edp/calendario"><?php print t('Calendar') ?></a>
 						</li>
 						<li>
-							<a href="/<?php print $language->prefix ?>/edp/inscripcion" class="btn btn-primary btn-custom bold"><?php print t('Contact us') ?></a>
+							<a href="http://escuela-edp.utec.edu.pe/" class="btn btn-primary btn-custom bold"><?php print t('Contact us') ?></a>
 						</li>
 					</ul>
 				</div>
