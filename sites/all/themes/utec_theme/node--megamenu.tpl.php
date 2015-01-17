@@ -150,7 +150,11 @@
 							<a href="/<?php print $language->prefix ?>/somos-utec/noticias"><?php print t('News') ?></a>
 						</li>						
 						<li>
-							<a href="/<?php print $language->prefix ?>/somos-utec/calendario-admision"><span>Calendario</span>de Admisión</a>
+							<?php if ($language->prefix == 'en'): ?>
+								<a href="/<?php print $language->prefix ?>/somos-utec/calendario-admision"><span>Admissions</span>Calendar</a>
+							<?php elseif ($language->prefix == 'es'): ?>
+								<a href="/<?php print $language->prefix ?>/somos-utec/calendario-admision"><span>Calendario</span>de Admisión</a>
+							<?php endif ?>
 						</li>
 					</ul> 
 					<ul>
@@ -545,6 +549,13 @@
 						</li>-->
 						<li>
 							<a href="/<?php print $language->prefix ?>/somos-utec/noticias"><?php print t('News') ?></a>
+						</li>
+						<li>
+							<?php if ($language->prefix == 'en'): ?>
+								<a href="/<?php print $language->prefix ?>/somos-utec/calendario-admision"><span>Admissions</span>Calendar</a>
+							<?php elseif ($language->prefix == 'es'): ?>
+								<a href="/<?php print $language->prefix ?>/somos-utec/calendario-admision"><span>Calendario</span>de Admisión</a>
+							<?php endif ?>
 						</li>						
 					</ul>
 					<ul>
