@@ -196,7 +196,6 @@
 					<?php elseif ($language->prefix == 'es'): ?>
 						<h1><?php print t('Experience') ?><br><span>en </span><?php print t('Research') ?></h1>
 					<?php endif ?>
-					
 					<p><?php print t('The right path to finding better solutions.') ?></p>
 				</div>
 			</div>
@@ -582,8 +581,13 @@
 		<div class="container-sm">
 			<div class="nav-display-left">
 				<div>
-					<h1>Experiencia<br><span>en</span> Investigación</h1>
-					<p>El paso decisivo para encontrar las mejores soluciones.</p>
+					<?php if ($language->prefix == 'en'): ?>
+						<h1><?php print t('Research') ?><br><span></span> <?php print t('Experience') ?></h1>
+						<p>The right path to finding better solutions.</p>
+					<?php elseif ($language->prefix == 'es'): ?>
+						<h1><?php print t('Experience') ?><br><span>en </span><?php print t('Research') ?></h1>
+						<p>El paso decisivo para encontrar las mejores soluciones.</p>
+					<?php endif ?>
 				</div>
 			</div>
 			<div class="nav-display-right">

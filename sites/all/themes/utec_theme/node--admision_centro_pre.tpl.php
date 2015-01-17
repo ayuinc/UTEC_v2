@@ -1,6 +1,11 @@
-<?php 
-// $video_name = $node->field_video['und']['0']['filename'];
 
+<?php global $base_url; ?>
+<?php global $theme_path; ?>
+<?php $path = $base_url.'/'.$theme_path; ?>
+<?php $pathfile= variable_get('file_public_path', conf_path() . '/files/centro-pre/'); ?>
+
+
+<?php
 $titulo = $node->title;   
 $field_que_es_descripcion_cp = $node->field_que_es_descripcion_cp['und']['0']['value'];
 $field_que_es_intro_cp = $node->field_que_es_intro_cp['und']['0']['value'];
@@ -10,17 +15,17 @@ $field_calendario_pago = $node->field_calendario_pago['und']['0']['value'];
 $field_calendario_lugar = $node->field_calendario_lugar['und']['0']['value'];
 $field_inscripcion_pre_extensive = $node->field_inscripcion_pre_extensive['und']['0']['value'];
 $field_inscripcion_pre_intensiva = $node->field_inscripcion_pre_intensiva['und']['0']['value'];
-
+$field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 ?>
-
+<?php kpr($nodo); ?>
 	<div class="hero-unit"> <!-- HERO -->
 	  <?php if ($language->prefix == 'en'): ?>
-	    <div data-section-scroll="Overview" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
+	    <div data-section-scroll="Overview" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_fotos_centro_pre)?>);">
 	  <?php elseif ($language->prefix == 'es'): ?>
-	    <div data-section-scroll="Acerca de" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
+	    <div data-section-scroll="Acerca de" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_fotos_centro_pre)?>);">
 	  <?php endif ?>
 	    <div class="overlay flex-middle">
-	      <div class="container-sm hero-text" data-href="<?php print $carrera_link ?>">
+	      <div class="container-sm hero-text">
 	        <h2 class="thin h3 text-white mb-7"><?php print t('What is') ?></h2>
 	        <h1 class="thin text-white mt-0"><?php print $titulo ?>?</h1>
 	        <hr class="hr-white">
@@ -28,7 +33,7 @@ $field_inscripcion_pre_intensiva = $node->field_inscripcion_pre_intensiva['und']
 	          <div class="col-sm-3 hidden-xs">
 	            <div class="size xl">
 	              <i class="icon-carreras-que-es text-white"></i>
-	              <a href="<?php print $carrera_link ?>" class="btn btn-white btn-outline see-more mt-7"><?php print t('See more') ?></a>
+	              <!--<a href="<?php print $carrera_link ?>" class="btn btn-white btn-outline see-more mt-7"><?php print t('See more') ?></a>-->
 	            </div>
 	          </div>
 	          <div class="col-sm-9">
