@@ -7,7 +7,7 @@
       <a href="#mobile-nav-display-2"><?php print t('Research') ?></a>
     </li>
     <li>
-      <a href="#mobile-nav-display-3"><?php print t('Undergraduate Admissions') ?></a>
+      <a href="#mobile-nav-display-3"><?php print t('Programs') ?></a>
     </li>
     <li>
       <a href="#mobile-nav-display-4"><?php print t('Admissions') ?></a>
