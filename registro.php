@@ -74,10 +74,10 @@ $origen = "";
 
 $origen = utf8_decode($_POST['origen']);
 
-if($origen == "solicitud-examen" || $origen == "solicitud-primeros-puestos" || $origen == "solicitud-alto-rendimiento" || 
-   $origen == "solicitud-traslado-externo" || $origen == "solicitud-centro-pre" || $origen == "solicitud-bachillerato" )
+if($origen == "Examen de Admisión" || $origen == "Primeros puestos" || $origen == "Alto rendimiento" || 
+   $origen == "Traslado Externo" || $origen == "Centro Pre" || $origen == "Bachillerato Internacional" )
 {
-    if ($origen == "solicitud-examen")
+    if ($origen == "Examen de Admisión")
     {
         $tituloTelemarketing = "EXAMEN ADMISION - Datos Personales";
         $subjectTelemarketing = "Solicitud - Examen Admision UTEC";
@@ -85,7 +85,7 @@ if($origen == "solicitud-examen" || $origen == "solicitud-primeros-puestos" || $
         $origen = "pagina-examen-admision";
     }
 
-    if ($origen == "solicitud-primeros-puestos")
+    if ($origen == "Primeros puestos")
     {
         $tituloTelemarketing = "PRIMEROS PUESTOS - Datos Personales";
         $subjectTelemarketing = "Solicitud - Primeros Puestos UTEC";
@@ -93,7 +93,7 @@ if($origen == "solicitud-examen" || $origen == "solicitud-primeros-puestos" || $
         $origen = "pagina-primeros-puestos";
     }
 
-    if ($origen == "solicitud-alto-rendimiento")
+    if ($origen == "Alto rendimiento")
     {
         $tituloTelemarketing = "ALTO RENDIMIENTO - Datos Personales";
         $subjectTelemarketing = "Solicitud - Alto Rendimiento UTEC";
@@ -101,7 +101,7 @@ if($origen == "solicitud-examen" || $origen == "solicitud-primeros-puestos" || $
         $origen = "pagina-alto-rendimiento";
     }
 
-    if ($origen == "solicitud-traslado-externo")
+    if ($origen == "Traslado Externo")
     {
         $tituloTelemarketing = "TRASLADO EXTERNO - Datos Personales";
         $subjectTelemarketing = "Solicitud - Traslado Externo UTEC";
@@ -109,7 +109,7 @@ if($origen == "solicitud-examen" || $origen == "solicitud-primeros-puestos" || $
         $origen = "pagina-traslado-externo";
     }
 
-    if ($origen == "solicitud-centro-pre")
+    if ($origen == "Centro Pre")
     {
         $tituloTelemarketing = "CENTRO PRE - Datos Personales";
         $subjectTelemarketing = "Solicitud - Centro Preuniversitario UTEC";
@@ -117,10 +117,10 @@ if($origen == "solicitud-examen" || $origen == "solicitud-primeros-puestos" || $
         $origen = "pagina-centro-pre";
     }
 
-    if ($origen == "solicitud-bachillerato")
+    if ($origen == "Bachillerato Internacional")
     {
-        $tituloTelemarketing = "CENTRO PRE - Datos Personales";
-        $subjectTelemarketing = "Solicitud - Centro Preuniversitario UTEC";
+        $tituloTelemarketing = "BACHILLERATO INTERNACIONAL - Datos Personales";
+        $subjectTelemarketing = "Solicitud - Bachillerato Internacional UTEC";
         $familia = "BACHILLERATO";
         $origen = "pagina-bachillerato";
     }

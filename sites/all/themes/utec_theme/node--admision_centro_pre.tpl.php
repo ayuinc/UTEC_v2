@@ -1,5 +1,3 @@
-<?php 
-// $video_name = $node->field_video['und']['0']['filename'];
 
 <?php global $base_url; ?>
 <?php global $theme_path; ?>
@@ -8,7 +6,6 @@
 
 
 <?php
-	
 $titulo = $node->title;   
 $field_que_es_descripcion_cp = $node->field_que_es_descripcion_cp['und']['0']['value'];
 $field_que_es_intro_cp = $node->field_que_es_intro_cp['und']['0']['value'];
