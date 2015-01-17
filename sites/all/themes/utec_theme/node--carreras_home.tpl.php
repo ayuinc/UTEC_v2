@@ -58,7 +58,7 @@
   <div class="container-sm text-right normalize-text php-7" data-href="<?php print $malla_link ?>">
     <h2 class="lead thin"><?php print t('Curriculum') ?></h2>
     <hr class="hr-gray">
-    <div class="row">
+    <div class="row mt-28">
       <div class="col-sm-9">
         <h2 class="lead thin mb-14 h4"><?php print $malla_titulo ?></h2>
         <p clas="font-carreras"><?php print $malla_txt ?></p>
@@ -79,7 +79,7 @@
   <div class="container-sm text-left text-white normalize-text php-7" data-href="<?php print $menciones_link ?>">
     <h2 class="lead thin"><?php print t('Majors') ?></h2>
     <hr class="hr-white">
-    <div class="row">
+    <div class="row mt-28">
       <div class="col-sm-3 hidden-xs">
         <div class="size xl">
           <i class="icon-carreras-menciones"></i>
@@ -100,7 +100,7 @@
   <div class="container-sm text-center normalize-text php-7">
     <h2 class="lead thin"><?php print t('Faculty') ?></h2>
     <hr class="hr-gray">
-    <div class="size xl">
+    <div class="size xl mt-28">
       <i class="icon-carreras-profesores"></i>
     </div>
   </div>
