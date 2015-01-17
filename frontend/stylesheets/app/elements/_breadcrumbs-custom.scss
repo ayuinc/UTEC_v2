@@ -33,7 +33,7 @@
 			display: none;
 		}
 		.pane-content {
-			@extend .container;
+			@extend .container-sm;
 			.breadcrumb {
 				@include list-unstyled;
 			}

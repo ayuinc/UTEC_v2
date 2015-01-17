@@ -667,31 +667,24 @@ address {
   font-style: normal;
   line-height: 1.42857; }
 
-.container, .breadcrumbs-light .pane-page-breadcrumb .pane-content,
-.breadcrumbs-dark .pane-page-breadcrumb .pane-content {
+.container {
   margin-right: auto;
   margin-left: auto;
   padding-left: 14px;
   padding-right: 14px; }
-  .container:before, .breadcrumbs-light .pane-page-breadcrumb .pane-content:before,
-  .breadcrumbs-dark .pane-page-breadcrumb .pane-content:before, .container:after, .breadcrumbs-light .pane-page-breadcrumb .pane-content:after,
-  .breadcrumbs-dark .pane-page-breadcrumb .pane-content:after {
+  .container:before, .container:after {
     content: " ";
     display: table; }
-  .container:after, .breadcrumbs-light .pane-page-breadcrumb .pane-content:after,
-  .breadcrumbs-dark .pane-page-breadcrumb .pane-content:after {
+  .container:after {
     clear: both; }
   @media (min-width: 768px) {
-    .container, .breadcrumbs-light .pane-page-breadcrumb .pane-content,
-    .breadcrumbs-dark .pane-page-breadcrumb .pane-content {
+    .container {
       width: 748px; } }
   @media (min-width: 992px) {
-    .container, .breadcrumbs-light .pane-page-breadcrumb .pane-content,
-    .breadcrumbs-dark .pane-page-breadcrumb .pane-content {
+    .container {
       width: 968px; } }
   @media (min-width: 1200px) {
-    .container, .breadcrumbs-light .pane-page-breadcrumb .pane-content,
-    .breadcrumbs-dark .pane-page-breadcrumb .pane-content {
+    .container {
       width: 1168px; } }
 
 .container-fluid {
@@ -2643,6 +2636,32 @@ tbody.collapse.in {
   -moz-box-shadow: 0px 3px 3px 0px rgba(49, 50, 51, 0.15);
   box-shadow: 0px 3px 3px 0px rgba(49, 50, 51, 0.15); }
 
+@media only screen and (min-width: 768px) {
+  .container-xs {
+    width: 508px;
+    padding-left: 14px;
+    padding-right: 14px;
+    margin: 0 auto; }
+
+  .container-sm, .breadcrumbs-light .pane-page-breadcrumb .pane-content,
+  .breadcrumbs-dark .pane-page-breadcrumb .pane-content {
+    width: 748px;
+    padding-left: 14px;
+    padding-right: 14px;
+    margin: 0 auto; } }
+@media only screen and (max-width: 480px) {
+  .container-xs {
+    width: 100%;
+    padding-left: 14px;
+    padding-right: 14px;
+    margin: 0 auto; }
+
+  .container-sm, .breadcrumbs-light .pane-page-breadcrumb .pane-content,
+  .breadcrumbs-dark .pane-page-breadcrumb .pane-content {
+    width: 100%;
+    padding-left: 14px;
+    padding-right: 14px;
+    margin: 0 auto; } }
 .flex {
   display: -webkit-box;
   display: -moz-box;
@@ -5578,9 +5597,7 @@ body {
 .grid-block {
   padding: 14px 0 21px 0;
   padding: 1rem 0 1.5rem 0; }
-  .grid-block.grid-block-full .container, .grid-block.grid-block-full .breadcrumbs-light .pane-page-breadcrumb .pane-content, .breadcrumbs-light .pane-page-breadcrumb .grid-block.grid-block-full .pane-content,
-  .grid-block.grid-block-full .breadcrumbs-dark .pane-page-breadcrumb .pane-content,
-  .breadcrumbs-dark .pane-page-breadcrumb .grid-block.grid-block-full .pane-content {
+  .grid-block.grid-block-full .container {
     width: 100%; }
 
 .scroll-down {
@@ -6915,35 +6932,23 @@ img.icon-utec {
   left: 14px;
   top: inherit; }
 
-.footer .site-map .container > ul, .footer .site-map .breadcrumbs-light .pane-page-breadcrumb .pane-content > ul, .breadcrumbs-light .pane-page-breadcrumb .footer .site-map .pane-content > ul,
-.footer .site-map .breadcrumbs-dark .pane-page-breadcrumb .pane-content > ul,
-.breadcrumbs-dark .pane-page-breadcrumb .footer .site-map .pane-content > ul {
+.footer .site-map .container > ul {
   padding-left: 0;
   list-style: none;
   margin: 0; }
-  .footer .site-map .container > ul li > ul, .footer .site-map .breadcrumbs-light .pane-page-breadcrumb .pane-content > ul li > ul, .breadcrumbs-light .pane-page-breadcrumb .footer .site-map .pane-content > ul li > ul,
-  .footer .site-map .breadcrumbs-dark .pane-page-breadcrumb .pane-content > ul li > ul,
-  .breadcrumbs-dark .pane-page-breadcrumb .footer .site-map .pane-content > ul li > ul {
+  .footer .site-map .container > ul li > ul {
     padding-left: 0;
     list-style: none;
     margin: 0; }
-    .footer .site-map .container > ul li > ul li, .footer .site-map .breadcrumbs-light .pane-page-breadcrumb .pane-content > ul li > ul li, .breadcrumbs-light .pane-page-breadcrumb .footer .site-map .pane-content > ul li > ul li,
-    .footer .site-map .breadcrumbs-dark .pane-page-breadcrumb .pane-content > ul li > ul li,
-    .breadcrumbs-dark .pane-page-breadcrumb .footer .site-map .pane-content > ul li > ul li {
+    .footer .site-map .container > ul li > ul li {
       margin-bottom: 9px; }
-      .footer .site-map .container > ul li > ul li.title, .footer .site-map .breadcrumbs-light .pane-page-breadcrumb .pane-content > ul li > ul li.title, .breadcrumbs-light .pane-page-breadcrumb .footer .site-map .pane-content > ul li > ul li.title,
-      .footer .site-map .breadcrumbs-dark .pane-page-breadcrumb .pane-content > ul li > ul li.title,
-      .breadcrumbs-dark .pane-page-breadcrumb .footer .site-map .pane-content > ul li > ul li.title {
+      .footer .site-map .container > ul li > ul li.title {
         text-transform: uppercase;
         font-size: 18px;
         margin-bottom: 12px; }
-        .footer .site-map .container > ul li > ul li.title a, .footer .site-map .breadcrumbs-light .pane-page-breadcrumb .pane-content > ul li > ul li.title a, .breadcrumbs-light .pane-page-breadcrumb .footer .site-map .pane-content > ul li > ul li.title a,
-        .footer .site-map .breadcrumbs-dark .pane-page-breadcrumb .pane-content > ul li > ul li.title a,
-        .breadcrumbs-dark .pane-page-breadcrumb .footer .site-map .pane-content > ul li > ul li.title a {
+        .footer .site-map .container > ul li > ul li.title a {
           color: white; }
-      .footer .site-map .container > ul li > ul li a, .footer .site-map .breadcrumbs-light .pane-page-breadcrumb .pane-content > ul li > ul li a, .breadcrumbs-light .pane-page-breadcrumb .footer .site-map .pane-content > ul li > ul li a,
-      .footer .site-map .breadcrumbs-dark .pane-page-breadcrumb .pane-content > ul li > ul li a,
-      .breadcrumbs-dark .pane-page-breadcrumb .footer .site-map .pane-content > ul li > ul li a {
+      .footer .site-map .container > ul li > ul li a {
         color: #e3e3e3; }
 @media only screen and (max-width: 480px) {
   .footer .address span {
