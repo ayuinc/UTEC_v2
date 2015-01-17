@@ -647,7 +647,6 @@
 							<?php if ($language->prefix == 'en'): ?>
 								<a href="/<?php print $language->prefix ?>/carreras/ingenieria-industrial"><span><?php print t('Industrial') ?></span><?php print t('Engineering') ?></a>
 							<?php elseif ($language->prefix == 'es'): ?>
-								<span><?php print t('Engineering') ?></span>
 								<a href="/<?php print $language->prefix ?>/carreras/ingenieria-industrial"><span><?php print t('Engineering') ?></span><?php print t('Industrial') ?></a>
 							<?php endif ?>
 						</li>
@@ -680,9 +679,6 @@
 							<?php elseif ($language->prefix == 'es'): ?>
 								<a href="/<?php print $language->prefix ?>/carreras/ingenieria-electronica"><span>Ingeniería</span>Electrónica</a>
 							<?php endif ?>
-						</li>
-						<li>
-							<a href="/<?php print $language->prefix ?>/carreras/menciones"><?php print t('Majors') ?></a>
 						</li>
 						<li>
 							<a href="/<?php print $language->prefix ?>/admision/modalidades" class="btn btn-primary btn-custom bold"><?php print t('Apply') ?></a>
