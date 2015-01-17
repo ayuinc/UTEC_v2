@@ -28,6 +28,9 @@ if (!isset($_POST['celular-2'])) {$_POST['celular-2'] = ""; $celular2 = ""; };
 if (!isset($_POST['telefono'])) {$_POST['telefono'] = "";};
 if (!isset($_POST['ano-culminacion'])) {$_POST['ano-culminacion'] = "";};
 if (!isset($_POST['colegio'])) {$_POST['colegio'] = "";};
+if (!isset($_POST['estudios-dpto'])) {$_POST['estudios-dpto'] = "";};
+if (!isset($_POST['estudios-provincia'])) {$_POST['estudios-provincia'] = "";};
+if (!isset($_POST['estudios-distrito'])) {$_POST['estudios-distrito'] = "";};
 if (!isset($_POST['estudios-rendimiento'])) {$_POST['estudios-rendimiento'] = "";};
 if (!isset($_POST['estudiante'])) {$_POST['estudiante'] = "N";};
 if (!isset($_POST['consulta'])) {$_POST['consulta'] = "";};
@@ -208,6 +211,22 @@ if($origen == "Trabaja en UTEC")
 
     $familia = "CONTACTO";
     $origen = "pagina-trabaja-en-utec";  
+}
+
+
+if($origen == "Inscripcion Examen")
+{
+    $tituloTelemarketing = "Registro de Inscripciones - Examen de Admisión UTEC";
+    $subjectTelemarketing = "Registro de Inscripciones - Examen de Admisión UTEC";
+    $fromTelemarketing = "inscripciones@utec.edu.pe";
+    $fromNameTelemarketing = "UTEC";
+    $tituloCliente = "¡Gracias por tu interés en UTEC.!";
+    $subjectCliente = "Registro de Inscripciones - Examen de Admisión UTEC";
+    $fromCliente = "admision@utec.edu.pe";
+    $fromNameCliente = "UTEC – Admisión";
+
+    $familia = "EXAMEN";
+    $origen = "pagina-inscripcion-examen-admision";  
 }
 
 
@@ -406,9 +425,59 @@ $contenidorpta.="<p>
 </map>
 </p>"; 
 
+if($origen == "Inscripcion Examen")
+{
+                $contenidorpta = "";
+                $contenidorpta.="<table width='600px' height='168px' cellpadding='2' cellspacing='2' bgcolor='#FFFFFF'>
+                <tr><td><p><img src='http://app.utec.edu.pe/admision/img/cabeceraWEB.jpg' alt='cabeceraWEB' usemap='#Map2'>
+                  <map name='Map2' id='Map2'>
+                    <area shape='rect' coords='3,3,597,86' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
+                  </map>
+                </p></td></tr>";
+
+                $contenidorpta.="<p>Hola ".strtoupper($_POST['nombres']).",</p>
+                <p><h2>¡Gracias por tu interés en UTEC!</h2>
+                <br/> Hemos recibido tus datos correctamente.
+                <br />Para completar tu inscripción en el Examen de Admisión, debes seguir estos pasos:</p>";
+                
+                $contenidorpta.="<p>1. Efectúa el depósito bancario por el Derecho de Inscripción al Concurso de Admisión Ordinario. BCP cuenta corriente soles N° 193-1976235-0-68. El costo es de S/.450. 
+                <br/>2. Presenta los siguientes documentos en la Oficina de Admisión:</p>";
+                $contenidorpta.="<p><ul><li>Voucher del depósito bancario (o enviar el voucher electrónico al e-mail inscripciones@utec.edu.pe)</li>
+                                <li>Certificados originales de estudios de los cinco años de Educación Secundaria</li>
+                                <li>Copia del Documento Nacional de Identidad.</li>
+                                <li>Dos fotografías actuales, tamaño carné, en fondo blanco.</li>
+                                <li>Declaración jurada familiar. <a href='http://www.utec.edu.pe/admision/Documentos%20compartidos/Declaraci%C3%B3n%20Jurada%20Familiar.pdf' target='_blank'>Descargar formato.</a></li>
+                                </ul></p>";
+
+                $contenidorpta.="<p>
+                 Adicionalmente, en caso hubieras dejado de estudiar tres años o más de haber egresado de la educación secundaria, deberás presentar 
+                 certificado original y vigente de antecedentes policiales, penales y judiciales.   
+                 </p>";
+
+                $contenidorpta.="<p>Preséntate en nuestra oficina de Admisión (Av. Prolongación San Martín 207, Barranco) con los documentos indicados como requisito de inscripción.</p>";
+                $contenidorpta.="<p>¡Éxitos!</p>";
+                $contenidorpta.="<p>Comunícate con UTEC más fácil:<br/><a href='http://guia.com.pe/estara/estara_popup.asp?advertiseId=411234&status=P&phone=51013731000&addressId=876727&' target='_blank'><img src='http://app.utec.edu.pe/admision/img/llama_gratis.jpg' alt='LLama gratis'></a></p>";
+                //$contenidorpta.="<p>Oficina de Admisión<br /><strong>UTEC -  Universidad de Ingeniería & Tecnología</strong><br />Telf: (511) 373 1000<br />Av. Prolongación San Martín, 207, Barranco<br />informes@utec.edu.pe<br />www.utec.edu.pe</p>";
+                $contenidorpta.="<p><img src='http://app.utec.edu.pe/admision/img/logo_utec.jpg' alt='Logo Utec'><br/><b>UTEC - Universidad de Ingeniería & Tecnología</b></p>
+                </td></tr>
+                </table>";
+                
+                $contenidorpta.="<p>
+                <img src='http://app.utec.edu.pe/admision/img/pieWEB.jpg' alt='pieWEB' usemap='#Map'>
+                <map name='Map' id='Map'>
+                <area shape='rect' coords='19,33,107,67' href='http://www.utec.edu.pe/carreras/ingenieria-industrial/default.aspx#.VE5bZfmG96A' target='_blank' alt='Ingeniería Industrial' />
+                <area shape='rect' coords='487,31,595,69' href='http://www.utec.edu.pe/carreras/ingenieria-quimica/default.aspx#.VE5bjPmG96A' target='_blank' alt='Ingeniería Química Industrial' />
+                <area shape='rect' coords='132,36,230,67' href='http://www.utec.edu.pe/carreras/ingenieria-mecanica/default.aspx#.VE6dZ_mG96A' target='_blank' alt='Ingeniería Mecánica' />
+                <area shape='rect' coords='257,36,348,66' href='http://www.utec.edu.pe/carreras/ingenieria-energia/default.aspx#.VE6dlPmG96A' target='_blank' alt='Ingeniería de la Energía' />
+                <area shape='rect' coords='374,34,467,67' href='http://www.utec.edu.pe/carreras/ingenieria-electronica/default.aspx#.VE6dufmG96A' target='_blank' alt='Ingeniería Electrónica' />
+                <area shape='rect' coords='48,121,198,140' href='mailto:informes@utec.edu.pe?Subject=Consulta Información' target='_top' />
+                <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
+                </map>
+                </p>";   
+}
+
 $mail_1->Body = $contenidorpta;
 $mail_1->Send();
-
 
 
 //consumir web service:
