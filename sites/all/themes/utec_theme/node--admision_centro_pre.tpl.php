@@ -41,7 +41,7 @@ $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 	    </div>
 	  </div>
 	</div> <!-- END:Hero -->
-	<div data-section-scroll="Cursos" class="section-scroll-content">
+	<div data-section-scroll="Cursos" class="section-scroll-content pb-0">
 		<div class="container-sm">
 			<h3 class="lead thin text-center"><?php print $field_que_es_intro_cp ?></h3>
 		</div>
@@ -101,14 +101,14 @@ $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 			</div>
 		</div>
 	</div>
-	<div data-section-scroll="Calendario" class="section-scroll-content">
+	<div data-section-scroll="Calendario" class="section-scroll-content pt-0">
 		<div class="container-sm">
 			<h3 class="thin lead"><?php print t('Calendar') ?></h3>
 			<h4 class="text-gray"><?php print t('Pre intensiva January - February 2015') ?></h4>
 			<div class="list-custom-left normalize-text lead-ch mb-ch-21">
 				<ul>
 					<li class="bg-primary text-white uppercase text-center p-21">
-						Fecha
+						<?php print t('Date') ?>
 					</li>
 					<li class="pl-21">
 						<p><?php print $field_calendario_fecha ?></p>
@@ -116,7 +116,7 @@ $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 				</ul>
 				<ul>
 					<li class="bg-gray text-white uppercase text-center p-21">
-						Hora
+						<?php print t('Time') ?>
 					</li>
 					<li class="pl-21">
 						<p><?php print $field_calendario_hora ?></p>
@@ -124,7 +124,7 @@ $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 				</ul>
 				<ul>
 					<li class="bg-gray text-white uppercase text-center p-21">
-						Pago
+						<?php print t('Payment') ?>
 					</li>
 					<li class="pl-21">
 						<p><?php print $field_calendario_pago ?></p>
@@ -132,7 +132,7 @@ $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 				</ul>
 				<ul>
 					<li class="bg-gray text-white uppercase text-center p-21">
-						Lugar
+						<?php print t('Place') ?>
 					</li>
 					<li class="pl-21">
 						<p><?php print $field_calendario_lugar ?></p>
@@ -155,7 +155,7 @@ $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 		</div>
 		<a href="#" class="btn btn-lg btn-primary see-more uppercase ml-70 mr-70">Ver Requisitos</a>
 	</div>-->
-	<div data-section-scroll="Solicita informacion" class="container-sm section-scroll-content">
+	<div data-section-scroll="Solicita informacion" class="container-sm section-scroll-content pt-0">
 		<div class="container-sm">
 			<h3 class="thin lead mb-49"><?php print t('Request information') ?></h3>
 			<form action="">
@@ -206,9 +206,9 @@ $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 				<div class="form-group">
 					<textarea name="" id="" rows="5" class="form-control input-lg" placeholder="Consulta"></textarea>
 				</div>
-				<p class="help-block ml-70"><?php print t('(*) Required fields') ?>(*) Campos obligatorios</p>
+				<p class="help-block ml-70"><?php print t('(*) Required fields') ?>(*) <?php print t('Required fields') ?></p>
 				<div class="pv-21 text-right">
-					<p class="lead"><?php print t('By clicking here you accept these') ?> <a href="#"><?php print t('') ?><?php print t('conditions') ?></a> <button type="submit" class="btn btn-primary btn-lg">Enviar</button></p>
+					<p class="lead"><?php print t('By clicking here you accept these') ?> <a href="#"><?php print t('') ?><?php print t('conditions') ?></a> <button type="submit" class="btn btn-primary btn-lg"><?php print t('Send') ?></button></p>
 				</div>
 			</form>
 		</div>
