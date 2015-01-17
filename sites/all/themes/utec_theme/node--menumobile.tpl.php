@@ -216,7 +216,7 @@
 <div class="mobile-nav-display" id="mobile-nav-display-5">
   <a class="back"><?php print t('Go Back') ?></a>
   <?php if ($language->prefix == 'es'): ?>
-    <h1>Convenios y alianzas <span>ipsum</span><br>internacionales</h1>
+    <h1>Convenios y alianzas <br>internacionales</h1>
   <?php elseif ($language->prefix == 'en'): ?>
     <h1>International <br>alliances</h1>
   <?php endif ?>
