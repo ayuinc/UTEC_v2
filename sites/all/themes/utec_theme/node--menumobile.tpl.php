@@ -188,6 +188,9 @@
       </a>
     </li>
     <li>
+      <a href="/<?php print $language->prefix ?>/admision/visita-utec"><span><?php print t('Visit') ?></span>UTEC</a>
+    </li>
+    <li>
       <a href="/<?php print $language->prefix ?>/admision/orientacion-vocacional">
         <?php if ($language->prefix == 'es'): ?>
           <span>Orientación</span>Vocacional
