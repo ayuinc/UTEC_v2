@@ -705,8 +705,12 @@
 		<div class="container-sm">
 			<div class="nav-display-left">
 				<div>
-					<h1>Ingenio<br><span>vocación</span> y<br><span>aspiración</span><br>a la excelencia</h1>
-					<p>Ese es el ADN de nuestros estudiantes: alcanzar el más alto nivel académico y desarrollo personal.</p>
+					<?php if ($language->prefix == 'es'): ?>
+						<h1>Ingenio<br><span>vocación</span> y<br><span>aspiración</span><br>a la excelencia</h1>
+					<?php elseif ($language->prefix == 'en'): ?>
+						<h1>Ingenuity,<br><span>dedication,</span> and<br><span>the pursuit</span><br>of excellence</h1>
+					<?php endif ?>
+					<p><?php print t('Ese es el ADN de nuestros estudiantes: alcanzar el más alto nivel académico y desarrollo personal.') ?></p>
 				</div>
 			</div>
 			<div class="nav-display-right">
@@ -723,7 +727,7 @@
 							<?php if ($language->prefix == 'es'): ?>
 								<a href="/<?php print $language->prefix ?>/admision/charlas-informativas"><span>Charlas</span>informativas</a>
 							<?php elseif ($language->prefix == 'en'): ?>
-								<a href="/<?php print $language->prefix ?>/admision/charlas-informativas"><span>Informatives</span>talks</a>
+								<a href="/<?php print $language->prefix ?>/admision/charlas-informativas"><span>Informative</span>talks</a>
 							<?php endif ?>
 						</li>
 						<li>
@@ -774,8 +778,12 @@
 		<div class="container-sm">
 			<div class="nav-display-left">
 				<div>
-					<h1><span>Convenios y alianzas</span><br>internacionales</h1>
-					<p>Generamos conexiones con las mejores instituciones educativas del mundo.</p>
+					<?php if ($language->prefix == 'es'): ?>
+						<h1><span>Convenios y alianzas</span><br>internacionales</h1>
+					<?php elseif ($language->prefix == 'en'): ?>
+						<h1><span>Alliances</span></h1>
+					<?php endif ?>	
+						<p><?php print t('We’ve built strong relationships with the best educational institutions in the world.') ?></p>
 				</div>
 			</div>
 			<div class="nav-display-right">
