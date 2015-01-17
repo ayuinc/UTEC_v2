@@ -80,7 +80,6 @@
             <li><a href="/<?php print $language->prefix ?>/carreras/ingenieria-de-la-energia" class="atm-menu-inferior"><small><?php print t('Energy Engineering') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/carreras/ingenieria-industrial" class="atm-menu-inferior"><small><?php print t('Industrial Engineering') ?></small></a></li>
             <!--<li><a href="/<?php print $language->prefix ?>/carreras/menciones" class="atm-menu-inferior"><small><?php print t('Mentions') ?></small></a></li>-->
-            <li><a href="/<?php print $language->prefix ?>/carreras/escuela-de-desarrollo" class="atm-menu-inferior"><small><?php print t('SPD') ?></small></a></li>
           </ul>
         </li>
         <li>
