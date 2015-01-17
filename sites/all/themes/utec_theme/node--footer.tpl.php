@@ -34,19 +34,19 @@
         <li>
           <ul>
             <li class="title text-gray-lighter"><?php print t('We are UTEC') ?></li>
-            <li><a href="/<?php print $language->prefix ?>/somos-utec/metodologia-educativa" class="atm-menu-inferior"><small><?php print t('Educational Methodology') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/somos-utec/vida-estudiantil" class="atm-menu-inferior"><small><?php print t('Student Life') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/somos-utec/campus-y-laboratorios" class="atm-menu-inferior"><small><?php print t('Campus and Labs') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/somos-utec/respaldo" class="atm-menu-inferior"><small><?php print t('A Solid Foundation') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/somos-utec/autoridades" class="atm-menu-inferior"><small><?php print t('Authorities') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/somos-utec/profesores" class="atm-menu-inferior"><small><?php print t('Faculty') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/somos-utec/ingenio-en-accion" class="atm-menu-inferior"><small><?php print t('Ingenio en Acción') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/somos-utec/metodologia-educativa" class="atm-menu-inferior"><small><?php print t('Educational Methodology') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/somos-utec/noticias" class="atm-menu-inferior"><small></small><small><?php print t('News') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/somos-utec/eventos-utec" class="atm-menu-inferior"><small><?php print t('Events') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/somos-utec/vida-estudiantil" class="atm-menu-inferior"><small><?php print t('Life at UTEC') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/somos-utec/campus-y-laboratorios" class="atm-menu-inferior"><small><?php print t('Campus and Labs') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/somos-utec/trabaja-en-utec" class="atm-menu-inferior"><small><?php print t('Work at UTEC') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/somos-utec/utec-garage" class="atm-menu-inferior"><small><?php print t('UTEC Garage') ?></small></a></li>
             <li><a href="http://utecventures.com/" target="_blank" class="atm-menu-inferior"><small><?php print t('UTEC Ventures') ?></small></a></li>
             <!--<li><a href="#" class="atm-menu-inferior"><small>Calendario Académico</small></a></li>-->
-            <li><a href="/<?php print $language->prefix ?>/somos-utec/respaldo" class="atm-menu-inferior"><small><?php print t('Backing') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/somos-utec/autoridades" class="atm-menu-inferior"><small><?php print t('Authorities') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/somos-utec/consejo-directivo" class="atm-menu-inferior"><small><?php print t('Board') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/somos-utec/profesores" class="atm-menu-inferior"><small><?php print t('Faculty') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/somos-utec/noticias" class="atm-menu-inferior"><small></small><small><?php print t('News') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/somos-utec/eventos-utec" class="atm-menu-inferior"><small><?php print t('Utec Events') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/somos-utec/trabaja-en-utec" class="atm-menu-inferior"><small><?php print t('Work at Utec') ?></small></a></li>
           </ul>
         </li>
         <!--<li>
