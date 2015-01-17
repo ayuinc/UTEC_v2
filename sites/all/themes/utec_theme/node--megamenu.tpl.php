@@ -710,7 +710,7 @@
 					<?php elseif ($language->prefix == 'en'): ?>
 						<h1>Ingenuity,<br><span>dedication,</span> and<br><span>the pursuit</span><br>of excellence</h1>
 					<?php endif ?>
-					<p><?php print t('Ese es el ADN de nuestros estudiantes: alcanzar el más alto nivel académico y desarrollo personal.') ?></p>
+					<p><?php print t("Our students' DNA: achieving highest academic achievement and personal development") ?></p>
 				</div>
 			</div>
 			<div class="nav-display-right">
