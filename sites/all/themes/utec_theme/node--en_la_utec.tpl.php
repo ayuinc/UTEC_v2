@@ -26,47 +26,51 @@
   $derecho_inferior_der_img  = $fields[4]->field_imagen['und'][0]['filename'];
 
 ?>
-<h1 class="lead medium pt-21 mb-7"><span class="text-gray-darker"><?php print t('At UTEC, engineering is') ?></span> <span class="text-gray"><?php print t('well-being') ?></span></h1>
-	<!--<h4 class="lead mt-0 mb-42">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>-->
-  <div class="anchor-img-grid anchor-img-grid-1">
-    <div class="col-sm-6">
-      <div data-href="<?php print $base_url; ?>/<?php print $izquierdo_link; ?>" class="anchor-block-1">
-        <div class="pic" style="background-image: url(sites/default/files/<?php print $izquierdo_img; ?>);"></div>
-        <div class="overlay">
-          <a href="#">
-            <h4><?php print $izquierdo_txt1; ?></h4>
-            <h2><?php print $izquierdo_txt2; ?></h2>
-          </a>
+<div>
+  <div class="container">
+    <h1 class="lead medium pt-21 mb-7"><span class="text-gray-darker"><?php print t('At UTEC, engineering is') ?></span> <span class="text-gray"><?php print t('well-being') ?></span></h1>
+  	<!--<h4 class="lead mt-0 mb-42">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>-->
+    <div class="anchor-img-grid anchor-img-grid-1">
+      <div class="col-sm-6">
+        <div data-href="<?php print $base_url; ?>/<?php print $izquierdo_link; ?>" class="anchor-block-1">
+          <div class="pic" style="background-image: url(sites/default/files/<?php print $izquierdo_img; ?>);"></div>
+          <div class="overlay">
+            <a href="#">
+              <h4><?php print $izquierdo_txt1; ?></h4>
+              <h2><?php print $izquierdo_txt2; ?></h2>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-sm-6">
-      <div data-href="<?php print $base_url; ?>/<?php print $derecho_superior_link; ?>" class="anchor-block-2">
-        <div class="pic" style="background-image: url(sites/default/files/<?php print $derecho_superior_img; ?>);"></div>
-        <div class="overlay">
-          <a href="#">
-            <h4><?php print $derecho_superior_txt1; ?></h4>
-            <h2><?php print $derecho_superior_txt2; ?></h2>
-          </a>
+      <div class="col-sm-6">
+        <div data-href="<?php print $base_url; ?>/<?php print $derecho_superior_link; ?>" class="anchor-block-2">
+          <div class="pic" style="background-image: url(sites/default/files/<?php print $derecho_superior_img; ?>);"></div>
+          <div class="overlay">
+            <a href="#">
+              <h4><?php print $derecho_superior_txt1; ?></h4>
+              <h2><?php print $derecho_superior_txt2; ?></h2>
+            </a>
+          </div>
         </div>
-      </div>
-      <div data-href="<?php print $base_url; ?>/<?php print $derecho_inferior_izq_link; ?>" class="anchor-block-3">
-        <div class="pic" style="background-image: url(sites/default/files/<?php print $derecho_inferior_izq_img; ?>);"></div>
-        <div class="overlay">
-          <a href="#">
-            <h4><?php print $derecho_inferior_izq_txt1; ?></h4>
-            <h2><?php print $derecho_inferior_izq_txt2; ?></h2>
-          </a>
+        <div data-href="<?php print $base_url; ?>/<?php print $derecho_inferior_izq_link; ?>" class="anchor-block-3">
+          <div class="pic" style="background-image: url(sites/default/files/<?php print $derecho_inferior_izq_img; ?>);"></div>
+          <div class="overlay">
+            <a href="#">
+              <h4><?php print $derecho_inferior_izq_txt1; ?></h4>
+              <h2><?php print $derecho_inferior_izq_txt2; ?></h2>
+            </a>
+          </div>
         </div>
-      </div>
-      <div data-href="<?php print $base_url; ?>/<?php print $derecho_inferior_der_link; ?>" class="anchor-block-4">
-        <div class="pic" style="background-image: url(sites/default/files/<?php print $derecho_inferior_der_img; ?>);"></div>
-        <div class="overlay">
-          <a href="#">
-            <h4><?php print $derecho_inferior_der_txt1; ?></h4>
-            <h2><?php print $derecho_inferior_der_txt2; ?></h2>
-          </a>
+        <div data-href="<?php print $base_url; ?>/<?php print $derecho_inferior_der_link; ?>" class="anchor-block-4">
+          <div class="pic" style="background-image: url(sites/default/files/<?php print $derecho_inferior_der_img; ?>);"></div>
+          <div class="overlay">
+            <a href="#">
+              <h4><?php print $derecho_inferior_der_txt1; ?></h4>
+              <h2><?php print $derecho_inferior_der_txt2; ?></h2>
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </div>
+</div>

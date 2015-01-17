@@ -13,7 +13,7 @@
 ?>
 
 <div class="container-sm">
-	primeros puestos
+	examen de admision
 	<h1 class="light"><?php print t('Form') ?></h1>
 	<div clsass="separator-gray separator-lg"></div>
 	<h3 class="thin text-gray pt-21 pb-56"><?php  ?><?php print t('Applicant Information') ?></h3>
