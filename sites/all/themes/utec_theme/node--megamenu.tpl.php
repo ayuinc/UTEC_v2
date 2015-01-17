@@ -121,14 +121,14 @@
 			<div class="nav-display-left">
 				<div>
 					<h1><?php print t('Learn') ?><br><span><?php print t('About') ?></span><?php print t(' Us') ?></h1>
-					<p><?php print t('The university that empowers ingenuity, innovation and entrepreneurship.') ?></p>
+					<p><?php print t('The university that empowers ingenuity, innovation, and entrepreneurship.') ?></p>
 				</div>
 			</div>
 			<div class="nav-display-right">
 				<div>
 					<ul>
 						<li>
-							<a href="/<?php print $language->prefix ?>/somos-utec/respaldo"><?php print t('Backing') ?></a>
+							<a href="/<?php print $language->prefix ?>/somos-utec/respaldo"><?php print t('A Solid Foundation') ?></a>
 						</li>
 						<li>
 							<a href="/<?php print $language->prefix ?>/somos-utec/autoridades"><?php print t('Authorities') ?></a>
@@ -155,13 +155,13 @@
 					</ul> 
 					<ul>
 						<li>
-							<a href="/<?php print $language->prefix ?>/somos-utec/eventos-utec"><?php print t('Utec Events') ?></a>
+							<a href="/<?php print $language->prefix ?>/somos-utec/eventos-utec"><?php print t('Events') ?></a>
 						</li>
 						<li>
 							<?php if ($language->prefix == 'en'): ?>
-								<a href="/<?php print $language->prefix ?>/somos-utec/vida-estudiantil"><span><?php print t('Student') ?></span><?php print t('Life') ?></a>
+								<a href="/<?php print $language->prefix ?>/somos-utec/vida-estudiantil"><span><?php print t('Life') ?></span><?php print t('at UTEC') ?></a>
 							<?php elseif ($language->prefix == 'es'): ?>
-								<a href="/<?php print $language->prefix ?>/somos-utec/vida-estudiantil"><span><?php print t('Life') ?></span><?php print t('Student') ?></a>
+								<a href="/<?php print $language->prefix ?>/somos-utec/vida-estudiantil"><span><?php print t('Student') ?></span><?php print t('Life') ?></a>
 							<?php endif ?>
 						</li>
 						<li>
@@ -516,14 +516,14 @@
 			<div class="nav-display-left">
 				<div>
 					<h1><?php print t('Learn') ?><br><span><?php print t('About') ?></span><?php print t(' Us') ?></h1>
-					<p><?php print t('The university that empowers ingenuity, innovation and entrepreneurship.') ?></p>
+					<p><?php print t('The university that empowers ingenuity, innovation, and entrepreneurship.') ?></p>
 				</div>
 			</div>
 			<div class="nav-display-right">
 				<div>
 					<ul>
 						<li>
-							<a href="/<?php print $language->prefix ?>/somos-utec/respaldo"><?php print t('Backing') ?></a>
+							<a href="/<?php print $language->prefix ?>/somos-utec/respaldo"><?php print t('A Solid Foundation') ?></a>
 						</li>
 						<li>
 							<a href="/<?php print $language->prefix ?>/somos-utec/autoridades"><?php print t('Authorities') ?></a>
@@ -550,7 +550,7 @@
 					</ul>
 					<ul>
 						<li>
-							<a href="/<?php print $language->prefix ?>/somos-utec/eventos-utec"><?php print t('UTEC Events') ?></a>
+							<a href="/<?php print $language->prefix ?>/somos-utec/eventos-utec"><?php print t('Events') ?></a>
 						</li>
 						<li>
 							<a href="/<?php print $language->prefix ?>/somos-utec/vida-estudiantil"><span>Vida</span>Estudiantil</a>
