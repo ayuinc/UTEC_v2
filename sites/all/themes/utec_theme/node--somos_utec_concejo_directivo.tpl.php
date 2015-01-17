@@ -9,7 +9,7 @@
 	<h1 class="light"><?php print t('Board') ?></h1>
 	<div class="separator-gray separator-lg"></div>
 	<p class="lead text-gray"><?php print $field_introduccion_concejo ?></p>
-	<ul class="grid-list grid-list-4 grid-list-centered grid-list-anchors pv-21">
+	<ul class="grid-list grid-list-4 grid-list-1-xs grid-list-item-height grid-list-anchors pv-21">
     <?php foreach ($node->field_lista_concejo['und'] as $key => $value) :?>
     <?php $name = $value['entity']->name; ?>   
 		<?php $pic = $value['entity']->picture->filename; ?>
