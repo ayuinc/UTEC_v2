@@ -65,7 +65,7 @@
       <a href="/<?php print $language->prefix ?>/somos-utec/campus-y-laboratorios"><span><?php print t('Campus and') ?></span><?php print t(' Labs') ?></a>
     </li>
     <li>
-      <a href="/<?php print $language->prefix ?>/somos-utec/trabaja-en-utec"><span><?php print t('Work') ?>Trabaja</span><?php print t(' at UTEC') ?></a>
+      <a href="/<?php print $language->prefix ?>/somos-utec/trabaja-en-utec"><span><?php print t('Work') ?></span><?php print t(' at UTEC') ?></a>
     </li>
 		<li>
 			<a href="/<?php print $language->prefix ?>/somos-utec/utec-garage"><span>UTEC</span> Garage</a>
