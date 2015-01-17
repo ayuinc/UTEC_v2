@@ -89,7 +89,7 @@
               <?php if ($language->prefix == 'en'): ?>
                 <li><a href="/<?php print $language->prefix ?>/admision/modalidades" class="atm-menu-inferior"><small>Admissions</small></a></li>
               <?php elseif ($language->prefix == 'es'): ?>
-                <li><a href="/<?php print $language->prefix ?>/admision/modalidades" class="atm-menu-inferior"><small>Modalidades de Admisión></small></a></li>
+                <li><a href="/<?php print $language->prefix ?>/admision/modalidades" class="atm-menu-inferior"><small>Modalidades de Admisión</small></a></li>
               <?php endif ?>
             <li><a href="/<?php print $language->prefix ?>/admision/charlas-informativas" class="atm-menu-inferior"><small><?php print t('Informative Talks') ?></small></a></li>
             <!--<li><a href="/<?php print $language->prefix ?>/admision/calendario-academico"><small><?php print t('Admission Calendar') ?></small></a></li>-->
