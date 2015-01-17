@@ -69,7 +69,7 @@
 		</div>
 		<div class="form-group">
 			<label for="" class="sr-only"><?php print t('Check') ?></label>
-			<textarea id="consulta" rows="3" class="form-control" placeholder="Escribe tu consulta"></textarea>
+			<textarea id="consulta" name="consulta" rows="3" class="form-control" placeholder="Escribe tu consulta"></textarea>
 		</div>
 		<div class="text-right">
 			<button type="submit" class="btn btn-primary btn-lg"><?php print t('Send') ?></button>
@@ -91,14 +91,14 @@
 					<input type="text" class="form-control" placeholder="Nombres" name="nombres" id="nombres">
 				</div>
 				<div class="form-group col-sm-6">
-					<label for="" class="sr-only"><?php print t('Middle Name') ?></label>
-					<input type="text" class="form-control" placeholder="Apellidos" name="apellidop" id="apellidop">
+					<label for="" class="sr-only"><?php print t("Father's Last Name") ?></label>
+					<input type="text" class="form-control" placeholder="Apellido paterno" name="apellidop" id="apellidop">
 				</div>
 			</div>
 			<div class="row">
 				<div class="form-group col-sm-6">
-					<label for="" class="sr-only"><?php print t('Last Name') ?></label>
-					<input type="text" class="form-control" placeholder="Apellidos" name="apellidom" id="apellidom">
+					<label for="" class="sr-only"><?php print t("Mother's Last Name") ?></label>
+					<input type="text" class="form-control" placeholder="Apellido materno" name="apellidom" id="apellidom">
 				</div>
 				<div class="col-sm-6 form-group">
 					<label for="" class="sr-only"><?php print t('E-Mail') ?></label>
