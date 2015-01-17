@@ -250,9 +250,9 @@
 		<li>
       <a href="/<?php print $language->prefix ?>/edp/cursos/cursos-cortos">
       <?php if ($language->prefix == 'en'): ?>
-        <span>Short</span>Courses</a>
+        <span>Short </span>Courses</a>
       <?php elseif ($language->prefix == 'es'): ?>
-        <span>Cursos</span>Cortos</a>
+        <span>Cursos </span>Cortos</a>
       <?php endif ?>
       </a>
 		</li>
