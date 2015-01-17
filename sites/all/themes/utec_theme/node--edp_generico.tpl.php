@@ -20,7 +20,7 @@
 </div>
 
 
-<?php if (($end!='diplomados')) { ?>
+<?php if (($end!='diplomados') OR ($end!='cursos-adhoc')) { ?>
 <div class="container-sm form-custom"> 
 	<form action="" data-submit="Formulario de inscripcion">
 		<input type="hidden" name="origen" value="<?php print $title ?>">
