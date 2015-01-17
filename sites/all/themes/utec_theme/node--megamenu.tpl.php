@@ -17,16 +17,16 @@
 			<div class="left">
 				<ul class=" thin text-gray mr-ch-14 nav-list pt-7">
 					<li>
-						<a href="/enlaces-rapidos/alumnos" class="atm-menu-superior"><?php print t('Students') ?></a>
+						<a href="/<?php print $language->prefix ?>/enlaces-rapidos/alumnos" class="atm-menu-superior"><?php print t('Students') ?></a>
 					</li>
 					<li>
-						<a href="/enlaces-rapidos/profesores" class="atm-menu-superior"><?php print t('Faculty') ?></a>
+						<a href="/<?php print $language->prefix ?>/enlaces-rapidos/profesores" class="atm-menu-superior"><?php print t('Faculty') ?></a>
 					</li>
 					<li>
-						<a href="/enlaces-rapidos/empresas" class="atm-menu-superior"><?php print t('Companies') ?></a>
+						<a href="/<?php print $language->prefix ?>/enlaces-rapidos/empresas" class="atm-menu-superior"><?php print t('Companies') ?></a>
 					</li>
 					<li>
-						<a href="/enlaces-rapidos/postulantes" class="atm-menu-superior"><?php print t('Applicants') ?></a>
+						<a href="/<?php print $language->prefix ?>/enlaces-rapidos/postulantes" class="atm-menu-superior"><?php print t('Applicants') ?></a>
 					</li>
 				</ul>
 			</div>
