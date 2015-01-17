@@ -55,12 +55,12 @@
   </div>
 </div> <!-- END:Hero -->
 <div data-section-scroll="<?php print t('Curriculum') ?>" id="malla-curricular" class="malla-curricular section-scroll-content minh-560 flex-middle-center">
-  <div class="container-sm text-right normalize-text" data-href="<?php print $malla_link ?>">
+  <div class="container-sm text-right normalize-text php-7" data-href="<?php print $malla_link ?>">
     <h2 class="lead thin"><?php print t('Curriculum') ?></h2>
     <hr class="hr-gray">
     <div class="row">
       <div class="col-sm-9">
-        <h2 class="lead thin mb-14 h3"><?php print $malla_titulo ?></h2>
+        <h2 class="lead thin mb-14 h4"><?php print $malla_titulo ?></h2>
         <p clas="font-carreras"><?php print $malla_txt ?></p>
       </div>
       <div class="col-sm-3 hidden-xs">
@@ -76,7 +76,7 @@
   </a>
 </div>
 <div data-section-scroll="<?php print t('Majors') ?>" id="menciones" class="section-scroll-content minh-560 flex-middle-center bg-info-op">
-  <div class="container-sm text-left text-white normalize-text" data-href="<?php print $menciones_link ?>">
+  <div class="container-sm text-left text-white normalize-text php-7" data-href="<?php print $menciones_link ?>">
     <h2 class="lead thin"><?php print t('Majors') ?></h2>
     <hr class="hr-white">
     <div class="row">
@@ -87,7 +87,7 @@
         </div>
       </div>
       <div class="col-sm-9">
-        <h2 class="lead thin h3"><?php print $menciones_titulo ?></h2>
+        <h2 class="lead thin h4"><?php print $menciones_titulo ?></h2>
         <p clas="font-carreras"><?php print $menciones_txt ?></p>
       </div>
     </div>
@@ -97,7 +97,7 @@
   </a>
 </div>
 <div data-section-scroll="<?php print t('Faculty') ?>" id="profesores" class="section-scroll-content minh-560 flex-middle-center">
-  <div class="container-sm text-center normalize-text">
+  <div class="container-sm text-center normalize-text php-7">
     <h2 class="lead thin"><?php print t('Faculty') ?></h2>
     <hr class="hr-gray">
     <div class="size xl">
