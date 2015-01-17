@@ -108,7 +108,7 @@ $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 			<div class="list-custom-left normalize-text lead-ch mb-ch-21">
 				<ul>
 					<li class="bg-primary text-white uppercase text-center p-21">
-						Fecha
+						<?php print t('Date') ?>
 					</li>
 					<li class="pl-21">
 						<p><?php print $field_calendario_fecha ?></p>
@@ -116,7 +116,7 @@ $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 				</ul>
 				<ul>
 					<li class="bg-gray text-white uppercase text-center p-21">
-						Hora
+						<?php print t('Time') ?>
 					</li>
 					<li class="pl-21">
 						<p><?php print $field_calendario_hora ?></p>
@@ -124,7 +124,7 @@ $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 				</ul>
 				<ul>
 					<li class="bg-gray text-white uppercase text-center p-21">
-						Pago
+						<?php print t('Payment') ?>
 					</li>
 					<li class="pl-21">
 						<p><?php print $field_calendario_pago ?></p>
@@ -132,7 +132,7 @@ $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 				</ul>
 				<ul>
 					<li class="bg-gray text-white uppercase text-center p-21">
-						Lugar
+						<?php print t('Place') ?>
 					</li>
 					<li class="pl-21">
 						<p><?php print $field_calendario_lugar ?></p>
@@ -206,9 +206,9 @@ $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 				<div class="form-group">
 					<textarea name="" id="" rows="5" class="form-control input-lg" placeholder="Consulta"></textarea>
 				</div>
-				<p class="help-block ml-70"><?php print t('(*) Required fields') ?>(*) Campos obligatorios</p>
+				<p class="help-block ml-70"><?php print t('(*) Required fields') ?>(*) <?php print t('Required fields') ?></p>
 				<div class="pv-21 text-right">
-					<p class="lead"><?php print t('By clicking here you accept these') ?> <a href="#"><?php print t('') ?><?php print t('conditions') ?></a> <button type="submit" class="btn btn-primary btn-lg">Enviar</button></p>
+					<p class="lead"><?php print t('By clicking here you accept these') ?> <a href="#"><?php print t('') ?><?php print t('conditions') ?></a> <button type="submit" class="btn btn-primary btn-lg"><?php print t('Send') ?></button></p>
 				</div>
 			</form>
 		</div>
