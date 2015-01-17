@@ -149,9 +149,9 @@
 						<li>
 							<a href="/<?php print $language->prefix ?>/somos-utec/noticias"><?php print t('News') ?></a>
 						</li>						
-						<!--<li>
-							<a href="/<?php print $language->prefix ?>/somos-utec/calendario-academico"><span>Calendario</span>Académico</a>
-						</li>-->
+						<li>
+							<a href="/<?php print $language->prefix ?>/somos-utec/calendario-admision"><span>Calendario</span>Académico</a>
+						</li>
 					</ul> 
 					<ul>
 						<li>
@@ -689,9 +689,9 @@
 						<li>
 							<a href="/<?php print $language->prefix ?>/admision/pre-inscripcion">Pre-Inscripción</a>
 						</li>
-						<!--<li>
-							<a href="/<?php print $language->prefix ?>/admision/calendario-academico"><span>Calendario</span>Académico</a>
-						</li>-->
+						<li>
+							<a href="/<?php print $language->prefix ?>/admision/calendario-admision"><span>Calendario</span>Académico</a>
+						</li>
 						<li>
 							<a href="/<?php print $language->prefix ?>/admision/visita-utec"><span>Visita</span>UTEC</a>
 						</li>

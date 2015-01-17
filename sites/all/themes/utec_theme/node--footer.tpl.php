@@ -86,13 +86,17 @@
         <li>
           <ul>
             <li class="title text-gray-lighter"><?php print t('Admissions') ?></li>
-            <li><a href="/<?php print $language->prefix ?>/admision/modalidades" class="atm-menu-inferior"><small><?php print t('Admissions') ?></small></a></li>
+              <?php if ($language->prefix == 'en'): ?>
+                <li><a href="/<?php print $language->prefix ?>/admision/modalidades" class="atm-menu-inferior"><small>Admissions</small></a></li>
+              <?php elseif ($language->prefix == 'es'): ?>
+                <li><a href="/<?php print $language->prefix ?>/admision/modalidades" class="atm-menu-inferior"><small>Modalidades de Admisión</small></a></li>
+              <?php endif ?>
             <li><a href="/<?php print $language->prefix ?>/admision/charlas-informativas" class="atm-menu-inferior"><small><?php print t('Informative Talks') ?></small></a></li>
-            <!--<li><a href="/<?php print $language->prefix ?>/admision/calendario-academico"><small><?php print t('Admission Calendar') ?></small></a></li>-->
+            <li><a href="/<?php print $language->prefix ?>/admision/calendario-admision"><small><?php print t('Admissions Calendar') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/admision/modalidades" class="atm-menu-inferior"><small><?php print t('Pre-registration') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/admision/informacion-economica" class="atm-menu-inferior"><small><?php print t('Financial Information') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/admision/visita-utec" class="atm-menu-inferior"><small><?php print t('Visit UTEC') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/admision/orientacion-vocacional" class="atm-menu-inferior"><small><?php print t('Vocational Guidance') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/admision/orientacion-vocacional" class="atm-menu-inferior"><small><?php print t('Guidance') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/admision/preguntas-frecuentes" class="atm-menu-inferior"><small><?php print t('FAQ') ?></small></a></li>
           </ul>
         </li>

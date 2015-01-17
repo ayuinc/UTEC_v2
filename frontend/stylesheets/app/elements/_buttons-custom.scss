@@ -47,10 +47,10 @@ input[type="submit"].btn {
 			border-radius: 0;
 			color: #{nth($brand-colors-list, $i)};
 			&:hover {
-				background: none;
+				background-color: none;
 				border-radius: 0;
-				border: 1px solid #{lighten(nth($brand-colors-list, $i), 9%)};
-				color: #{darken(nth($brand-colors-list, $i), 9%)};
+				border: 2px solid $brand-primary;
+				color: $brand-primary;
 			}
 		}
 	}
@@ -63,8 +63,8 @@ input[type="submit"].btn {
 			&:hover {
 				background: none;
 				border-radius: 0;
-				border: 1px solid #{nth($grayscale-list, $i)};
-				color: #{nth($grayscale-list, $i)};
+				border: 2px solid $brand-primary;
+				color: $brand-primary;
 			}
 		}
 	}

@@ -7,7 +7,8 @@
  * @ingroup views_templates
  */
 ?>
-<h3 class="thin lead"><?php print t('Curriculum') ?></h3>
+<div class="container">
+	<h3 class="thin lead"><?php print t('Curriculum') ?></h3>
 	<div class="separator-gray separator-lg"></div>
 	<h3 class="lead thin"><?php print t('Term') ?> 2015 - I</h3>
 	<div class="mb-ch-70">
@@ -17,3 +18,4 @@
 		<?php endforeach; ?> 
 		</ul>	
 	</div>
+</div>
