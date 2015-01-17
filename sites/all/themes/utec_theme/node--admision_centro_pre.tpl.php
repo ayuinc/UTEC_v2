@@ -41,7 +41,7 @@ $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 	    </div>
 	  </div>
 	</div> <!-- END:Hero -->
-	<div data-section-scroll="Cursos" class="section-scroll-content">
+	<div data-section-scroll="Cursos" class="section-scroll-content pb-0">
 		<div class="container-sm">
 			<h3 class="lead thin text-center"><?php print $field_que_es_intro_cp ?></h3>
 		</div>
@@ -101,7 +101,7 @@ $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 			</div>
 		</div>
 	</div>
-	<div data-section-scroll="Calendario" class="section-scroll-content">
+	<div data-section-scroll="Calendario" class="section-scroll-content pt-0">
 		<div class="container-sm">
 			<h3 class="thin lead"><?php print t('Calendar') ?></h3>
 			<h4 class="text-gray"><?php print t('Pre intensiva January - February 2015') ?></h4>
