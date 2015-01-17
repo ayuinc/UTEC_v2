@@ -1,3 +1,4 @@
+<?php global $language ?>
 <div class="mobile-nav-display-triggers"> 
   <ul>
     <li>
@@ -25,13 +26,13 @@
   <h1>Conoce<br><span>Quiénes</span> Somos</h1>
   <ul>
     <li>
-      <a href="/somos-utec/respaldo">Respaldo</a>
+      <a href="/<?php print $language->prefix ?>/somos-utec/respaldo"><?php print t('A Solid Foundation') ?></a>
     </li>
     <li>
-      <a href="/somos-utec/autoridades"><?php print t('Authorities') ?></a>
+      <a href="/<?php print $language->prefix ?>/somos-utec/autoridades"><?php print t('Authorities') ?></a>
     </li>
     <li>
-      <a href="/somos-utec/profesores"><?php print t('Faculty') ?></a>
+      <a href="/<?php print $language->prefix ?>/somos-utec/profesores"><?php print t('Faculty') ?></a>
     </li>
     <li>
       <?php if ($language->prefix == 'en'): ?>
