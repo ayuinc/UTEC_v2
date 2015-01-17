@@ -89,7 +89,7 @@
       <a href="/<?php print $language->prefix ?>/investigacion/proyectos"><?php print t('Projects') ?></a>
     </li>
     <li>
-      <a href="/<?php print $language->prefix ?>/investigacion/contacto">Contacto</a>
+      <a href="/<?php print $language->prefix ?>/investigacion/contacto"><?php print t('Contact us') ?></a>
     </li>
   </ul>
 </div>
@@ -99,9 +99,9 @@
   <ul>
     <li>
       <?php if ($language->prefix == 'en'): ?>
-        <a href="/<?php print $language->prefix ?>/carreras/ingenieria-industrial"><span>Ingeniería</span> Industrial</a>
-      <?php elseif ($language->prefix == 'es'): ?>
 		    <a href="/<?php print $language->prefix ?>/carreras/ingenieria-industrial"><span>Industrial</span> Engineering</a>
+      <?php elseif ($language->prefix == 'es'): ?>
+        <a href="/<?php print $language->prefix ?>/carreras/ingenieria-industrial"><span>Ingeniería</span> Industrial</a>
       <?php endif ?>
 		</li>
 		<li>
