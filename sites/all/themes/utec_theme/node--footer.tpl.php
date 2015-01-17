@@ -64,6 +64,7 @@
           <ul>
             <li class="title text-gray-lighter"><?php print t('Research') ?></li>
             <li><a href="/<?php print $language->prefix ?>/investigacion/proyectos" class="atm-menu-inferior"><small><?php print t('Projects') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/investigacion/publicaciones" class="atm-menu-inferior"><small><?php print t('Publications') ?></small></a></li>
             <!--<li><a href="#"><small>Publicaciones</small></a></li>
             <li><a href="#"><small>Consultorías</small></a></li>-->
             <li><a href="/<?php print $language->prefix ?>/investigacion/empresas-y-clientes"><small><?php print t('Companies and Clients') ?></small></a></li>
@@ -73,7 +74,7 @@
         </li>
         <li>
           <ul>
-            <li class="title text-gray-lighter"><?php print t('Degrees') ?></li>
+            <li class="title text-gray-lighter"><?php print t('Programs') ?></li>
             <li><a href="/<?php print $language->prefix ?>/carreras/ingenieria-quimica-industrial" class="atm-menu-inferior"><small><?php print t('Industrial and Chemical Engineering') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/carreras/ingenieria-electronica" class="atm-menu-inferior"><small><?php print t('Electronic Engineering') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/carreras/ingenieria-mecanica" class="atm-menu-inferior"><small><?php print t('Mechanical Engineering') ?></small></a></li>
