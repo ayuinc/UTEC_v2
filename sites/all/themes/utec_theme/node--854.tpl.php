@@ -23,15 +23,15 @@
 		<div class="row">
 			<div class="form-group col-sm-4">
 				<label for="" class="sr-only">Nombres</label>
-				<input  id="nombres" type="text" class="form-control" placeholder="Nombres">
+				<input  id="nombres" name="nombres" type="text" class="form-control" placeholder="Nombres">
 			</div>
 			<div class="form-group col-sm-4">
 				<label for="" class="sr-only">Apellido paterno</label>
-				<input  id="apellidop" type="text" class="form-control" placeholder="Apellido paterno">
+				<input  id="apellidop" name="apellidop" type="text" class="form-control" placeholder="Apellido paterno">
 			</div>
 			<div class="form-group col-sm-4">
 				<label for="" class="sr-only">Apellido materno</label>
-				<input  id="apellidom" type="text" class="form-control" placeholder="Apellido materno">
+				<input  id="apellidom" name="apellidom" type="text" class="form-control" placeholder="Apellido materno">
 			</div>
 		</div>
 		<div class="text-gray h3 thin">
@@ -44,6 +44,11 @@
 				<label for="" class="sr-only">Carrera de interés</label>
 				<select name="carrera" id="carreras" class="form-control select-override">
 					<option value="Carrera de interés">Carrera de interés</option>
+					<option value="15970"><?php print t('Industrial Engineering') ?></option>
+		            <option value="14864"><?php print t('Mechanical Engineering') ?></option>
+		            <option value="15968"><?php print t('Energy Engineering') ?></option>
+		            <option value="15964"><?php print t('Electronic Engineering') ?></option>
+		            <option value="15966"><?php print t('Industrial and Chemical Engineering') ?></option>					
 				</select>
 			</div>
 			<div class="form-group col-sm-4">
