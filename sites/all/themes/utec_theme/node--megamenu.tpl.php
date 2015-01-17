@@ -491,7 +491,7 @@
 					</li>
 					<li>
 						<a href="#nav-shrink-display-4">
-							<span><?php print t('Admission') ?></span>
+							<span><?php print t('Admissions') ?></span>
 						</a>
 					</li>
 					<li>
@@ -703,33 +703,57 @@
 				<div>
 					<ul>
 						<li>
-							<a href="/<?php print $language->prefix ?>/admision/modalidades"><span>Modalidades</span>de admisión</a>
+							<?php if ($language->prefix == 'es'): ?>
+								<a href="/<?php print $language->prefix ?>/admision/modalidades"><span>Modalidades</span>de admisión</a>
+							<?php elseif ($language->prefix == 'en'): ?>
+								<a href="/<?php print $language->prefix ?>/admision/modalidades"><span>Admissions</span></a>
+							<?php endif ?>
 						</li>
 						<li>
-							<a href="/<?php print $language->prefix ?>/admision/charlas-informativas"><span>Charlas</span>informativas</a>
+							<?php if ($language->prefix == 'es'): ?>
+								<a href="/<?php print $language->prefix ?>/admision/charlas-informativas"><span>Charlas</span>informativas</a>
+							<?php elseif ($language->prefix == 'en'): ?>
+								<a href="/<?php print $language->prefix ?>/admision/charlas-informativas"><span>Informatives</span>talks</a>
+							<?php endif ?>
 						</li>
 						<li>
-							<a href="/<?php print $language->prefix ?>/admision/informacion-economica"><span>Información</span>económica</a>
+							<?php if ($language->prefix == 'es'): ?>
+								<a href="/<?php print $language->prefix ?>/admision/informacion-economica"><span>Información</span>económica</a>
+							<?php elseif ($language->prefix == 'en'): ?>
+								<a href="/<?php print $language->prefix ?>/admision/charlas-informativas"><span>Financial</span>information</a>
+							<?php endif ?>
 						</li>
 						<li>
-							<a href="/<?php print $language->prefix ?>/admision/modalidades" class="btn btn-primary btn-custom bold">Postula</a>
+							<a href="/<?php print $language->prefix ?>/admision/modalidades" class="btn btn-primary btn-custom bold"><?php print t('Apply') ?></a>
 						</li>
 					</ul>
 					<ul>
 						<li>
-							<a href="/<?php print $language->prefix ?>/admision/pre-inscripcion">Pre-Inscripción</a>
+							<a href="/<?php print $language->prefix ?>/admision/pre-inscripcion"><?php print t('Pre-registration') ?></a>
 						</li>
 						<li>
-							<a href="/<?php print $language->prefix ?>/admision/calendario-admision"><span>Calendario</span>Admisión</a>
+							<?php if ($language->prefix == 'es'): ?>
+								<a href="/<?php print $language->prefix ?>/admision/calendario-admision"><span>Calendario de</span>Admisión</a>
+							<?php elseif ($language->prefix == 'en'): ?>
+								<a href="/<?php print $language->prefix ?>/admision/calendario-admision"><span>Admissions</span>Calendar</a>
+							<?php endif ?>
 						</li>
 						<li>
-							<a href="/<?php print $language->prefix ?>/admision/visita-utec"><span>Visita</span>UTEC</a>
+							<a href="/<?php print $language->prefix ?>/admision/visita-utec"><span><?php print t('Visit') ?></span>UTEC</a>
 						</li>
 						<li>
-							<a href="/<?php print $language->prefix ?>/admision/orientacion-vocacional"><span>Orientación</span>Vocacional</a>
+							<?php if ($language->prefix == 'es'): ?>
+								<a href="/<?php print $language->prefix ?>/admision/orientacion-vocacional"><span>Orientación</span>Vocacional</a>
+							<?php elseif ($language->prefix == 'en'): ?>
+								<a href="/<?php print $language->prefix ?>/admision/orientacion-vocacional"><span>Guidance</span></a>
+							<?php endif ?>
 						</li>
 						<li>
-							<a href="/<?php print $language->prefix ?>/admision/preguntas-frecuentes"><span>Preguntas</span>Frecuentes</a>
+							<?php if ($language->prefix == 'es'): ?>
+								<a href="/<?php print $language->prefix ?>/admision/preguntas-frecuentes"><span>Preguntas</span>Frecuentes</a>
+							<?php elseif ($language->prefix == 'en'): ?>
+								<a href="/<?php print $language->prefix ?>/admision/preguntas-frecuentes"><span>Frequently Asked</span>Questions</a>
+							<?php endif ?>
 						</li>
 					</ul>
 				</div>
