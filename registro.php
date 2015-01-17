@@ -476,6 +476,7 @@ if($origen == "Inscripcion Examen")
                 </p>";   
 }
 
+
 $mail_1->Body = $contenidorpta;
 $mail_1->Send();
 
