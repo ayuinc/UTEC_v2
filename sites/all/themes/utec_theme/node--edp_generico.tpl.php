@@ -1,12 +1,26 @@
+<?php global $base_url; ?>
+<?php global $theme_path; ?>
+<?php $path = $base_url.'/'.$theme_path; ?>
+<?php $pathfile= variable_get('file_public_path', conf_path() . '/files/edp-generico/'); ?>
+
 <?php $titulo = $node->title; ?>   
 <?php $body = $node->body['und']['0']['value']; ?>
+<?php $field_fotos_edp_generico = $node->field_fotos_edp_generico['und']['0']['filename']; ?>
 
+<?php $url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>
+<?php $end = end((explode('/', $url))); ?>
 
 <div class="container-sm">
 	<h1 class="light"><?php print $title ?></h1>
 	<div class="separator-gray separator-lg"></div>
+	<?php if ($field_fotos_edp_generico!='') { ?>
+		<img src="<?php print('/'.$pathfile.$field_fotos_edp_generico)?>" class="img-responsive mb-35">
+	<?php } ?>	
 	<?php print $body ?>	
 </div>
+
+
+<?php if (($end!='diplomados')) { ?>
 <div class="container-sm form-custom"> 
 	<form action="" data-submit="Formulario de inscripcion">
 		<input type="hidden" name="origen" value="<?php print $title ?>">
@@ -38,6 +52,5 @@
 			<button type="submit" class="btn btn-primary btn-lg">Enviar</button>
 		</div>
 	</form>						
-	<p class="text-gray pt-42 pb-56">De conformidad con los artículos lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut at, veritatis tempore ipsa voluptate neque lorem exercitationem impedit aperiam? Veritatis recusandae dolorem, ullam repellendus minus expedita consequatur doloremque iusto fugiat maxime!</p>
 </div>	
-
+<?php } 

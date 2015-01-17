@@ -20,10 +20,10 @@
 <li>
   <ul class="head">
     <li><?php print $bloque; ?></li>
-    <li><?php print $total_creditos; ?><br>Créditos</li>
+    <li><?php print $total_creditos; ?><br><?php print t('Credits') ?></li>
   </ul>
   <div class="body">
     <?php print $curso ?>
-  </div>
+  </div>  
 </li>
   
