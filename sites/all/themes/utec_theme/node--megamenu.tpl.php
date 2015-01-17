@@ -362,6 +362,16 @@
 					</ul>
 					<ul>
 						<li>
+							<?php if ($language->prefix == 'es'): ?>
+								<a href="/<?php print $language->prefix ?>/admision/calendario-admision"><span>Calendario de</span>Admisión</a>
+							<?php elseif ($language->prefix == 'en'): ?>
+								<a href="/<?php print $language->prefix ?>/admision/calendario-admision"><span>Admissions</span>Calendar</a>
+							<?php endif ?>
+						</li>
+						<li>
+							<a href="/<?php print $language->prefix ?>/admision/visita-utec"><span><?php print t('Visit') ?></span>UTEC</a>
+						</li>
+						<li>
 							<a href="/<?php print $language->prefix ?>/admision/orientacion-vocacional">
 								<?php if ($language->prefix == 'es'): ?>
 									<span>Orientación</span>Vocacional
@@ -728,9 +738,6 @@
 						</li>
 					</ul>
 					<ul>
-						<li>
-							<a href="/<?php print $language->prefix ?>/admision/pre-inscripcion"><?php print t('Pre-registration') ?></a>
-						</li>
 						<li>
 							<?php if ($language->prefix == 'es'): ?>
 								<a href="/<?php print $language->prefix ?>/admision/calendario-admision"><span>Calendario de</span>Admisión</a>
