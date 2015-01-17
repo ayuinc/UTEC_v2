@@ -215,12 +215,16 @@
 </div>
 <div class="mobile-nav-display" id="mobile-nav-display-5">
   <a class="back"><?php print t('Go Back') ?></a>
-  <h1>Lorem <span>ipsum</span><br>dolor sit amet</h1>
+  <?php if ($language->prefix == 'es'): ?>
+    <h1>Convenios y alianzas <span>ipsum</span><br>internacionales</h1>
+  <?php elseif ($language->prefix == 'en'): ?>
+    <h1>International <br>alliances</h1>
+  <?php endif ?>
   <ul>
-		<li>
-			<a href="/<?php print $language->prefix ?>/convenios/convenios-de-intercambio">
+    <li>
+      <a href="/<?php print $language->prefix ?>/convenios/convenios-de-intercambio">
       <?php if ($language->prefix == 'es'): ?>
-        <span>Convenios de</span>Intercambio</a>
+        <span>Convenios de </span>Intercambio</a>
       <?php elseif ($language->prefix == 'en'): ?>
         <span>Alliances</span></a>
       <?php endif ?>
