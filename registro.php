@@ -425,7 +425,7 @@ $contenidorpta.="<p>
 </map>
 </p>"; 
 
-if($origen == "Inscripcion Examen")
+if($origen == "pagina-inscripcion-examen-admision")
 {
                 $contenidorpta = "";
                 $contenidorpta.="<table width='600px' height='168px' cellpadding='2' cellspacing='2' bgcolor='#FFFFFF'>
