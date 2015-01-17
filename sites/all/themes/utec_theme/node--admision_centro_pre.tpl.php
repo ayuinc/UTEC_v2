@@ -20,7 +20,6 @@ $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 <?php kpr($node); ?>
 	<div class="hero-unit"> <!-- HERO -->
 	  <div data-section-scroll="Overview" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_fotos_centro_pre)?>);">
-	  <?php endif ?>
 	    <div class="overlay flex-middle">
 	      <div class="container-sm hero-text">
 	        <h2 class="thin h3 text-white mb-7"><?php print t('What is') ?></h2>
