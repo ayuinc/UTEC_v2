@@ -644,30 +644,48 @@
 				<div>
 					<ul>
 						<li>
-							<a href="/<?php print $language->prefix ?>/carreras/ingenieria-industrial"><span>Ingeniería</span>Industrial</a>
+							<?php if ($language->prefix == 'en'): ?>
+								<a href="/<?php print $language->prefix ?>/carreras/ingenieria-industrial"><span><?php print t('Industrial') ?></span><?php print t('Engineering') ?></a>
+							<?php elseif ($language->prefix == 'es'): ?>
+								<span><?php print t('Engineering') ?></span>
+								<a href="/<?php print $language->prefix ?>/carreras/ingenieria-industrial"><span><?php print t('Engineering') ?></span><?php print t('Industrial') ?></a>
+							<?php endif ?>
 						</li>
 						<li>
-							<a href="/<?php print $language->prefix ?>/carreras/ingenieria-de-la-energia"><span>Ingeniería</span>De la Energía</a>
+							<?php if ($language->prefix == 'en'): ?>
+								<a href="/<?php print $language->prefix ?>/carreras/ingenieria-de-la-energia"><span>Energy</span>Engineering</a>
+							<?php elseif ($language->prefix == 'es'): ?>
+								<a href="/<?php print $language->prefix ?>/carreras/ingenieria-de-la-energia"><span>Ingeniería</span>De la Energía</a>
+							<?php endif ?>
 						</li>
 						<li>
-							<a href="/<?php print $language->prefix ?>/carreras/ingenieria-quimica-industrial"><span>Ingeniería</span>Química Industrial</a>
+							<?php if ($language->prefix == 'en'): ?>
+								<a href="/<?php print $language->prefix ?>/carreras/ingenieria-quimica-industrial"><span>Industrial</span>Chemical Engineering</a>
+							<?php elseif ($language->prefix == 'es'): ?>
+								<a href="/<?php print $language->prefix ?>/carreras/ingenieria-quimica-industrial"><span>Ingeniería</span>Química Industrial</a>
+							<?php endif ?>
 						</li>
 						<li>
-							<a href="/<?php print $language->prefix ?>/carreras/ingenieria-mecanica"><span>Ingeniería</span>Mecánica</a>
+							<?php if ($language->prefix == 'en'): ?>
+								<a href="/<?php print $language->prefix ?>/carreras/ingenieria-mecanica"><span>Mechanical</span>Engineering</a>
+							<?php elseif ($language->prefix == 'es'): ?>
+								<a href="/<?php print $language->prefix ?>/carreras/ingenieria-mecanica"><span>Ingeniería</span>Mecánica</a>
+							<?php endif ?>
 						</li>
 					</ul>
 					<ul>
 						<li>
-							<a href="/<?php print $language->prefix ?>/carreras/ingenieria-electronica"><span>Ingeniería</span>Electrónica</a>
+							<?php if ($language->prefix == 'en'): ?>
+								<a href="/<?php print $language->prefix ?>/carreras/ingenieria-electronica"><span>Electronic</span>Engineering</a>
+							<?php elseif ($language->prefix == 'es'): ?>
+								<a href="/<?php print $language->prefix ?>/carreras/ingenieria-electronica"><span>Ingeniería</span>Electrónica</a>
+							<?php endif ?>
 						</li>
 						<li>
-							<a href="/<?php print $language->prefix ?>/carreras/menciones">Menciones</a>
+							<a href="/<?php print $language->prefix ?>/carreras/menciones"><?php print t('Majors') ?></a>
 						</li>
 						<li>
-							<a href="/<?php print $language->prefix ?>/carreras/escuela-de-desarrollo"><span>Escuela de</span>Desarollo</a>
-						</li>
-						<li>
-							<a href="/<?php print $language->prefix ?>/admision/modalidades" class="btn btn-primary btn-custom bold">Postula</a>
+							<a href="/<?php print $language->prefix ?>/admision/modalidades" class="btn btn-primary btn-custom bold"><?php print t('Apply') ?></a>
 						</li>
 					</ul>
 				</div>
