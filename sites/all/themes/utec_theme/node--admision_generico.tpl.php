@@ -28,37 +28,42 @@
 <?php if (($end!='charlas-informativas') AND ($end!='informacion-economica') AND ($end!='orientacion-vocacional') AND ($end!='visita-utec') AND ($end!='eventos-utec')) { ?>
 <div class="container-sm form-custom mt-35"> 
 	<h3><?php print t("For more informaction:") ?></h3>
-	<form action="/registro.php" data-submit="Formulario de inscripcion">
+	<form action="/registro.php" data-submit="Formulario de inscripcion" method="post">
 		<input type="hidden" name="origen" value="<?php print $title ?>">
 		<div class="row">
 			<div class="form-group col-sm-4">
 				<label for="" class="sr-only"><?php print t("Names") ?></label>
-				<input id="nombres" type="text" class="form-control" placeholder="Nombres">
+				<input id="nombres" name="nombres" type="text" class="form-control" placeholder="Nombres">
 			</div>
 			<div class="form-group col-sm-4">
 				<label for="" class="sr-only"><?php print t("Father's Last Name") ?></label>
-				<input id="apellidop" type="text" class="form-control" placeholder="Apellido paterno">
+				<input id="apellidop" name="apellidop" type="text" class="form-control" placeholder="Apellido paterno">
 			</div>
 			<div class="form-group col-sm-4">
 				<label for="" class="sr-only"><?php print t("Mother's Last Name") ?></label>
-				<input id="apellidom" type="text" class="form-control" placeholder="Apellido materno">
+				<input id="apellidom" name="apellidom" type="text" class="form-control" placeholder="Apellido materno">
 			</div>
 		</div>
 		<div class="row">
 			<div class="form-group col-sm-4">
 				<label for="" class="sr-only"><?php print t("Email") ?></label>
-				<input id="email" type="text" class="form-control" placeholder="Email">
+				<input id="email" name="email" type="text" class="form-control" placeholder="Email">
 			</div>
 			<div class="form-group col-sm-4">
 				<label for="" class="sr-only"><?php print t('Phone') ?></label>
-				<input id="telefono" type="text" class="form-control" placeholder="Teléfono">
+				<input id="telefono" name="telefono" type="text" class="form-control" placeholder="Teléfono">
 			</div>
 		</div>
 		<div class="row">
 			<div class="form-group col-sm-6">
 				<label for="" class="sr-only"><?php print t('Path of Interest') ?></label>
-				<select name="" id="carrera" class="form-control select-override">
+				<select name="carrera" id="carrera" class="form-control select-override">
 					<option value="Carrera de interés"><?php print t("Undergraduate Programs") ?></option>
+					<option value="15970">Ingeniería Industrial</option>
+		            <option value="14864">Ingeniería Mecánica</option>
+		            <option value="15968">Ingeniería de la Energía</option>
+		            <option value="15964">Ingeniería Electrónica</option>
+		            <option value="15966">Ingeniería Química Industrial</option>
 				</select>
 			</div>
 		</div>
