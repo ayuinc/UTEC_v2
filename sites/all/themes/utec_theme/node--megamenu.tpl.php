@@ -614,15 +614,12 @@
 						<li>
 							<a href="/<?php print $language->prefix ?>/investigacion/publicaciones"><?php print t('Publications') ?></a>
 						</li>
-						<!--<li>
-							<a href="#"><span>Empresas</span>y clientes</a>
+						<li>
+							<a href="/<?php print $language->prefix ?>/investigacion/empresas-y-clientes"><span><?php print t('Companies') ?></span><?php print t('and clients') ?></a>
 						</li>
 						<li>
-							<a href="#">Proyectos</a>
+							<a href="/<?php print $language->prefix ?>/investigacion/contacto"><?php print t('Contact us') ?></a>
 						</li>
-						<li>
-							<a href="#">Contacto</a>
-						</li>-->
 					</ul>
 				</div>
 			</div>
