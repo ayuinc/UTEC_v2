@@ -4171,9 +4171,9 @@ input[type="submit"].btn.btn-primary.btn-outline,
   input[type="submit"].btn.btn-primary.btn-outline:hover,
   #header .tool-bar .search-form input[type="submit"].btn-primary.btn-outline.form-submit:hover,
   #header-on-scroll .tool-bar .search-form input[type="submit"].btn-primary.btn-outline.form-submit:hover {
-    background: none;
+    background-color: none;
     border-radius: 0;
-    border: 1px solid #0edcff;
+    border: 2px solid #00BFDF;
     color: #0098b1; }
 a.btn.btn-success.btn-outline, .language-switcher-locale-url li a.btn-success.btn-outline.language-link, #header .tool-bar .search-form a.btn-success.btn-outline.form-submit, #header-on-scroll .tool-bar .search-form a.btn-success.btn-outline.form-submit,
 button.btn.btn-success.btn-outline,
@@ -4193,9 +4193,9 @@ input[type="submit"].btn.btn-success.btn-outline,
   input[type="submit"].btn.btn-success.btn-outline:hover,
   #header .tool-bar .search-form input[type="submit"].btn-success.btn-outline.form-submit:hover,
   #header-on-scroll .tool-bar .search-form input[type="submit"].btn-success.btn-outline.form-submit:hover {
-    background: none;
+    background-color: none;
     border-radius: 0;
-    border: 1px solid #a2d162;
+    border: 2px solid #00BFDF;
     color: #75a631; }
 a.btn.btn-info.btn-outline, .language-switcher-locale-url li a.btn-info.btn-outline.language-link, #header .tool-bar .search-form a.btn-info.btn-outline.form-submit, #header-on-scroll .tool-bar .search-form a.btn-info.btn-outline.form-submit,
 button.btn.btn-info.btn-outline,
@@ -4215,9 +4215,9 @@ input[type="submit"].btn.btn-info.btn-outline,
   input[type="submit"].btn.btn-info.btn-outline:hover,
   #header .tool-bar .search-form input[type="submit"].btn-info.btn-outline.form-submit:hover,
   #header-on-scroll .tool-bar .search-form input[type="submit"].btn-info.btn-outline.form-submit:hover {
-    background: none;
+    background-color: none;
     border-radius: 0;
-    border: 1px solid #3b5693;
+    border: 2px solid #00BFDF;
     color: #213051; }
 a.btn.btn-warning.btn-outline, .language-switcher-locale-url li a.btn-warning.btn-outline.language-link, #header .tool-bar .search-form a.btn-warning.btn-outline.form-submit, #header-on-scroll .tool-bar .search-form a.btn-warning.btn-outline.form-submit,
 button.btn.btn-warning.btn-outline,
@@ -4237,9 +4237,9 @@ input[type="submit"].btn.btn-warning.btn-outline,
   input[type="submit"].btn.btn-warning.btn-outline:hover,
   #header .tool-bar .search-form input[type="submit"].btn-warning.btn-outline.form-submit:hover,
   #header-on-scroll .tool-bar .search-form input[type="submit"].btn-warning.btn-outline.form-submit:hover {
-    background: none;
+    background-color: none;
     border-radius: 0;
-    border: 1px solid #ffe32e;
+    border: 2px solid #00BFDF;
     color: #d1b500; }
 a.btn.btn-danger.btn-outline, .language-switcher-locale-url li a.btn-danger.btn-outline.language-link, #header .tool-bar .search-form a.btn-danger.btn-outline.form-submit, #header-on-scroll .tool-bar .search-form a.btn-danger.btn-outline.form-submit,
 button.btn.btn-danger.btn-outline,
@@ -4259,9 +4259,9 @@ input[type="submit"].btn.btn-danger.btn-outline,
   input[type="submit"].btn.btn-danger.btn-outline:hover,
   #header .tool-bar .search-form input[type="submit"].btn-danger.btn-outline.form-submit:hover,
   #header-on-scroll .tool-bar .search-form input[type="submit"].btn-danger.btn-outline.form-submit:hover {
-    background: none;
+    background-color: none;
     border-radius: 0;
-    border: 1px solid #e47668;
+    border: 2px solid #00BFDF;
     color: #cc3824; }
 a.btn.btn-blue-darker.btn-outline, .language-switcher-locale-url li a.btn-blue-darker.btn-outline.language-link, #header .tool-bar .search-form a.btn-blue-darker.btn-outline.form-submit, #header-on-scroll .tool-bar .search-form a.btn-blue-darker.btn-outline.form-submit,
 button.btn.btn-blue-darker.btn-outline,
@@ -4281,9 +4281,9 @@ input[type="submit"].btn.btn-blue-darker.btn-outline,
   input[type="submit"].btn.btn-blue-darker.btn-outline:hover,
   #header .tool-bar .search-form input[type="submit"].btn-blue-darker.btn-outline.form-submit:hover,
   #header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue-darker.btn-outline.form-submit:hover {
-    background: none;
+    background-color: none;
     border-radius: 0;
-    border: 1px solid #06c7ff;
+    border: 2px solid #00BFDF;
     color: #0083a9; }
 a.btn.btn-blue-dark.btn-outline, .language-switcher-locale-url li a.btn-blue-dark.btn-outline.language-link, #header .tool-bar .search-form a.btn-blue-dark.btn-outline.form-submit, #header-on-scroll .tool-bar .search-form a.btn-blue-dark.btn-outline.form-submit,
 button.btn.btn-blue-dark.btn-outline,
@@ -4303,9 +4303,9 @@ input[type="submit"].btn.btn-blue-dark.btn-outline,
   input[type="submit"].btn.btn-blue-dark.btn-outline:hover,
   #header .tool-bar .search-form input[type="submit"].btn-blue-dark.btn-outline.form-submit:hover,
   #header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue-dark.btn-outline.form-submit:hover {
-    background: none;
+    background-color: none;
     border-radius: 0;
-    border: 1px solid #71dfff;
+    border: 2px solid #00BFDF;
     color: #15cbff; }
 a.btn.btn-blue.btn-outline, .language-switcher-locale-url li a.btn-blue.btn-outline.language-link, #header .tool-bar .search-form a.btn-blue.btn-outline.form-submit, #header-on-scroll .tool-bar .search-form a.btn-blue.btn-outline.form-submit,
 button.btn.btn-blue.btn-outline,
@@ -4325,9 +4325,9 @@ input[type="submit"].btn.btn-blue.btn-outline,
   input[type="submit"].btn.btn-blue.btn-outline:hover,
   #header .tool-bar .search-form input[type="submit"].btn-blue.btn-outline.form-submit:hover,
   #header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue.btn-outline.form-submit:hover {
-    background: none;
+    background-color: none;
     border-radius: 0;
-    border: 1px solid #b8efff;
+    border: 2px solid #00BFDF;
     color: #5ddbff; }
 a.btn.btn-blue-light.btn-outline, .language-switcher-locale-url li a.btn-blue-light.btn-outline.language-link, #header .tool-bar .search-form a.btn-blue-light.btn-outline.form-submit, #header-on-scroll .tool-bar .search-form a.btn-blue-light.btn-outline.form-submit,
 button.btn.btn-blue-light.btn-outline,
@@ -4347,9 +4347,9 @@ input[type="submit"].btn.btn-blue-light.btn-outline,
   input[type="submit"].btn.btn-blue-light.btn-outline:hover,
   #header .tool-bar .search-form input[type="submit"].btn-blue-light.btn-outline.form-submit:hover,
   #header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue-light.btn-outline.form-submit:hover {
-    background: none;
+    background-color: none;
     border-radius: 0;
-    border: 1px solid white;
+    border: 2px solid #00BFDF;
     color: #d1f5ff; }
 a.btn.btn-blue-lighter.btn-outline, .language-switcher-locale-url li a.btn-blue-lighter.btn-outline.language-link, #header .tool-bar .search-form a.btn-blue-lighter.btn-outline.form-submit, #header-on-scroll .tool-bar .search-form a.btn-blue-lighter.btn-outline.form-submit,
 button.btn.btn-blue-lighter.btn-outline,
@@ -4369,9 +4369,9 @@ input[type="submit"].btn.btn-blue-lighter.btn-outline,
   input[type="submit"].btn.btn-blue-lighter.btn-outline:hover,
   #header .tool-bar .search-form input[type="submit"].btn-blue-lighter.btn-outline.form-submit:hover,
   #header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue-lighter.btn-outline.form-submit:hover {
-    background: none;
+    background-color: none;
     border-radius: 0;
-    border: 1px solid white;
+    border: 2px solid #00BFDF;
     color: #d1f5ff; }
 a.btn.btn-gray-darker.btn-outline, .language-switcher-locale-url li a.btn-gray-darker.btn-outline.language-link, #header .tool-bar .search-form a.btn-gray-darker.btn-outline.form-submit, #header-on-scroll .tool-bar .search-form a.btn-gray-darker.btn-outline.form-submit,
 button.btn.btn-gray-darker.btn-outline,
@@ -4393,7 +4393,7 @@ input[type="submit"].btn.btn-gray-darker.btn-outline,
   #header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray-darker.btn-outline.form-submit:hover {
     background: none;
     border-radius: 0;
-    border: 1px solid #191919;
+    border: 2px solid #00BFDF;
     color: #191919; }
 a.btn.btn-gray-dark.btn-outline, .language-switcher-locale-url li a.btn-gray-dark.btn-outline.language-link, #header .tool-bar .search-form a.btn-gray-dark.btn-outline.form-submit, #header-on-scroll .tool-bar .search-form a.btn-gray-dark.btn-outline.form-submit,
 button.btn.btn-gray-dark.btn-outline,
@@ -4415,7 +4415,7 @@ input[type="submit"].btn.btn-gray-dark.btn-outline,
   #header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray-dark.btn-outline.form-submit:hover {
     background: none;
     border-radius: 0;
-    border: 1px solid #323232;
+    border: 2px solid #00BFDF;
     color: #323232; }
 a.btn.btn-gray.btn-outline, .language-switcher-locale-url li a.btn-gray.btn-outline.language-link, #header .tool-bar .search-form a.btn-gray.btn-outline.form-submit, #header-on-scroll .tool-bar .search-form a.btn-gray.btn-outline.form-submit,
 button.btn.btn-gray.btn-outline,
@@ -4437,7 +4437,7 @@ input[type="submit"].btn.btn-gray.btn-outline,
   #header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray.btn-outline.form-submit:hover {
     background: none;
     border-radius: 0;
-    border: 1px solid #8f8d8e;
+    border: 2px solid #00BFDF;
     color: #8f8d8e; }
 a.btn.btn-gray-light.btn-outline, .language-switcher-locale-url li a.btn-gray-light.btn-outline.language-link, #header .tool-bar .search-form a.btn-gray-light.btn-outline.form-submit, #header-on-scroll .tool-bar .search-form a.btn-gray-light.btn-outline.form-submit,
 button.btn.btn-gray-light.btn-outline,
@@ -4459,7 +4459,7 @@ input[type="submit"].btn.btn-gray-light.btn-outline,
   #header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray-light.btn-outline.form-submit:hover {
     background: none;
     border-radius: 0;
-    border: 1px solid #e3e3e3;
+    border: 2px solid #00BFDF;
     color: #e3e3e3; }
 a.btn.btn-gray-lighter.btn-outline, .language-switcher-locale-url li a.btn-gray-lighter.btn-outline.language-link, #header .tool-bar .search-form a.btn-gray-lighter.btn-outline.form-submit, #header-on-scroll .tool-bar .search-form a.btn-gray-lighter.btn-outline.form-submit,
 button.btn.btn-gray-lighter.btn-outline,
@@ -4481,7 +4481,7 @@ input[type="submit"].btn.btn-gray-lighter.btn-outline,
   #header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray-lighter.btn-outline.form-submit:hover {
     background: none;
     border-radius: 0;
-    border: 1px solid #f1f1f1;
+    border: 2px solid #00BFDF;
     color: #f1f1f1; }
 a.btn.btn-white.btn-outline, .language-switcher-locale-url li a.btn-white.btn-outline.language-link, #header .tool-bar .search-form a.btn-white.btn-outline.form-submit, #header-on-scroll .tool-bar .search-form a.btn-white.btn-outline.form-submit,
 button.btn.btn-white.btn-outline,
@@ -4503,7 +4503,7 @@ input[type="submit"].btn.btn-white.btn-outline,
   #header-on-scroll .tool-bar .search-form input[type="submit"].btn-white.btn-outline.form-submit:hover {
     background: none;
     border-radius: 0;
-    border: 1px solid #fff;
+    border: 2px solid #00BFDF;
     color: #fff; }
 
 a.btn.btn-primary.btn-custom, .language-switcher-locale-url li a.btn-primary.btn-custom.language-link, #header .tool-bar .search-form a.btn-primary.btn-custom.form-submit, #header-on-scroll .tool-bar .search-form a.btn-primary.btn-custom.form-submit,
