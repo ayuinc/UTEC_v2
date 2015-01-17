@@ -50,7 +50,7 @@ input[type="submit"].btn {
 				background-color: none;
 				border-radius: 0;
 				border: 2px solid $brand-primary;
-				color: #{darken(nth($brand-colors-list, $i), 9%)};
+				color: $brand-primary;
 			}
 		}
 	}
@@ -64,7 +64,7 @@ input[type="submit"].btn {
 				background: none;
 				border-radius: 0;
 				border: 2px solid $brand-primary;
-				color: #{nth($grayscale-list, $i)};
+				color: $brand-primary;
 			}
 		}
 	}
