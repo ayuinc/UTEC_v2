@@ -785,10 +785,11 @@
 							<a href="#"><span>Proceso de</span>ampliación</a>
 						</li>-->
 						<li>
-							<a href="/<?php print $language->prefix ?>/convenios/ven-a-la-utec"><span>Ven a</span>la utec</a>
-						</li>
-						<li>
-							<a href="/<?php print $language->prefix ?>/convenios/convenios-de-intercambio"><span>Convenios de</span>Intercambio</a>
+							<?php if ($language->prefix == 'es'): ?>
+								<a href="/<?php print $language->prefix ?>/convenios/convenios-de-intercambio"><span>Convenios de</span>Intercambio</a>
+							<?php elseif ($language->prefix == 'en'): ?>
+								<a href="/<?php print $language->prefix ?>/convenios/convenios-de-intercambio"><span>Alliances</span></a>
+							<?php endif ?>
 						</li>
 					</ul>
 				</div>
