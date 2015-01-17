@@ -154,7 +154,7 @@
 		<li>
       <a href="/<?php print $language->prefix ?>/admision/modalidades">
         <?php if ($language->prefix == 'es'): ?>
-          <span>Modalidades</span>de admisión
+          <span>Modalidades </span>de admisión
         <?php elseif ($language->prefix == 'en'): ?>
           <span>Admissions</span>
         <?php endif ?>
@@ -193,7 +193,7 @@
     <li>
       <a href="/<?php print $language->prefix ?>/admision/orientacion-vocacional">
         <?php if ($language->prefix == 'es'): ?>
-          <span>Orientación</span>Vocacional
+          <span>Orientación </span>Vocacional
         <?php elseif ($language->prefix == 'en'): ?>
           <span>Guidance</span>
         <?php endif ?>
@@ -202,7 +202,7 @@
     <li>
       <a href="/<?php print $language->prefix ?>/admision/preguntas-frecuentes">
         <?php if ($language->prefix == 'es'): ?>
-          <span>Preguntas</span>Frecuentes
+          <span>Preguntas </span>Frecuentes
         <?php elseif ($language->prefix == 'en'): ?>
           <span>Frequently Asked </span>Questions
         <?php endif ?>
