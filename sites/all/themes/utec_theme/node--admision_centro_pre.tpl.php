@@ -17,7 +17,6 @@ $field_inscripcion_pre_extensive = $node->field_inscripcion_pre_extensive['und']
 $field_inscripcion_pre_intensiva = $node->field_inscripcion_pre_intensiva['und']['0']['value'];
 $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 ?>
-<?php kpr($node); ?>
 	<div class="hero-unit"> <!-- HERO -->
 	  <div data-section-scroll="Overview" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_fotos_centro_pre)?>);">
 	    <div class="overlay flex-middle">
