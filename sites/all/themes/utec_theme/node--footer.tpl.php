@@ -11,7 +11,11 @@
 						<form action="" class="form-inline mb-ch-0">
 							<div class="form-group">
 								<label for="subscribe_name" class="sr-only"><?php print t('Name') ?></label>
-								<input type="text" class="form-control" width="210" height="auto" placeholder="Nombre">
+                <?php if ($language->prefix == 'en'): ?>
+								  <input type="text" class="form-control" width="210" height="auto" placeholder="Name">
+                <?php elseif ($language->prefix == 'es'): ?>
+                  <input type="text" class="form-control" width="210" height="auto" placeholder="Nombre">
+                <?php endif ?>
 							</div>
 							<div class="form-group">
 								<label for="subscribe_email" class="sr-only"><?php print t('Email') ?></label>
