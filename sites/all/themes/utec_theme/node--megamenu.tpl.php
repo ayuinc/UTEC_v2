@@ -835,11 +835,11 @@
 								<a href="/<?php print $language->prefix ?>/edp/cursos/cursos-cortos"><span>Cursos</span>Cortos</a>
 							<?php endif ?>
 						</li>
+					</ul> 
+					<ul>
 						<li>
 							<a href="/<?php print $language->prefix ?>/edp/calendario"><?php print t('Calendar') ?></a>
 						</li>
-					</ul> 
-					<ul>
 						<!--<li>
 							<a href="/edp/cursos/cursos-adhoc"><span>Cursos</span>Adhoc</a>
 						</li>
