@@ -98,13 +98,13 @@
         </li>
         <li>
           <ul>
-            <li class="title text-gray-lighter"><?php print t('Agreements') ?></li>
-            <li><a href="/<?php print $language->prefix ?>/convenios/convenios-de-intercambio" class="atm-menu-inferior"><small><?php print t('Exchange Agreements') ?></small></a></li>
+            <li class="title text-gray-lighter"><?php print t('Alliances') ?></li>
+            <li><a href="/<?php print $language->prefix ?>/convenios/convenios-de-intercambio" class="atm-menu-inferior"><small><?php print t('Alliances') ?></small></a></li>
           </ul>
         </li>  
         <li>
           <ul>
-            <li class="title text-gray-lighter"><?php print t('SPD') ?></li>
+            <li class="title text-gray-lighter"><?php print t('Executive Education') ?></li>
             <!--<li><a href="/edp/cursos/diplomados" class="atm-menu-inferior"><small>Diplomados</small></a></li>
             <li><a href="/edp/cursos/cursos-online" class="atm-menu-inferior"><small>Cursos Online</small></a></li>-->
             <li><a href="/edp/la-escuela" class="atm-menu-inferior"><small><?php print t('The School') ?></small></a></li>
