@@ -161,7 +161,7 @@
 							<?php if ($language->prefix == 'en'): ?>
 								<a href="/<?php print $language->prefix ?>/somos-utec/vida-estudiantil"><span>Life at UTEC</a>
 							<?php elseif ($language->prefix == 'es'): ?>
-								<a href="/<?php print $language->prefix ?>/somos-utec/vida-estudiantil"><span>Vida Estudiantil</span><?php print t('Life') ?></a>
+								<a href="/<?php print $language->prefix ?>/somos-utec/vida-estudiantil"><span>Vida Estudiantil</span></a>
 							<?php endif ?>
 						</li>
 						<li>
