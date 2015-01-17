@@ -11,7 +11,7 @@
   
 ?>
 
-<div class="container-sm mh-500">
+<div class="container-sm mb-70 pb-70">
   <h1 class="light"><?php print $titulo ?></h1>
   <div class="separator-gray separator-sm"></div>
   
