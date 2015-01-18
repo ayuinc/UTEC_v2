@@ -32,16 +32,16 @@
 		<input type="hidden" name="origen" value="<?php print $title ?>">
 		<div class="row">
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only"><?php print t("Names") ?></label>
-				<input id="nombres" name="nombres" type="text" class="form-control" placeholder="Nombres">
+				<label for="" class="sr-only"><?php print t("Name") ?></label>
+				<input id="nombres" name="nombres" type="text" class="form-control" placeholder="<?php print t("Name") ?>">
 			</div>
 			<div class="form-group col-sm-4">
 				<label for="" class="sr-only"><?php print t("Middle Name") ?></label>
-				<input id="apellidop" name="apellidop" type="text" class="form-control" placeholder="Apellido paterno">
+				<input id="apellidop" name="apellidop" type="text" class="form-control" placeholder="<?php print t("Middle Name") ?>">
 			</div>
 			<div class="form-group col-sm-4">
 				<label for="" class="sr-only"><?php print t("Last Name") ?></label>
-				<input id="apellidom" name="apellidom" type="text" class="form-control" placeholder="Apellido materno">
+				<input id="apellidom" name="apellidom" type="text" class="form-control" placeholder="<?php print t("Last Name") ?>">
 			</div>
 		</div>
 		<div class="row">
@@ -51,7 +51,7 @@
 			</div>
 			<div class="form-group col-sm-4">
 				<label for="" class="sr-only"><?php print t('Phone') ?></label>
-				<input id="telefono" name="telefono" type="text" class="form-control" placeholder="Teléfono">
+				<input id="telefono" name="telefono" type="text" class="form-control" placeholder="<?php print t('Phone') ?>">
 			</div>
 		</div>
 		<div class="row">
@@ -68,8 +68,8 @@
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="" class="sr-only"><?php print t('Check') ?></label>
-			<textarea id="consulta" name="consulta" rows="3" class="form-control" placeholder="Escribe tu consulta"></textarea>
+			<label for="" class="sr-only"><?php print t('Message') ?></label>
+			<textarea id="consulta" name="consulta" rows="3" class="form-control" placeholder="<?php print t('Message') ?>"></textarea>
 		</div>
 		<div class="text-right">
 			<button type="submit" class="btn btn-primary btn-lg"><?php print t('Send') ?></button>
@@ -93,8 +93,8 @@
 			<input type="hidden" name="origen" value="<?php print $title ?>">
 			<div class="row">
 				<div class="form-group col-sm-6">
-					<label for="" class="sr-only"><?php print t('Names') ?></label>
-					<input type="text" class="form-control" placeholder="<?php print t('Names') ?>" name="nombres" id="nombres">
+					<label for="" class="sr-only"><?php print t('Name') ?></label>
+					<input type="text" class="form-control" placeholder="<?php print t('Name') ?>" name="nombres" id="nombres">
 				</div>
 				<div class="form-group col-sm-6">
 					<label for="" class="sr-only"><?php print t("Middle Name") ?></label>
