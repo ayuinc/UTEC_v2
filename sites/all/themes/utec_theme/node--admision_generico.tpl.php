@@ -86,7 +86,7 @@
 		<p><?php print t('Fill the form and we will contact you to reserve a seat.') ?></p>
 	<?php } else { ?>
 		<h3><?php print t('Sign up for a tour') ?></h1>
-	<?php } ?
+	<?php } ?>
 </div>
 <div class="container-sm form-custom">
 	<form action="/registro.php" data-submit="Formulario de inscripcion" method="post">
