@@ -80,7 +80,13 @@
 
 <?php if (($end=='charlas-informativas') OR ($end=='visita-utec')) { ?>
 <div class="container-sm">
-	<h3><?php print t('Send us your information') ?></h1>
+	
+	<?php if ($end=='visita-utec') { ?>
+		<h3><?php print t('Save a seat') ?></h1>
+		<p><?php print t('Fill the form and we will contact you to reserve a seat.') ?></p>
+	<?php } else { ?>
+		<h3><?php print t('Sign up for a tour') ?></h1>
+	<?php } ?
 </div>
 <div class="container-sm form-custom">
 	<form action="/registro.php" data-submit="Formulario de inscripcion" method="post">
