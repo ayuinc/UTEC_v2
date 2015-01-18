@@ -102,7 +102,7 @@
 <div data-section-scroll="Descubre más" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_foto_redes_sociales)?>);">
 	<div class="overlay flex-middle">
 		<div class="container-xs text-white text-center hero-text relative on-top">
-			<h2 class="h3 mb-0"><?php print t('We call all this:') ?></h2> <h1 class="thin mt-0"><?php print t('Ingenuity in Action') ?></h1>
+			<h2 class="h3 mb-0"><?php print t('We call it:') ?></h2> <h1 class="thin mt-0"><?php print t('Ingenuity in Action') ?></h1>
 			<p class="thin font-carreras"><?php print t('Discover more of #ingenuityinaction:') ?></p>
 			<ul class="grid-list grid-list-centered">
 				<li class="p-0">
