@@ -58,12 +58,12 @@
 			<div class="form-group col-sm-6">
 				<label for="" class="sr-only"><?php print t('Path of Interest') ?></label>
 				<select name="carrera" id="carrera" class="form-control select-override">
-					<option value="Carrera de interés"><?php print t("Undergraduate Programs") ?></option>
-					<option value="15970">Ingeniería Industrial</option>
-		            <option value="14864">Ingeniería Mecánica</option>
-		            <option value="15968">Ingeniería de la Energía</option>
-		            <option value="15964">Ingeniería Electrónica</option>
-		            <option value="15966">Ingeniería Química Industrial</option>
+					<option value="Carrera de interés"><?php print t('Undergrad Program') ?></option>
+			  	<option value="15970"><?php print t('Industrial Engineering') ?></option>
+          <option value="14864"><?php print t('Mechanical Engineering') ?></option>
+          <option value="15968"><?php print t('Energy Engineering') ?></option>
+          <option value="15964"><?php print t('Electronic Engineering') ?></option>
+          <option value="15966"><?php print t('Industrial and Chemical Engineering') ?></option>		            
 				</select>
 			</div>
 		</div>
@@ -94,44 +94,44 @@
 			<div class="row">
 				<div class="form-group col-sm-6">
 					<label for="" class="sr-only"><?php print t('Names') ?></label>
-					<input type="text" class="form-control" placeholder="Nombres" name="nombres" id="nombres">
+					<input type="text" class="form-control" placeholder="<?php print t('Names') ?>" name="nombres" id="nombres">
 				</div>
 				<div class="form-group col-sm-6">
-					<label for="" class="sr-only"><?php print t("Father's Last Name") ?></label>
-					<input type="text" class="form-control" placeholder="Apellido paterno" name="apellidop" id="apellidop">
+					<label for="" class="sr-only"><?php print t("Middle Name") ?></label>
+					<input type="text" class="form-control" placeholder="<?php print t("Middle Name") ?>" name="apellidop" id="apellidop">
 				</div>
 			</div>
 			<div class="row">
 				<div class="form-group col-sm-6">
-					<label for="" class="sr-only"><?php print t("Mother's Last Name") ?></label>
-					<input type="text" class="form-control" placeholder="Apellido materno" name="apellidom" id="apellidom">
+					<label for="" class="sr-only"><?php print t("Last Name") ?></label>
+					<input type="text" class="form-control" placeholder="<?php print t("Last Name") ?>" name="apellidom" id="apellidom">
 				</div>
 				<div class="col-sm-6 form-group">
 					<label for="" class="sr-only"><?php print t('E-Mail') ?></label>
-					<input type="email" class="form-control" placeholder="e-mail" name="email" id="email">
+					<input type="email" class="form-control" placeholder="<?php print t('E-Mail') ?>" name="email" id="email">
 				</div>
 			</div>
 			<div class="row">
 				<div class="form-group col-sm-6">
 					<label for="" class="sr-only"><?php print t('Phone') ?></label>
-					<input type="text" class="form-control" placeholder="Telefono" name="telefono" id="telefono">
+					<input type="text" class="form-control" placeholder="<?php print t('Phone') ?>" name="telefono" id="telefono">
 				</div>				
 				<div class="form-group col-sm-6">
 					<label for="" class="sr-only"><?php print t('Undergrad Program') ?></label>
 					<select name="carrera" id="carrera" class="form-control select-override">
 						<option value="Carrera de interés"><?php print t('Undergrad Program') ?></option>
-					  	<option value="15970"><?php print t('Industrial Engineering') ?></option>
-			            <option value="14864"><?php print t('Mechanical Engineering') ?></option>
-			            <option value="15968"><?php print t('Energy Engineering') ?></option>
-			            <option value="15964"><?php print t('Electronic Engineering') ?></option>
-			            <option value="15966"><?php print t('Industrial and Chemical Engineering') ?></option>
+				  	<option value="15970"><?php print t('Industrial Engineering') ?></option>
+            <option value="14864"><?php print t('Mechanical Engineering') ?></option>
+            <option value="15968"><?php print t('Energy Engineering') ?></option>
+            <option value="15964"><?php print t('Electronic Engineering') ?></option>
+            <option value="15966"><?php print t('Industrial and Chemical Engineering') ?></option>
 					</select>
 				</div>
 			</div>
 			<div class="row">
 				<div class="form-group col-sm-6">
-					<label for="" class="sr-only"><?php print t('Check') ?></label>
-					<textarea class="form-control" placeholder="Consulta" name="consulta" id="consulta"></textarea>
+					<label for="" class="sr-only"><?php print t('Message') ?></label>
+					<textarea class="form-control" placeholder="<?php print t('Message') ?>" name="consulta" id="consulta"></textarea>
 				</div>
 			</div>
 			<div class="text-left">
