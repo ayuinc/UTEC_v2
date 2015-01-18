@@ -36,11 +36,11 @@
 				<input id="nombres" name="nombres" type="text" class="form-control" placeholder="Nombres">
 			</div>
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only"><?php print t("Father's Last Name") ?></label>
+				<label for="" class="sr-only"><?php print t("Middle Name") ?></label>
 				<input id="apellidop" name="apellidop" type="text" class="form-control" placeholder="Apellido paterno">
 			</div>
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only"><?php print t("Mother's Last Name") ?></label>
+				<label for="" class="sr-only"><?php print t("Last Name") ?></label>
 				<input id="apellidom" name="apellidom" type="text" class="form-control" placeholder="Apellido materno">
 			</div>
 		</div>
@@ -82,10 +82,10 @@
 <div class="container-sm">
 	
 	<?php if ($end=='visita-utec') { ?>
+		<h3><?php print t('Sign up for a tour') ?></h1>
+	<?php } else { ?>
 		<h3><?php print t('Save a seat') ?></h1>
 		<p><?php print t('Fill the form and we will contact you to reserve a seat.') ?></p>
-	<?php } else { ?>
-		<h3><?php print t('Sign up for a tour') ?></h1>
 	<?php } ?>
 </div>
 <div class="container-sm form-custom">
