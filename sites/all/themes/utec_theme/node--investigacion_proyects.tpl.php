@@ -27,15 +27,15 @@
 		<?php } ?>
 	</h3>
 	<?php if ($profesor!='') { ?>
-		<p>
+		<p class="mt-14">
 			<span class="lead bold">Profesor: </span><span class="lead"><?php print profesor ?></span>
 		</p>
 	<?php } ?>
 	<?php if ($tags!='') { ?>
 		<p class="small text-gray-light">
-			<span class="lead bold">Tags: </span>
+			<span class="bold">Tags: </span>
 			<?php foreach ($tags as $key => $value) : ?>
-				<span class="lead"><?php print $value['taxonomy_term']->name; ?> -</span>
+				<span><?php print $value['taxonomy_term']->name; ?> -</span>
 			<?php endforeach; ?>
 		</p>
 	<?php } ?>
