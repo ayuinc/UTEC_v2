@@ -35,7 +35,7 @@
 		  </a>	
 		</div>
 		<div class="pv-ch-42">
-			<p><?php print cuerpo ?></p>
+			<p><?php print $cuerpo ?></p>
 		</div>
 	</div>
 </div>
