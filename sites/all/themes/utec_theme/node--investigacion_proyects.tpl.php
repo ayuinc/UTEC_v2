@@ -16,7 +16,7 @@
 <!--<div>
 	<img src="<?php print $pathfile.$image; ?>" alt="#" class="img-responsive">
 </div>-->
-<div class="pb-7">
+<li>
 	<h3>
 		<?php if ($field_pdf_proyectos!='') { ?>
 		<a href="<?php print $field_pdf_proyectos ?>" target="_blank">
@@ -27,16 +27,19 @@
 		<?php } ?>
 	</h3>
 	<?php if ($profesor!='') { ?>
-		<div><span class="lead bold">Profesor: </span><span class="lead"><?php print $profesor ?></span></div>
+		<p>
+			<span class="lead bold">Profesor: </span><span class="lead"><?php print profesor ?></span>
+		</p>
 	<?php } ?>
 	<?php if ($tags!='') { ?>
-		<div><span class="lead bold">Tags: </span>
+		<p class="small text-gray-light">
+			<span class="lead bold">Tags: </span>
 			<?php foreach ($tags as $key => $value) : ?>
 				<span class="lead"><?php print $value['taxonomy_term']->name; ?> -</span>
 			<?php endforeach; ?>
-		</div>
+		</p>
 	<?php } ?>
-</div>
+</li>
 
 
 

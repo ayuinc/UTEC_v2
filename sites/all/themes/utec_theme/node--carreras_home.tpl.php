@@ -32,7 +32,7 @@
     <div data-section-scroll="Acerca de" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
   <?php endif ?>
     <div class="overlay flex-middle">
-      <div class="container-sm hero-text php-7" data-href="<?php print $carrera_link ?>">
+      <div class="container-sm hero-text" data-href="<?php print $carrera_link ?>">
         <h2 class="thin h3 text-white mb-7"><?php print t('What is') ?></h2>
         <h1 class="thin text-white mt-0"><?php print $titulo ?>?</h1>
         <hr class="hr-white">
@@ -55,7 +55,7 @@
   </div>
 </div> <!-- END:Hero -->
 <div data-section-scroll="<?php print t('Curriculum') ?>" id="malla-curricular" class="malla-curricular section-scroll-content minh-560 flex-middle-center">
-  <div class="container-sm text-right normalize-text php-7" data-href="<?php print $malla_link ?>">
+  <div class="container-sm text-right normalize-text" data-href="<?php print $malla_link ?>">
     <h2 class="lead thin h1"><?php print t('Curriculum') ?></h2>
     <hr class="hr-gray">
     <div class="row mt-28">
@@ -76,7 +76,7 @@
   </a>
 </div>
 <div data-section-scroll="<?php print t('Majors') ?>" id="menciones" class="section-scroll-content minh-560 flex-middle-center bg-info-op">
-  <div class="container-sm text-left text-white normalize-text php-7" data-href="<?php print $menciones_link ?>">
+  <div class="container-sm text-left text-white normalize-text" data-href="<?php print $menciones_link ?>">
     <h2 class="lead thin h1"><?php print t('Majors') ?></h2>
     <hr class="hr-white">
     <div class="row mt-28">
@@ -122,6 +122,8 @@
         </li>
       <?php endforeach ?>
     </ul>
+  </div>
+  <div class="container-sm">
     <h3 class="lead thin text-gray"><em><?php print $profesor_txt ?></em></h3>
   </div>
   <a class="scroll-down scroll-down-sq size lg" href="#perfil-egresado" rel="nofollow">
