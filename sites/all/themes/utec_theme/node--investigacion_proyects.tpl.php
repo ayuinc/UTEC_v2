@@ -27,14 +27,13 @@
 		<?php } ?>
 	</h3>
 	<?php if ($profesor!='') { ?>
-		<div><span class="lead bold">Profesor: </span><span class="lead"><?php print $profesor ?></span></div>
+		<span class="lead bold block">Profesor: </span><span class="lead"><?php print $profesor ?></span>
 	<?php } ?>
 	<?php if ($tags!='') { ?>
-		<div><span class="lead bold">Tags: </span>
-			<?php foreach ($tags as $key => $value) : ?>
-				<span class="lead"><?php print $value['taxonomy_term']->name; ?> -</span>
-			<?php endforeach; ?>
-		</div>
+		<span class="lead bold">Tags: </span>
+		<?php foreach ($tags as $key => $value) : ?>
+			<span class="lead"><?php print $value['taxonomy_term']->name; ?> -</span>
+		<?php endforeach; ?>
 	<?php } ?>
 </li>
 

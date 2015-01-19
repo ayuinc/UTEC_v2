@@ -11,7 +11,7 @@
 <div class="container-sm mb-35">
 	<h1 class="light"><?php print t('Projects') ?></h1>
 	<div class="separator-gray separator-lg"></div>
-		<ul class="grid-list grid-list-2 grid-list-1-xs mb-ch-21">
+		<ul class="grid-list grid-list-2 grid-list-1-xs mb-ch-21 isotope-grid">
 	    <?php foreach ($rows as $id => $row): ?>
 		    <?php print $row;?>
 			<?php endforeach; ?>
