@@ -44,14 +44,14 @@
 	<div class="overlay flex-middle">
 		<div class="container hero-text">
 			<div class="row">
-				<div class="col-sm-6 text-white normalize-text">
+				<div class="col-sm-7 text-white normalize-text">
 					<h2 class="thin"><?php print $field_titulo_causa ?></h2>
 					<hr class="hr-white">
 					<div class="row">
 						<div class="col-sm-9">
 							<h3 class="lead thin"><?php print $field_descripcion_causa ?></h3>
 							<?php if ($field_link_causa!='') { ?>
-								<a href="<?php print $field_link_causa ?>" class="btn btn-white btn-outline btn-sm see-more"><?php print t('Read more') ?></a>
+								<a href="<?php print $field_link_causa ?>" class="btn mt-21 btn-white btn-outline btn-sm see-more"><?php print t('Read more') ?></a>
 							<?php } ?>
 						</div>
 					</div>
