@@ -106,7 +106,7 @@
 					<li>
 						<a href="#nav-display-6" class="atm-menu-principal">
 							<div><i class="icon-menu-edp"></i></div>
-							<span><?php print t('Executive Education') ?></span>
+							<span><?php print t('SPD') ?></span>
 						</a>
 					</li>
 				</ul>
