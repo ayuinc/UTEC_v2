@@ -25,14 +25,17 @@
 				<?php endforeach; ?>
 			</div>
 			<!-- Controls -->
-		  <a class="left carousel-control" href="#carousel-custom" role="button" data-slide="prev">
-		    <span class="icon-prev hidden-xs" aria-hidden="true"></span>
-		    <span class="sr-only">Previous</span>
-		  </a>
-		  <a class="right carousel-control" href="#carousel-custom" role="button" data-slide="next">
-		    <span class="icon-next hidden-xs" aria-hidden="true"></span>
-		    <span class="sr-only">Next</span>
-		  </a>	
+			<?php $images = $node->field_imagen['und']; $count=0; ?>
+			<?php if($count != 0) ?>
+			  <a class="left carousel-control" href="#carousel-custom" role="button" data-slide="prev">
+			    <span class="icon-prev hidden-xs" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="right carousel-control" href="#carousel-custom" role="button" data-slide="next">
+			    <span class="icon-next hidden-xs" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			<?php endif ?>
 		</div>
 		<div class="pv-ch-28">
 			<p><?php print $cuerpo ?></p>
