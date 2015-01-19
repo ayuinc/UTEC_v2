@@ -1,6 +1,11 @@
-<?php 
-// $video_name = $node->field_video['und']['0']['filename'];
 
+<?php global $base_url; ?>
+<?php global $theme_path; ?>
+<?php $path = $base_url.'/'.$theme_path; ?>
+<?php $pathfile= variable_get('file_public_path', conf_path() . '/files/centro-pre/'); ?>
+
+
+<?php
 $titulo = $node->title;   
 $field_que_es_descripcion_cp = $node->field_que_es_descripcion_cp['und']['0']['value'];
 $field_que_es_intro_cp = $node->field_que_es_intro_cp['und']['0']['value'];
@@ -10,29 +15,23 @@ $field_calendario_pago = $node->field_calendario_pago['und']['0']['value'];
 $field_calendario_lugar = $node->field_calendario_lugar['und']['0']['value'];
 $field_inscripcion_pre_extensive = $node->field_inscripcion_pre_extensive['und']['0']['value'];
 $field_inscripcion_pre_intensiva = $node->field_inscripcion_pre_intensiva['und']['0']['value'];
-
+$field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 ?>
-
 	<div class="hero-unit"> <!-- HERO -->
-	  <?php if ($language->prefix == 'en'): ?>
-	    <div data-section-scroll="Overview" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
-	  <?php elseif ($language->prefix == 'es'): ?>
-	    <div data-section-scroll="Acerca de" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
-	  <?php endif ?>
+	  <div data-section-scroll="Overview" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_fotos_centro_pre)?>);">
 	    <div class="overlay flex-middle">
-	      <div class="container-sm hero-text" data-href="<?php print $carrera_link ?>">
-	        <h2 class="thin h3 text-white mb-7"><?php print t('What is') ?></h2>
-	        <h1 class="thin text-white mt-0"><?php print $titulo ?>?</h1>
+	      <div class="container-sm hero-text">
+	        <h1 class="thin text-white mt-0"><?php print $titulo ?></h1>
 	        <hr class="hr-white">
 	        <div class="row">
 	          <div class="col-sm-3 hidden-xs">
 	            <div class="size xl">
 	              <i class="icon-carreras-que-es text-white"></i>
-	              <a href="<?php print $carrera_link ?>" class="btn btn-white btn-outline see-more mt-7"><?php print t('See more') ?></a>
+	              <!--<a href="<?php print $carrera_link ?>" class="btn btn-white btn-outline see-more mt-7"><?php print t('See more') ?></a>-->
 	            </div>
 	          </div>
 	          <div class="col-sm-9">
-	            <h2 class="lead thin text-white h5 mt-0"><?php print $carrera_txt ?></h2>
+	            <h2 class="lead thin text-white h5 mt-0"><?php print $field_que_es_descripcion_cp ?></h2>
 	          </div>
 	        </div>
 	      </div>
@@ -42,7 +41,7 @@ $field_inscripcion_pre_intensiva = $node->field_inscripcion_pre_intensiva['und']
 	    </div>
 	  </div>
 	</div> <!-- END:Hero -->
-	<div data-section-scroll="Cursos" class="section-scroll-content">
+	<div data-section-scroll="Cursos" class="section-scroll-content pb-0">
 		<div class="container-sm">
 			<h3 class="lead thin text-center"><?php print $field_que_es_intro_cp ?></h3>
 		</div>
@@ -102,14 +101,14 @@ $field_inscripcion_pre_intensiva = $node->field_inscripcion_pre_intensiva['und']
 			</div>
 		</div>
 	</div>
-	<div data-section-scroll="Calendario" class="section-scroll-content">
+	<div data-section-scroll="Calendario" class="section-scroll-content pt-0">
 		<div class="container-sm">
 			<h3 class="thin lead"><?php print t('Calendar') ?></h3>
 			<h4 class="text-gray"><?php print t('Pre intensiva January - February 2015') ?></h4>
 			<div class="list-custom-left normalize-text lead-ch mb-ch-21">
 				<ul>
 					<li class="bg-primary text-white uppercase text-center p-21">
-						Fecha
+						<?php print t('Date') ?>
 					</li>
 					<li class="pl-21">
 						<p><?php print $field_calendario_fecha ?></p>
@@ -117,7 +116,7 @@ $field_inscripcion_pre_intensiva = $node->field_inscripcion_pre_intensiva['und']
 				</ul>
 				<ul>
 					<li class="bg-gray text-white uppercase text-center p-21">
-						Hora
+						<?php print t('Time') ?>
 					</li>
 					<li class="pl-21">
 						<p><?php print $field_calendario_hora ?></p>
@@ -125,7 +124,7 @@ $field_inscripcion_pre_intensiva = $node->field_inscripcion_pre_intensiva['und']
 				</ul>
 				<ul>
 					<li class="bg-gray text-white uppercase text-center p-21">
-						Pago
+						<?php print t('Payment') ?>
 					</li>
 					<li class="pl-21">
 						<p><?php print $field_calendario_pago ?></p>
@@ -133,7 +132,7 @@ $field_inscripcion_pre_intensiva = $node->field_inscripcion_pre_intensiva['und']
 				</ul>
 				<ul>
 					<li class="bg-gray text-white uppercase text-center p-21">
-						Lugar
+						<?php print t('Place') ?>
 					</li>
 					<li class="pl-21">
 						<p><?php print $field_calendario_lugar ?></p>
@@ -156,7 +155,7 @@ $field_inscripcion_pre_intensiva = $node->field_inscripcion_pre_intensiva['und']
 		</div>
 		<a href="#" class="btn btn-lg btn-primary see-more uppercase ml-70 mr-70">Ver Requisitos</a>
 	</div>-->
-	<div data-section-scroll="Solicita informacion" class="container-sm section-scroll-content">
+	<div data-section-scroll="Solicita informacion" class="container-sm section-scroll-content pt-0">
 		<div class="container-sm">
 			<h3 class="thin lead mb-49"><?php print t('Request information') ?></h3>
 			<form action="">
@@ -207,9 +206,9 @@ $field_inscripcion_pre_intensiva = $node->field_inscripcion_pre_intensiva['und']
 				<div class="form-group">
 					<textarea name="" id="" rows="5" class="form-control input-lg" placeholder="Consulta"></textarea>
 				</div>
-				<p class="help-block ml-70"><?php print t('(*) Required fields') ?>(*) Campos obligatorios</p>
+				<p class="help-block ml-70"><?php print t('(*) Required fields') ?>(*) <?php print t('Required fields') ?></p>
 				<div class="pv-21 text-right">
-					<p class="lead"><?php print t('By clicking here you accept these') ?> <a href="#"><?php print t('') ?><?php print t('conditions') ?></a> <button type="submit" class="btn btn-primary btn-lg">Enviar</button></p>
+					<p class="lead"><?php print t('By clicking here you accept these') ?> <a href="#"><?php print t('') ?><?php print t('conditions') ?></a> <button type="submit" class="btn btn-primary btn-lg"><?php print t('Send') ?></button></p>
 				</div>
 			</form>
 		</div>

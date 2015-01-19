@@ -21,7 +21,7 @@
 
 
 <?php if (($end!='diplomados') AND ($end!='cursos-adhoc')) { ?>
-<div class="container-sm form-custom"> 
+<div class="container-sm form-custom mt-35"> 
 	<form action="" data-submit="Formulario de inscripcion">
 		<input type="hidden" name="origen" value="<?php print $title ?>">
 		<div class="row">

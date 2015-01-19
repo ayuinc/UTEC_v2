@@ -40,7 +40,7 @@
           <div class="col-sm-3 hidden-xs">
             <div class="size xl">
               <i class="icon-carreras-que-es text-white"></i>
-              <a href="<?php print $carrera_link ?>" class="btn btn-white btn-outline see-more mt-7"><?php print t('See more') ?></a>
+              <a href="<?php print $carrera_link ?>" class="btn btn-white btn-outline see-more bold mt-7"><?php print t('See more') ?></a>
             </div>
           </div>
           <div class="col-sm-9">
@@ -55,18 +55,18 @@
   </div>
 </div> <!-- END:Hero -->
 <div data-section-scroll="<?php print t('Curriculum') ?>" id="malla-curricular" class="malla-curricular section-scroll-content minh-560 flex-middle-center">
-  <div class="container-sm text-right normalize-text" data-href="<?php print $malla_link ?>">
+  <div class="container-sm text-right normalize-text php-7" data-href="<?php print $malla_link ?>">
     <h2 class="lead thin"><?php print t('Curriculum') ?></h2>
     <hr class="hr-gray">
-    <div class="row">
+    <div class="row mt-28">
       <div class="col-sm-9">
-        <h2 class="lead thin mb-14 h3"><?php print $malla_titulo ?></h2>
+        <h2 class="lead thin mb-14 h4"><?php print $malla_titulo ?></h2>
         <p clas="font-carreras"><?php print $malla_txt ?></p>
       </div>
       <div class="col-sm-3 hidden-xs">
         <div class="size xl">
           <i class="icon-carreras-malla"></i>
-          <a href="<?php print $malla_link ?>" class="btn btn-primary btn-outline see-more mt-7"><?php print t('See more') ?></a>
+          <a href="<?php print $malla_link ?>" class="btn btn-gray-darker btn-outline see-more bold mt-7"><?php print t('See more') ?></a>
         </div>
       </div>
     </div>
@@ -76,18 +76,18 @@
   </a>
 </div>
 <div data-section-scroll="<?php print t('Majors') ?>" id="menciones" class="section-scroll-content minh-560 flex-middle-center bg-info-op">
-  <div class="container-sm text-left text-white normalize-text" data-href="<?php print $menciones_link ?>">
+  <div class="container-sm text-left text-white normalize-text php-7" data-href="<?php print $menciones_link ?>">
     <h2 class="lead thin"><?php print t('Majors') ?></h2>
     <hr class="hr-white">
-    <div class="row">
+    <div class="row mt-28">
       <div class="col-sm-3 hidden-xs">
         <div class="size xl">
           <i class="icon-carreras-menciones"></i>
-          <a href="<?php print $menciones_link ?>" class="btn btn-primary btn-outline see-more mt-7"><?php print t('See more') ?></a>
+          <a href="<?php print $menciones_link ?>" class="btn btn-white btn-outline see-more bold mt-7"><?php print t('See more') ?></a>
         </div>
       </div>
       <div class="col-sm-9">
-        <h2 class="lead thin h3"><?php print $menciones_titulo ?></h2>
+        <h2 class="lead thin h4"><?php print $menciones_titulo ?></h2>
         <p clas="font-carreras"><?php print $menciones_txt ?></p>
       </div>
     </div>
@@ -97,10 +97,10 @@
   </a>
 </div>
 <div data-section-scroll="<?php print t('Faculty') ?>" id="profesores" class="section-scroll-content minh-560 flex-middle-center">
-  <div class="container-sm text-center normalize-text">
+  <div class="container-sm text-center normalize-text php-7">
     <h2 class="lead thin"><?php print t('Faculty') ?></h2>
     <hr class="hr-gray">
-    <div class="size xl">
+    <div class="size xl mt-28">
       <i class="icon-carreras-profesores"></i>
     </div>
   </div>
@@ -138,7 +138,7 @@
           <div class="col-sm-3 hidden-xs">
             <div class="size xl">
               <i class="icon-carreras-perfil"></i>
-              <a href="<?php print $perfil_link ?>" class="btn btn-white btn-outline see-more mt-7"><?php print t('See more') ?></a>
+              <a href="<?php print $perfil_link ?>" class="btn btn-gray-darker btn-outline see-more bold mt-7"><?php print t('See more') ?></a>
             </div>
           </div>
           <div class="col-sm-9">

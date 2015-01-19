@@ -28,43 +28,48 @@
 <?php if (($end!='charlas-informativas') AND ($end!='informacion-economica') AND ($end!='orientacion-vocacional') AND ($end!='visita-utec') AND ($end!='eventos-utec')) { ?>
 <div class="container-sm form-custom mt-35"> 
 	<h3><?php print t("For more informaction:") ?></h3>
-	<form action="/registro.php" data-submit="Formulario de inscripcion">
+	<form action="/registro.php" data-submit="Formulario de inscripcion" method="post">
 		<input type="hidden" name="origen" value="<?php print $title ?>">
 		<div class="row">
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only"><?php print t("Names") ?></label>
-				<input id="nombres" type="text" class="form-control" placeholder="Nombres">
+				<label for="" class="sr-only"><?php print t("Name") ?></label>
+				<input id="nombres" name="nombres" type="text" class="form-control" placeholder="<?php print t("Name") ?>">
 			</div>
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only"><?php print t("Father's Last Name") ?></label>
-				<input id="apellidop" type="text" class="form-control" placeholder="Apellido paterno">
+				<label for="" class="sr-only"><?php print t("Middle Name") ?></label>
+				<input id="apellidop" name="apellidop" type="text" class="form-control" placeholder="<?php print t("Middle Name") ?>">
 			</div>
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only"><?php print t("Mother's Last Name") ?></label>
-				<input id="apellidom" type="text" class="form-control" placeholder="Apellido materno">
+				<label for="" class="sr-only"><?php print t("Last Name") ?></label>
+				<input id="apellidom" name="apellidom" type="text" class="form-control" placeholder="<?php print t("Last Name") ?>">
 			</div>
 		</div>
 		<div class="row">
 			<div class="form-group col-sm-4">
 				<label for="" class="sr-only"><?php print t("Email") ?></label>
-				<input id="email" type="text" class="form-control" placeholder="Email">
+				<input id="email" name="email" type="text" class="form-control" placeholder="Email">
 			</div>
 			<div class="form-group col-sm-4">
 				<label for="" class="sr-only"><?php print t('Phone') ?></label>
-				<input id="telefono" type="text" class="form-control" placeholder="Teléfono">
+				<input id="telefono" name="telefono" type="text" class="form-control" placeholder="<?php print t('Phone') ?>">
 			</div>
 		</div>
 		<div class="row">
 			<div class="form-group col-sm-6">
 				<label for="" class="sr-only"><?php print t('Path of Interest') ?></label>
-				<select name="" id="carrera" class="form-control select-override">
-					<option value="Carrera de interés"><?php print t("Undergraduate Programs") ?></option>
+				<select name="carrera" id="carrera" class="form-control select-override">
+					<option value="Carrera de interés"><?php print t('Undergrad Program') ?></option>
+			  	<option value="15970"><?php print t('Industrial Engineering') ?></option>
+          <option value="14864"><?php print t('Mechanical Engineering') ?></option>
+          <option value="15968"><?php print t('Energy Engineering') ?></option>
+          <option value="15964"><?php print t('Electronic Engineering') ?></option>
+          <option value="15966"><?php print t('Industrial and Chemical Engineering') ?></option>		            
 				</select>
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="" class="sr-only"><?php print t('Check') ?></label>
-			<textarea id="consulta" rows="3" class="form-control" placeholder="Escribe tu consulta"></textarea>
+			<label for="" class="sr-only"><?php print t('Message') ?></label>
+			<textarea id="consulta" name="consulta" rows="3" class="form-control" placeholder="<?php print t('Message') ?>"></textarea>
 		</div>
 		<div class="text-right">
 			<button type="submit" class="btn btn-primary btn-lg"><?php print t('Send') ?></button>
@@ -75,52 +80,58 @@
 
 <?php if (($end=='charlas-informativas') OR ($end=='visita-utec')) { ?>
 <div class="container-sm">
-	<h3><?php print t('Send us your information') ?></h1>
+	
+	<?php if ($end=='visita-utec') { ?>
+		<h3><?php print t('Sign up for a tour') ?></h1>
+	<?php } else { ?>
+		<h3><?php print t('Save a seat') ?></h1>
+		<p><?php print t('Fill the form and we will contact you to reserve a seat.') ?></p>
+	<?php } ?>
 </div>
 <div class="container-sm form-custom">
 	<form action="/registro.php" data-submit="Formulario de inscripcion" method="post">
 			<input type="hidden" name="origen" value="<?php print $title ?>">
 			<div class="row">
 				<div class="form-group col-sm-6">
-					<label for="" class="sr-only"><?php print t('Names') ?></label>
-					<input type="text" class="form-control" placeholder="Nombres" name="nombres" id="nombres">
+					<label for="" class="sr-only"><?php print t('Name') ?></label>
+					<input type="text" class="form-control" placeholder="<?php print t('Name') ?>" name="nombres" id="nombres">
 				</div>
 				<div class="form-group col-sm-6">
-					<label for="" class="sr-only"><?php print t('Middle Name') ?></label>
-					<input type="text" class="form-control" placeholder="Apellidos" name="apellidop" id="apellidop">
+					<label for="" class="sr-only"><?php print t("Middle Name") ?></label>
+					<input type="text" class="form-control" placeholder="<?php print t("Middle Name") ?>" name="apellidop" id="apellidop">
 				</div>
 			</div>
 			<div class="row">
 				<div class="form-group col-sm-6">
-					<label for="" class="sr-only"><?php print t('Last Name') ?></label>
-					<input type="text" class="form-control" placeholder="Apellidos" name="apellidom" id="apellidom">
+					<label for="" class="sr-only"><?php print t("Last Name") ?></label>
+					<input type="text" class="form-control" placeholder="<?php print t("Last Name") ?>" name="apellidom" id="apellidom">
 				</div>
 				<div class="col-sm-6 form-group">
 					<label for="" class="sr-only"><?php print t('E-Mail') ?></label>
-					<input type="email" class="form-control" placeholder="e-mail" name="email" id="email">
+					<input type="email" class="form-control" placeholder="<?php print t('E-Mail') ?>" name="email" id="email">
 				</div>
 			</div>
 			<div class="row">
 				<div class="form-group col-sm-6">
 					<label for="" class="sr-only"><?php print t('Phone') ?></label>
-					<input type="text" class="form-control" placeholder="Telefono" name="telefono" id="telefono">
+					<input type="text" class="form-control" placeholder="<?php print t('Phone') ?>" name="telefono" id="telefono">
 				</div>				
 				<div class="form-group col-sm-6">
 					<label for="" class="sr-only"><?php print t('Undergrad Program') ?></label>
 					<select name="carrera" id="carrera" class="form-control select-override">
 						<option value="Carrera de interés"><?php print t('Undergrad Program') ?></option>
-					  <option value="15970"><?php print t('Industrial Engineering') ?></option>
-			            <option value="14864"><?php print t('Mechanical Engineering') ?></option>
-			            <option value="15968"><?php print t('Energy Engineering') ?></option>
-			            <option value="15964"><?php print t('Electronic Engineering') ?></option>
-			            <option value="15966"><?php print t('Industrial and Chemical Engineering') ?></option>
+				  	<option value="15970"><?php print t('Industrial Engineering') ?></option>
+            <option value="14864"><?php print t('Mechanical Engineering') ?></option>
+            <option value="15968"><?php print t('Energy Engineering') ?></option>
+            <option value="15964"><?php print t('Electronic Engineering') ?></option>
+            <option value="15966"><?php print t('Industrial and Chemical Engineering') ?></option>
 					</select>
 				</div>
 			</div>
 			<div class="row">
 				<div class="form-group col-sm-6">
-					<label for="" class="sr-only"><?php print t('Check') ?></label>
-					<textarea class="form-control" placeholder="Consulta" name="consulta" id="consulta"></textarea>
+					<label for="" class="sr-only"><?php print t('Message') ?></label>
+					<textarea class="form-control" placeholder="<?php print t('Message') ?>" name="consulta" id="consulta"></textarea>
 				</div>
 			</div>
 			<div class="text-left">
