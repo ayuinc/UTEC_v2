@@ -8,22 +8,30 @@
   kpr($fields);
 
   $derecho_superior_txt1 = $fields[1]->field_texto_superior_1['und'][0]['value'];
+  $derecho_superior_txt1_ingles = $fields[1]->field_texto_superior_1_ingles['und'][0]['value'];
   $derecho_superior_txt2 = $fields[1]->field_texto_superior_2['und'][0]['value'];
+  $derecho_superior_txt2_ingles = $fields[1]->field_texto_superior_2_ingles['und'][0]['value'];
   $derecho_superior_link = $fields[1]->field_link['und'][0]['value'];
   $derecho_superior_img = $fields[1]->field_imagen['und'][0]['filename'];
 
   $izquierdo_txt1 = $fields[2]->field_texto_superior_1['und'][0]['value'];
+  $izquierdo_txt1_ingles = $fields[2]->field_texto_superior_1_ingles['und'][0]['value'];
   $izquierdo_txt2 = $fields[2]->field_texto_superior_2['und'][0]['value'];
+  $izquierdo_txt2_ingles = $fields[2]->field_texto_superior_2_ingles['und'][0]['value'];
   $izquierdo_link = $fields[2]->field_link['und'][0]['value'];
   $izquierdo_img  = $fields[2]->field_imagen['und'][0]['filename'];
 
   $derecho_inferior_izq_txt1 = $fields[3]->field_texto_superior_1['und'][0]['value'];
+  $derecho_inferior_izq_txt1_ingles = $fields[3]->field_texto_superior_1_ingles['und'][0]['value'];
   $derecho_inferior_izq_txt2 = $fields[3]->field_texto_superior_2['und'][0]['value'];
+  $derecho_inferior_izq_txt2_ingles = $fields[3]->field_texto_superior_2_ingles['und'][0]['value'];
   $derecho_inferior_izq_link = $fields[3]->field_link['und'][0]['value'];
   $derecho_inferior_izq_img  = $fields[3]->field_imagen['und'][0]['filename'];
 
   $derecho_inferior_der_txt1 = $fields[4]->field_texto_superior_1['und'][0]['value'];
+  $derecho_inferior_der_txt1_ingles = $fields[4]->field_texto_superior_1_ingles['und'][0]['value'];
   $derecho_inferior_der_txt2 = $fields[4]->field_texto_superior_2['und'][0]['value'];
+  $derecho_inferior_der_txt2_ingles = $fields[4]->field_texto_superior_2_ingles['und'][0]['value'];
   $derecho_inferior_der_link = $fields[4]->field_link['und'][0]['value'];
   $derecho_inferior_der_img  = $fields[4]->field_imagen['und'][0]['filename'];
 
@@ -38,8 +46,8 @@
           <div class="pic" style="background-image: url(sites/default/files/<?php print $izquierdo_img; ?>);"></div>
           <div class="overlay">
             <a href="#">
-              <h4><?php print $izquierdo_txt1; ?></h4>
-              <h2><?php print $izquierdo_txt2; ?></h2>
+              <h4><?php print $izquierdo_txt1; ?><?php print $izquierdo_txt1_ingles; ?></h4>
+              <h2><?php print $izquierdo_txt2; ?><?php print $izquierdo_txt2_ingles; ?></h2>
             </a>
           </div>
         </div>
@@ -49,8 +57,8 @@
           <div class="pic" style="background-image: url(sites/default/files/<?php print $derecho_superior_img; ?>);"></div>
           <div class="overlay">
             <a href="#">
-              <h4><?php print $derecho_superior_txt1; ?></h4>
-              <h2><?php print $derecho_superior_txt2; ?></h2>
+              <h4><?php print $derecho_superior_txt1; ?><?php print $derecho_superior_txt1_ingles; ?></h4>
+              <h2><?php print $derecho_superior_txt2; ?><?php print $derecho_superior_txt2_ingles; ?></h2>
             </a>
           </div>
         </div>
@@ -58,8 +66,8 @@
           <div class="pic" style="background-image: url(sites/default/files/<?php print $derecho_inferior_izq_img; ?>);"></div>
           <div class="overlay">
             <a href="#">
-              <h4><?php print $derecho_inferior_izq_txt1; ?></h4>
-              <h2><?php print $derecho_inferior_izq_txt2; ?></h2>
+              <h4><?php print $derecho_inferior_izq_txt1; ?><?php print $derecho_inferior_izq_txt1_ingles; ?></h4>
+              <h2><?php print $derecho_inferior_izq_txt2; ?><?php print $derecho_inferior_izq_txt2_ingles; ?></h2>
             </a>
           </div>
         </div>
@@ -67,8 +75,8 @@
           <div class="pic" style="background-image: url(sites/default/files/<?php print $derecho_inferior_der_img; ?>);"></div>
           <div class="overlay">
             <a href="#">
-              <h4><?php print $derecho_inferior_der_txt1; ?></h4>
-              <h2><?php print $derecho_inferior_der_txt2; ?></h2>
+              <h4><?php print $derecho_inferior_der_txt1; ?><?php print $derecho_inferior_der_txt1_ingles; ?></h4>
+              <h2><?php print $derecho_inferior_der_txt2; ?><?php print $derecho_inferior_der_txt2_ingles; ?></h2>
             </a>
           </div>
         </div>
