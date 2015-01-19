@@ -116,8 +116,8 @@
           <div class="grid-list-pic">
             <img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="" width="180px" height="auto" class="img-circle">
           </div>
-          <a href="/user/<?php print $uid ?>" class="h4 mb-0">
-            <h4 class="mb-0"><?php print $name ?></h4>
+          <a href="/user/<?php print $uid ?>">
+            <?php print $name ?>
           </a>
           <p class="font-profesores"><?php print $desc ?></p>
         </li>
