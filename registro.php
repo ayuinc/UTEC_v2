@@ -75,6 +75,8 @@ $origen = "";
 //Definicón de subject, destinatario, título
 
 $origen = utf8_decode($_POST['origen']);
+print_r($origen);
+
 if($origen == "Examen de Admisión" || $origen == "Primeros puestos" || $origen == "Alto rendimiento" || 
    $origen == "Traslado Externo" || $origen == "Centro Pre" || $origen == "Bachillerato Internacional" )
 {
@@ -284,7 +286,7 @@ $mensaje_html .= '<html><body><table><tr>
        <tr>
                             <td>Tipo de Documento: </td>
                             <td>'.$_POST['tipo-documento'].'</td>
-       </tr>
+       </tr>    
        <tr>
                             <td>Nro de Documento: </td>
                             <td>'.utf8_decode($_POST['documento']).'</td>
