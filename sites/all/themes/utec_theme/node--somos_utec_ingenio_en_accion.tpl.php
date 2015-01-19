@@ -101,7 +101,7 @@
 	<div class="overlay flex-middle">
 		<div class="container-xs text-white text-center hero-text relative on-top">
 			<h2 class="h3 mb-0"><?php print t('We call it:') ?></h2> <h1 class="thin mt-0"><?php print t('Ingenuity in Action') ?></h1>
-			<p class="thin font-carreras"><?php print t('Discover more of #ingenuityinaction:') ?></p>
+			<p class="thin font-carreras"><?php print t('Discover more of #IngenuityInAction:') ?></p>
 			<ul class="grid-list grid-list-centered">
 				<li class="p-0">
 					<a href="https://www.facebook.com/ingenioenaccion" class="btn btn-facebook btn-circle"><i class="icon-footer-facebook"></i></a>
