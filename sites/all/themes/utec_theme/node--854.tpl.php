@@ -85,16 +85,19 @@
 			<div class="form-group col-sm-4">
 				<select name="dia" id="dia" class="form-control select-override">
 					<option value="Día">Día</option>
+					<option value="0">0</option>
 				</select>
 			</div>
 			<div class="form-group col-sm-4">
 				<select name="mes" id="mes" class="form-control select-override">
 					<option value="Mes">Mes</option>
+					<option value="0">0</option>
 				</select>
 			</div>
 			<div class="form-group col-sm-4">
 				<select name="ano" id="ano" class="form-control select-override">
 					<option value="Año">Año</option>
+					<option value="0">0</option>
 				</select>
 			</div>
 		</div>
@@ -148,6 +151,7 @@
 			<div class="col-sm-3 form-group">
 				<select name="ano-culminacion" id="ano-culminacion" class="form-control select-override">
 					<option value="Año">Año</option>
+					<option value="0">0</option>
 				</select>
 			</div>
 			<div class="col-sm-9 form-group">
