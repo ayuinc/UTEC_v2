@@ -12,7 +12,7 @@
 <div class="container-sm">
 	<h1 class="light"><?php print $titulo ?></h1>
 	<div class="separator-gray separator-sm"></div>
-	<div class="pv-ch-42 lead-ch p-ch-gray">
+	<div class="lead-ch p-ch-gray">
 		<div id="carousel-custom" class="carousel carousel-custom slide mb-42" data-ride="carousel">
 			<!-- Wrapper for slides -->
 		  <div class="carousel-inner" role="listbox">
@@ -34,7 +34,9 @@
 		    <span class="sr-only">Next</span>
 		  </a>	
 		</div>
-		<p><?php print $cuerpo ?></p>
+		<div class="pv-ch-42">
+			<p><?php print 1cuerpo ?></p>
+		</div>
 	</div>
 </div>
 
