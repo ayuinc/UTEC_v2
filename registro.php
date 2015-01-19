@@ -135,6 +135,7 @@ if($origen == "Examen de Admisión" || $origen == "Primeros puestos" || $origen 
     }
 }
 
+echo $origen;
 
 if($origen == "Formulario inscripcion examen de admision" || $origen == "Formulario inscripcion alto rendimiento" || $origen == "Formulario inscripcion centro pre" || 
    $origen == "Formulario inscripcion primeros puestos" || $origen == "Formulario inscripcion traslados" || $origen == "Formulario inscripcion bachillerato internacional" )
@@ -179,7 +180,7 @@ if($origen == "Formulario inscripcion examen de admision" || $origen == "Formula
         $subjectTelemarketing = "Registro de Inscripciones - Centro Preuniversitario UTEC";
         $subjectCliente = "Registro de Inscripciones - Centro Preuniversitario UTEC";
         $familia = "PRE UTEC";
-        $origen = "pagina-inscripcion-centro-preuniversitario";  
+        $origen = "pagina-inscripcion-centro-pre";  
     }
 
     if($origen == "Formulario inscripcion primeros puestos")
