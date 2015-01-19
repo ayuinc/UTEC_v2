@@ -56,9 +56,9 @@
               </h4>
               <h2>
                 <?php if ($language->prefix == 'en') {
-                  print $izquierdo_txt2;
-                } elseif ($language->prefix == 'es') {
                   print $izquierdo_txt2_ingles;
+                } elseif ($language->prefix == 'es') {
+                  print $izquierdo_txt2;
                 } 
                 ?>
               </h2>

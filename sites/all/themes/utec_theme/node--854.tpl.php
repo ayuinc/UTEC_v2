@@ -37,7 +37,7 @@
 		</div>
 		<div class="text-gray h3 thin">
 			<label for="">Género:</label>
-			<input  id="femenino" type="radio" checked name="genero	" value="F"> Femenino
+			<input  id="femenino" type="radio" checked name="genero" value="F"> Femenino
 			<input  id="masculino" type="radio" name="genero" value="M"> Masculino
 		</div>
 		<div class="row">
@@ -55,7 +55,11 @@
 			<div class="form-group col-sm-4">
 				<label for="" class="sr-only">Documento</label>
 				<select name="tipo-documento" id="tipo-documento" class="form-control select-override">
-					<option value="Documento">Documento</option>
+	            	<option value="">- Selecciona el tipo -</option>
+	            	<option value="DNI">DNI</option>
+	                <option value="CE">Carné de extranjería</option>
+	                <option value="PA">Pasaporte</option>
+	                <option value="OT">Otro</option>
 				</select>
 			</div>
 			<div class="form-group col-sm-4">
@@ -68,14 +72,20 @@
 				<label for="">Lugar de nacimiento</label>
 			</div>
 			<div class="form-group col-sm-6">
+				<input  id="pais" name="pais" type="text" class="form-control">
+				<!--
 				<select name="pais" id="pais" class="form-control select-override">
 					<option value="País">País</option>
 				</select>
+				-->
 			</div>
 			<div class="form-group col-sm-6">
+				<input  id="ciudad" name="ciudad" type="text" class="form-control">
+				<!--
 				<select name="ciudad" id="ciudad" class="form-control select-override">
 					<option value="Ciudad">Ciudad</option>
 				</select>
+				-->
 			</div>
 		</div>
 		<div class="row">
@@ -85,19 +95,32 @@
 			<div class="form-group col-sm-4">
 				<select name="dia" id="dia" class="form-control select-override">
 					<option value="Día">Día</option>
-					<option value="0">0</option>
+
+					<option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option>
+					<option value="5">5</option> <option value="6">6</option> <option value="7">7</option> <option value="8">8</option>
+					<option value="9">9</option> <option value="10">10</option> <option value="11">11</option> <option value="12">12</option>
+					<option value="13">13</option> <option value="14">14</option> <option value="15">15</option> <option value="16">16</option>
+					<option value="17">17</option> <option value="18">18</option> <option value="19">19</option> <option value="20">20</option>
+					<option value="21">21</option> <option value="22">22</option> <option value="23">23</option> <option value="24">24</option>
+					<option value="25">25</option> <option value="26">26</option> <option value="27">27</option> <option value="28">28</option>
+					<option value="29">29</option> <option value="30">30</option> <option value="31">31</option>
 				</select>
 			</div>
 			<div class="form-group col-sm-4">
 				<select name="mes" id="mes" class="form-control select-override">
 					<option value="Mes">Mes</option>
-					<option value="0">0</option>
+					<option value="Enero">Enero</option> <option value="Febrero">Febrero</option> <option value="Marzo">Marzo</option>
+					<option value="Abril">Abril</option> <option value="Mayo">Mayo</option> <option value="Junio">Junio</option>
+					<option value="Julio">Julio</option> <option value="Agosto">Agosto</option> <option value="Setiembre">Setiembre</option>
+					<option value="Octubre">Octubre</option> <option value="Noviembre">Noviembre</option> <option value="Diciembre">Diciembre</option>
 				</select>
 			</div>
 			<div class="form-group col-sm-4">
 				<select name="ano" id="ano" class="form-control select-override">
 					<option value="Año">Año</option>
-					<option value="0">0</option>
+					<?php for ($x = 1970; $x <= 2015; $x++) { ?>
+    					<?php echo "<option value='$x'>$x</option>";?> 
+					<?php } ?>
 				</select>
 			</div>
 		</div>

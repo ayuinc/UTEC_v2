@@ -80,21 +80,10 @@ function views_natural_sort_settings_form_submit($form, &$form_state) {
  * Submit handler that triggers the rebuild_index batch.
  */
 function views_natural_sort_rebuild_index_submit() {
-  views_natural_sort_rebuild_index_batch_set();
-}
-
-function views_natural_sort_rebuild_index_batch_set(array $entry_types = array()) {
-  if (empty($entry_types)) {
-    $entry_types = module_invoke_all('views_natural_sort_get_entry_types');
-  }
-  $operations = array();
-
-  foreach($entry_types as $entry_type) {
-    $operations[] = array('views_natural_sort_rebuild_index', array($entry_type));
-  }
   $batch = array(
-    'operations' => $operations,
-    'title' => t('Rebuilding Views Natural Sort Indexing Entries'),
+    'operations' => array(
+      array('views_natural_sort_rebuild_index', array()),
+    ),
     'finished' => 'views_natural_sort_rebuild_index_finished',
     'file' => drupal_get_path('module', 'views_natural_sort') . '/views_natural_sort.admin.inc',
   );
@@ -105,24 +94,21 @@ function views_natural_sort_rebuild_index_batch_set(array $entry_types = array()
 /**
  * Batch API callback for rebuild_index.
  */
-function views_natural_sort_rebuild_index($entry_type, &$context) {
+function views_natural_sort_rebuild_index(&$context) {
   // Alias sandbox for easier referencing.
   $sandbox = &$context['sandbox'];
-
-  // Hook for modules to implement and return data that views_natural_sort can
-  // store as an index for that module's entries.
-  $index_entries = module_invoke_all('views_natural_sort_get_rebuild_data', $entry_type);
-
-  //TODO: this seems like it has the possiblity to produce unused data.
-  // Consider a delete of some sort.
 
   // Initialize our context.
   if (!isset($sandbox['max'])) {
     $sandbox['progress'] = 0;
-    $sandbox['max'] = count($index_entries) - 1;
-    $sandbox['total'] = count($index_entries);
+    $sandbox['max'] = db_query('SELECT MAX(nid) FROM {node}')->fetchField();
+    $sandbox['total'] = db_query(
+      'SELECT COUNT(nid) FROM {node} WHERE nid <= :max',
+      array('max' => $sandbox['max'])
+    )->fetchField();
 
     $sandbox['current'] = 0;
+    $context['results']['nodes'] = 0;
 
     if ($sandbox['total'] == 0) {
       $context['finished'] = 1;
@@ -130,20 +116,23 @@ function views_natural_sort_rebuild_index($entry_type, &$context) {
     }
   }
 
-  $results = array_slice($index_entries, $sandbox['current'], 100);
+  $results = db_query_range(
+    'SELECT nid, title FROM {node} WHERE nid > :current AND nid <= :max',
+    0,
+    10,
+    array('current' => $sandbox['current'], 'max' => $sandbox['max'])
+  );
 
-  $entity_type = '';
-  $field = '';
+  $title = '';
   foreach ($results as $row) {
-    views_natural_sort_store($row);
+    _views_natural_sort_store_node($row);
     ++$sandbox['progress'];
-    $sandbox['current'] = $sandbox['progress'];
-    $entity_type = $row['entity_type'];
-    $field = $row['field'];
-    ++$context['results']['entries'];
+    $sandbox['current'] = $row->nid;
+    $title = $row->title;
+    ++$context['results']['nodes'];
   }
 
-  $context['message'] = t('Processing %entity_type %field', array('%entity_type' => $entity_type, '%field' => $field));
+  $context['message'] = t('Processing node %title', array('%title' => $title));
 
   $context['finished'] = $sandbox['progress'] / $sandbox['total'];
 }
@@ -155,7 +144,7 @@ function views_natural_sort_rebuild_index_finished($success, $results, $operatio
   if ($success) {
     drupal_set_message(t('Index update has completed.'));
     drupal_set_message(t('Indexed %count.', array(
-      '%count' => format_plural($results['entries'], '1 entry', '@count entries'),
+      '%count' => format_plural($results['nodes'], '1 node', '@count nodes'),
     )));
   }
 }
