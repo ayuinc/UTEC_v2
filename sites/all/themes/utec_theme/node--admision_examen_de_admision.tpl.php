@@ -16,7 +16,7 @@ $field_temario_examen = $node->field_temario_examen['und']['0']['value'];
 		<p class="lead text-gray"><?php print $field_descripcion_corta_examen ?></p>
 		<div class="mb-ch-42">
 			<div>
-				<h3><?php //print t('How to apply?') ?>v</h3>
+				<h3><?php //print t('How to apply?') ?></h3>
 				<div class="list-custom">
 					<?php  print $field_como_postula_examen ?>
 				</div>
