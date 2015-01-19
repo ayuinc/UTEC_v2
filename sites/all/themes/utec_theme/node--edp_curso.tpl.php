@@ -51,7 +51,7 @@
 	<div class="pv-ch-42">
 		<div class="list-custom-left normalize-text lead-ch mb-ch-21">
 			<ul>
-				<li class="bg-primary text-white uppercase text-center p-21">
+				<li class="bg-gray text-white uppercase text-center p-21">
 					Fecha
 				</li>
 				<li class="pl-21">
@@ -103,7 +103,7 @@
 			</div>
 		</div>
 		<div>
-			<ul class="grid-list grid-list-5 grid-list-1-xs grid-list-hover size xs">
+			<ul class="grid-list grid-list-5 grid-list-1-xs grid-list-hover grid-list-hover-gray-lighter size xs">
 				<?php foreach ($detalles as $key => $detalle) : ?>
 					<?php 
 						$tid = $detalle['entity']->field_tipo_de_detalle['und']['0']['tid'];
@@ -113,7 +113,7 @@
 					<li data-href="<?php print '/node/'.$nid ?>">
 						<div>
 							<div class="size sm">
-								<i class="icon-admisiones-primeros-puestos"></i>
+								<i class="text-primary icon-admisiones-primeros-puestos"></i>
 							</div>
 							<small class="thin"><?php print t('Requirements') ?></small>
 						</div>
@@ -124,7 +124,7 @@
 					<li data-href="<?php print '/node/'.$nid ?>">
 						<div>
 							<div class="size sm">
-								<i class="icon-admisiones-alto-rendimiento"></i>
+								<i class="text-primary icon-admisiones-alto-rendimiento"></i>
 							</div>
 							<small class="thin"><?php print t('Agenda') ?></small>
 						</div>
@@ -135,7 +135,7 @@
 					<li data-href="<?php print '/node/'.$nid ?>">
 						<div>
 							<div class="size sm">
-								<i class="icon-admisiones-traslado"></i>
+								<i class="text-primary icon-admisiones-traslado"></i>
 							</div>
 							<small class="thin"><?php print t('Sign up') ?></small>
 						</div>
@@ -146,7 +146,7 @@
 					<li data-href="<?php print '/node/'.$nid ?>">
 						<div>
 							<div class="size sm">
-								<i class="icon-admisiones-centro-pre"></i>
+								<i class="text-primary icon-admisiones-centro-pre"></i>
 							</div>
 							<small class="thin"><?php print t('Contact us') ?></small>
 						</div>
@@ -157,7 +157,7 @@
 					<li data-href="<?php print '/node/'.$nid ?>">
 						<div>
 							<div class="size sm">
-								<i class="icon-admisiones-bachillerato"></i>
+								<i class="text-primary icon-admisiones-bachillerato"></i>
 							</div>
 							<small class="thin"><?php print t('Brochure') ?></small>
 						</div>
