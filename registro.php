@@ -138,7 +138,11 @@ if($origen == "Examen de Admisión" || $origen == "Primeros puestos" || $origen 
     }
 }
 
-print_r($origen);
+    
+    if($origen == "Inscripción Examen de Admisión")
+    {
+        echo "Hoooooooooola";
+    }
 
 if($origen == "Inscripción Examen de Admisión" || $origen == "Inscripcion Alto Rendimiento" || $origen == "Inscripcion Centro Preuniversitario" || 
    $origen == "Inscripcion Primeros Puestos" || $origen == "Inscripcion Traslado Externo" || $origen == "Inscripcion Bachillerato Internacional" )
