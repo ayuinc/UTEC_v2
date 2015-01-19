@@ -36,6 +36,8 @@
 			@extend .container-sm;
 			.breadcrumb {
 				@include list-unstyled;
+				text-transform: uppercase;
+				@include thin;
 			}
 		}
 	}
