@@ -64,7 +64,7 @@
 			</div>
 			<div class="form-group col-sm-4">
 				<label for="" class="sr-only">Documento</label>
-				<input  id="documento" name="documento" type="text" class="form-control">
+				<input  id="documento" name="documento" type="text" class="form-control" placeholder="Documento">
 			</div>
 		</div>
 		<div class="row">
@@ -72,7 +72,8 @@
 				<label for="">Lugar de nacimiento</label>
 			</div>
 			<div class="form-group col-sm-6">
-				<input  id="pais" name="pais" type="text" class="form-control">
+				<label for="" class="sr-only">Pais</label>
+				<input  id="pais" name="pais" type="text" class="form-control" placeholder="Pais">
 				<!--
 				<select name="pais" id="pais" class="form-control select-override">
 					<option value="País">País</option>
@@ -80,7 +81,8 @@
 				-->
 			</div>
 			<div class="form-group col-sm-6">
-				<input  id="ciudad" name="ciudad" type="text" class="form-control">
+				<label for="" class="sr-only">Ciudad</label>
+				<input  id="ciudad" name="ciudad" type="text" class="form-control" placeholder="Ciudad">
 				<!--
 				<select name="ciudad" id="ciudad" class="form-control select-override">
 					<option value="Ciudad">Ciudad</option>
@@ -95,15 +97,9 @@
 			<div class="form-group col-sm-4">
 				<select name="dia" id="dia" class="form-control select-override">
 					<option value="Día">Día</option>
-
-					<option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option>
-					<option value="5">5</option> <option value="6">6</option> <option value="7">7</option> <option value="8">8</option>
-					<option value="9">9</option> <option value="10">10</option> <option value="11">11</option> <option value="12">12</option>
-					<option value="13">13</option> <option value="14">14</option> <option value="15">15</option> <option value="16">16</option>
-					<option value="17">17</option> <option value="18">18</option> <option value="19">19</option> <option value="20">20</option>
-					<option value="21">21</option> <option value="22">22</option> <option value="23">23</option> <option value="24">24</option>
-					<option value="25">25</option> <option value="26">26</option> <option value="27">27</option> <option value="28">28</option>
-					<option value="29">29</option> <option value="30">30</option> <option value="31">31</option>
+					<?php for ($x = 1; $x <= 31; $x++) { ?>
+    					<?php echo "<option value='$x'>$x</option>";?> 
+					<?php } ?>
 				</select>
 			</div>
 			<div class="form-group col-sm-4">
@@ -129,19 +125,31 @@
 				<label for="" class="block">Domicilio actual</label>
 			</div>
 			<div class="form-group col-sm-4">
+				<label for="" class="sr-only">Departamento</label>
+				<input  id="depto" name="depto" type="text" class="form-control" placeholder="Departamento">
+				<!--
 				<select name="depto" id="depto" class="form-control select-override">
 					<option value="Dpto">Dpto</option>
 				</select>
+				-->
 			</div>
 			<div class="form-group col-sm-4">
+				<label for="" class="sr-only">Provincia</label>
+				<input  id="provincia" name="provincia" type="text" class="form-control" placeholder="Provincia">
+				<!--
 				<select name="provincia" id="provincia" class="form-control select-override">
 					<option value="Provincia">Provincia</option>
 				</select>
+				-->
 			</div>
 			<div class="form-group col-sm-4">
+				<label for="" class="sr-only">Distrito</label>
+				<input  id="distrito" name="distrito" type="text" class="form-control" placeholder="Distrito">
+				<!--
 				<select name="distrito" id="distrito" class="form-control select-override">
 					<option value="Distrito">Distrito</option>
 				</select>
+				-->
 			</div>
 			<div class="col-sm-12 form-group">
 				<label for="" class="sr-only">Dirección actual</label>
@@ -174,7 +182,9 @@
 			<div class="col-sm-3 form-group">
 				<select name="ano-culminacion" id="ano-culminacion" class="form-control select-override">
 					<option value="Año">Año</option>
-					<option value="0">0</option>
+					<?php for ($x = 1970; $x <= 2015; $x++) { ?>
+    					<?php echo "<option value='$x'>$x</option>";?> 
+					<?php } ?>
 				</select>
 			</div>
 			<div class="col-sm-9 form-group">
@@ -182,41 +192,54 @@
 				<input  id="colegio-procedencia" name="colegio" type="text" class="form-control" placeholder="Colegio de procedencia">
 			</div>
 			<div class="form-group col-sm-4">
+				<label for="" class="sr-only">Departamento</label>
+				<input  id="estudios-dpto" name="estudios-dpto" type="text" class="form-control" placeholder="Departamento">
+				<!--
 				<select name="estudios-dpto" id="estudios-dpto" class="form-control select-override">
 					<option value="Dpto">Dpto</option>
 				</select>
+				-->
 			</div>
 			<div class="form-group col-sm-4">
+				<label for="" class="sr-only">Provincia</label>
+				<input  id="estudios-provincia" name="estudios-provincia" type="text" class="form-control" placeholder="Provincia">
+				<!--
 				<select name="estudios-provincia" id="estudios-provincia" class="form-control select-override">
 					<option value="Provincia">Provincia</option>
 				</select>
+				-->
 			</div>
 			<div class="form-group col-sm-4">
+				<label for="" class="sr-only">Distrito</label>
+				<input  id="estudios-distrito" name="estudios-distrito" type="text" class="form-control" placeholder="Distrito">				
+				<!--
 				<select name="estudios-distrito" id="estudios-distrito" class="form-control select-override">
 					<option value="Distrito">Distrito</option>
 				</select>
+				-->
 			</div>
 			<div class="form-group col-sm-7">
 				<select name="estudios-rendimiento" id="estudios-rendimiento" class="form-control select-override">
-					<option value="Rendimiento académico">Rendimiento académico</option>
+					<option value="">- Rendimiento Académico -</option>
+	                <option value="Primeros Puestos ( 1° y 2° )">Primeros Puestos ( 1° y 2° )</option>
+	                <option value="Tercio superior">Tercio superior</option>
+	                <option value="Otro">Otro</option>
 				</select>
 			</div>
 			<div class="col-sm-12 form-group text-gray h3 thin">
 				<label for="">Es o ha sido estudiante de esta universidad:</label>
-				<input  id="estudiante-si" type="radio" checked name="is-student"> Sí
-				<input  id="estudiante-no" type="radio" name="is-student"> No
+				<input  id="estudiante-si" type="radio" checked name="estudiante" value="S"> Sí
+				<input  id="estudiante-no" type="radio" name="estudiante" value ="N"> No
 			</div>
 		</div>
 		<div class="text-right">
 			<button  id="" type="submit" class="btn btn-primary btn-lg">Enviar</button>
 		</div>
 	</form>						
-	<p class="text-gray">De conformidad con los artículos lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut at, veritatis tempore ipsa voluptate neque lorem exercitationem impedit aperiam? Veritatis recusandae dolorem, ullam repellendus minus expedita consequatur doloremque iusto fugiat maxime!</p>
 </div>
 <div class="container pt-42">
 	<div class="col-md-1"></div>
 	<div class="col-md-10">
-		<p class="text-gray"><?php print t('De conformidad con los artículos lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut at, veritatis tempore ipsa voluptate neque lorem exercitationem impedit aperiam? Veritatis recusandae dolorem, ullam repellendus minus expedita consequatur doloremque iusto fugiat maxime!') ?></p>
 	</div>
 	<div class="col-md-1"></div>
 </div>
