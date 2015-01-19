@@ -20,7 +20,7 @@
 		  	<?php $images = $node->field_imagen['und']; $count=0; ?>
 			  <?php foreach ($images as $image): ?>
 			  <div class="item <?php if($count == 0){print 'active';} ?>">
-			  	<div class="banner banner-label-custom mb-14 ml-0">
+			  	<div class="banner banner-label-bottom mb-14 ml-0">
 						<div class="banner-pic" style="background-image: url(<?php print '/'.$pathfile.'noticias/'.$image['filename'] ?>);">
 							<div class="banner-label bg-gray-darker text-white"><span><?php print $category ?></span></div>
 						</div>
