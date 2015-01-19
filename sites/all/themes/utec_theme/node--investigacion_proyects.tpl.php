@@ -17,7 +17,7 @@
 	<img src="<?php print $pathfile.$image; ?>" alt="#" class="img-responsive">
 </div>-->
 <li>
-	<h3>
+	<h3 class="mb-14">
 		<?php if ($field_pdf_proyectos!='') { ?>
 		<a href="<?php print $field_pdf_proyectos ?>" target="_blank">
 		<?php } ?>
@@ -27,7 +27,7 @@
 		<?php } ?>
 	</h3>
 	<?php if ($profesor!='') { ?>
-		<p class="mt-14">
+		<p>
 			<span class="lead bold">Profesor: </span><span class="lead"><?php print profesor ?></span>
 		</p>
 	<?php } ?>

@@ -25,7 +25,7 @@ if (!isset($_POST['distrito'])) {$_POST['distrito'] = "";};
 if (!isset($_POST['direccion-actual'])) {$_POST['direccion-actual'] = "";};
 if (!isset($_POST['email'])) {$_POST['email'] = "";};
 if (!isset($_POST['celular-1'])) {$_POST['celular-1'] = "";};
-if (!isset($_POST['celular-2'])) {$_POST['celular-2'] = ""; $celular2 = ""; };
+if (!isset($_POST['celular-2'])) {$_POST['celular-2'] = "";};
 if (!isset($_POST['telefono'])) {$_POST['telefono'] = "";};
 if (!isset($_POST['ano-culminacion'])) {$_POST['ano-culminacion'] = "";};
 if (!isset($_POST['colegio'])) {$_POST['colegio'] = "";};
@@ -35,6 +35,7 @@ if (!isset($_POST['estudios-distrito'])) {$_POST['estudios-distrito'] = "";};
 if (!isset($_POST['estudios-rendimiento'])) {$_POST['estudios-rendimiento'] = "";};
 if (!isset($_POST['estudiante'])) {$_POST['estudiante'] = "N";};
 if (!isset($_POST['consulta'])) {$_POST['consulta'] = "";};
+
 
 if ($_POST['dia'] != "")
 {
@@ -75,6 +76,8 @@ $origen = "";
 //Definicón de subject, destinatario, título
 
 $origen = utf8_decode($_POST['origen']);
+print_r($origen);
+
 if($origen == "Examen de Admisión" || $origen == "Primeros puestos" || $origen == "Alto rendimiento" || 
    $origen == "Traslado Externo" || $origen == "Centro Pre" || $origen == "Bachillerato Internacional" )
 {
@@ -135,8 +138,13 @@ if($origen == "Examen de Admisión" || $origen == "Primeros puestos" || $origen 
     }
 }
 
+    
+    if($origen == "Formulario inscripcion examen de admision")
+    {
+        echo "Hoooooooooola";
+    }
 
-if($origen == "Inscripción Examen de Admisión" || $origen == "Inscripcion Alto Rendimiento" || $origen == "Inscripcion Centro Preuniversitario" || 
+if($origen == "Formulario inscripcion examen de admision" || $origen == "Inscripcion Alto Rendimiento" || $origen == "Inscripcion Centro Preuniversitario" || 
    $origen == "Inscripcion Primeros Puestos" || $origen == "Inscripcion Traslado Externo" || $origen == "Inscripcion Bachillerato Internacional" )
 {
 
@@ -146,8 +154,10 @@ if($origen == "Inscripción Examen de Admisión" || $origen == "Inscripcion Alto
     $fromCliente = "admision@utec.edu.pe";
     $fromNameCliente = "UTEC – Admisión";
 
-    if($origen == "Inscripción Examen de Admisión")
+    if($origen == "Formulario inscripcion examen de admision")
     {
+        echo "HOOOOOOOOOLA";
+
         $tituloTelemarketing = "Registro de Inscripciones - Examen de Admisión UTEC";
         $subjectTelemarketing = "Registro de Inscripciones - Examen de Admisión UTEC";
         $subjectCliente = "Registro de Inscripciones - Examen de Admisión UTEC";
@@ -284,7 +294,7 @@ $mensaje_html .= '<html><body><table><tr>
        <tr>
                             <td>Tipo de Documento: </td>
                             <td>'.$_POST['tipo-documento'].'</td>
-       </tr>
+       </tr>    
        <tr>
                             <td>Nro de Documento: </td>
                             <td>'.utf8_decode($_POST['documento']).'</td>
@@ -327,7 +337,7 @@ $mensaje_html .= '<html><body><table><tr>
        </tr>
        <tr>
                             <td>2er Nro de Celular:</td>
-                            <td>'.utf8_decode($celular2).'</td>
+                            <td>'.$_POST['celular-2'].'</td>
        </tr>
        <tr>
                             <td>Telefono Fijo:</td>
@@ -749,7 +759,7 @@ $v16 = utf8_decode($_POST['distrito']);
 $v17 = utf8_decode($_POST['direccion-actual']);
 $v18 = utf8_decode($_POST['email']);
 $v19 = $_POST['celular-1'];
-$v20 = utf8_decode($celular2);
+$v20 = $_POST['celular-2'];
 $v21 = $_POST['telefono'];
 $v22 = $_POST['ano-culminacion'];
 $v23 = utf8_decode($_POST['colegio']);
