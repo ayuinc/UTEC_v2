@@ -3318,6 +3318,9 @@ tbody.collapse.in {
 html {
   -webkit-font-smoothing: antialiased; }
 
+p {
+  text-align: justify !important; }
+
 a:hover, a:focus, a:active {
   text-decoration: none !important; }
 
