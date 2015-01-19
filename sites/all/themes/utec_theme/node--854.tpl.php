@@ -43,7 +43,7 @@
 		<div class="row">
 			<div class="form-group col-sm-4">
 				<label for="" class="sr-only">Carrera de interés</label>
-				<select name="carrera" id="carreras" class="form-control select-override">
+				<select name="carrera" id="carrera" class="form-control select-override">
 					<option value="Carrera de interés">Carrera de interés</option>
 					<option value="15970"><?php print t('Industrial Engineering') ?></option>
 		            <option value="14864"><?php print t('Mechanical Engineering') ?></option>
