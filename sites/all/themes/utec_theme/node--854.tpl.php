@@ -119,7 +119,7 @@
 				<select name="ano" id="ano" class="form-control select-override">
 					<option value="Año">Año</option>
 					<?php for ($x = 1970; $x <= 2015; $x++) { ?>
-    					<? echo "<option value='$x'>$x</option>";?> 
+    					<?php echo "<option value='$x'>$x</option>";?> 
 					<?php } ?>
 				</select>
 			</div>
