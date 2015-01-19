@@ -115,7 +115,7 @@
 							<div class="size sm">
 								<i class="text-primary icon-admisiones-primeros-puestos"></i>
 							</div>
-							<small class="thin"><?php print t('Requirements') ?></small>
+							<small class="thin text-primary"><?php print t('Requirements') ?></small>
 						</div>
 					</li>
 					<?php endif; ?>
@@ -126,7 +126,7 @@
 							<div class="size sm">
 								<i class="text-primary icon-admisiones-alto-rendimiento"></i>
 							</div>
-							<small class="thin"><?php print t('Agenda') ?></small>
+							<small class="thin text-primary"><?php print t('Agenda') ?></small>
 						</div>
 					</li>
 					<?php endif; ?>
@@ -137,7 +137,7 @@
 							<div class="size sm">
 								<i class="text-primary icon-admisiones-traslado"></i>
 							</div>
-							<small class="thin"><?php print t('Sign up') ?></small>
+							<small class="thin text-primary"><?php print t('Sign up') ?></small>
 						</div>
 					</li>
 					<?php endif; ?>
@@ -148,7 +148,7 @@
 							<div class="size sm">
 								<i class="text-primary icon-admisiones-centro-pre"></i>
 							</div>
-							<small class="thin"><?php print t('Contact us') ?></small>
+							<small class="thin text-primary"><?php print t('Contact us') ?></small>
 						</div>
 					</li>
 					<?php endif; ?>
@@ -159,7 +159,7 @@
 							<div class="size sm">
 								<i class="text-primary icon-admisiones-bachillerato"></i>
 							</div>
-							<small class="thin"><?php print t('Brochure') ?></small>
+							<small class="thin text-primary"><?php print t('Brochure') ?></small>
 						</div>
 					</li>
 					<?php endif; ?>
