@@ -5,6 +5,8 @@
 
   $fields = entity_load('field_collection_item');
 
+  kpr($fields);
+
   $derecho_superior_txt1 = $fields[1]->field_texto_superior_1['und'][0]['value'];
   $derecho_superior_txt2 = $fields[1]->field_texto_superior_2['und'][0]['value'];
   $derecho_superior_link = $fields[1]->field_link['und'][0]['value'];
