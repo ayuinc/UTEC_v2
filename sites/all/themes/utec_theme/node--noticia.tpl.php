@@ -4,7 +4,7 @@
   $path = $base_url.'/'.$theme_path;
   $pathfile= variable_get('file_public_path', conf_path() . '/files/');
 
-  $category = $fields['field_categor_a']->content;
+  $category = $node->field_categor_a['und']['0']['value'];
 	$titulo = $node->title;	 		
 	$cuerpo = $node->body['und']['0']['value'];	
 	$imagen = $node->field_imagen['und']['0']['filename'];
@@ -31,8 +31,8 @@
 				<?php endforeach; ?>
 			</div>
 			<!-- Controls -->
-			<?php $images = $node->field_imagen['und']; $count=0; ?>
-			<?php if($count > 1) : ?>
+			<?php $images = $node->field_imagen['und']['1']; ?>
+			<?php if($images) : ?>
 			  <a class="left carousel-control" href="#carousel-custom" role="button" data-slide="prev">
 			    <span class="icon-prev hidden-xs" aria-hidden="true"></span>
 			    <span class="sr-only">Previous</span>

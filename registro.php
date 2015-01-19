@@ -774,6 +774,8 @@ $param = array('familia' => $v0, 'nombres' => $v1, 'apelPat' => $v2, 'apelMat' =
                                         'telfFijo' => $v21, 'anhoEstudios' => $v22, 'colegio' => $v23, 'rendimiento' => $v24, 'ip' => $v25, 'codActividad' => $v26, 'esEstudiante' => $v27, 'gradoInstruccion' => $v28, 'gradoColegio' => $v29, 'movilOperador' => $v30,
                                         'codPais' => $v31, 'numRPM' => $v32, 'comoSupoNosotros' => $v33, 'codigoProducto' => $v34, 'codigoProgramacion' => $v35, 'comentario' => $v36, 'origenOportunidad' => $v37, 'univProcedencia' => $v38);
 
+print_r($param);
+
 $response = $client->call( 'registrarInscripcion', $param );
 
 $error = $client->getError();
