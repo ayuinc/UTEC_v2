@@ -137,7 +137,7 @@ if($origen == "Examen de Admisión" || $origen == "Primeros puestos" || $origen 
 
 
 if($origen == "Formulario inscripcion examen de admision" || $origen == "Inscripcion Alto Rendimiento" || $origen == "Inscripcion Centro Preuniversitario" || 
-   $origen == "Inscripcion Primeros Puestos" || $origen == "Inscripcion Traslado Externo" || $origen == "Inscripcion Bachillerato Internacional" )
+   $origen == "Formulario inscripcion primeros puestos" || $origen == "Inscripcion Traslado Externo" || $origen == "Inscripcion Bachillerato Internacional" )
 {
 
     $fromTelemarketing = "inscripciones@utec.edu.pe";
@@ -182,7 +182,7 @@ if($origen == "Formulario inscripcion examen de admision" || $origen == "Inscrip
         $origen = "pagina-inscripcion-centro-preuniversitario";  
     }
 
-    if($origen == "Inscripcion Primeros Puestos")
+    if($origen == "Formulario inscripcion primeros puestos")
     {
         $tituloTelemarketing = "Registro de Inscripciones - Primeros Puestos UTEC";
         $subjectTelemarketing = "Registro de Inscripciones - Primeros Puestos UTEC";
