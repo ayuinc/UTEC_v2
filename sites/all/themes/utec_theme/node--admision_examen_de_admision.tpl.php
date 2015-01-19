@@ -16,63 +16,11 @@ $field_temario_examen = $node->field_temario_examen['und']['0']['value'];
 		<p class="lead text-gray"><?php print $field_descripcion_corta_examen ?></p>
 		<div class="mb-ch-42">
 			<div>
-				<h3><?php print t('How to apply?') ?>v</h3>
+				<h3><?php //print t('How to apply?') ?>v</h3>
 				<div class="list-custom">
 					<?php  print $field_como_postula_examen ?>
 				</div>
 			</div>
-			<!--<div>
-				<ul class="grid-list grid-list-3 text-center pv-42 mb-ch-21">
-					<li>
-						<div>
-							<div class="size lg text-primary">
-								<i class="icon-inscripcion-certificado"></i>
-							</div>
-							<h4>Certificados originales de estudios de los 5 años de Educación Secundaria</h4>
-						</div>
-					</li>
-					<li>
-						<div>
-							<div class="size lg text-primary">
-								<i class="icon-inscripcion-dni"></i>
-							</div>
-							<h4>Certificados originales de estudios de los 5 años de Educación Secundaria</h4>
-						</div>
-					</li>
-					<li>
-						<div>
-							<div class="size lg text-primary">
-								<i class="icon-inscripcion-promedio"></i>
-							</div>
-							<h4>Certificados originales de estudios de los 5 años de Educación Secundaria</h4>
-						</div>
-					</li>
-					<li>
-						<div>
-							<div class="size lg text-primary">
-								<i class="icon-inscripcion-fotografia"></i>
-							</div>
-							<h4>Certificados originales de estudios de los 5 años de Educación Secundaria</h4>
-						</div>
-					</li>
-					<li>
-						<div>
-							<div class="size lg text-primary">
-								<i class="icon-inscripcion-resolucion"></i>
-							</div>
-							<h4>Certificados originales de estudios de los 5 años de Educación Secundaria</h4>
-						</div>
-					</li>
-					<li>
-						<div>
-							<div class="size lg text-primary">
-								<i class="icon-inscripcion-descargar-documento"></i>
-							</div>
-							<h4>Certificados originales de estudios de los 5 años de Educación Secundaria</h4>
-						</div>
-					</li>
-				</ul>
-			</div>-->
 			<div>
 				<h3><?php print t('Costs:') ?></h3>
 					<div class="list-custom">
