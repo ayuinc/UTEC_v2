@@ -34,7 +34,7 @@
 		    <span class="sr-only">Next</span>
 		  </a>	
 		</div>
-		<div class="pv-ch-42">
+		<div class="pv-ch-28">
 			<p><?php print $cuerpo ?></p>
 		</div>
 	</div>
