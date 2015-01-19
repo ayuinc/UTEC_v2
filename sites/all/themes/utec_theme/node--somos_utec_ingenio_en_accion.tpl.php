@@ -25,7 +25,7 @@
 <?php $field_foto_redes_sociales = $node->field_foto_redes_sociales['und']['0']['filename']; ?>
 
 <div class="hero-unit size lg">
-	<div data-section-scroll="Que es" class="section-scroll-content flex-middle-center">
+	<div data-section-scroll="Acerca de" class="section-scroll-content flex-middle-center">
 		<div class="container-sm text-center">
 			<h1 class="mb-7"><?php print $field_frase_autor ?></h1>
 			<p class="mb-0 pb-0"><?php print $field_nombre_autor ?></p>
@@ -87,9 +87,11 @@
 		<hr class="hr-gray">
 		<p class="lead gray"><?php print $field_subtitulo_proyecto ?></p>
 		<p class="gray mb-42 lead"><?php print $field_descripcion_proyecto ?></p>
-		<?php if ($field_link_proyecto!='') { ?>
-			<a href="<?php print $field_link_proyecto ?>" class="btn btn-outline btn-primary see-more btn-sm"><?php print t('Read more') ?></a>
-		<?php } ?>
+		<div class="text-right">
+			<?php if ($field_link_proyecto!='') { ?>
+				<a href="<?php print $field_link_proyecto ?>" class="btn btn-outline btn-primary see-more btn-sm"><?php print t('Read more') ?></a>
+			<?php } ?>
+		</div>
 	</div>
 	<a class="scroll-down scroll-down-sq size lg" rel="nofollow">
 		<i class="icon-arrows-down bg-info text-white"></i>
