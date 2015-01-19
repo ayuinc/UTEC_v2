@@ -1,4 +1,5 @@
 .calendar {
+	text-align: center;
 	.row {
 		> div {
 			min-height: 140px; 
@@ -11,7 +12,7 @@
 			}
 			.date {
 				span {
-					font-size: $font-size-h3;
+					font-size: $font-size-h4;
 					@include light;
 					color: $gray;
 				}
