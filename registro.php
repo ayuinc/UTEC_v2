@@ -25,7 +25,7 @@ if (!isset($_POST['distrito'])) {$_POST['distrito'] = "";};
 if (!isset($_POST['direccion-actual'])) {$_POST['direccion-actual'] = "";};
 if (!isset($_POST['email'])) {$_POST['email'] = "";};
 if (!isset($_POST['celular-1'])) {$_POST['celular-1'] = "";};
-if (!isset($_POST['celular-2'])) {$_POST['celular-2'] = ""; $celular2 = ""; };
+if (!isset($_POST['celular-2'])) {$_POST['celular-2'] = "";};
 if (!isset($_POST['telefono'])) {$_POST['telefono'] = "";};
 if (!isset($_POST['ano-culminacion'])) {$_POST['ano-culminacion'] = "";};
 if (!isset($_POST['colegio'])) {$_POST['colegio'] = "";};
@@ -35,6 +35,7 @@ if (!isset($_POST['estudios-distrito'])) {$_POST['estudios-distrito'] = "";};
 if (!isset($_POST['estudios-rendimiento'])) {$_POST['estudios-rendimiento'] = "";};
 if (!isset($_POST['estudiante'])) {$_POST['estudiante'] = "N";};
 if (!isset($_POST['consulta'])) {$_POST['consulta'] = "";};
+
 
 if ($_POST['dia'] != "")
 {
@@ -75,7 +76,6 @@ $origen = "";
 //Definicón de subject, destinatario, título
 
 $origen = utf8_decode($_POST['origen']);
-print_r($origen);
 
 if($origen == "Examen de Admisión" || $origen == "Primeros puestos" || $origen == "Alto rendimiento" || 
    $origen == "Traslado Externo" || $origen == "Centro Pre" || $origen == "Bachillerato Internacional" )
@@ -150,6 +150,8 @@ if($origen == "Inscripción Examen de Admisión" || $origen == "Inscripcion Alto
 
     if($origen == "Inscripción Examen de Admisión")
     {
+        echo "HOOOOOOOOOLA";
+
         $tituloTelemarketing = "Registro de Inscripciones - Examen de Admisión UTEC";
         $subjectTelemarketing = "Registro de Inscripciones - Examen de Admisión UTEC";
         $subjectCliente = "Registro de Inscripciones - Examen de Admisión UTEC";
@@ -329,7 +331,7 @@ $mensaje_html .= '<html><body><table><tr>
        </tr>
        <tr>
                             <td>2er Nro de Celular:</td>
-                            <td>'.utf8_decode($celular2).'</td>
+                            <td>'.$_POST['celular-2'].'</td>
        </tr>
        <tr>
                             <td>Telefono Fijo:</td>
