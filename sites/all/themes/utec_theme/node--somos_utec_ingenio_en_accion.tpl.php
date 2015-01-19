@@ -35,16 +35,16 @@
 				<?php print $field_introduccion_autor ?>
 			</div>
 		</div>
-		<!--<a class="scroll-down scroll-down-sq size lg" href="#sec-1" rel="nofollow">
-			<i class="icon-arrows-down bg-info-op text-white"></i>
-		</a>-->
 	</div>
+	<a class="scroll-down scroll-down-sq size lg" rel="nofollow">
+		<i class="icon-arrows-down bg-info-op text-white"></i>
+	</a>
 </div> <!-- END:Hero -->
 <div data-section-scroll="Un panel" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_foto_causa)?>);">
 	<div class="overlay flex-middle">
 		<div class="container hero-text">
 			<div class="row">
-				<div class="col-sm-7 text-white normalize-text">
+				<div class="col-sm-6 text-white normalize-text">
 					<h2 class="thin h1"><?php print $field_titulo_causa ?></h2>
 					<hr class="hr-white">
 					<h4 class="lead thin"><?php print $field_descripcion_causa ?></h4>
@@ -65,7 +65,7 @@
 	<div class="overlay flex-middle">
 		<div class="container hero-text">
 			<div class="row">
-				<div class="col-sm-5 text-white normalize-text">
+				<div class="col-sm-6 text-white normalize-text">
 					<h2 class="thin h1"><?php print $field_titulo_tres_acciones ?></h2>
 					<hr class="hr-white">
 					<h4 class="lead thin"><?php print $field_subitulo_tres_acciones ?></h4>
