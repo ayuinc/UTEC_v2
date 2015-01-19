@@ -73,11 +73,11 @@ $familia = "";
 $origen = "";
 
 
+print_r($carrera_elegida);
+print_r($carreras[$carrera_elegida]);
 //Definicón de subject, destinatario, título
 
 $origen = utf8_decode($_POST['origen']);
-print_r($origen);
-
 if($origen == "Examen de Admisión" || $origen == "Primeros puestos" || $origen == "Alto rendimiento" || 
    $origen == "Traslado Externo" || $origen == "Centro Pre" || $origen == "Bachillerato Internacional" )
 {
@@ -138,11 +138,6 @@ if($origen == "Examen de Admisión" || $origen == "Primeros puestos" || $origen 
     }
 }
 
-    
-    if($origen == "Formulario inscripcion examen de admision")
-    {
-        echo "Hoooooooooola";
-    }
 
 if($origen == "Formulario inscripcion examen de admision" || $origen == "Inscripcion Alto Rendimiento" || $origen == "Inscripcion Centro Preuniversitario" || 
    $origen == "Inscripcion Primeros Puestos" || $origen == "Inscripcion Traslado Externo" || $origen == "Inscripcion Bachillerato Internacional" )
@@ -156,8 +151,6 @@ if($origen == "Formulario inscripcion examen de admision" || $origen == "Inscrip
 
     if($origen == "Formulario inscripcion examen de admision")
     {
-        echo "HOOOOOOOOOLA";
-
         $tituloTelemarketing = "Registro de Inscripciones - Examen de Admisión UTEC";
         $subjectTelemarketing = "Registro de Inscripciones - Examen de Admisión UTEC";
         $subjectCliente = "Registro de Inscripciones - Examen de Admisión UTEC";
