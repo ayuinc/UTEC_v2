@@ -122,6 +122,8 @@
         </li>
       <?php endforeach ?>
     </ul>
+  </div>
+  <div class="container-sm">
     <h3 class="lead thin text-gray"><em><?php print $profesor_txt ?></em></h3>
   </div>
   <a class="scroll-down scroll-down-sq size lg" href="#perfil-egresado" rel="nofollow">

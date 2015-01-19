@@ -16,7 +16,7 @@
 <!--<div>
 	<img src="<?php print $pathfile.$image; ?>" alt="#" class="img-responsive">
 </div>-->
-<div class="pb-7">
+<li>
 	<h3>
 		<?php if ($field_pdf_proyectos!='') { ?>
 		<a href="<?php print $field_pdf_proyectos ?>" target="_blank">
@@ -36,7 +36,7 @@
 			<?php endforeach; ?>
 		</div>
 	<?php } ?>
-</div>
+</li>
 
 
 
