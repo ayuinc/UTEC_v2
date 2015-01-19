@@ -16,7 +16,7 @@
       <?php print $row;?>
     <?php endforeach; ?>
   </ul>
-  <div class="text-right">
+  <!--<div class="text-right">
     <a href="#" class="btn btn-lg btn-primary btn-gray see-more uppercase light"><?php print t('See all news') ?></a>
-  </div>
+  </div>-->
 </div>  
