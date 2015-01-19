@@ -37,8 +37,8 @@
 		</div>
 		<div class="text-gray h3 thin">
 			<label for="">Género:</label>
-			<input  id="femenino" type="radio" checked name="genre"> Femenino
-			<input  id="masculino" type="radio" name="genre"> Masculino
+			<input  id="femenino" type="radio" checked name="genero	" value="F"> Femenino
+			<input  id="masculino" type="radio" name="genero" value="M"> Masculino
 		</div>
 		<div class="row">
 			<div class="form-group col-sm-4">
