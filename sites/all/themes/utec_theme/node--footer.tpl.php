@@ -1,24 +1,24 @@
 <?php global $language ?>
 <!-- FOOTER -->
-	<div class="subscribe pv-7 bg-gray-darker hidden-xs">
+	<!-- <div class="subscribe pv-7 bg-gray-darker hidden-xs">
 		<div class="container">
 			<ul class="grid-list grid-list-centered normalize-text">
 				<li>
-					<h3 class="thin text-white pt-7"><i class="icon-subscribe mr-7"></i><?php print t('Subscribe to UTEC') ?></h3>
+					<h3 class="thin text-white pt-7"><i class="icon-subscribe mr-7"></i><?php //print t('Subscribe to UTEC') ?></h3>
 				</li>
 				<li>
 					<div class="form-subscribe">
 						<form action="" class="form-inline mb-ch-0">
 							<div class="form-group">
-								<label for="subscribe_name" class="sr-only"><?php print t('Name') ?></label>
-                <?php if ($language->prefix == 'en'): ?>
+								<label for="subscribe_name" class="sr-only"><?php //print t('Name') ?></label>
+                <?php //if ($language->prefix == 'en'): ?>
 								  <input type="text" class="form-control" width="210" height="auto" placeholder="Name">
-                <?php elseif ($language->prefix == 'es'): ?>
+                <?php //elseif ($language->prefix == 'es'): ?>
                   <input type="text" class="form-control" width="210" height="auto" placeholder="Nombre">
-                <?php endif ?>
+                <?php //endif ?>
 							</div>
 							<div class="form-group">
-								<label for="subscribe_email" class="sr-only"><?php print t('Email') ?></label>
+								<label for="subscribe_email" class="sr-only"><?php //print t('Email') ?></label>
 								<input type="text" class="form-control" width="210" height="auto" placeholder="E-mail">
 								<button class="btn btn-outline btn-white"><i class="icon-arrows-right"></i></button>
 							</div>
@@ -27,7 +27,7 @@
 				</li>
 			</ul>
 		</div>
-	</div>
+	</div> -->
 	<div class="site-map pv-14 bg-gray-dark hidden-xs">
 		<div class="container">
 			<ul class="grid-list grid-list-6 grid-list-2-xs">
