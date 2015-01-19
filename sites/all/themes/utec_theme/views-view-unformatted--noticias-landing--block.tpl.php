@@ -21,7 +21,7 @@
 		  <?php $count++; ?>
 			<?php endforeach; ?>
 		</div>
-		<!-- Controls -->
+		<!-- Controls -->		
 	  <a class="left carousel-control" href="#carousel-custom" role="button" data-slide="prev">
 	    <span class="icon-prev hidden-xs" aria-hidden="true"></span>
 	    <span class="sr-only"><?php print t('Previews') ?></span>

@@ -43,7 +43,7 @@
 		<div class="row">
 			<div class="form-group col-sm-4">
 				<label for="" class="sr-only">Carrera de interés</label>
-				<select name="carrera" id="carreras" class="form-control select-override">
+				<select name="carrera" id="carrera" class="form-control select-override">
 					<option value="Carrera de interés">Carrera de interés</option>
 					<option value="15970"><?php print t('Industrial Engineering') ?></option>
 		            <option value="14864"><?php print t('Mechanical Engineering') ?></option>
@@ -85,16 +85,19 @@
 			<div class="form-group col-sm-4">
 				<select name="dia" id="dia" class="form-control select-override">
 					<option value="Día">Día</option>
+					<option value="0">0</option>
 				</select>
 			</div>
 			<div class="form-group col-sm-4">
 				<select name="mes" id="mes" class="form-control select-override">
 					<option value="Mes">Mes</option>
+					<option value="0">0</option>
 				</select>
 			</div>
 			<div class="form-group col-sm-4">
 				<select name="ano" id="ano" class="form-control select-override">
 					<option value="Año">Año</option>
+					<option value="0">0</option>
 				</select>
 			</div>
 		</div>
@@ -148,6 +151,7 @@
 			<div class="col-sm-3 form-group">
 				<select name="ano-culminacion" id="ano-culminacion" class="form-control select-override">
 					<option value="Año">Año</option>
+					<option value="0">0</option>
 				</select>
 			</div>
 			<div class="col-sm-9 form-group">
