@@ -139,12 +139,12 @@ if($origen == "Examen de Admisión" || $origen == "Primeros puestos" || $origen 
 }
 
     
-    if($origen == "Inscripción Examen de Admisión")
+    if($origen == "Formulario inscripcion examen de admision")
     {
         echo "Hoooooooooola";
     }
 
-if($origen == "Inscripción Examen de Admisión" || $origen == "Inscripcion Alto Rendimiento" || $origen == "Inscripcion Centro Preuniversitario" || 
+if($origen == "Formulario inscripcion examen de admision" || $origen == "Inscripcion Alto Rendimiento" || $origen == "Inscripcion Centro Preuniversitario" || 
    $origen == "Inscripcion Primeros Puestos" || $origen == "Inscripcion Traslado Externo" || $origen == "Inscripcion Bachillerato Internacional" )
 {
 
@@ -154,7 +154,7 @@ if($origen == "Inscripción Examen de Admisión" || $origen == "Inscripcion Alto
     $fromCliente = "admision@utec.edu.pe";
     $fromNameCliente = "UTEC – Admisión";
 
-    if($origen == "Inscripción Examen de Admisión")
+    if($origen == "Formulario inscripcion examen de admision")
     {
         echo "HOOOOOOOOOLA";
 
