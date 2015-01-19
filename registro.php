@@ -73,11 +73,11 @@ $familia = "";
 $origen = "";
 
 
+print_r($carrera_elegida);
+print_r($carreras[$carrera_elegida]);
 //Definicón de subject, destinatario, título
 
 $origen = utf8_decode($_POST['origen']);
-print_r($origen);
-
 if($origen == "Examen de Admisión" || $origen == "Primeros puestos" || $origen == "Alto rendimiento" || 
    $origen == "Traslado Externo" || $origen == "Centro Pre" || $origen == "Bachillerato Internacional" )
 {
