@@ -136,7 +136,7 @@ if($origen == "Examen de Admisión" || $origen == "Primeros puestos" || $origen 
 }
 
 
-if($origen == "Inscripcion Examen Admisión" || $origen == "Inscripcion Alto Rendimiento" || $origen == "Inscripcion Centro Preuniversitario" || 
+if($origen == "Inscripción Examen de Admisión" || $origen == "Inscripcion Alto Rendimiento" || $origen == "Inscripcion Centro Preuniversitario" || 
    $origen == "Inscripcion Primeros Puestos" || $origen == "Inscripcion Traslado Externo" || $origen == "Inscripcion Bachillerato Internacional" )
 {
 
@@ -146,7 +146,7 @@ if($origen == "Inscripcion Examen Admisión" || $origen == "Inscripcion Alto Ren
     $fromCliente = "admision@utec.edu.pe";
     $fromNameCliente = "UTEC – Admisión";
 
-    if($origen == "Inscripcion Examen Admisión")
+    if($origen == "Inscripción Examen de Admisión")
     {
         $tituloTelemarketing = "Registro de Inscripciones - Examen de Admisión UTEC";
         $subjectTelemarketing = "Registro de Inscripciones - Examen de Admisión UTEC";
