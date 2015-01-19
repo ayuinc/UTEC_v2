@@ -23,9 +23,7 @@ $field_temario_alto = $node->field_temario_alto['und']['0']['value'];
 		<div class="mb-ch-42">
 			<div>
 				<h3><?php print t('How to apply?') ?></h3>
-				<div class="list-custom">
-					<?php  print $field_como_postular_alto ?>
-				</div>
+				<?php  print $field_como_postular_alto ?>
 			</div>
 			<div>
 				<h3><?php print t('Costs:') ?></h3>
