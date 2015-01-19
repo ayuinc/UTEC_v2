@@ -21,7 +21,7 @@
 					<div class="user-pic"><img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt=""></div>
 					<div class="user-info">
 						<!--<a href="#">Rosa María Llosa Demartini</a>-->
-						<?php print $name ?> 
+						<a href="/user/<?php print $uid ?>"><?php print $name ?></a>
 						<span><?php print $desc?></span>
 						<a href="mailto:<?php print $mail ?>"><?php print $mail ?></a></div>
 				</div>
