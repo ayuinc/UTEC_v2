@@ -17,9 +17,9 @@
 ?>
 
 <li>
-	<h3><a href="<?php print $link ?>" target="_blank"><?php print $titulo ?></a></h3>
+	<h3 class="mb-14"><a href="<?php print $link ?>" target="_blank" class="text-gray-darker"><?php print $titulo ?></a></h3>
 	<?php if ($investigador!='') { ?>
-		<p class="mt-14 lead"><span class="bold">Investigador: </span><span><?php print $investigador ?></span></p>
+		<p class="lead"><span class="bold">Investigador: </span><span><?php print $investigador ?></span></p>
 	<?php } ?>
 	<?php if ($tipo!='') { ?>
 		<p><span class="bold">Tipo: </span><span><?php print $tipo ?></span></p>
