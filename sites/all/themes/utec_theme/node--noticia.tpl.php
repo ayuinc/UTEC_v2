@@ -4,10 +4,11 @@
   $path = $base_url.'/'.$theme_path;
   $pathfile= variable_get('file_public_path', conf_path() . '/files/');
 
-  $category = $node->field_categor_a['und']['0']['value'];
+  $category = $node->field_categor_a['und']['0']['taxonomy_term']->name;
 	$titulo = $node->title;	 		
 	$cuerpo = $node->body['und']['0']['value'];	
 	$imagen = $node->field_imagen['und']['0']['filename'];
+	//kpr($node);
 ?>
 
 <div class="container-sm">
