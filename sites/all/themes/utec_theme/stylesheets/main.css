@@ -5377,7 +5377,11 @@ textarea:-ms-input-placeholder {
   .breadcrumbs-dark .pane-page-breadcrumb .pane-content .breadcrumb {
     padding-left: 0;
     list-style: none;
-    margin: 0; }
+    margin: 0;
+    text-transform: uppercase;
+    font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
+    font-weight: 100;
+    font-style: normal; }
 
 .breadcrumbs-light .breadcrumb {
   color: white; }
