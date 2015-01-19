@@ -21,6 +21,9 @@
 		<img src="<?php print('/'.$pathfile.$field_foto_generica_admision)?>" class="img-responsive mb-35">
 	<?php } ?>	
 	<?php if ($field_contenido_generica!='') { ?>
+		<?php if ($end=='primeros-puestos') { ?>
+			<h3><?php print t('How to apply?') ?></h3>
+		<?php } ?>
 		<p class="lead text-gray mb-42"><?php print $field_contenido_generica ?></p>
 	<?php } ?>	
 </div>
