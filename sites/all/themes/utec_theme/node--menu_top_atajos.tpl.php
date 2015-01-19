@@ -1,6 +1,7 @@
 <?php 
   global $base_url;
   global $theme_path;
+  global $language;
   $path = $base_url.'/'.$theme_path;
   $pathfile = variable_get('file_public_path', conf_path() . '/files/');
 
@@ -36,7 +37,13 @@
                   $nombre = $field[$num]->field_nombre['und'][0]['value'];
                   $link = $field[$num]->field_link_atajo['und'][0]['value'];
                 ?>
-                <li><a href="<?php print $link ?>"><?php print $nombre ?></a></li>
+                <li>
+                  <?php if ($language->prefix == 'en') : ?>
+                    <a href="<?php print $link_ingles ?>"><?php print $nombre_ingles ?></a>
+                  <?php elseif ($language->prefix == 'es') : ?>
+                    <a href='<?php print $link ?>'><?php print $nombre ?></a>
+                  <?php endif; ?>
+                </li>
               <?php endforeach; ?>  
             </ul>
           </li>
@@ -48,9 +55,17 @@
             $num = $fid['value'];
             $field = entity_load('field_collection_item', array($fid['value']));
             $nombre = $field[$num]->field_nombre['und'][0]['value'];
+            $nombre_ingles = $field[$num]->field_nombre_ingles['und'][0]['value'];
             $link = $field[$num]->field_link_atajo['und'][0]['value'];
+            $link_ingles = $field[$num]->field_link_atajo_ingles['und'][0]['value'];
           ?>
-          <li><a href="<?php print $link ?>"><?php print $nombre ?></a></li>
+          <li>
+            <?php if ($language->prefix == 'en') : ?>
+              <a href="<?php print $link_ingles ?>"><?php print $nombre_ingles ?></a>
+            <?php elseif ($language->prefix == 'es') : ?>
+              <a href='<?php print $link ?>'><?php print $nombre ?></a>
+            <?php endif; ?>
+          </li>
         <?php endforeach; ?>  
       </ul>
     </div>
