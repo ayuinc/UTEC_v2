@@ -109,15 +109,16 @@
       <?php foreach ($node->field_profesor['und'] as $key => $value) :?>
         <?php $name = $value['entity']->name; ?>
 				<?php $pic = $value['entity']->picture->filename; ?>
+				<?php $uid = $value['entity']->uid; ?>
         <?php $desc = $value['entity']->field_descripci_n['und'][0]['value']; ?>
         <?php //die(print_r($value)); ?>
         <li class="mb-ch-14">
           <div class="grid-list-pic">
             <img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="" width="180px" height="auto" class="img-circle">
           </div>
-          <!-- <a href="" class="h4 mb-0"> -->
+          <a href="/user/<?php print $uid ?>" class="h4 mb-0">
             <h4 class="mb-0"><?php print $name ?></h4>
-          <!-- </a> -->
+          </a>
           <p class="font-profesores"><?php print $desc ?></p>
         </li>
       <?php endforeach ?>
