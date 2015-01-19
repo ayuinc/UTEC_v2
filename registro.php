@@ -72,8 +72,8 @@ $fromNameCliente = "";
 $familia = "";
 $origen = "";
 
-
 //Definicón de subject, destinatario, título
+
 $origen = utf8_decode($_POST['origen']);
 if($origen == "Examen de Admisión" || $origen == "Primeros puestos" || $origen == "Alto rendimiento" || 
    $origen == "Traslado Externo" || $origen == "Centro Pre" || $origen == "Bachillerato Internacional" )
