@@ -17,7 +17,7 @@
 	<img src="<?php print $pathfile.$image; ?>" alt="#" class="img-responsive">
 </div>-->
 <li>
-	<h3>
+	<h3 class="mb-14">
 		<?php if ($field_pdf_proyectos!='') { ?>
 		<a href="<?php print $field_pdf_proyectos ?>" target="_blank">
 		<?php } ?>
@@ -33,9 +33,9 @@
 	<?php } ?>
 	<?php if ($tags!='') { ?>
 		<p class="small text-gray-light">
-			<span class="lead bold">Tags: </span>
+			<span class="bold">Tags: </span>
 			<?php foreach ($tags as $key => $value) : ?>
-				<span class="lead"><?php print $value['taxonomy_term']->name; ?> -</span>
+				<span><?php print $value['taxonomy_term']->name; ?> -</span>
 			<?php endforeach; ?>
 		</p>
 	<?php } ?>
