@@ -18,7 +18,6 @@
 			<li class="mb-ch-14">
 				<div class="grid-list-pic"><img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="" width="98px" height="auto" class="img-circle"></div>
 				<div>
-					<!--<a href="#">Rosa María Llosa Demartini</a>-->
 					<a href="/user/<?php print $uid ?>"><?php print $name ?></a> 					
 					<span><?php print $desc?></span>
 				</div>

@@ -51,7 +51,7 @@
 						<div class="col-sm-9">
 							<h3 class="lead thin"><?php print $field_descripcion_causa ?></h3>
 							<?php if ($field_link_causa!='') { ?>
-								<a href="<?php print $field_link_causa ?>" class="btn btn-white btn-outline btn-sm see-more">Ver más</a>
+								<a href="<?php print $field_link_causa ?>" class="btn btn-white btn-outline btn-sm see-more"><?php print t('Read more') ?></a>
 							<?php } ?>
 						</div>
 					</div>
@@ -62,7 +62,7 @@
 </div>
 <div class="pvp-7">
 	<div class="container-sm text-center">
-		<p class="lead"><?php print $field_frase_causa ?></p>
+		<h3 class="lead"><?php print $field_frase_causa ?></h3>
 	</div>
 </div>
 <div data-section-scroll="Tres acciones" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_foto_tres_acciones)?>);">
@@ -76,7 +76,7 @@
 						<div class="col-sm-9">
 							<h2 class="lead thin"><?php print $field_subitulo_tres_acciones ?></h2>
 							<?php if ($field_link_tres_acciones!='')  { ?>
-								<a href="<?php print $field_link_tres_acciones ?>" class="btn btn-white btn-outline btn-sm see-more">Ver más</a>
+								<a href="<?php print $field_link_tres_acciones ?>" class="btn btn-white btn-outline btn-sm see-more"><?php print t('Read more') ?></a>
 							<?php } ?>
 						</div>
 					</div>
@@ -92,7 +92,7 @@
 		<p class="lead gray"><?php print $field_subtitulo_proyecto ?></p>
 		<p class="gray mb-42 lead"><?php print $field_descripcion_proyecto ?></p>
 		<?php if ($field_link_proyecto!='') { ?>
-			<a href="<?php print $field_link_proyecto ?>" class="btn btn-outline btn-primary see-more btn-sm">Ver más</a>
+			<a href="<?php print $field_link_proyecto ?>" class="btn btn-outline btn-primary see-more btn-sm"><?php print t('Read more') ?></a>
 		<?php } ?>
 	</div>
 	<a class="scroll-down scroll-down-sq size lg" rel="nofollow">
@@ -102,8 +102,8 @@
 <div data-section-scroll="Descubre más" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_foto_redes_sociales)?>);">
 	<div class="overlay flex-middle">
 		<div class="container-xs text-white text-center hero-text relative on-top">
-			<h2 class="h3 mb-0">A todo esto le llamamos </h2> <h1 class="thin mt-0">Ingenio en Acción</h1>
-			<p class="thin font-carreras">Descubre más de #ingenioenaccion en:</p>
+			<h2 class="h3 mb-0"><?php print t('We call it:') ?></h2> <h1 class="thin mt-0"><?php print t('Ingenuity in Action') ?></h1>
+			<p class="thin font-carreras"><?php print t('Discover more of #ingenuityinaction:') ?></p>
 			<ul class="grid-list grid-list-centered">
 				<li class="p-0">
 					<a href="https://www.facebook.com/ingenioenaccion" class="btn btn-facebook btn-circle"><i class="icon-footer-facebook"></i></a>
@@ -119,6 +119,6 @@
 <div id="section-scroll" class="hidden-xs hidden-sm">
 	<ul></ul>
 	<div class="text-right pv-21 btn-apply animated">
-		<a href="#" class="btn btn-primary uppercase">Postular</a>
+		<a href="#" class="btn btn-primary uppercase"><?php print t('Apply') ?></a>
 	</div>
 </div>
