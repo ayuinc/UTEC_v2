@@ -16,7 +16,7 @@
 	examen de admision
 	<h1 class="light"><?php print t('Form') ?></h1>
 	<div clsass="separator-gray separator-lg"></div>
-	<h3 class="thin text-gray pt-21 pb-56"><?php  ?><?php print t('Applicant Information') ?></h3>
+	<h3 class="thin text-gray pt-21 pb-56"><?php print t('Examen de admision') ?></h3>
 </div>
 <div class="container-sm form-custom">
 	<form action="/registro.php" data-submit="Formulario de inscripcion" method="post">
@@ -31,41 +31,60 @@
 			<div class="row">
 				<div class="form-group col-sm-7">
 					<label for="" class="sr-only"><?php print t('Last Name') ?></label>
-					<input type="text" class="form-control" placeholder="Apellidos" name="apellidop" id="apellidop">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-7 form-group">
-					<label for="" class="sr-only"><?php print t('E-Mail') ?></label>
-					<input type="email" class="form-control" placeholder="e-mail" name="email" id="email">
+					<input type="text" class="form-control" placeholder="Apellido paterno" name="apellido_paterno" id="apellido_paterno">
 				</div>
 			</div>
 			<div class="row">
 				<div class="form-group col-sm-7">
-					<label for="" class="sr-only"><?php print t('Phone') ?></label>
-					<input type="text" class="form-control" placeholder="Telefono" name="telefono" id="telefono">
+					<label for="" class="sr-only"><?php print t('Last Name') ?></label>
+					<input type="text" class="form-control" placeholder="Apellido materno" name="apellido_materno" id="apellido_materno">
 				</div>
 			</div>
 			<div class="row">
 				<div class="form-group col-sm-7">
-					<label for="" class="sr-only"><?php print t('Undergrad Program') ?></label>
-					<select name="carrera" id="carrera" class="form-control select-override">
-						<option value="Carrera de interés"><?php print t('Undergrad Program') ?></option>
-						  <option value="15970">Ingeniería Industrial</option>
-		                  <option value="14864">Ingeniería Mecánica</option>
-		                  <option value="15968">Ingeniería de la Energía</option>
-		                  <option value="15964">Ingeniería Electrónica</option>
-		                  <option value="15966">Ingeniería Química Industrial</option>
+					<label for="" class="sr-only"><?php print t('Gender') ?></label>
+					<select name="genero" id="genero" class="form-control select-override">
+					  <option value="15970">Masculino</option>
+            <option value="14864">Femenino</option>
 					</select>
 				</div>
 			</div>
 			<div class="row">
 				<div class="form-group col-sm-7">
-					<label for="" class="sr-only"><?php print t('Check') ?></label>
-					<textarea class="form-control" placeholder="Consulta" name="consulta" id="consulta"></textarea>
+					<label for="" class="sr-only">carrera</label>
+					<input type="text" class="form-control" placeholder="carrera" name="carrera" id="carrera">
 				</div>
 			</div>
-
+			<div class="row">
+				<div class="form-group col-sm-7">
+					<label for="" class="sr-only">carrera</label>
+					<input type="text" class="form-control" placeholder="carrera" name="carrera" id="carrera">
+				</div>
+			</div>
+			<div class="row">
+				<div class="form-group col-sm-7">
+					<label for="" class="sr-only">documento</label>
+					<input type="text" class="form-control" placeholder="documento" name="documento" id="documento">
+				</div>
+			</div>
+			<div class="row">
+				<div class="form-group col-sm-7">
+					<label for="" class="sr-only">lugar de nacimiento</label>
+					<input type="text" class="form-control" placeholder="lugar de nacimiento" name="lugar_nacimiento" id="lugar_nacimiento">
+				</div>
+			</div>
+			<div class="row">
+				<div class="form-group col-sm-7">
+					<label for="" class="sr-only">fecha de nacimiento</label>
+					<input type="text" class="form-control" placeholder="fecha de nacimiento" name="fecha_nacimiento" id="fecha_nacimiento">
+				</div>
+			</div>
+			<div class="row">
+				<div class="form-group col-sm-7">
+					<label for="" class="sr-only">domicilio actual</label>
+					<input type="text" class="form-control" placeholder="domicilio actual" name="domicilio_actual" id="domicilio_actual">
+				</div>
+			</div>
 			<div class="text-right">
 				<button type="submit" class="btn btn-primary btn-lg"><?php print t('Send') ?></button>
 			</div>
