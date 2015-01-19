@@ -15,7 +15,7 @@
 <div class="container-sm">
 	<h1 class="light"><?php print t('Inscripción Examen de Admisión') ?></h1>
 	<div clsass="separator-gray separator-lg"></div>
-	<h3 class="thin text-gray pt-21 pb-56"><?php  ?><?php print t('Applicant Information') ?></h3>
+	<h3 class="thin text-gray pt-21 pb-56"><?php print t('Examen de admision') ?></h3>
 </div>
 <div class="container-sm form-custom">
 	<form action="/registro.php" class="mb-ch-28" data-submit="Formulario de inscripcion" method="post">
