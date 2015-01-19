@@ -5,6 +5,7 @@
   $pathfile= variable_get('file_public_path', conf_path() . '/files/');
 
 	$titulo = $node->title;
+	$titulo_usuario = $node->field_titulo_usuario;
 	$cuerpo = $node->body['und']['0']['value'];
 	$mencion = $node->field_mencion['und']['0']['value'];
 	$electivo = $node->field_electivo['und'];
@@ -13,13 +14,13 @@
 ?>
 
 <div class="container-sm">
-	<h1 class="light"><?php print $field_titulo_usuario; ?></h1>
+	<h1 class="light"><?php print $titulo_usuario; ?></h1>
 	<div clsass="separator-gray separator-lg"></div>
 	<h3 class="thin text-gray pt-21 pb-56"><?php print t('Examen de admision') ?></h3>
 </div>
 <div class="container-sm form-custom">
 	<form action="/registro.php" class="mb-ch-28" data-submit="Formulario de inscripcion" method="post">
-		<input type="hidden" name="origen" value="<?php print $field_titulo_usuario; ?>">
+		<input type="hidden" name="origen" value="<?php print $titulo_usuario; ?>">
 		<div class="row">
 			<div class="form-group col-sm-4">
 				<label for="" class="sr-only">Nombres</label>
