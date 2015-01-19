@@ -76,6 +76,7 @@ $origen = "";
 //Definicón de subject, destinatario, título
 
 $origen = utf8_decode($_POST['origen']);
+print_r($origen);
 
 if($origen == "Examen de Admisión" || $origen == "Primeros puestos" || $origen == "Alto rendimiento" || 
    $origen == "Traslado Externo" || $origen == "Centro Pre" || $origen == "Bachillerato Internacional" )
@@ -137,6 +138,7 @@ if($origen == "Examen de Admisión" || $origen == "Primeros puestos" || $origen 
     }
 }
 
+print_r($origen);
 
 if($origen == "Inscripción Examen de Admisión" || $origen == "Inscripcion Alto Rendimiento" || $origen == "Inscripcion Centro Preuniversitario" || 
    $origen == "Inscripcion Primeros Puestos" || $origen == "Inscripcion Traslado Externo" || $origen == "Inscripcion Bachillerato Internacional" )
@@ -753,7 +755,7 @@ $v16 = utf8_decode($_POST['distrito']);
 $v17 = utf8_decode($_POST['direccion-actual']);
 $v18 = utf8_decode($_POST['email']);
 $v19 = $_POST['celular-1'];
-$v20 = utf8_decode($celular2);
+$v20 = $_POST['celular-2'];
 $v21 = $_POST['telefono'];
 $v22 = $_POST['ano-culminacion'];
 $v23 = utf8_decode($_POST['colegio']);
