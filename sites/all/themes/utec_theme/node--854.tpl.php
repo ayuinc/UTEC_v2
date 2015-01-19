@@ -19,7 +19,7 @@
 </div>
 <div class="container-sm form-custom">
 	<form action="/registro.php" class="mb-ch-28" data-submit="Formulario de inscripcion" method="post">
-		<input type="hidden" name="origen" value="Inscripcion Examen">
+		<input type="hidden" name="origen" value="<?php print $title ?>">
 		<div class="row">
 			<div class="form-group col-sm-4">
 				<label for="" class="sr-only">Nombres</label>
