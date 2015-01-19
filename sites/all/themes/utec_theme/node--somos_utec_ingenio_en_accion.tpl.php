@@ -25,7 +25,7 @@
 <?php $field_foto_redes_sociales = $node->field_foto_redes_sociales['und']['0']['filename']; ?>
 
 <div class="hero-unit size lg">
-	<div data-section-scroll="Que es" class="section-scroll-content flex-middle-center">
+	<div data-section-scroll="Acerca de" class="section-scroll-content flex-middle-center">
 		<div class="container-sm text-center">
 			<h1 class="mb-7"><?php print $field_frase_autor ?></h1>
 			<p class="mb-0 pb-0"><?php print $field_nombre_autor ?></p>
@@ -35,26 +35,22 @@
 				<?php print $field_introduccion_autor ?>
 			</div>
 		</div>
-		<!--<a class="scroll-down scroll-down-sq size lg" href="#sec-1" rel="nofollow">
-			<i class="icon-arrows-down bg-info-op text-white"></i>
-		</a>-->
 	</div>
+	<a class="scroll-down scroll-down-sq size lg" id="un-panel" rel="nofollow">
+		<i class="icon-arrows-down bg-info-op text-white"></i>
+	</a>
 </div> <!-- END:Hero -->
 <div data-section-scroll="Un panel" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_foto_causa)?>);">
 	<div class="overlay flex-middle">
 		<div class="container hero-text">
 			<div class="row">
 				<div class="col-sm-6 text-white normalize-text">
-					<h2 class="thin"><?php print $field_titulo_causa ?></h2>
+					<h2 class="thin h1"><?php print $field_titulo_causa ?></h2>
 					<hr class="hr-white">
-					<div class="row">
-						<div class="col-sm-9">
-							<h3 class="lead thin"><?php print $field_descripcion_causa ?></h3>
-							<?php if ($field_link_causa!='') { ?>
-								<a href="<?php print $field_link_causa ?>" class="btn btn-white btn-outline btn-sm see-more"><?php print t('Read more') ?></a>
-							<?php } ?>
-						</div>
-					</div>
+					<h4 class="lead thin"><?php print $field_descripcion_causa ?></h4>
+					<?php if ($field_link_causa!='') { ?>
+					<a href="<?php print $field_link_causa ?>" class="btn mt-21 btn-white btn-outline btn-sm see-more"><?php print t('Read more') ?></a>
+					<?php } ?>
 				</div>
 			</div>
 		</div>
@@ -70,14 +66,14 @@
 		<div class="container hero-text">
 			<div class="row">
 				<div class="col-sm-6 text-white normalize-text">
-					<h2 class="thin"><?php print $field_titulo_tres_acciones ?></h2>
+					<h2 class="thin h1"><?php print $field_titulo_tres_acciones ?></h2>
 					<hr class="hr-white">
+					<h4 class="lead thin"><?php print $field_subitulo_tres_acciones ?></h4>
+					<?php if ($field_link_tres_acciones!='')  { ?>
+						<a href="<?php print $field_link_tres_acciones ?>" class="btn btn-white btn-outline btn-sm see-more"><?php print t('Read more') ?></a>
+					<?php } ?>
 					<div class="row">
 						<div class="col-sm-9">
-							<h2 class="lead thin"><?php print $field_subitulo_tres_acciones ?></h2>
-							<?php if ($field_link_tres_acciones!='')  { ?>
-								<a href="<?php print $field_link_tres_acciones ?>" class="btn btn-white btn-outline btn-sm see-more"><?php print t('Read more') ?></a>
-							<?php } ?>
 						</div>
 					</div>
 				</div>
@@ -91,9 +87,11 @@
 		<hr class="hr-gray">
 		<p class="lead gray"><?php print $field_subtitulo_proyecto ?></p>
 		<p class="gray mb-42 lead"><?php print $field_descripcion_proyecto ?></p>
-		<?php if ($field_link_proyecto!='') { ?>
-			<a href="<?php print $field_link_proyecto ?>" class="btn btn-outline btn-primary see-more btn-sm"><?php print t('Read more') ?></a>
-		<?php } ?>
+		<div class="text-right">
+			<?php if ($field_link_proyecto!='') { ?>
+				<a href="<?php print $field_link_proyecto ?>" class="btn btn-outline btn-primary see-more btn-sm"><?php print t('Read more') ?></a>
+			<?php } ?>
+		</div>
 	</div>
 	<a class="scroll-down scroll-down-sq size lg" rel="nofollow">
 		<i class="icon-arrows-down bg-info text-white"></i>

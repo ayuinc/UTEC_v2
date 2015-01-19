@@ -15,11 +15,11 @@
 <div class="container-sm">
 	<h1 class="light"><?php print t('Inscripción Examen de Admisión') ?></h1>
 	<div clsass="separator-gray separator-lg"></div>
-	<h3 class="thin text-gray pt-21 pb-56"><?php  ?><?php print t('Applicant Information') ?></h3>
+	<h3 class="thin text-gray pt-21 pb-56"><?php print t('Examen de admision') ?></h3>
 </div>
 <div class="container-sm form-custom">
 	<form action="/registro.php" class="mb-ch-28" data-submit="Formulario de inscripcion" method="post">
-		<input type="hidden" name="origen" value="Inscripcion Examen">
+		<input type="hidden" name="origen" value="<?php print $title ?>">
 		<div class="row">
 			<div class="form-group col-sm-4">
 				<label for="" class="sr-only">Nombres</label>
