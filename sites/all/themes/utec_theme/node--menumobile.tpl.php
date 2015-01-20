@@ -106,7 +106,7 @@
 			<?php if ($language->prefix == 'es'): ?>
 				<a href="/<?php print $language->prefix ?>/calendario-academico"><span>Calendario</span> Académico</a>
 			<?php elseif ($language->prefix == 'en'): ?>
-				<a href="/<?php print $language->prefix ?>/academic'calendar"><span>Academic</span> Calendar</a>
+				<a href="/<?php print $language->prefix ?>/academic-calendar"><span>Academic</span> Calendar</a>
 			<?php endif ?>													
 		</li>						
 		<li>
