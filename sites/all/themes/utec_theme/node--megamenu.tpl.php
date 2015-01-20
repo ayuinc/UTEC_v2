@@ -307,7 +307,7 @@
 						<li>
 							<?php if ($language->prefix == 'es'): ?>
 								<a href="/<?php print $language->prefix ?>/ingenieria-de-la-energia">
-								<span><?php print t('Engineering') ?></span><?php print t('Energy') ?>
+								<span>Ingeniería</span>de la Energía
 								</a>
 								<?php print t('Engineering') ?>
 							<?php elseif ($language->prefix == 'en'): ?>
@@ -319,7 +319,7 @@
 						<li>
 							<?php if ($language->prefix == 'es'): ?>
 								<a href="/<?php print $language->prefix ?>/ingenieria-quimica-industrial">
-								<span>Ingeniería></span>Química Industrial
+								<span>Ingeniería</span>Química Industrial
 								</a>
 							<?php elseif ($language->prefix == 'en'): ?>
 								<a href="/<?php print $language->prefix ?>/industrial-chemical-engineering">
