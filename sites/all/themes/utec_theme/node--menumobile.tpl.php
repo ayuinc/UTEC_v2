@@ -17,7 +17,7 @@
       <a href="#mobile-nav-display-5"><?php print t('Alliances') ?></a>
     </li>
     <li>
-      <a href="#mobile-nav-display-6"><?php print t('Executive Education') ?></a>
+      <a href="#mobile-nav-display-6"><?php print t('SPD') ?></a>
     </li>
   </ul>
 </div>
