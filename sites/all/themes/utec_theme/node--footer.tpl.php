@@ -28,10 +28,6 @@
 			</ul>
 		</div>
 	</div> -->
-  <?php
-    module_load_include('inc', 'simplenews', 'simplenews.subscription');
-    print drupal_render(drupal_get_form('_simplenews_subscription_manager_form'));
-  ?>
 	<div class="site-map pv-14 bg-gray-dark hidden-xs">
 		<div class="container">
 			<ul class="grid-list grid-list-6 grid-list-2-xs">
