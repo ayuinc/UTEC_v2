@@ -47,7 +47,7 @@
               <li><a href="/<?php print $language->prefix ?>/news" class="atm-menu-inferior"><small></small><small><?php print t('News') ?></small></a></li>
               <li><a href="/<?php print $language->prefix ?>/events" class="atm-menu-inferior"><small><?php print t('Events') ?></small></a></li>
               <li><a href="/<?php print $language->prefix ?>/student-life" class="atm-menu-inferior"><small><?php print t('Life at UTEC') ?></small></a></li>
-              <li><a href="/<?php print $language->prefix ?>/labs-and-centers" class="atm-menu-inferior"><small><?php print t('Campus and Labs') ?></small></a></li>
+              <li><a href="/<?php print $language->prefix ?>/campus-and-labs" class="atm-menu-inferior"><small><?php print t('Campus and Labs') ?></small></a></li>
               <li><a href="/<?php print $language->prefix ?>/work-at-utec" class="atm-menu-inferior"><small><?php print t('Work at UTEC') ?></small></a></li>
               <li><a href="/<?php print $language->prefix ?>/ingenuity-in-action/utec-garage" class="atm-menu-inferior"><small><?php print t('UTEC Garage') ?></small></a></li>
               <li><a href="http://utecventures.com/" target="_blank" class="atm-menu-inferior"><small><?php print t('UTEC Ventures') ?></small></a></li>
@@ -115,17 +115,22 @@
           <ul>
             <li class="title text-gray-lighter"><?php print t('Admissions') ?></li>
               <?php if ($language->prefix == 'en'): ?>
-                <li><a href="/<?php print $language->prefix ?>/admision/modalidades" class="atm-menu-inferior"><small>Admissions</small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/methods-of-admission" class="atm-menu-inferior"><small>Modalidades de Admisión</small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/admissions-talks" class="atm-menu-inferior"><small><?php print t('Informative Talks') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/admissions-calendar"><small><?php print t('Admissions Calendar') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/visit-utec" class="atm-menu-inferior"><small><?php print t('Visit UTEC') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/financial-information" class="atm-menu-inferior"><small><?php print t('Financial Information') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/advising-and-counseling" class="atm-menu-inferior"><small><?php print t('Guidance') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/admissions-faq" class="atm-menu-inferior"><small><?php print t('FAQ') ?></small></a></li>
               <?php elseif ($language->prefix == 'es'): ?>
-                <li><a href="/<?php print $language->prefix ?>/admision/modalidades" class="atm-menu-inferior"><small>Modalidades de Admisión</small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/modalidades-de-admision" class="atm-menu-inferior"><small>Admissions</small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/charlas-informativas" class="atm-menu-inferior"><small><?php print t('Informative Talks') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/calendario-de-admision"><small><?php print t('Admissions Calendar') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/visita-utec" class="atm-menu-inferior"><small><?php print t('Visit UTEC') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/informacion-economica" class="atm-menu-inferior"><small><?php print t('Financial Information') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/orientacion-vocacional" class="atm-menu-inferior"><small><?php print t('Guidance') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/preguntas-frecuentes" class="atm-menu-inferior"><small><?php print t('FAQ') ?></small></a></li>
               <?php endif ?>
-            <li><a href="/<?php print $language->prefix ?>/admision/charlas-informativas" class="atm-menu-inferior"><small><?php print t('Informative Talks') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/admision/calendario-admision"><small><?php print t('Admissions Calendar') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/admision/modalidades" class="atm-menu-inferior"><small><?php print t('Pre-registration') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/admision/informacion-economica" class="atm-menu-inferior"><small><?php print t('Financial Information') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/admision/visita-utec" class="atm-menu-inferior"><small><?php print t('Visit UTEC') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/admision/orientacion-vocacional" class="atm-menu-inferior"><small><?php print t('Guidance') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/admision/preguntas-frecuentes" class="atm-menu-inferior"><small><?php print t('FAQ') ?></small></a></li>
           </ul>
         </li>
         <li>
