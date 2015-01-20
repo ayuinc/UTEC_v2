@@ -95,12 +95,21 @@
         <li>
           <ul>
             <li class="title text-gray-lighter"><?php print t('Programs') ?></li>
-            <li><a href="/<?php print $language->prefix ?>/carreras/ingenieria-quimica-industrial" class="atm-menu-inferior"><small><?php print t('Industrial and Chemical Engineering') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/carreras/ingenieria-electronica" class="atm-menu-inferior"><small><?php print t('Electronic Engineering') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/carreras/ingenieria-mecanica" class="atm-menu-inferior"><small><?php print t('Mechanical Engineering') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/carreras/ingenieria-de-la-energia" class="atm-menu-inferior"><small><?php print t('Energy Engineering') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/carreras/ingenieria-industrial" class="atm-menu-inferior"><small><?php print t('Industrial Engineering') ?></small></a></li>
+            <?php if ($language->prefix == 'en'): ?>
+            <li><a href="/<?php print $language->prefix ?>/industrial-chemical-engineering" class="atm-menu-inferior"><small><?php print t('Industrial and Chemical Engineering') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/electronic-engineering" class="atm-menu-inferior"><small><?php print t('Electronic Engineering') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/mechanical-engineering" class="atm-menu-inferior"><small><?php print t('Mechanical Engineering') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/energy-engineering" class="atm-menu-inferior"><small><?php print t('Energy Engineering') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/industrial-engineering" class="atm-menu-inferior"><small><?php print t('Industrial Engineering') ?></small></a></li>
             <!--<li><a href="/<?php print $language->prefix ?>/carreras/menciones" class="atm-menu-inferior"><small><?php print t('Mentions') ?></small></a></li>-->
+            <?php elseif ($language->prefix == 'es'): ?>
+            <li><a href="/<?php print $language->prefix ?>/ingenieria-quimica-industrial" class="atm-menu-inferior"><small><?php print t('Industrial and Chemical Engineering') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/ingenieria-electronica" class="atm-menu-inferior"><small><?php print t('Electronic Engineering') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/ingenieria-mecanica" class="atm-menu-inferior"><small><?php print t('Mechanical Engineering') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/ingenieria-de-la-energia" class="atm-menu-inferior"><small><?php print t('Energy Engineering') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/ingenieria-industrial" class="atm-menu-inferior"><small><?php print t('Industrial Engineering') ?></small></a></li>
+            <!--<li><a href="/<?php print $language->prefix ?>/carreras/menciones" class="atm-menu-inferior"><small><?php print t('Mentions') ?></small></a></li>-->  
+            <?php endif ?>
           </ul>
         </li>
         <li>
