@@ -288,14 +288,16 @@
 </div>	
 
 <script>
-	$('company_form').hide();
-	$('person_form').hide();
-	$('company').click() {
-		$('company_form').show();
-		$('person_form').hide();
+	$('#company_form').hide();
+	$('#person_form').hide();
+	
+	$('#company').click() {
+		$('#company_form').show();
+		$('#person_form').hide();
 	}
-	$('person').click() {
-		$('company_form').hide();
-		$('person_form').show();
+	
+	$('#person').click() {
+		$('#company_form').hide();
+		$('#person_form').show();
 	}	
 </script>
