@@ -24,11 +24,11 @@
 	<form action="" data-submit="Formulario de inscripcion">
 	<div class="row">
 		<div class="form-group col-sm-6">
-			<label for="" class="sr-only"><?php print t('Company') ?></label>
+			<p><?php print t('Company') ?></p>
 			<input id="company" type="radio" name="optionedp" class="form-control">
 		</div>
 		<div class="form-group col-sm-6">
-			<label for="" class="sr-only"><?php print t('Person') ?></label>
+			<p><?php print t('Person') ?></p>
 			<input id="person" type="radio" name="optionedp" class="form-control">
 		</div>
 	</div>
