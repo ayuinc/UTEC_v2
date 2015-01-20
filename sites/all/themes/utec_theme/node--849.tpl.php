@@ -177,6 +177,11 @@
 		</div>
 		<h3 class="light">Estudios</h3>
 		<div class="row">
+			<div class="col-sm-12 form-group">
+				<label for="" class="sr-only">Universidad de Procedencia</label>
+				<input  id="universidad" name="universidad" type="text" class="form-control" placeholder="Universidad de Procedencia">
+			</div>
+
 			<div class="col-sm-12"><label for="">Año que culminó los estudios secundarios o bachillerato</label></div>
 			<div class="col-sm-3 form-group">
 				<select name="ano-culminacion" id="ano-culminacion" class="form-control select-override">
