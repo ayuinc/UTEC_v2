@@ -24,11 +24,8 @@
 	<form action="" data-submit="Formulario de inscripcion">
 	<p><?php print t('Choose and option') ?></p>
 	<div class="row">
-		<div class="form-group col-sm-2">
-			<a href="#company_form" class="scroll-ref-1"><?php print t('Company') ?></a>
-		</div>
-		<div class="form-group col-sm-2">
-			<a href="#person_form" class="scroll-ref-2"><?php print t('Person') ?></a>
+		<div class="form-group col-sm-4">
+			<a href="#company_form" class="scroll-ref-1"><?php print t('Company') ?></a> | <a href="#person_form" class="scroll-ref-2"><?php print t('Person') ?></a>
 		</div>
 	</div>
 	</form>
