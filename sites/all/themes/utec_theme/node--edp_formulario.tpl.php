@@ -291,19 +291,3 @@
 	</div>			
 </div>	
 
-<script>
-	$( document ).ready(function() {
-		$('#company_form').hide();
-		$('#person_form').hide();
-		
-		$("#company").click(function() {
-			$('#company_form').show();
-			$('#person_form').hide();
-		});	
-		
-		$("#person").click(function() {
-			$('#company_form').hide();
-			$('#person_form').show();
-		});		
-	});
-</script>
