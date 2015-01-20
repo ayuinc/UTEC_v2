@@ -3844,22 +3844,22 @@ h6.lead {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.icon-admisiones-traslado:before {
+.icon-admisiones-alto-rendimiento:before {
   content: "\e600"; }
 
-.icon-admisiones-alto-rendimiento:before {
+.icon-admisiones-bachillerato:before {
   content: "\e601"; }
 
-.icon-admisiones-bachillerato:before {
+.icon-admisiones-centro-pre:before {
   content: "\e602"; }
 
-.icon-admisiones-centro-pre:before {
+.icon-admisiones-examen:before {
   content: "\e603"; }
 
-.icon-admisiones-examen:before {
+.icon-admisiones-primeros-puestos:before {
   content: "\e604"; }
 
-.icon-admisiones-primeros-puestos:before {
+.icon-admisiones-traslado:before {
   content: "\e605"; }
 
 .icon-menu:before {
