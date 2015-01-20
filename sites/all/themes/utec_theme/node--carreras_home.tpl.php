@@ -75,9 +75,9 @@
     <i class="icon-arrows-down bg-info text-white"></i>
   </a> -->
 </div>
-<div data-section-scroll="<?php print t('Majors') ?>" id="menciones" class="scroll-down-info section-scroll-content minh-560 flex-middle-center bg-info-op">
+<div data-section-scroll="<?php print t('Minor') ?>" id="menciones" class="scroll-down-info section-scroll-content minh-560 flex-middle-center bg-info-op">
   <div class="container-sm text-left text-white normalize-text" data-href="<?php print $menciones_link ?>">
-    <h2 class="lead thin h1"><?php print t('Majors') ?></h2>
+    <h2 class="lead thin h1"><?php print t('Minor') ?></h2>
     <hr class="hr-white">
     <div class="row mt-28">
       <div class="col-sm-3 hidden-xs">
