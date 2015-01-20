@@ -18,7 +18,7 @@
 	<div clsass="separator-gray separator-lg"></div>
 </div>
 <div class="container-sm form-custom">
-	<form action="/registro.php" class="mb-ch-28" data-submit="Formulario de inscripcion" method="post">
+	<form action="/registro.php" class="mb-ch-28" data-submit="Formulario de inscripcion" method="post" id="formRegistro" name="formRegistro">
 		<input type="hidden" name="origen" value="<?php print $title; ?>">
 		<div class="row">
 			<div class="form-group col-sm-4">
@@ -241,9 +241,87 @@
 		</div>
 	</form>						
 </div>
+
+<div id="errordiv" style="display: inline; margin-bottom: 10px; color: #ff0000;"></div>
 <div class="container pt-42">
 	<div class="col-md-1"></div>
 	<div class="col-md-10">
 	</div>
 	<div class="col-md-1"></div>
 </div>
+
+
+   <script type="text/javascript">
+  $( function() {
+                        
+    $('#formRegistro').validate( {
+      rules: {
+        nombres: {
+          required: true,
+          //minlength: 4
+        },
+        apellido: {
+          required: true,
+          //minlength: 4
+        },
+        apellidom: {
+          required: true,
+          //minlength: 4
+        },
+        emailx: {
+          required: true,
+          email: true
+        },
+        telefono:{
+          required : true,
+        },
+        colegio : {
+          required : true,
+          //minlength: 5,
+        },
+        carrera : {
+          required : true,
+          //minlength: 5,
+        }/*,
+        consulta : {
+          required : true,
+          //minlength: 5,
+        }*/
+      },
+      messages: {
+        nombres: {
+          required: "Completa tus nombres <br /> ",
+          //minlength: "10 Digitos"
+        },
+        apellido: {
+          required: "Completa tus apellidos<br />",
+          //minlength: "4 Digitos"
+        },
+        apellidom: {
+          required: "Completa tu apellido materno<br />",
+          //minlength: "4 Digitos"
+        },
+        emailx: "Email Incorrecto<br />",
+        telefono:{
+          required : "Completa tu teléfono<br />",
+        },
+        colegio : {
+          required : "Completa tu colegio<br />",
+        },
+        carrera : {
+          required : "Completa tu carrera<br />",
+        }/*,
+        consulta : {
+          required : "Escribe un comentario<br />",
+        }*/
+      },
+      errorPlacement: function( error, element ) {
+        	error.insertAfter( '#errordiv' );
+      },
+      submitHandler: function( form ) {
+                                                        
+      		form.submit();
+      }
+    } );
+  } );
+</script>
