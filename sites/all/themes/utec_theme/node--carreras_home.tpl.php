@@ -48,7 +48,7 @@
           </div>
         </div>
       </div>
-      <a class="scroll-down scroll-down-sq size lg" href="#malla-curricular" rel="nofollow">
+      <a class="scroll-down scroll-down-sq size lg" href="#mallacurricular" rel="nofollow">
         <i class="icon-arrows-down bg-white-op text-gray"></i>
       </a>
     </div>
