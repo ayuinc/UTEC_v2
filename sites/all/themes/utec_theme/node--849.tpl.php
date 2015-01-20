@@ -236,13 +236,15 @@
 				<input  id="estudiante-no" type="radio" name="estudiante" value ="N"> No
 			</div>
 		</div>
+		<div id="errordiv" style="display: inline; margin-bottom: 10px; color: #ff0000;"></div>
+
 		<div class="text-right">
 			<button  id="" type="submit" class="btn btn-primary btn-lg">Enviar</button>
 		</div>
 	</form>						
 </div>
 
-<div id="errordiv" style="display: inline; margin-bottom: 10px; color: #ff0000;"></div>
+
 
 <script type="text/javascript">
 $(function() {                        
