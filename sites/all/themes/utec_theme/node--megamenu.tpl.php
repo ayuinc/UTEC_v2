@@ -319,7 +319,7 @@
 						<li>
 							<?php if ($language->prefix == 'es'): ?>
 								<a href="/<?php print $language->prefix ?>/ingenieria-quimica-industrial">
-								<span>Ingeniería></span>de la Energía
+								<span>Ingeniería></span>Química Industrial
 								</a>
 							<?php elseif ($language->prefix == 'en'): ?>
 								<a href="/<?php print $language->prefix ?>/industrial-chemical-engineering">
