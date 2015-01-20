@@ -8,7 +8,7 @@
 	$name = $node->webform['components'];
 	
 	kpr($node);
-	kpr($form);
+	print_r($form);
 ?>
 
 <div class="subscribe pv-7 bg-gray-darker hidden-xs">
