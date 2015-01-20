@@ -8,7 +8,8 @@
 	$cuerpo = $node->body['und']['0']['value'];
 	$imagen = $node->field_image['und']['0']['filename'];
 	$infografia = $node->field_infografia['und']['0']['filename'];
-	var_dump($node->field_carrera_referencia);
+	var_dump($node->field_carrera_referencia['und']['0']['taxonomy_term']['name']);
+
 
 ?>
 <div class="container-sm">
@@ -24,4 +25,3 @@
 		<img src="<?php print('/'.$pathfile.$infografia)?>" class="img-responsive">
 	</div>
 </div>
-
