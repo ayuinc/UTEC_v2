@@ -21,16 +21,18 @@
 </div>
 
 <div class="container-sm form-custom mt-35"> 
+	<form action="" data-submit="Formulario de inscripcion">
 	<div class="row">
 		<div class="form-group col-sm-6">
 			<label for="" class="sr-only"><?php print t('Company') ?></label>
-			<input id="nombres" type="radio" name="optionedp" class="form-control">
+			<input id="company" type="radio" name="optionedp" class="form-control">
 		</div>
 		<div class="form-group col-sm-6">
 			<label for="" class="sr-only"><?php print t('Person') ?></label>
-			<input id="apellidop" type="radio" name="optionedp" class="form-control">
+			<input id="person" type="radio" name="optionedp" class="form-control">
 		</div>
 	</div>
+	</form>
 		
 	<!--COMPANY-->		
 	<form action="/registro.php" data-submit="Formulario de inscripcion" id="company">
