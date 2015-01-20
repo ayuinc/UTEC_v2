@@ -43,7 +43,7 @@
 			<div class="form-group col-sm-4">
 				<label for="" class="sr-only">Carrera de interés</label>
 				<select name="carrera" id="carrera" class="form-control select-override">
-					<option value="Carrera de interés">Carrera de interés</option>
+					<option value="">Carrera de interés</option>
 					<option value="15970"><?php print t('Industrial Engineering') ?></option>
 		            <option value="14864"><?php print t('Mechanical Engineering') ?></option>
 		            <option value="15968"><?php print t('Energy Engineering') ?></option>
@@ -95,7 +95,7 @@
 			</div>
 			<div class="form-group col-sm-4">
 				<select name="dia" id="dia" class="form-control select-override">
-					<option value="Día">Día</option>
+					<option value="">Día</option>
 					<?php for ($x = 1; $x <= 31; $x++) { ?>
     					<?php echo "<option value='$x'>$x</option>";?> 
 					<?php } ?>
@@ -103,7 +103,7 @@
 			</div>
 			<div class="form-group col-sm-4">
 				<select name="mes" id="mes" class="form-control select-override">
-					<option value="Mes">Mes</option>
+					<option value="">Mes</option>
 					<option value="Enero">Enero</option> <option value="Febrero">Febrero</option> <option value="Marzo">Marzo</option>
 					<option value="Abril">Abril</option> <option value="Mayo">Mayo</option> <option value="Junio">Junio</option>
 					<option value="Julio">Julio</option> <option value="Agosto">Agosto</option> <option value="Setiembre">Setiembre</option>
@@ -112,7 +112,7 @@
 			</div>
 			<div class="form-group col-sm-4">
 				<select name="ano" id="ano" class="form-control select-override">
-					<option value="Año">Año</option>
+					<option value="">Año</option>
 					<?php for ($x = 1970; $x <= 2015; $x++) { ?>
     					<?php echo "<option value='$x'>$x</option>";?> 
 					<?php } ?>
@@ -185,7 +185,7 @@
 			<div class="col-sm-12"><label for="">Año que culminó los estudios secundarios o bachillerato</label></div>
 			<div class="col-sm-3 form-group">
 				<select name="ano-culminacion" id="ano-culminacion" class="form-control select-override">
-					<option value="Año">Año</option>
+					<option value="">Año</option>
 					<?php for ($x = 1970; $x <= 2015; $x++) { ?>
     					<?php echo "<option value='$x'>$x</option>";?> 
 					<?php } ?>
@@ -262,7 +262,99 @@ jQuery(function() {
 	        apellidom: {
 	          required: true,
 	          //minlength: 4
-	        },	        
+	        },	    
+	        carrera: {
+	          required: true,
+	          //minlength: 4
+	        },	
+	        tipo-documento: {
+	          required: true,
+	          //minlength: 4
+	        },	
+	        documento: {
+	          required: true,
+	          //minlength: 4
+	        },	
+	        pais: {
+	          required: true,
+	          //minlength: 4
+	        },	
+	        ciudad: {
+	          required: true,
+	          //minlength: 4
+	        },	
+	        dia: {
+	          required: true,
+	          //minlength: 4
+	        },	
+	        mes: {
+	          required: true,
+	          //minlength: 4
+	        },	
+	        ano: {
+	          required: true,
+	          //minlength: 4
+	        },	
+	        depto: {
+	          required: true,
+	          //minlength: 4
+	        },	
+	        provincia: {
+	          required: true,
+	          //minlength: 4
+	        },	
+	        distrito: {
+	          required: true,
+	          //minlength: 4
+	        },	
+	        direccion-actual: {
+	          required: true,
+	          //minlength: 4
+	        },	
+	        email: {
+	          required: true,
+	          //minlength: 4
+	        },	
+	        celular-1: {
+	          required: true,
+	          //minlength: 4
+	        },	
+	        celular-2: {
+	          required: true,
+	          //minlength: 4
+	        },	
+	        telefono: {
+	          required: true,
+	          //minlength: 4
+	        },	
+	        universidad: {
+	          required: true,
+	          //minlength: 4
+	        },	
+	        ano-culminacion: {
+	          required: true,
+	          //minlength: 4
+	        },
+	        colegio-procedencia: {
+	          required: true,
+	          //minlength: 4
+	        },
+	        estudios-dpto: {
+	          required: true,
+	          //minlength: 4
+	        },
+	        estudios-provincia: {
+	          required: true,
+	          //minlength: 4
+	        },
+	        estudios-distrito: {
+	          required: true,
+	          //minlength: 4
+	        },
+	        estudios-rendimiento: {
+	          required: true,
+	          //minlength: 4
+	        },
 	      },
 	      messages: {
 		        nombres: {
@@ -272,7 +364,104 @@ jQuery(function() {
 		        apellidop: {
 		          required: "Completa tu apellido paterno <br /> ",
 		          //minlength: "10 Digitos"
-		      	},		      	
+		      	},		
+		        apellidom: {
+		          required: "Completa tu apellido materno <br /> ",
+		          //minlength: "10 Digitos"
+		      	},	
+		      	carrera: {
+		          required: "Selecciona tu carrera <br /> ",
+		          //minlength: "10 Digitos"
+		      	},	
+		      	tipo-documento: {
+		          required: "Selecciona tu tipo de documento <br /> ",
+		          //minlength: "10 Digitos"
+		      	},	
+		      	documento: {
+		          required: "Completa tu documento <br /> ",
+		          //minlength: "10 Digitos"
+		      	},	
+		      	pais: {
+		          required: "Completa tu país <br /> ",
+		          //minlength: "10 Digitos"
+		      	},	
+		      	ciudad: {
+		          required: "Completa tu ciudad <br /> ",
+		          //minlength: "10 Digitos"
+		      	},	
+		      	dia: {
+		          required: "Completa tu fecha de nacimiento <br /> ",
+		          //minlength: "10 Digitos"
+		      	},	
+		      	mes: {
+		          required: "Completa tu fecha de nacimiento <br /> ",
+		          //minlength: "10 Digitos"
+		      	},
+		      	ano: {
+		          required: "Completa tu fecha de nacimiento <br /> ",
+		          //minlength: "10 Digitos"
+		      	},
+		      	depto: {
+		          required: "Completa tu direccion <br /> ",
+		          //minlength: "10 Digitos"
+		      	},
+		      	provincia: {
+		          required: "Completa tu direccion <br /> ",
+		          //minlength: "10 Digitos"
+		      	},
+		      	distrito: {
+		          required: "Completa tu direccion <br /> ",
+		          //minlength: "10 Digitos"
+		      	},
+		      	direccion-actual: {
+		          required: "Completa tu direccion <br /> ",
+		          //minlength: "10 Digitos"
+		      	},
+		      	email: {
+		          required: "Completa tu e-mail <br /> ",
+		          //minlength: "10 Digitos"
+		      	},
+		      	celular-1: {
+		          required: "Completa tu celular 1 <br /> ",
+		          //minlength: "10 Digitos"
+		      	},
+		      	celular-2: {
+		          required: "Completa tu celular 2 <br /> ",
+		          //minlength: "10 Digitos"
+		      	},
+		      	telefono: {
+		          required: "Completa tu teléfono <br /> ",
+		          //minlength: "10 Digitos"
+		      	},
+		      	universidad: {
+		          required: "Completa tu universidad de procedencia <br /> ",
+		          //minlength: "10 Digitos"
+		      	},
+		      	ano-culminacion: {
+		          required: "Completa tu año de culminación <br /> ",
+		          //minlength: "10 Digitos"
+		      	},
+		      	colegio-procedencia: {
+		          required: "Completa tu colegio de procedencia <br /> ",
+		          //minlength: "10 Digitos"
+		      	},
+		      	estudios-dpto: {
+		          required: "Completa la ubicación de tu colegio <br /> ",
+		          //minlength: "10 Digitos"
+		      	},
+		      	estudios-provincia: {
+		          required: "Completa la ubicación de tu colegio <br /> ",
+		          //minlength: "10 Digitos"
+		      	},
+		      	estudios-distrito: {
+		          required: "Completa la ubicación de tu colegio <br /> ",
+		          //minlength: "10 Digitos"
+		      	},
+		      	estudios-rendimiento: {
+		          required: "Selecciona tu rendimiento académico <br /> ",
+		          //minlength: "10 Digitos"
+		      	},
+
 		      },
 		      errorPlacement: function( error, element ) {
 		        	error.insertAfter( '#errordiv' );
