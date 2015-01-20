@@ -17,6 +17,7 @@
 	<div class="pv-42 lead-ch">
 		<h3><?php print $cuerpo ?></h3>
 	</div>
+	<p><?php print $node->field_carrera_referencia['und']['0']['taxonomy_term']['name'] ?></p>
 	<!-- <div class="mb-63">
 		<img src="<?php //print('/'.$pathfile.$imagen)?>" class="img-responsive">
 	</div> -->
@@ -24,4 +25,3 @@
 		<img src="<?php print('/'.$pathfile.$infografia)?>" class="img-responsive">
 	</div>
 </div>
-
