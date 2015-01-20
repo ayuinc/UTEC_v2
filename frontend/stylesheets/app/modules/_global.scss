@@ -105,6 +105,22 @@ $sidebar-block-height: 210px;
 }
 
 // SCROLL DOWN 
+@for $i from 1 through length($brand-colors-list) {
+	.scroll-down-#{nth($brand-colors-sufix-list, $i)} {
+		.scroll-down i {
+			background-color: #{rgba(nth($brand-colors-list, $i), 0.7)};
+			color: white;
+		}
+	}
+}
+@for $i from 1 through length($grayscale-list) {
+	.scroll-down-#{nth($grayscale-sufix-list, $i)} {
+		.scroll-down i {
+			background-color: #{rgba(nth($grayscale-list, $i), 0.7)};
+			color: #{darken(nth($grayscale-list, $i), 21%)};
+		}
+	}
+}
 .scroll-down {
 	display: block;
 	text-align: center;
