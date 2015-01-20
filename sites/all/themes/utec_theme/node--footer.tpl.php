@@ -30,7 +30,7 @@
 	</div> -->
   <?php
     module_load_include('inc', 'simplenews', 'simplenews.subscription');
-    print drupal_render(drupal_get_form('simplenews_subscription_manager_form'));
+    drupal_render(drupal_get_form('simplenews_subscription_manager_form'));
   ?>
 	<div class="site-map pv-14 bg-gray-dark hidden-xs">
 		<div class="container">
@@ -113,9 +113,9 @@
         </li>
         <li>
           <ul>
-            <li class="title text-gray-lighter"><?php print t('Admissions') ?></li>
               <?php if ($language->prefix == 'en'): ?>
-            <li><a href="/<?php print $language->prefix ?>/methods-of-admission" class="atm-menu-inferior"><small>Modalidades de Admisión</small></a></li>
+            <li class="title text-gray-lighter">Admissions</li>
+            <li><a href="/<?php print $language->prefix ?>/methods-of-admission" class="atm-menu-inferior"><small>Admissions</small></a></li>
             <li><a href="/<?php print $language->prefix ?>/admissions-talks" class="atm-menu-inferior"><small><?php print t('Informative Talks') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/admissions-calendar"><small><?php print t('Admissions Calendar') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/visit-utec" class="atm-menu-inferior"><small><?php print t('Visit UTEC') ?></small></a></li>
@@ -123,7 +123,8 @@
             <li><a href="/<?php print $language->prefix ?>/advising-and-counseling" class="atm-menu-inferior"><small><?php print t('Guidance') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/admissions-faq" class="atm-menu-inferior"><small><?php print t('FAQ') ?></small></a></li>
               <?php elseif ($language->prefix == 'es'): ?>
-            <li><a href="/<?php print $language->prefix ?>/modalidades-de-admision" class="atm-menu-inferior"><small>Admissions</small></a></li>
+            <li class="title text-gray-lighter">Admisión</li>
+            <li><a href="/<?php print $language->prefix ?>/modalidades-de-admision" class="atm-menu-inferior"><small>Modalidades de Admisión</small></a></li>
             <li><a href="/<?php print $language->prefix ?>/charlas-informativas" class="atm-menu-inferior"><small><?php print t('Informative Talks') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/calendario-de-admision"><small><?php print t('Admissions Calendar') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/visita-utec" class="atm-menu-inferior"><small><?php print t('Visit UTEC') ?></small></a></li>
