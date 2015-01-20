@@ -525,15 +525,21 @@
 						<li>
 							<a href="/edp/cursos/cursos-online"><span>Cursos</span>online</a>
 						</li>-->
-						<li><a href="/edp/la-escuela"><?php print t('The School') ?></a></li>
+						<li>
+							<?php if ($language->prefix == 'es'): ?>
+							<a href="/<?php print $language->prefix ?>/edp/la-escuela"><?php print t('The School') ?></a>
+							<?php elseif ($language->prefix == 'en'): ?>
+							<a href="/<?php print $language->prefix ?>/school-of-professional-development/the-school"><?php print t('The School') ?></a>
+							<?php endif ?>
+						</li>
 						<li>
 							<?php if ($language->prefix == 'es'): ?>
 								<a href="/<?php print $language->prefix ?>/edp/cursos-cortos">
-								<span>Short</span>Courses
+								<span>Cursos</span>Cortos
 								</a>
 							<?php elseif ($language->prefix == 'en'): ?>
 								<a href="/<?php print $language->prefix ?>/school-of-professional-development/short-courses">
-								<span>Cursos</span>Cortos
+								<span>Short</span>Courses
 								</a>
 							<?php endif ?>
 							</a>
@@ -600,7 +606,7 @@
 					</li>
 					<li>
 						<a href="#nav-shrink-display-6">
-							<span><?php print t('SDP') ?></span>
+							<span><?php print t('SPD') ?></span>
 						</a>
 					</li>
 				</ul>
@@ -1034,11 +1040,11 @@
 						<li>
 							<?php if ($language->prefix == 'es'): ?>
 								<a href="/<?php print $language->prefix ?>/edp/cursos-cortos">
-								<span>Short</span>Courses
+								<span>Cursos</span>Cortos
 								</a>
 							<?php elseif ($language->prefix == 'en'): ?>
 								<a href="/<?php print $language->prefix ?>/school-of-professional-development/short-courses">
-								<span>Cursos</span>Cortos
+								<span>Short</span>Courses
 								</a>
 							<?php endif ?>
 							</a>
