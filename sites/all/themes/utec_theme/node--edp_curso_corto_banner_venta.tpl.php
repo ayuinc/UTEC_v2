@@ -9,9 +9,17 @@
 	// print_r($node);
 ?>
 
-<div class="hero-unit"> <!-- HERO -->
-  <div data-section-scroll="Acerca de" id="acercade" class="section-scroll-content bg-img-block bg-img-block-lg section-scroll-0" style="background-image: url(/sites/default/files/<?php print $imagen; ?>);">
-    <div class="overlay flex-middle">
-    </div>
-  </div>
+<div class="lead-ch p-ch-gray">
+	<div id="carousel-custom" class="carousel carousel-custom slide mb-42" data-ride="carousel">
+		<!-- Wrapper for slides -->
+	  <div class="carousel-inner" role="listbox">
+	  	<div class="item active">
+		  	<div class="banner banner-label-bottom mb-14 ml-0">
+					<div class="banner-pic" style="background-image: url(/sites/default/files/<?php print $image ?>);">
+						<div class="banner-label bg-gray-darker text-white"><span>Innovación</span></div>
+					</div>
+				</div>
+		    <!-- <img src="/sites/default/files/noticias/unescoutec.jpg" alt="..." height="479" width="720"> -->
+		  </div>
+		</div>
 </div>
