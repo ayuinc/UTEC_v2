@@ -545,11 +545,11 @@
 						<li>
 							<?php if ($language->prefix == 'es'): ?>
 								<a href="/<?php print $language->prefix ?>/edp/cursos-cortos">
-								<span>Short</span>Courses
+								<span>Cursos</span>Cortos
 								</a>
 							<?php elseif ($language->prefix == 'en'): ?>
 								<a href="/<?php print $language->prefix ?>/school-of-professional-development/short-courses">
-								<span>Cursos</span>Cortos
+								<span>Short</span>Courses
 								</a>
 							<?php endif ?>
 							</a>
