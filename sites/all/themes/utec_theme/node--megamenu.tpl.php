@@ -537,9 +537,9 @@
 						</li>-->
 						<li>
 							<?php if ($language->prefix == 'es'): ?>
-							<a href="/edp/la-escuela"><?php print t('The School') ?></a>
+							<a href="/<?php print $language->prefix ?>/edp/la-escuela"><?php print t('The School') ?></a>
 							<?php elseif ($language->prefix == 'en'): ?>
-							<a href="/school-of-professional-development/the-school"><?php print t('The School') ?></a>
+							<a href="/<?php print $language->prefix ?>/school-of-professional-development/the-school"><?php print t('The School') ?></a>
 							<?php endif ?>
 						</li>
 						<li>
