@@ -14,6 +14,7 @@
     <?php $name = $value['entity']->name; ?>   
 		<?php $pic = $value['entity']->picture->filename; ?>
     <?php $desc = $value['entity']->field_descripci_n['und'][0]['value']; ?>		
+    <?php $uid = $value['entity']->uid; ?>		
 			<li class="mb-ch-14">
 				<div class="grid-list-pic"><img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="" width="98px" height="auto" class="img-circle"></div>
 				<div>
