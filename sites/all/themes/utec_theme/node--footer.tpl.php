@@ -48,7 +48,7 @@
             <li><a href="/<?php print $language->prefix ?>/vida-estudiantil" class="atm-menu-inferior"><small><?php print t('Life at UTEC') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/campus-y-laboratorios" class="atm-menu-inferior"><small><?php print t('Campus and Labs') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/trabaja-en-utec" class="atm-menu-inferior"><small><?php print t('Work at UTEC') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/utec-garage" class="atm-menu-inferior"><small><?php print t('UTEC Garage') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/ingenio-en-accion/utec-garage" class="atm-menu-inferior"><small><?php print t('UTEC Garage') ?></small></a></li>
             <li><a href="http://utecventures.com/" target="_blank" class="atm-menu-inferior"><small><?php print t('UTEC Ventures') ?></small></a></li>
             <!--<li><a href="#" class="atm-menu-inferior"><small>Calendario Académico</small></a></li>-->
           </ul>
