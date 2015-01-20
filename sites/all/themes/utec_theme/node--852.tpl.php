@@ -231,14 +231,47 @@
 				<input  id="estudiante-no" type="radio" name="estudiante" value ="N"> No
 			</div>
 		</div>
+		<div class="row">
+			<div id="errordiv" class="col-sm-12 form-group"></div>			
+		</div>			
 		<div class="text-right">
 			<button  id="" type="submit" class="btn btn-primary btn-lg">Enviar</button>
 		</div>
 	</form>						
 </div>
-<div class="container pt-42">
-	<div class="col-md-1"></div>
-	<div class="col-md-10">
-	</div>
-	<div class="col-md-1"></div>
-</div>
+
+<script type="text/javascript">
+jQuery(function() {                        
+    jQuery('#formRegistro').validate( {
+	      rules: {
+	        "nombres": { required: true }, "apellidop": { required: true }, "apellidom": { required: true }, "carrera": { required: true },	
+	        "tipo-documento": { required: true }, "documento": { required: true }, "pais": { required: true }, "ciudad": { required: true },	
+	        "dia": { required: true }, "mes": { required: true }, "ano": { required: true }, "depto": { required: true }, "provincia": { required: true },	
+	        "distrito": { required: true }, "direccion-actual": { required: true },	"email": { required: true }, "celular-1": { required: true },	
+			"universidad": { required: true }, "ano-culminacion": { required: true }, "colegio-procedencia": { required: true }, 
+			"estudios-dpto": { required: true }, "estudios-provincia": { required: true },
+	        "estudios-distrito": { required: true }, "estudios-rendimiento": { required: true }
+	      },
+	      messages: {
+		    "nombres": { required: "Completa tus nombres <br />" }, "apellidop": { required: "Completa tu apellido paterno <br /> " },		
+		    "apellidom": { required: "Completa tu apellido materno <br /> " }, "carrera": { required: "Selecciona tu carrera <br /> " },	
+		    "tipo-documento": { required: "Selecciona tu tipo de documento <br /> " }, "documento": { required: "Completa tu documento <br /> " },	
+		    "pais": { required: "Completa tu país <br /> " }, "ciudad": { required: "Completa tu ciudad <br /> " }, 
+		    "dia": { required: "Completa tu día de nacimiento <br /> " }, "mes": { required: "Completa tu mes de nacimiento <br /> " },
+		    "ano": { required: "Completa tu año de nacimiento <br /> " }, "depto": { required: "Completa tu departamento <br /> " },
+		    "provincia": { required: "Completa tu provincia <br /> " }, "distrito": { required: "Completa tu distrito <br /> " },
+		    "direccion-actual": { required: "Completa tu domicilio <br /> " }, "email": { required: "Completa tu e-mail <br /> " },
+	      	"celular-1": { required: "Completa tu celular 1 <br /> " }, "universidad": { required: "Completa tu universidad de procedencia <br /> " },
+		    "ano-culminacion": { required: "Completa tu año de culminación <br /> " }, "colegio-procedencia": { required: "Completa tu colegio de procedencia <br /> " },
+		    "estudios-dpto": { required: "Completa el departamento de tu colegio <br /> " }, "estudios-provincia": { required: "Completa la provincia de tu colegio <br /> " },
+		    "estudios-distrito": { required: "Completa el distrito de tu colegio <br /> " }, "estudios-rendimiento": { required: "Selecciona tu rendimiento académico <br /> " }
+		  },
+	      errorPlacement: function( error, element ) {
+	        	error.insertAfter( '#errordiv' );
+	      },
+	      submitHandler: function( form ) {                                                 
+	      		form.submit();
+	      }
+    });
+});
+</script>

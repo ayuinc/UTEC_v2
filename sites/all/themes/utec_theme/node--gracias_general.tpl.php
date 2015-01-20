@@ -1,6 +1,6 @@
 <?php 
 $titulo = $node->title;   
-$titulo_usuario = $node->field_titulo_usuario['und']['0']['value'];
+$titulo_usuario = $node->field_titulo_gracias['und']['0']['value'];
 $body = $node->body['und']['0']['value']; 
 
 ?>

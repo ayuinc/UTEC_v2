@@ -249,8 +249,6 @@
 	</form>						
 </div>
 
-
-
 <script type="text/javascript">
 jQuery(function() {                        
     jQuery('#formRegistro').validate( {
