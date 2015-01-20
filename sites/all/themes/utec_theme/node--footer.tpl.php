@@ -79,7 +79,7 @@
         </li>-->
         <li>
           <ul>
-	          <?php elseif ($language->prefix == 'es'): ?>
+	          <?php if ($language->prefix == 'es'): ?>
             <li class="title text-gray-lighter"><?php print t('Research') ?></li>
             <li><a href="/<?php print $language->prefix ?>/proyectos" class="atm-menu-inferior"><small><?php print t('Projects') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/publicaciones" class="atm-menu-inferior"><small><?php print t('Publications') ?></small></a></li>
