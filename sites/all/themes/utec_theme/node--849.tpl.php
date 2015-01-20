@@ -1,6 +1,8 @@
 <?php 
   global $base_url;
   global $theme_path;
+  global $language ;
+
   $path = $base_url.'/'.$theme_path;
   $pathfile= variable_get('file_public_path', conf_path() . '/files/');
 
@@ -9,7 +11,7 @@
 	$cuerpo = $node->body['und']['0']['value'];
 	$mencion = $node->field_mencion['und']['0']['value'];
 	$electivo = $node->field_electivo['und'];
-	
+	$idioma = $language->prefix;	
 	// print_r($node);
 ?>
 
@@ -20,6 +22,8 @@
 <div class="container-sm form-custom">
 	<form action="/registro.php" class="mb-ch-28" data-submit="Formulario de inscripcion" method="post" id="formRegistro" name="formRegistro">
 		<input type="hidden" name="origen" value="<?php print $title; ?>">
+		<input type="hidden" name="idioma" value="<?php print $idioma; ?>">
+
 		<div class="row">
 			<div class="form-group col-sm-4">
 				<label for="" class="sr-only">Nombres</label>
@@ -251,223 +255,34 @@
 jQuery(function() {                        
     jQuery('#formRegistro').validate( {
 	      rules: {
-	        nombres: {
-	          required: true,
-	          //minlength: 4
-	        },
-	        apellidop: {
-	          required: true,
-	          //minlength: 4
-	        },
-	        apellidom: {
-	          required: true,
-	          //minlength: 4
-	        },	    
-	        carrera: {
-	          required: true,
-	          //minlength: 4
-	        },	
-	        tipo-documento: {
-	          required: true,
-	          //minlength: 4
-	        },	
-	        documento: {
-	          required: true,
-	          //minlength: 4
-	        },	
-	        pais: {
-	          required: true,
-	          //minlength: 4
-	        },	
-	        ciudad: {
-	          required: true,
-	          //minlength: 4
-	        },	
-	        dia: {
-	          required: true,
-	          //minlength: 4
-	        },	
-	        mes: {
-	          required: true,
-	          //minlength: 4
-	        },	
-	        ano: {
-	          required: true,
-	          //minlength: 4
-	        },	
-	        depto: {
-	          required: true,
-	          //minlength: 4
-	        },	
-	        provincia: {
-	          required: true,
-	          //minlength: 4
-	        },	
-	        distrito: {
-	          required: true,
-	          //minlength: 4
-	        },	
-	        direccion-actual: {
-	          required: true,
-	          //minlength: 4
-	        },	
-	        email: {
-	          required: true,
-	          //minlength: 4
-	        },	
-	        celular-1: {
-	          required: true,
-	          //minlength: 4
-	        },	
-	        celular-2: {
-	          required: true,
-	          //minlength: 4
-	        },	
-	        telefono: {
-	          required: true,
-	          //minlength: 4
-	        },	
-	        universidad: {
-	          required: true,
-	          //minlength: 4
-	        },	
-	        ano-culminacion: {
-	          required: true,
-	          //minlength: 4
-	        },
-	        colegio-procedencia: {
-	          required: true,
-	          //minlength: 4
-	        },
-	        estudios-dpto: {
-	          required: true,
-	          //minlength: 4
-	        },
-	        estudios-provincia: {
-	          required: true,
-	          //minlength: 4
-	        },
-	        estudios-distrito: {
-	          required: true,
-	          //minlength: 4
-	        },
-	        estudios-rendimiento: {
-	          required: true,
-	          //minlength: 4
-	        }
+	        "nombres": { required: true }, "apellidop": { required: true }, "apellidom": { required: true }, "carrera": { required: true },	
+	        "tipo-documento": { required: true }, "documento": { required: true }, "pais": { required: true }, "ciudad": { required: true },	
+	        "dia": { required: true }, "mes": { required: true }, "ano": { required: true }, "depto": { required: true }, "provincia": { required: true },	
+	        "distrito": { required: true }, "direccion-actual": { required: true },	"email": { required: true }, "celular-1": { required: true },	
+			"universidad": { required: true }, "ano-culminacion": { required: true }, "colegio-procedencia": { required: true }, 
+			"estudios-dpto": { required: true }, "estudios-provincia": { required: true },
+	        "estudios-distrito": { required: true }, "estudios-rendimiento": { required: true }
 	      },
 	      messages: {
-		        nombres: {
-		          required: "Completa tus nombres <br /> ",
-		          //minlength: "10 Digitos"
-		      	},
-		        apellidop: {
-		          required: "Completa tu apellido paterno <br /> ",
-		          //minlength: "10 Digitos"
-		      	},		
-		        apellidom: {
-		          required: "Completa tu apellido materno <br /> ",
-		          //minlength: "10 Digitos"
-		      	},	
-		      	carrera: {
-		          required: "Selecciona tu carrera <br /> ",
-		          //minlength: "10 Digitos"
-		      	},	
-		      	tipo-documento: {
-		          required: "Selecciona tu tipo de documento <br /> ",
-		          //minlength: "10 Digitos"
-		      	},	
-		      	documento: {
-		          required: "Completa tu documento <br /> ",
-		          //minlength: "10 Digitos"
-		      	},	
-		      	pais: {
-		          required: "Completa tu país <br /> ",
-		          //minlength: "10 Digitos"
-		      	},	
-		      	ciudad: {
-		          required: "Completa tu ciudad <br /> ",
-		          //minlength: "10 Digitos"
-		      	},	
-		      	dia: {
-		          required: "Completa tu fecha de nacimiento <br /> ",
-		          //minlength: "10 Digitos"
-		      	},	
-		      	mes: {
-		          required: "Completa tu fecha de nacimiento <br /> ",
-		          //minlength: "10 Digitos"
-		      	},
-		      	ano: {
-		          required: "Completa tu fecha de nacimiento <br /> ",
-		          //minlength: "10 Digitos"
-		      	},
-		      	depto: {
-		          required: "Completa tu direccion <br /> ",
-		          //minlength: "10 Digitos"
-		      	},
-		      	provincia: {
-		          required: "Completa tu direccion <br /> ",
-		          //minlength: "10 Digitos"
-		      	},
-		      	distrito: {
-		          required: "Completa tu direccion <br /> ",
-		          //minlength: "10 Digitos"
-		      	},
-		      	direccion-actual: {
-		          required: "Completa tu direccion <br /> ",
-		          //minlength: "10 Digitos"
-		      	},
-		      	email: {
-		          required: "Completa tu e-mail <br /> ",
-		          //minlength: "10 Digitos"
-		      	},
-		      	celular-1: {
-		          required: "Completa tu celular 1 <br /> ",
-		          //minlength: "10 Digitos"
-		      	},
-		      	celular-2: {
-		          required: "Completa tu celular 2 <br /> ",
-		          //minlength: "10 Digitos"
-		      	},
-		      	telefono: {
-		          required: "Completa tu teléfono <br /> ",
-		          //minlength: "10 Digitos"
-		      	},
-		      	universidad: {
-		          required: "Completa tu universidad de procedencia <br /> ",
-		          //minlength: "10 Digitos"
-		      	},
-		      	ano-culminacion: {
-		          required: "Completa tu año de culminación <br /> ",
-		          //minlength: "10 Digitos"
-		      	},
-		      	colegio-procedencia: {
-		          required: "Completa tu colegio de procedencia <br /> ",
-		          //minlength: "10 Digitos"
-		      	},
-		      	estudios-dpto: {
-		          required: "Completa la ubicación de tu colegio <br /> ",
-		          //minlength: "10 Digitos"
-		      	},
-		      	estudios-provincia: {
-		          required: "Completa la ubicación de tu colegio <br /> ",
-		          //minlength: "10 Digitos"
-		      	},
-		      	estudios-distrito: {
-		          required: "Completa la ubicación de tu colegio <br /> ",
-		          //minlength: "10 Digitos"
-		      	},
-		      	estudios-rendimiento: {
-		          required: "Selecciona tu rendimiento académico <br /> ",
-		          //minlength: "10 Digitos"
-		      	}
-		      },
-		      errorPlacement: function( error, element ) {
-		        	error.insertAfter( '#errordiv' );
-		      },
-		      submitHandler: function( form ) {                                                 
-		      		form.submit();
-		      }
+		    "nombres": { required: "Completa tus nombres <br />" }, "apellidop": { required: "Completa tu apellido paterno <br /> " },		
+		    "apellidom": { required: "Completa tu apellido materno <br /> " }, "carrera": { required: "Selecciona tu carrera <br /> " },	
+		    "tipo-documento": { required: "Selecciona tu tipo de documento <br /> " }, "documento": { required: "Completa tu documento <br /> " },	
+		    "pais": { required: "Completa tu país <br /> " }, "ciudad": { required: "Completa tu ciudad <br /> " }, 
+		    "dia": { required: "Completa tu día de nacimiento <br /> " }, "mes": { required: "Completa tu mes de nacimiento <br /> " },
+		    "ano": { required: "Completa tu año de nacimiento <br /> " }, "depto": { required: "Completa tu departamento <br /> " },
+		    "provincia": { required: "Completa tu provincia <br /> " }, "distrito": { required: "Completa tu distrito <br /> " },
+		    "direccion-actual": { required: "Completa tu domicilio <br /> " }, "email": { required: "Completa tu e-mail <br /> " },
+	      	"celular-1": { required: "Completa tu celular 1 <br /> " }, "universidad": { required: "Completa tu universidad de procedencia <br /> " },
+		    "ano-culminacion": { required: "Completa tu año de culminación <br /> " }, "colegio-procedencia": { required: "Completa tu colegio de procedencia <br /> " },
+		    "estudios-dpto": { required: "Completa el departamento de tu colegio <br /> " }, "estudios-provincia": { required: "Completa la provincia de tu colegio <br /> " },
+		    "estudios-distrito": { required: "Completa el distrito de tu colegio <br /> " }, "estudios-rendimiento": { required: "Selecciona tu rendimiento académico <br /> " }
+		  },
+	      errorPlacement: function( error, element ) {
+	        	error.insertAfter( '#errordiv' );
+	      },
+	      submitHandler: function( form ) {                                                 
+	      		form.submit();
+	      }
     });
 });
 </script>

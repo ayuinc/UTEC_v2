@@ -2,7 +2,7 @@ $(document).ready ->
 
 	$sectionScroll = $('body #section-scroll')
 	$sectionScrollList = $('body #section-scroll ul')
-	$sectionScrollContent = $('body .section-scroll-content')
+	$sectionScrollContent = $('[data-section-scroll]')
 
 	cleanupSpecialCharacters = (str)->
 		str = str.replace(/[ÀÁÂÃÄÅ]/g,'A')
@@ -19,6 +19,7 @@ $(document).ready ->
 
 	$sectionScrollController = new ScrollMagic()
 
+	scrollDownRef = []
 	$.each($sectionScrollContent, (index, item)->
 		triggerRef = '.section-scroll-' + index
 		sectionData = $(item).data('section-scroll')
@@ -28,7 +29,10 @@ $(document).ready ->
 		scrollRef = '.scroll-ref-' + index
 		$(item).addClass('section-scroll-' + index)
 		$(item).attr('id', idGen)
-		sectionList = '<li><a href="#' + idGen + '"' + 'class="animated bounceInRight ad-' + (index * 2) + ' scroll-ref-' + index + '">' + sectionData + '</a></li>'
+		scrollDownRef.push(idGen)
+		sectionList = '<li><a href="#' + idGen + '"' + 
+								'class="animated bounceInRight ad-' + (index * 2) + 
+								' scroll-ref-' + index + '">' + sectionData + '</a></li>'
 		$sectionScrollList.append(sectionList)
 		$sectionScrollScene = new ScrollScene({
 			triggerHook: 'onLeave'
@@ -41,6 +45,20 @@ $(document).ready ->
 		return
 		)
 	$sectionScrollList.find('li:first-child a').addClass('active')
+
+	# AUTOMATICALLY ADD SCROLL DOWNS TO SECTION SCROLL BLOCKS
+	scrollDownRef.shift()
+	$.each($sectionScrollContent, (index, item)->
+		idRef = scrollDownRef.shift()
+		scrollDownAnchor = '<a class="scroll-down scroll-down-sq size lg"' +
+											'href="#' + idRef + '"' +
+											'rel="nofollow">' +
+											'<i class="icon-arrows-down"></i>' +
+											'</a>'
+		if(idRef != undefined)
+			$(item).append(scrollDownAnchor)
+		return
+		)
 
 	$applyScene = new ScrollScene({
 		triggerHook: 'onEnter'

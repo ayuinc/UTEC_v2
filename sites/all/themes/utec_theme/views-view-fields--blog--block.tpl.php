@@ -19,7 +19,7 @@
 
 
 ?>
-<div class="pv-21 mt-70">
+<div class="pv-21">
 	<div class="container">
 		<h2 class="lead medium mb-56"><span class="text-gray-darker">Blog</span> <span class="text-gray">UTEC</span></h2>
 		<!--<h4 class="lead mt-0 mb-56">Lorem ipsum sit amet, consectetur adipisicing elit.</h4>-->

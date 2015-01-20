@@ -16,6 +16,14 @@ $list-custom-height: 20%;
 				height: 7px;
 				background-color: $brand-primary;
 			}
+			ul {
+				li {
+					&:first-child {
+						margin-top: 21px;
+						margin-top: rem(21px);
+					}
+				}
+			}
 		}
 	}
 }
