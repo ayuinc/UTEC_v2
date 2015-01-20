@@ -36,7 +36,7 @@
 			</div>
 		</div>
 	</div>
-	<a class="scroll-down scroll-down-sq size lg" id="unpanel" rel="nofollow">
+	<a class="scroll-down scroll-down-sq size lg" href="#unpanel" rel="nofollow">
 		<i class="icon-arrows-down bg-info-op text-white"></i>
 	</a>
 </div> <!-- END:Hero -->
@@ -55,7 +55,7 @@
 			</div>
 		</div>
 	</div>
-	<a class="scroll-down scroll-down-sq size lg" id="tresacciones" rel="nofollow">
+	<a class="scroll-down scroll-down-sq size lg" href="#tresacciones" rel="nofollow">
 		<i class="icon-arrows-down bg-info-op text-white"></i>
 	</a>
 </div>
@@ -83,7 +83,7 @@
 			</div>
 		</div>
 	</div>
-	<a class="scroll-down scroll-down-sq size lg" id="purificandoelagua" rel="nofollow">
+	<a class="scroll-down scroll-down-sq size lg" href="#purificandoelagua" rel="nofollow">
 		<i class="icon-arrows-down bg-info-op text-white"></i>
 	</a>
 </div>
@@ -99,7 +99,7 @@
 			<?php } ?>
 		</div>
 	</div>
-	<a class="scroll-down scroll-down-sq size lg" id="descubremas" rel="nofollow">
+	<a class="scroll-down scroll-down-sq size lg" href="#descubremas" rel="nofollow">
 		<i class="icon-arrows-down bg-info-op text-white"></i>
 	</a>
 </div>
