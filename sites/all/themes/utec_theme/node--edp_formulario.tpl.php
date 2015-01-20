@@ -154,8 +154,8 @@
 		</div>	
 		<div class="row">
 			<div class="form-group col-sm-6">
-				<label for="" class="sr-only"><?php print t("Birth Date") ?></label>
-				<input id="birth_date" type="text" class="form-control" placeholder="<?php print t("Birth Date") ?> (dd/mm/yy)">
+				<label for="" class="sr-only"><?php print t("Date of Birth") ?></label>
+				<input id="birth_date" type="text" class="form-control" placeholder="<?php print t("Date of Birth") ?> (dd/mm/yy)">
 			</div>
 			<div class="form-group col-sm-6">
 				<label for="" class="sr-only"><?php print t("Position") ?></label>
@@ -239,8 +239,8 @@
 		</div>	
 		<div class="row">
 			<div class="form-group col-sm-6">
-				<label for="" class="sr-only"><?php print t("Birth Date") ?></label>
-				<input id="birth_date" type="text" class="form-control" placeholder="<?php print t("Birth Date") ?> (dd/mm/yy)">
+				<label for="" class="sr-only"><?php print t("Date of Birth") ?></label>
+				<input id="birth_date" type="text" class="form-control" placeholder="<?php print t("Date of Birth") ?> (dd/mm/yy)">
 			</div>
 			<div class="form-group col-sm-6">
 				<label for="" class="sr-only">Email</label>
