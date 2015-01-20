@@ -16,7 +16,7 @@ $field_temario_alto = $node->field_temario_alto['und']['0']['value'];
 ?>
 	<div class="container-sm">
 	<div>
-		<h1 class="light"><?php print t('Top Academic Rankings') ?></h1>
+		<h1 class="light"><?php print t('Alto Rendimiento'); ?></h1>
 		<div class="separator-gray separator-md"></div>
 		<div>
 		<p class="lead text-gray"><?php print $field_descripcion_corta_alto ?></p>
