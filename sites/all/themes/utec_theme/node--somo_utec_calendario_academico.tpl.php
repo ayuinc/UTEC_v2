@@ -7,9 +7,11 @@
 <div class="container-sm">
 	<h1 class="light"><?php print t('Academic Calendar') ?></h1>
 	<div class="separator-gray separator-lg"></div>
+	<?php if ($field_titulo_del_evento!='') { ?>
 	<div class="pv-42 lead-ch">
 		<h3><?php print $field_titulo_del_evento ?></h3>
 	</div>
+	<?php } ?>
 	<?php if ($field_foto!='') { ?>
 	<div>
 		<img src="<?php print $field_foto ?>" class="img-responsive">
