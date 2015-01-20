@@ -64,8 +64,8 @@
 				<input id="address" type="text" class="form-control" placeholder="<?php print t("Address") ?>">
 			</div>
 			<div class="form-group col-sm-6">
-				<label for="" class="sr-only"><?php print t("Postion of Contact") ?></label>
-				<input id="contact_position" type="text" class="form-control" placeholder="<?php print t("Postion of Contact") ?>">
+				<label for="" class="sr-only"><?php print t("Position of Contact") ?></label>
+				<input id="contact_position" type="text" class="form-control" placeholder="<?php print t("Position of Contact") ?>">
 			</div>
 		</div>	
 		<div class="row">
