@@ -37,20 +37,35 @@
 			<ul class="grid-list grid-list-6 grid-list-2-xs">
         <li>
           <ul>
-            <li class="title text-gray-lighter"><?php print t('We are UTEC') ?></li>
-            <li><a href="/<?php print $language->prefix ?>/respaldo" class="atm-menu-inferior"><small><?php print t('A Solid Foundation') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/autoridades" class="atm-menu-inferior"><small><?php print t('Authorities') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/profesores" class="atm-menu-inferior"><small><?php print t('Faculty') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/ingenio-en-accion" class="atm-menu-inferior"><small><?php print t('Ingenuity in Action') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/metodologia-educativa" class="atm-menu-inferior"><small><?php print t('Educational Methodology') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/noticias" class="atm-menu-inferior"><small></small><small><?php print t('News') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/eventos-utec" class="atm-menu-inferior"><small><?php print t('Events') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/vida-estudiantil" class="atm-menu-inferior"><small><?php print t('Life at UTEC') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/campus-y-laboratorios" class="atm-menu-inferior"><small><?php print t('Campus and Labs') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/trabaja-en-utec" class="atm-menu-inferior"><small><?php print t('Work at UTEC') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/ingenio-en-accion/utec-garage" class="atm-menu-inferior"><small><?php print t('UTEC Garage') ?></small></a></li>
-            <li><a href="http://utecventures.com/" target="_blank" class="atm-menu-inferior"><small><?php print t('UTEC Ventures') ?></small></a></li>
-            <!--<li><a href="#" class="atm-menu-inferior"><small>Calendario Académico</small></a></li>-->
+            <?php if ($language->prefix == 'en'): ?>
+              <li class="title text-gray-lighter"><?php print t('We are UTEC') ?></li>
+              <li><a href="/<?php print $language->prefix ?>/governance" class="atm-menu-inferior"><small><?php print t('A Solid Foundation') ?></small></a></li>
+              <li><a href="/<?php print $language->prefix ?>/authorities" class="atm-menu-inferior"><small><?php print t('Authorities') ?></small></a></li>
+              <li><a href="/<?php print $language->prefix ?>/faculty" class="atm-menu-inferior"><small><?php print t('Faculty') ?></small></a></li>
+              <li><a href="/<?php print $language->prefix ?>/ingenuity-in-action" class="atm-menu-inferior"><small><?php print t('Ingenuity in Action') ?></small></a></li>
+              <li><a href="/<?php print $language->prefix ?>/metodologia-educativa" class="atm-menu-inferior"><small><?php print t('Educational Methodology') ?></small></a></li>
+              <li><a href="/<?php print $language->prefix ?>/news" class="atm-menu-inferior"><small></small><small><?php print t('News') ?></small></a></li>
+              <li><a href="/<?php print $language->prefix ?>/events" class="atm-menu-inferior"><small><?php print t('Events') ?></small></a></li>
+              <li><a href="/<?php print $language->prefix ?>/student-life" class="atm-menu-inferior"><small><?php print t('Life at UTEC') ?></small></a></li>
+              <li><a href="/<?php print $language->prefix ?>/labs-and-centers" class="atm-menu-inferior"><small><?php print t('Campus and Labs') ?></small></a></li>
+              <li><a href="/<?php print $language->prefix ?>/work-at-utec" class="atm-menu-inferior"><small><?php print t('Work at UTEC') ?></small></a></li>
+              <li><a href="/<?php print $language->prefix ?>/ingenuity-in-action/utec-garage" class="atm-menu-inferior"><small><?php print t('UTEC Garage') ?></small></a></li>
+              <li><a href="http://utecventures.com/" target="_blank" class="atm-menu-inferior"><small><?php print t('UTEC Ventures') ?></small></a></li>
+            <?php elseif ($language->prefix == 'es'): ?>
+              <li class="title text-gray-lighter"><?php print t('We are UTEC') ?></li>
+              <li><a href="/<?php print $language->prefix ?>/respaldo" class="atm-menu-inferior"><small><?php print t('A Solid Foundation') ?></small></a></li>
+              <li><a href="/<?php print $language->prefix ?>/autoridades" class="atm-menu-inferior"><small><?php print t('Authorities') ?></small></a></li>
+              <li><a href="/<?php print $language->prefix ?>/profesores" class="atm-menu-inferior"><small><?php print t('Faculty') ?></small></a></li>
+              <li><a href="/<?php print $language->prefix ?>/ingenio-en-accion" class="atm-menu-inferior"><small><?php print t('Ingenuity in Action') ?></small></a></li>
+              <li><a href="/<?php print $language->prefix ?>/metodologia-educativa" class="atm-menu-inferior"><small><?php print t('Educational Methodology') ?></small></a></li>
+              <li><a href="/<?php print $language->prefix ?>/noticias" class="atm-menu-inferior"><small></small><small><?php print t('News') ?></small></a></li>
+              <li><a href="/<?php print $language->prefix ?>/eventos-utec" class="atm-menu-inferior"><small><?php print t('Events') ?></small></a></li>
+              <li><a href="/<?php print $language->prefix ?>/vida-estudiantil" class="atm-menu-inferior"><small><?php print t('Life at UTEC') ?></small></a></li>
+              <li><a href="/<?php print $language->prefix ?>/campus-y-laboratorios" class="atm-menu-inferior"><small><?php print t('Campus and Labs') ?></small></a></li>
+              <li><a href="/<?php print $language->prefix ?>/trabaja-en-utec" class="atm-menu-inferior"><small><?php print t('Work at UTEC') ?></small></a></li>
+              <li><a href="/<?php print $language->prefix ?>/ingenio-en-accion/utec-garage" class="atm-menu-inferior"><small><?php print t('UTEC Garage') ?></small></a></li>
+              <li><a href="http://utecventures.com/" target="_blank" class="atm-menu-inferior"><small><?php print t('UTEC Ventures') ?></small></a></li>
+            <?php endif ?>
           </ul>
         </li>
         <!--<li>
