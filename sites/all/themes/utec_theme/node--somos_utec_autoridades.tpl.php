@@ -26,7 +26,7 @@
 						<a href="/user/<?php print $uid ?>"><?php print $name ?></a>
 						<?php if ($language->prefix == 'en') : ?>
 						<span><?php print $desc_ingles?></span>
-						<?php else ?>
+						<?php else : ?>
 						<span><?php print $desc?></span>
 						<?php endif; ?>
 						<a href="mailto:<?php print $mail ?>"><?php print $mail ?></a></div>
