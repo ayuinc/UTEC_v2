@@ -156,9 +156,9 @@
 							<?php endif ?>							
 						</li>
 						<li>
-							<?php if ($language->prefix == 'en'): ?>
+							<?php if ($language->prefix == 'es'): ?>
 								<a href="/<?php print $language->prefix ?>/metodologia-educativa"><span><?php print t('Methodology') ?></span><?php print t('Academic') ?></a>
-							<?php elseif ($language->prefix == 'es'): ?>
+							<?php elseif ($language->prefix == 'en'): ?>
 								<a href="/<?php print $language->prefix ?>/academic-methodology"><span><?php print t('Academic') ?></span><?php print t('Methodology') ?></a>
 							<?php endif ?>
 						</li>
@@ -179,9 +179,9 @@
 							<?php endif ?>							
 						</li>
 						<li>
-							<?php if ($language->prefix == 'en'): ?>
+							<?php if ($language->prefix == 'es'): ?>
 								<a href="/<?php print $language->prefix ?>/somos-utec/vida-estudiantil"><span>Life at UTEC</a>
-							<?php elseif ($language->prefix == 'es'): ?>
+							<?php elseif ($language->prefix == 'en'): ?>
 								<a href="/<?php print $language->prefix ?>/somos-utec/vida-estudiantil"><span>Vida Estudiantil</span></a>
 							<?php endif ?>
 						</li>
@@ -672,9 +672,9 @@
 							<?php endif ?>							
 						</li>
 						<li>
-							<?php if ($language->prefix == 'en'): ?>
+							<?php if ($language->prefix == 'es'): ?>
 								<a href="/<?php print $language->prefix ?>/metodologia-educativa"><span><?php print t('Methodology') ?></span><?php print t('Academic') ?></a>
-							<?php elseif ($language->prefix == 'es'): ?>
+							<?php elseif ($language->prefix == 'en'): ?>
 								<a href="/<?php print $language->prefix ?>/academic-methodology"><span><?php print t('Academic') ?></span><?php print t('Methodology') ?></a>
 							<?php endif ?>
 						</li>
@@ -695,9 +695,9 @@
 							<?php endif ?>							
 						</li>
 						<li>
-							<?php if ($language->prefix == 'en'): ?>
+							<?php if ($language->prefix == 'es'): ?>
 								<a href="/<?php print $language->prefix ?>/somos-utec/vida-estudiantil"><span>Life at UTEC</a>
-							<?php elseif ($language->prefix == 'es'): ?>
+							<?php elseif ($language->prefix == 'en'): ?>
 								<a href="/<?php print $language->prefix ?>/somos-utec/vida-estudiantil"><span>Vida Estudiantil</span></a>
 							<?php endif ?>
 						</li>
