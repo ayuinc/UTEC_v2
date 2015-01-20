@@ -31,7 +31,7 @@
 	</form>
 		
 	<!--COMPANY-->	
-	<div id="company_form" data-section-scroll="company_form" class="pb-70">	
+	<div id="company_form" data-section-scroll="company_form" class="pv-35">	
 	<h2><?php print t('Company') ?></h2>	
 	<form action="/registro.php" name="comapny_form" data-submit="Formulario de inscripcion">
 		<input type="hidden" name="origen" value="<?php print $title ?>">
@@ -169,7 +169,7 @@
 	</div>
 	
 	<!--PERSON-->		
-	<div id="person_form" data-section-scroll="person_form" class="pt-35">
+	<div id="person_form" data-section-scroll="person_form" class="pv-35">
 	<h2><?php print t('Person') ?></h2>	
 	<form action="/registro.php" name="person_form" data-submit="Formulario de inscripcion">
 		<input type="hidden" name="origen" value="<?php print $title ?>">
