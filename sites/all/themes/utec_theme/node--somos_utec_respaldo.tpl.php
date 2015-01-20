@@ -24,7 +24,7 @@
             $image = $field[$num]->field_logo_respaldo['und'][0]['filename']; 
             $link = $field[$num]->field_link_respaldo['und'][0]['value'];
           ?>
-        <li data-href="<?php print $link ?>" target="_blank">
+        <li data-href="<?php print $link ?>" target="_blank" rel="nofollow">
           <div>
             <img src="<?php print('/'.$pathfile.$image)?>" alt="" width="70%" height="auto">
           </div>
