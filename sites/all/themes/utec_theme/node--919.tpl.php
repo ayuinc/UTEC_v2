@@ -7,7 +7,7 @@
 	// $titulo = $node->title;
 	// $name = $node->webform['components'];
 	
-	kpr($form);
+	//kpr($node);
 	//print_r($form);
 ?>
 
