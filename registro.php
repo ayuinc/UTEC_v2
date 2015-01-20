@@ -1167,7 +1167,8 @@ if($error){
 	
 }else{
 
-  echo "exito";
+  header('Location: /gracias/traslado');
+  exit();
   //$message.="  <p>Comunícate con UTEC más fácil:<br/><a href='http://guia.com.pe/estara/estara_popup.asp?advertiseId=411234&status=P&phone=51013731000&addressId=876727&' target='_blank'><img src='img/llama_gratis.jpg' alt='LLama gratis'></a></p>";
   //Flash::setInfo($message);
 }

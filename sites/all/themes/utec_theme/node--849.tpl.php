@@ -22,8 +22,7 @@
 <div class="container-sm form-custom">
 	<form action="/registro.php" class="mb-ch-28" data-submit="Formulario de inscripcion" method="post" id="formRegistro" name="formRegistro">
 		<input type="hidden" name="origen" value="<?php print $title; ?>">
-		<input type="hidden" name="idioma1" value="<?php print $idioma; ?>">
-		<input type="hidden" name="idioma" value="en">
+		<input type="hidden" name="idioma" value="<?php print $idioma; ?>">
 
 		<div class="row">
 			<div class="form-group col-sm-4">
