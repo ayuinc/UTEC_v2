@@ -29,7 +29,7 @@
 		</div>
 	</div> -->
   <?php $node = node_load(919); ?>
-  <?php print_r($node); ?>
+  <?php //print_r($node); ?>
 	<div class="site-map pv-14 bg-gray-dark hidden-xs">
 		<div class="container">
 			<ul class="grid-list grid-list-6 grid-list-2-xs">
