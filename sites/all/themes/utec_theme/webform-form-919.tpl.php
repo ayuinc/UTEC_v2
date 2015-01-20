@@ -4,8 +4,8 @@
   $path = $base_url.'/'.$theme_path;
   $pathfile= variable_get('file_public_path', conf_path() . '/files/');
 
-	$titulo = $node->title;
-	$name = $node->webform['components'];
+	// $titulo = $node->title;
+	// $name = $node->webform['components'];
 	
 	kpr($node);
 	print_r($form);
