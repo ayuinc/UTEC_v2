@@ -27,6 +27,7 @@ if (!isset($_POST['email'])) {$_POST['email'] = "";};
 if (!isset($_POST['celular-1'])) {$_POST['celular-1'] = "";};
 if (!isset($_POST['celular-2'])) {$_POST['celular-2'] = "";};
 if (!isset($_POST['telefono'])) {$_POST['telefono'] = "";};
+if (!isset($_POST['universidad'])) {$_POST['universidad'] = "";};
 if (!isset($_POST['ano-culminacion'])) {$_POST['ano-culminacion'] = "";};
 if (!isset($_POST['colegio'])) {$_POST['colegio'] = "";};
 if (!isset($_POST['estudios-dpto'])) {$_POST['estudios-dpto'] = "";};
@@ -137,8 +138,9 @@ if($origen == "Examen de Admisión" || $origen == "Primeros puestos" || $origen 
 
 echo $origen;
 
-if($origen == "Formulario inscripcion examen de admision" || $origen == "Formulario inscripcion alto rendimiento" || $origen == "Formulario inscripcion centro pre" || 
-   $origen == "Formulario inscripcion primeros puestos" || $origen == "Formulario inscripcion traslados" || $origen == "Formulario inscripcion bachillerato internacional" )
+if($origen == "Formulario inscripcion examen de admision" || $origen == "Formulario inscripcion alto rendimiento" || 
+   $origen == "Formulario inscripcion centro pre" || $origen == "Formulario inscripcion primeros puestos" || 
+   $origen == "Formulario inscripcion traslados" || $origen == "Formulario inscripcion bachillerato internacional" )
 {
 
     $fromTelemarketing = "inscripciones@utec.edu.pe";
@@ -152,7 +154,7 @@ if($origen == "Formulario inscripcion examen de admision" || $origen == "Formula
         $tituloTelemarketing = "Registro de Inscripciones - Examen de Admisión UTEC";
         $subjectTelemarketing = "Registro de Inscripciones - Examen de Admisión UTEC";
         $subjectCliente = "Registro de Inscripciones - Examen de Admisión UTEC";
-        $familia = "EXAMEN";
+        $familia = "EXAMEN-ADMISION";
         $origen = "pagina-inscripcion-examen-admision";  
     }
 
@@ -161,7 +163,7 @@ if($origen == "Formulario inscripcion examen de admision" || $origen == "Formula
         $tituloTelemarketing = "Registro de Inscripciones - Alto Rendimiento UTEC";
         $subjectTelemarketing = "Registro de Inscripciones - Alto Rendimiento UTEC";
         $subjectCliente = "Registro de Inscripciones - Alto Rendimiento UTEC";
-        $familia = "ALTO RENDIMIENTO";
+        $familia = "ALTO-RENDIMIENTO";
         $origen = "pagina-inscripcion-alto-rendimiento";  
     }
 
@@ -179,8 +181,8 @@ if($origen == "Formulario inscripcion examen de admision" || $origen == "Formula
         $tituloTelemarketing = "Registro de Inscripciones - Centro Preuniversitario UTEC";
         $subjectTelemarketing = "Registro de Inscripciones - Centro Preuniversitario UTEC";
         $subjectCliente = "Registro de Inscripciones - Centro Preuniversitario UTEC";
-        $familia = "PRE UTEC";
-        $origen = "pagina-inscripcion-centro-pre";  
+        $familia = "CENTRO-PRE";
+        $origen = "pagina-inscripcion-pre";  
     }
 
     if($origen == "Formulario inscripcion primeros puestos")
@@ -188,7 +190,7 @@ if($origen == "Formulario inscripcion examen de admision" || $origen == "Formula
         $tituloTelemarketing = "Registro de Inscripciones - Primeros Puestos UTEC";
         $subjectTelemarketing = "Registro de Inscripciones - Primeros Puestos UTEC";
         $subjectCliente = "Registro de Inscripciones - Primeros Puestos UTEC";
-        $familia = "PRIMEROS PUESTOS";
+        $familia = "PRIMEROS-PUESTOS";
         $origen = "pagina-inscripcion-primeros-puestos";  
     }
 
@@ -198,7 +200,7 @@ if($origen == "Formulario inscripcion examen de admision" || $origen == "Formula
         $tituloTelemarketing = "Registro de Inscripciones - Traslado Externo UTEC";
         $subjectTelemarketing = "Registro de Inscripciones - Traslado Externo UTEC";
         $subjectCliente = "Registro de Inscripciones - Traslado Externo UTEC";
-        $familia = "TRASLADO EXTERNO";
+        $familia = "TRASLADO-EXTERNO";
         $origen = "pagina-inscripcion-traslado-externo";  
     }
 }
@@ -341,6 +343,11 @@ $mensaje_html .= '<html><body><table><tr>
                          <tr>
                             <td colspan="2"><b>Estudios</b></td> 
                          </tr>
+
+       <tr>
+                            <td>Universidad de Procedencia:</td>
+                            <td>' . $_POST['universidad'] . '</td>
+       </tr>                         
        <tr>
                             <td>A&ntilde;o en que culmino sus estudios secundarios o bachillerato:</td>
                             <td>'.$_POST['ano-culminacion'].'</td>
@@ -559,7 +566,7 @@ if($origen == "pagina-inscripcion-alto-rendimiento" || $origen == "pagina-inscri
 }
 
 
-if($origen == "pagina-inscripcion-centro-pre")
+if($origen == "pagina-inscripcion-pre")
 {
               $contenidorpta.="<table width='600px' height='168px' cellpadding='2' cellspacing='2' bgcolor='#FFFFFF'>
 
@@ -768,7 +775,7 @@ $v34 = utf8_decode($_POST['carrera']);
 $v35 = $programacion;
 $v36 = utf8_decode($_POST['consulta']);
 $v37 = $origen;
-$v38 = "";
+$v38 = utf8_decode($_POST['universidad']);
 
 $param = array('familia' => $v0, 'nombres' => $v1, 'apelPat' => $v2, 'apelMat' => $v3, 'tipDoc' => $v4, 'numDoc' => $v5, 'genero' => $v6, 'carrera1' => $v7, 'carrera2' => $v8, 'paisNaci' => $v9, 'ciudadNaci' => $v10,
                                         'diaNaci' => $v11, 'mesNaci' => $v12, 'anhoNaci' => $v13, 'dptoActual' => $v14, 'provActual' => $v15, 'distActual' => $v16, 'direccion' => $v17, 'email' => $v18, 'celular1' => $v19, 'celular2' => $v20,

@@ -56,3 +56,40 @@ $malla-curricular-height: 70px;
 		}
 	}
 }
+
+$math: #8dc63f;
+$management: #ffdd00;
+$engineering: #afdfe4;
+.malla-curricular-ref {
+	text-transform: uppercase;
+	@include light;
+	color: $gray;
+	> li {
+		&.math,
+		&.management,
+		&.engineering {
+			&:before {
+				width: 28px;
+				height: 14px;
+				content: "";
+				margin-right: 9px;
+				display: inline-block;
+			}
+		}
+		&.math {
+			&:before {
+				background-color: $math;
+			}
+		}
+		&.management {
+			&:before {
+				background-color: $management;
+			}
+		}
+		&.engineering {
+			&:before {
+				background-color: $engineering;
+			}
+		}
+	}
+}
