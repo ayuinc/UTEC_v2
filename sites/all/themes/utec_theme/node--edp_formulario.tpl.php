@@ -23,23 +23,18 @@
 <div class="container-sm form-custom mt-35"> 
 	<form action="" data-submit="Formulario de inscripcion">
 	<div class="row">
-		<div class="form-group col-sm-5">
-			<p><?php print t('Company') ?></p>
+		<div class="form-group col-sm-6">
+			<a href="#company_form" class="scroll-ref-1"><?php print t('Company') ?></a>
 		</div>
-		<div class="form-group col-sm-1">
-			<input id="company" type="radio" name="optionedp" class="form-control">
-		</div>
-		<div class="form-group col-sm-5">
-			<p><?php print t('Person') ?></p>
-		</div>
-		<div class="form-group col-sm-1">
-			<input id="person" type="radio" name="optionedp" class="form-control">
+		<div class="form-group col-sm-6">
+			<a href="#person_form" class="scroll-ref-2"><?php print t('Person') ?></a>
 		</div>
 	</div>
 	</form>
 		
-	<!--COMPANY-->		
-	<form action="/registro.php" data-submit="Formulario de inscripcion" id="company">
+	<!--COMPANY-->	
+	<div id="company_form" data-section-scroll="company_form">	
+	<form action="/registro.php" name="comapny_form" data-submit="Formulario de inscripcion">
 		<input type="hidden" name="origen" value="<?php print $title ?>">
 		<input type="hidden" name="origen_tipo" value="company">
 		
@@ -172,9 +167,11 @@
 			<button type="submit" class="btn btn-primary btn-lg"><?php print t("Send") ?></button>
 		</div>
 	</form>	
+	</div>
 	
 	<!--PERSON-->		
-	<form action="/registro.php" data-submit="Formulario de inscripcion" id="person">
+	<div id="person_form" data-section-scroll="perosn_form">
+	<form action="/registro.php" name="person_form" data-submit="Formulario de inscripcion">
 		<input type="hidden" name="origen" value="<?php print $title ?>">
 		<input type="hidden" name="origen_tipo" value="person">		
 		<div class="row">
@@ -285,5 +282,6 @@
 			<button type="submit" class="btn btn-primary btn-lg"><?php print t("Send") ?></button>
 		</div>
 	</form>		
-						
+	</div>			
 </div>	
+
