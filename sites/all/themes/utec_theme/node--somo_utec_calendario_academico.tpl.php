@@ -17,8 +17,8 @@
 		<img src="<?php print $field_foto ?>" class="img-responsive">
 	</div>
 	<?php } ?>
-	<div class="pv-ch-21 lead-ch p-ch-gray">
-		<h3><?php print $field_introduccion ?></h3>
+	<div class="lead-ch p-ch-gray">
+		<?php print $field_introduccion ?>
 		<?php if ($field_contenido!='') { ?>
 		<?php print $field_contenido ?>
 		<?php } ?>
