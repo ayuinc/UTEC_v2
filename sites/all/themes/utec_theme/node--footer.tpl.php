@@ -90,11 +90,11 @@
 						<?php elseif ($language->prefix == 'en'): ?>
             <li class="title text-gray-lighter"><?php print t('Research') ?></li>
             <li><a href="/<?php print $language->prefix ?>/proyectos" class="atm-menu-inferior"><small><?php print t('Projects') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/publicaciones" class="atm-menu-inferior"><small><?php print t('Publications') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/publications" class="atm-menu-inferior"><small><?php print t('Publications') ?></small></a></li>
             <!--<li><a href="#"><small>Publicaciones</small></a></li>
             <li><a href="#"><small>Consultorías</small></a></li>-->
-            <li><a href="/<?php print $language->prefix ?>/empresas-y-clientes"><small><?php print t('Companies and Clients') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/investigacion/contact"><small><?php print t('Contact us') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/our-clients"><small><?php print t('Companies and Clients') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/research/contact"><small><?php print t('Contact us') ?></small></a></li>
 						<?php endif ?>
           </ul>
         </li>
