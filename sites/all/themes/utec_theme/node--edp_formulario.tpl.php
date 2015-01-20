@@ -54,8 +54,8 @@
 				<input id="country" type="text" class="form-control" placeholder="<?php print t("Country") ?>">
 			</div>
 			<div class="form-group col-sm-6">
-				<label for="" class="sr-only"><?php print t("Contact") ?></label>
-				<input id="contact" type="text" class="form-control" placeholder="<?php print t("Contact Position") ?>">
+				<label for="" class="sr-only"><?php print t("Person of Contact") ?></label>
+				<input id="contact_person" type="text" class="form-control" placeholder="<?php print t("Person of Contact") ?>">
 			</div>
 		</div>	
 		<div class="row">
@@ -64,8 +64,8 @@
 				<input id="address" type="text" class="form-control" placeholder="<?php print t("Address") ?>">
 			</div>
 			<div class="form-group col-sm-6">
-				<label for="" class="sr-only"><?php print t("Contact Position") ?></label>
-				<input id="contact_position" type="text" class="form-control" placeholder="<?php print t("Contact Position") ?>">
+				<label for="" class="sr-only"><?php print t("Position of Contact") ?></label>
+				<input id="contact_position" type="text" class="form-control" placeholder="<?php print t("Position of Contact") ?>">
 			</div>
 		</div>	
 		<div class="row">
@@ -74,8 +74,8 @@
 				<input id="department" type="text" class="form-control" placeholder="<?php print t("Department") ?>">
 			</div>
 			<div class="form-group col-sm-6">
-				<label for="" class="sr-only"><?php print t("Contact e-mail") ?></label>
-				<input id="contact_email" type="text" class="form-control" placeholder="<?php print t("Contact e-mail") ?>">
+				<label for="" class="sr-only"><?php print t("Email of Contact") ?></label>
+				<input id="contact_email" type="text" class="form-control" placeholder="<?php print t("Email of Contact") ?>">
 			</div>
 		</div>
 		<div class="row">
