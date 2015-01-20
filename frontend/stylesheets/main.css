@@ -3828,8 +3828,8 @@ h6.lead {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../assets/icons/icomoon-19.01.15.eot?-405wbr");
-  src: url("../assets/icons/icomoon-19.01.15.eot?#iefix-405wbr") format("embedded-opentype"), url("../assets/icons/icomoon-19.01.15.woff?-405wbr") format("woff"), url("../assets/icons/icomoon-19.01.15.ttf?-405wbr") format("truetype"), url("../assets/icons/icomoon-19.01.15.svg?-405wbr#icomoon") format("svg");
+  src: url("../assets/icons/icomoon-19.01.15.eot?-3ql6oh");
+  src: url("../assets/icons/icomoon-19.01.15.eot?#iefix-3ql6oh") format("embedded-opentype"), url("../assets/icons/icomoon-19.01.15.woff?-3ql6oh") format("woff"), url("../assets/icons/icomoon-19.01.15.ttf?-3ql6oh") format("truetype"), url("../assets/icons/icomoon-19.01.15.svg?-3ql6oh#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 [class^="icon-"], [class*=" icon-"] {
@@ -3844,22 +3844,22 @@ h6.lead {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.icon-admisiones-traslado:before {
+.icon-admisiones-alto-rendimiento:before {
   content: "\e600"; }
 
-.icon-admisiones-alto-rendimiento:before {
+.icon-admisiones-bachillerato:before {
   content: "\e601"; }
 
-.icon-admisiones-bachillerato:before {
+.icon-admisiones-centro-pre:before {
   content: "\e602"; }
 
-.icon-admisiones-centro-pre:before {
+.icon-admisiones-examen:before {
   content: "\e603"; }
 
-.icon-admisiones-examen:before {
+.icon-admisiones-primeros-puestos:before {
   content: "\e604"; }
 
-.icon-admisiones-primeros-puestos:before {
+.icon-admisiones-traslado:before {
   content: "\e605"; }
 
 .icon-menu:before {
@@ -5403,6 +5403,9 @@ textarea:-ms-input-placeholder {
       width: 7px;
       height: 7px;
       background-color: #00BFDF; }
+    .list-custom ul li ul li:first-child {
+      margin-top: 21px;
+      margin-top: 1.5rem; }
 
 .list-custom-left ul {
   padding-left: 0;
@@ -5603,6 +5606,70 @@ body {
   padding: 1rem 0 1.5rem 0; }
   .grid-block.grid-block-full .container {
     width: 100%; }
+
+.scroll-down-primary .scroll-down i {
+  background-color: rgba(0, 191, 223, 0.7);
+  color: white; }
+
+.scroll-down-success .scroll-down i {
+  background-color: rgba(141, 198, 63, 0.7);
+  color: white; }
+
+.scroll-down-info .scroll-down i {
+  background-color: rgba(46, 67, 114, 0.7);
+  color: white; }
+
+.scroll-down-warning .scroll-down i {
+  background-color: rgba(255, 221, 0, 0.7);
+  color: white; }
+
+.scroll-down-danger .scroll-down i {
+  background-color: rgba(221, 83, 65, 0.7);
+  color: white; }
+
+.scroll-down-blue-darker .scroll-down i {
+  background-color: rgba(0, 167, 215, 0.7);
+  color: white; }
+
+.scroll-down-blue-dark .scroll-down i {
+  background-color: rgba(67, 213, 255, 0.7);
+  color: white; }
+
+.scroll-down-blue .scroll-down i {
+  background-color: rgba(139, 229, 255, 0.7);
+  color: white; }
+
+.scroll-down-blue-light .scroll-down i {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: white; }
+
+.scroll-down-blue-lighter .scroll-down i {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: white; }
+
+.scroll-down-gray-darker .scroll-down i {
+  background-color: rgba(25, 25, 25, 0.7);
+  color: black; }
+
+.scroll-down-gray-dark .scroll-down i {
+  background-color: rgba(50, 50, 50, 0.7);
+  color: black; }
+
+.scroll-down-gray .scroll-down i {
+  background-color: rgba(143, 141, 142, 0.7);
+  color: #595858; }
+
+.scroll-down-gray-light .scroll-down i {
+  background-color: rgba(227, 227, 227, 0.7);
+  color: #adadad; }
+
+.scroll-down-gray-lighter .scroll-down i {
+  background-color: rgba(241, 241, 241, 0.7);
+  color: #bbbbbb; }
+
+.scroll-down-white .scroll-down i {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #c9c9c9; }
 
 .scroll-down {
   display: block;

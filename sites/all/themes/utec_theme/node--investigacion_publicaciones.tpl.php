@@ -17,7 +17,7 @@
 ?>
 
 <li>
-	<h3 class="mb-14"><a href="<?php print $link ?>" target="_blank" class="text-gray-darker"><?php print $titulo ?></a></h3>
+	<h4 class="mb-14"><a href="<?php print $link ?>" target="_blank" class="text-gray-darker"><?php print $titulo ?></a></h4>
 	<?php if ($investigador!='') { ?>
 		<p class="lead"><span class="bold">Investigador: </span><span><?php print $investigador ?></span></p>
 	<?php } ?>

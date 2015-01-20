@@ -18,10 +18,10 @@
 		<?php $uid = $value['entity']->uid; ?>
     <?php $desc = $value['entity']->field_descripci_n['und'][0]['value']; ?>		
     <?php $desc_ingles = $value['entity']->field_descripci_n_ingles['und']['0']['value']; ?>		
-			<li class="mb-ch-14">
+			<li class="mb-ch-14" data-href="/user/<?php print $uid ?>">
 				<div class="grid-list-pic"><img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="" width="180px" height="auto" class="img-circle"></div>
 				<div>
-					<a href="/user/<?php print $uid ?>"><?php print $name ?></a>
+					<a href="/<?php print drupal_get_path_alias('user/'.$uid, $language->prefix) ?>"><?php print $name ?></a>
 					<?php if ($language->prefix == 'en') : ?>
 					<span><?php print $desc_ingles?></span>
 					<?php else : ?>
