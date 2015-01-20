@@ -36,13 +36,13 @@
 			</div>
 		</div>
 	</div>
-	<a class="scroll-down scroll-down-sq size lg" id="un-panel" rel="nofollow">
+	<a class="scroll-down scroll-down-sq size lg" href="#unpanel" rel="nofollow">
 		<i class="icon-arrows-down bg-info-op text-white"></i>
 	</a>
 </div> <!-- END:Hero -->
 <div data-section-scroll="Un panel" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_foto_causa)?>);">
 	<div class="overlay flex-middle">
-		<div class="container hero-text">
+		<div class="container hero-text" data-href="<?php print $field_link_causa ?>">
 			<div class="row">
 				<div class="col-sm-6 text-white normalize-text">
 					<h2 class="thin h1"><?php print $field_titulo_causa ?></h2>
@@ -55,6 +55,9 @@
 			</div>
 		</div>
 	</div>
+	<a class="scroll-down scroll-down-sq size lg" href="#tresacciones" rel="nofollow">
+		<i class="icon-arrows-down bg-info-op text-white"></i>
+	</a>
 </div>
 <div class="pvp-7">
 	<div class="container-sm text-center">
@@ -63,7 +66,7 @@
 </div>
 <div data-section-scroll="Tres acciones" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_foto_tres_acciones)?>);">
 	<div class="overlay flex-middle">
-		<div class="container hero-text">
+		<div class="container hero-text" data-href="<?php print $field_link_tres_acciones ?>">
 			<div class="row">
 				<div class="col-sm-6 text-white normalize-text">
 					<h2 class="thin h1"><?php print $field_titulo_tres_acciones ?></h2>
@@ -80,9 +83,12 @@
 			</div>
 		</div>
 	</div>
+	<a class="scroll-down scroll-down-sq size lg" href="#purificandoelagua" rel="nofollow">
+		<i class="icon-arrows-down bg-info-op text-white"></i>
+	</a>
 </div>
 <div data-section-scroll="Purificando el agua" class="section-scroll-content minh-560 flex-middle-center">
-	<div class="container-sm text-center normalize-text">
+	<div class="container-sm text-center normalize-text" data-href="<?php print $field_link_proyecto ?>">
 		<h2 class="lead thin"><?php print $field_titulo_proyecto ?></h2>
 		<hr class="hr-gray">
 		<p class="lead gray"><?php print $field_subtitulo_proyecto ?></p>
@@ -93,8 +99,8 @@
 			<?php } ?>
 		</div>
 	</div>
-	<a class="scroll-down scroll-down-sq size lg" rel="nofollow">
-		<i class="icon-arrows-down bg-info text-white"></i>
+	<a class="scroll-down scroll-down-sq size lg" href="#descubremas" rel="nofollow">
+		<i class="icon-arrows-down bg-info-op text-white"></i>
 	</a>
 </div>
 <div data-section-scroll="Descubre más" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_foto_redes_sociales)?>);">
@@ -117,6 +123,6 @@
 <div id="section-scroll" class="hidden-xs hidden-sm">
 	<ul></ul>
 	<div class="text-right pv-21 btn-apply animated">
-		<a href="#" class="btn btn-primary uppercase"><?php print t('Apply') ?></a>
+		<a href="/node/854" class="btn btn-primary uppercase"><?php print t('Apply') ?></a>
 	</div>
 </div>

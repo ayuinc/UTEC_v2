@@ -22,25 +22,18 @@
 
 <div class="container-sm form-custom mt-35"> 
 	<form action="" data-submit="Formulario de inscripcion">
+	<p><?php print t('Choose and option') ?></p>
 	<div class="row">
-		<div class="form-group col-sm-1">
-			<input id="company" type="radio" name="optionedp" class="form-control">
-		</div>		
-		<div class="form-group col-sm-5">
-			<p><?php print t('Company') ?></p>
-		</div>
-		<div class="form-group col-sm-1">
-			<input id="person" type="radio" name="optionedp" class="form-control">
-		</div>		
-		<div class="form-group col-sm-5">
-			<p><?php print t('Person') ?></p>
+		<div class="form-group col-sm-4">
+			<a href="#company_form" class="scroll-ref-1"><?php print t('Company') ?></a> | <a href="#person_form" class="scroll-ref-2"><?php print t('Person') ?></a>
 		</div>
 	</div>
 	</form>
 		
 	<!--COMPANY-->	
-	<div id="company_form">	
-	<form action="/registro.php" data-submit="Formulario de inscripcion">
+	<div id="company_form" data-section-scroll="company_form" class="pv-35">	
+	<h2><?php print t('Company') ?></h2>	
+	<form action="/registro.php" name="comapny_form" data-submit="Formulario de inscripcion">
 		<input type="hidden" name="origen" value="<?php print $title ?>">
 		<input type="hidden" name="origen_tipo" value="company">
 		
@@ -61,8 +54,8 @@
 				<input id="country" type="text" class="form-control" placeholder="<?php print t("Country") ?>">
 			</div>
 			<div class="form-group col-sm-6">
-				<label for="" class="sr-only"><?php print t("Contact") ?></label>
-				<input id="contact" type="text" class="form-control" placeholder="<?php print t("Contact Position") ?>">
+				<label for="" class="sr-only"><?php print t("Person of Contact") ?></label>
+				<input id="contact_person" type="text" class="form-control" placeholder="<?php print t("Person of Contact") ?>">
 			</div>
 		</div>	
 		<div class="row">
@@ -71,8 +64,8 @@
 				<input id="address" type="text" class="form-control" placeholder="<?php print t("Address") ?>">
 			</div>
 			<div class="form-group col-sm-6">
-				<label for="" class="sr-only"><?php print t("Contact Position") ?></label>
-				<input id="contact_position" type="text" class="form-control" placeholder="<?php print t("Contact Position") ?>">
+				<label for="" class="sr-only"><?php print t("Position of Contact") ?></label>
+				<input id="contact_position" type="text" class="form-control" placeholder="<?php print t("Position of Contact") ?>">
 			</div>
 		</div>	
 		<div class="row">
@@ -81,8 +74,8 @@
 				<input id="department" type="text" class="form-control" placeholder="<?php print t("Department") ?>">
 			</div>
 			<div class="form-group col-sm-6">
-				<label for="" class="sr-only"><?php print t("Contact e-mail") ?></label>
-				<input id="contact_email" type="text" class="form-control" placeholder="<?php print t("Contact e-mail") ?>">
+				<label for="" class="sr-only"><?php print t("Email of Contact") ?></label>
+				<input id="contact_email" type="text" class="form-control" placeholder="<?php print t("Email of Contact") ?>">
 			</div>
 		</div>
 		<div class="row">
@@ -161,8 +154,8 @@
 		</div>	
 		<div class="row">
 			<div class="form-group col-sm-6">
-				<label for="" class="sr-only"><?php print t("Birth Date") ?></label>
-				<input id="birth_date" type="text" class="form-control" placeholder="<?php print t("Birth Date") ?> (dd/mm/yy)">
+				<label for="" class="sr-only"><?php print t("Date of Birth") ?></label>
+				<input id="birth_date" type="text" class="form-control" placeholder="<?php print t("Date of Birth") ?> (dd/mm/yy)">
 			</div>
 			<div class="form-group col-sm-6">
 				<label for="" class="sr-only"><?php print t("Position") ?></label>
@@ -176,8 +169,9 @@
 	</div>
 	
 	<!--PERSON-->		
-	<div id="person_form">
-	<form action="/registro.php" data-submit="Formulario de inscripcion">
+	<div id="person_form" data-section-scroll="person_form" class="pv-35">
+	<h2><?php print t('Person') ?></h2>	
+	<form action="/registro.php" name="person_form" data-submit="Formulario de inscripcion">
 		<input type="hidden" name="origen" value="<?php print $title ?>">
 		<input type="hidden" name="origen_tipo" value="person">		
 		<div class="row">
@@ -245,8 +239,8 @@
 		</div>	
 		<div class="row">
 			<div class="form-group col-sm-6">
-				<label for="" class="sr-only"><?php print t("Birth Date") ?></label>
-				<input id="birth_date" type="text" class="form-control" placeholder="<?php print t("Birth Date") ?> (dd/mm/yy)">
+				<label for="" class="sr-only"><?php print t("Date of Birth") ?></label>
+				<input id="birth_date" type="text" class="form-control" placeholder="<?php print t("Date of Birth") ?> (dd/mm/yy)">
 			</div>
 			<div class="form-group col-sm-6">
 				<label for="" class="sr-only">Email</label>
@@ -291,19 +285,3 @@
 	</div>			
 </div>	
 
-<script>
-	$( document ).ready(function() {
-		$('#company_form').hide();
-		$('#person_form').hide();
-		
-		$("#company").click(function() {
-			$('#company_form').show();
-			$('#person_form').hide();
-		});	
-		
-		$("#person").click(function() {
-			$('#company_form').hide();
-			$('#person_form').show();
-		});		
-	});
-</script>

@@ -33,7 +33,7 @@ $field_condiciones_inscripcion = $node->field_condiciones_inscripcion['und']['0'
 	</div>
 	<div class="list-custom pv-42">
 		<?php print $field_detalles_inscripcion ?>
-		<a href="#" class="btn btn-primary see-more btn-lg uppercase"><?php print t('Complete the form') ?></a>
+		<a href="/formulario/formulario-inscripcion-examen-de-admision" class="btn btn-primary see-more btn-lg uppercase"><?php print t('Complete the form') ?></a>
 	</div>
 	<div class="pb-42">
 		<h3 class="thin"><?php print t('Conditions for admission') ?></h3>

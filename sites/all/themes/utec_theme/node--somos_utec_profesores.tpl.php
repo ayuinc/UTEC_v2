@@ -11,7 +11,7 @@
 	<div class="separator-gray separator-lg"></div>
 	<p class="lead text-gray"><?php print $field_introduccion_su_profesores ?></p>
 	<ul class="grid-list grid-list-3 grid-list-1-xs grid-list-item-height grid-list-anchors pv-21 text-center">
-    <?php kpr($node); ?>
+    <?php //kpr($node); ?>
     <?php foreach ($node->field_lista_profesores['und'] as $key => $value) :?>
     <?php $name = $value['entity']->name; ?>   
 		<?php $pic = $value['entity']->picture->filename; ?>

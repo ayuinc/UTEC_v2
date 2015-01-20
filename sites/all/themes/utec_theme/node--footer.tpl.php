@@ -28,10 +28,8 @@
 			</ul>
 		</div>
 	</div> -->
-  <?php
-    module_load_include('inc', 'simplenews', 'simplenews.subscription');
-    drupal_render(drupal_get_form('simplenews_subscription_manager_form'));
-  ?>
+  <?php $node = node_load(919); ?>
+  <?php //print_r($node); ?>
 	<div class="site-map pv-14 bg-gray-dark hidden-xs">
 		<div class="container">
 			<ul class="grid-list grid-list-6 grid-list-2-xs">
@@ -189,3 +187,4 @@
     h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
   })(document);
 </script>
+

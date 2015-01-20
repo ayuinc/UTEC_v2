@@ -7,15 +7,21 @@
 <div class="container-sm">
 	<h1 class="light"><?php print t('Academic Calendar') ?></h1>
 	<div class="separator-gray separator-lg"></div>
+	<?php if ($field_titulo_del_evento!='') { ?>
 	<div class="pv-42 lead-ch">
 		<h3><?php print $field_titulo_del_evento ?></h3>
 	</div>
+	<?php } ?>
+	<?php if ($field_foto!='') { ?>
 	<div>
 		<img src="<?php print $field_foto ?>" class="img-responsive">
 	</div>
-	<div class="pv-ch-21 lead-ch p-ch-gray">
-		<h3><?php print $field_introduccion ?></h3>
+	<?php } ?>
+	<div class="lead-ch p-ch-gray">
+		<?php print $field_introduccion ?>
+		<?php if ($field_contenido!='') { ?>
 		<?php print $field_contenido ?>
+		<?php } ?>
 	</div>
 	<div class="pv-42 lead-ch">
 		<!--<h3>Links de interés</h3>
