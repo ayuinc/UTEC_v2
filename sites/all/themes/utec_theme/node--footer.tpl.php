@@ -68,10 +68,10 @@
           <ul>
             <li class="title text-gray-lighter"><?php print t('Research') ?></li>
             <li><a href="/<?php print $language->prefix ?>/investigacion/proyectos" class="atm-menu-inferior"><small><?php print t('Projects') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/investigacion/publicaciones" class="atm-menu-inferior"><small><?php print t('Publications') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/publicaciones" class="atm-menu-inferior"><small><?php print t('Publications') ?></small></a></li>
             <!--<li><a href="#"><small>Publicaciones</small></a></li>
             <li><a href="#"><small>Consultorías</small></a></li>-->
-            <li><a href="/<?php print $language->prefix ?>/investigacion/empresas-y-clientes"><small><?php print t('Companies and Clients') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/empresas-y-clientes"><small><?php print t('Companies and Clients') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/investigacion/contacto"><small><?php print t('Contact us') ?></small></a></li>
 
           </ul>
