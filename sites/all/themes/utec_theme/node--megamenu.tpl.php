@@ -546,11 +546,11 @@
 						</li>-->
 						<li><a href="/edp/la-escuela"><?php print t('The School') ?></a></li>
 						<li>
-							<?php if ($language->prefix == 'en'): ?>
+							<?php if ($language->prefix == 'es'): ?>
 								<a href="/<?php print $language->prefix ?>/edp/cursos-cortos">
 								<span>Short</span>Courses
 								</a>
-							<?php elseif ($language->prefix == 'es'): ?>
+							<?php elseif ($language->prefix == 'en'): ?>
 								<a href="/<?php print $language->prefix ?>/school-of-professional-development/short-courses">
 								<span>Cursos</span>Cortos
 								</a>
@@ -1062,11 +1062,11 @@
 						</li>-->
 						<li><a href="/edp/la-escuela"><?php print t('The School') ?></a></li>
 						<li>
-							<?php if ($language->prefix == 'en'): ?>
+							<?php if ($language->prefix == 'es'): ?>
 								<a href="/<?php print $language->prefix ?>/edp/cursos-cortos">
 								<span>Short</span>Courses
 								</a>
-							<?php elseif ($language->prefix == 'es'): ?>
+							<?php elseif ($language->prefix == 'en'): ?>
 								<a href="/<?php print $language->prefix ?>/school-of-professional-development/short-courses">
 								<span>Cursos</span>Cortos
 								</a>
