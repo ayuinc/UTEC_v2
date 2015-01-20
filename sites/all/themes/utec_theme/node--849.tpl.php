@@ -247,8 +247,8 @@
 
 
 <script type="text/javascript">
-$(function() {                        
-    $('#formRegistro').validate( {
+jQuery(function() {                        
+    jQuery('#formRegistro').validate( {
 	      rules: {
 	        nombres: {
 	          required: true,
