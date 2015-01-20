@@ -27,13 +27,13 @@
 			<input id="company" type="radio" name="optionedp" class="form-control">
 		</div>		
 		<div class="form-group col-sm-5">
-			<p class="text-center"><?php print t('Company') ?></p>
+			<p><?php print t('Company') ?></p>
 		</div>
 		<div class="form-group col-sm-1">
 			<input id="person" type="radio" name="optionedp" class="form-control">
 		</div>		
 		<div class="form-group col-sm-5">
-			<p class="text-center"><?php print t('Person') ?></p>
+			<p><?php print t('Person') ?></p>
 		</div>
 	</div>
 	</form>
