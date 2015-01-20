@@ -53,7 +53,7 @@ $titulo = $node->title;
 				</div>
 			</div>
 		</li>
-		<li data-href="/admision/examen-de-admision">
+		<li data-href="/admision-examen-de-admision/examen-de-admisión">
 			<div>
 				<h3 class="thin lead lh-lg"><?php print t('Admission Exam') ?></h3>
 				<div class="size lg">
