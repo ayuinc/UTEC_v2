@@ -1,5 +1,6 @@
 <?php global $base_url; ?>
 <?php global $theme_path; ?>
+<?php global $language; ?>
 <?php $path = $base_url.'/'.$theme_path; ?>
 <?php $pathfile= variable_get('file_public_path', conf_path() . '/files/'); ?>
 <?php $title = $node->title; ?>  
@@ -16,7 +17,7 @@
 			<?php $pic = $value['entity']->picture->filename; ?>
 			<?php $uid = $value['entity']->uid; ?>
       <?php $desc = $value['entity']->field_descripci_n['und'][0]['value']; ?>
-      <?php $desc_ingles = $value['entity']->field_descripci_n_ingles['und'][0]['value']; ?>
+      <?php $desc_ingles = $value['entity']->field_descripci_n_ingles['und']['0']['value']; ?>
 			<li data-href="/user/<?php print $uid ?>">
 				<div class="user-card user-card-round size lg">
 					<div class="user-pic"><img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt=""></div>
@@ -25,7 +26,7 @@
 						<a href="/user/<?php print $uid ?>"><?php print $name ?></a>
 						<?php if ($language->prefix == 'en') : ?>
 						<span><?php print $desc_ingles?></span>
-						<?php elseif ($language->prefix == 'es') : ?>
+						<?php else ?>
 						<span><?php print $desc?></span>
 						<?php endif; ?>
 						<a href="mailto:<?php print $mail ?>"><?php print $mail ?></a></div>
