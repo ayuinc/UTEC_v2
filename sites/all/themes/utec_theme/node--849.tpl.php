@@ -18,7 +18,7 @@
 	<div clsass="separator-gray separator-lg"></div>
 </div>
 <div class="container-sm form-custom">
-	<form action="/registro.php" class="mb-ch-28" data-submit="Formulario de inscripcion" method="post">
+	<form action="/registro.php" class="mb-ch-28" data-submit="Formulario de inscripcion" method="post" id="formRegistro" name="formRegistro">
 		<input type="hidden" name="origen" value="<?php print $title; ?>">
 		<div class="row">
 			<div class="form-group col-sm-4">
@@ -236,14 +236,50 @@
 				<input  id="estudiante-no" type="radio" name="estudiante" value ="N"> No
 			</div>
 		</div>
+		<div class="row">
+			<div id="errordiv" class="col-sm-12 form-group"></div>			
+		</div>
 		<div class="text-right">
 			<button  id="" type="submit" class="btn btn-primary btn-lg">Enviar</button>
 		</div>
 	</form>						
 </div>
-<div class="container pt-42">
-	<div class="col-md-1"></div>
-	<div class="col-md-10">
-	</div>
-	<div class="col-md-1"></div>
-</div>
+
+
+
+<script type="text/javascript">
+jQuery(function() {                        
+    jQuery('#formRegistro').validate( {
+	      rules: {
+	        nombres: {
+	          required: true,
+	          //minlength: 4
+	        },
+	        apellidop: {
+	          required: true,
+	          //minlength: 4
+	        },
+	        apellidom: {
+	          required: true,
+	          //minlength: 4
+	        },	        
+	      },
+	      messages: {
+		        nombres: {
+		          required: "Completa tus nombres <br /> ",
+		          //minlength: "10 Digitos"
+		      	},
+		        apellidop: {
+		          required: "Completa tu apellido paterno <br /> ",
+		          //minlength: "10 Digitos"
+		      	},		      	
+		      },
+		      errorPlacement: function( error, element ) {
+		        	error.insertAfter( '#errordiv' );
+		      },
+		      submitHandler: function( form ) {                                                 
+		      		form.submit();
+		      }
+    });
+});
+</script>
