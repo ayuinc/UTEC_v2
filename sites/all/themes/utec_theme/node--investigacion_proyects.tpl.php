@@ -33,7 +33,7 @@
 	<?php } ?>
 	<?php if ($tags!='') { ?>
 		<p class="small text-gray-light">
-			<span class="bold">Tags: </span>
+			<span class="bold"></span>
 			<?php foreach ($tags as $key => $value) : ?>
 				<span><?php print $value['taxonomy_term']->name; ?> -</span>
 			<?php endforeach; ?>
