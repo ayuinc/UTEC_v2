@@ -23,23 +23,23 @@
 <div class="container-sm form-custom mt-35"> 
 	<form action="" data-submit="Formulario de inscripcion">
 	<div class="row">
-		<div class="form-group col-sm-5">
-			<p><?php print t('Company') ?></p>
-		</div>
 		<div class="form-group col-sm-1">
 			<input id="company" type="radio" name="optionedp" class="form-control">
-		</div>
+		</div>		
 		<div class="form-group col-sm-5">
-			<p><?php print t('Person') ?></p>
+			<p class="text-center"><?php print t('Company') ?></p>
 		</div>
 		<div class="form-group col-sm-1">
 			<input id="person" type="radio" name="optionedp" class="form-control">
+		</div>		
+		<div class="form-group col-sm-5">
+			<p class="text-center"><?php print t('Person') ?></p>
 		</div>
 	</div>
 	</form>
 		
 	<!--COMPANY-->		
-	<form action="/registro.php" data-submit="Formulario de inscripcion" id="company">
+	<form action="/registro.php" data-submit="Formulario de inscripcion" id="company_form">
 		<input type="hidden" name="origen" value="<?php print $title ?>">
 		<input type="hidden" name="origen_tipo" value="company">
 		
@@ -174,7 +174,7 @@
 	</form>	
 	
 	<!--PERSON-->		
-	<form action="/registro.php" data-submit="Formulario de inscripcion" id="person">
+	<form action="/registro.php" data-submit="Formulario de inscripcion" id="person_form">
 		<input type="hidden" name="origen" value="<?php print $title ?>">
 		<input type="hidden" name="origen_tipo" value="person">		
 		<div class="row">
@@ -284,6 +284,18 @@
 		<div class="text-right">
 			<button type="submit" class="btn btn-primary btn-lg"><?php print t("Send") ?></button>
 		</div>
-	</form>		
-						
+	</form>					
 </div>	
+
+<script>
+	$('company_form').hide();
+	$('person_form').hide();
+	$('company').click() {
+		$('company_form').show();
+		$('person_form').hide();
+	}
+	$('person').click() {
+		$('company_form').hide();
+		$('person_form').show();
+	}	
+</script>
