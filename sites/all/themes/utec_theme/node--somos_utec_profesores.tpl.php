@@ -22,7 +22,7 @@
 				<div class="grid-list-pic"><img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="" width="180px" height="auto" class="img-circle"></div>
 				<div>
 					<?php $profesor_url = "/" . $language->prefix . drupal_get_path_alias('user/'.$uid, $language->prefix); ?>
-					<a href="<?php print profesor_url; ?>"><?php print $name ?></a>
+					<a href="<?php print $profesor_url; ?>"><?php print $name ?></a>
 					<?php if ($language->prefix == 'en') : ?>
 					<span><?php print $desc_ingles?></span>
 					<?php else : ?>
