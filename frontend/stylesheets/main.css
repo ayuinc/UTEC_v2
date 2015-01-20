@@ -5403,6 +5403,9 @@ textarea:-ms-input-placeholder {
       width: 7px;
       height: 7px;
       background-color: #00BFDF; }
+    .list-custom ul li ul li:first-child {
+      margin-top: 21px;
+      margin-top: 1.5rem; }
 
 .list-custom-left ul {
   padding-left: 0;
