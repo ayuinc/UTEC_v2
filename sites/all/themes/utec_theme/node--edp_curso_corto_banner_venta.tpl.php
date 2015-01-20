@@ -16,10 +16,9 @@
 	  	<div class="item active">
 		  	<div class="banner banner-label-bottom mb-14 ml-0">
 					<div class="banner-pic" style="background-image: url(/sites/default/files/<?php print $image ?>);">
-						<div class="banner-label bg-gray-darker text-white"><span>Innovación</span></div>
 					</div>
 				</div>
-		    <!-- <img src="/sites/default/files/noticias/unescoutec.jpg" alt="..." height="479" width="720"> -->
 		  </div>
 		</div>
+	</div>
 </div>
