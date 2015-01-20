@@ -1,11 +1,12 @@
 <?php global $base_url; ?>
 <?php global $theme_path; ?>
 <?php $path = $base_url.'/'.$theme_path; ?>
-<?php $pathfile= variable_get('file_public_path', conf_path() . '/files/edp-generico/'); ?>
+<?php $pathfile= variable_get('file_public_path', conf_path() . '/files/edp-formulario/'); ?>
 
 <?php $titulo = $node->title; ?>   
 <?php $body = $node->body['und']['0']['value']; ?>
-<?php $field_fotos_edp_generico = $node->field_fotos_edp_generico['und']['0']['filename']; ?>
+<?php $field_foto_edp_formulario‎ = $node->field_foto_edp_formulario‎['und']['0']['filename']; ?>
+
 
 <?php $url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>
 <?php $end = end((explode('/', $url))); ?>
@@ -13,16 +14,14 @@
 <div class="container-sm">
 	<h1 class="light"><?php print $title ?></h1>
 	<div class="separator-gray separator-lg"></div>
-	<?php if ($field_fotos_edp_generico!='') { ?>
-		<img src="<?php print('/'.$pathfile.$field_fotos_edp_generico)?>" class="img-responsive mb-35">
+	<?php if ($field_foto_edp_formulario‎!='') { ?>
+		<img src="<?php print('/'.$pathfile.$field_foto_edp_formulario‎)?>" class="img-responsive mb-35">
 	<?php } ?>	
 	<?php print $body ?>	
 </div>
 
-
-<?php if (($end!='diplomados') AND ($end!='cursos-adhoc')) { ?>
 <div class="container-sm form-custom mt-35"> 
-	<form action="" data-submit="Formulario de inscripcion">
+	<form action="/registro.php" data-submit="Formulario de inscripcion">
 		<input type="hidden" name="origen" value="<?php print $title ?>">
 		<div class="row">
 			<div class="form-group col-sm-6">
@@ -53,4 +52,3 @@
 		</div>
 	</form>						
 </div>	
-<?php } ?>
