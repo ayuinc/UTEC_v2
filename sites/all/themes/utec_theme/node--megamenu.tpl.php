@@ -180,9 +180,9 @@
 						</li>
 						<li>
 							<?php if ($language->prefix == 'es'): ?>
-								<a href="/<?php print $language->prefix ?>/somos-utec/vida-estudiantil"><span>Life at UTEC</a>
+								<a href="/<?php print $language->prefix ?>/vida-estudiantil"><span>Vida Estudiantil</a>
 							<?php elseif ($language->prefix == 'en'): ?>
-								<a href="/<?php print $language->prefix ?>/somos-utec/vida-estudiantil"><span>Vida Estudiantil</span></a>
+								<a href="/<?php print $language->prefix ?>/student-life"><span>UTEC Life</span></a>
 							<?php endif ?>
 						</li>
 						<li>
@@ -696,9 +696,9 @@
 						</li>
 						<li>
 							<?php if ($language->prefix == 'es'): ?>
-								<a href="/<?php print $language->prefix ?>/somos-utec/vida-estudiantil"><span>Life at UTEC</a>
+								<a href="/<?php print $language->prefix ?>/vida-estudiantil"><span>Vida Estudiantil</a>
 							<?php elseif ($language->prefix == 'en'): ?>
-								<a href="/<?php print $language->prefix ?>/somos-utec/vida-estudiantil"><span>Vida Estudiantil</span></a>
+								<a href="/<?php print $language->prefix ?>/student-life"><span>UTEC Life</span></a>
 							<?php endif ?>
 						</li>
 						<li>
