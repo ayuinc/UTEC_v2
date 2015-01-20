@@ -311,7 +311,7 @@
 								</a>
 							<?php elseif ($language->prefix == 'en'): ?>
 								<a href="/<?php print $language->prefix ?>/energy-engineering">
-								<span><?php print t('Energy') ?></span><?php print t('Engineering') ?>
+								<span>Energy</span>Engineering
 								</a>
 							<?php endif ?>
 						</li>
