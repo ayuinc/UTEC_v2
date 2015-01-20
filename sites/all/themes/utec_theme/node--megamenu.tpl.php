@@ -265,9 +265,9 @@
 						</li>
 						<li>
 							<?php if ($language->prefix == 'es'): ?>
-								<a href="/<?php print $language->prefix ?>/contacto"><?php print t('Contact us') ?></a>
+								<a href="/<?php print $language->prefix ?>/investigacion/contacto"><?php print t('Contact us') ?></a>
 							<?php elseif ($language->prefix == 'en'): ?>
-								<a href="/<?php print $language->prefix ?>/contact"><?php print t('Contact us') ?></a>
+								<a href="/<?php print $language->prefix ?>/research/contact"><?php print t('Contact us') ?></a>
 							<?php endif ?>							
 						</li>
 					</ul>
