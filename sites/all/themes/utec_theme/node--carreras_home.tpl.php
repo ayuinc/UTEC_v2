@@ -54,9 +54,9 @@
     </div>
   </div>
 </div> <!-- END:Hero -->
-<div data-section-scroll="<?php print t('Curriculum') ?>" id="malla-curricular" class="scroll-down-info malla-curricular section-scroll-content minh-560 flex-middle-center">
+<div data-section-scroll="<?php print t('Curriculum Structure') ?>" id="malla-curricular" class="scroll-down-info malla-curricular section-scroll-content minh-560 flex-middle-center">
   <div class="container-sm text-right normalize-text" data-href="<?php print $malla_link ?>">
-    <h2 class="lead thin h1"><?php print t('Curriculum') ?></h2>
+    <h2 class="lead thin h1"><?php print t('Curriculum Structure') ?></h2>
     <hr class="hr-gray">
     <div class="row mt-28">
       <div class="col-sm-9">

@@ -233,7 +233,7 @@
 				<input  id="estudiante-no" type="radio" name="estudiante" value ="N"> No
 			</div>
 		</div>
-		<div class="row">
+		<div class="row errordiv">
 			<div id="errordiv" class="col-sm-12 form-group"></div>			
 		</div>		
 		<div class="text-right">
