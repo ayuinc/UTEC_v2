@@ -38,8 +38,9 @@
 	</div>
 	</form>
 		
-	<!--COMPANY-->		
-	<form action="/registro.php" data-submit="Formulario de inscripcion" id="company_form">
+	<!--COMPANY-->	
+	<div id="company_form">	
+	<form action="/registro.php" data-submit="Formulario de inscripcion">
 		<input type="hidden" name="origen" value="<?php print $title ?>">
 		<input type="hidden" name="origen_tipo" value="company">
 		
@@ -172,9 +173,11 @@
 			<button type="submit" class="btn btn-primary btn-lg"><?php print t("Send") ?></button>
 		</div>
 	</form>	
+	</div>
 	
 	<!--PERSON-->		
-	<form action="/registro.php" data-submit="Formulario de inscripcion" id="person_form">
+	<div id="person_form">
+	<form action="/registro.php" data-submit="Formulario de inscripcion">
 		<input type="hidden" name="origen" value="<?php print $title ?>">
 		<input type="hidden" name="origen_tipo" value="person">		
 		<div class="row">
@@ -284,20 +287,22 @@
 		<div class="text-right">
 			<button type="submit" class="btn btn-primary btn-lg"><?php print t("Send") ?></button>
 		</div>
-	</form>					
+	</form>		
+	</div>			
 </div>	
 
 <script>
 	$('#company_form').hide();
 	$('#person_form').hide();
 	
-	$('#company').click() {
+	$("#company").click(function() {
 		$('#company_form').show();
 		$('#person_form').hide();
-	}
+	});	
 	
-	$('#person').click() {
+	$("#person").click(function() {
 		$('#company_form').hide();
 		$('#person_form').show();
-	}	
+	});		
+	
 </script>
