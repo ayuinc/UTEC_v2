@@ -10,12 +10,16 @@
 	<div class="pv-42 lead-ch">
 		<h3><?php print $field_titulo_del_evento ?></h3>
 	</div>
+	<?php if ($field_foto!='') { ?>
 	<div>
 		<img src="<?php print $field_foto ?>" class="img-responsive">
 	</div>
+	<?php } ?>
 	<div class="pv-ch-21 lead-ch p-ch-gray">
 		<h3><?php print $field_introduccion ?></h3>
+		<?php if ($field_contenido!='') { ?>
 		<?php print $field_contenido ?>
+		<?php } ?>
 	</div>
 	<div class="pv-42 lead-ch">
 		<!--<h3>Links de interés</h3>
