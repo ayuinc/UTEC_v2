@@ -24,10 +24,10 @@
 	<form action="" data-submit="Formulario de inscripcion">
 	<div class="row">
 		<div class="form-group col-sm-2">
-			<a href="#company_form" class="scroll-ref-1 btn"><?php print t('Company') ?></a>
+			<a href="#company_form" class="scroll-ref-1 btn brand-secondary"><?php print t('Company') ?></a>
 		</div>
 		<div class="form-group col-sm-2">
-			<a href="#person_form" class="scroll-ref-2 btn"><?php print t('Person') ?></a>
+			<a href="#person_form" class="scroll-ref-2 btn brand-secondary"><?php print t('Person') ?></a>
 		</div>
 	</div>
 	</form>
@@ -171,7 +171,7 @@
 	</div>
 	
 	<!--PERSON-->		
-	<div id="person_form" data-section-scroll="person_form">
+	<div id="person_form" data-section-scroll="person_form" class="pt-35">
 	<h2><?php print t('Person') ?></h2>	
 	<form action="/registro.php" name="person_form" data-submit="Formulario de inscripcion">
 		<input type="hidden" name="origen" value="<?php print $title ?>">
