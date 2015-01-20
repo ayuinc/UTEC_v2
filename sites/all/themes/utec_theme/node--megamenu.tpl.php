@@ -817,7 +817,6 @@
 								<a href="/<?php print $language->prefix ?>/ingenieria-de-la-energia">
 								<span>Ingeniería</span>de la Energía
 								</a>
-								<?php print t('Engineering') ?>
 							<?php elseif ($language->prefix == 'en'): ?>
 								<a href="/<?php print $language->prefix ?>/energy-engineering">
 								<span>Energy</span>Engineering

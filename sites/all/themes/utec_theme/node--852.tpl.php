@@ -18,7 +18,7 @@
 	<div clsass="separator-gray separator-lg"></div>
 </div>
 <div class="container-sm form-custom">
-	<form action="/registro.php" class="mb-ch-28" data-submit="Formulario de inscripcion" method="post">
+	<form action="/registro.php" class="mb-ch-28" data-submit="Formulario de inscripcion" method="post" id="formRegistro" name="formRegistro">
 		<input type="hidden" name="origen" value="<?php print $title; ?>">
 		<div class="row">
 			<div class="form-group col-sm-4">
