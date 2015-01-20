@@ -4,9 +4,11 @@
   $path = $base_url.'/'.$theme_path;
   $pathfile= variable_get('file_public_path', conf_path() . '/files/');
 
+  $category = $node->field_categor_a['und']['0']['taxonomy_term']->name;
 	$titulo = $node->title;	 		
 	$cuerpo = $node->body['und']['0']['value'];	
 	$imagen = $node->field_imagen['und']['0']['filename'];
+	//kpr($node);
 ?>
 
 <div class="container-sm">
@@ -19,20 +21,28 @@
 		  	<?php $images = $node->field_imagen['und']; $count=0; ?>
 			  <?php foreach ($images as $image): ?>
 			  <div class="item <?php if($count == 0){print 'active';} ?>">
-			    <img src="<?php print '/'.$pathfile.'noticias/'.$image['filename'] ?>" alt="..." height="479" width="720">
+			  	<div class="banner banner-label-bottom mb-14 ml-0">
+						<div class="banner-pic" style="background-image: url(<?php print '/'.$pathfile.'noticias/'.$image['filename'] ?>);">
+							<div class="banner-label bg-gray-darker text-white"><span><?php print $category ?></span></div>
+						</div>
+					</div>
+			    <!-- <img src="<?php print '/'.$pathfile.'noticias/'.$image['filename'] ?>" alt="..." height="479" width="720"> -->
 			  </div>
 			  <?php $count++; ?>
 				<?php endforeach; ?>
 			</div>
 			<!-- Controls -->
-		  <a class="left carousel-control" href="#carousel-custom" role="button" data-slide="prev">
-		    <span class="icon-prev hidden-xs" aria-hidden="true"></span>
-		    <span class="sr-only">Previous</span>
-		  </a>
-		  <a class="right carousel-control" href="#carousel-custom" role="button" data-slide="next">
-		    <span class="icon-next hidden-xs" aria-hidden="true"></span>
-		    <span class="sr-only">Next</span>
-		  </a>	
+			<?php $images = $node->field_imagen['und']['1']; ?>
+			<?php if($images) : ?>
+			  <a class="left carousel-control" href="#carousel-custom" role="button" data-slide="prev">
+			    <span class="icon-prev hidden-xs" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="right carousel-control" href="#carousel-custom" role="button" data-slide="next">
+			    <span class="icon-next hidden-xs" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			<?php endif; ?>
 		</div>
 		<div class="pv-ch-28">
 			<p><?php print $cuerpo ?></p>

@@ -3828,8 +3828,8 @@ h6.lead {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../assets/icons/icomoon-14.01.15.eot?23bv2t");
-  src: url("../assets/icons/icomoon-14.01.15.eot?#iefix23bv2t") format("embedded-opentype"), url("../assets/icons/icomoon-14.01.15.woff?23bv2t") format("woff"), url("../assets/icons/icomoon-14.01.15.ttf?23bv2t") format("truetype"), url("../assets/icons/icomoon-14.01.15.svg?23bv2t#icomoon") format("svg");
+  src: url("../assets/icons/icomoon-19.01.15.eot?-405wbr");
+  src: url("../assets/icons/icomoon-19.01.15.eot?#iefix-405wbr") format("embedded-opentype"), url("../assets/icons/icomoon-19.01.15.woff?-405wbr") format("woff"), url("../assets/icons/icomoon-19.01.15.ttf?-405wbr") format("truetype"), url("../assets/icons/icomoon-19.01.15.svg?-405wbr#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 [class^="icon-"], [class*=" icon-"] {
@@ -3843,6 +3843,33 @@ h6.lead {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.icon-admisiones-traslado:before {
+  content: "\e600"; }
+
+.icon-admisiones-alto-rendimiento:before {
+  content: "\e601"; }
+
+.icon-admisiones-bachillerato:before {
+  content: "\e602"; }
+
+.icon-admisiones-centro-pre:before {
+  content: "\e603"; }
+
+.icon-admisiones-examen:before {
+  content: "\e604"; }
+
+.icon-admisiones-primeros-puestos:before {
+  content: "\e605"; }
+
+.icon-menu:before {
+  content: "\e9bd"; }
+
+.icon-footer-instagram:before {
+  content: "\ea90"; }
+
+.icon-footer-youtube:before {
+  content: "\ea99"; }
 
 .icon-inscripcion-promedio:before {
   content: "\e628"; }
@@ -3867,24 +3894,6 @@ h6.lead {
 
 .icon-inscripcion-resolucion:before {
   content: "\e62f"; }
-
-.icon-admisiones-alto-rendimiento:before {
-  content: "\e600"; }
-
-.icon-admisiones-bachillerato:before {
-  content: "\e601"; }
-
-.icon-admisiones-centro-pre:before {
-  content: "\e602"; }
-
-.icon-admisiones-examen:before {
-  content: "\e603"; }
-
-.icon-admisiones-primeros-puestos:before {
-  content: "\e604"; }
-
-.icon-admisiones-traslado:before {
-  content: "\e605"; }
 
 .icon-arrow-down:before {
   content: "\e606"; }
@@ -3987,15 +3996,6 @@ h6.lead {
 
 .icon-search:before {
   content: "\e623"; }
-
-.icon-menu:before {
-  content: "\e9bd"; }
-
-.icon-footer-instagram:before {
-  content: "\ea90"; }
-
-.icon-footer-youtube:before {
-  content: "\ea99"; }
 
 a.btn.form-control, .language-switcher-locale-url li a.form-control.language-link, .language-switcher-locale-url li #header .tool-bar .search-form a.language-link.form-text, #header .tool-bar .search-form .language-switcher-locale-url li a.language-link.form-text, .language-switcher-locale-url li #header-on-scroll .tool-bar .search-form a.language-link.form-text, #header-on-scroll .tool-bar .search-form .language-switcher-locale-url li a.language-link.form-text, #header .tool-bar .search-form a.btn.form-text, #header-on-scroll .tool-bar .search-form a.btn.form-text, #header .tool-bar .search-form a.form-text.form-submit, #header-on-scroll .tool-bar .search-form a.form-text.form-submit, #header .tool-bar .search-form a.form-control.form-submit, #header-on-scroll .tool-bar .search-form a.form-control.form-submit,
 button.btn.form-control,
@@ -8570,6 +8570,25 @@ img.icon-utec {
       min-height: 10px; }
       .malla-curricular.malla-curricular-blue-lighter .body > ul:nth-child(30) > li:first-child {
         background-color: white; }
+
+.malla-curricular-ref {
+  text-transform: uppercase;
+  font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
+  font-weight: 300;
+  font-style: normal;
+  color: #8f8d8e; }
+  .malla-curricular-ref > li.math:before, .malla-curricular-ref > li.management:before, .malla-curricular-ref > li.engineering:before {
+    width: 28px;
+    height: 14px;
+    content: "";
+    margin-right: 9px;
+    display: inline-block; }
+  .malla-curricular-ref > li.math:before {
+    background-color: #8dc63f; }
+  .malla-curricular-ref > li.management:before {
+    background-color: #ffdd00; }
+  .malla-curricular-ref > li.engineering:before {
+    background-color: #afdfe4; }
 
 .list-carreras > li:hover {
   cursor: pointer; }

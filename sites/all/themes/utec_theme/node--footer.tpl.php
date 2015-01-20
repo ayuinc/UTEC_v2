@@ -1,24 +1,24 @@
 <?php global $language ?>
 <!-- FOOTER -->
-	<div class="subscribe pv-7 bg-gray-darker hidden-xs">
+	<!-- <div class="subscribe pv-7 bg-gray-darker hidden-xs">
 		<div class="container">
 			<ul class="grid-list grid-list-centered normalize-text">
 				<li>
-					<h3 class="thin text-white pt-7"><i class="icon-subscribe mr-7"></i><?php print t('Subscribe to UTEC') ?></h3>
+					<h3 class="thin text-white pt-7"><i class="icon-subscribe mr-7"></i><?php //print t('Subscribe to UTEC') ?></h3>
 				</li>
 				<li>
 					<div class="form-subscribe">
 						<form action="" class="form-inline mb-ch-0">
 							<div class="form-group">
-								<label for="subscribe_name" class="sr-only"><?php print t('Name') ?></label>
-                <?php if ($language->prefix == 'en'): ?>
+								<label for="subscribe_name" class="sr-only"><?php //print t('Name') ?></label>
+                <?php //if ($language->prefix == 'en'): ?>
 								  <input type="text" class="form-control" width="210" height="auto" placeholder="Name">
-                <?php elseif ($language->prefix == 'es'): ?>
+                <?php //elseif ($language->prefix == 'es'): ?>
                   <input type="text" class="form-control" width="210" height="auto" placeholder="Nombre">
-                <?php endif ?>
+                <?php //endif ?>
 							</div>
 							<div class="form-group">
-								<label for="subscribe_email" class="sr-only"><?php print t('Email') ?></label>
+								<label for="subscribe_email" class="sr-only"><?php //print t('Email') ?></label>
 								<input type="text" class="form-control" width="210" height="auto" placeholder="E-mail">
 								<button class="btn btn-outline btn-white"><i class="icon-arrows-right"></i></button>
 							</div>
@@ -27,24 +27,29 @@
 				</li>
 			</ul>
 		</div>
-	</div>
+	</div> -->
+  <?php
+    module_load_include('inc', 'simplenews', 'simplenews.subscription');
+    print_r(drupal_get_form('simplenews_subscription_manager_form'));
+    render(drupal_get_form('simplenews_subscription_manager_form'));
+  ?>
 	<div class="site-map pv-14 bg-gray-dark hidden-xs">
 		<div class="container">
 			<ul class="grid-list grid-list-6 grid-list-2-xs">
         <li>
           <ul>
             <li class="title text-gray-lighter"><?php print t('We are UTEC') ?></li>
-            <li><a href="/<?php print $language->prefix ?>/somos-utec/respaldo" class="atm-menu-inferior"><small><?php print t('A Solid Foundation') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/somos-utec/autoridades" class="atm-menu-inferior"><small><?php print t('Authorities') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/somos-utec/profesores" class="atm-menu-inferior"><small><?php print t('Faculty') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/somos-utec/ingenio-en-accion" class="atm-menu-inferior"><small><?php print t('Ingenuity in Action') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/somos-utec/metodologia-educativa" class="atm-menu-inferior"><small><?php print t('Educational Methodology') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/somos-utec/noticias" class="atm-menu-inferior"><small></small><small><?php print t('News') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/somos-utec/eventos-utec" class="atm-menu-inferior"><small><?php print t('Events') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/somos-utec/vida-estudiantil" class="atm-menu-inferior"><small><?php print t('Life at UTEC') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/somos-utec/campus-y-laboratorios" class="atm-menu-inferior"><small><?php print t('Campus and Labs') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/somos-utec/trabaja-en-utec" class="atm-menu-inferior"><small><?php print t('Work at UTEC') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/somos-utec/utec-garage" class="atm-menu-inferior"><small><?php print t('UTEC Garage') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/respaldo" class="atm-menu-inferior"><small><?php print t('A Solid Foundation') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/autoridades" class="atm-menu-inferior"><small><?php print t('Authorities') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/profesores" class="atm-menu-inferior"><small><?php print t('Faculty') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/ingenio-en-accion" class="atm-menu-inferior"><small><?php print t('Ingenuity in Action') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/metodologia-educativa" class="atm-menu-inferior"><small><?php print t('Educational Methodology') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/noticias" class="atm-menu-inferior"><small></small><small><?php print t('News') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/eventos-utec" class="atm-menu-inferior"><small><?php print t('Events') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/vida-estudiantil" class="atm-menu-inferior"><small><?php print t('Life at UTEC') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/campus-y-laboratorios" class="atm-menu-inferior"><small><?php print t('Campus and Labs') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/trabaja-en-utec" class="atm-menu-inferior"><small><?php print t('Work at UTEC') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/ingenio-en-accion/utec-garage" class="atm-menu-inferior"><small><?php print t('UTEC Garage') ?></small></a></li>
             <li><a href="http://utecventures.com/" target="_blank" class="atm-menu-inferior"><small><?php print t('UTEC Ventures') ?></small></a></li>
             <!--<li><a href="#" class="atm-menu-inferior"><small>Calendario Académico</small></a></li>-->
           </ul>
@@ -63,11 +68,11 @@
         <li>
           <ul>
             <li class="title text-gray-lighter"><?php print t('Research') ?></li>
-            <li><a href="/<?php print $language->prefix ?>/investigacion/proyectos" class="atm-menu-inferior"><small><?php print t('Projects') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/investigacion/publicaciones" class="atm-menu-inferior"><small><?php print t('Publications') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/proyectos" class="atm-menu-inferior"><small><?php print t('Projects') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/publicaciones" class="atm-menu-inferior"><small><?php print t('Publications') ?></small></a></li>
             <!--<li><a href="#"><small>Publicaciones</small></a></li>
             <li><a href="#"><small>Consultorías</small></a></li>-->
-            <li><a href="/<?php print $language->prefix ?>/investigacion/empresas-y-clientes"><small><?php print t('Companies and Clients') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/empresas-y-clientes"><small><?php print t('Companies and Clients') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/investigacion/contacto"><small><?php print t('Contact us') ?></small></a></li>
 
           </ul>

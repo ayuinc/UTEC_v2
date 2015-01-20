@@ -21,7 +21,7 @@
 	<div class="banner-content">
 		<div>
 			<h3><a href="#"><?php print $title ?></a></h3>
-			<em class="text-primary"><?php print $created ?></em>
+			<em><?php print $created ?></em>
 			<p><?php print $texto_corto ?></p>
 		</div>
 	</div>
