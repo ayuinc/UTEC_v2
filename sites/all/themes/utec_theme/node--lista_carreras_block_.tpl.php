@@ -5,24 +5,6 @@
 		<h4 class="lead mb-35"><?php print t('These are our undergraduate programs:') ?></h4>
 		<ul class="grid-list grid-list-5 grid-list-1-xs pt-21 list-carreras text-center text-left-xs mb-ch-21-xs">
 			<li>
-				<div data-href="/carreras/ingenieria-quimica-industrial">
-					<div><i class="icon-ing-quimica"></i></div>
-					<h2>
-						<a href="/carreras/ingenieria-quimica-industrial">
-							<?php if ($language->prefix == 'en'): ?>
-								<span><?php print t('Industrial') ?></span>
-								<span><?php print t('Chemical') ?></span>
-								<span><?php print t('Engineering') ?></span>
-							<?php elseif ($language->prefix == 'es'): ?>
-								<span><?php print t('Engineering') ?></span>
-								<span><?php print t('Chemical') ?></span>
-								<span><?php print t('Industrial') ?></span>
-							<?php endif ?>
-						</a>
-					</h2>
-				</div>
-			</li>
-			<li>
 				<div data-href="/carreras/ingenieria-industrial">
 					<div><i class="icon-ing-industrial"></i></div>
 					<h2>
@@ -53,6 +35,24 @@
 								<span><?php print t('Engineering') ?></span>
 								<span><?php print t('Energy') ?></span>
 								<span></span>
+							<?php endif ?>
+						</a>
+					</h2>
+				</div>
+			</li>
+			<li>
+				<div data-href="/carreras/ingenieria-quimica-industrial">
+					<div><i class="icon-ing-quimica"></i></div>
+					<h2>
+						<a href="/carreras/ingenieria-quimica-industrial">
+							<?php if ($language->prefix == 'en'): ?>
+								<span><?php print t('Industrial') ?></span>
+								<span><?php print t('Chemical') ?></span>
+								<span><?php print t('Engineering') ?></span>
+							<?php elseif ($language->prefix == 'es'): ?>
+								<span><?php print t('Engineering') ?></span>
+								<span><?php print t('Chemical') ?></span>
+								<span><?php print t('Industrial') ?></span>
 							<?php endif ?>
 						</a>
 					</h2>
