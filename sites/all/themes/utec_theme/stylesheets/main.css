@@ -3828,8 +3828,8 @@ h6.lead {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../assets/icons/icomoon-19.01.15.eot?-405wbr");
-  src: url("../assets/icons/icomoon-19.01.15.eot?#iefix-405wbr") format("embedded-opentype"), url("../assets/icons/icomoon-19.01.15.woff?-405wbr") format("woff"), url("../assets/icons/icomoon-19.01.15.ttf?-405wbr") format("truetype"), url("../assets/icons/icomoon-19.01.15.svg?-405wbr#icomoon") format("svg");
+  src: url("../assets/icons/icomoon-19.01.15.eot?-3ql6oh");
+  src: url("../assets/icons/icomoon-19.01.15.eot?#iefix-3ql6oh") format("embedded-opentype"), url("../assets/icons/icomoon-19.01.15.woff?-3ql6oh") format("woff"), url("../assets/icons/icomoon-19.01.15.ttf?-3ql6oh") format("truetype"), url("../assets/icons/icomoon-19.01.15.svg?-3ql6oh#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 [class^="icon-"], [class*=" icon-"] {
@@ -3844,22 +3844,22 @@ h6.lead {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.icon-admisiones-traslado:before {
+.icon-admisiones-alto-rendimiento:before {
   content: "\e600"; }
 
-.icon-admisiones-alto-rendimiento:before {
+.icon-admisiones-bachillerato:before {
   content: "\e601"; }
 
-.icon-admisiones-bachillerato:before {
+.icon-admisiones-centro-pre:before {
   content: "\e602"; }
 
-.icon-admisiones-centro-pre:before {
+.icon-admisiones-examen:before {
   content: "\e603"; }
 
-.icon-admisiones-examen:before {
+.icon-admisiones-primeros-puestos:before {
   content: "\e604"; }
 
-.icon-admisiones-primeros-puestos:before {
+.icon-admisiones-traslado:before {
   content: "\e605"; }
 
 .icon-menu:before {
