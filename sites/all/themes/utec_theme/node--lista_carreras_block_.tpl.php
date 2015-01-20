@@ -8,7 +8,8 @@
 				<div data-href="/carreras/ingenieria-industrial">
 					<div><i class="icon-ing-industrial"></i></div>
 					<h2>
-						<a href="/carreras/ingenieria-industrial">
+						<?php $ingenieria_industrial_url = "/" . $language->prefix . "/" . drupal_get_path_alias('ingenieria-industrial', $language->prefix); ?>
+						<a href="<?php print $ingenieria_industrial_url; ?>">
 							<?php if ($language->prefix == 'en'): ?>
 								<span><?php print t('Industrial') ?></span>
 								<span><?php print t('Engineering') ?></span>
@@ -26,7 +27,8 @@
 				<div data-href="/carreras/ingenieria-de-la-energia">
 					<div><i class="icon-ing-energia"></i></div>
 					<h2>
-						<a href="/carreras/ingenieria-de-la-energia">
+						<?php $ingenieria_de_la_energia_url = "/" . $language->prefix . "/" . drupal_get_path_alias('ingenieria-de-la-energia', $language->prefix); ?>
+						<a href="<?php print $ingenieria_de_la_energia_url; ?>">
 							<?php if ($language->prefix == 'en'): ?>
 								<span><?php print t('Energy') ?></span>
 								<span><?php print t('Engineering') ?></span>
@@ -44,7 +46,8 @@
 				<div data-href="/carreras/ingenieria-quimica-industrial">
 					<div><i class="icon-ing-quimica"></i></div>
 					<h2>
-						<a href="/carreras/ingenieria-quimica-industrial">
+						<?php $ingenieria_quimica_industrial_url = "/" . $language->prefix . "/" . drupal_get_path_alias('ingenieria-quimica-industrial', $language->prefix); ?>
+						<a href="<?php print $ingenieria_quimica_industrial_url; ?>">
 							<?php if ($language->prefix == 'en'): ?>
 								<span><?php print t('Industrial') ?></span>
 								<span><?php print t('Chemical') ?></span>
@@ -62,7 +65,8 @@
 				<div data-href="/carreras/ingenieria-electronica">
 					<div><i class="icon-ing-electronica"></i></div>
 					<h2>
-						<a href="/carreras/ingenieria-electronica">
+						<?php $ingenieria_electronica_url = "/" . $language->prefix . "/" . drupal_get_path_alias('ingenieria-electronica', $language->prefix); ?>
+						<a href="<?php print $ingenieria_electronica_url; ?>">
 							<?php if ($language->prefix == 'en'): ?>
 							<span><?php print t('Electronic') ?></span>
 								<span><?php print t('Engineering') ?></span>
@@ -80,7 +84,8 @@
 				<div data-href="/carreras/ingenieria-mecanica">
 					<div><i class="icon-ing-mecanica"></i></div>
 					<h2>
-						<a href="/carreras/ingenieria-mecanica">
+						<?php $ingenieria_mecanica_url = "/" . $language->prefix . "/" . drupal_get_path_alias('ingenieria-mecanica', $language->prefix); ?>
+						<a href="<?php print $ingenieria_mecanica_url; ?>">
 							<?php if ($language->prefix == 'en'): ?>
 								<span><?php print t('Mechanical') ?></span>
 								<span><?php print t('Engineering') ?></span>
