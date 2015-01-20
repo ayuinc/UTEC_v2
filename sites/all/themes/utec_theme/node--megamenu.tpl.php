@@ -616,7 +616,7 @@
 					</li>
 					<li>
 						<a href="#nav-shrink-display-6">
-							<span><?php print t('SDP') ?></span>
+							<span><?php print t('SPD') ?></span>
 						</a>
 					</li>
 				</ul>
