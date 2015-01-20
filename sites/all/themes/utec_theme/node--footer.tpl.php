@@ -44,7 +44,7 @@
               <li><a href="/<?php print $language->prefix ?>/metodologia-educativa" class="atm-menu-inferior"><small><?php print t('Educational Methodology') ?></small></a></li>
               <li><a href="/<?php print $language->prefix ?>/news" class="atm-menu-inferior"><small></small><small><?php print t('News') ?></small></a></li>
               <li><a href="/<?php print $language->prefix ?>/events" class="atm-menu-inferior"><small><?php print t('Events') ?></small></a></li>
-              <li><a href="/<?php print $language->prefix ?>/student-life" class="atm-menu-inferior"><small><?php print t('Life at UTEC') ?></small></a></li>
+              <li><a href="/<?php print $language->prefix ?>/utec-life" class="atm-menu-inferior"><small><?php print t('UTEC Life') ?></small></a></li>
               <li><a href="/<?php print $language->prefix ?>/campus-and-labs" class="atm-menu-inferior"><small><?php print t('Campus and Labs') ?></small></a></li>
               <li><a href="/<?php print $language->prefix ?>/work-at-utec" class="atm-menu-inferior"><small><?php print t('Work at UTEC') ?></small></a></li>
               <li><a href="/<?php print $language->prefix ?>/ingenuity-in-action/utec-garage" class="atm-menu-inferior"><small><?php print t('UTEC Garage') ?></small></a></li>
@@ -58,7 +58,7 @@
               <li><a href="/<?php print $language->prefix ?>/metodologia-educativa" class="atm-menu-inferior"><small><?php print t('Educational Methodology') ?></small></a></li>
               <li><a href="/<?php print $language->prefix ?>/noticias" class="atm-menu-inferior"><small></small><small><?php print t('News') ?></small></a></li>
               <li><a href="/<?php print $language->prefix ?>/eventos-utec" class="atm-menu-inferior"><small><?php print t('Events') ?></small></a></li>
-              <li><a href="/<?php print $language->prefix ?>/vida-estudiantil" class="atm-menu-inferior"><small><?php print t('Life at UTEC') ?></small></a></li>
+              <li><a href="/<?php print $language->prefix ?>/vida-estudiantil" class="atm-menu-inferior"><small><?php print t('UTEC Life') ?></small></a></li>
               <li><a href="/<?php print $language->prefix ?>/campus-y-laboratorios" class="atm-menu-inferior"><small><?php print t('Campus and Labs') ?></small></a></li>
               <li><a href="/<?php print $language->prefix ?>/trabaja-en-utec" class="atm-menu-inferior"><small><?php print t('Work at UTEC') ?></small></a></li>
               <li><a href="/<?php print $language->prefix ?>/ingenio-en-accion/utec-garage" class="atm-menu-inferior"><small><?php print t('UTEC Garage') ?></small></a></li>
@@ -79,6 +79,7 @@
         </li>-->
         <li>
           <ul>
+	          <?php if ($language->prefix == 'es'): ?>
             <li class="title text-gray-lighter"><?php print t('Research') ?></li>
             <li><a href="/<?php print $language->prefix ?>/proyectos" class="atm-menu-inferior"><small><?php print t('Projects') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/publicaciones" class="atm-menu-inferior"><small><?php print t('Publications') ?></small></a></li>
@@ -86,7 +87,15 @@
             <li><a href="#"><small>Consultorías</small></a></li>-->
             <li><a href="/<?php print $language->prefix ?>/empresas-y-clientes"><small><?php print t('Companies and Clients') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/investigacion/contacto"><small><?php print t('Contact us') ?></small></a></li>
-
+						<?php elseif ($language->prefix == 'en'): ?>
+            <li class="title text-gray-lighter"><?php print t('Research') ?></li>
+            <li><a href="/<?php print $language->prefix ?>/proyectos" class="atm-menu-inferior"><small><?php print t('Projects') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/publications" class="atm-menu-inferior"><small><?php print t('Publications') ?></small></a></li>
+            <!--<li><a href="#"><small>Publicaciones</small></a></li>
+            <li><a href="#"><small>Consultorías</small></a></li>-->
+            <li><a href="/<?php print $language->prefix ?>/our-clients"><small><?php print t('Companies and Clients') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/research/contact"><small><?php print t('Contact us') ?></small></a></li>
+						<?php endif ?>
           </ul>
         </li>
         <li>

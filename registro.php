@@ -1016,11 +1016,7 @@ if($idioma == "es")
 
                           $contenidorpta = "";
                           $contenidorpta.= "<table width='600px' height='168px' cellpadding='2' cellspacing='2' bgcolor='#FFFFFF'>
-                                           <tr><td><p><img src='http://app.utec.edu.pe/admision/img/cabeceraWEB.jpg' alt='cabeceraWEB' usemap='#Map2'>
-                                            <map name='Map2' id='Map2'>
-                                              <area shape='rect' coords='3,3,597,86' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
-                                            </map>
-                                           </p>";
+                                           <tr><td>";
                           $contenidorpta.= "<p>Hola ".strtoupper($_POST['nombres']).",</p>
                                            <p><h2>¡Gracias por tu interés en UTEC!</h2>
                                            <br/> Hemos recibido tus datos correctamente.
@@ -1044,22 +1040,14 @@ if($idioma == "es")
                           $contenidorpta.= "<p>¡Éxitos!</p>";
                           $contenidorpta.= "<p>Comunícate con UTEC más fácil:<br/><a href='http://guia.com.pe/estara/estara_popup.asp?advertiseId=411234&status=P&phone=51013731000&addressId=876727&' target='_blank'><img src='http://app.utec.edu.pe/admision/img/llama_gratis.jpg' alt='LLama gratis'></a></p>";
                           //$contenidorpta.="<p>Oficina de Admisión<br /><strong>UTEC -  Universidad de Ingeniería & Tecnología</strong><br />Telf: (511) 373 1000<br />Av. Prolongación San Martín, 207, Barranco<br />informes@utec.edu.pe<br />www.utec.edu.pe</p>";
-                          $contenidorpta.= "<p><img src='http://app.utec.edu.pe/admision/img/logo_utec.jpg' alt='Logo Utec'><br/><b>UTEC - Universidad de Ingeniería & Tecnología</b></p>
+                          $contenidorpta.= "<p>
+                                            <b>UTEC - Universidad de Ingeniería & Tecnología</b><br />
+                                            <a href='http://www.utec.edu.pe'> 
+                                                <img src='http://app.utec.edu.pe/admision/img/logo_utec.gif' alt='Logo Utec' width='120px;'>
+                                            </a>
+                                            </p>
                                             </td></tr>
                                            </table>";
-
-                          $contenidorpta.="<p>
-                          <img src='http://app.utec.edu.pe/admision/img/pieWEB.jpg' alt='pieWEB' usemap='#Map'>
-                          <map name='Map' id='Map'>
-                          <area shape='rect' coords='19,33,107,67' href='http://www.utec.edu.pe/carreras/ingenieria-industrial/default.aspx#.VE5bZfmG96A' target='_blank' alt='Ingeniería Industrial' />
-                          <area shape='rect' coords='487,31,595,69' href='http://www.utec.edu.pe/carreras/ingenieria-quimica/default.aspx#.VE5bjPmG96A' target='_blank' alt='Ingeniería Química Industrial' />
-                          <area shape='rect' coords='132,36,230,67' href='http://www.utec.edu.pe/carreras/ingenieria-mecanica/default.aspx#.VE6dZ_mG96A' target='_blank' alt='Ingeniería Mecánica' />
-                          <area shape='rect' coords='257,36,348,66' href='http://www.utec.edu.pe/carreras/ingenieria-energia/default.aspx#.VE6dlPmG96A' target='_blank' alt='Ingeniería de la Energía' />
-                          <area shape='rect' coords='374,34,467,67' href='http://www.utec.edu.pe/carreras/ingenieria-electronica/default.aspx#.VE6dufmG96A' target='_blank' alt='Ingeniería Electrónica' />
-                          <area shape='rect' coords='48,121,198,140' href='mailto:informes@utec.edu.pe?Subject=Consulta Información' target='_top' />
-                          <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
-                          </map>
-                          </p>"; 
             }
 }
 
@@ -1075,11 +1063,7 @@ if($idioma == "en")
 
                           $contenidorpta = "";
                           $contenidorpta.= "<table width='600px' height='168px' cellpadding='2' cellspacing='2' bgcolor='#FFFFFF'>
-                                           <tr><td><p><img src='http://app.utec.edu.pe/admision/img/cabeceraWEB.jpg' alt='cabeceraWEB' usemap='#Map2'>
-                                            <map name='Map2' id='Map2'>
-                                              <area shape='rect' coords='3,3,597,86' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
-                                            </map>
-                                           </p>";
+                                           <tr><td>";
                           $contenidorpta.= "<p>Hola ".strtoupper($_POST['nombres']).",</p>
                                            <p><h2>Thank you for your interest in UTEC!</h2>
                                            <br/> We have received your data correctly.
@@ -1102,22 +1086,14 @@ if($idioma == "en")
                           $contenidorpta.= "<p>Introduce yourself in our Admissions Office (Av. San Martín extension 207, Barranco) with the documents listed as a requirement of registration.</p>";
                           $contenidorpta.= "<p>Contact UTEC easier:<br/><a href='http://guia.com.pe/estara/estara_popup.asp?advertiseId=411234&status=P&phone=51013731000&addressId=876727&' target='_blank'><img src='http://app.utec.edu.pe/admision/img/llama_gratis.jpg' alt='LLama gratis'></a></p>";
                           //$contenidorpta.="<p>Oficina de Admisión<br /><strong>UTEC -  Universidad de Ingeniería & Tecnología</strong><br />Telf: (511) 373 1000<br />Av. Prolongación San Martín, 207, Barranco<br />informes@utec.edu.pe<br />www.utec.edu.pe</p>";
-                          $contenidorpta.= "<p><img src='http://app.utec.edu.pe/admision/img/logo_utec.jpg' alt='Logo Utec'><br/><b>UTEC - Universidad de Ingeniería & Tecnología</b></p>
+                          $contenidorpta.= "<p>
+                                            <b>UTEC - Universidad de Ingeniería & Tecnología</b><br />
+                                            <a href='http://www.utec.edu.pe'> 
+                                                <img src='http://app.utec.edu.pe/admision/img/logo_utec.gif' alt='Logo Utec' width='120px;'>
+                                            </a>
+                                            </p>
                                             </td></tr>
                                            </table>";
-
-                          $contenidorpta.="<p>
-                          <img src='http://app.utec.edu.pe/admision/img/pieWEB.jpg' alt='pieWEB' usemap='#Map'>
-                          <map name='Map' id='Map'>
-                          <area shape='rect' coords='19,33,107,67' href='http://www.utec.edu.pe/carreras/ingenieria-industrial/default.aspx#.VE5bZfmG96A' target='_blank' alt='Ingeniería Industrial' />
-                          <area shape='rect' coords='487,31,595,69' href='http://www.utec.edu.pe/carreras/ingenieria-quimica/default.aspx#.VE5bjPmG96A' target='_blank' alt='Ingeniería Química Industrial' />
-                          <area shape='rect' coords='132,36,230,67' href='http://www.utec.edu.pe/carreras/ingenieria-mecanica/default.aspx#.VE6dZ_mG96A' target='_blank' alt='Ingeniería Mecánica' />
-                          <area shape='rect' coords='257,36,348,66' href='http://www.utec.edu.pe/carreras/ingenieria-energia/default.aspx#.VE6dlPmG96A' target='_blank' alt='Ingeniería de la Energía' />
-                          <area shape='rect' coords='374,34,467,67' href='http://www.utec.edu.pe/carreras/ingenieria-electronica/default.aspx#.VE6dufmG96A' target='_blank' alt='Ingeniería Electrónica' />
-                          <area shape='rect' coords='48,121,198,140' href='mailto:informes@utec.edu.pe?Subject=Consulta Información' target='_top' />
-                          <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
-                          </map>
-                          </p>"; 
             }
 
 }
@@ -1191,7 +1167,8 @@ if($error){
 	
 }else{
 
-  echo "exito";
+  header('Location: /gracias/traslado');
+  exit();
   //$message.="  <p>Comunícate con UTEC más fácil:<br/><a href='http://guia.com.pe/estara/estara_popup.asp?advertiseId=411234&status=P&phone=51013731000&addressId=876727&' target='_blank'><img src='img/llama_gratis.jpg' alt='LLama gratis'></a></p>";
   //Flash::setInfo($message);
 }
