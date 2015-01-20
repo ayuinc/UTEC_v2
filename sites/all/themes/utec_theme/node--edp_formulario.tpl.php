@@ -24,17 +24,17 @@
 	<form action="" data-submit="Formulario de inscripcion">
 	<div class="row">
 		<div class="form-group col-sm-2">
-			<a href="#company_form" class="scroll-ref-1"><?php print t('Company') ?></a>
+			<a href="#company_form" class="scroll-ref-1 btn"><?php print t('Company') ?></a>
 		</div>
 		<div class="form-group col-sm-2">
-			<a href="#person_form" class="scroll-ref-2"><?php print t('Person') ?></a>
+			<a href="#person_form" class="scroll-ref-2 btn"><?php print t('Person') ?></a>
 		</div>
 	</div>
 	</form>
 		
 	<!--COMPANY-->	
-	<div id="company_form" data-section-scroll="company_form" class="">	
-	<h3><?php print t('Company') ?></h3>	
+	<div id="company_form" data-section-scroll="company_form" class="pb-70">	
+	<h2><?php print t('Company') ?></h2>	
 	<form action="/registro.php" name="comapny_form" data-submit="Formulario de inscripcion">
 		<input type="hidden" name="origen" value="<?php print $title ?>">
 		<input type="hidden" name="origen_tipo" value="company">
@@ -172,7 +172,7 @@
 	
 	<!--PERSON-->		
 	<div id="person_form" data-section-scroll="person_form">
-	<h3><?php print t('Person') ?></h3>	
+	<h2><?php print t('Person') ?></h2>	
 	<form action="/registro.php" name="person_form" data-submit="Formulario de inscripcion">
 		<input type="hidden" name="origen" value="<?php print $title ?>">
 		<input type="hidden" name="origen_tipo" value="person">		
