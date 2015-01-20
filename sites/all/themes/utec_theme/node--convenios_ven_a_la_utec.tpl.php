@@ -6,7 +6,7 @@
 <div class="container-sm">
   <h1 class="light"><?php print $titulo ?></h1>
   <div class="separator-gray separator-sm"></div>
-  <h3><?php print $field_introduccion_ven_utec‎ ?></h3>
+  <p><?php print $field_introduccion_ven_utec‎ ?></p>
 </div>
 
 <div class="container-sm">
