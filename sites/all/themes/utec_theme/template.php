@@ -149,5 +149,20 @@
 	  'every_page' => TRUE,
 	  'weight' => 15,
 	));	
+	
+	drupal_add_js("$(document).ready(function() {
+		$('#company_form').hide();
+		$('#person_form').hide();
+		
+		$('#company').click(function() {
+			$('#company_form').show();
+			$('#person_form').hide();
+		});	
+		
+		$('#person').click(function() {
+			$('#company_form').hide();
+			$('#person_form').show();
+		});		
+	});", 'inline');
 
 ?>
