@@ -236,8 +236,9 @@
 				<input  id="estudiante-no" type="radio" name="estudiante" value ="N"> No
 			</div>
 		</div>
-		<div id="errordiv" style="display: inline; margin-bottom: 10px; color: #ff0000;"></div>
-
+		<div class="row">
+			<div id="errordiv" class="col-sm-12 form-group"></div>			
+		</div>
 		<div class="text-right">
 			<button  id="" type="submit" class="btn btn-primary btn-lg">Enviar</button>
 		</div>
@@ -254,11 +255,24 @@ jQuery(function() {
 	          required: true,
 	          //minlength: 4
 	        },
+	        apellidop: {
+	          required: true,
+	          //minlength: 4
+	        },
+	        apellidom: {
+	          required: true,
+	          //minlength: 4
+	        },	        
 	      },
 	      messages: {
 		        nombres: {
 		          required: "Completa tus nombres <br /> ",
 		          //minlength: "10 Digitos"
+		      	},
+		        apellidop: {
+		          required: "Completa tu apellido paterno <br /> ",
+		          //minlength: "10 Digitos"
+		      	},		      	
 		      },
 		      errorPlacement: function( error, element ) {
 		        	error.insertAfter( '#errordiv' );
@@ -266,7 +280,6 @@ jQuery(function() {
 		      submitHandler: function( form ) {                                                 
 		      		form.submit();
 		      }
-		  }
     });
 });
 </script>
