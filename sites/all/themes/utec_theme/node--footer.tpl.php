@@ -137,7 +137,11 @@
         <li>
           <ul>
             <li class="title text-gray-lighter"><?php print t('Alliances') ?></li>
+            <?php if ($language->prefix == 'en'): ?>
+            <li><a href="/<?php print $language->prefix ?>/alliances/exchange" class="atm-menu-inferior"><small><?php print t('Alliances') ?></small></a></li>
+            <?php elseif ($language->prefix == 'es'): ?>
             <li><a href="/<?php print $language->prefix ?>/convenios/convenios-de-intercambio" class="atm-menu-inferior"><small><?php print t('Alliances') ?></small></a></li>
+            <?php endif ?>
           </ul>
         </li>  
         <li>
