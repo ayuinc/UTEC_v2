@@ -294,54 +294,47 @@
 				<div>
 					<ul>
 						<li>
-							<?php if ($language->prefix == 'en'): ?>
+							<?php if ($language->prefix == 'es'): ?>
 								<a href="/<?php print $language->prefix ?>/ingenieria-industrial">
+								<span><?php print t('Engineering') ?></span><?php print t('Industrial') ?>
+								</a>
+							<?php elseif ($language->prefix == 'en'): ?>
+								<a href="/<?php print $language->prefix ?>/industrial-engineering">
 								<span><?php print t('Industrial') ?></span><?php print t('Engineering') ?>
 								</a>
-							<?php elseif ($language->prefix == 'es'): ?>
-								<a href="/<?php print $language->prefix ?>/industrial-engineering">
-								<span><?php print t('Engineering') ?></span>
-								<?php print t('Industrial') ?>
-								</a>
 							<?php endif ?>
 						</li>
 						<li>
-							<?php if ($language->prefix == 'en'): ?>
+							<?php if ($language->prefix == 'es'): ?>
 								<a href="/<?php print $language->prefix ?>/ingenieria-de-la-energia">
-								<span><?php print t('Energy') ?></span>
+								<span>Ingeniería</span>de la Energía
 								</a>
-								<?php print t('Engineering') ?>
-							<?php elseif ($language->prefix == 'es'): ?>
+							<?php elseif ($language->prefix == 'en'): ?>
 								<a href="/<?php print $language->prefix ?>/energy-engineering">
-								<span><?php print t('Engineering') ?></span>
-								<?php print t('Energy') ?>
+								<span>Energy</span>Engineering
 								</a>
 							<?php endif ?>
 						</li>
 						<li>
-							<?php if ($language->prefix == 'en'): ?>
+							<?php if ($language->prefix == 'es'): ?>
 								<a href="/<?php print $language->prefix ?>/ingenieria-quimica-industrial">
-								<span><?php print t('Industrial Chemical') ?></span>
-								<?php print t('Engineering') ?>
+								<span>Ingeniería</span>Química Industrial
 								</a>
-							<?php elseif ($language->prefix == 'es'): ?>
+							<?php elseif ($language->prefix == 'en'): ?>
 								<a href="/<?php print $language->prefix ?>/industrial-chemical-engineering">
-								<span><?php print t('Engineering') ?></span>
-								<?php print t('Industrial Chemical') ?>
+								<span><?php print t('Industrial Chemical') ?></span><?php print t('Engineering') ?>
 								</a>
 							<?php endif ?>
 						</li>
 						<li>
 							
-								<?php if ($language->prefix == 'en'): ?>
+								<?php if ($language->prefix == 'es'): ?>
 									<a href="/<?php print $language->prefix ?>/ingenieria-mecanica">
-									<span><?php print t('Mechanical') ?></span>
-									<?php print t('Engineering') ?>
+									<span><?php print t('Engineering') ?></span><?php print t('Mechanical') ?>
 									</a>
-								<?php elseif ($language->prefix == 'es'): ?>
+								<?php elseif ($language->prefix == 'en'): ?>
 									<a href="/<?php print $language->prefix ?>/mechanical-engineering">
-									<span><?php print t('Engineering') ?></span>
-									<?php print t('Mechanical') ?>
+									<span><?php print t('Mechanical') ?></span><?php print t('Engineering') ?>
 									</a>
 								<?php endif ?>
 							</a>
@@ -349,15 +342,13 @@
 					</ul>
 					<ul>
 						<li>
-							<?php if ($language->prefix == 'en'): ?>
+							<?php if ($language->prefix == 'es'): ?>
 								<a href="/<?php print $language->prefix ?>/ingenieria-electronica">
-								<span><?php print t('Electronic') ?></span>
-								<?php print t('Engineering') ?>
+								<span><?php print t('Engineering') ?></span><?php print t('Electronic') ?>
 								</a>
-							<?php elseif ($language->prefix == 'es'): ?>
+							<?php elseif ($language->prefix == 'en'): ?>
 								<a href="/<?php print $language->prefix ?>/electronic-engineering">
-								<span><?php print t('Engineering') ?></span>
-								<?php print t('Electronic') ?>
+								<span><?php print t('Electronic') ?></span><?php print t('Engineering') ?>
 								</a>
 							<?php endif ?>
 						</li>
@@ -544,15 +535,21 @@
 						<li>
 							<a href="/edp/cursos/cursos-online"><span>Cursos</span>online</a>
 						</li>-->
-						<li><a href="/edp/la-escuela"><?php print t('The School') ?></a></li>
+						<li>
+							<?php if ($language->prefix == 'es'): ?>
+							<a href="/<?php print $language->prefix ?>/edp/la-escuela"><?php print t('The School') ?></a>
+							<?php elseif ($language->prefix == 'en'): ?>
+							<a href="/<?php print $language->prefix ?>/school-of-professional-development/the-school"><?php print t('The School') ?></a>
+							<?php endif ?>
+						</li>
 						<li>
 							<?php if ($language->prefix == 'es'): ?>
 								<a href="/<?php print $language->prefix ?>/edp/cursos-cortos">
-								<span>Short</span>Courses
+								<span>Cursos</span>Cortos
 								</a>
 							<?php elseif ($language->prefix == 'en'): ?>
 								<a href="/<?php print $language->prefix ?>/school-of-professional-development/short-courses">
-								<span>Cursos</span>Cortos
+								<span>Short</span>Courses
 								</a>
 							<?php endif ?>
 							</a>
@@ -619,7 +616,7 @@
 					</li>
 					<li>
 						<a href="#nav-shrink-display-6">
-							<span><?php print t('SDP') ?></span>
+							<span><?php print t('SPD') ?></span>
 						</a>
 					</li>
 				</ul>
@@ -811,70 +808,59 @@
 				<div>
 					<ul>
 						<li>
-							<?php if ($language->prefix == 'en'): ?>
+							<?php if ($language->prefix == 'es'): ?>
 								<a href="/<?php print $language->prefix ?>/ingenieria-industrial">
+								<span><?php print t('Engineering') ?></span><?php print t('Industrial') ?>
+								</a>
+							<?php elseif ($language->prefix == 'en'): ?>
+								<a href="/<?php print $language->prefix ?>/industrial-engineering">
 								<span><?php print t('Industrial') ?></span><?php print t('Engineering') ?>
 								</a>
-							<?php elseif ($language->prefix == 'es'): ?>
-								<a href="/<?php print $language->prefix ?>/industrial-engineering">
-								<span><?php print t('Engineering') ?></span>
-								<?php print t('Industrial') ?>
-								</a>
 							<?php endif ?>
 						</li>
 						<li>
-							<?php if ($language->prefix == 'en'): ?>
+							<?php if ($language->prefix == 'es'): ?>
 								<a href="/<?php print $language->prefix ?>/ingenieria-de-la-energia">
-								<span><?php print t('Energy') ?></span>
+								<span>Ingeniería</span>de la Energía
 								</a>
-								<?php print t('Engineering') ?>
-							<?php elseif ($language->prefix == 'es'): ?>
+							<?php elseif ($language->prefix == 'en'): ?>
 								<a href="/<?php print $language->prefix ?>/energy-engineering">
-								<span><?php print t('Engineering') ?></span>
-								<?php print t('Energy') ?>
+								<span>Energy</span>Engineering
 								</a>
 							<?php endif ?>
 						</li>
 						<li>
-							<?php if ($language->prefix == 'en'): ?>
+							<?php if ($language->prefix == 'es'): ?>
 								<a href="/<?php print $language->prefix ?>/ingenieria-quimica-industrial">
-								<span><?php print t('Industrial Chemical') ?></span>
-								<?php print t('Engineering') ?>
+								<span><?php print t('Engineering') ?></span><?php print t('Industrial Chemical') ?>
 								</a>
-							<?php elseif ($language->prefix == 'es'): ?>
+							<?php elseif ($language->prefix == 'en'): ?>
 								<a href="/<?php print $language->prefix ?>/industrial-chemical-engineering">
-								<span><?php print t('Engineering') ?></span>
-								<?php print t('Industrial Chemical') ?>
+								<span><?php print t('Industrial Chemical') ?></span><?php print t('Engineering') ?>
 								</a>
 							<?php endif ?>
 						</li>
 						<li>
-							
-								<?php if ($language->prefix == 'en'): ?>
-									<a href="/<?php print $language->prefix ?>/ingenieria-mecanica">
-									<span><?php print t('Mechanical') ?></span>
-									<?php print t('Engineering') ?>
-									</a>
-								<?php elseif ($language->prefix == 'es'): ?>
-									<a href="/<?php print $language->prefix ?>/mechanical-engineering">
-									<span><?php print t('Engineering') ?></span>
-									<?php print t('Mechanical') ?>
-									</a>
-								<?php endif ?>
-							</a>
+							<?php if ($language->prefix == 'es'): ?>
+								<a href="/<?php print $language->prefix ?>/ingenieria-mecanica">
+								<span><?php print t('Engineering') ?></span><?php print t('Mechanical') ?>
+								</a>
+							<?php elseif ($language->prefix == 'en'): ?>
+								<a href="/<?php print $language->prefix ?>/mechanical-engineering">
+								<span><?php print t('Mechanical') ?></span><?php print t('Engineering') ?>
+								</a>
+							<?php endif ?>
 						</li>
 					</ul>
 					<ul>
 						<li>
-							<?php if ($language->prefix == 'en'): ?>
+							<?php if ($language->prefix == 'es'): ?>
 								<a href="/<?php print $language->prefix ?>/ingenieria-electronica">
-								<span><?php print t('Electronic') ?></span>
-								<?php print t('Engineering') ?>
+								<span><?php print t('Engineering') ?></span><?php print t('Electronic') ?>
 								</a>
-							<?php elseif ($language->prefix == 'es'): ?>
+							<?php elseif ($language->prefix == 'en'): ?>
 								<a href="/<?php print $language->prefix ?>/electronic-engineering">
-								<span><?php print t('Engineering') ?></span>
-								<?php print t('Electronic') ?>
+								<span><?php print t('Electronic') ?></span><?php print t('Engineering') ?>
 								</a>
 							<?php endif ?>
 						</li>
@@ -1064,11 +1050,11 @@
 						<li>
 							<?php if ($language->prefix == 'es'): ?>
 								<a href="/<?php print $language->prefix ?>/edp/cursos-cortos">
-								<span>Short</span>Courses
+								<span>Cursos</span>Cortos
 								</a>
 							<?php elseif ($language->prefix == 'en'): ?>
 								<a href="/<?php print $language->prefix ?>/school-of-professional-development/short-courses">
-								<span>Cursos</span>Cortos
+								<span>Short</span>Courses
 								</a>
 							<?php endif ?>
 							</a>

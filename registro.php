@@ -1154,10 +1154,7 @@ $param = array('familia' => $v0, 'nombres' => $v1, 'apelPat' => $v2, 'apelMat' =
                                         'codPais' => $v31, 'numRPM' => $v32, 'comoSupoNosotros' => $v33, 'codigoProducto' => $v34, 'codigoProgramacion' => $v35, 'comentario' => $v36, 'origenOportunidad' => $v37, 'univProcedencia' => $v38);
 
 $response = $client->call( 'registrarInscripcion', $param );
-
 $error = $client->getError();
-
-print_r($response);
 
 if($error){
 
@@ -1167,10 +1164,44 @@ if($error){
 	
 }else{
 
-  echo "exito";
-  //$message.="  <p>Comunícate con UTEC más fácil:<br/><a href='http://guia.com.pe/estara/estara_popup.asp?advertiseId=411234&status=P&phone=51013731000&addressId=876727&' target='_blank'><img src='img/llama_gratis.jpg' alt='LLama gratis'></a></p>";
-  //Flash::setInfo($message);
+    if($origen == "pagina-inscripcion-examen-admision")
+    {
+          header('Location: /gracias/examen-de-admision');
+          exit();   
+    }
+
+    if($origen == "pagina-inscripcion-alto-rendimiento")
+    {
+          header('Location: /gracias/alto-rendimiento');
+          exit();   
+    }
+
+    if($origen == "pagina-inscripcion-bachillerato")
+    {
+          header('Location: /gracias/bachillerato-internacional');
+          exit();   
+    }
+
+    if($origen == "pagina-inscripcion-pre")
+    {
+          header('Location: /gracias/centro-pre');
+          exit();   
+    }
+
+    if($origen == "pagina-inscripcion-primeros-puestos")
+    {
+          header('Location: /gracias/primeros-puestos');
+          exit();   
+    }
+            
+    if($origen == "pagina-inscripcion-traslado-externo")
+    {
+          header('Location: /gracias/traslado');
+          exit();   
+    }
+
+          header('Location: /gracias');
+          exit();       
 }
-//header( 'Location: https://app.utec.edu.pe/centro-preuniversitario/' ) ;
 
 ?>
