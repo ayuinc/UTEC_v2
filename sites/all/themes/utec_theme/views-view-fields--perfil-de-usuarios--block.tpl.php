@@ -14,6 +14,7 @@
 	$resenia_ingles = $fields['field_rese_a_ingles']->content;
 	$twitter = $fields['field_twitter']->content;
 
+	kpr($fields);
 ?>
 
 <div>
@@ -24,7 +25,7 @@
 <?php if ($language->prefix == 'en') : ?>
 <p><?php print $descripcion_ingles ?></p>
 <p><?php print $resenia_ingles ?></p>
-<?php elseif ($language->prefix == 'es') : ?>
-	<p><?php print $descripcion ?></p>
+<?php else : ?>
+<p><?php print $descripcion ?></p>
 <p><?php print $resenia ?></p>
 <?php endif; ?>
