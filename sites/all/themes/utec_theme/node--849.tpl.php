@@ -354,7 +354,7 @@ jQuery(function() {
 	        estudios-rendimiento: {
 	          required: true,
 	          //minlength: 4
-	        },
+	        }
 	      },
 	      messages: {
 		        nombres: {
@@ -460,8 +460,7 @@ jQuery(function() {
 		      	estudios-rendimiento: {
 		          required: "Selecciona tu rendimiento académico <br /> ",
 		          //minlength: "10 Digitos"
-		      	},
-
+		      	}
 		      },
 		      errorPlacement: function( error, element ) {
 		        	error.insertAfter( '#errordiv' );
