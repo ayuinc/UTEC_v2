@@ -13,7 +13,7 @@
 	<div class="separator-gray separator-lg"></div>
 	<p class="lead text-gray"><?php print $field_introduccion_autoridades ?></p>
 	<ul class="pv-35 grid-list grid-list-2 grid-list-1-xs">
-		<?php //kpr($node); ?>
+		<?php kpr($language); ?>
     <?php foreach ($node->field_profesor['und'] as $key => $value) :?>
          
       <?php 
@@ -42,7 +42,7 @@
       <?php $res = $value['entity']->field_rese_a_autoridad['und']['0']['value']; ?>
       <?php $res_ingles = $value['entity']->field_rese_a_autoridad_ingles['und']['0']['value']; ?>	
 
-      <?php $profesor_url = "/" . $language->language . "/" . drupal_get_path_alias('page/30/autoridades/'.$uid, $language->language); ?>
+      <?php $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/autoridades/'.$uid, $language->language); ?>
       <?php if($uid != 14 && $uid != 22) : ?>
 			<li data-href="<?php print $profesor_url ?>">
 				<div class="user-card user-card-round size lg">
@@ -69,7 +69,7 @@
         <?php $res = $value['entity']->field_rese_a_autoridad['und']['0']['value']; ?>
         <?php $res_ingles = $value['entity']->field_rese_a_autoridad_ingles['und']['0']['value']; ?>  
 
-        <?php $profesor_url = "/" . $language->language . "/" . drupal_get_path_alias('page/30/autoridades/'.$uid, $language->language); ?>
+        <?php $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/autoridades/'.$uid, $language->language); ?>
       <?php if($uid == 14 || $uid == 22) : ?>
         <li data-href="<?php print $profesor_url ?>">
           <div class="user-card user-card-round size lg">
