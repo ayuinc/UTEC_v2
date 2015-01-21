@@ -60,7 +60,6 @@
 						<?php else : ?>
 						<span><?php print $desc?></span>
 						<?php endif; ?>
-						<!-- <a href="mailto:<?php //print $mail ?>"><?php //print $mail ?></a></div>   		 -->
 				</div>
 			</li>
       <?php endif ?>
@@ -92,7 +91,6 @@
               <?php else : ?>
               <span><?php print $desc?></span>
               <?php endif; ?>
-              <!-- <a href="mailto:<?php //print $mail ?>"><?php //print $mail ?></a></div>        -->
           </div>
         </li>
       <?php endif; ?>
