@@ -54,9 +54,6 @@ $carreras = array(
     '00000' => 'N/S', 
 );
 
-$origen = utf8_decode($_POST['origen']);
-$idioma = utf8_decode($_POST['idioma']);
-
 //Inicio del proceso de envío de correos
 $mail = new PHPMailer();
 $destinatarios = array(
@@ -85,6 +82,9 @@ $contenidorpta = "";
 //Definicón de subject, destinatario, título
 
 //BLOQUE ESPAÑOL
+$origen = utf8_decode($_POST['origen']);
+echo $origen;
+$idioma = utf8_decode($_POST['idioma']);
 
 if($idioma == "es")
 {
