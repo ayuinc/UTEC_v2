@@ -27,7 +27,7 @@
 
 <?php if ($language->prefix == 'en'): ?>
   <div data-section-scroll="Overview" id="que-es" class="scroll-down-info section-scroll-content bg-img-block bg-img-block-lg hero-unit size lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
-<?php elseif ($language->prefix == 'es'): ?>
+<?php elseif ($language->prefix != 'en'): ?>
   <div data-section-scroll="Acerca de" id="que-es" class="scroll-down-info section-scroll-content bg-img-block bg-img-block-lg hero-unit size lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
 <?php endif ?>
 	<div class="container-sm text-center">
@@ -42,7 +42,7 @@
 </div>
 	<?php if ($language->prefix == 'en'): ?>
 <div data-section-scroll="A panel" class="section-scroll-content scroll-down-white bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_foto_causa)?>);">
-	<?php elseif ($language->prefix == 'es'): ?>
+	<?php elseif ($language->prefix != 'en'): ?>
 <div data-section-scroll="Un panel" class="section-scroll-content scroll-down-white bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_foto_causa)?>);">
 	<?php endif ?>
 	<!-- <div class="container-sm text-center">
@@ -80,7 +80,7 @@
 </div>
 	<?php if ($language->prefix == 'en'): ?>
 <div data-section-scroll="Three actions" class="section-scroll-content scroll-down-white bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_foto_tres_acciones)?>);">
-	<?php elseif ($language->prefix == 'es'): ?>
+	<?php elseif ($language->prefix != 'en'): ?>
 <div data-section-scroll="Tres acciones" class="section-scroll-content scroll-down-white bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_foto_tres_acciones)?>);">
 	<?php endif ?>
 	<div class="overlay flex-middle">
@@ -105,7 +105,7 @@
 		<i class="icon-arrows-down bg-info-op text-white"></i>
 	</a> -->
 </div>
-	<?php if ($language->prefix == 'es'): ?>
+	<?php if ($language->prefix != 'en'): ?>
 <div data-section-scroll="Purificando el agua" class="section-scroll-content scroll-down-info minh-560 flex-middle-center">
 	<?php elseif ($language->prefix == 'en'): ?>
 <div data-section-scroll="Purifying water" class="section-scroll-content scroll-down-info minh-560 flex-middle-center">
@@ -125,7 +125,7 @@
 		<i class="icon-arrows-down bg-info-op text-white"></i>
 	</a> -->
 </div>
-	<?php if ($language->prefix == 'es'): ?>
+	<?php if ($language->prefix != 'en'): ?>
 <div data-section-scroll="Descubre más" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_foto_redes_sociales)?>);">
 	<?php elseif ($language->prefix == 'en'): ?>
 <div data-section-scroll="Find more" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_foto_redes_sociales)?>);">
