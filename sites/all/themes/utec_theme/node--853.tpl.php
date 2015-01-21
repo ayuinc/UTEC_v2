@@ -11,14 +11,6 @@
 	$mencion = $node->field_mencion['und']['0']['value'];
 	$electivo = $node->field_electivo['und'];
 	$idioma = $language->prefix;		
-
-	$unwanted_array = array(    'Š'=>'S', 'š'=>'s', 'Ž'=>'Z', 'ž'=>'z', 'À'=>'A', 'Á'=>'A', 'Â'=>'A', 'Ã'=>'A', 'Ä'=>'A', 'Å'=>'A', 'Æ'=>'A', 'Ç'=>'C', 'È'=>'E', 'É'=>'E',
-	                            'Ê'=>'E', 'Ë'=>'E', 'Ì'=>'I', 'Í'=>'I', 'Î'=>'I', 'Ï'=>'I', 'Ñ'=>'N', 'Ò'=>'O', 'Ó'=>'O', 'Ô'=>'O', 'Õ'=>'O', 'Ö'=>'O', 'Ø'=>'O', 'Ù'=>'U',
-	                            'Ú'=>'U', 'Û'=>'U', 'Ü'=>'U', 'Ý'=>'Y', 'Þ'=>'B', 'ß'=>'Ss', 'à'=>'a', 'á'=>'a', 'â'=>'a', 'ã'=>'a', 'ä'=>'a', 'å'=>'a', 'æ'=>'a', 'ç'=>'c',
-	                            'è'=>'e', 'é'=>'e', 'ê'=>'e', 'ë'=>'e', 'ì'=>'i', 'í'=>'i', 'î'=>'i', 'ï'=>'i', 'ð'=>'o', 'ñ'=>'n', 'ò'=>'o', 'ó'=>'o', 'ô'=>'o', 'õ'=>'o',
-	                            'ö'=>'o', 'ø'=>'o', 'ù'=>'u', 'ú'=>'u', 'û'=>'u', 'ý'=>'y', 'ý'=>'y', 'þ'=>'b', 'ÿ'=>'y' );
-	$titulo = strtr( $titulo, $unwanted_array );
-		
 	// print_r($node);
 	//BACHILLERATO
 ?>
@@ -30,7 +22,7 @@
 </div>
 <div class="container-sm form-custom">
 	<form action="/registro.php" class="mb-ch-28" data-submit="Formulario de inscripcion" method="post" id="formRegistro" name="formRegistro">
-		<input type="hidden" name="origen" value="<?php print $titulo; ?>">
+		<input type="hidden" name="origen" value="<?php print $title; ?>">
 		<input type="hidden" name="idioma" value="<?php print $idioma; ?>">
 			
 		<div class="row">
@@ -200,12 +192,12 @@
 				</select>
 			</div>
 			<div class="col-sm-9 form-group">
-				<label for="" class="sr-only">Colegio de procedencia</label>
-				<input  id="colegio-procedencia" name="colegio" type="text" class="form-control" placeholder="Colegio de procedencia">
+				<label for="" class="sr-only"><?php print t('High School') ?></label>
+				<input  id="colegio-procedencia" name="colegio" type="text" class="form-control" placeholder="<?php print t('High School') ?>">
 			</div>
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">Departamento</label>
-				<input  id="estudios-dpto" name="estudios-dpto" type="text" class="form-control" placeholder="Departamento">
+				<label for="" class="sr-only"><?php print t('Department') ?></label>
+				<input  id="estudios-dpto" name="estudios-dpto" type="text" class="form-control" placeholder="<?php print t('Department') ?>">
 				<!--
 				<select name="estudios-dpto" id="estudios-dpto" class="form-control select-override">
 					<option value="Dpto">Dpto</option>
@@ -213,8 +205,8 @@
 				-->
 			</div>
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">Provincia</label>
-				<input  id="estudios-provincia" name="estudios-provincia" type="text" class="form-control" placeholder="Provincia">
+				<label for="" class="sr-only"><?php print t('Province') ?></label>
+				<input  id="estudios-provincia" name="estudios-provincia" type="text" class="form-control" placeholder="<?php print t('Province') ?>">
 				<!--
 				<select name="estudios-provincia" id="estudios-provincia" class="form-control select-override">
 					<option value="Provincia">Provincia</option>
@@ -222,8 +214,8 @@
 				-->
 			</div>
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">Distrito</label>
-				<input  id="estudios-distrito" name="estudios-distrito" type="text" class="form-control" placeholder="Distrito">				
+				<label for="" class="sr-only"><?php print t('District') ?></label>
+				<input  id="estudios-distrito" name="estudios-distrito" type="text" class="form-control" placeholder="<?php print t('District') ?>">						
 				<!--
 				<select name="estudios-distrito" id="estudios-distrito" class="form-control select-override">
 					<option value="Distrito">Distrito</option>
@@ -232,15 +224,15 @@
 			</div>
 			<div class="form-group col-sm-7">
 				<select name="estudios-rendimiento" id="estudios-rendimiento" class="form-control select-override">
-					<option value="">- Rendimiento Académico -</option>
-	                <option value="Primeros Puestos ( 1° y 2° )">Primeros Puestos ( 1° y 2° )</option>
-	                <option value="Tercio superior">Tercio superior</option>
-	                <option value="Otro">Otro</option>
+					<option value="">- <?php print t('Academic Performance') ?> -</option>
+          <option value="Primeros Puestos ( 1° y 2° )"><?php print t('First place ( 1° y 2° )') ?></option>
+          <option value="Tercio superior"><?php print t('Third Superior') ?></option>
+          <option value="Otro"><?php print t('Other') ?></option>          
 				</select>
 			</div>
 			<div class="col-sm-12 form-group text-gray h4 thin">
-				<label for="">Es o ha sido estudiante de esta universidad:</label>
-				<input  id="estudiante-si" type="radio" checked name="estudiante" value="S"> Sí
+				<label for=""><?php print t('Have you been a student of this university:') ?></label>
+				<input  id="estudiante-si" type="radio" checked name="estudiante" value="S"> <?php print t('Yes') ?>
 				<input  id="estudiante-no" type="radio" name="estudiante" value ="N"> No
 			</div>
 		</div>
@@ -248,7 +240,7 @@
 			<div id="errordiv" class="col-sm-12 form-group"></div>			
 		</div>			
 		<div class="text-right">
-			<button  id="" type="submit" class="btn btn-primary btn-lg">Enviar</button>
+			<button  id="" type="submit" class="btn btn-primary btn-lg" onclick="bachillerato()"><?php print t('Send') ?></button>
 		</div>
 	</form>						
 </div>

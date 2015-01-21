@@ -192,12 +192,12 @@
 				</select>
 			</div>
 			<div class="col-sm-9 form-group">
-				<label for="" class="sr-only">High School</label>
-				<input  id="colegio-procedencia" name="colegio" type="text" class="form-control" placeholder="High School">
+				<label for="" class="sr-only"><?php print t('High School') ?></label>
+				<input  id="colegio-procedencia" name="colegio" type="text" class="form-control" placeholder="<?php print t('High School') ?>">
 			</div>
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">Department</label>
-				<input  id="estudios-dpto" name="estudios-dpto" type="text" class="form-control" placeholder="Department">
+				<label for="" class="sr-only"><?php print t('Department') ?></label>
+				<input  id="estudios-dpto" name="estudios-dpto" type="text" class="form-control" placeholder="<?php print t('Department') ?>">
 				<!--
 				<select name="estudios-dpto" id="estudios-dpto" class="form-control select-override">
 					<option value="Dpto">Dpto</option>
@@ -205,8 +205,8 @@
 				-->
 			</div>
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">Province</label>
-				<input  id="estudios-provincia" name="estudios-provincia" type="text" class="form-control" placeholder="Province">
+				<label for="" class="sr-only"><?php print t('Province') ?></label>
+				<input  id="estudios-provincia" name="estudios-provincia" type="text" class="form-control" placeholder="<?php print t('Province') ?>">
 				<!--
 				<select name="estudios-provincia" id="estudios-provincia" class="form-control select-override">
 					<option value="Provincia">Provincia</option>
@@ -214,8 +214,8 @@
 				-->
 			</div>
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">District</label>
-				<input  id="estudios-distrito" name="estudios-distrito" type="text" class="form-control" placeholder="District">				
+				<label for="" class="sr-only"><?php print t('District') ?></label>
+				<input  id="estudios-distrito" name="estudios-distrito" type="text" class="form-control" placeholder="<?php print t('District') ?>">				
 				<!--
 				<select name="estudios-distrito" id="estudios-distrito" class="form-control select-override">
 					<option value="Distrito">Distrito</option>
@@ -224,10 +224,10 @@
 			</div>
 			<div class="form-group col-sm-7">
 				<select name="estudios-rendimiento" id="estudios-rendimiento" class="form-control select-override">
-					<option value="">- Academic Performance -</option>
-	                <option value="Primeros Puestos ( 1° y 2° )">First place ( 1° y 2° )</option>
-	                <option value="Tercio superior">Third Superior</option>
-	                <option value="Otro">Other</option>
+					<option value="">- <?php print t('Academic Performance') ?> -</option>
+          <option value="Primeros Puestos ( 1° y 2° )"><?php print t('First place ( 1° y 2° )') ?></option>
+          <option value="Tercio superior"><?php print t('Third Superior') ?></option>
+          <option value="Otro"><?php print t('Other') ?></option> 
 				</select>
 			</div>
 			<div class="col-sm-12 form-group text-gray h4 thin">
