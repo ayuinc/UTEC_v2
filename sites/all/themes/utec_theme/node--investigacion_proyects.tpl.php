@@ -32,11 +32,11 @@
 			<span class="lead bold">Profesor: </span>
 			<?php $count = 0; ?>
 			<?php foreach ($profesor as $key => $value): ?>
-			<span class="lead"><?php print $value['entity']->name; ?></span>
-			<?php $count++; ?>
 			<?php if ($count > 0): ?>
 				-
 			<?php endif ?>
+			<span class="lead"><?php print $value['entity']->name; ?></span>
+			<?php $count++; ?>
 			<?php endforeach ?>
 		</p>
 	<?php } ?>
