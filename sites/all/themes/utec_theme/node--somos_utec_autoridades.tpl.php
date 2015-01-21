@@ -61,6 +61,15 @@
       <?php endif ?>
     <?php endforeach ?>
     <?php foreach ($node->field_profesor['und'] as $key => $value) :?>
+      <?php $name = $value['entity']->name; ?>
+      <?php $pic = $value['entity']->picture->filename; ?>
+      <?php $uid = $value['entity']->uid; ?>
+      <?php $desc = $value['entity']->field_descripci_n_autoridad['und'][0]['value']; ?>
+      <?php $desc_ingles = $value['entity']->field_descripci_n_autoridad_ingles['und']['0']['value']; ?>
+      <?php $res = $value['entity']->field_rese_a_autoridad['und']['0']['value']; ?>
+      <?php $res_ingles = $value['entity']->field_rese_a_autoridad_ingles['und']['0']['value']; ?>  
+
+      <?php $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/autoridades/'.$uid, $language->prefix); ?>
       <?php if($name == 'Julien Noel' || $name == 'Víctor Murray Herrera') : ?>
       <li data-href="<?php print $profesor_url ?>">
         <div class="user-card user-card-round size lg">
