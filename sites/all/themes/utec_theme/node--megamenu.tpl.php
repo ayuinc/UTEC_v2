@@ -10,13 +10,13 @@
 						<a href="/<?php print $language->prefix ?>/quick-links/students" class="atm-menu-superior"><?php print t('Students') ?></a>
 					</li>
 					<li>
-						<a href="/<?php print $language->prefix ?>/enlaces-rapidos/profesores" class="atm-menu-superior"><?php print t('Faculty') ?></a>
+						<a href="/<?php print $language->prefix ?>/quick-links/faculty" class="atm-menu-superior"><?php print t('Faculty') ?></a>
 					</li>
 					<li>
-						<a href="/<?php print $language->prefix ?>/enlaces-rapidos/empresas" class="atm-menu-superior"><?php print t('Companies') ?></a>
+						<a href="/<?php print $language->prefix ?>/quick-links/companies" class="atm-menu-superior"><?php print t('Companies') ?></a>
 					</li>
 					<li>
-						<a href="/<?php print $language->prefix ?>/enlaces-rapidos/postulantes" class="atm-menu-superior"><?php print t('Applicants') ?></a>
+						<a href="/<?php print $language->prefix ?>/quick-links/applicants" class="atm-menu-superior"><?php print t('Applicants') ?></a>
 					</li>
 				</ul>
 			</div>
