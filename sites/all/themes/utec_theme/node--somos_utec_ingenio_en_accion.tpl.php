@@ -25,7 +25,7 @@
 <?php $field_foto_redes_sociales = $node->field_foto_redes_sociales['und']['0']['filename']; ?>
 
 <div class="hero-unit size lg">
-	<div data-section-scroll="Acerca de" class="section-scroll-content flex-middle-center">
+	<div data-section-scroll="Acerca de" class="section-scroll-content scroll-down-info flex-middle-center">
 		<div class="container-sm text-center">
 			<h1 class="mb-7"><?php print $field_frase_autor ?></h1>
 			<p class="mb-0 pb-0"><?php print $field_nombre_autor ?></p>
@@ -36,11 +36,11 @@
 			</div>
 		</div>
 	</div>
-	<a class="scroll-down scroll-down-sq size lg" href="#unpanel" rel="nofollow">
+	<!-- <a class="scroll-down scroll-down-sq size lg" href="#unpanel" rel="nofollow">
 		<i class="icon-arrows-down bg-info-op text-white"></i>
-	</a>
+	</a> -->
 </div> <!-- END:Hero -->
-<div data-section-scroll="Un panel" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_foto_causa)?>);">
+<div data-section-scroll="Un panel" class="section-scroll-content scroll-down-info bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_foto_causa)?>);">
 	<div class="overlay flex-middle">
 		<div class="container hero-text" data-href="<?php print $field_link_causa ?>">
 			<div class="row">
@@ -55,16 +55,16 @@
 			</div>
 		</div>
 	</div>
-	<a class="scroll-down scroll-down-sq size lg" href="#tresacciones" rel="nofollow">
+	<!-- <a class="scroll-down scroll-down-sq size lg" href="#tresacciones" rel="nofollow">
 		<i class="icon-arrows-down bg-info-op text-white"></i>
-	</a>
+	</a> -->
 </div>
 <div class="pvp-7">
 	<div class="container-sm text-center">
 		<h3 class="lead"><?php print $field_frase_causa ?></h3>
 	</div>
 </div>
-<div data-section-scroll="Tres acciones" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_foto_tres_acciones)?>);">
+<div data-section-scroll="Tres acciones" class="section-scroll-content scroll-down-info bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_foto_tres_acciones)?>);">
 	<div class="overlay flex-middle">
 		<div class="container hero-text" data-href="<?php print $field_link_tres_acciones ?>">
 			<div class="row">
@@ -83,11 +83,11 @@
 			</div>
 		</div>
 	</div>
-	<a class="scroll-down scroll-down-sq size lg" href="#purificandoelagua" rel="nofollow">
+	<!-- <a class="scroll-down scroll-down-sq size lg" href="#purificandoelagua" rel="nofollow">
 		<i class="icon-arrows-down bg-info-op text-white"></i>
-	</a>
+	</a> -->
 </div>
-<div data-section-scroll="Purificando el agua" class="section-scroll-content minh-560 flex-middle-center">
+<div data-section-scroll="Purificando el agua" class="section-scroll-content minh-560 scroll-down-info flex-middle-center">
 	<div class="container-sm text-center normalize-text" data-href="<?php print $field_link_proyecto ?>">
 		<h2 class="lead thin"><?php print $field_titulo_proyecto ?></h2>
 		<hr class="hr-gray">
@@ -99,9 +99,9 @@
 			<?php } ?>
 		</div>
 	</div>
-	<a class="scroll-down scroll-down-sq size lg" href="#descubremas" rel="nofollow">
+	<!-- <a class="scroll-down scroll-down-sq size lg" href="#descubremas" rel="nofollow">
 		<i class="icon-arrows-down bg-info-op text-white"></i>
-	</a>
+	</a> -->
 </div>
 <div data-section-scroll="Descubre más" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_foto_redes_sociales)?>);">
 	<div class="overlay flex-middle">
