@@ -904,6 +904,7 @@ if($idioma == "es")
 
             if($origen == "pagina-inscripcion-pre")
             {
+                          $contenidorpta = "";
                           $contenidorpta.="<table width='600px' height='168px' cellpadding='2' cellspacing='2' bgcolor='#FFFFFF'>
 
                           <tr><td><p><img src='http://app.utec.edu.pe/admision/img/cabeceraWEB.jpg' alt='cabeceraWEB' usemap='#Map2'>
@@ -1197,6 +1198,7 @@ if($idioma == "en")
 
             if($origen == "pagina-inscripcion-pre")
             {
+                          $contenidorpta = "";
                           $contenidorpta.="<table width='600px' height='168px' cellpadding='2' cellspacing='2' bgcolor='#FFFFFF'>
 
                           <tr><td><p><img src='http://app.utec.edu.pe/admision/img/cabeceraWEB.jpg' alt='cabeceraWEB' usemap='#Map2'>
