@@ -27,7 +27,7 @@
 ?>
 <div class="hero-unit"> <!-- HERO -->
   <?php if ($language->language == 'en'): ?>
-    <div data-section-scroll="Overview" id="que-es" class="scroll-down-white section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
+    <div data-section-scroll="What is?" id="que-es" class="scroll-down-white section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
   <?php elseif ($language->language != 'en'): ?>
     <div data-section-scroll="¿Qué es?" id="que-es" class="scroll-down-white section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
   <?php endif ?>

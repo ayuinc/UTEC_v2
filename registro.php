@@ -54,9 +54,6 @@ $carreras = array(
     '00000' => 'N/S', 
 );
 
-$origen = utf8_decode($_POST['origen']);
-$idioma = utf8_decode($_POST['idioma']);
-
 //Inicio del proceso de envío de correos
 $mail = new PHPMailer();
 $destinatarios = array(
@@ -85,6 +82,8 @@ $contenidorpta = "";
 //Definicón de subject, destinatario, título
 
 //BLOQUE ESPAÑOL
+$origen = utf8_decode($_POST['origen']);
+$idioma = utf8_decode($_POST['idioma']);
 
 if($idioma == "es")
 {
@@ -217,8 +216,7 @@ if($idioma == "es")
         }
 
 
-        if($origen == "Charlas informativas" || $origen == "Contacto" || $origen == "Visita Utec" || 
-           $origen == "Ven a la UTEC" || $origen == "Trabaja en UTEC")
+        if($origen == "Charlas informativas" || $origen == "Contacto" || $origen == "Visita Utec" || $origen == "Trabaja en UTEC")
         {
             $fromTelemarketing = "webmaster@utec.edu.pe";
             $fromNameTelemarketing = "UTEC";
@@ -251,14 +249,6 @@ if($idioma == "es")
                 $subjectTelemarketing = "Solicitud - Formulario de Visita UTEC";
                 $familia = "CONTACTO";
                 $origen = "pagina-visita-utec";  
-            }
-
-            if($origen == "Ven a la UTEC")
-            {
-                $tituloTelemarketing = "Formulario de Ven a la UTEC - Datos Personales";
-                $subjectTelemarketing = "Solicitud - Formulario de Ven a la UTEC";
-                $familia = "CONTACTO";
-                $origen = "pagina-ven-a-la-utec";  
             }
 
             if($origen == "Trabaja en UTEC")
@@ -414,61 +404,61 @@ if($idioma == "es")
 
 if($idioma == "en")
 {
-        if($origen == "Examen de Admision" || $origen == "Primeros puestos" || $origen == "Alto Rendimiento" || 
-           $origen == "Traslado Externo" || $origen == "Centro Pre" || $origen == "Bachillerato Internacional" )
+        if($origen == "Admissions Exam" || $origen == "Top Academic Rankings" || $origen == "High Performance Assessment" || 
+           $origen == "Transfer from other Universities" || $origen == "Pre-University Study Center" || $origen == "International Baccalaureate" )
         {
 
             $fromTelemarketing = "informes@utec.edu.pe";
             $fromNameTelemarketing = "UTEC";
-            $tituloCliente = "¡Gracias por tu interés en UTEC.!";
-            $subjectCliente = "Gracias por tu Interés en UTEC";
+            $tituloCliente = "Thank you for your interest in UTEC!";
+            $subjectCliente = "Thank you for your interest in UTEC";
             $fromCliente = "admision@utec.edu.pe";
-            $fromNameCliente = "UTEC – Admisión";
+            $fromNameCliente = "UTEC – Admission";
 
-            if ($origen == "Examen de Admision")
+            if ($origen == "Admissions Exam")
             {
-                $tituloTelemarketing = "EXAMEN ADMISION - Datos Personales";
-                $subjectTelemarketing = "Solicitud - Examen Admision UTEC";
+                $tituloTelemarketing = "ADMISSIONS EXAM - Personal Data";
+                $subjectTelemarketing = "Request - Admissions Exam UTEC";
                 $familia = "EXAMEN-ADMISION";
                 $origen = "pagina-examen-admision";
             }
 
-            if ($origen == "Primeros puestos")
+            if ($origen == "Top Academic Rankings")
             {
-                $tituloTelemarketing = "PRIMEROS PUESTOS - Datos Personales";
-                $subjectTelemarketing = "Solicitud - Primeros Puestos UTEC";
+                $tituloTelemarketing = "TOP ACADEMIC RANKINGS - Personal Data";
+                $subjectTelemarketing = "Request - Top Academic Rankings UTEC";
                 $familia = "PRIMEROS-PUESTOS";
                 $origen = "pagina-primeros-puestos";
             }
 
-            if ($origen == "Alto Rendimiento")
+            if ($origen == "High Performance Assessment")
             {
-                $tituloTelemarketing = "ALTO RENDIMIENTO - Datos Personales";
-                $subjectTelemarketing = "Solicitud - Alto Rendimiento UTEC";
+                $tituloTelemarketing = "HIGH PERFORMANCE ASSESSMENT - Personal Data";
+                $subjectTelemarketing = "Request - High Performance Assessment UTEC";
                 $familia = "ALTO-RENDIMIENTO";
                 $origen = "pagina-alto-rendimiento";
             }
 
-            if ($origen == "Traslado Externo")
+            if ($origen == "Transfer from other Universities")
             {
-                $tituloTelemarketing = "TRASLADO EXTERNO - Datos Personales";
-                $subjectTelemarketing = "Solicitud - Traslado Externo UTEC";
+                $tituloTelemarketing = "TRANSFER - Personal Data";
+                $subjectTelemarketing = "Request - Transfer from other Universities UTEC";
                 $familia = "TRASLADO-EXTERNO";
                 $origen = "pagina-traslado-externo";
             }
 
-            if ($origen == "Centro Pre")
+            if ($origen == "Pre-University Study Center")
             {
-                $tituloTelemarketing = "CENTRO PRE - Datos Personales";
-                $subjectTelemarketing = "Solicitud - Centro Preuniversitario UTEC";
+                $tituloTelemarketing = "PRE CENTER - Personal Data";
+                $subjectTelemarketing = "Request - Pre-University Study Center UTEC";
                 $familia = "CENTRO-PRE";
                 $origen = "pagina-centro-pre";
             }
 
-            if ($origen == "Bachillerato Internacional")
+            if ($origen == "International Baccalaureate")
             {
-                $tituloTelemarketing = "BACHILLERATO INTERNACIONAL - Datos Personales";
-                $subjectTelemarketing = "Solicitud - Bachillerato Internacional UTEC";
+                $tituloTelemarketing = "INTERNATIONAL BACCALAUREATE - Personal Data";
+                $subjectTelemarketing = "Request - International Baccalaureate UTEC";
                 $familia = "BACHILLERATO";
                 $origen = "pagina-bachillerato";
             }
@@ -488,109 +478,98 @@ if($idioma == "en")
 
             if($origen == "Admissions Exam Application Form")
             {
-                $tituloTelemarketing = "Registro de Inscripciones - UTEC Admissions Exam";
-                $subjectTelemarketing = "Registro de Inscripciones - UTEC Admissions Exam";
-                $subjectCliente = "Registro de Inscripciones - UTEC Admissions Exam";
+                $tituloTelemarketing = "Applications - UTEC Admissions Exam";
+                $subjectTelemarketing = "Applications - UTEC Admissions Exam";
+                $subjectCliente = "Applications - UTEC Admissions Exam";
                 $familia = "EXAMEN-ADMISION";
                 $origen = "pagina-inscripcion-examen-admision";  
             }
 
             if($origen == "High Performance Assessment Aplication Form")
             {
-                $tituloTelemarketing = "Registro de Inscripciones - Alto Rendimiento UTEC";
-                $subjectTelemarketing = "Registro de Inscripciones - Alto Rendimiento UTEC";
-                $subjectCliente = "Registro de Inscripciones - Alto Rendimiento UTEC";
+                $tituloTelemarketing = "Applications - UTEC High Performance Assessment";
+                $subjectTelemarketing = "Applications - UTEC High Performance Assessment";
+                $subjectCliente = "Applications - UTEC High Performance Assessment";
                 $familia = "ALTO-RENDIMIENTO";
                 $origen = "pagina-inscripcion-alto-rendimiento";  
             }
 
             if($origen == "International Baccalaureate Application Form")
             {
-                $tituloTelemarketing = "Registro de Inscripciones - Bachillerato Internacional UTEC";
-                $subjectTelemarketing = "Registro de Inscripciones - Bachillerato Internacional UTEC";
-                $subjectCliente = "Registro de Inscripciones - Bachillerato Internacional UTEC";
+                $tituloTelemarketing = "Applications - UTEC International Baccalaureate";
+                $subjectTelemarketing = "Applications - UTEC International Baccalaureate";
+                $subjectCliente = "Applications - UTEC International Baccalaureates";
                 $familia = "BACHILLERATO";
                 $origen = "pagina-inscripcion-bachillerato";  
             }
 
             if($origen == "Pre-University Study Center Application Form")
             {
-                $tituloTelemarketing = "Registro de Inscripciones - Centro Preuniversitario UTEC";
-                $subjectTelemarketing = "Registro de Inscripciones - Centro Preuniversitario UTEC";
-                $subjectCliente = "Registro de Inscripciones - Centro Preuniversitario UTEC";
+                $tituloTelemarketing = "Applications - UTEC Pre-University Study Center";
+                $subjectTelemarketing = "Applications - UTEC Pre-University Study Center";
+                $subjectCliente = "Applications - UTEC Pre-University Study Center";
                 $familia = "CENTRO-PRE";
                 $origen = "pagina-inscripcion-pre";  
             }
 
             if($origen == "Top Academic Rankings Application Form")
             {
-                $tituloTelemarketing = "Registro de Inscripciones - Primeros Puestos UTEC";
-                $subjectTelemarketing = "Registro de Inscripciones - Primeros Puestos UTEC";
-                $subjectCliente = "Registro de Inscripciones - Primeros Puestos UTEC";
+                $tituloTelemarketing = "Applications - UTEC Top Academic Rankings";
+                $subjectTelemarketing = "Applications - UTEC Top Academic Rankings";
+                $subjectCliente = "Applications - UTEC Top Academic Rankings";
                 $familia = "PRIMEROS-PUESTOS";
                 $origen = "pagina-inscripcion-primeros-puestos";  
             }
 
             if($origen == "Transfer from other Universities Application Form")
             {
-                $tituloTelemarketing = "Registro de Inscripciones - UTEC Transfer";
-                $subjectTelemarketing = "Registro de Inscripciones - UTEC Transfer";
-                $subjectCliente = "Registro de Inscripciones - UTEC Transfer";
+                $tituloTelemarketing = "Applications - UTEC Transfer";
+                $subjectTelemarketing = "Applications - UTEC Transfer";
+                $subjectCliente = "Applications - UTEC Transfer";
                 $familia = "TRASLADO-EXTERNO";
                 $origen = "pagina-inscripcion-traslado-externo";  
             }
-
         }
 
-
-        if($origen == "Charlas informativas" || $origen == "Contacto" || $origen == "Visita Utec" || 
-           $origen == "Ven a la UTEC" || $origen == "Trabaja en UTEC")
+        if($origen == "Informative Talks" || $origen == "General Contact" || $origen == "Visit Utec" || $origen == "Work at UTEC")
         {
             $fromTelemarketing = "webmaster@utec.edu.pe";
             $fromNameTelemarketing = "UTEC";
-            $tituloCliente = "¡Gracias por tu interés en UTEC.!";
-            $subjectCliente = "Gracias por tu Interés en UTEC";
+            $tituloCliente = "Thank you for your interest in UTEC!";
+            $subjectCliente = "Thank you for your interest in UTEC";
             $fromCliente = "informes@utec.edu.pe";
             $fromNameCliente = "Universidad de Ingeniería & Tecnología";
 
 
-            if($origen == "Charlas informativas")
+            if($origen == "Informative Talks")
             {
-                $tituloTelemarketing = "Charlas Informativas";
-                $subjectTelemarketing = "Charlas Informativas UTEC";
-                $subjectCliente = "Charlas Informativas UTEC";
+                $tituloTelemarketing = "Informative Talks";
+                $subjectTelemarketing = "Informative Talks UTEC";
+                $subjectCliente = "Informative Talks UTEC";
                 $familia = "CHARLAS-INFORMATIVAS";
                 $origen = "pagina-charlas";
             }
 
-            if($origen == "Contacto")
+            if($origen == "General Contact")
             {
-                $tituloTelemarketing = "Formulario de Contacto - Datos Personales";
-                $subjectTelemarketing = "Solicitud - Formulario de Contacto UTEC";
+                $tituloTelemarketing = "Contact Form - Personal Data";
+                $subjectTelemarketing = "Request - UTEC Contact Form";
                 $familia = "CONTACTO";
                 $origen = "pagina-contacto";  
             }
 
-            if($origen == "Visita Utec")
+            if($origen == "Visit Utec")
             {
-                $tituloTelemarketing = "Formulario de Visita UTEC - Datos Personales";
-                $subjectTelemarketing = "Solicitud - Formulario de Visita UTEC";
+                $tituloTelemarketing = "Visit Utec Form - Personal Data";
+                $subjectTelemarketing = "Request - Visit UTEC Form";
                 $familia = "CONTACTO";
                 $origen = "pagina-visita-utec";  
             }
 
-            if($origen == "Ven a la UTEC")
+            if($origen == "Work at UTEC")
             {
-                $tituloTelemarketing = "Formulario de Ven a la UTEC - Datos Personales";
-                $subjectTelemarketing = "Solicitud - Formulario de Ven a la UTEC";
-                $familia = "CONTACTO";
-                $origen = "pagina-ven-a-la-utec";  
-            }
-
-            if($origen == "Trabaja en UTEC")
-            {
-                $tituloTelemarketing = "Formulario de Trabaja en UTEC - Datos Personales";
-                $subjectTelemarketing = "Solicitud - Formulario de Trabaja en UTEC";
+                $tituloTelemarketing = "Work at UTEC Form - Personal Data";
+                $subjectTelemarketing = "Request - Work at UTEC Form";
                 $familia = "CONTACTO";
                 $origen = "pagina-trabaja-en-utec";  
             }
@@ -959,7 +938,6 @@ if($idioma == "es")
                           <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
                           </map>
                           </p>";
-
             }
 
 
@@ -1065,7 +1043,7 @@ if($idioma == "en")
                 <area shape='rect' coords='3,3,597,86' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
               </map>
             </p>";
-            $contenidorpta.="<p>Hola ".utf8_decode($_POST['nombres']).", </p>
+            $contenidorpta.="<p>Hello ".utf8_decode($_POST['nombres']).", </p>
                              <p><h2>".$tituloCliente."</h2>
                              <br />We have received your query correctly.
                              <br />Soon answer your query.</p>
@@ -1090,8 +1068,6 @@ if($idioma == "en")
             <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
             </map>
             </p>"; 
-
-
 
 
             if($origen == "pagina-inscripcion-examen-admision")
@@ -1144,8 +1120,7 @@ if($idioma == "en")
             }
 
 
-
-            if($origen == "pagina-inscripcion-alto-rendimiento" || $origen == "pagina-inscripcion-bachillerato")
+            if($origen == "pagina-inscripcion-alto-rendimiento")
             {
                           $contenidorpta = "";
                           $contenidorpta.="<table width='600px' height='168px' cellpadding='2' cellspacing='2' bgcolor='#FFFFFF'>
@@ -1198,6 +1173,52 @@ if($idioma == "en")
 
 
 
+            if($origen == "pagina-inscripcion-bachillerato")
+            {
+                          $contenidorpta = "";
+                          $contenidorpta.="<table width='600px' height='168px' cellpadding='2' cellspacing='2' bgcolor='#FFFFFF'>
+
+                          <tr><td><p><img src='http://app.utec.edu.pe/admision/img/cabeceraWEB.jpg' alt='cabeceraWEB' usemap='#Map2'>
+                            <map name='Map2' id='Map2'>
+                              <area shape='rect' coords='3,3,597,86' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
+                            </map>
+                          </p></td></tr>";
+
+                          $contenidorpta.="<p>Hello ".strtoupper($_POST['nombres']).",</p>
+                          <p><h2>Thank you for your interest in UTEC!</h2>
+                          <br/> We have received your data correctly.
+                          <br />To complete your registration for the Evaluation of International Baccalaureate, you must follow these steps:</p>";
+                          
+                          $contenidorpta.="<p>1. The Registration Fee is S/. 450. It must be paid in: Bank account in nuevos soles Nª 193-1976235-0-68 at the  Banco de Crédito del Perú. 
+                                          <br/>2. Come to the in-person registration at the Admissions Office and present the following documents:</p>";
+                          $contenidorpta.="<p><ul>
+                                          <li>The bank deposit receipt for the registration into the High Performance Assessment or send the electronic receipt by e-mail to inscripciones@utec.edu.pe</li>
+                                          <li>Original studies certificate for the six years of high school.Copy of official ID.</li>
+                                          <li>A family sworn statement.</li>
+                                          <li>Resolution from CONADIS that certifies that the applicant is disabled.</li>
+                                          <li>Certificate as proof that the applicant belonged to the upper third of his/her class with an average minimum grade of B-.</li>
+                                          </ul></p>";
+
+                          $contenidorpta.="<p>Come to our Admissions Office (Av. Prolongation San Martín 207, Barranco) with the documents listed as a requirement of registration.</p>";
+                          $contenidorpta.="<p>Contact UTEC easier:<br/><a href='http://guia.com.pe/estara/estara_popup.asp?advertiseId=411234&status=P&phone=51013731000&addressId=876727&' target='_blank'><img src='http://app.utec.edu.pe/admision/img/llama_gratis.jpg' alt='LLama gratis'></a></p>";
+                          $contenidorpta.="<p><img src='http://app.utec.edu.pe/admision/img/logo_utec.jpg' alt='Logo Utec'><br/><b>UTEC - Universidad de Ingeniería & Tecnología</b></p>
+                          </td></tr>
+                          </table>";
+                          
+                          $contenidorpta.="<p>
+                          <img src='http://app.utec.edu.pe/admision/img/pieWEB.jpg' alt='pieWEB' usemap='#Map'>
+                          <map name='Map' id='Map'>
+                          <area shape='rect' coords='19,33,107,67' href='http://www.utec.edu.pe/carreras/ingenieria-industrial/default.aspx#.VE5bZfmG96A' target='_blank' alt='Ingeniería Industrial' />
+                          <area shape='rect' coords='487,31,595,69' href='http://www.utec.edu.pe/carreras/ingenieria-quimica/default.aspx#.VE5bjPmG96A' target='_blank' alt='Ingeniería Química Industrial' />
+                          <area shape='rect' coords='132,36,230,67' href='http://www.utec.edu.pe/carreras/ingenieria-mecanica/default.aspx#.VE6dZ_mG96A' target='_blank' alt='Ingeniería Mecánica' />
+                          <area shape='rect' coords='257,36,348,66' href='http://www.utec.edu.pe/carreras/ingenieria-energia/default.aspx#.VE6dlPmG96A' target='_blank' alt='Ingeniería de la Energía' />
+                          <area shape='rect' coords='374,34,467,67' href='http://www.utec.edu.pe/carreras/ingenieria-electronica/default.aspx#.VE6dufmG96A' target='_blank' alt='Ingeniería Electrónica' />
+                          <area shape='rect' coords='48,121,198,140' href='mailto:informes@utec.edu.pe?Subject=Consulta Información' target='_top' />
+                          <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
+                          </map>
+                          </p>";   
+            }
+
 
             if($origen == "pagina-inscripcion-pre")
             {
@@ -1210,7 +1231,7 @@ if($idioma == "en")
                             </map>
                           </p></td></tr>";
 
-                          $contenidorpta.="<p>Hola ".strtoupper($_POST['nombres']).",</p>
+                          $contenidorpta.="<p>Hello ".strtoupper($_POST['nombres']).",</p>
                           <p><h2>Thank you for your interest in UTEC!</h2>
                           <br/> We have received your data correctly.
                           <br /> To complete your enrollment in the Pre University Center, you must follow these steps::</p>";
@@ -1314,7 +1335,7 @@ if($idioma == "en")
                           $contenidorpta = "";
                           $contenidorpta.= "<table width='600px' height='168px' cellpadding='2' cellspacing='2' bgcolor='#FFFFFF'>
                                            <tr><td>";
-                          $contenidorpta.= "<p>Hola ".strtoupper($_POST['nombres']).",</p>
+                          $contenidorpta.= "<p>Hello ".strtoupper($_POST['nombres']).",</p>
                                            <p><h2>Thank you for your interest in UTEC!</h2>
                                            <br/> We have received your data correctly.
                                            <br/> To complete your application in the form of transfer, you must follow these steps:</p>";
@@ -1452,5 +1473,4 @@ if($error){
           header('Location: /gracias');
           exit();       
 }
-
 ?>

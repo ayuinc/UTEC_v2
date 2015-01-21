@@ -19,7 +19,7 @@
      	   		
     <?php $uid = $value['entity']->uid; ?>	
     <?php 
-        if ($language->prefix) {
+        if ($language->language == 'en') {
           $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/consejo-directivo/'.$uid, $language->language); 
         }else
           $profesor_url = "/" . drupal_get_path_alias('page/30/consejo-directivo/'.$uid, $language->language); 

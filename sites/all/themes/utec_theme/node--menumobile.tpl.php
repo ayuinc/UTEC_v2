@@ -139,7 +139,7 @@
 			<?php if ($language->language == 'es'): ?>
 				<a href="/<?php print $language->language ?>/empresas-y-clientes"><span><?php print t('Companies') ?></span><?php print t('and clients') ?></a>
 			<?php elseif ($language->language == 'en'): ?>
-				<a href="/<?php print $language->language ?>/our-clients"><span><?php print t('Companies') ?></span><?php print t('and clients') ?></a>
+				<a href="/<?php print $language->language ?>/companies"><span><?php print t('Companies') ?></span><?php print t('and clients') ?></a>
 			<?php endif ?>								
 		</li>
 		<li>
