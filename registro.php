@@ -475,7 +475,7 @@ if($idioma == "en")
         }
 
 
-        if($origen == "Formulario inscripcion examen de admision" || $origen == "Formulario inscripcion alto rendimiento" || 
+        if($origen == "Formulario inscripcion examen de admision" || $origen == "High Performance Assessment Aplication Form" || 
            $origen == "Formulario inscripcion centro pre" || $origen == "Formulario-primeros-puestos" || 
            $origen == "Formulario inscripcion traslados" || $origen == "Formulario inscripcion bachillerato internacional" )
         {
@@ -495,7 +495,7 @@ if($idioma == "en")
                 $origen = "pagina-inscripcion-examen-admision";  
             }
 
-            if($origen == "Formulario inscripcion alto rendimiento")
+            if($origen == "High Performance Assessment Aplication Form")
             {
                 $tituloTelemarketing = "Registro de Inscripciones - Alto Rendimiento UTEC";
                 $subjectTelemarketing = "Registro de Inscripciones - Alto Rendimiento UTEC";
