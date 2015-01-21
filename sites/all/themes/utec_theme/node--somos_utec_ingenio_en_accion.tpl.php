@@ -1,3 +1,4 @@
+<?php global $language ?>
 <?php global $base_url; ?>
 <?php global $theme_path; ?>
 <?php $path = $base_url.'/'.$theme_path; ?>
