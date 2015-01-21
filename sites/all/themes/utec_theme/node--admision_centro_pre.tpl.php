@@ -52,49 +52,49 @@ $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 					<li>
 						<div>
 							<h3 class="lead"><?php print t('Spatial Intelligence') ?></h3>
-							<p><?php print t('Develop skills in Spatial Intelligence, Visualization and Perception.') ?></p>
+							<p><?php print t('Understanding of physical phenomena and applying fundamentals to the real world laws.') ?></p>
 						</div>
 					</li>
 					<li>
 						<div>
 							<h3 class="lead"><?php print t('Physical World') ?></h3>
-							<p><?php print t('Develop skills in Spatial Intelligence, Visualization and Perception.') ?></p>
+							<p><?php print t('Interpret chemical phenomena in the world around us, and understand how they affect our quality of life.') ?></p>
 						</div>
 					</li>
 					<li>
 						<div>
 							<h3 class="lead"><?php print t('Universe and Materials') ?></h3>
-							<p><?php print t('Develop skills in Spatial Intelligence, Visualization and Perception.') ?></p>
+							<p><?php print t('To interpret chemical phenomena in the world around us, and understand how they affect our quality of life.') ?></p>
 						</div>
 					</li>
 					<li>
 						<div>
 							<h3 class="lead"><?php print t('Mathematics') ?></h3>
-							<p><?php print t('Develop skills in Spatial Intelligence, Visualization and Perception.') ?></p>
+							<p><?php print t('It identifies and applies the concepts, principles and mathematical laws to solve real world problems.') ?></p>
 						</div>
 					</li>
 					<li>
 						<div>
 							<h3 class="lead"><?php print t('Tech Project') ?></h3>
-							<p><?php print t('Develop skills in Spatial Intelligence, Visualization and Perception.') ?></p>
+							<p><?php print t('Students will live experiences where acquire the knowledge, practice and develop the skills necessary for carrying out project activities aptitudes. The sections are divided into two groups for technology experiences.') ?></p>
 						</div>
 					</li>
 					<li>
 						<div>
 							<h3 class="lead"><?php print t('Creative Language') ?></h3>
-							<p><?php print t('Develop skills in Spatial Intelligence, Visualization and Perception.') ?></p>
+							<p><?php print t('Develops basic language and communication skills in the areas of speaking and writing, to understand and develop short, consistent, correct texts, copies and appropriate.') ?></p>
 						</div>
 					</li>
 					<li>
 						<div>
 							<h3 class="lead"><?php print t('Talent Orientation') ?></h3>
-							<p><?php print t('Develop skills in Spatial Intelligence, Visualization and Perception.') ?></p>
+							<p><?php print t('You are able to discover and develop talent for achieving personal goals defined in a plan of life. Study methods practiced to improve learning ability.') ?></p>
 						</div>
 					</li>
 					<li>
 						<div>
 							<h3 class="lead"><?php print t('English') ?></h3>
-							<p><?php print t('Develop skills in Spatial Intelligence, Visualization and Perception.') ?></p>
+							<p><?php print t('The English Language is necessary for learning in engineering careers and personal and professional development. In the first week a review of initial evaluation will be conducted according to the results study groups were formed.') ?></p>
 						</div>
 					</li>
 				</ul>
