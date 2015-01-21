@@ -47,10 +47,8 @@
 						<a href="<?php print $profesor_url ?>"><?php print $name ?></a>
 						<?php if ($language->prefix == 'en') : ?>
 						<span><?php print $desc_ingles?></span>
-						<span><?php print $res_ingles?></span>
 						<?php else : ?>
 						<span><?php print $desc?></span>
-						<span><?php print $res?></span>
 						<?php endif; ?>
 						<a href="mailto:<?php print $mail ?>"><?php print $mail ?></a></div>   		
 				</div>
