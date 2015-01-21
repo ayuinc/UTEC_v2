@@ -42,7 +42,7 @@
                 <li>
                   <?php if ($language->language == 'en') : ?>
                     <a href="<?php print $link_ingles ?>"><?php print $nombre_ingles ?></a>
-                  <?php elseif ($language->language == 'es') : ?>
+                  <?php elseif ($language->language != 'en') : ?>
                     <a href='<?php print $link ?>'><?php print $nombre ?></a>
                   <?php endif; ?>
                 </li>
@@ -64,7 +64,7 @@
           <li>
             <?php if ($language->language == 'en') : ?>
               <a href="<?php print $link_ingles ?>"><?php print $nombre_ingles ?></a>
-            <?php elseif ($language->language == 'es') : ?>
+            <?php elseif ($language->language != 'en') : ?>
               <a href='<?php print $link ?>'><?php print $nombre ?></a>
             <?php endif; ?>
           </li>
