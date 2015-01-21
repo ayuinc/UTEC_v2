@@ -153,7 +153,7 @@
         </li>  
         <li>
           <ul>
-            <li class="title text-gray-lighter"><?php print t('SDP') ?></li>
+            <li class="title text-gray-lighter"><?php print t('SPD') ?></li>
             <?php if ($language->prefix == 'en'): ?>
             <!--<li><a href="/edp/cursos/diplomados" class="atm-menu-inferior"><small>Diplomados</small></a></li>
             <li><a href="/edp/cursos/cursos-online" class="atm-menu-inferior"><small>Cursos Online</small></a></li>-->

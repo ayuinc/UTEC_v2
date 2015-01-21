@@ -16,7 +16,7 @@
 			<table class="table">
 				<thead>
 					<tr>
-						<td><?php print t('Major') ?></td>
+						<td><?php print t('Minor') ?></td>
 						<td><?php print t('Elective') ?></td>
 					</tr>
 				</thead>
