@@ -11,6 +11,7 @@
 	$electivo = $node->field_electivo['und'];
 	
 	// print_r($node);
+	//ALTO RENDIMIENTO
 ?>
 
 <div class="container-sm">

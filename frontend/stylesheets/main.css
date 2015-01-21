@@ -6510,6 +6510,9 @@ img.icon-utec {
     .language-switcher-locale-url li:first-child a.language-link {
       margin-right: 7px; }
 
+.locale-untranslated {
+  display: none; }
+
 #header .tool-bar .search-form, #header-on-scroll .tool-bar .search-form {
   margin: 0; }
   #header .tool-bar .search-form .form-item, #header-on-scroll .tool-bar .search-form .form-item {

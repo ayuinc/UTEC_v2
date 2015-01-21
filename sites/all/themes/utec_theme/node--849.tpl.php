@@ -13,6 +13,7 @@
 	$electivo = $node->field_electivo['und'];
 	$idioma = $language->prefix;	
 	// print_r($node);
+	//TRASLADO EXTERNO
 ?>
 
 <div class="container-sm">
