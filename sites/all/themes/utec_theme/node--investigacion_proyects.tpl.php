@@ -28,7 +28,7 @@
 	</h4>
 	<?php if ($profesor!='') { ?>
 		<p>
-			<span class="lead bold">Profesor: </span><span class="lead"><?php print profesor ?></span>
+			<span class="lead bold">Profesor: </span><span class="lead"><?php print $profesor ?></span>
 		</p>
 	<?php } ?>
 	<?php if ($tags!='') { ?>
