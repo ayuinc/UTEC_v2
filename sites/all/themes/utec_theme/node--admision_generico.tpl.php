@@ -154,7 +154,7 @@
 			<div class="row errordiv">
 				<div id="errordiv" class="col-sm-12 form-group"></div>			
 			</div>				
-			<div class="text-left">
+			<div class="text-right">
 				<button type="submit" class="btn btn-primary btn-lg"><?php print t('Send') ?></button>
 			</div>
 	</form>						
