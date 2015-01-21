@@ -15,10 +15,10 @@
 							<span></span>
 						</a>
 					</h2>
-					<?php elseif ($language->language == 'es'): ?>
-					<div><a href="/<?php print $language->language ?>/ingenieria-industrial"><i class="icon-ing-industrial"></i></a></div>
+					<?php elseif ($language->language  != 'en'): ?>
+					<div><a href="/ingenieria-industrial"><i class="icon-ing-industrial"></i></a></div>
 					<h2>
-						<a href="/<?php print $language->language ?>/ingenieria-industrial">
+						<a href="/ingenieria-industrial">
 							<span><?php print t('Engineering') ?></span>
 							<span><?php print t('Industrial') ?></span>
 							<span></span>
@@ -38,10 +38,10 @@
 							<span></span>
 						</a>
 					</h2>
-							<?php elseif ($language->language == 'es'): ?>
-					<div><a href="/<?php print $language->language ?>/ingenieria-de-la-energia"><i class="icon-ing-energia"></i></a></div>
+							<?php elseif ($language->language  != 'en'): ?>
+					<div><a href="/ingenieria-de-la-energia"><i class="icon-ing-energia"></i></a></div>
 					<h2>
-						<a href="/<?php print $language->language ?>/ingenieria-de-la-energia">
+						<a href="/ingenieria-de-la-energia">
 								<span><?php print t('Engineering') ?></span>
 								<span><?php print t('Energy') ?></span>
 								<span></span>
@@ -61,10 +61,10 @@
 							<span><?php print t('Engineering') ?></span>
 						</a>
 					</h2>			
-					<?php elseif ($language->language == 'es'): ?>
-					<div><a href="/<?php print $language->language ?>/ingenieria-quimica-industrial"><i class="icon-ing-quimica"></i></a></div>
+					<?php elseif ($language->language  != 'en'): ?>
+					<div><a href="/ingenieria-quimica-industrial"><i class="icon-ing-quimica"></i></a></div>
 					<h2>
-						<a href="/<?php print $language->language ?>/industrial-chemical-engineering">
+						<a href="/industrial-chemical-engineering">
 							<span><?php print t('Engineering') ?></span>
 							<span><?php print t('Chemical') ?></span>
 							<span><?php print t('Industrial') ?></span>
@@ -84,10 +84,10 @@
 							<span></span>
 						</a>
 					</h2>			
-					<?php elseif ($language->language == 'es'): ?>
-					<div><a href="/<?php print $language->language ?>/ingenieria-electronica"><i class="icon-ing-electronica"></i></a></div>
+					<?php elseif ($language->language  != 'en'): ?>
+					<div><a href="/ingenieria-electronica"><i class="icon-ing-electronica"></i></a></div>
 					<h2>	
-						<a href="/<?php print $language->language ?>/ingenieria-electronica">		
+						<a href="/ingenieria-electronica">		
 							<span>Ingeniería</span>
 							<span>Electrónica</span>
 							<span></span>
@@ -107,10 +107,10 @@
 							<span></span>
 						</a>
 					</h2>			
-					<?php elseif ($language->language == 'es'): ?>
-					<div><a href="/<?php print $language->language ?>/ingenieria-mecanica"><i class="icon-ing-mecanica"></i></a></div>
+					<?php elseif ($language->language  != 'en'): ?>
+					<div><a href="/ingenieria-mecanica"><i class="icon-ing-mecanica"></i></a></div>
 					<h2>
-						<a href="/<?php print $language->language ?>/ingenieria-mecanica">
+						<a href="/ingenieria-mecanica">
 							<span><?php print t('Engineering') ?></span>
 							<span><?php print t('Mechanical') ?></span>
 							<span></span>
