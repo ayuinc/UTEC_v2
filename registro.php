@@ -474,8 +474,7 @@ if($idioma == "en")
             }
         }
 
-        echo $origen;
-        echo $idioma;
+
         if($origen == "Admissions Exam Application Form" || $origen == "High Performance Assessment Aplication Form" || 
            $origen == "Pre-University Study Center Application Form" || $origen == "Top Academic Rankings Application Form" || 
            $origen == "Transfer from other Universities Application Form" || $origen == "International Baccalaureate Application Form" )
@@ -1449,10 +1448,7 @@ if($error){
           exit();   
     }
 
-/*
           header('Location: /gracias');
           exit();       
-*/
-}
 
 ?>
