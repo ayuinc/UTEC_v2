@@ -14,7 +14,7 @@
 	$resenia_ingles = $fields['field_rese_a_ingles']->content;
 	$twitter = $fields['field_twitter']->content;
 
-	//kpr($fields);
+	kpr($fields);
 ?>
 
 <div>

@@ -10,7 +10,7 @@
 	<div class="separator-gray separator-lg"></div>
 	<p class="lead text-gray"><?php print $field_introduccion_autoridades ?></p>
 	<ul class="pv-35 grid-list grid-list-2 grid-list-1-xs">
-		<?php //kpr($node); ?>
+		<?php kpr($field); ?>
     <?php foreach ($node->field_profesor['und'] as $key => $value) :?>
       <?php $name = $value['entity']->name; ?>   
       <?php 
