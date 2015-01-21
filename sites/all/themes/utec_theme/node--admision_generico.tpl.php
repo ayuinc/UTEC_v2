@@ -1,5 +1,10 @@
 <?php global $base_url; ?>
 <?php global $theme_path; ?>
+<?php 
+		global $language; 
+		$idioma = $language->prefix;	
+?>
+
 <?php $path = $base_url.'/'.$theme_path; ?>
 <?php $pathfile= variable_get('file_public_path', conf_path() . '/files/admision-generico/'); ?>
 
@@ -31,49 +36,56 @@
 <?php if (($end!='charlas-informativas') AND ($end!='informacion-economica') AND ($end!='orientacion-vocacional') AND ($end!='visita-utec') AND ($end!='eventos-utec') AND ($end!='events')) { ?>
 <div class="container-sm form-custom mt-35"> 
 	<h3><?php print t("For more information:") ?></h3>
-	<form action="/registro.php" data-submit="Formulario de inscripcion" method="post">
-		<input type="hidden" name="origen" value="<?php print $title ?>">
+	<form action="/registro.php" data-submit="Formulario de inscripcion" method="post" id="formRegistro" name="formRegistro">
+		<input type="hidden" name="origen" value="<?php print $title; ?>">
+		<input type="hidden" name="idioma" value="<?php print $idioma; ?>">
+
 		<div class="row">
-			<div class="form-group col-sm-4">
+			<div class="form-group col-sm-6">
 				<label for="" class="sr-only"><?php print t("Name") ?></label>
 				<input id="nombres" name="nombres" type="text" class="form-control" placeholder="<?php print t("Name") ?>">
 			</div>
-			<div class="form-group col-sm-4">
+			<div class="form-group col-sm-6">
 				<label for="" class="sr-only"><?php print t("Middle Name") ?></label>
 				<input id="apellidop" name="apellidop" type="text" class="form-control" placeholder="<?php print t("Middle Name") ?>">
-			</div>
-			<div class="form-group col-sm-4">
-				<label for="" class="sr-only"><?php print t("Last Name") ?></label>
-				<input id="apellidom" name="apellidom" type="text" class="form-control" placeholder="<?php print t("Last Name") ?>">
-			</div>
-		</div>
-		<div class="row">
-			<div class="form-group col-sm-4">
-				<label for="" class="sr-only"><?php print t("Email") ?></label>
-				<input id="email" name="email" type="text" class="form-control" placeholder="Email">
-			</div>
-			<div class="form-group col-sm-4">
-				<label for="" class="sr-only"><?php print t('Phone') ?></label>
-				<input id="telefono" name="telefono" type="text" class="form-control" placeholder="<?php print t('Phone') ?>">
 			</div>
 		</div>
 		<div class="row">
 			<div class="form-group col-sm-6">
+				<label for="" class="sr-only"><?php print t("Last Name") ?></label>
+				<input id="apellidom" name="apellidom" type="text" class="form-control" placeholder="<?php print t("Last Name") ?>">
+			</div>			
+			<div class="form-group col-sm-6">
+				<label for="" class="sr-only"><?php print t("Email") ?></label>
+				<input id="email" name="email" type="text" class="form-control" placeholder="Email">
+			</div>
+		</div>
+		<div class="row">
+			<div class="form-group col-sm-6">
+				<label for="" class="sr-only"><?php print t('Phone') ?></label>
+				<input id="telefono" name="telefono" type="text" class="form-control" placeholder="<?php print t('Phone') ?>">
+			</div>			
+			<div class="form-group col-sm-6">
 				<label for="" class="sr-only"><?php print t('Path of Interest') ?></label>
 				<select name="carrera" id="carrera" class="form-control select-override">
-					<option value="Carrera de interés"><?php print t('Undergrad Program') ?></option>
-			  	<option value="15970"><?php print t('Industrial Engineering') ?></option>
-          <option value="14864"><?php print t('Mechanical Engineering') ?></option>
-          <option value="15968"><?php print t('Energy Engineering') ?></option>
-          <option value="15964"><?php print t('Electronic Engineering') ?></option>
-          <option value="15966"><?php print t('Industrial and Chemical Engineering') ?></option>		            
+					  <option value=""><?php print t('Undergrad Program') ?></option>
+					  <option value="15970"><?php print t('Industrial Engineering') ?></option>
+			          <option value="14864"><?php print t('Mechanical Engineering') ?></option>
+			          <option value="15968"><?php print t('Energy Engineering') ?></option>
+			          <option value="15964"><?php print t('Electronic Engineering') ?></option>
+			          <option value="15966"><?php print t('Industrial and Chemical Engineering') ?></option>		            
 				</select>
 			</div>
 		</div>
-		<div class="form-group">
-			<label for="" class="sr-only"><?php print t('Message') ?></label>
-			<textarea id="consulta" name="consulta" rows="3" class="form-control" placeholder="<?php print t('Message') ?>"></textarea>
+		<div class="row">
+			<div class="form-group col-sm-12">
+				<label for="" class="sr-only"><?php print t('Message') ?></label>
+				<textarea class="form-control" placeholder="<?php print t('Message') ?>" name="consulta" id="consulta"></textarea>
+			</div>
 		</div>
+		<div class="row errordiv">
+			<div id="errordiv" class="col-sm-12 form-group"></div>			
+		</div>				
 		<div class="text-right">
 			<button type="submit" class="btn btn-primary btn-lg"><?php print t('Send') ?></button>
 		</div>
@@ -82,7 +94,7 @@
 <?php } ?>
 
 <?php if (($end=='charlas-informativas') OR ($end=='visita-utec')) { ?>
-<div class="container-sm">
+<div class="container-sm form-custom mt-35">
 	
 	<?php if ($end=='visita-utec') { ?>
 		<h3><?php print t('Sign up for a tour') ?></h1>
@@ -92,8 +104,10 @@
 	<?php } ?>
 </div>
 <div class="container-sm form-custom">
-	<form action="/registro.php" data-submit="Formulario de inscripcion" method="post">
-			<input type="hidden" name="origen" value="<?php print $title ?>">
+	<form action="/registro.php" data-submit="Formulario de inscripcion" method="post" id="formRegistro" name="formRegistro">
+			<input type="hidden" name="origen" value="<?php print $title; ?>">
+			<input type="hidden" name="idioma" value="<?php print $idioma; ?>">			
+
 			<div class="row">
 				<div class="form-group col-sm-6">
 					<label for="" class="sr-only"><?php print t('Name') ?></label>
@@ -122,7 +136,7 @@
 				<div class="form-group col-sm-6">
 					<label for="" class="sr-only"><?php print t('Undergrad Program') ?></label>
 					<select name="carrera" id="carrera" class="form-control select-override">
-						<option value="Carrera de interés"><?php print t('Undergrad Program') ?></option>
+						<option value=""><?php print t('Undergrad Program') ?></option>
 					  	<option value="15970"><?php print t('Industrial Engineering') ?></option>
 			            <option value="14864"><?php print t('Mechanical Engineering') ?></option>
 			            <option value="15968"><?php print t('Energy Engineering') ?></option>
@@ -132,14 +146,54 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="form-group col-sm-6">
+				<div class="form-group col-sm-12">
 					<label for="" class="sr-only"><?php print t('Message') ?></label>
 					<textarea class="form-control" placeholder="<?php print t('Message') ?>" name="consulta" id="consulta"></textarea>
 				</div>
 			</div>
+			<div class="row errordiv">
+				<div id="errordiv" class="col-sm-12 form-group"></div>			
+			</div>				
 			<div class="text-left">
 				<button type="submit" class="btn btn-primary btn-lg"><?php print t('Send') ?></button>
 			</div>
 	</form>						
 </div>
 <?php } ?>
+
+
+<script type="text/javascript">
+jQuery(function() {                        
+    jQuery('#formRegistro').validate( {
+	      rules: {
+	        "nombres": { required: true }, "apellidop": { required: true }, "apellidom": { required: true }, "carrera": { required: true },	
+	        "tipo-documento": { required: true }, "documento": { required: true }, "pais": { required: true }, "ciudad": { required: true },	
+	        "dia": { required: true }, "mes": { required: true }, "ano": { required: true }, "depto": { required: true }, "provincia": { required: true },	
+	        "distrito": { required: true }, "direccion-actual": { required: true },	"email": { required: true }, "telefono": { required: true },	
+			"ano-culminacion": { required: true }, "colegio-procedencia": { required: true }, 
+			"estudios-dpto": { required: true }, "estudios-provincia": { required: true },
+	        "estudios-distrito": { required: true }, "estudios-rendimiento": { required: true }
+	      },
+	      messages: {
+		    "nombres": { required: "Completa tus nombres. <br />" }, "apellidop": { required: "Completa tu apellido paterno. <br /> " },		
+		    "apellidom": { required: "Completa tu apellido materno. <br /> " }, "carrera": { required: "Selecciona tu carrera. <br /> " },	
+		    "tipo-documento": { required: "Selecciona tu tipo de documento. <br /> " }, "documento": { required: "Completa tu documento. <br /> " },	
+		    "pais": { required: "Completa tu país. <br /> " }, "ciudad": { required: "Completa tu ciudad. <br /> " }, 
+		    "dia": { required: "Completa tu día de nacimiento. <br /> " }, "mes": { required: "Completa tu mes de nacimiento. <br /> " },
+		    "ano": { required: "Completa tu año de nacimiento. <br /> " }, "depto": { required: "Completa tu departamento. <br /> " },
+		    "provincia": { required: "Completa tu provincia. <br /> " }, "distrito": { required: "Completa tu distrito. <br /> " },
+		    "direccion-actual": { required: "Completa tu domicilio. <br /> " }, "email": { required: "Completa tu e-mail. <br /> " },
+	      	"telefono": { required: "Completa tu telefono. <br /> " }, "ano-culminacion": { required: "Completa tu año de culminación. <br /> " }, 
+	      	"colegio-procedencia": { required: "Completa tu colegio de procedencia. <br /> " },
+		    "estudios-dpto": { required: "Completa el departamento de tu colegio. <br /> " }, "estudios-provincia": { required: "Completa la provincia de tu colegio. <br /> " },
+		    "estudios-distrito": { required: "Completa el distrito de tu colegio. <br /> " }, "estudios-rendimiento": { required: "Selecciona tu rendimiento académico. <br /> " }
+		  },
+	      errorPlacement: function( error, element ) {
+	        	error.insertAfter( '#errordiv' );
+	      },
+	      submitHandler: function( form ) {                                                 
+	      		form.submit();
+	      }
+    });
+});
+</script>
