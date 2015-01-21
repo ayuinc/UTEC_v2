@@ -28,13 +28,13 @@ $field_temario_examen = $node->field_temario_examen['und']['0']['value'];
 					</div>
 			</div>
 			<div>
-				<h3>Temario:</h3>
+				<h3><?php print t('Agenda:') ?></h3>
 				<div class="list-custom">
 					<?php print $field_temario_examen ?>
 				</div>
 			</div>
 			<div class="gbo calendar">
-				<h3>Calendario:</h3>
+				<h3><?php print t('Calendar:') ?></h3>
 				<div class="table-responsive table-custom pv-42">
 					<table class="table">
 						<thead>

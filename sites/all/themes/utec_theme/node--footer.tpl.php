@@ -154,13 +154,23 @@
         <li>
           <ul>
             <li class="title text-gray-lighter"><?php print t('SDP') ?></li>
+            <?php if ($language->prefix == 'en'): ?>
             <!--<li><a href="/edp/cursos/diplomados" class="atm-menu-inferior"><small>Diplomados</small></a></li>
             <li><a href="/edp/cursos/cursos-online" class="atm-menu-inferior"><small>Cursos Online</small></a></li>-->
-            <li><a href="/edp/la-escuela" class="atm-menu-inferior"><small><?php print t('The School') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/school-of-professional-development/the-school" class="atm-menu-inferior"><small><?php print t('The School') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/school-of-professional-development/short-courses" class="atm-menu-inferior"><small><?php print t('Short Courses') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/school-of-professional-development/calendar" class="atm-menu-inferior"><small><?php print t('Calendar') ?></small></a></li>
+            <!--<li><a href="/edp/cursos/cursos-adhoc" class="atm-menu-inferior"><small>Cursos Adoc</small></a></li>
+            <li><a href="/convenios" class="atm-menu-inferior"><small>Cursos Adoc</small></a></li>-->
+            <?php elseif ($language->prefix == 'es'): ?>
+            <!--<li><a href="/edp/cursos/diplomados" class="atm-menu-inferior"><small>Diplomados</small></a></li>
+            <li><a href="/edp/cursos/cursos-online" class="atm-menu-inferior"><small>Cursos Online</small></a></li>-->
+            <li><a href="/<?php print $language->prefix ?>/edp/la-escuela" class="atm-menu-inferior"><small><?php print t('The School') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/edp/cursos/cursos-cortos" class="atm-menu-inferior"><small><?php print t('Short Courses') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/edp/calendario" class="atm-menu-inferior"><small><?php print t('Calendar') ?></small></a></li>
             <!--<li><a href="/edp/cursos/cursos-adhoc" class="atm-menu-inferior"><small>Cursos Adoc</small></a></li>
-            <li><a href="/convenios" class="atm-menu-inferior"><small>Cursos Adoc</small></a></li>-->
+            <li><a href="/convenios" class="atm-menu-inferior"><small>Cursos Adoc</small></a></li>-->  
+            <?php endif ?>
           </ul>
         </li>                
       </ul> 
