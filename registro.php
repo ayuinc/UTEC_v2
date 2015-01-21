@@ -35,8 +35,8 @@ if (!isset($_POST['estudios-provincia'])) {$_POST['estudios-provincia'] = "";};
 if (!isset($_POST['estudios-distrito'])) {$_POST['estudios-distrito'] = "";};
 if (!isset($_POST['estudios-rendimiento'])) {$_POST['estudios-rendimiento'] = "";};
 if (!isset($_POST['estudiante'])) {$_POST['estudiante'] = "N";};
-if (!isset($_POST['consulta'])) {$_POST['consulta'] = "";};
-if (!isset($_POST['idioma'])) {$_POST['idioma'] = "es";};
+if (!isset($_POST['consulta'])) {$_POST['consulta'] ""= "";};
+if (!isset($_POST['idioma']) || $_POST['idioma'] == "") {$_POST['idioma'] = "es";};
 
 
 if ($_POST['dia'] != "")
@@ -73,7 +73,7 @@ $fromCliente = "";
 $fromNameCliente = "";
 $familia = "";
 $origen = "";
-$mensaje_html ="";
+$mensaje_html = "";
 $contenidorpta = "";
 
 //Definicón de subject, destinatario, título
