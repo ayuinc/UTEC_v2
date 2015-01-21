@@ -8,13 +8,13 @@ $titulo = $node->title;
 <div class="container-sm">
 	<?php if ($language->language == 'en'): ?>
 		<h1 class="light">Admissions</h1>
-	<?php elseif ($language->language == 'es'): ?>
+	<?php elseif ($language->language  != 'en'): ?>
 		<h1 class="light">Modalidades de admisión</h1>
 	<?php endif ?>
 	<div class="separator-gray separator-lg"></div>
 	<ul class="grid-list grid-list-3 grid-list-1-xs grid-list-hover size sm">
-		<?php if ($language->language == 'es'): ?>
-		<li data-href="/<?php print $language->language ?>/modalidades-de-admision/primeros-puestos" class="atm-blog" id="primeros-puestos">
+		<?php if ($language->language  != 'en'): ?>
+		<li data-href="/modalidades-de-admision/primeros-puestos" class="atm-blog" id="primeros-puestos">
 		<?php elseif ($language->language == 'en'): ?>
 		<li data-href="/en/methods-of-admission/top-academic-rankings" class="atm-blog" id="primeros-puestos">
 		<?php endif ?>
@@ -25,8 +25,8 @@ $titulo = $node->title;
 				</div>
 			</div>
 		</li>
-		<?php if ($language->language == 'es'): ?>
-		<li data-href="/<?php print $language->language ?>/modalidades-de-admision/alto-rendimiento" class="atm-blog" id="alto-rendimiento">
+		<?php if ($language->language  != 'en'): ?>
+		<li data-href="/modalidades-de-admision/alto-rendimiento" class="atm-blog" id="alto-rendimiento">
 		<?php elseif ($language->language == 'en'): ?>
 		<li data-href="/en/methods-of-admission/high-performance-assessment" class="atm-blog" id="alto-rendimiento">
 		<?php endif ?>		
@@ -37,8 +37,8 @@ $titulo = $node->title;
 				</div>
 			</div>
 		</li>
-		<?php if ($language->language == 'es'): ?>
-		<li data-href="/<?php print $language->language ?>/modalidades-de-admision/traslados" class="atm-blog" id="traslado">
+		<?php if ($language->language  != 'en'): ?>
+		<li data-href="/modalidades-de-admision/traslados" class="atm-blog" id="traslado">
 		<?php elseif ($language->language == 'en'): ?>
 		<li data-href="/en/methods-of-admission/transfer-from-other-universities" class="atm-blog" id="traslado">
 		<?php endif ?>				
@@ -49,8 +49,8 @@ $titulo = $node->title;
 				</div>
 			</div>
 		</li>
-		<?php if ($language->language == 'es'): ?>
-		<li data-href="/<?php print $language->language ?>/modalidades-de-admision/centro-pre" class="atm-blog" id="centro-pre">
+		<?php if ($language->language  != 'en'): ?>
+		<li data-href="/modalidades-de-admision/centro-pre" class="atm-blog" id="centro-pre">
 		<?php elseif ($language->language == 'en'): ?>
 		<li data-href="/en/methods-of-admission/pre-university-center" class="atm-blog" id="centro-pre">
 		<?php endif ?>			
@@ -61,8 +61,8 @@ $titulo = $node->title;
 				</div>
 			</div>
 		</li>
-		<?php if ($language->language == 'es'): ?>
-		<li data-href="/<?php print $language->language ?>/modalidades-de-admision/bachillerato-internacional" class="atm-blog" id="bachillerato-internacional">
+		<?php if ($language->language  != 'en'): ?>
+		<li data-href="/modalidades-de-admision/bachillerato-internacional" class="atm-blog" id="bachillerato-internacional">
 		<?php elseif ($language->language == 'en'): ?>
 		<li data-href="/en/methods-of-admission/international-baccalaureate" class="atm-blog" id="bachillerato-internacional">
 		<?php endif ?>		
@@ -73,8 +73,8 @@ $titulo = $node->title;
 				</div>
 			</div>
 		</li>
-		<?php if ($language->language == 'es'): ?>
-		<li data-href="/<?php print $language->language ?>/modalidades-de-admision/examen-de-admision" class="atm-blog" id="examen-de-admision">
+		<?php if ($language->language  != 'en'): ?>
+		<li data-href="/modalidades-de-admision/examen-de-admision" class="atm-blog" id="examen-de-admision">
 		<?php elseif ($language->language == 'en'): ?>
 		<li data-href="/en/methods-of-admission/admission-exam" class="atm-blog" id="examen-de-admision">
 		<?php endif ?>			
