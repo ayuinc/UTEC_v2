@@ -93,7 +93,7 @@
             <li><a href="/publications" class="atm-menu-inferior"><small><?php print t('Publications') ?></small></a></li>
             <!--<li><a href="#"><small>Publicaciones</small></a></li>
             <li><a href="#"><small>Consultorías</small></a></li>-->
-            <li><a href="/our-clients" class="atm-menu-inferior"><small><?php print t('Companies and Clients') ?></small></a></li>
+            <li><a href="/companies" class="atm-menu-inferior"><small><?php print t('Companies and Clients') ?></small></a></li>
             <li><a href="/research/contact" class="atm-menu-inferior"><small><?php print t('Contact us') ?></small></a></li>
 						<?php endif ?>
           </ul>
