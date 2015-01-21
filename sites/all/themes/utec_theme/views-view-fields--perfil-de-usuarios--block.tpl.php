@@ -8,13 +8,27 @@
 	$name = $fields['name']->content;
 	$mail = $fields['mail']->content;
 	$picture = $fields['picture']->content;
-	$descripcion = $fields['field_descripci_n']->content;
-	$resenia = $fields['field_rese_a']->content;
-	$descripcion_ingles = $fields['field_descripci_n_ingles']->content;
-	$resenia_ingles = $fields['field_rese_a_ingles']->content;
 	$twitter = $fields['field_twitter']->content;
 
-	kpr($fields);
+	$descripcion = $fields['field_descripci_n']->content;
+	$descripcion_ingles = $fields['field_descripci_n_ingles']->content;
+
+	$resenia = $fields['field_rese_a']->content;
+	$resenia_ingles = $fields['field_rese_a_ingles']->content;
+
+	$descripcion_consejo = $fields['field_descripci_n_consejo_dir']->content;
+	$descripcion_consejo_ingles = $fields['field_descripci_n_consejo_dir_in']->content;
+
+	$resenia_consejo = $fields['field_rese_a_consejo']->content;
+	$resenia_consejo_ingles = $fields['field_rese_a_consejo_ingles']->content;
+
+	$descripcion_autoridad = $fields['field_descripci_n_autoridad']->content;
+	$descripcion_autoridad_ingles = $fields['field_descripci_n_autoridad_ingles']->content;
+
+	$resenia_autoridad = $fields['field_rese_a_autoridad']->content;
+	$resenia_autoridad_ingles = $fields['field_rese_a_autoridad_ingles']->content;
+
+	//kpr($fields);
 ?>
 
 <div>
