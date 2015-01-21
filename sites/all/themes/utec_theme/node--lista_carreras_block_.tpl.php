@@ -6,22 +6,25 @@
 		<ul class="grid-list grid-list-5 grid-list-1-xs pt-21 list-carreras text-center text-left-xs mb-ch-21-xs">
 			<li>
 				<div>
+					<?php if ($language->prefix == 'en'): ?>
 					<div><i class="icon-ing-industrial"></i></div>
 					<h2>
-							<?php if ($language->prefix == 'en'): ?>
-							<a href="/<?php print $language->prefix ?>/industrial-engineering">
-								<span><?php print t('Industrial') ?></span>
-								<span><?php print t('Engineering') ?></span>
-								<span></span>
-							</a>
-							<?php elseif ($language->prefix == 'es'): ?>
-							<a href="/<?php print $language->prefix ?>/ingenieria-industrial">
-								<span><?php print t('Engineering') ?></span>
-								<span><?php print t('Industrial') ?></span>
-								<span></span>
-							</a>
-							<?php endif ?>
+						<a href="/<?php print $language->prefix ?>/industrial-engineering">
+							<span><?php print t('Industrial') ?></span>
+							<span><?php print t('Engineering') ?></span>
+							<span></span>
+						</a>
 					</h2>
+					<?php elseif ($language->prefix == 'es'): ?>
+					<div><i class="icon-ing-industrial"></i></div>
+					<h2>
+						<a href="/<?php print $language->prefix ?>/ingenieria-industrial">
+							<span><?php print t('Engineering') ?></span>
+							<span><?php print t('Industrial') ?></span>
+							<span></span>
+						</a>
+					</h2>		
+					<?php endif ?>
 				</div>
 			</li>
 			<li>
