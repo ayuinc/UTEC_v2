@@ -26,8 +26,7 @@
 				</div>
 			</li>
 			<li>
-				<?php $ingenieria_de_la_energia_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/10/6', $language->prefix); ?>
-				<div data-href="/<?php print $language->prefix ?>/energy-engineering">
+				<div>
 					<div><i class="icon-ing-energia"></i></div>
 					<h2>
 							<?php if ($language->prefix == 'en'): ?>
