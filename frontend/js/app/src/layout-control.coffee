@@ -22,4 +22,8 @@ $(document).ready ->
 		$('body').toggleClass('scroll-y-off')
 		return
 
+	# ADD SPECIAL CLASSES TO ELEMENTS
+	$('#edit-submit.form-submit').addClass('atm-buscar')
+	$('.language-link').addClass('atm-idiomas')
+
 	return # END ON READY
