@@ -5721,7 +5721,7 @@ body {
     width: 35px; }
   .size.sm.user-card .user-info {
     min-height: 35px; }
-.size.sm i {
+.size.sm [class*="icon-"] {
   font-size: 24px; }
 .size.sm.videoBG {
   height: 351px; }
@@ -5746,7 +5746,7 @@ body {
   .size.lg.user-card .user-info {
     width: 75%;
     min-height: 0px; }
-.size.lg i {
+.size.lg [class*="icon-"] {
   font-size: 48px; }
 .size.lg.videoBG {
   height: 631px; }
@@ -5768,7 +5768,7 @@ body {
     width: 63px; }
   .size.xl.user-card .user-info {
     min-height: 63px; }
-.size.xl i {
+.size.xl [class*="icon-"] {
   font-size: 117px; }
 .size.xl.videoBG {
   height: 701px; }

@@ -85,7 +85,7 @@ $idioma = utf8_decode($_POST['idioma']);
 
 if($idioma == "es")
 {
-        if($origen == "Examen de Admisión" || $origen == "Primeros puestos" || $origen == "Alto rendimiento" || 
+        if($origen == "Examen de Admision" || $origen == "Primeros puestos" || $origen == "Alto Rendimiento" || 
            $origen == "Traslado Externo" || $origen == "Centro Pre" || $origen == "Bachillerato Internacional" )
         {
 
@@ -96,7 +96,7 @@ if($idioma == "es")
             $fromCliente = "admision@utec.edu.pe";
             $fromNameCliente = "UTEC – Admisión";
 
-            if ($origen == "Examen de Admisión")
+            if ($origen == "Examen de Admision")
             {
                 $tituloTelemarketing = "EXAMEN ADMISION - Datos Personales";
                 $subjectTelemarketing = "Solicitud - Examen Admision UTEC";
@@ -112,7 +112,7 @@ if($idioma == "es")
                 $origen = "pagina-primeros-puestos";
             }
 
-            if ($origen == "Alto rendimiento")
+            if ($origen == "Alto Rendimiento")
             {
                 $tituloTelemarketing = "ALTO RENDIMIENTO - Datos Personales";
                 $subjectTelemarketing = "Solicitud - Alto Rendimiento UTEC";
@@ -411,7 +411,7 @@ if($idioma == "es")
 
 if($idioma == "en")
 {
-        if($origen == "Examen de Admisión" || $origen == "Primeros puestos" || $origen == "Alto rendimiento" || 
+        if($origen == "Examen de Admision" || $origen == "Primeros puestos" || $origen == "Alto Rendimiento" || 
            $origen == "Traslado Externo" || $origen == "Centro Pre" || $origen == "Bachillerato Internacional" )
         {
 
@@ -422,7 +422,7 @@ if($idioma == "en")
             $fromCliente = "admision@utec.edu.pe";
             $fromNameCliente = "UTEC – Admisión";
 
-            if ($origen == "Examen de Admisión")
+            if ($origen == "Examen de Admision")
             {
                 $tituloTelemarketing = "EXAMEN ADMISION - Datos Personales";
                 $subjectTelemarketing = "Solicitud - Examen Admision UTEC";
@@ -438,7 +438,7 @@ if($idioma == "en")
                 $origen = "pagina-primeros-puestos";
             }
 
-            if ($origen == "Alto rendimiento")
+            if ($origen == "Alto Rendimiento")
             {
                 $tituloTelemarketing = "ALTO RENDIMIENTO - Datos Personales";
                 $subjectTelemarketing = "Solicitud - Alto Rendimiento UTEC";
@@ -811,7 +811,7 @@ if($idioma == "es")
                             <p><h2>¡Gracias por tu interés en UTEC!</h2>
                             <br/> Hemos recibido tus datos correctamente.
                             <br />Para completar tu inscripción en el Examen de Admisión, debes seguir estos pasos:</p>";
-                            
+                            |
                             $contenidorpta.="<p>1. Efectúa el depósito bancario por el Derecho de Inscripción al Concurso de Admisión Ordinario. BCP cuenta corriente soles N° 193-1976235-0-68. El costo es de S/.450. 
                             <br/>2. Presenta los siguientes documentos en la Oficina de Admisión:</p>";
                             $contenidorpta.="<p><ul><li>Voucher del depósito bancario (o enviar el voucher electrónico al e-mail inscripciones@utec.edu.pe)</li>
