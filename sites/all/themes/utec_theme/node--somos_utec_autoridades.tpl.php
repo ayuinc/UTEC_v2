@@ -26,12 +26,16 @@
   	    $name_url = str_replace(array('Ó','Ò','Ô','Õ','Ö'),"o",$name_url);
   	    $name_url = str_replace(array('ú','ù','û','ü'),"u",$name_url);
   	    $name_url = str_replace(array('Ú','Ù','Û','Ü'),"u",$name_url);
+  	    $name_url = str_replace("ñ","n",$name_url);
+   		$name_url = str_replace("Ñ","N",$name_url);
+  	    $name_url = strtolower ($name_url);
 
       ?>
-	  <?php $pic = $value['entity']->picture->filename; ?>
-	  <?php $uid = $value['entity']->uid; ?>
-      <?php $desc = $value['entity']->field_descripci_n['und'][0]['value']; ?>
-      <?php $desc_ingles = $value['entity']->field_descripci_n_ingles['und']['0']['value']; ?>
+			<?php $pic = $value['entity']->picture->filename; ?>
+			<?php $uid = $value['entity']->uid; ?>
+      <?php $desc = $value['entity']->field_descripci_n_autoridad['und'][0]['value']; ?>
+      <?php $desc_ingles = $value['entity']->field_descripci_n_autoridad_ingles	['und']['0']['value']; ?>
+
       <?php $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/autoridades/'.$uid, $language->prefix); ?>
 			<li data-href="<?php print $profesor_url ?>">
 				<div class="user-card user-card-round size lg">
@@ -44,7 +48,7 @@
 						<?php else : ?>
 						<span><?php print $desc?></span>
 						<?php endif; ?>
-						<a href="mailto:<?php print $mail ?>"><?php print $mail ?></a></div>
+						<a href="mailto:<?php print $mail ?>"><?php print $mail ?></a></div>   		
 				</div>
 			</li>
     <?php endforeach ?>

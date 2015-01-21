@@ -14,18 +14,30 @@
     <?php foreach ($node->field_lista_concejo['und'] as $key => $value) :?>
     <?php $name = $value['entity']->name; ?>   
 		<?php $pic = $value['entity']->picture->filename; ?>
-    <?php $desc = $value['entity']->field_descripci_n['und'][0]['value']; ?>		
+    <?php $desc = $value['entity']->field_descripci_n_consejo_dir['und'][0]['value']; ?>	
+    <?php $desc_ingles = $value['entity']->field_descripci_n_consejo_dir_in['und'][0]['value']; ?>	
+     	   		
     <?php $uid = $value['entity']->uid; ?>	
     <?php $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/consejo-directivo/'.$uid, $language->prefix); ?>	
 			<li class="mb-ch-14">
 				<div class="grid-list-pic"><img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="" width="98px" height="auto" class="img-circle"></div>
 				<div>
-					<!--<a href="#">Rosa María Llosa Demartini</a>-->
-					<a href="<?php print $profesor_url ?>"><?php print $name ?></a> 	
+					<a href="<?php print $profesor_url ?>"><?php print $name ?></a>
+					<?php if ($language->prefix == 'en') : ?>
+					<span><?php print $desc_ingles?></span>
+					<?php else : ?>
 					<span><?php print $desc?></span>
+					<?php endif; ?>
 				</div>
 			</li>
 		<?php endforeach ?>	
 	</ul>	
 </div>
+ 
+
+
+
+
+
+
 
