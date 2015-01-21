@@ -58,7 +58,7 @@
 			<div id="errordiv" class="col-sm-12 form-group"></div>			
 		</div>		
 		<div class="text-right">
-			<button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+			<button type="submit" class="btn btn-primary btn-lg" onclick="contacto_general();">Enviar</button>
 		</div>
 	</form>						
 </div>	

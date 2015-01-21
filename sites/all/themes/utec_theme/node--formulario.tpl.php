@@ -66,7 +66,7 @@
 			</div>
 
 			<div class="text-right">
-				<button type="submit" class="btn btn-primary btn-lg"><?php print t('Send') ?></button>
+				<button type="submit" class="btn btn-primary btn-lg" onclik="formulario_de_aplicacion()"><?php print t('Send') ?></button>
 			</div>
 	</form>						
 </div>
