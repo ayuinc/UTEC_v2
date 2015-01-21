@@ -19,32 +19,32 @@
 
 		<div class="row">
 			<div class="form-group col-sm-6">
-				<label for="" class="sr-only">Nombres</label>
+				<label for="" class="sr-only"><?php print t("Name") ?></label>
 				<input id="nombres" name="nombres" type="text" class="form-control" placeholder="Nombres">
 			</div>
 			<div class="form-group col-sm-6">
-				<label for="" class="sr-only">Apellidos Paterno</label>
+				<label for="" class="sr-only"><?php print t("Middle Name") ?></label>
 				<input id="apellidop" name="apellidop" type="text" class="form-control" placeholder="Apellido paterno">
 			</div>
 
 		</div>
 		<div class="row">
 			<div class="form-group col-sm-6">
-				<label for="" class="sr-only">Apellido Materno</label>
+				<label for="" class="sr-only"><?php print t("Last Name") ?></label>
 				<input id="apellidom" name="apellidom" type="text" class="form-control" placeholder="Apellido materno">
 			</div>			
 			<div class="form-group col-sm-6">
-				<label for="" class="sr-only">Email</label>
+				<label for="" class="sr-only"><?php print t('E-Mail') ?></label>
 				<input id="email" name="email" type="text" class="form-control" placeholder="Email">
 			</div>
 		</div>
 		<div class="row">
 			<div class="form-group col-sm-6">
-				<label for="" class="sr-only">Teléfono</label>
+				<label for="" class="sr-only"><?php print t('Phone') ?></label>
 				<input id="telefono" name="telefono" type="text" class="form-control" placeholder="Teléfono">
 			</div>
 			<div class="form-group col-sm-6">
-				<label for="" class="sr-only">Colegio</label>
+				<label for="" class="sr-only"><?php print t('School') ?></label>
 				<input id="colegio" name="colegio" type="text" class="form-control" placeholder="Colegio">
 			</div>
 		</div>		
