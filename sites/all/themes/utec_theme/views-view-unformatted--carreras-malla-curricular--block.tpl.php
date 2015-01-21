@@ -11,7 +11,7 @@
 <div class="container">
 	<h3 class="thin lead"><?php print t('Curriculum') ?></h3>
 	<div class="separator-gray separator-lg"></div>
-	<h3 class="lead thin"><?php print t('Term') ?> 2015 - I</h3>
+	<h3 class="lead thin"><?php print t('Semester') ?> 2015 - I</h3>
 	<div>
 		<ul class="grid-list grid-list-1-xs malla-curricular-ref p-ch-0 mr-ch-28">
 		<?php if ($language->prefix == 'es'): ?>

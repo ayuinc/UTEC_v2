@@ -147,7 +147,7 @@
 						</li>
 						<li>
 							<?php if ($language->prefix == 'es'): ?>
-								<a href="/<?php print $language->prefix ?>/metodologia-educativa"><span><?php print t('Methodology') ?></span><?php print t('Academic') ?></a>
+								<a href="/<?php print $language->prefix ?>/metodologia-educativa"><span>Metodología</span>Educativa</a>
 							<?php elseif ($language->prefix == 'en'): ?>
 								<a href="/<?php print $language->prefix ?>/academic-methodology"><span><?php print t('Academic') ?></span><?php print t('Methodology') ?></a>
 							<?php endif ?>
@@ -660,7 +660,7 @@
 						</li>
 						<li>
 							<?php if ($language->prefix == 'es'): ?>
-								<a href="/<?php print $language->prefix ?>/metodologia-educativa"><span><?php print t('Methodology') ?></span><?php print t('Academic') ?></a>
+								<a href="/<?php print $language->prefix ?>/metodologia-educativa"><span>Metodología</span>Educativa</a>
 							<?php elseif ($language->prefix == 'en'): ?>
 								<a href="/<?php print $language->prefix ?>/academic-methodology"><span><?php print t('Academic') ?></span><?php print t('Methodology') ?></a>
 							<?php endif ?>
