@@ -1,6 +1,7 @@
 <?php 
   global $base_url;
   global $theme_path;
+  global $language;
   $path = $base_url.'/'.$theme_path;
   $pathfile= variable_get('file_public_path', conf_path() . '/files/');
 
@@ -9,7 +10,7 @@
 	$cuerpo = $node->body['und']['0']['value'];
 	$mencion = $node->field_mencion['und']['0']['value'];
 	$electivo = $node->field_electivo['und'];
-	
+	$idioma = $language->prefix;		
 	// print_r($node);
 	//PRIMEROS PUESTOS
 ?>
@@ -22,15 +23,15 @@
 <div class="container-sm form-custom">
 	<form action="/registro.php" class="mb-ch-28" data-submit="Formulario de inscripcion" method="post" id="formRegistro" name="formRegistro">
 		<input type="hidden" name="origen" value="<?php print $title; ?>">
-		<input type="hidden" name="idioma" value="es">
+		<input type="hidden" name="idioma" value="<?php print $idioma; ?>">
 				
 		<div class="row">
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">Nombres</label>
-				<input  id="nombres" name="nombres" type="text" class="form-control" placeholder="Nombres">
+				<label for="" class="sr-only"><?php print t('Name') ?></label>
+				<input  id="nombres" name="nombres" type="text" class="form-control" placeholder="<?php print t('Name') ?>">
 			</div>
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">Apellido paterno</label>
+				<label for="" class="sr-only"><?php print t('Middle Name') ?></label>
 				<input  id="apellidop" name="apellidop" type="text" class="form-control" placeholder="Apellido paterno">
 			</div>
 			<div class="form-group col-sm-4">
