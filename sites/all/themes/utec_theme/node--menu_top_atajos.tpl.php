@@ -27,7 +27,7 @@
             $subfids   = $subnode->field_menu_top_campos['und'];                 
           ?>
           <li>
-          	<a href="#"><?php print $subtitulo ?></a>
+          	<a><?php print $subtitulo ?></a>
             <ul>
               <?php foreach ($subfids as $fid) : ?>
                 <?php 
