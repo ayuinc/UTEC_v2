@@ -623,7 +623,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="nav-display" id="nav-display-1">
+	<div class="nav-display" id="nav-shrink-display-1">
 		<div class="container relative">
 			<a href="#" class="nav-display-close">X</a>
 		</div>
@@ -734,7 +734,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="nav-display" id="nav-display-2">
+	<div class="nav-display" id="nav-shrink-display-2">
 		<div class="container relative">
 			<a href="#" class="nav-display-close">X</a>
 		</div>
@@ -785,7 +785,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="nav-display" id="nav-display-3">
+	<div class="nav-display" id="nav-shrink-display-3">
 		<div class="container relative">
 			<a href="#" class="nav-display-close">X</a>
 		</div>
@@ -879,7 +879,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="nav-display" id="nav-display-4">
+	<div class="nav-display" id="nav-shrink-display-4">
 		<div class="container relative">
 			<a href="#" class="nav-display-close">X</a>
 		</div>
@@ -986,7 +986,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="nav-display" id="nav-display-5">
+	<div class="nav-display" id="nav-shrink-display-5">
 		<div class="container relative">
 			<a href="#" class="nav-display-close">X</a>
 		</div>
@@ -1021,7 +1021,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="nav-display" id="nav-display-6">
+	<div class="nav-display" id="nav-shrink-display-6">
 		<div class="container relative">
 			<a href="#" class="nav-display-close">X</a>
 		</div>
