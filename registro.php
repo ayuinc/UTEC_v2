@@ -200,7 +200,6 @@ if($idioma == "es")
                 $origen = "pagina-inscripcion-primeros-puestos";  
             }
 
-
             if($origen == "Formulario inscripcion traslados")
             {
                 $tituloTelemarketing = "Registro de Inscripciones - Traslado Externo UTEC";
@@ -1340,7 +1339,6 @@ if($idioma == "en")
                                             </td></tr>
                                            </table>";
             }
-
 }
 
 
