@@ -11,6 +11,7 @@
 	$electivo = $node->field_electivo['und'];
 	
 	// print_r($node);
+	//EXAMEN ADMISION
 ?>
 
 <div class="container-sm">
