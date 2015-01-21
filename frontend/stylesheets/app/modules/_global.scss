@@ -209,7 +209,7 @@ $sidebar-block-height: 210px;
 				min-height: $user-card-height - 7;
 			}
 		}
-		i {
+		[class*="icon-"] {
 			font-size: $font-size-h3;
 		}
 		&.videoBG {
@@ -261,7 +261,7 @@ $sidebar-block-height: 210px;
 				min-height: $user-card-width - 70;
 			}
 		}
-		i {
+		[class*="icon-"] {
 			font-size: $font-size-h3 * 2;
 		}
 		&.videoBG {
@@ -300,7 +300,7 @@ $sidebar-block-height: 210px;
 				min-height: $user-card-height + 21;
 			}
 		}
-		i {
+		[class*="icon-"] {
 			font-size: 117px;
 		}
 		&.videoBG {
