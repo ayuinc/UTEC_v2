@@ -6,18 +6,33 @@
 		<div class="container">
 			<div class="left">
 				<ul class=" thin text-gray mr-ch-14 nav-list pt-7">
-					<li>
-						<a href="/<?php print $language->prefix ?>/quick-links/students" class="atm-menu-superior"><?php print t('Students') ?></a>
-					</li>
-					<li>
-						<a href="/<?php print $language->prefix ?>/enlaces-rapidos/profesores" class="atm-menu-superior"><?php print t('Faculty') ?></a>
-					</li>
-					<li>
-						<a href="/<?php print $language->prefix ?>/enlaces-rapidos/empresas" class="atm-menu-superior"><?php print t('Companies') ?></a>
-					</li>
-					<li>
-						<a href="/<?php print $language->prefix ?>/enlaces-rapidos/postulantes" class="atm-menu-superior"><?php print t('Applicants') ?></a>
-					</li>
+					<?php if ($language->prefix == 'es'): ?>
+						<li>
+							<a href="/<?php print $language->prefix ?>/enlaces-rapidos/alumnos" class="atm-menu-superior"><?php print t('Students') ?></a>
+						</li>
+						<li>
+							<a href="/<?php print $language->prefix ?>/enlaces-rapidos/profesores" class="atm-menu-superior"><?php print t('Faculty') ?></a>
+						</li>
+						<li>
+							<a href="/<?php print $language->prefix ?>/enlaces-rapidos/empresas" class="atm-menu-superior"><?php print t('Companies') ?></a>
+						</li>
+						<li>
+							<a href="/<?php print $language->prefix ?>/enlaces-rapidos/postulantes" class="atm-menu-superior"><?php print t('Applicants') ?></a>
+						</li>
+					<?php elseif ($language->prefix == 'en'): ?>
+						<li>
+							<a href="/<?php print $language->prefix ?>/quick-links/students" class="atm-menu-superior"><?php print t('Students') ?></a>
+						</li>
+						<li>
+							<a href="/<?php print $language->prefix ?>/quick-links/faculty" class="atm-menu-superior"><?php print t('Faculty') ?></a>
+						</li>
+						<li>
+							<a href="/<?php print $language->prefix ?>/quick-links/companies" class="atm-menu-superior"><?php print t('Companies') ?></a>
+						</li>
+						<li>
+							<a href="/<?php print $language->prefix ?>/quick-links/applicants" class="atm-menu-superior"><?php print t('Applicants') ?></a>
+						</li>
+					<?php endif ?>
 				</ul>
 			</div>
 			<div class="right">

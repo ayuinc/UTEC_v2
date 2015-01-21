@@ -1,5 +1,6 @@
 <?php global $base_url; ?>
 <?php global $theme_path; ?>
+<?php global $language; ?>
 <?php $path = $base_url.'/'.$theme_path; ?>
 <?php $pathfile= variable_get('file_public_path', conf_path() . '/files/'); ?>
 <?php $title = $node->title; ?>  
