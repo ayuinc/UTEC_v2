@@ -43,7 +43,7 @@
       <?php $res_ingles = $value['entity']->field_rese_a_autoridad_ingles['und']['0']['value']; ?>	
 
       <?php $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/autoridades/'.$uid, $language->prefix); ?>
-      <?php if($uid != 14 || $uid != 22) : ?>
+      <?php if($uid != 14 && $uid != 22) : ?>
 			<li data-href="<?php print $profesor_url ?>">
 				<div class="user-card user-card-round size lg">
 					<div class="user-pic"><img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt=""></div>
@@ -70,7 +70,7 @@
         <?php $res_ingles = $value['entity']->field_rese_a_autoridad_ingles['und']['0']['value']; ?>  
 
         <?php $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/autoridades/'.$uid, $language->prefix); ?>
-      <?php if($uid == 14 || $uid == 22) : ?>
+      <?php if($uid == 14 && $uid == 22) : ?>
         <li data-href="<?php print $profesor_url ?>">
           <div class="user-card user-card-round size lg">
             <div class="user-pic"><img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt=""></div>
