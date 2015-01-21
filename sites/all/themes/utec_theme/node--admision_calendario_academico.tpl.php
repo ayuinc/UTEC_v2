@@ -2,7 +2,7 @@
 <?php $field_introduccion_calendario = $node->field_introduccion_calendario['und']['0']['value']; ?>
 
 <div class="container-sm">
-	<h1 class="light"><?php print t('Academic Calendar') ?></h1>
+	<h1 class="light"><?php print t('Admission Calendar') ?></h1>
 	<div class="separator-gray separator-lg"></div>
 	<h3><?php print $field_introduccion_calendario ?></h3>	
 	<div class="pv-35">
@@ -67,7 +67,7 @@
 						<td>20/02/2015</td>
 					</tr>	
 					<tr>
-						<td class="highlight"><?php print t('Pre University Center')</td>
+						<td class="highlight"><?php print t('Pre University Center') ?></td>
 						<td><?php print t('Term 1 - Registration: May - November') ?></td>
 						<td>01/04/2014</td>
 					</tr>	
