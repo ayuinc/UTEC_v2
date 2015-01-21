@@ -92,7 +92,7 @@
 			<?php if ($language->prefix == 'es'): ?>
 				<a href="/<?php print $language->prefix ?>/trabaja-en-utec"><span><?php print t('Work') ?></span><?php print t('at UTEC') ?></a>
 			<?php elseif ($language->prefix == 'en'): ?>
-				<a href="/<?php print $language->prefix ?>/work-utec"><span><?php print t('Work') ?></span><?php print t('at UTEC') ?></a>
+				<a href="/<?php print $language->prefix ?>/work-at-utec"><span><?php print t('Work') ?></span><?php print t('at UTEC') ?></a>
 			<?php endif ?>						
 		</li>
 		<li>

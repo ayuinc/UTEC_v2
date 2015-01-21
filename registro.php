@@ -35,7 +35,7 @@ if (!isset($_POST['estudios-provincia'])) {$_POST['estudios-provincia'] = "";};
 if (!isset($_POST['estudios-distrito'])) {$_POST['estudios-distrito'] = "";};
 if (!isset($_POST['estudios-rendimiento'])) {$_POST['estudios-rendimiento'] = "";};
 if (!isset($_POST['estudiante'])) {$_POST['estudiante'] = "N";};
-if (!isset($_POST['consulta'])) {$_POST['consulta'] = "";};
+if (!isset($_POST['consulta'])) {$_POST['consulta'] ""= "";};
 if (!isset($_POST['idioma'])) {$_POST['idioma'] = "es";};
 
 
@@ -73,6 +73,8 @@ $fromCliente = "";
 $fromNameCliente = "";
 $familia = "";
 $origen = "";
+$mensaje_html = "";
+$contenidorpta = "";
 
 //Definicón de subject, destinatario, título
 
@@ -145,7 +147,7 @@ if($idioma == "es")
 
 
         if($origen == "Formulario inscripcion examen de admision" || $origen == "Formulario inscripcion alto rendimiento" || 
-           $origen == "Formulario inscripcion centro pre" || $origen == "Formulario inscripcion primeros puestos" || 
+           $origen == "Formulario inscripcion centro pre" || $origen == "Formulario-primeros-puestos" || 
            $origen == "Formulario inscripcion traslados" || $origen == "Formulario inscripcion bachillerato internacional" )
         {
 
@@ -191,7 +193,7 @@ if($idioma == "es")
                 $origen = "pagina-inscripcion-pre";  
             }
 
-            if($origen == "Formulario inscripcion primeros puestos")
+            if($origen == "Formulario-primeros-puestos")
             {
                 $tituloTelemarketing = "Registro de Inscripciones - Primeros Puestos UTEC";
                 $subjectTelemarketing = "Registro de Inscripciones - Primeros Puestos UTEC";
@@ -471,7 +473,7 @@ if($idioma == "en")
 
 
         if($origen == "Formulario inscripcion examen de admision" || $origen == "Formulario inscripcion alto rendimiento" || 
-           $origen == "Formulario inscripcion centro pre" || $origen == "Formulario inscripcion primeros puestos" || 
+           $origen == "Formulario inscripcion centro pre" || $origen == "Formulario-primeros-puestos" || 
            $origen == "Formulario inscripcion traslados" || $origen == "Formulario inscripcion bachillerato internacional" )
         {
 
@@ -517,7 +519,7 @@ if($idioma == "en")
                 $origen = "pagina-inscripcion-pre";  
             }
 
-            if($origen == "Formulario inscripcion primeros puestos")
+            if($origen == "Formulario-primeros-puestos")
             {
                 $tituloTelemarketing = "Registro de Inscripciones - Primeros Puestos UTEC";
                 $subjectTelemarketing = "Registro de Inscripciones - Primeros Puestos UTEC";

@@ -27,13 +27,14 @@
             $subfids   = $subnode->field_menu_top_campos['und'];                 
           ?>
           <li>
-          	<a href="#"><?php print $subtitulo ?></a>
+          	<a><?php print $subtitulo ?></a>
             <ul>
               <?php foreach ($subfids as $fid) : ?>
                 <?php 
                 	// print_r($fid['value']);
                   $num = $fid['value'];
                   $field = entity_load('field_collection_item', array($fid['value']));
+                  $nombre_ingles = $field[$num]->field_nombre_ingles['und'][0]['value'];
                   $nombre = $field[$num]->field_nombre['und'][0]['value'];
                   $link = $field[$num]->field_link_atajo['und'][0]['value'];
                   $link_ingles = $field[$num]->field_link_atajo_ingles['und'][0]['value'];     
