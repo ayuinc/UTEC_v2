@@ -47,17 +47,17 @@
           <div class="overlay">
             <a href="#">
               <h4>
-                <?php if ($language->prefix == 'en') {
+                <?php if ($language->language == 'en') {
                   print $izquierdo_txt1_ingles;
-                } elseif ($language->prefix == 'es') {
+                } elseif ($language->language == 'es') {
                   print $izquierdo_txt1;
                 } 
                 ?>
               </h4>
               <h2>
-                <?php if ($language->prefix == 'en') {
+                <?php if ($language->language == 'en') {
                   print $izquierdo_txt2_ingles;
-                } elseif ($language->prefix == 'es') {
+                } elseif ($language->language == 'es') {
                   print $izquierdo_txt2;
                 } 
                 ?>
@@ -72,17 +72,17 @@
           <div class="overlay">
             <a href="#">
               <h4>
-                <?php if ($language->prefix == 'en') {
+                <?php if ($language->language == 'en') {
                   print $derecho_superior_txt1_ingles;
-                } elseif ($language->prefix == 'es') {
+                } elseif ($language->language == 'es') {
                   print $derecho_superior_txt1;
                 } 
                 ?>
               </h4>
               <h2>
-                <?php if ($language->prefix == 'en') {
+                <?php if ($language->language == 'en') {
                   print $derecho_superior_txt2_ingles;
-                } elseif ($language->prefix == 'es') {
+                } elseif ($language->language == 'es') {
                   print $derecho_superior_txt2;
                 } 
                 ?>
@@ -95,17 +95,17 @@
           <div class="overlay">
             <a href="#">
               <h4>
-                <?php if ($language->prefix == 'en') {
+                <?php if ($language->language == 'en') {
                   print $derecho_inferior_izq_txt1_ingles;
-                } elseif ($language->prefix == 'es') {
+                } elseif ($language->language == 'es') {
                   print $derecho_inferior_izq_txt1;
                 } 
                 ?>
               </h4>
               <h2>
-                <?php if ($language->prefix == 'en') {
+                <?php if ($language->language == 'en') {
                   print $derecho_inferior_izq_txt2_ingles;
-                } elseif ($language->prefix == 'es') {
+                } elseif ($language->language == 'es') {
                   print $derecho_inferior_izq_txt2;
                 } 
                 ?>
@@ -118,17 +118,17 @@
           <div class="overlay">
             <a href="#">
               <h4>
-                <?php if ($language->prefix == 'en') {
+                <?php if ($language->language == 'en') {
                   print $derecho_inferior_der_txt1_ingles;
-                } elseif ($language->prefix == 'es') {
+                } elseif ($language->language == 'es') {
                   print $derecho_inferior_der_txt1;
                 } 
                 ?>
               </h4>
               <h2>
-                <?php if ($language->prefix == 'en') {
+                <?php if ($language->language == 'en') {
                   print $derecho_inferior_der_txt2_ingles;
-                } elseif ($language->prefix == 'es') {
+                } elseif ($language->language == 'es') {
                   print $derecho_inferior_der_txt2;
                 } 
                 ?>

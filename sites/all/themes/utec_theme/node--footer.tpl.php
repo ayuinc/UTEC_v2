@@ -11,9 +11,9 @@
 						<form action="" class="form-inline mb-ch-0">
 							<div class="form-group">
 								<label for="subscribe_name" class="sr-only"><?php //print t('Name') ?></label>
-                <?php //if ($language->prefix == 'en'): ?>
+                <?php //if ($language->language == 'en'): ?>
 								  <input type="text" class="form-control" width="210" height="auto" placeholder="Name">
-                <?php //elseif ($language->prefix != 'en'): ?>
+                <?php //elseif ($language->language != 'en'): ?>
                   <input type="text" class="form-control" width="210" height="auto" placeholder="Nombre">
                 <?php //endif ?>
 							</div>
@@ -35,33 +35,33 @@
 			<ul class="grid-list grid-list-6 grid-list-2-xs">
         <li>
           <ul>
-            <?php if ($language->prefix == 'en'): ?>
+            <?php if ($language->language == 'en'): ?>
               <li class="title text-gray-lighter"><?php print t('We are UTEC') ?></li>
-              <li><a href="/<?php print $language->prefix ?>/a-solid-foundation" class="atm-menu-inferior"><small><?php print t('A Solid Foundation') ?></small></a></li>
-              <li><a href="/<?php print $language->prefix ?>/authorities" class="atm-menu-inferior"><small><?php print t('Authorities') ?></small></a></li>
-              <li><a href="/<?php print $language->prefix ?>/faculty" class="atm-menu-inferior"><small><?php print t('Faculty') ?></small></a></li>
-              <li><a href="/<?php print $language->prefix ?>/ingenuity-in-action" class="atm-menu-inferior"><small><?php print t('Ingenuity in Action') ?></small></a></li>
-              <li><a href="/<?php print $language->prefix ?>/metodologia-educativa" class="atm-menu-inferior"><small><?php print t('Educational Methodology') ?></small></a></li>
-              <li><a href="/<?php print $language->prefix ?>/news" class="atm-menu-inferior"><small></small><small><?php print t('News') ?></small></a></li>
-              <li><a href="/<?php print $language->prefix ?>/events" class="atm-menu-inferior"><small><?php print t('Events') ?></small></a></li>
-              <li><a href="/<?php print $language->prefix ?>/utec-life" class="atm-menu-inferior"><small><?php print t('UTEC Life') ?></small></a></li>
-              <li><a href="/<?php print $language->prefix ?>/campus-and-labs" class="atm-menu-inferior"><small><?php print t('Campus and Labs') ?></small></a></li>
-              <li><a href="/<?php print $language->prefix ?>/work-at-utec" class="atm-menu-inferior"><small><?php print t('Work at UTEC') ?></small></a></li>
-              <li><a href="/<?php print $language->prefix ?>/ingenuity-in-action/utec-garage" class="atm-menu-inferior"><small><?php print t('UTEC Garage') ?></small></a></li>
+              <li><a href="/<?php print $language->language ?>/a-solid-foundation" class="atm-menu-inferior"><small><?php print t('A Solid Foundation') ?></small></a></li>
+              <li><a href="/<?php print $language->language ?>/authorities" class="atm-menu-inferior"><small><?php print t('Authorities') ?></small></a></li>
+              <li><a href="/<?php print $language->language ?>/faculty" class="atm-menu-inferior"><small><?php print t('Faculty') ?></small></a></li>
+              <li><a href="/<?php print $language->language ?>/ingenuity-in-action" class="atm-menu-inferior"><small><?php print t('Ingenuity in Action') ?></small></a></li>
+              <li><a href="/<?php print $language->language ?>/metodologia-educativa" class="atm-menu-inferior"><small><?php print t('Educational Methodology') ?></small></a></li>
+              <li><a href="/<?php print $language->language ?>/news" class="atm-menu-inferior"><small></small><small><?php print t('News') ?></small></a></li>
+              <li><a href="/<?php print $language->language ?>/events" class="atm-menu-inferior"><small><?php print t('Events') ?></small></a></li>
+              <li><a href="/<?php print $language->language ?>/utec-life" class="atm-menu-inferior"><small><?php print t('UTEC Life') ?></small></a></li>
+              <li><a href="/<?php print $language->language ?>/campus-and-labs" class="atm-menu-inferior"><small><?php print t('Campus and Labs') ?></small></a></li>
+              <li><a href="/<?php print $language->language ?>/work-at-utec" class="atm-menu-inferior"><small><?php print t('Work at UTEC') ?></small></a></li>
+              <li><a href="/<?php print $language->language ?>/ingenuity-in-action/utec-garage" class="atm-menu-inferior"><small><?php print t('UTEC Garage') ?></small></a></li>
               <li><a href="http://utecventures.com/" target="_blank" class="atm-menu-inferior"><small><?php print t('UTEC Ventures') ?></small></a></li>
-            <?php elseif ($language->prefix != 'en'): ?>
+            <?php elseif ($language->language != 'en'): ?>
               <li class="title text-gray-lighter"><?php print t('We are UTEC') ?></li>
-              <li><a href="<?php print $language->prefix ?>/respaldo" class="atm-menu-inferior"><small><?php print t('A Solid Foundation') ?></small></a></li>
-              <li><a href="<?php print $language->prefix ?>/autoridades" class="atm-menu-inferior"><small><?php print t('Authorities') ?></small></a></li>
-              <li><a href="<?php print $language->prefix ?>/profesores" class="atm-menu-inferior"><small><?php print t('Faculty') ?></small></a></li>
-              <li><a href="<?php print $language->prefix ?>/ingenio-en-accion" class="atm-menu-inferior"><small><?php print t('Ingenuity in Action') ?></small></a></li>
-              <li><a href="<?php print $language->prefix ?>/metodologia-educativa" class="atm-menu-inferior"><small>Metodología Educativa</small></a></li>
-              <li><a href="<?php print $language->prefix ?>/noticias" class="atm-menu-inferior"><small></small><small><?php print t('News') ?></small></a></li>
-              <li><a href="<?php print $language->prefix ?>/eventos-utec" class="atm-menu-inferior"><small><?php print t('Events') ?></small></a></li>
-              <li><a href="<?php print $language->prefix ?>/vida-estudiantil" class="atm-menu-inferior"><small><?php print t('UTEC Life') ?></small></a></li>
-              <li><a href="<?php print $language->prefix ?>/campus-y-laboratorios" class="atm-menu-inferior"><small><?php print t('Campus and Labs') ?></small></a></li>
-              <li><a href="<?php print $language->prefix ?>/trabaja-en-utec" class="atm-menu-inferior"><small><?php print t('Work at UTEC') ?></small></a></li>
-              <li><a href="<?php print $language->prefix ?>/ingenio-en-accion/utec-garage" class="atm-menu-inferior"><small><?php print t('UTEC Garage') ?></small></a></li>
+              <li><a href="<?php print $language->language ?>/respaldo" class="atm-menu-inferior"><small><?php print t('A Solid Foundation') ?></small></a></li>
+              <li><a href="<?php print $language->language ?>/autoridades" class="atm-menu-inferior"><small><?php print t('Authorities') ?></small></a></li>
+              <li><a href="<?php print $language->language ?>/profesores" class="atm-menu-inferior"><small><?php print t('Faculty') ?></small></a></li>
+              <li><a href="<?php print $language->language ?>/ingenio-en-accion" class="atm-menu-inferior"><small><?php print t('Ingenuity in Action') ?></small></a></li>
+              <li><a href="<?php print $language->language ?>/metodologia-educativa" class="atm-menu-inferior"><small>Metodología Educativa</small></a></li>
+              <li><a href="<?php print $language->language ?>/noticias" class="atm-menu-inferior"><small></small><small><?php print t('News') ?></small></a></li>
+              <li><a href="<?php print $language->language ?>/eventos-utec" class="atm-menu-inferior"><small><?php print t('Events') ?></small></a></li>
+              <li><a href="<?php print $language->language ?>/vida-estudiantil" class="atm-menu-inferior"><small><?php print t('UTEC Life') ?></small></a></li>
+              <li><a href="<?php print $language->language ?>/campus-y-laboratorios" class="atm-menu-inferior"><small><?php print t('Campus and Labs') ?></small></a></li>
+              <li><a href="<?php print $language->language ?>/trabaja-en-utec" class="atm-menu-inferior"><small><?php print t('Work at UTEC') ?></small></a></li>
+              <li><a href="<?php print $language->language ?>/ingenio-en-accion/utec-garage" class="atm-menu-inferior"><small><?php print t('UTEC Garage') ?></small></a></li>
               <li><a href="http://utecventures.com/" target="_blank" class="atm-menu-inferior"><small><?php print t('UTEC Ventures') ?></small></a></li>
             <?php endif ?>
           </ul>
@@ -79,95 +79,95 @@
         </li>-->
         <li>
           <ul>
-	          <?php if ($language->prefix != 'en'): ?>
+	          <?php if ($language->language != 'en'): ?>
             <li class="title text-gray-lighter"><?php print t('Research') ?></li>
-            <li><a href="<?php print $language->prefix ?>/proyectos" class="atm-menu-inferior"><small><?php print t('Projects') ?></small></a></li>
-            <li><a href="<?php print $language->prefix ?>/publicaciones" class="atm-menu-inferior"><small><?php print t('Publications') ?></small></a></li>
+            <li><a href="<?php print $language->language ?>/proyectos" class="atm-menu-inferior"><small><?php print t('Projects') ?></small></a></li>
+            <li><a href="<?php print $language->language ?>/publicaciones" class="atm-menu-inferior"><small><?php print t('Publications') ?></small></a></li>
             <!--<li><a href="#"><small>Publicaciones</small></a></li>
             <li><a href="#"><small>Consultorías</small></a></li>-->
-            <li><a href="<?php print $language->prefix ?>/empresas-y-clientes" class="atm-menu-inferior"><small><?php print t('Companies and Clients') ?></small></a></li>
-            <li><a href="<?php print $language->prefix ?>/investigacion/contacto" class="atm-menu-inferior"><small><?php print t('Contact us') ?></small></a></li>
-						<?php elseif ($language->prefix == 'en'): ?>
+            <li><a href="<?php print $language->language ?>/empresas-y-clientes" class="atm-menu-inferior"><small><?php print t('Companies and Clients') ?></small></a></li>
+            <li><a href="<?php print $language->language ?>/investigacion/contacto" class="atm-menu-inferior"><small><?php print t('Contact us') ?></small></a></li>
+						<?php elseif ($language->language == 'en'): ?>
             <li class="title text-gray-lighter"><?php print t('Research') ?></li>
-            <li><a href="<?php print $language->prefix ?>/proyectos" class="atm-menu-inferior"><small><?php print t('Projects') ?></small></a></li>
-            <li><a href="<?php print $language->prefix ?>/publications" class="atm-menu-inferior"><small><?php print t('Publications') ?></small></a></li>
+            <li><a href="<?php print $language->language ?>/proyectos" class="atm-menu-inferior"><small><?php print t('Projects') ?></small></a></li>
+            <li><a href="<?php print $language->language ?>/publications" class="atm-menu-inferior"><small><?php print t('Publications') ?></small></a></li>
             <!--<li><a href="#"><small>Publicaciones</small></a></li>
             <li><a href="#"><small>Consultorías</small></a></li>-->
-            <li><a href="<?php print $language->prefix ?>/our-clients" class="atm-menu-inferior"><small><?php print t('Companies and Clients') ?></small></a></li>
-            <li><a href="<?php print $language->prefix ?>/research/contact" class="atm-menu-inferior"><small><?php print t('Contact us') ?></small></a></li>
+            <li><a href="<?php print $language->language ?>/our-clients" class="atm-menu-inferior"><small><?php print t('Companies and Clients') ?></small></a></li>
+            <li><a href="<?php print $language->language ?>/research/contact" class="atm-menu-inferior"><small><?php print t('Contact us') ?></small></a></li>
 						<?php endif ?>
           </ul>
         </li>
         <li>
           <ul>
             <li class="title text-gray-lighter"><?php print t('Programs') ?></li>
-            <?php if ($language->prefix == 'en'): ?>
-            <li><a href="/<?php print $language->prefix ?>/industrial-chemical-engineering" class="atm-menu-inferior"><small><?php print t('Industrial and Chemical Engineering') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/electronic-engineering" class="atm-menu-inferior"><small><?php print t('Electronic Engineering') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/mechanical-engineering" class="atm-menu-inferior"><small><?php print t('Mechanical Engineering') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/energy-engineering" class="atm-menu-inferior"><small><?php print t('Energy Engineering') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/industrial-engineering" class="atm-menu-inferior"><small><?php print t('Industrial Engineering') ?></small></a></li>
-            <!--<li><a href="/<?php print $language->prefix ?>/carreras/menciones" class="atm-menu-inferior"><small><?php print t('Mentions') ?></small></a></li>-->
-            <?php elseif ($language->prefix != 'en'): ?>
-            <li><a href="<?php print $language->prefix ?>/ingenieria-quimica-industrial" class="atm-menu-inferior"><small><?php print t('Industrial and Chemical Engineering') ?></small></a></li>
-            <li><a href="<?php print $language->prefix ?>/ingenieria-electronica" class="atm-menu-inferior"><small><?php print t('Electronic Engineering') ?></small></a></li>
-            <li><a href="<?php print $language->prefix ?>/ingenieria-mecanica" class="atm-menu-inferior"><small><?php print t('Mechanical Engineering') ?></small></a></li>
-            <li><a href="<?php print $language->prefix ?>/ingenieria-de-la-energia" class="atm-menu-inferior"><small><?php print t('Energy Engineering') ?></small></a></li>
-            <li><a href="<?php print $language->prefix ?>/ingenieria-industrial" class="atm-menu-inferior"><small><?php print t('Industrial Engineering') ?></small></a></li>
-            <!--<li><a href="/<?php print $language->prefix ?>/carreras/menciones" class="atm-menu-inferior"><small><?php print t('Mentions') ?></small></a></li>-->  
+            <?php if ($language->language == 'en'): ?>
+            <li><a href="/<?php print $language->language ?>/industrial-chemical-engineering" class="atm-menu-inferior"><small><?php print t('Industrial and Chemical Engineering') ?></small></a></li>
+            <li><a href="/<?php print $language->language ?>/electronic-engineering" class="atm-menu-inferior"><small><?php print t('Electronic Engineering') ?></small></a></li>
+            <li><a href="/<?php print $language->language ?>/mechanical-engineering" class="atm-menu-inferior"><small><?php print t('Mechanical Engineering') ?></small></a></li>
+            <li><a href="/<?php print $language->language ?>/energy-engineering" class="atm-menu-inferior"><small><?php print t('Energy Engineering') ?></small></a></li>
+            <li><a href="/<?php print $language->language ?>/industrial-engineering" class="atm-menu-inferior"><small><?php print t('Industrial Engineering') ?></small></a></li>
+            <!--<li><a href="/<?php print $language->language ?>/carreras/menciones" class="atm-menu-inferior"><small><?php print t('Mentions') ?></small></a></li>-->
+            <?php elseif ($language->language != 'en'): ?>
+            <li><a href="<?php print $language->language ?>/ingenieria-quimica-industrial" class="atm-menu-inferior"><small><?php print t('Industrial and Chemical Engineering') ?></small></a></li>
+            <li><a href="<?php print $language->language ?>/ingenieria-electronica" class="atm-menu-inferior"><small><?php print t('Electronic Engineering') ?></small></a></li>
+            <li><a href="<?php print $language->language ?>/ingenieria-mecanica" class="atm-menu-inferior"><small><?php print t('Mechanical Engineering') ?></small></a></li>
+            <li><a href="<?php print $language->language ?>/ingenieria-de-la-energia" class="atm-menu-inferior"><small><?php print t('Energy Engineering') ?></small></a></li>
+            <li><a href="<?php print $language->language ?>/ingenieria-industrial" class="atm-menu-inferior"><small><?php print t('Industrial Engineering') ?></small></a></li>
+            <!--<li><a href="/<?php print $language->language ?>/carreras/menciones" class="atm-menu-inferior"><small><?php print t('Mentions') ?></small></a></li>-->  
             <?php endif ?>
           </ul>
         </li>
         <li>
           <ul>
-              <?php if ($language->prefix == 'en'): ?>
+              <?php if ($language->language == 'en'): ?>
             <li class="title text-gray-lighter">Admissions</li>
-            <li><a href="/<?php print $language->prefix ?>/methods-of-admission" class="atm-menu-inferior"><small>Admissions</small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/admissions-talks" class="atm-menu-inferior"><small><?php print t('Informative Talks') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/admissions-calendar" class="atm-menu-inferior"><small><?php print t('Admissions Calendar') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/visit-utec" class="atm-menu-inferior"><small><?php print t('Visit UTEC') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/financial-information" class="atm-menu-inferior"><small><?php print t('Financial Information') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/advising-and-counseling" class="atm-menu-inferior"><small><?php print t('Guidance') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/admissions-faq" class="atm-menu-inferior"><small><?php print t('FAQ') ?></small></a></li>
-              <?php elseif ($language->prefix != 'en'): ?>
+            <li><a href="/<?php print $language->language ?>/methods-of-admission" class="atm-menu-inferior"><small>Admissions</small></a></li>
+            <li><a href="/<?php print $language->language ?>/admissions-talks" class="atm-menu-inferior"><small><?php print t('Informative Talks') ?></small></a></li>
+            <li><a href="/<?php print $language->language ?>/admissions-calendar" class="atm-menu-inferior"><small><?php print t('Admissions Calendar') ?></small></a></li>
+            <li><a href="/<?php print $language->language ?>/visit-utec" class="atm-menu-inferior"><small><?php print t('Visit UTEC') ?></small></a></li>
+            <li><a href="/<?php print $language->language ?>/financial-information" class="atm-menu-inferior"><small><?php print t('Financial Information') ?></small></a></li>
+            <li><a href="/<?php print $language->language ?>/advising-and-counseling" class="atm-menu-inferior"><small><?php print t('Guidance') ?></small></a></li>
+            <li><a href="/<?php print $language->language ?>/admissions-faq" class="atm-menu-inferior"><small><?php print t('FAQ') ?></small></a></li>
+              <?php elseif ($language->language != 'en'): ?>
             <li class="title text-gray-lighter">Admisión</li>
-            <li><a href="<?php print $language->prefix ?>/modalidades-de-admision" class="atm-menu-inferior"><small>Modalidades de Admisión</small></a></li>
-            <li><a href="<?php print $language->prefix ?>/charlas-informativas" class="atm-menu-inferior"><small><?php print t('Informative Talks') ?></small></a></li>
-            <li><a href="<?php print $language->prefix ?>/calendario-de-admision" class="atm-menu-inferior"><small><?php print t('Admissions Calendar') ?></small></a></li>
-            <li><a href="<?php print $language->prefix ?>/visita-utec" class="atm-menu-inferior"><small><?php print t('Visit UTEC') ?></small></a></li>
-            <li><a href="<?php print $language->prefix ?>/informacion-economica" class="atm-menu-inferior"><small><?php print t('Financial Information') ?></small></a></li>
-            <li><a href="<?php print $language->prefix ?>/orientacion-vocacional" class="atm-menu-inferior"><small><?php print t('Guidance') ?></small></a></li>
-            <li><a href="<?php print $language->prefix ?>/preguntas-frecuentes" class="atm-menu-inferior"><small><?php print t('FAQ') ?></small></a></li>
+            <li><a href="<?php print $language->language ?>/modalidades-de-admision" class="atm-menu-inferior"><small>Modalidades de Admisión</small></a></li>
+            <li><a href="<?php print $language->language ?>/charlas-informativas" class="atm-menu-inferior"><small><?php print t('Informative Talks') ?></small></a></li>
+            <li><a href="<?php print $language->language ?>/calendario-de-admision" class="atm-menu-inferior"><small><?php print t('Admissions Calendar') ?></small></a></li>
+            <li><a href="<?php print $language->language ?>/visita-utec" class="atm-menu-inferior"><small><?php print t('Visit UTEC') ?></small></a></li>
+            <li><a href="<?php print $language->language ?>/informacion-economica" class="atm-menu-inferior"><small><?php print t('Financial Information') ?></small></a></li>
+            <li><a href="<?php print $language->language ?>/orientacion-vocacional" class="atm-menu-inferior"><small><?php print t('Guidance') ?></small></a></li>
+            <li><a href="<?php print $language->language ?>/preguntas-frecuentes" class="atm-menu-inferior"><small><?php print t('FAQ') ?></small></a></li>
               <?php endif ?>
           </ul>
         </li>
         <li>
           <ul>
             <li class="title text-gray-lighter"><?php print t('Alliances') ?></li>
-            <?php if ($language->prefix == 'en'): ?>
-            <li><a href="/<?php print $language->prefix ?>/alliances/exchange" class="atm-menu-inferior"><small><?php print t('Alliances') ?></small></a></li>
-            <?php elseif ($language->prefix != 'en'): ?>
-            <li><a href="<?php print $language->prefix ?>/convenios/convenios-de-intercambio" class="atm-menu-inferior"><small><?php print t('Alliances') ?></small></a></li>
+            <?php if ($language->language == 'en'): ?>
+            <li><a href="/<?php print $language->language ?>/alliances/exchange" class="atm-menu-inferior"><small><?php print t('Alliances') ?></small></a></li>
+            <?php elseif ($language->language != 'en'): ?>
+            <li><a href="<?php print $language->language ?>/convenios/convenios-de-intercambio" class="atm-menu-inferior"><small><?php print t('Alliances') ?></small></a></li>
             <?php endif ?>
           </ul>
         </li>  
         <li>
           <ul>
             <li class="title text-gray-lighter"><?php print t('SPD') ?></li>
-            <?php if ($language->prefix == 'en'): ?>
+            <?php if ($language->language == 'en'): ?>
             <!--<li><a href="/edp/cursos/diplomados" class="atm-menu-inferior"><small>Diplomados</small></a></li>
             <li><a href="/edp/cursos/cursos-online" class="atm-menu-inferior"><small>Cursos Online</small></a></li>-->
-            <li><a href="/<?php print $language->prefix ?>/school-of-professional-development/the-school" class="atm-menu-inferior"><small><?php print t('The School') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/school-of-professional-development/short-courses" class="atm-menu-inferior"><small><?php print t('Short Courses') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/school-of-professional-development/calendar" class="atm-menu-inferior"><small><?php print t('Calendar') ?></small></a></li>
+            <li><a href="/<?php print $language->language ?>/school-of-professional-development/the-school" class="atm-menu-inferior"><small><?php print t('The School') ?></small></a></li>
+            <li><a href="/<?php print $language->language ?>/school-of-professional-development/short-courses" class="atm-menu-inferior"><small><?php print t('Short Courses') ?></small></a></li>
+            <li><a href="/<?php print $language->language ?>/school-of-professional-development/calendar" class="atm-menu-inferior"><small><?php print t('Calendar') ?></small></a></li>
             <!--<li><a href="/edp/cursos/cursos-adhoc" class="atm-menu-inferior"><small>Cursos Adoc</small></a></li>
             <li><a href="/convenios" class="atm-menu-inferior"><small>Cursos Adoc</small></a></li>-->
-            <?php elseif ($language->prefix != 'en'): ?>
+            <?php elseif ($language->language != 'en'): ?>
             <!--<li><a href="/edp/cursos/diplomados" class="atm-menu-inferior"><small>Diplomados</small></a></li>
             <li><a href="/edp/cursos/cursos-online" class="atm-menu-inferior"><small>Cursos Online</small></a></li>-->
-            <li><a href="<?php print $language->prefix ?>/edp/la-escuela" class="atm-menu-inferior"><small><?php print t('The School') ?></small></a></li>
-            <li><a href="<?php print $language->prefix ?>/edp/cursos/cursos-cortos" class="atm-menu-inferior"><small><?php print t('Short Courses') ?></small></a></li>
-            <li><a href="<?php print $language->prefix ?>/edp/calendario" class="atm-menu-inferior"><small><?php print t('Calendar') ?></small></a></li>
+            <li><a href="<?php print $language->language ?>/edp/la-escuela" class="atm-menu-inferior"><small><?php print t('The School') ?></small></a></li>
+            <li><a href="<?php print $language->language ?>/edp/cursos/cursos-cortos" class="atm-menu-inferior"><small><?php print t('Short Courses') ?></small></a></li>
+            <li><a href="<?php print $language->language ?>/edp/calendario" class="atm-menu-inferior"><small><?php print t('Calendar') ?></small></a></li>
             <!--<li><a href="/edp/cursos/cursos-adhoc" class="atm-menu-inferior"><small>Cursos Adoc</small></a></li>
             <li><a href="/convenios" class="atm-menu-inferior"><small>Cursos Adoc</small></a></li>-->  
             <?php endif ?>

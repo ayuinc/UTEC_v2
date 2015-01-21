@@ -26,9 +26,9 @@
 
 ?>
 <div class="hero-unit"> <!-- HERO -->
-  <?php if ($language->prefix == 'en'): ?>
+  <?php if ($language->language == 'en'): ?>
     <div data-section-scroll="Overview" id="que-es" class="scroll-down-white section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
-  <?php elseif ($language->prefix != 'en'): ?>
+  <?php elseif ($language->language != 'en'): ?>
     <div data-section-scroll="¿Qué es?" id="que-es" class="scroll-down-white section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
   <?php endif ?>
     <div class="overlay flex-middle">
@@ -156,10 +156,10 @@
 <div id="section-scroll" class="hidden-sm hidden-xs">
   <ul></ul>
   <div class="text-right pv-21 btn-apply animated">
-    <?php if ($language->prefix != 'en'): ?>
-      <a class="btn btn-primary uppercase" href="/<?php print $language->prefix ?>/modalidades-de-admision"><?php print t('Apply') ?></a>
-    <?php elseif ($language->prefix == 'en'): ?>
-      <a class="btn btn-primary uppercase" href="/<?php print $language->prefix ?>/methods-of-admission"><?php print t('Apply') ?></a>
+    <?php if ($language->language != 'en'): ?>
+      <a class="btn btn-primary uppercase" href="/<?php print $language->language ?>/modalidades-de-admision"><?php print t('Apply') ?></a>
+    <?php elseif ($language->language == 'en'): ?>
+      <a class="btn btn-primary uppercase" href="/<?php print $language->language ?>/methods-of-admission"><?php print t('Apply') ?></a>
     <?php endif ?>  
   </div>
 </div>

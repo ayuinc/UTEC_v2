@@ -40,9 +40,9 @@
                   $link_ingles = $field[$num]->field_link_atajo_ingles['und'][0]['value'];     
                 ?>
                 <li>
-                  <?php if ($language->prefix == 'en') : ?>
+                  <?php if ($language->language == 'en') : ?>
                     <a href="<?php print $link_ingles ?>"><?php print $nombre_ingles ?></a>
-                  <?php elseif ($language->prefix == 'es') : ?>
+                  <?php elseif ($language->language == 'es') : ?>
                     <a href='<?php print $link ?>'><?php print $nombre ?></a>
                   <?php endif; ?>
                 </li>
@@ -62,9 +62,9 @@
             $link_ingles = $field[$num]->field_link_atajo_ingles['und'][0]['value'];
           ?>
           <li>
-            <?php if ($language->prefix == 'en') : ?>
+            <?php if ($language->language == 'en') : ?>
               <a href="<?php print $link_ingles ?>"><?php print $nombre_ingles ?></a>
-            <?php elseif ($language->prefix == 'es') : ?>
+            <?php elseif ($language->language == 'es') : ?>
               <a href='<?php print $link ?>'><?php print $nombre ?></a>
             <?php endif; ?>
           </li>

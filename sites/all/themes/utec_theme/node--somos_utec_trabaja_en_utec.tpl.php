@@ -2,7 +2,7 @@
 <?php global $theme_path; ?>
 <?php 
 		global $language; 
-		$idioma = $language->prefix;	
+		$idioma = $language->language;	
 ?>
 
 <?php $path = $base_url.'/'.$theme_path; ?>

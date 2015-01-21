@@ -36,7 +36,7 @@
 </div>
 <h3 class="thin"><?php print $name ?></h3>
 <a href="#" rel="nofollow" class="block"><em><?php if($twitter){print $twitter;} else print $mail;  ?></em></a>
-<?php if ($language->prefix == 'en') : ?>
+<?php if ($language->language == 'en') : ?>
 <p><?php print $descripcion_ingles ?></p>
 <p><?php print $resenia_ingles ?></p>
 
