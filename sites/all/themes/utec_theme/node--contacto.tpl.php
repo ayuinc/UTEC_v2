@@ -12,7 +12,7 @@
 	<?php print $body ?>	
 </div>
 <div class="container-sm form-custom"> 
-	<h3>Contacto general</h3>
+	<h3><?php print t("General Contact") ?></h3>
 	<form action="/registro.php" data-submit="Formulario de inscripcion" method="post" id="formRegistro" name="formRegistro">
 		<input type="hidden" name="origen" value="<?php print $title; ?>">
 		<input type="hidden" name="idioma" value="<?php print $idioma; ?>">		
