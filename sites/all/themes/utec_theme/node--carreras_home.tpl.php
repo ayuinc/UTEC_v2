@@ -33,8 +33,8 @@
   <?php endif ?>
     <div class="overlay flex-middle">
       <div class="container-sm hero-text" data-href="<?php print $carrera_link ?>">
-        <h2 class="thin h3 text-white mb-7"><?php print t('What is') ?>?</h2>
-        <h1 class="thin text-white mt-0"><a href="<?php print $carrera_link ?>"><?php print $titulo ?></a></h1>
+        <h2 class="thin h3 text-white mb-7"><?php print t('What is') ?></h2>
+        <h1 class="thin text-white mt-0"><a href="<?php print $carrera_link ?>"><?php print $titulo ?></a>?</h1>
         <hr class="hr-white">
         <div class="row mt-28">
           <div class="col-sm-3 hidden-xs">
