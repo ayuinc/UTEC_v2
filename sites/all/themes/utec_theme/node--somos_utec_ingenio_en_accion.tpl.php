@@ -24,22 +24,17 @@
 <?php $field_link_proyecto = $node->field_link_proyecto['und']['0']['value']; ?>
 <?php $field_foto_redes_sociales = $node->field_foto_redes_sociales['und']['0']['filename']; ?>
 
-<div class="hero-unit size lg">
-	<div data-section-scroll="Acerca de" class="section-scroll-content scroll-down-info flex-middle-center">
-		<div class="container-sm text-center">
-			<h1 class="mb-7"><?php print $field_frase_autor ?></h1>
-			<p class="mb-0 pb-0"><?php print $field_nombre_autor ?></p>
-			<small class="gray-light light"><em><?php print $field_titulo_del_autor ?></em></small>
-			<div class="pv-35">
-				<p><?php print $field_quote ?></p>
-				<?php print $field_introduccion_autor ?>
-			</div>
+<div data-section-scroll="Acerca de" class="hero-unit size lg section-scroll-content scroll-down-info flex-middle-center">
+	<div class="container-sm text-center">
+		<h1 class="mb-7"><?php print $field_frase_autor ?></h1>
+		<p class="mb-0 pb-0"><?php print $field_nombre_autor ?></p>
+		<small class="gray-light light"><em><?php print $field_titulo_del_autor ?></em></small>
+		<div class="pv-35">
+			<p><?php print $field_quote ?></p>
+			<?php print $field_introduccion_autor ?>
 		</div>
 	</div>
-	<!-- <a class="scroll-down scroll-down-sq size lg" href="#unpanel" rel="nofollow">
-		<i class="icon-arrows-down bg-info-op text-white"></i>
-	</a> -->
-</div> <!-- END:Hero -->
+</div>
 <div data-section-scroll="Un panel" class="section-scroll-content scroll-down-info bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_foto_causa)?>);">
 	<div class="overlay flex-middle">
 		<div class="container hero-text" data-href="<?php print $field_link_causa ?>">
