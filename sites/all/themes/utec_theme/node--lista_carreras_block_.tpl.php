@@ -9,17 +9,19 @@
 				<div data-href="<?php print $ingenieria_industrial_url; ?>">
 					<div><i class="icon-ing-industrial"></i></div>
 					<h2>
-						<a href="<?php print $ingenieria_industrial_url; ?>">
 							<?php if ($language->prefix == 'en'): ?>
+							<a href="/<?php print $language->prefix ?>/industrial-engineering">
 								<span><?php print t('Industrial') ?></span>
 								<span><?php print t('Engineering') ?></span>
 								<span></span>
+							</a>
 							<?php elseif ($language->prefix == 'es'): ?>
+							<a href="/<?php print $language->prefix ?>/ingenieria-industrial">
 								<span><?php print t('Engineering') ?></span>
 								<span><?php print t('Industrial') ?></span>
 								<span></span>
+							</a>
 							<?php endif ?>
-						</a>
 					</h2>
 				</div>
 			</li>
@@ -28,12 +30,14 @@
 				<div data-href="<?php print $ingenieria_de_la_energia_url; ?>">
 					<div><i class="icon-ing-energia"></i></div>
 					<h2>
-						<a href="<?php print $ingenieria_de_la_energia_url; ?>">
 							<?php if ($language->prefix == 'en'): ?>
+						<a href="/<?php print $language->prefix ?>/energy-engineering">
 								<span><?php print t('Energy') ?></span>
 								<span><?php print t('Engineering') ?></span>
 								<span></span>
+						</a>
 							<?php elseif ($language->prefix == 'es'): ?>
+						<a href="/<?php print $language->prefix ?>/ingenieria-de-la-energia">
 								<span><?php print t('Engineering') ?></span>
 								<span><?php print t('Energy') ?></span>
 								<span></span>

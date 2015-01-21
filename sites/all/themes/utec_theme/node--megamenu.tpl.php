@@ -136,7 +136,7 @@
 							<?php if ($language->prefix == 'es'): ?>
 							<a href="/<?php print $language->prefix ?>/respaldo"><?php print t('A Solid Foundation') ?></a>
 							<?php elseif ($language->prefix == 'en'): ?>
-							<a href="/<?php print $language->prefix ?>/governance"><?php print t('A Solid Foundation') ?></a>
+							<a href="/<?php print $language->prefix ?>/a-solid-foundation"><?php print t('A Solid Foundation') ?></a>
 							<?php endif ?>
 						</li>
 						<li>
@@ -332,16 +332,15 @@
 							<?php endif ?>
 						</li>
 						<li>
-							
-								<?php if ($language->prefix == 'es'): ?>
-									<a href="/<?php print $language->prefix ?>/ingenieria-mecanica">
-									<span><?php print t('Engineering') ?></span><?php print t('Mechanical') ?>
-									</a>
-								<?php elseif ($language->prefix == 'en'): ?>
-									<a href="/<?php print $language->prefix ?>/mechanical-engineering">
-									<span><?php print t('Mechanical') ?></span><?php print t('Engineering') ?>
-									</a>
-								<?php endif ?>
+							<?php if ($language->prefix == 'es'): ?>
+								<a href="/<?php print $language->prefix ?>/ingenieria-mecanica">
+								<span><?php print t('Engineering') ?></span><?php print t('Mechanical') ?>
+								</a>
+							<?php elseif ($language->prefix == 'en'): ?>
+								<a href="/<?php print $language->prefix ?>/mechanical-engineering">
+								<span><?php print t('Mechanical') ?></span><?php print t('Engineering') ?>
+								</a>
+							<?php endif ?>
 							</a>
 						</li>
 					</ul>
@@ -649,7 +648,7 @@
 							<?php if ($language->prefix == 'es'): ?>
 							<a href="/<?php print $language->prefix ?>/respaldo"><?php print t('A Solid Foundation') ?></a>
 							<?php elseif ($language->prefix == 'en'): ?>
-							<a href="/<?php print $language->prefix ?>/governance"><?php print t('A Solid Foundation') ?></a>
+							<a href="/<?php print $language->prefix ?>/a-solid-foundation"><?php print t('A Solid Foundation') ?></a>
 							<?php endif ?>
 						</li>
 						<li>

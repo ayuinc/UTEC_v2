@@ -37,7 +37,7 @@
           <ul>
             <?php if ($language->prefix == 'en'): ?>
               <li class="title text-gray-lighter"><?php print t('We are UTEC') ?></li>
-              <li><a href="/<?php print $language->prefix ?>/governance" class="atm-menu-inferior"><small><?php print t('A Solid Foundation') ?></small></a></li>
+              <li><a href="/<?php print $language->prefix ?>/a-solid-foundation" class="atm-menu-inferior"><small><?php print t('A Solid Foundation') ?></small></a></li>
               <li><a href="/<?php print $language->prefix ?>/authorities" class="atm-menu-inferior"><small><?php print t('Authorities') ?></small></a></li>
               <li><a href="/<?php print $language->prefix ?>/faculty" class="atm-menu-inferior"><small><?php print t('Faculty') ?></small></a></li>
               <li><a href="/<?php print $language->prefix ?>/ingenuity-in-action" class="atm-menu-inferior"><small><?php print t('Ingenuity in Action') ?></small></a></li>
