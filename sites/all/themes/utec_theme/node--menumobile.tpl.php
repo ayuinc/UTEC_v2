@@ -17,7 +17,7 @@
       <a href="#mobile-nav-display-5"><?php print t('Alliances') ?></a>
     </li>
     <li>
-      <a href="#mobile-nav-display-6"><?php print t('Executive Education') ?></a>
+      <a href="#mobile-nav-display-6"><?php print t('SPD') ?></a>
     </li>
   </ul>
 </div>
@@ -55,7 +55,7 @@
 		</li>
 		<li>
 			<?php if ($language->prefix == 'es'): ?>
-				<a href="/<?php print $language->prefix ?>/metodologia-educativa"><span><?php print t('Methodology') ?></span><?php print t('Academic') ?></a>
+				<a href="/<?php print $language->prefix ?>/metodologia-educativa"><span>Metodología</span>Educativa</a>
 			<?php elseif ($language->prefix == 'en'): ?>
 				<a href="/<?php print $language->prefix ?>/academic-methodology"><span><?php print t('Academic') ?></span><?php print t('Methodology') ?></a>
 			<?php endif ?>

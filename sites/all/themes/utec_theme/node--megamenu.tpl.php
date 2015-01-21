@@ -6,18 +6,33 @@
 		<div class="container">
 			<div class="left">
 				<ul class=" thin text-gray mr-ch-14 nav-list pt-7">
-					<li>
-						<a href="/<?php print $language->prefix ?>/enlaces-rapidos/alumnos" class="atm-menu-superior"><?php print t('Students') ?></a>
-					</li>
-					<li>
-						<a href="/<?php print $language->prefix ?>/enlaces-rapidos/profesores" class="atm-menu-superior"><?php print t('Faculty') ?></a>
-					</li>
-					<li>
-						<a href="/<?php print $language->prefix ?>/enlaces-rapidos/empresas" class="atm-menu-superior"><?php print t('Companies') ?></a>
-					</li>
-					<li>
-						<a href="/<?php print $language->prefix ?>/enlaces-rapidos/postulantes" class="atm-menu-superior"><?php print t('Applicants') ?></a>
-					</li>
+					<?php if ($language->prefix == 'es'): ?>
+						<li>
+							<a href="/<?php print $language->prefix ?>/enlaces-rapidos/alumnos" class="atm-menu-superior"><?php print t('Students') ?></a>
+						</li>
+						<li>
+							<a href="/<?php print $language->prefix ?>/enlaces-rapidos/profesores" class="atm-menu-superior"><?php print t('Faculty') ?></a>
+						</li>
+						<li>
+							<a href="/<?php print $language->prefix ?>/enlaces-rapidos/empresas" class="atm-menu-superior"><?php print t('Companies') ?></a>
+						</li>
+						<li>
+							<a href="/<?php print $language->prefix ?>/enlaces-rapidos/postulantes" class="atm-menu-superior"><?php print t('Applicants') ?></a>
+						</li>
+					<?php elseif ($language->prefix == 'en'): ?>
+						<li>
+							<a href="/<?php print $language->prefix ?>/quick-links/students" class="atm-menu-superior"><?php print t('Students') ?></a>
+						</li>
+						<li>
+							<a href="/<?php print $language->prefix ?>/quick-links/faculty" class="atm-menu-superior"><?php print t('Faculty') ?></a>
+						</li>
+						<li>
+							<a href="/<?php print $language->prefix ?>/quick-links/companies" class="atm-menu-superior"><?php print t('Companies') ?></a>
+						</li>
+						<li>
+							<a href="/<?php print $language->prefix ?>/quick-links/applicants" class="atm-menu-superior"><?php print t('Applicants') ?></a>
+						</li>
+					<?php endif ?>
 				</ul>
 			</div>
 			<div class="right">
@@ -147,7 +162,7 @@
 						</li>
 						<li>
 							<?php if ($language->prefix == 'es'): ?>
-								<a href="/<?php print $language->prefix ?>/metodologia-educativa"><span><?php print t('Methodology') ?></span><?php print t('Academic') ?></a>
+								<a href="/<?php print $language->prefix ?>/metodologia-educativa"><span>Metodología</span>Educativa</a>
 							<?php elseif ($language->prefix == 'en'): ?>
 								<a href="/<?php print $language->prefix ?>/academic-methodology"><span><?php print t('Academic') ?></span><?php print t('Methodology') ?></a>
 							<?php endif ?>
@@ -172,7 +187,7 @@
 							<?php if ($language->prefix == 'es'): ?>
 								<a href="/<?php print $language->prefix ?>/vida-estudiantil"><span>Vida Estudiantil</a>
 							<?php elseif ($language->prefix == 'en'): ?>
-								<a href="/<?php print $language->prefix ?>/student-life"><span>UTEC Life</span></a>
+								<a href="/<?php print $language->prefix ?>/utec-life"><span>UTEC Life</span></a>
 							<?php endif ?>
 						</li>
 						<li>
@@ -660,7 +675,7 @@
 						</li>
 						<li>
 							<?php if ($language->prefix == 'es'): ?>
-								<a href="/<?php print $language->prefix ?>/metodologia-educativa"><span><?php print t('Methodology') ?></span><?php print t('Academic') ?></a>
+								<a href="/<?php print $language->prefix ?>/metodologia-educativa"><span>Metodología</span>Educativa</a>
 							<?php elseif ($language->prefix == 'en'): ?>
 								<a href="/<?php print $language->prefix ?>/academic-methodology"><span><?php print t('Academic') ?></span><?php print t('Methodology') ?></a>
 							<?php endif ?>
@@ -685,7 +700,7 @@
 							<?php if ($language->prefix == 'es'): ?>
 								<a href="/<?php print $language->prefix ?>/vida-estudiantil"><span>Vida Estudiantil</a>
 							<?php elseif ($language->prefix == 'en'): ?>
-								<a href="/<?php print $language->prefix ?>/student-life"><span>UTEC Life</span></a>
+								<a href="/<?php print $language->prefix ?>/utec-life"><span>UTEC Life</span></a>
 							<?php endif ?>
 						</li>
 						<li>

@@ -54,9 +54,9 @@
     </div>
   </div>
 </div> <!-- END:Hero -->
-<div data-section-scroll="<?php print t('Curriculum Structure') ?>" id="malla-curricular" class="scroll-down-info malla-curricular section-scroll-content minh-560 flex-middle-center">
+<div data-section-scroll="<?php print t('Curricular Structure') ?>" id="malla-curricular" class="scroll-down-info malla-curricular section-scroll-content minh-560 flex-middle-center">
   <div class="container-sm text-right normalize-text" data-href="<?php print $malla_link ?>">
-    <h2 class="lead thin h1"><?php print t('Curriculum Structure') ?></h2>
+    <h2 class="lead thin h1"><?php print t('Curricular Structure') ?></h2>
     <hr class="hr-gray">
     <div class="row mt-28">
       <div class="col-sm-9">
@@ -75,9 +75,9 @@
     <i class="icon-arrows-down bg-info text-white"></i>
   </a> -->
 </div>
-<div data-section-scroll="<?php print t('Majors') ?>" id="menciones" class="scroll-down-info section-scroll-content minh-560 flex-middle-center bg-info-op">
+<div data-section-scroll="<?php print t('Minors') ?>" id="menciones" class="scroll-down-info section-scroll-content minh-560 flex-middle-center bg-info-op">
   <div class="container-sm text-left text-white normalize-text" data-href="<?php print $menciones_link ?>">
-    <h2 class="lead thin h1"><?php print t('Majors') ?></h2>
+    <h2 class="lead thin h1"><?php print t('Minors') ?></h2>
     <hr class="hr-white">
     <div class="row mt-28">
       <div class="col-sm-3 hidden-xs">
@@ -156,6 +156,10 @@
 <div id="section-scroll" class="hidden-sm hidden-xs">
   <ul></ul>
   <div class="text-right pv-21 btn-apply animated">
-    <a href="#" class="btn btn-primary uppercase"><?php print t('Apply') ?></a>
+    <?php if ($language->prefix == 'es'): ?>
+      <a class="btn btn-primary uppercase" href="/<?php print $language->prefix ?>/modalidades-de-admision"><?php print t('Apply') ?></a>
+    <?php elseif ($language->prefix == 'en'): ?>
+      <a class="btn btn-primary uppercase" href="/<?php print $language->prefix ?>/methods-of-admission"><?php print t('Apply') ?></a>
+    <?php endif ?>  
   </div>
 </div>

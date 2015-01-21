@@ -103,8 +103,8 @@ textarea {
 .form-custom {
 	label {
 		@include light;
-		text-transform: uppercase;
+		// text-transform: uppercase;
 		color: $gray;
-		font-size: $font-size-h3;
+		font-size: $font-size-h4;
 	}
 }
