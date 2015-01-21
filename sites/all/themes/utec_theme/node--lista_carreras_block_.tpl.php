@@ -53,7 +53,7 @@
 			<li>
 				<div>
 					<?php if ($language->prefix == 'en'): ?>
-					<div><a href="/<?php print $language->prefix ?>/ingenieria-quimica-industrial"><i class="icon-ing-quimica"></i></a></div>
+					<div><a href="/<?php print $language->prefix ?>/industrial-chemical-engineering"><i class="icon-ing-quimica"></i></a></div>
 					<h2>
 						<a href="/<?php print $language->prefix ?>/ingenieria-quimica-industrial">
 							<span><?php print t('Industrial') ?></span>
@@ -62,7 +62,7 @@
 						</a>
 					</h2>			
 					<?php elseif ($language->prefix == 'es'): ?>
-					<div><a href="/<?php print $language->prefix ?>/industrial-chemical-engineering"><i class="icon-ing-quimica"></i></a></div>
+					<div><a href="/<?php print $language->prefix ?>/ingenieria-quimica-industrial"><i class="icon-ing-quimica"></i></a></div>
 					<h2>
 						<a href="/<?php print $language->prefix ?>/industrial-chemical-engineering">
 							<span><?php print t('Engineering') ?></span>
@@ -79,8 +79,8 @@
 					<div><a href="/<?php print $language->prefix ?>/electronic-engineering"><i class="icon-ing-electronica"></i></a></div>
 					<h2>
 						<a href="/<?php print $language->prefix ?>/electronic-engineering">
-							<span><?php print t('Electronic') ?></span>
-							<span><?php print t('Engineering') ?></span>
+							<span>Electronic</span>
+							<span>Engineering</span>
 							<span></span>
 						</a>
 					</h2>			
@@ -88,8 +88,8 @@
 					<div><a href="/<?php print $language->prefix ?>/ingenieria-electronica"><i class="icon-ing-electronica"></i></a></div>
 					<h2>	
 						<a href="/<?php print $language->prefix ?>/ingenieria-electronica">		
-							<span><?php print t('Engineering') ?></span>
-							<span><?php print t('Electronic') ?></span>
+							<span>Ingeniería</span>
+							<span>Electrónica</span>
 							<span></span>
 						</a>		
 					</h2>			
