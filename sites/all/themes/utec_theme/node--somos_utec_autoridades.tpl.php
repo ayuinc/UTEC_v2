@@ -26,6 +26,8 @@
   	    $name_url = str_replace(array('Ó','Ò','Ô','Õ','Ö'),"o",$name_url);
   	    $name_url = str_replace(array('ú','ù','û','ü'),"u",$name_url);
   	    $name_url = str_replace(array('Ú','Ù','Û','Ü'),"u",$name_url);
+  	    $name_url = str_replace("ñ","n",$name_url);
+   		$name_url = str_replace("Ñ","N",$name_url);
   	    $name_url = strtolower ($name_url);
 
       ?>
