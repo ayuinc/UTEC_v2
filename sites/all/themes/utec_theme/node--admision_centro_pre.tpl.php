@@ -51,7 +51,7 @@ $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 	    </div>
 	  </div>
 	</div> <!-- END:Hero -->
-	<div data-section-scroll="Cursos" class="section-scroll-content pb-0">
+	<div data-section-scroll="<?php print t('Courses') ?>" class="section-scroll-content pb-0">
 		<div class="container-sm">
 			<h3 class="lead thin text-center"><?php print $field_que_es_intro_cp ?></h3>
 		</div>
@@ -62,56 +62,56 @@ $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 					<li>
 						<div>
 							<h3 class="lead"><?php print t('Spatial Intelligence') ?></h3>
-							<p><?php print t('Develop skills in Spatial Intelligence, Visualization and Perception.') ?></p>
+							<p><?php print t('Understanding of physical phenomena and applying fundamentals to the real world laws.') ?></p>
 						</div>
 					</li>
 					<li>
 						<div>
 							<h3 class="lead"><?php print t('Physical World') ?></h3>
-							<p><?php print t('Develop skills in Spatial Intelligence, Visualization and Perception.') ?></p>
+							<p><?php print t('Interpret chemical phenomena in the world around us, and understand how they affect our quality of life.') ?></p>
 						</div>
 					</li>
 					<li>
 						<div>
 							<h3 class="lead"><?php print t('Universe and Materials') ?></h3>
-							<p><?php print t('Develop skills in Spatial Intelligence, Visualization and Perception.') ?></p>
+							<p><?php print t('To interpret chemical phenomena in the world around us, and understand how they affect our quality of life.') ?></p>
 						</div>
 					</li>
 					<li>
 						<div>
 							<h3 class="lead"><?php print t('Mathematics') ?></h3>
-							<p><?php print t('Develop skills in Spatial Intelligence, Visualization and Perception.') ?></p>
+							<p><?php print t('It identifies and applies the concepts, principles and mathematical laws to solve real world problems.') ?></p>
 						</div>
 					</li>
 					<li>
 						<div>
 							<h3 class="lead"><?php print t('Tech Project') ?></h3>
-							<p><?php print t('Develop skills in Spatial Intelligence, Visualization and Perception.') ?></p>
+							<p><?php print t('Students will live experiences where acquire the knowledge, practice and develop the skills necessary for carrying out project activities aptitudes. The sections are divided into two groups for technology experiences.') ?></p>
 						</div>
 					</li>
 					<li>
 						<div>
 							<h3 class="lead"><?php print t('Creative Language') ?></h3>
-							<p><?php print t('Develop skills in Spatial Intelligence, Visualization and Perception.') ?></p>
+							<p><?php print t('Develops basic language and communication skills in the areas of speaking and writing, to understand and develop short, consistent, correct texts, copies and appropriate.') ?></p>
 						</div>
 					</li>
 					<li>
 						<div>
 							<h3 class="lead"><?php print t('Talent Orientation') ?></h3>
-							<p><?php print t('Develop skills in Spatial Intelligence, Visualization and Perception.') ?></p>
+							<p><?php print t('You are able to discover and develop talent for achieving personal goals defined in a plan of life. Study methods practiced to improve learning ability.') ?></p>
 						</div>
 					</li>
 					<li>
 						<div>
 							<h3 class="lead"><?php print t('English') ?></h3>
-							<p><?php print t('Develop skills in Spatial Intelligence, Visualization and Perception.') ?></p>
+							<p><?php print t('The English Language is necessary for learning in engineering careers and personal and professional development. In the first week a review of initial evaluation will be conducted according to the results study groups were formed.') ?></p>
 						</div>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</div>
-	<div data-section-scroll="Calendario" class="section-scroll-content pt-0">
+	<div data-section-scroll="<?php print t('Calendar') ?>" class="section-scroll-content pt-0">
 		<div class="container-sm">
 			<h3 class="thin lead"><?php print t('Calendar') ?></h3>
 			<h4 class="text-gray"><?php print t('Pre intensiva January - February 2015') ?></h4>
@@ -165,7 +165,7 @@ $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 		</div>
 		<a href="#" class="btn btn-lg btn-primary see-more uppercase ml-70 mr-70">Ver Requisitos</a>
 	</div>-->
-	<div data-section-scroll="Solicita informacion" class="container-sm section-scroll-content pt-0">
+	<div data-section-scroll="<?php print t('Request info') ?>" class="container-sm section-scroll-content pt-0">
 		<div class="container-sm">
 			<h3><?php print t("For more information:") ?></h3>
 			<form action="/registro.php" data-submit="Formulario de inscripcion" method="post" id="formRegistro" name="formRegistro">
@@ -267,7 +267,11 @@ jQuery(function() {
 <div id="section-scroll" class="hidden-sm hidden-xs">
   <ul></ul>
   <div class="text-right pv-21 btn-apply animated">
-    <a href="#" class="btn btn-primary uppercase"><?php print t('Apply') ?></a>
+		<?php if ($language->prefix == 'es'): ?>
+			<a href="/<?php print $language->prefix ?>/modalidades-de-admision/alto-rendimiento/formulario-de-inscripcion" class="btn btn-primary uppercase"><?php print t('Apply') ?></a>								
+		<?php elseif ($language->prefix == 'en'): ?>
+			<a href="/<?php print $language->prefix ?>/formulario/high-performance-assessment-aplication-form" class="btn btn-primary uppercase"><?php print t('Apply') ?></a>		
+		<?php endif ?>	  
   </div>
 </div>
 
