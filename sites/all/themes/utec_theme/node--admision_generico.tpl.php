@@ -30,7 +30,7 @@
 
 <?php if (($end!='charlas-informativas') AND ($end!='informacion-economica') AND ($end!='orientacion-vocacional') AND ($end!='visita-utec') AND ($end!='eventos-utec') AND ($end!='events')) { ?>
 <div class="container-sm form-custom mt-35"> 
-	<h3><?php print t("For more informaction:") ?></h3>
+	<h3><?php print t("For more information:") ?></h3>
 	<form action="/registro.php" data-submit="Formulario de inscripcion" method="post">
 		<input type="hidden" name="origen" value="<?php print $title ?>">
 		<div class="row">
