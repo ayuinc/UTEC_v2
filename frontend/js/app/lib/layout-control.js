@@ -15,6 +15,8 @@
       $('.site-wrapper').toggleClass('menu-on');
       $('body').toggleClass('scroll-y-off');
     });
+    $('#edit-submit.form-submit').addClass('atm-buscar');
+    $('.language-link').addClass('atm-idiomas');
   });
 
 }).call(this);
