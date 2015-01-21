@@ -38,7 +38,7 @@ $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 	<div class="hero-unit"> <!-- HERO -->
 	  <?php if ($language->language == 'en'): ?>
 	  <div data-section-scroll="Overview" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_fotos_centro_pre)?>);">
-	  <?php elseif ($language->language == 'es'): ?>
+	  <?php elseif ($language->language  != 'en'): ?>
 	  <div data-section-scroll="Acerca de" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_fotos_centro_pre)?>);">
 	  <?php endif ?>
 	    <div class="overlay flex-middle">
@@ -279,7 +279,7 @@ jQuery(function() {
 <div id="section-scroll" class="hidden-sm hidden-xs">
   <ul></ul>
   <div class="text-right pv-21 btn-apply animated">
-		<?php if ($language->language == 'es'): ?>
+		<?php if ($language->language  != 'en'): ?>
 			<a href="/<?php print $language->language ?>/modalidades-de-admision/alto-rendimiento/formulario-de-inscripcion" class="btn btn-primary uppercase"><?php print t('Apply') ?></a>								
 		<?php elseif ($language->language == 'en'): ?>
 			<a href="/<?php print $language->language ?>/formulario/high-performance-assessment-aplication-form" class="btn btn-primary uppercase"><?php print t('Apply') ?></a>		
