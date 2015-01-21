@@ -54,6 +54,8 @@ $carreras = array(
     '00000' => 'N/S', 
 );
 
+$origen = utf8_decode($_POST['origen']);
+$idioma = utf8_decode($_POST['idioma']);
 
 //Inicio del proceso de envío de correos
 $mail = new PHPMailer();
@@ -61,6 +63,10 @@ $destinatarios = array(
 'ebardales@utec.edu.pe' => 'Ebert Alexander Bardales Castro',
 'ntubbeh@utec.edu.pe'  => 'Nader Tubbeh',
 'apacheco@utec.edu.pe'  => 'Angel Pacheco Masías',
+/*
+if($origen == "Trabaja en UTEC")
+{ 'rrhh@utec.edu.pe' => 'RRHH UTEC', }
+*/
 );
 
 $tituloTelemarketing = "";
@@ -77,9 +83,6 @@ $mensaje_html = "";
 $contenidorpta = "";
 
 //Definicón de subject, destinatario, título
-
-$origen = utf8_decode($_POST['origen']);
-$idioma = utf8_decode($_POST['idioma']);
 
 //BLOQUE ESPAÑOL
 
