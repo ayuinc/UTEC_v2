@@ -96,11 +96,11 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-12">
-				<label for="" class="block">Date of Birth</label>
+				<label for="" class="block"><?php print t('Date of Birth') ?></label>
 			</div>
 			<div class="form-group col-sm-4">
 				<select name="dia" id="dia" class="form-control select-override">
-					<option value="">Day</option>
+					<option value=""><?php print t('Day') ?></option>
 					<?php for ($x = 1; $x <= 31; $x++) { ?>
     					<?php echo "<option value='$x'>$x</option>";?> 
 					<?php } ?>
@@ -108,16 +108,24 @@
 			</div>
 			<div class="form-group col-sm-4">
 				<select name="mes" id="mes" class="form-control select-override">
-					<option value="">Month</option>
-					<option value="January">January</option> <option value="February">February</option> <option value="March">March</option>
-					<option value="April">April</option> <option value="May">May</option> <option value="June">June</option>
-					<option value="July">July</option> <option value="August">August</option> <option value="September">September</option>
-					<option value="October">October</option> <option value="November">November</option> <option value="December">December</option>
+					<option value=""><?php print t('Month') ?></option>
+					<option value="<?php print t('January') ?>"><?php print t('January') ?></option>
+					<option value="<?php print t('February') ?>"><?php print t('February') ?></option>
+					<option value="<?php print t('March') ?>"><?php print t('March') ?></option>
+					<option value="<?php print t('April') ?>"><?php print t('April') ?></option>
+					<option value="<?php print t('May') ?>"><?php print t('May') ?></option>
+					<option value="<?php print t('June') ?>"><?php print t('June') ?></option>
+					<option value="<?php print t('July') ?>"><?php print t('July') ?></option>
+					<option value="<?php print t('August') ?>"><?php print t('August') ?></option>
+					<option value="<?php print t('September') ?>"><?php print t('September') ?></option>
+					<option value="<?php print t('October') ?>"><?php print t('October') ?></option>
+					<option value="<?php print t('November') ?>"><?php print t('November') ?></option>
+					<option value="<?php print t('December') ?>"><?php print t('December') ?></option>
 				</select>
 			</div>
 			<div class="form-group col-sm-4">
 				<select name="ano" id="ano" class="form-control select-override">
-					<option value="">Year</option>
+					<option value=""><?php print t('Year') ?></option>
 					<?php for ($x = 1970; $x <= 2015; $x++) { ?>
     					<?php echo "<option value='$x'>$x</option>";?> 
 					<?php } ?>
@@ -126,11 +134,11 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-12">
-				<label for="" class="block">Address</label>
+				<label for="" class="block"><?php print t('Address') ?></label>
 			</div>
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">Region</label>
-				<input  id="depto" name="depto" type="text" class="form-control" placeholder="Region">
+				<label for="" class="sr-only"><?php print t('Region') ?></label>
+				<input  id="depto" name="depto" type="text" class="form-control" placeholder="<?php print t('Region') ?>">
 				<!--
 				<select name="depto" id="depto" class="form-control select-override">
 					<option value="Dpto">Dpto</option>
@@ -138,8 +146,8 @@
 				-->
 			</div>
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">Province</label>
-				<input  id="provincia" name="provincia" type="text" class="form-control" placeholder="Province">
+				<label for="" class="sr-only"><?php print t('Province') ?></label>
+				<input  id="provincia" name="provincia" type="text" class="form-control" placeholder="<?php print t('Province') ?>">
 				<!--
 				<select name="provincia" id="provincia" class="form-control select-override">
 					<option value="Provincia">Provincia</option>
@@ -147,8 +155,8 @@
 				-->
 			</div>
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">District</label>
-				<input  id="distrito" name="distrito" type="text" class="form-control" placeholder="District">
+				<label for="" class="sr-only"><?php print t('District') ?></label>
+				<input  id="distrito" name="distrito" type="text" class="form-control" placeholder="<?php print t('District') ?>">
 				<!--
 				<select name="distrito" id="distrito" class="form-control select-override">
 					<option value="Distrito">Distrito</option>
@@ -156,8 +164,8 @@
 				-->
 			</div>
 			<div class="col-sm-12 form-group">
-				<label for="" class="sr-only">Address</label>
-				<input  id="direccion-actual" name="direccion-actual" type="text" class="form-control" placeholder="Insert your address">
+				<label for="" class="sr-only"><?php print t('Address') ?></label>
+				<input  id="direccion-actual" name="direccion-actual" type="text" class="form-control" placeholder="<?php print t('Address') ?>">
 			</div>
 			<div class="col-sm-7 form-group">
 				<input  id="email" name="email" type="email" class="form-control" placeholder="e-mail">
@@ -165,27 +173,27 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-12">
-				<label for="" class="block">Phone</label>
+				<label for="" class="block"><?php print t('Phone') ?></label>
 			</div>
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">Cell 1</label>
-				<input  id="celular-1" name="celular-1" type="text" class="form-control" placeholder="Cell 1">
+				<label for="" class="sr-only"><?php print t('Cell Phone 1') ?></label>
+				<input  id="celular-1" name="celular-1" type="text" class="form-control" placeholder="<?php print t('Cell Phone 1') ?>">
 			</div>
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">Cell 2</label>
-				<input  id="celular-2" name="celular-2" type="text" class="form-control" placeholder="Cell 2">
+				<label for="" class="sr-only"><?php print t('Cell Phone 2') ?></label>
+				<input  id="celular-2" name="celular-2" type="text" class="form-control" placeholder="<?php print t('Cell Phone 2') ?>">
 			</div>
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">Teléfono fijo</label>
-				<input  id="telefono-fijo" name="telefono" type="text" class="form-control" placeholder="Fix phone">
+				<label for="" class="sr-only"><?php print t('Fix phone') ?></label>
+				<input  id="telefono-fijo" name="telefono" type="text" class="form-control" placeholder="<?php print t('Fix phone') ?>">
 			</div>
 		</div>
-		<h3 class="light">Studies</h3>
+		<h3 class="light"><?php print t('Studies') ?></h3>
 		<div class="row">
-			<div class="col-sm-12"><label for="">High school graduation year</label></div>
+			<div class="col-sm-12"><label for=""><?php print t('High school graduation year') ?></label></div>
 			<div class="col-sm-3 form-group">
 				<select name="ano-culminacion" id="ano-culminacion" class="form-control select-override">
-					<option value="">year</option>
+					<option value=""><?php print t('year') ?></option>
 					<?php for ($x = 1970; $x <= 2015; $x++) { ?>
     					<?php echo "<option value='$x'>$x</option>";?> 
 					<?php } ?>
