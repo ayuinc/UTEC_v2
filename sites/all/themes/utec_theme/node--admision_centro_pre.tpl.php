@@ -280,9 +280,9 @@ jQuery(function() {
   <ul></ul>
   <div class="text-right pv-21 btn-apply animated">
 		<?php if ($language->language  != 'en'): ?>
-			<a href="/<?php print $language->language ?>/modalidades-de-admision/alto-rendimiento/formulario-de-inscripcion" class="btn btn-primary uppercase"><?php print t('Apply') ?></a>								
+			<a href="/<?php print $language->language ?>/modalidades-de-admision/centro-pre/formulario-de-inscripcion" class="btn btn-primary uppercase"><?php print t('Apply') ?></a>								
 		<?php elseif ($language->language == 'en'): ?>
-			<a href="/<?php print $language->language ?>/formulario/high-performance-assessment-aplication-form" class="btn btn-primary uppercase"><?php print t('Apply') ?></a>		
+			<a href="/<?php print $language->language ?>/formulario/pre-university-study-center-application-form" class="btn btn-primary uppercase"><?php print t('Apply') ?></a>		
 		<?php endif ?>	  
   </div>
 </div>
