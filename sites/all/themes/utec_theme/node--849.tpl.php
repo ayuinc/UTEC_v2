@@ -38,7 +38,7 @@
 				<input  id="apellidom" name="apellidom" type="text" class="form-control" placeholder="Apellido materno">
 			</div>
 		</div>
-		<div class="text-gray h3 thin">
+		<div class="text-gray h4 thin">
 			<label for="">Género:</label>
 			<input  id="femenino" type="radio" checked name="genero" value="F"> Femenino
 			<input  id="masculino" type="radio" name="genero" value="M"> Masculino
@@ -234,7 +234,7 @@
 	                <option value="Otro">Otro</option>
 				</select>
 			</div>
-			<div class="col-sm-12 form-group text-gray h3 thin">
+			<div class="col-sm-12 form-group text-gray h4 thin">
 				<label for="">Es o ha sido estudiante de esta universidad:</label>
 				<input  id="estudiante-si" type="radio" checked name="estudiante" value="S"> Sí
 				<input  id="estudiante-no" type="radio" name="estudiante" value ="N"> No
