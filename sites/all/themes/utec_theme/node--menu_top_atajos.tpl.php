@@ -36,6 +36,7 @@
                   $field = entity_load('field_collection_item', array($fid['value']));
                   $nombre = $field[$num]->field_nombre['und'][0]['value'];
                   $link = $field[$num]->field_link_atajo['und'][0]['value'];
+                  $link_ingles = $field[$num]->field_link_atajo_ingles['und'][0]['value'];     
                 ?>
                 <li>
                   <?php if ($language->prefix == 'en') : ?>
