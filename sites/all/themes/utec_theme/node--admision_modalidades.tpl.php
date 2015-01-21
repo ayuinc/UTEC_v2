@@ -14,9 +14,9 @@ $titulo = $node->title;
 	<div class="separator-gray separator-lg"></div>
 	<ul class="grid-list grid-list-3 grid-list-1-xs grid-list-hover size sm">
 		<?php if ($language->prefix == 'es'): ?>
-		<li data-href="<?php print $language->prefix ?>/modalidades-de-admision/primeros-puestos">
+		<li data-href="/<?php print $language->prefix ?>/modalidades-de-admision/primeros-puestos">
 		<?php elseif ($language->prefix == 'en'): ?>
-		<li data-href="<?php print $language->prefix ?>/methods-of-admission/top-academic-rankings">
+		<li data-href="/en/methods-of-admission/top-academic-rankings">
 		<?php endif ?>
 			<div>
 				<h3 class="thin lead lh-lg"><?php print t('Top Academic Rankings') ?></h3>
@@ -26,9 +26,9 @@ $titulo = $node->title;
 			</div>
 		</li>
 		<?php if ($language->prefix == 'es'): ?>
-		<li data-href="<?php print $language->prefix ?>/modalidades-de-admision/alto-rendimiento">
+		<li data-href="/<?php print $language->prefix ?>/modalidades-de-admision/alto-rendimiento">
 		<?php elseif ($language->prefix == 'en'): ?>
-		<li data-href="<?php print $language->prefix ?>/methods-of-admission/high-performance-assessment">
+		<li data-href="/en/methods-of-admission/high-performance-assessment">
 		<?php endif ?>		
 			<div>
 				<h3 class="thin lead lh-lg"><?php print t('High Performance Assessment') ?></h3>
@@ -38,9 +38,9 @@ $titulo = $node->title;
 			</div>
 		</li>
 		<?php if ($language->prefix == 'es'): ?>
-		<li data-href="<?php print $language->prefix ?>/modalidades-de-admision/traslados">
+		<li data-href="/<?php print $language->prefix ?>/modalidades-de-admision/traslados">
 		<?php elseif ($language->prefix == 'en'): ?>
-		<li data-href="<?php print $language->prefix ?>/methods-of-admission/transfer-from-other-universities">
+		<li data-href="/en/methods-of-admission/transfer-from-other-universities">
 		<?php endif ?>				
 			<div>
 				<h3 class="thin lead lh-lg"><?php print t('Transfer') ?></h3>
@@ -50,9 +50,9 @@ $titulo = $node->title;
 			</div>
 		</li>
 		<?php if ($language->prefix == 'es'): ?>
-		<li data-href="<?php print $language->prefix ?>/modalidades-de-admision/centro-pre">
+		<li data-href="/<?php print $language->prefix ?>/modalidades-de-admision/centro-pre">
 		<?php elseif ($language->prefix == 'en'): ?>
-		<li data-href="<?php print $language->prefix ?>/methods-of-admission/pre-university-center">
+		<li data-href="/en/methods-of-admission/pre-university-center">
 		<?php endif ?>			
 			<div>
 				<h3 class="thin lead lh-lg"><?php print t('Pre University Center') ?></h3>
@@ -62,9 +62,9 @@ $titulo = $node->title;
 			</div>
 		</li>
 		<?php if ($language->prefix == 'es'): ?>
-		<li data-href="<?php print $language->prefix ?>/modalidades-de-admision/bachillerato-internacional">
+		<li data-href="/<?php print $language->prefix ?>/modalidades-de-admision/bachillerato-internacional">
 		<?php elseif ($language->prefix == 'en'): ?>
-		<li data-href="<?php print $language->prefix ?>/methods-of-admission/international-baccalaureate">
+		<li data-href="/en/methods-of-admission/international-baccalaureate">
 		<?php endif ?>		
 			<div>
 				<h3 class="thin lead lh-lg"><?php print t('International Baccalaureate') ?></h3>
@@ -74,9 +74,9 @@ $titulo = $node->title;
 			</div>
 		</li>
 		<?php if ($language->prefix == 'es'): ?>
-		<li data-href="<?php print $language->prefix ?>/modalidades-de-admision/examen-de-admision">
+		<li data-href="/<?php print $language->prefix ?>/modalidades-de-admision/examen-de-admision">
 		<?php elseif ($language->prefix == 'en'): ?>
-		<li data-href="<?php print $language->prefix ?>/methods-of-admission/admission-exam">
+		<li data-href="/en/methods-of-admission/admission-exam">
 		<?php endif ?>			
 			<div>
 				<h3 class="thin lead lh-lg"><?php print t('Admission Exam') ?></h3>
