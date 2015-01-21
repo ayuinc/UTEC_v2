@@ -8,7 +8,7 @@
  */
 ?>
 <div class="container-sm">
-	<h1 class="light">Menciones</h1>
+	<h1 class="light"><?php print t('Majors') ?></h1>
 	<div class="separator-gray separator-sm"></div>
 	<h3></h3>
 	<div class="pv-ch-42">
@@ -16,8 +16,8 @@
 			<table class="table">
 				<thead>
 					<tr>
-						<td>Mención</td>
-						<td>Electivo</td>
+						<td><?php print t('Major') ?></td>
+						<td><?php print t('Elective') ?></td>
 					</tr>
 				</thead>
 				<tbody>

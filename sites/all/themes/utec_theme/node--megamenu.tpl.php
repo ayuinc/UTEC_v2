@@ -1,33 +1,38 @@
 <?php global $language ?>
 <?php $theme_path = drupal_get_path('theme', 'utec_theme'); ?>
 
-<!-- Google Tag Manager -->
-  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MHF4TM"
-  height="0" width="0" style="display:none;visibility:hidden;"></iframe></noscript>
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  '//www.googletagmanager.com/gtm.js?id='+i+dl+'&nc='+new Date().getTime();f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-MHF4TM');</script>
-<!-- End Google Tag Manager -->
-
 <div id="header" class="hidden-xs hidden-sm"> <!-- HEADER -->
 	<div class="tool-bar bg-gray-lighter pt-sm pb-sm">
 		<div class="container">
 			<div class="left">
 				<ul class=" thin text-gray mr-ch-14 nav-list pt-7">
-					<li>
-						<a href="/<?php print $language->prefix ?>/enlaces-rapidos/alumnos" class="atm-menu-superior"><?php print t('Students') ?></a>
-					</li>
-					<li>
-						<a href="/<?php print $language->prefix ?>/enlaces-rapidos/profesores" class="atm-menu-superior"><?php print t('Faculty') ?></a>
-					</li>
-					<li>
-						<a href="/<?php print $language->prefix ?>/enlaces-rapidos/empresas" class="atm-menu-superior"><?php print t('Companies') ?></a>
-					</li>
-					<li>
-						<a href="/<?php print $language->prefix ?>/enlaces-rapidos/postulantes" class="atm-menu-superior"><?php print t('Applicants') ?></a>
-					</li>
+					<?php if ($language->prefix == 'es'): ?>
+						<li>
+							<a href="/<?php print $language->prefix ?>/enlaces-rapidos/alumnos" class="atm-menu-superior"><?php print t('Students') ?></a>
+						</li>
+						<li>
+							<a href="/<?php print $language->prefix ?>/enlaces-rapidos/profesores" class="atm-menu-superior"><?php print t('Faculty') ?></a>
+						</li>
+						<li>
+							<a href="/<?php print $language->prefix ?>/enlaces-rapidos/empresas" class="atm-menu-superior"><?php print t('Companies') ?></a>
+						</li>
+						<li>
+							<a href="/<?php print $language->prefix ?>/enlaces-rapidos/postulantes" class="atm-menu-superior"><?php print t('Applicants') ?></a>
+						</li>
+					<?php elseif ($language->prefix == 'en'): ?>
+						<li>
+							<a href="/<?php print $language->prefix ?>/quick-links/students" class="atm-menu-superior"><?php print t('Students') ?></a>
+						</li>
+						<li>
+							<a href="/<?php print $language->prefix ?>/quick-links/faculty" class="atm-menu-superior"><?php print t('Faculty') ?></a>
+						</li>
+						<li>
+							<a href="/<?php print $language->prefix ?>/quick-links/companies" class="atm-menu-superior"><?php print t('Companies') ?></a>
+						</li>
+						<li>
+							<a href="/<?php print $language->prefix ?>/quick-links/applicants" class="atm-menu-superior"><?php print t('Applicants') ?></a>
+						</li>
+					<?php endif ?>
 				</ul>
 			</div>
 			<div class="right">
@@ -157,7 +162,7 @@
 						</li>
 						<li>
 							<?php if ($language->prefix == 'es'): ?>
-								<a href="/<?php print $language->prefix ?>/metodologia-educativa"><span><?php print t('Methodology') ?></span><?php print t('Academic') ?></a>
+								<a href="/<?php print $language->prefix ?>/metodologia-educativa"><span>Metodología</span>Educativa</a>
 							<?php elseif ($language->prefix == 'en'): ?>
 								<a href="/<?php print $language->prefix ?>/academic-methodology"><span><?php print t('Academic') ?></span><?php print t('Methodology') ?></a>
 							<?php endif ?>
@@ -670,7 +675,7 @@
 						</li>
 						<li>
 							<?php if ($language->prefix == 'es'): ?>
-								<a href="/<?php print $language->prefix ?>/metodologia-educativa"><span><?php print t('Methodology') ?></span><?php print t('Academic') ?></a>
+								<a href="/<?php print $language->prefix ?>/metodologia-educativa"><span>Metodología</span>Educativa</a>
 							<?php elseif ($language->prefix == 'en'): ?>
 								<a href="/<?php print $language->prefix ?>/academic-methodology"><span><?php print t('Academic') ?></span><?php print t('Methodology') ?></a>
 							<?php endif ?>

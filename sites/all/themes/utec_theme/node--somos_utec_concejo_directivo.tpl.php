@@ -1,5 +1,6 @@
 <?php global $base_url; ?>
 <?php global $theme_path; ?>
+<?php global $language; ?>
 <?php $path = $base_url.'/'.$theme_path; ?>
 <?php $pathfile= variable_get('file_public_path', conf_path() . '/files/'); ?>
 <?php $title = $node->title; ?>  
@@ -14,12 +15,13 @@
     <?php $name = $value['entity']->name; ?>   
 		<?php $pic = $value['entity']->picture->filename; ?>
     <?php $desc = $value['entity']->field_descripci_n['und'][0]['value']; ?>		
-    <?php $uid = $value['entity']->uid; ?>		
+    <?php $uid = $value['entity']->uid; ?>	
+    <?php $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/consejo-directivo/'.$uid, $language->prefix); ?>	
 			<li class="mb-ch-14">
 				<div class="grid-list-pic"><img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="" width="98px" height="auto" class="img-circle"></div>
 				<div>
 					<!--<a href="#">Rosa María Llosa Demartini</a>-->
-					<a href="/user/<?php print $uid ?>"><?php print $name ?></a> 	
+					<a href="<?php print $profesor_url ?>"><?php print $name ?></a> 	
 					<span><?php print $desc?></span>
 				</div>
 			</li>

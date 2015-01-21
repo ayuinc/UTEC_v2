@@ -55,7 +55,7 @@
               <li><a href="/<?php print $language->prefix ?>/autoridades" class="atm-menu-inferior"><small><?php print t('Authorities') ?></small></a></li>
               <li><a href="/<?php print $language->prefix ?>/profesores" class="atm-menu-inferior"><small><?php print t('Faculty') ?></small></a></li>
               <li><a href="/<?php print $language->prefix ?>/ingenio-en-accion" class="atm-menu-inferior"><small><?php print t('Ingenuity in Action') ?></small></a></li>
-              <li><a href="/<?php print $language->prefix ?>/metodologia-educativa" class="atm-menu-inferior"><small><?php print t('Educational Methodology') ?></small></a></li>
+              <li><a href="/<?php print $language->prefix ?>/metodologia-educativa" class="atm-menu-inferior"><small>Metodología Educativa</small></a></li>
               <li><a href="/<?php print $language->prefix ?>/noticias" class="atm-menu-inferior"><small></small><small><?php print t('News') ?></small></a></li>
               <li><a href="/<?php print $language->prefix ?>/eventos-utec" class="atm-menu-inferior"><small><?php print t('Events') ?></small></a></li>
               <li><a href="/<?php print $language->prefix ?>/vida-estudiantil" class="atm-menu-inferior"><small><?php print t('UTEC Life') ?></small></a></li>
@@ -153,7 +153,7 @@
         </li>  
         <li>
           <ul>
-            <li class="title text-gray-lighter"><?php print t('Executive Education') ?></li>
+            <li class="title text-gray-lighter"><?php print t('SDP') ?></li>
             <!--<li><a href="/edp/cursos/diplomados" class="atm-menu-inferior"><small>Diplomados</small></a></li>
             <li><a href="/edp/cursos/cursos-online" class="atm-menu-inferior"><small>Cursos Online</small></a></li>-->
             <li><a href="/edp/la-escuela" class="atm-menu-inferior"><small><?php print t('The School') ?></small></a></li>

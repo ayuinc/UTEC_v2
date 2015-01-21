@@ -49,6 +49,16 @@
 	<?php elseif ($language->prefix == 'es'): ?>
 <div data-section-scroll="Un panel" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_foto_causa)?>);">
 	<?php endif ?>
+	<div class="container-sm text-center">
+		<h1 class="mb-7"><?php print $field_frase_autor ?></h1>
+		<p class="mb-0 pb-0"><?php print $field_nombre_autor ?></p>
+		<small class="gray-light light"><em><?php print $field_titulo_del_autor ?></em></small>
+		<div class="pv-35">
+			<p><?php print $field_quote ?></p>
+			<?php print $field_introduccion_autor ?>
+		</div>
+	</div>
+</div>
 	<div class="overlay flex-middle">
 		<div class="container hero-text" data-href="<?php print $field_link_causa ?>">
 			<div class="row">
@@ -63,9 +73,9 @@
 			</div>
 		</div>
 	</div>
-	<a class="scroll-down scroll-down-sq size lg" href="#tresacciones" rel="nofollow">
+	<!-- <a class="scroll-down scroll-down-sq size lg" href="#tresacciones" rel="nofollow">
 		<i class="icon-arrows-down bg-info-op text-white"></i>
-	</a>
+	</a> -->
 </div>
 <div class="pvp-7">
 	<div class="container-sm text-center">
@@ -95,9 +105,9 @@
 			</div>
 		</div>
 	</div>
-	<a class="scroll-down scroll-down-sq size lg" href="#purificandoelagua" rel="nofollow">
+	<!-- <a class="scroll-down scroll-down-sq size lg" href="#purificandoelagua" rel="nofollow">
 		<i class="icon-arrows-down bg-info-op text-white"></i>
-	</a>
+	</a> -->
 </div>
 	<?php if ($language->prefix == 'es'): ?>
 <div data-section-scroll="Purificando el agua" class="section-scroll-content minh-560 flex-middle-center">
@@ -115,9 +125,9 @@
 			<?php } ?>
 		</div>
 	</div>
-	<a class="scroll-down scroll-down-sq size lg" href="#descubremas" rel="nofollow">
+	<!-- <a class="scroll-down scroll-down-sq size lg" href="#descubremas" rel="nofollow">
 		<i class="icon-arrows-down bg-info-op text-white"></i>
-	</a>
+	</a> -->
 </div>
 	<?php if ($language->prefix == 'es'): ?>
 <div data-section-scroll="Descubre más" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_foto_redes_sociales)?>);">
