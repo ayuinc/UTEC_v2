@@ -85,7 +85,7 @@ $idioma = utf8_decode($_POST['idioma']);
 
 if($idioma == "es")
 {
-        if($origen == "Examen de Admisión" || $origen == "Primeros puestos" || $origen == "Alto rendimiento" || 
+        if($origen == "Examen de Admisión" || $origen == "Primeros puestos" || $origen == "Alto Rendimiento" || 
            $origen == "Traslado Externo" || $origen == "Centro Pre" || $origen == "Bachillerato Internacional" )
         {
 
@@ -112,7 +112,7 @@ if($idioma == "es")
                 $origen = "pagina-primeros-puestos";
             }
 
-            if ($origen == "Alto rendimiento")
+            if ($origen == "Alto Rendimiento")
             {
                 $tituloTelemarketing = "ALTO RENDIMIENTO - Datos Personales";
                 $subjectTelemarketing = "Solicitud - Alto Rendimiento UTEC";
@@ -411,7 +411,7 @@ if($idioma == "es")
 
 if($idioma == "en")
 {
-        if($origen == "Examen de Admisión" || $origen == "Primeros puestos" || $origen == "Alto rendimiento" || 
+        if($origen == "Examen de Admisión" || $origen == "Primeros puestos" || $origen == "Alto Rendimiento" || 
            $origen == "Traslado Externo" || $origen == "Centro Pre" || $origen == "Bachillerato Internacional" )
         {
 
@@ -438,7 +438,7 @@ if($idioma == "en")
                 $origen = "pagina-primeros-puestos";
             }
 
-            if ($origen == "Alto rendimiento")
+            if ($origen == "Alto Rendimiento")
             {
                 $tituloTelemarketing = "ALTO RENDIMIENTO - Datos Personales";
                 $subjectTelemarketing = "Solicitud - Alto Rendimiento UTEC";
