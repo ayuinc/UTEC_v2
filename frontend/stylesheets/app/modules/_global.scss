@@ -514,3 +514,30 @@ img.icon-utec {
 		background-color: $gray-lighter;
 	}
 }
+
+
+// TEXT SWITCHER
+.text-switcher {
+	display: inline;
+	span {
+		overflow: hidden;
+		opacity: 0;
+		position: absolute;
+		width: 100%;
+		color: $gray;
+		@include animation(rotateWordsFirst 18s linear infinite 0s);
+		@for $i from 1 through 24 {
+			&:nth-child(#{$i}) {
+				@include animation-delay(($i*3) + s);
+			}
+		}
+	}
+}
+
+@include keyframes(rotateWordsFirst) {
+  0% { opacity: 1; animation-timing-function: ease-in; height: 0px; }
+  8% { opacity: 1; height: 60px; }
+  19% { opacity: 1; height: 60px; }
+  25% { opacity: 0; height: 60px; }
+  100% { opacity: 0; }
+}
