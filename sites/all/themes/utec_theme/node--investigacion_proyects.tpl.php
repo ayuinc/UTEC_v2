@@ -43,8 +43,13 @@
 	<?php if ($tags!='') { ?>
 		<p class="small text-gray-light">
 			<span class="bold"></span>
+			<?php $count = 0; ?>
 			<?php foreach ($tags as $key => $value) : ?>
-				<span><?php print $value['taxonomy_term']->name; ?> -</span>
+			<?php if ($count > 0): ?>
+				-
+			<?php endif ?>
+			<span><?php print $value['taxonomy_term']->name; ?></span>
+			<?php $count++; ?>
 			<?php endforeach; ?>
 		</p>
 	<?php } ?>
