@@ -7,7 +7,7 @@
 			<div class="left">
 				<ul class=" thin text-gray mr-ch-14 nav-list pt-7">
 					<li>
-						<a href="/<?php print $language->prefix ?>/enlaces-rapidos/alumnos" class="atm-menu-superior"><?php print t('Students') ?></a>
+						<a href="/<?php print $language->prefix ?>/quick-links/students" class="atm-menu-superior"><?php print t('Students') ?></a>
 					</li>
 					<li>
 						<a href="/<?php print $language->prefix ?>/enlaces-rapidos/profesores" class="atm-menu-superior"><?php print t('Faculty') ?></a>

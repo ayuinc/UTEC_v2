@@ -13,7 +13,11 @@ $titulo = $node->title;
 	<?php endif ?>
 	<div class="separator-gray separator-lg"></div>
 	<ul class="grid-list grid-list-3 grid-list-1-xs grid-list-hover size sm">
-		<li data-href="/admision/modalidades/primeros-puestos">
+		<?php if ($language->prefix == 'es'): ?>
+		<li data-href="/modalidades-de-admision/primeros-puestos">
+		<?php elseif ($language->prefix == 'en'): ?>
+		<li data-href="/methods-of-admission/top-academic-rankings">
+		<?php endif ?>
 			<div>
 				<h3 class="thin lead lh-lg"><?php print t('Top Academic Rankings') ?></h3>
 				<div class="size lg">
@@ -21,7 +25,11 @@ $titulo = $node->title;
 				</div>
 			</div>
 		</li>
-		<li data-href="/admision/alto-rendimiento">
+		<?php if ($language->prefix == 'es'): ?>
+		<li data-href="/modalidades-de-admision/alto-rendimiento">
+		<?php elseif ($language->prefix == 'en'): ?>
+		<li data-href="/methods-of-admission/high-performance-assessment">
+		<?php endif ?>		
 			<div>
 				<h3 class="thin lead lh-lg"><?php print t('High Performance Assessment') ?></h3>
 				<div class="size lg">
@@ -29,7 +37,11 @@ $titulo = $node->title;
 				</div>
 			</div>
 		</li>
-		<li data-href="/admision/modalidades/traslados">
+		<?php if ($language->prefix == 'es'): ?>
+		<li data-href="/modalidades-de-admision/traslados">
+		<?php elseif ($language->prefix == 'en'): ?>
+		<li data-href="/methods-of-admission/transfer-from-other-universities">
+		<?php endif ?>				
 			<div>
 				<h3 class="thin lead lh-lg"><?php print t('Transfer') ?></h3>
 				<div class="size lg">
@@ -37,7 +49,11 @@ $titulo = $node->title;
 				</div>
 			</div>
 		</li>
-		<li data-href="/admision/centro-pre">
+		<?php if ($language->prefix == 'es'): ?>
+		<li data-href="/modalidades-de-admision/centro-pre">
+		<?php elseif ($language->prefix == 'en'): ?>
+		<li data-href="methods-of-admission/pre-university-center">
+		<?php endif ?>			
 			<div>
 				<h3 class="thin lead lh-lg"><?php print t('Pre University Center') ?></h3>
 				<div class="size lg">
@@ -45,7 +61,11 @@ $titulo = $node->title;
 				</div>
 			</div>
 		</li>
-		<li data-href="/admision/bachillerato-internacional">
+		<?php if ($language->prefix == 'es'): ?>
+		<li data-href="/modalidades-de-admision/bachillerato-internacional">
+		<?php elseif ($language->prefix == 'en'): ?>
+		<li data-href="/methods-of-admission/international-baccalaureate">
+		<?php endif ?>		
 			<div>
 				<h3 class="thin lead lh-lg"><?php print t('International Baccalaureate') ?></h3>
 				<div class="size lg">
@@ -53,7 +73,11 @@ $titulo = $node->title;
 				</div>
 			</div>
 		</li>
-		<li data-href="/admision-examen-de-admision/examen-de-admisión">
+		<?php if ($language->prefix == 'es'): ?>
+		<li data-href="/modalidades-de-admision/examen-de-admision">
+		<?php elseif ($language->prefix == 'en'): ?>
+		<li data-href="/methods-of-admission/admission-exam">
+		<?php endif ?>			
 			<div>
 				<h3 class="thin lead lh-lg"><?php print t('Admission Exam') ?></h3>
 				<div class="size lg">
