@@ -1472,5 +1472,5 @@ if($error){
 
           header('Location: /gracias');
           exit();       
-
+}
 ?>
