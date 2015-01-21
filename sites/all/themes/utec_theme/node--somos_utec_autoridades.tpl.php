@@ -58,7 +58,10 @@
 						<!-- <a href="mailto:<?php //print $mail ?>"><?php //print $mail ?></a></div>   		 -->
 				</div>
 			</li>
-      <?php else : ?>
+      <?php endif ?>
+    <?php endforeach ?>
+    <?php foreach ($node->field_profesor['und'] as $key => $value) :?>
+      <?php if($name == 'Julien Noel' || $name == 'Víctor Murray Herrera') : ?>
       <li data-href="<?php print $profesor_url ?>">
         <div class="user-card user-card-round size lg">
           <div class="user-pic"><img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt=""></div>
@@ -73,7 +76,7 @@
             <!-- <a href="mailto:<?php //print $mail ?>"><?php //print $mail ?></a></div>        -->
         </div>
       </li>
-      <?php endif ?>
+      <?php endif; ?>
     <?php endforeach ?>
 	</ul>
 </div>
