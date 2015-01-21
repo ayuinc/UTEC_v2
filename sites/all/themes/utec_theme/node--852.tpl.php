@@ -11,11 +11,13 @@
 	$electivo = $node->field_electivo['und'];
 	
 	// print_r($node);
+	//CENTRO PRE
 ?>
 
-<div class="container-sm">
+<div class="container-sm mb-35">
 	<h1 class="light"><?php print $titulo_usuario; ?></h1>
-	<div clsass="separator-gray separator-lg"></div>
+	<div class="separator-gray separator-lg"></div>
+	<p class="lead"></p>
 </div>
 <div class="container-sm form-custom">
 	<form action="/registro.php" class="mb-ch-28" data-submit="Formulario de inscripcion" method="post" id="formRegistro" name="formRegistro">
@@ -36,7 +38,7 @@
 				<input  id="apellidom" name="apellidom" type="text" class="form-control" placeholder="Apellido materno">
 			</div>
 		</div>
-		<div class="text-gray h3 thin">
+		<div class="text-gray h4 thin">
 			<label for="">Género:</label>
 			<input  id="femenino" type="radio" checked name="genero" value="F"> Femenino
 			<input  id="masculino" type="radio" name="genero" value="M"> Masculino
@@ -227,7 +229,7 @@
 	                <option value="Otro">Otro</option>
 				</select>
 			</div>
-			<div class="col-sm-12 form-group text-gray h3 thin">
+			<div class="col-sm-12 form-group text-gray h4 thin">
 				<label for="">Es o ha sido estudiante de esta universidad:</label>
 				<input  id="estudiante-si" type="radio" checked name="estudiante" value="S"> Sí
 				<input  id="estudiante-no" type="radio" name="estudiante" value ="N"> No
@@ -255,18 +257,18 @@ jQuery(function() {
 	        "estudios-distrito": { required: true }, "estudios-rendimiento": { required: true }
 	      },
 	      messages: {
-		    "nombres": { required: "Completa tus nombres <br />" }, "apellidop": { required: "Completa tu apellido paterno <br /> " },		
-		    "apellidom": { required: "Completa tu apellido materno <br /> " }, "carrera": { required: "Selecciona tu carrera <br /> " },	
-		    "tipo-documento": { required: "Selecciona tu tipo de documento <br /> " }, "documento": { required: "Completa tu documento <br /> " },	
-		    "pais": { required: "Completa tu país <br /> " }, "ciudad": { required: "Completa tu ciudad <br /> " }, 
-		    "dia": { required: "Completa tu día de nacimiento <br /> " }, "mes": { required: "Completa tu mes de nacimiento <br /> " },
-		    "ano": { required: "Completa tu año de nacimiento <br /> " }, "depto": { required: "Completa tu departamento <br /> " },
-		    "provincia": { required: "Completa tu provincia <br /> " }, "distrito": { required: "Completa tu distrito <br /> " },
-		    "direccion-actual": { required: "Completa tu domicilio <br /> " }, "email": { required: "Completa tu e-mail <br /> " },
-	      	"celular-1": { required: "Completa tu celular 1 <br /> " }, "universidad": { required: "Completa tu universidad de procedencia <br /> " },
-		    "ano-culminacion": { required: "Completa tu año de culminación <br /> " }, "colegio-procedencia": { required: "Completa tu colegio de procedencia <br /> " },
-		    "estudios-dpto": { required: "Completa el departamento de tu colegio <br /> " }, "estudios-provincia": { required: "Completa la provincia de tu colegio <br /> " },
-		    "estudios-distrito": { required: "Completa el distrito de tu colegio <br /> " }, "estudios-rendimiento": { required: "Selecciona tu rendimiento académico <br /> " }
+		    "nombres": { required: "Completa tus nombres. <br />" }, "apellidop": { required: "Completa tu apellido paterno. <br /> " },		
+		    "apellidom": { required: "Completa tu apellido materno. <br /> " }, "carrera": { required: "Selecciona tu carrera. <br /> " },	
+		    "tipo-documento": { required: "Selecciona tu tipo de documento. <br /> " }, "documento": { required: "Completa tu documento. <br /> " },	
+		    "pais": { required: "Completa tu país. <br /> " }, "ciudad": { required: "Completa tu ciudad. <br /> " }, 
+		    "dia": { required: "Completa tu día de nacimiento. <br /> " }, "mes": { required: "Completa tu mes de nacimiento. <br /> " },
+		    "ano": { required: "Completa tu año de nacimiento. <br /> " }, "depto": { required: "Completa tu departamento. <br /> " },
+		    "provincia": { required: "Completa tu provincia. <br /> " }, "distrito": { required: "Completa tu distrito. <br /> " },
+		    "direccion-actual": { required: "Completa tu domicilio. <br /> " }, "email": { required: "Completa tu e-mail. <br /> " },
+	      	"celular-1": { required: "Completa tu celular 1. <br /> " }, "ano-culminacion": { required: "Completa tu año de culminación. <br /> " }, 
+	      	"colegio-procedencia": { required: "Completa tu colegio de procedencia. <br /> " },
+		    "estudios-dpto": { required: "Completa el departamento de tu colegio. <br /> " }, "estudios-provincia": { required: "Completa la provincia de tu colegio. <br /> " },
+		    "estudios-distrito": { required: "Completa el distrito de tu colegio. <br /> " }, "estudios-rendimiento": { required: "Selecciona tu rendimiento académico. <br /> " }
 		  },
 	      errorPlacement: function( error, element ) {
 	        	error.insertAfter( '#errordiv' );

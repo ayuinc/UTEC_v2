@@ -5,35 +5,37 @@
 		<h4 class="lead mb-35"><?php print t('These are our undergraduate programs:') ?></h4>
 		<ul class="grid-list grid-list-5 grid-list-1-xs pt-21 list-carreras text-center text-left-xs mb-ch-21-xs">
 			<li>
-				<?php $ingenieria_industrial_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/10/5', $language->prefix); ?>
-				<div data-href="<?php print $ingenieria_industrial_url; ?>">
+				<div>
 					<div><i class="icon-ing-industrial"></i></div>
 					<h2>
-						<a href="<?php print $ingenieria_industrial_url; ?>">
 							<?php if ($language->prefix == 'en'): ?>
+							<a href="/<?php print $language->prefix ?>/industrial-engineering">
 								<span><?php print t('Industrial') ?></span>
 								<span><?php print t('Engineering') ?></span>
 								<span></span>
+							</a>
 							<?php elseif ($language->prefix == 'es'): ?>
+							<a href="/<?php print $language->prefix ?>/ingenieria-industrial">
 								<span><?php print t('Engineering') ?></span>
 								<span><?php print t('Industrial') ?></span>
 								<span></span>
+							</a>
 							<?php endif ?>
-						</a>
 					</h2>
 				</div>
 			</li>
 			<li>
-				<?php $ingenieria_de_la_energia_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/10/6', $language->prefix); ?>
-				<div data-href="<?php print $ingenieria_de_la_energia_url; ?>">
+				<div>
 					<div><i class="icon-ing-energia"></i></div>
 					<h2>
-						<a href="<?php print $ingenieria_de_la_energia_url; ?>">
 							<?php if ($language->prefix == 'en'): ?>
+						<a href="/<?php print $language->prefix ?>/energy-engineering">
 								<span><?php print t('Energy') ?></span>
 								<span><?php print t('Engineering') ?></span>
 								<span></span>
+						</a>
 							<?php elseif ($language->prefix == 'es'): ?>
+						<a href="/<?php print $language->prefix ?>/ingenieria-de-la-energia">
 								<span><?php print t('Engineering') ?></span>
 								<span><?php print t('Energy') ?></span>
 								<span></span>
@@ -43,8 +45,7 @@
 				</div>
 			</li>
 			<li>
-				<?php $ingenieria_quimica_industrial_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/10/7', $language->prefix); ?>
-				<div data-href="<?php print $ingenieria_quimica_industrial_url; ?>">
+				<div>
 					<div><i class="icon-ing-quimica"></i></div>
 					<h2>
 						<a href="<?php print $ingenieria_quimica_industrial_url; ?>">
@@ -62,8 +63,7 @@
 				</div>
 			</li>
 			<li>
-				<?php $ingenieria_electronica_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/10/9', $language->prefix); ?>
-				<div data-href="<?php print $ingenieria_electronica_url; ?>">
+				<div>
 					<div><i class="icon-ing-electronica"></i></div>
 					<h2>
 						<a href="<?php print $ingenieria_electronica_url; ?>">
@@ -81,8 +81,7 @@
 				</div>
 			</li>
 			<li>
-				<?php $ingenieria_mecanica_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/10/8', $language->prefix); ?>
-				<div data-href="<?php print $ingenieria_mecanica_url; ?>">
+				<div>
 					<div><i class="icon-ing-mecanica"></i></div>
 					<h2>
 						<a href="<?php print $ingenieria_mecanica_url; ?>">

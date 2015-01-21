@@ -5343,9 +5343,8 @@ textarea:-ms-input-placeholder {
   font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
   font-weight: 300;
   font-style: normal;
-  text-transform: uppercase;
   color: #8f8d8e;
-  font-size: 24px; }
+  font-size: 18px; }
 
 .breadcrumbs-custom {
   position: absolute;
@@ -6510,6 +6509,9 @@ img.icon-utec {
         color: white; }
     .language-switcher-locale-url li:first-child a.language-link {
       margin-right: 7px; }
+
+.locale-untranslated {
+  display: none; }
 
 #header .tool-bar .search-form, #header-on-scroll .tool-bar .search-form {
   margin: 0; }

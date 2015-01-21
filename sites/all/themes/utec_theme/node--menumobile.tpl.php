@@ -29,7 +29,7 @@
 			<?php if ($language->prefix == 'es'): ?>
 			<a href="/<?php print $language->prefix ?>/respaldo"><?php print t('A Solid Foundation') ?></a>
 			<?php elseif ($language->prefix == 'en'): ?>
-			<a href="/<?php print $language->prefix ?>/governance"><?php print t('A Solid Foundation') ?></a>
+			<a href="/<?php print $language->prefix ?>/a-solid-foundation"><?php print t('A Solid Foundation') ?></a>
 			<?php endif ?>
 		</li>
 		<li>
