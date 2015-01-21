@@ -54,6 +54,8 @@ $carreras = array(
     '00000' => 'N/S', 
 );
 
+$origen = utf8_decode($_POST['origen']);
+$idioma = utf8_decode($_POST['idioma']);
 
 //Inicio del proceso de envío de correos
 $mail = new PHPMailer();
@@ -61,6 +63,10 @@ $destinatarios = array(
 'ebardales@utec.edu.pe' => 'Ebert Alexander Bardales Castro',
 'ntubbeh@utec.edu.pe'  => 'Nader Tubbeh',
 'apacheco@utec.edu.pe'  => 'Angel Pacheco Masías',
+/*
+if($origen == "Trabaja en UTEC")
+{ 'rrhh@utec.edu.pe' => 'RRHH UTEC', }
+*/
 );
 
 $tituloTelemarketing = "";
@@ -78,14 +84,11 @@ $contenidorpta = "";
 
 //Definicón de subject, destinatario, título
 
-$origen = utf8_decode($_POST['origen']);
-$idioma = utf8_decode($_POST['idioma']);
-
 //BLOQUE ESPAÑOL
 
 if($idioma == "es")
 {
-        if($origen == "Examen de Admisión" || $origen == "Primeros puestos" || $origen == "Alto Rendimiento" || 
+        if($origen == "Examen de Admision" || $origen == "Primeros puestos" || $origen == "Alto Rendimiento" || 
            $origen == "Traslado Externo" || $origen == "Centro Pre" || $origen == "Bachillerato Internacional" )
         {
 
@@ -96,7 +99,7 @@ if($idioma == "es")
             $fromCliente = "admision@utec.edu.pe";
             $fromNameCliente = "UTEC – Admisión";
 
-            if ($origen == "Examen de Admisión")
+            if ($origen == "Examen de Admision")
             {
                 $tituloTelemarketing = "EXAMEN ADMISION - Datos Personales";
                 $subjectTelemarketing = "Solicitud - Examen Admision UTEC";
@@ -411,7 +414,7 @@ if($idioma == "es")
 
 if($idioma == "en")
 {
-        if($origen == "Examen de Admisión" || $origen == "Primeros puestos" || $origen == "Alto Rendimiento" || 
+        if($origen == "Examen de Admision" || $origen == "Primeros puestos" || $origen == "Alto Rendimiento" || 
            $origen == "Traslado Externo" || $origen == "Centro Pre" || $origen == "Bachillerato Internacional" )
         {
 
@@ -422,7 +425,7 @@ if($idioma == "en")
             $fromCliente = "admision@utec.edu.pe";
             $fromNameCliente = "UTEC – Admisión";
 
-            if ($origen == "Examen de Admisión")
+            if ($origen == "Examen de Admision")
             {
                 $tituloTelemarketing = "EXAMEN ADMISION - Datos Personales";
                 $subjectTelemarketing = "Solicitud - Examen Admision UTEC";
@@ -811,7 +814,6 @@ if($idioma == "es")
                             <p><h2>¡Gracias por tu interés en UTEC!</h2>
                             <br/> Hemos recibido tus datos correctamente.
                             <br />Para completar tu inscripción en el Examen de Admisión, debes seguir estos pasos:</p>";
-                            
                             $contenidorpta.="<p>1. Efectúa el depósito bancario por el Derecho de Inscripción al Concurso de Admisión Ordinario. BCP cuenta corriente soles N° 193-1976235-0-68. El costo es de S/.450. 
                             <br/>2. Presenta los siguientes documentos en la Oficina de Admisión:</p>";
                             $contenidorpta.="<p><ul><li>Voucher del depósito bancario (o enviar el voucher electrónico al e-mail inscripciones@utec.edu.pe)</li>
@@ -905,6 +907,7 @@ if($idioma == "es")
 
             if($origen == "pagina-inscripcion-pre")
             {
+                          $contenidorpta = "";
                           $contenidorpta.="<table width='600px' height='168px' cellpadding='2' cellspacing='2' bgcolor='#FFFFFF'>
 
                           <tr><td><p><img src='http://app.utec.edu.pe/admision/img/cabeceraWEB.jpg' alt='cabeceraWEB' usemap='#Map2'>
@@ -1198,6 +1201,7 @@ if($idioma == "en")
 
             if($origen == "pagina-inscripcion-pre")
             {
+                          $contenidorpta = "";
                           $contenidorpta.="<table width='600px' height='168px' cellpadding='2' cellspacing='2' bgcolor='#FFFFFF'>
 
                           <tr><td><p><img src='http://app.utec.edu.pe/admision/img/cabeceraWEB.jpg' alt='cabeceraWEB' usemap='#Map2'>

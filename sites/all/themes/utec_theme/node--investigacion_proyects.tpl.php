@@ -6,7 +6,8 @@
 
 	$titulo = $node->title;
 	$tags = $node->field_tags['und'];		 		
-	$profesor = $node->field_profesor['und']['0']['entity']->name;		 		
+	// $profesor = $node->field_profesor['und']['0']['entity']->name;		 		
+	$profesor = $node->field_profesor['und'];		 		
 	$field_pdf_proyectos= $node->field_pdf_proyectos['und']['0']['value']['filename'];
 	
 	//print_r($node->field_tags);
@@ -28,14 +29,27 @@
 	</h4>
 	<?php if ($profesor!='') { ?>
 		<p>
-			<span class="lead bold">Profesor: </span><span class="lead"><?php print $profesor ?></span>
+			<span class="lead bold">Profesor: </span>
+			<?php $count = 0; ?>
+			<?php foreach ($profesor as $key => $value): ?>
+			<?php if ($count > 0): ?>
+				-
+			<?php endif ?>
+			<span class="lead"><?php print $value['entity']->name; ?></span>
+			<?php $count++; ?>
+			<?php endforeach ?>
 		</p>
 	<?php } ?>
 	<?php if ($tags!='') { ?>
 		<p class="small text-gray-light">
 			<span class="bold"></span>
+			<?php $count = 0; ?>
 			<?php foreach ($tags as $key => $value) : ?>
-				<span><?php print $value['taxonomy_term']->name; ?> -</span>
+			<?php if ($count > 0): ?>
+				-
+			<?php endif ?>
+			<span><?php print $value['taxonomy_term']->name; ?></span>
+			<?php $count++; ?>
 			<?php endforeach; ?>
 		</p>
 	<?php } ?>
