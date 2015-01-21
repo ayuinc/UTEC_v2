@@ -16,8 +16,8 @@
       <?php $name = $value['entity']->name; ?>   
 			<?php $pic = $value['entity']->picture->filename; ?>
 			<?php $uid = $value['entity']->uid; ?>
-      <?php $desc = $value['entity']->field_descripci_n['und'][0]['value']; ?>
-      <?php $desc_ingles = $value['entity']->field_descripci_n_ingles['und']['0']['value']; ?>
+      <?php $desc = $value['entity']->field_descripci_n_autoridad['und'][0]['value']; ?>
+      <?php $desc_ingles = $value['entity']->field_descripci_n_autoridad_ingles	['und']['0']['value']; ?>
       <?php $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/autoridades/'.$uid, $language->prefix); ?>
 			<li data-href="<?php print $profesor_url ?>">
 				<div class="user-card user-card-round size lg">
@@ -30,7 +30,7 @@
 						<?php else : ?>
 						<span><?php print $desc?></span>
 						<?php endif; ?>
-						<a href="mailto:<?php print $mail ?>"><?php print $mail ?></a></div>
+						<a href="mailto:<?php print $mail ?>"><?php print $mail ?></a></div>   		
 				</div>
 			</li>
     <?php endforeach ?>
