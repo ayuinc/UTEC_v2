@@ -45,7 +45,7 @@ $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 	    </div>
 	  </div>
 	</div> <!-- END:Hero -->
-	<div data-section-scroll="Cursos" class="section-scroll-content pb-0">
+	<div data-section-scroll="<?php print t('Courses') ?>" class="section-scroll-content pb-0">
 		<div class="container-sm">
 			<h3 class="lead thin text-center"><?php print $field_que_es_intro_cp ?></h3>
 		</div>
