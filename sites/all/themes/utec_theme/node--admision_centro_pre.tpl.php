@@ -267,7 +267,11 @@ jQuery(function() {
 <div id="section-scroll" class="hidden-sm hidden-xs">
   <ul></ul>
   <div class="text-right pv-21 btn-apply animated">
-    <a href="#" class="btn btn-primary uppercase"><?php print t('Apply') ?></a>
+		<?php if ($language->prefix == 'es'): ?>
+			<a href="/<?php print $language->prefix ?>/modalidades-de-admision/alto-rendimiento/formulario-de-inscripcion" class="btn btn-primary uppercase"><?php print t('Apply') ?></a>								
+		<?php elseif ($language->prefix == 'en'): ?>
+			<a href="/<?php print $language->prefix ?>/formulario/high-performance-assessment-aplication-form" class="btn btn-primary uppercase"><?php print t('Apply') ?></a>		
+		<?php endif ?>	  
   </div>
 </div>
 
