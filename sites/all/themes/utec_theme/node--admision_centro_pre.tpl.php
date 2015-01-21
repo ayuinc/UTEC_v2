@@ -232,7 +232,7 @@ $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 					<div id="errordiv" class="col-sm-12 form-group"></div>			
 				</div>		
 				<div class="text-right">
-					<button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+					<button type="submit" class="btn btn-primary btn-lg" onclick="centro_pre();">Enviar</button>
 				</div>
 			</form>		
 		</div>

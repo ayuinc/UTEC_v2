@@ -232,7 +232,7 @@
 			</div>
 		</div>
 		<div class="text-right">
-			<button  id="" type="submit" class="btn btn-primary btn-lg">Enviar</button>
+			<button  id="" type="submit" class="btn btn-primary btn-lg" onclick="formulario_de_aplicacion()">Enviar</button>
 		</div>
 	</form>						
 </div>

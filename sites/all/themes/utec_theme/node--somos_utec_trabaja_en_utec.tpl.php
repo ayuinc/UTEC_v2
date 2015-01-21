@@ -85,10 +85,6 @@
 				<textarea class="form-control" placeholder="<?php print t('Message') ?>" name="consulta" id="consulta"></textarea>
 			</div>
 		</div>
-		<div class="form-group">
-			<label><?php print t('Attach a document') ?></label>
-			<input id="documento" type="file" class="form-control" placeholder="<?php print t('Attach a document') ?>">
-		</div>
 		<div class="row errordiv">
 			<div id="errordiv" class="col-sm-12 form-group"></div>			
 		</div>			
