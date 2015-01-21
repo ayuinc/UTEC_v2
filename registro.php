@@ -414,7 +414,7 @@ if($idioma == "es")
 
 if($idioma == "en")
 {
-        if($origen == "Examen de Admision" || $origen == "Primeros puestos" || $origen == "Alto Rendimiento" || 
+        if($origen == "Examen de Admision" || $origen == "Top Academic Rankings" || $origen == "Alto Rendimiento" || 
            $origen == "Traslado Externo" || $origen == "Centro Pre" || $origen == "Bachillerato Internacional" )
         {
 
@@ -543,22 +543,22 @@ if($idioma == "en")
         }
 
 
-        if($origen == "Charlas informativas" || $origen == "Contacto" || $origen == "Visita Utec" || 
+        if($origen == "Informative Talks" || $origen == "Contacto" || $origen == "Visita Utec" || 
            $origen == "Ven a la UTEC" || $origen == "Trabaja en UTEC")
         {
             $fromTelemarketing = "webmaster@utec.edu.pe";
             $fromNameTelemarketing = "UTEC";
-            $tituloCliente = "¡Gracias por tu interés en UTEC.!";
-            $subjectCliente = "Gracias por tu Interés en UTEC";
+            $tituloCliente = "Thank you for your interest in UTEC!";
+            $subjectCliente = "Thank you for your interest in UTEC";
             $fromCliente = "informes@utec.edu.pe";
             $fromNameCliente = "Universidad de Ingeniería & Tecnología";
 
 
-            if($origen == "Charlas informativas")
+            if($origen == "Informative Talks")
             {
-                $tituloTelemarketing = "Charlas Informativas";
-                $subjectTelemarketing = "Charlas Informativas UTEC";
-                $subjectCliente = "Charlas Informativas UTEC";
+                $tituloTelemarketing = "Informative Talks";
+                $subjectTelemarketing = "Informative Talks UTEC";
+                $subjectCliente = "Informative Talks UTEC";
                 $familia = "CHARLAS-INFORMATIVAS";
                 $origen = "pagina-charlas";
             }
