@@ -13,36 +13,19 @@
 		<?php //kpr($node); ?>
     <?php foreach ($node->field_profesor['und'] as $key => $value) :?>
       <?php $name = $value['entity']->name; ?>   
-      <?php $name_url=$name;
+      <?php 
+      	$name_url = $name;
       	$name_url = str_replace(' ',"-",$name_url);
       	$name_url = str_replace(array('á','à','â','ã','ª','ä'),"a",$name_url);
-  	    $name_url = str_replace(array('Á','À','Â','Ã','Ä'),"A",$name_url);
-  	    $name_url = str_replace(array('Í','Ì','Î','Ï'),"I",$name_url);
+  	    $name_url = str_replace(array('Á','À','Â','Ã','Ä'),"a",$name_url);
+  	    $name_url = str_replace(array('Í','Ì','Î','Ï'),"i",$name_url);
   	    $name_url = str_replace(array('í','ì','î','ï'),"i",$name_url);
   	    $name_url = str_replace(array('é','è','ê','ë'),"e",$name_url);
-  	    $name_url = str_replace(array('É','È','Ê','Ë'),"E",$name_url);
+  	    $name_url = str_replace(array('É','È','Ê','Ë'),"e",$name_url);
   	    $name_url = str_replace(array('ó','ò','ô','õ','ö','º'),"o",$name_url);
-  	    $name_url = str_replace(array('Ó','Ò','Ô','Õ','Ö'),"O",$name_url);
+  	    $name_url = str_replace(array('Ó','Ò','Ô','Õ','Ö'),"o",$name_url);
   	    $name_url = str_replace(array('ú','ù','û','ü'),"u",$name_url);
-  	    $name_url = str_replace(array('Ú','Ù','Û','Ü'),"U",$name_url);
-  	    $name_url = str_replace(array('[','^','´','`','¨','~',']'),"",$name_url);
-  	    $name_url = str_replace("ç","c",$name_url);
-  	    $name_url = str_replace("Ç","C",$name_url);
-  	    $name_url = str_replace("ñ","n",$name_url);
-  	    $name_url = str_replace("Ñ","N",$name_url);
-  	    $name_url = str_replace("Ý","Y",$name_url);
-  	    $name_url = str_replace("ý","y",$name_url);
-  	     
-  	    $name_url = str_replace("&aacute;","a",$name_url);
-  	    $name_url = str_replace("&Aacute;","A",$name_url);
-  	    $name_url = str_replace("&eacute;","e",$name_url);
-  	    $name_url = str_replace("&Eacute;","E",$name_url);
-  	    $name_url = str_replace("&iacute;","i",$name_url);
-  	    $name_url = str_replace("&Iacute;","I",$name_url);
-  	    $name_url = str_replace("&oacute;","o",$name_url);
-  	    $name_url = str_replace("&Oacute;","O",$name_url);
-  	    $name_url = str_replace("&uacute;","u",$name_url);
-  	    $name_url = str_replace("&Uacute;","U",$name_url);
+  	    $name_url = str_replace(array('Ú','Ù','Û','Ü'),"u",$name_url);
 
       ?>
 	  <?php $pic = $value['entity']->picture->filename; ?>
