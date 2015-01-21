@@ -49,7 +49,7 @@
               <h4>
                 <?php if ($language->language == 'en') {
                   print $izquierdo_txt1_ingles;
-                } elseif ($language->language == 'es') {
+                } elseif ($language->language  != 'en') {
                   print $izquierdo_txt1;
                 } 
                 ?>
