@@ -39,20 +39,13 @@
 				<div class="inline-block pt-xs">
 					<ul class="small ml-ch-7 nav-list">
 						<li class="form-search">
-							<!-- <form action="" class="form-inline mr-14">
-								<div class="form-group mb-0">
-									<label for="search" class="sr-only">Buscar</label>
-									<input type="search" class="input-sm form-control" width="210" placeholder="Buscar...">
-									<button type="submit" class="btn btn-default btn-xs" value="S"><i class="icon-search"></i></button>
-								</div>
-							</form> -->
 							<?php print drupal_render(drupal_get_form('search_form')); ?>
 						</li>
 						<li class="pt-7">
-							<a href="/contacto" class="text-gray"><?php print t('Contact us') ?></a>
+							<a href="/contacto" class="text-gray atm-contacto"><?php print t('Contact us') ?></a>
 						</li>
 						<li class="pt-7">
-							<a href="/blog" class="text-gray">Blog</a>
+							<a href="/blog" class="text-gray atm-blog">Blog</a>
 						</li>
 						<li>
 							<?php print block_render('locale', 'language'); ?>
@@ -588,38 +581,38 @@
 		<div class="container">
 			<div class="left">
 				<div class="logo">
-					<a href="/"><img src="/<?php print $theme_path; ?>/assets/img/icon_UTEC.png" alt="Logo UTEC"></a>
+					<a href="/" class="atm-logo"><img src="/<?php print $theme_path; ?>/assets/img/icon_UTEC.png" alt="Logo UTEC"></a>
 				</div>
 			</div>
 			<div class="left hidden-xs hidden-sm">
 				<ul class="nav-display-triggers">
 					<li>
-						<a href="#nav-shrink-display-1">
+						<a href="#nav-shrink-display-1" class="atm-menu-principal">
 							<span><?php print t('We are Utec') ?></span>
 						</a>
 					</li>
 					<li>
-						<a href="#nav-shrink-display-2">
+						<a href="#nav-shrink-display-2" class="atm-menu-principal">
 							<span><?php print t('Research') ?></span>
 						</a>
 					</li>
 					<li>
-						<a href="#nav-shrink-display-3">
+						<a href="#nav-shrink-display-3" class="atm-menu-principal">
 							<span><?php print t('Programs') ?></span>
 						</a>
 					</li>
 					<li>
-						<a href="#nav-shrink-display-4">
+						<a href="#nav-shrink-display-4" class="atm-menu-principal">
 							<span><?php print t('Admissions') ?></span>
 						</a>
 					</li>
 					<li>
-						<a href="#nav-shrink-display-5">
+						<a href="#nav-shrink-display-5" class="atm-menu-principal">
 							<span><?php print t('Alliances') ?></span>
 						</a>
 					</li>
 					<li>
-						<a href="#nav-shrink-display-6">
+						<a href="#nav-shrink-display-6" class="atm-menu-principal">
 							<span><?php print t('SPD') ?></span>
 						</a>
 					</li>

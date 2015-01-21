@@ -85,16 +85,16 @@
             <li><a href="/<?php print $language->prefix ?>/publicaciones" class="atm-menu-inferior"><small><?php print t('Publications') ?></small></a></li>
             <!--<li><a href="#"><small>Publicaciones</small></a></li>
             <li><a href="#"><small>Consultorías</small></a></li>-->
-            <li><a href="/<?php print $language->prefix ?>/empresas-y-clientes"><small><?php print t('Companies and Clients') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/investigacion/contacto"><small><?php print t('Contact us') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/empresas-y-clientes" class="atm-menu-inferior"><small><?php print t('Companies and Clients') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/investigacion/contacto" class="atm-menu-inferior"><small><?php print t('Contact us') ?></small></a></li>
 						<?php elseif ($language->prefix == 'en'): ?>
             <li class="title text-gray-lighter"><?php print t('Research') ?></li>
             <li><a href="/<?php print $language->prefix ?>/proyectos" class="atm-menu-inferior"><small><?php print t('Projects') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/publications" class="atm-menu-inferior"><small><?php print t('Publications') ?></small></a></li>
             <!--<li><a href="#"><small>Publicaciones</small></a></li>
             <li><a href="#"><small>Consultorías</small></a></li>-->
-            <li><a href="/<?php print $language->prefix ?>/our-clients"><small><?php print t('Companies and Clients') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/research/contact"><small><?php print t('Contact us') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/our-clients" class="atm-menu-inferior"><small><?php print t('Companies and Clients') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/research/contact" class="atm-menu-inferior"><small><?php print t('Contact us') ?></small></a></li>
 						<?php endif ?>
           </ul>
         </li>
@@ -124,7 +124,7 @@
             <li class="title text-gray-lighter">Admissions</li>
             <li><a href="/<?php print $language->prefix ?>/methods-of-admission" class="atm-menu-inferior"><small>Admissions</small></a></li>
             <li><a href="/<?php print $language->prefix ?>/admissions-talks" class="atm-menu-inferior"><small><?php print t('Informative Talks') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/admissions-calendar"><small><?php print t('Admissions Calendar') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/admissions-calendar" class="atm-menu-inferior"><small><?php print t('Admissions Calendar') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/visit-utec" class="atm-menu-inferior"><small><?php print t('Visit UTEC') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/financial-information" class="atm-menu-inferior"><small><?php print t('Financial Information') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/advising-and-counseling" class="atm-menu-inferior"><small><?php print t('Guidance') ?></small></a></li>
@@ -133,7 +133,7 @@
             <li class="title text-gray-lighter">Admisión</li>
             <li><a href="/<?php print $language->prefix ?>/modalidades-de-admision" class="atm-menu-inferior"><small>Modalidades de Admisión</small></a></li>
             <li><a href="/<?php print $language->prefix ?>/charlas-informativas" class="atm-menu-inferior"><small><?php print t('Informative Talks') ?></small></a></li>
-            <li><a href="/<?php print $language->prefix ?>/calendario-de-admision"><small><?php print t('Admissions Calendar') ?></small></a></li>
+            <li><a href="/<?php print $language->prefix ?>/calendario-de-admision" class="atm-menu-inferior"><small><?php print t('Admissions Calendar') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/visita-utec" class="atm-menu-inferior"><small><?php print t('Visit UTEC') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/informacion-economica" class="atm-menu-inferior"><small><?php print t('Financial Information') ?></small></a></li>
             <li><a href="/<?php print $language->prefix ?>/orientacion-vocacional" class="atm-menu-inferior"><small><?php print t('Guidance') ?></small></a></li>
@@ -205,5 +205,89 @@
     },
     h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
   })(document);
+</script>
+
+<script>
+function newsletter() {
+	var dataLayer = dataLayer || [];
+	dataLayer.push({
+	    'event': 'formSubmit',
+	    'form': 'Suscríbete a la UTEC',
+	    'estado': 'Success'
+	});
+}
+
+function contacto_general() {
+	var dataLayer = dataLayer || [];
+	dataLayer.push({
+	    'event': 'formSubmit',
+	    'form': 'Contacto General',
+	    'estado': 'Success'
+	});
+}
+
+function formulario_de_aplicacion() {
+	var dataLayer = dataLayer || [];
+	dataLayer.push({
+	    'event': 'formSubmit',
+	    'form': 'Formulario de Aplicación',
+	    'estado': 'Success'
+	});
+}	
+
+function centro_pre() {
+	var dataLayer = dataLayer || [];
+	dataLayer.push({
+	    'event': 'formSubmit',
+	    'form': 'Inscripción Centro Pre',
+	    'estado': 'Success'
+	});
+}
+
+function alto_rendimiento() {
+	var dataLayer = dataLayer || [];
+	dataLayer.push({
+	    'event': 'formSubmit',
+	    'form': 'Formulario Alto Redimiento',
+	    'estado': 'Success'
+	});
+}
+
+function examen_admision() {
+	var dataLayer = dataLayer || [];
+	dataLayer.push({
+	    'event': 'formSubmit',
+	    'form': 'Formulario Exámen de Admisión',
+	    'estado': 'Success'
+	});	
+}
+
+function bachillerato() {
+	var dataLayer = dataLayer || [];
+	dataLayer.push({
+	    'event': 'formSubmit',
+	    'form': 'Formulario Bachillerato',
+	    'estado': 'Success'
+	});	
+}
+
+function traslado() {
+	var dataLayer = dataLayer || [];
+	dataLayer.push({
+	    'event': 'formSubmit',
+	    'form': 'Formulario Traslado',
+	    'estado': 'Success'
+	});	
+}
+
+function primeros_puestos() {
+	var dataLayer = dataLayer || [];
+	dataLayer.push({
+	    'event': 'formSubmit',
+	    'form': 'Formulario Primeros Puestos',
+	    'estado': 'Success'
+	});	
+}
+
 </script>
 

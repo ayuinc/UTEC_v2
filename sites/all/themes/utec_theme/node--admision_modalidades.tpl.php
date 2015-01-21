@@ -14,9 +14,9 @@ $titulo = $node->title;
 	<div class="separator-gray separator-lg"></div>
 	<ul class="grid-list grid-list-3 grid-list-1-xs grid-list-hover size sm">
 		<?php if ($language->prefix == 'es'): ?>
-		<li data-href="/<?php print $language->prefix ?>/modalidades-de-admision/primeros-puestos">
+		<li data-href="/<?php print $language->prefix ?>/modalidades-de-admision/primeros-puestos" class="atm-blog" id="primeros-puestos">
 		<?php elseif ($language->prefix == 'en'): ?>
-		<li data-href="/en/methods-of-admission/top-academic-rankings">
+		<li data-href="/en/methods-of-admission/top-academic-rankings" class="atm-blog" id="primeros-puestos">
 		<?php endif ?>
 			<div>
 				<h3 class="thin lead lh-lg"><?php print t('Top Academic Rankings') ?></h3>
@@ -26,9 +26,9 @@ $titulo = $node->title;
 			</div>
 		</li>
 		<?php if ($language->prefix == 'es'): ?>
-		<li data-href="/<?php print $language->prefix ?>/modalidades-de-admision/alto-rendimiento">
+		<li data-href="/<?php print $language->prefix ?>/modalidades-de-admision/alto-rendimiento" class="atm-blog" id="alto-rendimiento">
 		<?php elseif ($language->prefix == 'en'): ?>
-		<li data-href="/en/methods-of-admission/high-performance-assessment">
+		<li data-href="/en/methods-of-admission/high-performance-assessment" class="atm-blog" id="alto-rendimiento">
 		<?php endif ?>		
 			<div>
 				<h3 class="thin lead lh-lg"><?php print t('High Performance Assessment') ?></h3>
@@ -38,9 +38,9 @@ $titulo = $node->title;
 			</div>
 		</li>
 		<?php if ($language->prefix == 'es'): ?>
-		<li data-href="/<?php print $language->prefix ?>/modalidades-de-admision/traslados">
+		<li data-href="/<?php print $language->prefix ?>/modalidades-de-admision/traslados" class="atm-blog" id="traslado">
 		<?php elseif ($language->prefix == 'en'): ?>
-		<li data-href="/en/methods-of-admission/transfer-from-other-universities">
+		<li data-href="/en/methods-of-admission/transfer-from-other-universities" class="atm-blog" id="traslado">
 		<?php endif ?>				
 			<div>
 				<h3 class="thin lead lh-lg"><?php print t('Transfer') ?></h3>
@@ -50,9 +50,9 @@ $titulo = $node->title;
 			</div>
 		</li>
 		<?php if ($language->prefix == 'es'): ?>
-		<li data-href="/<?php print $language->prefix ?>/modalidades-de-admision/centro-pre">
+		<li data-href="/<?php print $language->prefix ?>/modalidades-de-admision/centro-pre" class="atm-blog" id="centro-pre">
 		<?php elseif ($language->prefix == 'en'): ?>
-		<li data-href="/en/methods-of-admission/pre-university-center">
+		<li data-href="/en/methods-of-admission/pre-university-center" class="atm-blog" id="centro-pre">
 		<?php endif ?>			
 			<div>
 				<h3 class="thin lead lh-lg"><?php print t('Pre University Center') ?></h3>
@@ -62,9 +62,9 @@ $titulo = $node->title;
 			</div>
 		</li>
 		<?php if ($language->prefix == 'es'): ?>
-		<li data-href="/<?php print $language->prefix ?>/modalidades-de-admision/bachillerato-internacional">
+		<li data-href="/<?php print $language->prefix ?>/modalidades-de-admision/bachillerato-internacional" class="atm-blog" id="bachillerato-internacional">
 		<?php elseif ($language->prefix == 'en'): ?>
-		<li data-href="/en/methods-of-admission/international-baccalaureate">
+		<li data-href="/en/methods-of-admission/international-baccalaureate" class="atm-blog" id="bachillerato-internacional">
 		<?php endif ?>		
 			<div>
 				<h3 class="thin lead lh-lg"><?php print t('International Baccalaureate') ?></h3>
@@ -74,9 +74,9 @@ $titulo = $node->title;
 			</div>
 		</li>
 		<?php if ($language->prefix == 'es'): ?>
-		<li data-href="/<?php print $language->prefix ?>/modalidades-de-admision/examen-de-admision">
+		<li data-href="/<?php print $language->prefix ?>/modalidades-de-admision/examen-de-admision" class="atm-blog" id="examen-de-admision">
 		<?php elseif ($language->prefix == 'en'): ?>
-		<li data-href="/en/methods-of-admission/admission-exam">
+		<li data-href="/en/methods-of-admission/admission-exam" class="atm-blog" id="examen-de-admision">
 		<?php endif ?>			
 			<div>
 				<h3 class="thin lead lh-lg"><?php print t('Admission Exam') ?></h3>

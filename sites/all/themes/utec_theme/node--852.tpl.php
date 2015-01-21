@@ -240,7 +240,7 @@
 			<div id="errordiv" class="col-sm-12 form-group"></div>			
 		</div>			
 		<div class="text-right">
-			<button  id="" type="submit" class="btn btn-primary btn-lg">Enviar</button>
+			<button  id="" type="submit" class="btn btn-primary btn-lg" onclick="centro_pre()">Enviar</button>
 		</div>
 	</form>						
 </div>

@@ -2,22 +2,22 @@
 <div class="mobile-nav-display-triggers"> 
   <ul>
     <li>
-      <a href="#mobile-nav-display-1"><?php print t('We are Utec') ?></a>
+      <a href="#mobile-nav-display-1" class="atm-menu-principal-movil"><?php print t('We are Utec') ?></a>
     </li>
     <li>
-      <a href="#mobile-nav-display-2"><?php print t('Research') ?></a>
+      <a href="#mobile-nav-display-2" class="atm-menu-principal-movil"><?php print t('Research') ?></a>
     </li>
     <li>
-      <a href="#mobile-nav-display-3"><?php print t('Programs') ?></a>
+      <a href="#mobile-nav-display-3" class="atm-menu-principal-movil"><?php print t('Programs') ?></a>
     </li>
     <li>
-      <a href="#mobile-nav-display-4"><?php print t('Admissions') ?></a>
+      <a href="#mobile-nav-display-4" class="atm-menu-principal-movil"><?php print t('Admissions') ?></a>
     </li>
     <li>
-      <a href="#mobile-nav-display-5"><?php print t('Alliances') ?></a>
+      <a href="#mobile-nav-display-5" class="atm-menu-principal-movil"><?php print t('Alliances') ?></a>
     </li>
     <li>
-      <a href="#mobile-nav-display-6"><?php print t('SPD') ?></a>
+      <a href="#mobile-nav-display-6" class="atm-menu-principal-movil"><?php print t('SPD') ?></a>
     </li>
   </ul>
 </div>
