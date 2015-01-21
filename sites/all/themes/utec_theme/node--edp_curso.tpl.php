@@ -88,6 +88,7 @@
 			</div>
 		</div>
 		<div>
+			<?php if($profesor_name) : ?>
 			<h3><?php print t('Faculty:') ?></h3>
 			<div class="list-custom-left">
 				<ul>
@@ -101,6 +102,7 @@
 					<li class="lead pl-21 text-gray"><?php print $profesor_resenia ?></li>
 				</ul>
 			</div>
+			<?php endif; ?>
 		</div>
 		<div>
 			<ul class="grid-list grid-list-5 grid-list-1-xs grid-list-hover grid-list-hover-gray-lighter size xs">
