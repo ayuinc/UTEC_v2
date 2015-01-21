@@ -18,7 +18,12 @@
     <?php $desc_ingles = $value['entity']->field_descripci_n_consejo_dir_in['und'][0]['value']; ?>	
      	   		
     <?php $uid = $value['entity']->uid; ?>	
-    <?php $profesor_url = "/" . $language->language . "/" . drupal_get_path_alias('page/30/consejo-directivo/'.$uid, $language->language); ?>	
+    <?php 
+        if ($language->prefix) {
+          $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/consejo-directivo/'.$uid, $language->language); 
+        }else
+          $profesor_url = "/" . drupal_get_path_alias('page/30/consejo-directivo/'.$uid, $language->language); 
+      ?> 
 			<li class="mb-ch-14">
 				<div class="grid-list-pic"><img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="" width="98px" height="auto" class="img-circle"></div>
 				<div>
