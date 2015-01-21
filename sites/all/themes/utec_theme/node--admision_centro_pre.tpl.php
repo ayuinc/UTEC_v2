@@ -111,7 +111,7 @@ $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 			</div>
 		</div>
 	</div>
-	<div data-section-scroll="Calendario" class="section-scroll-content pt-0">
+	<div data-section-scroll="<?php print t('Calendar') ?>" class="section-scroll-content pt-0">
 		<div class="container-sm">
 			<h3 class="thin lead"><?php print t('Calendar') ?></h3>
 			<h4 class="text-gray"><?php print t('Pre intensiva January - February 2015') ?></h4>
@@ -165,7 +165,7 @@ $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 		</div>
 		<a href="#" class="btn btn-lg btn-primary see-more uppercase ml-70 mr-70">Ver Requisitos</a>
 	</div>-->
-	<div data-section-scroll="Solicita informacion" class="container-sm section-scroll-content pt-0">
+	<div data-section-scroll="<?php print t('Request info') ?>" class="container-sm section-scroll-content pt-0">
 		<div class="container-sm">
 			<h3><?php print t("For more information:") ?></h3>
 			<form action="/registro.php" data-submit="Formulario de inscripcion" method="post" id="formRegistro" name="formRegistro">
