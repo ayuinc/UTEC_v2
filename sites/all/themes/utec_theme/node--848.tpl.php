@@ -18,8 +18,10 @@
 	<div clsass="separator-gray separator-lg"></div>
 </div>
 <div class="container-sm form-custom">
-	<form action="/registro.php" class="mb-ch-28" data-submit="Formulario de inscripcion" method="post">
+	<form action="/registro.php" class="mb-ch-28" data-submit="Formulario de inscripcion" method="post" id="formRegistro" name="formRegistro">
 		<input type="hidden" name="origen" value="<?php print $title; ?>">
+		<input type="hidden" name="idioma" value="<?php print $idioma; ?>">
+			
 		<div class="row">
 			<div class="form-group col-sm-4">
 				<label for="" class="sr-only">Nombres</label>
@@ -43,7 +45,7 @@
 			<div class="form-group col-sm-4">
 				<label for="" class="sr-only">Carrera de interés</label>
 				<select name="carrera" id="carrera" class="form-control select-override">
-					<option value="Carrera de interés">Carrera de interés</option>
+					<option value="">Carrera de interés</option>
 					<option value="15970"><?php print t('Industrial Engineering') ?></option>
 		            <option value="14864"><?php print t('Mechanical Engineering') ?></option>
 		            <option value="15968"><?php print t('Energy Engineering') ?></option>
@@ -95,7 +97,7 @@
 			</div>
 			<div class="form-group col-sm-4">
 				<select name="dia" id="dia" class="form-control select-override">
-					<option value="Día">Día</option>
+					<option value="">Día</option>
 					<?php for ($x = 1; $x <= 31; $x++) { ?>
     					<?php echo "<option value='$x'>$x</option>";?> 
 					<?php } ?>
@@ -103,7 +105,7 @@
 			</div>
 			<div class="form-group col-sm-4">
 				<select name="mes" id="mes" class="form-control select-override">
-					<option value="Mes">Mes</option>
+					<option value="">Mes</option>
 					<option value="Enero">Enero</option> <option value="Febrero">Febrero</option> <option value="Marzo">Marzo</option>
 					<option value="Abril">Abril</option> <option value="Mayo">Mayo</option> <option value="Junio">Junio</option>
 					<option value="Julio">Julio</option> <option value="Agosto">Agosto</option> <option value="Setiembre">Setiembre</option>
@@ -112,7 +114,7 @@
 			</div>
 			<div class="form-group col-sm-4">
 				<select name="ano" id="ano" class="form-control select-override">
-					<option value="Año">Año</option>
+					<option value="">Año</option>
 					<?php for ($x = 1970; $x <= 2015; $x++) { ?>
     					<?php echo "<option value='$x'>$x</option>";?> 
 					<?php } ?>
@@ -180,7 +182,7 @@
 			<div class="col-sm-12"><label for="">Año que culminó los estudios secundarios o bachillerato</label></div>
 			<div class="col-sm-3 form-group">
 				<select name="ano-culminacion" id="ano-culminacion" class="form-control select-override">
-					<option value="Año">Año</option>
+					<option value="">Año</option>
 					<?php for ($x = 1970; $x <= 2015; $x++) { ?>
     					<?php echo "<option value='$x'>$x</option>";?> 
 					<?php } ?>
@@ -231,14 +233,47 @@
 				<input  id="estudiante-no" type="radio" name="estudiante" value ="N"> No
 			</div>
 		</div>
+		<div class="row errordiv">
+			<div id="errordiv" class="col-sm-12 form-group"></div>			
+		</div>			
 		<div class="text-right">
 			<button  id="" type="submit" class="btn btn-primary btn-lg">Enviar</button>
 		</div>
 	</form>						
 </div>
-<div class="container pt-42">
-	<div class="col-md-1"></div>
-	<div class="col-md-10">
-	</div>
-	<div class="col-md-1"></div>
-</div>
+
+<script type="text/javascript">
+jQuery(function() {                        
+    jQuery('#formRegistro').validate( {
+	      rules: {
+	        "nombres": { required: true }, "apellidop": { required: true }, "apellidom": { required: true }, "carrera": { required: true },	
+	        "tipo-documento": { required: true }, "documento": { required: true }, "pais": { required: true }, "ciudad": { required: true },	
+	        "dia": { required: true }, "mes": { required: true }, "ano": { required: true }, "depto": { required: true }, "provincia": { required: true },	
+	        "distrito": { required: true }, "direccion-actual": { required: true },	"email": { required: true }, "celular-1": { required: true },	
+			"ano-culminacion": { required: true }, "colegio-procedencia": { required: true }, 
+			"estudios-dpto": { required: true }, "estudios-provincia": { required: true },
+	        "estudios-distrito": { required: true }, "estudios-rendimiento": { required: true }
+	      },
+	      messages: {
+		    "nombres": { required: "Completa tus nombres <br />" }, "apellidop": { required: "Completa tu apellido paterno <br /> " },		
+		    "apellidom": { required: "Completa tu apellido materno <br /> " }, "carrera": { required: "Selecciona tu carrera <br /> " },	
+		    "tipo-documento": { required: "Selecciona tu tipo de documento <br /> " }, "documento": { required: "Completa tu documento <br /> " },	
+		    "pais": { required: "Completa tu país <br /> " }, "ciudad": { required: "Completa tu ciudad <br /> " }, 
+		    "dia": { required: "Completa tu día de nacimiento <br /> " }, "mes": { required: "Completa tu mes de nacimiento <br /> " },
+		    "ano": { required: "Completa tu año de nacimiento <br /> " }, "depto": { required: "Completa tu departamento <br /> " },
+		    "provincia": { required: "Completa tu provincia <br /> " }, "distrito": { required: "Completa tu distrito <br /> " },
+		    "direccion-actual": { required: "Completa tu domicilio <br /> " }, "email": { required: "Completa tu e-mail <br /> " },
+	      	"celular-1": { required: "Completa tu celular 1 <br /> " }, "ano-culminacion": { required: "Completa tu año de culminación <br /> " }, 
+	      	"colegio-procedencia": { required: "Completa tu colegio de procedencia <br /> " },
+		    "estudios-dpto": { required: "Completa el departamento de tu colegio <br /> " }, "estudios-provincia": { required: "Completa la provincia de tu colegio <br /> " },
+		    "estudios-distrito": { required: "Completa el distrito de tu colegio <br /> " }, "estudios-rendimiento": { required: "Selecciona tu rendimiento académico <br /> " }
+		  },
+	      errorPlacement: function( error, element ) {
+	        	error.insertAfter( '#errordiv' );
+	      },
+	      submitHandler: function( form ) {                                                 
+	      		form.submit();
+	      }
+    });
+});
+</script>

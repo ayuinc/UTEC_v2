@@ -27,9 +27,9 @@
 ?>
 <div class="hero-unit"> <!-- HERO -->
   <?php if ($language->prefix == 'en'): ?>
-    <div data-section-scroll="Overview" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
+    <div data-section-scroll="Overview" id="que-es" class="scroll-down-white section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
   <?php elseif ($language->prefix == 'es'): ?>
-    <div data-section-scroll="Acerca de" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
+    <div data-section-scroll="Acerca de" id="que-es" class="scroll-down-white section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
   <?php endif ?>
     <div class="overlay flex-middle">
       <div class="container-sm hero-text" data-href="<?php print $carrera_link ?>">
@@ -48,15 +48,15 @@
           </div>
         </div>
       </div>
-      <a class="scroll-down scroll-down-sq size lg" href="#mallacurricular" rel="nofollow">
+      <!-- <a class="scroll-down scroll-down-sq size lg" href="#mallacurricular" rel="nofollow">
         <i class="icon-arrows-down bg-white-op text-gray"></i>
-      </a>
+      </a> -->
     </div>
   </div>
 </div> <!-- END:Hero -->
-<div data-section-scroll="<?php print t('Curriculum') ?>" id="malla-curricular" class="malla-curricular section-scroll-content minh-560 flex-middle-center">
+<div data-section-scroll="<?php print t('Curricular Structure') ?>" id="malla-curricular" class="scroll-down-info malla-curricular section-scroll-content minh-560 flex-middle-center">
   <div class="container-sm text-right normalize-text" data-href="<?php print $malla_link ?>">
-    <h2 class="lead thin h1"><?php print t('Curriculum') ?></h2>
+    <h2 class="lead thin h1"><?php print t('Curricular Structure') ?></h2>
     <hr class="hr-gray">
     <div class="row mt-28">
       <div class="col-sm-9">
@@ -71,13 +71,13 @@
       </div>
     </div>
   </div>
-  <a class="scroll-down scroll-down-sq size lg" href="#menciones" rel="nofollow">
+  <!-- <a class="scroll-down scroll-down-sq size lg" href="#menciones" rel="nofollow">
     <i class="icon-arrows-down bg-info text-white"></i>
-  </a>
+  </a> -->
 </div>
-<div data-section-scroll="<?php print t('Majors') ?>" id="menciones" class="section-scroll-content minh-560 flex-middle-center bg-info-op">
+<div data-section-scroll="<?php print t('Minors') ?>" id="menciones" class="scroll-down-info section-scroll-content minh-560 flex-middle-center bg-info-op">
   <div class="container-sm text-left text-white normalize-text" data-href="<?php print $menciones_link ?>">
-    <h2 class="lead thin h1"><?php print t('Majors') ?></h2>
+    <h2 class="lead thin h1"><?php print t('Minors') ?></h2>
     <hr class="hr-white">
     <div class="row mt-28">
       <div class="col-sm-3 hidden-xs">
@@ -92,11 +92,11 @@
       </div>
     </div>
   </div>
-  <a class="scroll-down scroll-down-sq size lg" href="#profesores" rel="nofollow">
+  <!-- <a class="scroll-down scroll-down-sq size lg" href="#profesores" rel="nofollow">
     <i class="icon-arrows-down bg-info text-white"></i>
-  </a>
+  </a> -->
 </div>
-<div data-section-scroll="<?php print t('Faculty') ?>" id="profesores" class="section-scroll-content minh-560 flex-middle-center">
+<div data-section-scroll="<?php print t('Faculty') ?>" id="profesores" class="scroll-down-info section-scroll-content minh-560 flex-middle-center">
   <div class="container-sm text-center normalize-text php-7">
     <h2 class="lead thin h1"><?php print t('Faculty') ?></h2>
     <hr class="hr-gray">
@@ -127,9 +127,9 @@
   <div class="container-sm">
     <h3 class="lead thin text-gray"><em><?php print $profesor_txt ?></em></h3>
   </div>
-  <a class="scroll-down scroll-down-sq size lg" href="#perfil-egresado" rel="nofollow">
+  <!-- <a class="scroll-down scroll-down-sq size lg" href="#perfilegresado" rel="nofollow">
     <i class="icon-arrows-down bg-info text-white"></i>
-  </a>
+  </a> -->
 </div>
 <div data-section-scroll="<?php print t('Graduate profile') ?>" id="perfil-egresado" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_perfil_egresado_imagen)?>);">
   <div class="container" data-href="<?php print $perfil_link ?>">
