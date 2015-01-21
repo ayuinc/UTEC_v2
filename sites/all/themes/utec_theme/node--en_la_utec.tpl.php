@@ -41,7 +41,7 @@
     <h1 class="lead text-gray-darker medium pt-21 mb-7 text-switcher">
       <?php print t('At UTEC, engineering is') ?>
     </h1>
-    <h1 class="text-switcher">
+    <h1 class="lead medium pt-21 mb-7 text-switcher">
       <span><?php print t('well-being') ?></span>
       <span><?php print t('well-being') ?></span>
       <span><?php print t('well-being') ?></span>

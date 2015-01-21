@@ -6013,7 +6013,6 @@ img.icon-utec {
     overflow: hidden;
     opacity: 0;
     position: absolute;
-    width: 100%;
     color: #8f8d8e;
     -webkit-animation: rotateWordsFirst 18s linear infinite 0s;
     -moz-animation: rotateWordsFirst 18s linear infinite 0s;
