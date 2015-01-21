@@ -54,9 +54,6 @@ $carreras = array(
     '00000' => 'N/S', 
 );
 
-$origen = utf8_decode($_POST['origen']);
-$idioma = utf8_decode($_POST['idioma']);
-
 //Inicio del proceso de envío de correos
 $mail = new PHPMailer();
 $destinatarios = array(
@@ -85,6 +82,9 @@ $contenidorpta = "";
 //Definicón de subject, destinatario, título
 
 //BLOQUE ESPAÑOL
+$origen = utf8_decode($_POST['origen']);
+echo $origen;
+$idioma = utf8_decode($_POST['idioma']);
 
 if($idioma == "es")
 {
@@ -414,29 +414,29 @@ if($idioma == "es")
 
 if($idioma == "en")
 {
-        if($origen == "Examen de Admision" || $origen == "Primeros puestos" || $origen == "Alto Rendimiento" || 
+        if($origen == "Admissions Exam" || $origen == "Top Academic Rankings" || $origen == "Alto Rendimiento" || 
            $origen == "Traslado Externo" || $origen == "Centro Pre" || $origen == "Bachillerato Internacional" )
         {
 
             $fromTelemarketing = "informes@utec.edu.pe";
             $fromNameTelemarketing = "UTEC";
-            $tituloCliente = "¡Gracias por tu interés en UTEC.!";
-            $subjectCliente = "Gracias por tu Interés en UTEC";
+            $tituloCliente = "Thank you for your interest in UTEC!";
+            $subjectCliente = "Thank you for your interest in UTEC";
             $fromCliente = "admision@utec.edu.pe";
-            $fromNameCliente = "UTEC – Admisión";
+            $fromNameCliente = "UTEC – Admission";
 
-            if ($origen == "Examen de Admision")
+            if ($origen == "Admissions Exam")
             {
-                $tituloTelemarketing = "EXAMEN ADMISION - Datos Personales";
-                $subjectTelemarketing = "Solicitud - Examen Admision UTEC";
+                $tituloTelemarketing = "ADMISSIONS EXAM - Personal Data";
+                $subjectTelemarketing = "Solicitud - Admissions Exam UTEC";
                 $familia = "EXAMEN-ADMISION";
                 $origen = "pagina-examen-admision";
             }
 
-            if ($origen == "Primeros puestos")
+            if ($origen == "Top Academic Rankings")
             {
-                $tituloTelemarketing = "PRIMEROS PUESTOS - Datos Personales";
-                $subjectTelemarketing = "Solicitud - Primeros Puestos UTEC";
+                $tituloTelemarketing = "TOP ACADEMIC RANKINGS - Personal Data";
+                $subjectTelemarketing = "Solicitud - Top Academic Rankings UTEC";
                 $familia = "PRIMEROS-PUESTOS";
                 $origen = "pagina-primeros-puestos";
             }
@@ -542,23 +542,22 @@ if($idioma == "en")
 
         }
 
-
-        if($origen == "Charlas informativas" || $origen == "Contacto" || $origen == "Visita Utec" || 
+        if($origen == "Informative Talks" || $origen == "Contacto" || $origen == "Visita Utec" || 
            $origen == "Ven a la UTEC" || $origen == "Trabaja en UTEC")
         {
             $fromTelemarketing = "webmaster@utec.edu.pe";
             $fromNameTelemarketing = "UTEC";
-            $tituloCliente = "¡Gracias por tu interés en UTEC.!";
-            $subjectCliente = "Gracias por tu Interés en UTEC";
+            $tituloCliente = "Thank you for your interest in UTEC!";
+            $subjectCliente = "Thank you for your interest in UTEC";
             $fromCliente = "informes@utec.edu.pe";
             $fromNameCliente = "Universidad de Ingeniería & Tecnología";
 
 
-            if($origen == "Charlas informativas")
+            if($origen == "Informative Talks")
             {
-                $tituloTelemarketing = "Charlas Informativas";
-                $subjectTelemarketing = "Charlas Informativas UTEC";
-                $subjectCliente = "Charlas Informativas UTEC";
+                $tituloTelemarketing = "Informative Talks";
+                $subjectTelemarketing = "Informative Talks UTEC";
+                $subjectCliente = "Informative Talks UTEC";
                 $familia = "CHARLAS-INFORMATIVAS";
                 $origen = "pagina-charlas";
             }
@@ -1451,6 +1450,5 @@ if($error){
 
           header('Location: /gracias');
           exit();       
-}
 
 ?>
