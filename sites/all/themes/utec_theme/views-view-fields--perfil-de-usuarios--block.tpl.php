@@ -39,7 +39,35 @@
 <?php if ($language->prefix == 'en') : ?>
 <p><?php print $descripcion_ingles ?></p>
 <p><?php print $resenia_ingles ?></p>
+
+<p><?php print $descripcion_consejo_ingles ?></p>
+<p><?php print $resenia_consejo_ingles ?></p>
+
+<p><?php print $descripcion_autoridad_ingles ?></p>
+<p><?php print $resenia_autoridad_ingles ?></p>
+
 <?php else : ?>
 <p><?php print $descripcion ?></p>
 <p><?php print $resenia ?></p>
+
+<p><?php print $descripcion_consejo ?></p>
+<p><?php print $resenia_consejo ?></p>
+
+<p><?php print $descripcion_autoridad ?></p>
+<p><?php print $resenia_autoridad ?></p>
 <?php endif; ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
