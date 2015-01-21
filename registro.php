@@ -145,7 +145,7 @@ if($idioma == "es")
 
 
         if($origen == "Formulario inscripcion examen de admision" || $origen == "Formulario inscripcion alto rendimiento" || 
-           $origen == "Formulario inscripcion centro pre" || $origen == "Formulario inscripcion primeros puestos" || 
+           $origen == "Formulario inscripcion centro pre" || $origen == "Formulario-primeros-puestos" || 
            $origen == "Formulario inscripcion traslados" || $origen == "Formulario inscripcion bachillerato internacional" )
         {
 
@@ -191,7 +191,7 @@ if($idioma == "es")
                 $origen = "pagina-inscripcion-pre";  
             }
 
-            if($origen == "Formulario inscripcion primeros puestos")
+            if($origen == "Formulario-primeros-puestos")
             {
                 $tituloTelemarketing = "Registro de Inscripciones - Primeros Puestos UTEC";
                 $subjectTelemarketing = "Registro de Inscripciones - Primeros Puestos UTEC";
@@ -471,7 +471,7 @@ if($idioma == "en")
 
 
         if($origen == "Formulario inscripcion examen de admision" || $origen == "Formulario inscripcion alto rendimiento" || 
-           $origen == "Formulario inscripcion centro pre" || $origen == "Formulario inscripcion primeros puestos" || 
+           $origen == "Formulario inscripcion centro pre" || $origen == "Formulario-primeros-puestos" || 
            $origen == "Formulario inscripcion traslados" || $origen == "Formulario inscripcion bachillerato internacional" )
         {
 
@@ -517,7 +517,7 @@ if($idioma == "en")
                 $origen = "pagina-inscripcion-pre";  
             }
 
-            if($origen == "Formulario inscripcion primeros puestos")
+            if($origen == "Formulario-primeros-puestos")
             {
                 $tituloTelemarketing = "Registro de Inscripciones - Primeros Puestos UTEC";
                 $subjectTelemarketing = "Registro de Inscripciones - Primeros Puestos UTEC";
