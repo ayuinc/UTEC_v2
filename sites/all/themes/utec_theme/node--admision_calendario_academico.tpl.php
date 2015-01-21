@@ -67,7 +67,7 @@
 						<td>20/02/2015</td>
 					</tr>	
 					<tr>
-						<td class="highlight"><?php print t('Pre University Center')</td>
+						<td class="highlight"><?php print t('Pre University Center') ?></td>
 						<td><?php print t('Term 1 - Registration: May - November') ?></td>
 						<td>01/04/2014</td>
 					</tr>	
