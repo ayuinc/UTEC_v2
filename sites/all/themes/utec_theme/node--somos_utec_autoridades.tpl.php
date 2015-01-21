@@ -74,7 +74,7 @@
         <?php $res_ingles = $value['entity']->field_rese_a_autoridad_ingles['und']['0']['value']; ?>  
 
       <?php 
-        if ($language->prefix) {
+        if ($language->language == 'en') {
           $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/autoridades/'.$uid, $language->language); 
         }else
           $profesor_url = "/" . drupal_get_path_alias('page/30/autoridades/'.$uid, $language->language); 

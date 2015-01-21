@@ -20,7 +20,7 @@
     <?php $desc_ingles = $value['entity']->field_descripci_n_ingles['und']['0']['value']; ?>
     <?php //$profesor_url = "/" . $language->language . "/" . drupal_get_path_alias('user/'.$uid, $language->language); ?>	
 			<?php 
-	      if ($language->prefix) {
+	      if ($language->language == 'en') {
 	        $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/profesores/'.$uid, $language->language); 
 	      }else
 	        $profesor_url = "/" . drupal_get_path_alias('page/30/profesores/'.$uid, $language->language); 
