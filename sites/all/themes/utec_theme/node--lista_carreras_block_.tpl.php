@@ -7,7 +7,7 @@
 			<li>
 				<div>
 					<?php if ($language->prefix == 'en'): ?>
-					<div><i class="icon-ing-industrial"></i></div>
+					<div><a href="/<?php print $language->prefix ?>/industrial-engineering"><i class="icon-ing-industrial"></i></a></div>
 					<h2>
 						<a href="/<?php print $language->prefix ?>/industrial-engineering">
 							<span><?php print t('Industrial') ?></span>
@@ -16,7 +16,7 @@
 						</a>
 					</h2>
 					<?php elseif ($language->prefix == 'es'): ?>
-					<div><i class="icon-ing-industrial"></i></div>
+					<div><a href="/<?php print $language->prefix ?>/ingenieria-industrial"><i class="icon-ing-industrial"></i></a></div>
 					<h2>
 						<a href="/<?php print $language->prefix ?>/ingenieria-industrial">
 							<span><?php print t('Engineering') ?></span>
