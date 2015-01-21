@@ -15,7 +15,7 @@ $field_temario_alto = $node->field_temario_alto['und']['0']['value'];
 
 
 global $language; 
-$idioma = $language->prefix;	
+$idioma = $language->language;		
 
 ?>
 	<div class="container-sm">

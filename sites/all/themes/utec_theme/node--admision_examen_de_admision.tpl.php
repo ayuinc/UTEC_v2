@@ -8,7 +8,7 @@ $field_costos_examen = $node->field_costos_examen['und']['0']['value'];
 $field_temario_examen = $node->field_temario_examen['und']['0']['value'];
 
 global $language; 
-$idioma = $language->prefix;
+$idioma = $language->language;	
 
 
 

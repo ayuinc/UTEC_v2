@@ -2,7 +2,7 @@
 <?php $body = $node->body['und']['0']['value']; ?>
 <?php 
 		global $language; 
-		$idioma = $language->prefix;	
+		$idioma = $language->language;		
 ?>
 
 

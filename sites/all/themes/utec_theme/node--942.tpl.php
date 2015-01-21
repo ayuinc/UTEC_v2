@@ -10,7 +10,7 @@
 	$cuerpo = $node->body['und']['0']['value'];
 	$mencion = $node->field_mencion['und']['0']['value'];
 	$electivo = $node->field_electivo['und'];
-	$idioma = $language->prefix;		
+	$idioma = $language->language;			
 	// print_r($node);
 	//ALTO RENDIMIENTO
 ?>
