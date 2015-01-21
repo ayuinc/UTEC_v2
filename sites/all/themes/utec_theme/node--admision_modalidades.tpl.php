@@ -19,7 +19,7 @@ $titulo = $node->title;
 		<li data-href="/en/methods-of-admission/top-academic-rankings">
 		<?php endif ?>
 			<div>
-				<h3 class="thin lead lh-lg"><?php print t('Top Academic Rankings') ?></h3>
+				<h4 class="thin lead lh-lg"><?php print t('Top Academic Rankings') ?></h4>
 				<div class="size lg">
 					<i class="icon-admisiones-primeros-puestos"></i>
 				</div>
@@ -31,7 +31,7 @@ $titulo = $node->title;
 		<li data-href="/en/methods-of-admission/high-performance-assessment">
 		<?php endif ?>		
 			<div>
-				<h3 class="thin lead lh-lg"><?php print t('High Performance Assessment') ?></h3>
+				<h4 class="thin lead lh-lg"><?php print t('High Performance Assessment') ?></h4>
 				<div class="size lg">
 					<i class="icon-admisiones-alto-rendimiento"></i>
 				</div>
@@ -43,7 +43,7 @@ $titulo = $node->title;
 		<li data-href="/en/methods-of-admission/transfer-from-other-universities">
 		<?php endif ?>				
 			<div>
-				<h3 class="thin lead lh-lg"><?php print t('Transfer') ?></h3>
+				<h4 class="thin lead lh-lg"><?php print t('Transfer') ?></h4>
 				<div class="size lg">
 					<i class="icon-admisiones-traslado"></i>
 				</div>
@@ -55,7 +55,7 @@ $titulo = $node->title;
 		<li data-href="/en/methods-of-admission/pre-university-center">
 		<?php endif ?>			
 			<div>
-				<h3 class="thin lead lh-lg"><?php print t('Pre University Center') ?></h3>
+				<h4 class="thin lead lh-lg"><?php print t('Pre University Center') ?></h4>
 				<div class="size lg">
 					<i class="icon-admisiones-centro-pre"></i>
 				</div>
@@ -67,7 +67,7 @@ $titulo = $node->title;
 		<li data-href="/en/methods-of-admission/international-baccalaureate">
 		<?php endif ?>		
 			<div>
-				<h3 class="thin lead lh-lg"><?php print t('International Baccalaureate') ?></h3>
+				<h4 class="thin lead lh-lg"><?php print t('International Baccalaureate') ?></h4>
 				<div class="size lg">
 					<i class="icon-admisiones-bachillerato"></i>
 				</div>
@@ -79,7 +79,7 @@ $titulo = $node->title;
 		<li data-href="/en/methods-of-admission/admission-exam">
 		<?php endif ?>			
 			<div>
-				<h3 class="thin lead lh-lg"><?php print t('Admission Exam') ?></h3>
+				<h4 class="thin lead lh-lg"><?php print t('Admission Exam') ?></h4>
 				<div class="size lg">
 					<i class="icon-admisiones-examen"></i>
 				</div>
