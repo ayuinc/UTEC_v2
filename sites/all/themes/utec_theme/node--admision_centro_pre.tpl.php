@@ -163,13 +163,13 @@ $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 					<div class="col-sm-6">
 						<div class="form-group">
 							<label for="" class="sr-only"><?php print t('Name:') ?></label>
-							<input type="text" class="form-control input-lg" placeholder="*Nombres">
+							<input type="text" class="form-control input-lg" placeholder="*<?php print t('Name:') ?>">
 						</div>
 					</div>
 					<div class="col-sm-6">
 						<div class="form-group">
 							<label for="" class="sr-only"><?php print t('Last Name:') ?></label>
-							<input type="text" class="form-control input-lg" placeholder="*Apellidos">
+							<input type="text" class="form-control input-lg" placeholder="*<?php print t('Last Name:') ?>">
 						</div>
 					</div>
 				</div>
@@ -177,13 +177,13 @@ $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 					<div class="col-sm-6">
 						<div class="form-group">
 							<label for="" class="sr-only"><?php print t('Phone number:') ?></label>
-							<input type="text" class="form-control input-lg" placeholder="*T-Fijo">
+							<input type="text" class="form-control input-lg" placeholder="*<?php print t('Phone number:') ?>">
 						</div>
 					</div>
 					<div class="col-sm-6">
 						<div class="form-group">
 							<label for="" class="sr-only"><?php print t('School:') ?></label>
-							<input type="text" class="form-control input-lg" placeholder="*Colegio">
+							<input type="text" class="form-control input-lg" placeholder="*<?php print t('School:') ?>">
 						</div>
 					</div>
 				</div>
@@ -204,7 +204,7 @@ $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 					</div>
 				</div>
 				<div class="form-group">
-					<textarea name="" id="" rows="5" class="form-control input-lg" placeholder="Consulta"></textarea>
+					<textarea name="" id="" rows="5" class="form-control input-lg" placeholder="<?php print t('Write a Message') ?>"></textarea>
 				</div>
 				<p class="help-block ml-70"><?php print t('(*) Required fields') ?>(*) <?php print t('Required fields') ?></p>
 				<div class="pv-21 text-right">
