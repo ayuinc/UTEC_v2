@@ -5343,9 +5343,8 @@ textarea:-ms-input-placeholder {
   font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
   font-weight: 300;
   font-style: normal;
-  text-transform: uppercase;
   color: #8f8d8e;
-  font-size: 24px; }
+  font-size: 18px; }
 
 .breadcrumbs-custom {
   position: absolute;

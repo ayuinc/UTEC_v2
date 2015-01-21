@@ -1,3 +1,4 @@
+<?php global $language ?>
 <?php global $base_url; ?>
 <?php global $theme_path; ?>
 <?php $path = $base_url.'/'.$theme_path; ?>
@@ -24,7 +25,31 @@
 <?php $field_link_proyecto = $node->field_link_proyecto['und']['0']['value']; ?>
 <?php $field_foto_redes_sociales = $node->field_foto_redes_sociales['und']['0']['filename']; ?>
 
-<div data-section-scroll="Acerca de" class="hero-unit size lg section-scroll-content scroll-down-info flex-middle-center">
+<div class="hero-unit size lg">
+	<?php if ($language->prefix == 'en'): ?>
+	  <div data-section-scroll="Overview" id="que-es" class="scroll-down-white section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
+	<?php elseif ($language->prefix == 'es'): ?>
+	  <div data-section-scroll="Acerca de" id="que-es" class="scroll-down-white section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
+	<?php endif ?>
+		<div class="container-sm text-center">
+			<h1 class="mb-7"><?php print $field_frase_autor ?></h1>
+			<p class="mb-0 pb-0"><?php print $field_nombre_autor ?></p>
+			<small class="gray-light light"><em><?php print $field_titulo_del_autor ?></em></small>
+			<div class="pv-35">
+				<p><?php print $field_quote ?></p>
+				<?php print $field_introduccion_autor ?>
+			</div>
+		</div>
+	</div>
+	<a class="scroll-down scroll-down-sq size lg" href="#unpanel" rel="nofollow">
+		<i class="icon-arrows-down bg-info-op text-white"></i>
+	</a>
+</div> <!-- END:Hero -->
+	<?php if ($language->prefix == 'en'): ?>
+<div data-section-scroll="A panel" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_foto_causa)?>);">
+	<?php elseif ($language->prefix == 'es'): ?>
+<div data-section-scroll="Un panel" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_foto_causa)?>);">
+	<?php endif ?>
 	<div class="container-sm text-center">
 		<h1 class="mb-7"><?php print $field_frase_autor ?></h1>
 		<p class="mb-0 pb-0"><?php print $field_nombre_autor ?></p>
@@ -35,7 +60,6 @@
 		</div>
 	</div>
 </div>
-<div data-section-scroll="Un panel" class="section-scroll-content scroll-down-info bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_foto_causa)?>);">
 	<div class="overlay flex-middle">
 		<div class="container hero-text" data-href="<?php print $field_link_causa ?>">
 			<div class="row">
@@ -59,7 +83,11 @@
 		<h3 class="lead"><?php print $field_frase_causa ?></h3>
 	</div>
 </div>
-<div data-section-scroll="Tres acciones" class="section-scroll-content scroll-down-info bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_foto_tres_acciones)?>);">
+	<?php if ($language->prefix == 'en'): ?>
+<div data-section-scroll="Three actions" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_foto_tres_acciones)?>);">
+	<?php elseif ($language->prefix == 'es'): ?>
+<div data-section-scroll="Tres acciones" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_foto_tres_acciones)?>);">
+	<?php endif ?>
 	<div class="overlay flex-middle">
 		<div class="container hero-text" data-href="<?php print $field_link_tres_acciones ?>">
 			<div class="row">
@@ -82,7 +110,11 @@
 		<i class="icon-arrows-down bg-info-op text-white"></i>
 	</a> -->
 </div>
-<div data-section-scroll="Purificando el agua" class="section-scroll-content minh-560 scroll-down-info flex-middle-center">
+	<?php if ($language->prefix == 'es'): ?>
+<div data-section-scroll="Purificando el agua" class="section-scroll-content minh-560 flex-middle-center">
+	<?php elseif ($language->prefix == 'en'): ?>
+<div data-section-scroll="Purifying water" class="section-scroll-content minh-560 flex-middle-center">
+	<?php endif ?>
 	<div class="container-sm text-center normalize-text" data-href="<?php print $field_link_proyecto ?>">
 		<h2 class="lead thin"><?php print $field_titulo_proyecto ?></h2>
 		<hr class="hr-gray">
@@ -98,7 +130,11 @@
 		<i class="icon-arrows-down bg-info-op text-white"></i>
 	</a> -->
 </div>
+	<?php if ($language->prefix == 'es'): ?>
 <div data-section-scroll="Descubre más" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_foto_redes_sociales)?>);">
+	<?php elseif ($language->prefix == 'en'): ?>
+<div data-section-scroll="Find more" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_foto_redes_sociales)?>);">
+	<?php endif ?>
 	<div class="overlay flex-middle">
 		<div class="container-xs text-white text-center hero-text relative on-top">
 			<h2 class="h3 mb-0"><?php print t('We call it:') ?></h2> <h1 class="thin mt-0"><?php print t('Ingenuity in Action') ?></h1>
