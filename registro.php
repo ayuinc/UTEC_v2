@@ -73,6 +73,8 @@ $fromCliente = "";
 $fromNameCliente = "";
 $familia = "";
 $origen = "";
+$mensaje_html ="";
+$contenidorpta = "";
 
 //Definicón de subject, destinatario, título
 
