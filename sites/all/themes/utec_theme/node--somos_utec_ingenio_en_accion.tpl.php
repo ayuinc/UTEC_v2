@@ -41,7 +41,7 @@
 	</div>
 </div>
 	<?php if ($language->prefix == 'en'): ?>
-<div data-section-scroll="A panel" class="section-scroll-content scroll-down-white bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_foto_causa)?>);">
+<div data-section-scroll="A special Billboard" class="section-scroll-content scroll-down-white bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_foto_causa)?>);">
 	<?php elseif ($language->prefix != 'en'): ?>
 <div data-section-scroll="Un panel" class="section-scroll-content scroll-down-white bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_foto_causa)?>);">
 	<?php endif ?>
