@@ -22,6 +22,7 @@ $field_calendario_lugar = $node->field_calendario_lugar['und']['0']['value'];
 $field_inscripcion_pre_extensive = $node->field_inscripcion_pre_extensive['und']['0']['value'];
 $field_inscripcion_pre_intensiva = $node->field_inscripcion_pre_intensiva['und']['0']['value'];
 $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
+$modalida_ext_int = $node->field_modalidad_extensiva_intens['und']['0']['value'];
 ?>
 
 
@@ -126,7 +127,7 @@ $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 	<div data-section-scroll="<?php print t('Calendar') ?>" class="section-scroll-content pt-0">
 		<div class="container-sm">
 			<h3 class="thin lead"><?php print t('Calendar') ?></h3>
-			<h4 class="text-gray"><?php print t('Pre intensiva January - February 2015') ?></h4>
+			<h4 class="text-gray"><?php print $modalida_ext_int ?></h4>
 			<div class="list-custom-left normalize-text lead-ch mb-ch-21">
 				<ul>
 					<li class="bg-primary text-white uppercase text-center p-21">

@@ -343,7 +343,7 @@ if($idioma == "es")
                                     <td>'.$_POST['celular-2'].'</td>
                </tr>
                <tr>
-                                    <td>Telefono Fijo:</td>
+                                    <td>Telefono:</td>
                                     <td>'.$_POST['telefono'].'</td>
                </tr>
                <tr>
@@ -667,7 +667,7 @@ if($idioma == "en")
                                     <td>'.$_POST['celular-2'].'</td>
                </tr>
                <tr>
-                                    <td>Landline:</td>
+                                    <td>Phone:</td>
                                     <td>'.$_POST['telefono'].'</td>
                </tr>
                <tr>
