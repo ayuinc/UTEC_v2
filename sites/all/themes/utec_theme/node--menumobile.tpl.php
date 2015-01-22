@@ -57,7 +57,7 @@
 			<?php if ($language->language == 'es'): ?>
 				<a href="/<?php print $language->language ?>/metodologia-educativa"><span>Metodología</span>Educativa</a>
 			<?php elseif ($language->language == 'en'): ?>
-				<a href="/<?php print $language->language ?>/academic-methodology"><span><?php print t('Academic') ?></span><?php print t('Methodology') ?></a>
+				<a href="/<?php print $language->language ?>/teaching-methodology"><span><?php print t('Academic') ?></span><?php print t('Methodology') ?></a>
 			<?php endif ?>
 		</li>
 		<li>
@@ -78,7 +78,7 @@
 			<?php if ($language->language == 'es'): ?>
 				<a href="/<?php print $language->language ?>/vida-estudiantil"><span>Vida Estudiantil</a>
 			<?php elseif ($language->language == 'en'): ?>
-				<a href="/<?php print $language->language ?>/student-life"><span>UTEC Life</span></a>
+				<a href="/<?php print $language->language ?>/student-life"><span>Student Life</span></a>
 			<?php endif ?>
 		</li>
 		<li>

@@ -38,7 +38,7 @@ $titulo = $node->title;
 			</div>
 		</li>
 		<?php if ($language->language  != 'en'): ?>
-		<li data-href="/modalidades-de-admision/traslados" class="atm-blog" id="traslado">
+		<li data-href="/modalidades-de-admision/traslado-externo" class="atm-blog" id="traslado">
 		<?php elseif ($language->language == 'en'): ?>
 		<li data-href="/en/methods-of-admission/transfer-from-other-universities" class="atm-blog" id="traslado">
 		<?php endif ?>				
