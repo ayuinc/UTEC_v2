@@ -280,7 +280,7 @@
 		<div class="container-sm">
 			<div class="nav-display-left">
 				<div>
-					<?php if ($language->language  == 'en'): ?>
+					<?php if ($language->language  != 'en'): ?>
 						<h1><?php print t('Our ') ?> <span><?php print t('Academic') ?></span><br><?php print  t('Offer') ?></h1>
 					<?php elseif ($language->language != 'en'): ?>
 						<h1><?php print t('Our ') ?> <span><?php print t('Offer') ?></span><br><?php print  t('Academic') ?></h1>
@@ -453,8 +453,8 @@
 								<span>Orientación</span>Vocacional
 								</a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/career-guidance-and-orientation">
-								<span>Career Guidance and Orientantion</span>
+								<a href="/<?php print $language->language ?>/advising-and-counseling">
+								<span>Guidance</span>
 								</a>
 							<?php endif ?>
 						</li>
