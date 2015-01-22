@@ -55,14 +55,24 @@
 		</div>
 	</div> -->
 	<div class="overlay flex-middle">
-		<div class="container hero-text" data-href="<?php print $field_link_causa ?>">
+		<div class="container hero-text" 
+			<?php if ($language->prefix == 'en'): ?>
+				data-href="/en/<?php print $field_link_causa ?>"
+			<?php elseif ($language->prefix != 'en'): ?>
+				data-href="<?php print $field_link_causa ?>"
+			<?php endif ?>			
+		>
 			<div class="row">
 				<div class="col-sm-6 text-white normalize-text">
 					<h2 class="thin h1"><?php print $field_titulo_causa ?></h2>
 					<hr class="hr-white">
 					<h4 class="lead thin"><?php print $field_descripcion_causa ?></h4>
 					<?php if ($field_link_causa!='') { ?>
-					<a href="<?php print $field_link_causa ?>" class="btn mt-21 btn-white btn-outline btn-sm see-more"><?php print t('Read more') ?></a>
+						<?php if ($language->prefix == 'en'): ?>
+							<a href="/en/<?php print $field_link_causa ?>" class="btn mt-21 btn-white btn-outline btn-sm see-more"><?php print t('Read more') ?></a>
+						<?php elseif ($language->prefix != 'en'): ?>
+							<a href="<?php print $field_link_causa ?>" class="btn mt-21 btn-white btn-outline btn-sm see-more"><?php print t('Read more') ?></a>
+						<?php endif ?>	
 					<?php } ?>
 				</div>
 			</div>
@@ -84,14 +94,24 @@
 <div data-section-scroll="Tres acciones" class="section-scroll-content scroll-down-white bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_foto_tres_acciones)?>);">
 	<?php endif ?>
 	<div class="overlay flex-middle">
-		<div class="container hero-text" data-href="<?php print $field_link_tres_acciones ?>">
+		<div class="container hero-text" 
+			<?php if ($language->prefix == 'en'): ?>
+				data-href="/en/<?php print $field_link_tres_acciones ?>"
+			<?php elseif ($language->prefix != 'en'): ?>
+				data-href="<?php print $field_link_tres_acciones ?>"
+			<?php endif ?>						
+		>
 			<div class="row">
 				<div class="col-sm-6 text-white normalize-text">
 					<h2 class="thin h1"><?php print $field_titulo_tres_acciones ?></h2>
 					<hr class="hr-white">
 					<h4 class="lead thin"><?php print $field_subitulo_tres_acciones ?></h4>
 					<?php if ($field_link_tres_acciones!='')  { ?>
-						<a href="<?php print $field_link_tres_acciones ?>" class="btn btn-white btn-outline btn-sm see-more"><?php print t('Read more') ?></a>
+						<?php if ($language->prefix == 'en'): ?>
+							<a href="/en/<?php print $field_link_tres_acciones ?>" class="btn btn-white btn-outline btn-sm see-more"><?php print t('Read more') ?></a>
+						<?php elseif ($language->prefix != 'en'): ?>
+							<a href="<?php print $field_link_tres_acciones ?>" class="btn btn-white btn-outline btn-sm see-more"><?php print t('Read more') ?></a>
+						<?php endif ?>					
 					<?php } ?>
 					<div class="row">
 						<div class="col-sm-9">
@@ -110,14 +130,24 @@
 	<?php elseif ($language->prefix == 'en'): ?>
 <div data-section-scroll="Purifying water" class="section-scroll-content scroll-down-info minh-560 flex-middle-center">
 	<?php endif ?>
-	<div class="container-sm text-center normalize-text" data-href="<?php print $field_link_proyecto ?>">
+	<div class="container-sm text-center normalize-text" 
+		<?php if ($language->prefix == 'en'): ?>
+			data-href="/en/<?php print $field_link_proyecto ?>"
+		<?php elseif ($language->prefix != 'en'): ?>
+			data-href="<?php print $field_link_proyecto ?>"
+		<?php endif ?>		
+	>
 		<h2 class="lead thin"><?php print $field_titulo_proyecto ?></h2>
 		<hr class="hr-gray">
 		<p class="lead gray"><?php print $field_subtitulo_proyecto ?></p>
 		<p class="gray mb-42 lead"><?php print $field_descripcion_proyecto ?></p>
 		<div class="text-right">
 			<?php if ($field_link_proyecto!='') { ?>
-				<a href="<?php print $field_link_proyecto ?>" class="btn btn-outline btn-primary see-more btn-sm"><?php print t('Read more') ?></a>
+				<?php if ($language->prefix == 'en'): ?>
+					<a href="/en/<?php print $field_link_proyecto ?>" class="btn btn-outline btn-primary see-more btn-sm"><?php print t('Read more') ?></a>
+				<?php elseif ($language->prefix != 'en'): ?>
+					<a href="<?php print $field_link_proyecto ?>" class="btn btn-outline btn-primary see-more btn-sm"><?php print t('Read more') ?></a>
+				<?php endif ?>				
 			<?php } ?>
 		</div>
 	</div>
