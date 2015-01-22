@@ -126,7 +126,7 @@ $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 	<div data-section-scroll="<?php print t('Calendar') ?>" class="section-scroll-content pt-0">
 		<div class="container-sm">
 			<h3 class="thin lead"><?php print t('Calendar') ?></h3>
-			<h4 class="text-gray"><?php print t('Pre intensiva January - February 2015') ?></h4>
+			<h4 class="text-gray"><?php print t('Pre extensive January - February 2015') ?></h4>
 			<div class="list-custom-left normalize-text lead-ch mb-ch-21">
 				<ul>
 					<li class="bg-primary text-white uppercase text-center p-21">
