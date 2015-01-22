@@ -1,4 +1,4 @@
-<?php $titulo = $node->field_tiene_formulario['und']['0']['value'];  ?>   
+<?php $titulo = $node->field_nombre_curso['und']['0']['value'];  ?>   
 <?php $body = $node->body['und']['0']['value']; ?>
 <?php 
 		global $language; 
