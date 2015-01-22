@@ -453,8 +453,8 @@
 								<span>Orientación</span>Vocacional
 								</a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/advising-and-counseling">
-								<span>Guidance</span>
+								<a href="/<?php print $language->language ?>/career-guidance-and-orientation">
+								<span>Career Guidance and Orientantion</span>
 								</a>
 							<?php endif ?>
 						</li>
