@@ -216,7 +216,8 @@ if($idioma == "es")
         }
 
 
-        if($origen == "Charlas informativas" || $origen == "Contacto" || $origen == "Visita Utec" || $origen == "Trabaja en UTEC")
+        if( $origen == "Charlas informativas" || $origen == "Contacto" || $origen == "Visita Utec" || 
+            $origen == "Trabaja en UTEC" || $origen == "Orientacion Vocacional")
         {
             $fromTelemarketing = "webmaster@utec.edu.pe";
             $fromNameTelemarketing = "UTEC";
@@ -258,6 +259,14 @@ if($idioma == "es")
                 $familia = "CONTACTO";
                 $origen = "pagina-trabaja-en-utec";  
             }
+
+            if($origen == "Orientacion Vocacional")
+            {
+                $tituloTelemarketing = "Orientación Vocacional UTEC - Datos Personales";
+                $subjectTelemarketing = "Solicitud - Orientación Vocacional UTEC";
+                $familia = "CONTACTO";
+                $origen = "pagina-orientacion-vocacional";  
+            }            
         }
 
 
@@ -531,7 +540,8 @@ if($idioma == "en")
             }
         }
 
-        if($origen == "Informative Talks" || $origen == "Contact" || $origen == "Visit UTEC" || $origen == "Work at UTEC")
+        if( $origen == "Informative Talks" || $origen == "Contact" || $origen == "Visit UTEC" || 
+            $origen == "Work at UTEC" || $origen == "Carrer Guidance and Orientation" )
         {
             $fromTelemarketing = "webmaster@utec.edu.pe";
             $fromNameTelemarketing = "UTEC";
@@ -573,6 +583,14 @@ if($idioma == "en")
                 $familia = "CONTACTO";
                 $origen = "pagina-trabaja-en-utec";  
             }
+
+            if($origen == "Carrer Guidance and Orientation")
+            {
+                $tituloTelemarketing = "UTEC Carrer Guidance and Orientation - Personal Data";
+                $subjectTelemarketing = "Request - UTEC Carrer Guidance and Orientation";
+                $familia = "CONTACTO";
+                $origen = "pagina-orientacion-vocacional";  
+            }            
         }
 
 

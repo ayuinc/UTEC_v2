@@ -14,6 +14,8 @@
 <?php $field_descripcion_corta_generica = $node->field_descripcion_corta_generica['und']['0']['value']; ?>
 <?php $field_contenido_generica = $node->field_contenido_generica['und']['0']['value']; ?>
 <?php $field_foto_generica_admision = $node->field_foto_generica_admision['und']['0']['filename']; ?>
+<?php $field_tiene_formulario = $node->field_tiene_formulario['und']['0']['value']; ?>
+
 
 <?php $url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>
 <?php $end = end((explode('/', $url))); ?>
@@ -37,14 +39,11 @@
 		<img src="<?php print('/'.$pathfile.$field_foto_generica_admision)?>" class="img-responsive mb-35">
 	<?php } ?>	
 	<?php if ($field_contenido_generica!='') { ?>
-		<?php if ($end=='primeros-puestos') { ?>
-			<h3><?php print t('How to apply?') ?></h3>
-		<?php } ?>
 		<p class="lead text-gray mb-42"><?php print $field_contenido_generica ?></p>
 	<?php } ?>	
 </div>
 
-<?php if (($end!='charlas-informativas') AND ($end!='informacion-economica') AND ($end!='orientacion-vocacional') AND ($end!='visita-utec') AND ($end!='eventos-utec') AND ($end!='events')) { ?>
+<?php if ($field_tiene_formulario == "Si-carreras") { ?>
 <div class="container-sm form-custom mt-35"> 
 	<h3><?php print t("For more information:") ?></h3>
 	<form action="/registro.php" data-submit="Formulario de inscripcion" method="post" id="formRegistro" name="formRegistro">
@@ -104,17 +103,9 @@
 </div>	
 <?php } ?>
 
-<?php if (($end=='charlas-informativas') OR ($end=='visita-utec')) { ?>
-<div class="container-sm form-custom mt-35">
-	
-	<?php if ($end=='visita-utec') { ?>
-		<h3><?php print t('Sign up for a tour') ?></h1>
-	<?php } else { ?>
-		<h3><?php print t('Save a seat') ?></h1>
-		<p><?php print t('Fill the form and we will contact you to reserve a seat.') ?></p>
-	<?php } ?>
-</div>
+<?php if ($field_tiene_formulario == "Si") { ?>
 <div class="container-sm form-custom">
+	<h3><?php print t("For more information:") ?></h3>
 	<form action="/registro.php" data-submit="Formulario de inscripcion" method="post" id="formRegistro" name="formRegistro">
 			<input type="hidden" name="origen" value="<?php print $titulo; ?>">
 			<input type="hidden" name="idioma" value="<?php print $idioma; ?>">			
@@ -144,17 +135,6 @@
 					<label for="" class="sr-only"><?php print t('Phone') ?></label>
 					<input type="text" class="form-control" placeholder="<?php print t('Phone') ?>" name="telefono" id="telefono">
 				</div>				
-				<div class="form-group col-sm-6">
-					<label for="" class="sr-only"><?php print t('Undergrad Program') ?></label>
-					<select name="carrera" id="carrera" class="form-control select-override">
-						<option value=""><?php print t('Undergrad Program') ?></option>
-					  	<option value="15970"><?php print t('Industrial Engineering') ?></option>
-			            <option value="14864"><?php print t('Mechanical Engineering') ?></option>
-			            <option value="15968"><?php print t('Energy Engineering') ?></option>
-			            <option value="15964"><?php print t('Electronic Engineering') ?></option>
-			            <option value="15966"><?php print t('Industrial and Chemical Engineering') ?></option>
-					</select>
-				</div>
 			</div>
 			<div class="row">
 				<div class="form-group col-sm-12">

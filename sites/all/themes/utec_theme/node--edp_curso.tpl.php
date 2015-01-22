@@ -41,7 +41,7 @@
 	<h1 class="light"><?php print $titulo ?></h1>
 	<div class="separator-gray separator-sm"></div>						
 	<h3><?php print $sub_titulo ?></h3>
-	<div class="pv-ch-28 lead-ch p-ch-gray">
+	<div class="pv-ch-28 p-ch-gray">
 		<p><?php print $cuerpo ?></p>
 		<?php if ($imagen!='') { ?>
 			<img src="<?php print('/'.$pathfile.$imagen); ?>" alt="#" class="img-responsive">
@@ -99,7 +99,7 @@
 							<span><?php print $profesor_cargo ?></span>
 						</div>
 					</li>
-					<li class="lead pl-21 text-gray"><?php print $profesor_resenia ?></li>
+					<li class="pl-21 text-gray"><?php print $profesor_resenia ?></li>
 				</ul>
 			</div>
 			<?php endif; ?>
