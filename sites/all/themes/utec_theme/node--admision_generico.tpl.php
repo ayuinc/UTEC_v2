@@ -43,7 +43,7 @@
 	<?php } ?>	
 </div>
 
-<?php if ($field_tiene_formulario == "Si-formulario") { ?>
+<?php if ($field_tiene_formulario == "Si-carreras") { ?>
 <div class="container-sm form-custom mt-35"> 
 	<h3><?php print t("For more information:") ?></h3>
 	<form action="/registro.php" data-submit="Formulario de inscripcion" method="post" id="formRegistro" name="formRegistro">
