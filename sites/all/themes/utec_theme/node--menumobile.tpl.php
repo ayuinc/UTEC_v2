@@ -357,7 +357,7 @@
 				<span>Cursos</span>Cortos
 				</a>
 			<?php elseif ($language->language == 'en'): ?>
-				<a href="/<?php print $language->language ?>/school-of-professional-development/short-courses">
+				<a href="/<?php print $language->language ?>/spd/short-courses">
 				<span>Short</span>Courses
 				</a>
 			<?php endif ?>
@@ -370,7 +370,7 @@
 			<?php if ($language->language == 'es'): ?>
 				<a href="/<?php print $language->language ?>/edp/calendario"><?php print t('Calendar') ?></a>
 			<?php elseif ($language->language == 'en'): ?>
-				<a href="/<?php print $language->language ?>/school-of-professional-development/calendar"><?php print t('Calendar') ?></a>
+				<a href="/<?php print $language->language ?>/spd/calendar"><?php print t('Calendar') ?></a>
 			<?php endif ?>
 		</li>
 		<li>
