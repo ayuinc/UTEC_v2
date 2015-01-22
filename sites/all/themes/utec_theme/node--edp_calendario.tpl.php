@@ -21,7 +21,7 @@
 	<?php print $field_contenido_generico_edp ?>
 	
 	<!--SOLO PARA RESPALDO-->
-	<?php if ($end == 'calendario') { ?>
+	<?php if ($end == 'calendario'||$end == 'calendar') { ?>
 		<h3 class="mt-35 mb-0"><?php print t('Short courses') ?></h3>
 		<div class="table-responsive">
 			<table class="table mt-35">
