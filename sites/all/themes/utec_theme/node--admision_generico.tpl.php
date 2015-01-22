@@ -43,7 +43,7 @@
 	<?php } ?>	
 	
 
-	<?php if ($end=='traslado-externo') { ?> 
+	<?php if (($end=='traslado-externo') AND ($end=='transfer-from-other-universities')) { ?> 
 	
 	<div class="gbo calendar">
 		<h3><?php print t('Calendar:') ?></h3>
