@@ -187,28 +187,28 @@ $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 				<div class="row">
 					<div class="form-group col-sm-6">
 						<label for="" class="sr-only"><?php print t("Name") ?></label>
-						<input id="nombres" name="nombres" type="text" class="form-control" placeholder="Nombres">
+						<input id="nombres" name="nombres" type="text" class="form-control" placeholder="<?php print t("Name") ?>">
 					</div>
 					<div class="form-group col-sm-6">
 						<label for="" class="sr-only"><?php print t("Middle Name") ?></label>
-						<input id="apellidop" name="apellidop" type="text" class="form-control" placeholder="Apellido paterno">
+						<input id="apellidop" name="apellidop" type="text" class="form-control" placeholder="<?php print t("Middle Name") ?>">
 					</div>
 
 				</div>
 				<div class="row">
 					<div class="form-group col-sm-6">
 						<label for="" class="sr-only"><?php print t("Last Name") ?></label>
-						<input id="apellidom" name="apellidom" type="text" class="form-control" placeholder="Apellido materno">
+						<input id="apellidom" name="apellidom" type="text" class="form-control" placeholder="<?php print t("Last Name") ?>">
 					</div>			
 					<div class="form-group col-sm-6">
 						<label for="" class="sr-only"><?php print t('E-Mail') ?></label>
-						<input id="email" name="email" type="text" class="form-control" placeholder="Email">
+						<input id="email" name="email" type="text" class="form-control" placeholder="<?php print t('E-Mail') ?>">
 					</div>
 				</div>
 				<div class="row">
 					<div class="form-group col-sm-6">
 						<label for="" class="sr-only"><?php print t('Phone') ?></label>
-						<input id="telefono" name="telefono" type="text" class="form-control" placeholder="Teléfono">
+						<input id="telefono" name="telefono" type="text" class="form-control" placeholder="<?php print t('Phone') ?>">
 					</div>
 					<div class="form-group col-sm-6">
 						<label for="" class="sr-only"><?php print t('Undergrad Program') ?></label>
@@ -280,9 +280,9 @@ jQuery(function() {
   <ul></ul>
   <div class="text-right pv-21 btn-apply animated">
 		<?php if ($language->language  != 'en'): ?>
-			<a href="/<?php print $language->language ?>/modalidades-de-admision/alto-rendimiento/formulario-de-inscripcion" class="btn btn-primary uppercase"><?php print t('Apply') ?></a>								
+			<a href="/modalidades-de-admision/centro-pre/formulario-de-inscripcion" class="btn btn-primary uppercase"><?php print t('Apply') ?></a>								
 		<?php elseif ($language->language == 'en'): ?>
-			<a href="/<?php print $language->language ?>/formulario/high-performance-assessment-aplication-form" class="btn btn-primary uppercase"><?php print t('Apply') ?></a>		
+			<a href="/<?php print $language->language ?>/formulario/pre-university-study-center-application-form" class="btn btn-primary uppercase"><?php print t('Apply') ?></a>		
 		<?php endif ?>	  
   </div>
 </div>

@@ -84,28 +84,28 @@ $titulo = strtr( $titulo, $unwanted_array );
 		<div class="row">
 			<div class="form-group col-sm-6">
 				<label for="" class="sr-only"><?php print t("Name") ?></label>
-				<input id="nombres" name="nombres" type="text" class="form-control" placeholder="Nombres">
+				<input id="nombres" name="nombres" type="text" class="form-control" placeholder="<?php print t("Name") ?>">
 			</div>
 			<div class="form-group col-sm-6">
 				<label for="" class="sr-only"><?php print t("Middle Name") ?></label>
-				<input id="apellidop" name="apellidop" type="text" class="form-control" placeholder="Apellido paterno">
+				<input id="apellidop" name="apellidop" type="text" class="form-control" placeholder="<?php print t("Middle Name") ?>">
 			</div>
 
 		</div>
 		<div class="row">
 			<div class="form-group col-sm-6">
 				<label for="" class="sr-only"><?php print t("Last Name") ?></label>
-				<input id="apellidom" name="apellidom" type="text" class="form-control" placeholder="Apellido materno">
+				<input id="apellidom" name="apellidom" type="text" class="form-control" placeholder="<?php print t("Last Name") ?>">
 			</div>			
 			<div class="form-group col-sm-6">
 				<label for="" class="sr-only"><?php print t('E-Mail') ?></label>
-				<input id="email" name="email" type="text" class="form-control" placeholder="Email">
+				<input id="email" name="email" type="text" class="form-control" placeholder="<?php print t('E-Mail') ?>">
 			</div>
 		</div>
 		<div class="row">
 			<div class="form-group col-sm-6">
 				<label for="" class="sr-only"><?php print t('Phone') ?></label>
-				<input id="telefono" name="telefono" type="text" class="form-control" placeholder="Teléfono">
+				<input id="telefono" name="telefono" type="text" class="form-control" placeholder="<?php print t('Phone') ?>">
 			</div>
 			<div class="form-group col-sm-6">
 				<label for="" class="sr-only"><?php print t('Undergrad Program') ?></label>

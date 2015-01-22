@@ -78,7 +78,7 @@
 			<?php if ($language->language == 'es'): ?>
 				<a href="/<?php print $language->language ?>/vida-estudiantil"><span>Vida Estudiantil</a>
 			<?php elseif ($language->language == 'en'): ?>
-				<a href="/<?php print $language->language ?>/student-life"><span>UTEC Life</span></a>
+				<a href="/<?php print $language->language ?>/student-life"><span>Student Life</span></a>
 			<?php endif ?>
 		</li>
 		<li>
