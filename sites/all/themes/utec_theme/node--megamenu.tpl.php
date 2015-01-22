@@ -180,7 +180,7 @@
 							<?php if ($language->language  != 'en'): ?>
 								<a href="/vida-estudiantil"><span>Vida Estudiantil</a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/utec-life"><span>UTEC Life</span></a>
+								<a href="/<?php print $language->language ?>/student-life"><span>Student Life</span></a>
 							<?php endif ?>
 						</li>
 						<li>
@@ -692,7 +692,7 @@
 							<?php if ($language->language  != 'en'): ?>
 								<a href="/vida-estudiantil"><span>Vida Estudiantil</a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/utec-life"><span>UTEC Life</span></a>
+								<a href="/<?php print $language->language ?>/student-life"><span>Student Life</span></a>
 							<?php endif ?>
 						</li>
 						<li>
