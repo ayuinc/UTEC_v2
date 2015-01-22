@@ -20,37 +20,52 @@
 </div>
 
 
-<?php if (($end!='diplomados') AND ($end!='cursos-adhoc')) { ?>
+<?php //if (($end!='diplomados') AND ($end!='cursos-adhoc')) { ?>
 <div class="container-sm form-custom mt-35"> 
-	<form action="" data-submit="Formulario de inscripcion">
-		<input type="hidden" name="origen" value="<?php print $title ?>">
+	<form action="/registro.php" data-submit="Formulario de inscripcion" method="post" id="formRegistro" name="formRegistro">
+		<input type="hidden" name="origen" value="<?php print $title; ?>">
+		<input type="hidden" name="idioma" value="<?php print $idioma; ?>">		
+
+		<h3><?php print t("Contact EDP") ?></h3>	
 		<div class="row">
 			<div class="form-group col-sm-6">
-				<label for="" class="sr-only"><?php print t('Name') ?></label>
-				<input id="nombres" type="text" class="form-control" placeholder="<?php print t('Name') ?>">
+				<label for="" class="sr-only"><?php print t("Name") ?></label>
+				<input id="nombres" name="nombres" type="text" class="form-control" placeholder="<?php print t("Name") ?>">
 			</div>
 			<div class="form-group col-sm-6">
-				<label for="" class="sr-only"><?php print t('Last Name') ?></label>
-				<input id="apellidop" type="text" class="form-control" placeholder="<?php print t('Last Name') ?>">
+				<label for="" class="sr-only"><?php print t("Middle Name") ?></label>
+				<input id="apellidop" name="apellidop" type="text" class="form-control" placeholder="<?php print t("Middle Name") ?>">
 			</div>
+
 		</div>
 		<div class="row">
 			<div class="form-group col-sm-6">
-				<label for="" class="sr-only">Email</label>
-				<input id="email" type="text" class="form-control" placeholder="Email">
+				<label for="" class="sr-only"><?php print t("Last Name") ?></label>
+				<input id="apellidom" name="apellidom" type="text" class="form-control" placeholder="<?php print t("Last Name") ?>">
+			</div>			
+			<div class="form-group col-sm-6">
+				<label for="" class="sr-only"><?php print t('E-Mail') ?></label>
+				<input id="email" name="email" type="text" class="form-control" placeholder="<?php print t('E-Mail') ?>">
 			</div>
+		</div>
+		<div class="row">
 			<div class="form-group col-sm-6">
 				<label for="" class="sr-only"><?php print t('Phone') ?></label>
-				<input id="telefono" type="text" class="form-control" placeholder="<?php print t('Phone') ?>">
+				<input id="telefono" name="telefono" type="text" class="form-control" placeholder="<?php print t('Phone') ?>">
+			</div>
+		</div>		
+		<div class="row">
+			<div class="form-group col-sm-12">
+				<label for="" class="sr-only"><?php print t('Message') ?></label>
+				<textarea class="form-control" placeholder="<?php print t('Message') ?>" name="consulta" id="consulta"></textarea>
 			</div>
 		</div>
-		<div class="form-group">
-			<label for="" class="sr-only"><?php print t('Write a message') ?></label>
-			<textarea id="consulta" rows="3" class="form-control" placeholder="<?php print t('Write a message') ?>"></textarea>
-		</div>
+		<div class="row errordiv">
+			<div id="errordiv" class="col-sm-12 form-group"></div>			
+		</div>		
 		<div class="text-right">
-			<button type="submit" class="btn btn-primary btn-lg"><?php print t('Send') ?></button>
+			<button type="submit" class="btn btn-primary btn-lg" onclick="contacto_general();">Enviar</button>
 		</div>
-	</form>						
+	</form>							
 </div>	
-<?php } ?>
+<?php //} ?>
