@@ -280,7 +280,7 @@
 		<div class="container-sm">
 			<div class="nav-display-left">
 				<div>
-					<?php if ($language->language  != 'en'): ?>
+					<?php if ($language->language  == 'en'): ?>
 						<h1><?php print t('Our ') ?> <span><?php print t('Academic') ?></span><br><?php print  t('Offer') ?></h1>
 					<?php elseif ($language->language != 'en'): ?>
 						<h1><?php print t('Our ') ?> <span><?php print t('Offer') ?></span><br><?php print  t('Academic') ?></h1>
