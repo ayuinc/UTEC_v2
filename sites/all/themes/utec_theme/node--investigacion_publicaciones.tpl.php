@@ -19,19 +19,19 @@
 <li>
 	<h4 class="mb-14"><a href="<?php print $link ?>" target="_blank" class="text-gray-darker"><?php print $titulo ?></a></h4>
 	<?php if ($investigador!='') { ?>
-		<p class="lead"><span class="bold">Investigador: </span><span><?php print $investigador ?></span></p>
+		<p class="lead"><span class="bold"><?php print t('Researcher: ') ?></span><span><?php print $investigador ?></span></p>
 	<?php } ?>
 	<?php if ($tipo!='') { ?>
-		<p><span class="bold">Tipo: </span><span><?php print $tipo ?></span></p>
+		<p><span class="bold"><?php print t('Type: ') ?></span><span><?php print $tipo ?></span></p>
 	<?php } ?>
 	<?php if ($departamento!='') { ?>
-		<p><span class="bold">Departamento: </span><span><?php print $departamento ?></span></p>
+		<p><span class="bold"><?php print t('Department: ') ?></span><span><?php print $departamento ?></span></p>
 	<?php } ?>
 	<?php if ($field_pdf_publicaciones_!='') { ?>
-		<p><span class="bold">Descarga el PDF: </span><span><?php print $field_pdf_publicaciones_ ?></span></p>
+		<p><span class="bold"><?php print t('Download: ') ?></span><span><?php print $field_pdf_publicaciones_ ?></span></p>
 	<?php } ?>
 	<?php if ($publicado!='') { ?>
-		<p><span class="bold">Publicado en: </span><span><?php print $publicado ?></span></p>
+		<p><span class="bold"><?php print t('Published: ') ?></span><span><?php print $publicado ?></span></p>
 	<?php } ?>
 </li>
 <!-- <p><span class="lead bold">Año: </span><span class="lead"><?php print $anio ?></span></p> -->
