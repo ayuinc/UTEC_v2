@@ -68,7 +68,7 @@
 			</div>			
 			<div class="form-group col-sm-6">
 				<label for="" class="sr-only"><?php print t("Email") ?></label>
-				<input id="email" name="email" type="text" class="form-control" placeholder="Email">
+				<input id="email" name="email" type="text" class="form-control" placeholder="<?php print t("Email") ?>">
 			</div>
 		</div>
 		<div class="row">
