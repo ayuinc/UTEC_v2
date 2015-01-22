@@ -73,11 +73,11 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-12">
-				<label for="">Place of Birth</label>
+				<label for=""><?php print t('Place of Birth') ?></label>
 			</div>
 			<div class="form-group col-sm-6">
-				<label for="" class="sr-only">Country</label>
-				<input  id="pais" name="pais" type="text" class="form-control" placeholder="Country">
+				<label for="" class="sr-only"><?php print t('Country') ?></label>
+				<input  id="pais" name="pais" type="text" class="form-control" placeholder="<?php print t('Country') ?>">
 				<!--
 				<select name="pais" id="pais" class="form-control select-override">
 					<option value="País">País</option>
@@ -85,8 +85,8 @@
 				-->
 			</div>
 			<div class="form-group col-sm-6">
-				<label for="" class="sr-only">City</label>
-				<input  id="ciudad" name="ciudad" type="text" class="form-control" placeholder="City">
+				<label for="" class="sr-only"><?php print t('City') ?></label>
+				<input  id="ciudad" name="ciudad" type="text" class="form-control" placeholder="<?php print t('City') ?>">
 				<!--
 				<select name="ciudad" id="ciudad" class="form-control select-override">
 					<option value="Ciudad">Ciudad</option>

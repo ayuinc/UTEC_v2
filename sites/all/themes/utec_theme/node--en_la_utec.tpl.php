@@ -38,7 +38,14 @@
 ?>
 <div>
   <div class="container">
-    <h1 class="lead medium pt-21 mb-7"><span class="text-gray-darker"><?php print t('At UTEC, engineering is') ?></span> <span class="text-gray"><?php print t('well-being') ?></span></h1>
+    <h1 class="lead text-gray-darker pt-21 mb-7 text-switcher">
+      <?php print t('At UTEC, engineering is') ?>
+    </h1>
+    <h1 class="lead pt-21 mb-7 text-switcher">
+      <span><?php print t('well-being') ?></span>
+      <span><?php print t('innovation') ?></span>
+      <span><?php print t('design') ?></span>
+    </h1>
   	<!--<h4 class="lead mt-0 mb-42">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>-->
     <div class="anchor-img-grid anchor-img-grid-1">
       <div class="col-sm-6">
