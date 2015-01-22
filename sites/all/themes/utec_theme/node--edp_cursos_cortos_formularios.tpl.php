@@ -1,85 +1,22 @@
+<?php $titulo = $node->field_nombre_curso['und']['0']['value'];  ?>   
+<?php $body = $node->body['und']['0']['value']; ?>
 <?php 
-// $video_name = $node->field_video['und']['0']['filename'];
-
-$titulo = $node->title;   
-$field_descripcion_corta_examen = $node->field_descripcion_corta_examen['und']['0']['value'];
-$field_como_postula_examen = $node->field_como_postula_examen['und']['0']['value'];
-$field_costos_examen = $node->field_costos_examen['und']['0']['value'];
-$field_temario_examen = $node->field_temario_examen['und']['0']['value'];
-
-global $language; 
-$idioma = $language->language;	
-
-
-
-$unwanted_array = array(    'Š'=>'S', 'š'=>'s', 'Ž'=>'Z', 'ž'=>'z', 'À'=>'A', 'Á'=>'A', 'Â'=>'A', 'Ã'=>'A', 'Ä'=>'A', 'Å'=>'A', 'Æ'=>'A', 'Ç'=>'C', 'È'=>'E', 'É'=>'E',
-                            'Ê'=>'E', 'Ë'=>'E', 'Ì'=>'I', 'Í'=>'I', 'Î'=>'I', 'Ï'=>'I', 'Ñ'=>'N', 'Ò'=>'O', 'Ó'=>'O', 'Ô'=>'O', 'Õ'=>'O', 'Ö'=>'O', 'Ø'=>'O', 'Ù'=>'U',
-                            'Ú'=>'U', 'Û'=>'U', 'Ü'=>'U', 'Ý'=>'Y', 'Þ'=>'B', 'ß'=>'Ss', 'à'=>'a', 'á'=>'a', 'â'=>'a', 'ã'=>'a', 'ä'=>'a', 'å'=>'a', 'æ'=>'a', 'ç'=>'c',
-                            'è'=>'e', 'é'=>'e', 'ê'=>'e', 'ë'=>'e', 'ì'=>'i', 'í'=>'i', 'î'=>'i', 'ï'=>'i', 'ð'=>'o', 'ñ'=>'n', 'ò'=>'o', 'ó'=>'o', 'ô'=>'o', 'õ'=>'o',
-                            'ö'=>'o', 'ø'=>'o', 'ù'=>'u', 'ú'=>'u', 'û'=>'u', 'ý'=>'y', 'ý'=>'y', 'þ'=>'b', 'ÿ'=>'y' );
-$titulo = strtr( $titulo, $unwanted_array );		
-
+		global $language; 
+		$idioma = $language->language;		
 ?>
-	<div class="container-sm">
-	<div>
-				<h1 class="light"><?php print t('Admissions Exam') ?></h1>
-				<div class="separator-gray separator-md"></div>
-				<div>
-				<p class="lead text-gray"><?php print $field_descripcion_corta_examen ?></p>
-				<div class="mb-ch-42">
-					<div>
-						<h3><?php //print t('How to apply?') ?></h3>
-						<div class="list-custom">
-							<?php  print $field_como_postula_examen ?>
-						</div>
-					</div>
-					<div>
-						<h3><?php print t('Costs:') ?></h3>
-							<div class="list-custom">
-								<ul><li><?php print $field_costos_examen ?></li></ul>
-							</div>
-					</div>
-					<div>
-						<h3><?php print t('Agenda:') ?></h3>
-						<div class="list-custom">
-							<?php print $field_temario_examen ?>
-						</div>
-					</div>
-					<div class="gbo calendar">
-						<h3><?php print t('Calendar:') ?></h3>
-						<div class="table-responsive table-custom pv-42">
-							<table class="table">
-								<thead>
-									<tr>
-										<td><?php print t('Event') ?></td>
-										<td><?php print t('Date') ?></td>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td class="highlight text-center"><?php print t('Registration starts') ?></td>
-										<td>01/04/2014</td>
-									</tr>
-									<tr>
-										<td class="highlight text-center"><?php print t('Registration ends') ?></td>
-										<td>01/03/2015</td>
-									</tr>
-									<tr>
-										<td class="highlight text-center"><?php print t('Admissions Exam') ?></td>
-										<td>04/03/2015</td>
-									</tr>
-								</tbody>
-						    </table>
-					    </div>
-					</div>
-				</div>
-				</div>
-	</div>
 
-	<h3><?php print t("For more information:") ?></h3>
+
+<div class="container-sm">
+	<h1 class="light"><?php print $titulo ?></h1>
+	<div class="separator-gray separator-lg"></div>
+	<?php print $body ?>	
+</div>
+<div class="container-sm form-custom"> 
+	<h3><?php print t("Contact") ?></h3>
 	<form action="/registro.php" data-submit="Formulario de inscripcion" method="post" id="formRegistro" name="formRegistro">
-		<input type="hidden" name="origen" value="<?php print $titulo; ?>">
+		<input type="hidden" name="origen" value="EDP">
 		<input type="hidden" name="idioma" value="<?php print $idioma; ?>">		
+		<input type="hidden" name="curso" value="<?php print $titulo; ?>">
 
 		<div class="row">
 			<div class="form-group col-sm-6">
@@ -90,7 +27,6 @@ $titulo = strtr( $titulo, $unwanted_array );
 				<label for="" class="sr-only"><?php print t("Middle Name") ?></label>
 				<input id="apellidop" name="apellidop" type="text" class="form-control" placeholder="<?php print t("Middle Name") ?>">
 			</div>
-
 		</div>
 		<div class="row">
 			<div class="form-group col-sm-6">
@@ -107,17 +43,6 @@ $titulo = strtr( $titulo, $unwanted_array );
 				<label for="" class="sr-only"><?php print t('Phone') ?></label>
 				<input id="telefono" name="telefono" type="text" class="form-control" placeholder="<?php print t('Phone') ?>">
 			</div>
-			<div class="form-group col-sm-6">
-				<label for="" class="sr-only"><?php print t('Undergrad Program') ?></label>
-				<select name="carrera" id="carrera" class="form-control select-override">
-					<option value=""><?php print t('Undergrad Program') ?></option>
-				  	<option value="15970"><?php print t('Industrial Engineering') ?></option>
-		            <option value="14864"><?php print t('Mechanical Engineering') ?></option>
-		            <option value="15968"><?php print t('Energy Engineering') ?></option>
-		            <option value="15964"><?php print t('Electronic Engineering') ?></option>
-		            <option value="15966"><?php print t('Industrial and Chemical Engineering') ?></option>
-				</select>
-			</div>
 		</div>		
 		<div class="row">
 			<div class="form-group col-sm-12">
@@ -129,10 +54,10 @@ $titulo = strtr( $titulo, $unwanted_array );
 			<div id="errordiv" class="col-sm-12 form-group"></div>			
 		</div>		
 		<div class="text-right">
-			<button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+			<button type="submit" class="btn btn-primary btn-lg" onclick="contacto_general();">Enviar</button>
 		</div>
-	</form>			
-	</div>
+	</form>						
+</div>	
 
 <script type="text/javascript">
 jQuery(function() {                        

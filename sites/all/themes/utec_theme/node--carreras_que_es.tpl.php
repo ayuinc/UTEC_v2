@@ -13,8 +13,8 @@
 <div class="container-sm">
 	<h1 class="light"><?php print $titulo ?></h1>
 	<div class="separator-gray separator-lg"></div>
-	<div class="pv-42 lead-ch">
-		<h3><?php print $cuerpo ?></h3>
+	<div class="pv-42">
+		<?php print $cuerpo ?>
 	</div>
 	<!-- <div class="mb-63">
 		<img src="<?php //print('/'.$pathfile.$imagen)?>" class="img-responsive">

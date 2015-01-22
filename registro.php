@@ -216,7 +216,8 @@ if($idioma == "es")
         }
 
 
-        if($origen == "Charlas informativas" || $origen == "Contacto" || $origen == "Visita Utec" || $origen == "Trabaja en UTEC")
+        if( $origen == "Charlas informativas" || $origen == "Contacto" || $origen == "Visita Utec" || 
+            $origen == "Trabaja en UTEC" || $origen == "Orientacion Vocacional")
         {
             $fromTelemarketing = "webmaster@utec.edu.pe";
             $fromNameTelemarketing = "UTEC";
@@ -258,6 +259,14 @@ if($idioma == "es")
                 $familia = "CONTACTO";
                 $origen = "pagina-trabaja-en-utec";  
             }
+
+            if($origen == "Orientacion Vocacional")
+            {
+                $tituloTelemarketing = "Orientación Vocacional UTEC - Datos Personales";
+                $subjectTelemarketing = "Solicitud - Orientación Vocacional UTEC";
+                $familia = "CONTACTO";
+                $origen = "pagina-orientacion-vocacional";  
+            }            
         }
 
 
@@ -334,7 +343,7 @@ if($idioma == "es")
                                     <td>'.$_POST['celular-2'].'</td>
                </tr>
                <tr>
-                                    <td>Telefono Fijo:</td>
+                                    <td>Telefono:</td>
                                     <td>'.$_POST['telefono'].'</td>
                </tr>
                <tr>
@@ -531,7 +540,8 @@ if($idioma == "en")
             }
         }
 
-        if($origen == "Informative Talks" || $origen == "General Contact" || $origen == "Visit Utec" || $origen == "Work at UTEC")
+        if( $origen == "Informative Talks" || $origen == "Contact" || $origen == "Visit UTEC" || 
+            $origen == "Work at UTEC" || $origen == "Carrer Guidance and Orientation" )
         {
             $fromTelemarketing = "webmaster@utec.edu.pe";
             $fromNameTelemarketing = "UTEC";
@@ -550,7 +560,7 @@ if($idioma == "en")
                 $origen = "pagina-charlas";
             }
 
-            if($origen == "General Contact")
+            if($origen == "Contact")
             {
                 $tituloTelemarketing = "Contact Form - Personal Data";
                 $subjectTelemarketing = "Request - UTEC Contact Form";
@@ -558,9 +568,9 @@ if($idioma == "en")
                 $origen = "pagina-contacto";  
             }
 
-            if($origen == "Visit Utec")
+            if($origen == "Visit UTEC")
             {
-                $tituloTelemarketing = "Visit Utec Form - Personal Data";
+                $tituloTelemarketing = "Visit UTEC Form - Personal Data";
                 $subjectTelemarketing = "Request - Visit UTEC Form";
                 $familia = "CONTACTO";
                 $origen = "pagina-visita-utec";  
@@ -573,6 +583,14 @@ if($idioma == "en")
                 $familia = "CONTACTO";
                 $origen = "pagina-trabaja-en-utec";  
             }
+
+            if($origen == "Carrer Guidance and Orientation")
+            {
+                $tituloTelemarketing = "UTEC Carrer Guidance and Orientation - Personal Data";
+                $subjectTelemarketing = "Request - UTEC Carrer Guidance and Orientation";
+                $familia = "CONTACTO";
+                $origen = "pagina-orientacion-vocacional";  
+            }            
         }
 
 
@@ -649,7 +667,7 @@ if($idioma == "en")
                                     <td>'.$_POST['celular-2'].'</td>
                </tr>
                <tr>
-                                    <td>Landline:</td>
+                                    <td>Phone:</td>
                                     <td>'.$_POST['telefono'].'</td>
                </tr>
                <tr>
@@ -753,6 +771,7 @@ if($idioma == "es")
                 <area shape='rect' coords='3,3,597,86' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
               </map>
             </p>";
+
             $contenidorpta.="<p>Hola ".utf8_decode($_POST['nombres']).", </p>
                              <p><h2>".$tituloCliente."</h2>
                              <br />Hemos recibido tu consulta correctamente. 
@@ -834,7 +853,6 @@ if($idioma == "es")
             {
                           $contenidorpta = "";
                           $contenidorpta.="<table width='600px' height='168px' cellpadding='2' cellspacing='2' bgcolor='#FFFFFF'>
-
                           <tr><td><p><img src='http://app.utec.edu.pe/admision/img/cabeceraWEB.jpg' alt='cabeceraWEB' usemap='#Map2'>
                             <map name='Map2' id='Map2'>
                               <area shape='rect' coords='3,3,597,86' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
@@ -888,7 +906,6 @@ if($idioma == "es")
             {
                           $contenidorpta = "";
                           $contenidorpta.="<table width='600px' height='168px' cellpadding='2' cellspacing='2' bgcolor='#FFFFFF'>
-
                           <tr><td><p><img src='http://app.utec.edu.pe/admision/img/cabeceraWEB.jpg' alt='cabeceraWEB' usemap='#Map2'>
                             <map name='Map2' id='Map2'>
                               <area shape='rect' coords='3,3,597,86' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
@@ -945,7 +962,6 @@ if($idioma == "es")
             {
                           $contenidorpta = "";
                           $contenidorpta.="<table width='600px' height='168px' cellpadding='2' cellspacing='2' bgcolor='#FFFFFF'>
-
                           <tr><td><p><img src='http://app.utec.edu.pe/admision/img/cabeceraWEB.jpg' alt='cabeceraWEB' usemap='#Map2'>
                             <map name='Map2' id='Map2'>
                               <area shape='rect' coords='3,3,597,86' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
@@ -997,8 +1013,13 @@ if($idioma == "es")
             {
 
                           $contenidorpta = "";
-                          $contenidorpta.= "<table width='600px' height='168px' cellpadding='2' cellspacing='2' bgcolor='#FFFFFF'>
-                                           <tr><td>";
+                          $contenidorpta = "";
+                          $contenidorpta.="<table width='600px' height='168px' cellpadding='2' cellspacing='2' bgcolor='#FFFFFF'>
+                          <tr><td><p><img src='http://app.utec.edu.pe/admision/img/cabeceraWEB.jpg' alt='cabeceraWEB' usemap='#Map2'>
+                            <map name='Map2' id='Map2'>
+                              <area shape='rect' coords='3,3,597,86' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
+                            </map>
+                          </p></td></tr>";
                           $contenidorpta.= "<p>Hola ".strtoupper($_POST['nombres']).",</p>
                                            <p><h2>¡Gracias por tu interés en UTEC!</h2>
                                            <br/> Hemos recibido tus datos correctamente.
@@ -1020,16 +1041,24 @@ if($idioma == "es")
                           $contenidorpta.= "<p>En caso hubieras dejado de estudiar tres años o más luego de haber egresado de la educación secundaria deberás presentar certificado original y vigente de antecedentes policiales, penales y judiciales.</p>";
                           $contenidorpta.= "<p>Preséntate en nuestra oficina de Admisión (Av. Prolongación San Martín 207, Barranco) con los documentos indicados como requisito de inscripción.</p>";
                           $contenidorpta.= "<p>¡Éxitos!</p>";
-                          $contenidorpta.= "<p>Comunícate con UTEC más fácil:<br/><a href='http://guia.com.pe/estara/estara_popup.asp?advertiseId=411234&status=P&phone=51013731000&addressId=876727&' target='_blank'><img src='http://app.utec.edu.pe/admision/img/llama_gratis.jpg' alt='LLama gratis'></a></p>";
+                          $contenidorpta.="<p>Comunícate con UTEC más fácil:<br/><a href='http://guia.com.pe/estara/estara_popup.asp?advertiseId=411234&status=P&phone=51013731000&addressId=876727&' target='_blank'><img src='http://app.utec.edu.pe/admision/img/llama_gratis.jpg' alt='LLama gratis'></a></p>";
                           //$contenidorpta.="<p>Oficina de Admisión<br /><strong>UTEC -  Universidad de Ingeniería & Tecnología</strong><br />Telf: (511) 373 1000<br />Av. Prolongación San Martín, 207, Barranco<br />informes@utec.edu.pe<br />www.utec.edu.pe</p>";
-                          $contenidorpta.= "<p>
-                                            <b>UTEC - Universidad de Ingeniería & Tecnología</b><br />
-                                            <a href='http://www.utec.edu.pe'> 
-                                                <img src='http://app.utec.edu.pe/admision/img/logo_utec.gif' alt='Logo Utec' width='120px;'>
-                                            </a>
-                                            </p>
-                                            </td></tr>
-                                           </table>";
+                          $contenidorpta.="<p><img src='http://app.utec.edu.pe/admision/img/logo_utec.jpg' alt='Logo Utec'><br/><b>UTEC - Universidad de Ingeniería & Tecnología</b></p>
+                          </td></tr>
+                          </table>";
+                          
+                          $contenidorpta.="<p>
+                          <img src='http://app.utec.edu.pe/admision/img/pieWEB.jpg' alt='pieWEB' usemap='#Map'>
+                          <map name='Map' id='Map'>
+                          <area shape='rect' coords='19,33,107,67' href='http://www.utec.edu.pe/carreras/ingenieria-industrial/default.aspx#.VE5bZfmG96A' target='_blank' alt='Ingeniería Industrial' />
+                          <area shape='rect' coords='487,31,595,69' href='http://www.utec.edu.pe/carreras/ingenieria-quimica/default.aspx#.VE5bjPmG96A' target='_blank' alt='Ingeniería Química Industrial' />
+                          <area shape='rect' coords='132,36,230,67' href='http://www.utec.edu.pe/carreras/ingenieria-mecanica/default.aspx#.VE6dZ_mG96A' target='_blank' alt='Ingeniería Mecánica' />
+                          <area shape='rect' coords='257,36,348,66' href='http://www.utec.edu.pe/carreras/ingenieria-energia/default.aspx#.VE6dlPmG96A' target='_blank' alt='Ingeniería de la Energía' />
+                          <area shape='rect' coords='374,34,467,67' href='http://www.utec.edu.pe/carreras/ingenieria-electronica/default.aspx#.VE6dufmG96A' target='_blank' alt='Ingeniería Electrónica' />
+                          <area shape='rect' coords='48,121,198,140' href='mailto:informes@utec.edu.pe?Subject=Consulta Información' target='_top' />
+                          <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
+                          </map>
+                          </p>";  
             }
 }
 
@@ -1122,14 +1151,13 @@ if($idioma == "en")
 
             if($origen == "pagina-inscripcion-alto-rendimiento")
             {
-                          $contenidorpta = "";
-                          $contenidorpta.="<table width='600px' height='168px' cellpadding='2' cellspacing='2' bgcolor='#FFFFFF'>
-
-                          <tr><td><p><img src='http://app.utec.edu.pe/admision/img/cabeceraWEB.jpg' alt='cabeceraWEB' usemap='#Map2'>
-                            <map name='Map2' id='Map2'>
-                              <area shape='rect' coords='3,3,597,86' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
-                            </map>
-                          </p></td></tr>";
+                            $contenidorpta = "";
+                            $contenidorpta.="<table width='600px' height='168px' cellpadding='2' cellspacing='2' bgcolor='#FFFFFF'>
+                            <tr><td><p><img src='http://app.utec.edu.pe/admision/img/cabeceraWEB.jpg' alt='cabeceraWEB' usemap='#Map2'>
+                              <map name='Map2' id='Map2'>
+                                <area shape='rect' coords='3,3,597,86' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
+                              </map>
+                            </p></td></tr>";
 
                           $contenidorpta.="<p>Hello ".strtoupper($_POST['nombres']).",</p>
                           <p><h2>Thank you for your interest in UTEC!</h2>
@@ -1177,7 +1205,6 @@ if($idioma == "en")
             {
                           $contenidorpta = "";
                           $contenidorpta.="<table width='600px' height='168px' cellpadding='2' cellspacing='2' bgcolor='#FFFFFF'>
-
                           <tr><td><p><img src='http://app.utec.edu.pe/admision/img/cabeceraWEB.jpg' alt='cabeceraWEB' usemap='#Map2'>
                             <map name='Map2' id='Map2'>
                               <area shape='rect' coords='3,3,597,86' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
@@ -1224,7 +1251,6 @@ if($idioma == "en")
             {
                           $contenidorpta = "";
                           $contenidorpta.="<table width='600px' height='168px' cellpadding='2' cellspacing='2' bgcolor='#FFFFFF'>
-
                           <tr><td><p><img src='http://app.utec.edu.pe/admision/img/cabeceraWEB.jpg' alt='cabeceraWEB' usemap='#Map2'>
                             <map name='Map2' id='Map2'>
                               <area shape='rect' coords='3,3,597,86' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
@@ -1282,7 +1308,6 @@ if($idioma == "en")
             {
                           $contenidorpta = "";
                           $contenidorpta.="<table width='600px' height='168px' cellpadding='2' cellspacing='2' bgcolor='#FFFFFF'>
-
                           <tr><td><p><img src='http://app.utec.edu.pe/admision/img/cabeceraWEB.jpg' alt='cabeceraWEB' usemap='#Map2'>
                             <map name='Map2' id='Map2'>
                               <area shape='rect' coords='3,3,597,86' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
@@ -1331,10 +1356,13 @@ if($idioma == "en")
 
             if($origen == "pagina-inscripcion-traslado-externo")
             {
-
-                          $contenidorpta = "";
-                          $contenidorpta.= "<table width='600px' height='168px' cellpadding='2' cellspacing='2' bgcolor='#FFFFFF'>
-                                           <tr><td>";
+                            $contenidorpta = "";
+                            $contenidorpta.="<table width='600px' height='168px' cellpadding='2' cellspacing='2' bgcolor='#FFFFFF'>
+                            <tr><td><p><img src='http://app.utec.edu.pe/admision/img/cabeceraWEB.jpg' alt='cabeceraWEB' usemap='#Map2'>
+                              <map name='Map2' id='Map2'>
+                                <area shape='rect' coords='3,3,597,86' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
+                              </map>
+                            </p></td></tr>";
                           $contenidorpta.= "<p>Hello ".strtoupper($_POST['nombres']).",</p>
                                            <p><h2>Thank you for your interest in UTEC!</h2>
                                            <br/> We have received your data correctly.
@@ -1355,16 +1383,24 @@ if($idioma == "en")
                           
                           $contenidorpta.= "<p>If you had left school three years or more after having graduated from high school you must submit the original certificate and police force, criminal and court records.</p>";
                           $contenidorpta.= "<p>Introduce yourself in our Admissions Office (Av. San Martín extension 207, Barranco) with the documents listed as a requirement of registration.</p>";
-                          $contenidorpta.= "<p>Contact UTEC easier:<br/><a href='http://guia.com.pe/estara/estara_popup.asp?advertiseId=411234&status=P&phone=51013731000&addressId=876727&' target='_blank'><img src='http://app.utec.edu.pe/admision/img/llama_gratis.jpg' alt='LLama gratis'></a></p>";
+                          $contenidorpta.="<p>Contact UTEC easier:<br/><a href='http://guia.com.pe/estara/estara_popup.asp?advertiseId=411234&status=P&phone=51013731000&addressId=876727&' target='_blank'><img src='http://app.utec.edu.pe/admision/img/llama_gratis.jpg' alt='LLama gratis'></a></p>";
                           //$contenidorpta.="<p>Oficina de Admisión<br /><strong>UTEC -  Universidad de Ingeniería & Tecnología</strong><br />Telf: (511) 373 1000<br />Av. Prolongación San Martín, 207, Barranco<br />informes@utec.edu.pe<br />www.utec.edu.pe</p>";
-                          $contenidorpta.= "<p>
-                                            <b>UTEC - Universidad de Ingeniería & Tecnología</b><br />
-                                            <a href='http://www.utec.edu.pe'> 
-                                                <img src='http://app.utec.edu.pe/admision/img/logo_utec.gif' alt='Logo Utec' width='120px;'>
-                                            </a>
-                                            </p>
-                                            </td></tr>
-                                           </table>";
+                          $contenidorpta.="<p><img src='http://app.utec.edu.pe/admision/img/logo_utec.jpg' alt='Logo Utec'><br/><b>UTEC - Universidad de Ingeniería & Tecnología</b></p>
+                          </td></tr>
+                          </table>";
+                          
+                          $contenidorpta.="<p>
+                          <img src='http://app.utec.edu.pe/admision/img/pieWEB.jpg' alt='pieWEB' usemap='#Map'>
+                          <map name='Map' id='Map'>
+                          <area shape='rect' coords='19,33,107,67' href='http://www.utec.edu.pe/carreras/ingenieria-industrial/default.aspx#.VE5bZfmG96A' target='_blank' alt='Ingeniería Industrial' />
+                          <area shape='rect' coords='487,31,595,69' href='http://www.utec.edu.pe/carreras/ingenieria-quimica/default.aspx#.VE5bjPmG96A' target='_blank' alt='Ingeniería Química Industrial' />
+                          <area shape='rect' coords='132,36,230,67' href='http://www.utec.edu.pe/carreras/ingenieria-mecanica/default.aspx#.VE6dZ_mG96A' target='_blank' alt='Ingeniería Mecánica' />
+                          <area shape='rect' coords='257,36,348,66' href='http://www.utec.edu.pe/carreras/ingenieria-energia/default.aspx#.VE6dlPmG96A' target='_blank' alt='Ingeniería de la Energía' />
+                          <area shape='rect' coords='374,34,467,67' href='http://www.utec.edu.pe/carreras/ingenieria-electronica/default.aspx#.VE6dufmG96A' target='_blank' alt='Ingeniería Electrónica' />
+                          <area shape='rect' coords='48,121,198,140' href='mailto:informes@utec.edu.pe?Subject=Consulta Información' target='_top' />
+                          <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
+                          </map>
+                          </p>"; 
             }
 }
 

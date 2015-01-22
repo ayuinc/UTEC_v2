@@ -1,12 +1,10 @@
-<?php
-
-/**
- * @file
- * Default simple view template to display a list of rows.
- *
- * @ingroup views_templates
- */
+<?php 
+		global $language; 
+		$idioma = $language->language;	
+		$titulo = "EDP-Cursos";	
 ?>
+
+
 <div class="container-sm">
 	<h1 class="light">Todos los cursos</h1>
 	<div class="separator-gray separator-sm"></div>						

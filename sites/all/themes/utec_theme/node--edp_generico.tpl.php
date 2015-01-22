@@ -18,39 +18,3 @@
 	<?php } ?>	
 	<?php print $body ?>	
 </div>
-
-
-<?php if (($end!='diplomados') AND ($end!='cursos-adhoc')) { ?>
-<div class="container-sm form-custom mt-35"> 
-	<form action="" data-submit="Formulario de inscripcion">
-		<input type="hidden" name="origen" value="<?php print $title ?>">
-		<div class="row">
-			<div class="form-group col-sm-6">
-				<label for="" class="sr-only"><?php print t('Name') ?></label>
-				<input id="nombres" type="text" class="form-control" placeholder="<?php print t('Name') ?>">
-			</div>
-			<div class="form-group col-sm-6">
-				<label for="" class="sr-only"><?php print t('Last Name') ?></label>
-				<input id="apellidop" type="text" class="form-control" placeholder="<?php print t('Last Name') ?>">
-			</div>
-		</div>
-		<div class="row">
-			<div class="form-group col-sm-6">
-				<label for="" class="sr-only">Email</label>
-				<input id="email" type="text" class="form-control" placeholder="Email">
-			</div>
-			<div class="form-group col-sm-6">
-				<label for="" class="sr-only"><?php print t('Phone') ?></label>
-				<input id="telefono" type="text" class="form-control" placeholder="<?php print t('Phone') ?>">
-			</div>
-		</div>
-		<div class="form-group">
-			<label for="" class="sr-only"><?php print t('Write a message') ?></label>
-			<textarea id="consulta" rows="3" class="form-control" placeholder="<?php print t('Write a message') ?>"></textarea>
-		</div>
-		<div class="text-right">
-			<button type="submit" class="btn btn-primary btn-lg"><?php print t('Send') ?></button>
-		</div>
-	</form>						
-</div>	
-<?php } ?>

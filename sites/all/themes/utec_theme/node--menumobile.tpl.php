@@ -57,7 +57,7 @@
 			<?php if ($language->language == 'es'): ?>
 				<a href="/<?php print $language->language ?>/metodologia-educativa"><span>Metodología</span>Educativa</a>
 			<?php elseif ($language->language == 'en'): ?>
-				<a href="/<?php print $language->language ?>/academic-methodology"><span><?php print t('Academic') ?></span><?php print t('Methodology') ?></a>
+				<a href="/<?php print $language->language ?>/teaching-methodology"><span><?php print t('Academic') ?></span><?php print t('Methodology') ?></a>
 			<?php endif ?>
 		</li>
 		<li>
@@ -78,7 +78,7 @@
 			<?php if ($language->language == 'es'): ?>
 				<a href="/<?php print $language->language ?>/vida-estudiantil"><span>Vida Estudiantil</a>
 			<?php elseif ($language->language == 'en'): ?>
-				<a href="/<?php print $language->language ?>/student-life"><span>UTEC Life</span></a>
+				<a href="/<?php print $language->language ?>/student-life"><span>Student Life</span></a>
 			<?php endif ?>
 		</li>
 		<li>
@@ -357,7 +357,7 @@
 				<span>Cursos</span>Cortos
 				</a>
 			<?php elseif ($language->language == 'en'): ?>
-				<a href="/<?php print $language->language ?>/school-of-professional-development/short-courses">
+				<a href="/<?php print $language->language ?>/spd/short-courses">
 				<span>Short</span>Courses
 				</a>
 			<?php endif ?>
@@ -370,7 +370,7 @@
 			<?php if ($language->language == 'es'): ?>
 				<a href="/<?php print $language->language ?>/edp/calendario"><?php print t('Calendar') ?></a>
 			<?php elseif ($language->language == 'en'): ?>
-				<a href="/<?php print $language->language ?>/school-of-professional-development/calendar"><?php print t('Calendar') ?></a>
+				<a href="/<?php print $language->language ?>/spd/calendar"><?php print t('Calendar') ?></a>
 			<?php endif ?>
 		</li>
 		<li>
