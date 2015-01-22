@@ -43,8 +43,7 @@
 	<?php } ?>	
 	
 
-	<?php if (($end=='traslado-externo') OR ($end=='transfer-from-other-universities')) { ?> 
-	
+	<?php if (($end=='traslado-externo') OR ($end=='transfer-from-other-universities') OR ($end=='top-academic-rankings') OR ($end=='primeros-puestos')) { ?> 
 	<div class="gbo calendar">
 		<h3><?php print t('Calendar:') ?></h3>
 		<div class="table-responsive table-custom pv-42">
