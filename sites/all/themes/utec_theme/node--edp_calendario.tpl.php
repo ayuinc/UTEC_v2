@@ -39,7 +39,7 @@
 						<td class="text-gray"><?php print t('November 26th, 27th and 28th, 2014') ?></td>
 					</tr>
 					<tr>
-						<td class="highlight"><?php print t('Risk Management in Infrastructure Projects (Completed') ?>​</td>
+						<td class="highlight"><?php print t('Risk Management in Infrastructure Projects (Completed)') ?>​</td>
 						<td class="text-gray"><?php print t('Edgardo Mímica, PhD., Francisco Vallés.') ?></td>
 						<td class="text-gray"><?php print t('October 2nd and 3rd, 2014') ?></td>
 					</tr>
