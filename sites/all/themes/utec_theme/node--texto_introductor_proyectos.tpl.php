@@ -10,7 +10,7 @@
 ?>
 
 
-	<h3><?php print $texto ?></h3>	
+	<p><?php print $texto ?></p>	
 
 
 
