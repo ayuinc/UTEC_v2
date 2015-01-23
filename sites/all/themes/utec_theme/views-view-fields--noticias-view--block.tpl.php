@@ -8,11 +8,18 @@
 	global $count;
 ?>
 <?php //print_r($zebra) ?>
+<?php print $tipo = $catgory ?>
 <div class="mb-ch-14">
 <?php if ($zebra == 'odd') :?>
 	<div class="banner" data-href="<?php print $path; ?>">
 		<div class="col-sm-3 banner-pic" style="background-image: url(<?php print $image ?>);">
-			<div class="banner-label bg-gray-darker text-white"><span><?php print $category ?></span></div>
+			<div class="banner-label bg-gray-darker text-white">
+				<?php if ($catgory=='Institucional') { ?>
+					<span><?php print t('Institutional') ?></span>
+				<?php } else { ?>
+					<span><?php print t('Innovation') ?></span>	
+				<?php } ?>
+			</div>
 		</div>
 		<div class="col-sm-9 banner-content">
 			<div>
@@ -31,7 +38,13 @@
 			</div>
 		</div>
 		<div class="col-sm-3 banner-pic" style="background-image: url(<?php print $image ?>); min-height: 299px;">
-			<div class="banner-label bg-gray-darker text-white"><span><?php print $category ?></span></div>
+			<div class="banner-label bg-gray-darker text-white">
+				<?php if ($catgory=='Institucional') { ?>
+					<span><?php print t('Institutional') ?></span>
+				<?php } else { ?>
+					<span><?php print t('Innovation') ?></span>	
+				<?php } ?>
+			</div>
 		</div>
 	</div>
 	<?php endif; ?>

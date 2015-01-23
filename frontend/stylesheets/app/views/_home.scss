@@ -34,6 +34,8 @@
 		@media #{$xs-only} {
 			@include normalize-text;
 			[data-href] > div,
+			[onclick] > div,
+			> div div,
 			h2 {
 				float: left;
 				display: block;			
