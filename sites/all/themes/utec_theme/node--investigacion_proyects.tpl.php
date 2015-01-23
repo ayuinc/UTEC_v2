@@ -7,7 +7,8 @@
 	$titulo = $node->title;
 	$tags = $node->field_tags['und'];		 		
 	// $profesor = $node->field_profesor['und']['0']['entity']->name;		 		
-	$profesor = $node->field_profesor['und'];		 		
+	$profesor = $node->field_profesor['und'];		
+	$texto_intro = $node->field_texto_inttroduccion['und']['0']['value']; 		
 	$field_pdf_proyectos= $node->field_pdf_proyectos['und']['0']['value']['filename'];
 	
 	//print_r($node->field_tags);
@@ -17,6 +18,11 @@
 <!--<div>
 	<img src="<?php print $pathfile.$image; ?>" alt="#" class="img-responsive">
 </div>-->
+<?php $count = 0;?>
+<?php if ($count == 0) : ?>
+	<li style="width:100%"><?php print $texto_intro ?></li>
+	<?php $count++; ?>
+<?php endif ?>
 <li>
 	<h4 class="mb-14">
 		<?php if ($field_pdf_proyectos!='') { ?>
