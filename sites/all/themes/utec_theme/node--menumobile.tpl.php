@@ -349,7 +349,7 @@
 		<li>
 			<a href="/edp/cursos/cursos-online"><span>Cursos</span>online</a>
 		</li>-->
-		<li><a href="/edp/la-escuela"><?php print t('The School') ?></a></li>
+		<li><a href="/edp"><?php print t('SPD') ?></a></li>
 		<li>
 			<?php if ($language->language  != 'en'): ?>
 				<a href="/edp/cursos-cortos">
