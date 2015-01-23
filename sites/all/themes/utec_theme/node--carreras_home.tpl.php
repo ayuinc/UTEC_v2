@@ -112,11 +112,17 @@
 				<?php $uid = $value['entity']->uid; ?>
         <?php $desc = $value['entity']->field_descripci_n['und'][0]['value']; ?>
         <?php //die(print_r($value)); ?>
+        <?php 
+        if ($language->language == 'en') {
+          $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/profesores/'.$uid, $language->language); 
+        }else
+          $profesor_url = "/" . drupal_get_path_alias('page/30/profesores/'.$uid, $language->language); 
+        ?> 
         <li class="mb-ch-14">
           <div class="grid-list-pic">
             <img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="" width="180px" height="auto" class="img-circle">
           </div>
-          <a href="/user/<?php print $uid ?>">
+          <a href="<?php print $profesor_url ?>">
             <?php print $name ?>
           </a>
           <p class="font-profesores"><?php print $desc ?></p>
