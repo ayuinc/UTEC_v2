@@ -116,7 +116,7 @@
 			</div>
 			<div class="form-group col-sm-4">
 				<select name="mes" id="mes" class="form-control select-override">
-					<option value=""><?php print t('Month') ?></option>
+					<option value=""><?php print t('Month') ?></option>|
 					<option value="<?php print t('January') ?>"><?php print t('January') ?></option>
 					<option value="<?php print t('February') ?>"><?php print t('February') ?></option>
 					<option value="<?php print t('March') ?>"><?php print t('March') ?></option>
@@ -197,7 +197,7 @@
 		</div>
 		<h3 class="light">Estudios</h3>
 		<div class="row">
-			<div class="col-sm-12"><label for=""><?php print t('High school graduation year' ?></label></div>
+			<div class="col-sm-12"><label for=""><?php print t('High school graduation year') ?></label></div>
 			<div class="col-sm-3 form-group">
 				<select name="ano-culminacion" id="ano-culminacion" class="form-control select-override">
 					<option value="">Año</option>
