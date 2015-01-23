@@ -97,10 +97,10 @@
             </a>
           </div>
         </div>
-        <?php if ($derecho_inferior_izq_link==='http://utecventures.com') { ?>
-        <div data-href="<?php print $derecho_inferior_izq_link; ?>" class="anchor-block-3">aa
+        <?php if ($derecho_inferior_izq_link=='http://utecventures.com') { ?>
+        <div data-href="<?php print $derecho_inferior_izq_link; ?>" class="anchor-block-3">
 	      <?php } else { ?>  
-	      <div data-href="<?php print $base_url; ?>/<?php print $derecho_inferior_izq_link; ?>" class="anchor-block-3"><?php print $derecho_inferior_izq_link; ?>
+	      <div data-href="<?php print $base_url; ?>/<?php print $derecho_inferior_izq_link; ?>" class="anchor-block-3">
 		    <?php } ?>
           <div class="pic" style="background-image: url(sites/default/files/<?php print $derecho_inferior_izq_img; ?>);"></div>
           <div class="overlay">
