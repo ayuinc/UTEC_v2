@@ -519,6 +519,9 @@ img.icon-utec {
 // TEXT SWITCHER
 .text-switcher {
 	display: inline;
+	@media #{$sm-down} {
+		display: block;
+	}
 	span {
 		overflow: hidden;
 		opacity: 0;

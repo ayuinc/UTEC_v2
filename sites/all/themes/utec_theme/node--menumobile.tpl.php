@@ -57,7 +57,7 @@
 			<?php if ($language->language  != 'en'): ?>
 				<a href="/metodologia-educativa"><span>Metodología</span>Educativa</a>
 			<?php elseif ($language->language == 'en'): ?>
-				<a href="/<?php print $language->language ?>/teaching-methodology"><span><?php print t('Academic') ?></span><?php print t('Methodology') ?></a>
+				<a href="/<?php print $language->language ?>/teaching-methodology"><span><?php print t('Teaching') ?></span><?php print t('Methodology') ?></a>
 			<?php endif ?>
 		</li>
 		<li>
@@ -153,7 +153,7 @@
 </div>
 <div class="mobile-nav-display" id="mobile-nav-display-3">
   <a class="back"><?php print t('Go Back') ?></a>
-  <h1>Nuestra <span>oferta</span><br>Académica</h1>
+  <h1>Nuestras<span>ofertas</span><br>Académica</h1>
 	<ul>
 		<li>
 			<?php if ($language->language  != 'en'): ?>
@@ -299,7 +299,7 @@
 				<span>Orientación</span>Vocacional
 				</a>
 			<?php elseif ($language->language == 'en'): ?>
-				<a href="/<?php print $language->language ?>/advising-and-counseling">
+				<a href="/<?php print $language->language ?>/career-guidance-and-orientation">
 				<span>Guidance</span>
 				</a>
 			<?php endif ?>

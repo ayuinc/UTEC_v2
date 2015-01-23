@@ -7,7 +7,7 @@
 	$titulo = $node->title;
 	$tags = $node->field_tags['und'];		 		
 	// $profesor = $node->field_profesor['und']['0']['entity']->name;		 		
-	$profesor = $node->field_profesor['und'];		 		
+	$profesor = $node->field_profesor['und'];		
 	$field_pdf_proyectos= $node->field_pdf_proyectos['und']['0']['value']['filename'];
 	
 	//print_r($node->field_tags);

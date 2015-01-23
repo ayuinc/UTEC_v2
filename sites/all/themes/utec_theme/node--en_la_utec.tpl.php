@@ -38,14 +38,17 @@
 ?>
 <div>
   <div class="container">
-    <h1 class="lead text-gray-darker pt-21 mb-7 text-switcher">
-      <?php print t('At UTEC, engineering is') ?>
-    </h1>
-    <h1 class="lead pt-21 mb-7 text-switcher">
-      <span><?php print t('well-being') ?></span>
-      <span><?php print t('innovation') ?></span>
-      <span><?php print t('design') ?></span>
-    </h1>
+    <div>
+      <h1 class="lead text-gray-darker pt-21 mb-7 text-switcher">
+        <?php print t('At UTEC, engineering is') ?>
+        <p class="text-gray visible-xs-inline-block"><?php print t('well-being') ?></p>
+      </h1>
+      <h1 class="lead pt-21 mb-7 text-switcher hidden-xs">
+        <span><?php print t('well-being') ?></span>
+        <span><?php print t('innovation') ?></span>
+        <span><?php print t('design') ?></span>
+      </h1>
+    </div>
   	<!--<h4 class="lead mt-0 mb-42">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>-->
     <div class="anchor-img-grid anchor-img-grid-1">
       <div class="col-sm-6">
@@ -97,7 +100,11 @@
             </a>
           </div>
         </div>
-        <div data-href="<?php print $base_url; ?>/<?php print $derecho_inferior_izq_link; ?>" class="anchor-block-3">
+        <?php if ($derecho_inferior_izq_link=='http://utecventures.com') { ?>
+        <div data-href="<?php print $derecho_inferior_izq_link; ?>" class="anchor-block-3">
+	      <?php } else { ?>  
+	      <div data-href="<?php print $base_url; ?>/<?php print $derecho_inferior_izq_link; ?>" class="anchor-block-3">
+		    <?php } ?>
           <div class="pic" style="background-image: url(sites/default/files/<?php print $derecho_inferior_izq_img; ?>);"></div>
           <div class="overlay">
             <a href="#">
