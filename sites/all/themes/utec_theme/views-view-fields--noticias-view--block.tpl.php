@@ -8,6 +8,7 @@
 	global $count;
 ?>
 <?php //print_r($zebra) ?>
+<?php print $tipo = $catgory ?>
 <div class="mb-ch-14">
 <?php if ($zebra == 'odd') :?>
 	<div class="banner" data-href="<?php print $path; ?>">
@@ -15,7 +16,6 @@
 			<div class="banner-label bg-gray-darker text-white">
 				<?php if ($catgory=='Institucional') { ?>
 					<span><?php print t('Institutional') ?></span>
-					<?php print $catgory ?>
 				<?php } else { ?>
 					<span><?php print t('Innovation') ?></span>	
 				<?php } ?>
