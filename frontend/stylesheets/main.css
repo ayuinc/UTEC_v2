@@ -5546,12 +5546,17 @@ textarea:-ms-input-placeholder {
 .breadcrumbs-light .breadcrumb {
   color: white; }
 
+.list-custom ul {
+  padding-left: 28px; }
+
+.list-custom {
+  padding-left: 14px; }
+
 .list-custom ul,
 .list-custom {
   padding-left: 0;
   list-style: none;
-  margin: 0;
-  padding-left: 28px; }
+  margin: 0; }
   .list-custom ul li,
   .list-custom li {
     position: relative;
