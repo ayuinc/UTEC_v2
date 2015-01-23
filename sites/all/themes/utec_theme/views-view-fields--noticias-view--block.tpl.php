@@ -7,6 +7,7 @@
 	$path = $fields['path']->content;
 	$dest = $fields['field_destacado']->content;
 	global $count;
+	kpr($fields);
 ?>
 <?php //print_r($zebra) ?>
 <div class="mb-ch-14">
