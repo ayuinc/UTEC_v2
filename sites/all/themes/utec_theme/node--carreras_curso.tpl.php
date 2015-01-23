@@ -11,7 +11,7 @@
 
 ?>
 <ul>
-  <li style="background-color: 
+  <li class="CRD<?php print $creditos ?>" style="background-color: 
   <?php if ($area == '17'){
   	print '#8dc63f';
   }elseif ($area == '18'){
