@@ -14,7 +14,7 @@ $(document).ready ->
 								'</div>'
 
 	$bodyForm.on('submit', (e)->
-		(e).preventDefault()
+		# (e).preventDefault()
 		if ($('.errordiv label').length > 0)
 			$('body').addClass('form-on-submit').append(overlayTempl)
 			checkDOMChange()
