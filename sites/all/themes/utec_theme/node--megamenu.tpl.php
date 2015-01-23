@@ -173,7 +173,7 @@
 							<?php if ($language->language != 'en'): ?>
 								<a href="/eventos-utec"><?php print t('Events') ?></a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/events"><?php print t('Events') ?></a>
+								<a href="/<?php print $language->language ?>/utec-events"><?php print t('Events') ?></a>
 							<?php endif ?>							
 						</li>
 						<li>
