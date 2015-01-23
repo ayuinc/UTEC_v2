@@ -871,7 +871,7 @@ if($idioma == "es")
             }
 
 
-            if($origen == "pagina-inscripcion-alto-rendimiento" || $origen == "pagina-inscripcion-bachillerato")
+            if($origen == "pagina-inscripcion-alto-rendimiento")
             {
                           $contenidorpta = "";
                           $contenidorpta.="<table width='600px' height='168px' cellpadding='2' cellspacing='2' bgcolor='#FFFFFF'>
@@ -897,10 +897,54 @@ if($idioma == "es")
                                           <li>Resolución del CONADIS que acredite la condición de discapacidad (Sólo aquellos que se presentan por la Modalidad de Discapacitados).</li>
                                           </ul></p>";
 
+                          $contenidorpta.="<p>Preséntate en nuestra oficina de Admisión (Av. Prolongación San Martín 207, Barranco) con los documentos indicados como requisito de inscripción.</p>";
+                          $contenidorpta.="<p>¡Éxitos!</p>";
+                          $contenidorpta.="<p>Comunícate con UTEC más fácil:<br/><a href='http://guia.com.pe/estara/estara_popup.asp?advertiseId=411234&status=P&phone=51013731000&addressId=876727&' target='_blank'><img src='http://app.utec.edu.pe/admision/img/llama_gratis.jpg' alt='LLama gratis'></a></p>";
+                          $contenidorpta.="<p><img src='http://app.utec.edu.pe/admision/img/logo_utec.jpg' alt='Logo Utec'><br/><b>UTEC - Universidad de Ingeniería & Tecnología</b></p>
+                          </td></tr>
+                          </table>";
+                          
                           $contenidorpta.="<p>
-                           En caso apliques por la modalidad de Bachillerato Internacional, presentar diploma de Bachillerato Internacional con la obtención de las 
-                           puntuaciones que se consignan en el siguiente documento: <a href='http://www.utec.edu.pe/admision/Documentos%20compartidos/Bachillerato%20Internacional.pdf' target='_blank'>Bachillerato Internacional.pdf</a>      
-                           </p>";
+                          <img src='http://app.utec.edu.pe/admision/img/pieWEB.jpg' alt='pieWEB' usemap='#Map'>
+                          <map name='Map' id='Map'>
+                          <area shape='rect' coords='19,33,107,67' href='http://www.utec.edu.pe/carreras/ingenieria-industrial/default.aspx#.VE5bZfmG96A' target='_blank' alt='Ingeniería Industrial' />
+                          <area shape='rect' coords='487,31,595,69' href='http://www.utec.edu.pe/carreras/ingenieria-quimica/default.aspx#.VE5bjPmG96A' target='_blank' alt='Ingeniería Química Industrial' />
+                          <area shape='rect' coords='132,36,230,67' href='http://www.utec.edu.pe/carreras/ingenieria-mecanica/default.aspx#.VE6dZ_mG96A' target='_blank' alt='Ingeniería Mecánica' />
+                          <area shape='rect' coords='257,36,348,66' href='http://www.utec.edu.pe/carreras/ingenieria-energia/default.aspx#.VE6dlPmG96A' target='_blank' alt='Ingeniería de la Energía' />
+                          <area shape='rect' coords='374,34,467,67' href='http://www.utec.edu.pe/carreras/ingenieria-electronica/default.aspx#.VE6dufmG96A' target='_blank' alt='Ingeniería Electrónica' />
+                          <area shape='rect' coords='48,121,198,140' href='mailto:informes@utec.edu.pe?Subject=Consulta Información' target='_top' />
+                          <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
+                          </map>
+                          </p>";   
+            }
+
+
+            if($origen == "pagina-inscripcion-bachillerato")
+            {
+                          $contenidorpta = "";
+                          $contenidorpta.="<table width='600px' height='168px' cellpadding='2' cellspacing='2' bgcolor='#FFFFFF'>
+                          <tr><td><p><img src='http://app.utec.edu.pe/admision/img/cabeceraWEB.jpg' alt='cabeceraWEB' usemap='#Map2'>
+                            <map name='Map2' id='Map2'>
+                              <area shape='rect' coords='3,3,597,86' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
+                            </map>
+                          </p></td></tr>";
+
+                          $contenidorpta.="<p>Hola ".strtoupper($_POST['nombres']).",</p>
+                          <p><h2>¡Gracias por tu interés en UTEC!</h2>
+                          <br/> Hemos recibido tus datos correctamente.
+                          <br />Para completar tu inscripción a la Evaluaci&oacute;n de Bachillerato Internacional, debes seguir estos pasos:</p>";
+                          
+                          $contenidorpta.="<p>1. Efectúa el depósito bancario por el Derecho de Inscripción a la Evaluación de Alto Rendimiento. BCP cuenta corriente soles N° 193-1976235-0-68. 
+                                          <br/>2. Presenta los siguientes documentos en la Oficina de Admisión:</p>";
+                          $contenidorpta.="<p><ul>
+                                          <li>Voucher del depósito. También puedes enviar el voucher electrónico al e-mail inscripciones@utec.edu.pe</li>
+                                          <li>Certificados originales de estudios de los cinco años de Educación Secundaria. En caso no hayas culminado tus estudios, puedes presentarlos hasta el 15 de enero de 2015.</li>
+                                          <li>Copia del Documento Nacional de Identidad.</li>
+                                          <li>Constancia original que acredite pertenecer al tercio superior de tu promoción con un promedio no menor de 15.</li>
+                                          <li>Dos fotografías actuales, tamaño carné, en fondo blanco.</li>
+                                          <li>Resolución del CONADIS que acredite la condición de discapacidad (Sólo aquellos que se presentan por la Modalidad de Discapacitados).</li>
+                                          <li>Diploma de Bachillerato Internacional con la obtención de las puntuaciones que se consignan en el siguiente documento: <a href='http://www.utec.edu.pe/admision/Documentos%20compartidos/Bachillerato%20Internacional.pdf' target='_blank'>Bachillerato Internacional.pdf</a></li>
+                                          </ul></p>";
 
                           $contenidorpta.="<p>Preséntate en nuestra oficina de Admisión (Av. Prolongación San Martín 207, Barranco) con los documentos indicados como requisito de inscripción.</p>";
                           $contenidorpta.="<p>¡Éxitos!</p>";
@@ -1246,6 +1290,7 @@ if($idioma == "en")
                                           <li>A family sworn statement.</li>
                                           <li>Resolution from CONADIS that certifies that the applicant is disabled.</li>
                                           <li>Certificate as proof that the applicant belonged to the upper third of his/her class with an average minimum grade of B-.</li>
+                                          <li>International Baccalaureate Diploma with obtaining scores entered in the following document: <a href='http://www.utec.edu.pe/admision/Documentos%20compartidos/Bachillerato%20Internacional.pdf' target='_blank'>International Baccalaureate.pdf</a></li>
                                           </ul></p>";
 
                           $contenidorpta.="<p>Come to our Admissions Office (Av. Prolongation San Martín 207, Barranco) with the documents listed as a requirement of registration.</p>";
@@ -1486,55 +1531,109 @@ $error = $client->getError();
 
 if($error){
 
-	//Flash::setError("<p class='nom'>Error enviando el formulario por CRM, vuelve a intentarlo porfavor</p>");
-	echo "error";
-	//log4php
+          header('Location: /404');
+          exit();  
 	
 }else{
 
-    if($origen == "pagina-inscripcion-examen-admision")
-    {
-          header('Location: /modalidades-de-admision/examen-de-admision/formulario-de-inscripcion/gracias');
-          exit();   
-    }
+      if($idioma == "es")
+      {
+          if($origen == "pagina-inscripcion-examen-admision")
+          {
+                header('Location: /modalidades-de-admision/examen-de-admision/formulario-de-inscripcion/gracias');
+                exit();   
+          }
 
-    if($origen == "pagina-inscripcion-alto-rendimiento")
-    {
-          header('Location: /modalidades-de-admision/alto-rendimiento/formulario-de-inscripcion/gracias');
-          exit();   
-    }
+          if($origen == "pagina-inscripcion-alto-rendimiento")
+          {
+                header('Location: /modalidades-de-admision/alto-rendimiento/formulario-de-inscripcion/gracias');
+                exit();   
+          }
 
-    if($origen == "pagina-inscripcion-bachillerato")
-    {
-          header('Location: /modalidades-de-admision/bachillerato-internacional/formulario-de-inscripcion/gracias');
-          exit();   
-    }
+          if($origen == "pagina-inscripcion-bachillerato")
+          {
+                header('Location: /modalidades-de-admision/bachillerato-internacional/formulario-de-inscripcion/gracias');
+                exit();   
+          }
 
-    if($origen == "pagina-inscripcion-pre")
-    {
-          header('Location: /modalidades-de-admision/centro-pre/formulario-de-inscripcion/gracias');
-          exit();   
-    }
+          if($origen == "pagina-inscripcion-pre")
+          {
+                header('Location: /modalidades-de-admision/centro-pre/formulario-de-inscripcion/gracias');
+                exit();   
+          }
 
-    if($origen == "pagina-inscripcion-primeros-puestos")
-    {
-          header('Location: /modalidades-de-admision/primeros-puestos/formulario-de-inscripcion/gracias');
-          exit();   
-    }
-            
-    if($origen == "pagina-inscripcion-traslado-externo")
-    {
-          header('Location: /modalidades-de-admision/bachillerato-internacional/formulario-de-inscripcion');
-          exit();   
-    }
+          if($origen == "pagina-inscripcion-primeros-puestos")
+          {
+                header('Location: /modalidades-de-admision/primeros-puestos/formulario-de-inscripcion/gracias');
+                exit();   
+          }
+                  
+          if($origen == "pagina-inscripcion-traslado-externo")
+          {
+                header('Location: /modalidades-de-admision/bachillerato-internacional/formulario-de-inscripcion/gracias');
+                exit();   
+          }
 
-    if($origen == "pagina-curso-edp")
-    {
-          header('Location: /gracias-general/gracias-escuela-de-desarrollo-profesional');
-          exit();   
-    }    
+          if($origen == "pagina-curso-edp")
+          {
+                header('Location: /gracias-general/gracias-escuela-de-desarrollo-profesional');
+                exit();   
+          }    
 
-          header('Location: /gracias');
-          exit();       
+                header('Location: /gracias');
+                exit();    
+      }        
+
+
+      if($idioma == "en")
+      {
+          if($origen == "pagina-inscripcion-examen-admision")
+          {
+                header('Location: /en/methods-of-admission/admissions-exam/application-form/thank-you');
+                exit();   
+          }
+
+          if($origen == "pagina-inscripcion-alto-rendimiento")
+          {
+                header('Location: /en/methods-of-admission/high-performance-assessment/application-form/thank-you');
+                exit();   
+          }
+
+          if($origen == "pagina-inscripcion-bachillerato")
+          {
+                header('Location: /en/methods-of-admission/international-baccalaureate/application-form/thank-you');
+                exit();   
+          }
+
+          if($origen == "pagina-inscripcion-pre")
+          {
+                header('Location: /en/methods-of-admission/pre-university-study-center/application-form/thank-you');
+                exit();   
+          }
+
+          if($origen == "pagina-inscripcion-primeros-puestos")
+          {
+                header('Location: /en/methods-of-admission/top-academic-rankings/application-form/thank-you');
+                exit();   
+          }
+                  
+          if($origen == "pagina-inscripcion-traslado-externo")
+          {
+                header('Location: /en/methods-of-admission/transfer-other-universities/application-form/thank-you');
+                exit();   
+          }
+
+          if($origen == "pagina-curso-edp")
+          {
+                header('Location: /gracias-general/gracias-escuela-de-desarrollo-profesional');
+                exit();   
+          }    
+
+                header('Location: /gracias');
+                exit();    
+      }        
+
+
+
 }
 ?>
