@@ -5547,7 +5547,7 @@ textarea:-ms-input-placeholder {
   color: white; }
 
 .list-custom ul {
-  padding-left: 28px; }
+  padding-left: 28px !important; }
 
 .list-custom {
   padding-left: 14px; }

@@ -94,10 +94,6 @@
 				<ul>
 					<li class="text-center">
 						<div class="grid-list-pic"><img src="<?php print '/'.$pathfile.'pictures/'.$profesor_pic; ?>" alt="" width="98px" height="auto" class="img-circle"></div>
-						<div>
-							<a href="/user/<?php print $profesor_id ?>" class="thin"><?php print $profesor_name ?></a>
-							<span><?php print $profesor_cargo ?></span>
-						</div>
 					</li>
 					<li class="pl-21 text-gray">
 						<div class="mb-7">
