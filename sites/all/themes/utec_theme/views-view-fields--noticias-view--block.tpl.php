@@ -15,6 +15,7 @@
 			<div class="banner-label bg-gray-darker text-white">
 				<?php if ($catgory=='Institucional') { ?>
 					<span><?php print t('Institutional') ?></span>
+					<?php print $catgory ?>
 				<?php } else { ?>
 					<span><?php print t('Innovation') ?></span>	
 				<?php } ?>
