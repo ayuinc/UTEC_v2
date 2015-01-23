@@ -15,12 +15,12 @@
     <?php print $content['header']; ?>
 
     <?php if ($content['header-bottom']) :?>
-      <div class="hero-unit video-bg">
+      <div class="hero-unit pt-63-xs video-bg">
         <?php print $content['header-bottom']; ?>
       </div>
     <?php endif; ?>
 
-    <div class="body minhp-100 pb-63 pt-63-xs breadcrumbs-light" id="sec-1">
+    <div class="body minhp-100 pb-63 breadcrumbs-light" id="sec-1">
         <?php print $content['body']; ?>
     </div>
 
