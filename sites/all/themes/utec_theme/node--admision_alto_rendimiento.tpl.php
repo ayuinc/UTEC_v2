@@ -12,6 +12,7 @@ $field_opcion_5_alto = $node->field_opcion_1_alto['und']['0']['value'];
 $field_opcion_6_alto = $node->field_opcion_1_alto['und']['0']['value'];
 $field_costa_alto = $node->field_costa_alto['und']['0']['value'];
 $field_temario_alto = $node->field_temario_alto['und']['0']['value'];
+$field_calendario_alto = $node->field_calendario_alto['und']['0']['value'];
 
 
 global $language; 
@@ -41,7 +42,7 @@ $idioma = $language->language;
 					<?php print $field_temario_alto ?>
 				</div>
 			</div>
-			<div class="gbo calendar">
+			<!--<div class="gbo calendar">
 				<h3><?php print t('Calendar:') ?></h3>
 					<div class="row">
 						<div class="col-sm-3" data-href="#">
@@ -129,7 +130,8 @@ $idioma = $language->language;
 							</div>
 						</div>
 					</div>
-			</div>
+			</div>-->
+			<?php print $field_calendario_alto ?>
 			</div>
 		</div>
 	</div>
