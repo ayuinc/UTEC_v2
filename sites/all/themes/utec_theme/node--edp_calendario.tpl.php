@@ -34,17 +34,17 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td class="highlight">Optimización de la  Le​y de ​Corte en Operaciones Mineras​</td>
+						<td class="highlight"><?php print t('Cutoff Grade Optimization in Mining Operations') ?></td>
 						<td class="text-gray"><?php print t('Antonio Nieto, PhD') ?></td>
 						<td class="text-gray"><?php print t('November 26th, 27th and 28th, 2014') ?></td>
 					</tr>
 					<tr>
-						<td class="highlight">Gestion de Riesgos en Proyectos de Infraestructura (Finalizado)​</td>
+						<td class="highlight"><?php print t('Risk Management in Infrastructure Projects (Completed)') ?>​</td>
 						<td class="text-gray"><?php print t('Edgardo Mímica, PhD., Francisco Vallés.') ?></td>
 						<td class="text-gray"><?php print t('October 2nd and 3rd, 2014') ?></td>
 					</tr>
 					<tr>
-						<td class="highlight">Gest​ión Inteligente de Operaciones  y Cie​rre ​Sosteniblede Minas​ (Finalizado)​</td>
+						<td class="highlight"><?php print t('Intelligent Mining Operations Management and Sustainable Mine Closure (Completed)') ?>​</td>
 						<td class="text-gray"><?php print t('Thomas Baumgartl, PhD., Mansour Edraki, PhD., Oscar Matallana-Tost, doctorando') ?></td>
 						<td class="text-gray"><?php print t('September 3rd, 4th and 5th, 2014') ?></td>
 					</tr>																																							
