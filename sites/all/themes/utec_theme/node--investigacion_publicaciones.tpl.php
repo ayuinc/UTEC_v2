@@ -17,7 +17,13 @@
 ?>
 
 <li>
-	<h4 class="mb-14"><a href="<?php print $link ?>" target="_blank" class="text-gray-darker"><?php print $titulo ?></a></h4>
+	<h4 class="mb-14">
+		<?php if ($link!='') { ?>
+		<a href="<?php print $link ?>" target="_blank" class="text-gray-darker">
+		<?php } ?>	
+		<?php print $titulo ?>
+		</a>
+	</h4>
 	<?php if ($investigador!='') { ?>
 		<p class="lead"><span class="bold"><?php print t('Researcher: ') ?></span><span><?php print $investigador ?></span></p>
 	<?php } ?>
