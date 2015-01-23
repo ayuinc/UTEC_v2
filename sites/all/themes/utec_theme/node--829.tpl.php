@@ -35,7 +35,7 @@
 				
 		<div class="row">
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">Nombre</label>
+				<label for="" class="sr-only">Nombres</label>
 				<input  id="nombres" name="nombres" type="text" class="form-control" placeholder="Nombres">
 			</div>
 			<div class="form-group col-sm-4">
@@ -146,7 +146,7 @@
 			</div>
 			<div class="form-group col-sm-4">
 				<label for="" class="sr-only">Departamento</label>
-				<input  id="depto" name="depto" type="text" class="form-control" placeholder="<?php print t('Department') ?>">
+				<input  id="depto" name="depto" type="text" class="form-control" placeholder="Departamento">
 				<!--
 				<select name="depto" id="depto" class="form-control select-override">
 					<option value="Dpto">Dpto</option>
