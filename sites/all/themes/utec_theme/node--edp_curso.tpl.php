@@ -42,11 +42,11 @@
 	<div class="separator-gray separator-sm"></div>						
 	<h3><?php print $sub_titulo ?></h3>
 	<div class="pv-ch-28 p-ch-gray">
-		<p><?php print $cuerpo ?></p>
+		<?php print $cuerpo ?>
 		<?php if ($imagen!='') { ?>
 			<img src="<?php print('/'.$pathfile.$imagen); ?>" alt="#" class="img-responsive">
+			<span><?php print $texto_imagen ?></span>
 		<?php } ?>
-		<p><?php print $texto_imagen ?></p>
 	</div>
 	<div class="pv-ch-42">
 		<div class="list-custom-left normalize-text lead-ch mb-ch-21">
