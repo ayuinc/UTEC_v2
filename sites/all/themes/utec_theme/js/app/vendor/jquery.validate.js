@@ -254,7 +254,7 @@ $.extend($.validator, {
 	},
 
 	messages: {
-		required: "Campo Obligatorio.",
+		required: "",
 		remote: "Debes responder esta pregunta.",
 		email: "E-mail incorrecto.",
 		url: "Please enter a valid URL.",

@@ -283,7 +283,7 @@
 					<?php if ($language->language  == 'en'): ?>
 						<h1><?php print t('Our ') ?> <span><?php print t('Academic') ?></span><br><?php print  t('Offer') ?></h1>
 					<?php elseif ($language->language != 'en'): ?>
-						<h1>Nuestras <span>Oferta</span><br>Académicas</h1>
+						<h1>Nuestra <span>Oferta</span><br>Académicas</h1>
 					<?php endif ?>
 					<p><?php print t('With our active learning methodology, our students experience engineering from day one.') ?></p>
 				</div>
