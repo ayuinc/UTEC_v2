@@ -8844,6 +8844,7 @@ img.icon-utec {
     margin: 0; }
   .list-carreras > li [data-href] > div,
   .list-carreras > li [onclick] > div,
+  .list-carreras > li > div div,
   .list-carreras > li h2 {
     float: left;
     display: block; }
