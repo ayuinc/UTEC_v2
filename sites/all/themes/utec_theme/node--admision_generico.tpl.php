@@ -41,6 +41,38 @@
 	<?php if ($field_contenido_generica!='') { ?>
 		<p class="lead text-gray mb-42"><?php print $field_contenido_generica ?></p>
 	<?php } ?>	
+	
+
+	<?php if (($end=='traslado-externo') OR ($end=='transfer-from-other-universities') OR ($end=='top-academic-rankings') OR ($end=='primeros-puestos')) { ?> 
+	<div class="gbo calendar">
+		<h3><?php print t('Calendar:') ?></h3>
+		<div class="table-responsive table-custom pv-42">
+			<table class="table">
+				<thead>
+					<tr>
+						<td><?php print t('Event') ?></td>
+						<td><?php print t('Date') ?></td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="highlight text-center"><?php print t('Registration starts') ?></td>
+						<td>01/04/2014</td>
+					</tr>
+					<tr>
+						<td class="highlight text-center"><?php print t('Registration ends') ?></td>
+						<td>01/03/2015</td>
+					</tr>
+					<tr>
+						<td class="highlight text-center"><?php print t('Admissions Exam') ?></td>
+						<td>04/03/2015</td>
+					</tr>
+				</tbody>
+		    </table>
+	    </div>
+	</div>
+	<?php } ?>	
+		
 </div>
 
 <?php if ($field_tiene_formulario == "Si-carreras") { ?>
