@@ -70,7 +70,7 @@ $malla-colors-sufix-list:
 				@for $z from 1 through length($malla-colors-list) {
 					> li {
 						&.bg-#{nth($malla-colors-sufix-list, $z)} {
-							@include linear-gradient(to bottom, #{nth($malla-colors-list, $z)}, #{lighten(nth($malla-colors-list, $z), 7%)})
+							@include linear-gradient(to bottom, #{nth($malla-colors-list, $z)}, #{lighten(nth($malla-colors-list, $z), 12%)})
 						}
 					}
 				}

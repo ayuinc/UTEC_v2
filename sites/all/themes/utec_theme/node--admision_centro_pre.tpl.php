@@ -44,7 +44,7 @@ $modalida_ext_int = $node->field_modalidad_extensiva_intens['und']['0']['value']
 	  <?php endif ?>
 	    <div class="overlay flex-middle">
 	      <div class="container-sm hero-text">
-	        <h1 class="thin text-white mt-0"><?php print $titulo ?></h1>
+	        <h1 class="thin text-white mt-0 text-hover-primary"><?php print $titulo ?></h1>
 	        <hr class="hr-white">
 	        <div class="row">
 	          <div class="col-sm-3 hidden-xs">

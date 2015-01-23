@@ -7555,16 +7555,16 @@ img.icon-utec {
           min-height: 200px; }
       .malla-curricular > li .body > ul > li.bg-mate {
         background-color: #8dc63f;
-        background-image: -webkit-linear-gradient(top, #8dc63f, #9dce5b);
-        background-image: linear-gradient(to bottom,#8dc63f, #9dce5b); }
+        background-image: -webkit-linear-gradient(top, #8dc63f, #a9d46e);
+        background-image: linear-gradient(to bottom,#8dc63f, #a9d46e); }
       .malla-curricular > li .body > ul > li.bg-admin {
         background-color: #ffdd00;
-        background-image: -webkit-linear-gradient(top, #ffdd00, #ffe224);
-        background-image: linear-gradient(to bottom,#ffdd00, #ffe224); }
+        background-image: -webkit-linear-gradient(top, #ffdd00, #ffe53d);
+        background-image: linear-gradient(to bottom,#ffdd00, #ffe53d); }
       .malla-curricular > li .body > ul > li.bg-ing {
         background-color: #afdfe4;
-        background-image: -webkit-linear-gradient(top, #afdfe4, #caeaed);
-        background-image: linear-gradient(to bottom,#afdfe4, #caeaed); }
+        background-image: -webkit-linear-gradient(top, #afdfe4, #ddf1f3);
+        background-image: linear-gradient(to bottom,#afdfe4, #ddf1f3); }
 
 .malla-curricular-ref {
   text-transform: uppercase;
