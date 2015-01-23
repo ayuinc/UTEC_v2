@@ -37,7 +37,12 @@ if (!isset($_POST['estudios-rendimiento'])) {$_POST['estudios-rendimiento'] = ""
 if (!isset($_POST['estudiante'])) {$_POST['estudiante'] = "N";};
 if (!isset($_POST['consulta'])) {$_POST['consulta'] = "";};
 if (!isset($_POST['idioma'])) {$_POST['idioma'] = "es";};
+if (!isset($_POST['curso'])) {$_POST['curso'] = "";};
 
+if($_POST['curso'] != "")
+{
+    $_POST['consulta'] = $_POST['curso']." - ". $_POST['consulta'];
+}
 
 if ($_POST['dia'] != "")
 {
@@ -217,7 +222,7 @@ if($idioma == "es")
 
 
         if( $origen == "Charlas informativas" || $origen == "Contacto" || $origen == "Visita Utec" || 
-            $origen == "Trabaja en UTEC" || $origen == "Orientacion Vocacional")
+            $origen == "Trabaja en UTEC" || $origen == "Orientacion Vocacional" || $origen == "EDP" )
         {
             $fromTelemarketing = "webmaster@utec.edu.pe";
             $fromNameTelemarketing = "UTEC";
@@ -266,7 +271,15 @@ if($idioma == "es")
                 $subjectTelemarketing = "Solicitud - Orientación Vocacional UTEC";
                 $familia = "CONTACTO";
                 $origen = "pagina-orientacion-vocacional";  
-            }            
+            } 
+
+            if($origen == "EDP")
+            {
+                $tituloTelemarketing = "Curso EDP - Datos Personales";
+                $subjectTelemarketing = "Solicitud - Curso EDP";
+                $familia = "CONTACTO";
+                $origen = "pagina-curso-edp";  
+            }                        
         }
 
 
@@ -541,7 +554,7 @@ if($idioma == "en")
         }
 
         if( $origen == "Informative Talks" || $origen == "Contact" || $origen == "Visit UTEC" || 
-            $origen == "Work at UTEC" || $origen == "Carrer Guidance and Orientation" )
+            $origen == "Work at UTEC" || $origen == "Carrer Guidance and Orientation" || $origen == "EDP" )
         {
             $fromTelemarketing = "webmaster@utec.edu.pe";
             $fromNameTelemarketing = "UTEC";
@@ -590,7 +603,16 @@ if($idioma == "en")
                 $subjectTelemarketing = "Request - UTEC Carrer Guidance and Orientation";
                 $familia = "CONTACTO";
                 $origen = "pagina-orientacion-vocacional";  
-            }            
+            }
+
+            if($origen == "EDP")
+            {
+                $tituloTelemarketing = "EDP Course - Personal Data";
+                $subjectTelemarketing = "Request - EDP Course";
+                $familia = "CONTACTO";
+                $origen = "pagina-curso-edp";  
+            }
+
         }
 
 
@@ -1505,6 +1527,12 @@ if($error){
           header('Location: /modalidades-de-admision/bachillerato-internacional/formulario-de-inscripcion');
           exit();   
     }
+
+    if($origen == "pagina-curso-edp")
+    {
+          header('Location: /gracias-general/gracias-escuela-de-desarrollo-profesional');
+          exit();   
+    }    
 
           header('Location: /gracias');
           exit();       
