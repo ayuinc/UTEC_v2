@@ -28,7 +28,7 @@ $list-custom-height: 20%;
 }
 
 .list-custom-left ul, 
-.list-custom {
+.list-custom-left {
 	@include list-unstyled;
 	@include clearfix;
 	li {

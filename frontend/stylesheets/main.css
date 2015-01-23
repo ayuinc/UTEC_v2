@@ -5572,35 +5572,35 @@ textarea:-ms-input-placeholder {
       margin-top: 1.5rem; }
 
 .list-custom-left ul,
-.list-custom {
+.list-custom-left {
   padding-left: 0;
   list-style: none;
   margin: 0; }
   .list-custom-left ul:before, .list-custom-left ul:after,
-  .list-custom:before,
-  .list-custom:after {
+  .list-custom-left:before,
+  .list-custom-left:after {
     content: " ";
     display: table; }
   .list-custom-left ul:after,
-  .list-custom:after {
+  .list-custom-left:after {
     clear: both; }
   .list-custom-left ul li,
-  .list-custom li {
+  .list-custom-left li {
     float: left;
     width: 80%; }
     .list-custom-left ul li:first-child,
-    .list-custom li:first-child {
+    .list-custom-left li:first-child {
       width: 20%;
       height: auto; }
   @media only screen and (max-width: 768px) {
     .list-custom-left ul li,
-    .list-custom li {
+    .list-custom-left li {
       width: 100%; }
       .list-custom-left ul li:first-child,
-      .list-custom li:first-child {
+      .list-custom-left li:first-child {
         width: 100%; }
       .list-custom-left ul li:last-child,
-      .list-custom li:last-child {
+      .list-custom-left li:last-child {
         padding-top: 14px;
         padding-top: 1rem; } }
 
