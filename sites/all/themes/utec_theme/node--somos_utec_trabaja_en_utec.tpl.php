@@ -24,7 +24,7 @@
 		<p><?php print $field_su_filosofia ?></p>
 		<img src="<?php print('/'.$pathfile.$field_su_foto)?>" class="img-responsive">
 		<div>
-			<h3><?php print t('University') ?></h3>
+			<h3><?php print t('Universality') ?></h3>
 			<p><?php print $field_su_universidad ?></p>
 		</div>
 		<div>
