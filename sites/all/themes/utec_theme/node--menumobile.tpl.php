@@ -153,7 +153,7 @@
 </div>
 <div class="mobile-nav-display" id="mobile-nav-display-3">
   <a class="back"><?php print t('Go Back') ?></a>
-  <h1>Nuestra <span>oferta</span><br>Académica</h1>
+  <h1>Nuestras<span>ofertas</span><br>Académica</h1>
 	<ul>
 		<li>
 			<?php if ($language->language  != 'en'): ?>
