@@ -48,7 +48,7 @@
 			<span><?php print $texto_imagen ?></span>
 		<?php } ?>
 	</div>
-	<div class="pv-ch-42">
+	<div class="pv-ch-28">
 		<div class="list-custom-left normalize-text lead-ch mb-ch-21">
 			<ul>
 				<li class="bg-gray text-white uppercase text-center p-21">
@@ -99,7 +99,13 @@
 							<span><?php print $profesor_cargo ?></span>
 						</div>
 					</li>
-					<li class="pl-21 text-gray"><?php print $profesor_resenia ?></li>
+					<li class="pl-21 text-gray">
+						<div class="mb-7">
+							<a href="/user/<?php print $profesor_id ?>" class="thin h3 text-hover-primary"><?php print $profesor_name ?></a>
+							<span><?php print $profesor_cargo ?></span>
+						</div>
+						<?php print $profesor_resenia ?>
+					</li>
 				</ul>
 			</div>
 			<?php endif; ?>
