@@ -150,4 +150,11 @@
 	  'weight' => 15,
 	));	
 
+	drupal_add_js(path_to_theme() . '/js/app/lib/forms-control.js', array(
+	  'scope' => 'footer',
+	  'group' => JS_THEME,
+	  'every_page' => TRUE,
+	  'weight' => 16,
+	));	
+
 ?>
