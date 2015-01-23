@@ -89,12 +89,12 @@
             <li><a href="/investigacion/contacto" class="atm-menu-inferior"><small><?php print t('Contact us') ?></small></a></li>
 						<?php elseif ($language->language == 'en'): ?>
             <li class="title text-gray-lighter"><?php print t('Research') ?></li>
-            <li><a href="/proyectos" class="atm-menu-inferior"><small><?php print t('Projects') ?></small></a></li>
-            <li><a href="/<?php print $language->language ?>publications" class="atm-menu-inferior"><small><?php print t('Publications') ?></small></a></li>
+            <li><a href="/<?php print $language->language ?>/projects" class="atm-menu-inferior"><small><?php print t('Projects') ?></small></a></li>
+            <li><a href="/<?php print $language->language ?>/publications" class="atm-menu-inferior"><small><?php print t('Publications') ?></small></a></li>
             <!--<li><a href="#"><small>Publicaciones</small></a></li>
             <li><a href="#"><small>Consultorías</small></a></li>-->
-            <li><a href="/<?php print $language->language ?>companies" class="atm-menu-inferior"><small><?php print t('Companies and Clients') ?></small></a></li>
-            <li><a href="/<?php print $language->language ?>contact" class="atm-menu-inferior"><small><?php print t('Contact us') ?></small></a></li>
+            <li><a href="/<?php print $language->language ?>/companies" class="atm-menu-inferior"><small><?php print t('Companies and Clients') ?></small></a></li>
+            <li><a href="/<?php print $language->language ?>/contact" class="atm-menu-inferior"><small><?php print t('Contact us') ?></small></a></li>
 						<?php endif ?>
           </ul>
         </li>
