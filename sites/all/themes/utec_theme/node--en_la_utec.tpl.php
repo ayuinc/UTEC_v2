@@ -64,7 +64,7 @@
               <h2>
                 <?php if ($language->language == 'en') {
                   print $izquierdo_txt2_ingles;
-                } elseif ($language->language == 'es') {
+                } elseif ($language->language  != 'en') {
                   print $izquierdo_txt2;
                 } 
                 ?>
@@ -81,7 +81,7 @@
               <h4>
                 <?php if ($language->language == 'en') {
                   print $derecho_superior_txt1_ingles;
-                } elseif ($language->language == 'es') {
+                } elseif ($language->language  != 'en') {
                   print $derecho_superior_txt1;
                 } 
                 ?>
@@ -89,7 +89,7 @@
               <h2>
                 <?php if ($language->language == 'en') {
                   print $derecho_superior_txt2_ingles;
-                } elseif ($language->language == 'es') {
+                } elseif ($language->language  != 'en') {
                   print $derecho_superior_txt2;
                 } 
                 ?>
@@ -97,14 +97,18 @@
             </a>
           </div>
         </div>
-        <div data-href="<?php print $base_url; ?>/<?php print $derecho_inferior_izq_link; ?>" class="anchor-block-3">
+        <?php if ($derecho_inferior_izq_link=='http://utecventures.com') { ?>
+        <div data-href="<?php print $derecho_inferior_izq_link; ?>" class="anchor-block-3">
+	      <?php } else { ?>  
+	      <div data-href="<?php print $base_url; ?>/<?php print $derecho_inferior_izq_link; ?>" class="anchor-block-3">
+		    <?php } ?>
           <div class="pic" style="background-image: url(sites/default/files/<?php print $derecho_inferior_izq_img; ?>);"></div>
           <div class="overlay">
             <a href="#">
               <h4>
                 <?php if ($language->language == 'en') {
                   print $derecho_inferior_izq_txt1_ingles;
-                } elseif ($language->language == 'es') {
+                } elseif ($language->language  != 'en') {
                   print $derecho_inferior_izq_txt1;
                 } 
                 ?>
@@ -112,7 +116,7 @@
               <h2>
                 <?php if ($language->language == 'en') {
                   print $derecho_inferior_izq_txt2_ingles;
-                } elseif ($language->language == 'es') {
+                } elseif ($language->language  != 'en') {
                   print $derecho_inferior_izq_txt2;
                 } 
                 ?>
@@ -127,7 +131,7 @@
               <h4>
                 <?php if ($language->language == 'en') {
                   print $derecho_inferior_der_txt1_ingles;
-                } elseif ($language->language == 'es') {
+                } elseif ($language->language  != 'en') {
                   print $derecho_inferior_der_txt1;
                 } 
                 ?>
@@ -135,7 +139,7 @@
               <h2>
                 <?php if ($language->language == 'en') {
                   print $derecho_inferior_der_txt2_ingles;
-                } elseif ($language->language == 'es') {
+                } elseif ($language->language  != 'en') {
                   print $derecho_inferior_der_txt2;
                 } 
                 ?>

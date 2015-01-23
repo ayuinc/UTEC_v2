@@ -179,6 +179,6 @@
 <div id="section-scroll" class="hidden-xs hidden-sm">
 	<ul></ul>
 	<div class="text-right pv-21 btn-apply animated">
-		<a href="/node/854" class="btn btn-primary uppercase"><?php print t('Apply') ?></a>
+		<a href="/node/854" class="btn btn-primary uppercase atm-scroll-item"><?php print t('Apply') ?></a>
 	</div>
 </div>
