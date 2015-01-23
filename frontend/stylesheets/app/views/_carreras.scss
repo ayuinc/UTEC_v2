@@ -40,11 +40,16 @@ $malla-curricular-height: 70px;
 							width: 79%;
 							padding-top: 7px;
 						}
+						@for $i from 1 through 10 {
+							&.CRD#{$i} {
+								min-height: ($i * 20) + px;
+							}
+						}
 					}
 					@for $i from 1 through 30 {
 						&:nth-child(#{$i}) {
 							> li {
-								min-height: $malla-curricular-height - ($i * 2);
+								// min-height: $malla-curricular-height - ($i * 2);
 								&:first-child {
 									background-color: #{scale-color(nth($brand-colors-list, $z),$lightness: ($i*3)*1% )};
 								}
