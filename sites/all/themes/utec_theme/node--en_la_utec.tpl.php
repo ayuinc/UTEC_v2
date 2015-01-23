@@ -98,7 +98,7 @@
           </div>
         </div>
         <?php if ($derecho_inferior_izq_link=='http://utecventures.com') { ?>
-        <div data-href="<?php print $base_url; ?>/<?php print $derecho_inferior_izq_link; ?>" class="anchor-block-3">
+        <div data-href="<?php print $derecho_inferior_izq_link; ?>" class="anchor-block-3">
 	      <?php } else { ?>  
 	      <div data-href="<?php print $base_url; ?>/<?php print $derecho_inferior_izq_link; ?>" class="anchor-block-3">
 		    <?php } ?>
