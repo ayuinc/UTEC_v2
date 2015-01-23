@@ -157,9 +157,9 @@
   <ul></ul>
   <div class="text-right pv-21 btn-apply animated">
     <?php if ($language->language != 'en'): ?>
-      <a class="btn btn-primary uppercase" href="/<?php print $language->language ?>/modalidades-de-admision"><?php print t('Apply') ?></a>
+      <a class="btn btn-primary uppercase atm-scroll-item" href="/<?php print $language->language ?>/modalidades-de-admision"><?php print t('Apply') ?></a>
     <?php elseif ($language->language == 'en'): ?>
-      <a class="btn btn-primary uppercase" href="/<?php print $language->language ?>/methods-of-admission"><?php print t('Apply') ?></a>
+      <a class="btn btn-primary uppercase atm-scroll-item" href="/<?php print $language->language ?>/methods-of-admission"><?php print t('Apply') ?></a>
     <?php endif ?>  
   </div>
 </div>
