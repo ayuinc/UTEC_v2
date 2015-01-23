@@ -29,7 +29,7 @@
 	</h4>
 	<?php if ($profesor!='') { ?>
 		<p>
-			<span class="lead bold">Profesor: </span>
+			<span class="lead bold"><?php print t('Teacher:') ?></span>
 			<?php $count = 0; ?>
 			<?php foreach ($profesor as $key => $value): ?>
 			<?php if ($count > 0): ?>
