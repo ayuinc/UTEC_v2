@@ -269,13 +269,6 @@
 		</li>
 		<li>
 			<?php if ($language->language  != 'en'): ?>
-				<a href="/modalidades-de-admision" class="btn btn-primary btn-custom bold"><?php print t('Apply') ?></a>
-			<?php elseif ($language->language == 'en'): ?>
-				<a href="/<?php print $language->language ?>/methods-of-admission" class="btn btn-primary btn-custom bold"><?php print t('Apply') ?></a>
-			<?php endif ?>
-		</li>
-		<li>
-			<?php if ($language->language  != 'en'): ?>
 				<a href="/calendario-de-admision">
 				<span>Calendario de </span>Admisión</a>
 				</a>
@@ -312,6 +305,13 @@
 				<a href="/<?php print $language->language ?>/admissions-faq">
 				<span>Frequently Asked </span>Questions
 				</a>
+			<?php endif ?>
+		</li>
+		<li>
+			<?php if ($language->language  != 'en'): ?>
+				<a href="/modalidades-de-admision" class="btn btn-primary btn-custom bold"><?php print t('Apply') ?></a>
+			<?php elseif ($language->language == 'en'): ?>
+				<a href="/<?php print $language->language ?>/methods-of-admission" class="btn btn-primary btn-custom bold"><?php print t('Apply') ?></a>
 			<?php endif ?>
 		</li>
 	</ul>
