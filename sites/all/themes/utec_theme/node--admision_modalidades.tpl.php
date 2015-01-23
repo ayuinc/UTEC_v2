@@ -14,7 +14,7 @@ $titulo = $node->title;
 	<div class="separator-gray separator-lg"></div>
 	<ul class="grid-list grid-list-3 grid-list-1-xs grid-list-hover size sm">
 		<?php if ($language->language  != 'en'): ?>
-		<li data-href="http://104.236.86.120/modalidades-de-admision/primeros-puestos" class="atm-blog" id="primeros-puestos">
+		<li data-href="/modalidades-de-admision/primeros-puestos" class="atm-blog" id="primeros-puestos">
 		<?php elseif ($language->language == 'en'): ?>
 		<li data-href="/en/methods-of-admission/top-academic-rankings" class="atm-blog" id="primeros-puestos">
 		<?php endif ?>

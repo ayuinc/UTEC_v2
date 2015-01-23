@@ -534,9 +534,9 @@
 						</li>-->
 						<li>
 							<?php if ($language->language != 'en'): ?>
-							<a href="/edp/la-escuela"><?php print t('The School') ?></a>
+							<a href="/edp"><?php print t('SPD') ?></a>
 							<?php elseif ($language->language == 'en'): ?>
-							<a href="/<?php print $language->language ?>/spd/the-school"><?php print t('The School') ?></a>
+							<a href="/<?php print $language->language ?>/spd"><?php print t('SPD') ?></a>
 							<?php endif ?>
 						</li>
 						<li>
@@ -1046,9 +1046,9 @@
 						</li>-->
 						<li>
 							<?php if ($language->language != 'en'): ?>
-							<a href="/edp/la-escuela"><?php print t('The School') ?></a>
+							<a href="/edp"><?php print t('SPD') ?></a>
 							<?php elseif ($language->language == 'en'): ?>
-							<a href="/<?php print $language->language ?>/spd/the-school"><?php print t('The School') ?></a>
+							<a href="/<?php print $language->language ?>/spd"><?php print t('SPD') ?></a>
 							<?php endif ?>
 						</li>
 						<li>
