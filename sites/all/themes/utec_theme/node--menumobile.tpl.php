@@ -269,13 +269,6 @@
 		</li>
 		<li>
 			<?php if ($language->language  != 'en'): ?>
-				<a href="/modalidades-de-admision" class="btn btn-primary btn-custom bold"><?php print t('Apply') ?></a>
-			<?php elseif ($language->language == 'en'): ?>
-				<a href="/<?php print $language->language ?>/methods-of-admission" class="btn btn-primary btn-custom bold"><?php print t('Apply') ?></a>
-			<?php endif ?>
-		</li>
-		<li>
-			<?php if ($language->language  != 'en'): ?>
 				<a href="/calendario-de-admision">
 				<span>Calendario de </span>Admisión</a>
 				</a>
@@ -314,6 +307,13 @@
 				</a>
 			<?php endif ?>
 		</li>
+		<li>
+			<?php if ($language->language  != 'en'): ?>
+				<a href="/modalidades-de-admision" class="btn btn-primary btn-custom bold"><?php print t('Apply') ?></a>
+			<?php elseif ($language->language == 'en'): ?>
+				<a href="/<?php print $language->language ?>/methods-of-admission" class="btn btn-primary btn-custom bold"><?php print t('Apply') ?></a>
+			<?php endif ?>
+		</li>
 	</ul>
 </div>
 <div class="mobile-nav-display" id="mobile-nav-display-5">
@@ -349,7 +349,7 @@
 		<li>
 			<a href="/edp/cursos/cursos-online"><span>Cursos</span>online</a>
 		</li>-->
-		<li><a href="/edp/la-escuela"><?php print t('The School') ?></a></li>
+		<li><a href="/edp"><?php print t('SPD') ?></a></li>
 		<li>
 			<?php if ($language->language  != 'en'): ?>
 				<a href="/edp/cursos-cortos">

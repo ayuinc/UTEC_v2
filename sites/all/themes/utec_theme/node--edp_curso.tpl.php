@@ -42,17 +42,17 @@
 	<div class="separator-gray separator-sm"></div>						
 	<h3><?php print $sub_titulo ?></h3>
 	<div class="pv-ch-28 p-ch-gray">
-		<p><?php print $cuerpo ?></p>
+		<?php print $cuerpo ?>
 		<?php if ($imagen!='') { ?>
 			<img src="<?php print('/'.$pathfile.$imagen); ?>" alt="#" class="img-responsive">
+			<span><?php print $texto_imagen ?></span>
 		<?php } ?>
-		<p><?php print $texto_imagen ?></p>
 	</div>
-	<div class="pv-ch-42">
+	<div class="pv-ch-28">
 		<div class="list-custom-left normalize-text lead-ch mb-ch-21">
 			<ul>
 				<li class="bg-gray text-white uppercase text-center p-21">
-					Fecha
+					<?php print t('Date') ?>
 				</li>
 				<li class="pl-21">
 					<p><?php print $fecha ?></p>
@@ -60,7 +60,7 @@
 			</ul>
 			<ul>
 				<li class="bg-gray text-white uppercase text-center p-21">
-					Hora
+					<?php print t('Time') ?>
 				</li>
 				<li class="pl-21">
 					<p><?php print $hora ?></p>
@@ -68,7 +68,7 @@
 			</ul>
 			<ul>
 				<li class="bg-gray text-white uppercase text-center p-21">
-					Lugar
+					<?php print t('Place') ?>
 				</li>
 				<li class="pl-21">
 					<p><?php print $lugar ?></p>
@@ -76,13 +76,13 @@
 			</ul>
 		</div>
 		<div>
-			<h3>Objetivos:</h3>
+			<h3><?php print t('Goals:') ?></h3>
 			<div class="list-custom">
 				<?php print $obejtivos ?>
 			</div>
 		</div>
 		<div>
-			<h3>Dirigido a:</h3>
+			<h3><?php print t('Address to:') ?></h3>
 			<div class="list-custom">
 				<?php print $dirigido ?>
 			</div>
@@ -94,12 +94,14 @@
 				<ul>
 					<li class="text-center">
 						<div class="grid-list-pic"><img src="<?php print '/'.$pathfile.'pictures/'.$profesor_pic; ?>" alt="" width="98px" height="auto" class="img-circle"></div>
-						<div>
-							<a href="/user/<?php print $profesor_id ?>" class="thin"><?php print $profesor_name ?></a>
+					</li>
+					<li class="pl-21 text-gray">
+						<div class="mb-7">
+							<a href="/user/<?php print $profesor_id ?>" class="thin h3 text-hover-primary"><?php print $profesor_name ?></a>
 							<span><?php print $profesor_cargo ?></span>
 						</div>
+						<?php print $profesor_resenia ?>
 					</li>
-					<li class="pl-21 text-gray"><?php print $profesor_resenia ?></li>
 				</ul>
 			</div>
 			<?php endif; ?>

@@ -108,14 +108,3 @@ textarea {
 		font-size: $font-size-h4;
 	}
 }
-
-// SPINNER ON FORM submit
-.spinner {
-	display: inline-block;
-	width: 18px;
-	height: 18px;
-	// background-color: $gray-lighter;
-	border-radius: 50%;
-	margin-left: $container-fluid;
-	color: white;
-}

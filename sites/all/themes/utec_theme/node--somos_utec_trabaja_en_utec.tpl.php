@@ -24,7 +24,7 @@
 		<p><?php print $field_su_filosofia ?></p>
 		<img src="<?php print('/'.$pathfile.$field_su_foto)?>" class="img-responsive">
 		<div>
-			<h3><?php print t('University') ?></h3>
+			<h3><?php print t('Universality') ?></h3>
 			<p><?php print $field_su_universidad ?></p>
 		</div>
 		<div>
@@ -125,14 +125,14 @@ jQuery(function() {
 	      <?php if ($idioma == "en") { ?>
 	      messages: {
 		    "nombres": { required: "Fill in your name. <br />" }, "apellidop": { required: "Fill in your middle name. <br /> " },
-		    "apellidom": { required: "Fill in your last name. <br /> " }, "carrera": { required: "Select you carreer <br /> " },
+		    "apellidom": { required: "Fill in your last name. <br /> " }, "carrera": { required: "Select your undergrad program. <br /> " },
 		    "tipo-documento": { required: "Select your document type. <br /> " }, "documento": { required: "Fill in your document. <br /> " },
 		    "pais": { required: "Fill in your country. <br /> " }, "ciudad": { required: "Fill in your city. <br /> " },
 		    "dia": { required: "Fill in your day of birth. <br /> " }, "mes": { required: "Fill in your month of birth. <br /> " },
 		    "ano": { required: "Fill in your year of birth. <br /> " }, "depto": { required: "Fill in your department. <br /> " },
 		    "provincia": { required: "Fill in your province. <br /> " }, "distrito": { required: "Fill in your district. <br /> " },
 		    "direccion-actual": { required: "Fill in your address. <br /> " }, "email": { required: "Fill in your e-mail. <br /> " },
-	      	"celular-1": { required: "Fill in your cellphone 1. <br /> " }, "ano-culminacion": { required: "Select your year of completion. <br /> " }, 
+	      	"telefono": { required: "Fill in your phone. <br /> " }, "ano-culminacion": { required: "Select your year of completion. <br /> " }, 
 	      	"colegio-procedencia": { required: "Fill in your school of origin. <br /> " },
 		    "estudios-dpto": { required: "Fill in the department of your school. <br /> " }, "estudios-provincia": { required: "Fill in the province of your school. <br /> " },
 		    "estudios-distrito": { required: "Fill in the district of your school. <br /> " }, "estudios-rendimiento": { required: "Select your academic performance. <br /> " }

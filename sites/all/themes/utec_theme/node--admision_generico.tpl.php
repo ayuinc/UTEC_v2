@@ -81,7 +81,7 @@
 				<input id="telefono" name="telefono" type="text" class="form-control" placeholder="<?php print t('Phone') ?>">
 			</div>			
 			<div class="form-group col-sm-6">
-				<label for="" class="sr-only"><?php print t('Path of Interest') ?></label>
+				<label for="" class="sr-only"><?php print t('Undergrad Program') ?></label>
 				<select name="carrera" id="carrera" class="form-control select-override">
 					  <option value=""><?php print t('Undergrad Program') ?></option>
 					  <option value="15970"><?php print t('Industrial Engineering') ?></option>
@@ -189,14 +189,14 @@ jQuery(function() {
 	      <?php if ($idioma == "en") { ?>
 	      messages: {
 		    "nombres": { required: "Fill in your name. <br />" }, "apellidop": { required: "Fill in your middle name. <br /> " },
-		    "apellidom": { required: "Fill in your last name. <br /> " }, "carrera": { required: "Select you carreer <br /> " },
+		    "apellidom": { required: "Fill in your last name. <br /> " }, "carrera": { required: "Select you undergrad program. <br /> " },
 		    "tipo-documento": { required: "Select your document type. <br /> " }, "documento": { required: "Fill in your document. <br /> " },
 		    "pais": { required: "Fill in your country. <br /> " }, "ciudad": { required: "Fill in your city. <br /> " },
 		    "dia": { required: "Fill in your day of birth. <br /> " }, "mes": { required: "Fill in your month of birth. <br /> " },
 		    "ano": { required: "Fill in your year of birth. <br /> " }, "depto": { required: "Fill in your department. <br /> " },
 		    "provincia": { required: "Fill in your province. <br /> " }, "distrito": { required: "Fill in your district. <br /> " },
 		    "direccion-actual": { required: "Fill in your address. <br /> " }, "email": { required: "Fill in your e-mail. <br /> " },
-	      	"celular-1": { required: "Fill in your cellphone 1. <br /> " }, "ano-culminacion": { required: "Select your year of completion. <br /> " }, 
+	      	"telefono": { required: "Fill in your phone. <br /> " }, "ano-culminacion": { required: "Select your year of completion. <br /> " }, 
 	      	"colegio-procedencia": { required: "Fill in your school of origin. <br /> " },
 		    "estudios-dpto": { required: "Fill in the department of your school. <br /> " }, "estudios-provincia": { required: "Fill in the province of your school. <br /> " },
 		    "estudios-distrito": { required: "Fill in the district of your school. <br /> " }, "estudios-rendimiento": { required: "Select your academic performance. <br /> " }

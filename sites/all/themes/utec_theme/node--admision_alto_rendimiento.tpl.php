@@ -27,17 +27,17 @@ $idioma = $language->language;
 		<p class="lead text-gray"><?php print $field_descripcion_corta_alto ?></p>
 		<div class="mb-ch-42">
 			<div>
-				<h3><?php print t('How to apply?') ?></h3>
+				<h3><?php print t('How to apply?'); ?></h3>
 				<?php  print $field_como_postular_alto ?>
 			</div>
 			<div>
-				<h3><?php print t('Costs:') ?></h3>
+				<h3><?php print t('Costs:'); ?></h3>
 					<div class="list-custom">
 						<ul><li><?php print $field_costa_alto ?></li></ul>
 					</div>
 			</div>
 			<div>
-				<h3><?php print t('Agenda:') ?></h3>
+				<h3><?php print t('Agenda:'); ?></h3>
 				<div class="list-custom">
 					<?php print $field_temario_alto ?>
 				</div>
@@ -136,7 +136,7 @@ $idioma = $language->language;
 		</div>
 	</div>
 
-	<h3><?php print t("For more information:") ?></h3>
+	<h3><?php print t("For more information:"); ?></h3>
 	<form action="/registro.php" data-submit="Formulario de inscripcion" method="post" id="formRegistro" name="formRegistro">
 		<input type="hidden" name="origen" value="<?php print $title; ?>">
 		<input type="hidden" name="idioma" value="<?php print $idioma; ?>">		
@@ -235,7 +235,7 @@ jQuery(function() {
 		    "ano": { required: "Fill in your year of birth. <br /> " }, "depto": { required: "Fill in your department. <br /> " },
 		    "provincia": { required: "Fill in your province. <br /> " }, "distrito": { required: "Fill in your district. <br /> " },
 		    "direccion-actual": { required: "Fill in your address. <br /> " }, "email": { required: "Fill in your e-mail. <br /> " },
-	      	"celular-1": { required: "Fill in your cellphone 1. <br /> " }, "ano-culminacion": { required: "Select your year of completion. <br /> " }, 
+	      	"telefono": { required: "Fill in your phone. <br /> " }, "ano-culminacion": { required: "Select your year of completion. <br /> " }, 
 	      	"colegio-procedencia": { required: "Fill in your school of origin. <br /> " },
 		    "estudios-dpto": { required: "Fill in the department of your school. <br /> " }, "estudios-provincia": { required: "Fill in the province of your school. <br /> " },
 		    "estudios-distrito": { required: "Fill in the district of your school. <br /> " }, "estudios-rendimiento": { required: "Select your academic performance. <br /> " }

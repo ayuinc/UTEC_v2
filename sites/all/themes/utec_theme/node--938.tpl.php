@@ -60,10 +60,10 @@
 				<label for="" class="sr-only">Document</label>
 				<select name="tipo-documento" id="tipo-documento" class="form-control select-override">
 	            	<option value="">- Select a type -</option>
-	            	<option value="DNI">DNI</option>
-	                <option value="CE">Carné de extranjería</option>
-	                <option value="PA">Passport</option>
-	                <option value="OT">Other</option>
+	            	<option value="DNI"><?php print t('DNI') ?></option>
+	                <option value="CE"><?php print t('Residence card') ?></option>
+	                <option value="PA"><?php print t('Passport') ?></option>
+	                <option value="OT"><?php print t('DNI') ?></option>
 				</select>
 			</div>
 			<div class="form-group col-sm-4">
@@ -267,7 +267,7 @@ jQuery(function() {
 	      },
 	      messages: {
 		    "nombres": { required: "Fill in your name. <br />" }, "apellidop": { required: "Fill in your middle name. <br /> " },
-		    "apellidom": { required: "Fill in your last name. <br /> " }, "carrera": { required: "Select you carreer <br /> " },
+		    "apellidom": { required: "Fill in your last name. <br /> " }, "carrera": { required: "Select you career <br /> " },
 		    "tipo-documento": { required: "Select your document type. <br /> " }, "documento": { required: "Fill in your document. <br /> " },
 		    "pais": { required: "Fill in your country. <br /> " }, "ciudad": { required: "Fill in your city. <br /> " },
 		    "dia": { required: "Fill in your day of birth. <br /> " }, "mes": { required: "Fill in your month of birth. <br /> " },

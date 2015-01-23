@@ -75,7 +75,7 @@ $modalida_ext_int = $node->field_modalidad_extensiva_intens['und']['0']['value']
 		<div class="pt-42">
 			<div class="container">
 				<h3 class="thin lead"><?php print t('Courses') ?></h3>
-				<ul class="grid-list grid-list-4 list-hover list-hover-gray-light">
+				<ul class="grid-list grid-list-4 grid-list-1-xs isotope-grid list-hover list-hover-gray-light">
 					<li>
 						<div>
 							<h3 class="lead"><?php print t('Spatial Intelligence') ?></h3>
@@ -281,7 +281,7 @@ jQuery(function() {
 		    "ano": { required: "Fill in your year of birth. <br /> " }, "depto": { required: "Fill in your department. <br /> " },
 		    "provincia": { required: "Fill in your province. <br /> " }, "distrito": { required: "Fill in your district. <br /> " },
 		    "direccion-actual": { required: "Fill in your address. <br /> " }, "email": { required: "Fill in your e-mail. <br /> " },
-	      	"celular-1": { required: "Fill in your cellphone 1. <br /> " }, "ano-culminacion": { required: "Select your year of completion. <br /> " }, 
+	      	"telefono": { required: "Fill in your phone. <br /> " }, "ano-culminacion": { required: "Select your year of completion. <br /> " }, 
 	      	"colegio-procedencia": { required: "Fill in your school of origin. <br /> " },
 		    "estudios-dpto": { required: "Fill in the department of your school. <br /> " }, "estudios-provincia": { required: "Fill in the province of your school. <br /> " },
 		    "estudios-distrito": { required: "Fill in the district of your school. <br /> " }, "estudios-rendimiento": { required: "Select your academic performance. <br /> " }
@@ -303,7 +303,7 @@ jQuery(function() {
   <ul></ul>
   <div class="text-right pv-21 btn-apply animated">
 		<?php if ($language->language  != 'en'): ?>
-			<a href="/modalidades-de-admision/centro-pre/formulario-de-inscripcion" class="btn btn-primary uppercase"><?php print t('Apply') ?></a>								
+			<a href="/modalidades-de-admision/centro-pre/formulario-de-inscripcion" class="btn btn-primary uppercase">Postular</a>								
 		<?php elseif ($language->language == 'en'): ?>
 			<a href="/<?php print $language->language ?>/methods-of-admission/pre-university-center/registration-form" class="btn btn-primary uppercase"><?php print t('Apply') ?></a>		
 		<?php endif ?>	  
