@@ -40,23 +40,23 @@
 			</div>
 			<div class="form-group col-sm-4">
 				<label for="" class="sr-only"><?php print t('Middle Name') ?></label>
-				<input  id="apellidop" name="apellidop" type="text" class="form-control" placeholder="Apellido paterno">
+				<input  id="apellidop" name="apellidop" type="text" class="form-control" placeholder="<?php print t('Middle Name') ?>">
 			</div>
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">Apellido materno</label>
-				<input  id="apellidom" name="apellidom" type="text" class="form-control" placeholder="Apellido materno">
+				<label for="" class="sr-only"><?php print t('Last Name') ?></label>
+				<input  id="apellidom" name="apellidom" type="text" class="form-control" placeholder="<?php print t('Last Name') ?>">
 			</div>
 		</div>
 		<div class="text-gray h4 thin">
-			<label for="">Género:</label>
-			<input  id="femenino" type="radio" checked name="genero" value="F"> Femenino
-			<input  id="masculino" type="radio" name="genero" value="M"> Masculino
+			<label for=""><?php print t('Gender') ?>:</label>
+			<input  id="femenino" type="radio" checked name="genero" value="F"> <?php print t('Female') ?>
+			<input  id="masculino" type="radio" name="genero" value="M"> <?php print t('Male') ?>
 		</div>
 		<div class="row">
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">Carrera de interés</label>
+				<label for="" class="sr-only"><?php print t('Undergrad Program') ?></label>
 				<select name="carrera" id="carrera" class="form-control select-override">
-					<option value="">Carrera de interés</option>
+					<option value=""><?php print t('Undergrad Program') ?></option>
 					<option value="15970"><?php print t('Industrial Engineering') ?></option>
 		            <option value="14864"><?php print t('Mechanical Engineering') ?></option>
 		            <option value="15968"><?php print t('Energy Engineering') ?></option>
@@ -65,27 +65,27 @@
 				</select>
 			</div>
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">Documento</label>
+				<label for="" class="sr-only"><?php print t('Document type') ?></label>
 				<select name="tipo-documento" id="tipo-documento" class="form-control select-override">
-	            	<option value="">- Selecciona el tipo -</option>
-	            	<option value="DNI">DNI</option>
-	                <option value="CE">Carné de extranjería</option>
-	                <option value="PA">Pasaporte</option>
-	                <option value="OT">Otro</option>
+	            	<option value="">- <?php print t('Document type') ?> -</option>
+	            	<option value="DNI"><?php print t('DNI') ?></option>
+	                <option value="CE"><?php print t('Residence card') ?></option>
+	                <option value="PA"><?php print t('Passport') ?></option>
+	                <option value="OT"><?php print t('DNI') ?></option>
 				</select>
 			</div>
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">Documento</label>
-				<input  id="documento" name="documento" type="text" class="form-control" placeholder="Documento">
+				<label for="" class="sr-only"><?php print t('Document') ?></label>
+				<input  id="documento" name="documento" type="text" class="form-control" placeholder="<?php print t('Document') ?>">
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-12">
-				<label for="">Lugar de nacimiento</label>
+				<label for=""><?php print t('Place of Birth') ?></label>
 			</div>
 			<div class="form-group col-sm-6">
-				<label for="" class="sr-only">Pais</label>
-				<input  id="pais" name="pais" type="text" class="form-control" placeholder="Pais">
+				<label for="" class="sr-only"><?php print t('Country') ?></label>
+				<input  id="pais" name="pais" type="text" class="form-control" placeholder="<?php print t('Country') ?>">
 				<!--
 				<select name="pais" id="pais" class="form-control select-override">
 					<option value="País">País</option>
@@ -93,8 +93,8 @@
 				-->
 			</div>
 			<div class="form-group col-sm-6">
-				<label for="" class="sr-only">Ciudad</label>
-				<input  id="ciudad" name="ciudad" type="text" class="form-control" placeholder="Ciudad">
+				<label for="" class="sr-only"><?php print t('City') ?></label>
+				<input  id="ciudad" name="ciudad" type="text" class="form-control" placeholder="<?php print t('City') ?>">
 				<!--
 				<select name="ciudad" id="ciudad" class="form-control select-override">
 					<option value="Ciudad">Ciudad</option>
@@ -104,11 +104,11 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-12">
-				<label for="" class="block">Fecha de nacimiento</label>
+				<label for="" class="block"><?php print t('Date of Birth') ?></label>
 			</div>
 			<div class="form-group col-sm-4">
 				<select name="dia" id="dia" class="form-control select-override">
-					<option value="">Día</option>
+					<option value=""><?php print t('Day') ?></option>
 					<?php for ($x = 1; $x <= 31; $x++) { ?>
     					<?php echo "<option value='$x'>$x</option>";?> 
 					<?php } ?>
@@ -116,16 +116,23 @@
 			</div>
 			<div class="form-group col-sm-4">
 				<select name="mes" id="mes" class="form-control select-override">
-					<option value="">Mes</option>
-					<option value="Enero">Enero</option> <option value="Febrero">Febrero</option> <option value="Marzo">Marzo</option>
-					<option value="Abril">Abril</option> <option value="Mayo">Mayo</option> <option value="Junio">Junio</option>
-					<option value="Julio">Julio</option> <option value="Agosto">Agosto</option> <option value="Setiembre">Setiembre</option>
-					<option value="Octubre">Octubre</option> <option value="Noviembre">Noviembre</option> <option value="Diciembre">Diciembre</option>
-				</select>
+					<option value=""><?php print t('Month') ?></option>
+					<option value="<?php print t('January') ?>"><?php print t('January') ?></option>
+					<option value="<?php print t('February') ?>"><?php print t('February') ?></option>
+					<option value="<?php print t('March') ?>"><?php print t('March') ?></option>
+					<option value="<?php print t('April') ?>"><?php print t('April') ?></option>
+					<option value="<?php print t('May') ?>"><?php print t('May') ?></option>
+					<option value="<?php print t('June') ?>"><?php print t('June') ?></option>
+					<option value="<?php print t('July') ?>"><?php print t('July') ?></option>
+					<option value="<?php print t('August') ?>"><?php print t('August') ?></option>
+					<option value="<?php print t('September') ?>"><?php print t('September') ?></option>
+					<option value="<?php print t('October') ?>"><?php print t('October') ?></option>
+					<option value="<?php print t('November') ?>"><?php print t('November') ?></option>
+					<option value="<?php print t('December') ?>"><?php print t('December') ?></option>				</select>
 			</div>
 			<div class="form-group col-sm-4">
 				<select name="ano" id="ano" class="form-control select-override">
-					<option value="">Año</option>
+					<option value=""><?php print t('Year') ?></option>
 					<?php for ($x = 1970; $x <= 2015; $x++) { ?>
     					<?php echo "<option value='$x'>$x</option>";?> 
 					<?php } ?>
@@ -134,11 +141,11 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-12">
-				<label for="" class="block">Domicilio actual</label>
+				<label for="" class="block"><?php print t('Address') ?></label>
 			</div>
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">Departamento</label>
-				<input  id="depto" name="depto" type="text" class="form-control" placeholder="Departamento">
+				<label for="" class="sr-only"><?php print t('Department') ?></label>
+				<input  id="depto" name="depto" type="text" class="form-control" placeholder="<?php print t('Department') ?>">
 				<!--
 				<select name="depto" id="depto" class="form-control select-override">
 					<option value="Dpto">Dpto</option>
@@ -146,8 +153,8 @@
 				-->
 			</div>
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">Provincia</label>
-				<input  id="provincia" name="provincia" type="text" class="form-control" placeholder="Provincia">
+				<label for="" class="sr-only"><?php print t('Province') ?></label>
+				<input  id="provincia" name="provincia" type="text" class="form-control" placeholder="<?php print t('Province') ?>">
 				<!--
 				<select name="provincia" id="provincia" class="form-control select-override">
 					<option value="Provincia">Provincia</option>
@@ -155,8 +162,8 @@
 				-->
 			</div>
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">Distrito</label>
-				<input  id="distrito" name="distrito" type="text" class="form-control" placeholder="Distrito">
+				<label for="" class="sr-only"><?php print t('District') ?></label>
+				<input  id="distrito" name="distrito" type="text" class="form-control" placeholder="<?php print t('District') ?>">
 				<!--
 				<select name="distrito" id="distrito" class="form-control select-override">
 					<option value="Distrito">Distrito</option>
@@ -164,33 +171,33 @@
 				-->
 			</div>
 			<div class="col-sm-12 form-group">
-				<label for="" class="sr-only">Dirección actual</label>
-				<input  id="direccion-actual" name="direccion-actual" type="text" class="form-control" placeholder="Ingresa tu dirección actual">
+				<label for="" class="sr-only"><?php print t('Address') ?></label>
+				<input  id="direccion-actual" name="direccion-actual" type="text" class="form-control" placeholder="<?php print t('Address') ?>">
 			</div>
 			<div class="col-sm-7 form-group">
-				<input  id="email" name="email" type="email" class="form-control" placeholder="e-mail">
+				<input  id="email" name="email" type="email" class="form-control" placeholder="<?php print t('E-mail') ?>">
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-12">
-				<label for="" class="block">Teléfonos</label>
+				<label for="" class="block"><?php print t('Phone') ?></label>
 			</div>
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">Celular 1</label>
-				<input  id="celular-1" name="celular-1" type="text" class="form-control" placeholder="Celular 1">
+				<label for="" class="sr-only"><?php print t('Cell phone 1') ?></label>
+				<input  id="celular-1" name="celular-1" type="text" class="form-control" placeholder="<?php print t('Cell phone 1') ?>">
 			</div>
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">Celular 2</label>
-				<input  id="celular-2" name="celular-2" type="text" class="form-control" placeholder="Celular 2">
+				<label for="" class="sr-only"><?php print t('Cell phone 2') ?></label>
+				<input  id="celular-2" name="celular-2" type="text" class="form-control" placeholder="<?php print t('Cell phone 2') ?>">
 			</div>
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">Teléfono fijo</label>
-				<input  id="telefono-fijo" name="telefono" type="text" class="form-control" placeholder="Teléfono fijo">
+				<label for="" class="sr-only"><?php print t('Fix phone') ?></label>
+				<input  id="telefono-fijo" name="telefono" type="text" class="form-control" placeholder="<?php print t('Fix phone') ?>">
 			</div>
 		</div>
 		<h3 class="light">Estudios</h3>
 		<div class="row">
-			<div class="col-sm-12"><label for="">Año que culminó los estudios secundarios o bachillerato</label></div>
+			<div class="col-sm-12"><label for=""><?php print t('High school graduation year' ?></label></div>
 			<div class="col-sm-3 form-group">
 				<select name="ano-culminacion" id="ano-culminacion" class="form-control select-override">
 					<option value="">Año</option>
