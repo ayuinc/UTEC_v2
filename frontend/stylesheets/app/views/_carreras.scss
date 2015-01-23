@@ -1,4 +1,18 @@
 $malla-curricular-height: 70px;
+$color-mate: #8dc63f;
+$color-admin: #ffdd00;
+$color-ing: #afdfe4;
+
+$malla-colors-list: 
+	$color-mate,
+	$color-admin,
+	$color-ing;
+
+$malla-colors-sufix-list: 
+	"mate",
+	"admin",
+	"ing";
+
 
 .malla-curricular {
 	> li {
@@ -19,41 +33,53 @@ $malla-curricular-height: 70px;
 				}
 			}
 		}
-	}
-	@for $z from 1 through length($brand-colors-list) {
-		&.malla-curricular-#{nth($brand-colors-sufix-list, $z)} {
-			.body {
-				border-top: 3px solid #{nth($brand-colors-list, $z)};
-				margin-top: 3px;
-				> ul {
-					@include clearfix;
-					@include list-unstyled;
-					@include flex-grow;
-					> li {
-						float: left;
-						padding-left: 7px;
-						font-size: 9px;
-						&:first-child {
-							width: 21%;
-						}
-						&:last-child {
-							width: 79%;
-							padding-top: 7px;
+		.body {
+			border-top: 3px solid $brand-info;
+			margin-top: 3px;
+			> ul {
+				@include clearfix;
+				@include list-unstyled;
+				@include flex-grow;
+				> li {
+					float: left;
+					padding-left: 7px;
+					font-size: 9px;
+					&:first-child {
+						width: 21%;
+					}
+					&:last-child {
+						width: 79%;
+						padding-top: 7px;
+					}
+					@for $i from 1 through 10 {
+						&.CRD#{$i} {
+							min-height: ($i * 20) + px;
 						}
 					}
-					@for $i from 1 through 30 {
-						&:nth-child(#{$i}) {
-							> li {
-								min-height: $malla-curricular-height - ($i * 2);
-								&:first-child {
-									background-color: #{scale-color(nth($brand-colors-list, $z),$lightness: ($i*3)*1% )};
-								}
-							}
+				}
+				// @for $i from 1 through 30 {
+				// 	&:nth-child(#{$i}) {
+				// 		> li {
+				// 			// min-height: $malla-curricular-height - ($i * 2);
+				// 			&:first-child {
+				// 				background-color: #{scale-color(nth($brand-colors-list, $i),$lightness: ($i*3)*1% )};
+				// 			}
+				// 		}
+				// 	}
+				// }
+				@for $z from 1 through length($malla-colors-list) {
+					> li {
+						&.bg-#{nth($malla-colors-sufix-list, $z)} {
+							@include linear-gradient(to bottom, #{nth($malla-colors-list, $z)}, #{lighten(nth($malla-colors-list, $z), 12%)})
 						}
 					}
 				}
 			}
 		}
+		// @for $z from 1 through length($brand-colors-list) {
+			// &.malla-curricular-#{nth($brand-colors-sufix-list, $z)} {
+			// }
+		// }
 	}
 }
 

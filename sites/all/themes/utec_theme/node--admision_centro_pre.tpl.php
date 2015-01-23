@@ -43,14 +43,18 @@ $modalida_ext_int = $node->field_modalidad_extensiva_intens['und']['0']['value']
 	  <div data-section-scroll="Acerca de" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_fotos_centro_pre)?>);">
 	  <?php endif ?>
 	    <div class="overlay flex-middle">
-	      <div class="container-sm hero-text">
-	        <h1 class="thin text-white mt-0"><?php print $titulo ?></h1>
+	      <div class="container-sm hero-text" data-href="/modalidades-de-admision/centro-pre/acerca-del-centro-pre">
+	        <h1 class="thin text-white mt-0 text-hover-primary"><?php print $titulo ?></h1>
 	        <hr class="hr-white">
 	        <div class="row">
 	          <div class="col-sm-3 hidden-xs">
 	            <div class="size xl">
 	              <i class="icon-carreras-que-es text-white"></i>
-	              <!--<a href="<?php print $carrera_link ?>" class="btn btn-white btn-outline see-more mt-7"><?php print t('See more') ?></a>-->
+	              <?php if ($language->language == 'en'): ?>
+	              <a href="/en/methods-of-admission/pre-university-center/about" class="btn btn-white btn-outline see-more mt-7"><?php print t('See more') ?></a>
+	              <?php elseif ($language->language  != 'en'): ?>
+	              <a href="/modalidades-de-admision/centro-pre/acerca-del-centro-pre" class="btn btn-white btn-outline see-more mt-7"><?php print t('See more') ?></a>
+	              <?php endif ?>
 	            </div>
 	          </div>
 	          <div class="col-sm-9">

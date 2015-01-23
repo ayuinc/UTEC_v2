@@ -7,7 +7,7 @@
 	$titulo = $node->title;
 	$tags = $node->field_tags['und'];		 		
 	// $profesor = $node->field_profesor['und']['0']['entity']->name;		 		
-	$profesor = $node->field_profesor['und'];		 		
+	$profesor = $node->field_profesor['und'];		
 	$field_pdf_proyectos= $node->field_pdf_proyectos['und']['0']['value']['filename'];
 	
 	//print_r($node->field_tags);
@@ -29,7 +29,7 @@
 	</h4>
 	<?php if ($profesor!='') { ?>
 		<p>
-			<span class="lead bold">Profesor: </span>
+			<span class="lead bold"><?php print t('Teacher:') ?></span>
 			<?php $count = 0; ?>
 			<?php foreach ($profesor as $key => $value): ?>
 			<?php if ($count > 0): ?>

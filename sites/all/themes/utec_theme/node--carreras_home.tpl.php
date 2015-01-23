@@ -34,7 +34,7 @@
     <div class="overlay flex-middle">
       <div class="container-sm hero-text" data-href="<?php print $carrera_link ?>">
         <h2 class="thin h3 text-white mb-7"><?php print t('What is') ?></h2>
-        <h1 class="thin text-white mt-0"><a href="<?php print $carrera_link ?>"><?php print $titulo ?></a>?</h1>
+        <h1 class="thin mt-0"><a class="text-white text-hover-primary" href="<?php print $carrera_link ?>"><?php print $titulo ?></a><span class="text-white">?</span></h1>
         <hr class="hr-white">
         <div class="row mt-28">
           <div class="col-sm-3 hidden-xs">
@@ -56,7 +56,7 @@
 </div> <!-- END:Hero -->
 <div data-section-scroll="<?php print t('Curricular Structure') ?>" id="malla-curricular" class="scroll-down-info malla-curricular section-scroll-content minh-560 flex-middle-center">
   <div class="container-sm text-right normalize-text" data-href="<?php print $malla_link ?>">
-    <h2 class="lead thin h1"><?php print t('Curricular Structure') ?></h2>
+    <h2 class="lead thin h1 text-hover-primary"><?php print t('Curricular Structure') ?></h2>
     <hr class="hr-gray">
     <div class="row mt-28">
       <div class="col-sm-9">
@@ -77,7 +77,7 @@
 </div>
 <div data-section-scroll="<?php print t('Minors') ?>" id="menciones" class="scroll-down-info section-scroll-content minh-560 flex-middle-center bg-info-op">
   <div class="container-sm text-left text-white normalize-text" data-href="<?php print $menciones_link ?>">
-    <h2 class="lead thin h1"><?php print t('Minors') ?></h2>
+    <h2 class="lead thin h1 text-hover-primary"><?php print t('Minors') ?></h2>
     <hr class="hr-white">
     <div class="row mt-28">
       <div class="col-sm-3 hidden-xs">
@@ -98,7 +98,7 @@
 </div>
 <div data-section-scroll="<?php print t('Faculty') ?>" id="profesores" class="scroll-down-info section-scroll-content minh-560 flex-middle-center">
   <div class="container-sm text-center normalize-text php-7">
-    <h2 class="lead thin h1"><?php print t('Faculty') ?></h2>
+    <h2 class="lead thin h1 text-hover-primary"><?php print t('Faculty') ?></h2>
     <hr class="hr-gray">
     <div class="size xl mt-28">
       <i class="icon-carreras-profesores"></i>
@@ -112,11 +112,17 @@
 				<?php $uid = $value['entity']->uid; ?>
         <?php $desc = $value['entity']->field_descripci_n['und'][0]['value']; ?>
         <?php //die(print_r($value)); ?>
+        <?php 
+        if ($language->language == 'en') {
+          $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/profesores/'.$uid, $language->language); 
+        }else
+          $profesor_url = "/" . drupal_get_path_alias('page/30/profesores/'.$uid, $language->language); 
+        ?> 
         <li class="mb-ch-14">
           <div class="grid-list-pic">
             <img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="" width="180px" height="auto" class="img-circle">
           </div>
-          <a href="/user/<?php print $uid ?>">
+          <a href="<?php print $profesor_url ?>">
             <?php print $name ?>
           </a>
           <p class="font-profesores"><?php print $desc ?></p>
@@ -135,7 +141,7 @@
   <div class="container" data-href="<?php print $perfil_link ?>">
     <div class="row">
       <div class="col-sm-6 normalize-text">
-        <h2 class="thin h1"><?php print t('Graduate profile') ?></h2>
+        <h2 class="thin h1 text-hover-primary"><?php print t('Graduate profile') ?></h2>
         <hr class="hr-gray">
         <div class="row">
           <div class="col-sm-3 hidden-xs">
@@ -157,9 +163,9 @@
   <ul></ul>
   <div class="text-right pv-21 btn-apply animated">
     <?php if ($language->language != 'en'): ?>
-      <a class="btn btn-primary uppercase" href="/<?php print $language->language ?>/modalidades-de-admision"><?php print t('Apply') ?></a>
+      <a class="btn btn-primary uppercase atm-scroll-item" href="/modalidades-de-admision"><?php print t('Apply') ?></a>
     <?php elseif ($language->language == 'en'): ?>
-      <a class="btn btn-primary uppercase" href="/<?php print $language->language ?>/methods-of-admission"><?php print t('Apply') ?></a>
+      <a class="btn btn-primary uppercase atm-scroll-item" href="/<?php print $language->language ?>/methods-of-admission"><?php print t('Apply') ?></a>
     <?php endif ?>  
   </div>
 </div>

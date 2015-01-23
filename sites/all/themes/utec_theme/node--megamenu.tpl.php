@@ -157,7 +157,7 @@
 							<?php if ($language->language != 'en'): ?>
 								<a href="/metodologia-educativa"><span>Metodología</span>Educativa</a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/teaching-methodology"><span><?php print t('Academic') ?></span><?php print t('Methodology') ?></a>
+								<a href="/<?php print $language->language ?>/teaching-methodology"><span><?php print t('Teaching') ?></span><?php print t('Methodology') ?></a>
 							<?php endif ?>
 						</li>
 						<li>
@@ -173,7 +173,7 @@
 							<?php if ($language->language != 'en'): ?>
 								<a href="/eventos-utec"><?php print t('Events') ?></a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/events"><?php print t('Events') ?></a>
+								<a href="/<?php print $language->language ?>/utec-events"><?php print t('Events') ?></a>
 							<?php endif ?>							
 						</li>
 						<li>
@@ -280,10 +280,10 @@
 		<div class="container-sm">
 			<div class="nav-display-left">
 				<div>
-					<?php if ($language->language  != 'en'): ?>
+					<?php if ($language->language  == 'en'): ?>
 						<h1><?php print t('Our ') ?> <span><?php print t('Academic') ?></span><br><?php print  t('Offer') ?></h1>
 					<?php elseif ($language->language != 'en'): ?>
-						<h1><?php print t('Our ') ?> <span><?php print t('Offer') ?></span><br><?php print  t('Academic') ?></h1>
+						<h1>Nuestras <span>Ofertas</span><br>Académicas</h1>
 					<?php endif ?>
 					<p><?php print t('With our active learning methodology, our students experience engineering from day one.') ?></p>
 				</div>
@@ -453,7 +453,7 @@
 								<span>Orientación</span>Vocacional
 								</a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/advising-and-counseling">
+								<a href="/<?php print $language->language ?>/career-guidance-and-orientation">
 								<span>Guidance</span>
 								</a>
 							<?php endif ?>
@@ -669,7 +669,7 @@
 							<?php if ($language->language != 'en'): ?>
 								<a href="/metodologia-educativa"><span>Metodología</span>Educativa</a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/teaching-methodology"><span><?php print t('Academic') ?></span><?php print t('Methodology') ?></a>
+								<a href="/<?php print $language->language ?>/teaching-methodology"><span><?php print t('Teaching') ?></span><?php print t('Methodology') ?></a>
 							<?php endif ?>
 						</li>
 						<li>
@@ -792,10 +792,10 @@
 		<div class="container-sm">
 			<div class="nav-display-left">
 				<div>
-					<?php if ($language->language  != 'en'): ?>
+					<?php if ($language->language  == 'en'): ?>
 						<h1><?php print t('Our ') ?> <span><?php print t('Academic') ?></span><br><?php print  t('Offer') ?></h1>
 					<?php elseif ($language->language != 'en'): ?>
-						<h1><?php print t('Our ') ?> <span><?php print t('Offer') ?></span><br><?php print  t('Academic') ?></h1>
+						<h1>Nuestras <span>Ofertas</span><br>Académicas</h1>
 					<?php endif ?>
 					<p><?php print t('With our active learning methodology, our students experience engineering from day one.') ?></p>
 				</div>
@@ -965,7 +965,7 @@
 								<span>Orientación</span>Vocacional
 								</a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/advising-and-counseling">
+								<a href="/<?php print $language->language ?>/career-guidance-and-orientation">
 								<span>Guidance</span>
 								</a>
 							<?php endif ?>

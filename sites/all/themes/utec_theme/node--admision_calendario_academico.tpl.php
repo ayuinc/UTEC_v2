@@ -158,7 +158,7 @@
 					</tr>
 					<tr>
 						<td></td>
-						<td>Inscripcion</td>
+						<td><?php print t('Registration') ?></td>
 						<td>25/06/2014</td>
 					</tr>
 					<tr>

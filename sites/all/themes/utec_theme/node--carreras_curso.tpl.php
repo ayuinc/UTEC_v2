@@ -11,11 +11,14 @@
 
 ?>
 <ul>
-  <li style="background-color: 
-  <?php if ($area == '17'){
-  	print '#8dc63f';
-  }elseif ($area == '18'){
-  	print '#ffdd00';
-  }else print '#afdfe4'; ?>"></li>
+  <li 
+    class="
+      CRD<?php print $creditos ?>
+      <?php if ($area == '17'){
+      	print 'bg-mate';
+      }elseif ($area == '18'){
+      	print 'bg-admin';
+      }else print 'bg-ing'; ?>">
+  </li>
   <li><?php print $curso; ?><br><?php print $creditos ?> CRD</li>
 </ul>
