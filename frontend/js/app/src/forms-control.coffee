@@ -15,11 +15,14 @@ $(document).ready ->
 
 	$bodyForm.on('submit', (e)->
 		# (e).preventDefault()
-		if ($('.errordiv label').length > 0)
-			$('body').addClass('form-on-submit').append(overlayTempl)
-			checkDOMChange()
-		else
-			console.log('Errordiv empty')
+		setTimeout(()->
+			if (!$('.errordiv label').length > 0)
+				$('body').addClass('form-on-submit').append(overlayTempl)
+				checkDOMChange()
+			else
+				console.log('Errordiv not empty')
+			return
+		, 500)
 		# $button.append('<span class="spinner animated rotateIn infinite icon-spinner9"></span>')
 		return
 		)
