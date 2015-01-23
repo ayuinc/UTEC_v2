@@ -6,9 +6,12 @@
     $bodyForm = $('.body form');
     overlayTempl = '<div class="form-overlay">' + '<div>' + '<a href="#" class="form-overlay-close">X</a>' + '<h3>Procesando información</h3>' + '<div class="mt-42">' + '<span class="spinner animated rotateIn infinite icon-spinner9"></span>' + '</div>' + '</div>' + '</div>';
     $bodyForm.on('submit', function(e) {
+      e.preventDefault();
       if ($('.errordiv label').length > 0) {
         $('body').addClass('form-on-submit').append(overlayTempl);
         checkDOMChange();
+      } else {
+        console.log('Errordiv empty');
       }
     });
     checkDOMChange = function() {
@@ -20,7 +23,6 @@
         });
       }, 1000);
     };
-    console.log($button);
   });
 
 }).call(this);
