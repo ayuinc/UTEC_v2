@@ -11,7 +11,7 @@
 <?php $field_contenido_labs = $node->field_contenido_labs['und']['0']['value']; ?>
 
 <div class="container-sm">
-	<h1 class="light"><?php print t('Campus and labs') ?></h1>
+	<h1 class="light"><?php print t('Campus and Labs') ?></h1>
 	<div class="separator-gray separator-sm"></div>
 	<div class="pb-49">
 		<h3 class="text-gray-darker"><?php print t('Campus') ?></h3>
