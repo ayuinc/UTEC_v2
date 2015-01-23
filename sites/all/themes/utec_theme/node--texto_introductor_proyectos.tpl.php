@@ -5,9 +5,8 @@
   $pathfile = variable_get('file_public_path', conf_path() . '/files/investigacion-proyectos');
 
 	 		
-	$texto = $node->field_texto['und']['0']['value'];	
-	
-	kpr($node);
+	$texto = $node->body['und']['0']['value'];	
+
 ?>
 
 
