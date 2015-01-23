@@ -6009,6 +6009,9 @@ img.icon-utec {
 
 .text-switcher {
   display: inline; }
+  @media only screen and (max-width: 768px) {
+    .text-switcher {
+      display: block; } }
   .text-switcher span {
     overflow: hidden;
     opacity: 0;
@@ -8840,6 +8843,7 @@ img.icon-utec {
   .list-carreras > li p, .list-carreras > li .p {
     margin: 0; }
   .list-carreras > li [data-href] > div,
+  .list-carreras > li [onclick] > div,
   .list-carreras > li h2 {
     float: left;
     display: block; }
