@@ -43,7 +43,7 @@ $modalida_ext_int = $node->field_modalidad_extensiva_intens['und']['0']['value']
 	  <div data-section-scroll="Acerca de" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_fotos_centro_pre)?>);">
 	  <?php endif ?>
 	    <div class="overlay flex-middle">
-	      <div class="container-sm hero-text">
+	      <div class="container-sm hero-text" data-href="/modalidades-de-admision/centro-pre/acerca-del-centro-pre">
 	        <h1 class="thin text-white mt-0 text-hover-primary"><?php print $titulo ?></h1>
 	        <hr class="hr-white">
 	        <div class="row">
