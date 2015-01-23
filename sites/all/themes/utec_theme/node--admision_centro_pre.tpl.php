@@ -75,7 +75,7 @@ $modalida_ext_int = $node->field_modalidad_extensiva_intens['und']['0']['value']
 		<div class="pt-42">
 			<div class="container">
 				<h3 class="thin lead"><?php print t('Courses') ?></h3>
-				<ul class="grid-list grid-list-4 list-hover list-hover-gray-light">
+				<ul class="grid-list grid-list-4 grid-list-1-xs isotope-grid list-hover list-hover-gray-light">
 					<li>
 						<div>
 							<h3 class="lead"><?php print t('Spatial Intelligence') ?></h3>

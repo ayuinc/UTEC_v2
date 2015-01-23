@@ -45,7 +45,7 @@
 			<?php endif; ?>
 		</div>
 		<div class="pv-ch-28">
-			<p><?php print $cuerpo ?></p>
+			<?php print $cuerpo ?>
 		</div>
 	</div>
 </div>
