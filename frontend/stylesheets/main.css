@@ -5546,16 +5546,19 @@ textarea:-ms-input-placeholder {
 .breadcrumbs-light .breadcrumb {
   color: white; }
 
-.list-custom ul {
+.list-custom ul,
+.list-custom {
   padding-left: 0;
   list-style: none;
   margin: 0;
   padding-left: 28px; }
-  .list-custom ul li {
+  .list-custom ul li,
+  .list-custom li {
     position: relative;
     margin-bottom: 21px;
     margin-bottom: 1.5rem; }
-    .list-custom ul li:before {
+    .list-custom ul li:before,
+    .list-custom li:before {
       content: "";
       position: absolute;
       top: 3px;
@@ -5563,31 +5566,41 @@ textarea:-ms-input-placeholder {
       width: 7px;
       height: 7px;
       background-color: #00BFDF; }
-    .list-custom ul li ul li:first-child {
+    .list-custom ul li ul li:first-child,
+    .list-custom li ul li:first-child {
       margin-top: 21px;
       margin-top: 1.5rem; }
 
-.list-custom-left ul {
+.list-custom-left ul,
+.list-custom {
   padding-left: 0;
   list-style: none;
   margin: 0; }
-  .list-custom-left ul:before, .list-custom-left ul:after {
+  .list-custom-left ul:before, .list-custom-left ul:after,
+  .list-custom:before,
+  .list-custom:after {
     content: " ";
     display: table; }
-  .list-custom-left ul:after {
+  .list-custom-left ul:after,
+  .list-custom:after {
     clear: both; }
-  .list-custom-left ul li {
+  .list-custom-left ul li,
+  .list-custom li {
     float: left;
     width: 80%; }
-    .list-custom-left ul li:first-child {
+    .list-custom-left ul li:first-child,
+    .list-custom li:first-child {
       width: 20%;
       height: auto; }
   @media only screen and (max-width: 768px) {
-    .list-custom-left ul li {
+    .list-custom-left ul li,
+    .list-custom li {
       width: 100%; }
-      .list-custom-left ul li:first-child {
+      .list-custom-left ul li:first-child,
+      .list-custom li:first-child {
         width: 100%; }
-      .list-custom-left ul li:last-child {
+      .list-custom-left ul li:last-child,
+      .list-custom li:last-child {
         padding-top: 14px;
         padding-top: 1rem; } }
 
@@ -5635,7 +5648,8 @@ textarea:-ms-input-placeholder {
   .list-hover.list-hover-unstyled > li > div:not(.banner-pic) h3 {
     min-height: 0; }
 
-.lead-ch .list-custom ul li:before, .lead-ch.list-custom ul li:before {
+.lead-ch .list-custom ul li:before,
+.lead-ch .list-custom li:before, .lead-ch.list-custom li:before {
   top: 12px; }
 
 .table-custom table thead tr td {
