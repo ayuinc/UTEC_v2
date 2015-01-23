@@ -158,56 +158,55 @@
 		<li>
 			<?php if ($language->language  != 'en'): ?>
 				<a href="/ingenieria-industrial">
-				<span>Ingeniería</span>Industrial
+				<span>Ingeniería </span>Industrial
 				</a>
 			<?php elseif ($language->language == 'en'): ?>
 				<a href="/<?php print $language->language ?>/industrial-engineering">
-				<span>Industrial</span>Engineering
+				<span>Industrial </span>Engineering
 				</a>
 			<?php endif ?>
 		</li>
 		<li>
 			<?php if ($language->language  != 'en'): ?>
 				<a href="/ingenieria-de-la-energia">
-				<span>Ingeniería</span>de la Energía
+				<span>Ingeniería </span>de la Energía
 				</a>
-				<?php print t('Engineering') ?>
 			<?php elseif ($language->language == 'en'): ?>
 				<a href="/<?php print $language->language ?>/energy-engineering">
-				<span>Industrial</span>Engineering
+				<span>Industrial </span>Engineering
 				</a>
 			<?php endif ?>
 		</li>
 		<li>
 			<?php if ($language->language  != 'en'): ?>
 				<a href="/ingenieria-quimica-industrial">
-				<span>Ingeniería</span>Química Industrial
+				<span>Ingeniería </span>Química Industrial
 				</a>
 			<?php elseif ($language->language == 'en'): ?>
 				<a href="/<?php print $language->language ?>/industrial-chemical-engineering">
-				<span>Industrial Chemical</span>Engineering
+				<span>Industrial Chemical </span>Engineering
 				</a>
 			<?php endif ?>
 		</li>
 		<li>
 			<?php if ($language->language  != 'en'): ?>
 				<a href="/ingenieria-mecanica">
-				<span>Ingeniería</span>Mecánica
+				<span>Ingeniería </span>Mecánica
 				</a>
 			<?php elseif ($language->language == 'en'): ?>
 				<a href="/<?php print $language->language ?>/mechanical-engineering">
-				<span>Mechanical</span>Engineering
+				<span>Mechanical </span>Engineering
 				</a>
 			<?php endif ?>
 		</li>
 		<li>
 			<?php if ($language->language  != 'en'): ?>
 				<a href="/ingenieria-electronica">
-				<span>Ingeniería</span>Electrónica
+				<span>Ingeniería </span>Electrónica
 				</a>
 			<?php elseif ($language->language == 'en'): ?>
 				<a href="/<?php print $language->language ?>/electronic-engineering">
-				<span>Electronic</span>Engineering
+				<span>Electronic </span>Engineering
 				</a>
 			<?php endif ?>
 		</li>
