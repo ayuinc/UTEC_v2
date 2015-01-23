@@ -543,3 +543,34 @@ img.icon-utec {
   25% { opacity: 0; height: 60px; }
   100% { opacity: 0; }
 }
+
+// SITE OVERLAY ON FORM SUBMIT
+// SPINNER ON FORM submit
+.spinner {
+	display: inline-block;
+	// width: 18px;
+	// height: 18px;
+	border-radius: 50%;
+	margin-left: $container-fluid;
+	color: $brand-primary;
+	font-size: $font-size-h1;
+}
+
+.form-overlay {
+	@include position(fixed, 0 0 0 0);
+	background-color: rgba($gray-lighter, 0.7);
+	z-index: 10001;
+	@include flex-middle-center;
+	text-align: center;
+}
+.form-overlay-close {
+	display: block;
+	font-size: $font-size-h3;
+	@include light;
+	@include position(absolute, $container-fluid $container-fluid null null);
+}
+body {
+	&.form-on-submit {
+		overflow: hidden;
+	}
+}
