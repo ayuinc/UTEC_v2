@@ -52,7 +52,7 @@
 		<div class="list-custom-left normalize-text lead-ch mb-ch-21">
 			<ul>
 				<li class="bg-gray text-white uppercase text-center p-21">
-					Fecha
+					<?php print t('Date') ?>
 				</li>
 				<li class="pl-21">
 					<p><?php print $fecha ?></p>
@@ -60,7 +60,7 @@
 			</ul>
 			<ul>
 				<li class="bg-gray text-white uppercase text-center p-21">
-					Hora
+					<?php print t('Time') ?>
 				</li>
 				<li class="pl-21">
 					<p><?php print $hora ?></p>
@@ -68,7 +68,7 @@
 			</ul>
 			<ul>
 				<li class="bg-gray text-white uppercase text-center p-21">
-					Lugar
+					<?php print t('Place') ?>
 				</li>
 				<li class="pl-21">
 					<p><?php print $lugar ?></p>
@@ -76,13 +76,13 @@
 			</ul>
 		</div>
 		<div>
-			<h3>Objetivos:</h3>
+			<h3><?php print t('Goals:') ?></h3>
 			<div class="list-custom">
 				<?php print $obejtivos ?>
 			</div>
 		</div>
 		<div>
-			<h3>Dirigido a:</h3>
+			<h3><?php print t('Address to:') ?></h3>
 			<div class="list-custom">
 				<?php print $dirigido ?>
 			</div>
