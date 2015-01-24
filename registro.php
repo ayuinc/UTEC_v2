@@ -1625,11 +1625,11 @@ if($error){
 
           if($origen == "pagina-curso-edp")
           {
-                header('Location: /spd/thank-you');
+                header('Location: /en/spd/thank-you');
                 exit();   
           }    
 
-                header('Location: /thank-you');
+                header('Location: /en/thank-you');
                 exit();    
       }        
 
