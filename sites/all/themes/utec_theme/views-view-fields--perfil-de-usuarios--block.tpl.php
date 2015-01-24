@@ -5,6 +5,7 @@
   $path = $base_url.'/'.$theme_path;
   $pathfile= variable_get('file_public_path', conf_path() . '/files/');
 
+  kpr($fields);
 	$name = $fields['name']->content;
 	$mail = $fields['mail']->content;
 	$picture = $fields['picture']->content;
@@ -35,7 +36,7 @@
 	<?php print $picture ?>
 </div>
 <h3 class="thin"><?php print $name ?></h3>
-<a href="#" rel="nofollow" class="block"><em><?php if($twitter){print $twitter;} else print $mail;  ?></em></a>
+<a href="#" rel="nofollow" class="block"><em><?php print $twitter; ?></em></a>
 <?php if ($language->language == 'en') : ?>
 <p><?php print $descripcion_ingles ?></p>
 <p><?php print $resenia_ingles ?></p>
