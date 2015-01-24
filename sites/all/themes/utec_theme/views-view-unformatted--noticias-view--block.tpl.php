@@ -13,11 +13,7 @@
 		<h4 class="lead mb-56 mt-0"><?php print t('We encourage entrepreneurship and innovation.') ?></h4>
 			<?php //global $count; ?>
 	    <?php foreach ($rows as $id => $row): ?>
-			    <?php
-			    	$count = 0;
-				    print $row;
-				    $count = 1;
-			    ?>
+			    <?php print $row; ?>
 			<?php endforeach; ?>
 		<div>
 			<?php if ($language->language != 'en'): ?>
