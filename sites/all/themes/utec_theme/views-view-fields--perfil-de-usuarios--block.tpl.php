@@ -39,7 +39,7 @@
 <h3 class="thin"><?php print $name ?></h3>
 <a href="#" rel="nofollow" class="block"><em><?php print $twitter; ?></em></a>
 
-<?php if ($name!='Juan Incháustegui Vargas') { ?>
+<?php if (($name!='Juan Incháustegui Vargas') OR ($name!='Eduardo Hochschild Beeck')) { ?>
 <a href="mail:<?php print $mail ?>" rel="nofollow" class="block"><em><?php print $mail ?></em></a>
 <?php } ?>
 
