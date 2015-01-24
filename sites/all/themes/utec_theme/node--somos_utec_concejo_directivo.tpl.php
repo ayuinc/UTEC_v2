@@ -6,6 +6,7 @@
 <?php $title = $node->title; ?>  
 <?php $field_introduccion_concejo = $node->field_introduccion_concejo['und']['0']['value']; ?>
 
+<?php kpr($node); ?>
 <div class="container-sm">
 	<h1 class="light"><?php print t('Board of Directors') ?></h1>
 	<div class="separator-gray separator-lg"></div>
