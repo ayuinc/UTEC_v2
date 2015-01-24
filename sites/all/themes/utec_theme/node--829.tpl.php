@@ -269,7 +269,7 @@ jQuery(function() {
 	        "tipo-documento": { required: true }, "documento": { required: true }, "pais": { required: true }, "ciudad": { required: true },	
 	        "dia": { required: true }, "mes": { required: true }, "ano": { required: true }, "depto": { required: true }, "provincia": { required: true },	
 	        "distrito": { required: true }, "direccion-actual": { required: true },	"email": { required: true }, "celular-1": { required: true },	
-			"ano-culminacion": { required: true }, "colegio-procedencia": { required: true }, 
+			"ano-culminacion": { required: true }, "colegio": { required: true }, 
 			"estudios-dpto": { required: true }, "estudios-provincia": { required: true },
 	        "estudios-distrito": { required: true }, "estudios-rendimiento": { required: true }
 	      },
@@ -283,7 +283,7 @@ jQuery(function() {
 		    "provincia": { required: "Completa tu provincia. <br /> " }, "distrito": { required: "Completa tu distrito. <br /> " },
 		    "direccion-actual": { required: "Completa tu domicilio. <br /> " }, "email": { required: "Completa tu e-mail. <br /> " },
 	      	"celular-1": { required: "Completa tu celular 1. <br /> " }, "ano-culminacion": { required: "Completa tu año de culminación. <br /> " }, 
-	      	"colegio-procedencia": { required: "Completa tu colegio de procedencia. <br /> " },
+	      	"colegio": { required: "Completa tu colegio de procedencia. <br /> " },
 		    "estudios-dpto": { required: "Completa el departamento de tu colegio. <br /> " }, "estudios-provincia": { required: "Completa la provincia de tu colegio. <br /> " },
 		    "estudios-distrito": { required: "Completa el distrito de tu colegio. <br /> " }, "estudios-rendimiento": { required: "Selecciona tu rendimiento académico. <br /> " }
 		  },
