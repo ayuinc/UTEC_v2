@@ -15,7 +15,7 @@
     <?php print $content['header']; ?>
 
     <?php if ($content['header-bottom']) :?>
-      <div class="hero-unit pt-63-xs video-bg">
+      <div class="hero-unit pt-63-xs video-bg breadcrumbs-light">
         <?php print $content['header-bottom']; ?>
       </div>
     <?php endif; ?>
