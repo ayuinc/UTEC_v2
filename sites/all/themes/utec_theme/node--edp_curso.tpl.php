@@ -97,7 +97,11 @@
 					</li>
 					<li class="pl-21 text-gray">
 						<div class="mb-7">
-							<a href="/user/<?php print $profesor_id ?>" class="thin h3 text-hover-primary"><?php print $profesor_name ?></a>
+							<?php if ($language->language == 'en') : ?>
+							<a href="/faculty/<?php print $profesor_id ?>" class="thin h3 text-hover-primary"><?php print $profesor_name ?></a>
+							<?php else : ?>
+							<a href="/profesor/<?php print $profesor_id ?>" class="thin h3 text-hover-primary"><?php print $profesor_name ?></a>
+							<?php endif; ?>							
 							<span><?php print $profesor_cargo ?></span>
 						</div>
 						<?php print $profesor_resenia ?>

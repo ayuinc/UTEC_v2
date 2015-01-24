@@ -18,7 +18,7 @@
 	</div>
 	<?php if ($pdf) :?>
 	<div class="pv-ch-7 lead-ch p-ch-gray">
-		<p>Ver el PDF:</p>
+		<p><?php print t('See PDF:') ?></p>
 		<p><a href="<?php print('/'.$pathfile.$pdf); ?>"><?php print $pdf ?></a></p>
 	</div>
 	<?php endif ?>
