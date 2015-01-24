@@ -38,6 +38,12 @@
 </div>
 <h3 class="thin"><?php print $name ?></h3>
 <a href="#" rel="nofollow" class="block"><em><?php print $twitter; ?></em></a>
+
+<h3><?php print $rol ?></h3>
+<?php if ($rol=='') { ?>
+<a href="mail:<?php print $mail ?>" rel="nofollow" class="block"><em><?php print $mail ?></em></a>
+<?php } ?>
+
 <?php if ($language->language == 'en') : ?>
 <p><?php print $descripcion_ingles ?></p>
 <p><?php print $resenia_ingles ?></p>
