@@ -39,8 +39,7 @@
 <h3 class="thin"><?php print $name ?></h3>
 <a href="#" rel="nofollow" class="block"><em><?php print $twitter; ?></em></a>
 
-<h3><?php print $rol ?></h3>
-<?php if ($rol=='') { ?>
+<?php if ($name!='Juan Incháustegui Vargas') { ?>
 <a href="mail:<?php print $mail ?>" rel="nofollow" class="block"><em><?php print $mail ?></em></a>
 <?php } ?>
 
