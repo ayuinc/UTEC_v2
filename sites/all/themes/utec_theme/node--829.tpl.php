@@ -198,7 +198,7 @@
 		</div>
 		<h3 class="light">Estudios</h3>
 		<div class="row">
-			<div class="col-sm-12"><label for="">Año de graduaci&oacute; del colegio:</label></div>
+			<div class="col-sm-12"><label for="">Año de graduaci&oacute;n del colegio:</label></div>
 			<div class="col-sm-3 form-group">
 				<select name="ano-culminacion" id="ano-culminacion" class="form-control select-override">
 					<option value="">Año</option>
@@ -240,7 +240,7 @@
 			</div>
 			<div class="form-group col-sm-7">
 				<select name="estudios-rendimiento" id="estudios-rendimiento" class="form-control select-override">
-					<option value="">- Rendimiento Acd&eacute;mico -</option>
+					<option value="">- Rendimiento Acad&eacute;mico -</option>
           <option value="Primeros Puestos ( 1° y 2° )">Primeros Puestos ( 1° y 2° )</option>
           <option value="Tercio superior">Tercio superior</option>
           <option value="Otro">Otro</option> 
