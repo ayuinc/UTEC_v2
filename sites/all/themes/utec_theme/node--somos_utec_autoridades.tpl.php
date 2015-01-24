@@ -87,9 +87,9 @@
               <!--<a href="#">Rosa María Llosa Demartini</a>-->
               <a href="<?php print $profesor_url ?>"><?php print $name ?></a>
               <?php if ($language->language == 'en') : ?>
-              <span><?php print $desc_ingles?></span>
+              <span><?php print $desc_ingles ?></span>
               <?php else : ?>
-              <span><?php print $desc?></span>
+              <span><?php print $desc ?></span>
               <?php endif; ?>
           </div>
         </li>
