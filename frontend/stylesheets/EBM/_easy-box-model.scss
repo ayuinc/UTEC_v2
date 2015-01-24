@@ -133,17 +133,17 @@ $box-model-ch-abbr-percentage:
 // PADDING VERTICAL & HORIZONTAL
 @for $i from 0 through 10 {
   .pv-#{$i*$times} {
-    padding-top: ($i*$times) + px !important;
-    padding-bottom: ($i*$times) + px !important;
-    padding-top: rem($i*$times) !important;
-    padding-bottom: rem($i*$times) !important;
+    padding-top: ($i*$times) + px;
+    padding-bottom: ($i*$times) + px;
+    padding-top: rem($i*$times);
+    padding-bottom: rem($i*$times);
   }
   .pv-ch-#{$i*$times} {
     #{$children-elements} {
-      padding-top: ($i*$times) + px !important;
-      padding-bottom: ($i*$times) + px !important;
-      padding-top: rem($i*$times) !important;
-      padding-bottom: rem($i*$times) !important;
+      padding-top: ($i*$times) + px;
+      padding-bottom: ($i*$times) + px;
+      padding-top: rem($i*$times);
+      padding-bottom: rem($i*$times);
     }
   }
   @for $k from 1 through length($breakpoints-sufix-list) {
@@ -178,17 +178,17 @@ $box-model-ch-abbr-percentage:
 
 @for $i from 0 through 10 {
   .ph-#{$i*$times} {
-    padding-left: ($i*$times) + px !important;
-    padding-right: ($i*$times) + px !important;
-    padding-left: rem($i*$times) !important;
-    padding-right: rem($i*$times) !important;
+    padding-left: ($i*$times) + px;
+    padding-right: ($i*$times) + px;
+    padding-left: rem($i*$times);
+    padding-right: rem($i*$times);
   }
   .ph-ch-#{$i*$times} {
     #{$children-elements} {
-      padding-left: ($i*$times) + px !important;
-      padding-right: ($i*$times) + px !important;
-      padding-left: rem($i*$times) !important;
-      padding-right: rem($i*$times) !important;
+      padding-left: ($i*$times) + px;
+      padding-right: ($i*$times) + px;
+      padding-left: rem($i*$times);
+      padding-right: rem($i*$times);
     }
   }
   @for $k from 1 through length($breakpoints-sufix-list) {
@@ -224,17 +224,17 @@ $box-model-ch-abbr-percentage:
 // MARGIN VERTICAL & HORIZONTAL
 @for $i from 0 through 10 {
   .mv-#{$i*$times} {
-    margin-top: ($i*$times) + px !important;
-    margin-bottom: ($i*$times) + px !important;
-    margin-top: rem($i*$times) !important;
-    margin-bottom: rem($i*$times) !important;
+    margin-top: ($i*$times) + px;
+    margin-bottom: ($i*$times) + px;
+    margin-top: rem($i*$times);
+    margin-bottom: rem($i*$times);
   }
   .mv-ch-#{$i*$times} {
     #{$children-elements} {
-      margin-top: ($i*$times) + px !important;
-      margin-bottom: ($i*$times) + px !important;
-      margin-top: rem($i*$times) !important;
-      margin-bottom: rem($i*$times) !important;
+      margin-top: ($i*$times) + px;
+      margin-bottom: ($i*$times) + px;
+      margin-top: rem($i*$times);
+      margin-bottom: rem($i*$times);
     }
   }
   @for $k from 1 through length($breakpoints-sufix-list) {
@@ -269,17 +269,17 @@ $box-model-ch-abbr-percentage:
 
 @for $i from 0 through 10 {
   .mh-#{$i*$times} {
-    margin-left: ($i*$times) + px !important;
-    margin-right: ($i*$times) + px !important;
-    margin-left: rem($i*$times) !important;
-    margin-right: rem($i*$times) !important;
+    margin-left: ($i*$times) + px;
+    margin-right: ($i*$times) + px;
+    margin-left: rem($i*$times);
+    margin-right: rem($i*$times);
   }
   .mh-ch-#{$i*$times} {
     #{$children-elements} {
-      margin-left: ($i*$times) + px !important;
-      margin-right: ($i*$times) + px !important;
-      margin-left: rem($i*$times) !important;
-      margin-right: rem($i*$times) !important;
+      margin-left: ($i*$times) + px;
+      margin-right: ($i*$times) + px;
+      margin-left: rem($i*$times);
+      margin-right: rem($i*$times);
     }
   }
   @for $k from 1 through length($breakpoints-sufix-list) {
