@@ -6,7 +6,6 @@
 <?php $title = $node->title; ?>  
 <?php $field_introduccion_concejo = $node->field_introduccion_concejo['und']['0']['value']; ?>
 
-<?php kpr($node); ?>
 <div class="container-sm">
 	<h1 class="light"><?php print t('Board of Directors') ?></h1>
 	<div class="separator-gray separator-lg"></div>
@@ -18,7 +17,11 @@
     <?php $desc = $value['entity']->field_descripci_n_consejo_dir['und'][0]['value']; ?>	
     <?php $desc_ingles = $value['entity']->field_descripci_n_consejo_dir_in['und'][0]['value']; ?>	
      	   		
-    <?php $uid = $value['entity']->uid; ?>	
+    <?php $uid = $value['entity']->uid; ?>
+    
+    <?php kpr($node); ?>
+    
+    	
     <?php 
         if ($language->language == 'en') {
           $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('a-solid-foundation/'.$uid, $language->language); 
