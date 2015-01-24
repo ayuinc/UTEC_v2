@@ -46,9 +46,9 @@
 		</div>
 		<div class="row">
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">Interest</label>
+				<label for="" class="sr-only">Undergrad Program</label>
 				<select name="carrera" id="carrera" class="form-control select-override">
-					<option value="">Interest</option>
+					<option value="">Undergrad Program</option>
 					<option value="15970"><?php print t('Industrial Engineering') ?></option>
 		            <option value="14864"><?php print t('Mechanical Engineering') ?></option>
 		            <option value="15968"><?php print t('Energy Engineering') ?></option>
@@ -57,18 +57,18 @@
 				</select>
 			</div>
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">Document</label>
+				<label for="" class="sr-only">Document Type</label>
 				<select name="tipo-documento" id="tipo-documento" class="form-control select-override">
-	            	<option value="">- Select a type -</option>
-	            	<option value="DNI">DNI</option>
-	                <option value="CE">Carné de extranjería</option>
-	                <option value="PA">Passport</option>
-	                <option value="OT">Other</option>
+	            	<option value="">- Document type -</option>
+	            	<option value="DNI"><?php print t('DNI') ?></option>
+	                <option value="CE"><?php print t('Residence card') ?></option>
+	                <option value="PA"><?php print t('Passport') ?></option>
+	                <option value="OT"><?php print t('DNI') ?></option>
 				</select>
 			</div>
 			<div class="form-group col-sm-4">
 				<label for="" class="sr-only">Document</label>
-				<input  id="documento" name="documento" type="text" class="form-control" placeholder="Documento">
+				<input  id="documento" name="documento" type="text" class="form-control" placeholder="Document">
 			</div>
 		</div>
 		<div class="row">
@@ -204,8 +204,8 @@
 				<input  id="colegio-procedencia" name="colegio" type="text" class="form-control" placeholder="High School">
 			</div>
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">Department</label>
-				<input  id="estudios-dpto" name="estudios-dpto" type="text" class="form-control" placeholder="Department">
+				<label for="" class="sr-only"><?php print t('Region') ?></label>
+				<input  id="estudios-dpto" name="estudios-dpto" type="text" class="form-control" placeholder="<?php print t('Region') ?>">
 				<!--
 				<select name="estudios-dpto" id="estudios-dpto" class="form-control select-override">
 					<option value="Dpto">Dpto</option>
@@ -213,8 +213,8 @@
 				-->
 			</div>
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">Province</label>
-				<input  id="estudios-provincia" name="estudios-provincia" type="text" class="form-control" placeholder="Province">
+				<label for="" class="sr-only"><?php print t('Province') ?></label>
+				<input  id="estudios-provincia" name="estudios-provincia" type="text" class="form-control" placeholder="<?php print t('Province') ?>">
 				<!--
 				<select name="estudios-provincia" id="estudios-provincia" class="form-control select-override">
 					<option value="Provincia">Provincia</option>
@@ -222,8 +222,8 @@
 				-->
 			</div>
 			<div class="form-group col-sm-4">
-				<label for="" class="sr-only">District</label>
-				<input  id="estudios-distrito" name="estudios-distrito" type="text" class="form-control" placeholder="District">				
+				<label for="" class="sr-only"><?php print t('District') ?></label>
+				<input  id="estudios-distrito" name="estudios-distrito" type="text" class="form-control" placeholder="<?php print t('District') ?>">				
 				<!--
 				<select name="estudios-distrito" id="estudios-distrito" class="form-control select-override">
 					<option value="Distrito">Distrito</option>
@@ -239,8 +239,8 @@
 				</select>
 			</div>
 			<div class="col-sm-12 form-group text-gray h4 thin">
-				<label for="">Have you been a student of this university:</label>
-				<input  id="estudiante-si" type="radio" checked name="estudiante" value="S"> yes
+				<label for="">Have you been a student of this university?:</label>
+				<input  id="estudiante-si" type="radio" checked name="estudiante" value="S"> Yes
 				<input  id="estudiante-no" type="radio" name="estudiante" value ="N"> No
 			</div>
 		</div>
@@ -271,12 +271,12 @@ jQuery(function() {
 		    "tipo-documento": { required: "Select your document type. <br /> " }, "documento": { required: "Fill in your document. <br /> " },
 		    "pais": { required: "Fill in your country. <br /> " }, "ciudad": { required: "Fill in your city. <br /> " },
 		    "dia": { required: "Fill in your day of birth. <br /> " }, "mes": { required: "Fill in your month of birth. <br /> " },
-		    "ano": { required: "Fill in your year of birth. <br /> " }, "depto": { required: "Fill in your department. <br /> " },
+		    "ano": { required: "Fill in your year of birth. <br /> " }, "depto": { required: "Fill in your region. <br /> " },
 		    "provincia": { required: "Fill in your province. <br /> " }, "distrito": { required: "Fill in your district. <br /> " },
 		    "direccion-actual": { required: "Fill in your address. <br /> " }, "email": { required: "Fill in your e-mail. <br /> " },
 	      	"celular-1": { required: "Fill in your cellphone 1. <br /> " }, "ano-culminacion": { required: "Select your year of completion. <br /> " }, 
 	      	"colegio-procedencia": { required: "Fill in your school of origin. <br /> " },
-		    "estudios-dpto": { required: "Fill in the department of your school. <br /> " }, "estudios-provincia": { required: "Fill in the province of your school. <br /> " },
+		    "estudios-dpto": { required: "Fill in the region of your school. <br /> " }, "estudios-provincia": { required: "Fill in the province of your school. <br /> " },
 		    "estudios-distrito": { required: "Fill in the district of your school. <br /> " }, "estudios-rendimiento": { required: "Select your academic performance. <br /> " }
 		  },
 	      errorPlacement: function( error, element ) {
