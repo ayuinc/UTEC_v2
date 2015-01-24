@@ -13,5 +13,5 @@
 ?>
 
 <h5><?php print $title ?></h5>
-<p><?php print $field_descripcion_corta_pregunta ?></p>
+<?php print $field_descripcion_corta_pregunta ?>
 
