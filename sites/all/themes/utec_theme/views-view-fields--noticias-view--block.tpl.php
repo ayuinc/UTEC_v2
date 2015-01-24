@@ -7,11 +7,10 @@
 	$path = $fields['path']->content;
 	$dest = $fields['field_destacado']->content;
 	global $count;
-	kpr($fields);
+	//kpr($fields);
 ?>
 <?php //print_r($zebra) ?>
 <div class="mb-ch-14">
-	<?php if ($dest) : ?>
 		<?php if ($zebra == 'odd') :?>
 		<div class="banner" data-href="<?php print $path; ?>">
 			<div class="col-sm-3 banner-pic" style="background-image: url(<?php print $image ?>);">
@@ -38,5 +37,4 @@
 			</div>
 		</div>
 		<?php endif; ?>
-	<?php endif; ?>
 </div>
