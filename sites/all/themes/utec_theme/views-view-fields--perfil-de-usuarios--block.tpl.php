@@ -43,17 +43,8 @@
 <a href="mail:<?php print $mail ?>" rel="nofollow" class="block"><em><?php print $mail ?></em></a>
 <?php } ?>
 
-<?php if ($language->language == 'en') : ?>
-<p><?php print $descripcion_ingles ?></p>
-<p><?php print $resenia_ingles ?></p>
 
-<p><?php print $descripcion_consejo_ingles ?></p>
-<p><?php print $resenia_consejo_ingles ?></p>
-
-<p><?php print $descripcion_autoridad_ingles ?></p>
-<p><?php print $resenia_autoridad_ingles ?></p>
-
-<?php else : ?>
+<?php if ($language->language  != 'en'): ?>
 <p><?php print $descripcion ?></p>
 <p><?php print $resenia ?></p>
 
@@ -62,7 +53,17 @@
 
 <p><?php print $descripcion_autoridad ?></p>
 <p><?php print $resenia_autoridad ?></p>
-<?php endif; ?>
+<?php elseif ($language->language == 'en'): ?>
+<p><?php print $descripcion_ingles ?></p>
+<p><?php print $resenia_ingles ?></p>
+
+<p><?php print $descripcion_consejo_ingles ?></p>
+<p><?php print $resenia_consejo_ingles ?></p>
+
+<p><?php print $descripcion_autoridad_ingles ?></p>
+<p><?php print $resenia_autoridad_ingles ?></p>
+<?php endif ?>
+
 
 
 
