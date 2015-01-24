@@ -41,7 +41,7 @@
 	<h1 class="light"><?php print $titulo ?></h1>
 	<div class="separator-gray separator-sm"></div>						
 	<h3><?php print $sub_titulo ?></h3>
-	<div class="pv-ch-28 p-ch-gray">
+	<div class="pv-ch-28 pv-ch-14-xs p-ch-gray">
 		<?php print $cuerpo ?>
 		<?php if ($imagen!='') { ?>
 			<img src="<?php print('/'.$pathfile.$imagen); ?>" alt="#" class="img-responsive">
