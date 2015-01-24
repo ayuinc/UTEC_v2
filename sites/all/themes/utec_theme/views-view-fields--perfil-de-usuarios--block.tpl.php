@@ -29,6 +29,7 @@
 	$resenia_autoridad = $fields['field_rese_a_autoridad']->content;
 	$resenia_autoridad_ingles = $fields['field_rese_a_autoridad_ingles']->content;
 
+	$rol = $fields['rid']->content;
 	//kpr($fields);
 ?>
 
