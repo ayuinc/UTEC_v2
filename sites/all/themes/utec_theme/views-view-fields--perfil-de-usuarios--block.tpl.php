@@ -5,7 +5,7 @@
   $path = $base_url.'/'.$theme_path;
   $pathfile= variable_get('file_public_path', conf_path() . '/files/');
 
-  kpr($fields);
+  //kpr($fields);
 	$name = $fields['name']->content;
 	$mail = $fields['mail']->content;
 	$picture = $fields['picture']->content;
