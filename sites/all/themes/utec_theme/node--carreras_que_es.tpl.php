@@ -19,8 +19,10 @@
 	<!-- <div class="mb-63">
 		<img src="<?php //print('/'.$pathfile.$imagen)?>" class="img-responsive">
 	</div> -->
+	<?php if ($infografia!='') { ?>
 	<div class="mb-63">
 		<img src="<?php print('/'.$pathfile.$infografia)?>" class="img-responsive">
 	</div>
+	<?php } ?>
 </div>
 
