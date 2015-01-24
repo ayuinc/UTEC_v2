@@ -30,7 +30,9 @@
 		</ul>
 	</div>
 </div>
+<?php if($imagen!='') { ?>
 <img class="img-responsive" src="<?php print '/'.$pathfile.'blog/'.$imagen ?>" alt="#">
+<?php } ?>
 <h3 class="lead"><?php //print $title ?></h3>
 <p><?php print $cuerpo ?></p>
 
