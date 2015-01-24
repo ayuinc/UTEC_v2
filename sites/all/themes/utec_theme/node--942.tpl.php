@@ -265,7 +265,7 @@ jQuery(function() {
 	        "tipo-documento": { required: true }, "documento": { required: true }, "pais": { required: true }, "ciudad": { required: true },	
 	        "dia": { required: true }, "mes": { required: true }, "ano": { required: true }, "depto": { required: true }, "provincia": { required: true },	
 	        "distrito": { required: true }, "direccion-actual": { required: true },	"email": { required: true }, "celular-1": { required: true },	
-			"universidad": { required: true }, "ano-culminacion": { required: true }, "colegio-procedencia": { required: true }, 
+			"universidad": { required: true }, "ano-culminacion": { required: true }, "colegio": { required: true }, 
 			"estudios-dpto": { required: true }, "estudios-provincia": { required: true },
 	        "estudios-distrito": { required: true }, "estudios-rendimiento": { required: true }
 	      },
@@ -279,7 +279,7 @@ jQuery(function() {
 		    "provincia": { required: "Fill in your province. <br /> " }, "distrito": { required: "Fill in your district. <br /> " },
 		    "direccion-actual": { required: "Fill in your address. <br /> " }, "email": { required: "Fill in your e-mail. <br /> " },
 	      	"celular-1": { required: "Fill in your cellphone 1. <br /> " }, "universidad": { required: "Fill in your university of origin. <br /> " },
-	      	"ano-culminacion": { required: "Select your year of completion. <br /> " }, "colegio-procedencia": { required: "Fill in your school of origin. <br /> " },
+	      	"ano-culminacion": { required: "Select your year of completion. <br /> " }, "colegio": { required: "Fill in your school of origin. <br /> " },
 		    "estudios-dpto": { required: "Fill in the region of your school. <br /> " }, "estudios-provincia": { required: "Fill in the province of your school. <br /> " },
 		    "estudios-distrito": { required: "Fill in the district of your school. <br /> " }, "estudios-rendimiento": { required: "Select your academic performance. <br /> " }
 		  },
