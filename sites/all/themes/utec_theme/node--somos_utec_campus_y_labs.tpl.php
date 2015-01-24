@@ -14,7 +14,7 @@
 	<h1 class="light"><?php print t('Campus and Labs') ?></h1>
 	<div class="separator-gray separator-sm"></div>
 	<div class="pb-49">
-		<h3 class="text-gray-darker"><?php print t('Campus') ?></h3>
+		<!--<h3 class="text-gray-darker"><?php print t('Campus') ?></h3>-->
 		<p><?php print $field_introduccion_campus ?></p>
 		<?php if ($field_foto_campus!='') { ?>
 			<img src="<?php print('/'.$pathfile.$field_foto_campus)?>" class="img-responsive pv-14">
