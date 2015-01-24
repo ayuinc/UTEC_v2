@@ -5,34 +5,38 @@
 	$category = $fields['field_categor_a']->content;
 	$texto_corto = $fields['field_texto_corto']->content;
 	$path = $fields['path']->content;
+	$dest = $fields['field_destacado']->content;
 	global $count;
+	kpr($fields);
 ?>
 <?php //print_r($zebra) ?>
 <div class="mb-ch-14">
-<?php if ($zebra == 'odd') :?>
-	<div class="banner" data-href="<?php print $path; ?>">
-		<div class="col-sm-3 banner-pic" style="background-image: url(<?php print $image ?>);">
-			<div class="banner-label bg-gray-darker text-white"><span><?php print $category ?></span></div>
-		</div>
-		<div class="col-sm-9 banner-content">
-			<div>
-				<h2 class="medium text-gray-dark"><a href="<?php print $path; ?>"><?php print $title ?></a></h2>
-				<p class="lead text-gray"><?php print $texto_corto ?></p>
+	<?php if ($dest) : ?>
+		<?php if ($zebra == 'even') :?>
+		<div class="banner" data-href="<?php print $path; ?>">
+			<div class="col-sm-3 banner-pic" style="background-image: url(<?php print $image ?>);">
+				<div class="banner-label bg-gray-darker text-white"><span><?php print $category ?></span></div>
+			</div>
+			<div class="col-sm-9 banner-content">
+				<div>
+					<h2 class="medium text-gray-dark"><a href="<?php print $path; ?>"><?php print $title ?></a></h2>
+					<p class="lead text-gray"><?php print $texto_corto ?></p>
+				</div>
 			</div>
 		</div>
-	</div>
-	<?php endif; ?>
-	<?php if ($zebra == 'even') :?>
-	<div class="banner hidden-xs" data-href="<?php print $path; ?>">
-		<div class="col-sm-9 banner-content">
-			<div>
-				<h2 class="medium text-gray-dark"><a href="<?php print $path; ?>"><?php print $title ?></a></h2>
-				<p class="lead text-gray"><?php print $texto_corto ?></p>
+		<?php endif; ?>
+		<?php if ($zebra == 'odd') :?>
+		<div class="banner hidden-xs" data-href="<?php print $path; ?>">
+			<div class="col-sm-9 banner-content">
+				<div>
+					<h2 class="medium text-gray-dark"><a href="<?php print $path; ?>"><?php print $title ?></a></h2>
+					<p class="lead text-gray"><?php print $texto_corto ?></p>
+				</div>
+			</div>
+			<div class="col-sm-3 banner-pic" style="background-image: url(<?php print $image ?>); min-height: 299px;">
+				<div class="banner-label bg-gray-darker text-white"><span><?php print $category ?></span></div>
 			</div>
 		</div>
-		<div class="col-sm-3 banner-pic" style="background-image: url(<?php print $image ?>); min-height: 299px;">
-			<div class="banner-label bg-gray-darker text-white"><span><?php print $category ?></span></div>
-		</div>
-	</div>
+		<?php endif; ?>
 	<?php endif; ?>
 </div>

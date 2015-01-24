@@ -22,7 +22,7 @@
 		<div>
 			<h3><a href="#"><?php print $title ?></a></h3>
 			<em><?php print $created ?></em>
-			<p><?php print $texto_corto ?></p>
+			<p class="text-gray"><?php print $texto_corto ?></p>
 		</div>
 	</div>
 </li>

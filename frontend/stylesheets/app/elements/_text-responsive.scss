@@ -85,6 +85,7 @@ $text-elements-list:
   "ol",
   "li";
 
+
 // LEAD TEXT ELEMENTS
 #{$text-elements-list} {
   &.lead {
@@ -128,6 +129,7 @@ $text-elements-list:
 // LEAD HEADINGS
 @for $i from 1 through length($headings-list) {
   #{nth($headings-list, $i)} {
+    font-size: #{rem(nth($font-size-list, $i))};
     &.lead {
       font-size: #{nth($font-size-list, $i) + $text-in-rems-md-up} !important;
       font-size: #{rem(nth($font-size-list, $i) + $text-in-rems-md-up)} !important;
@@ -151,6 +153,7 @@ $text-elements-list:
 }
 @for $i from 1 through length($headings-class-list) {
   #{nth($headings-class-list, $i)} {
+    font-size: #{rem(nth($font-size-list, $i))};
     &.lead {
       font-size: #{nth($font-size-list, $i) + $text-in-rems-md-up} !important;
       font-size: #{rem(nth($font-size-list, $i) + $text-in-rems-md-up)} !important;
