@@ -32,7 +32,7 @@ $(document).ready ->
 		scrollDownRef.push(idGen)
 		sectionList = '<li><a href="#' + idGen + '"' + 
 								'class="animated bounceInRight ad-' + (index * 2) + 
-								' scroll-ref-' + index + 'atm-scroll-item">' + sectionData + '</a></li>'
+								' scroll-ref-' + index + ' atm-scroll-item">' + sectionData + '</a></li>'
 		$sectionScrollList.append(sectionList)
 		$sectionScrollScene = new ScrollScene({
 			triggerHook: 'onLeave'
