@@ -10,6 +10,10 @@
         $('body').addClass('form-on-submit').append(overlayTempl);
       }
     });
+    $('.form-overlay-close').click(function(e) {
+      $('.form-overlay').remove();
+      $('body').removeClass('form-on-submit');
+    });
   });
 
 }).call(this);
