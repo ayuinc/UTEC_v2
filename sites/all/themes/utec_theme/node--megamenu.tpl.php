@@ -46,14 +46,14 @@
 								<a href="/contacto" class="text-gray atm-contacto"><?php print t('Contact us') ?></a>
 							</li>
 							<li class="pt-7">
-								<a href="/blog" class="text-gray atm-blog">Blog</a>
+								<a href="/blog-utec" class="text-gray atm-blog">Blog</a>
 							</li>
 						<?php elseif ($language->language == 'en'): ?>
 							<li class="pt-7">
 								<a href="/en/contact" class="text-gray atm-contacto"><?php print t('Contact us') ?></a>
 							</li>
 							<li class="pt-7">
-								<a href="/en/blog" class="text-gray atm-blog">Blog</a>
+								<a href="/en/utec-blog" class="text-gray atm-blog">Blog</a>
 							</li>
 						<?php endif ?>						
 						<li>
