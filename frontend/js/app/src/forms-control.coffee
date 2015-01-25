@@ -20,7 +20,13 @@ $(document).ready ->
 
 		return
 	)
-	
+
+	$('.form-overlay-close').click((e)->
+		# e.preventDefault()
+		$('.form-overlay').remove()
+		$('body').removeClass('form-on-submit')
+		return
+	)
 	# $bodyForm.on('submit', (e)->
 	# # 	# (e).preventDefault()
 	# 	if($bodyForm.valid())
@@ -40,13 +46,13 @@ $(document).ready ->
 
 	# checkDOMChange = ()->
 	# 	setTimeout(()->
-	# 		$('.form-overlay-close').click((e)->
-	# 			e.preventDefault()
-	# 			$('.form-overlay').remove()
-	# 			$('body').removeClass('form-on-submit')
-	# 			return
-	# 			)
-	# 		return
+			# $('.form-overlay-close').click((e)->
+			# 	# e.preventDefault()
+			# 	$('.form-overlay').remove()
+			# 	$('body').removeClass('form-on-submit')
+			# 	return
+			# 	)
+			# return
 	# 	, 1000)
 
 	return
