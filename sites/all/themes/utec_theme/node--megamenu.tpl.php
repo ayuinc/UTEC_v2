@@ -180,9 +180,9 @@
 					<ul>
 						<li>
 							<?php if ($language->language != 'en'): ?>
-								<a href="/eventos-utec"><?php print t('Events') ?></a>
+								<a href="/eventos-utec">Eventos UTEC</a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/utec-events"><?php print t('Events') ?></a>
+								<a href="/<?php print $language->language ?>/utec-events">UTEC Events</a>
 							<?php endif ?>							
 						</li>
 						<li>
@@ -692,9 +692,9 @@
 					<ul>
 						<li>
 							<?php if ($language->language != 'en'): ?>
-								<a href="/eventos-utec"><?php print t('Events') ?></a>
+								<a href="/eventos-utec">Eventos UTEC</a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/events"><?php print t('Events') ?></a>
+								<a href="/<?php print $language->language ?>/utec-events">UTEC Events</a>
 							<?php endif ?>							
 						</li>
 						<li>
