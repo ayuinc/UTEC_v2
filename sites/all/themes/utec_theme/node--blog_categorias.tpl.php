@@ -26,10 +26,10 @@ global $language;
 				$tree = taxonomy_get_tree($vid);
 			?>
 			<?php foreach ($tree as $term): ?>
-				<?php $name = $term->name; ?>
-				<?php $tid = $term->tid; ?>
 				<?php if (module_exists('i18n_taxonomy')) : ?> 
 			    <?php $term = i18n_taxonomy_localize_terms($term); ?>
+					<?php $name = $term->name; ?>
+					<?php $tid = $term->tid; ?>
 			    <li><a href="/blog-tags/<?php print $term->name; ?>"><?php print $name ?></a></li>
 					<?php kpr($term); ?>
 			  <?php endif ?>
