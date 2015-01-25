@@ -102,11 +102,11 @@
 			<h3><?php print t('Faculty:') ?></h3>
 			<div class="list-custom-left">
 				<ul>
+					<?php if ($profesor_pic) : ?>
 					<li class="text-center">
-						<?php if ($profesor_pic) : ?>
 						<div class="grid-list-pic"><img src="<?php print '/'.$pathfile.'pictures/'.$profesor_pic; ?>" alt="" width="98px" height="auto" class="img-circle"></div>
-						<?php endif  ?>
 					</li>
+					<?php endif  ?>
 					<li class="pl-21 text-gray">
 						<div class="mb-7">
 							<a href="/user/<?php print $profesor_id ?>" class="thin h3 text-hover-primary"><?php print $profesor_name ?></a>
