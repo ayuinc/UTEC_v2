@@ -7,7 +7,13 @@
       e.preventDefault();
     });
     $('[data-href]').click(function(e) {
-      console.log($(this).data('href'));
+      var lastPath, locationArr, mainPath, pathObj;
+      locationArr = window.location.pathname.split('/');
+      lastPath = locationArr[locationArr.length - 1];
+      mainPath = locationArr[locationArr.length - 2];
+      pathObj = {};
+      pathObj[mainPath] = lastPath;
+      window.history.pushState(pathObj, '', lastPath);
       document.location.replace($(this).data('href'));
     });
     $('.menu-trigger').click(function(e) {

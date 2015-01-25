@@ -10,7 +10,17 @@ $(document).ready ->
 		return
 
 	$('[data-href]').click((e)->
-		console.log($(this).data('href'))
+		# console.log($(this).data('href'))
+		locationArr = window.location.pathname.split('/')
+		lastPath = locationArr[locationArr.length - 1]
+		mainPath = locationArr[locationArr.length - 2]
+		# console.log(lastPath)
+		# console.log(mainPath)
+		pathObj = {}
+		pathObj[mainPath] = lastPath
+		# console.log(window.history)
+		window.history.pushState(pathObj, '', lastPath)
+		# console.log(window.history)
 		document.location.replace($(this).data('href'))
 		return
 		)
