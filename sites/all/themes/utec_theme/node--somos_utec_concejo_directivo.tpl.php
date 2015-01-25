@@ -19,20 +19,22 @@
      	   		
     <?php $uid = $value['entity']->uid; ?>	
     <?php 
-        if ($language->language == 'en') {
-          $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/consejo-directivo/'.$uid, $language->language); 
-        }else
-          $profesor_url = "/" . drupal_get_path_alias('page/30/consejo-directivo/'.$uid, $language->language); 
-      ?> 
+			if ($language->language != 'en') {
+				$profesor_url = "/" . drupal_get_path_alias('page/30/consejo-directivo/'.$uid, $language->language);
+			}	
+			if ($language->language == 'en') {
+				$profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/consejo-directivo/'.$uid, $language->language);
+			}
+    ?> 
 			<li class="mb-ch-14">
 				<div class="grid-list-pic"><img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="" width="98px" height="auto" class="img-circle"></div>
 				<div>
 					<a href="<?php print $profesor_url ?>"><?php print $name ?></a>
-					<?php if ($language->language == 'en') : ?>
-					<span><?php print $desc_ingles?></span>
-					<?php else : ?>
-					<span><?php print $desc?></span>
-					<?php endif; ?>
+					<?php if ($language->language != 'en'): ?>
+						<span><?php print $desc?></span>
+					<?php elseif ($language->language == 'en'): ?>
+						<span><?php print $desc_ingles?></span>
+					<?php endif ?>					
 				</div>
 			</li>
 		<?php endforeach ?>	
