@@ -1,5 +1,5 @@
 <?php
-
+global $language;
 /**
  * @file
  * Default simple view template to display a list of rows.
@@ -28,7 +28,7 @@
 			<?php foreach ($terms as $term): ?>
 				<?php $name = $term->name; ?>
 				<?php $tid = $term->tid; ?>
-		    <li><a href=""><?php print $name ?></a></li>
+		    <li><a href="/blog-tags/<?php print $term->name; ?>"><?php print $name ?></a></li>
 			<?php endforeach; ?>
 		</ul>
 	</div>
