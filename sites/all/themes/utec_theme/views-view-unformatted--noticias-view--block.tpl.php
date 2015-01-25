@@ -20,8 +20,7 @@
 				<a href="/noticias" data-href="/noticias" class="btn btn-lg btn-primary see-more uppercase"><?php print t('More news') ?></a>
 			<?php elseif ($language->language == 'en'): ?>
 				<a href="/news" data-href="/news" class="btn btn-lg btn-primary see-more uppercase"><?php print t('More news') ?></a>
-			<?php endif ?>			
-			
+			<?php endif ?>
 		</div>
 	</div>
 </div>
