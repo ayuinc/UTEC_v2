@@ -20,10 +20,13 @@ global $language;
 		</div>
 		<ul class="categories-list">
 			<?php 
+				$term2 = taxonomy_term_load($tid);
+				$translated_term = i18n_taxonomy_term_get_translation($term2, $langcode);
+
 				$term = taxonomy_vocabulary_machine_name_load('blog_tags');
 				$vid = $term->vid;
 				$terms = taxonomy_get_tree($vid);
-				kpr($terms);
+				kpr($translated_term);
 			?>
 			<?php foreach ($terms as $term): ?>
 				<?php $name = $term->name; ?>
