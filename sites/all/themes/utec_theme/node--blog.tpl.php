@@ -14,7 +14,7 @@
 	$created = date('d F Y', strtotime($node->created));
 	$addblock = module_invoke('addthis','block_view','addthis_block');
 
-	kpr($node);
+	// kpr($node);
 ?>
 
 <h3 class="lead"><?php print $title ?></h3>
