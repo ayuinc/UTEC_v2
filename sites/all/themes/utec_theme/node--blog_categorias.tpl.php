@@ -31,7 +31,7 @@ global $language;
 				<?php if (module_exists('i18n_taxonomy')) : ?> 
 			    <?php $term = i18n_taxonomy_localize_terms($term); ?>
 			    <li><a href="/blog-tags/<?php print $term->name; ?>"><?php print $name ?></a></li>
-					kpr($term);
+					<?php kpr($term); ?>
 			  <?php endif ?>
 			<?php endforeach; ?>
 		</ul>
