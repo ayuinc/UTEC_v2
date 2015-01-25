@@ -24,7 +24,7 @@
 	$resenia_consejo_ingles = $fields['field_rese_a_consejo_ingles']->content;
 
 	$descripcion_autoridad = $fields['field_descripci_n_autoridad']->content;
-	$descripcion_autoridad_ingles = $fields['field_descripci_n_autoridad_ingles']->content;
+	$descripcion_autoridad_ingles = $fields['field_descripci_n_autoridad_ingl']->content;
 
 	$resenia_autoridad = $fields['field_rese_a_autoridad']->content;
 	$resenia_autoridad_ingles = $fields['field_rese_a_autoridad_ingles']->content;
