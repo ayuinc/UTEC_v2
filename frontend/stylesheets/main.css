@@ -6213,9 +6213,9 @@ img.icon-utec {
     opacity: 0;
     position: absolute;
     color: #8f8d8e;
-    -webkit-animation: rotateWordsFirst 18s linear infinite 0s;
-    -moz-animation: rotateWordsFirst 18s linear infinite 0s;
-    animation: rotateWordsFirst 18s linear infinite 0s; }
+    -webkit-animation: rotateWordsSecond 9s linear infinite 0s;
+    -moz-animation: rotateWordsSecond 9s linear infinite 0s;
+    animation: rotateWordsSecond 9s linear infinite 0s; }
     .text-switcher span:nth-child(1) {
       -webkit-animation-delay: 3s;
       -moz-animation-delay: 3s;
@@ -6359,6 +6359,54 @@ img.icon-utec {
   25% {
     opacity: 0;
     height: 60px; }
+  100% {
+    opacity: 0; } }
+@-webkit-keyframes rotateWordsSecond {
+  0% {
+    opacity: 1;
+    animation-timing-function: ease-in;
+    width: 0px; }
+  10% {
+    opacity: 0.3;
+    width: 0px; }
+  20% {
+    opacity: 1;
+    width: 100%; }
+  27% {
+    opacity: 0;
+    width: 100%; }
+  100% {
+    opacity: 0; } }
+@-moz-keyframes rotateWordsSecond {
+  0% {
+    opacity: 1;
+    animation-timing-function: ease-in;
+    width: 0px; }
+  10% {
+    opacity: 0.3;
+    width: 0px; }
+  20% {
+    opacity: 1;
+    width: 100%; }
+  27% {
+    opacity: 0;
+    width: 100%; }
+  100% {
+    opacity: 0; } }
+@keyframes rotateWordsSecond {
+  0% {
+    opacity: 1;
+    animation-timing-function: ease-in;
+    width: 0px; }
+  10% {
+    opacity: 0.3;
+    width: 0px; }
+  20% {
+    opacity: 1;
+    width: 100%; }
+  27% {
+    opacity: 0;
+    width: 100%; }
   100% {
     opacity: 0; } }
 .spinner {
@@ -7636,25 +7684,25 @@ body.form-on-submit {
           width: 79%;
           padding-top: 7px; }
         .malla-curricular > li .body > ul > li.CRD1 {
-          min-height: 20px; }
+          min-height: 28px; }
         .malla-curricular > li .body > ul > li.CRD2 {
-          min-height: 40px; }
+          min-height: 56px; }
         .malla-curricular > li .body > ul > li.CRD3 {
-          min-height: 60px; }
+          min-height: 84px; }
         .malla-curricular > li .body > ul > li.CRD4 {
-          min-height: 80px; }
+          min-height: 112px; }
         .malla-curricular > li .body > ul > li.CRD5 {
-          min-height: 100px; }
-        .malla-curricular > li .body > ul > li.CRD6 {
-          min-height: 120px; }
-        .malla-curricular > li .body > ul > li.CRD7 {
           min-height: 140px; }
+        .malla-curricular > li .body > ul > li.CRD6 {
+          min-height: 168px; }
+        .malla-curricular > li .body > ul > li.CRD7 {
+          min-height: 196px; }
         .malla-curricular > li .body > ul > li.CRD8 {
-          min-height: 160px; }
+          min-height: 224px; }
         .malla-curricular > li .body > ul > li.CRD9 {
-          min-height: 180px; }
+          min-height: 252px; }
         .malla-curricular > li .body > ul > li.CRD10 {
-          min-height: 200px; }
+          min-height: 280px; }
       .malla-curricular > li .body > ul > li.bg-mate {
         background-color: #8dc63f;
         background-image: -webkit-linear-gradient(top, #8dc63f, #a9d46e);

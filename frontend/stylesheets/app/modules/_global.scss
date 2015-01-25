@@ -527,10 +527,10 @@ img.icon-utec {
 		opacity: 0;
 		position: absolute;
 		color: $gray;
-		@include animation(rotateWordsFirst 18s linear infinite 0s);
+		@include animation(rotateWordsSecond 9s linear infinite 0s);
 		@for $i from 1 through 24 {
 			&:nth-child(#{$i}) {
-				@include animation-delay(($i*3) + s);
+				@include animation-delay(($i*3) + s); 
 			}
 		}
 	}
@@ -541,6 +541,13 @@ img.icon-utec {
   8% { opacity: 1; height: 60px; }
   19% { opacity: 1; height: 60px; }
   25% { opacity: 0; height: 60px; }
+  100% { opacity: 0; }
+}
+@include keyframes(rotateWordsSecond) {
+  0% { opacity: 1; animation-timing-function: ease-in; width: 0px; }
+  10% { opacity: 0.3; width: 0px; }
+  20% { opacity: 1; width: 100%; }
+  27% { opacity: 0; width: 100%; }
   100% { opacity: 0; }
 }
 

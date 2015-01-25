@@ -53,7 +53,7 @@ $malla-colors-sufix-list:
 					}
 					@for $i from 1 through 10 {
 						&.CRD#{$i} {
-							min-height: ($i * 20) + px;
+							min-height: ($i * 28) + px;
 						}
 					}
 				}
