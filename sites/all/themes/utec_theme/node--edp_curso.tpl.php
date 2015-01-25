@@ -103,7 +103,7 @@
 			<div class="list-custom-left">
 				<ul>
 					<?php if ($profesor_pic) : ?>
-					<li class="text-center">
+					<li class="text-center" class="pic">
 						<div class="grid-list-pic"><img src="<?php print '/'.$pathfile.'pictures/'.$profesor_pic; ?>" alt="" width="98px" height="auto" class="img-circle"></div>
 					</li>
 					<?php endif  ?>
