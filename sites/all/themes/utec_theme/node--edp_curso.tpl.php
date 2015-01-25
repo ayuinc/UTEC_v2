@@ -93,7 +93,9 @@
 			<div class="list-custom-left">
 				<ul>
 					<li class="text-center">
+						<?php if ($profesor_pic) : ?>
 						<div class="grid-list-pic"><img src="<?php print '/'.$pathfile.'pictures/'.$profesor_pic; ?>" alt="" width="98px" height="auto" class="img-circle"></div>
+						<?php endif  ?>
 					</li>
 					<li class="pl-21 text-gray">
 						<div class="mb-7">

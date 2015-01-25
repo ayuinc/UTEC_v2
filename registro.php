@@ -1576,7 +1576,7 @@ if($error){
 
           if($origen == "pagina-curso-edp")
           {
-                header('Location: /gracias-general/gracias-escuela-de-desarrollo-profesional');
+                header('Location: /edp/gracias');
                 exit();   
           }    
 
@@ -1625,11 +1625,11 @@ if($error){
 
           if($origen == "pagina-curso-edp")
           {
-                header('Location: /gracias-general/gracias-escuela-de-desarrollo-profesional');
+                header('Location: /en/spd/thank-you');
                 exit();   
           }    
 
-                header('Location: /gracias');
+                header('Location: /en/thank-you');
                 exit();    
       }        
 

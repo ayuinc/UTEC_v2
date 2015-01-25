@@ -69,7 +69,7 @@
         <?php $pic = $value['entity']->picture->filename; ?>
         <?php $uid = $value['entity']->uid; ?>
         <?php $desc = $value['entity']->field_descripci_n_autoridad['und'][0]['value']; ?>
-        <?php $desc_ingles = $value['entity']->field_descripci_n_autoridad_ingles['und']['0']['value']; ?>
+        <?php $desc_ingles = $value['entity']->field_descripci_n_autoridad_ingl['und']['0']['value']; ?>
         <?php $res = $value['entity']->field_rese_a_autoridad['und']['0']['value']; ?>
         <?php $res_ingles = $value['entity']->field_rese_a_autoridad_ingles['und']['0']['value']; ?>  
 
@@ -87,9 +87,9 @@
               <!--<a href="#">Rosa María Llosa Demartini</a>-->
               <a href="<?php print $profesor_url ?>"><?php print $name ?></a>
               <?php if ($language->language == 'en') : ?>
-              <span><?php print $desc_ingles?></span>
+              <span><?php print $desc_ingles ?></span>
               <?php else : ?>
-              <span><?php print $desc?></span>
+              <span><?php print $desc ?></span>
               <?php endif; ?>
           </div>
         </li>

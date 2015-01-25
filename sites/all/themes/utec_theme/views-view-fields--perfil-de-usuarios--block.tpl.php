@@ -5,6 +5,7 @@
   $path = $base_url.'/'.$theme_path;
   $pathfile= variable_get('file_public_path', conf_path() . '/files/');
 
+  //kpr($fields);
 	$name = $fields['name']->content;
 	$mail = $fields['mail']->content;
 	$picture = $fields['picture']->content;
@@ -28,6 +29,7 @@
 	$resenia_autoridad = $fields['field_rese_a_autoridad']->content;
 	$resenia_autoridad_ingles = $fields['field_rese_a_autoridad_ingles']->content;
 
+	$rol = $fields['rid']->content;
 	//kpr($fields);
 ?>
 
@@ -35,18 +37,14 @@
 	<?php print $picture ?>
 </div>
 <h3 class="thin"><?php print $name ?></h3>
-<a href="#" rel="nofollow" class="block"><em><?php if($twitter){print $twitter;} else print $mail;  ?></em></a>
-<?php if ($language->language == 'en') : ?>
-<p><?php print $descripcion_ingles ?></p>
-<p><?php print $resenia_ingles ?></p>
+<a href="#" rel="nofollow" class="block"><em><?php print $twitter; ?></em></a>
 
-<p><?php print $descripcion_consejo_ingles ?></p>
-<p><?php print $resenia_consejo_ingles ?></p>
+<?php if (($name!='Juan Incháustegui Vargas') AND ($name!='Eduardo Hochschild Beeck') AND ($name!='Mario Rivera Orams') AND ($name!='Dionisio Romero Paoletti') AND ($name!='Roque Benavides') AND ($name!='Oscar Espinosa Bedoya') AND ($name!='Oscar Espinosa Bedoya') AND ($name!='Kim Vandiver') AND ($name!='José Graña Miró Quesada') AND ($name!='Carlos Rodríguez-Pastor') AND ($name!='Mario Testino') AND ($name!='Oscar González Rocha') AND ($name!='Vito Rodríguez Rodríguez') AND ($name!='Ricardo Rizo Patrón de la Piedra') AND ($name!='Javier Durand Planas') AND ($name!='Yamal Zaidan Saba')) { ?>
+<a href="mail:<?php print $mail ?>" rel="nofollow" class="block"><em><?php print $mail ?></em></a>
+<?php } ?>
 
-<p><?php print $descripcion_autoridad_ingles ?></p>
-<p><?php print $resenia_autoridad_ingles ?></p>
 
-<?php else : ?>
+<?php if ($language->language  != 'en'): ?>
 <p><?php print $descripcion ?></p>
 <p><?php print $resenia ?></p>
 
@@ -55,7 +53,17 @@
 
 <p><?php print $descripcion_autoridad ?></p>
 <p><?php print $resenia_autoridad ?></p>
-<?php endif; ?>
+<?php elseif ($language->language == 'en'): ?>
+<p><?php print $descripcion_ingles ?></p>
+<p><?php print $resenia_ingles ?></p>
+
+<p><?php print $descripcion_consejo_ingles ?></p>
+<p><?php print $resenia_consejo_ingles ?></p>
+
+<p><?php print $descripcion_autoridad_ingles ?></p>
+<p><?php print $resenia_autoridad_ingles ?></p>
+<?php endif ?>
+
 
 
 
