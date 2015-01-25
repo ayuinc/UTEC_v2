@@ -23,7 +23,7 @@ global $language;
 				$term = taxonomy_vocabulary_machine_name_load('blog_tags');
 				$vid = $term->vid;
 				$terms = taxonomy_get_tree($vid);
-				//print_r($terms);
+				pkr($terms);
 			?>
 			<?php foreach ($terms as $term): ?>
 				<?php $name = $term->name; ?>
