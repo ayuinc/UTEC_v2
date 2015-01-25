@@ -48,8 +48,9 @@
 			<span><?php print $texto_imagen ?></span>
 		<?php } ?>
 	</div>
-	<div class="pv-ch-28">
+	<div class="pv-ch-21">
 		<div class="list-custom-left normalize-text lead-ch mb-ch-21">
+		  <?php if ($fecha != '') { ?>				
 			<ul>
 				<li class="bg-gray text-white uppercase text-center p-21">
 					<?php print t('Date') ?>
@@ -58,6 +59,8 @@
 					<p><?php print $fecha ?></p>
 				</li>
 			</ul>
+			<?php } ?>
+		  <?php if ($hora != '') { ?>			
 			<ul>
 				<li class="bg-gray text-white uppercase text-center p-21">
 					<?php print t('Time') ?>
@@ -66,6 +69,8 @@
 					<p><?php print $hora ?></p>
 				</li>
 			</ul>
+			<?php } ?>
+		  <?php if ($lugar != '') { ?>
 			<ul>
 				<li class="bg-gray text-white uppercase text-center p-21">
 					<?php print t('Place') ?>
@@ -74,19 +79,24 @@
 					<p><?php print $lugar ?></p>
 				</li>
 			</ul>
+			<?php } ?>
 		</div>
+		<?php if ($obejtivos != '') { ?>
 		<div>
 			<h3><?php print t('Goals:') ?></h3>
 			<div class="list-custom">
 				<?php print $obejtivos ?>
 			</div>
 		</div>
+		<?php } ?>
+		<?php if ($dirigido != '') { ?>
 		<div>
 			<h3><?php print t('Address to:') ?></h3>
 			<div class="list-custom">
 				<?php print $dirigido ?>
 			</div>
 		</div>
+		<?php } ?>
 		<div>
 			<?php if($profesor_name) : ?>
 			<h3><?php print t('Faculty:') ?></h3>
