@@ -232,7 +232,7 @@ $list-hover-height: 350px;
 				}
 			}
 		}
-		.list-hover {
+		&.list-hover {
 			> li {
 				> div {
 					min-height: $list-hover-height - 210;

@@ -4356,7 +4356,7 @@ body {
     height: 351px; }
 .size.sm.grid-list-hover > li > div {
   height: 210px; }
-.size.sm .list-hover > li > div {
+.size.sm.list-hover > li > div {
   min-height: 140px; }
 .size.lg.scroll-down i {
   font-size: 24px; }
@@ -6657,7 +6657,7 @@ body {
     height: 351px; }
 .size.sm.grid-list-hover > li > div {
   height: 210px; }
-.size.sm .list-hover > li > div {
+.size.sm.list-hover > li > div {
   min-height: 140px; }
 .size.lg.scroll-down i {
   font-size: 24px; }
