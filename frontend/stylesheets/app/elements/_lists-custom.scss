@@ -43,6 +43,9 @@ $list-custom-height: 20%;
 			width: $list-custom-height;
 			height: auto;
 		}
+		&:last-child {
+			@include calc(width, "100% - #{$list-custom-height}");
+		}
 	}
 	@media #{$sm-down} {
 		li {
