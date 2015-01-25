@@ -40,10 +40,8 @@
 			</div>
 			<div class="right">
 				<ul class="social-links">
-					<li><a href="#" class="icon-footer-facebook"></a></li>
-					<li><a href="#" class="icon-footer-twitter"></a></li>
-					<li><a href="#" class="icon-footer-email"></a></li>
-					<li><a href="#" class="icon-footer-plus"></a></li>
+					<!-- Go to www.addthis.com/dashboard to customize your tools -->
+					<div class="addthis_sharing_toolbox"></div>
 				</ul>
 			</div>
 		</div>
