@@ -11,7 +11,12 @@
 <div class="sidebar-block">
 	<div>
 		<div class="title">
+			
+			<?php if ($language->language != 'en'): ?>
 			<h3>Explora<br><span>por</span> temas</h3>
+			<?php elseif ($language->language == 'en'): ?>
+			<h3>Explore<br><span>by</span> topics</h3>
+			<?php endif ?>				
 		</div>
 		<ul class="categories-list">
 			<?php 
