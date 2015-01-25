@@ -1,5 +1,5 @@
 <?php
-
+global $language;
 /**
  * @file
  * Default simple view template to display a list of rows.
@@ -17,7 +17,7 @@
 			<?php endforeach; ?>
 		<div>
 			<?php if ($language->language != 'en'): ?>
-				<a href="/noticias" data-href="/noticias" class="btn btn-lg btn-primary see-more uppercase"><?php print t('More news') ?></a>ss
+				<a href="/noticias" data-href="/noticias" class="btn btn-lg btn-primary see-more uppercase"><?php print t('More news') ?></a>
 			<?php elseif ($language->language == 'en'): ?>
 				<a href="/news" data-href="/news" class="btn btn-lg btn-primary see-more uppercase"><?php print t('More news') ?></a>
 			<?php endif ?>
