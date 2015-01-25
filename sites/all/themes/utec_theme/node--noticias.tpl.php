@@ -36,15 +36,15 @@
 			<?php if($images) : ?>
 			  <a class="left carousel-control" href="#carousel-custom" role="button" data-slide="prev">
 			    <span class="icon-prev hidden-xs" aria-hidden="true"></span>
-			    <span class="sr-only">Previous</span>
+			    <span class="sr-only"><?php print t('Previous') ?></span>
 			  </a>
 			  <a class="right carousel-control" href="#carousel-custom" role="button" data-slide="next">
 			    <span class="icon-next hidden-xs" aria-hidden="true"></span>
-			    <span class="sr-only">Next</span>
+			    <span class="sr-only"><?php print t('Next') ?></span>
 			  </a>
 			<?php endif; ?>
 		</div>
-		<div class="pv-ch-28">
+		<div class="pv-ch-7">
 			<?php print $cuerpo ?>
 		</div>
 	</div>
