@@ -25,6 +25,7 @@ $user-card-width: 70px;
 $video-bg-height: 491px;
 $grid-list-hover-height: 350px;
 $sidebar-block-height: 210px;
+$list-hover-height: 350px;
 
 // CONTROL GRID BLOCK IMG SIZES
 @mixin content-block {
@@ -228,6 +229,13 @@ $sidebar-block-height: 210px;
 			> li {
 				> div {
 					height: $grid-list-hover-height - 140;
+				}
+			}
+		}
+		.list-hover {
+			> li {
+				> div {
+					min-height: $list-hover-height - 210;
 				}
 			}
 		}

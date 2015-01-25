@@ -63,7 +63,7 @@ $list-custom-height: 20%;
 	> li {
 		> div {
 			// @include flex-middle-center;
-			min-height: 350px;
+			min-height: $list-hover-height;
 			color: $gray-dark;
 			padding: $container-fluid + 7;
 			h3 {
