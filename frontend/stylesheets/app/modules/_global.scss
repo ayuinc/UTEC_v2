@@ -525,39 +525,39 @@ img.icon-utec {
 
 
 // TEXT SWITCHER
-.text-switcher {
-	display: inline;
-	@media #{$sm-down} {
-		display: block;
-	}
-	span {
-		overflow: hidden;
-		opacity: 0;
-		position: absolute;
-		color: $gray;
-		@include animation(rotateWordsSecond 9s linear infinite 0s);
-		@for $i from 1 through 24 {
-			&:nth-child(#{$i}) {
-				@include animation-delay(($i*3) + s); 
-			}
-		}
-	}
-}
+// .text-switcher {
+// 	display: inline;
+// 	@media #{$sm-down} {
+// 		display: block;
+// 	}
+// 	span {
+// 		overflow: hidden;
+// 		opacity: 0;
+// 		position: absolute;
+// 		color: $gray;
+// 		@include animation(rotateWordsSecond 9s linear infinite 0s);
+// 		@for $i from 1 through 24 {
+// 			&:nth-child(#{$i}) {
+// 				@include animation-delay(($i*3) + s); 
+// 			}
+// 		}
+// 	}
+// }
 
-@include keyframes(rotateWordsFirst) {
-  0% { opacity: 1; animation-timing-function: ease-in; height: 0px; }
-  8% { opacity: 1; height: 60px; }
-  19% { opacity: 1; height: 60px; }
-  25% { opacity: 0; height: 60px; }
-  100% { opacity: 0; }
-}
-@include keyframes(rotateWordsSecond) {
-  0% { opacity: 1; animation-timing-function: ease-in; width: 0px; }
-  10% { opacity: 0.3; width: 0px; }
-  20% { opacity: 1; width: 100%; }
-  27% { opacity: 0; width: 100%; }
-  100% { opacity: 0; }
-}
+// @include keyframes(rotateWordsFirst) {
+//   0% { opacity: 1; animation-timing-function: ease-in; height: 0px; }
+//   8% { opacity: 1; height: 60px; }
+//   19% { opacity: 1; height: 60px; }
+//   25% { opacity: 0; height: 60px; }
+//   100% { opacity: 0; }
+// }
+// @include keyframes(rotateWordsSecond) {
+//   0% { opacity: 1; animation-timing-function: ease-in; width: 0px; }
+//   10% { opacity: 0.3; width: 0px; }
+//   20% { opacity: 1; width: 100%; }
+//   27% { opacity: 0; width: 100%; }
+//   100% { opacity: 0; }
+// }
 
 // SITE OVERLAY ON FORM SUBMIT
 // SPINNER ON FORM submit

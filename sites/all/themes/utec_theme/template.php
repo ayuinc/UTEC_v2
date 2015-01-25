@@ -157,4 +157,18 @@
 	  'weight' => 16,
 	));	
 
+	drupal_add_js(path_to_theme() . '/js/app/vendor/ScrambleTextPlugin.min.js', array(
+	  'scope' => 'footer',
+	  'group' => JS_THEME,
+	  'every_page' => TRUE,
+	  'weight' => 17,
+	));	
+
+	drupal_add_js(path_to_theme() . '/js/app/lib/tickerscrambler.js', array(
+	  'scope' => 'footer',
+	  'group' => JS_THEME,
+	  'every_page' => TRUE,
+	  'weight' => 18,
+	));	
+
 ?>

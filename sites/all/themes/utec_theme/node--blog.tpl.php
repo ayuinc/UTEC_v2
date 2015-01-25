@@ -7,13 +7,14 @@
 
 	$titulo = $node->title;	 		
 	$cuerpo = $node->body['und']['0']['value'];	
-	$imagen = $node->field_imagen['und']['0']['filename'];
+	// $imagen = $node->field_imagen['und']['0']['filename'];
+	$imagen = $node->field_imagen['und']['0']['uri'];
 	$blogger_name = $node->field_blogger['und']['0']['entity']->name;
 	$blogger_cargo = $node->field_blogger['und']['0']['entity']->field_descripci_n['und']['0']['value'];
 	$created = date('d F Y', strtotime($node->created));
 	$addblock = module_invoke('addthis','block_view','addthis_block');
 
-	// print_r($node);
+	kpr($node);
 ?>
 
 <h3 class="lead"><?php print $title ?></h3>
@@ -31,9 +32,10 @@
 		</ul>
 	</div>
 </div>
-<?php if($imagen!='') { ?>
-<img class="img-responsive" src="<?php print '/'.$pathfile.'blog/'.$imagen ?>" alt="#">
-<?php } ?>
+<?php if($imagen!='') : ?>
+<!-- <img class="img-responsive" src="<?php print '/'.$pathfile.'blog/'.$imagen ?>" alt="#"> -->
+<img class="img-responsive" src="<?php print file_create_url($imagen); ?>" />
+<?php endif ?>
 <h3 class="lead"><?php //print $title ?></h3>
 <p><?php print $cuerpo ?></p>
 
