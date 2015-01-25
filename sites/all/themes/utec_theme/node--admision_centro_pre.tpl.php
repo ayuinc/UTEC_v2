@@ -51,9 +51,9 @@ $modalida_ext_int = $node->field_modalidad_extensiva_intens['und']['0']['value']
 	            <div class="size xl">
 	              <i class="icon-carreras-que-es text-white"></i>
 	              <?php if ($language->language == 'en'): ?>
-	              <a href="/en/methods-of-admission/pre-university-center/about" class="btn btn-white btn-outline see-more mt-7"><?php print t('See more') ?></a>
+	              <a href="/en/methods-of-admission/pre-university-center/about" class="bold uppercase btn btn-white btn-outline see-more mt-7"><?php print t('See more') ?></a>
 	              <?php elseif ($language->language  != 'en'): ?>
-	              <a href="/modalidades-de-admision/centro-pre/acerca-del-centro-pre" class="btn btn-white btn-outline see-more mt-7"><?php print t('See more') ?></a>
+	              <a href="/modalidades-de-admision/centro-pre/acerca-del-centro-pre" class="bold uppercase btn btn-white btn-outline see-more mt-7"><?php print t('See more') ?></a>
 	              <?php endif ?>
 	            </div>
 	          </div>
