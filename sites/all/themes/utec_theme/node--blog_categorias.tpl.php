@@ -20,15 +20,25 @@ global $language;
 		</div>
 		<ul class="categories-list">
 			<?php 
+
 				$term = taxonomy_vocabulary_machine_name_load('blog_tags');
 				$vid = $term->vid;
-				$terms = taxonomy_get_tree($vid);
-				kpr($terms);
+				$tree = taxonomy_get_tree($vid);
 			?>
-			<?php foreach ($terms as $term): ?>
-				<?php $name = $term->name; ?>
-				<?php $tid = $term->tid; ?>
-		    <li><a href="/blog-tags/<?php print $term->name; ?>"><?php print $name ?></a></li>
+			<?php foreach ($tree as $term): ?>
+				<?php if (module_exists('i18n_taxonomy')) : ?> 
+			    <?php $term = i18n_taxonomy_localize_terms($term); ?>
+					<?php $name = $term->name; ?>
+					<?php $tid = $term->tid; ?>
+					<?php if ($language->language != 'en'): ?>
+						espaniol
+				    <li><a href="/blog-tags/<?php print $term->name; ?>"><?php print $name ?></a></li>
+					<?php elseif ($language->language == 'en'): ?>
+						ingles
+				    <li><a href="/blog-tags/<?php print $term->name; ?>"><?php print $name ?></a></li>
+					<?php endif ?>
+					<?php kpr($term); ?>
+			  <?php endif ?>
 			<?php endforeach; ?>
 		</ul>
 	</div>
