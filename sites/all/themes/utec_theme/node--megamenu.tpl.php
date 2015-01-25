@@ -187,7 +187,7 @@
 						</li>
 						<li>
 							<?php if ($language->language  != 'en'): ?>
-								<a href="/vida-estudiantil"><span>Vida Estudiantil</a>
+								<a href="/vida-estudiantil"><span>Vida Estudiantil</span></a>
 							<?php elseif ($language->language == 'en'): ?>
 								<a href="/<?php print $language->language ?>/student-life"><span>Student Life</span></a>
 							<?php endif ?>
