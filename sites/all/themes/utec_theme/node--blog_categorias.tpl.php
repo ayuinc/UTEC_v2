@@ -29,6 +29,7 @@ global $language;
 				$translated_term = i18n_taxonomy_term_get_translation($term2, $langcode);
 				
 				kpr($translated_term);
+				kpr($term);
 			?>
 			<?php foreach ($terms as $term): ?>
 				<?php $name = $term->name; ?>
