@@ -50,7 +50,7 @@
 							</li>
 						<?php elseif ($language->language == 'en'): ?>
 							<li class="pt-7">
-								<a href="/en/contact" class="text-gray atm-contacto"><?php print t('Contact us') ?></a>
+								<a href="/en/contact-us" class="text-gray atm-contacto"><?php print t('Contact us') ?></a>
 							</li>
 							<li class="pt-7">
 								<a href="/en/utec-blog" class="text-gray atm-blog">Blog</a>
