@@ -17,7 +17,7 @@
   <h3><?php print $cuerpo ?></h3>
   <div class="pv-ch-42">
     <div>
-      <ul class="grid-list grid-list-3 grid-list-hover size sm">
+      <ul class="grid-list grid-list-2 grid-list-1-xs isotope-grid grid-list-hover size sm">
         <?php foreach ($fids as $fid) : ?>
           <?php 
           // print_r($fid['value']);

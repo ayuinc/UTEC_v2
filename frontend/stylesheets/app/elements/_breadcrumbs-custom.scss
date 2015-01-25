@@ -1,14 +1,17 @@
 // BREADCRUMBS
 .breadcrumbs-custom {
 	@include position(absolute, null 0 -70px 0);
-	z-index: 10;
+	z-index: 9000;
 	.breadcrumb {
 		li {
-			text-transform: uppercase;
+			text-transform: capitalize;
 			a {
 				color: white;
 				&:hover {
 
+				}
+				&.active {
+					color: $brand-primary;
 				}
 			}
 			&.active {
