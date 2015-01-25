@@ -36,7 +36,7 @@
 	</div>
 	<div>
 		<h3 class="bold text-gray"><?php print $titulo ?></h3>
-		<h4><?php print $sub_titulo ?></h4>
+		<p><?php print $sub_titulo ?></p>
 	</div>
 </li>
 
