@@ -14,7 +14,7 @@
 <div class="container-sm">
 	<h1 class="light"><?php print $titulo ?></h1>
 	<div class="separator-gray separator-sm"></div>
-	<div class="lead-ch p-ch-gray">
+	<div class="p-ch-gray-dark">
 		<div id="carousel-custom" class="carousel carousel-custom slide mb-42" data-ride="carousel">
 			<!-- Wrapper for slides -->
 		  <div class="carousel-inner" role="listbox">
