@@ -187,9 +187,9 @@
 						</li>
 						<li>
 							<?php if ($language->language  != 'en'): ?>
-								<a href="/vida-estudiantil"><span>Vida Estudiantil</span></a>
+								<a href="/vida-estudiantil"><span>Vida</span> Estudiantil</a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/student-life"><span>Student Life</span></a>
+								<a href="/<?php print $language->language ?>/student-life"><span>Student</span> Life</a>
 							<?php endif ?>
 						</li>
 						<li>
@@ -401,7 +401,7 @@
 								</a>
 							<?php elseif ($language->language == 'en'): ?>
 								<a href="/<?php print $language->language ?>/methods-of-admission">
-								<span>Admissions</span>
+								Admissions
 								</a>
 							<?php endif ?>
 						</li>
@@ -463,7 +463,7 @@
 								</a>
 							<?php elseif ($language->language == 'en'): ?>
 								<a href="/<?php print $language->language ?>/career-guidance-and-orientation">
-								<span>Guidance</span>
+								Guidance
 								</a>
 							<?php endif ?>
 						</li>
@@ -509,7 +509,7 @@
 								</a>
 							<?php elseif ($language->language == 'en'): ?>
 								<a href="/<?php print $language->language ?>/alliances">
-								<span>Alliances</span>
+								Alliances
 								</a>
 							<?php endif ?>							
 						</li>
@@ -699,9 +699,9 @@
 						</li>
 						<li>
 							<?php if ($language->language  != 'en'): ?>
-								<a href="/vida-estudiantil"><span>Vida Estudiantil</a>
+								<a href="/vida-estudiantil"><span>Vida</span> Estudiantil</a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/student-life"><span>Student Life</span></a>
+								<a href="/<?php print $language->language ?>/student-life"><span>Student</span> Life</a>
 							<?php endif ?>
 						</li>
 						<li>
@@ -913,7 +913,7 @@
 								</a>
 							<?php elseif ($language->language == 'en'): ?>
 								<a href="/<?php print $language->language ?>/methods-of-admission">
-								<span>Admissions</span>
+								Admissions
 								</a>
 							<?php endif ?>
 						</li>
@@ -975,7 +975,7 @@
 								</a>
 							<?php elseif ($language->language == 'en'): ?>
 								<a href="/<?php print $language->language ?>/career-guidance-and-orientation">
-								<span>Guidance</span>
+								Guidance
 								</a>
 							<?php endif ?>
 						</li>
@@ -1021,7 +1021,7 @@
 								</a>
 							<?php elseif ($language->language == 'en'): ?>
 								<a href="/<?php print $language->language ?>/alliances">
-								<span>Alliances</span>
+								Alliances
 								</a>
 							<?php endif ?>							
 						</li>
