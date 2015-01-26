@@ -83,6 +83,10 @@
       $siteWrapper.removeClass('menu-on');
       $('a', $navDisplayShrinkTriggers).removeClass('active');
     });
+    $headerScene.addIndicators({
+      zindex: 1000,
+      suffix: '1'
+    });
   });
 
 }).call(this);
