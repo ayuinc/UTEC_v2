@@ -21,7 +21,12 @@
 
 	//kpr($fields);
 ?>
-<li class="banner size sm" data-href="<?php print $path ?>">
+<?php $path_i18 = drupal_get_path_alias($path, $language->language); ?>
+<?php if ($language->language != 'en'): ?>
+<li class="banner size sm" data-href="<?php print $path_i18; ?>">
+<?php elseif ($language->language == 'en'): ?>
+<li class="banner size sm" data-href="<?php print '/'.$language->language.'/'.$path_i18; ?>">
+<?php endif ?>
 	<div class="banner-pic" style="background-image: url(<?php print $image ?>);"></div>
 	<div class="banner-content">
 		<div>
@@ -32,14 +37,6 @@
 		<div class="flex-space-between mt-14">
 			<div class="left">
 				<a href="<?php print $path ?>" class="btn btn-sm btn-primary btn-outline see-more">Leer más</a>
-			</div>
-			<div class="right">
-				<ul class="social-links">
-					<li><a href="#" class="icon-footer-facebook"></a></li>
-					<li><a href="#" class="icon-footer-twitter"></a></li>
-					<li><a href="#" class="icon-footer-email"></a></li>
-					<li><a href="#" class="icon-footer-plus"></a></li>
-				</ul>
 			</div>
 		</div>
 	</div>
