@@ -1,6 +1,7 @@
 <?php 
   global $base_url;
   global $theme_path;
+  global $language;
   $path = $base_url.'/'.$theme_path;
   $pathfile= variable_get('file_public_path', conf_path() . '/files/');
 
@@ -29,7 +30,7 @@
   $nodo_id = $node->field_menu_edp_detalles['und']['0']['entity']->nid;
 	
 	$detalles = $node->field_menu_edp_detalles['und'];
-  kpr($node);
+  //kpr($node);
 ?>
 
 
