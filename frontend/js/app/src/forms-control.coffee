@@ -17,14 +17,14 @@ $(document).ready ->
 
 		if $bodyForm.valid()
 			$('body').addClass('form-on-submit').append(overlayTempl)
-			var formulario = $('input[name=origen]')[0].value;
+			formulario = $('input[name=origen]')[0].value
 
-			var dataLayer = dataLayer || [];
+			dataLayer = dataLayer || []
 			dataLayer.push({
-			    'event': 'formSubmit',
-			    'form': formulario,
-			    'estado': 'Success'
-			});			
+		    event: 'formSubmit'
+		    form: formulario
+		    estado: 'Success'
+		  })
 		return
 	)
 
