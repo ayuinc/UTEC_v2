@@ -19,6 +19,10 @@
     <li>
       <a href="#mobile-nav-display-6" class="atm-menu-principal-movil"><?php print t('SPD') ?></a>
     </li>
+		<li>
+			<?php print block_render('locale', 'language'); ?>
+			<!-- <a href="/en" class="btn btn-xs btn-custom btn-gray" rel="nofollow">EN</a> -->
+		</li>    
   </ul>
 </div>
 <div class="mobile-nav-display" id="mobile-nav-display-1">
