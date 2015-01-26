@@ -15,11 +15,14 @@
 	$lugar = $node->field_lugar['und']['0']['value'];		 		
   $obejtivos = $node->field_objetivos['und']['0']['value'];	
   $dirigido = $node->field_dirigido_a['und']['0']['value'];	
-  $profesor_name = $node->field_profesor['und']['0']['entity']->name;
-  $profesor_id = $node->field_profesor['und']['0']['entity']->uid;
-  $profesor_cargo = $node->field_profesor['und']['0']['entity']->field_descripci_n['und']['0']['value'];
-  $profesor_resenia = $node->field_profesor['und']['0']['entity']->field_rese_a['und']['0']['value'];
-  $profesor_pic = $node->field_profesor['und']['0']['entity']->picture->filename;
+
+  $profesores = $node->field_profesor['und']
+
+  // $profesor_name = $node->field_profesor['und']['0']['entity']->name;
+  // $profesor_id = $node->field_profesor['und']['0']['entity']->uid;
+  // $profesor_cargo = $node->field_profesor['und']['0']['entity']->field_descripci_n['und']['0']['value'];
+  // $profesor_resenia = $node->field_profesor['und']['0']['entity']->field_rese_a['und']['0']['value'];
+  // $profesor_pic = $node->field_profesor['und']['0']['entity']->picture->filename;
 
   $field_requisito = $node->field_requisito['und']['0']['value'];
   $field_temario = $node->field_temario['und']['0']['value'];
@@ -95,27 +98,36 @@
 			</div>
 		</div>
 		<?php } ?>
-		<div>
-			<?php if($profesor_name) : ?>
-			<h3><?php print t('Faculty:') ?></h3>
-			<div class="list-custom-left">
-				<ul>
-					<?php if ($profesor_pic) : ?>
-					<li class="text-center" class="pic">
-						<div class="grid-list-pic"><img src="<?php print '/'.$pathfile.'pictures/'.$profesor_pic; ?>" alt="" width="98px" height="auto" class="img-circle"></div>
-					</li>
-					<?php endif  ?>
-					<li class="pl-21 text-gray">
-						<div class="mb-7">
-							<a href="/user/<?php print $profesor_id ?>" class="thin h3 text-hover-primary"><?php print $profesor_name ?></a>
-							<span><?php print $profesor_cargo ?></span>
-						</div>
-						<?php print $profesor_resenia ?>
-					</li>
-				</ul>
+			<?php foreach ($profesores as $key => $profesor) : ?>
+			<?php 
+				  $profesor_name = $profesor['entity']->name;
+				  $profesor_id = $profesor['entity']->uid;
+				  $profesor_cargo = $profesor['entity']->field_descripci_n['und']['0']['value'];
+				  $profesor_resenia = $profesor['entity']->field_rese_a['und']['0']['value'];
+				  $profesor_pic = $profesor['entity']->picture->filename;
+			?>
+			<div>
+				<?php if($profesor_name) : ?>
+				<h3><?php print t('Faculty:') ?></h3>
+				<div class="list-custom-left">
+					<ul>
+						<?php if ($profesor_pic) : ?>
+						<li class="text-center" class="pic">
+							<div class="grid-list-pic"><img src="<?php print '/'.$pathfile.'pictures/'.$profesor_pic; ?>" alt="" width="98px" height="auto" class="img-circle"></div>
+						</li>
+						<?php endif  ?>
+						<li class="pl-21 text-gray">
+							<div class="mb-7">
+								<a href="/user/<?php print $profesor_id ?>" class="thin h3 text-hover-primary"><?php print $profesor_name ?></a>
+								<span><?php print $profesor_cargo ?></span>
+							</div>
+							<?php print $profesor_resenia ?>
+						</li>
+					</ul>
+				</div>
+				<?php endif; ?>
 			</div>
-			<?php endif; ?>
-		</div>
+			<?php endforeach; ?>
 		<div>
 			<ul class="grid-list grid-list-5 grid-list-1-xs grid-list-hover grid-list-hover-gray-lighter grid-list-centered size xs">
 				<?php foreach ($detalles as $key => $detalle) : ?>
@@ -126,7 +138,7 @@
 						<?php $nid = $detalle['entity']->nid;?>
 						<?php $path = drupal_get_path_alias('node/'.$nid, $language->language); ?>
 						<?php if ($language->language != 'en'): ?>
-						<li data-href="/<?php print $path; ?>">
+						<li data-href="<?php print $path; ?>">
 						<?php elseif ($language->language == 'en'): ?>
 						<li data-href="<?php print '/'.$language->language.'/'.$path; ?>">
 						<?php endif ?>
@@ -142,7 +154,7 @@
 						<?php $nid = $detalle['entity']->nid;?>
 						<?php $path = drupal_get_path_alias('node/'.$nid, $language->language); ?>
 						<?php if ($language->language != 'en'): ?>
-						<li data-href="/<?php print $path; ?>">
+						<li data-href="<?php print $path; ?>">
 						<?php elseif ($language->language == 'en'): ?>
 						<li data-href="<?php print '/'.$language->language.'/'.$path; ?>">
 						<?php endif ?>
@@ -158,7 +170,7 @@
 						<?php $nid = $detalle['entity']->nid;?>
 						<?php $path = drupal_get_path_alias('node/'.$nid, $language->language); ?>
 						<?php if ($language->language != 'en'): ?>
-						<li data-href="/<?php print $path; ?>">
+						<li data-href="<?php print $path; ?>">
 						<?php elseif ($language->language == 'en'): ?>
 						<li data-href="<?php print '/'.$language->language.'/'.$path; ?>">
 						<?php endif ?>
@@ -174,7 +186,7 @@
 						<?php $nid = $detalle['entity']->nid;?>
 						<?php $path = drupal_get_path_alias('node/'.$nid, $language->language); ?>
 						<?php if ($language->language != 'en'): ?>
-						<li data-href="/<?php print $path; ?>">
+						<li data-href="<?php print $path; ?>">
 						<?php elseif ($language->language == 'en'): ?>
 						<li data-href="<?php print '/'.$language->language.'/'.$path; ?>">
 						<?php endif ?>
@@ -190,7 +202,7 @@
 						<?php $nid = $detalle['entity']->nid;?>
 						<?php $path = drupal_get_path_alias('node/'.$nid, $language->language); ?>
 						<?php if ($language->language != 'en'): ?>
-						<li data-href="/<?php print $path; ?>">
+						<li data-href="<?php print $path; ?>">
 						<?php elseif ($language->language == 'en'): ?>
 						<li data-href="<?php print '/'.$language->language.'/'.$path; ?>">
 						<?php endif ?>
