@@ -330,7 +330,7 @@
 				<span>Convenios de </span>Intercambio
 				</a>
 			<?php elseif ($language->language == 'en'): ?>
-				<a href="/<?php print $language->language ?>/alliances/exchange">
+				<a href="/<?php print $language->language ?>/alliances">
 				<span>Alliances</span>
 				</a>
 			<?php endif ?>							
