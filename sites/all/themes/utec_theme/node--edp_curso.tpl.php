@@ -123,58 +123,78 @@
 					?>
 					<?php if ($tid == '88') :?>
 						<?php $nid = $detalle['entity']->nid;?>
-					<li data-href="<?php print '/node/'.$nid ?>">
-						<div>
-							<div class="size sm">
-								<i class="text-primary icon-admisiones-primeros-puestos"></i>
+						<?php if ($language->language != 'en'): ?>
+						<li data-href="<?php print '/node/'.$nid ?>">
+						<?php elseif ($language->language == 'en'): ?>
+						<li data-href="<?php print '/'.$language->language.'/node/'.$nid ?>">
+						<?php endif ?>
+							<div>
+								<div class="size sm">
+									<i class="text-primary icon-admisiones-primeros-puestos"></i>
+								</div>
+								<small class="thin text-primary"><?php print t('Requirements') ?></small>
 							</div>
-							<small class="thin text-primary"><?php print t('Requirements') ?></small>
-						</div>
-					</li>
+						</li>
 					<?php endif; ?>
 					<?php if ($tid == '90') :?>
 						<?php $nid = $detalle['entity']->nid;?>
-					<li data-href="<?php print '/node/'.$nid ?>">
-						<div>
-							<div class="size sm">
-								<i class="text-primary icon-admisiones-alto-rendimiento"></i>
+						<?php if ($language->language != 'en'): ?>
+						<li data-href="<?php print '/node/'.$nid ?>">
+						<?php elseif ($language->language == 'en'): ?>
+						<li data-href="<?php print '/'.$language->language.'/node/'.$nid ?>">
+						<?php endif ?>
+							<div>
+								<div class="size sm">
+									<i class="text-primary icon-admisiones-alto-rendimiento"></i>
+								</div>
+								<small class="thin text-primary"><?php print t('Agenda') ?></small>
 							</div>
-							<small class="thin text-primary"><?php print t('Agenda') ?></small>
-						</div>
-					</li>
+						</li>
 					<?php endif; ?>
 					<?php if ($tid == '92') :?>
 						<?php $nid = $detalle['entity']->nid;?>
-					<li data-href="<?php print '/node/'.$nid ?>">
-						<div>
-							<div class="size sm">
-								<i class="text-primary icon-admisiones-traslado"></i>
+						<?php if ($language->language != 'en'): ?>
+						<li data-href="<?php print '/node/'.$nid ?>">
+						<?php elseif ($language->language == 'en'): ?>
+						<li data-href="<?php print '/'.$language->language.'/node/'.$nid ?>">
+						<?php endif ?>
+							<div>
+								<div class="size sm">
+									<i class="text-primary icon-admisiones-traslado"></i>
+								</div>
+								<small class="thin text-primary"><?php print t('Sign up') ?></small>
 							</div>
-							<small class="thin text-primary"><?php print t('Sign up') ?></small>
-						</div>
-					</li>
+						</li>
 					<?php endif; ?>
 					<?php if ($tid == '91') :?>
 						<?php $nid = $detalle['entity']->nid;?>
-					<li data-href="<?php print '/node/'.$nid ?>">
-						<div>
-							<div class="size sm">
-								<i class="text-primary icon-admisiones-centro-pre"></i>
+						<?php if ($language->language != 'en'): ?>
+						<li data-href="<?php print '/node/'.$nid ?>">
+						<?php elseif ($language->language == 'en'): ?>
+						<li data-href="<?php print '/'.$language->language.'/node/'.$nid ?>">
+						<?php endif ?>
+							<div>
+								<div class="size sm">
+									<i class="text-primary icon-admisiones-centro-pre"></i>
+								</div>
+								<small class="thin text-primary"><?php print t('Contact us') ?></small>
 							</div>
-							<small class="thin text-primary"><?php print t('Contact us') ?></small>
-						</div>
-					</li>
+						</li>
 					<?php endif; ?>
 					<?php if ($tid == '89') :?>
 						<?php $nid = $detalle['entity']->nid;?>
-					<li data-href="<?php print '/node/'.$nid ?>">
-						<div>
-							<div class="size sm">
-								<i class="text-primary icon-admisiones-bachillerato"></i>
+						<?php if ($language->language != 'en'): ?>
+						<li data-href="<?php print '/node/'.$nid ?>">
+						<?php elseif ($language->language == 'en'): ?>
+						<li data-href="<?php print '/'.$language->language.'/node/'.$nid ?>">
+						<?php endif ?>
+							<div>
+								<div class="size sm">
+									<i class="text-primary icon-admisiones-bachillerato"></i>
+								</div>
+								<small class="thin text-primary"><?php print t('Brochure') ?></small>
 							</div>
-							<small class="thin text-primary"><?php print t('Brochure') ?></small>
-						</div>
-					</li>
+						</li>
 					<?php endif; ?>
 				<?php endforeach; ?>
 			</ul>
