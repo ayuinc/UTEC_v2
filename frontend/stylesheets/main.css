@@ -7183,7 +7183,7 @@ body.form-on-submit {
 
 .body .header-trigger {
   position: absolute;
-  top: 140px;
+  top: 230px;
   right: 0;
   left: 0; }
 
@@ -7412,9 +7412,9 @@ body.form-on-submit {
         color: #191919;
         font-size: 14px; }
       .site-menu .mobile-nav-display > ul li:nth-child(odd) {
-        background-color: #e3e3e3; }
-      .site-menu .mobile-nav-display > ul li:nth-child(even) {
         background-color: #f1f1f1; }
+      .site-menu .mobile-nav-display > ul li:nth-child(even) {
+        background-color: #e3e3e3; }
 
 .site-wrapper.menu-on .site-menu {
   -webkit-transform: translateX(0px);

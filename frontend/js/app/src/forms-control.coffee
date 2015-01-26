@@ -13,11 +13,16 @@ $(document).ready ->
 								'</div>' +
 								'</div>'
 
-	$bodyForm.on('submit', (e)->
 
+	$bodyForm.on('submit', (e)->
 		if $bodyForm.valid()
 			$('body').addClass('form-on-submit').append(overlayTempl)
-
+			formulario = $('input[name=origen]')[0].value
+			dataLayer.push({
+		    event: 'formSubmit'
+		    form: formulario
+		    estado: 'Success'
+		  })
 		return
 	)
 
@@ -27,32 +32,5 @@ $(document).ready ->
 		$('body').removeClass('form-on-submit')
 		return
 	)
-	# $bodyForm.on('submit', (e)->
-	# # 	# (e).preventDefault()
-	# 	if($bodyForm.valid())
-	# 		$('body').addClass('form-on-submit').append(overlayTempl)
-	# # 	setTimeout(()->
-	# # 		if (!$('.errordiv label').length > 0)
-	# # 			$('body').addClass('form-on-submit').append(overlayTempl)
-	# # 			checkDOMChange()
-	# # 		else
-	# # 			console.log('Errordiv not empty')
-	# # 		return
-	# # 	, 500)
-	# # 	# $button.append('<span class="spinner animated rotateIn infinite icon-spinner9"></span>')
-	# 	return
-	# 	# )
-
-
-	# checkDOMChange = ()->
-	# 	setTimeout(()->
-			# $('.form-overlay-close').click((e)->
-			# 	# e.preventDefault()
-			# 	$('.form-overlay').remove()
-			# 	$('body').removeClass('form-on-submit')
-			# 	return
-			# 	)
-			# return
-	# 	, 1000)
 
 	return

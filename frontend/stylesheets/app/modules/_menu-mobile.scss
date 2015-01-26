@@ -73,10 +73,10 @@
 					}
 				}
 				&:nth-child(odd) {
-					background-color: $gray-light;
+					background-color: $gray-lighter;
 				}
 				&:nth-child(even) {
-					background-color: $gray-lighter;
+					background-color: $gray-light;
 				}
 			}
 		}

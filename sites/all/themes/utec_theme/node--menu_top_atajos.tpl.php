@@ -22,7 +22,12 @@
         <?php if($node->nid == "717" || $node->nid == "914") : ?>  
           <?php
             $subnode = node_load(749);
-            $subtitulo = $subnode->title;
+            
+            if ($language->language == 'en')
+              $subtitulo = $subnode->field_title_ingles['und']['0']['value'];
+            else
+              $subtitulo = $subnode->title;
+
             $subcuerpo = $subnode->body['und']['0']['value'];
             $subfids   = $subnode->field_menu_top_campos['und'];                 
           ?>

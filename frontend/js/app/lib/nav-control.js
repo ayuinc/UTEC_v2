@@ -9,15 +9,21 @@
     $navDisplayClose = $('.nav-display-close');
     $mobileNavDisplayTriggers = $('.mobile-nav-display-triggers');
     $navDisplayTriggers.on('click', '[href^=#]', function(e) {
-      var $navRef, $navRefClass;
-      $navRef = $(this).attr('href');
-      $header.attr('class', '');
-      $('a', $navDisplayTriggers).removeClass('active');
-      if ($navRef.length > 0) {
-        e.preventDefault();
-        $(this).addClass('active');
-        $navRefClass = $navRef.slice(1);
-        $header.addClass('display ' + $navRefClass);
+      var $navRef, $topNavRefClass, $triggeredAnchor;
+      e.preventDefault();
+      if ($(this).hasClass('active')) {
+        $(this).removeClass('active');
+        $header.attr('class', '');
+      } else {
+        $navRef = $(this).attr('href');
+        $('a', $navDisplayTriggers).removeClass('active');
+        if ($navRef.length > 0) {
+          $header.attr('class', '');
+          $(this).addClass('active');
+          $topNavRefClass = $navRef.slice(1);
+          $triggeredAnchor = $topNavRefClass;
+          $header.addClass('display ' + $topNavRefClass);
+        }
       }
     });
     $navDisplayClose.click(function(e) {
@@ -30,7 +36,6 @@
       var $navRef, $navRefClass;
       $navRef = $(this).attr('href');
       $mobileNavRefGlobal = $navRef.slice(1);
-      console.log($mobileNavRefGlobal);
       if ($navRef.length > 0) {
         e.preventDefault();
         $navRefClass = $navRef.slice(1);
@@ -49,14 +54,19 @@
     $headerScrollController = new ScrollMagic();
     $navDisplayShrinkTriggers.on('click', '[href^=#]', function(e) {
       var $navRef, $navRefClass;
-      $navRef = $(this).attr('href');
-      $headerSm.attr('class', '');
-      $('a', $navDisplayShrinkTriggers).removeClass('active');
-      if ($navRef.length > 0) {
-        e.preventDefault();
-        $(this).addClass('active');
-        $navRefClass = $navRef.slice(1);
-        $headerSm.addClass('display ' + $navRefClass);
+      e.preventDefault();
+      if ($(this).hasClass('active')) {
+        $(this).removeClass('active');
+        $headerSm.attr('class', '');
+      } else {
+        $navRef = $(this).attr('href');
+        $('a', $navDisplayShrinkTriggers).removeClass('active');
+        if ($navRef.length > 0) {
+          $headerSm.attr('class', '');
+          $(this).addClass('active');
+          $navRefClass = $navRef.slice(1);
+          $headerSm.addClass('display ' + $navRefClass);
+        }
       }
     });
     $navDisplayShrinkClose.click(function(e) {
