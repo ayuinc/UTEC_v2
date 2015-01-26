@@ -6,11 +6,10 @@
     $bodyForm = $('.body form');
     overlayTempl = '<div class="form-overlay">' + '<div>' + '<a href="#" class="form-overlay-close">X</a>' + '<h3>Procesando información</h3>' + '<div class="mt-42">' + '<span class="spinner animated rotateIn infinite icon-spinner9"></span>' + '</div>' + '</div>' + '</div>';
     $bodyForm.on('submit', function(e) {
-      var dataLayer, formulario;
+      var formulario;
       if ($bodyForm.valid()) {
         $('body').addClass('form-on-submit').append(overlayTempl);
         formulario = $('input[name=origen]')[0].value;
-        dataLayer = dataLayer || [];
         dataLayer.push({
           event: 'formSubmit',
           form: formulario,
