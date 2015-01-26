@@ -10,13 +10,18 @@ $(document).ready ->
 
 	$navDisplayTriggers.on('click', '[href^=#]', (e)->
 		e.preventDefault()
-		$navRef = $(this).attr('href')
-		$header.attr('class', '')
-		$('a', $navDisplayTriggers).removeClass('active')
-		if $navRef.length > 0
-			$(this).addClass('active')
-			$navRefClass = $navRef.slice(1)
-			$header.toggleClass('display ' + $navRefClass)
+		if $(this).hasClass 'active'
+			$(this).removeClass 'active'
+			$header.attr('class', '')
+		else
+			$navRef = $(this).attr('href')
+			$('a', $navDisplayTriggers).removeClass('active')
+			if $navRef.length > 0
+				$header.attr('class', '')
+				$(this).addClass('active')
+				$topNavRefClass = $navRef.slice(1)
+				$triggeredAnchor = $topNavRefClass
+				$header.addClass('display ' + $topNavRefClass)
 		return
 		)
 
@@ -32,12 +37,8 @@ $(document).ready ->
 	$mobileNavDisplayTriggers.on('click', '[href^=#]', (e)->
 		$navRef = $(this).attr('href')
 		$mobileNavRefGlobal = $navRef.slice(1)
-		console.log $mobileNavRefGlobal
-		# $siteWrapper.attr('class', '')
-		# $('a', $mobileNavDisplayTriggers).removeClass('active')
 		if $navRef.length > 0
 			e.preventDefault()
-			# $(this).addClass('active')
 			$navRefClass = $navRef.slice(1)
 			$siteWrapper.addClass('display ' + $navRefClass)
 		return
@@ -57,14 +58,18 @@ $(document).ready ->
 	$headerScrollController = new ScrollMagic()
 
 	$navDisplayShrinkTriggers.on('click', '[href^=#]', (e)->
-		$navRef = $(this).attr('href')
-		$headerSm.attr('class', '')
-		$('a', $navDisplayShrinkTriggers).removeClass('active')
-		if $navRef.length > 0
-			e.preventDefault()
-			$(this).addClass('active')
-			$navRefClass = $navRef.slice(1)
-			$headerSm.addClass('display ' + $navRefClass)
+		e.preventDefault()
+		if $(this).hasClass 'active'
+			$(this).removeClass 'active'
+			$headerSm.attr('class', '')
+		else
+			$navRef = $(this).attr('href')
+			$('a', $navDisplayShrinkTriggers).removeClass('active')
+			if $navRef.length > 0
+				$headerSm.attr('class', '')
+				$(this).addClass('active')
+				$navRefClass = $navRef.slice(1)
+				$headerSm.addClass('display ' + $navRefClass)
 		return
 		)
 
