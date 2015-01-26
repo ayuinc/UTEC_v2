@@ -170,5 +170,12 @@
 	  'every_page' => TRUE,
 	  'weight' => 18,
 	));	
+	
+	drupal_add_js(path_to_theme() . '/js/app/lib/tickerscrambler_en.js', array(
+	  'scope' => 'footer',
+	  'group' => JS_THEME,
+	  'every_page' => TRUE,
+	  'weight' => 18,
+	));		
 
 ?>
