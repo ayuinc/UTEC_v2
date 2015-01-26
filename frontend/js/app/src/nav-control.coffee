@@ -98,7 +98,7 @@ $(document).ready ->
 		$('a', $navDisplayShrinkTriggers).removeClass('active')
 		return
 		)
-	$headerScene.addIndicators({zindex: 1000, suffix: '1'})
+	# $headerScene.addIndicators({zindex: 1000, suffix: '1'})
 
 
 	return
