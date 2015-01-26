@@ -98,6 +98,7 @@
 			</div>
 		</div>
 		<?php } ?>
+			<div><h3><?php print t('Faculty:') ?></h3></div>
 			<?php foreach ($profesores as $key => $profesor) : ?>
 			<?php 
 				  $profesor_name = $profesor['entity']->name;
@@ -108,7 +109,6 @@
 			?>
 			<div>
 				<?php if($profesor_name) : ?>
-				<h3><?php print t('Faculty:') ?></h3>
 				<div class="list-custom-left">
 					<ul>
 						<?php if ($profesor_pic) : ?>
