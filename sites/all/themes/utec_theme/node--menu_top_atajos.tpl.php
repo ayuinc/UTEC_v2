@@ -24,7 +24,7 @@
             $subnode = node_load(749);
             
             if ($language->language == 'en')
-              $subtitulo = $subnode->title_ingles['und']['0']['value'];
+              $subtitulo = $subnode->field_title_ingles['und']['0']['value'];
             else
               $subtitulo = $subnode->title;
 
