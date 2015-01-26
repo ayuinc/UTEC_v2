@@ -27,12 +27,9 @@
   $field_brochure = $node->field_brochure['und']['0']['value'];
 
   $nodo_id = $node->field_menu_edp_detalles['und']['0']['entity']->nid;
-  $nodo_id = $node->field_menu_edp_detalles['und']['0']['entity']->nid;
-  $nodo_id = $node->field_menu_edp_detalles['und']['0']['entity']->nid;
-  $nodo_id = $node->field_menu_edp_detalles['und']['0']['entity']->nid;
 	
 	$detalles = $node->field_menu_edp_detalles['und'];
-  //kpr($node);
+  kpr($node);
 ?>
 
 
