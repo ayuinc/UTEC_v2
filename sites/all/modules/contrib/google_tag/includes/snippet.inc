@@ -28,6 +28,9 @@ function google_tag_page_process(&$children, $elements) {
 EOS;
   $script = <<<EOS
 <script type="text/javascript">
+
+var dataLayer = [];
+
 (function(w,d,s,l,i){
 
   w[l]=w[l]||[];

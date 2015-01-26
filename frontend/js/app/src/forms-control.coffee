@@ -18,8 +18,6 @@ $(document).ready ->
 		if $bodyForm.valid()
 			$('body').addClass('form-on-submit').append(overlayTempl)
 			formulario = $('input[name=origen]')[0].value
-
-			dataLayer = dataLayer || []
 			dataLayer.push({
 		    event: 'formSubmit'
 		    form: formulario
