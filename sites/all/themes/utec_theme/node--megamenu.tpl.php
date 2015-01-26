@@ -8,29 +8,29 @@
 				<ul class=" thin text-gray mr-ch-14 nav-list pt-7">
 					<?php if ($language->language != 'en'): ?>
 						<li>
-							<a href="/enlaces-rapidos/estudiantes" class="atm-menu-superior"><?php print t('Students') ?></a>  
+							<a href="/enlaces-rapidos/estudiantes" class="atm-menu-superior text-hover-primary"><?php print t('Students') ?></a>  
 						</li>
 						<li>
-							<a href="/enlaces-rapidos/profesores" class="atm-menu-superior"><?php print t('Faculty') ?></a>
+							<a href="/enlaces-rapidos/profesores" class="atm-menu-superior text-hover-primary"><?php print t('Faculty') ?></a>
 						</li>
 						<li>
-							<a href="/enlaces-rapidos/empresas" class="atm-menu-superior"><?php print t('Companies') ?></a>
+							<a href="/enlaces-rapidos/empresas" class="atm-menu-superior text-hover-primary"><?php print t('Companies') ?></a>
 						</li>
 						<li>
-							<a href="/enlaces-rapidos/postulantes" class="atm-menu-superior"><?php print t('Applicants') ?></a>
+							<a href="/enlaces-rapidos/postulantes" class="atm-menu-superior text-hover-primary"><?php print t('Applicants') ?></a>
 						</li>
 					<?php elseif ($language->language == 'en'): ?>
 						<li>
-							<a href="/<?php print $language->language ?>/quick-links/students" class="atm-menu-superior"><?php print t('Students') ?></a>
+							<a href="/<?php print $language->language ?>/quick-links/students" class="atm-menu-superior text-hover-primary"><?php print t('Students') ?></a>
 						</li>
 						<li>
-							<a href="/<?php print $language->language ?>/quick-links/faculty" class="atm-menu-superior"><?php print t('Faculty') ?></a>
+							<a href="/<?php print $language->language ?>/quick-links/faculty" class="atm-menu-superior text-hover-primary"><?php print t('Faculty') ?></a>
 						</li>
 						<li>
-							<a href="/<?php print $language->language ?>/quick-links/companies" class="atm-menu-superior"><?php print t('Companies') ?></a>
+							<a href="/<?php print $language->language ?>/quick-links/companies" class="atm-menu-superior text-hover-primary"><?php print t('Companies') ?></a>
 						</li>
 						<li>
-							<a href="/<?php print $language->language ?>/quick-links/applicants" class="atm-menu-superior"><?php print t('Applicants') ?></a>
+							<a href="/<?php print $language->language ?>/quick-links/applicants" class="atm-menu-superior text-hover-primary"><?php print t('Applicants') ?></a>
 						</li>
 					<?php endif ?>
 				</ul>
