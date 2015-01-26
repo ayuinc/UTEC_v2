@@ -187,9 +187,9 @@
 						</li>
 						<li>
 							<?php if ($language->language  != 'en'): ?>
-								<a href="/vida-estudiantil"><span>Vida Estudiantil</span></a>
+								<a href="/vida-estudiantil"><span>Vida</span> Estudiantil</a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/student-life"><span>Student Life</span></a>
+								<a href="/<?php print $language->language ?>/student-life"><span>Student</span> Life</a>
 							<?php endif ?>
 						</li>
 						<li>
@@ -699,9 +699,9 @@
 						</li>
 						<li>
 							<?php if ($language->language  != 'en'): ?>
-								<a href="/vida-estudiantil"><span>Vida Estudiantil</a>
+								<a href="/vida-estudiantil"><span>Vida</span> Estudiantil</a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/student-life"><span>Student Life</span></a>
+								<a href="/<?php print $language->language ?>/student-life"><span>Student</span> Life</a>
 							<?php endif ?>
 						</li>
 						<li>
