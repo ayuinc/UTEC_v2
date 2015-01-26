@@ -13,8 +13,8 @@ $(document).ready ->
 								'</div>' +
 								'</div>'
 
-	$bodyForm.on('submit', (e)->
 
+	$bodyForm.on('submit', (e)->
 		if $bodyForm.valid()
 			$('body').addClass('form-on-submit').append(overlayTempl)
 			formulario = $('input[name=origen]')[0].value
