@@ -16,7 +16,7 @@
   $obejtivos = $node->field_objetivos['und']['0']['value'];	
   $dirigido = $node->field_dirigido_a['und']['0']['value'];	
 
-  $profesores = $node->field_profesor['und']
+  $profesores = $node->field_profesor['und'];
 
   // $profesor_name = $node->field_profesor['und']['0']['entity']->name;
   // $profesor_id = $node->field_profesor['und']['0']['entity']->uid;
