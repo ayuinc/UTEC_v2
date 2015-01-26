@@ -145,7 +145,7 @@
           <ul>
             <li class="title text-gray-lighter"><?php print t('Alliances') ?></li>
             <?php if ($language->language == 'en'): ?>
-            <li><a href="/<?php print $language->language ?>/alliances/exchange" class="atm-menu-inferior"><small><?php print t('Alliances') ?></small></a></li>
+            <li><a href="/<?php print $language->language ?>/alliances" class="atm-menu-inferior"><small><?php print t('Alliances') ?></small></a></li>
             <?php elseif ($language->language != 'en'): ?>
             <li><a href="/convenios-de-intercambio" class="atm-menu-inferior"><small><?php print t('Alliances') ?></small></a></li>
             <?php endif ?>

@@ -8,7 +8,7 @@
 				<ul class=" thin text-gray mr-ch-14 nav-list pt-7">
 					<?php if ($language->language != 'en'): ?>
 						<li>
-							<a href="/enlaces-rapidos/alumnos" class="atm-menu-superior"><?php print t('Students') ?></a>
+							<a href="/enlaces-rapidos/estudiantes" class="atm-menu-superior"><?php print t('Students') ?></a>  
 						</li>
 						<li>
 							<a href="/enlaces-rapidos/profesores" class="atm-menu-superior"><?php print t('Faculty') ?></a>
@@ -508,7 +508,7 @@
 								<span>Convenios de</span>Intercambio
 								</a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/alliances/exchange">
+								<a href="/<?php print $language->language ?>/alliances">
 								<span>Alliances</span>
 								</a>
 							<?php endif ?>							
@@ -1020,7 +1020,7 @@
 								<span>Convenios de</span>Intercambio
 								</a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/alliances/exchange">
+								<a href="/<?php print $language->language ?>/alliances">
 								<span>Alliances</span>
 								</a>
 							<?php endif ?>							
