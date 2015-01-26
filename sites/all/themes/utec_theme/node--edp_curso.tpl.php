@@ -126,7 +126,7 @@
 						<?php $nid = $detalle['entity']->nid;?>
 						<?php $path = drupal_get_path_alias('node/'.$nid, $language->language); ?>
 						<?php if ($language->language != 'en'): ?>
-						<li data-href="<?php print $path; ?>">
+						<li data-href="/<?php print $path; ?>">
 						<?php elseif ($language->language == 'en'): ?>
 						<li data-href="<?php print '/'.$language->language.'/'.$path; ?>">
 						<?php endif ?>
@@ -142,7 +142,7 @@
 						<?php $nid = $detalle['entity']->nid;?>
 						<?php $path = drupal_get_path_alias('node/'.$nid, $language->language); ?>
 						<?php if ($language->language != 'en'): ?>
-						<li data-href="<?php print $path; ?>">
+						<li data-href="/<?php print $path; ?>">
 						<?php elseif ($language->language == 'en'): ?>
 						<li data-href="<?php print '/'.$language->language.'/'.$path; ?>">
 						<?php endif ?>
@@ -158,7 +158,7 @@
 						<?php $nid = $detalle['entity']->nid;?>
 						<?php $path = drupal_get_path_alias('node/'.$nid, $language->language); ?>
 						<?php if ($language->language != 'en'): ?>
-						<li data-href="<?php print $path; ?>">
+						<li data-href="/<?php print $path; ?>">
 						<?php elseif ($language->language == 'en'): ?>
 						<li data-href="<?php print '/'.$language->language.'/'.$path; ?>">
 						<?php endif ?>
@@ -174,7 +174,7 @@
 						<?php $nid = $detalle['entity']->nid;?>
 						<?php $path = drupal_get_path_alias('node/'.$nid, $language->language); ?>
 						<?php if ($language->language != 'en'): ?>
-						<li data-href="<?php print $path; ?>">
+						<li data-href="/<?php print $path; ?>">
 						<?php elseif ($language->language == 'en'): ?>
 						<li data-href="<?php print '/'.$language->language.'/'.$path; ?>">
 						<?php endif ?>
@@ -190,7 +190,7 @@
 						<?php $nid = $detalle['entity']->nid;?>
 						<?php $path = drupal_get_path_alias('node/'.$nid, $language->language); ?>
 						<?php if ($language->language != 'en'): ?>
-						<li data-href="<?php print $path; ?>">
+						<li data-href="/<?php print $path; ?>">
 						<?php elseif ($language->language == 'en'): ?>
 						<li data-href="<?php print '/'.$language->language.'/'.$path; ?>">
 						<?php endif ?>
