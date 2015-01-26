@@ -401,7 +401,7 @@
 								</a>
 							<?php elseif ($language->language == 'en'): ?>
 								<a href="/<?php print $language->language ?>/methods-of-admission">
-								<span>Admissions</span>
+								Admissions
 								</a>
 							<?php endif ?>
 						</li>
@@ -463,7 +463,7 @@
 								</a>
 							<?php elseif ($language->language == 'en'): ?>
 								<a href="/<?php print $language->language ?>/career-guidance-and-orientation">
-								<span>Guidance</span>
+								Guidance
 								</a>
 							<?php endif ?>
 						</li>
@@ -509,7 +509,7 @@
 								</a>
 							<?php elseif ($language->language == 'en'): ?>
 								<a href="/<?php print $language->language ?>/alliances">
-								<span>Alliances</span>
+								Alliances
 								</a>
 							<?php endif ?>							
 						</li>
@@ -913,7 +913,7 @@
 								</a>
 							<?php elseif ($language->language == 'en'): ?>
 								<a href="/<?php print $language->language ?>/methods-of-admission">
-								<span>Admissions</span>
+								Admissions
 								</a>
 							<?php endif ?>
 						</li>
@@ -975,7 +975,7 @@
 								</a>
 							<?php elseif ($language->language == 'en'): ?>
 								<a href="/<?php print $language->language ?>/career-guidance-and-orientation">
-								<span>Guidance</span>
+								Guidance
 								</a>
 							<?php endif ?>
 						</li>
@@ -1021,7 +1021,7 @@
 								</a>
 							<?php elseif ($language->language == 'en'): ?>
 								<a href="/<?php print $language->language ?>/alliances">
-								<span>Alliances</span>
+								Alliances
 								</a>
 							<?php endif ?>							
 						</li>
