@@ -33,7 +33,7 @@
   <?php endif ?>
     <div class="overlay flex-middle">
       <div class="container-sm hero-text" data-href="<?php print $carrera_link ?>">
-        <h2 class="thin h3 text-white mb-7"><?php print t('What is') ?></h2>
+        <h3 class="thin h3 text-white mb-7"><?php print t('What is') ?></h3>
         <h1 class="thin mt-0"><a class="text-white text-hover-primary" href="<?php print $carrera_link ?>"><?php print $titulo ?></a><span class="text-white">?</span></h1>
         <hr class="hr-white">
         <div class="row mt-28">
@@ -60,7 +60,7 @@
     <hr class="hr-gray">
     <div class="row mt-28">
       <div class="col-sm-9">
-        <h2 class="lead thin mb-14 h4"><?php print $malla_titulo ?></h2>
+        <h3 class="lead h2 thin mb-14 h4"><?php print $malla_titulo ?></h3>
         <p clas="font-carreras"><?php print $malla_txt ?></p>
       </div>
       <div class="col-sm-3 hidden-xs">
@@ -87,7 +87,7 @@
         </div>
       </div>
       <div class="col-sm-9">
-        <h2 class="lead thin h4"><?php print $menciones_titulo ?></h2>
+        <h3 class="lead thin h4"><?php print $menciones_titulo ?></h3>
         <p clas="font-carreras"><?php print $menciones_txt ?></p>
       </div>
     </div>
@@ -151,7 +151,7 @@
             </div>
           </div>
           <div class="col-sm-9">
-            <h2 class="lead thin h3 ph-14"><?php print $perfil_txt ?></h2>
+            <h3 class="lead thin h3 ph-14"><?php print $perfil_txt ?></h3>
           </div>
         </div>
       </div>
