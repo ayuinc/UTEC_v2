@@ -26,7 +26,7 @@
  //  $profesores = $node->field_profesor['und']['0']['value'];
 
 ?>
-<li data-href="<?php print $path; ?>">
+<li data-href="<?php print $path; ?>" class="banner-titulo">
 	<div>
 		<?php if ($imagen == '') :?>
 			<img src="<?php print('/'.$pathfile)?>img.png" alt="#" class="img-responsive">

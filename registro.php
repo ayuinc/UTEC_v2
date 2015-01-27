@@ -62,14 +62,29 @@ $carreras = array(
 //Inicio del proceso de envío de correos
 $mail = new PHPMailer();
 $destinatarios = array(
-'ebardales@utec.edu.pe' => 'Ebert Alexander Bardales Castro',
-'ntubbeh@utec.edu.pe'  => 'Nader Tubbeh',
-'apacheco@utec.edu.pe'  => 'Angel Pacheco Masías',
-/*
-if($origen == "Trabaja en UTEC")
-{ 'rrhh@utec.edu.pe' => 'RRHH UTEC', }
-*/
+    'mmontesino@utec.edu.pe'  => 'Mónica Montesinos',
+    'informes@utec.edu.pe'  => 'Utec',
+    'webmastertecsup@gmail.com' => 'WebMaster',
+    'cbazan@utec.edu.pe'  => 'Carolina Isabel Bazan Jimenez',
+    'ebardales@utec.edu.pe' => 'Ebert Alexander Bardales Castro',
+    'ntubbeh@utec.edu.pe'  => 'Nader Tubbeh',
+    'apacheco@utec.edu.pe'  => 'Angel Pacheco Masías',
+
 );
+
+
+if($origen == "Trabaja en UTEC" || $origen == "Work at UTEC")
+{ 
+    $destinatarios = array(
+    'informes@utec.edu.pe'  => 'Utec',
+    'webmastertecsup@gmail.com' => 'WebMaster',       
+    'rrhh@utec.edu.pe' => 'RRHH UTEC', 
+    'ebardales@utec.edu.pe' => 'Ebert Alexander Bardales Castro',
+    'ntubbeh@utec.edu.pe'  => 'Nader Tubbeh',
+    'apacheco@utec.edu.pe'  => 'Angel Pacheco Masías'
+    );
+}
+
 
 $tituloTelemarketing = "";
 $subjectTelemarketing = "";

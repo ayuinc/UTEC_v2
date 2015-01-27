@@ -20,7 +20,7 @@
 <li>
 	<h4 class="mb-14">
 		<?php if ($field_pdf_proyectos!='') { ?>
-		<a href="<?php print $field_pdf_proyectos ?>" target="_blank">
+		<a href="<?php print $field_pdf_proyectos ?>" class="banner-titulo" target="_blank">
 		<?php } ?>
 			<?php print $title ?>
 		<?php if ($field_pdf_proyectos!='') { ?>
