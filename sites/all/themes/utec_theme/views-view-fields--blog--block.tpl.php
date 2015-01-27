@@ -29,7 +29,7 @@
 		<h2 class="lead medium mb-56"><span class="text-gray">UTEC</span> <span class="text-gray-darker">Blog</span></h2>
 		<?php endif ?>			
 		<!--<h4 class="lead mt-0 mb-56">Lorem ipsum sit amet, consectetur adipisicing elit.</h4>-->
-		<div class="banner" data-href="<?php print $path; ?>">
+		<div class="banner banner-titulo" data-href="<?php print $path; ?>">
 			<div class="col-sm-3 banner-pic" style="background-image: url(<?php print $image; ?>);"></div>
 			<div class="col-sm-9 banner-content pv-14-xs pt-14-sm">
 				<div>
@@ -41,9 +41,9 @@
 					<p class="lead"><?php print $texto_corto; ?></p>
 					<div class="text-right pv-14">
 					<?php if ($language->language != 'en'): ?>
-					<a href="<?php print $path ?>" class="see-more btn btn-lg btn-primary uppercase">Leer más</a>
+					<a href="<?php print $path ?>" class="see-more btn btn-lg btn-primary uppercase banner-titulo">Leer más</a>
 					<?php elseif ($language->language == 'en'): ?>
-					<a href="/en/<?php print $path ?>" class="see-more btn btn-lg btn-primary uppercase">Read more</a>
+					<a href="/en/<?php print $path ?>" class="see-more btn btn-lg btn-primary uppercase banner-titulo">Read more</a>
 					<?php endif ?>							
 					</div>
 				</div>
