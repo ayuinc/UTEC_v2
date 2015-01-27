@@ -3,6 +3,7 @@
 // $video_name = $node->field_video['und']['0']['filename'];
 
 $titulo = $node->title;   
+$banner = $node->field_banner['und']['0']['uri'];  
 
 ?>
 <div class="container-sm">
@@ -12,6 +13,7 @@ $titulo = $node->title;
 		<h1 class="light">Modalidades de admisión</h1>
 	<?php endif ?>
 	<div class="separator-gray separator-lg"></div>
+	<img class="img-responsive" src="<?php print file_create_url($banner); ?>" />
 	<ul class="grid-list grid-list-3 grid-list-1-xs grid-list-hover size sm">
 		<?php if ($language->language  != 'en'): ?>
 		<li data-href="/modalidades-de-admision/primeros-puestos" class="atm-blog" id="primeros-puestos">
