@@ -24,6 +24,11 @@
 	$perfil_link = $node->field_perfil_egresado_link['und']['0']['value'];
 	$field_perfil_egresado_imagen = $node->field_perfil_egresado_imagen['und']['0']['filename'];
 
+  kpr($node);
+  // field_carrera_referencia
+
+
+
 ?>
 <div class="hero-unit"> <!-- HERO -->
   <?php if ($language->language == 'en'): ?>
