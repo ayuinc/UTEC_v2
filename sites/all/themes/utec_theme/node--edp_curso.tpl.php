@@ -16,7 +16,7 @@
   $obejtivos = $node->field_objetivos['und']['0']['value'];	
   $dirigido = $node->field_dirigido_a['und']['0']['value'];	
 
-  $profesores = $node->field_profesor['und']
+  $profesores = $node->field_profesor['und'];
 
   // $profesor_name = $node->field_profesor['und']['0']['entity']->name;
   // $profesor_id = $node->field_profesor['und']['0']['entity']->uid;
@@ -98,6 +98,7 @@
 			</div>
 		</div>
 		<?php } ?>
+			<div><h3><?php print t('Faculty:') ?></h3></div>
 			<?php foreach ($profesores as $key => $profesor) : ?>
 			<?php 
 				  $profesor_name = $profesor['entity']->name;
@@ -108,7 +109,6 @@
 			?>
 			<div>
 				<?php if($profesor_name) : ?>
-				<h3><?php print t('Faculty:') ?></h3>
 				<div class="list-custom-left">
 					<ul>
 						<?php if ($profesor_pic) : ?>
@@ -138,7 +138,7 @@
 						<?php $nid = $detalle['entity']->nid;?>
 						<?php $path = drupal_get_path_alias('node/'.$nid, $language->language); ?>
 						<?php if ($language->language != 'en'): ?>
-						<li data-href="<?php print $path; ?>">
+						<li data-href="/<?php print $path; ?>">
 						<?php elseif ($language->language == 'en'): ?>
 						<li data-href="<?php print '/'.$language->language.'/'.$path; ?>">
 						<?php endif ?>
@@ -154,7 +154,7 @@
 						<?php $nid = $detalle['entity']->nid;?>
 						<?php $path = drupal_get_path_alias('node/'.$nid, $language->language); ?>
 						<?php if ($language->language != 'en'): ?>
-						<li data-href="<?php print $path; ?>">
+						<li data-href="/<?php print $path; ?>">
 						<?php elseif ($language->language == 'en'): ?>
 						<li data-href="<?php print '/'.$language->language.'/'.$path; ?>">
 						<?php endif ?>
@@ -170,7 +170,7 @@
 						<?php $nid = $detalle['entity']->nid;?>
 						<?php $path = drupal_get_path_alias('node/'.$nid, $language->language); ?>
 						<?php if ($language->language != 'en'): ?>
-						<li data-href="<?php print $path; ?>">
+						<li data-href="/<?php print $path; ?>">
 						<?php elseif ($language->language == 'en'): ?>
 						<li data-href="<?php print '/'.$language->language.'/'.$path; ?>">
 						<?php endif ?>
@@ -186,7 +186,7 @@
 						<?php $nid = $detalle['entity']->nid;?>
 						<?php $path = drupal_get_path_alias('node/'.$nid, $language->language); ?>
 						<?php if ($language->language != 'en'): ?>
-						<li data-href="<?php print $path; ?>">
+						<li data-href="/<?php print $path; ?>">
 						<?php elseif ($language->language == 'en'): ?>
 						<li data-href="<?php print '/'.$language->language.'/'.$path; ?>">
 						<?php endif ?>
@@ -202,7 +202,7 @@
 						<?php $nid = $detalle['entity']->nid;?>
 						<?php $path = drupal_get_path_alias('node/'.$nid, $language->language); ?>
 						<?php if ($language->language != 'en'): ?>
-						<li data-href="<?php print $path; ?>">
+						<li data-href="/<?php print $path; ?>">
 						<?php elseif ($language->language == 'en'): ?>
 						<li data-href="<?php print '/'.$language->language.'/'.$path; ?>">
 						<?php endif ?>
