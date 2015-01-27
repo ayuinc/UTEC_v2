@@ -69,14 +69,14 @@
                 } 
                 ?>
               </h4>
-              <h2>
+              <h3 class="h2">
                 <?php if ($language->language == 'en') {
                   print $izquierdo_txt2_ingles;
                 } elseif ($language->language  != 'en') {
                   print $izquierdo_txt2;
                 } 
                 ?>
-              </h2>
+              </h3>
             </a>
           </div>
         </div>
@@ -94,14 +94,14 @@
                 } 
                 ?>
               </h4>
-              <h2>
+              <h3 class="h2">
                 <?php if ($language->language == 'en') {
                   print $derecho_superior_txt2_ingles;
                 } elseif ($language->language  != 'en') {
                   print $derecho_superior_txt2;
                 } 
                 ?>
-              </h2>
+              </h3>
             </a>
           </div>
         </div>
@@ -121,14 +121,14 @@
                 } 
                 ?>
               </h4>
-              <h2>
+              <h3 class="h2">
                 <?php if ($language->language == 'en') {
                   print $derecho_inferior_izq_txt2_ingles;
                 } elseif ($language->language  != 'en') {
                   print $derecho_inferior_izq_txt2;
                 } 
                 ?>
-              </h2>
+              </h3>
             </a>
           </div>
         </div>
@@ -144,14 +144,14 @@
                 } 
                 ?>
               </h4>
-              <h2>
+              <h3 class="h2">
                 <?php if ($language->language == 'en') {
                   print $derecho_inferior_der_txt2_ingles;
                 } elseif ($language->language  != 'en') {
                   print $derecho_inferior_der_txt2;
                 } 
                 ?>
-              </h2>
+              </h3>
             </a>
           </div>
         </div>

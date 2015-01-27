@@ -127,7 +127,7 @@
 		<div class="container-sm">
 			<div class="nav-display-left">
 				<div>
-					<h1><?php print t('Learn') ?><br><span><?php print t('About') ?></span><?php print t(' Us') ?></h1>
+					<h3 class="h1"><?php print t('Learn') ?><br><span><?php print t('About') ?></span><?php print t(' Us') ?></h3>
 					<p><?php print t('The university that empowers ingenuity, innovation, and entrepreneurship.') ?></p>
 				</div>
 			</div>
@@ -239,9 +239,9 @@
 			<div class="nav-display-left">
 				<div>
 					<?php if ($language->language == 'en'): ?>
-						<h1><?php print t('Research') ?><br><span></span> <?php print t('Experience') ?></h1>
+						<h3 class="h1"><?php print t('Research') ?><br><span></span> <?php print t('Experience') ?></h3>
 					<?php elseif ($language->language != 'en'): ?>
-						<h1><?php print t('Experience') ?><br><span>en </span><?php print t('Research') ?></h1>
+						<h3 class="h1"><?php print t('Experience') ?><br><span>en </span><?php print t('Research') ?></h3>
 					<?php endif ?>
 					<p><?php print t('The right path to finding better solutions.') ?></p>
 				</div>
@@ -290,9 +290,9 @@
 			<div class="nav-display-left">
 				<div>
 					<?php if ($language->language  == 'en'): ?>
-						<h1><?php print t('Our ') ?> <span><?php print t('Academic') ?></span><br><?php print  t('Offer') ?></h1>
+						<h3 class="h1"><?php print t('Our ') ?> <span><?php print t('Academic') ?></span><br><?php print  t('Offer') ?></h3>
 					<?php elseif ($language->language != 'en'): ?>
-						<h1>Nuestra <span>Oferta</span><br>Académica</h1>
+						<h3 class="h1">Nuestra <span>Oferta</span><br>Académica</h3>
 					<?php endif ?>
 					<p><?php print t('With our active learning methodology, our students experience engineering from day one.') ?></p>
 				</div>
@@ -384,9 +384,9 @@
 			<div class="nav-display-left">
 				<div>
 					<?php if ($language->language != 'en'): ?>
-						<h1>Ingenio<br><span>vocación</span> y<br><span>aspiración</span><br>a la excelencia</h1>
+						<h3 class="h1">Ingenio<br><span>vocación</span> y<br><span>aspiración</span><br>a la excelencia</h3>
 					<?php elseif ($language->language == 'en'): ?>
-						<h1>Ingenuity,<br><span>dedication,</span> and<br><span>the pursuit</span><br>of excellence</h1>
+						<h3 class="h1">Ingenuity,<br><span>dedication,</span> and<br><span>the pursuit</span><br>of excellence</h3>
 					<?php endif ?>
 					<p><?php print t("Our students' DNA: achieving highest academic achievement and personal development.") ?></p>
 				</div>
@@ -491,10 +491,10 @@
 			<div class="nav-display-left">
 				<div>
 					<?php if ($language->language != 'en'): ?>
-						<h1><span>Convenios y alianzas</span><br>internacionales</h1>
+						<h3 class="h1"><span>Convenios y alianzas</span><br>internacionales</h3>
 						<p>Generamos conexiones con las mejores instituciones educativas del mundo.</p>
 					<?php elseif ($language->language == 'en'): ?>
-						<h1><span>International</span><br>alliances</h1>
+						<h3 class="h1"><span>International</span><br>alliances</h3>
 						<p>We've built strong relationships with the best educational institutions in the world.</p>
 					<?php endif ?>
 				</div>
@@ -526,10 +526,10 @@
 			<div class="nav-display-left">
 				<div>
 					<?php if ($language->language == 'en'): ?>
-						<h1>School of<br><span>profesional</span><br>development</h1>
+						<h3 class="h1">School of<br><span>profesional</span><br>development</h3>
 						<p>Strengthen your skills and achieve professional success.</p>
 					<?php elseif ($language->language != 'en'): ?>
-						<h1>Escuela de<br><span>desarollo</span><br>profesional</h1>
+						<h3 class="h1">Escuela de<br><span>desarollo</span><br>profesional</h3>
 						<p>Potencia tus habilidades y alcanza el éxito profesional a través de nuestros cursos.</p>
 					<?php endif ?>
 				</div>
@@ -639,7 +639,7 @@
 		<div class="container-sm">
 			<div class="nav-display-left">
 				<div>
-					<h1><?php print t('Learn') ?><br><span><?php print t('About') ?></span><?php print t(' Us') ?></h1>
+					<h3 class="h1"><?php print t('Learn') ?><br><span><?php print t('About') ?></span><?php print t(' Us') ?></h3>
 					<p><?php print t('The university that empowers ingenuity, innovation, and entrepreneurship.') ?></p>
 				</div>
 			</div>
@@ -751,9 +751,9 @@
 			<div class="nav-display-left">
 				<div>
 					<?php if ($language->language == 'en'): ?>
-						<h1><?php print t('Research') ?><br><span></span> <?php print t('Experience') ?></h1>
+						<h3 class="h1"><?php print t('Research') ?><br><span></span> <?php print t('Experience') ?></h3>
 					<?php elseif ($language->language != 'en'): ?>
-						<h1><?php print t('Experience') ?><br><span>en </span><?php print t('Research') ?></h1>
+						<h3 class="h1"><?php print t('Experience') ?><br><span>en </span><?php print t('Research') ?></h3>
 					<?php endif ?>
 					<p><?php print t('The right path to finding better solutions.') ?></p>
 				</div>
@@ -802,9 +802,9 @@
 			<div class="nav-display-left">
 				<div>
 					<?php if ($language->language  == 'en'): ?>
-						<h1><?php print t('Our ') ?> <span><?php print t('Academic') ?></span><br><?php print  t('Offer') ?></h1>
+						<h3 class="h1"><?php print t('Our ') ?> <span><?php print t('Academic') ?></span><br><?php print  t('Offer') ?></h3>
 					<?php elseif ($language->language != 'en'): ?>
-						<h1>Nuestras <span>Ofertas</span><br>Académicas</h1>
+						<h3 class="h1">Nuestras <span>Ofertas</span><br>Académicas</h3>
 					<?php endif ?>
 					<p><?php print t('With our active learning methodology, our students experience engineering from day one.') ?></p>
 				</div>
@@ -896,9 +896,9 @@
 			<div class="nav-display-left">
 				<div>
 					<?php if ($language->language != 'en'): ?>
-						<h1>Ingenio<br><span>vocación</span> y<br><span>aspiración</span><br>a la excelencia</h1>
+						<h3 class="h1">Ingenio<br><span>vocación</span> y<br><span>aspiración</span><br>a la excelencia</h3>
 					<?php elseif ($language->language == 'en'): ?>
-						<h1>Ingenuity,<br><span>dedication,</span> and<br><span>the pursuit</span><br>of excellence</h1>
+						<h3 class="h1">Ingenuity,<br><span>dedication,</span> and<br><span>the pursuit</span><br>of excellence</h3>
 					<?php endif ?>
 					<p><?php print t("Our students' DNA: achieving highest academic achievement and personal development.") ?></p>
 				</div>
@@ -1003,10 +1003,10 @@
 			<div class="nav-display-left">
 				<div>
 					<?php if ($language->language != 'en'): ?>
-						<h1><span>Convenios y alianzas</span><br>internacionales</h1>
+						<h3 class="h1"><span>Convenios y alianzas</span><br>internacionales</h3>
 						<p>Generamos conexiones con las mejores instituciones educativas del mundo.</p>
 					<?php elseif ($language->language == 'en'): ?>
-						<h1><span>International</span><br>alliances</h1>
+						<h3 class="h1"><span>International</span><br>alliances</h3>
 						<p>We've built strong relationships with the best educational institutions in the world.</p>
 					<?php endif ?>
 				</div>
@@ -1038,10 +1038,10 @@
 			<div class="nav-display-left">
 				<div>
 					<?php if ($language->language == 'en'): ?>
-						<h1>School of<br><span>profesional</span><br>development</h1>
+						<h3 class="h1">School of<br><span>profesional</span><br>development</h3>
 						<p>Strengthen your skills and achieve professional success.</p>
 					<?php elseif ($language->language != 'en'): ?>
-						<h1>Escuela de<br><span>desarollo</span><br>profesional</h1>
+						<h3 class="h1">Escuela de<br><span>desarollo</span><br>profesional</h3>
 						<p>Potencia tus habilidades y alcanza el éxito profesional a través de nuestros cursos.</p>
 					<?php endif ?>
 				</div>

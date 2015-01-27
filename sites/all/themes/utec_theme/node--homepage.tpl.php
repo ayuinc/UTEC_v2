@@ -30,7 +30,7 @@
   <div class="video-placeholder visible-xs-block" style="background-image: url('/sites/all/themes/utec_theme/assets/img/project-bg-1.JPG');"></div>
   <div class="overlay flex-middle-end text-center text-white">
   	<div class="container relative home-introduccion normalize-text pv-70">
-		<h1 class="thin lead"><?php print t('UTEC, the open platform to innovate') ?></h1>
+		<h3 class="thin lead h1"><?php print t('UTEC, the open platform to innovate') ?></h3>
 		<h4 class="thin pv-7 uppercase"><?php print t('- DISCOVER IT -') ?></h4>
 	</div>
   </div>

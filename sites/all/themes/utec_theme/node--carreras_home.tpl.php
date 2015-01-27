@@ -33,7 +33,7 @@
   <?php endif ?>
     <div class="overlay flex-middle">
       <div class="container-sm hero-text" data-href="<?php print $carrera_link ?>">
-        <h2 class="thin h3 text-white mb-7"><?php print t('What is') ?></h2>
+        <h3 class="thin h3 text-white mb-7"><?php print t('What is') ?></h3>
         <h1 class="thin mt-0"><a class="text-white text-hover-primary" href="<?php print $carrera_link ?>"><?php print $titulo ?></a><span class="text-white">?</span></h1>
         <hr class="hr-white">
         <div class="row mt-28">
@@ -56,11 +56,11 @@
 </div> <!-- END:Hero -->
 <div data-section-scroll="<?php print t('Curricular Structure') ?>" id="malla-curricular" class="scroll-down-info malla-curricular section-scroll-content minh-560 flex-middle-center">
   <div class="container-sm text-right normalize-text" data-href="<?php print $malla_link ?>">
-    <h2 class="lead thin h1 text-hover-primary"><?php print t('Curricular Structure') ?></h2>
+    <h2 class="lead thin h1"><a href="<?php print $malla_link ?>" class="text-hover-primary text-gray-dark"><?php print t('Curricular Structure') ?></a></h2>
     <hr class="hr-gray">
     <div class="row mt-28">
       <div class="col-sm-9">
-        <h2 class="lead thin mb-14 h4"><?php print $malla_titulo ?></h2>
+        <h3 class="lead h2 thin mb-14 h4"><?php print $malla_titulo ?></h3>
         <p clas="font-carreras"><?php print $malla_txt ?></p>
       </div>
       <div class="col-sm-3 hidden-xs">
@@ -77,7 +77,7 @@
 </div>
 <div data-section-scroll="<?php print t('Minors') ?>" id="menciones" class="scroll-down-info section-scroll-content minh-560 flex-middle-center bg-info-op">
   <div class="container-sm text-left text-white normalize-text" data-href="<?php print $menciones_link ?>">
-    <h2 class="lead thin h1 text-hover-primary"><?php print t('Minors') ?></h2>
+    <h2 class="lead thin h1"><a href="<?php print $menciones_link ?>" class="text-hover-primary text-white"><?php print t('Minors') ?></a></h2>
     <hr class="hr-white">
     <div class="row mt-28">
       <div class="col-sm-3 hidden-xs">
@@ -87,7 +87,7 @@
         </div>
       </div>
       <div class="col-sm-9">
-        <h2 class="lead thin h4"><?php print $menciones_titulo ?></h2>
+        <h3 class="lead thin h4"><?php print $menciones_titulo ?></h3>
         <p clas="font-carreras"><?php print $menciones_txt ?></p>
       </div>
     </div>
@@ -119,7 +119,7 @@
           $profesor_url = "/" . drupal_get_path_alias('page/30/profesores/'.$uid, $language->language); 
         ?> 
         <li class="mb-ch-14">
-          <div class="grid-list-pic">
+          <div class="grid-list-pic" data-href="<?php print $profesor_url ?>">
             <img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="" width="180px" height="auto" class="img-circle">
           </div>
           <a href="<?php print $profesor_url ?>">
@@ -141,7 +141,7 @@
   <div class="container" data-href="<?php print $perfil_link ?>">
     <div class="row">
       <div class="col-sm-6 normalize-text">
-        <h2 class="thin h1 text-hover-primary"><?php print t('Graduate profile') ?></h2>
+        <h2 class="thin h1"><a href="<?php print $perfil_link ?>" class="text-hover-primary text-gray-dark"><?php print t('Graduate profile') ?></a></h2>
         <hr class="hr-gray">
         <div class="row">
           <div class="col-sm-3 hidden-xs">
@@ -151,7 +151,7 @@
             </div>
           </div>
           <div class="col-sm-9">
-            <h2 class="lead thin h3 ph-14"><?php print $perfil_txt ?></h2>
+            <h3 class="lead thin h3 ph-14"><?php print $perfil_txt ?></h3>
           </div>
         </div>
       </div>

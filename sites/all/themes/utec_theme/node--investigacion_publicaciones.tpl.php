@@ -19,7 +19,7 @@
 <li>
 	<h4 class="mb-14">
 		<?php if ($link!='') { ?>
-		<a href="<?php print $link ?>" target="_blank" class="text-gray-darker">
+		<a href="<?php print $link ?>" target="_blank" class="text-gray-darker banner-titulo">
 		<?php } ?>	
 		<?php print $titulo ?>
 		</a>

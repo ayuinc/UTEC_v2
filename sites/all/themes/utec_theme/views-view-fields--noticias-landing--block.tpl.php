@@ -10,5 +10,5 @@
 ?>
 
 	<img src="<?php print $image ?>" alt="..." height="479" width="720">
-	<h3 class="light text-gray"><a href="<?php print $path; ?>"><?php print $title ?></a></h3>
+	<h2 class="h3 light text-gray"><a href="<?php print $path; ?>" class="banner-titulo"><?php print $title ?></a></h2>
 	<p class="text-gray"><?php print $texto_corto ?></p>

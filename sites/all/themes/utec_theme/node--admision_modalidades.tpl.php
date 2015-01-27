@@ -13,7 +13,9 @@ $banner = $node->field_banner['und']['0']['uri'];
 		<h1 class="light">Modalidades de admisión</h1>
 	<?php endif ?>
 	<div class="separator-gray separator-lg"></div>
+	<?php if ($banner): ?>
 	<img class="img-responsive" src="<?php print file_create_url($banner); ?>" />
+	<?php endif; ?>
 	<ul class="grid-list grid-list-3 grid-list-1-xs grid-list-hover size sm">
 		<?php if ($language->language  != 'en'): ?>
 		<li data-href="/modalidades-de-admision/primeros-puestos" class="atm-blog" id="primeros-puestos">
