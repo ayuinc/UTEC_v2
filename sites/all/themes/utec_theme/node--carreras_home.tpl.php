@@ -56,7 +56,7 @@
 </div> <!-- END:Hero -->
 <div data-section-scroll="<?php print t('Curricular Structure') ?>" id="malla-curricular" class="scroll-down-info malla-curricular section-scroll-content minh-560 flex-middle-center">
   <div class="container-sm text-right normalize-text" data-href="<?php print $malla_link ?>">
-    <h2 class="lead thin h1 text-hover-primary"><a href="<?php print $malla_link ?>"><?php print t('Curricular Structure') ?></a></h2>
+    <h2 class="lead thin h1"><a href="<?php print $malla_link ?>" class="text-hover-primary text-gray-dark"><?php print t('Curricular Structure') ?></a></h2>
     <hr class="hr-gray">
     <div class="row mt-28">
       <div class="col-sm-9">
@@ -77,7 +77,7 @@
 </div>
 <div data-section-scroll="<?php print t('Minors') ?>" id="menciones" class="scroll-down-info section-scroll-content minh-560 flex-middle-center bg-info-op">
   <div class="container-sm text-left text-white normalize-text" data-href="<?php print $menciones_link ?>">
-    <h2 class="lead thin h1 text-hover-primary"><a href="<?php print $menciones_link ?>"><?php print t('Minors') ?></a></h2>
+    <h2 class="lead thin h1"><a href="<?php print $menciones_link ?>" class="text-hover-primary text-white"><?php print t('Minors') ?></a></h2>
     <hr class="hr-white">
     <div class="row mt-28">
       <div class="col-sm-3 hidden-xs">
@@ -141,7 +141,7 @@
   <div class="container" data-href="<?php print $perfil_link ?>">
     <div class="row">
       <div class="col-sm-6 normalize-text">
-        <h2 class="thin h1 text-hover-primary"><a href="<?php print $perfil_link ?>"><?php print t('Graduate profile') ?></a></h2>
+        <h2 class="thin h1"><a href="<?php print $perfil_link ?>" class="text-hover-primary text-gray-dark"><?php print t('Graduate profile') ?></a></h2>
         <hr class="hr-gray">
         <div class="row">
           <div class="col-sm-3 hidden-xs">
