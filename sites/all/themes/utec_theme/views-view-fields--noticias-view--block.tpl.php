@@ -18,8 +18,7 @@
 			</div>
 			<div class="col-sm-9 banner-content">
 				<div>
-					<h2 class="h2 medium text-gray-dark"><a href="<?php print $path; ?>" class="banner-titulo"><?php print $title ?></a></h2>
-					<h3 class="h2 medium text-gray-dark"><a href="<?php print $path; ?>"><?php print $title ?></a></h3>
+					<h3 class="h2 medium text-gray-dark"><a href="<?php print $path; ?>" class="banner-titulo"><?php print $title ?></a></h3>
 					<p class="lead text-gray"><?php print $texto_corto ?></p>
 				</div>
 			</div>
@@ -29,8 +28,7 @@
 		<div class="banner hidden-xs ban-titulo" data-href="<?php print $path; ?>">
 			<div class="col-sm-9 banner-content">
 				<div>
-					<h2 class="h2 medium text-gray-dark"><a href="<?php print $path; ?>" class="banner-titulo"><?php print $title ?></a></h2>
-					<h3 class="h2 medium text-gray-dark"><a href="<?php print $path; ?>"><?php print $title ?></a></h3>
+					<h3 class="h2 medium text-gray-dark"><a href="<?php print $path; ?>" class="banner-titulo"><?php print $title ?></a></h3>
 					<p class="lead text-gray"><?php print $texto_corto ?></p>
 				</div>
 			</div>
