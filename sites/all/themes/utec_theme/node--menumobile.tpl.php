@@ -59,7 +59,7 @@
 			<?php if ($language->language  != 'en'): ?>
 			<a href="/ingenio-en-accion" class="atm-menu-secundario-movil"><span><?php print t('Ingenuity') ?></span><?php print t('in action') ?></a>
 			<?php elseif ($language->language == 'en'): ?>
-			<a href="/<?php print $language->language ?>/ingenuity-in-action" class="atm-menu-secundario-movil"><span><?php print t('Ingenuity') ?></span><?php print t('in action') ?></a>
+			<a href="/<?php print $language->language ?>/ingenuity-in-action" class="atm-menu-secundario-movil"><span><?php print t('Ingenuity') ?></span> <?php print t('in action') ?></a>
 			<?php endif ?>							
 		</li>
 		<li>
@@ -80,7 +80,7 @@
 			<?php if ($language->language  != 'en'): ?>
 				<a href="/eventos-utec" class="atm-menu-secundario-movil"><?php print t('Events') ?></a>
 			<?php elseif ($language->language == 'en'): ?>
-				<a href="/<?php print $language->language ?>/events" class="atm-menu-secundario-movil"><?php print t('Events') ?></a>
+				<a href="/<?php print $language->language ?>/utec-events" class="atm-menu-secundario-movil"><?php print t('Events') ?></a>
 			<?php endif ?>							
 		</li>
 		<li>
@@ -128,7 +128,11 @@
 </div>
 <div class="mobile-nav-display" id="mobile-nav-display-2">
   <a class="back"><?php print t('Go Back') ?></a>
-  <h3 class="h1">Experiencia<br><span>en</span> <?php print t('Research') ?></h3>
+	<?php if ($language->language  != 'en'): ?>
+		<h3 class="h1">Experiencia<br><span>en</span> <?php print t('Research') ?></h3>
+	<?php elseif ($language->language == 'en'): ?>
+		<h3 class="h1">Research<br><span>Experience</span></h3>
+	<?php endif ?>   
 	<ul>
 		<li>
 			<?php if ($language->language  != 'en'): ?>
@@ -161,8 +165,12 @@
 	</ul>
 </div>
 <div class="mobile-nav-display" id="mobile-nav-display-3">
-  <a class="back"><?php print t('Go Back') ?></a>
-  <h3 class="h1">Nuestra<br><span>oferta</span><br>Académica</h3>
+  <a class="back"><?php print t('Go Back') ?></a>	
+  <?php if ($language->language  != 'en'): ?>
+		<h3 class="h1">Nuestra<br><span>oferta</span><br>Académica</h3>
+	<?php elseif ($language->language == 'en'): ?>
+		<h3 class="h1">Our<br><span>Academic</span><br>Offer</h3>
+	<?php endif ?>   
 	<ul>
 		<li>
 			<?php if ($language->language  != 'en'): ?>
