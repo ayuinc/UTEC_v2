@@ -14,7 +14,7 @@
 	$created = $fields['created']->content;
 
 ?>
-<li class="banner banner-label-bottom mb-14 ml-0 banner-titulo" data-href="<?php print $path ?>">
+<li class="banner banner-label-bottom mb-14 ml-0 ban-titulo" data-href="<?php print $path ?>">
 	<div class="banner-pic" style="background-image: url(<?php print $image?>);">
 		<div class="banner-label bg-gray-darker text-white"><span><?php print $category ?></span></div>
 	</div>
