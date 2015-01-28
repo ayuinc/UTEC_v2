@@ -20,7 +20,7 @@
 	</div>
 	<div class="banner-content">
 		<div>
-			<h3><a href="<?php print $path ?>" class="banner-titulo"><?php print $title ?></a></h3>
+			<h2 class="h3"><a href="<?php print $path ?>" class="banner-titulo"><?php print $title ?></a></h2>
 			<em><?php print $created ?></em>
 			<p class="text-gray"><?php print $texto_corto ?></p>
 		</div>
