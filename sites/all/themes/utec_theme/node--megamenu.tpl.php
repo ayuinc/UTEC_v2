@@ -537,10 +537,6 @@
 			<div class="nav-display-right">
 				<div>
 					<ul>
-						<!--<li><a href="/edp/cursos/diplomados">Diplomados</a></li>
-						<li>
-							<a href="/edp/cursos/cursos-online"><span>Cursos</span>online</a>
-						</li>-->
 						<li>
 							<?php if ($language->language != 'en'): ?>
 							<a href="/edp" class="atm-menu-secundario"><?php print t('SPD') ?></a>
@@ -556,6 +552,42 @@
 							<?php elseif ($language->language == 'en'): ?>
 								<a href="/<?php print $language->language ?>/spd/short-courses" class="atm-menu-secundario">
 								<span>Short</span>Courses
+								</a>
+							<?php endif ?>
+							</a>
+						</li>
+						<li>
+							<?php if ($language->language != 'en'): ?>
+								<a href="/edp/diplomados" class="atm-menu-secundario">
+									Diplomados
+								</a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/spd/certificates" class="atm-menu-secundario">
+									Certificates
+								</a>
+							<?php endif ?>
+							</a>
+						</li>
+						<li>
+							<?php if ($language->language != 'en'): ?>
+								<a href="/edp/cursos-online" class="atm-menu-secundario">
+									<span>Cursos</span>Online
+								</a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/spd/online-courses" class="atm-menu-secundario">
+									<span>Online</span>Courses
+								</a>
+							<?php endif ?>
+							</a>
+						</li>
+						<li>
+							<?php if ($language->language != 'en'): ?>
+								<a href="/edp/cursos-adhoc" class="atm-menu-secundario">
+									<span>Cursos</span>Adhoc
+								</a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/spd/adhoc-courses" class="atm-menu-secundario">
+									<span>Adhoc</span>Cursos
 								</a>
 							<?php endif ?>
 							</a>
@@ -1049,10 +1081,6 @@
 			<div class="nav-display-right">
 				<div>
 					<ul>
-						<!--<li><a href="/edp/cursos/diplomados">Diplomados</a></li>
-						<li>
-							<a href="/edp/cursos/cursos-online"><span>Cursos</span>online</a>
-						</li>-->
 						<li>
 							<?php if ($language->language != 'en'): ?>
 							<a href="/edp" class="atm-menu-secundario"><?php print t('SPD') ?></a>
@@ -1072,11 +1100,44 @@
 							<?php endif ?>
 							</a>
 						</li>
+												<li>
+							<?php if ($language->language != 'en'): ?>
+								<a href="/edp/diplomados" class="atm-menu-secundario">
+									Diplomados
+								</a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/spd/certificates" class="atm-menu-secundario">
+									Certificates
+								</a>
+							<?php endif ?>
+							</a>
+						</li>
+						<li>
+							<?php if ($language->language != 'en'): ?>
+								<a href="/edp/cursos-online" class="atm-menu-secundario">
+									<span>Cursos</span>Online
+								</a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/spd/online-courses" class="atm-menu-secundario">
+									<span>Online</span>Courses
+								</a>
+							<?php endif ?>
+							</a>
+						</li>
+						<li>
+							<?php if ($language->language != 'en'): ?>
+								<a href="/edp/cursos-adhoc" class="atm-menu-secundario">
+									<span>Cursos</span>Adhoc
+								</a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/spd/adhoc-courses" class="atm-menu-secundario">
+									<span>Adhoc</span>Cursos
+								</a>
+							<?php endif ?>
+							</a>
+						</li>
 					</ul>
 					<ul>
-						<!--<li>
-							<a href="/<?php print $language->language ?>/edp/cursos/cursos-adhoc"><span>Cursos</span>Adhoc</a>
-						</li>-->
 						<li>
 							<?php if ($language->language != 'en'): ?>
 								<a href="/edp/calendario" class="atm-menu-secundario"><?php print t('Calendar') ?></a>
