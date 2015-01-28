@@ -159,7 +159,7 @@
 			<?php if ($language->language  != 'en'): ?>
 				<a href="/contacto" class="atm-menu-secundario-movil"><?php print t('Contact us') ?></a>
 			<?php elseif ($language->language == 'en'): ?>
-				<a href="/<?php print $language->language ?>/contact" class="atm-menu-secundario-movil"><?php print t('Contact us') ?></a>
+				<a href="/<?php print $language->language ?>/research/contact" class="atm-menu-secundario-movil"><?php print t('Contact us') ?></a>
 			<?php endif ?>							
 		</li>
 	</ul>
