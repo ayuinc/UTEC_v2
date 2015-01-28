@@ -30,7 +30,7 @@ $titulo = strtr( $titulo, $unwanted_array );
 			<div class="mb-ch-42">
 				<div>
 					<h3><?php //print t('How to apply?') ?></h3>
-					<div class="list-custom">
+					<div>
 						<?php  print $field_como_postula_examen ?>
 					</div>
 				</div>

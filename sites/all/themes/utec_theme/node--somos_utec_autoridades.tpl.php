@@ -7,6 +7,7 @@
  $title = $node->title;  
  $field_introduccion_autoridades = $node->field_introduccion_autoridades['und']['0']['value']; 
 
+ kpr($node->field_profesor['und']);
 ?>
 <div class="container-sm">
 	<h1 class="light"><?php print t('Authorities') ?></h1>
