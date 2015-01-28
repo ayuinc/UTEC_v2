@@ -24,7 +24,7 @@
 	$perfil_link = $node->field_perfil_egresado_link['und']['0']['value'];
 	$field_perfil_egresado_imagen = $node->field_perfil_egresado_imagen['und']['0']['filename'];
 
-  kpr($node);
+  //kpr($node);
   $carrera_id = $node->field_carrera_referencia['und']['0']['tid'];
 
 
