@@ -411,7 +411,7 @@
 								<span>Charlas</span>informativas
 								</a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/admissions-talks" class="atm-menu-secundario">
+								<a href="/<?php print $language->language ?>/informative-talks" class="atm-menu-secundario">
 								<span>Informative</span>talks
 								</a>
 							<?php endif ?>
@@ -955,7 +955,7 @@
 								<span>Charlas</span>informativas
 								</a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/admissions-talks" class="atm-menu-secundario">
+								<a href="/<?php print $language->language ?>/informative-talks" class="atm-menu-secundario">
 								<span>Informative</span>talks
 								</a>
 							<?php endif ?>

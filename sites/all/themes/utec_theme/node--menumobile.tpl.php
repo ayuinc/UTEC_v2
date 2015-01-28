@@ -87,9 +87,9 @@
 		</li>
 		<li>
 			<?php if ($language->language  != 'en'): ?>
-				<a href="/<?php print $language->language ?>/campus-y-laboratorios" class="atm-menu-secundario-movil"><span>Campus y </span>Laboratorios</a>
+				<a href="/campus-y-laboratorios" class="atm-menu-secundario-movil"><span>Campus y </span>Laboratorios</a>
 			<?php elseif ($language->language == 'en'): ?>
-				<a href="/campus-and-labs" class="atm-menu-secundario-movil"><span>Campus and </span>Labs</a>							
+				<a href="/<?php print $language->language ?>/campus-and-labs" class="atm-menu-secundario-movil"><span>Campus and </span>Labs</a>							
 			<?php endif ?>							
 		</li>
 		<li>
