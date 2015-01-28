@@ -24,8 +24,8 @@
 	$perfil_link = $node->field_perfil_egresado_link['und']['0']['value'];
 	$field_perfil_egresado_imagen = $node->field_perfil_egresado_imagen['und']['0']['filename'];
 
-  kpr($node);
-  // field_carrera_referencia
+  //kpr($node);
+  $carrera_id = $node->field_carrera_referencia['und']['0']['tid'];
 
 
 
@@ -119,9 +119,9 @@
         <?php //die(print_r($value)); ?>
         <?php 
         if ($language->language == 'en') {
-          $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/profesores/'.$uid, $language->language); 
+          $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/profesor-carrera/'.$uid.'/'.$carrera_id, $language->language); 
         }else
-          $profesor_url = "/" . drupal_get_path_alias('page/30/profesores/'.$uid, $language->language); 
+          $profesor_url = "/" . drupal_get_path_alias('page/30/profesor-carrera/'.$uid.'/'.$carrera_id, $language->language); 
         ?> 
         <li class="mb-ch-14">
           <div class="grid-list-pic" data-href="<?php print $profesor_url ?>">
