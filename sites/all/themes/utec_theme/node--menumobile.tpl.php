@@ -27,7 +27,12 @@
 </div>
 <div class="mobile-nav-display" id="mobile-nav-display-1">
   <a class="back"><?php print t('Go Back') ?></a>
-  <h3 class="h1">Conoce<br><span>Quiénes</span> Somos</h3>
+  
+	<?php if ($language->language  != 'en'): ?>
+		<h3 class="h1">Conoce<br><span>Quiénes</span> Somos</h3>
+	<?php elseif ($language->language == 'en'): ?>
+		<h3 class="h1">Learn<br><span>about</span>us</h3>
+	<?php endif ?>  
 	<ul>
 		<li>
 			<?php if ($language->language  != 'en'): ?>
@@ -244,7 +249,7 @@
 				</a>
 			<?php elseif ($language->language == 'en'): ?>
 				<a href="/<?php print $language->language ?>/methods-of-admission" class="atm-menu-secundario-movil">
-				<span>Admissions</span>
+				<span>Methods of</span> Admision
 				</a>
 			<?php endif ?>
 		</li>
