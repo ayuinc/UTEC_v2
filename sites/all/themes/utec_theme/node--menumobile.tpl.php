@@ -31,7 +31,7 @@
 	<?php if ($language->language  != 'en'): ?>
 		<h3 class="h1">Conoce<br><span>Quiénes</span> Somos</h3>
 	<?php elseif ($language->language == 'en'): ?>
-		<h3 class="h1">Learn<br><span>about</span>us</h3>
+		<h3 class="h1">Learn<br><span>about</span> us</h3>
 	<?php endif ?>  
 	<ul>
 		<li>
