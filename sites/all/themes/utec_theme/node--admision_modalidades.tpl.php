@@ -8,7 +8,7 @@ $banner = $node->field_banner['und']['0']['uri'];
 ?>
 <div class="container-sm">
 	<?php if ($language->language == 'en'): ?>
-		<h1 class="light">Admissions</h1>
+		<h1 class="light">Methods of Admission</h1>
 	<?php elseif ($language->language  != 'en'): ?>
 		<h1 class="light">Modalidades de admisión</h1>
 	<?php endif ?>

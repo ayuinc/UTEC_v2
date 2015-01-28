@@ -123,7 +123,7 @@
               <?php if ($language->language == 'en'): ?>
             <li class="title text-gray-lighter">Admissions</li>
             <li><a href="/<?php print $language->language ?>/methods-of-admission" class="atm-menu-inferior"><small>Admissions</small></a></li>
-            <li><a href="/<?php print $language->language ?>/admissions-talks" class="atm-menu-inferior"><small><?php print t('Informative Talks') ?></small></a></li>
+            <li><a href="/<?php print $language->language ?>/informative-talks" class="atm-menu-inferior"><small><?php print t('Informative Talks') ?></small></a></li>
             <li><a href="/<?php print $language->language ?>/admissions-calendar" class="atm-menu-inferior"><small><?php print t('Admissions Calendar') ?></small></a></li>
             <li><a href="/<?php print $language->language ?>/visit-utec" class="atm-menu-inferior"><small><?php print t('Visit UTEC') ?></small></a></li>
             <li><a href="/<?php print $language->language ?>/financial-information" class="atm-menu-inferior"><small><?php print t('Financial Information') ?></small></a></li>
