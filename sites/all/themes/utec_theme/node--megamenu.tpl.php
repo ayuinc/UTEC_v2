@@ -556,7 +556,7 @@
 								</a>
 							<?php elseif ($language->language == 'en'): ?>
 								<a href="/<?php print $language->language ?>/spd/online-courses" class="atm-menu-secundario">
-									Diplomados
+									<span>Online</span>Courses
 								</a>
 							<?php endif ?>
 							</a>
@@ -1100,7 +1100,7 @@
 								</a>
 							<?php elseif ($language->language == 'en'): ?>
 								<a href="/<?php print $language->language ?>/spd/online-courses" class="atm-menu-secundario">
-									Diplomados
+									<span>Online</span>Courses
 								</a>
 							<?php endif ?>
 							</a>
