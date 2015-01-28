@@ -179,6 +179,10 @@
 <div id="section-scroll" class="hidden-xs hidden-sm">
 	<ul></ul>
 	<div class="text-right pv-21 btn-apply animated">
-		<a href="/node/854" class="btn btn-primary uppercase atm-scroll-item"><?php print t('Apply') ?></a>
+		<?php if ($language->prefix == 'en'): ?>
+			<a href="/en/methods-of-admission/admissions-test/application-form" class="btn btn-primary uppercase atm-scroll-item"><?php print t('Apply') ?></a>
+		<?php elseif ($language->prefix != 'en'): ?>
+			<a href="/ingenio-en-accion/examen-de-admision/inscripcion-examen-de-admision" class="btn btn-primary uppercase atm-scroll-item"><?php print t('Apply') ?></a>
+		<?php endif ?>			
 	</div>
 </div>
