@@ -539,6 +539,25 @@
 					<ul>
 						<li>
 							<?php if ($language->language != 'en'): ?>
+							<a href="/edp" class="atm-menu-secundario"><?php print t('SPD') ?></a>
+							<?php elseif ($language->language == 'en'): ?>
+							<a href="/<?php print $language->language ?>/spd" class="atm-menu-secundario"><?php print t('SPD') ?></a>
+							<?php endif ?>
+						</li>
+						<li>
+							<?php if ($language->language != 'en'): ?>
+								<a href="/edp/cursos-cortos" class="atm-menu-secundario">
+								<span>Cursos</span>Cortos
+								</a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/spd/short-courses" class="atm-menu-secundario">
+								<span>Short</span>Courses
+								</a>
+							<?php endif ?>
+							</a>
+						</li>
+						<li>
+							<?php if ($language->language != 'en'): ?>
 								<a href="/edp/diplomados" class="atm-menu-secundario">
 									Diplomados
 								</a>
@@ -569,25 +588,6 @@
 							<?php elseif ($language->language == 'en'): ?>
 								<a href="/<?php print $language->language ?>/spd/adhoc-courses" class="atm-menu-secundario">
 									<span>Adhoc</span>Cursos
-								</a>
-							<?php endif ?>
-							</a>
-						</li>
-						<li>
-							<?php if ($language->language != 'en'): ?>
-							<a href="/edp" class="atm-menu-secundario"><?php print t('SPD') ?></a>
-							<?php elseif ($language->language == 'en'): ?>
-							<a href="/<?php print $language->language ?>/spd" class="atm-menu-secundario"><?php print t('SPD') ?></a>
-							<?php endif ?>
-						</li>
-						<li>
-							<?php if ($language->language != 'en'): ?>
-								<a href="/edp/cursos-cortos" class="atm-menu-secundario">
-								<span>Cursos</span>Cortos
-								</a>
-							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/spd/short-courses" class="atm-menu-secundario">
-								<span>Short</span>Courses
 								</a>
 							<?php endif ?>
 							</a>
@@ -1083,6 +1083,25 @@
 					<ul>
 						<li>
 							<?php if ($language->language != 'en'): ?>
+							<a href="/edp" class="atm-menu-secundario"><?php print t('SPD') ?></a>
+							<?php elseif ($language->language == 'en'): ?>
+							<a href="/<?php print $language->language ?>/spd" class="atm-menu-secundario"><?php print t('SPD') ?></a>
+							<?php endif ?>
+						</li>
+						<li>
+							<?php if ($language->language != 'en'): ?>
+								<a href="/edp/cursos-cortos" class="atm-menu-secundario">
+								<span>Cursos</span>Cortos
+								</a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/spd/short-courses" class="atm-menu-secundario">
+								<span>Short</span>Courses
+								</a>
+							<?php endif ?>
+							</a>
+						</li>
+												<li>
+							<?php if ($language->language != 'en'): ?>
 								<a href="/edp/diplomados" class="atm-menu-secundario">
 									Diplomados
 								</a>
@@ -1117,30 +1136,8 @@
 							<?php endif ?>
 							</a>
 						</li>
-						<li>
-							<?php if ($language->language != 'en'): ?>
-							<a href="/edp" class="atm-menu-secundario"><?php print t('SPD') ?></a>
-							<?php elseif ($language->language == 'en'): ?>
-							<a href="/<?php print $language->language ?>/spd" class="atm-menu-secundario"><?php print t('SPD') ?></a>
-							<?php endif ?>
-						</li>
-						<li>
-							<?php if ($language->language != 'en'): ?>
-								<a href="/edp/cursos-cortos" class="atm-menu-secundario">
-								<span>Cursos</span>Cortos
-								</a>
-							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/spd/short-courses" class="atm-menu-secundario">
-								<span>Short</span>Courses
-								</a>
-							<?php endif ?>
-							</a>
-						</li>
 					</ul>
 					<ul>
-						<!--<li>
-							<a href="/<?php print $language->language ?>/edp/cursos/cursos-adhoc"><span>Cursos</span>Adhoc</a>
-						</li>-->
 						<li>
 							<?php if ($language->language != 'en'): ?>
 								<a href="/edp/calendario" class="atm-menu-secundario"><?php print t('Calendar') ?></a>
