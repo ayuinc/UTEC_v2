@@ -11,9 +11,9 @@
 </ul>
 <div>
 <?php if ($language->language != 'en'): ?>
-	<a href="/page/61/all-blog" class="btn btn-custom btn-primary see-more uppercase">Ver todos</a>
+	<a href="/blog/todos-los-posts" class="btn btn-custom btn-primary see-more uppercase">Ver todos</a>
 <?php elseif ($language->language == 'en'): ?>
-	<a href="/en/page/61/all-blog" class="btn btn-custom btn-primary see-more uppercase">Read all</a>
+	<a href="/en/blog/all-posts" class="btn btn-custom btn-primary see-more uppercase">Read all</a>
 <?php endif ?>	
 	
 </div>
