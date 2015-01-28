@@ -26,7 +26,7 @@
  //  $profesores = $node->field_profesor['und']['0']['value'];
 
 ?>
-<li data-href="<?php print $path; ?>" class="banner-titulo">
+<li data-href="<?php print $path; ?>" class="ban-titulo">
 	<div>
 		<?php if ($imagen == '') :?>
 			<img src="<?php print('/'.$pathfile)?>img.png" alt="#" class="img-responsive">
@@ -35,7 +35,7 @@
 		<?php endif; ?>	
 	</div>
 	<div>
-		<h3 class="bold text-gray"><?php print $titulo ?></h3>
+		<h3 class="bold text-gray"><a href="<?php print $path; ?>" class="banner-titulo"><?php print $titulo ?></a></h3>
 		<p><?php print $sub_titulo ?></p>
 	</div>
 </li>

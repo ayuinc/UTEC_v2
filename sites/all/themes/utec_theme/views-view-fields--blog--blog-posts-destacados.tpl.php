@@ -22,20 +22,20 @@
 
 	//kpr($fields);
 ?>
-<li class="banner size sm banner-titulo" data-href="<?php print $path ?>">
+<li class="banner size sm ban-titulo" data-href="<?php print $path ?>">
 	<div class="banner-pic" style="background-image: url(<?php print $image ?>);"></div>
 	<div class="banner-content">
 		<div>
-			<h3 class="h2"><a href="#"><?php print $title ?></a></h3>
+			<h3 class="h2"><a href="#" class="banner-titulo"><?php print $title ?></a></h3>
 			<em class="block"><?php print $user_name ?></em>
 			<small class="text-gray"><?php print $user_charge ?></small>
 		</div>
 		<div class="flex-space-between mt-14">
 			<div class="left">
 			<?php if ($language->language != 'en'): ?>
-				<a href="<?php print $path ?>" class="btn btn-sm btn-primary btn-outline see-more banner-titulo">Leer más</a>
+				<a href="<?php print $path ?>" class="btn btn-sm btn-primary btn-outline see-more">Leer más</a>
 			<?php elseif ($language->language == 'en'): ?>
-				<a href="/en/<?php print $path ?>" class="btn btn-sm btn-primary btn-outline see-more banner-titulo">Read more</a>
+				<a href="/en/<?php print $path ?>" class="btn btn-sm btn-primary btn-outline see-more">Read more</a>
 			<?php endif ?>					
 			</div>
 			<div class="right">
