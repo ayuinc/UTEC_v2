@@ -22,7 +22,7 @@
 
 	//kpr($fields);
 ?>
-<div class="banner ban-titulo" data-href="<?php print $path ?>">
+<div class="banner ban-titulo" data-href="<?php print drupal_get_path_alias($path, $language->language) ?>">
 	<div class="banner-pic" style="background-image: url(<?php print $image; ?>);">
 	</div>
 	<div class="banner-content">
