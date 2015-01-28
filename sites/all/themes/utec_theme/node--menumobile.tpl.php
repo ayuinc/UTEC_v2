@@ -150,9 +150,9 @@
 		</li>
 		<li>
 			<?php if ($language->language  != 'en'): ?>
-				<a href="/empresas-y-clientes" class="atm-menu-secundario-movil"><span><?php print t('Companies') ?></span><?php print t('and clients') ?></a>
+				<a href="/empresas-y-clientes" class="atm-menu-secundario-movil"><span><?php print t('Companies') ?></span> <?php print t('and clients') ?></a>
 			<?php elseif ($language->language == 'en'): ?>
-				<a href="/<?php print $language->language ?>/companies" class="atm-menu-secundario-movil"><span><?php print t('Companies') ?></span><?php print t('and clients') ?></a>
+				<a href="/<?php print $language->language ?>/companies" class="atm-menu-secundario-movil"><span><?php print t('Companies') ?></span> <?php print t('and clients') ?></a>
 			<?php endif ?>								
 		</li>
 		<li>
