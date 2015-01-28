@@ -41,11 +41,11 @@
     <div>
       <h1 class="lead text-gray-darker pt-21 mb-7 text-switcher">
         <?php print t('At UTEC, engineering is') ?>
-        <p class="text-gray visible-xs-inline-block"><?php print t('well-being') ?></p>
+        <p class="text-primary visible-xs-inline-block"><?php print t('well-being') ?></p>
         <?php if ($language->language == 'en') { ?>
-          <span class="text-gray hidden-xs" id="text-switcher-word-en"></span>
+          <span class="text-primary hidden-xs" id="text-switcher-word-en"></span>
         <?php } elseif ($language->language  != 'en') { ?>
-          <span class="text-gray hidden-xs" id="text-switcher-word"></span>
+          <span class="text-primary hidden-xs" id="text-switcher-word"></span>
         <?php } ?>
       </h1>
       <!-- <h1 class="lead pt-21 mb-7 text-switcher hidden-xs">
