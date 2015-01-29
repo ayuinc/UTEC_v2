@@ -53,7 +53,7 @@
 								<a href="/en/contact-us" class="text-gray atm-contacto"><?php print t('Contact us') ?></a>
 							</li>
 							<li class="pt-7">
-								<a href="/en/blog" class="text-gray atm-blog">Blog</a>
+								<a href="/en/in-the-spotlight" class="text-gray atm-blog">Blog</a>
 							</li>
 						<?php endif ?>						
 						<li>
