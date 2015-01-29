@@ -40,7 +40,7 @@
   <div class="container">
     <div>
       <h1 class="lead text-gray-darker pt-21 mb-7 text-switcher">
-        <?php print t('At UTEC, engineering is') ?>
+        <?php print t('At UTEC, engineering') ?> <em class="text-gray"><?php print t('is') ?></em>
         <p class="text-primary visible-xs-inline-block"><?php print t('well-being') ?></p>
         <?php if ($language->language == 'en') { ?>
           <span class="text-primary hidden-xs" id="text-switcher-word-en"></span>

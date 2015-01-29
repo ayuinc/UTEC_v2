@@ -16,7 +16,7 @@
 	<div class="separator-gray separator-lg"></div>
 	<p class="lead text-gray"><?php print $field_introduccion_generico_edp ?></p>
 	<?php if ($field_foto_generico_edp!='') { ?>
-		<img src="<?php print('/'.$pathfile.$field_foto_generico_edp)?>" class="img-responsive mb-35">
+		<img src="<?php print('/'.$pathfile.$field_foto_generico_edp)?>" class="img-responsive mb-35" alt="<?php print $title ?>">
 	<?php } ?>
 	<?php print $field_contenido_generico_edp ?>
 	

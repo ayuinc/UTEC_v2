@@ -14,7 +14,7 @@ $banner = $node->field_banner['und']['0']['uri'];
 	<?php endif ?>
 	<div class="separator-gray separator-lg"></div>
 	<?php if ($banner): ?>
-	<img class="img-responsive mb-35" src="<?php print file_create_url($banner); ?>" />
+	<img class="img-responsive mb-35" src="<?php print file_create_url($banner); ?>" alt="Modalidades de admisión" />
 	<?php endif; ?>
 	<ul class="grid-list grid-list-3 grid-list-1-xs grid-list-hover size sm">
 		<?php if ($language->language  != 'en'): ?>

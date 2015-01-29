@@ -14,9 +14,9 @@ $field_contenido_item = $node->field_contenido_item['und']['0']['value'];
         <div class="separator-gray separator-sm"></div>
         <div class="pv-ch-42 lead-ch p-ch-gray">
             <h3><?php print $field_decripcion_corta_item; ?></h3>
-            <img src="<?php print $theme_path . "/" . $field_imagen_item; ?>" class="img-responsive">
+            <img src="<?php print $theme_path . "/" . $field_imagen_item; ?>" class="img-responsive" alt="<?php print $titulo; ?>">
             <h3><?php print $field_descripcion_imagen ?></h3>
-            <img src="assets/img/bg_header-1.png" class="img-responsive">
+            <img src="assets/img/bg_header-1.png" class="img-responsive" alt="<?php print $titulo; ?>">
             <h3>Lorem ipsum dolor sit amet, consectetur so adipisicing elit, sed sil do eiusmod
             tempor.</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed sil do eiusmod

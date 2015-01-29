@@ -37,7 +37,7 @@
 		<p class="lead"><?php print $field_descripcion_corta_generica ?></p>
 	<?php } ?>
 	<?php if ($field_foto_generica_admision!='') { ?>
-		<img src="<?php print('/'.$pathfile.$field_foto_generica_admision)?>" class="img-responsive mb-35">
+		<img src="<?php print('/'.$pathfile.$field_foto_generica_admision)?>" class="img-responsive mb-35" alt="<?php print $title ?>">
 	<?php } ?>	
 	<?php if ($field_contenido_generica!='') { ?>
 		<p class="lead text-gray mb-42"><?php print $field_contenido_generica ?></p>
