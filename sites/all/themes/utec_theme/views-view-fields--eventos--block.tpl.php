@@ -9,11 +9,11 @@
   $mes = $fields['field_mes']->content;
 	$lugar = $fields['field_lugar']->content;
 	$path = $fields['path']->content;
-  $url = drupal_get_path_alias($path, $language->language);
+  
   //kpr($fields);
 ?>
 
-<li data-href="<?php print $url; ?>">
+<li data-href="<?php print $path; ?>">
   <div class="date"><div class="num"><?php print $dia ?></div>
   <div class="month"><?php print $mes ?></div></div>
   <div>

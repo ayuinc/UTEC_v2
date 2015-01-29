@@ -3,8 +3,7 @@ description = Custom theme for UTEC.
 core = 7.x
 engine = phptemplate
 
-stylesheets[all][] = stylesheets/main.css
-stylesheets[all][] = stylesheets/ebm.css
+stylesheets[all][] = stylesheets/main.pkgd.min.css
 
 plugins[panels][layouts] = plugins/layouts
 
