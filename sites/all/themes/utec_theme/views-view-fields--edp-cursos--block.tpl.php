@@ -29,9 +29,9 @@
 <li data-href="<?php print $path; ?>" class="ban-titulo">
 	<div>
 		<?php if ($imagen == '') :?>
-			<img src="<?php print('/'.$pathfile)?>img.png" alt="#" class="img-responsive">
+			<img src="<?php print('/'.$pathfile)?>img.png" alt="<?php print $titulo; ?>" class="img-responsive">
 		<?php else :?>
-			<img src="<?php print($imagen)?>" alt="#" class="img-responsive">
+			<img src="<?php print($imagen)?>" alt="<?php print $titulo; ?>" class="img-responsive">
 		<?php endif; ?>	
 	</div>
 	<div>

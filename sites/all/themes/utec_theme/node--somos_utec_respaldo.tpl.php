@@ -26,7 +26,7 @@
           ?>
         <li data-href="<?php print $link ?>" target="_blank" rel="nofollow">
           <div>
-            <img src="<?php print('/'.$pathfile.$image)?>" alt="" width="70%" height="auto">
+            <img src="<?php print('/'.$pathfile.$image)?>" alt="<?php print $titulo ?>" width="70%" height="auto">
           </div>
         </li>
         <?php endforeach; ?>

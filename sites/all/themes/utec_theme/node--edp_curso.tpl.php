@@ -45,7 +45,7 @@
 	<div class="pv-ch-7 pv-ch-14-xs p-ch-gray">
 		<?php print $cuerpo ?>
 		<?php if ($imagen!='') { ?>
-			<img src="<?php print('/'.$pathfile.$imagen); ?>" alt="#" class="img-responsive">
+			<img src="<?php print('/'.$pathfile.$imagen); ?>" alt="<?php print $titulo ?>" class="img-responsive">
 			<span><?php print $texto_imagen ?></span>
 		<?php } ?>
 	</div>
@@ -113,7 +113,7 @@
 					<ul>
 						<?php if ($profesor_pic) : ?>
 						<li class="text-center" class="pic">
-							<div class="grid-list-pic"><img src="<?php print '/'.$pathfile.'pictures/'.$profesor_pic; ?>" alt="" width="98px" height="auto" class="img-circle"></div>
+							<div class="grid-list-pic"><img src="<?php print '/'.$pathfile.'pictures/'.$profesor_pic; ?>" alt="<?php print $profesor_name ?>" width="98px" height="auto" class="img-circle"></div>
 						</li>
 						<?php endif  ?>
 						<li class="pl-21 text-gray">
