@@ -28,7 +28,7 @@ $idioma = $language->language;
 		<h1 class="light"><?php print t('High Performance Assessment'); ?></h1>
 		<div class="separator-gray separator-md"></div>
 		<?php if ($field_banner_ad): ?>
-		<img class="img-responsive mb-35" src="<?php print file_create_url($field_banner_ad); ?>" alt="<?php print t('High Performance Assessment'); ?>" />
+		<img class="img-responsive mb-35" src="<?php print('/'.$pathfile.$field_banner_ad)?>" alt="<?php print t('High Performance Assessment'); ?>" />
 		<?php endif; ?>		
 		<div>
 		<p class="lead text-gray"><?php print $field_descripcion_corta_alto ?></p>
