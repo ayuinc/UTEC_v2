@@ -95,9 +95,9 @@ $field_link_formulario_en = $node->field_link_formulario_en['und']['0']['value']
 	</ul>
 	<h3><?php print t('If you applied via one of these paths, check your results here.') ?></h3>
 	<?php if ($language->language  != 'en'): ?>
-	<a href="<?php print $field_link_a_formulario_es ?>" target="_blank" class="btn btn-primary btn-lg uppercase see-more mvp-7"><?php print t('See results here.') ?></a>
+	<a href="<?php print $field_link_a_formulario_es ?>" class="btn btn-primary btn-lg uppercase see-more mvp-7"><?php print t('See results here.') ?></a>
 	<?php elseif ($language->language == 'en'): ?>
-	<a href="<?php print $field_link_formulario_en ?>" target="_blank" class="btn btn-primary btn-lg uppercase see-more mvp-7"><?php print t('See results here.') ?></a>
+	<a href="<?php print $field_link_formulario_en ?>" class="btn btn-primary btn-lg uppercase see-more mvp-7"><?php print t('See results here.') ?></a>
 	<?php endif ?>	
 
 </div>
