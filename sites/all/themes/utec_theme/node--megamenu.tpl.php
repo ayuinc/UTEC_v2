@@ -721,9 +721,9 @@
 					<ul>
 						<li>
 							<?php if ($language->language != 'en'): ?>
-								<a href="/eventos-utec" class="atm-menu-secundario">Eventos UTEC</a>
+								<a href="/eventos" class="atm-menu-secundario">Eventos UTEC</a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/utec-events" class="atm-menu-secundario">UTEC Events</a>
+								<a href="/<?php print $language->language ?>/events" class="atm-menu-secundario">UTEC Events</a>
 							<?php endif ?>							
 						</li>
 						<li>
