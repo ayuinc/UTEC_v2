@@ -17,5 +17,4 @@
 <?php elseif ($language->language == 'en'): ?>
 	<a href="/en/blog/all-posts" class="btn btn-custom btn-primary see-more uppercase">Read all</a>
 <?php endif ?>	
-	
 </div>
