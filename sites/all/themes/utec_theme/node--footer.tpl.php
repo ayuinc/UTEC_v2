@@ -168,7 +168,7 @@
             <li><a href="/edp" class="atm-menu-inferior"><small><?php print t('SPD') ?></small></a></li>
             <li><a href="/edp/cursos-cortos" class="atm-menu-inferior"><small><?php print t('Short Courses') ?></small></a></li>
             <li><a href="/edp/calendario" class="atm-menu-inferior"><small><?php print t('Calendar') ?></small></a></li>
-            <li><a href="/edp/cursos/courses-inhouse" class="atm-menu-inferior"><small>Cursos Inhouse/small></a></li>
+            <li><a href="/edp/cursos/courses-inhouse" class="atm-menu-inferior"><small>Cursos Inhouse</a></li>
             <!--<li><a href="/convenios" class="atm-menu-inferior"><small>Cursos Adoc</small></a></li>-->  
             <?php endif ?>
           </ul>
