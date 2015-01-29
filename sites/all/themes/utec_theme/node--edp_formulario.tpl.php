@@ -15,7 +15,7 @@
 	<h1 class="light"><?php print $title ?></h1>
 	<div class="separator-gray separator-lg"></div>
 	<?php if ($field_foto_edp_formulario‎!='') { ?>
-		<img src="<?php print('/'.$pathfile.$field_foto_edp_formulario‎)?>" class="img-responsive mb-35">
+		<img src="<?php print('/'.$pathfile.$field_foto_edp_formulario‎)?>" class="img-responsive mb-35" alt="<?php print $title ?>">
 	<?php } ?>	
 	<?php print $body ?>	
 </div>

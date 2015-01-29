@@ -7,7 +7,7 @@
  $title = $node->title;  
  $field_introduccion_autoridades = $node->field_introduccion_autoridades['und']['0']['value']; 
 
- kpr($node->field_profesor['und']);
+ //kpr($node->field_profesor['und']);
 ?>
 <div class="container-sm">
 	<h1 class="light"><?php print t('Authorities') ?></h1>
@@ -52,7 +52,7 @@
       <?php if($uid != 14 && $uid != 22) : ?>
 			<li data-href="<?php print $profesor_url ?>">
 				<div class="user-card user-card-round size lg">
-					<div class="user-pic"><img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt=""></div>
+					<div class="user-pic"><img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="<?php print $name ?>"></div>
 					<div class="user-info">
 						<!--<a href="#">Rosa María Llosa Demartini</a>-->
 						<a href="<?php print $profesor_url ?>"><?php print $name ?></a>
@@ -83,7 +83,7 @@
       <?php if($uid == 14 || $uid == 22) : ?>
         <li data-href="<?php print $profesor_url ?>">
           <div class="user-card user-card-round size lg">
-            <div class="user-pic"><img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt=""></div>
+            <div class="user-pic"><img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="<?php print $name ?>"></div>
             <div class="user-info">
               <!--<a href="#">Rosa María Llosa Demartini</a>-->
               <a href="<?php print $profesor_url ?>"><?php print $name ?></a>

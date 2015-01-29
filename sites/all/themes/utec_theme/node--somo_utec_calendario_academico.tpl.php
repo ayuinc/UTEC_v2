@@ -14,7 +14,7 @@
 	<?php } ?>
 	<?php if ($field_foto!='') { ?>
 	<div>
-		<img src="<?php print $field_foto ?>" class="img-responsive">
+		<img src="<?php print $field_foto ?>" class="img-responsive" alt="<?php print t('Academic Calendar') ?>">
 	</div>
 	<?php } ?>
 	<div class="lead-ch p-ch-gray">

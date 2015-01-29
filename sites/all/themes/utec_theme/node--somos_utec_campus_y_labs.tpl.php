@@ -17,13 +17,13 @@
 		<!--<h3 class="text-gray-darker"><?php print t('Campus') ?></h3>-->
 		<p><?php print $field_introduccion_campus ?></p>
 		<?php if ($field_foto_campus!='') { ?>
-			<img src="<?php print('/'.$pathfile.$field_foto_campus)?>" class="img-responsive pv-14">
+			<img src="<?php print('/'.$pathfile.$field_foto_campus)?>" class="img-responsive pv-14" alt="<?php print t('Campus and Labs') ?>">
 		<?php } ?>
 		<p><?php print $field_contenido_campus ?></p>
 		<h3 class="text-gray-darker"><?php print t('Labs') ?></h3>
 		<p><?php print $field_introduccion_labs ?></p>
 		<?php if ($field_foto_labs!='') { ?>
-			<img src="<?php print('/'.$pathfile.$field_foto_labs)?>" class="img-responsive pv-14">
+			<img src="<?php print('/'.$pathfile.$field_foto_labs)?>" class="img-responsive pv-14" alt="<?php print t('Campus and Labs') ?>">
 		<?php } ?>
 		<p><?php print $field_contenido_labs ?></p>
 	</div>

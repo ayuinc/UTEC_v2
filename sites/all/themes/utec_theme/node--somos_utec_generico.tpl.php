@@ -16,7 +16,7 @@
 	<div class="separator-gray separator-lg"></div>
 	<p class="lead text-gray"><?php print $field_introduccion_su_generico ?></p>
 	<?php if ($field_foto_su_generico!='') { ?>
-		<img src="<?php print('/'.$pathfile.$field_foto_su_generico)?>" class="img-responsive mb-35">
+		<img src="<?php print('/'.$pathfile.$field_foto_su_generico)?>" class="img-responsive mb-35" alt="<?php print $title ?>">
 	<?php } ?>
 	<?php print $field_contenido_su_generico ?>
 	

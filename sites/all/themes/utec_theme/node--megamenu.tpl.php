@@ -411,7 +411,7 @@
 								<span>Charlas</span>informativas
 								</a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/admissions-talks" class="atm-menu-secundario">
+								<a href="/<?php print $language->language ?>/informative-talks" class="atm-menu-secundario">
 								<span>Informative</span>talks
 								</a>
 							<?php endif ?>
@@ -582,21 +582,18 @@
 						</li>
 						<li>
 							<?php if ($language->language != 'en'): ?>
-								<a href="/edp/cursos-adhoc" class="atm-menu-secundario">
-									<span>Cursos</span>Adhoc
+								<a href="/edp/cursos-inhouse" class="atm-menu-secundario">
+									<span>Cursos</span>Inhouse
 								</a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/spd/adhoc-courses" class="atm-menu-secundario">
-									<span>Adhoc</span>Cursos
+								<a href="/<?php print $language->language ?>/spd/inhouse-courses" class="atm-menu-secundario">
+									<span>Inhouse</span>Courses
 								</a>
 							<?php endif ?>
 							</a>
 						</li>
 					</ul>
 					<ul>
-						<!--<li>
-							<a href="/<?php print $language->language ?>/edp/cursos/cursos-adhoc"><span>Cursos</span>Adhoc</a>
-						</li>-->
 						<li>
 							<?php if ($language->language != 'en'): ?>
 								<a href="/edp/calendario" class="atm-menu-secundario"><?php print t('Calendar') ?></a>
@@ -955,7 +952,7 @@
 								<span>Charlas</span>informativas
 								</a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/admissions-talks" class="atm-menu-secundario">
+								<a href="/<?php print $language->language ?>/informative-talks" class="atm-menu-secundario">
 								<span>Informative</span>talks
 								</a>
 							<?php endif ?>
@@ -1126,12 +1123,12 @@
 						</li>
 						<li>
 							<?php if ($language->language != 'en'): ?>
-								<a href="/edp/cursos-adhoc" class="atm-menu-secundario">
-									<span>Cursos</span>Adhoc
+								<a href="/edp/cursos-inhouse" class="atm-menu-secundario">
+									<span>Cursos</span>Inhouse
 								</a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/spd/adhoc-courses" class="atm-menu-secundario">
-									<span>Adhoc</span>Cursos
+								<a href="/<?php print $language->language ?>/spd/inhouse-courses" class="atm-menu-secundario">
+									<span>Inhouse</span> Courses
 								</a>
 							<?php endif ?>
 							</a>

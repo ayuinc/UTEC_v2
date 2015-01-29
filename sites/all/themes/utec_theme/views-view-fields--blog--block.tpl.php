@@ -34,7 +34,7 @@
 			<div class="col-sm-9 banner-content pv-14-xs pt-14-sm">
 				<div>
 	  			<div class="user-card user-card-round">
-	  				<div class="user-pic"><img src="<?php print $pathfile.'pictures/'.$user_image; ?>" alt=""></div>
+	  				<div class="user-pic"><img src="<?php print $pathfile.'pictures/'.$user_image; ?>" alt="<?php print $user_name; ?>"></div>
 	  				<div class="user-info"><h4><?php print $user_name; ?></h4><small><?php print $user_charge ?></small></div>
 	  			</div>
 	  			<h3 class="h2"><a href="<?php print $path; ?>" class="banner-titulo"><?php print $title; ?></a></h3>

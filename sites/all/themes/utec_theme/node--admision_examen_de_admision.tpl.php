@@ -1,5 +1,9 @@
 <?php 
 // $video_name = $node->field_video['und']['0']['filename'];
+global $base_url;
+global $theme_path;
+$path = $base_url.'/'.$theme_path;
+$pathfile= variable_get('file_public_path', conf_path() . '/files/admision-examen/'); 
 
 $titulo = $node->title;   
 $field_descripcion_corta_examen = $node->field_descripcion_corta_examen['und']['0']['value'];
@@ -7,6 +11,7 @@ $field_como_postula_examen = $node->field_como_postula_examen['und']['0']['value
 $field_costos_examen = $node->field_costos_examen['und']['0']['value'];
 $field_temario_examen = $node->field_temario_examen['und']['0']['value'];
 $field_calendario_examen = $node->field_calendario_examen['und']['0']['value'];
+$field_banner_ad_1 = $node->field_banner_ad_1['und']['0']['filename'];
 
 global $language; 
 $idioma = $language->language;	
@@ -25,6 +30,9 @@ $titulo = strtr( $titulo, $unwanted_array );
 	<div class="mb-21">
 		<h1 class="light"><?php print t('Admissions Exam') ?></h1>
 		<div class="separator-gray separator-md"></div>
+		<?php if ($field_banner_ad_1): ?>
+		<img class="img-responsive mb-35" src="<?php print('/'.$pathfile.$field_banner_ad_1)?>" alt="<?php print t('Admissions Exam') ?>" />
+		<?php endif; ?>			
 		<div>
 			<p class="lead text-gray"><?php print $field_descripcion_corta_examen ?></p>
 			<div class="mb-ch-42">

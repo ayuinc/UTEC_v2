@@ -4,30 +4,30 @@
     var makeScramble, tl;
     tl = new TimelineMax();
     makeScramble = function() {
-      tl.to("#text-switcher-word", 3, {
+      tl.to("#text-switcher-word", 1, {
         scrambleText: {
           text: "bienestar",
           chars: "lowerCase",
-          revealDelay: 0.5,
-          tweenLength: false,
+          speed: 1,
+          tweenLength: true,
           ease: Linear.easeNone
         }
       });
-      tl.to("#text-switcher-word", 3, {
+      tl.to("#text-switcher-word", 1, {
         scrambleText: {
           text: "innovación",
           chars: "lowerCase",
-          revealDelay: 0.5,
-          tweenLength: false,
+          speed: 1,
+          tweenLength: true,
           ease: Linear.easeNone
         }
       });
-      tl.to("#text-switcher-word", 3, {
+      tl.to("#text-switcher-word", 1, {
         scrambleText: {
           text: "diseño",
           chars: "lowerCase",
-          revealDelay: 0.5,
-          tweenLength: false,
+          speed: 1,
+          tweenLength: true,
           ease: Linear.easeNone
         }
       });

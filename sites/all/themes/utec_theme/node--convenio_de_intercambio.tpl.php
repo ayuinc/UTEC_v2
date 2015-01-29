@@ -17,7 +17,7 @@
   <h1 class="light"><?php print $titulo ?></h1>
   <div class="separator-gray separator-sm"></div>
   <?php if ($banner!='')  { ?>
-  <img class="img-responsive" src="<?php print '/'.$pathfile.$banner ?>" alt="#">
+  <img class="img-responsive" src="<?php print '/'.$pathfile.$banner ?>" alt="<?php print $titulo ?>">
   <?php } ?>
   <p><?php print $cuerpo ?></p>
 </div>
