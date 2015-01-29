@@ -56,11 +56,6 @@
           <span class="text-primary hidden-xs" id="text-switcher-word"></span>
         <?php } ?>
       </h1>
-      <!-- <h1 class="lead pt-21 mb-7 text-switcher hidden-xs">
-        <span><?php print t('well-being') ?></span>
-        <span><?php print t('innovation') ?></span>
-        <span><?php print t('design') ?></span>
-      </h1> -->
     </div>
   	<!--<h4 class="lead mt-0 mb-42">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>-->
     <div class="anchor-img-grid anchor-img-grid-1">

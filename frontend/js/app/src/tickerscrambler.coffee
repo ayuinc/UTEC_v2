@@ -1,19 +1,23 @@
 $(document).ready ->
 
-	# el = document.getElementById('text-switcher-word')
-	# ticker = new TickerScrambler(el, {list: ['One','Two','Three']})
-	# $('#text-switcher-word').TickerScrambler({
-	# 	list: ['Bienestar', 'Diseño', 'Innovación']
-	# 	pause: 1000
-	# 	speed: 33
-	# 	random: true
-	# })
+	textES = $('#text-switcher-word').length
+	textEN = $('#text-switcher-word-en').length
+
+	tlText = ''
+	textArr = []
+	if textES
+		tlText = '#text-switcher-word'
+		textArr = ['bienestar', 'innovación', 'diseño']
+	else
+		tlText = '#text-switcher-word-en'
+		textArr = ['well-being', 'innovation', 'design']
+
 	tl = new TimelineMax()
 	makeScramble = ()->
-		tl.to("#text-switcher-word", 
+		tl.to(tlText, 
 			1, 
 			{ scrambleText: {
-				text: "bienestar", 
+				text: textArr[0], 
 				chars: "lowerCase", 
 				# revealDelay: 0.1, 
 				speed: 1,
@@ -21,10 +25,10 @@ $(document).ready ->
 				ease: Linear.easeNone
 				}
 			})
-		tl.to("#text-switcher-word", 
+		tl.to(tlText, 
 			1, 
 			{ scrambleText: {
-				text: "innovación", 
+				text: textArr[1], 
 				chars: "lowerCase", 
 				# revealDelay: 0.1, 
 				speed: 1,
@@ -32,10 +36,10 @@ $(document).ready ->
 				ease: Linear.easeNone
 				}
 			})
-		tl.to("#text-switcher-word", 
+		tl.to(tlText, 
 			1, 
 			{ scrambleText: {
-				text: "diseño", 
+				text: textArr[2], 
 				chars: "lowerCase", 
 				# revealDelay: 0.1, 
 				speed: 1,
