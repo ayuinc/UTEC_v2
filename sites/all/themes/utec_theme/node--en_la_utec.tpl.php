@@ -40,8 +40,16 @@
   <div class="container">
     <div>
       <h1 class="lead text-gray-darker pt-21 mb-7 text-switcher">
-        <?php print t('At UTEC, engineering') ?> <em class="text-gray" style="font-size: 28px;"><?php print t('is') ?></em>
+        <?php print t('At UTEC, engineering') ?> 
+        
+        <?php if ($language->language == 'en') { ?>
+          <em class="text-gray" style="font-size: 28px;">is</em>
+        <?php } elseif ($language->language  != 'en') { ?>
+          <em class="text-gray" style="font-size: 28px;">es</em>
+        <?php } ?>        
+        
         <p class="text-primary visible-xs-inline-block"><?php print t('well-being') ?></p>
+        
         <?php if ($language->language == 'en') { ?>
           <span class="text-primary hidden-xs" id="text-switcher-word-en"></span>
         <?php } elseif ($language->language  != 'en') { ?>
