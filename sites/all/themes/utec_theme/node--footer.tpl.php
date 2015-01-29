@@ -160,7 +160,7 @@
             <li><a href="/<?php print $language->language ?>/spd" class="atm-menu-inferior"><small><?php print t('SPD') ?></small></a></li>
             <li><a href="/<?php print $language->language ?>/spd/short-courses" class="atm-menu-inferior"><small><?php print t('Short Courses') ?></small></a></li>
             <li><a href="/<?php print $language->language ?>/spd/calendar" class="atm-menu-inferior"><small><?php print t('Calendar') ?></small></a></li>
-            <li><a href="/edp/cursos/inhouse-cursos" class="atm-menu-inferior"><small>Inhouse Courses</small></a></li>
+            <li><a href="/<?php print $language->language ?>/spd/inhouse-cursos" class="atm-menu-inferior"><small>Inhouse Courses</small></a></li>
             <!--<li><a href="/convenios" class="atm-menu-inferior"><small>Cursos Adoc</small></a></li>-->
             <?php elseif ($language->language != 'en'): ?>
             <!--<li><a href="/edp/cursos/diplomados" class="atm-menu-inferior"><small>Diplomados</small></a></li>
