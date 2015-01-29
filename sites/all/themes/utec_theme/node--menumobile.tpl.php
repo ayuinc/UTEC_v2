@@ -379,9 +379,18 @@
 			<?php endif ?>
 			</a>
 		</li>
-		<!--<li>
-			<a href="/<?php print $language->language ?>/edp/cursos/cursos-adhoc"><span>Cursos</span>Adhoc</a>
-		</li>-->
+		<li>
+			<?php if ($language->language  != 'en'): ?>
+				<a href="/edp/cursos-inhouse" class="atm-menu-secundario-movil">
+				<span>Cursos </span>Inhouse
+				</a>
+			<?php elseif ($language->language == 'en'): ?>
+				<a href="/<?php print $language->language ?>/spd/inhouse-courses" class="atm-menu-secundario-movil">
+				<span>Inhouse </span>Courses
+				</a>
+			<?php endif ?>
+			</a>
+		</li>		
 		<li>
 			<?php if ($language->language  != 'en'): ?>
 				<a href="/edp/calendario"  class="atm-menu-secundario-movil"><?php print t('Calendar') ?></a>
