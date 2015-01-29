@@ -11,7 +11,6 @@ global $language;
 <div class="sidebar-block">
 	<div>
 		<div class="title">
-			
 			<?php if ($language->language != 'en'): ?>
 			<h3>Explora<br><span>por</span> temas</h3>
 			<?php elseif ($language->language == 'en'): ?>
@@ -20,7 +19,6 @@ global $language;
 		</div>
 		<ul class="categories-list">
 			<?php 
-
 				$term = taxonomy_vocabulary_machine_name_load('blog_tags');
 				$vid = $term->vid;
 				$tree = taxonomy_get_tree($vid);

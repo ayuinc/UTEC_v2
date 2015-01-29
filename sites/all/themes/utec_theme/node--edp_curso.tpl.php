@@ -14,26 +14,21 @@
 	$hora = $node->field_hora['und']['0']['value'];		 		
 	$lugar = $node->field_lugar['und']['0']['value'];		 		
   $obejtivos = $node->field_objetivos['und']['0']['value'];	
+  $duracion = $node->field_duracion['und']['0']['value'];
   $dirigido = $node->field_dirigido_a['und']['0']['value'];	
-
   $profesores = $node->field_profesor['und'];
-
   // $profesor_name = $node->field_profesor['und']['0']['entity']->name;
   // $profesor_id = $node->field_profesor['und']['0']['entity']->uid;
   // $profesor_cargo = $node->field_profesor['und']['0']['entity']->field_descripci_n['und']['0']['value'];
   // $profesor_resenia = $node->field_profesor['und']['0']['entity']->field_rese_a['und']['0']['value'];
   // $profesor_pic = $node->field_profesor['und']['0']['entity']->picture->filename;
-
   $field_requisito = $node->field_requisito['und']['0']['value'];
   $field_temario = $node->field_temario['und']['0']['value'];
   $field_inscribete = $node->field_inscribete['und']['0']['value'];
   $field_contactanos = $node->field_contactanos['und']['0']['value'];
   $field_brochure = $node->field_brochure['und']['0']['value'];
-
   $nodo_id = $node->field_menu_edp_detalles['und']['0']['entity']->nid;
-	
 	$detalles = $node->field_menu_edp_detalles['und'];
-  //kpr($node);
 ?>
 
 
@@ -81,6 +76,16 @@
 				</li>
 			</ul>
 			<?php } ?>
+		  <?php if ($duracion != '') { ?>
+			<ul>
+				<li class="bg-gray text-white uppercase text-center p-21">
+					<?php print t('Length') ?>
+				</li>
+				<li class="pl-21">
+					<p><?php print $duracion ?></p>
+				</li>
+			</ul>
+			<?php } ?>			
 		</div>
 		<?php if ($obejtivos != '') { ?>
 		<div>
