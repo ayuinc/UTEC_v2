@@ -15,7 +15,7 @@
 
 <li data-href="<?php print $url; ?>">
   <div class="date"><div class="num"><?php print $dia ?></div>
-  <div class="month"><?php $mes ?></div></div>
+  <div class="month"><?php print $mes ?></div></div>
   <div>
     <h5 class="thin"><?php print $texto_corto ?></h5>
   </div>
