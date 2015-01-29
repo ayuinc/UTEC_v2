@@ -3,9 +3,12 @@
 // $video_name = $node->field_video['und']['0']['filename'];
 
 $titulo = $node->title;   
-$banner = $node->field_banner['und']['0']['uri'];  
+$banner = $node->field_banner['und']['0']['uri']; 
+$field_link_a_formulario_es = $node->field_link_a_formulario_es['und']['0']['value'];  
+$field_link_formulario_en = $node->field_link_formulario_en['und']['0']['value'];  
 
 ?>
+
 <div class="container-sm">
 	<?php if ($language->language == 'en'): ?>
 		<h1 class="light">Methods of Admission</h1>
@@ -13,9 +16,9 @@ $banner = $node->field_banner['und']['0']['uri'];
 		<h1 class="light">Modalidades de admisión</h1>
 	<?php endif ?>
 	<div class="separator-gray separator-lg"></div>
-	<?php if ($banner): ?>
-	<img class="img-responsive mb-35" src="<?php print file_create_url($banner); ?>" alt="Modalidades de admisión" />
-	<?php endif; ?>
+	<?php //if ($banner): ?>
+	<!--<img class="img-responsive mb-35" src="<?php print file_create_url($banner); ?>" alt="Modalidades de admisión" />-->
+	<?php //endif; ?>
 	<ul class="grid-list grid-list-3 grid-list-1-xs grid-list-hover size sm">
 		<?php if ($language->language  != 'en'): ?>
 		<li data-href="/modalidades-de-admision/primeros-puestos" class="atm-blog" id="primeros-puestos">
@@ -91,7 +94,12 @@ $banner = $node->field_banner['und']['0']['uri'];
 		</li>
 	</ul>
 	<h3><?php print t('If you applied via one of these paths, check your results here.') ?></h3>
-	<a href="https://utec.desire2learn.com/" target="_blank" class="btn btn-primary btn-lg uppercase see-more mvp-7"><?php print t('See results here.') ?></a>
+	<?php if ($language->language  != 'en'): ?>
+	<a href="<?php print $field_link_a_formulario_es ?>" class="btn btn-primary btn-lg uppercase see-more mvp-7"><?php print t('See results here.') ?></a>
+	<?php elseif ($language->language == 'en'): ?>
+	<a href="<?php print $field_link_formulario_en ?>" class="btn btn-primary btn-lg uppercase see-more mvp-7"><?php print t('See results here.') ?></a>
+	<?php endif ?>	
+
 </div>
 
 
