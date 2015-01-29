@@ -4,10 +4,9 @@
 
 $titulo = $node->title;   
 $banner = $node->field_banner['und']['0']['uri']; 
-$field_link_a_formulario_es = $node->field_link_a_formulario_es['und']['0']['uri'];  
-$field_link_formulario_en = $node->field_link_formulario_en['und']['0']['uri'];  
+$field_link_a_formulario_es = $node->field_link_a_formulario_es['und']['0']['value'];  
+$field_link_formulario_en = $node->field_link_formulario_en['und']['0']['value'];  
 
-kpr($node);
 ?>
 
 <div class="container-sm">
