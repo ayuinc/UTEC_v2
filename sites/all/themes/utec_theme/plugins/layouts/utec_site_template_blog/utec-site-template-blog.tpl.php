@@ -22,7 +22,7 @@
   <?php endif; ?>
     <div class="body minhp-100 pv-63 breadcrumbs-dark" id="sec-1">
       <div class="container">
-        <h1 class="light"><?php print t('Blog UTEC') ?></h1>
+        <h1 class="light"><?php print t('In the spotlight') ?></h1>
         <div class="separator-gray separator-sm"></div>
         <div class="row">
           <div class="col-sm-8">
