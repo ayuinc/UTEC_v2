@@ -37,9 +37,9 @@
   // execute the view
   $view->execute();
   // display the results
-  print $view->render();
+  // print $view->render();
 
-  // kpr($node);
+  kpr($view->render());
 
 ?>
 <div class="hero-unit"> <!-- HERO -->
