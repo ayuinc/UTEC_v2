@@ -37,9 +37,10 @@
   // execute the view
   $view->execute();
   // display the results
-  // print $view->render();
+  print $view->render();
 
-  kpr($view);
+  // kpr($view);
+  // profe$view->result;
 
 ?>
 <div class="hero-unit"> <!-- HERO -->
