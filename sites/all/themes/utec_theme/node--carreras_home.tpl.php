@@ -31,7 +31,7 @@
   // load the view 
   $view = views_get_view('profesores_por_carrera');
   // set active display on the view
-  $view->set_display('block');
+  $view->set_display('default');
   // set any needed arguments
   $view->set_arguments(array(arg(2)));
   // execute the view
@@ -39,7 +39,8 @@
   // display the results
   print $view->render();
 
-  // kpr($node);
+  // kpr($view);
+  // profe$view->result;
 
 ?>
 <div class="hero-unit"> <!-- HERO -->
