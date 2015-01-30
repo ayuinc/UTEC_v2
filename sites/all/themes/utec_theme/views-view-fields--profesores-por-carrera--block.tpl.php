@@ -5,22 +5,9 @@
   $path = $base_url.'/'.$theme_path;
   $pathfile = variable_get('file_public_path', conf_path() . '/files/'); 
 
-	$title = $fields['title']->content;
-	$body = $fields['body']->content;
-	$image = $fields['field_imagen']->content;
-	$category = $fields['field_categor_a']->content;
-	$texto_corto = $fields['field_texto_corto']->content;
-	$path = $fields['path']->content;
-	$user_id = $fields['uid']->content;
-	$created = $fields['created']->content;
-
-	$blogger_id = $fields['field_blogger']->content;
-	$blogger = user_load($blogger_id);
-	$user_name = $blogger->name;
-	$user_image = $blogger->picture->filename;
-	$user_charge = $blogger->field_descripci_n['und']['0']['value'];
-
-	kpr($fields);
+	$uid = $fields['field_profesor']->content;
+	$user = user_load($uid);
+	kpr($user);
 ?>
 <?php foreach ($node->field_profesor['und'] as $key => $value) :?>
   <?php $name = $value['entity']->name; ?>
@@ -44,3 +31,19 @@
     <p class="font-profesores"><?php print $desc ?></p>
   </li>
 <?php endforeach ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
