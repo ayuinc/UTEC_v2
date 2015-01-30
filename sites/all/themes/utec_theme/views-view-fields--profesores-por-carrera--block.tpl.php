@@ -22,7 +22,7 @@ if ($language->language == 'en') {
 ?> 
 <li class="mb-ch-14">
   <div class="grid-list-pic" data-href="<?php print $profesor_url ?>">
-    <img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="<?php print t('Faculty') ?>" width="180px" height="auto" class="img-circle">
+    <img src="/<?php if($pic != ''){print file_create_url($pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="<?php print t('Faculty') ?>" width="180px" height="auto" class="img-circle">
   </div>
   <a href="<?php print $profesor_url ?>">
     <?php print $name ?>
