@@ -1,4 +1,4 @@
-
+<?php global $language ?>
   <div class="container-sm">
     <h1 class="light">
     <?php if ($language->language == 'en') { ?>
