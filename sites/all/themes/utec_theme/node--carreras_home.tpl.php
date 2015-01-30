@@ -37,7 +37,7 @@
   // execute the view
   $view->execute();
   // display the results
-  print $view->render();
+ 
 
   // kpr($view);
   // profe$view->result;
@@ -123,7 +123,7 @@
     </div>
   </div>
   <div class="container text-center profesores-carrera" >
-
+    <?php print $view->render(); ?>
   </div>
   <div class="container-sm">
     <h3 class="lead thin text-gray"><em><?php print $profesor_txt ?></em></h3>
