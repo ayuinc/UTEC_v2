@@ -319,7 +319,7 @@
 				<span>Preguntas </span>Frecuentes
 				</a>
 			<?php elseif ($language->language == 'en'): ?>
-				<a href="/<?php print $language->language ?>/admissions-faq" class="atm-menu-secundario-movil">
+				<a href="/<?php print $language->language ?>/frequently-asked-questions" class="atm-menu-secundario-movil">
 				<span>Frequently Asked </span>Questions
 				</a>
 			<?php endif ?>
