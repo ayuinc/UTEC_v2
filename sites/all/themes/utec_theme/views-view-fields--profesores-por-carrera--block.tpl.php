@@ -20,7 +20,7 @@
 	$user_image = $blogger->picture->filename;
 	$user_charge = $blogger->field_descripci_n['und']['0']['value'];
 
-	//kpr($fields);
+	kpr($fields);
 ?>
 <?php foreach ($node->field_profesor['und'] as $key => $value) :?>
   <?php $name = $value['entity']->name; ?>
