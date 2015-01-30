@@ -7,7 +7,7 @@ global $language;
 $idioma = $language->language;	
 ?>
 <?php $path = $base_url.'/'.$theme_path; ?>
-<?php $pathfile= variable_get('file_public_path', conf_path() . '/files/centro-pre/'); ?>
+<?php $pathfile= variable_get('file_public_path', conf_path() . '/files/'); ?>
 
 
 <?php
@@ -33,9 +33,9 @@ $modalida_ext_int = $node->field_modalidad_extensiva_intens['und']['0']['value']
 <?php print $field_fotos_centro_pre ?>
 	<div class="hero-unit"> <!-- HERO -->
 	  <?php if ($language->language == 'en'): ?>
-	  <div data-section-scroll="Overview" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_fotos_centro_pre)?>);">
+	  <div data-section-scroll="Overview" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.'/centro-pre/'.$field_fotos_centro_pre)?>);">
 	  <?php elseif ($language->language  != 'en'): ?>
-	  <div data-section-scroll="Acerca de" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_fotos_centro_pre)?>);">
+	  <div data-section-scroll="Acerca de" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.'/centro-pre/'.$field_fotos_centro_pre)?>);">
 	  <?php endif ?>
 	    <div class="overlay flex-middle">
 	      <div class="container-sm hero-text" data-href="/modalidades-de-admision/centro-pre/acerca-del-centro-pre">
