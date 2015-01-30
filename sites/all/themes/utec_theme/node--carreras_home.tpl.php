@@ -39,7 +39,7 @@
   // display the results
   // print $view->render();
 
-  kpr($view->render());
+  kpr($view);
 
 ?>
 <div class="hero-unit"> <!-- HERO -->
