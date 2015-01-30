@@ -47,7 +47,7 @@ $field_link_formulario_en = $node->field_link_formulario_en['und']['0']['value']
 		<?php if ($language->language  != 'en'): ?>
 		<li data-href="/modalidades-de-admision/traslado-externo" class="atm-blog" id="traslado">
 		<?php elseif ($language->language == 'en'): ?>
-		<li data-href="/en/methods-of-admission/transfer-from-other-universities" class="atm-blog" id="traslado">
+		<li data-href="/en/methods-of-admission/transfer-students" class="atm-blog" id="traslado">
 		<?php endif ?>				
 			<div>
 				<h3 class="thin lead lh-lg"><?php print t('Transfer') ?></h3>
