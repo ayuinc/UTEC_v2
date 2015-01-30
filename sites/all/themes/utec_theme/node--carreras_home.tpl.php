@@ -33,13 +33,13 @@
   // set active display on the view
   $view->set_display('block');
   // set any needed arguments
-  //$view->set_arguments(array(arg(2)));
+  $view->set_arguments(array(arg(2)));
   // execute the view
   $view->execute();
   // display the results
-  $rendered = $view->render();
+  print $view->render();
 
-  kpr($rendered);
+  // kpr($node);
 
 ?>
 <div class="hero-unit"> <!-- HERO -->
