@@ -26,10 +26,20 @@
 
   $carrera_id = $node->field_carrera_referencia['und']['0']['tid'];
 
-  
-  kpr($node);
 
 
+  // load the view 
+  $view = views_get_view('profesores_por_carrera');
+  // set active display on the view
+  $view->set_display('block');
+  // set any needed arguments
+  $view->set_arguments(array(arg(2)));
+  // execute the view
+  $view->execute();
+  // display the results
+  $rendered = $view->render();
+
+  kpr($rendered);
 
 ?>
 <div class="hero-unit"> <!-- HERO -->
