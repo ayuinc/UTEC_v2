@@ -6015,6 +6015,12 @@ textarea:-ms-input-placeholder {
     font-weight: 100;
     font-style: normal; }
 
+.page-page-61 .pane-page-breadcrumb,
+.node-type-blog .pane-page-breadcrumb {
+  position: absolute;
+  top: -130px;
+  left: 210px; }
+
 .breadcrumbs-light .breadcrumb {
   color: white; }
 
