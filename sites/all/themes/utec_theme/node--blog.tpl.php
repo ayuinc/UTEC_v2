@@ -14,7 +14,13 @@
 	$created = date('d F Y', strtotime($node->created));
 	$addblock = module_invoke('addthis','block_view','addthis_block');
 ?>
-<h3 class="lead"><?php print $title ?></h3>
+<h3 class="lead">
+  <?php if ($language->language == 'en') { ?>
+    In the Spotlight
+  <?php } elseif ($language->language  != 'en') { ?>
+    Blog UTEC
+  <?php } ?>  
+</h3>
 <div>
 	<em class="h5"><?php print $blogger_name ?></em><br><span class="text-gray"><?php print $blogger_cargo ?></span>
 </div>
