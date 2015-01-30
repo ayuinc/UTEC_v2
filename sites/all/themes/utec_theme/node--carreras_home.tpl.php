@@ -31,7 +31,7 @@
   // load the view 
   $view = views_get_view('profesores_por_carrera');
   // set active display on the view
-  $view->set_display('default');
+  $view->set_display('block');
   // set any needed arguments
   $view->set_arguments(array(arg(2)));
   // execute the view
