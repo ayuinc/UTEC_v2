@@ -17,7 +17,7 @@
 <h3 class="lead">
   <?php if ($language->language == 'en') { ?>
     In the Spotlight
-  <?php } elseif ($language->language  != 'en') { ?>
+  <?php } elseif ($language->language != 'en') { ?>
     Blog UTEC
   <?php } ?>  
 </h3>

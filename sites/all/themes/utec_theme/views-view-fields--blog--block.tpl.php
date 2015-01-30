@@ -24,9 +24,9 @@
 	<div class="container">
 		
 		<?php if ($language->language != 'en'): ?>
-		<h3 class="h2 lead medium mb-56"><span class="text-gray-darker">Blog</span> <span class="text-gray">UTEC</span></h3>
+		<h3 class="h2 lead medium mb-56"><span class="text-gray-darker">Blog UTEC</span></h3>
 		<?php elseif ($language->language == 'en'): ?>
-		<h3 class="h2 lead medium mb-56"><span class="text-gray">UTEC</span> <span class="text-gray-darker">Blog</span></h3>
+		<h3 class="h2 lead medium mb-56"><span class="text-gray">In the Spotlight</span></h3>
 		<?php endif ?>			
 		<!--<h4 class="lead mt-0 mb-56">Lorem ipsum sit amet, consectetur adipisicing elit.</h4>-->
 		<div class="banner ban-titulo" data-href="<?php print $path; ?>">
