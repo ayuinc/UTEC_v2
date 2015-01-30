@@ -6,7 +6,6 @@
 global $language; 
 $idioma = $language->language;	
 ?>
-
 <?php $path = $base_url.'/'.$theme_path; ?>
 <?php $pathfile= variable_get('file_public_path', conf_path() . '/files/centro-pre/'); ?>
 
