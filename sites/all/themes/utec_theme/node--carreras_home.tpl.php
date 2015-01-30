@@ -24,8 +24,10 @@
 	$perfil_link = $node->field_perfil_egresado_link['und']['0']['value'];
 	$field_perfil_egresado_imagen = $node->field_perfil_egresado_imagen['und']['0']['filename'];
 
-  //kpr($node);
   $carrera_id = $node->field_carrera_referencia['und']['0']['tid'];
+
+  
+  kpr($node);
 
 
 
@@ -109,31 +111,8 @@
       <i class="icon-carreras-profesores"></i>
     </div>
   </div>
-  <div class="container text-center" >
-    <ul class="grid-list grid-list-item-height grid-list-4 grid-list-1-xs grid-list-anchors pv-21">
-      <?php foreach ($node->field_profesor['und'] as $key => $value) :?>
-        <?php $name = $value['entity']->name; ?>
-				<?php $pic = $value['entity']->picture->filename; ?>
-				<?php $uid = $value['entity']->uid; ?>
-        <?php $desc = $value['entity']->field_descripci_n['und'][0]['value']; ?>
-        <?php //die(print_r($value)); ?>
-        <?php 
-        if ($language->language == 'en') {
-          $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/profesor-carrera/'.$uid.'/'.$carrera_id, $language->language); 
-        }else
-          $profesor_url = "/" . drupal_get_path_alias('page/30/profesor-carrera/'.$uid.'/'.$carrera_id, $language->language); 
-        ?> 
-        <li class="mb-ch-14">
-          <div class="grid-list-pic" data-href="<?php print $profesor_url ?>">
-            <img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="<?php print t('Faculty') ?>" width="180px" height="auto" class="img-circle">
-          </div>
-          <a href="<?php print $profesor_url ?>">
-            <?php print $name ?>
-          </a>
-          <p class="font-profesores"><?php print $desc ?></p>
-        </li>
-      <?php endforeach ?>
-    </ul>
+  <div class="container text-center profesores-carrera" >
+
   </div>
   <div class="container-sm">
     <h3 class="lead thin text-gray"><em><?php print $profesor_txt ?></em></h3>
