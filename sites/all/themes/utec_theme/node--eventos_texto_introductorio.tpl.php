@@ -12,6 +12,6 @@
 <div class="container-sm">
   <h1 class="light"><?php print t('Events'); ?></h1>
   <div class="separator-gray separator-sm"></div>
-  <div><?php print $cuerpo ?></div>
+  <div class="mb-35"><?php print $cuerpo ?></div>
 </div>
 
