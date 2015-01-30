@@ -2,7 +2,7 @@
   <div class="container-sm">
     <h1 class="light">
     <?php if ($language->language == 'en') { ?>
-      <?php print t('Alliances') ?>
+      Alliances
     <?php } elseif ($language->language  != 'en') { ?>
       Convenios de Intercambio
     <?php } ?>    
