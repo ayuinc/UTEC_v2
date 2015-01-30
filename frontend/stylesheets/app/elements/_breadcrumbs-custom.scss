@@ -46,6 +46,13 @@
 	}
 }
 
+.page-page-61,
+.node-type-blog {
+	.pane-page-breadcrumb {
+		@include position(absolute, -130px null null 210px); 		
+	}
+}
+
 .breadcrumbs-light {
 	.breadcrumb {
 		color: white;
