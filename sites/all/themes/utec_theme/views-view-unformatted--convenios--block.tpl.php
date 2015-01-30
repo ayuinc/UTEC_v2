@@ -4,7 +4,7 @@
     <?php if ($language->language == 'en') { ?>
       <?php print t('Alliances') ?>
     <?php } elseif ($language->language  != 'en') { ?>
-      de Intercambio
+      Convenios de Intercambio
     <?php } ?>    
     </h1>
     <div class="separator-gray separator-sm"></div>
