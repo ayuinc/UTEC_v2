@@ -31,7 +31,7 @@ $modalida_ext_int = $node->field_modalidad_extensiva_intens['und']['0']['value']
 ?>
 
 <?php print $pathfile ?>
-
+<?php print $field_fotos_centro_pre ?>
 	<div class="hero-unit"> <!-- HERO -->
 	  <?php if ($language->language == 'en'): ?>
 	  <div data-section-scroll="Overview" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_fotos_centro_pre)?>);">
