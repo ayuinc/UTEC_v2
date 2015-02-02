@@ -169,7 +169,7 @@ if($idioma == "es")
 
 
         if($origen == "Formulario inscripcion examen de admision" || $origen == "Formulario inscripcion alto rendimiento" || 
-           $origen == "Formulario inscripcion centro pre" || $origen == "Formulario-primeros-puestos" || 
+           $origen == "Formulario inscripcion centro pre" || $origen == "Formulario inscripcion primeros puestos" || 
            $origen == "Formulario inscripcion traslados" || $origen == "Formulario inscripcion bachillerato internacional" )
         {
 
@@ -215,7 +215,7 @@ if($idioma == "es")
                 $origen = "pagina-inscripcion-pre";  
             }
 
-            if($origen == "Formulario-primeros-puestos")
+            if($origen == "Formulario inscripcion primeros puestos")
             {
                 $tituloTelemarketing = "Registro de Inscripciones - Primeros Puestos UTEC";
                 $subjectTelemarketing = "Registro de Inscripciones - Primeros Puestos UTEC";
@@ -442,7 +442,7 @@ if($idioma == "es")
 if($idioma == "en")
 {
         if($origen == "Admissions Exam" || $origen == "Top Academic Rankings" || $origen == "High Performance Assessment" || 
-           $origen == "Transfer from other Universities" || $origen == "Pre-University Study Center" || $origen == "International Baccalaureate" )
+           $origen == "Transfer Students" || $origen == "Pre-University Study Center" || $origen == "International Baccalaureate" )
         {
 
             $fromTelemarketing = "informes@utec.edu.pe";
@@ -476,7 +476,7 @@ if($idioma == "en")
                 $origen = "pagina-alto-rendimiento";
             }
 
-            if ($origen == "Transfer from other Universities")
+            if ($origen == "Transfer Students")
             {
                 $tituloTelemarketing = "TRANSFER - Personal Data";
                 $subjectTelemarketing = "Request - Transfer from other Universities UTEC";
