@@ -236,7 +236,7 @@ if($idioma == "es")
         }
 
 
-        if( $origen == "Charlas informativas" || $origen == "Contacto" || $origen == "Visita Utec" || 
+        if( $origen == "Charlas Informativas" || $origen == "Contacto" || $origen == "Visita Utec" || 
             $origen == "Trabaja en UTEC" || $origen == "Orientacion Vocacional" || $origen == "EDP" )
         {
             $fromTelemarketing = "webmaster@utec.edu.pe";
@@ -247,7 +247,7 @@ if($idioma == "es")
             $fromNameCliente = "Universidad de Ingeniería & Tecnología";
 
 
-            if($origen == "Charlas informativas")
+            if($origen == "Charlas Informativas")
             {
                 $tituloTelemarketing = "Charlas Informativas";
                 $subjectTelemarketing = "Charlas Informativas UTEC";
