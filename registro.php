@@ -568,7 +568,7 @@ if($idioma == "en")
             }
         }
 
-        if( $origen == "Informative Talks" || $origen == "Contact" || $origen == "Visit UTEC" || 
+        if( $origen == "Informative Talks" || $origen == "Contact Us" || $origen == "Visit UTEC" || 
             $origen == "Work at UTEC" || $origen == "Carrer Guidance and Orientation" || $origen == "EDP" )
         {
             $fromTelemarketing = "webmaster@utec.edu.pe";
@@ -588,7 +588,7 @@ if($idioma == "en")
                 $origen = "pagina-charlas";
             }
 
-            if($origen == "Contact")
+            if($origen == "Contact Us")
             {
                 $tituloTelemarketing = "Contact Form - Personal Data";
                 $subjectTelemarketing = "Request - UTEC Contact Form";
