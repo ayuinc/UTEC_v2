@@ -13,8 +13,10 @@
 	$pic = $user->picture->uri;
 	$desc = $user->field_descripci_n['und']['0']['value'];
   $carrera = taxonomy_get_term_by_name($term_name);
-  $carrera_id = $carrera->tid;
-	kpr($carrera);
+  // $carrera_id = $carrera->tid;
+
+  $carrera_id = array_shift($result[$carrera])->tid
+	// kpr($carrera_id);
 ?>
 
 <?php 
