@@ -169,7 +169,7 @@ if($idioma == "es")
 
 
         if($origen == "Formulario inscripcion examen de admision" || $origen == "Formulario inscripcion alto rendimiento" || 
-           $origen == "Formulario inscripcion centro pre" || $origen == "Formulario-primeros-puestos" || 
+           $origen == "Formulario inscripcion centro pre" || $origen == "Formulario inscripcion primeros puestos" || 
            $origen == "Formulario inscripcion traslados" || $origen == "Formulario inscripcion bachillerato internacional" )
         {
 
@@ -215,7 +215,7 @@ if($idioma == "es")
                 $origen = "pagina-inscripcion-pre";  
             }
 
-            if($origen == "Formulario-primeros-puestos")
+            if($origen == "Formulario inscripcion primeros puestos")
             {
                 $tituloTelemarketing = "Registro de Inscripciones - Primeros Puestos UTEC";
                 $subjectTelemarketing = "Registro de Inscripciones - Primeros Puestos UTEC";
@@ -236,7 +236,7 @@ if($idioma == "es")
         }
 
 
-        if( $origen == "Charlas informativas" || $origen == "Contacto" || $origen == "Visita Utec" || 
+        if( $origen == "Charlas Informativas" || $origen == "Contacto" || $origen == "Visita Utec" || 
             $origen == "Trabaja en UTEC" || $origen == "Orientacion Vocacional" || $origen == "EDP" )
         {
             $fromTelemarketing = "webmaster@utec.edu.pe";
@@ -247,7 +247,7 @@ if($idioma == "es")
             $fromNameCliente = "Universidad de Ingeniería & Tecnología";
 
 
-            if($origen == "Charlas informativas")
+            if($origen == "Charlas Informativas")
             {
                 $tituloTelemarketing = "Charlas Informativas";
                 $subjectTelemarketing = "Charlas Informativas UTEC";
@@ -442,7 +442,7 @@ if($idioma == "es")
 if($idioma == "en")
 {
         if($origen == "Admissions Exam" || $origen == "Top Academic Rankings" || $origen == "High Performance Assessment" || 
-           $origen == "Transfer from other Universities" || $origen == "Pre-University Study Center" || $origen == "International Baccalaureate" )
+           $origen == "Transfer Students" || $origen == "Pre-University Study Center" || $origen == "International Baccalaureate" )
         {
 
             $fromTelemarketing = "informes@utec.edu.pe";
@@ -476,7 +476,7 @@ if($idioma == "en")
                 $origen = "pagina-alto-rendimiento";
             }
 
-            if ($origen == "Transfer from other Universities")
+            if ($origen == "Transfer Students")
             {
                 $tituloTelemarketing = "TRANSFER - Personal Data";
                 $subjectTelemarketing = "Request - Transfer from other Universities UTEC";
@@ -568,7 +568,7 @@ if($idioma == "en")
             }
         }
 
-        if( $origen == "Informative Talks" || $origen == "Contact" || $origen == "Visit UTEC" || 
+        if( $origen == "Informative Talks" || $origen == "Contact Us" || $origen == "Visit UTEC" || 
             $origen == "Work at UTEC" || $origen == "Carrer Guidance and Orientation" || $origen == "EDP" )
         {
             $fromTelemarketing = "webmaster@utec.edu.pe";
@@ -588,7 +588,7 @@ if($idioma == "en")
                 $origen = "pagina-charlas";
             }
 
-            if($origen == "Contact")
+            if($origen == "Contact Us")
             {
                 $tituloTelemarketing = "Contact Form - Personal Data";
                 $subjectTelemarketing = "Request - UTEC Contact Form";
