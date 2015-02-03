@@ -236,7 +236,7 @@ if($idioma == "es")
         }
 
 
-        if( $origen == "Charlas Informativas" || $origen == "Contacto" || $origen == "Visita Utec" || 
+        if( $origen == "Charlas Informativas" || $origen == "Contacto" || $origen == "Visita UTEC" || 
             $origen == "Trabaja en UTEC" || $origen == "Orientacion Vocacional" || $origen == "EDP" )
         {
             $fromTelemarketing = "webmaster@utec.edu.pe";
@@ -264,7 +264,7 @@ if($idioma == "es")
                 $origen = "pagina-contacto";  
             }
 
-            if($origen == "Visita Utec")
+            if($origen == "Visita UTEC")
             {
                 $tituloTelemarketing = "Formulario de Visita UTEC - Datos Personales";
                 $subjectTelemarketing = "Solicitud - Formulario de Visita UTEC";
@@ -502,7 +502,7 @@ if($idioma == "en")
         }
 
 
-        if($origen == "Admissions Exam Application Form" || $origen == "High Performance Assessment Aplication Form" || 
+        if($origen == "Admissions Exam Application Form" || $origen == "High Performance Assessment Application Form" || 
            $origen == "Pre-University Study Center Application Form" || $origen == "Top Academic Rankings Application Form" || 
            $origen == "Transfer from other Universities Application Form" || $origen == "International Baccalaureate Application Form" )
         {
@@ -522,7 +522,7 @@ if($idioma == "en")
                 $origen = "pagina-inscripcion-examen-admision";  
             }
 
-            if($origen == "High Performance Assessment Aplication Form")
+            if($origen == "High Performance Assessment Application Form")
             {
                 $tituloTelemarketing = "Applications - UTEC High Performance Assessment";
                 $subjectTelemarketing = "Applications - UTEC High Performance Assessment";
@@ -569,7 +569,7 @@ if($idioma == "en")
         }
 
         if( $origen == "Informative Talks" || $origen == "Contact Us" || $origen == "Visit UTEC" || 
-            $origen == "Work at UTEC" || $origen == "Carrer Guidance and Orientation" || $origen == "EDP" )
+            $origen == "Work at UTEC" || $origen == "Career Guidance and Orientation" || $origen == "EDP" )
         {
             $fromTelemarketing = "webmaster@utec.edu.pe";
             $fromNameTelemarketing = "UTEC";
@@ -612,7 +612,7 @@ if($idioma == "en")
                 $origen = "pagina-trabaja-en-utec";  
             }
 
-            if($origen == "Carrer Guidance and Orientation")
+            if($origen == "Career Guidance and Orientation")
             {
                 $tituloTelemarketing = "UTEC Carrer Guidance and Orientation - Personal Data";
                 $subjectTelemarketing = "Request - UTEC Carrer Guidance and Orientation";
