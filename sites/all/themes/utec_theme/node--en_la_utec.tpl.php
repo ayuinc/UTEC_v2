@@ -84,7 +84,7 @@
         <div data-href="<?php print $derecho_superior_link; ?>" class="anchor-block-2">
 	      <?php } else { ?>  
 	      	<?php if ($language->language == 'en') { ?>
-		      	<div data-href="<?php print $derecho_superior_link_ingles; ?>" class="anchor-block-2">
+		      	<div data-href="/en/<?php print $derecho_superior_link_ingles; ?>" class="anchor-block-2">
           <?php } elseif ($language->language  != 'en') { ?>
             <div data-href="<?php print $derecho_superior_link; ?>" class="anchor-block-2">    
           <?php } ?> 		      	
@@ -115,7 +115,7 @@
         <div data-href="<?php print $derecho_inferior_izq_link; ?>" class="anchor-block-3">
 	      <?php } else { ?>  
 	      	<?php if ($language->language == 'en') { ?>
-		      	<div data-href="<?php print $derecho_inferior_izq_link_ingles; ?>" class="anchor-block-3">
+		      	<div data-href="/en/<?php print $derecho_inferior_izq_link_ingles; ?>" class="anchor-block-3">
           <?php } elseif ($language->language  != 'en') { ?>
             <div data-href="<?php print $derecho_inferior_izq_link; ?>" class="anchor-block-3">    
           <?php } ?> 		      	
@@ -146,7 +146,7 @@
         <div data-href="<?php print $derecho_inferior_der_link; ?>" class="anchor-block-4">
 	      <?php } else { ?>  
 	      	<?php if ($language->language == 'en') { ?>
-		      	<div data-href="<?php print $derecho_inferior_der_link_ingles; ?>" class="anchor-block-4">
+		      	<div data-href="/en/<?php print $derecho_inferior_der_link_ingles; ?>" class="anchor-block-4">
           <?php } elseif ($language->language  != 'en') { ?>
             <div data-href="<?php print $derecho_inferior_der_link; ?>" class="anchor-block-4">    
           <?php } ?> 		      	
