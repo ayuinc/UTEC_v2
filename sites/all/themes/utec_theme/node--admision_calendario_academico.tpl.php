@@ -64,7 +64,7 @@
 					<tr>
 						<td></td>
 						<td><?php print t('Evaluation') ?></td>
-						<td>20/02/2015</td>
+						<td>26/02/2015</td>
 					</tr>	
 					<tr>
 						<td class="highlight"><?php print t('Pre University Center') ?></td>
@@ -189,7 +189,7 @@
 					<tr>
 						<td></td>
 						<td><?php print t('Evaluation') ?></td>
-						<td>19/02/2015</td>
+						<td>25/02/2015</td>
 					</tr>	
 					<tr>
 						<td class="highlight"><?php print t('Transfers') ?></td>
@@ -199,7 +199,7 @@
 					<tr>
 						<td></td>
 						<td><?php print t('Registration Ends') ?></td>
-						<td>27/01/2015</td>
+						<td>17/02/2015</td>
 					</tr>																																																									
 				</tbody>
 			</table>			
