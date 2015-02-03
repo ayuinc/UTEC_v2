@@ -1,6 +1,6 @@
 <?php $path = $base_url.'/'.$theme_path; ?>
 <?php $pathfile= variable_get('file_public_path', conf_path() . '/files/'); ?>
-					<div class="bg-img-block minh-630 flex-middle-center" style="background-image: url(<?php print $pathfile ?>/404.jpg)">
+					<div class="bg-img-block minh-630 flex-middle-center" style="background-image: url(/<?php print $pathfile ?>/404.jpg)">
 						<div class="container-sm text-center lead-ch light">
 							<h1 class="text-white lead light uppercase">Error 404</h1>
 							<h3 class="text-white">Hasta los ingenieros nos equivocamos para alcanzar la perfección</h3>
