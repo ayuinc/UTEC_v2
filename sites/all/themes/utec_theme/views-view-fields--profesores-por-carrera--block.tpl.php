@@ -5,13 +5,19 @@
   $path = $base_url.'/'.$theme_path;
   $pathfile = variable_get('file_public_path', conf_path() . '/files/'); 
 
-	$uid = $fields['field_profesor']->content;
+  $uid = $fields['field_profesor']->content;
+	$term_name = $fields['field_carrera_referencia']->content;
 	$user = user_load($uid);
 
 	$name = $user->name;
 	$pic = $user->picture->uri;
 	$desc = $user->field_descripci_n['und']['0']['value'];
-	//kpr($user);
+  $carrera = taxonomy_get_term_by_name($term_name);
+  foreach ($carrera as $value) {
+    $carrera_id = $value->tid;
+  }
+
+	//print_r($carrera);
 ?>
 
 <?php 
