@@ -12,7 +12,7 @@
 	$pic = $user->picture->uri;
 	$desc = $user->field_descripci_n['und']['0']['value'];
   //$carrera_id = taxonomy_get_term_by_name('bar');
-	kpr($fields);
+	die(kpr($fields));
 ?>
 
 <?php 
