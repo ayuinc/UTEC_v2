@@ -13,9 +13,9 @@
 	$pic = $user->picture->uri;
 	$desc = $user->field_descripci_n['und']['0']['value'];
   $carrera = taxonomy_get_term_by_name($term_name);
-  $carrera_id = $carrera['0']->tid;
+  // $carrera_id = $carrera['0']->tid;
 
-	// kpr($carrera_id);
+	print_r($carrera);
 ?>
 
 <?php 
