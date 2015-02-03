@@ -55,7 +55,16 @@
     </div>
     <div class="anchor-img-grid anchor-img-grid-1">
       <div class="col-sm-6">
-        <div data-href="<?php print $base_url; ?>/<?php print $izquierdo_link; ?>" class="anchor-block-1">
+	      
+        <?php if ($izquierdo_link=='http://app.utec.edu.pe/admision') { ?>
+        <div data-href="<?php print $izquierdo_link; ?>" class="anchor-block-1">
+	      <?php } else { ?>	      
+	      	<?php if ($language->language == 'en') { ?>
+		      	<div data-href="/en<?php print $izquierdo_link; ?>" class="anchor-block-1">
+          <?php } elseif ($language->language  != 'en') { ?>
+            <div data-href="<?php print $izquierdo_link; ?>" class="anchor-block-1">    
+          <?php } ?> 	
+		    <?php } ?>          	        
           <div class="pic" style="background-image: url(sites/default/files/<?php print $izquierdo_img; ?>);"></div>
           <div class="overlay">
             <a href="#">
@@ -80,7 +89,15 @@
         </div>
       </div>
       <div class="col-sm-6">
-        <div data-href="<?php print $base_url; ?>/<?php print $derecho_superior_link; ?>" class="anchor-block-2">
+        <?php if ($derecho_superior_link=='http://utecventures.com') { ?>
+        <div data-href="<?php print $derecho_superior_link; ?>" class="anchor-block-2">
+	      <?php } else { ?>  
+	      	<?php if ($language->language == 'en') { ?>
+		      	<div data-href="/en<?php print $derecho_superior_link; ?>" class="anchor-block-2">
+          <?php } elseif ($language->language  != 'en') { ?>
+            <div data-href="<?php print $derecho_superior_link; ?>" class="anchor-block-2">    
+          <?php } ?> 		      	
+		    <?php } ?>	        
           <div class="pic" style="background-image: url(sites/default/files/<?php print $derecho_superior_img; ?>);"></div>
           <div class="overlay">
             <a href="#">
@@ -106,7 +123,11 @@
         <?php if ($derecho_inferior_izq_link=='http://utecventures.com') { ?>
         <div data-href="<?php print $derecho_inferior_izq_link; ?>" class="anchor-block-3">
 	      <?php } else { ?>  
-	      <div data-href="<?php print $base_url; ?>/<?php print $derecho_inferior_izq_link; ?>" class="anchor-block-3">
+	      	<?php if ($language->language == 'en') { ?>
+		      	<div data-href="/en<?php print $derecho_inferior_izq_link; ?>" class="anchor-block-3">
+          <?php } elseif ($language->language  != 'en') { ?>
+            <div data-href="<?php print $derecho_inferior_izq_link; ?>" class="anchor-block-3">    
+          <?php } ?> 		      	
 		    <?php } ?>
           <div class="pic" style="background-image: url(sites/default/files/<?php print $derecho_inferior_izq_img; ?>);"></div>
           <div class="overlay">
@@ -130,7 +151,15 @@
             </a>
           </div>
         </div>
-        <div data-href="<?php print $base_url; ?>/<?php print $derecho_inferior_der_link; ?>" class="anchor-block-4">
+        <?php if ($derecho_inferior_der_link=='http://utecventures.com') { ?>
+        <div data-href="<?php print $derecho_inferior_der_link; ?>" class="anchor-block-4">
+	      <?php } else { ?>  
+	      	<?php if ($language->language == 'en') { ?>
+		      	<div data-href="/en<?php print $derecho_inferior_der_link; ?>" class="anchor-block-4">
+          <?php } elseif ($language->language  != 'en') { ?>
+            <div data-href="<?php print $derecho_inferior_der_link; ?>" class="anchor-block-4">    
+          <?php } ?> 		      	
+		    <?php } ?>	        
           <div class="pic" style="background-image: url(sites/default/files/<?php print $derecho_inferior_der_img; ?>);"></div>
           <div class="overlay">
             <a href="#">

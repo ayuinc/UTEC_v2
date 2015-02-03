@@ -9,7 +9,7 @@
  */
 ?>
 <div class="container">
-	<h3 class="thin lead"><?php print t('Curricular Structure') ?></h3>
+	<h1 class="thin lead"><?php print t('Curricular Structure') ?></h1>
 	<div class="separator-gray separator-lg"></div>
 	<h3 class="lead thin"><?php print t('Semester') ?> 2015 - I</h3>
 	<div>
