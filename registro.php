@@ -1585,7 +1585,7 @@ if($error){
                   
           if($origen == "pagina-inscripcion-traslado-externo")
           {
-                header('Location: /modalidades-de-admision/bachillerato-internacional/formulario-de-inscripcion/gracias');
+                header('Location: /modalidades-de-admision/traslado-externo/formulario-de-inscripcion/gracias');
                 exit();   
           }
 
@@ -1634,7 +1634,7 @@ if($error){
                   
           if($origen == "pagina-inscripcion-traslado-externo")
           {
-                header('Location: /en/methods-of-admission/transfer-other-universities/application-form/thank-you');
+                header('Location: /en/methods-of-admission/transfer-students/application-form/thank-you');
                 exit();   
           }
 

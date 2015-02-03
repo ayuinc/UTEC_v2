@@ -19,7 +19,7 @@
   $izquierdo_txt1_ingles = $fields[2]->field_texto_superior_1_ingles['und'][0]['value'];
   $izquierdo_txt2 = $fields[2]->field_texto_superior_2['und'][0]['value'];
   $izquierdo_txt2_ingles = $fields[2]->field_texto_superior_2_ingles['und'][0]['value'];
-  $izquierdo_link = $fields[2]->field_link_link['und'][0]['value'];
+  $izquierdo_link = $fields[2]->field_link['und'][0]['value'];
   $izquierdo_link_ingles = $fields[2]->field_link_ingles['und'][0]['value'];
   $izquierdo_img  = $fields[2]->field_imagen['und'][0]['filename'];
 
@@ -35,7 +35,7 @@
   $derecho_inferior_der_txt1_ingles = $fields[4]->field_texto_superior_1_ingles['und'][0]['value'];
   $derecho_inferior_der_txt2 = $fields[4]->field_texto_superior_2['und'][0]['value'];
   $derecho_inferior_der_txt2_ingles = $fields[4]->field_texto_superior_2_ingles['und'][0]['value'];
-  $derecho_inferior_der_link = $fields[4]->field_link_ingles['und'][0]['value'];
+  $derecho_inferior_der_link = $fields[4]->field_link['und'][0]['value'];
   $derecho_inferior_der_link_ingles = $fields[4]->field_link_ingles['und'][0]['value'];
   $derecho_inferior_der_img  = $fields[4]->field_imagen['und'][0]['filename'];
 ?>
