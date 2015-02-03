@@ -15,6 +15,6 @@
 <?php if ($language->language != 'en'): ?>
 	<a href="/blog/todos-los-posts" class="btn btn-custom btn-primary see-more uppercase">Ver todos</a>
 <?php elseif ($language->language == 'en'): ?>
-	<a href="/en/blog/all-posts" class="btn btn-custom btn-primary see-more uppercase">Read all</a>
+	<a href="/en/in-the-spotlight/all-posts" class="btn btn-custom btn-primary see-more uppercase">Read all</a>
 <?php endif ?>	
 </div>
