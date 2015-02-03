@@ -55,7 +55,11 @@
     </div>
     <div class="anchor-img-grid anchor-img-grid-1">
       <div class="col-sm-6">
-        <div data-href="<?php print $izquierdo_link; ?>" class="anchor-block-1">
+	      	<?php if ($language->language == 'en') { ?>
+		      	<div data-href="/en/<?php print $izquierdo_link; ?>" class="anchor-block-1">
+          <?php } elseif ($language->language  != 'en') { ?>
+            <div data-href="<?php print $izquierdo_link; ?>" class="anchor-block-1">    
+          <?php } ?> 		        
           <div class="pic" style="background-image: url(sites/default/files/<?php print $izquierdo_img; ?>);"></div>
           <div class="overlay">
             <a href="#">
@@ -84,7 +88,7 @@
         <div data-href="<?php print $derecho_superior_link; ?>" class="anchor-block-2">
 	      <?php } else { ?>  
 	      	<?php if ($language->language == 'en') { ?>
-		      	<div data-href="/en/<?php print $derecho_superior_link_ingles; ?>" class="anchor-block-2">
+		      	<div data-href="/en/<?php print $derecho_superior_link; ?>" class="anchor-block-2">
           <?php } elseif ($language->language  != 'en') { ?>
             <div data-href="<?php print $derecho_superior_link; ?>" class="anchor-block-2">    
           <?php } ?> 		      	
@@ -115,7 +119,7 @@
         <div data-href="<?php print $derecho_inferior_izq_link; ?>" class="anchor-block-3">
 	      <?php } else { ?>  
 	      	<?php if ($language->language == 'en') { ?>
-		      	<div data-href="/en/<?php print $derecho_inferior_izq_link_ingles; ?>" class="anchor-block-3">
+		      	<div data-href="/en/<?php print $derecho_inferior_izq_link; ?>" class="anchor-block-3">
           <?php } elseif ($language->language  != 'en') { ?>
             <div data-href="<?php print $derecho_inferior_izq_link; ?>" class="anchor-block-3">    
           <?php } ?> 		      	
@@ -146,7 +150,7 @@
         <div data-href="<?php print $derecho_inferior_der_link; ?>" class="anchor-block-4">
 	      <?php } else { ?>  
 	      	<?php if ($language->language == 'en') { ?>
-		      	<div data-href="/en/<?php print $derecho_inferior_der_link_ingles; ?>" class="anchor-block-4">
+		      	<div data-href="/en/<?php print $derecho_inferior_der_link; ?>" class="anchor-block-4">
           <?php } elseif ($language->language  != 'en') { ?>
             <div data-href="<?php print $derecho_inferior_der_link; ?>" class="anchor-block-4">    
           <?php } ?> 		      	
