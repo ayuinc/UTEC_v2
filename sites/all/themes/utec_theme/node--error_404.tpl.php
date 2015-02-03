@@ -14,7 +14,7 @@ $body = $node->body['und'][0]['value'];
 		<h1 class="text-white lead light uppercase"><?php print $titulo ?></h1>
 			<?php print $body ?>
 		<div class="pv-35">
-			<a href="/" class="btn btn-xl btn-white btn-outline uppercase bold see-more">Volver a página de inicio</a>
+			<a href="/" class="btn btn-xl btn-white btn-outline uppercase bold see-more"><?php print t('Get back to the homepage'); ?></a>
 		</div>
 	</div>
 </div>
