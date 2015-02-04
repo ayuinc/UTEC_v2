@@ -2,6 +2,7 @@ $(document).ready ->
 
 	$button = $('.body button[type="submit"]')
 	$bodyForm = $('.body form')
+	$searchForm = $('#search-form')
 
 	overlayTempl = '<div class="form-overlay">' +
 								'<div>' +
@@ -12,6 +13,17 @@ $(document).ready ->
 								'</div>' +
 								'</div>' +
 								'</div>'
+
+	if ($searchForm.find('#edit-keys').val().length < 1)
+		$searchForm.find('#edit-submit').addClass('disabled')
+
+	$searchForm.find('#edit-keys').on('keyup', ->
+		if ($searchForm.find('#edit-keys').val().length < 1)
+			$searchForm.find('#edit-submit').addClass('disabled')
+		else
+			$searchForm.find('#edit-submit').removeClass('disabled')
+		return
+	)
 
 
 	$bodyForm.on('submit', (e)->

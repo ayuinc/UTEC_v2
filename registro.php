@@ -1622,7 +1622,7 @@ if($error){
 
           if($origen == "pagina-inscripcion-pre")
           {
-                header('Location: /en/methods-of-admission/pre-university-study-center/application-form/thank-you');
+                header('Location: /en/methods-of-admission/pre-university-center/application-form/thank-you');
                 exit();   
           }
 
