@@ -128,7 +128,7 @@
             <li><a href="/<?php print $language->language ?>/visit-utec" class="atm-menu-inferior"><small><?php print t('Visit UTEC') ?></small></a></li>
             <li><a href="/<?php print $language->language ?>/financial-information" class="atm-menu-inferior"><small><?php print t('Financial Information') ?></small></a></li>
             <li><a href="/<?php print $language->language ?>/career-guidance-and-orientation" class="atm-menu-inferior"><small><?php print t('Guidance') ?></small></a></li>
-            <li><a href="/<?php print $language->language ?>/admissions-faq" class="atm-menu-inferior"><small><?php print t('FAQ') ?></small></a></li>
+            <li><a href="/<?php print $language->language ?>/frequently-asked-questions" class="atm-menu-inferior"><small><?php print t('FAQ') ?></small></a></li>
               <?php elseif ($language->language != 'en'): ?>
             <li class="title text-gray-lighter">Admisión</li>
             <li><a href="/modalidades-de-admision" class="atm-menu-inferior"><small>Modalidades de Admisión</small></a></li>
@@ -155,20 +155,21 @@
           <ul>
             <li class="title text-gray-lighter"><?php print t('SPD') ?></li>
             <?php if ($language->language == 'en'): ?>
-            <!--<li><a href="/edp/cursos/diplomados" class="atm-menu-inferior"><small>Diplomados</small></a></li>
-            <li><a href="/edp/cursos/cursos-online" class="atm-menu-inferior"><small>Cursos Online</small></a></li>-->
+            <!--<li><a href="/edp/cursos/cursos-online" class="atm-menu-inferior"><small>Cursos Online</small></a></li>-->
             <li><a href="/<?php print $language->language ?>/spd" class="atm-menu-inferior"><small><?php print t('SPD') ?></small></a></li>
             <li><a href="/<?php print $language->language ?>/spd/short-courses" class="atm-menu-inferior"><small><?php print t('Short Courses') ?></small></a></li>
             <li><a href="/<?php print $language->language ?>/spd/calendar" class="atm-menu-inferior"><small><?php print t('Calendar') ?></small></a></li>
             <li><a href="/<?php print $language->language ?>/spd/inhouse-cursos" class="atm-menu-inferior"><small>Inhouse Courses</small></a></li>
+            <li><a href="/<?php print $language->language ?>/spd/certificates" class="atm-menu-inferior"><small>Certificates</small></a></li>
             <!--<li><a href="/convenios" class="atm-menu-inferior"><small>Cursos Adoc</small></a></li>-->
             <?php elseif ($language->language != 'en'): ?>
-            <!--<li><a href="/edp/cursos/diplomados" class="atm-menu-inferior"><small>Diplomados</small></a></li>
-            <li><a href="/edp/cursos/cursos-online" class="atm-menu-inferior"><small>Cursos Online</small></a></li>-->
+            
+            <!--<li><a href="/edp/cursos/cursos-online" class="atm-menu-inferior"><small>Cursos Online</small></a></li>-->
             <li><a href="/edp" class="atm-menu-inferior"><small><?php print t('SPD') ?></small></a></li>
             <li><a href="/edp/cursos-cortos" class="atm-menu-inferior"><small><?php print t('Short Courses') ?></small></a></li>
             <li><a href="/edp/calendario" class="atm-menu-inferior"><small><?php print t('Calendar') ?></small></a></li>
             <li><a href="/edp/cursos/courses-inhouse" class="atm-menu-inferior"><small>Cursos Inhouse</a></li>
+            <li><a href="/edp/diplomados" class="atm-menu-inferior"><small>Diplomados</small></a></li>
             <!--<li><a href="/convenios" class="atm-menu-inferior"><small>Cursos Adoc</small></a></li>-->  
             <?php endif ?>
           </ul>

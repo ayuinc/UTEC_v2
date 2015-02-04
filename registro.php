@@ -169,7 +169,7 @@ if($idioma == "es")
 
 
         if($origen == "Formulario inscripcion examen de admision" || $origen == "Formulario inscripcion alto rendimiento" || 
-           $origen == "Formulario inscripcion centro pre" || $origen == "Formulario-primeros-puestos" || 
+           $origen == "Formulario inscripcion centro pre" || $origen == "Formulario inscripcion primeros puestos" || 
            $origen == "Formulario inscripcion traslados" || $origen == "Formulario inscripcion bachillerato internacional" )
         {
 
@@ -215,7 +215,7 @@ if($idioma == "es")
                 $origen = "pagina-inscripcion-pre";  
             }
 
-            if($origen == "Formulario-primeros-puestos")
+            if($origen == "Formulario inscripcion primeros puestos")
             {
                 $tituloTelemarketing = "Registro de Inscripciones - Primeros Puestos UTEC";
                 $subjectTelemarketing = "Registro de Inscripciones - Primeros Puestos UTEC";
@@ -236,7 +236,7 @@ if($idioma == "es")
         }
 
 
-        if( $origen == "Charlas informativas" || $origen == "Contacto" || $origen == "Visita Utec" || 
+        if( $origen == "Charlas Informativas" || $origen == "Contacto" || $origen == "Visita UTEC" || 
             $origen == "Trabaja en UTEC" || $origen == "Orientacion Vocacional" || $origen == "EDP" )
         {
             $fromTelemarketing = "webmaster@utec.edu.pe";
@@ -247,7 +247,7 @@ if($idioma == "es")
             $fromNameCliente = "Universidad de Ingeniería & Tecnología";
 
 
-            if($origen == "Charlas informativas")
+            if($origen == "Charlas Informativas")
             {
                 $tituloTelemarketing = "Charlas Informativas";
                 $subjectTelemarketing = "Charlas Informativas UTEC";
@@ -264,7 +264,7 @@ if($idioma == "es")
                 $origen = "pagina-contacto";  
             }
 
-            if($origen == "Visita Utec")
+            if($origen == "Visita UTEC")
             {
                 $tituloTelemarketing = "Formulario de Visita UTEC - Datos Personales";
                 $subjectTelemarketing = "Solicitud - Formulario de Visita UTEC";
@@ -442,7 +442,7 @@ if($idioma == "es")
 if($idioma == "en")
 {
         if($origen == "Admissions Exam" || $origen == "Top Academic Rankings" || $origen == "High Performance Assessment" || 
-           $origen == "Transfer from other Universities" || $origen == "Pre-University Study Center" || $origen == "International Baccalaureate" )
+           $origen == "Transfer Students" || $origen == "Pre-University Study Center" || $origen == "International Baccalaureate" )
         {
 
             $fromTelemarketing = "informes@utec.edu.pe";
@@ -476,7 +476,7 @@ if($idioma == "en")
                 $origen = "pagina-alto-rendimiento";
             }
 
-            if ($origen == "Transfer from other Universities")
+            if ($origen == "Transfer Students")
             {
                 $tituloTelemarketing = "TRANSFER - Personal Data";
                 $subjectTelemarketing = "Request - Transfer from other Universities UTEC";
@@ -502,7 +502,7 @@ if($idioma == "en")
         }
 
 
-        if($origen == "Admissions Exam Application Form" || $origen == "High Performance Assessment Aplication Form" || 
+        if($origen == "Admissions Exam Application Form" || $origen == "High Performance Assessment Application Form" || 
            $origen == "Pre-University Study Center Application Form" || $origen == "Top Academic Rankings Application Form" || 
            $origen == "Transfer from other Universities Application Form" || $origen == "International Baccalaureate Application Form" )
         {
@@ -522,7 +522,7 @@ if($idioma == "en")
                 $origen = "pagina-inscripcion-examen-admision";  
             }
 
-            if($origen == "High Performance Assessment Aplication Form")
+            if($origen == "High Performance Assessment Application Form")
             {
                 $tituloTelemarketing = "Applications - UTEC High Performance Assessment";
                 $subjectTelemarketing = "Applications - UTEC High Performance Assessment";
@@ -568,8 +568,8 @@ if($idioma == "en")
             }
         }
 
-        if( $origen == "Informative Talks" || $origen == "Contact" || $origen == "Visit UTEC" || 
-            $origen == "Work at UTEC" || $origen == "Carrer Guidance and Orientation" || $origen == "EDP" )
+        if( $origen == "Informative Talks" || $origen == "Contact Us" || $origen == "Visit UTEC" || 
+            $origen == "Work at UTEC" || $origen == "Career Guidance and Orientation" || $origen == "EDP" )
         {
             $fromTelemarketing = "webmaster@utec.edu.pe";
             $fromNameTelemarketing = "UTEC";
@@ -588,7 +588,7 @@ if($idioma == "en")
                 $origen = "pagina-charlas";
             }
 
-            if($origen == "Contact")
+            if($origen == "Contact Us")
             {
                 $tituloTelemarketing = "Contact Form - Personal Data";
                 $subjectTelemarketing = "Request - UTEC Contact Form";
@@ -612,7 +612,7 @@ if($idioma == "en")
                 $origen = "pagina-trabaja-en-utec";  
             }
 
-            if($origen == "Carrer Guidance and Orientation")
+            if($origen == "Career Guidance and Orientation")
             {
                 $tituloTelemarketing = "UTEC Carrer Guidance and Orientation - Personal Data";
                 $subjectTelemarketing = "Request - UTEC Carrer Guidance and Orientation";
@@ -1585,7 +1585,7 @@ if($error){
                   
           if($origen == "pagina-inscripcion-traslado-externo")
           {
-                header('Location: /modalidades-de-admision/bachillerato-internacional/formulario-de-inscripcion/gracias');
+                header('Location: /modalidades-de-admision/traslado-externo/formulario-de-inscripcion/gracias');
                 exit();   
           }
 
@@ -1622,7 +1622,7 @@ if($error){
 
           if($origen == "pagina-inscripcion-pre")
           {
-                header('Location: /en/methods-of-admission/pre-university-study-center/application-form/thank-you');
+                header('Location: /en/methods-of-admission/pre-university-center/application-form/thank-you');
                 exit();   
           }
 
@@ -1634,7 +1634,7 @@ if($error){
                   
           if($origen == "pagina-inscripcion-traslado-externo")
           {
-                header('Location: /en/methods-of-admission/transfer-other-universities/application-form/thank-you');
+                header('Location: /en/methods-of-admission/transfer-students/application-form/thank-you');
                 exit();   
           }
 

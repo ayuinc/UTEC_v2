@@ -36,7 +36,7 @@
 				<?php if ($language->language != 'en'): ?>
 				<a href="<?php print $path ?>" class="btn btn-sm btn-primary btn-outline see-more">Leer más</a>
 				<?php elseif ($language->language == 'en'): ?>
-				<a href="/en/<?php print $path ?>" class="btn btn-sm btn-primary btn-outline see-more">Read more</a>
+				<a href="<?php print $path ?>" class="btn btn-sm btn-primary btn-outline see-more">Read more</a>
 				<?php endif ?>	
 			</div>
 			<div class="right">

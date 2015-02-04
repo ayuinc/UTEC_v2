@@ -319,7 +319,7 @@
 				<span>Preguntas </span>Frecuentes
 				</a>
 			<?php elseif ($language->language == 'en'): ?>
-				<a href="/<?php print $language->language ?>/admissions-faq" class="atm-menu-secundario-movil">
+				<a href="/<?php print $language->language ?>/frequently-asked-questions" class="atm-menu-secundario-movil">
 				<span>Frequently Asked </span>Questions
 				</a>
 			<?php endif ?>
@@ -381,6 +381,18 @@
 		</li>
 		<li>
 			<?php if ($language->language  != 'en'): ?>
+				<a href="/edp/diplomados" class="atm-menu-secundario-movil">
+				Diplomados
+				</a>
+			<?php elseif ($language->language == 'en'): ?>
+				<a href="/<?php print $language->language ?>/spd/certificates" class="atm-menu-secundario-movil">
+				Certificates
+				</a>
+			<?php endif ?>
+			</a>
+		</li>		
+		<li>
+			<?php if ($language->language  != 'en'): ?>
 				<a href="/edp/cursos-inhouse" class="atm-menu-secundario-movil">
 				<span>Cursos </span>Inhouse
 				</a>
@@ -390,7 +402,7 @@
 				</a>
 			<?php endif ?>
 			</a>
-		</li>		
+		</li>				
 		<li>
 			<?php if ($language->language  != 'en'): ?>
 				<a href="/edp/calendario"  class="atm-menu-secundario-movil"><?php print t('Calendar') ?></a>

@@ -6,9 +6,8 @@
 global $language; 
 $idioma = $language->language;	
 ?>
-
 <?php $path = $base_url.'/'.$theme_path; ?>
-<?php $pathfile= variable_get('file_public_path', conf_path() . '/files/centro-pre/'); ?>
+<?php $pathfile= variable_get('file_public_path', conf_path() . '/files/'); ?>
 
 
 <?php
@@ -25,22 +24,11 @@ $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
 $modalida_ext_int = $node->field_modalidad_extensiva_intens['und']['0']['value'];
 ?>
 
-
-<?php
-	$unwanted_array = array(    'Š'=>'S', 'š'=>'s', 'Ž'=>'Z', 'ž'=>'z', 'À'=>'A', 'Á'=>'A', 'Â'=>'A', 'Ã'=>'A', 'Ä'=>'A', 'Å'=>'A', 'Æ'=>'A', 'Ç'=>'C', 'È'=>'E', 'É'=>'E',
-	                            'Ê'=>'E', 'Ë'=>'E', 'Ì'=>'I', 'Í'=>'I', 'Î'=>'I', 'Ï'=>'I', 'Ñ'=>'N', 'Ò'=>'O', 'Ó'=>'O', 'Ô'=>'O', 'Õ'=>'O', 'Ö'=>'O', 'Ø'=>'O', 'Ù'=>'U',
-	                            'Ú'=>'U', 'Û'=>'U', 'Ü'=>'U', 'Ý'=>'Y', 'Þ'=>'B', 'ß'=>'Ss', 'à'=>'a', 'á'=>'a', 'â'=>'a', 'ã'=>'a', 'ä'=>'a', 'å'=>'a', 'æ'=>'a', 'ç'=>'c',
-	                            'è'=>'e', 'é'=>'e', 'ê'=>'e', 'ë'=>'e', 'ì'=>'i', 'í'=>'i', 'î'=>'i', 'ï'=>'i', 'ð'=>'o', 'ñ'=>'n', 'ò'=>'o', 'ó'=>'o', 'ô'=>'o', 'õ'=>'o',
-	                            'ö'=>'o', 'ø'=>'o', 'ù'=>'u', 'ú'=>'u', 'û'=>'u', 'ý'=>'y', 'ý'=>'y', 'þ'=>'b', 'ÿ'=>'y' );
-	$titulo = strtr( $titulo, $unwanted_array );		
-?>
-
-
 	<div class="hero-unit"> <!-- HERO -->
 	  <?php if ($language->language == 'en'): ?>
-	  <div data-section-scroll="Overview" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_fotos_centro_pre)?>);">
+	  <div data-section-scroll="Overview" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.'/centro-pre/'.$field_fotos_centro_pre)?>);">
 	  <?php elseif ($language->language  != 'en'): ?>
-	  <div data-section-scroll="Acerca de" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_fotos_centro_pre)?>);">
+	  <div data-section-scroll="Acerca de" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.'/centro-pre/'.$field_fotos_centro_pre)?>);">
 	  <?php endif ?>
 	    <div class="overlay flex-middle">
 	      <div class="container-sm hero-text" data-href="/modalidades-de-admision/centro-pre/acerca-del-centro-pre">
@@ -305,7 +293,7 @@ jQuery(function() {
 		<?php if ($language->language  != 'en'): ?>
 			<a href="/modalidades-de-admision/centro-pre/formulario-de-inscripcion" class="btn btn-primary uppercase">Postular</a>								
 		<?php elseif ($language->language == 'en'): ?>
-			<a href="/<?php print $language->language ?>/methods-of-admission/pre-university-center/registration-form" class="btn btn-primary uppercase"><?php print t('Apply') ?></a>		
+			<a href="/<?php print $language->language ?>/methods-of-admission/pre-university-center/application-form" class="btn btn-primary uppercase"><?php print t('Apply') ?></a>		
 		<?php endif ?>	  
   </div>
 </div>

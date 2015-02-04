@@ -473,7 +473,7 @@
 								<span>Preguntas</span>Frecuentes
 								</a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/admissions-faq" class="atm-menu-secundario">
+								<a href="/<?php print $language->language ?>/frequently-asked-questions" class="atm-menu-secundario">
 								<span>Frequently Asked</span>Questions
 								</a>
 							<?php endif ?>
@@ -568,7 +568,7 @@
 							<?php endif ?>
 							</a>
 						</li>
-						<li>
+						<!--<li>
 							<?php if ($language->language != 'en'): ?>
 								<a href="/edp/cursos-online" class="atm-menu-secundario">
 									<span>Cursos</span>Online
@@ -579,7 +579,7 @@
 								</a>
 							<?php endif ?>
 							</a>
-						</li>
+						</li>-->
 						<li>
 							<?php if ($language->language != 'en'): ?>
 								<a href="/edp/cursos-inhouse" class="atm-menu-secundario">
@@ -1014,7 +1014,7 @@
 								<span>Preguntas</span>Frecuentes
 								</a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/admissions-faq" class="atm-menu-secundario">
+								<a href="/<?php print $language->language ?>/frequently-asked-questions" class="atm-menu-secundario">
 								<span>Frequently Asked</span>Questions
 								</a>
 							<?php endif ?>
@@ -1109,7 +1109,7 @@
 							<?php endif ?>
 							</a>
 						</li>
-						<li>
+						<!--<li>
 							<?php if ($language->language != 'en'): ?>
 								<a href="/edp/cursos-online" class="atm-menu-secundario">
 									<span>Cursos</span>Online
@@ -1120,7 +1120,7 @@
 								</a>
 							<?php endif ?>
 							</a>
-						</li>
+						</li>-->
 						<li>
 							<?php if ($language->language != 'en'): ?>
 								<a href="/edp/cursos-inhouse" class="atm-menu-secundario">
