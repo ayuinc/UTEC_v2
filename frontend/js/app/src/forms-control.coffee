@@ -14,6 +14,9 @@ $(document).ready ->
 								'</div>' +
 								'</div>'
 
+	if ($searchForm.find('#edit-keys').val().length < 1)
+		$searchForm.find('#edit-submit').addClass('disabled')
+
 	$searchForm.find('#edit-keys').on('keyup', ->
 		if ($searchForm.find('#edit-keys').val().length < 1)
 			$searchForm.find('#edit-submit').addClass('disabled')
