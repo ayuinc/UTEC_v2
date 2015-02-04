@@ -1,7 +1,7 @@
 // EBM MEDIA QUERIES B3 - FOUNDATION:
 $screen: "only screen" !default;
 
-$landscape: "#{$screen} and (orientation: landscape)" !default;
+$landscape: "#{$screen} and (max-width: #{$screen-tablet}) and (orientation: landscape)" !default;
 $portrait: "#{$screen} and (orientation: portrait)" !default;
 
 $xs-only: "#{$screen} and (max-width: #{$screen-phone})" !default;
@@ -32,21 +32,25 @@ $media-only-list:
 	$xs-only, 
 	$sm-only, 
 	$md-only, 
-	$lg-only;
+	$lg-only,
+	$landscape; 
 
 $media-down-list: 
 	$sm-down, 
 	$md-down, 
-	$lg-down;
+	$lg-down,
+	$landscape; 
 	
 $media-up-list: 	
 	$xs-up, 
 	$sm-up, 
 	$md-up, 
-	$lg-up;
+	$lg-up,
+	$landscape; 
 
 $media-control-list: 
   $xs-only, 
   $sm-up, 
   $md-up, 
-  $lg-up;
+  $lg-up,
+  $landscape; 
