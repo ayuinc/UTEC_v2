@@ -1,5 +1,6 @@
 <?php $titulo = $node->field_nombre_curso['und']['0']['value'];  ?>   
 <?php $body = $node->body['und']['0']['value']; ?>
+<?php $field_iframe_cursos = $node->field_iframe_cursos['und']['0']['value']; ?>
 <?php 
 		global $language; 
 		$idioma = $language->language;		
@@ -13,6 +14,7 @@
 </div>
 <div class="container-sm form-custom"> 
 	<h3><?php print t("Contact") ?></h3>
+	<?php if ($field_iframe_cursos=='') { ?>
 	<form action="/registro.php" data-submit="Formulario de inscripcion" method="post" id="formRegistro" name="formRegistro">
 		<input type="hidden" name="origen" value="EDP">
 		<input type="hidden" name="idioma" value="<?php print $idioma; ?>">		
@@ -57,6 +59,9 @@
 			<button type="submit" class="btn btn-primary btn-lg" onclick="contacto_general();"><?php print t('Send') ?></button>
 		</div>
 	</form>						
+	<?php } else { ?>
+		<?php print $field_iframe_cursos ?>
+	<?php }	?>	
 </div>	
 
 <script type="text/javascript">
