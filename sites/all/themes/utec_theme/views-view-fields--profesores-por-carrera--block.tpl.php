@@ -24,7 +24,8 @@
 if ($language->language == 'en') {
   $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/profesor-carrera/'.$uid.'/'.$carrera_id, $language->language); 
 }else
-  $profesor_url = "/" . drupal_get_path_alias('page/30/profesor-carrera/'.$uid.'/'.$carrera_id, $language->language); 
+  //$profesor_url = "/" . drupal_get_path_alias('page/30/profesor-carrera/'.$uid.'/'.$carrera_id, $language->language);
+  $profesor_url = "/" . drupal_get_path_alias('page/30/profesor/'.$uid, $language->language); 
 ?> 
 <li class="mb-ch-14">
   <div class="grid-list-pic" data-href="<?php print $profesor_url ?>">
