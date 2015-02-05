@@ -13,7 +13,7 @@ $(document).ready ->
 								'</div>' +
 								'</div>' +
 								'</div>'
-
+/*
 	if ($searchForm.find('#edit-keys').val().length < 1)
 		$searchForm.find('#edit-submit').addClass('disabled')
 
@@ -24,7 +24,7 @@ $(document).ready ->
 			$searchForm.find('#edit-submit').removeClass('disabled')
 		return
 	)
-
+*/
 
 	$bodyForm.on('submit', (e)->
 		if $bodyForm.valid()
