@@ -15,7 +15,8 @@
 		<div class="container">
 			<ul class="grid-list grid-list-centered normalize-text">
 				<li>
-					<h3 class="thin text-white pt-7"><i class="icon-subscribe mr-7"></i><?php //print t('Subscribe to UTEC') ?></h3>
+					<h3 class="thin text-white pt-7"><i class="icon-subscribe mr-7"></i><?php print t('Book of Complaints') ?></h3>
+					<p>Con la finalidad de atenderlo en el más breve plazo, sírvase llenar todos los datos solicitados.<br>UTEC. Quebrada de Armendáriz 15063, Barranco. Telf. 3731000</p>
 				</li>
 				<li>
 					<div class="form-subscribe">
