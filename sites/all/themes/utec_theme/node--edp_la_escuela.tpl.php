@@ -12,7 +12,7 @@
 	<h1 class="light"><?php print $title ?></h1>
 	<div class="separator-gray separator-lg"></div>
 	<?php if ($field_fotos!='') { ?>
-		<img src="<?php print('/'.$pathfile.$field_fotos)?>" class="img-responsive mb-35" alt="<?php print $title ?>">
+		<img src="<?php print('/'.$pathfile.'edp-la-escuela/'.$field_fotos)?>" class="img-responsive mb-35" alt="<?php print $title ?>">
 	<?php } ?>
 	<?php print $body ?>		
 </div>
