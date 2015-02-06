@@ -46,11 +46,11 @@
 <div class="hero-unit"> <!-- HERO -->
   <div
   <?php if ($language->language == 'en'): ?>
-    data-section-scroll="What is?" 
+    data-section-scroll="What is?" id="whatis"
   <?php elseif ($language->language != 'en'): ?>
-    data-section-scroll="¿Qué es?" 
+    data-section-scroll="¿Qué es?" id="que-es"
   <?php endif ?>
-  id="que-es" class="scroll-down-white section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
+   class="scroll-down-white section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
     <div class="overlay flex-middle">
       <div class="container-sm hero-text" data-href="<?php print $carrera_link ?>">
         <h3 class="thin h3 text-white mb-7"><?php print t('What is') ?></h3>
