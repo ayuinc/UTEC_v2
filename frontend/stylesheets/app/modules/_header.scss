@@ -188,7 +188,7 @@
 // HEADER SHRINK TRIGGER
 .hero-unit {
 	.header-trigger {
-		@include position(absolute, null 0 70px 0);
+		@include position(absolute, null 0 -140px 0);
 	}
 }
 .body {
