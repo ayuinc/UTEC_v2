@@ -14,7 +14,7 @@
 	<h1 class="light"><?php print $title ?></h1>
 	<div class="separator-gray separator-lg"></div>
 	<?php if ($field_fotos_edp_generico!='') { ?>
-		<img src="<?php print('/'.$pathfile.$field_fotos_edp_generico)?>" class="img-responsive mb-35" alt="<?php print $title ?>">
+		<img src="<?php print('/'.$pathfile.'edp-generico/'.$field_fotos_edp_generico)?>" class="img-responsive mb-35" alt="<?php print $title ?>">
 	<?php } ?>	
 	<?php print $body ?>	
 </div>
