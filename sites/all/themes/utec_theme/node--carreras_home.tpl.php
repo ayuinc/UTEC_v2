@@ -44,11 +44,13 @@
 
 ?>
 <div class="hero-unit"> <!-- HERO -->
+  <div
   <?php if ($language->language == 'en'): ?>
-    <div data-section-scroll="What is?" id="que-es" class="scroll-down-white section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
+    data-section-scroll="What is?" 
   <?php elseif ($language->language != 'en'): ?>
-    <div data-section-scroll="¿Qué es?" id="que-es" class="scroll-down-white section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
+    data-section-scroll="¿Qué es?" 
   <?php endif ?>
+  id="que-es" class="scroll-down-white section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
     <div class="overlay flex-middle">
       <div class="container-sm hero-text" data-href="<?php print $carrera_link ?>">
         <h3 class="thin h3 text-white mb-7"><?php print t('What is') ?></h3>
