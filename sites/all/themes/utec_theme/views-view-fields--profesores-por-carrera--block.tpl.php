@@ -22,7 +22,7 @@
 
 <?php 
 if ($language->language == 'en') {
-  $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/profesor-carrera/'.$uid.'/'.$carrera_id, $language->language); 
+  $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/profesores/'.$uid, $language->language); 
 }else
   //$profesor_url = "/" . drupal_get_path_alias('page/30/profesor-carrera/'.$uid.'/'.$carrera_id, $language->language);
   $profesor_url = "/" . drupal_get_path_alias('page/30/profesores/'.$uid, $language->language); 
