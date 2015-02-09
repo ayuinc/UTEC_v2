@@ -21,14 +21,14 @@
     <?php 
 			if ($language->language != 'en') {
 				if ($name == 'Eduardo Hochschild Beeck') {
-					$profesor_url = "/" . drupal_get_path_alias('autoridades/eduardo-hochschild-beeck'.$uid, $language->language);	
+					$profesor_url = "/" . drupal_get_path_alias('autoridades/eduardo-hochschild-beeck', $language->language);	
 				} else { 
 					$profesor_url = "/" . drupal_get_path_alias('page/30/consejo-directivo/'.$uid, $language->language);
 				}
 			}	
 			if ($language->language == 'en') {
 				if ($name == 'Eduardo Hochschild Beeck') {
-					$profesor_url = "/" . drupal_get_path_alias('authorities/eduardo-hochschild-beeck'.$uid, $language->language);	
+					$profesor_url = "/" . drupal_get_path_alias('authorities/eduardo-hochschild-beeck', $language->language);	
 				} else { 
 					$profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/consejo-directivo/'.$uid, $language->language);
 				}				
