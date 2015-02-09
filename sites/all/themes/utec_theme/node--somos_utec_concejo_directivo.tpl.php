@@ -20,15 +20,15 @@
     <?php $uid = $value['entity']->uid; ?>	
     <?php 
 			if ($language->language != 'en') {
-				if ($name == 'Eduardo Hochschild Beeck') {
-					$profesor_url = "/" . drupal_get_path_alias('autoridades/eduardo-hochschild-beeck', $language->language);	
+				if (($uid == '26') OR ($uid == '27') OR ($uid == '28')) {
+					$profesor_url = "/" . drupal_get_path_alias('page/30/autoridades/'.$uid, $language->language);	
 				} else { 
 					$profesor_url = "/" . drupal_get_path_alias('page/30/consejo-directivo/'.$uid, $language->language);
 				}
 			}	
 			if ($language->language == 'en') {
-				if ($name == 'Eduardo Hochschild Beeck') {
-					$profesor_url = "/" . drupal_get_path_alias('authorities/eduardo-hochschild-beeck', $language->language);	
+				if (($uid == '26') OR ($uid == '27') OR ($uid == '28')) {
+					$profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/autoridades/'.$uid, $language->language);	
 				} else { 
 					$profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/consejo-directivo/'.$uid, $language->language);
 				}				
