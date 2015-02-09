@@ -35,7 +35,7 @@
 				
 			}
     ?> 
-			<li class="mb-ch-14">
+			<li class="mb-ch-14" data-href="<?php print $profesor_url ?>">
 				<div class="grid-list-pic"><img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="<?php print $name ?>" width="98px" height="auto" class="img-circle"></div>
 				<div>
 					<a href="<?php print $profesor_url ?>"><?php print $name ?></a>
