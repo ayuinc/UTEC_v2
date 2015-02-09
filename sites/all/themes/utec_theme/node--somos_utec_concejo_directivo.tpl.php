@@ -20,10 +20,19 @@
     <?php $uid = $value['entity']->uid; ?>	
     <?php 
 			if ($language->language != 'en') {
-				$profesor_url = "/" . drupal_get_path_alias('page/30/consejo-directivo/'.$uid, $language->language);
+				if ($name == 'Eduardo Hochschild Beeck') {
+					$profesor_url = "/" . drupal_get_path_alias('autoridades/eduardo-hochschild-beeck'.$uid, $language->language);	
+				} else { 
+					$profesor_url = "/" . drupal_get_path_alias('page/30/consejo-directivo/'.$uid, $language->language);
+				}
 			}	
 			if ($language->language == 'en') {
-				$profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/consejo-directivo/'.$uid, $language->language);
+				if ($name == 'Eduardo Hochschild Beeck') {
+					$profesor_url = "/" . drupal_get_path_alias('authorities/eduardo-hochschild-beeck'.$uid, $language->language);	
+				} else { 
+					$profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/consejo-directivo/'.$uid, $language->language);
+				}				
+				
 			}
     ?> 
 			<li class="mb-ch-14">
