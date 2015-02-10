@@ -17,6 +17,6 @@
   <div class="date"><div class="num"><?php print $dia ?></div>
   <div class="month"><?php print $mes ?></div></div>
   <div>
-    <h5 class="thin"><?php print $texto_corto ?></h5>
+    <h2 class="thin h5"><?php print $texto_corto ?></h2>
   </div>
 </li>
