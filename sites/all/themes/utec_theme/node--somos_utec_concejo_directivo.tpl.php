@@ -20,13 +20,22 @@
     <?php $uid = $value['entity']->uid; ?>	
     <?php 
 			if ($language->language != 'en') {
-				$profesor_url = "/" . drupal_get_path_alias('page/30/consejo-directivo/'.$uid, $language->language);
+				if (($uid == '26') OR ($uid == '27') OR ($uid == '28')) {
+					$profesor_url = "/" . drupal_get_path_alias('page/30/autoridades/'.$uid, $language->language);	
+				} else { 
+					$profesor_url = "/" . drupal_get_path_alias('page/30/consejo-directivo/'.$uid, $language->language);
+				}
 			}	
 			if ($language->language == 'en') {
-				$profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/consejo-directivo/'.$uid, $language->language);
+				if (($uid == '26') OR ($uid == '27') OR ($uid == '28')) {
+					$profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/autoridades/'.$uid, $language->language);	
+				} else { 
+					$profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/consejo-directivo/'.$uid, $language->language);
+				}				
+				
 			}
     ?> 
-			<li class="mb-ch-14">
+			<li class="mb-ch-14" data-href="<?php print $profesor_url ?>">
 				<div class="grid-list-pic"><img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="<?php print $name ?>" width="98px" height="auto" class="img-circle"></div>
 				<div>
 					<a href="<?php print $profesor_url ?>"><?php print $name ?></a>
