@@ -14,9 +14,9 @@
 	$created = date('d F Y', strtotime($node->created));
 	$addblock = module_invoke('addthis','block_view','addthis_block');
 ?>
-<h3 class="lead">
+<h2 class="lead h3">
 	<?php print $title ?>
-</h3>
+</h2>
 <div>
 	<em class="h5"><?php print $blogger_name ?></em><br><span class="text-gray"><?php print $blogger_cargo ?></span>
 </div>
@@ -35,7 +35,7 @@
 <!-- <img class="img-responsive" src="<?php print '/'.$pathfile.'blog/'.$imagen ?>" alt="#"> -->
 <img class="img-responsive" src="<?php print file_create_url($imagen); ?>" alt="<?php print $title ?>" />
 <?php endif ?>
-<h3 class="lead"><?php //print $title ?></h3>
+<h2 class="lead h3"><?php //print $title ?></h2>
 <p><?php print $cuerpo ?></p>
 
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
