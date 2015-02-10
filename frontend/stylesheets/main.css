@@ -4666,7 +4666,19 @@ input[type="submit"].btn.form-control,
 #header .tool-bar .search-form input[type="submit"].form-text.form-submit,
 #header-on-scroll .tool-bar .search-form input[type="submit"].form-text.form-submit,
 #header .tool-bar .search-form input[type="submit"].form-control.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].form-control.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].form-control.form-submit,
+.btn.form-control,
+.language-switcher-locale-url li a.form-control.language-link,
+.language-switcher-locale-url li #header .tool-bar .search-form a.language-link.form-text,
+#header .tool-bar .search-form .language-switcher-locale-url li a.language-link.form-text,
+.language-switcher-locale-url li #header-on-scroll .tool-bar .search-form a.language-link.form-text,
+#header-on-scroll .tool-bar .search-form .language-switcher-locale-url li a.language-link.form-text,
+#header .tool-bar .search-form .btn.form-text,
+#header-on-scroll .tool-bar .search-form .btn.form-text,
+#header .tool-bar .search-form .form-text.form-submit,
+#header-on-scroll .tool-bar .search-form .form-text.form-submit,
+#header .tool-bar .search-form .form-control.form-submit,
+#header-on-scroll .tool-bar .search-form .form-control.form-submit {
   height: auto; }
 a.btn.borderless, .language-switcher-locale-url li a.borderless.language-link, #header .tool-bar .search-form a.borderless.form-submit, #header-on-scroll .tool-bar .search-form a.borderless.form-submit,
 button.btn.borderless,
@@ -4674,7 +4686,11 @@ button.btn.borderless,
 #header-on-scroll .tool-bar .search-form button.borderless.form-submit,
 input[type="submit"].btn.borderless,
 #header .tool-bar .search-form input[type="submit"].borderless.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].borderless.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].borderless.form-submit,
+.btn.borderless,
+.language-switcher-locale-url li a.borderless.language-link,
+#header .tool-bar .search-form .borderless.form-submit,
+#header-on-scroll .tool-bar .search-form .borderless.form-submit {
   border-radius: 0 !important; }
 a.btn.btn-xs, .language-switcher-locale-url li a.btn-xs.language-link, #header .tool-bar .search-form a.btn-xs.form-submit, #header-on-scroll .tool-bar .search-form a.btn-xs.form-submit,
 button.btn.btn-xs,
@@ -4682,7 +4698,11 @@ button.btn.btn-xs,
 #header-on-scroll .tool-bar .search-form button.btn-xs.form-submit,
 input[type="submit"].btn.btn-xs,
 #header .tool-bar .search-form input[type="submit"].btn-xs.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-xs.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-xs.form-submit,
+.btn.btn-xs,
+.language-switcher-locale-url li a.btn-xs.language-link,
+#header .tool-bar .search-form .btn-xs.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-xs.form-submit {
   font-size: 12px;
   padding: 2px 9px;
   padding: 0.14286rem 0.64286rem; }
@@ -4692,7 +4712,11 @@ button.btn.btn-xl,
 #header-on-scroll .tool-bar .search-form button.btn-xl.form-submit,
 input[type="submit"].btn.btn-xl,
 #header .tool-bar .search-form input[type="submit"].btn-xl.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-xl.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-xl.form-submit,
+.btn.btn-xl,
+.language-switcher-locale-url li a.btn-xl.language-link,
+#header .tool-bar .search-form .btn-xl.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-xl.form-submit {
   font-size: 24px;
   padding: 12px 21px;
   padding: 0.85714rem 1.5rem; }
@@ -4702,7 +4726,11 @@ button.btn.btn-facebook,
 #header-on-scroll .tool-bar .search-form button.btn-facebook.form-submit,
 input[type="submit"].btn.btn-facebook,
 #header .tool-bar .search-form input[type="submit"].btn-facebook.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-facebook.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-facebook.form-submit,
+.btn.btn-facebook,
+.language-switcher-locale-url li a.btn-facebook.language-link,
+#header .tool-bar .search-form .btn-facebook.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-facebook.form-submit {
   background: #3B5998;
   color: white; }
   a.btn.btn-facebook:hover, .language-switcher-locale-url li a.btn-facebook.language-link:hover, #header .tool-bar .search-form a.btn-facebook.form-submit:hover, #header-on-scroll .tool-bar .search-form a.btn-facebook.form-submit:hover,
@@ -4711,7 +4739,11 @@ input[type="submit"].btn.btn-facebook,
   #header-on-scroll .tool-bar .search-form button.btn-facebook.form-submit:hover,
   input[type="submit"].btn.btn-facebook:hover,
   #header .tool-bar .search-form input[type="submit"].btn-facebook.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-facebook.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-facebook.form-submit:hover,
+  .btn.btn-facebook:hover,
+  .language-switcher-locale-url li a.btn-facebook.language-link:hover,
+  #header .tool-bar .search-form .btn-facebook.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-facebook.form-submit:hover {
     background: #273b65; }
 a.btn.btn-twitter, .language-switcher-locale-url li a.btn-twitter.language-link, #header .tool-bar .search-form a.btn-twitter.form-submit, #header-on-scroll .tool-bar .search-form a.btn-twitter.form-submit,
 button.btn.btn-twitter,
@@ -4719,7 +4751,11 @@ button.btn.btn-twitter,
 #header-on-scroll .tool-bar .search-form button.btn-twitter.form-submit,
 input[type="submit"].btn.btn-twitter,
 #header .tool-bar .search-form input[type="submit"].btn-twitter.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-twitter.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-twitter.form-submit,
+.btn.btn-twitter,
+.language-switcher-locale-url li a.btn-twitter.language-link,
+#header .tool-bar .search-form .btn-twitter.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-twitter.form-submit {
   background: #34CCFE;
   color: white; }
   a.btn.btn-twitter:hover, .language-switcher-locale-url li a.btn-twitter.language-link:hover, #header .tool-bar .search-form a.btn-twitter.form-submit:hover, #header-on-scroll .tool-bar .search-form a.btn-twitter.form-submit:hover,
@@ -4728,7 +4764,11 @@ input[type="submit"].btn.btn-twitter,
   #header-on-scroll .tool-bar .search-form button.btn-twitter.form-submit:hover,
   input[type="submit"].btn.btn-twitter:hover,
   #header .tool-bar .search-form input[type="submit"].btn-twitter.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-twitter.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-twitter.form-submit:hover,
+  .btn.btn-twitter:hover,
+  .language-switcher-locale-url li a.btn-twitter.language-link:hover,
+  #header .tool-bar .search-form .btn-twitter.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-twitter.form-submit:hover {
     background: #01b0e9; }
 a.btn.btn-pinterest, .language-switcher-locale-url li a.btn-pinterest.language-link, #header .tool-bar .search-form a.btn-pinterest.form-submit, #header-on-scroll .tool-bar .search-form a.btn-pinterest.form-submit,
 button.btn.btn-pinterest,
@@ -4736,7 +4776,11 @@ button.btn.btn-pinterest,
 #header-on-scroll .tool-bar .search-form button.btn-pinterest.form-submit,
 input[type="submit"].btn.btn-pinterest,
 #header .tool-bar .search-form input[type="submit"].btn-pinterest.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-pinterest.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-pinterest.form-submit,
+.btn.btn-pinterest,
+.language-switcher-locale-url li a.btn-pinterest.language-link,
+#header .tool-bar .search-form .btn-pinterest.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-pinterest.form-submit {
   background: #D02420;
   color: white; }
   a.btn.btn-pinterest:hover, .language-switcher-locale-url li a.btn-pinterest.language-link:hover, #header .tool-bar .search-form a.btn-pinterest.form-submit:hover, #header-on-scroll .tool-bar .search-form a.btn-pinterest.form-submit:hover,
@@ -4745,7 +4789,11 @@ input[type="submit"].btn.btn-pinterest,
   #header-on-scroll .tool-bar .search-form button.btn-pinterest.form-submit:hover,
   input[type="submit"].btn.btn-pinterest:hover,
   #header .tool-bar .search-form input[type="submit"].btn-pinterest.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-pinterest.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-pinterest.form-submit:hover,
+  .btn.btn-pinterest:hover,
+  .language-switcher-locale-url li a.btn-pinterest.language-link:hover,
+  #header .tool-bar .search-form .btn-pinterest.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-pinterest.form-submit:hover {
     background: #921916; }
 a.btn.btn-google-plus, .language-switcher-locale-url li a.btn-google-plus.language-link, #header .tool-bar .search-form a.btn-google-plus.form-submit, #header-on-scroll .tool-bar .search-form a.btn-google-plus.form-submit,
 button.btn.btn-google-plus,
@@ -4753,7 +4801,11 @@ button.btn.btn-google-plus,
 #header-on-scroll .tool-bar .search-form button.btn-google-plus.form-submit,
 input[type="submit"].btn.btn-google-plus,
 #header .tool-bar .search-form input[type="submit"].btn-google-plus.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-google-plus.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-google-plus.form-submit,
+.btn.btn-google-plus,
+.language-switcher-locale-url li a.btn-google-plus.language-link,
+#header .tool-bar .search-form .btn-google-plus.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-google-plus.form-submit {
   background: #DC4335;
   color: white; }
   a.btn.btn-google-plus:hover, .language-switcher-locale-url li a.btn-google-plus.language-link:hover, #header .tool-bar .search-form a.btn-google-plus.form-submit:hover, #header-on-scroll .tool-bar .search-form a.btn-google-plus.form-submit:hover,
@@ -4762,7 +4814,11 @@ input[type="submit"].btn.btn-google-plus,
   #header-on-scroll .tool-bar .search-form button.btn-google-plus.form-submit:hover,
   input[type="submit"].btn.btn-google-plus:hover,
   #header .tool-bar .search-form input[type="submit"].btn-google-plus.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-google-plus.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-google-plus.form-submit:hover,
+  .btn.btn-google-plus:hover,
+  .language-switcher-locale-url li a.btn-google-plus.language-link:hover,
+  #header .tool-bar .search-form .btn-google-plus.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-google-plus.form-submit:hover {
     background: #ac2a1e; }
 a.btn.btn-youtube, .language-switcher-locale-url li a.btn-youtube.language-link, #header .tool-bar .search-form a.btn-youtube.form-submit, #header-on-scroll .tool-bar .search-form a.btn-youtube.form-submit,
 button.btn.btn-youtube,
@@ -4770,7 +4826,11 @@ button.btn.btn-youtube,
 #header-on-scroll .tool-bar .search-form button.btn-youtube.form-submit,
 input[type="submit"].btn.btn-youtube,
 #header .tool-bar .search-form input[type="submit"].btn-youtube.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-youtube.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-youtube.form-submit,
+.btn.btn-youtube,
+.language-switcher-locale-url li a.btn-youtube.language-link,
+#header .tool-bar .search-form .btn-youtube.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-youtube.form-submit {
   background: #F23030;
   color: white; }
   a.btn.btn-youtube:hover, .language-switcher-locale-url li a.btn-youtube.language-link:hover, #header .tool-bar .search-form a.btn-youtube.form-submit:hover, #header-on-scroll .tool-bar .search-form a.btn-youtube.form-submit:hover,
@@ -4779,7 +4839,11 @@ input[type="submit"].btn.btn-youtube,
   #header-on-scroll .tool-bar .search-form button.btn-youtube.form-submit:hover,
   input[type="submit"].btn.btn-youtube:hover,
   #header .tool-bar .search-form input[type="submit"].btn-youtube.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-youtube.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-youtube.form-submit:hover,
+  .btn.btn-youtube:hover,
+  .language-switcher-locale-url li a.btn-youtube.language-link:hover,
+  #header .tool-bar .search-form .btn-youtube.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-youtube.form-submit:hover {
     background: #ce0d0d; }
 a.btn.btn-instagram, .language-switcher-locale-url li a.btn-instagram.language-link, #header .tool-bar .search-form a.btn-instagram.form-submit, #header-on-scroll .tool-bar .search-form a.btn-instagram.form-submit,
 button.btn.btn-instagram,
@@ -4787,7 +4851,11 @@ button.btn.btn-instagram,
 #header-on-scroll .tool-bar .search-form button.btn-instagram.form-submit,
 input[type="submit"].btn.btn-instagram,
 #header .tool-bar .search-form input[type="submit"].btn-instagram.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-instagram.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-instagram.form-submit,
+.btn.btn-instagram,
+.language-switcher-locale-url li a.btn-instagram.language-link,
+#header .tool-bar .search-form .btn-instagram.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-instagram.form-submit {
   background: #4187FB;
   color: white; }
   a.btn.btn-instagram:hover, .language-switcher-locale-url li a.btn-instagram.language-link:hover, #header .tool-bar .search-form a.btn-instagram.form-submit:hover, #header-on-scroll .tool-bar .search-form a.btn-instagram.form-submit:hover,
@@ -4796,7 +4864,11 @@ input[type="submit"].btn.btn-instagram,
   #header-on-scroll .tool-bar .search-form button.btn-instagram.form-submit:hover,
   input[type="submit"].btn.btn-instagram:hover,
   #header .tool-bar .search-form input[type="submit"].btn-instagram.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-instagram.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-instagram.form-submit:hover,
+  .btn.btn-instagram:hover,
+  .language-switcher-locale-url li a.btn-instagram.language-link:hover,
+  #header .tool-bar .search-form .btn-instagram.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-instagram.form-submit:hover {
     background: #055df0; }
 a.btn.btn-linkedin, .language-switcher-locale-url li a.btn-linkedin.language-link, #header .tool-bar .search-form a.btn-linkedin.form-submit, #header-on-scroll .tool-bar .search-form a.btn-linkedin.form-submit,
 button.btn.btn-linkedin,
@@ -4804,7 +4876,11 @@ button.btn.btn-linkedin,
 #header-on-scroll .tool-bar .search-form button.btn-linkedin.form-submit,
 input[type="submit"].btn.btn-linkedin,
 #header .tool-bar .search-form input[type="submit"].btn-linkedin.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-linkedin.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-linkedin.form-submit,
+.btn.btn-linkedin,
+.language-switcher-locale-url li a.btn-linkedin.language-link,
+#header .tool-bar .search-form .btn-linkedin.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-linkedin.form-submit {
   background: #1C87BD;
   color: white; }
   a.btn.btn-linkedin:hover, .language-switcher-locale-url li a.btn-linkedin.language-link:hover, #header .tool-bar .search-form a.btn-linkedin.form-submit:hover, #header-on-scroll .tool-bar .search-form a.btn-linkedin.form-submit:hover,
@@ -4813,7 +4889,11 @@ input[type="submit"].btn.btn-linkedin,
   #header-on-scroll .tool-bar .search-form button.btn-linkedin.form-submit:hover,
   input[type="submit"].btn.btn-linkedin:hover,
   #header .tool-bar .search-form input[type="submit"].btn-linkedin.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-linkedin.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-linkedin.form-submit:hover,
+  .btn.btn-linkedin:hover,
+  .language-switcher-locale-url li a.btn-linkedin.language-link:hover,
+  #header .tool-bar .search-form .btn-linkedin.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-linkedin.form-submit:hover {
     background: #135b7f; }
 a.btn.see-more:after, .language-switcher-locale-url li a.see-more.language-link:after, #header .tool-bar .search-form a.see-more.form-submit:after, #header-on-scroll .tool-bar .search-form a.see-more.form-submit:after,
 button.btn.see-more:after,
@@ -4821,7 +4901,11 @@ button.btn.see-more:after,
 #header-on-scroll .tool-bar .search-form button.see-more.form-submit:after,
 input[type="submit"].btn.see-more:after,
 #header .tool-bar .search-form input[type="submit"].see-more.form-submit:after,
-#header-on-scroll .tool-bar .search-form input[type="submit"].see-more.form-submit:after {
+#header-on-scroll .tool-bar .search-form input[type="submit"].see-more.form-submit:after,
+.btn.see-more:after,
+.language-switcher-locale-url li a.see-more.language-link:after,
+#header .tool-bar .search-form .see-more.form-submit:after,
+#header-on-scroll .tool-bar .search-form .see-more.form-submit:after {
   content: "\e62a";
   font-family: 'icomoon';
   font-weight: bold;
@@ -4833,7 +4917,11 @@ button.btn.btn-primary.btn-outline,
 #header-on-scroll .tool-bar .search-form button.btn-primary.btn-outline.form-submit,
 input[type="submit"].btn.btn-primary.btn-outline,
 #header .tool-bar .search-form input[type="submit"].btn-primary.btn-outline.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-primary.btn-outline.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-primary.btn-outline.form-submit,
+.btn.btn-primary.btn-outline,
+.language-switcher-locale-url li a.btn-primary.btn-outline.language-link,
+#header .tool-bar .search-form .btn-primary.btn-outline.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-primary.btn-outline.form-submit {
   background: none;
   border: 2px solid #00BFDF;
   border-radius: 0;
@@ -4844,7 +4932,11 @@ input[type="submit"].btn.btn-primary.btn-outline,
   #header-on-scroll .tool-bar .search-form button.btn-primary.btn-outline.form-submit:hover,
   input[type="submit"].btn.btn-primary.btn-outline:hover,
   #header .tool-bar .search-form input[type="submit"].btn-primary.btn-outline.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-primary.btn-outline.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-primary.btn-outline.form-submit:hover,
+  .btn.btn-primary.btn-outline:hover,
+  .language-switcher-locale-url li a.btn-primary.btn-outline.language-link:hover,
+  #header .tool-bar .search-form .btn-primary.btn-outline.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-primary.btn-outline.form-submit:hover {
     background-color: none;
     border-radius: 0;
     border: 2px solid #00BFDF;
@@ -4855,7 +4947,11 @@ button.btn.btn-success.btn-outline,
 #header-on-scroll .tool-bar .search-form button.btn-success.btn-outline.form-submit,
 input[type="submit"].btn.btn-success.btn-outline,
 #header .tool-bar .search-form input[type="submit"].btn-success.btn-outline.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-success.btn-outline.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-success.btn-outline.form-submit,
+.btn.btn-success.btn-outline,
+.language-switcher-locale-url li a.btn-success.btn-outline.language-link,
+#header .tool-bar .search-form .btn-success.btn-outline.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-success.btn-outline.form-submit {
   background: none;
   border: 2px solid #8DC63F;
   border-radius: 0;
@@ -4866,7 +4962,11 @@ input[type="submit"].btn.btn-success.btn-outline,
   #header-on-scroll .tool-bar .search-form button.btn-success.btn-outline.form-submit:hover,
   input[type="submit"].btn.btn-success.btn-outline:hover,
   #header .tool-bar .search-form input[type="submit"].btn-success.btn-outline.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-success.btn-outline.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-success.btn-outline.form-submit:hover,
+  .btn.btn-success.btn-outline:hover,
+  .language-switcher-locale-url li a.btn-success.btn-outline.language-link:hover,
+  #header .tool-bar .search-form .btn-success.btn-outline.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-success.btn-outline.form-submit:hover {
     background-color: none;
     border-radius: 0;
     border: 2px solid #00BFDF;
@@ -4877,7 +4977,11 @@ button.btn.btn-info.btn-outline,
 #header-on-scroll .tool-bar .search-form button.btn-info.btn-outline.form-submit,
 input[type="submit"].btn.btn-info.btn-outline,
 #header .tool-bar .search-form input[type="submit"].btn-info.btn-outline.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-info.btn-outline.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-info.btn-outline.form-submit,
+.btn.btn-info.btn-outline,
+.language-switcher-locale-url li a.btn-info.btn-outline.language-link,
+#header .tool-bar .search-form .btn-info.btn-outline.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-info.btn-outline.form-submit {
   background: none;
   border: 2px solid #2E4372;
   border-radius: 0;
@@ -4888,7 +4992,11 @@ input[type="submit"].btn.btn-info.btn-outline,
   #header-on-scroll .tool-bar .search-form button.btn-info.btn-outline.form-submit:hover,
   input[type="submit"].btn.btn-info.btn-outline:hover,
   #header .tool-bar .search-form input[type="submit"].btn-info.btn-outline.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-info.btn-outline.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-info.btn-outline.form-submit:hover,
+  .btn.btn-info.btn-outline:hover,
+  .language-switcher-locale-url li a.btn-info.btn-outline.language-link:hover,
+  #header .tool-bar .search-form .btn-info.btn-outline.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-info.btn-outline.form-submit:hover {
     background-color: none;
     border-radius: 0;
     border: 2px solid #00BFDF;
@@ -4899,7 +5007,11 @@ button.btn.btn-warning.btn-outline,
 #header-on-scroll .tool-bar .search-form button.btn-warning.btn-outline.form-submit,
 input[type="submit"].btn.btn-warning.btn-outline,
 #header .tool-bar .search-form input[type="submit"].btn-warning.btn-outline.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-warning.btn-outline.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-warning.btn-outline.form-submit,
+.btn.btn-warning.btn-outline,
+.language-switcher-locale-url li a.btn-warning.btn-outline.language-link,
+#header .tool-bar .search-form .btn-warning.btn-outline.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-warning.btn-outline.form-submit {
   background: none;
   border: 2px solid #FFDD00;
   border-radius: 0;
@@ -4910,7 +5022,11 @@ input[type="submit"].btn.btn-warning.btn-outline,
   #header-on-scroll .tool-bar .search-form button.btn-warning.btn-outline.form-submit:hover,
   input[type="submit"].btn.btn-warning.btn-outline:hover,
   #header .tool-bar .search-form input[type="submit"].btn-warning.btn-outline.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-warning.btn-outline.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-warning.btn-outline.form-submit:hover,
+  .btn.btn-warning.btn-outline:hover,
+  .language-switcher-locale-url li a.btn-warning.btn-outline.language-link:hover,
+  #header .tool-bar .search-form .btn-warning.btn-outline.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-warning.btn-outline.form-submit:hover {
     background-color: none;
     border-radius: 0;
     border: 2px solid #00BFDF;
@@ -4921,7 +5037,11 @@ button.btn.btn-danger.btn-outline,
 #header-on-scroll .tool-bar .search-form button.btn-danger.btn-outline.form-submit,
 input[type="submit"].btn.btn-danger.btn-outline,
 #header .tool-bar .search-form input[type="submit"].btn-danger.btn-outline.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-danger.btn-outline.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-danger.btn-outline.form-submit,
+.btn.btn-danger.btn-outline,
+.language-switcher-locale-url li a.btn-danger.btn-outline.language-link,
+#header .tool-bar .search-form .btn-danger.btn-outline.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-danger.btn-outline.form-submit {
   background: none;
   border: 2px solid #DD5341;
   border-radius: 0;
@@ -4932,7 +5052,11 @@ input[type="submit"].btn.btn-danger.btn-outline,
   #header-on-scroll .tool-bar .search-form button.btn-danger.btn-outline.form-submit:hover,
   input[type="submit"].btn.btn-danger.btn-outline:hover,
   #header .tool-bar .search-form input[type="submit"].btn-danger.btn-outline.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-danger.btn-outline.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-danger.btn-outline.form-submit:hover,
+  .btn.btn-danger.btn-outline:hover,
+  .language-switcher-locale-url li a.btn-danger.btn-outline.language-link:hover,
+  #header .tool-bar .search-form .btn-danger.btn-outline.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-danger.btn-outline.form-submit:hover {
     background-color: none;
     border-radius: 0;
     border: 2px solid #00BFDF;
@@ -4943,7 +5067,11 @@ button.btn.btn-blue-darker.btn-outline,
 #header-on-scroll .tool-bar .search-form button.btn-blue-darker.btn-outline.form-submit,
 input[type="submit"].btn.btn-blue-darker.btn-outline,
 #header .tool-bar .search-form input[type="submit"].btn-blue-darker.btn-outline.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue-darker.btn-outline.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue-darker.btn-outline.form-submit,
+.btn.btn-blue-darker.btn-outline,
+.language-switcher-locale-url li a.btn-blue-darker.btn-outline.language-link,
+#header .tool-bar .search-form .btn-blue-darker.btn-outline.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-blue-darker.btn-outline.form-submit {
   background: none;
   border: 2px solid #00a7d7;
   border-radius: 0;
@@ -4954,7 +5082,11 @@ input[type="submit"].btn.btn-blue-darker.btn-outline,
   #header-on-scroll .tool-bar .search-form button.btn-blue-darker.btn-outline.form-submit:hover,
   input[type="submit"].btn.btn-blue-darker.btn-outline:hover,
   #header .tool-bar .search-form input[type="submit"].btn-blue-darker.btn-outline.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue-darker.btn-outline.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue-darker.btn-outline.form-submit:hover,
+  .btn.btn-blue-darker.btn-outline:hover,
+  .language-switcher-locale-url li a.btn-blue-darker.btn-outline.language-link:hover,
+  #header .tool-bar .search-form .btn-blue-darker.btn-outline.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-blue-darker.btn-outline.form-submit:hover {
     background-color: none;
     border-radius: 0;
     border: 2px solid #00BFDF;
@@ -4965,7 +5097,11 @@ button.btn.btn-blue-dark.btn-outline,
 #header-on-scroll .tool-bar .search-form button.btn-blue-dark.btn-outline.form-submit,
 input[type="submit"].btn.btn-blue-dark.btn-outline,
 #header .tool-bar .search-form input[type="submit"].btn-blue-dark.btn-outline.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue-dark.btn-outline.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue-dark.btn-outline.form-submit,
+.btn.btn-blue-dark.btn-outline,
+.language-switcher-locale-url li a.btn-blue-dark.btn-outline.language-link,
+#header .tool-bar .search-form .btn-blue-dark.btn-outline.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-blue-dark.btn-outline.form-submit {
   background: none;
   border: 2px solid #43d5ff;
   border-radius: 0;
@@ -4976,7 +5112,11 @@ input[type="submit"].btn.btn-blue-dark.btn-outline,
   #header-on-scroll .tool-bar .search-form button.btn-blue-dark.btn-outline.form-submit:hover,
   input[type="submit"].btn.btn-blue-dark.btn-outline:hover,
   #header .tool-bar .search-form input[type="submit"].btn-blue-dark.btn-outline.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue-dark.btn-outline.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue-dark.btn-outline.form-submit:hover,
+  .btn.btn-blue-dark.btn-outline:hover,
+  .language-switcher-locale-url li a.btn-blue-dark.btn-outline.language-link:hover,
+  #header .tool-bar .search-form .btn-blue-dark.btn-outline.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-blue-dark.btn-outline.form-submit:hover {
     background-color: none;
     border-radius: 0;
     border: 2px solid #00BFDF;
@@ -4987,7 +5127,11 @@ button.btn.btn-blue.btn-outline,
 #header-on-scroll .tool-bar .search-form button.btn-blue.btn-outline.form-submit,
 input[type="submit"].btn.btn-blue.btn-outline,
 #header .tool-bar .search-form input[type="submit"].btn-blue.btn-outline.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue.btn-outline.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue.btn-outline.form-submit,
+.btn.btn-blue.btn-outline,
+.language-switcher-locale-url li a.btn-blue.btn-outline.language-link,
+#header .tool-bar .search-form .btn-blue.btn-outline.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-blue.btn-outline.form-submit {
   background: none;
   border: 2px solid #8be5ff;
   border-radius: 0;
@@ -4998,7 +5142,11 @@ input[type="submit"].btn.btn-blue.btn-outline,
   #header-on-scroll .tool-bar .search-form button.btn-blue.btn-outline.form-submit:hover,
   input[type="submit"].btn.btn-blue.btn-outline:hover,
   #header .tool-bar .search-form input[type="submit"].btn-blue.btn-outline.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue.btn-outline.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue.btn-outline.form-submit:hover,
+  .btn.btn-blue.btn-outline:hover,
+  .language-switcher-locale-url li a.btn-blue.btn-outline.language-link:hover,
+  #header .tool-bar .search-form .btn-blue.btn-outline.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-blue.btn-outline.form-submit:hover {
     background-color: none;
     border-radius: 0;
     border: 2px solid #00BFDF;
@@ -5009,7 +5157,11 @@ button.btn.btn-blue-light.btn-outline,
 #header-on-scroll .tool-bar .search-form button.btn-blue-light.btn-outline.form-submit,
 input[type="submit"].btn.btn-blue-light.btn-outline,
 #header .tool-bar .search-form input[type="submit"].btn-blue-light.btn-outline.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue-light.btn-outline.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue-light.btn-outline.form-submit,
+.btn.btn-blue-light.btn-outline,
+.language-switcher-locale-url li a.btn-blue-light.btn-outline.language-link,
+#header .tool-bar .search-form .btn-blue-light.btn-outline.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-blue-light.btn-outline.form-submit {
   background: none;
   border: 2px solid white;
   border-radius: 0;
@@ -5020,7 +5172,11 @@ input[type="submit"].btn.btn-blue-light.btn-outline,
   #header-on-scroll .tool-bar .search-form button.btn-blue-light.btn-outline.form-submit:hover,
   input[type="submit"].btn.btn-blue-light.btn-outline:hover,
   #header .tool-bar .search-form input[type="submit"].btn-blue-light.btn-outline.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue-light.btn-outline.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue-light.btn-outline.form-submit:hover,
+  .btn.btn-blue-light.btn-outline:hover,
+  .language-switcher-locale-url li a.btn-blue-light.btn-outline.language-link:hover,
+  #header .tool-bar .search-form .btn-blue-light.btn-outline.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-blue-light.btn-outline.form-submit:hover {
     background-color: none;
     border-radius: 0;
     border: 2px solid #00BFDF;
@@ -5031,7 +5187,11 @@ button.btn.btn-blue-lighter.btn-outline,
 #header-on-scroll .tool-bar .search-form button.btn-blue-lighter.btn-outline.form-submit,
 input[type="submit"].btn.btn-blue-lighter.btn-outline,
 #header .tool-bar .search-form input[type="submit"].btn-blue-lighter.btn-outline.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue-lighter.btn-outline.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue-lighter.btn-outline.form-submit,
+.btn.btn-blue-lighter.btn-outline,
+.language-switcher-locale-url li a.btn-blue-lighter.btn-outline.language-link,
+#header .tool-bar .search-form .btn-blue-lighter.btn-outline.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-blue-lighter.btn-outline.form-submit {
   background: none;
   border: 2px solid white;
   border-radius: 0;
@@ -5042,7 +5202,11 @@ input[type="submit"].btn.btn-blue-lighter.btn-outline,
   #header-on-scroll .tool-bar .search-form button.btn-blue-lighter.btn-outline.form-submit:hover,
   input[type="submit"].btn.btn-blue-lighter.btn-outline:hover,
   #header .tool-bar .search-form input[type="submit"].btn-blue-lighter.btn-outline.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue-lighter.btn-outline.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue-lighter.btn-outline.form-submit:hover,
+  .btn.btn-blue-lighter.btn-outline:hover,
+  .language-switcher-locale-url li a.btn-blue-lighter.btn-outline.language-link:hover,
+  #header .tool-bar .search-form .btn-blue-lighter.btn-outline.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-blue-lighter.btn-outline.form-submit:hover {
     background-color: none;
     border-radius: 0;
     border: 2px solid #00BFDF;
@@ -5053,7 +5217,11 @@ button.btn.btn-gray-darker.btn-outline,
 #header-on-scroll .tool-bar .search-form button.btn-gray-darker.btn-outline.form-submit,
 input[type="submit"].btn.btn-gray-darker.btn-outline,
 #header .tool-bar .search-form input[type="submit"].btn-gray-darker.btn-outline.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray-darker.btn-outline.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray-darker.btn-outline.form-submit,
+.btn.btn-gray-darker.btn-outline,
+.language-switcher-locale-url li a.btn-gray-darker.btn-outline.language-link,
+#header .tool-bar .search-form .btn-gray-darker.btn-outline.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-gray-darker.btn-outline.form-submit {
   background: none;
   border: 2px solid #4f4f4f;
   border-radius: 0;
@@ -5064,7 +5232,11 @@ input[type="submit"].btn.btn-gray-darker.btn-outline,
   #header-on-scroll .tool-bar .search-form button.btn-gray-darker.btn-outline.form-submit:hover,
   input[type="submit"].btn.btn-gray-darker.btn-outline:hover,
   #header .tool-bar .search-form input[type="submit"].btn-gray-darker.btn-outline.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray-darker.btn-outline.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray-darker.btn-outline.form-submit:hover,
+  .btn.btn-gray-darker.btn-outline:hover,
+  .language-switcher-locale-url li a.btn-gray-darker.btn-outline.language-link:hover,
+  #header .tool-bar .search-form .btn-gray-darker.btn-outline.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-gray-darker.btn-outline.form-submit:hover {
     background: none;
     border-radius: 0;
     border: 2px solid #00BFDF;
@@ -5075,7 +5247,11 @@ button.btn.btn-gray-dark.btn-outline,
 #header-on-scroll .tool-bar .search-form button.btn-gray-dark.btn-outline.form-submit,
 input[type="submit"].btn.btn-gray-dark.btn-outline,
 #header .tool-bar .search-form input[type="submit"].btn-gray-dark.btn-outline.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray-dark.btn-outline.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray-dark.btn-outline.form-submit,
+.btn.btn-gray-dark.btn-outline,
+.language-switcher-locale-url li a.btn-gray-dark.btn-outline.language-link,
+#header .tool-bar .search-form .btn-gray-dark.btn-outline.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-gray-dark.btn-outline.form-submit {
   background: none;
   border: 2px solid #686868;
   border-radius: 0;
@@ -5086,7 +5262,11 @@ input[type="submit"].btn.btn-gray-dark.btn-outline,
   #header-on-scroll .tool-bar .search-form button.btn-gray-dark.btn-outline.form-submit:hover,
   input[type="submit"].btn.btn-gray-dark.btn-outline:hover,
   #header .tool-bar .search-form input[type="submit"].btn-gray-dark.btn-outline.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray-dark.btn-outline.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray-dark.btn-outline.form-submit:hover,
+  .btn.btn-gray-dark.btn-outline:hover,
+  .language-switcher-locale-url li a.btn-gray-dark.btn-outline.language-link:hover,
+  #header .tool-bar .search-form .btn-gray-dark.btn-outline.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-gray-dark.btn-outline.form-submit:hover {
     background: none;
     border-radius: 0;
     border: 2px solid #00BFDF;
@@ -5097,7 +5277,11 @@ button.btn.btn-gray.btn-outline,
 #header-on-scroll .tool-bar .search-form button.btn-gray.btn-outline.form-submit,
 input[type="submit"].btn.btn-gray.btn-outline,
 #header .tool-bar .search-form input[type="submit"].btn-gray.btn-outline.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray.btn-outline.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray.btn-outline.form-submit,
+.btn.btn-gray.btn-outline,
+.language-switcher-locale-url li a.btn-gray.btn-outline.language-link,
+#header .tool-bar .search-form .btn-gray.btn-outline.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-gray.btn-outline.form-submit {
   background: none;
   border: 2px solid #c4c3c4;
   border-radius: 0;
@@ -5108,7 +5292,11 @@ input[type="submit"].btn.btn-gray.btn-outline,
   #header-on-scroll .tool-bar .search-form button.btn-gray.btn-outline.form-submit:hover,
   input[type="submit"].btn.btn-gray.btn-outline:hover,
   #header .tool-bar .search-form input[type="submit"].btn-gray.btn-outline.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray.btn-outline.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray.btn-outline.form-submit:hover,
+  .btn.btn-gray.btn-outline:hover,
+  .language-switcher-locale-url li a.btn-gray.btn-outline.language-link:hover,
+  #header .tool-bar .search-form .btn-gray.btn-outline.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-gray.btn-outline.form-submit:hover {
     background: none;
     border-radius: 0;
     border: 2px solid #00BFDF;
@@ -5119,7 +5307,11 @@ button.btn.btn-gray-light.btn-outline,
 #header-on-scroll .tool-bar .search-form button.btn-gray-light.btn-outline.form-submit,
 input[type="submit"].btn.btn-gray-light.btn-outline,
 #header .tool-bar .search-form input[type="submit"].btn-gray-light.btn-outline.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray-light.btn-outline.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray-light.btn-outline.form-submit,
+.btn.btn-gray-light.btn-outline,
+.language-switcher-locale-url li a.btn-gray-light.btn-outline.language-link,
+#header .tool-bar .search-form .btn-gray-light.btn-outline.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-gray-light.btn-outline.form-submit {
   background: none;
   border: 2px solid white;
   border-radius: 0;
@@ -5130,7 +5322,11 @@ input[type="submit"].btn.btn-gray-light.btn-outline,
   #header-on-scroll .tool-bar .search-form button.btn-gray-light.btn-outline.form-submit:hover,
   input[type="submit"].btn.btn-gray-light.btn-outline:hover,
   #header .tool-bar .search-form input[type="submit"].btn-gray-light.btn-outline.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray-light.btn-outline.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray-light.btn-outline.form-submit:hover,
+  .btn.btn-gray-light.btn-outline:hover,
+  .language-switcher-locale-url li a.btn-gray-light.btn-outline.language-link:hover,
+  #header .tool-bar .search-form .btn-gray-light.btn-outline.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-gray-light.btn-outline.form-submit:hover {
     background: none;
     border-radius: 0;
     border: 2px solid #00BFDF;
@@ -5141,7 +5337,11 @@ button.btn.btn-gray-lighter.btn-outline,
 #header-on-scroll .tool-bar .search-form button.btn-gray-lighter.btn-outline.form-submit,
 input[type="submit"].btn.btn-gray-lighter.btn-outline,
 #header .tool-bar .search-form input[type="submit"].btn-gray-lighter.btn-outline.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray-lighter.btn-outline.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray-lighter.btn-outline.form-submit,
+.btn.btn-gray-lighter.btn-outline,
+.language-switcher-locale-url li a.btn-gray-lighter.btn-outline.language-link,
+#header .tool-bar .search-form .btn-gray-lighter.btn-outline.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-gray-lighter.btn-outline.form-submit {
   background: none;
   border: 2px solid white;
   border-radius: 0;
@@ -5152,7 +5352,11 @@ input[type="submit"].btn.btn-gray-lighter.btn-outline,
   #header-on-scroll .tool-bar .search-form button.btn-gray-lighter.btn-outline.form-submit:hover,
   input[type="submit"].btn.btn-gray-lighter.btn-outline:hover,
   #header .tool-bar .search-form input[type="submit"].btn-gray-lighter.btn-outline.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray-lighter.btn-outline.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray-lighter.btn-outline.form-submit:hover,
+  .btn.btn-gray-lighter.btn-outline:hover,
+  .language-switcher-locale-url li a.btn-gray-lighter.btn-outline.language-link:hover,
+  #header .tool-bar .search-form .btn-gray-lighter.btn-outline.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-gray-lighter.btn-outline.form-submit:hover {
     background: none;
     border-radius: 0;
     border: 2px solid #00BFDF;
@@ -5163,7 +5367,11 @@ button.btn.btn-white.btn-outline,
 #header-on-scroll .tool-bar .search-form button.btn-white.btn-outline.form-submit,
 input[type="submit"].btn.btn-white.btn-outline,
 #header .tool-bar .search-form input[type="submit"].btn-white.btn-outline.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-white.btn-outline.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-white.btn-outline.form-submit,
+.btn.btn-white.btn-outline,
+.language-switcher-locale-url li a.btn-white.btn-outline.language-link,
+#header .tool-bar .search-form .btn-white.btn-outline.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-white.btn-outline.form-submit {
   background: none;
   border: 2px solid white;
   border-radius: 0;
@@ -5174,7 +5382,11 @@ input[type="submit"].btn.btn-white.btn-outline,
   #header-on-scroll .tool-bar .search-form button.btn-white.btn-outline.form-submit:hover,
   input[type="submit"].btn.btn-white.btn-outline:hover,
   #header .tool-bar .search-form input[type="submit"].btn-white.btn-outline.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-white.btn-outline.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-white.btn-outline.form-submit:hover,
+  .btn.btn-white.btn-outline:hover,
+  .language-switcher-locale-url li a.btn-white.btn-outline.language-link:hover,
+  #header .tool-bar .search-form .btn-white.btn-outline.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-white.btn-outline.form-submit:hover {
     background: none;
     border-radius: 0;
     border: 2px solid #00BFDF;
@@ -5186,7 +5398,11 @@ button.btn.btn-primary.btn-custom,
 #header-on-scroll .tool-bar .search-form button.btn-primary.btn-custom.form-submit,
 input[type="submit"].btn.btn-primary.btn-custom,
 #header .tool-bar .search-form input[type="submit"].btn-primary.btn-custom.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-primary.btn-custom.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-primary.btn-custom.form-submit,
+.btn.btn-primary.btn-custom,
+.language-switcher-locale-url li a.btn-primary.btn-custom.language-link,
+#header .tool-bar .search-form .btn-primary.btn-custom.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-primary.btn-custom.form-submit {
   background-color: #00BFDF;
   color: white !important; }
   a.btn.btn-primary.btn-custom:hover, .language-switcher-locale-url li a.btn-primary.btn-custom.language-link:hover, #header .tool-bar .search-form a.btn-primary.btn-custom.form-submit:hover, #header-on-scroll .tool-bar .search-form a.btn-primary.btn-custom.form-submit:hover,
@@ -5195,7 +5411,11 @@ input[type="submit"].btn.btn-primary.btn-custom,
   #header-on-scroll .tool-bar .search-form button.btn-primary.btn-custom.form-submit:hover,
   input[type="submit"].btn.btn-primary.btn-custom:hover,
   #header .tool-bar .search-form input[type="submit"].btn-primary.btn-custom.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-primary.btn-custom.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-primary.btn-custom.form-submit:hover,
+  .btn.btn-primary.btn-custom:hover,
+  .language-switcher-locale-url li a.btn-primary.btn-custom.language-link:hover,
+  #header .tool-bar .search-form .btn-primary.btn-custom.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-primary.btn-custom.form-submit:hover {
     background-color: #0098b1;
     color: white !important; }
 a.btn.btn-success.btn-custom, .language-switcher-locale-url li a.btn-success.btn-custom.language-link, #header .tool-bar .search-form a.btn-success.btn-custom.form-submit, #header-on-scroll .tool-bar .search-form a.btn-success.btn-custom.form-submit,
@@ -5204,7 +5424,11 @@ button.btn.btn-success.btn-custom,
 #header-on-scroll .tool-bar .search-form button.btn-success.btn-custom.form-submit,
 input[type="submit"].btn.btn-success.btn-custom,
 #header .tool-bar .search-form input[type="submit"].btn-success.btn-custom.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-success.btn-custom.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-success.btn-custom.form-submit,
+.btn.btn-success.btn-custom,
+.language-switcher-locale-url li a.btn-success.btn-custom.language-link,
+#header .tool-bar .search-form .btn-success.btn-custom.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-success.btn-custom.form-submit {
   background-color: #8DC63F;
   color: white !important; }
   a.btn.btn-success.btn-custom:hover, .language-switcher-locale-url li a.btn-success.btn-custom.language-link:hover, #header .tool-bar .search-form a.btn-success.btn-custom.form-submit:hover, #header-on-scroll .tool-bar .search-form a.btn-success.btn-custom.form-submit:hover,
@@ -5213,7 +5437,11 @@ input[type="submit"].btn.btn-success.btn-custom,
   #header-on-scroll .tool-bar .search-form button.btn-success.btn-custom.form-submit:hover,
   input[type="submit"].btn.btn-success.btn-custom:hover,
   #header .tool-bar .search-form input[type="submit"].btn-success.btn-custom.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-success.btn-custom.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-success.btn-custom.form-submit:hover,
+  .btn.btn-success.btn-custom:hover,
+  .language-switcher-locale-url li a.btn-success.btn-custom.language-link:hover,
+  #header .tool-bar .search-form .btn-success.btn-custom.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-success.btn-custom.form-submit:hover {
     background-color: #75a631;
     color: white !important; }
 a.btn.btn-info.btn-custom, .language-switcher-locale-url li a.btn-info.btn-custom.language-link, #header .tool-bar .search-form a.btn-info.btn-custom.form-submit, #header-on-scroll .tool-bar .search-form a.btn-info.btn-custom.form-submit,
@@ -5222,7 +5450,11 @@ button.btn.btn-info.btn-custom,
 #header-on-scroll .tool-bar .search-form button.btn-info.btn-custom.form-submit,
 input[type="submit"].btn.btn-info.btn-custom,
 #header .tool-bar .search-form input[type="submit"].btn-info.btn-custom.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-info.btn-custom.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-info.btn-custom.form-submit,
+.btn.btn-info.btn-custom,
+.language-switcher-locale-url li a.btn-info.btn-custom.language-link,
+#header .tool-bar .search-form .btn-info.btn-custom.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-info.btn-custom.form-submit {
   background-color: #2E4372;
   color: white !important; }
   a.btn.btn-info.btn-custom:hover, .language-switcher-locale-url li a.btn-info.btn-custom.language-link:hover, #header .tool-bar .search-form a.btn-info.btn-custom.form-submit:hover, #header-on-scroll .tool-bar .search-form a.btn-info.btn-custom.form-submit:hover,
@@ -5231,7 +5463,11 @@ input[type="submit"].btn.btn-info.btn-custom,
   #header-on-scroll .tool-bar .search-form button.btn-info.btn-custom.form-submit:hover,
   input[type="submit"].btn.btn-info.btn-custom:hover,
   #header .tool-bar .search-form input[type="submit"].btn-info.btn-custom.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-info.btn-custom.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-info.btn-custom.form-submit:hover,
+  .btn.btn-info.btn-custom:hover,
+  .language-switcher-locale-url li a.btn-info.btn-custom.language-link:hover,
+  #header .tool-bar .search-form .btn-info.btn-custom.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-info.btn-custom.form-submit:hover {
     background-color: #213051;
     color: white !important; }
 a.btn.btn-warning.btn-custom, .language-switcher-locale-url li a.btn-warning.btn-custom.language-link, #header .tool-bar .search-form a.btn-warning.btn-custom.form-submit, #header-on-scroll .tool-bar .search-form a.btn-warning.btn-custom.form-submit,
@@ -5240,7 +5476,11 @@ button.btn.btn-warning.btn-custom,
 #header-on-scroll .tool-bar .search-form button.btn-warning.btn-custom.form-submit,
 input[type="submit"].btn.btn-warning.btn-custom,
 #header .tool-bar .search-form input[type="submit"].btn-warning.btn-custom.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-warning.btn-custom.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-warning.btn-custom.form-submit,
+.btn.btn-warning.btn-custom,
+.language-switcher-locale-url li a.btn-warning.btn-custom.language-link,
+#header .tool-bar .search-form .btn-warning.btn-custom.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-warning.btn-custom.form-submit {
   background-color: #FFDD00;
   color: white !important; }
   a.btn.btn-warning.btn-custom:hover, .language-switcher-locale-url li a.btn-warning.btn-custom.language-link:hover, #header .tool-bar .search-form a.btn-warning.btn-custom.form-submit:hover, #header-on-scroll .tool-bar .search-form a.btn-warning.btn-custom.form-submit:hover,
@@ -5249,7 +5489,11 @@ input[type="submit"].btn.btn-warning.btn-custom,
   #header-on-scroll .tool-bar .search-form button.btn-warning.btn-custom.form-submit:hover,
   input[type="submit"].btn.btn-warning.btn-custom:hover,
   #header .tool-bar .search-form input[type="submit"].btn-warning.btn-custom.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-warning.btn-custom.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-warning.btn-custom.form-submit:hover,
+  .btn.btn-warning.btn-custom:hover,
+  .language-switcher-locale-url li a.btn-warning.btn-custom.language-link:hover,
+  #header .tool-bar .search-form .btn-warning.btn-custom.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-warning.btn-custom.form-submit:hover {
     background-color: #d1b500;
     color: white !important; }
 a.btn.btn-danger.btn-custom, .language-switcher-locale-url li a.btn-danger.btn-custom.language-link, #header .tool-bar .search-form a.btn-danger.btn-custom.form-submit, #header-on-scroll .tool-bar .search-form a.btn-danger.btn-custom.form-submit,
@@ -5258,7 +5502,11 @@ button.btn.btn-danger.btn-custom,
 #header-on-scroll .tool-bar .search-form button.btn-danger.btn-custom.form-submit,
 input[type="submit"].btn.btn-danger.btn-custom,
 #header .tool-bar .search-form input[type="submit"].btn-danger.btn-custom.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-danger.btn-custom.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-danger.btn-custom.form-submit,
+.btn.btn-danger.btn-custom,
+.language-switcher-locale-url li a.btn-danger.btn-custom.language-link,
+#header .tool-bar .search-form .btn-danger.btn-custom.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-danger.btn-custom.form-submit {
   background-color: #DD5341;
   color: white !important; }
   a.btn.btn-danger.btn-custom:hover, .language-switcher-locale-url li a.btn-danger.btn-custom.language-link:hover, #header .tool-bar .search-form a.btn-danger.btn-custom.form-submit:hover, #header-on-scroll .tool-bar .search-form a.btn-danger.btn-custom.form-submit:hover,
@@ -5267,7 +5515,11 @@ input[type="submit"].btn.btn-danger.btn-custom,
   #header-on-scroll .tool-bar .search-form button.btn-danger.btn-custom.form-submit:hover,
   input[type="submit"].btn.btn-danger.btn-custom:hover,
   #header .tool-bar .search-form input[type="submit"].btn-danger.btn-custom.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-danger.btn-custom.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-danger.btn-custom.form-submit:hover,
+  .btn.btn-danger.btn-custom:hover,
+  .language-switcher-locale-url li a.btn-danger.btn-custom.language-link:hover,
+  #header .tool-bar .search-form .btn-danger.btn-custom.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-danger.btn-custom.form-submit:hover {
     background-color: #cc3824;
     color: white !important; }
 a.btn.btn-blue-darker.btn-custom, .language-switcher-locale-url li a.btn-blue-darker.btn-custom.language-link, #header .tool-bar .search-form a.btn-blue-darker.btn-custom.form-submit, #header-on-scroll .tool-bar .search-form a.btn-blue-darker.btn-custom.form-submit,
@@ -5276,7 +5528,11 @@ button.btn.btn-blue-darker.btn-custom,
 #header-on-scroll .tool-bar .search-form button.btn-blue-darker.btn-custom.form-submit,
 input[type="submit"].btn.btn-blue-darker.btn-custom,
 #header .tool-bar .search-form input[type="submit"].btn-blue-darker.btn-custom.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue-darker.btn-custom.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue-darker.btn-custom.form-submit,
+.btn.btn-blue-darker.btn-custom,
+.language-switcher-locale-url li a.btn-blue-darker.btn-custom.language-link,
+#header .tool-bar .search-form .btn-blue-darker.btn-custom.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-blue-darker.btn-custom.form-submit {
   background-color: #00a7d7;
   color: white !important; }
   a.btn.btn-blue-darker.btn-custom:hover, .language-switcher-locale-url li a.btn-blue-darker.btn-custom.language-link:hover, #header .tool-bar .search-form a.btn-blue-darker.btn-custom.form-submit:hover, #header-on-scroll .tool-bar .search-form a.btn-blue-darker.btn-custom.form-submit:hover,
@@ -5285,7 +5541,11 @@ input[type="submit"].btn.btn-blue-darker.btn-custom,
   #header-on-scroll .tool-bar .search-form button.btn-blue-darker.btn-custom.form-submit:hover,
   input[type="submit"].btn.btn-blue-darker.btn-custom:hover,
   #header .tool-bar .search-form input[type="submit"].btn-blue-darker.btn-custom.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue-darker.btn-custom.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue-darker.btn-custom.form-submit:hover,
+  .btn.btn-blue-darker.btn-custom:hover,
+  .language-switcher-locale-url li a.btn-blue-darker.btn-custom.language-link:hover,
+  #header .tool-bar .search-form .btn-blue-darker.btn-custom.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-blue-darker.btn-custom.form-submit:hover {
     background-color: #0083a9;
     color: white !important; }
 a.btn.btn-blue-dark.btn-custom, .language-switcher-locale-url li a.btn-blue-dark.btn-custom.language-link, #header .tool-bar .search-form a.btn-blue-dark.btn-custom.form-submit, #header-on-scroll .tool-bar .search-form a.btn-blue-dark.btn-custom.form-submit,
@@ -5294,7 +5554,11 @@ button.btn.btn-blue-dark.btn-custom,
 #header-on-scroll .tool-bar .search-form button.btn-blue-dark.btn-custom.form-submit,
 input[type="submit"].btn.btn-blue-dark.btn-custom,
 #header .tool-bar .search-form input[type="submit"].btn-blue-dark.btn-custom.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue-dark.btn-custom.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue-dark.btn-custom.form-submit,
+.btn.btn-blue-dark.btn-custom,
+.language-switcher-locale-url li a.btn-blue-dark.btn-custom.language-link,
+#header .tool-bar .search-form .btn-blue-dark.btn-custom.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-blue-dark.btn-custom.form-submit {
   background-color: #43d5ff;
   color: white !important; }
   a.btn.btn-blue-dark.btn-custom:hover, .language-switcher-locale-url li a.btn-blue-dark.btn-custom.language-link:hover, #header .tool-bar .search-form a.btn-blue-dark.btn-custom.form-submit:hover, #header-on-scroll .tool-bar .search-form a.btn-blue-dark.btn-custom.form-submit:hover,
@@ -5303,7 +5567,11 @@ input[type="submit"].btn.btn-blue-dark.btn-custom,
   #header-on-scroll .tool-bar .search-form button.btn-blue-dark.btn-custom.form-submit:hover,
   input[type="submit"].btn.btn-blue-dark.btn-custom:hover,
   #header .tool-bar .search-form input[type="submit"].btn-blue-dark.btn-custom.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue-dark.btn-custom.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue-dark.btn-custom.form-submit:hover,
+  .btn.btn-blue-dark.btn-custom:hover,
+  .language-switcher-locale-url li a.btn-blue-dark.btn-custom.language-link:hover,
+  #header .tool-bar .search-form .btn-blue-dark.btn-custom.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-blue-dark.btn-custom.form-submit:hover {
     background-color: #15cbff;
     color: white !important; }
 a.btn.btn-blue.btn-custom, .language-switcher-locale-url li a.btn-blue.btn-custom.language-link, #header .tool-bar .search-form a.btn-blue.btn-custom.form-submit, #header-on-scroll .tool-bar .search-form a.btn-blue.btn-custom.form-submit,
@@ -5312,7 +5580,11 @@ button.btn.btn-blue.btn-custom,
 #header-on-scroll .tool-bar .search-form button.btn-blue.btn-custom.form-submit,
 input[type="submit"].btn.btn-blue.btn-custom,
 #header .tool-bar .search-form input[type="submit"].btn-blue.btn-custom.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue.btn-custom.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue.btn-custom.form-submit,
+.btn.btn-blue.btn-custom,
+.language-switcher-locale-url li a.btn-blue.btn-custom.language-link,
+#header .tool-bar .search-form .btn-blue.btn-custom.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-blue.btn-custom.form-submit {
   background-color: #8be5ff;
   color: white !important; }
   a.btn.btn-blue.btn-custom:hover, .language-switcher-locale-url li a.btn-blue.btn-custom.language-link:hover, #header .tool-bar .search-form a.btn-blue.btn-custom.form-submit:hover, #header-on-scroll .tool-bar .search-form a.btn-blue.btn-custom.form-submit:hover,
@@ -5321,7 +5593,11 @@ input[type="submit"].btn.btn-blue.btn-custom,
   #header-on-scroll .tool-bar .search-form button.btn-blue.btn-custom.form-submit:hover,
   input[type="submit"].btn.btn-blue.btn-custom:hover,
   #header .tool-bar .search-form input[type="submit"].btn-blue.btn-custom.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue.btn-custom.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue.btn-custom.form-submit:hover,
+  .btn.btn-blue.btn-custom:hover,
+  .language-switcher-locale-url li a.btn-blue.btn-custom.language-link:hover,
+  #header .tool-bar .search-form .btn-blue.btn-custom.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-blue.btn-custom.form-submit:hover {
     background-color: #5ddbff;
     color: white !important; }
 a.btn.btn-blue-light.btn-custom, .language-switcher-locale-url li a.btn-blue-light.btn-custom.language-link, #header .tool-bar .search-form a.btn-blue-light.btn-custom.form-submit, #header-on-scroll .tool-bar .search-form a.btn-blue-light.btn-custom.form-submit,
@@ -5330,7 +5606,11 @@ button.btn.btn-blue-light.btn-custom,
 #header-on-scroll .tool-bar .search-form button.btn-blue-light.btn-custom.form-submit,
 input[type="submit"].btn.btn-blue-light.btn-custom,
 #header .tool-bar .search-form input[type="submit"].btn-blue-light.btn-custom.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue-light.btn-custom.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue-light.btn-custom.form-submit,
+.btn.btn-blue-light.btn-custom,
+.language-switcher-locale-url li a.btn-blue-light.btn-custom.language-link,
+#header .tool-bar .search-form .btn-blue-light.btn-custom.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-blue-light.btn-custom.form-submit {
   background-color: white;
   color: white !important; }
   a.btn.btn-blue-light.btn-custom:hover, .language-switcher-locale-url li a.btn-blue-light.btn-custom.language-link:hover, #header .tool-bar .search-form a.btn-blue-light.btn-custom.form-submit:hover, #header-on-scroll .tool-bar .search-form a.btn-blue-light.btn-custom.form-submit:hover,
@@ -5339,7 +5619,11 @@ input[type="submit"].btn.btn-blue-light.btn-custom,
   #header-on-scroll .tool-bar .search-form button.btn-blue-light.btn-custom.form-submit:hover,
   input[type="submit"].btn.btn-blue-light.btn-custom:hover,
   #header .tool-bar .search-form input[type="submit"].btn-blue-light.btn-custom.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue-light.btn-custom.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue-light.btn-custom.form-submit:hover,
+  .btn.btn-blue-light.btn-custom:hover,
+  .language-switcher-locale-url li a.btn-blue-light.btn-custom.language-link:hover,
+  #header .tool-bar .search-form .btn-blue-light.btn-custom.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-blue-light.btn-custom.form-submit:hover {
     background-color: #d1f5ff;
     color: white !important; }
 a.btn.btn-blue-lighter.btn-custom, .language-switcher-locale-url li a.btn-blue-lighter.btn-custom.language-link, #header .tool-bar .search-form a.btn-blue-lighter.btn-custom.form-submit, #header-on-scroll .tool-bar .search-form a.btn-blue-lighter.btn-custom.form-submit,
@@ -5348,7 +5632,11 @@ button.btn.btn-blue-lighter.btn-custom,
 #header-on-scroll .tool-bar .search-form button.btn-blue-lighter.btn-custom.form-submit,
 input[type="submit"].btn.btn-blue-lighter.btn-custom,
 #header .tool-bar .search-form input[type="submit"].btn-blue-lighter.btn-custom.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue-lighter.btn-custom.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue-lighter.btn-custom.form-submit,
+.btn.btn-blue-lighter.btn-custom,
+.language-switcher-locale-url li a.btn-blue-lighter.btn-custom.language-link,
+#header .tool-bar .search-form .btn-blue-lighter.btn-custom.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-blue-lighter.btn-custom.form-submit {
   background-color: white;
   color: white !important; }
   a.btn.btn-blue-lighter.btn-custom:hover, .language-switcher-locale-url li a.btn-blue-lighter.btn-custom.language-link:hover, #header .tool-bar .search-form a.btn-blue-lighter.btn-custom.form-submit:hover, #header-on-scroll .tool-bar .search-form a.btn-blue-lighter.btn-custom.form-submit:hover,
@@ -5357,7 +5645,11 @@ input[type="submit"].btn.btn-blue-lighter.btn-custom,
   #header-on-scroll .tool-bar .search-form button.btn-blue-lighter.btn-custom.form-submit:hover,
   input[type="submit"].btn.btn-blue-lighter.btn-custom:hover,
   #header .tool-bar .search-form input[type="submit"].btn-blue-lighter.btn-custom.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue-lighter.btn-custom.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-blue-lighter.btn-custom.form-submit:hover,
+  .btn.btn-blue-lighter.btn-custom:hover,
+  .language-switcher-locale-url li a.btn-blue-lighter.btn-custom.language-link:hover,
+  #header .tool-bar .search-form .btn-blue-lighter.btn-custom.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-blue-lighter.btn-custom.form-submit:hover {
     background-color: #d1f5ff;
     color: white !important; }
 a.btn.btn-gray-darker.btn-custom, .language-switcher-locale-url li a.btn-gray-darker.btn-custom.language-link, #header .tool-bar .search-form a.btn-gray-darker.btn-custom.form-submit, #header-on-scroll .tool-bar .search-form a.btn-gray-darker.btn-custom.form-submit,
@@ -5366,7 +5658,11 @@ button.btn.btn-gray-darker.btn-custom,
 #header-on-scroll .tool-bar .search-form button.btn-gray-darker.btn-custom.form-submit,
 input[type="submit"].btn.btn-gray-darker.btn-custom,
 #header .tool-bar .search-form input[type="submit"].btn-gray-darker.btn-custom.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray-darker.btn-custom.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray-darker.btn-custom.form-submit,
+.btn.btn-gray-darker.btn-custom,
+.language-switcher-locale-url li a.btn-gray-darker.btn-custom.language-link,
+#header .tool-bar .search-form .btn-gray-darker.btn-custom.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-gray-darker.btn-custom.form-submit {
   background-color: #4f4f4f;
   color: white !important; }
   a.btn.btn-gray-darker.btn-custom:hover, .language-switcher-locale-url li a.btn-gray-darker.btn-custom.language-link:hover, #header .tool-bar .search-form a.btn-gray-darker.btn-custom.form-submit:hover, #header-on-scroll .tool-bar .search-form a.btn-gray-darker.btn-custom.form-submit:hover,
@@ -5375,7 +5671,11 @@ input[type="submit"].btn.btn-gray-darker.btn-custom,
   #header-on-scroll .tool-bar .search-form button.btn-gray-darker.btn-custom.form-submit:hover,
   input[type="submit"].btn.btn-gray-darker.btn-custom:hover,
   #header .tool-bar .search-form input[type="submit"].btn-gray-darker.btn-custom.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray-darker.btn-custom.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray-darker.btn-custom.form-submit:hover,
+  .btn.btn-gray-darker.btn-custom:hover,
+  .language-switcher-locale-url li a.btn-gray-darker.btn-custom.language-link:hover,
+  #header .tool-bar .search-form .btn-gray-darker.btn-custom.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-gray-darker.btn-custom.form-submit:hover {
     background-color: #191919;
     color: white !important; }
 a.btn.btn-gray-dark.btn-custom, .language-switcher-locale-url li a.btn-gray-dark.btn-custom.language-link, #header .tool-bar .search-form a.btn-gray-dark.btn-custom.form-submit, #header-on-scroll .tool-bar .search-form a.btn-gray-dark.btn-custom.form-submit,
@@ -5384,7 +5684,11 @@ button.btn.btn-gray-dark.btn-custom,
 #header-on-scroll .tool-bar .search-form button.btn-gray-dark.btn-custom.form-submit,
 input[type="submit"].btn.btn-gray-dark.btn-custom,
 #header .tool-bar .search-form input[type="submit"].btn-gray-dark.btn-custom.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray-dark.btn-custom.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray-dark.btn-custom.form-submit,
+.btn.btn-gray-dark.btn-custom,
+.language-switcher-locale-url li a.btn-gray-dark.btn-custom.language-link,
+#header .tool-bar .search-form .btn-gray-dark.btn-custom.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-gray-dark.btn-custom.form-submit {
   background-color: #686868;
   color: white !important; }
   a.btn.btn-gray-dark.btn-custom:hover, .language-switcher-locale-url li a.btn-gray-dark.btn-custom.language-link:hover, #header .tool-bar .search-form a.btn-gray-dark.btn-custom.form-submit:hover, #header-on-scroll .tool-bar .search-form a.btn-gray-dark.btn-custom.form-submit:hover,
@@ -5393,7 +5697,11 @@ input[type="submit"].btn.btn-gray-dark.btn-custom,
   #header-on-scroll .tool-bar .search-form button.btn-gray-dark.btn-custom.form-submit:hover,
   input[type="submit"].btn.btn-gray-dark.btn-custom:hover,
   #header .tool-bar .search-form input[type="submit"].btn-gray-dark.btn-custom.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray-dark.btn-custom.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray-dark.btn-custom.form-submit:hover,
+  .btn.btn-gray-dark.btn-custom:hover,
+  .language-switcher-locale-url li a.btn-gray-dark.btn-custom.language-link:hover,
+  #header .tool-bar .search-form .btn-gray-dark.btn-custom.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-gray-dark.btn-custom.form-submit:hover {
     background-color: #323232;
     color: white !important; }
 a.btn.btn-gray.btn-custom, .language-switcher-locale-url li a.btn-gray.btn-custom.language-link, #header .tool-bar .search-form a.btn-gray.btn-custom.form-submit, #header-on-scroll .tool-bar .search-form a.btn-gray.btn-custom.form-submit,
@@ -5402,7 +5710,11 @@ button.btn.btn-gray.btn-custom,
 #header-on-scroll .tool-bar .search-form button.btn-gray.btn-custom.form-submit,
 input[type="submit"].btn.btn-gray.btn-custom,
 #header .tool-bar .search-form input[type="submit"].btn-gray.btn-custom.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray.btn-custom.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray.btn-custom.form-submit,
+.btn.btn-gray.btn-custom,
+.language-switcher-locale-url li a.btn-gray.btn-custom.language-link,
+#header .tool-bar .search-form .btn-gray.btn-custom.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-gray.btn-custom.form-submit {
   background-color: #c4c3c4;
   color: white !important; }
   a.btn.btn-gray.btn-custom:hover, .language-switcher-locale-url li a.btn-gray.btn-custom.language-link:hover, #header .tool-bar .search-form a.btn-gray.btn-custom.form-submit:hover, #header-on-scroll .tool-bar .search-form a.btn-gray.btn-custom.form-submit:hover,
@@ -5411,7 +5723,11 @@ input[type="submit"].btn.btn-gray.btn-custom,
   #header-on-scroll .tool-bar .search-form button.btn-gray.btn-custom.form-submit:hover,
   input[type="submit"].btn.btn-gray.btn-custom:hover,
   #header .tool-bar .search-form input[type="submit"].btn-gray.btn-custom.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray.btn-custom.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray.btn-custom.form-submit:hover,
+  .btn.btn-gray.btn-custom:hover,
+  .language-switcher-locale-url li a.btn-gray.btn-custom.language-link:hover,
+  #header .tool-bar .search-form .btn-gray.btn-custom.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-gray.btn-custom.form-submit:hover {
     background-color: #8f8d8e;
     color: white !important; }
 a.btn.btn-gray-light.btn-custom, .language-switcher-locale-url li a.btn-gray-light.btn-custom.language-link, #header .tool-bar .search-form a.btn-gray-light.btn-custom.form-submit, #header-on-scroll .tool-bar .search-form a.btn-gray-light.btn-custom.form-submit,
@@ -5420,7 +5736,11 @@ button.btn.btn-gray-light.btn-custom,
 #header-on-scroll .tool-bar .search-form button.btn-gray-light.btn-custom.form-submit,
 input[type="submit"].btn.btn-gray-light.btn-custom,
 #header .tool-bar .search-form input[type="submit"].btn-gray-light.btn-custom.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray-light.btn-custom.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray-light.btn-custom.form-submit,
+.btn.btn-gray-light.btn-custom,
+.language-switcher-locale-url li a.btn-gray-light.btn-custom.language-link,
+#header .tool-bar .search-form .btn-gray-light.btn-custom.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-gray-light.btn-custom.form-submit {
   background-color: white;
   color: white !important; }
   a.btn.btn-gray-light.btn-custom:hover, .language-switcher-locale-url li a.btn-gray-light.btn-custom.language-link:hover, #header .tool-bar .search-form a.btn-gray-light.btn-custom.form-submit:hover, #header-on-scroll .tool-bar .search-form a.btn-gray-light.btn-custom.form-submit:hover,
@@ -5429,7 +5749,11 @@ input[type="submit"].btn.btn-gray-light.btn-custom,
   #header-on-scroll .tool-bar .search-form button.btn-gray-light.btn-custom.form-submit:hover,
   input[type="submit"].btn.btn-gray-light.btn-custom:hover,
   #header .tool-bar .search-form input[type="submit"].btn-gray-light.btn-custom.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray-light.btn-custom.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray-light.btn-custom.form-submit:hover,
+  .btn.btn-gray-light.btn-custom:hover,
+  .language-switcher-locale-url li a.btn-gray-light.btn-custom.language-link:hover,
+  #header .tool-bar .search-form .btn-gray-light.btn-custom.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-gray-light.btn-custom.form-submit:hover {
     background-color: #e3e3e3;
     color: white !important; }
 a.btn.btn-gray-lighter.btn-custom, .language-switcher-locale-url li a.btn-gray-lighter.btn-custom.language-link, #header .tool-bar .search-form a.btn-gray-lighter.btn-custom.form-submit, #header-on-scroll .tool-bar .search-form a.btn-gray-lighter.btn-custom.form-submit,
@@ -5438,7 +5762,11 @@ button.btn.btn-gray-lighter.btn-custom,
 #header-on-scroll .tool-bar .search-form button.btn-gray-lighter.btn-custom.form-submit,
 input[type="submit"].btn.btn-gray-lighter.btn-custom,
 #header .tool-bar .search-form input[type="submit"].btn-gray-lighter.btn-custom.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray-lighter.btn-custom.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray-lighter.btn-custom.form-submit,
+.btn.btn-gray-lighter.btn-custom,
+.language-switcher-locale-url li a.btn-gray-lighter.btn-custom.language-link,
+#header .tool-bar .search-form .btn-gray-lighter.btn-custom.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-gray-lighter.btn-custom.form-submit {
   background-color: white;
   color: white !important; }
   a.btn.btn-gray-lighter.btn-custom:hover, .language-switcher-locale-url li a.btn-gray-lighter.btn-custom.language-link:hover, #header .tool-bar .search-form a.btn-gray-lighter.btn-custom.form-submit:hover, #header-on-scroll .tool-bar .search-form a.btn-gray-lighter.btn-custom.form-submit:hover,
@@ -5447,7 +5775,11 @@ input[type="submit"].btn.btn-gray-lighter.btn-custom,
   #header-on-scroll .tool-bar .search-form button.btn-gray-lighter.btn-custom.form-submit:hover,
   input[type="submit"].btn.btn-gray-lighter.btn-custom:hover,
   #header .tool-bar .search-form input[type="submit"].btn-gray-lighter.btn-custom.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray-lighter.btn-custom.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-gray-lighter.btn-custom.form-submit:hover,
+  .btn.btn-gray-lighter.btn-custom:hover,
+  .language-switcher-locale-url li a.btn-gray-lighter.btn-custom.language-link:hover,
+  #header .tool-bar .search-form .btn-gray-lighter.btn-custom.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-gray-lighter.btn-custom.form-submit:hover {
     background-color: #f1f1f1;
     color: white !important; }
 a.btn.btn-white.btn-custom, .language-switcher-locale-url li a.btn-white.btn-custom.language-link, #header .tool-bar .search-form a.btn-white.btn-custom.form-submit, #header-on-scroll .tool-bar .search-form a.btn-white.btn-custom.form-submit,
@@ -5456,7 +5788,11 @@ button.btn.btn-white.btn-custom,
 #header-on-scroll .tool-bar .search-form button.btn-white.btn-custom.form-submit,
 input[type="submit"].btn.btn-white.btn-custom,
 #header .tool-bar .search-form input[type="submit"].btn-white.btn-custom.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-white.btn-custom.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-white.btn-custom.form-submit,
+.btn.btn-white.btn-custom,
+.language-switcher-locale-url li a.btn-white.btn-custom.language-link,
+#header .tool-bar .search-form .btn-white.btn-custom.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-white.btn-custom.form-submit {
   background-color: white;
   color: white !important; }
   a.btn.btn-white.btn-custom:hover, .language-switcher-locale-url li a.btn-white.btn-custom.language-link:hover, #header .tool-bar .search-form a.btn-white.btn-custom.form-submit:hover, #header-on-scroll .tool-bar .search-form a.btn-white.btn-custom.form-submit:hover,
@@ -5465,7 +5801,11 @@ input[type="submit"].btn.btn-white.btn-custom,
   #header-on-scroll .tool-bar .search-form button.btn-white.btn-custom.form-submit:hover,
   input[type="submit"].btn.btn-white.btn-custom:hover,
   #header .tool-bar .search-form input[type="submit"].btn-white.btn-custom.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-white.btn-custom.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-white.btn-custom.form-submit:hover,
+  .btn.btn-white.btn-custom:hover,
+  .language-switcher-locale-url li a.btn-white.btn-custom.language-link:hover,
+  #header .tool-bar .search-form .btn-white.btn-custom.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-white.btn-custom.form-submit:hover {
     background-color: #fff;
     color: white !important; }
 
@@ -5475,7 +5815,11 @@ button.btn.btn-facebook.btn-circle,
 #header-on-scroll .tool-bar .search-form button.btn-facebook.btn-circle.form-submit,
 input[type="submit"].btn.btn-facebook.btn-circle,
 #header .tool-bar .search-form input[type="submit"].btn-facebook.btn-circle.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-facebook.btn-circle.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-facebook.btn-circle.form-submit,
+.btn.btn-facebook.btn-circle,
+.language-switcher-locale-url li a.btn-facebook.btn-circle.language-link,
+#header .tool-bar .search-form .btn-facebook.btn-circle.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-facebook.btn-circle.form-submit {
   background-color: #7590c9;
   border-radius: 50%;
   color: white !important;
@@ -5520,7 +5864,11 @@ input[type="submit"].btn.btn-facebook.btn-circle,
   #header-on-scroll .tool-bar .search-form button.btn-facebook.btn-circle.form-submit:hover,
   input[type="submit"].btn.btn-facebook.btn-circle:hover,
   #header .tool-bar .search-form input[type="submit"].btn-facebook.btn-circle.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-facebook.btn-circle.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-facebook.btn-circle.form-submit:hover,
+  .btn.btn-facebook.btn-circle:hover,
+  .language-switcher-locale-url li a.btn-facebook.btn-circle.language-link:hover,
+  #header .tool-bar .search-form .btn-facebook.btn-circle.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-facebook.btn-circle.form-submit:hover {
     background-color: #3B5998;
     color: white !important; }
 a.btn.btn-twitter.btn-circle, .language-switcher-locale-url li a.btn-twitter.btn-circle.language-link, #header .tool-bar .search-form a.btn-twitter.btn-circle.form-submit, #header-on-scroll .tool-bar .search-form a.btn-twitter.btn-circle.form-submit,
@@ -5529,7 +5877,11 @@ button.btn.btn-twitter.btn-circle,
 #header-on-scroll .tool-bar .search-form button.btn-twitter.btn-circle.form-submit,
 input[type="submit"].btn.btn-twitter.btn-circle,
 #header .tool-bar .search-form input[type="submit"].btn-twitter.btn-circle.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-twitter.btn-circle.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-twitter.btn-circle.form-submit,
+.btn.btn-twitter.btn-circle,
+.language-switcher-locale-url li a.btn-twitter.btn-circle.language-link,
+#header .tool-bar .search-form .btn-twitter.btn-circle.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-twitter.btn-circle.form-submit {
   background-color: #9fe7ff;
   border-radius: 50%;
   color: white !important;
@@ -5574,7 +5926,11 @@ input[type="submit"].btn.btn-twitter.btn-circle,
   #header-on-scroll .tool-bar .search-form button.btn-twitter.btn-circle.form-submit:hover,
   input[type="submit"].btn.btn-twitter.btn-circle:hover,
   #header .tool-bar .search-form input[type="submit"].btn-twitter.btn-circle.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-twitter.btn-circle.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-twitter.btn-circle.form-submit:hover,
+  .btn.btn-twitter.btn-circle:hover,
+  .language-switcher-locale-url li a.btn-twitter.btn-circle.language-link:hover,
+  #header .tool-bar .search-form .btn-twitter.btn-circle.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-twitter.btn-circle.form-submit:hover {
     background-color: #34CCFE;
     color: white !important; }
 a.btn.btn-pinterest.btn-circle, .language-switcher-locale-url li a.btn-pinterest.btn-circle.language-link, #header .tool-bar .search-form a.btn-pinterest.btn-circle.form-submit, #header-on-scroll .tool-bar .search-form a.btn-pinterest.btn-circle.form-submit,
@@ -5583,7 +5939,11 @@ button.btn.btn-pinterest.btn-circle,
 #header-on-scroll .tool-bar .search-form button.btn-pinterest.btn-circle.form-submit,
 input[type="submit"].btn.btn-pinterest.btn-circle,
 #header .tool-bar .search-form input[type="submit"].btn-pinterest.btn-circle.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-pinterest.btn-circle.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-pinterest.btn-circle.form-submit,
+.btn.btn-pinterest.btn-circle,
+.language-switcher-locale-url li a.btn-pinterest.btn-circle.language-link,
+#header .tool-bar .search-form .btn-pinterest.btn-circle.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-pinterest.btn-circle.form-submit {
   background-color: #e97572;
   border-radius: 50%;
   color: white !important;
@@ -5628,7 +5988,11 @@ input[type="submit"].btn.btn-pinterest.btn-circle,
   #header-on-scroll .tool-bar .search-form button.btn-pinterest.btn-circle.form-submit:hover,
   input[type="submit"].btn.btn-pinterest.btn-circle:hover,
   #header .tool-bar .search-form input[type="submit"].btn-pinterest.btn-circle.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-pinterest.btn-circle.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-pinterest.btn-circle.form-submit:hover,
+  .btn.btn-pinterest.btn-circle:hover,
+  .language-switcher-locale-url li a.btn-pinterest.btn-circle.language-link:hover,
+  #header .tool-bar .search-form .btn-pinterest.btn-circle.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-pinterest.btn-circle.form-submit:hover {
     background-color: #D02420;
     color: white !important; }
 a.btn.btn-google-plus.btn-circle, .language-switcher-locale-url li a.btn-google-plus.btn-circle.language-link, #header .tool-bar .search-form a.btn-google-plus.btn-circle.form-submit, #header-on-scroll .tool-bar .search-form a.btn-google-plus.btn-circle.form-submit,
@@ -5637,7 +6001,11 @@ button.btn.btn-google-plus.btn-circle,
 #header-on-scroll .tool-bar .search-form button.btn-google-plus.btn-circle.form-submit,
 input[type="submit"].btn.btn-google-plus.btn-circle,
 #header .tool-bar .search-form input[type="submit"].btn-google-plus.btn-circle.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-google-plus.btn-circle.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-google-plus.btn-circle.form-submit,
+.btn.btn-google-plus.btn-circle,
+.language-switcher-locale-url li a.btn-google-plus.btn-circle.language-link,
+#header .tool-bar .search-form .btn-google-plus.btn-circle.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-google-plus.btn-circle.form-submit {
   background-color: #ec9890;
   border-radius: 50%;
   color: white !important;
@@ -5682,7 +6050,11 @@ input[type="submit"].btn.btn-google-plus.btn-circle,
   #header-on-scroll .tool-bar .search-form button.btn-google-plus.btn-circle.form-submit:hover,
   input[type="submit"].btn.btn-google-plus.btn-circle:hover,
   #header .tool-bar .search-form input[type="submit"].btn-google-plus.btn-circle.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-google-plus.btn-circle.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-google-plus.btn-circle.form-submit:hover,
+  .btn.btn-google-plus.btn-circle:hover,
+  .language-switcher-locale-url li a.btn-google-plus.btn-circle.language-link:hover,
+  #header .tool-bar .search-form .btn-google-plus.btn-circle.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-google-plus.btn-circle.form-submit:hover {
     background-color: #DC4335;
     color: white !important; }
 a.btn.btn-youtube.btn-circle, .language-switcher-locale-url li a.btn-youtube.btn-circle.language-link, #header .tool-bar .search-form a.btn-youtube.btn-circle.form-submit, #header-on-scroll .tool-bar .search-form a.btn-youtube.btn-circle.form-submit,
@@ -5691,7 +6063,11 @@ button.btn.btn-youtube.btn-circle,
 #header-on-scroll .tool-bar .search-form button.btn-youtube.btn-circle.form-submit,
 input[type="submit"].btn.btn-youtube.btn-circle,
 #header .tool-bar .search-form input[type="submit"].btn-youtube.btn-circle.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-youtube.btn-circle.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-youtube.btn-circle.form-submit,
+.btn.btn-youtube.btn-circle,
+.language-switcher-locale-url li a.btn-youtube.btn-circle.language-link,
+#header .tool-bar .search-form .btn-youtube.btn-circle.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-youtube.btn-circle.form-submit {
   background-color: #f89595;
   border-radius: 50%;
   color: white !important;
@@ -5736,7 +6112,11 @@ input[type="submit"].btn.btn-youtube.btn-circle,
   #header-on-scroll .tool-bar .search-form button.btn-youtube.btn-circle.form-submit:hover,
   input[type="submit"].btn.btn-youtube.btn-circle:hover,
   #header .tool-bar .search-form input[type="submit"].btn-youtube.btn-circle.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-youtube.btn-circle.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-youtube.btn-circle.form-submit:hover,
+  .btn.btn-youtube.btn-circle:hover,
+  .language-switcher-locale-url li a.btn-youtube.btn-circle.language-link:hover,
+  #header .tool-bar .search-form .btn-youtube.btn-circle.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-youtube.btn-circle.form-submit:hover {
     background-color: #F23030;
     color: white !important; }
 a.btn.btn-instagram.btn-circle, .language-switcher-locale-url li a.btn-instagram.btn-circle.language-link, #header .tool-bar .search-form a.btn-instagram.btn-circle.form-submit, #header-on-scroll .tool-bar .search-form a.btn-instagram.btn-circle.form-submit,
@@ -5745,7 +6125,11 @@ button.btn.btn-instagram.btn-circle,
 #header-on-scroll .tool-bar .search-form button.btn-instagram.btn-circle.form-submit,
 input[type="submit"].btn.btn-instagram.btn-circle,
 #header .tool-bar .search-form input[type="submit"].btn-instagram.btn-circle.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-instagram.btn-circle.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-instagram.btn-circle.form-submit,
+.btn.btn-instagram.btn-circle,
+.language-switcher-locale-url li a.btn-instagram.btn-circle.language-link,
+#header .tool-bar .search-form .btn-instagram.btn-circle.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-instagram.btn-circle.form-submit {
   background-color: #aac9fd;
   border-radius: 50%;
   color: white !important;
@@ -5790,7 +6174,11 @@ input[type="submit"].btn.btn-instagram.btn-circle,
   #header-on-scroll .tool-bar .search-form button.btn-instagram.btn-circle.form-submit:hover,
   input[type="submit"].btn.btn-instagram.btn-circle:hover,
   #header .tool-bar .search-form input[type="submit"].btn-instagram.btn-circle.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-instagram.btn-circle.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-instagram.btn-circle.form-submit:hover,
+  .btn.btn-instagram.btn-circle:hover,
+  .language-switcher-locale-url li a.btn-instagram.btn-circle.language-link:hover,
+  #header .tool-bar .search-form .btn-instagram.btn-circle.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-instagram.btn-circle.form-submit:hover {
     background-color: #4187FB;
     color: white !important; }
 a.btn.btn-linkedin.btn-circle, .language-switcher-locale-url li a.btn-linkedin.btn-circle.language-link, #header .tool-bar .search-form a.btn-linkedin.btn-circle.form-submit, #header-on-scroll .tool-bar .search-form a.btn-linkedin.btn-circle.form-submit,
@@ -5799,7 +6187,11 @@ button.btn.btn-linkedin.btn-circle,
 #header-on-scroll .tool-bar .search-form button.btn-linkedin.btn-circle.form-submit,
 input[type="submit"].btn.btn-linkedin.btn-circle,
 #header .tool-bar .search-form input[type="submit"].btn-linkedin.btn-circle.form-submit,
-#header-on-scroll .tool-bar .search-form input[type="submit"].btn-linkedin.btn-circle.form-submit {
+#header-on-scroll .tool-bar .search-form input[type="submit"].btn-linkedin.btn-circle.form-submit,
+.btn.btn-linkedin.btn-circle,
+.language-switcher-locale-url li a.btn-linkedin.btn-circle.language-link,
+#header .tool-bar .search-form .btn-linkedin.btn-circle.form-submit,
+#header-on-scroll .tool-bar .search-form .btn-linkedin.btn-circle.form-submit {
   background-color: #5db9e7;
   border-radius: 50%;
   color: white !important;
@@ -5844,7 +6236,11 @@ input[type="submit"].btn.btn-linkedin.btn-circle,
   #header-on-scroll .tool-bar .search-form button.btn-linkedin.btn-circle.form-submit:hover,
   input[type="submit"].btn.btn-linkedin.btn-circle:hover,
   #header .tool-bar .search-form input[type="submit"].btn-linkedin.btn-circle.form-submit:hover,
-  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-linkedin.btn-circle.form-submit:hover {
+  #header-on-scroll .tool-bar .search-form input[type="submit"].btn-linkedin.btn-circle.form-submit:hover,
+  .btn.btn-linkedin.btn-circle:hover,
+  .language-switcher-locale-url li a.btn-linkedin.btn-circle.language-link:hover,
+  #header .tool-bar .search-form .btn-linkedin.btn-circle.form-submit:hover,
+  #header-on-scroll .tool-bar .search-form .btn-linkedin.btn-circle.form-submit:hover {
     background-color: #1C87BD;
     color: white !important; }
 
@@ -7146,12 +7542,12 @@ body.form-on-submit {
 .hero-unit .header-trigger {
   position: absolute;
   right: 0;
-  bottom: 70px;
+  bottom: -280px;
   left: 0; }
 
 .body .header-trigger {
   position: absolute;
-  top: 420px;
+  top: 560px;
   right: 0;
   left: 0; }
 
