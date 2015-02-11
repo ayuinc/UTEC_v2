@@ -69,9 +69,9 @@
 					<h4 class="lead thin"><?php print $field_descripcion_causa ?></h4>
 					<?php if ($field_link_causa!='') { ?>
 						<?php if ($language->prefix == 'en'): ?>
-							<a href="/en/<?php print $field_link_causa ?>" class="btn mt-21 btn-white btn-outline btn-sm see-more"><?php print t('Read more') ?></a>
+							<span class="btn mt-21 btn-white btn-outline btn-sm see-more"><?php print t('Read more') ?></span>
 						<?php elseif ($language->prefix != 'en'): ?>
-							<a href="<?php print $field_link_causa ?>" class="btn mt-21 btn-white btn-outline btn-sm see-more"><?php print t('Read more') ?></a>
+							<span class="btn mt-21 btn-white btn-outline btn-sm see-more"><?php print t('Read more') ?></span>
 						<?php endif ?>	
 					<?php } ?>
 				</div>
@@ -108,9 +108,9 @@
 					<h4 class="lead thin"><?php print $field_subitulo_tres_acciones ?></h4>
 					<?php if ($field_link_tres_acciones!='')  { ?>
 						<?php if ($language->prefix == 'en'): ?>
-							<a href="/en/<?php print $field_link_tres_acciones ?>" class="btn btn-white btn-outline btn-sm see-more"><?php print t('Read more') ?></a>
+							<span class="btn btn-white btn-outline btn-sm see-more"><?php print t('Read more') ?></span>
 						<?php elseif ($language->prefix != 'en'): ?>
-							<a href="<?php print $field_link_tres_acciones ?>" class="btn btn-white btn-outline btn-sm see-more"><?php print t('Read more') ?></a>
+							<span class="btn btn-white btn-outline btn-sm see-more"><?php print t('Read more') ?></span>
 						<?php endif ?>					
 					<?php } ?>
 					<div class="row">
@@ -144,9 +144,9 @@
 		<div class="text-right">
 			<?php if ($field_link_proyecto!='') { ?>
 				<?php if ($language->prefix == 'en'): ?>
-					<a href="/en/<?php print $field_link_proyecto ?>" class="btn btn-outline btn-primary see-more btn-sm"><?php print t('Read more') ?></a>
+					<span class="btn btn-outline btn-primary see-more btn-sm"><?php print t('Read more') ?></span>
 				<?php elseif ($language->prefix != 'en'): ?>
-					<a href="<?php print $field_link_proyecto ?>" class="btn btn-outline btn-primary see-more btn-sm"><?php print t('Read more') ?></a>
+					<span class="btn btn-outline btn-primary see-more btn-sm"><?php print t('Read more') ?></span>
 				<?php endif ?>				
 			<?php } ?>
 		</div>

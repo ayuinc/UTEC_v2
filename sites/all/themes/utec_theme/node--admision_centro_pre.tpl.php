@@ -39,9 +39,9 @@ $modalida_ext_int = $node->field_modalidad_extensiva_intens['und']['0']['value']
 	            <div class="size xl">
 	              <i class="icon-carreras-que-es text-white"></i>
 	              <?php if ($language->language == 'en'): ?>
-	              <a href="/en/methods-of-admission/pre-university-center/about" class="bold uppercase btn btn-white btn-outline see-more mt-7"><?php print t('See more') ?></a>
+	              <span class="bold uppercase btn btn-white btn-outline see-more mt-7"><?php print t('See more') ?></span>
 	              <?php elseif ($language->language  != 'en'): ?>
-	              <a href="/modalidades-de-admision/centro-pre/acerca-del-centro-pre" class="bold uppercase btn btn-white btn-outline see-more mt-7"><?php print t('See more') ?></a>
+	              <span class="bold uppercase btn btn-white btn-outline see-more mt-7"><?php print t('See more') ?></span>
 	              <?php endif ?>
 	            </div>
 	          </div>
@@ -62,7 +62,7 @@ $modalida_ext_int = $node->field_modalidad_extensiva_intens['und']['0']['value']
 		</div>
 		<div class="pt-42">
 			<div class="container">
-				<h3 class="thin lead"><?php print t('Courses') ?></h3>
+				<h2 class="thin lead"><?php print t('Courses') ?></h2>
 				<ul class="grid-list grid-list-4 grid-list-1-xs size sm isotope-grid list-hover list-hover-gray-light">
 					<li>
 						<div>
@@ -118,7 +118,7 @@ $modalida_ext_int = $node->field_modalidad_extensiva_intens['und']['0']['value']
 	</div>
 	<div data-section-scroll="<?php print t('Calendar') ?>" class="section-scroll-content pt-0">
 		<div class="container-sm">
-			<h3 class="thin lead"><?php print t('Calendar') ?></h3>
+			<h2 class="thin lead"><?php print t('Calendar') ?></h2>
 			<h4 class="text-gray"><?php print $modalida_ext_int ?></h4>
 			<div class="list-custom-left normalize-text lead-ch mb-ch-21">
 				<ul>

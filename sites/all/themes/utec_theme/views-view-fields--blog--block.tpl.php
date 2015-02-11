@@ -23,11 +23,11 @@
 <div class="pv-21">
 	<div class="container">
 		
-		<?php if ($language->language != 'en'): ?>
-		<h3 class="h2 lead medium mb-56"><span class="text-gray-darker">Blog UTEC</span></h3>
-		<?php elseif ($language->language == 'en'): ?>
-		<h3 class="h2 lead medium mb-56"><span class="text-gray">In the Spotlight</span></h3>
-		<?php endif ?>			
+		<?php // if ($language->language != 'en'): ?>
+		<!-- <h3 class="h2 lead medium mb-56"><span class="text-gray-darker">Blog UTEC</span></h3> -->
+		<?php // elseif ($language->language == 'en'): ?>
+		<!-- <h3 class="h2 lead medium mb-56"><span class="text-gray">In the Spotlight</span></h3> -->
+		<?php // endif ?>			
 		<!--<h4 class="lead mt-0 mb-56">Lorem ipsum sit amet, consectetur adipisicing elit.</h4>-->
 		<div class="banner ban-titulo" data-href="<?php print $path; ?>">
 			<div class="col-sm-3 banner-pic" style="background-image: url(<?php print $image; ?>);"></div>
@@ -37,7 +37,7 @@
 	  				<div class="user-pic"><img src="<?php print $pathfile.'pictures/'.$user_image; ?>" alt="<?php print $user_name; ?>"></div>
 	  				<div class="user-info"><h4><?php print $user_name; ?></h4><small><?php print $user_charge ?></small></div>
 	  			</div>
-	  			<h3 class="h2"><a href="<?php print $path; ?>" class="banner-titulo"><?php print $title; ?></a></h3>
+	  			<h1 class="h2"><a href="<?php print $path; ?>" class="banner-titulo"><?php print $title; ?></a></h1>
 					<p class="lead"><?php print $texto_corto; ?></p>
 					<div class="text-right pv-14">
 					<?php if ($language->language != 'en'): ?>
