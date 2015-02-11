@@ -26,7 +26,7 @@ $field_link_formulario_en = $node->field_link_formulario_en['und']['0']['value']
 		<li data-href="/en/methods-of-admission/top-academic-rankings" class="atm-blog" id="primeros-puestos">
 		<?php endif ?>
 			<div>
-				<h2 class="thin h3 lead lh-lg"><?php print t('Top Academic Rankings') ?></h2>
+				<h2 class="thin h4 lead lh-lg"><?php print t('Top Academic Rankings') ?></h2>
 				<div class="size lg">
 					<i class="icon-admisiones-primeros-puestos"></i>
 				</div>
@@ -38,7 +38,7 @@ $field_link_formulario_en = $node->field_link_formulario_en['und']['0']['value']
 		<li data-href="/en/methods-of-admission/high-performance-assessment" class="atm-blog" id="alto-rendimiento">
 		<?php endif ?>		
 			<div>
-				<h2 class="thin h3 lead lh-lg"><?php print t('High Performance Assessment') ?></h2>
+				<h2 class="thin h4 lead lh-lg"><?php print t('High Performance Assessment') ?></h2>
 				<div class="size lg">
 					<i class="icon-admisiones-alto-rendimiento"></i>
 				</div>
@@ -50,7 +50,7 @@ $field_link_formulario_en = $node->field_link_formulario_en['und']['0']['value']
 		<li data-href="/en/methods-of-admission/transfer-students" class="atm-blog" id="traslado">
 		<?php endif ?>				
 			<div>
-				<h2 class="thin h3 lead lh-lg"><?php print t('Transfer Students') ?></h2>
+				<h2 class="thin h4 lead lh-lg"><?php print t('Transfer Students') ?></h2>
 				<div class="size lg">
 					<i class="icon-admisiones-traslado"></i>
 				</div>
@@ -62,7 +62,7 @@ $field_link_formulario_en = $node->field_link_formulario_en['und']['0']['value']
 		<li data-href="/en/methods-of-admission/pre-university-center" class="atm-blog" id="centro-pre">
 		<?php endif ?>			
 			<div>
-				<h2 class="thin h3 lead lh-lg"><?php print t('Pre University Center') ?></h2>
+				<h2 class="thin h4 lead lh-lg"><?php print t('Pre University Center') ?></h2>
 				<div class="size lg">
 					<i class="icon-admisiones-centro-pre"></i>
 				</div>
@@ -74,7 +74,7 @@ $field_link_formulario_en = $node->field_link_formulario_en['und']['0']['value']
 		<li data-href="/en/methods-of-admission/international-baccalaureate" class="atm-blog" id="bachillerato-internacional">
 		<?php endif ?>		
 			<div>
-				<h2 class="thin h3 lead lh-lg"><?php print t('International Baccalaureate') ?></h2>
+				<h2 class="thin h4 lead lh-lg"><?php print t('International Baccalaureate') ?></h2>
 				<div class="size lg">
 					<i class="icon-admisiones-bachillerato"></i>
 				</div>
@@ -86,7 +86,7 @@ $field_link_formulario_en = $node->field_link_formulario_en['und']['0']['value']
 		<li data-href="/en/methods-of-admission/admissions-exam" class="atm-blog" id="examen-de-admision">
 		<?php endif ?>			
 			<div>
-				<h2 class="thin h3 lead lh-lg"><?php print t('Admissions Exam') ?></h2>
+				<h2 class="thin h4 lead lh-lg"><?php print t('Admissions Exam') ?></h2>
 				<div class="size lg">
 					<i class="icon-admisiones-examen"></i>
 				</div>
