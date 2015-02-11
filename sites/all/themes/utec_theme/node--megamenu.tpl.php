@@ -526,10 +526,10 @@
 			<div class="nav-display-left">
 				<div>
 					<?php if ($language->language == 'en'): ?>
-						<h3 class="h1">School of<br><span>profesional</span><br>development</h3>
+						<h3 class="h1">School of<br><span>Executive</span><br>Education</h3>
 						<p>Strengthen your skills and achieve professional success.</p>
 					<?php elseif ($language->language != 'en'): ?>
-						<h3 class="h1">Escuela de<br><span>desarollo</span><br>profesional</h3>
+						<h3 class="h1">Escuela de<br><span>Educación</span><br>Ejecutiva</h3>
 						<p>Potencia tus habilidades y alcanza el éxito profesional a través de nuestros cursos.</p>
 					<?php endif ?>
 				</div>
@@ -539,9 +539,9 @@
 					<ul>
 						<li>
 							<?php if ($language->language != 'en'): ?>
-							<a href="/educacion-ejecutiva" class="atm-menu-secundario"><?php print t('SPD') ?></a>
+							<a href="/educacion-ejecutiva" class="atm-menu-secundario"><?php print t('Executive Education') ?></a>
 							<?php elseif ($language->language == 'en'): ?>
-							<a href="/<?php print $language->language ?>/executive-education" class="atm-menu-secundario"><?php print t('SPD') ?></a>
+							<a href="/<?php print $language->language ?>/executive-education" class="atm-menu-secundario"><?php print t('Executive Education') ?></a>
 							<?php endif ?>
 						</li>
 						<li>
@@ -1067,10 +1067,10 @@
 			<div class="nav-display-left">
 				<div>
 					<?php if ($language->language == 'en'): ?>
-						<h3 class="h1">School of<br><span>profesional</span><br>development</h3>
+						<h3 class="h1">School of<br><span>Executive</span><br>Education</h3>
 						<p>Strengthen your skills and achieve professional success.</p>
 					<?php elseif ($language->language != 'en'): ?>
-						<h3 class="h1">Escuela de<br><span>desarollo</span><br>profesional</h3>
+						<h3 class="h1">Escuela de<br><span>Educación</span><br>Educativa</h3>
 						<p>Potencia tus habilidades y alcanza el éxito profesional a través de nuestros cursos.</p>
 					<?php endif ?>
 				</div>
@@ -1080,9 +1080,9 @@
 					<ul>
 						<li>
 							<?php if ($language->language != 'en'): ?>
-							<a href="/educacion-ejecutiva" class="atm-menu-secundario"><?php print t('SPD') ?></a>
+							<a href="/educacion-ejecutiva" class="atm-menu-secundario"><?php print t('Executive Education') ?></a>
 							<?php elseif ($language->language == 'en'): ?>
-							<a href="/<?php print $language->language ?>/executive-education" class="atm-menu-secundario"><?php print t('SPD') ?></a>
+							<a href="/<?php print $language->language ?>/executive-education" class="atm-menu-secundario"><?php print t('Executive Education') ?></a>
 							<?php endif ?>
 						</li>
 						<li>

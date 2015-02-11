@@ -17,7 +17,7 @@
       <a href="#mobile-nav-display-5" class="atm-menu-principal-movil"><?php print t('Alliances') ?></a>
     </li>
     <li>
-      <a href="#mobile-nav-display-6" class="atm-menu-principal-movil"><?php print t('SPD') ?></a>
+      <a href="#mobile-nav-display-6" class="atm-menu-principal-movil"><?php print t('Executive Education') ?></a>
     </li>
 		<li>
 			<?php print block_render('locale', 'language'); ?>
@@ -357,16 +357,16 @@
 <div class="mobile-nav-display" id="mobile-nav-display-6">
   <a class="back"><?php print t('Go Back') ?></a>
   <?php if ($language->language  != 'en'): ?>
-    <h3 class="h1 pl-14">Escuela de<br><span>desarollo</span><br>profesional</h3>
+    <h3 class="h1 pl-14">Escuela de<br><span>Educación</span><br>Ejecutiva</h3>
   <?php elseif ($language->language == 'en'): ?>
-    <h3 class="h1 pl-14">School of<br><span>profesional</span><br>development</h3>
+    <h3 class="h1 pl-14">School of<br><span>Executive</span><br>Education</h3>
   <?php endif ?>
 	<ul>
 		<!--<li><a href="/edp/cursos/diplomados">Diplomados</a></li>
 		<li>
 			<a href="/edp/cursos/cursos-online"><span>Cursos</span>online</a>
 		</li>-->
-		<li><a href="/educacion-ejecutiva"><?php print t('SPD') ?></a></li>
+		<li><a href="/educacion-ejecutiva"><?php print t('Executive Education') ?></a></li>
 		<li>
 			<?php if ($language->language  != 'en'): ?>
 				<a href="/educacion-ejecutiva/cursos-cortos" class="atm-menu-secundario-movil">

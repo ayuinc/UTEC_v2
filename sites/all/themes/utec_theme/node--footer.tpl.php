@@ -153,10 +153,10 @@
         </li>  
         <li>
           <ul>
-            <li class="title text-gray-lighter"><?php print t('SPD') ?></li>
+            <li class="title text-gray-lighter"><?php print t('Executive Education') ?></li>
             <?php if ($language->language == 'en'): ?>
             <!--<li><a href="/edp/cursos/cursos-online" class="atm-menu-inferior"><small>Cursos Online</small></a></li>-->
-            <li><a href="/<?php print $language->language ?>/executive-education" class="atm-menu-inferior"><small><?php print t('SPD') ?></small></a></li>
+            <li><a href="/<?php print $language->language ?>/executive-education" class="atm-menu-inferior"><small><?php print t('Excecutive Education') ?></small></a></li>
             <li><a href="/<?php print $language->language ?>/executive-education/short-courses" class="atm-menu-inferior"><small><?php print t('Short Courses') ?></small></a></li>
             <li><a href="/<?php print $language->language ?>/executive-education/calendar" class="atm-menu-inferior"><small><?php print t('Calendar') ?></small></a></li>
             <li><a href="/<?php print $language->language ?>/executive-education/inhouse-cursos" class="atm-menu-inferior"><small>Inhouse Courses</small></a></li>
@@ -165,7 +165,7 @@
             <?php elseif ($language->language != 'en'): ?>
             
             <!--<li><a href="/edp/cursos/cursos-online" class="atm-menu-inferior"><small>Cursos Online</small></a></li>-->
-            <li><a href="/educacion-ejecutiva" class="atm-menu-inferior"><small><?php print t('SPD') ?></small></a></li>
+            <li><a href="/educacion-ejecutiva" class="atm-menu-inferior"><small><?php print t('Executive Education') ?></small></a></li>
             <li><a href="/educacion-ejecutiva/cursos-cortos" class="atm-menu-inferior"><small><?php print t('Short Courses') ?></small></a></li>
             <li><a href="/educacion-ejecutiva/calendario" class="atm-menu-inferior"><small><?php print t('Calendar') ?></small></a></li>
             <li><a href="/educacion-ejecutiva/cursos/courses-inhouse" class="atm-menu-inferior"><small>Cursos Inhouse</a></li>
