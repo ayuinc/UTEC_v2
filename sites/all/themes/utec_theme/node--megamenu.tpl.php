@@ -526,10 +526,10 @@
 			<div class="nav-display-left">
 				<div>
 					<?php if ($language->language == 'en'): ?>
-						<h3 class="h1">School of<br><span>Executive</span><br>Education</h3>
+						<h3 class="h1"><span>Executive</span><br>Education</h3>
 						<p>Strengthen your skills and achieve professional success.</p>
 					<?php elseif ($language->language != 'en'): ?>
-						<h3 class="h1">Escuela de<br><span>Educación</span><br>Ejecutiva</h3>
+						<h3 class="h1"><span>Educación</span><br>Ejecutiva</h3>
 						<p>Potencia tus habilidades y alcanza el éxito profesional a través de nuestros cursos.</p>
 					<?php endif ?>
 				</div>
@@ -1067,10 +1067,10 @@
 			<div class="nav-display-left">
 				<div>
 					<?php if ($language->language == 'en'): ?>
-						<h3 class="h1">School of<br><span>Executive</span><br>Education</h3>
+						<h3 class="h1"><span>Executive</span><br>Education</h3>
 						<p>Strengthen your skills and achieve professional success.</p>
 					<?php elseif ($language->language != 'en'): ?>
-						<h3 class="h1">Escuela de<br><span>Educación</span><br>Educativa</h3>
+						<h3 class="h1"><span>Educación</span><br>Educativa</h3>
 						<p>Potencia tus habilidades y alcanza el éxito profesional a través de nuestros cursos.</p>
 					<?php endif ?>
 				</div>
