@@ -582,11 +582,11 @@
 						</li>-->
 						<li>
 							<?php if ($language->language != 'en'): ?>
-								<a href="/edp/cursos-inhouse" class="atm-menu-secundario">
+								<a href="/educacion-ejecutiva/cursos-inhouse" class="atm-menu-secundario">
 									<span>Cursos</span>Inhouse
 								</a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/spd/inhouse-courses" class="atm-menu-secundario">
+								<a href="/<?php print $language->language ?>/executive-education/inhouse-courses" class="atm-menu-secundario">
 									<span>Inhouse</span>Courses
 								</a>
 							<?php endif ?>
@@ -596,9 +596,9 @@
 					<ul>
 						<li>
 							<?php if ($language->language != 'en'): ?>
-								<a href="/edp/calendario" class="atm-menu-secundario"><?php print t('Calendar') ?></a>
+								<a href="/educacion-ejecutiva/calendario" class="atm-menu-secundario"><?php print t('Calendar') ?></a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/spd/calendar" class="atm-menu-secundario"><?php print t('Calendar') ?></a>
+								<a href="/<?php print $language->language ?>/executive-education/calendar" class="atm-menu-secundario"><?php print t('Calendar') ?></a>
 							<?php endif ?>
 						</li>
 						<li>
@@ -1123,11 +1123,11 @@
 						</li>-->
 						<li>
 							<?php if ($language->language != 'en'): ?>
-								<a href="/edp/cursos-inhouse" class="atm-menu-secundario">
+								<a href="/educacion-ejecutiva/cursos-inhouse" class="atm-menu-secundario">
 									<span>Cursos</span>Inhouse
 								</a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/spd/inhouse-courses" class="atm-menu-secundario">
+								<a href="/<?php print $language->language ?>/executive-education/inhouse-courses" class="atm-menu-secundario">
 									<span>Inhouse</span> Courses
 								</a>
 							<?php endif ?>
@@ -1137,9 +1137,9 @@
 					<ul>
 						<li>
 							<?php if ($language->language != 'en'): ?>
-								<a href="/edp/calendario" class="atm-menu-secundario"><?php print t('Calendar') ?></a>
+								<a href="/educacion-ejecutiva/calendario" class="atm-menu-secundario"><?php print t('Calendar') ?></a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/spd/calendar" class="atm-menu-secundario"><?php print t('Calendar') ?></a>
+								<a href="/<?php print $language->language ?>/executive-education/calendar" class="atm-menu-secundario"><?php print t('Calendar') ?></a>
 							<?php endif ?>
 						</li>
 						<li>
