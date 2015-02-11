@@ -539,18 +539,18 @@
 					<ul>
 						<li>
 							<?php if ($language->language != 'en'): ?>
-							<a href="/edp" class="atm-menu-secundario"><?php print t('SPD') ?></a>
+							<a href="/educacion-ejecutiva" class="atm-menu-secundario"><?php print t('SPD') ?></a>
 							<?php elseif ($language->language == 'en'): ?>
-							<a href="/<?php print $language->language ?>/spd" class="atm-menu-secundario"><?php print t('SPD') ?></a>
+							<a href="/<?php print $language->language ?>/executive-education" class="atm-menu-secundario"><?php print t('SPD') ?></a>
 							<?php endif ?>
 						</li>
 						<li>
 							<?php if ($language->language != 'en'): ?>
-								<a href="/edp/cursos-cortos" class="atm-menu-secundario">
+								<a href="/educacion-ejecutiva/cursos-cortos" class="atm-menu-secundario">
 								<span>Cursos</span>Cortos
 								</a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/spd/short-courses" class="atm-menu-secundario">
+								<a href="/<?php print $language->language ?>/executive-education/short-courses" class="atm-menu-secundario">
 								<span>Short</span>Courses
 								</a>
 							<?php endif ?>
@@ -558,11 +558,11 @@
 						</li>
 						<li>
 							<?php if ($language->language != 'en'): ?>
-								<a href="/edp/diplomados" class="atm-menu-secundario">
+								<a href="/educacion-ejecutiva/diplomados" class="atm-menu-secundario">
 									Diplomados
 								</a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/spd/certificates" class="atm-menu-secundario">
+								<a href="/<?php print $language->language ?>/executive-education/certificates" class="atm-menu-secundario">
 									Certificates
 								</a>
 							<?php endif ?>
@@ -1080,18 +1080,18 @@
 					<ul>
 						<li>
 							<?php if ($language->language != 'en'): ?>
-							<a href="/edp" class="atm-menu-secundario"><?php print t('SPD') ?></a>
+							<a href="/educacion-ejecutiva" class="atm-menu-secundario"><?php print t('SPD') ?></a>
 							<?php elseif ($language->language == 'en'): ?>
-							<a href="/<?php print $language->language ?>/spd" class="atm-menu-secundario"><?php print t('SPD') ?></a>
+							<a href="/<?php print $language->language ?>/executive-education" class="atm-menu-secundario"><?php print t('SPD') ?></a>
 							<?php endif ?>
 						</li>
 						<li>
 							<?php if ($language->language != 'en'): ?>
-								<a href="/edp/cursos-cortos" class="atm-menu-secundario">
+								<a href="/educacion-ejecutiva/cursos-cortos" class="atm-menu-secundario">
 								<span>Cursos</span>Cortos
 								</a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/spd/short-courses" class="atm-menu-secundario">
+								<a href="/<?php print $language->language ?>/executive-education/short-courses" class="atm-menu-secundario">
 								<span>Short</span>Courses
 								</a>
 							<?php endif ?>
@@ -1099,11 +1099,11 @@
 						</li>
 												<li>
 							<?php if ($language->language != 'en'): ?>
-								<a href="/edp/diplomados" class="atm-menu-secundario">
+								<a href="/educacion-ejecutiva/diplomados" class="atm-menu-secundario">
 									Diplomados
 								</a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/spd/certificates" class="atm-menu-secundario">
+								<a href="/<?php print $language->language ?>/executive-education/certificates" class="atm-menu-secundario">
 									Certificates
 								</a>
 							<?php endif ?>

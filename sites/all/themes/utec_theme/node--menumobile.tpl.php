@@ -366,14 +366,14 @@
 		<li>
 			<a href="/edp/cursos/cursos-online"><span>Cursos</span>online</a>
 		</li>-->
-		<li><a href="/edp"><?php print t('SPD') ?></a></li>
+		<li><a href="/educacion-ejecutiva"><?php print t('SPD') ?></a></li>
 		<li>
 			<?php if ($language->language  != 'en'): ?>
-				<a href="/edp/cursos-cortos" class="atm-menu-secundario-movil">
+				<a href="/educacion-ejecutiva/cursos-cortos" class="atm-menu-secundario-movil">
 				<span>Cursos </span>Cortos
 				</a>
 			<?php elseif ($language->language == 'en'): ?>
-				<a href="/<?php print $language->language ?>/spd/short-courses" class="atm-menu-secundario-movil">
+				<a href="/<?php print $language->language ?>/executive-education/short-courses" class="atm-menu-secundario-movil">
 				<span>Short </span>Courses
 				</a>
 			<?php endif ?>
@@ -381,11 +381,11 @@
 		</li>
 		<li>
 			<?php if ($language->language  != 'en'): ?>
-				<a href="/edp/diplomados" class="atm-menu-secundario-movil">
+				<a href="/educacion-ejecutiva/diplomados" class="atm-menu-secundario-movil">
 				Diplomados
 				</a>
 			<?php elseif ($language->language == 'en'): ?>
-				<a href="/<?php print $language->language ?>/spd/certificates" class="atm-menu-secundario-movil">
+				<a href="/<?php print $language->language ?>/executive-education/certificates" class="atm-menu-secundario-movil">
 				Certificates
 				</a>
 			<?php endif ?>
@@ -393,11 +393,11 @@
 		</li>		
 		<li>
 			<?php if ($language->language  != 'en'): ?>
-				<a href="/edp/cursos-inhouse" class="atm-menu-secundario-movil">
+				<a href="/educacion-ejecutiva/cursos-inhouse" class="atm-menu-secundario-movil">
 				<span>Cursos </span>Inhouse
 				</a>
 			<?php elseif ($language->language == 'en'): ?>
-				<a href="/<?php print $language->language ?>/spd/inhouse-courses" class="atm-menu-secundario-movil">
+				<a href="/<?php print $language->language ?>/executive-education/inhouse-courses" class="atm-menu-secundario-movil">
 				<span>Inhouse </span>Courses
 				</a>
 			<?php endif ?>
@@ -405,9 +405,9 @@
 		</li>				
 		<li>
 			<?php if ($language->language  != 'en'): ?>
-				<a href="/edp/calendario"  class="atm-menu-secundario-movil"><?php print t('Calendar') ?></a>
+				<a href="/educacion-ejecutiva/calendario"  class="atm-menu-secundario-movil"><?php print t('Calendar') ?></a>
 			<?php elseif ($language->language == 'en'): ?>
-				<a href="/<?php print $language->language ?>/spd/calendar"  class="atm-menu-secundario-movil"><?php print t('Calendar') ?></a>
+				<a href="/<?php print $language->language ?>/executive-education/calendar"  class="atm-menu-secundario-movil"><?php print t('Calendar') ?></a>
 			<?php endif ?>
 		</li>
 		<li>
