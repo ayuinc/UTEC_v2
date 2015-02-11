@@ -160,7 +160,7 @@
             <li><a href="/<?php print $language->language ?>/executive-education/short-courses" class="atm-menu-inferior"><small><?php print t('Short Courses') ?></small></a></li>
             <li><a href="/<?php print $language->language ?>/executive-education/calendar" class="atm-menu-inferior"><small><?php print t('Calendar') ?></small></a></li>
             <li><a href="/<?php print $language->language ?>/executive-education/inhouse-cursos" class="atm-menu-inferior"><small>Inhouse Courses</small></a></li>
-            <li><a href="/<?php print $language->language ?>/executive-education/certificates" class="atm-menu-inferior"><small>Certificates</small></a></li>
+            <li><a href="/<?php print $language->language ?>/executive-education/diploma" class="atm-menu-inferior"><small>Diploma</small></a></li>
             <!--<li><a href="/convenios" class="atm-menu-inferior"><small>Cursos Adoc</small></a></li>-->
             <?php elseif ($language->language != 'en'): ?>
             

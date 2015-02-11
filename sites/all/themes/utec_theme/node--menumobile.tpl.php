@@ -385,8 +385,8 @@
 				Diplomados
 				</a>
 			<?php elseif ($language->language == 'en'): ?>
-				<a href="/<?php print $language->language ?>/executive-education/certificates" class="atm-menu-secundario-movil">
-				Certificates
+				<a href="/<?php print $language->language ?>/executive-education/diploma" class="atm-menu-secundario-movil">
+				Diploma
 				</a>
 			<?php endif ?>
 			</a>
