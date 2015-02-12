@@ -21,35 +21,35 @@
 	<?php print $field_contenido_generico_edp ?>
 	
 	<!--SOLO PARA RESPALDO-->
-	<?php if ($end == 'calendario'||$end == 'calendar') { ?>
-		<h3 class="mt-35 mb-0"><?php print t('Short courses') ?></h3>
+	<?php //if ($end == 'calendario'||$end == 'calendar') { ?>
+		<!--<h3 class="mt-35 mb-0">Short courses</h3>
 		<div class="table-responsive">
 			<table class="table mt-35">
 				<thead>
 					<tr>
-						<td class="medium"><?php print t('Program') ?></td>
-						<td class="medium"><?php print t('Speaker') ?></td>
-						<td class="medium"><?php print t('Date') ?></td>
+						<td class="medium">Program</td>
+						<td class="medium">Speaker</td>
+						<td class="medium">Date</td>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td class="highlight"><?php print t('Cutoff Grade Optimization in Mining Operations') ?></td>
-						<td class="text-gray"><?php print t('Antonio Nieto, PhD') ?></td>
-						<td class="text-gray"><?php print t('November 26th, 27th and 28th, 2014') ?></td>
+						<td class="highlight">Cutoff Grade Optimization in Mining Operations</td>
+						<td class="text-gray">Antonio Nieto, PhD</td>
+						<td class="text-gray">November 26th, 27th and 28th, 2014</td>
 					</tr>
 					<tr>
-						<td class="highlight"><?php print t('Risk Management in Infrastructure Projects (Completed)') ?>​</td>
-						<td class="text-gray"><?php print t('Edgardo Mímica, PhD., Francisco Vallés.') ?></td>
-						<td class="text-gray"><?php print t('October 2nd and 3rd, 2014') ?></td>
+						<td class="highlight">Risk Management in Infrastructure Projects (Completed)​​</td>
+						<td class="text-gray">Edgardo Mímica, PhD., Francisco Vallés.</td>
+						<td class="text-gray">October 2nd and 3rd, 2014</td>
 					</tr>
 					<tr>
-						<td class="highlight"><?php print t('Intelligent Mining Operations Management and Sustainable Mine Closure (Completed)') ?>​</td>
-						<td class="text-gray"><?php print t('Thomas Baumgartl, PhD., Mansour Edraki, PhD., Oscar Matallana-Tost, doctorando') ?></td>
-						<td class="text-gray"><?php print t('September 3rd, 4th and 5th, 2014') ?></td>
+						<td class="highlight">Intelligent Mining Operations Management and Sustainable Mine Closure (Completed)​</td>
+						<td class="text-gray">Thomas Baumgartl, PhD., Mansour Edraki, PhD., Oscar Matallana-Tost, doctorando</td>
+						<td class="text-gray">September 3rd, 4th and 5th, 2014</td>
 					</tr>																																							
 				</tbody>
 			</table>
-		</div>
-	<?php } ?>
+		</div>-->
+	<?php //} ?>
 </div>
