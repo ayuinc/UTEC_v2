@@ -123,6 +123,12 @@
 							<div class="grid-list-pic"><img src="<?php print '/'.$pathfile.'pictures/'.$profesor_pic; ?>" alt="<?php print $profesor_name ?>" width="98px" height="auto" class="img-circle"></div>
 						</li>
 						<?php endif  ?>
+						<?php 
+				      if ($language->language == 'en') {
+				        $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/profesores/'.$profesor_id, $language->language); 
+				      }else
+				        $profesor_url = "/" . drupal_get_path_alias('page/30/profesores/'.$profesor_id, $language->language); 
+				    ?> 
 						<li class="pl-21 text-gray">
 							<div class="mb-7">
 								<a href="/user/<?php print $profesor_id ?>" class="thin h3 text-hover-primary"><?php print $profesor_name ?></a>
