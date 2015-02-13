@@ -109,7 +109,9 @@
 				  $profesor_name = $profesor['entity']->name;
 				  $profesor_id = $profesor['entity']->uid;
 				  $profesor_cargo = $profesor['entity']->field_descripci_n['und']['0']['value'];
+				  $profesor_cargo_ingles = $profesor['entity']->field_descripci_n_ingles['und']['0']['value'];
 				  $profesor_resenia = $profesor['entity']->field_rese_a['und']['0']['value'];
+				  $profesor_resenia_ingles = $profesor['entity']->field_rese_a_ingles['und']['0']['value'];
 				  $profesor_pic = $profesor['entity']->picture->filename;
 			?>
 			<div>
@@ -124,9 +126,17 @@
 						<li class="pl-21 text-gray">
 							<div class="mb-7">
 								<a href="/user/<?php print $profesor_id ?>" class="thin h3 text-hover-primary"><?php print $profesor_name ?></a>
+								<?php if ($language->language != 'en'): ?>
 								<span><?php print $profesor_cargo ?></span>
+								<?php elseif ($language->language == 'en'): ?>
+								<span><?php print $profesor_cargo_ingles ?></span>
+								<?php endif ?>								
 							</div>
+							<?php if ($language->language != 'en'): ?>
 							<?php print $profesor_resenia ?>
+							<?php elseif ($language->language == 'en'): ?>
+							<?php print $profesor_resenia_ingles ?>
+							<?php endif ?>	
 						</li>
 					</ul>
 				</div>
