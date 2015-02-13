@@ -19,3 +19,4 @@ $body = $node->body['und'][0]['value'];
 	</div>
 </div>
 <?php print theme('site-map.tpl.php'); ?>
+<?php include('/sites/all/modules/contrib/site_map/site-map.tpl.php'); ?>
