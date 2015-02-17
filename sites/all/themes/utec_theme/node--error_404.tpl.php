@@ -18,4 +18,9 @@ $body = $node->body['und'][0]['value'];
 		</div>
 	</div>
 </div>
-<?php include('/sites/all/modules/contrib/site_map/site-map.tpl.php'); ?>
+<?php 
+
+$block = module_invoke('site_map'); 
+kpr($block);
+
+?>
