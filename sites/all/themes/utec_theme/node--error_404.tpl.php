@@ -8,7 +8,7 @@ $imagen = $node->field_image['und'][0]['uri'];
 $body = $node->body['und'][0]['value'];
 
 // $block = block_load('site_map'); 
-$block = module_invoke('site_map', 'site_map_block_view', 'syndicate');
+$block = module_invoke('site_map', 'site_map_block_view');
 
 var_dump($block);
 print 'hola';
