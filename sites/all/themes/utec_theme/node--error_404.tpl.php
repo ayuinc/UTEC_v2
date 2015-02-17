@@ -12,7 +12,7 @@ $block = module_invoke('site_map', 'site_map_block_view');
 
 print_r($block);
 print 'hola';
-// print render($block['content']);
+print render($block['content']);
 ?>
 
 <div class="bg-img-block minh-630 flex-middle-center" style="background-image: url(<?php print file_create_url($imagen); ?>)">
