@@ -8,8 +8,9 @@ $imagen = $node->field_image['und'][0]['uri'];
 $body = $node->body['und'][0]['value'];
 
 $block = module_invoke('site_map'); 
-print_r($block);
+// print_r($block);
 print 'hola';
+print render($block['content']);
 ?>
 
 <div class="bg-img-block minh-630 flex-middle-center" style="background-image: url(<?php print file_create_url($imagen); ?>)">
