@@ -10,7 +10,7 @@ $body = $node->body['und'][0]['value'];
 // $block = block_load('site_map'); 
 $block = module_invoke('site_map', 'site_map_block_view', 'syndicate');
 
-print_r($block);
+var_dump($block);
 print 'hola';
 print render($block['content']);
 ?>
