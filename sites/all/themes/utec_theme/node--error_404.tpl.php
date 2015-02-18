@@ -7,12 +7,6 @@ $titulo = $node->title;
 $imagen = $node->field_image['und'][0]['uri'];
 $body = $node->body['und'][0]['value'];
 
-$additional = module_invoke_all('site_map');
-print_r($additional);
-foreach ($additional as $themed_site_map_code) {
-  // $variables['additional'] .= $themed_site_map_code;
-}
-
 ?>
 
 <div class="bg-img-block minh-630 flex-middle-center" style="background-image: url(<?php print file_create_url($imagen); ?>)">
@@ -24,3 +18,4 @@ foreach ($additional as $themed_site_map_code) {
 		</div>
 	</div>
 </div>
+<?php echo theme('site_map'); ?>
