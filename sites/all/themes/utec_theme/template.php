@@ -1,19 +1,5 @@
 <?php
 
-	function utec_theme_theme() {
-	  $items = array();
-	  // create custom user-login.tpl.php
-	  $items['user_login'] = array(
-	  'render element' => 'form',
-	  'path' => drupal_get_path('theme', 'utec_theme') . '/templates',
-	  'template' => 'user-login',
-	  'preprocess functions' => array(
-	  'utec_theme_preprocess_user_login'
-	  ),
-	 );
-	return $items;
-	}
-
 	function block_render($module, $block_id) {
 	  $block = block_load($module, $block_id);
 	  $block_content = _block_render_blocks(array($block));
@@ -67,6 +53,13 @@
 	));
 
 	drupal_add_js(path_to_theme() . '/js/app/lib/utec.min.js', array(
+	  'scope' => 'footer',
+	  'group' => JS_THEME,
+	  'every_page' => TRUE,
+	  'weight' => 2,
+	));
+
+	drupal_add_js(path_to_theme() . '/js/app/lib/searchform.js', array(
 	  'scope' => 'footer',
 	  'group' => JS_THEME,
 	  'every_page' => TRUE,
@@ -200,4 +193,3 @@
 	// ));		
 
 ?>
-
