@@ -8,7 +8,7 @@
       $searchForm.find('.form-submit').addClass('disabled');
     }
     $searchForm.find('#edit-keys').on('keyup', function() {
-      if ($searchForm.find('#edit-keys').val().length < 1) {
+      if ($.trim($(this).val()) == '') {
         $searchForm.find('.form-submit').addClass('disabled');
       } else {
         $searchForm.find('.form-submit').removeClass('disabled');
