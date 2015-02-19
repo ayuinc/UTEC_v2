@@ -183,7 +183,7 @@
 		<div class="container">
 			<nav class="text-center ml-ch-14 text-gray">
 				<span><?php print t('Av. Cascanueces 2221, Santa Anita, Lima') ?></span>
-				<span><strong><?php print t('P.') ?></strong>51 1 354-0070</span>
+				<span><strong><?php print t('P.') ?></strong>(511) 354-0070 - (511) 230-5020 - (511) 373 1000</span>
 				<span><strong><?php print t('W.') ?></strong>www.utec.edu.pe</span>
 				<span><strong><?php print t('C.') ?></strong><a href="mailto:informes@utec.edu.pe" class="text-gray-dark">informes@utec.edu.pe</a></span>
 				<a rel="nofollow" href="<?php if ($language->language != 'en'): ?>/libro-de-reclamaciones <?php else : ?>/en/book-of-complaints <?php endif; ?>" class="btn btn-outline btn-xs btn-gray-dark mt-7-xs"><i class="icon-footer-book"></i></a>
