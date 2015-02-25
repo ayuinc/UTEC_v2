@@ -195,7 +195,7 @@
 function utec_theme_site_map_menu_link(array $variables) {
 
   $element = $variables['element'];
-  die(print_r($element));
+  print_r($element);
 	array_push($element['#attributes']['class'], "test");
   $sub_menu = '';
 
