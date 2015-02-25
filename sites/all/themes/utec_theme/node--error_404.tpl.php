@@ -17,7 +17,7 @@ $body = $node->body['und'][0]['value'];
 		<div class="pv-35">
 			<a href="/" class="btn btn-xl btn-white btn-outline uppercase bold see-more"><?php print t('Get back to the homepage'); ?></a>
 		</div>
-		<div class="sitemap text-left">
+		<div class="sitemap text-left pv-35" style="display:inline-block">
 			<?php echo theme('site_map'); ?>
 		</div>
 	</div>
