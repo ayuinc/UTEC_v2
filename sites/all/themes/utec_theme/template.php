@@ -191,7 +191,7 @@
 	//   'every_page' => TRUE,
 	//   'weight' => 18,
 	// ));		
-function _utec_theme_site_map_menu_tree_output($tree) {
+function _site_map_menu_tree_output($tree) {
   $build = array();
   $items = array();
 
