@@ -203,6 +203,9 @@ function utec_theme_site_map_menu_link(array $variables) {
   if ($element['#original_link']['has_children'] == 1) {
 		$element['#attributes']['style'] = "float:left;width:33%;";
   }
+  if ($element['#original_link']['has_children'] == 0) {
+		array_push($element['#attributes']['class'], "text-gray-dark");
+  }
   $output = l($element['#title'], $element['#href'], $element['#localized_options']);
   // print_r($element);
   return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
