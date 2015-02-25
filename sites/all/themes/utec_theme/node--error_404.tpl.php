@@ -16,6 +16,6 @@ $body = $node->body['und'][0]['value'];
 		<div class="pv-35">
 			<a href="/" class="btn btn-xl btn-white btn-outline uppercase bold see-more"><?php print t('Get back to the homepage'); ?></a>
 		</div>
+		<?php echo theme('site_map'); ?>
 	</div>
 </div>
-<?php echo theme('site_map'); ?>
