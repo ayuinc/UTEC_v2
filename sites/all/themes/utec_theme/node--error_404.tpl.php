@@ -11,8 +11,8 @@ $body = $node->body['und'][0]['value'];
 
 <div class="bg-img-block minh-630 flex-middle-center" style="background-image: url(<?php print file_create_url($imagen); ?>)">
 	<!-- <div class="container-sm text-center lead-ch light"> -->
-	<div class="container-sm text-center light">
-		<h1 class="text-white lead light uppercase"><?php print $titulo ?></h1>
+	<div class="container-sm text-center light text-gray">
+		<h1 class="lead light uppercase"><?php print $titulo ?></h1>
 			<?php print $body ?>
 		<div class="pv-35">
 			<a href="/" class="btn btn-xl btn-white btn-outline uppercase bold see-more"><?php print t('Get back to the homepage'); ?></a>
