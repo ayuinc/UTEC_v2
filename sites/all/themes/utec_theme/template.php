@@ -202,7 +202,8 @@ function utec_theme_site_map_menu_link(array $variables) {
     $sub_menu = drupal_render($element['#below']);
   }
   if ($element['#original_link']['has_children'] == 1) {
-		array_push($element['#attributes']['class'], "floated");
+		// array_push($element['#attributes']['class'], "floated");
+		array_push($element['#attributes']['style'], "float:left;width:33%;");
   }
   $output = l($element['#title'], $element['#href'], $element['#localized_options']);
   return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
