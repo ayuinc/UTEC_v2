@@ -18,7 +18,7 @@ $body = $node->body['und'][0]['value'];
 			<a href="/" class="btn btn-xl btn-white btn-outline uppercase bold see-more"><?php print t('Get back to the homepage'); ?></a>
 		</div>
 		<div class="sitemap text-left pv-35" style="display:inline-block">
-			<h4><?php print t('Tambien puedes ir a:'); ?></h4>
+			<h4><?php print t('Also you can go to:'); ?></h4>
 			<?php echo theme('site_map'); ?>
 		</div>
 	</div>
