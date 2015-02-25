@@ -10,7 +10,8 @@ $body = $node->body['und'][0]['value'];
 ?>
 
 <div class="bg-img-block minh-630 flex-middle-center" style="background-image: url(<?php print file_create_url($imagen); ?>)">
-	<div class="container-sm text-center lead-ch light">
+	<!-- <div class="container-sm text-center lead-ch light"> -->
+	<div class="container-sm text-center light">
 		<h1 class="text-white lead light uppercase"><?php print $titulo ?></h1>
 			<?php print $body ?>
 		<div class="pv-35">
