@@ -193,9 +193,9 @@
 	// ));		
 
 function utec_theme_site_map_menu_link(array $variables) {
-	// $variables['element']['#attributes']['class'] = "test";
-	//$variables['element'] = 
+
   $element = $variables['element'];
+  die(print_r($element));
 	array_push($element['#attributes']['class'], "test");
   $sub_menu = '';
 
