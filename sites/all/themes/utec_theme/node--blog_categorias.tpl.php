@@ -29,10 +29,10 @@ global $language;
 					<?php $name = $term->name; ?>
 					<?php $tid = $term->tid; ?>
 					<?php if ($language->language != 'en'): ?>
-						<?php $term_url = drupal_get_path_alias('taxonomy/term/$tid', $language->language); ?>
+						<?php $term_url = drupal_get_path_alias('taxonomy/term/'.$tid, $language->language); ?>
 				    <li><a href="/<?php print $term_url; ?>"><?php print $name ?></a></li>
 					<?php elseif ($language->language == 'en'): ?>
-						<?php $term_url = drupal_get_path_alias('taxonomy/term/$tid', $language->language); ?>
+						<?php $term_url = drupal_get_path_alias('taxonomy/term/'.$tid, $language->language); ?>
 				    <li><a href="/<?php print $language->language; ?>/<?php print $term_url; ?>"><?php print $name ?></a></li>
 					<?php endif ?>
 			  <?php endif ?>
