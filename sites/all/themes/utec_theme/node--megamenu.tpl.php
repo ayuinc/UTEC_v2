@@ -651,7 +651,7 @@
 					</li>
 					<li>
 						<a href="#nav-shrink-display-6" class="atm-menu-principal">
-							<span><?php print t('SPD') ?></span>
+							<span><?php print t('Executive Education') ?></span>
 						</a>
 					</li>
 				</ul>
