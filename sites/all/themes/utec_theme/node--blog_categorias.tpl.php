@@ -29,9 +29,11 @@ global $language;
 					<?php $name = $term->name; ?>
 					<?php $tid = $term->tid; ?>
 					<?php if ($language->language != 'en'): ?>
-				    <li><a href="/blog/<?php print $term->name; ?>"><?php print $name ?></a></li>
+						<?php $term_url = drupal_get_path_alias('taxonomy/term/$tid', $language->language); ?>
+				    <li><a href="/<?php print $term_url; ?>"><?php print $name ?></a></li>
 					<?php elseif ($language->language == 'en'): ?>
-				    <li><a href="/<?php print $language->language; ?>/blog/<?php print $term->name; ?>"><?php print $name ?></a></li>
+						<?php $term_url = drupal_get_path_alias('taxonomy/term/$tid', $language->language); ?>
+				    <li><a href="/<?php print $language->language; ?>/<?php print $term_url; ?>"><?php print $name ?></a></li>
 					<?php endif ?>
 			  <?php endif ?>
 			<?php endforeach; ?>
