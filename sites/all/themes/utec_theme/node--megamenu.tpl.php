@@ -1,6 +1,11 @@
 <?php global $language ?>
 <?php $theme_path = drupal_get_path('theme', 'utec_theme'); ?>
 
+<?php 
+	$menus = menu_tree_all_data('main-menu'); 
+	print_r($menus);
+?>
+
 <div id="header" class="hidden-xs hidden-sm"> <!-- HEADER -->
 	<div class="tool-bar bg-gray-lighter pt-sm pb-sm">
 		<div class="container">
