@@ -3,6 +3,7 @@
 
 <?php 
 	$menus = menu_tree_all_data('main-menu'); 
+	kpr($menu);
 	print_r($menus);
 ?>
 
