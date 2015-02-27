@@ -2,8 +2,9 @@
 <?php $theme_path = drupal_get_path('theme', 'utec_theme'); ?>
 
 <?php 
-	$menus = menu_tree_all_data('main-menu'); 
-	kpr($menu);
+	$tree = menu_tree_all_data('main-menu'); 
+	$menus = menu_tree_output(i18n_menu_localize_tree($tree));
+	kpr($menus);
 	print_r($menus);
 ?>
 
