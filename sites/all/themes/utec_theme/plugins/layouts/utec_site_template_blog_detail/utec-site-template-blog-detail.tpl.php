@@ -22,7 +22,6 @@
   <?php endif; ?>
     <div class="body minhp-100 pv-63 breadcrumbs-dark" id="sec-1">
       <div class="container">
-        <div class="separator-gray separator-sm"></div>
         <div class="row">
           <div class="col-sm-8">
             <?php print $content['left-side']; ?>
