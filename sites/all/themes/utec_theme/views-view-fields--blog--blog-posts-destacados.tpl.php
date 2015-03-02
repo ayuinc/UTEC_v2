@@ -33,9 +33,9 @@
 		<div class="flex-space-between mt-14">
 			<div class="left">
 			<?php if ($language->language != 'en'): ?>
-				<a href="" class="btn btn-sm btn-primary btn-outline see-more">Leer más</a>
+				<a class="btn btn-sm btn-primary btn-outline see-more">Leer más</a>
 			<?php elseif ($language->language == 'en'): ?>
-				<a href="" class="btn btn-sm btn-primary btn-outline see-more">Read more</a>
+				<a class="btn btn-sm btn-primary btn-outline see-more">Read more</a>
 			<?php endif ?>					
 			</div>
 			<div class="right">
