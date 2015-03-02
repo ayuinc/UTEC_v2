@@ -26,16 +26,16 @@
 	<div class="banner-pic" style="background-image: url(<?php print $image ?>);"></div>
 	<div class="banner-content">
 		<div>
-			<h2 class="h2"><a href="#" class="banner-titulo"><?php print $title ?></a></h2>
+			<h2 class="h2"><a href="<?php print $path ?>" class="banner-titulo"><?php print $title ?></a></h2>
 			<em class="block"><?php print $user_name ?></em>
 			<small class="text-gray"><?php print $user_charge ?></small>
 		</div>
 		<div class="flex-space-between mt-14">
 			<div class="left">
 			<?php if ($language->language != 'en'): ?>
-				<a href="<?php print $path ?>" class="btn btn-sm btn-primary btn-outline see-more">Leer más</a>
+				<a href="" class="btn btn-sm btn-primary btn-outline see-more">Leer más</a>
 			<?php elseif ($language->language == 'en'): ?>
-				<a href="<?php print $path ?>" class="btn btn-sm btn-primary btn-outline see-more">Read more</a>
+				<a href="" class="btn btn-sm btn-primary btn-outline see-more">Read more</a>
 			<?php endif ?>					
 			</div>
 			<div class="right">
