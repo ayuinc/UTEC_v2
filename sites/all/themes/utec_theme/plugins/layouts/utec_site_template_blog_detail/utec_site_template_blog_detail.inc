@@ -1,9 +1,9 @@
 <?php
 
 $plugin = array(
-  'title' => t('Utec site template blog'),
-  'theme' => 'utec_site_template_blog',
-  'icon' => 'utec-site-template-blog.png',
+  'title' => t('Utec site template blog detail'),
+  'theme' => 'utec_site_template_blog_detail',
+  'icon' => 'utec-site-template-blog-detail.png',
   'category' => 'Utec Theme',
   'regions' => array(
     'header' => t('Header'),
