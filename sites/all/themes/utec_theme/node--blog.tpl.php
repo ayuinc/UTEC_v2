@@ -14,9 +14,9 @@
 	$created = date('d F Y', strtotime($node->created));
 	$addblock = module_invoke('addthis','block_view','addthis_block');
 ?>
-<h2 class="lead h3">
+<h1 class="lead h3">
 	<?php print $title ?>
-</h2>
+</h1>
 <div>
 	<em class="h5"><?php print $blogger_name ?></em><br><span class="text-gray"><?php print $blogger_cargo ?></span>
 </div>
