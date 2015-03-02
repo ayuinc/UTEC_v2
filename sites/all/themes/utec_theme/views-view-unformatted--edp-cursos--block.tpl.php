@@ -6,7 +6,7 @@
 
 
 <div class="container-sm">
-	<h1 class="light"><?php print t('All Courses'); ?></h1>
+	<!-- <h1 class="light"><?php //print t('All Courses'); ?></h1> -->
 	<div class="separator-gray separator-sm"></div>						
 	<div>
 		<ul class="grid-list grid-list-2 grid-list-1-xs list-hover list-hover-gray-lighter list-hover-unstyled isotope-grid">
