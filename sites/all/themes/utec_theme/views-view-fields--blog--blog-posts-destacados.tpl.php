@@ -26,7 +26,7 @@
 	<div class="banner-pic" style="background-image: url(<?php print $image ?>);"></div>
 	<div class="banner-content">
 		<div>
-			<h1 class="h2"><a href="#" class="banner-titulo"><?php print $title ?></a></h1>
+			<h2 class="h2"><a href="#" class="banner-titulo"><?php print $title ?></a></h2>
 			<em class="block"><?php print $user_name ?></em>
 			<small class="text-gray"><?php print $user_charge ?></small>
 		</div>
