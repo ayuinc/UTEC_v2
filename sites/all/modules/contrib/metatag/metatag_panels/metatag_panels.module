@@ -90,14 +90,6 @@ function metatag_panels_form_submit($form, $form_state) {
   );
 
   $form_state['handler']->conf['metatag_panels'] = $conf;
-  if ($conf['enabled'] && function_exists('i18n_string_update')) {
-    $handler = $form_state['handler'];
-    $instance = 'panels:' . $handler->task . ':' . $handler->subtask . ':' . $handler->name;
-    foreach ($conf['metatags'] as $field => $item) {
-      $name = "metatag:" . $instance . ":" . $field;
-      i18n_string_update($name, $item['value']);
-    }
-  }
 }
 
 /**
@@ -156,9 +148,8 @@ function metatag_panels_ctools_render_alter($info, $page, $context) {
   }
 
   // Build the Metatag.
-  $instance = 'panels:' . $handler->task . ':' . $handler->subtask . ':' . $handler->name;
   $options = array(
-    'instance' => $instance,
+    'instance' => 'panels:' . $handler->name,
     'token data' => $tokens,
   );
   foreach ($metatags as $metatag => $data) {
@@ -183,42 +174,5 @@ function metatag_panels_page_build(&$page) {
 
   if (!empty($metatags)) {
     $page['content']['metatags']['global'] = $metatags;
-  }
-}
-
-
-/**
- * Implements hook_panels_delete_display().
- *
- * Remove saved i18n translations of meta-tags.
- *
- * @param integer $did
- *   Id of the display to delete.
- */
-function metatag_panels_panels_delete_display($did) {
-  if (function_exists('i18n_string_remove')) {
-    // We need the task, sub-task, handler names to create the metatag instance, and conf to get the actual meta-tags.
-    $info = db_select('page_manager_handlers')
-      ->fields('page_manager_handlers', array('did', 'name', 'task', 'subtask', 'handler', 'conf'))
-      ->condition('did', $did)
-      ->execute()
-      ->fetchAssoc();
-
-    if (!empty($info)) {
-      $conf = unserialize($info['conf']);
-      $task = $info['task'];
-      $sub_task = $info['subtask'];
-      $handler_name = $info['name'];
-
-      // Construct the instance.
-      $conf = $conf['metatag_panels'];
-      $instance = 'panels:' . $task . ':' . $sub_task . ':' . $handler_name;
-
-      // For each metatag, remove the i18n string.
-      foreach ($conf['metatags'] as $field => $item) {
-        $name = "metatag:" . $instance . ":" . $field;
-        i18n_string_remove($name, $item['value']);
-      }
-    }
   }
 }
