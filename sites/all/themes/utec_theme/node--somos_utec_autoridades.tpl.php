@@ -16,25 +16,6 @@
 	<ul class="pv-35 grid-list grid-list-2 grid-list-1-xs">
 		<?php //kpr($node); ?>
     <?php foreach ($node->field_profesor['und'] as $key => $value) :?>
-         
-      <?php 
-      	$name_url = $name;
-      	$name_url = str_replace(' ',"-",$name_url);
-      	$name_url = str_replace(array('á','à','â','ã','ª','ä'),"a",$name_url);
-  	    $name_url = str_replace(array('Á','À','Â','Ã','Ä'),"a",$name_url);
-  	    $name_url = str_replace(array('Í','Ì','Î','Ï'),"i",$name_url);
-  	    $name_url = str_replace(array('í','ì','î','ï'),"i",$name_url);
-  	    $name_url = str_replace(array('é','è','ê','ë'),"e",$name_url);
-  	    $name_url = str_replace(array('É','È','Ê','Ë'),"e",$name_url);
-  	    $name_url = str_replace(array('ó','ò','ô','õ','ö','º'),"o",$name_url);
-  	    $name_url = str_replace(array('Ó','Ò','Ô','Õ','Ö'),"o",$name_url);
-  	    $name_url = str_replace(array('ú','ù','û','ü'),"u",$name_url);
-  	    $name_url = str_replace(array('Ú','Ù','Û','Ü'),"u",$name_url);
-  	    $name_url = str_replace("ñ","n",$name_url);
-   		  $name_url = str_replace("Ñ","N",$name_url);
-  	    $name_url = strtolower ($name_url);
-
-      ?>
       <?php $name = $value['entity']->name; ?>
 			<?php $pic = $value['entity']->picture->filename; ?>
 			<?php $uid = $value['entity']->uid; ?>
