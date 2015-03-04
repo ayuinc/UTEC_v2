@@ -49,12 +49,18 @@
 .page-page-61,
 .node-type-blog {
 	.pane-page-breadcrumb {
-		@include position(absolute, -130px null null 210px); 		
+		@include position(absolute, -49px null null 210px);
 	}
 }
 
 .breadcrumbs-light {
 	.breadcrumb {
 		color: white;
+	}
+}
+
+.page-taxonomy-term {
+	.body {
+		padding-top: 70px;
 	}
 }
