@@ -1,0 +1,12 @@
+name = Page Manager Pathauto
+description = Provides a pathauto interface to page_manager pages.
+dependencies[] = page_manager
+dependencies[] = pathauto
+core = 7.x
+
+; Information added by drupal.org packaging script on 2013-10-01
+version = "7.x-1.0-alpha2+0-dev"
+core = "7.x"
+project = "page_manager_pathauto"
+datestamp = "1380621913"
+
