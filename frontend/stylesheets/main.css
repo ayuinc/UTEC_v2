@@ -6445,11 +6445,14 @@ textarea:-ms-input-placeholder {
 .page-page-61 .pane-page-breadcrumb,
 .node-type-blog .pane-page-breadcrumb {
   position: absolute;
-  top: -130px;
+  top: -49px;
   left: 210px; }
 
 .breadcrumbs-light .breadcrumb {
   color: white; }
+
+.page-taxonomy-term .body {
+  padding-top: 70px; }
 
 .list-custom ul {
   padding-left: 28px !important; }
