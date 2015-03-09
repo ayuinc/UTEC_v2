@@ -239,4 +239,14 @@
 			</ul>
 		</div>
 	</div>
+	<div id="section-scroll" class="hidden-sm hidden-xs">
+	  <ul></ul>
+	  <div class="text-right pv-21 btn-apply animated">
+	    <?php if ($language->language != 'en'): ?>
+	      <a class="btn btn-primary uppercase atm-scroll-item" href="/modalidades-de-admision"><?php print t('Apply') ?></a>
+	    <?php elseif ($language->language == 'en'): ?>
+	      <a class="btn btn-primary uppercase atm-scroll-item" href="/<?php print $language->language ?>/methods-of-admission"><?php print t('Apply') ?></a>
+	    <?php endif ?>  
+	  </div>
+	</div>
 </div>

@@ -4,6 +4,8 @@
 <?php 
 	$tree = menu_tree_all_data('main-menu'); 
 	$menus = menu_tree_output(i18n_menu_localize_tree($tree));
+	$fields_esp = $node->field_menu_content_esp['und'];
+	$fields_ing = $node->field_menu_content_ing['und'];
 	// kpr($menus);
 	//print_r($menus);
 ?>
