@@ -31,7 +31,11 @@ $modalida_ext_int = $node->field_modalidad_extensiva_intens['und']['0']['value']
 	  <div data-section-scroll="Acerca de" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.'/centro-pre/'.$field_fotos_centro_pre)?>);">
 	  <?php endif ?>
 	    <div class="overlay flex-middle">
+	    	<?php if ($language->language == 'en'): ?>
+	      <div class="container-sm hero-text" data-href="<?php print $language->language; ?>/en/methods-of-admission/pre-university-center">
+	      <?php elseif ($language->language  != 'en'): ?>
 	      <div class="container-sm hero-text" data-href="/modalidades-de-admision/centro-pre/acerca-del-centro-pre">
+	      <?php endif ?>	  
 	        <h1 class="thin text-white mt-0 text-hover-primary"><?php print $titulo ?></h1>
 	        <hr class="hr-white">
 	        <div class="row">
