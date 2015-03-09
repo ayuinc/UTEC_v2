@@ -217,7 +217,7 @@
 							<?php if ($language->language  != 'en'): ?>
 								<a href="/utec-garage" class="atm-menu-secundario"><span>Utec</span> garage</a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/utec-garage" class="atm-menu-secundario"><span>Utec</span> garage</a>
+								<a href="/<?php print $language->language ?>/utec-garage-open-platform-for-innovation" class="atm-menu-secundario"><span>Utec</span> garage</a>
 							<?php endif ?>													
 						</li>
 						<li>
@@ -758,7 +758,7 @@
 							<?php if ($language->language  != 'en'): ?>
 								<a href="/utec-garage" class="atm-menu-secundario"><span>Utec</span> garage</a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/utec-garage" class="atm-menu-secundario"><span>Utec</span> garage</a>
+								<a href="/<?php print $language->language ?>/utec-garage-open-platform-for-innovation" class="atm-menu-secundario"><span>Utec</span> garage</a>
 							<?php endif ?>													
 						</li>
 						<li>

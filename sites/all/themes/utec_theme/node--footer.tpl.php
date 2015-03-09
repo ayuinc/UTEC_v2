@@ -47,7 +47,7 @@
               <li><a href="/<?php print $language->language ?>/student-life" class="atm-menu-inferior"><small><?php print t('UTEC Life') ?></small></a></li>
               <li><a href="/<?php print $language->language ?>/campus-and-labs" class="atm-menu-inferior"><small><?php print t('Campus and Labs') ?></small></a></li>
               <li><a href="/<?php print $language->language ?>/work-at-utec" class="atm-menu-inferior"><small><?php print t('Work at UTEC') ?></small></a></li>
-              <li><a href="/<?php print $language->language ?>/utec-garage" class="atm-menu-inferior"><small><?php print t('UTEC Garage') ?></small></a></li>
+              <li><a href="/<?php print $language->language ?>/utec-garage-open-platform-for-innovation" class="atm-menu-inferior"><small><?php print t('UTEC Garage') ?></small></a></li>
               <li><a href="http://utecventures.com/" target="_blank" class="atm-menu-inferior"><small><?php print t('UTEC Ventures') ?></small></a></li>
               <li><a href="/<?php print $language->language ?>/sitemap" class="atm-menu-inferior"><small><?php print t('Sitemap') ?></small></a></li>
             <?php elseif ($language->language != 'en'): ?>
