@@ -8,6 +8,7 @@
 	$cuerpo = $node->body['und']['0']['value'];
 	$imagen = $node->field_image['und']['0']['filename'];
 	$field_foto_centro_pre = $node->field_foto_centro_pre['und']['0']['filename'];
+	$link_formulario = $node->field_link_a_formulario['und']['0']['value'];	
 
 ?>
 <div class="container-sm">
@@ -20,4 +21,8 @@
 		<?php print $cuerpo ?>
 	</div>
 </div>
-
+<div id="section-scroll" class="hidden-sm hidden-xs">
+  <div class="text-right pv-21 btn-apply animated">
+    <a class="btn btn-primary uppercase atm-scroll-item" href="<?php print $link_formulario; ?>"><?php print t('Contact') ?></a> 
+  </div>
+</div>

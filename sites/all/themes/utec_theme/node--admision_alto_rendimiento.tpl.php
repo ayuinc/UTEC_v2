@@ -2,6 +2,8 @@
 // $video_name = $node->field_video['und']['0']['filename'];
 global $base_url;
 global $theme_path;
+global $language; 
+$idioma = $language->language;
 $path = $base_url.'/'.$theme_path;
 $pathfile= variable_get('file_public_path', conf_path() . '/files/admision-alto-rendimiento/'); 
 
@@ -18,9 +20,7 @@ $field_costa_alto = $node->field_costa_alto['und']['0']['value'];
 $field_temario_alto = $node->field_temario_alto['und']['0']['value'];
 $field_calendario_alto = $node->field_calendario_alto['und']['0']['value'];
 $field_banner_ad = $node->field_banner_ad['und']['0']['filename'];
-
-global $language; 
-$idioma = $language->language;		
+$link_formulario = $node->field_link_a_formulario['und']['0']['value'];		
 
 ?>
 	<div class="container-sm">
@@ -201,7 +201,11 @@ $idioma = $language->language;
 
 	</div>
 
-
+<div id="section-scroll" class="hidden-sm hidden-xs">
+  <div class="text-right pv-21 btn-apply animated">
+    <a class="btn btn-primary uppercase atm-scroll-item" href="<?php print $link_formulario; ?>"><?php print t('Contact') ?></a> 
+  </div>
+</div>
 
 <script type="text/javascript">
 jQuery(function() {                        

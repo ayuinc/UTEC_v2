@@ -16,6 +16,7 @@
 <?php $field_foto_generica_admision = $node->field_foto_generica_admision['und']['0']['filename']; ?>
 <?php $field_tiene_formulario = $node->field_tiene_formulario['und']['0']['value']; ?>
 <?php $field_calednario = $node->field_calednario['und']['0']['value']; ?>
+<?php $link_formulario = $node->field_link_a_formulario['und']['0']['value']; ?>
 
 
 <?php $url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>
@@ -157,6 +158,11 @@
 </div>
 <?php } ?>
 
+<div id="section-scroll" class="hidden-sm hidden-xs">
+  <div class="text-right pv-21 btn-apply animated">
+    <a class="btn btn-primary uppercase atm-scroll-item" href="<?php print $link_formulario; ?>"><?php print t('Contact') ?></a> 
+  </div>
+</div>
 
 <script type="text/javascript">
 jQuery(function() {                        
