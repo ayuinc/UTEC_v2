@@ -295,7 +295,7 @@ jQuery(function() {
   <ul></ul>
   <div class="text-right pv-21 btn-apply animated">
 		<?php if ($language->language  != 'en'): ?>
-			<a href="/modalidades-de-admision/centro-pre/formulario-de-inscripcion" class="btn btn-primary uppercase">Postular</a>								
+			<a href="/modalidades-de-admision/centro-pre/formulario-de-inscripcion" class="btn btn-primary uppercase">Postula</a>								
 		<?php elseif ($language->language == 'en'): ?>
 			<a href="/<?php print $language->language ?>/methods-of-admission/pre-university-center/application-form" class="btn btn-primary uppercase"><?php print t('Apply') ?></a>		
 		<?php endif ?>	  
