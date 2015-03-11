@@ -65,7 +65,12 @@
 						<td></td>
 						<td><?php print t('Evaluation') ?></td>
 						<td>26/02/2015</td>
-					</tr>	
+					</tr>
+					<tr>
+						<td></td>
+						<td><?php print t('Evaluation') ?></td>
+						<td>21/03/2015</td>
+					</tr>
 					<tr>
 						<td class="highlight"><?php print t('Pre University Center') ?></td>
 						<td><?php print t('Term 1 - Registration: May - November') ?></td>
@@ -125,7 +130,22 @@
 						<td></td>
 						<td><?php print t('Term 3 - Final Exam: October - February') ?></td>
 						<td>18/02/2015</td>
-					</tr>			
+					</tr>
+					<tr>
+						<td></td>
+						<td><?php print t('Term 1 - Registration: April - June') ?></td>
+						<td>9/03/2015</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><?php print t('Term 1 - Classes begin: April - June') ?></td>
+						<td>6/04/2015</td>
+					</tr>	
+					<tr>
+						<td></td>
+						<td><?php print t('Term 1 - Final Exam: April - June') ?></td>
+						<td>27/06/2015</td>
+					</tr>		
 					<tr>
 						<td class="highlight"><?php print t('Admission Exam') ?></td>
 						<td><?php print t('Registration Starts') ?></td>
@@ -141,6 +161,11 @@
 						<td><?php print t('Admissions Exam') ?></td>
 						<td>04/03/2015</td>
 					</tr>	
+					<tr>
+						<td></td>
+						<td><?php print t('Late Exam') ?></td>
+						<td>21/03/2015</td>
+					</tr>
 					<tr>
 						<td class="highlight"><?php print t('Top Academic Rankings') ?></td>
 						<td><?php print t('Registration Starts') ?></td>
@@ -192,6 +217,11 @@
 						<td>25/02/2015</td>
 					</tr>	
 					<tr>
+						<td></td>
+						<td><?php print t('Evaluation') ?></td>
+						<td>21/03/2015</td>
+					</tr>
+					<tr>
 						<td class="highlight"><?php print t('Transfers') ?></td>
 						<td><?php print t('Registration Starts') ?></td>
 						<td>01/04/2014</td>
@@ -200,7 +230,12 @@
 						<td></td>
 						<td><?php print t('Registration Ends') ?></td>
 						<td>17/02/2015</td>
-					</tr>																																																									
+					</tr>	
+					<tr>
+						<td></td>
+						<td><?php print t('Evaluation') ?></td>
+						<td>20/03/2015</td>
+					</tr>																																																								
 				</tbody>
 			</table>			
 		</div>
