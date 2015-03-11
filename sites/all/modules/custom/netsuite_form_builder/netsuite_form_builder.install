@@ -1,0 +1,94 @@
+<?php
+/**
+ * @file
+ * Module netsuite_form_builder.
+ */
+
+/**
+ * Implements hook_schema()
+ */
+function netsuite_form_builder_schema() {
+  $schema = array();
+  $schema['netsuite_block'] = array(
+    'description' => 'Base table for netsuite block',
+    'fields' => array(
+      'nsid' => array(
+        'description' => t('Netsuite block id'),
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+      'form_id' => array(
+        'description' => t('Netsuite form id'),
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+      'comp_id' => array(
+        'description' => t('Netsuite comp id'),
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+      'delta' => array(
+        'description' => t('Name block'),
+        'type' => 'varchar',
+        'length' => 32,
+        'not null' => TRUE,
+      ),
+      'title' => array(
+        'description' => t('Title block.'),
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ),
+      'description_block' => array(
+        'description' => t('Description block'),
+        'type' => 'text',
+        'not null' => TRUE,
+      ),
+      'active_netsuite' => array(
+        'description' => t('Indicates if used NetSuite.'),
+        'type' => 'varchar',
+        'length' => 20,
+        'not null' => TRUE,
+      ),
+      'path_netsuite' => array(
+        'description' => t('Allow enter the path iframe.'),
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ),
+      'uid' => array(
+        'description' => ('Id of user.'),
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+      'created' => array(
+        'description' => t('Date of create.'),
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'changed' => array(
+        'description' => t('Date of changed'),
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0
+      ),
+      'parameters' => array(
+        'description' => t('Block params'),
+        'type' => 'text',
+        'not null' => TRUE,
+      ),
+    ),
+    'unique keys' => array(
+      'delta' => array('delta'),
+      'form_id' => array('form_id'),
+  ),
+    'primary key' => array('nsid'),
+  );
+  
+  return $schema;
+}
