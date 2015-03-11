@@ -20,12 +20,15 @@ function utec_ede_menu() {
  */
 function utec_ede_inscribete($nid) {
   netsuite_form_builder_variable('node', $nid);
+  $node = node_load($nid);
   $block_natural_person = block_load('netsuite_form_builder', 'netsuite_block_1');
   $block_legal_person = block_load('netsuite_form_builder', 'netsuite_block_2');
   $block_form = _block_get_renderable_array(_block_render_blocks(array($block_natural_person, $block_legal_person)));
   
   $variables = array(
     'output' => $block_form,
+    'title' => $node->title,
+    'subtitle' => field_get_items('node', $node, 'field_subtitulo')[0]['value'],
   );
 
   $output = theme('utec_ede_inscribete_form', $variables);

@@ -1,7 +1,7 @@
 <div id="form-netsuite" class="container-sm"> 
-  <h1 class="light"><?php //print $node->title ?></h1>
+  <h1 class="light"><?php print $title ?></h1>
   <div class="separator-gray separator-sm"></div>           
-  <h3><?php //print render($content['field_subtitulo']); ?></h3>
+  <h3><?php print $subtitle; ?></h3>
   <div class="pv-ch-7 pv-ch-14-xs p-ch-gray">
     
     <div class="form-blocks">
