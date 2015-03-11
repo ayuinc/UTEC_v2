@@ -78,12 +78,9 @@ function netsuite_form_builder_block_view($delta = '') {
  
   foreach ($params as $key => $param) {
     if ($node != NULL) {
-      token_replace($param, array('node' => $node));
+      $params_in_path .= '&' . $key . '=' . token_replace($param, array('node' => $node));
     }
   
-    token_replace($param, array('node' => $node));
-
-    $params_in_path .= '&' . $key . '=' . $param;
   }
 
   $variables = array(
