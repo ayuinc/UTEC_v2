@@ -4,6 +4,7 @@ core = 7.x
 engine = phptemplate
 
 stylesheets[all][] = stylesheets/main.pkgd.min.css
+stylesheets[all][] = stylesheets/utec_course_netsuite.css
 
 plugins[panels][layouts] = plugins/layouts
 

@@ -1,0 +1,12 @@
+name = UTEC Educación Ejecutiva
+description = Permite crear rutas para inscribirse a un curso.
+package = UTEC
+core = 7.x
+version = 0.1
+
+files[] = utec_ede.module
+
+scripts[] = js/utec_ede.js
+
+dependencies[] = netsuite_form_builder
+dependencies[] = subpathauto

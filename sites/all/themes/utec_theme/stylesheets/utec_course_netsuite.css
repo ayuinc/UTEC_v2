@@ -1,0 +1,21 @@
+.form-tabs {
+  height: 26px;
+  margin: 0 0 20px 180px;
+}
+.form-tab-item {
+  float: left;
+  margin-right: 10px;
+}
+.hide {
+  display: none;
+}
+#block-netsuite-form-builder-netsuite-block-1 iframe,
+#block-netsuite-form-builder-netsuite-block-2 iframe {
+  border: none;
+  height: 580px;
+  width: 100%;
+}
+#tab-person-natural-content,
+#tab-person-legal-content {
+  width: 800px;
+}

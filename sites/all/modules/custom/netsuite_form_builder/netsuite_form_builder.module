@@ -1,0 +1,146 @@
+<?php
+
+/**
+ * Implements hook_entity_info().
+ */
+function netsuite_form_builder_entity_info() {
+  return array(
+    'netsuite_block' => array(
+      'label' => t('Netsuite Block'),
+      'base table' => 'netsuite_block',
+      'entity keys' => array(
+        'id' => 'nsid',
+      ),
+    ),
+  );
+}
+
+/**
+ * Implements hook_block_info().
+ */  
+function netsuite_form_builder_block_info() {
+  $blocks = array();
+
+  if (!empty($blocks)) {
+    return $blocks;
+  }
+
+  $blocks = array();
+  $netsuite_blocks = entity_load('netsuite_block');
+  foreach ($netsuite_blocks as $netsuite_block) {
+    $blocks[$netsuite_block->delta] = array(
+      'info' => $netsuite_block->title,
+    );
+  }
+
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function netsuite_form_builder_block_view($delta = '') {
+  $node = menu_get_object();
+
+  if ($node == NULL) {
+    $nid = netsuite_form_builder_variable('node');
+    $node = node_load($nid);
+  }
+
+  $block = array();
+  $query = new EntityFieldQuery();
+  $query->entityCondition('entity_type', 'netsuite_block');
+  $query->propertyCondition('delta', $delta);
+  $result = $query->execute();
+  $object_content_id_netsuite_block = array_shift($result['netsuite_block']);
+  $netsuite_block = entity_load('netsuite_block', array($object_content_id_netsuite_block->nsid));
+  $into_netsuite_block = array_shift($netsuite_block);
+  $block['subject'] = $into_netsuite_block->title;
+  $params = unserialize($into_netsuite_block->parameters);
+  $params_in_path = '';
+
+  $referer = $_SERVER['HTTP_REFERER'];
+    
+  $origin = '';
+  if(trim($referer) == '') {
+    $origin = 'direct';
+  }
+  else if(strpos($referer, 'google') !== FALSE) {
+    $origin = 'search';
+  }
+  else if(strpos($referer, 'r.search.yahoo') !== FALSE) {
+    $origin = 'search';
+  }
+  else if(strpos($referer, 'bing') !== FALSE) {
+    $origin = 'search';
+  }
+
+ 
+  foreach ($params as $key => $param) {
+    if ($node != NULL) {
+      token_replace($param, array('node' => $node));
+    }
+  
+    token_replace($param, array('node' => $node));
+
+    $params_in_path .= '&' . $key . '=' . $param;
+  }
+
+  $variables = array(
+    'path_netsuite' => $into_netsuite_block->path_netsuite,
+    'form_id' => $into_netsuite_block->form_id,
+    'comp_id' => $into_netsuite_block->comp_id,
+    'parameters' => $params_in_path,
+    'origin' => $origin,
+  );
+
+  $output = theme('netsuite_form_builder_block', $variables);
+  $block['content'] = $output;
+
+  return $block;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function netsuite_form_builder_theme($existing, $type, $theme, $path) {
+  return array(
+    'netsuite_form_builder_block' => array(
+      'template' => 'netsuite-form-builder-block',
+    ),
+  );
+}
+
+/**
+ * Load a single record.
+ *
+ * @param $id
+ *    The id representing the record we want to load.
+ */
+function netsuite_form_builder_load($id, $reset = FALSE) {
+  return netsuite_form_builder_load_multiple(array($id), array(), $reset);
+}
+
+/**
+ * Load multiple records.
+ */
+function netsuite_form_builder_load_multiple($ids = array(), $conditions = array(), $reset = FALSE) {
+  return entity_load('netsuite_block', $ids, $conditions, $reset);
+}
+
+/**
+ * Function to save the value of the variable.
+ */
+function netsuite_form_builder_variable($name, $value = NULL) {
+  $var = &drupal_static(__FUNCTION__);
+  if (!is_null($value)) {
+    $var[$name] = $value;
+    return $value;
+  }
+
+  if (!isset($var[$name])) {
+    return NULL;
+  }
+  
+  return $var[$name];
+}

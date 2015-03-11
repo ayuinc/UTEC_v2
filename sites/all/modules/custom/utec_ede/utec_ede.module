@@ -1,0 +1,83 @@
+<?php
+/**
+ * Implements hook_menu().
+ */
+function utec_ede_menu() {
+  $items['node/%/inscribete'] = array(
+    'title' => 'Inscripción',
+    'description' => 'Página que muestra los tipos de inscripción, persona natural o persona juridica.',
+    'page callback' => 'utec_ede_inscribete',
+    'page arguments' => array(1),
+    'access callback' => 'utec_ede_access',
+    'access arguments' => array(1),
+  );  
+
+  return $items;
+}
+
+/**
+ * Función para inscripción, persona natural o persona juridica.
+ */
+function utec_ede_inscribete($nid) {
+  netsuite_form_builder_variable('node', $nid);
+  $node = node_load($nid);
+  $block_natural_person = block_load('netsuite_form_builder', 'netsuite_block_1');
+  $block_legal_person = block_load('netsuite_form_builder', 'netsuite_block_2');
+  $block_form = _block_get_renderable_array(_block_render_blocks(array($block_natural_person, $block_legal_person)));
+  
+  $variables = array(
+    'output' => $block_form,
+    'title' => $node->title,
+    'subtitle' => field_get_items('node', $node, 'field_subtitulo')[0]['value'],
+  );
+
+  $output = theme('utec_ede_inscribete_form', $variables);
+  
+  return $output;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function utec_ede_theme() {
+  return array(
+    'utec_ede_inscribete_form' => array(
+      'template' => 'utec-ede-inscribete-form',
+    ),
+  );
+}
+
+/**
+ * Funcion para permitir el acceso dependiento de algunos parametros.
+ */
+function utec_ede_access($nid) {
+  $node = node_load($nid);
+  if ($node->type == 'edp_curso') {
+    // si se marco finalizar el curso
+      if (field_get_items('node', $node, 'field_inscripciones_cerradas')[0]['value']) {
+        // redireccionamos al detalle de curso  mostramos un mensaje de error
+        //drupal_set_message('La inscripción al curso a caducado', 'error', TRUE);
+        drupal_goto('node/' . $nid);
+      }
+      else {
+        if (field_get_items('node', $node, 'field_autocerrar_inscripciones')[0]['value']) {
+          // capturamos la fecha de inicio y la fecha actual
+          $date_course = strtotime(field_get_items('node', $node, 'field_fechainterna')[0]['value']);
+          $date_now = time();
+
+          // verificamos si la fecha de inicio es menor a la fecha actual
+          if ($date_course < $date_now) {
+            $node->field_inscripciones_cerradas['und'][0]['value'] = 1;
+            node_save($node);
+
+            // capturando ruta para redireccionar a la misma página
+            //drupal_set_message('La inscripción al curso a caducado', 'error', TRUE);
+            drupal_goto('node/' . $nid);
+          }
+        }
+      }
+    return TRUE;
+  }
+  
+  return FALSE;
+}
