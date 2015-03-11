@@ -139,7 +139,7 @@
 					<tr>
 						<td></td>
 						<td><?php print t('Term 1 - Classes begin: April - June') ?></td>
-						<td>6/04/2015</td>
+						<td>20/04/2015</td>
 					</tr>	
 					<tr>
 						<td></td>

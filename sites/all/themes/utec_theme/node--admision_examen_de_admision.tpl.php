@@ -113,7 +113,7 @@ $idioma = $language->language;
 	</div>
 <div id="section-scroll" class="hidden-sm hidden-xs">
   <div class="text-right pv-21 btn-apply animated">
-    <a class="btn btn-primary uppercase atm-scroll-item" href="<?php print $link_formulario; ?>"><?php print t('Contact') ?></a> 
+    <a class="btn btn-primary uppercase atm-scroll-item" href="<?php print $link_formulario; ?>"><?php print t('Apply') ?></a> 
   </div>
 </div>
 
