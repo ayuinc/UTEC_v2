@@ -107,7 +107,7 @@ $idioma = utf8_decode($_POST['idioma']);
 
 if($idioma == "es")
 {
-        if($origen == "Examen de Admision" || $origen == "Primeros puestos" || $origen == "Alto Rendimiento" || 
+        if($origen == "Examen de Admision" || $origen == "Primeros Puestos" || $origen == "Alto Rendimiento" || 
            $origen == "Traslado Externo" || $origen == "Centro Pre" || $origen == "Bachillerato Internacional" )
         {
 
@@ -126,7 +126,7 @@ if($idioma == "es")
                 $origen = "pagina-examen-admision";
             }
 
-            if ($origen == "Primeros puestos")
+            if ($origen == "Primeros Puestos")
             {
                 $tituloTelemarketing = "PRIMEROS PUESTOS - Datos Personales";
                 $subjectTelemarketing = "Solicitud - Primeros Puestos UTEC";
