@@ -232,7 +232,7 @@
 					<?php endif; ?>
 				<?php endforeach; ?>
 				
-				  <?php if (!(field_get_items('node', $node, 'field_inscripciones_cerradas')[0]['value'])) {: ?>
+				  <?php //if (!(field_get_items('node', $node, 'field_inscripciones_cerradas')[0]['value'])) {: ?>
 					<?php
 							//capturamos la ruta de inscripción de formulario
 							$path = drupal_get_path_alias('node/'.$nid, $language->language);
@@ -245,7 +245,7 @@
 							<small class="thin text-primary"><?php print t('Inscription') ?></small>
 						</div>
 					</li>
-				<?php endif; ?>
+				<?php //endif; ?>
 				
 			</ul>
 		</div>
