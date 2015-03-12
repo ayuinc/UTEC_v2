@@ -349,6 +349,7 @@ $header-on-scroll-height: 56px;
 				color: white;
 				padding: 2px 9px;
 				padding: rem(2px) rem(9px);
+				margin-top: -2px;
 				&:hover {
 					@include box-shadow(none);
 					outline: none;

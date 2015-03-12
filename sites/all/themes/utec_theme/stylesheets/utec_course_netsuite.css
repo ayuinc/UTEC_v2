@@ -19,3 +19,11 @@
 #tab-person-legal-content {
   width: 800px;
 }
+.pane-netsuite-form-builder-netsuite-block-3 iframe {
+  width: 700px;
+  height: 580px;
+  border: none;
+  display: block;
+  margin: 0 auto;
+}
+

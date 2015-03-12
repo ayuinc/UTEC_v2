@@ -198,22 +198,22 @@
 							</div>
 						</li>
 					<?php endif; ?>
-					<?php if ($tid == '91') :?>
-						<?php $nid = $detalle['entity']->nid;?>
-						<?php $path = drupal_get_path_alias('node/'.$nid, $language->language); ?>
-						<?php if ($language->language != 'en'): ?>
-						<li data-href="/<?php print $path; ?>">
-						<?php elseif ($language->language == 'en'): ?>
-						<li data-href="<?php print '/'.$language->language.'/'.$path; ?>">
-						<?php endif ?>
-							<div>
+					<?php //if ($tid == '91') :?>
+						<?php //$nid = $detalle['entity']->nid;?>
+						<?php //$path = drupal_get_path_alias('node/'.$nid, $language->language); ?>
+						<?php //if ($language->language != 'en'): ?>
+						<!--li data-href="/<?php //print $path; ?>"-->
+						<?php //elseif ($language->language == 'en'): ?>
+						<!--li data-href="<?php //print '/'.$language->language.'/'.$path; ?>"-->
+						<?php //endif ?>
+							<!--div>
 								<div class="size sm">
 									<i class="text-primary icon-admisiones-centro-pre"></i>
 								</div>
-								<small class="thin text-primary"><?php print t('Contact us') ?></small>
+								<small class="thin text-primary"><?php //print t('Contact us') ?></small>
 							</div>
-						</li>
-					<?php endif; ?>
+						</li-->
+					<?php //endif; ?>
 					<?php if ($tid == '89') :?>
 						<?php $nid = $detalle['entity']->nid;?>
 						<?php $path = drupal_get_path_alias('node/'.$nid, $language->language); ?>
@@ -231,6 +231,24 @@
 						</li>
 					<?php endif; ?>
 				<?php endforeach; ?>
+				
+				  <?php if (!$node->field_inscripciones_cerradas['und'][0]['value']): ?>
+					<?php
+							//capturamos la ruta de inscripción de formulario
+							$url = drupal_get_path_alias('node/'.$nid, $language->language);
+							$path_url = split('/brochure', $url);
+							$path = $path_url[0];
+					?>
+					<li data-href="<?php print base_path() . $path . '/formulario-de-inscripcion'; ?>">
+						<div>
+							<div class="size sm">
+								<i class="text-primary icon-admisiones-centro-pre"></i>
+							</div>
+							<small class="thin text-primary"><?php print t('Inscription') ?></small>
+						</div>
+					</li>
+				<?php endif; ?>
+				
 			</ul>
 		</div>
 	</div>
