@@ -232,10 +232,12 @@
 					<?php endif; ?>
 				<?php endforeach; ?>
 				
-				  <?php //if (!(field_get_items('node', $node, 'field_inscripciones_cerradas')[0]['value'])) {: ?>
+				  <?php if (!$node->field_inscripciones_cerradas['und'][0]['value']): ?>
 					<?php
 							//capturamos la ruta de inscripción de formulario
-							$path = drupal_get_path_alias('node/'.$nid, $language->language);
+							$url = drupal_get_path_alias('node/'.$nid, $language->language);
+							$path_url = split('/brochure', $url);
+							$path = $path_url[0];
 					?>
 					<li data-href="<?php print base_path() . $path . '/inscribete'; ?>">
 						<div>
@@ -245,7 +247,7 @@
 							<small class="thin text-primary"><?php print t('Inscription') ?></small>
 						</div>
 					</li>
-				<?php //endif; ?>
+				<?php endif; ?>
 				
 			</ul>
 		</div>
