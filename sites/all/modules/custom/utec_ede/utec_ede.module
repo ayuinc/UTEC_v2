@@ -3,7 +3,7 @@
  * Implements hook_menu().
  */
 function utec_ede_menu() {
-  $items['node/%/inscribete'] = array(
+  $items['node/%/formulario-de-inscripcion'] = array(
     'title' => 'Inscripción',
     'description' => 'Página que muestra los tipos de inscripción, persona natural o persona juridica.',
     'page callback' => 'utec_ede_inscribete',

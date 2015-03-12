@@ -239,7 +239,7 @@
 							$path_url = split('/brochure', $url);
 							$path = $path_url[0];
 					?>
-					<li data-href="<?php print base_path() . $path . '/inscribete'; ?>">
+					<li data-href="<?php print base_path() . $path . '/formulario-de-inscripcion'; ?>">
 						<div>
 							<div class="size sm">
 								<i class="text-primary icon-admisiones-centro-pre"></i>
