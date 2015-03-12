@@ -16,7 +16,7 @@
 	//print_r($node);
 ?>
 
-<li>
+<li data-href="<?php print $link ?>">
 	<h4 class="mb-14">
 		<?php if ($link!='') { ?>
 		<a href="<?php print $link ?>" target="_blank" class="text-gray-darker banner-titulo">
