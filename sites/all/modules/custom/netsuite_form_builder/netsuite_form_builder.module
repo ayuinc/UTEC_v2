@@ -75,20 +75,27 @@ function netsuite_form_builder_block_view($delta = '') {
     $origin = 'search';
   }
 
- 
+  $array_origin = array('origin' => $origin);
+  $params = array_merge($params, $_GET);
+  $params = array_merge($params, $array_origin);
+  unset($params['q']);
+  
   foreach ($params as $key => $param) {
     if ($node != NULL) {
       $params_in_path .= '&' . $key . '=' . token_replace($param, array('node' => $node));
     }
-  
+    else {
+      $params_in_path .= '&' . $key . '=' . token_replace($param, array('node' => $node));
+    }
   }
+  $utf8URLEncoding = array('á', 'é', 'í', 'ó', 'ú', 'Á', 'É', 'Í', 'Ó', 'Ú', 'ñ', 'Ñ');
+  $winURLEnconding = array('%E1', '%E9', '%ED', '%F3', '%FA', '%C1', '%C9', '%CD', '%D3', '%DA', '%F1', '%D1');
+
+  $params_in_path = str_replace($utf8URLEncoding, $winURLEnconding, $params_in_path);
 
   $variables = array(
     'path_netsuite' => $into_netsuite_block->path_netsuite,
-    'form_id' => $into_netsuite_block->form_id,
-    'comp_id' => $into_netsuite_block->comp_id,
     'parameters' => $params_in_path,
-    'origin' => $origin,
   );
 
   $output = theme('netsuite_form_builder_block', $variables);
