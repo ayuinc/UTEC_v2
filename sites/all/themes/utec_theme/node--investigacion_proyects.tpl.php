@@ -17,7 +17,7 @@
 <!--<div>
 	<img src="<?php print $pathfile.$image; ?>" alt="#" class="img-responsive">
 </div>-->
-<li>
+<li data-href="<?php print $field_pdf_proyectos ?>">
 	<h4 class="mb-14">
 		<?php if ($field_pdf_proyectos!='') { ?>
 		<a href="<?php print $field_pdf_proyectos ?>" class="banner-titulo" target="_blank">
