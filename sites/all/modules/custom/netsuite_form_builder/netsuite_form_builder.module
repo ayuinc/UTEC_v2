@@ -61,23 +61,34 @@ function netsuite_form_builder_block_view($delta = '') {
 
   $referer = $_SERVER['HTTP_REFERER'];
     
+  // Para que funcione el medio de origen se debe de agregar 
+  // custevent3 o custentity69 al paramenters de la tabla netsuite_block.
   $origin = '';
   if(trim($referer) == '') {
-    $origin = 'direct';
+    $origin = 'Direct';
   }
   else if(strpos($referer, 'google') !== FALSE) {
-    $origin = 'search';
+    $origin = 'Search';
   }
   else if(strpos($referer, 'r.search.yahoo') !== FALSE) {
-    $origin = 'search';
+    $origin = 'Search';
   }
   else if(strpos($referer, 'bing') !== FALSE) {
-    $origin = 'search';
+    $origin = 'Search';
+  }
+  else {
+    $origin = 'Referral';
   }
 
-  $array_origin = array('origin' => $origin);
+  if (isset($params['custentity69'])) {
+    $params['custentity69'] = $origin;
+  }
+  
+  if (isset($params['custevent3'])) {
+    $params['custevent3'] = $origin;
+  }
+
   $params = array_merge($params, $_GET);
-  $params = array_merge($params, $array_origin);
   unset($params['q']);
   
   foreach ($params as $key => $param) {

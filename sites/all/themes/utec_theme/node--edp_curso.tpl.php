@@ -255,9 +255,9 @@
 	<div id="section-scroll" class="hidden-sm hidden-xs">
 	  <div class="text-right pv-21 btn-apply animated">
 	    <?php if ($language->language != 'en'): ?>
-	      <a class="btn btn-primary uppercase atm-scroll-item" href="/modalidades-de-admision"><?php print t('Contact') ?></a>
+	      <a class="btn btn-primary uppercase atm-scroll-item" href="/modalidades-de-admision"><?php print t('Sign') ?></a>
 	    <?php elseif ($language->language == 'en'): ?>
-	      <a class="btn btn-primary uppercase atm-scroll-item" href="/<?php print $language->language ?>/methods-of-admission"><?php print t('Contact') ?></a>
+	      <a class="btn btn-primary uppercase atm-scroll-item" href="/<?php print $language->language ?>/methods-of-admission"><?php print t('Sign') ?></a>
 	    <?php endif ?>  
 	  </div>
 	</div>
