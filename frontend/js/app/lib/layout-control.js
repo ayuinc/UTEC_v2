@@ -37,7 +37,7 @@
       }
       return match ? [match[1], match[2]] : [navigatorObj, navigator.appVersion, '-?'];
     };
-    if (getBrowser()[1] === 'Trident' || 'Microsoft Internet Explorer') {
+    if (getBrowser()[0] === 'Trident' || 'Microsoft Internet Explorer') {
       $('.site-wrapper').addClass('ie');
     }
   });
