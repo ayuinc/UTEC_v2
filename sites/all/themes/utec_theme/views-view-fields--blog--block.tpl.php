@@ -23,11 +23,11 @@
 <div class="pv-21">
 	<div class="container">
 		
-		<?php // if ($language->language != 'en'): ?>
-		<!-- <h3 class="h2 lead medium mb-56"><span class="text-gray-darker">Blog UTEC</span></h3> -->
-		<?php // elseif ($language->language == 'en'): ?>
-		<!-- <h3 class="h2 lead medium mb-56"><span class="text-gray">In the Spotlight</span></h3> -->
-		<?php // endif ?>			
+		<?php if ($language->language != 'en'): ?>
+			<h3 class="h2 lead medium mb-56"><span class="text-gray-darker">Blog UTEC</span></h3>
+		<?php elseif ($language->language == 'en'): ?>
+			<h3 class="h2 lead medium mb-56"><span class="text-gray">In the Spotlight</span></h3>
+		<?php endif ?>			
 		<!--<h4 class="lead mt-0 mb-56">Lorem ipsum sit amet, consectetur adipisicing elit.</h4>-->
 		<div class="banner ban-titulo" data-href="<?php print $path; ?>">
 			<div class="col-sm-3 banner-pic" style="background-image: url(<?php print $image; ?>);"></div>

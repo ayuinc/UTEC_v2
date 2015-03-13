@@ -141,13 +141,13 @@
 				<a href="/<?php print $language->language ?>/projects" class="atm-menu-secundario-movil"><?php print t('Projects') ?></a>
 			<?php endif ?>							
 		</li>
-		<li>
+		<!-- <li>
 			<?php if ($language->language  != 'en'): ?>
 				<a href="/publicaciones" class="atm-menu-secundario-movil"><?php print t('Publications') ?></a>
 			<?php elseif ($language->language == 'en'): ?>
 				<a href="/<?php print $language->language ?>/publications" class="atm-menu-secundario-movil"><?php print t('Publications') ?></a>
 			<?php endif ?>						
-		</li>
+		</li> -->
 		<li>
 			<?php if ($language->language  != 'en'): ?>
 				<a href="/empresas-y-clientes" class="atm-menu-secundario-movil"><span><?php print t('Companies') ?></span> <?php print t('and clients') ?></a>
