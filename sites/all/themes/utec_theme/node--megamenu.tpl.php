@@ -264,11 +264,11 @@
 							<?php endif ?>							
 						</li>
 						<li>
-							<?php if ($language->language  != 'en'): ?>
-								<a href="/publicaciones" class="atm-menu-secundario"><?php print t('Publications') ?></a>
-							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/publications" class="atm-menu-secundario"><?php print t('Publications') ?></a>
-							<?php endif ?>						
+							<?php //if ($language->language  != 'en'): ?>
+								<!-- <a href="/publicaciones" class="atm-menu-secundario"><?php //print t('Publications') ?></a> -->
+							<?php //elseif ($language->language == 'en'): ?>
+								<!-- <a href="/<?php //print $language->language ?>/publications" class="atm-menu-secundario"><?php //print t('Publications') ?></a> -->
+							<?php //endif ?>						
 						</li>
 						<li>
 							<?php if ($language->language  != 'en'): ?>
@@ -609,7 +609,11 @@
 							<?php endif ?>
 						</li>
 						<li>
-							<a href="http://escuela-edp.utec.edu.pe/" class="btn btn-primary btn-custom bold atm-menu-secundario" target="_blank"><?php print t('Contact us') ?></a>
+							<?php if ($language->language != 'en'): ?>
+								<a href="/educacion-ejecutiva/contacto" class="btn btn-primary btn-custom bold atm-menu-secundario"><?php print t('Contact us') ?></a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/en/executive-education/contact" class="btn btn-primary btn-custom bold atm-menu-secundario"><?php print t('Contact us') ?></a>
+							<?php endif ?>
 						</li>
 					</ul>
 				</div>
@@ -804,13 +808,13 @@
 								<a href="/<?php print $language->language ?>/projects" class="atm-menu-secundario"><?php print t('Projects') ?></a>
 							<?php endif ?>							
 						</li>
-						<li>
+						<!-- <li>
 							<?php if ($language->language  != 'en'): ?>
 								<a href="/publicaciones" class="atm-menu-secundario"><?php print t('Publications') ?></a>
 							<?php elseif ($language->language == 'en'): ?>
 								<a href="/<?php print $language->language ?>/publications" class="atm-menu-secundario"><?php print t('Publications') ?></a>
 							<?php endif ?>						
-						</li>
+						</li> -->
 						<li>
 							<?php if ($language->language  != 'en'): ?>
 								<a href="/empresas-y-clientes" class="atm-menu-secundario"><span><?php print t('Companies') ?></span><?php print t('and clients') ?></a>

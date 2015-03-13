@@ -144,7 +144,7 @@
 					<tr>
 						<td></td>
 						<td><?php print t('Term 1 - Final Exam: April - June') ?></td>
-						<td>27/06/2015</td>
+						<td>11/07/2015</td>
 					</tr>		
 					<tr>
 						<td class="highlight"><?php print t('Admission Exam') ?></td>

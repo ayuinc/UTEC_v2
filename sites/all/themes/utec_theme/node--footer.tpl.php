@@ -84,7 +84,7 @@
 	          <?php if ($language->language != 'en'): ?>
             <li class="title text-gray-lighter"><?php print t('Research') ?></li>
             <li><a href="/proyectos" class="atm-menu-inferior"><small><?php print t('Projects') ?></small></a></li>
-            <li><a href="/publicaciones" class="atm-menu-inferior"><small><?php print t('Publications') ?></small></a></li>
+            <!-- <li><a href="/publicaciones" class="atm-menu-inferior"><small><?php print t('Publications') ?></small></a></li> -->
             <!--<li><a href="#"><small>Publicaciones</small></a></li>
             <li><a href="#"><small>Consultorías</small></a></li>-->
             <li><a href="/empresas-y-clientes" class="atm-menu-inferior"><small><?php print t('Companies and Clients') ?></small></a></li>
@@ -92,7 +92,7 @@
 						<?php elseif ($language->language == 'en'): ?>
             <li class="title text-gray-lighter"><?php print t('Research') ?></li>
             <li><a href="/<?php print $language->language ?>/projects" class="atm-menu-inferior"><small><?php print t('Projects') ?></small></a></li>
-            <li><a href="/<?php print $language->language ?>/publications" class="atm-menu-inferior"><small><?php print t('Publications') ?></small></a></li>
+            <!-- <li><a href="/<?php print $language->language ?>/publications" class="atm-menu-inferior"><small><?php print t('Publications') ?></small></a></li> -->
             <!--<li><a href="#"><small>Publicaciones</small></a></li>
             <li><a href="#"><small>Consultorías</small></a></li>-->
             <li><a href="/<?php print $language->language ?>/companies" class="atm-menu-inferior"><small><?php print t('Companies and Clients') ?></small></a></li>
@@ -182,8 +182,8 @@
 	<div class="address pv-14 bg-gray-lighter">
 		<div class="container">
 			<nav class="text-center ml-ch-14 text-gray">
-				<span><?php print t('Av. Cascanueces 2221, Santa Anita, Lima') ?></span>
-				<span><strong><?php print t('P.') ?></strong>(511) 354-0070 - (511) 230-5020 - (511) 373 1000</span>
+				<span><?php print t('Calle Medrano Silva S/N con Av. Grau y Malecón Armendáriz S/N.') ?></span>
+				<span><strong><?php print t('P.') ?></strong>(511) 230-5020 - (511) 373 1000 - (511) 354-0070</span>
 				<span><strong><?php print t('W.') ?></strong>www.utec.edu.pe</span>
 				<span><strong><?php print t('C.') ?></strong><a href="mailto:informes@utec.edu.pe" class="text-gray-dark">informes@utec.edu.pe</a></span>
 				<a rel="nofollow" href="<?php if ($language->language != 'en'): ?>/libro-de-reclamaciones <?php else : ?>/en/book-of-complaints <?php endif; ?>" class="btn btn-outline btn-xs btn-gray-dark mt-7-xs"><i class="icon-footer-book"></i></a>

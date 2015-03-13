@@ -24,6 +24,8 @@
   $field_brochure = $node->field_brochure['und']['0']['value'];
   $nodo_id = $node->field_menu_edp_detalles['und']['0']['entity']->nid;
 	$detalles = $node->field_menu_edp_detalles['und'];
+	$link = $node->field_link['und']['0']['value'];
+	
 ?>
 
 
@@ -255,9 +257,9 @@
 	<div id="section-scroll" class="hidden-sm hidden-xs">
 	  <div class="text-right pv-21 btn-apply animated">
 	    <?php if ($language->language != 'en'): ?>
-	      <a class="btn btn-primary uppercase atm-scroll-item" href="/modalidades-de-admision"><?php print t('Sign') ?></a>
+	      <a class="btn btn-primary uppercase atm-scroll-item" href="<?php print $link; ?>"><?php print t('Sign') ?></a>
 	    <?php elseif ($language->language == 'en'): ?>
-	      <a class="btn btn-primary uppercase atm-scroll-item" href="/<?php print $language->language ?>/methods-of-admission"><?php print t('Sign') ?></a>
+	      <a class="btn btn-primary uppercase atm-scroll-item" href="<?php print $link; ?>"><?php print t('Sign') ?></a>
 	    <?php endif ?>  
 	  </div>
 	</div>
