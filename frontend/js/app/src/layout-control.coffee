@@ -50,7 +50,7 @@ $(document).ready ->
 		# web browser
 		return `match ? [match[1], match[2]] : [navigatorObj, navigator.appVersion, '-?']`
 
-	if getBrowser[1] == 'Microsoft Internet Explorer'
+	if getBrowser()[1] is 'Trident' or 'Microsoft Internet Explorer'
 		$('.site-wrapper').addClass('ie')
 
 	return # END ON READY
