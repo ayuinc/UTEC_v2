@@ -36,4 +36,36 @@ $(document).ready ->
 	$('#edit-submit.form-submit').addClass('atm-buscar')
 	$('.language-link').addClass('atm-idiomas')
 
+	# IE8
+	getBrowser = ()->
+		navigatorObj = navigator.appName
+		userAgentObj = navigator.userAgent
+		matchVersion
+		match = userAgentObj.match(/(opera|chrome|safari|firefox|msie|trident)\/?\s*(\.?\d+(\.\d+)*)/i)
+		if (match && (matchVersion = userAgentObj.match(/version\/([\.\d]+)/i)) != null)
+			match[2] = matchVersion[1]
+		# mobile
+		if navigator.userAgent.match(/iPhone|Android|webOS|iPad/i)
+			return `match ? [match[1], match[2], mobile] : [navigatorObj, navigator.appVersion, mobile]`
+		# web browser
+		return `match ? [match[1], match[2]] : [navigatorObj, navigator.appVersion, '-?']`
+
+	if getBrowser()[1] is 'Trident' or 'Microsoft Internet Explorer'
+		$('.site-wrapper').addClass('ie')
+
 	return # END ON READY
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
