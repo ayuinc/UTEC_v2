@@ -40,6 +40,9 @@ $list-hover-height: 350px;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
+	@media #{$sm-down} {
+		background-position: 75% center;
+	}
 }
 
 .site-wrapper,

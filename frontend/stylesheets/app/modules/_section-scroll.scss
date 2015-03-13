@@ -58,4 +58,14 @@
 .section-scroll-content {
 	padding: 7% 0;
 	@include bg-img-control;
+	@media #{$sm-down} {
+		padding: 0;
+		&.flex-middle.bg-img-block {
+			@include flex-middle-end;
+		} 
+		.container {
+			padding: $container-fluid;
+			background-color: rgba(white, 0.9);
+		}
+	}
 }
