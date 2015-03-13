@@ -59,8 +59,8 @@
 	padding: 7% 0;
 	@include bg-img-control;
 	@media #{$sm-down} {
-		padding: 0;
 		&.flex-middle.bg-img-block {
+			padding: 0;
 			@include flex-middle-end;
 		} 
 		.container {
