@@ -18,27 +18,27 @@
       tl.to(tlText, 3, {
         scrambleText: {
           text: textArr[0],
-          chars: "lowerCase",
-          revealDelay: 1,
-          speed: 1,
+          chars: "utec",
+          revealDelay: 0.5,
+          speed: 7,
           tweenLength: true,
           ease: Linear.easeNone
         }
-      }).to(tlText, 4, {
+      }).to(tlText, 3, {
         scrambleText: {
           text: textArr[1],
-          chars: "lowerCase",
-          revealDelay: 1,
-          speed: 1,
+          chars: "utec",
+          revealDelay: 0.5,
+          speed: 7,
           tweenLength: true,
           ease: Linear.easeNone
         }
-      }).to(tlText, 4, {
+      }).to(tlText, 3, {
         scrambleText: {
           text: textArr[2],
-          chars: "lowerCase",
-          revealDelay: 1,
-          speed: 1,
+          chars: "utec",
+          revealDelay: 0.5,
+          speed: 7,
           tweenLength: true,
           ease: Linear.easeNone
         }
