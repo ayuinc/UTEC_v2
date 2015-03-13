@@ -15,29 +15,30 @@
     }
     tl = new TimelineMax();
     makeScramble = function() {
-      tl.to(tlText, 1, {
+      tl.to(tlText, 3, {
         scrambleText: {
           text: textArr[0],
-          chars: "lowerCase",
-          speed: 1,
+          chars: "utec",
+          revealDelay: 0.5,
+          speed: 7,
           tweenLength: true,
           ease: Linear.easeNone
         }
-      });
-      tl.to(tlText, 1, {
+      }).to(tlText, 3, {
         scrambleText: {
           text: textArr[1],
-          chars: "lowerCase",
-          speed: 1,
+          chars: "utec",
+          revealDelay: 0.5,
+          speed: 7,
           tweenLength: true,
           ease: Linear.easeNone
         }
-      });
-      tl.to(tlText, 1, {
+      }).to(tlText, 3, {
         scrambleText: {
           text: textArr[2],
-          chars: "lowerCase",
-          speed: 1,
+          chars: "utec",
+          revealDelay: 0.5,
+          speed: 7,
           tweenLength: true,
           ease: Linear.easeNone
         }
