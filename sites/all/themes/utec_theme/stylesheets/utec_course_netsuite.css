@@ -26,3 +26,8 @@
   display: block;
   margin: 0 auto;
 }
+#tab-person-natural-content, #tab-person-legal-content {
+  margin: 0 auto;
+  max-width: 500px !important;
+  width: auto !important;
+}
