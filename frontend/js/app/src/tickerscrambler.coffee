@@ -15,33 +15,33 @@ $(document).ready ->
 	tl = new TimelineMax()
 	makeScramble = ()->
 		tl.to(tlText, 
-			1, 
+			3, 
 			{ scrambleText: {
 				text: textArr[0], 
 				chars: "lowerCase", 
-				# revealDelay: 0.1, 
+				revealDelay: 1, 
 				speed: 1,
 				tweenLength: true, 
 				ease: Linear.easeNone
 				}
 			})
-		tl.to(tlText, 
-			1, 
+		.to(tlText, 
+			4, 
 			{ scrambleText: {
 				text: textArr[1], 
 				chars: "lowerCase", 
-				# revealDelay: 0.1, 
+				revealDelay: 1, 
 				speed: 1,
 				tweenLength: true, 
 				ease: Linear.easeNone
 				}
 			})
-		tl.to(tlText, 
-			1, 
+		.to(tlText, 
+			4, 
 			{ scrambleText: {
 				text: textArr[2], 
 				chars: "lowerCase", 
-				# revealDelay: 0.1, 
+				revealDelay: 1, 
 				speed: 1,
 				tweenLength: true, 
 				ease: Linear.easeNone
