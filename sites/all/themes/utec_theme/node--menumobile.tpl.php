@@ -411,7 +411,11 @@
 			<?php endif ?>
 		</li>
 		<li>
-			<a href="http://escuela-edp.utec.edu.pe/" class="btn btn-primary btn-custom bold atm-menu-secundario-movil"><?php print t('Contact us') ?></a>
+			<?php if ($language->language != 'en'): ?>
+				<a href="/educacion-ejecutiva/contacto" class="btn btn-primary btn-custom bold atm-menu-secundario"><?php print t('Contact us') ?></a>
+			<?php elseif ($language->language == 'en'): ?>
+				<a href="/<?php print $language->language ?>/executive-education/contact" class="btn btn-primary btn-custom bold atm-menu-secundario"><?php print t('Contact us') ?></a>
+			<?php endif ?>
 		</li>
 	</ul>
 </div>
