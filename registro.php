@@ -64,6 +64,7 @@ $mail = new PHPMailer();
 $destinatarios = array(
     'mmontesino@utec.edu.pe'  => 'Mónica Montesinos',
     'informes@utec.edu.pe'  => 'Utec',
+    'inscripciones@utec.edu.pe'  => 'Inscripciones',
     'webmastertecsup@gmail.com' => 'WebMaster',
     'cbazan@utec.edu.pe'  => 'Carolina Isabel Bazan Jimenez',
     'ebardales@utec.edu.pe' => 'Ebert Alexander Bardales Castro',
