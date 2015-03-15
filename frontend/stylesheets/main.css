@@ -4132,6 +4132,9 @@ h6 {
 .icon-search:before {
   content: "\e623"; }
 
+.site-wrapper.ie .site-menu {
+  display: none; }
+
 html,
 body {
   min-height: 100%;
@@ -4159,6 +4162,9 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
+  @media only screen and (max-width: 768px) {
+    .hero-unit {
+      background-position: 75% center; } }
   .hero-unit.video-bg {
     overflow: hidden;
     height: 491px; }
@@ -4174,6 +4180,9 @@ body {
   background-position: center center;
   background-size: cover;
   min-height: 350px; }
+  @media only screen and (max-width: 768px) {
+    .bg-img-block {
+      background-position: 75% center; } }
   .bg-img-block.bg-img-block-sm {
     min-height: 210px; }
   .bg-img-block.bg-img-block-lg {
@@ -4483,6 +4492,9 @@ img.icon-utec {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
+  @media only screen and (max-width: 768px) {
+    .video-placeholder {
+      background-position: 75% center; } }
 
 .gray-light {
   color: #bbb !important; }
@@ -4551,6 +4563,9 @@ img.icon-utec {
   background-position: center center;
   background-size: cover;
   min-height: 210px; }
+  @media only screen and (max-width: 768px) {
+    .sidebar-block {
+      background-position: 75% center; } }
   .sidebar-block > div {
     padding: 28px; }
   .sidebar-block .categories-list {
@@ -4586,9 +4601,7 @@ img.icon-utec {
 .user-picture img {
   border-radius: 50%;
   width: 140px;
-  height: 140px;
-  padding: 3px;
-  background-color: #f1f1f1; }
+  height: 140px; }
 
 .spinner {
   display: inline-block;
@@ -6244,107 +6257,6 @@ input[type="submit"].btn.btn-linkedin.btn-circle,
     background-color: #1C87BD;
     color: white !important; }
 
-.custom-form-wrapper {
-  background: white;
-  -webkit-box-shadow: 0px 3px 3px 0px rgba(49, 50, 51, 0.15);
-  -moz-box-shadow: 0px 3px 3px 0px rgba(49, 50, 51, 0.15);
-  box-shadow: 0px 3px 3px 0px rgba(49, 50, 51, 0.15);
-  padding: 14px;
-  margin-bottom: 21px;
-  min-height: 210px;
-  width: 50%; }
-  .custom-form-wrapper h4 {
-    margin-bottom: 3px; }
-  .custom-form-wrapper hr {
-    margin: 7px 0; }
-  .custom-form-wrapper form {
-    margin: 35px 0; }
-
-form.left-border-input .form-group .form-control, form.left-border-input #header .tool-bar .search-form .form-item .form-control, #header .tool-bar .search-form form.left-border-input .form-item .form-control, form.left-border-input #header-on-scroll .tool-bar .search-form .form-item .form-control, #header-on-scroll .tool-bar .search-form form.left-border-input .form-item .form-control, form.left-border-input .form-group #header .tool-bar .search-form .form-text, #header .tool-bar .search-form form.left-border-input .form-group .form-text, form.left-border-input #header .tool-bar .search-form .form-item .form-text, #header .tool-bar .search-form form.left-border-input .form-item .form-text, form.left-border-input .form-group #header-on-scroll .tool-bar .search-form .form-text, #header-on-scroll .tool-bar .search-form form.left-border-input .form-group .form-text, form.left-border-input #header-on-scroll .tool-bar .search-form .form-item .form-text, #header-on-scroll .tool-bar .search-form form.left-border-input .form-item .form-text {
-  border-radius: 0px;
-  -webkit-box-shadow: inset 3px 0px 0px 0px whitesmoke;
-  -moz-box-shadow: inset 3px 0px 0px 0px whitesmoke;
-  box-shadow: inset 3px 0px 0px 0px whitesmoke;
-  -webkit-transition: box-shadow 0.3s ease-in;
-  -moz-transition: box-shadow 0.3s ease-in;
-  transition: box-shadow 0.3s ease-in; }
-  form.left-border-input .form-group .form-control:focus, form.left-border-input #header .tool-bar .search-form .form-item .form-control:focus, #header .tool-bar .search-form form.left-border-input .form-item .form-control:focus, form.left-border-input #header-on-scroll .tool-bar .search-form .form-item .form-control:focus, #header-on-scroll .tool-bar .search-form form.left-border-input .form-item .form-control:focus, form.left-border-input .form-group #header .tool-bar .search-form .form-text:focus, #header .tool-bar .search-form form.left-border-input .form-group .form-text:focus, form.left-border-input #header .tool-bar .search-form .form-item .form-text:focus, #header .tool-bar .search-form form.left-border-input .form-item .form-text:focus, form.left-border-input .form-group #header-on-scroll .tool-bar .search-form .form-text:focus, #header-on-scroll .tool-bar .search-form form.left-border-input .form-group .form-text:focus, form.left-border-input #header-on-scroll .tool-bar .search-form .form-item .form-text:focus, #header-on-scroll .tool-bar .search-form form.left-border-input .form-item .form-text:focus {
-    -webkit-box-shadow: inset 4px 0px 0px 0px #04dbff;
-    -moz-box-shadow: inset 4px 0px 0px 0px #04dbff;
-    box-shadow: inset 4px 0px 0px 0px #04dbff;
-    -webkit-transition: box-shadow 0.3s ease-in;
-    -moz-transition: box-shadow 0.3s ease-in;
-    transition: box-shadow 0.3s ease-in; }
-form.left-border-input .form-group.has-success .form-control, form.left-border-input #header .tool-bar .search-form .has-success.form-item .form-control, #header .tool-bar .search-form form.left-border-input .has-success.form-item .form-control, form.left-border-input #header-on-scroll .tool-bar .search-form .has-success.form-item .form-control, #header-on-scroll .tool-bar .search-form form.left-border-input .has-success.form-item .form-control, form.left-border-input .form-group.has-success #header .tool-bar .search-form .form-text, #header .tool-bar .search-form form.left-border-input .form-group.has-success .form-text, form.left-border-input #header .tool-bar .search-form .has-success.form-item .form-text, #header .tool-bar .search-form form.left-border-input .has-success.form-item .form-text, form.left-border-input .form-group.has-success #header-on-scroll .tool-bar .search-form .form-text, #header-on-scroll .tool-bar .search-form form.left-border-input .form-group.has-success .form-text, form.left-border-input #header-on-scroll .tool-bar .search-form .has-success.form-item .form-text, #header-on-scroll .tool-bar .search-form form.left-border-input .has-success.form-item .form-text {
-  border-radius: 0px;
-  -webkit-box-shadow: inset 3px 0px 0px 0px #cee7ad;
-  -moz-box-shadow: inset 3px 0px 0px 0px #cee7ad;
-  box-shadow: inset 3px 0px 0px 0px #cee7ad;
-  -webkit-transition: box-shadow 0.3s ease-in;
-  -moz-transition: box-shadow 0.3s ease-in;
-  transition: box-shadow 0.3s ease-in; }
-  form.left-border-input .form-group.has-success .form-control:focus, form.left-border-input #header .tool-bar .search-form .has-success.form-item .form-control:focus, #header .tool-bar .search-form form.left-border-input .has-success.form-item .form-control:focus, form.left-border-input #header-on-scroll .tool-bar .search-form .has-success.form-item .form-control:focus, #header-on-scroll .tool-bar .search-form form.left-border-input .has-success.form-item .form-control:focus, form.left-border-input .form-group.has-success #header .tool-bar .search-form .form-text:focus, #header .tool-bar .search-form form.left-border-input .form-group.has-success .form-text:focus, form.left-border-input #header .tool-bar .search-form .has-success.form-item .form-text:focus, #header .tool-bar .search-form form.left-border-input .has-success.form-item .form-text:focus, form.left-border-input .form-group.has-success #header-on-scroll .tool-bar .search-form .form-text:focus, #header-on-scroll .tool-bar .search-form form.left-border-input .form-group.has-success .form-text:focus, form.left-border-input #header-on-scroll .tool-bar .search-form .has-success.form-item .form-text:focus, #header-on-scroll .tool-bar .search-form form.left-border-input .has-success.form-item .form-text:focus {
-    -webkit-box-shadow: inset 4px 0px 0px 0px #9dce5b;
-    -moz-box-shadow: inset 4px 0px 0px 0px #9dce5b;
-    box-shadow: inset 4px 0px 0px 0px #9dce5b;
-    -webkit-transition: box-shadow 0.3s ease-in;
-    -moz-transition: box-shadow 0.3s ease-in;
-    transition: box-shadow 0.3s ease-in; }
-form.left-border-input .form-group.has-warning .form-control, form.left-border-input #header .tool-bar .search-form .has-warning.form-item .form-control, #header .tool-bar .search-form form.left-border-input .has-warning.form-item .form-control, form.left-border-input #header-on-scroll .tool-bar .search-form .has-warning.form-item .form-control, #header-on-scroll .tool-bar .search-form form.left-border-input .has-warning.form-item .form-control, form.left-border-input .form-group.has-warning #header .tool-bar .search-form .form-text, #header .tool-bar .search-form form.left-border-input .form-group.has-warning .form-text, form.left-border-input #header .tool-bar .search-form .has-warning.form-item .form-text, #header .tool-bar .search-form form.left-border-input .has-warning.form-item .form-text, form.left-border-input .form-group.has-warning #header-on-scroll .tool-bar .search-form .form-text, #header-on-scroll .tool-bar .search-form form.left-border-input .form-group.has-warning .form-text, form.left-border-input #header-on-scroll .tool-bar .search-form .has-warning.form-item .form-text, #header-on-scroll .tool-bar .search-form form.left-border-input .has-warning.form-item .form-text {
-  border-radius: 0px;
-  -webkit-box-shadow: inset 3px 0px 0px 0px #fff08f;
-  -moz-box-shadow: inset 3px 0px 0px 0px #fff08f;
-  box-shadow: inset 3px 0px 0px 0px #fff08f;
-  -webkit-transition: box-shadow 0.3s ease-in;
-  -moz-transition: box-shadow 0.3s ease-in;
-  transition: box-shadow 0.3s ease-in; }
-  form.left-border-input .form-group.has-warning .form-control:focus, form.left-border-input #header .tool-bar .search-form .has-warning.form-item .form-control:focus, #header .tool-bar .search-form form.left-border-input .has-warning.form-item .form-control:focus, form.left-border-input #header-on-scroll .tool-bar .search-form .has-warning.form-item .form-control:focus, #header-on-scroll .tool-bar .search-form form.left-border-input .has-warning.form-item .form-control:focus, form.left-border-input .form-group.has-warning #header .tool-bar .search-form .form-text:focus, #header .tool-bar .search-form form.left-border-input .form-group.has-warning .form-text:focus, form.left-border-input #header .tool-bar .search-form .has-warning.form-item .form-text:focus, #header .tool-bar .search-form form.left-border-input .has-warning.form-item .form-text:focus, form.left-border-input .form-group.has-warning #header-on-scroll .tool-bar .search-form .form-text:focus, #header-on-scroll .tool-bar .search-form form.left-border-input .form-group.has-warning .form-text:focus, form.left-border-input #header-on-scroll .tool-bar .search-form .has-warning.form-item .form-text:focus, #header-on-scroll .tool-bar .search-form form.left-border-input .has-warning.form-item .form-text:focus {
-    -webkit-box-shadow: inset 4px 0px 0px 0px #ffe224;
-    -moz-box-shadow: inset 4px 0px 0px 0px #ffe224;
-    box-shadow: inset 4px 0px 0px 0px #ffe224;
-    -webkit-transition: box-shadow 0.3s ease-in;
-    -moz-transition: box-shadow 0.3s ease-in;
-    transition: box-shadow 0.3s ease-in; }
-form.left-border-input .form-group.has-error .form-control, form.left-border-input #header .tool-bar .search-form .has-error.form-item .form-control, #header .tool-bar .search-form form.left-border-input .has-error.form-item .form-control, form.left-border-input #header-on-scroll .tool-bar .search-form .has-error.form-item .form-control, #header-on-scroll .tool-bar .search-form form.left-border-input .has-error.form-item .form-control, form.left-border-input .form-group.has-error #header .tool-bar .search-form .form-text, #header .tool-bar .search-form form.left-border-input .form-group.has-error .form-text, form.left-border-input #header .tool-bar .search-form .has-error.form-item .form-text, #header .tool-bar .search-form form.left-border-input .has-error.form-item .form-text, form.left-border-input .form-group.has-error #header-on-scroll .tool-bar .search-form .form-text, #header-on-scroll .tool-bar .search-form form.left-border-input .form-group.has-error .form-text, form.left-border-input #header-on-scroll .tool-bar .search-form .has-error.form-item .form-text, #header-on-scroll .tool-bar .search-form form.left-border-input .has-error.form-item .form-text {
-  border-radius: 0px;
-  -webkit-box-shadow: inset 3px 0px 0px 0px #f3c1ba;
-  -moz-box-shadow: inset 3px 0px 0px 0px #f3c1ba;
-  box-shadow: inset 3px 0px 0px 0px #f3c1ba;
-  -webkit-transition: box-shadow 0.3s ease-in;
-  -moz-transition: box-shadow 0.3s ease-in;
-  transition: box-shadow 0.3s ease-in; }
-  form.left-border-input .form-group.has-error .form-control:focus, form.left-border-input #header .tool-bar .search-form .has-error.form-item .form-control:focus, #header .tool-bar .search-form form.left-border-input .has-error.form-item .form-control:focus, form.left-border-input #header-on-scroll .tool-bar .search-form .has-error.form-item .form-control:focus, #header-on-scroll .tool-bar .search-form form.left-border-input .has-error.form-item .form-control:focus, form.left-border-input .form-group.has-error #header .tool-bar .search-form .form-text:focus, #header .tool-bar .search-form form.left-border-input .form-group.has-error .form-text:focus, form.left-border-input #header .tool-bar .search-form .has-error.form-item .form-text:focus, #header .tool-bar .search-form form.left-border-input .has-error.form-item .form-text:focus, form.left-border-input .form-group.has-error #header-on-scroll .tool-bar .search-form .form-text:focus, #header-on-scroll .tool-bar .search-form form.left-border-input .form-group.has-error .form-text:focus, form.left-border-input #header-on-scroll .tool-bar .search-form .has-error.form-item .form-text:focus, #header-on-scroll .tool-bar .search-form form.left-border-input .has-error.form-item .form-text:focus {
-    -webkit-box-shadow: inset 4px 0px 0px 0px #e26e5f;
-    -moz-box-shadow: inset 4px 0px 0px 0px #e26e5f;
-    box-shadow: inset 4px 0px 0px 0px #e26e5f;
-    -webkit-transition: box-shadow 0.3s ease-in;
-    -moz-transition: box-shadow 0.3s ease-in;
-    transition: box-shadow 0.3s ease-in; }
-form.left-border-input .form-group input[type="submit"], form.left-border-input #header .tool-bar .search-form .form-item input[type="submit"], #header .tool-bar .search-form form.left-border-input .form-item input[type="submit"], form.left-border-input #header-on-scroll .tool-bar .search-form .form-item input[type="submit"], #header-on-scroll .tool-bar .search-form form.left-border-input .form-item input[type="submit"],
-form.left-border-input .form-group button,
-form.left-border-input #header .tool-bar .search-form .form-item button,
-#header .tool-bar .search-form form.left-border-input .form-item button,
-form.left-border-input #header-on-scroll .tool-bar .search-form .form-item button,
-#header-on-scroll .tool-bar .search-form form.left-border-input .form-item button {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none; }
-  form.left-border-input .form-group input[type="submit"].btn-lg, form.left-border-input #header .tool-bar .search-form .form-item input[type="submit"].btn-lg, #header .tool-bar .search-form form.left-border-input .form-item input[type="submit"].btn-lg, form.left-border-input #header-on-scroll .tool-bar .search-form .form-item input[type="submit"].btn-lg, #header-on-scroll .tool-bar .search-form form.left-border-input .form-item input[type="submit"].btn-lg, form.left-border-input .form-group input[type="submit"].input-lg, form.left-border-input #header .tool-bar .search-form .form-item input[type="submit"].input-lg, #header .tool-bar .search-form form.left-border-input .form-item input[type="submit"].input-lg, form.left-border-input #header-on-scroll .tool-bar .search-form .form-item input[type="submit"].input-lg, #header-on-scroll .tool-bar .search-form form.left-border-input .form-item input[type="submit"].input-lg,
-  form.left-border-input .form-group button.btn-lg,
-  form.left-border-input #header .tool-bar .search-form .form-item button.btn-lg,
-  #header .tool-bar .search-form form.left-border-input .form-item button.btn-lg,
-  form.left-border-input #header-on-scroll .tool-bar .search-form .form-item button.btn-lg,
-  #header-on-scroll .tool-bar .search-form form.left-border-input .form-item button.btn-lg,
-  form.left-border-input .form-group button.input-lg,
-  form.left-border-input #header .tool-bar .search-form .form-item button.input-lg,
-  #header .tool-bar .search-form form.left-border-input .form-item button.input-lg,
-  form.left-border-input #header-on-scroll .tool-bar .search-form .form-item button.input-lg,
-  #header-on-scroll .tool-bar .search-form form.left-border-input .form-item button.input-lg {
-    height: 46px;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none; }
-
 .select-override {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -6442,17 +6354,23 @@ textarea:-ms-input-placeholder {
     font-weight: 100;
     font-style: normal; }
 
-.page-page-61 .pane-page-breadcrumb,
+.page-page-61 .pane-page-breadcrumb {
+  position: absolute;
+  top: -130px;
+  left: -14px; }
+
 .node-type-blog .pane-page-breadcrumb {
   position: absolute;
   top: -49px;
-  left: 210px; }
+  left: -14px; }
 
 .breadcrumbs-light .breadcrumb {
   color: white; }
 
 .page-taxonomy-term .body {
   padding-top: 70px; }
+.page-taxonomy-term .breadcrumbs-light .breadcrumb {
+  color: #323232; }
 
 .list-custom ul {
   padding-left: 28px !important; }
@@ -6643,6 +6561,9 @@ textarea:-ms-input-placeholder {
     -moz-box-shadow: 0px 3px 3px 0px rgba(49, 50, 51, 0.15);
     box-shadow: 0px 3px 3px 0px rgba(49, 50, 51, 0.15); }
 
+.site-wrapper.ie .site-menu {
+  display: none; }
+
 html,
 body {
   min-height: 100%;
@@ -6670,6 +6591,9 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
+  @media only screen and (max-width: 768px) {
+    .hero-unit {
+      background-position: 75% center; } }
   .hero-unit.video-bg {
     overflow: hidden;
     height: 491px; }
@@ -6685,6 +6609,9 @@ body {
   background-position: center center;
   background-size: cover;
   min-height: 350px; }
+  @media only screen and (max-width: 768px) {
+    .bg-img-block {
+      background-position: 75% center; } }
   .bg-img-block.bg-img-block-sm {
     min-height: 210px; }
   .bg-img-block.bg-img-block-lg {
@@ -6994,6 +6921,9 @@ img.icon-utec {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
+  @media only screen and (max-width: 768px) {
+    .video-placeholder {
+      background-position: 75% center; } }
 
 .gray-light {
   color: #bbb !important; }
@@ -7062,6 +6992,9 @@ img.icon-utec {
   background-position: center center;
   background-size: cover;
   min-height: 210px; }
+  @media only screen and (max-width: 768px) {
+    .sidebar-block {
+      background-position: 75% center; } }
   .sidebar-block > div {
     padding: 28px; }
   .sidebar-block .categories-list {
@@ -7097,9 +7030,7 @@ img.icon-utec {
 .user-picture img {
   border-radius: 50%;
   width: 140px;
-  height: 140px;
-  padding: 3px;
-  background-color: #f1f1f1; }
+  height: 140px; }
 
 .spinner {
   display: inline-block;
@@ -7686,7 +7617,8 @@ body.form-on-submit {
     background-color: #c4c3c4;
     color: white;
     padding: 2px 9px;
-    padding: 0.14286rem 0.64286rem; }
+    padding: 0.14286rem 0.64286rem;
+    margin-top: -2px; }
     #header .tool-bar .search-form .form-submit:hover, #header-on-scroll .tool-bar .search-form .form-submit:hover {
       -webkit-box-shadow: none;
       -moz-box-shadow: none;
@@ -7720,6 +7652,14 @@ body.form-on-submit {
     top: 0;
     right: 0;
     bottom: 0;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.2s ease-in-out;
+    -moz-transition: -moz-transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
     width: 100%;
     height: 100%;
     min-height: 100%;
@@ -7793,7 +7733,8 @@ body.form-on-submit {
       .site-menu .mobile-nav-display > ul li:nth-child(even) {
         background-color: #e3e3e3; }
 
-.site-wrapper.menu-on .site-menu {
+.site-wrapper.menu-on .site-menu,
+.site-wrapper.menu-on .mobile-nav-display-triggers {
   -webkit-transform: translateX(0px);
   -moz-transform: translateX(0px);
   -ms-transform: translateX(0px);
@@ -7992,6 +7933,47 @@ body.form-on-submit {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
+  @media only screen and (max-width: 768px) {
+    .section-scroll-content {
+      background-position: 75% center; } }
+  @media only screen and (max-width: 768px) {
+    .section-scroll-content.flex-middle.bg-img-block {
+      padding: 0;
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -moz-box-orient: vertical;
+      box-orient: vertical;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      flex-direction: column;
+      -ms-flex-direction: column;
+      -webkit-box-pack: end;
+      -moz-box-pack: end;
+      box-pack: end;
+      -webkit-justify-content: flex-end;
+      -moz-justify-content: flex-end;
+      -ms-justify-content: flex-end;
+      -o-justify-content: flex-end;
+      justify-content: flex-end;
+      -ms-flex-pack: end;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      box-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -o-align-items: center;
+      align-items: center;
+      -ms-flex-align: center; }
+    .section-scroll-content .container {
+      padding: 14px;
+      background-color: rgba(255, 255, 255, 0.9); } }
 
 .anchor-img-grid {
   margin-left: -14px;
@@ -8061,6 +8043,9 @@ body.form-on-submit {
       opacity: 0;
       color: white;
       background-color: rgba(50, 50, 50, 0.9); }
+      @media only screen and (max-width: 768px) {
+        .anchor-img-grid [class*="anchor-block-"] .overlay {
+          background-color: rgba(50, 50, 50, 0.6); } }
       @media only screen and (max-width: 480px) {
         .anchor-img-grid [class*="anchor-block-"] .overlay {
           opacity: 1; } }
@@ -8126,6 +8111,9 @@ body.form-on-submit {
   background-position: center center;
   background-size: cover;
   min-height: 350px; }
+  @media only screen and (max-width: 768px) {
+    .banner .banner-pic {
+      background-position: 75% center; } }
   @media only screen and (min-width: 768px) {
     .banner .banner-pic {
       padding: 0; } }

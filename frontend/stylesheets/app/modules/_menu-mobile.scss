@@ -93,7 +93,8 @@
 
 .site-wrapper {
 	&.menu-on {
-		.site-menu {
+		.site-menu,
+		.mobile-nav-display-triggers {
 			@include transform(translateX(0px));
 			@include transition(transform 0.2s ease-in-out);
 		}
