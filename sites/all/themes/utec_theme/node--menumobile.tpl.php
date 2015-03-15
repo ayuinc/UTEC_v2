@@ -419,7 +419,7 @@
 			<?php if ($language->language != 'en'): ?>
 				<a href="/educacion-ejecutiva/contacto" class="btn btn-primary btn-custom bold atm-menu-secundario"><?php print t('Contact us') ?></a>
 			<?php elseif ($language->language == 'en'): ?>
-				<a href="/<?php print $language->language ?>/executive-education/contact" class="btn btn-primary btn-custom bold atm-menu-secundario"><?php print t('Contact us') ?></a>
+				<!-- <a href="/<?php //print $language->language ?>/executive-education/contact" class="btn btn-primary btn-custom bold atm-menu-secundario"><?php //print t('Contact us') ?></a> -->
 			<?php endif ?>
 		</li>
 	</ul>
