@@ -366,7 +366,12 @@
 		<li>
 			<a href="/edp/cursos/cursos-online"><span>Cursos</span>online</a>
 		</li>-->
-		<li><a href="/educacion-ejecutiva"><?php print t('Executive Education') ?></a></li>
+		<li>
+			<?php if ($language->language  != 'en'): ?>
+				<a href="/educacion-ejecutiva"><?php print t('Executive Education') ?></a></li>
+			<?php elseif ($language->language == 'en'): ?>	
+				<a href="/<?php print $language->language ?>/executive-education"><?php print t('Executive Education') ?></a></li>
+			<?php endif ?>	
 		<li>
 			<?php if ($language->language  != 'en'): ?>
 				<a href="/educacion-ejecutiva/cursos-cortos" class="atm-menu-secundario-movil">
