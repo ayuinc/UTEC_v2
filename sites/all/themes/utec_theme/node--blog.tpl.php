@@ -12,7 +12,7 @@
 	$blogger_name = $node->field_blogger['und']['0']['entity']->name;
 	$blogger_cargo = $node->field_blogger['und']['0']['entity']->field_descripci_n['und']['0']['value'];
 	$created = $node->created;
-	$formatted = format_date($created, 'custom', t('j M', array(), array('context' => 'php date format')));
+	$formatted = format_date($created, 'custom', t('j F Y', array(), array('context' => 'php date format')));
 
 	$addblock = module_invoke('addthis','block_view','addthis_block');
 ?>
