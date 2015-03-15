@@ -13,6 +13,7 @@
 	$blogger_cargo = $node->field_blogger['und']['0']['entity']->field_descripci_n['und']['0']['value'];
 	$created = date('d F Y', strtotime($node->created));
 	$addblock = module_invoke('addthis','block_view','addthis_block');
+	print_r($node);
 ?>
 <h1 class="lead h3">
 	<?php print $title ?>
