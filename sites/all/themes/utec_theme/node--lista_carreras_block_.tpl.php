@@ -55,7 +55,7 @@
 					<?php if ($language->language == 'en'): ?>
 					<div><a href="/<?php print $language->language ?>/industrial-chemical-engineering" class="atm-item-carrera"><i class="icon-ing-quimica"></i></a></div>
 					<h2>
-						<a href="/<?php print $language->language ?>/ingenieria-quimica-industrial" class="atm-item-carrera">
+						<a href="/<?php print $language->language ?>/industrial-chemical-engineering" class="atm-item-carrera">
 							<span><?php print t('Industrial') ?></span>
 							<span><?php print t('Chemical') ?></span>
 							<span><?php print t('Engineering') ?></span>
@@ -64,7 +64,7 @@
 					<?php elseif ($language->language  != 'en'): ?>
 					<div><a href="/ingenieria-quimica-industrial" class="atm-item-carrera"><i class="icon-ing-quimica"></i></a></div>
 					<h2>
-						<a href="/industrial-chemical-engineering" class="atm-item-carrera">
+						<a href="/ingenieria-quimica-industrial" class="atm-item-carrera">
 							<span><?php print t('Engineering') ?></span>
 							<span><?php print t('Chemical') ?></span>
 							<span><?php print t('Industrial') ?></span>
