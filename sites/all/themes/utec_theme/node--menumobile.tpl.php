@@ -190,7 +190,7 @@
 				</a>
 			<?php elseif ($language->language == 'en'): ?>
 				<a href="/<?php print $language->language ?>/energy-engineering" class="atm-menu-secundario-movil">
-				<span>Industrial </span>Engineering
+				<span>Energy </span>Engineering
 				</a>
 			<?php endif ?>
 		</li>
