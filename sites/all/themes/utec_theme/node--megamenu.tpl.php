@@ -59,9 +59,9 @@
 							<li class="pt-7">
 								<a href="/en/contact-us" class="text-gray atm-contacto"><?php print t('Contact us') ?></a>
 							</li>
-							<li class="pt-7">
+							<!-- <li class="pt-7">
 								<a href="/en/in-the-spotlight" class="text-gray atm-blog">Blog</a>
-							</li>
+							</li> -->
 						<?php endif ?>						
 						<li>
 							<?php print block_render('locale', 'language'); ?>
@@ -569,9 +569,9 @@
 									Diplomados
 								</a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/executive-education/diploma" class="atm-menu-secundario">
+								<!-- <a href="/<?php //print $language->language ?>/executive-education/diploma" class="atm-menu-secundario">
 									Diploma
-								</a>
+								</a> -->
 							<?php endif ?>
 							</a>
 						</li>
