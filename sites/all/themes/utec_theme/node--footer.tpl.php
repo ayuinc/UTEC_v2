@@ -186,7 +186,7 @@
 				<span><strong><?php print t('P.') ?></strong>(511) 230-5020 - (511) 373 1000 - (511) 354-0070</span>
 				<span><strong><?php print t('W.') ?></strong>www.utec.edu.pe</span>
 				<span><strong><?php print t('C.') ?></strong><a href="mailto:informes@utec.edu.pe" class="text-gray-dark">informes@utec.edu.pe</a></span>
-				<!-- <a rel="nofollow" href="<?php //if ($language->language != 'en'): ?>/libro-de-reclamaciones <?php else : ?>/en/book-of-complaints <?php endif; ?>" class="btn btn-outline btn-xs btn-gray-dark mt-7-xs"><i class="icon-footer-book"></i></a> -->
+				<!-- <a rel="nofollow" href="<?php //if ($language->language != 'en'): ?>/libro-de-reclamaciones <?php //else : ?>/en/book-of-complaints <?php //endif; ?>" class="btn btn-outline btn-xs btn-gray-dark mt-7-xs"><i class="icon-footer-book"></i></a> -->
 				<a rel="nofollow" href="https://www.facebook.com/utecuniversidad" target="_blank" class="atm-sociales btn btn-outline btn-xs btn-gray-dark mt-7-xs btn-rrss"><i class="icon-footer-facebook"></i></a>
 				<a rel="nofollow" href="https://twitter.com/utecedu" target="_blank" class="atm-sociales btn btn-outline btn-xs btn-gray-dark mt-7-xs btn-rrss"><i class="icon-footer-twitter"></i></a>
         <a rel="nofollow" href="https://www.linkedin.com/company/universidad-de-ingenier%C3%ADa-y-tecnolog%C3%ADa" target="_blank"  class="atm-sociales btn btn-outline btn-xs btn-gray-dark mt-7-xs btn-rrss"><i class="icon-footer-linkedin"></i></a>
