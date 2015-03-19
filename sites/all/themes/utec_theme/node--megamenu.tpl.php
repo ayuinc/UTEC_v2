@@ -82,7 +82,7 @@
 		<div class="container">
 			<div class="left">
 				<div class="logo pv-21">
-					<?php elseif ($language->language == 'en'): ?>
+					<?php if ($language->language == 'en'): ?>
 						<a href="/en" class="atm-logo"><img src="/<?php print $theme_path; ?>/assets/img/logo_vertical_UTEC-2015.png" alt="Logo UTEC" width="149" height="auto"></a>	
 					<?php endif ?>
 						<a href="/" class="atm-logo"><img src="/<?php print $theme_path; ?>/assets/img/logo_vertical_UTEC-2015.png" alt="Logo UTEC" width="149" height="auto"></a>	
