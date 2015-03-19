@@ -49,7 +49,7 @@
               <li><a href="/<?php print $language->language ?>/work-at-utec" class="atm-menu-inferior"><small><?php print t('Work at UTEC') ?></small></a></li>
               <li><a href="/<?php print $language->language ?>/utec-garage-open-platform-for-innovation" class="atm-menu-inferior"><small><?php print t('UTEC Garage') ?></small></a></li>
               <li><a href="http://utecventures.com/" rel="nofollow" target="_blank" class="atm-menu-inferior"><small><?php print t('UTEC Ventures') ?></small></a></li>
-              <li><a href="/<?php print $language->language ?>/sitemap" class="atm-menu-inferior"><small><?php print t('Sitemap') ?></small></a></li>
+              <li><a href="/<?php print $language->language ?>/site-map" class="atm-menu-inferior"><small><?php print t('Sitemap') ?></small></a></li>
             <?php elseif ($language->language != 'en'): ?>
               <li class="title text-gray-lighter"><?php print t('We are UTEC') ?></li>
               <li><a href="/respaldo" class="atm-menu-inferior"><small><?php print t('A Solid Foundation') ?></small></a></li>
@@ -64,7 +64,7 @@
               <li><a href="/trabaja-en-utec" class="atm-menu-inferior"><small><?php print t('Work at UTEC') ?></small></a></li>
               <li><a href="/utec-garage" class="atm-menu-inferior"><small><?php print t('UTEC Garage') ?></small></a></li>
               <li><a href="http://utecventures.com/" rel="nofollow" target="_blank" class="atm-menu-inferior"><small><?php print t('UTEC Ventures') ?></small></a></li>
-              <li><a href="/sitemap" class="atm-menu-inferior"><small><?php print t('Sitemap') ?></small></a></li>
+              <li><a href="/mapa-de-sitio" class="atm-menu-inferior"><small><?php print t('Sitemap') ?></small></a></li>
             <?php endif ?>
           </ul>
         </li>
