@@ -64,7 +64,15 @@
 		>
 			<div class="row">
 				<div class="col-sm-6 text-white normalize-text">
-					<h2 class="thin h1 text-hover-primary"><?php print $field_titulo_causa ?></h2>
+					<?php if ($language->prefix == 'en'): ?>
+						<a href="/en/<?php print $field_link_causa ?>">
+							<h2 class="thin h1 text-hover-primary"><?php print $field_titulo_causa ?></h2>
+						</a>
+					<?php elseif ($language->prefix != 'en'): ?>
+						<a href="<?php print $field_link_causa ?>">
+							<h2 class="thin h1 text-hover-primary"><?php print $field_titulo_causa ?></h2>
+						</a>
+					<?php endif ?>
 					<hr class="hr-white">
 					<h4 class="lead thin"><?php print $field_descripcion_causa ?></h4>
 					<?php if ($field_link_causa!='') { ?>
@@ -103,7 +111,15 @@
 		>
 			<div class="row">
 				<div class="col-sm-6 text-white normalize-text">
-					<h2 class="thin h1 text-hover-primary"><?php print $field_titulo_tres_acciones ?></h2>
+					<?php if ($language->prefix == 'en'): ?>
+						<a href="/en/<?php print $field_link_tres_acciones ?>">
+							<h2 class="thin h1 text-hover-primary"><?php print $field_titulo_tres_acciones ?></h2>
+						</a>
+					<?php elseif ($language->prefix != 'en'): ?>
+						<a href="<?php print $field_link_tres_acciones ?>">
+							<h2 class="thin h1 text-hover-primary"><?php print $field_titulo_tres_acciones ?></h2>
+						</a>
+					<?php endif ?>
 					<hr class="hr-white">
 					<h4 class="lead thin"><?php print $field_subitulo_tres_acciones ?></h4>
 					<?php if ($field_link_tres_acciones!='')  { ?>
@@ -137,7 +153,15 @@
 			data-href="<?php print $field_link_proyecto ?>"
 		<?php endif ?>		
 	>
-		<h2 class="lead thin text-hover-primary"><?php print $field_titulo_proyecto ?></h2>
+		<?php if ($language->prefix == 'en'): ?>
+			<a href="/en/<?php print $field_link_proyecto ?>">
+				<h2 class="lead thin text-hover-primary"><?php print $field_titulo_proyecto ?></h2>
+			</a>
+		<?php elseif ($language->prefix != 'en'): ?>
+			<a href="<?php print $field_link_proyecto ?>">
+				<h2 class="lead thin text-hover-primary"><?php print $field_titulo_proyecto ?></h2>
+			</a>
+		<?php endif ?>
 		<hr class="hr-gray">
 		<p class="lead gray"><?php print $field_subtitulo_proyecto ?></p>
 		<p class="gray mb-42 lead"><?php print $field_descripcion_proyecto ?></p>

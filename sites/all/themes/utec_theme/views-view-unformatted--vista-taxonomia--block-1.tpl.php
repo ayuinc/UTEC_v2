@@ -2,7 +2,7 @@
 
 ?>
 <div class="container-sm">
-	<h3 class="light"><?php print t('Blog posts'); ?></h3>
+	<h1 class="light"><?php print t('Blog posts'); ?></h1>
 	<div class="separator-gray separator-sm"></div>
 	<ul class="grid-list grid-list-2 row p-ch-7 mb-ch-21 isotope-grid">
 		<?php foreach ($rows as $id => $row): ?>

@@ -35,7 +35,16 @@ $modalida_ext_int = $node->field_modalidad_extensiva_intens['und']['0']['value']
 	      <div class="container-sm hero-text" data-href="/<?php print $language->language; ?>/methods-of-admission/pre-university-center/about">
 	      <?php elseif ($language->language  != 'en'): ?>
 	      <div class="container-sm hero-text" data-href="/modalidades-de-admision/centro-pre/acerca-del-centro-pre">
-	      <?php endif ?>	  
+	      <?php endif ?>
+	      	<?php if ($language->language == 'en'): ?>
+		      	<a href="/<?php print $language->language; ?>/methods-of-admission/pre-university-center/about">
+		      		<h1 class="thin text-white mt-0 text-hover-primary"><?php print $titulo ?></h1>
+		      	</a>
+		      <?php elseif ($language->language  != 'en'): ?>
+		      	<a href="/modalidades-de-admision/centro-pre/acerca-del-centro-pre">
+		      		<h1 class="thin text-white mt-0 text-hover-primary"><?php print $titulo ?></h1>
+		      	</a>
+		      <?php endif ?>
 	        <h1 class="thin text-white mt-0 text-hover-primary"><?php print $titulo ?></h1>
 	        <hr class="hr-white">
 	        <div class="row">

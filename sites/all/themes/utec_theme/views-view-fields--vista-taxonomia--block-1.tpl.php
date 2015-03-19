@@ -30,7 +30,11 @@
 	<div class="banner-pic" style="background-image: url(<?php print $image ?>);"></div>
 	<div class="banner-content">
 		<div>
-			<h2><a href="#"><?php print $title ?></a></h2>
+			<?php if ($language->language != 'en'): ?>
+				<h2><a href="<?php print $path_i18; ?>"><?php print $title ?></a></h2>
+			<?php elseif ($language->language == 'en'): ?>
+				<h2><a href="<?php print '/'.$language->language.'/'.$path_i18; ?>"><?php print $title ?></a></h2>
+			<?php endif ?>
 			<em class="block"><?php print $user_name ?></em>
 			<small class="text-gray"><?php print $user_charge ?></small>
 		</div>

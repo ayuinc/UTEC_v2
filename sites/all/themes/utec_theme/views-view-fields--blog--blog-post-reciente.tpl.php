@@ -27,7 +27,7 @@
 	</div>
 	<div class="banner-content">
 		<div>
-			<h2 class="h2"><a href="#" class="banner-titulo"><?php print $title ?></a></h2>
+			<h2 class="h2"><a href="<?php print drupal_get_path_alias($path, $language->language) ?>" class="banner-titulo"><?php print $title ?></a></h2>
 			<em class="text-primary"><?php print $created ?></em>
 			<p class="lead"><?php print $texto_corto ?></p>
 		</div>
