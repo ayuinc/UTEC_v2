@@ -63,27 +63,48 @@
 	      	<div data-href="<?php print $izquierdo_link_ingles; ?>" class="anchor-block-1">
         <?php } elseif ($language->language  != 'en') { ?>
           <div data-href="<?php print $izquierdo_link; ?>" class="anchor-block-1">    
-        <?php } ?> 	          	        
+        <?php } ?>  	        
           <div class="pic" style="background-image: url(sites/default/files/<?php print $izquierdo_img; ?>);"></div>
           <div class="overlay">
-            <a href="#">
-              <h4>
-                <?php if ($language->language == 'en') {
-                  print $izquierdo_txt1_ingles;
-                } elseif ($language->language  != 'en') {
-                  print $izquierdo_txt1;
-                } 
-                ?>
-              </h4>
-              <h3 class="h2">
-                <?php if ($language->language == 'en') {
-                  print $izquierdo_txt2_ingles;
-                } elseif ($language->language  != 'en') {
-                  print $izquierdo_txt2;
-                } 
-                ?>
-              </h3>
-            </a>
+            <?php if ($language->language == 'en') { ?>
+              <a href="<?php print $izquierdo_link_ingles; ?>">
+                <h4>
+                  <?php if ($language->language == 'en') {
+                    print $izquierdo_txt1_ingles;
+                  } elseif ($language->language  != 'en') {
+                    print $izquierdo_txt1;
+                  } 
+                  ?>
+                </h4>
+                <h3 class="h2">
+                  <?php if ($language->language == 'en') {
+                    print $izquierdo_txt2_ingles;
+                  } elseif ($language->language  != 'en') {
+                    print $izquierdo_txt2;
+                  } 
+                  ?>
+                </h3>
+              </a>
+            <?php } elseif ($language->language  != 'en') { ?>
+              <a href="<?php print $izquierdo_link; ?>">
+                <h4>
+                  <?php if ($language->language == 'en') {
+                    print $izquierdo_txt1_ingles;
+                  } elseif ($language->language  != 'en') {
+                    print $izquierdo_txt1;
+                  } 
+                  ?>
+                </h4>
+                <h3 class="h2">
+                  <?php if ($language->language == 'en') {
+                    print $izquierdo_txt2_ingles;
+                  } elseif ($language->language  != 'en') {
+                    print $izquierdo_txt2;
+                  } 
+                  ?>
+                </h3>
+              </a>
+            <?php } ?>
           </div>
         </div>
       </div>
@@ -95,51 +116,93 @@
         <?php } ?> 		      	        
           <div class="pic" style="background-image: url(sites/default/files/<?php print $derecho_superior_img; ?>);"></div>
           <div class="overlay">
-            <a href="#">
-              <h4>
-                <?php if ($language->language == 'en') {
-                  print $derecho_superior_txt1_ingles;
-                } elseif ($language->language  != 'en') {
-                  print $derecho_superior_txt1;
-                } 
-                ?>
-              </h4>
-              <h3 class="h2">
-                <?php if ($language->language == 'en') {
-                  print $derecho_superior_txt2_ingles;
-                } elseif ($language->language  != 'en') {
-                  print $derecho_superior_txt2;
-                } 
-                ?>
-              </h3>
-            </a>
+            <?php if ($language->language == 'en') { ?>
+              <a href="<?php print $derecho_superior_link_ingles; ?>">
+                <h4>
+                  <?php if ($language->language == 'en') {
+                    print $derecho_superior_txt1_ingles;
+                  } elseif ($language->language  != 'en') {
+                    print $derecho_superior_txt1;
+                  } 
+                  ?>
+                </h4>
+                <h3 class="h2">
+                  <?php if ($language->language == 'en') {
+                    print $derecho_superior_txt2_ingles;
+                  } elseif ($language->language  != 'en') {
+                    print $derecho_superior_txt2;
+                  } 
+                  ?>
+                </h3>
+              </a>
+            <?php } elseif ($language->language  != 'en') { ?>
+              <a href="<?php print $derecho_superior_link; ?>">
+                <h4>
+                  <?php if ($language->language == 'en') {
+                    print $derecho_superior_txt1_ingles;
+                  } elseif ($language->language  != 'en') {
+                    print $derecho_superior_txt1;
+                  } 
+                  ?>
+                </h4>
+                <h3 class="h2">
+                  <?php if ($language->language == 'en') {
+                    print $derecho_superior_txt2_ingles;
+                  } elseif ($language->language  != 'en') {
+                    print $derecho_superior_txt2;
+                  } 
+                  ?>
+                </h3>
+              </a>
+            <?php } ?>         
           </div>
         </div>
       	<?php if ($language->language == 'en') { ?>
 	      	<div data-href="<?php print $derecho_inferior_izq_link_ingles; ?>" class="anchor-block-3">
         <?php } elseif ($language->language  != 'en') { ?>
           <div data-href="<?php print $derecho_inferior_izq_link; ?>" class="anchor-block-3">    
-        <?php } ?> 		      	
+        <?php } ?>	      	
           <div class="pic" style="background-image: url(sites/default/files/<?php print $derecho_inferior_izq_img; ?>);"></div>
           <div class="overlay">
-            <a href="#">
-              <h4>
-                <?php if ($language->language == 'en') {
-                  print $derecho_inferior_izq_txt1_ingles;
-                } elseif ($language->language  != 'en') {
-                  print $derecho_inferior_izq_txt1;
-                } 
-                ?>
-              </h4>
-              <h3 class="h2">
-                <?php if ($language->language == 'en') {
-                  print $derecho_inferior_izq_txt2_ingles;
-                } elseif ($language->language  != 'en') {
-                  print $derecho_inferior_izq_txt2;
-                } 
-                ?>
-              </h3>
-            </a>
+            <?php if ($language->language == 'en') { ?>
+              <a href="<?php print $derecho_inferior_izq_link_ingles; ?>">
+                <h4>
+                  <?php if ($language->language == 'en') {
+                    print $derecho_inferior_izq_txt1_ingles;
+                  } elseif ($language->language  != 'en') {
+                    print $derecho_inferior_izq_txt1;
+                  } 
+                  ?>
+                </h4>
+                <h3 class="h2">
+                  <?php if ($language->language == 'en') {
+                    print $derecho_inferior_izq_txt2_ingles;
+                  } elseif ($language->language  != 'en') {
+                    print $derecho_inferior_izq_txt2;
+                  } 
+                  ?>
+                </h3>
+              </a>
+            <?php } elseif ($language->language  != 'en') { ?>
+              <a href="<?php print $derecho_inferior_izq_link; ?>">
+                <h4>
+                  <?php if ($language->language == 'en') {
+                    print $derecho_inferior_izq_txt1_ingles;
+                  } elseif ($language->language  != 'en') {
+                    print $derecho_inferior_izq_txt1;
+                  } 
+                  ?>
+                </h4>
+                <h3 class="h2">
+                  <?php if ($language->language == 'en') {
+                    print $derecho_inferior_izq_txt2_ingles;
+                  } elseif ($language->language  != 'en') {
+                    print $derecho_inferior_izq_txt2;
+                  } 
+                  ?>
+                </h3>
+              </a>
+            <?php } ?>
           </div>
         </div>
       	<?php if ($language->language == 'en') { ?>
@@ -149,24 +212,45 @@
         <?php } ?> 		      		        
           <div class="pic" style="background-image: url(sites/default/files/<?php print $derecho_inferior_der_img; ?>);"></div>
           <div class="overlay">
-            <a href="#">
-              <h4>
-                <?php if ($language->language == 'en') {
-                  print $derecho_inferior_der_txt1_ingles;
-                } elseif ($language->language  != 'en') {
-                  print $derecho_inferior_der_txt1;
-                } 
-                ?>
-              </h4>
-              <h3 class="h2">
-                <?php if ($language->language == 'en') {
-                  print $derecho_inferior_der_txt2_ingles;
-                } elseif ($language->language  != 'en') {
-                  print $derecho_inferior_der_txt2;
-                } 
-                ?>
-              </h3>
-            </a>
+            <?php if ($language->language == 'en') { ?>
+              <a href="<?php print $derecho_inferior_der_link_ingles; ?>">
+                <h4>
+                  <?php if ($language->language == 'en') {
+                    print $derecho_inferior_der_txt1_ingles;
+                  } elseif ($language->language  != 'en') {
+                    print $derecho_inferior_der_txt1;
+                  } 
+                  ?>
+                </h4>
+                <h3 class="h2">
+                  <?php if ($language->language == 'en') {
+                    print $derecho_inferior_der_txt2_ingles;
+                  } elseif ($language->language  != 'en') {
+                    print $derecho_inferior_der_txt2;
+                  } 
+                  ?>
+                </h3>
+              </a>
+            <?php } elseif ($language->language  != 'en') { ?>
+              <a href="<?php print $derecho_inferior_der_link; ?>">
+                <h4>
+                  <?php if ($language->language == 'en') {
+                    print $derecho_inferior_der_txt1_ingles;
+                  } elseif ($language->language  != 'en') {
+                    print $derecho_inferior_der_txt1;
+                  } 
+                  ?>
+                </h4>
+                <h3 class="h2">
+                  <?php if ($language->language == 'en') {
+                    print $derecho_inferior_der_txt2_ingles;
+                  } elseif ($language->language  != 'en') {
+                    print $derecho_inferior_der_txt2;
+                  } 
+                  ?>
+                </h3>
+              </a>
+            <?php } ?>  
           </div>
         </div>
       </div>

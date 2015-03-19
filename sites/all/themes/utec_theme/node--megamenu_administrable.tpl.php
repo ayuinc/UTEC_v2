@@ -341,7 +341,7 @@
 							<?php endif ?>													
 						</li>						
 						<li>
-							<a href="http://utecventures.com/" target="_blank"  class="atm-menu-secundario"><span>Utec</span>Ventures</a>
+							<a href="http://utecventures.com/" target="_blank" rel="nofollow" class="atm-menu-secundario"><span>Utec</span>Ventures</a>
 						</li>
 						<!--<li>
 							<a href="#" class="btn btn-primary btn-custom bold">Postular</a>
@@ -722,7 +722,7 @@
 							<?php endif ?>
 						</li>
 						<li>
-							<a href="http://escuela-edp.utec.edu.pe/" class="btn btn-primary btn-custom bold atm-menu-secundario" target="_blank"><?php print t('Contact us') ?></a>
+							<a href="http://escuela-edp.utec.edu.pe/" rel="nofollow" class="btn btn-primary btn-custom bold atm-menu-secundario" target="_blank"><?php print t('Contact us') ?></a>
 						</li>
 					</ul>
 				</div>
