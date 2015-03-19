@@ -84,8 +84,9 @@
 				<div class="logo pv-21">
 					<?php if ($language->language == 'en'): ?>
 						<a href="/en" class="atm-logo"><img src="/<?php print $theme_path; ?>/assets/img/logo_vertical_UTEC-2015.png" alt="Logo UTEC" width="149" height="auto"></a>	
-					<?php endif ?>
+					<?php elseif ($language->language == 'es'): ?>
 						<a href="/" class="atm-logo"><img src="/<?php print $theme_path; ?>/assets/img/logo_vertical_UTEC-2015.png" alt="Logo UTEC" width="149" height="auto"></a>	
+					<?php endif ?>	
 				</div>
 			</div>
 			<div class="left">
