@@ -35,7 +35,7 @@
 		<?php endif; ?>	
 	</div>
 	<div>
-		<h3 class="bold text-gray"><a href="<?php print $path; ?>" class="banner-titulo"><?php print $titulo ?></a></h3>
+		<h2 class="bold text-gray"><a href="<?php print $path; ?>" class="banner-titulo"><?php print $titulo ?></a></h2>
 		<p><?php print $sub_titulo ?></p>
 	</div>
 </li>

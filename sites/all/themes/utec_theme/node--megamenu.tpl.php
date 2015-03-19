@@ -82,7 +82,10 @@
 		<div class="container">
 			<div class="left">
 				<div class="logo pv-21">
-					<a href="/" class="atm-logo"><img src="/<?php print $theme_path; ?>/assets/img/logo_vertical_UTEC-2015.png" alt="Logo UTEC" width="149" height="auto"></a>
+					<?php elseif ($language->language == 'en'): ?>
+						<a href="/en" class="atm-logo"><img src="/<?php print $theme_path; ?>/assets/img/logo_vertical_UTEC-2015.png" alt="Logo UTEC" width="149" height="auto"></a>	
+					<?php endif ?>
+						<a href="/" class="atm-logo"><img src="/<?php print $theme_path; ?>/assets/img/logo_vertical_UTEC-2015.png" alt="Logo UTEC" width="149" height="auto"></a>	
 				</div>
 			</div>
 			<div class="left">
@@ -228,7 +231,7 @@
 							<?php endif ?>													
 						</li>						
 						<li>
-							<a href="http://utecventures.com/" target="_blank" ><span>Utec</span>Ventures</a>
+							<a href="http://utecventures.com/" rel="nofollow" target="_blank" ><span>Utec</span>Ventures</a>
 						</li>
 						<!--<li>
 							<a href="#" class="btn btn-primary btn-custom bold">Postular</a>
@@ -256,6 +259,13 @@
 			<div class="nav-display-right">
 				<div>
 					<ul>
+						<li>
+							<?php if ($language->language  != 'en'): ?>
+								<a href="/investigacion" class="atm-menu-secundario"><?php print t('Research') ?></a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/research" class="atm-menu-secundario"><?php print t('Research') ?></a>
+							<?php endif ?>							
+						</li>
 						<li>
 							<?php if ($language->language  != 'en'): ?>
 								<a href="/proyectos" class="atm-menu-secundario"><?php print t('Projects') ?></a>
@@ -630,7 +640,10 @@
 		<div class="container">
 			<div class="left">
 				<div class="logo">
-					<a href="/" class="atm-logo"><img src="/<?php print $theme_path; ?>/assets/img/icon_UTEC.png" alt="Logo UTEC"></a>
+					<?php elseif ($language->language == 'en'): ?>
+						<a href="/en" class="atm-logo"><img src="/<?php print $theme_path; ?>/assets/img/icon_UTEC.png" alt="Logo UTEC"></a>
+					<?php endif ?>
+						<a href="/" class="atm-logo"><img src="/<?php print $theme_path; ?>/assets/img/icon_UTEC.png" alt="Logo UTEC"></a>
 				</div>
 			</div>
 			<div class="left hidden-xs hidden-sm">
@@ -773,7 +786,7 @@
 							<?php endif ?>													
 						</li>						
 						<li>
-							<a href="http://utecventures.com/" target="_blank"  class="atm-menu-secundario"><span>Utec</span>Ventures</a>
+							<a href="http://utecventures.com/" rel="nofollow" target="_blank"  class="atm-menu-secundario"><span>Utec</span>Ventures</a>
 						</li>
 						<!--<li>
 							<a href="#" class="btn btn-primary btn-custom bold">Postular</a>

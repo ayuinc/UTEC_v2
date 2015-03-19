@@ -119,7 +119,7 @@
 			<?php endif ?>													
 		</li>						
 		<li>
-			<a href="http://utecventures.com/" target="_blank"  class="atm-menu-secundario-movil"><span>Utec </span>Ventures</a>
+			<a href="http://utecventures.com/" rel="nofollow" target="_blank"  class="atm-menu-secundario-movil"><span>Utec </span>Ventures</a>
 		</li>
 		<!--<li>
 			<a href="#" class="btn btn-primary btn-custom bold">Postular</a>

@@ -13,7 +13,7 @@
 ?>
 
 <div class="container-sm">
-	<h2 class="light"><?php print $titulo ?></h2>
+	<h1 class="light"><?php print $titulo ?></h1>
 	<div class="separator-gray separator-sm"></div>
 	<div class="pv-ch-14 p-ch-gray mb-42">
 		<?php print $cuerpo ?>

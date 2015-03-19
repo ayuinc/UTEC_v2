@@ -48,7 +48,7 @@
               <li><a href="/<?php print $language->language ?>/campus-and-labs" class="atm-menu-inferior"><small><?php print t('Campus and Labs') ?></small></a></li>
               <li><a href="/<?php print $language->language ?>/work-at-utec" class="atm-menu-inferior"><small><?php print t('Work at UTEC') ?></small></a></li>
               <li><a href="/<?php print $language->language ?>/utec-garage-open-platform-for-innovation" class="atm-menu-inferior"><small><?php print t('UTEC Garage') ?></small></a></li>
-              <li><a href="http://utecventures.com/" target="_blank" class="atm-menu-inferior"><small><?php print t('UTEC Ventures') ?></small></a></li>
+              <li><a href="http://utecventures.com/" rel="nofollow" target="_blank" class="atm-menu-inferior"><small><?php print t('UTEC Ventures') ?></small></a></li>
               <li><a href="/<?php print $language->language ?>/sitemap" class="atm-menu-inferior"><small><?php print t('Sitemap') ?></small></a></li>
             <?php elseif ($language->language != 'en'): ?>
               <li class="title text-gray-lighter"><?php print t('We are UTEC') ?></li>
@@ -63,7 +63,7 @@
               <li><a href="/campus-y-laboratorios" class="atm-menu-inferior"><small><?php print t('Campus and Labs') ?></small></a></li>
               <li><a href="/trabaja-en-utec" class="atm-menu-inferior"><small><?php print t('Work at UTEC') ?></small></a></li>
               <li><a href="/utec-garage" class="atm-menu-inferior"><small><?php print t('UTEC Garage') ?></small></a></li>
-              <li><a href="http://utecventures.com/" target="_blank" class="atm-menu-inferior"><small><?php print t('UTEC Ventures') ?></small></a></li>
+              <li><a href="http://utecventures.com/" rel="nofollow" target="_blank" class="atm-menu-inferior"><small><?php print t('UTEC Ventures') ?></small></a></li>
               <li><a href="/sitemap" class="atm-menu-inferior"><small><?php print t('Sitemap') ?></small></a></li>
             <?php endif ?>
           </ul>
@@ -96,7 +96,7 @@
             <!--<li><a href="#"><small>Publicaciones</small></a></li>
             <li><a href="#"><small>Consultorías</small></a></li>-->
             <li><a href="/<?php print $language->language ?>/companies" class="atm-menu-inferior"><small><?php print t('Companies and Clients') ?></small></a></li>
-            <li><a href="/<?php print $language->language ?>/contact" class="atm-menu-inferior"><small><?php print t('Contact us') ?></small></a></li>
+            <li><a href="/<?php print $language->language ?>/research/contact" class="atm-menu-inferior"><small><?php print t('Contact us') ?></small></a></li>
 						<?php endif ?>
           </ul>
         </li>

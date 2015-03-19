@@ -122,9 +122,9 @@
 						<?php endif  ?>
 						<?php 
 				      if ($language->language == 'en') {
-				        $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/profesores/'.$profesor_id, $language->language); 
+				        $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/67/profesor-edp/'.$profesor_id, $language->language); 
 				      }else
-				        $profesor_url = "/" . drupal_get_path_alias('page/30/profesores/'.$profesor_id, $language->language); 
+				        $profesor_url = "/" . drupal_get_path_alias('page/67/profesor-edp/'.$profesor_id, $language->language); 
 				    ?> 
 						<li class="pl-21 text-gray">
 							<div class="mb-7">
