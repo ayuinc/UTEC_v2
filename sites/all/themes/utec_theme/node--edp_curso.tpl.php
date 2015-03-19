@@ -128,7 +128,7 @@
 				    ?> 
 						<li class="pl-21 text-gray">
 							<div class="mb-7">
-								<a href="/user/<?php print $profesor_id ?>" class="thin h3 text-hover-primary"><?php print $profesor_name ?></a>
+								<a href="<?php print $profesor_url ?>" class="thin h3 text-hover-primary"><?php print $profesor_name ?></a>
 								<?php if ($language->language != 'en'): ?>
 								<span><?php print $profesor_cargo ?></span>
 								<?php elseif ($language->language == 'en'): ?>
