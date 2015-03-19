@@ -68,33 +68,16 @@
             <?php endif ?>
           </ul>
         </li>
-        <!--<li>
-          <ul>
-            <li class="title">Vive Utec</li>
-            <li><a href="#" class="atm-menu-inferior"><small>Vida</small><small>Estudiantil</small></a></li>
-            <li><a href="#" class="atm-menu-inferior"><small>Campus &amp;</small><small>Laboratorios</small></a></li>
-            <li><a href="#" class="atm-menu-inferior"><small>Ingenio en</small><small>Acción</small></a></li>
-            <li><a href="#" class="atm-menu-inferior"><small>UTEC</small><small>Ventures</small></a></li>
-            <li><a href="#" class="atm-menu-inferior"><small>Blog &amp;</small><small>YouTube</small></a></li>
-            <li><a href="#" class="atm-menu-inferior"><small>Calendario</small><small>Académico</small></a></li>
-          </ul>
-        </li>-->
         <li>
           <ul>
 	          <?php if ($language->language != 'en'): ?>
             <li class="title text-gray-lighter"><?php print t('Research') ?></li>
             <li><a href="/proyectos" class="atm-menu-inferior"><small><?php print t('Projects') ?></small></a></li>
-            <!-- <li><a href="/publicaciones" class="atm-menu-inferior"><small><?php print t('Publications') ?></small></a></li> -->
-            <!--<li><a href="#"><small>Publicaciones</small></a></li>
-            <li><a href="#"><small>Consultorías</small></a></li>-->
             <li><a href="/empresas-y-clientes" class="atm-menu-inferior"><small><?php print t('Companies and Clients') ?></small></a></li>
             <li><a href="/investigacion/contacto" class="atm-menu-inferior"><small><?php print t('Contact us') ?></small></a></li>
 						<?php elseif ($language->language == 'en'): ?>
             <li class="title text-gray-lighter"><?php print t('Research') ?></li>
             <li><a href="/<?php print $language->language ?>/projects" class="atm-menu-inferior"><small><?php print t('Projects') ?></small></a></li>
-            <!-- <li><a href="/<?php print $language->language ?>/publications" class="atm-menu-inferior"><small><?php print t('Publications') ?></small></a></li> -->
-            <!--<li><a href="#"><small>Publicaciones</small></a></li>
-            <li><a href="#"><small>Consultorías</small></a></li>-->
             <li><a href="/<?php print $language->language ?>/companies" class="atm-menu-inferior"><small><?php print t('Companies and Clients') ?></small></a></li>
             <li><a href="/<?php print $language->language ?>/research/contact" class="atm-menu-inferior"><small><?php print t('Contact us') ?></small></a></li>
 						<?php endif ?>
@@ -163,16 +146,13 @@
             <li><a href="/<?php print $language->language ?>/executive-education/calendar" class="atm-menu-inferior"><small><?php print t('Calendar') ?></small></a></li>
             <li><a href="/<?php print $language->language ?>/executive-education/inhouse-courses" class="atm-menu-inferior"><small>Inhouse Courses</small></a></li>
             <li><a href="/<?php print $language->language ?>/executive-education/diploma" class="atm-menu-inferior"><small>Diploma</small></a></li>
-            <!--<li><a href="/convenios" class="atm-menu-inferior"><small>Cursos Adoc</small></a></li>-->
             <?php elseif ($language->language != 'en'): ?>
             
-            <!--<li><a href="/edp/cursos/cursos-online" class="atm-menu-inferior"><small>Cursos Online</small></a></li>-->
             <li><a href="/educacion-ejecutiva" class="atm-menu-inferior"><small><?php print t('Executive Education') ?></small></a></li>
             <li><a href="/educacion-ejecutiva/cursos-cortos" class="atm-menu-inferior"><small><?php print t('Short Courses') ?></small></a></li>
             <li><a href="/educacion-ejecutiva/calendario" class="atm-menu-inferior"><small><?php print t('Calendar') ?></small></a></li>
             <li><a href="/educacion-ejecutiva/cursos-inhouse" class="atm-menu-inferior"><small>Cursos Inhouse</a></li>
             <li><a href="/educacion-ejecutiva/diplomados" class="atm-menu-inferior"><small>Diplomados</small></a></li>
-            <!--<li><a href="/convenios" class="atm-menu-inferior"><small>Cursos Adoc</small></a></li>-->  
             <?php endif ?>
           </ul>
         </li>                
@@ -186,12 +166,14 @@
 				<span><strong><?php print t('P.') ?></strong>(511) 230-5020 - (511) 373 1000 - (511) 354-0070</span>
 				<span><strong><?php print t('W.') ?></strong>www.utec.edu.pe</span>
 				<span><strong><?php print t('C.') ?></strong><a href="mailto:informes@utec.edu.pe" class="text-gray-dark">informes@utec.edu.pe</a></span>
-				<!-- <a rel="nofollow" href="<?php //if ($language->language != 'en'): ?>/libro-de-reclamaciones <?php //else : ?>/en/book-of-complaints <?php //endif; ?>" class="btn btn-outline btn-xs btn-gray-dark mt-7-xs"><i class="icon-footer-book"></i></a> -->
-				<a rel="nofollow" href="https://www.facebook.com/utecuniversidad" target="_blank" class="atm-sociales btn btn-outline btn-xs btn-gray-dark mt-7-xs btn-rrss"><i class="icon-footer-facebook"></i></a>
-				<a rel="nofollow" href="https://twitter.com/utecedu" target="_blank" class="atm-sociales btn btn-outline btn-xs btn-gray-dark mt-7-xs btn-rrss"><i class="icon-footer-twitter"></i></a>
-        <a rel="nofollow" href="https://www.linkedin.com/company/universidad-de-ingenier%C3%ADa-y-tecnolog%C3%ADa" target="_blank"  class="atm-sociales btn btn-outline btn-xs btn-gray-dark mt-7-xs btn-rrss"><i class="icon-footer-linkedin"></i></a>
-        <a rel="nofollow" href="http://instagram.com/utecedu" target="_blank"  class="atm-sociales btn btn-outline btn-xs btn-gray-dark mt-7-xs btn-rrss"><i class="icon-footer-instagram"></i></a>
-        <a rel="nofollow" href="https://www.youtube.com/user/universidadutec   " target="_blank"  class="atm-sociales btn btn-outline btn-xs btn-gray-dark mt-7-xs btn-rrss"><i class="icon-footer-youtube"></i></a>
+        <div class="inline-block">
+  				<!-- <a rel="nofollow" href="<?php //if ($language->language != 'en'): ?>/libro-de-reclamaciones <?php //else : ?>/en/book-of-complaints <?php //endif; ?>" class="btn btn-outline btn-xs btn-gray-dark mt-7-xs"><i class="icon-footer-book"></i></a> -->
+  				<a rel="nofollow" href="https://www.facebook.com/utecuniversidad" target="_blank" class="atm-sociales btn btn-outline btn-xs btn-gray-dark mt-7-xs btn-rrss"><i class="icon-footer-facebook"></i></a>
+  				<a rel="nofollow" href="https://twitter.com/utecedu" target="_blank" class="atm-sociales btn btn-outline btn-xs btn-gray-dark mt-7-xs btn-rrss"><i class="icon-footer-twitter"></i></a>
+          <a rel="nofollow" href="https://www.linkedin.com/company/universidad-de-ingenier%C3%ADa-y-tecnolog%C3%ADa" target="_blank"  class="atm-sociales btn btn-outline btn-xs btn-gray-dark mt-7-xs btn-rrss"><i class="icon-footer-linkedin"></i></a>
+          <a rel="nofollow" href="http://instagram.com/utecedu" target="_blank"  class="atm-sociales btn btn-outline btn-xs btn-gray-dark mt-7-xs btn-rrss"><i class="icon-footer-instagram"></i></a>
+          <a rel="nofollow" href="https://www.youtube.com/user/universidadutec   " target="_blank"  class="atm-sociales btn btn-outline btn-xs btn-gray-dark mt-7-xs btn-rrss"><i class="icon-footer-youtube"></i></a>
+        </div>
 			</nav>
 		</div>
 	</div>
