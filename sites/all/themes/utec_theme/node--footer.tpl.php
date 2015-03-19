@@ -151,7 +151,7 @@
             <li><a href="/educacion-ejecutiva" class="atm-menu-inferior"><small><?php print t('Executive Education') ?></small></a></li>
             <li><a href="/educacion-ejecutiva/cursos-cortos" class="atm-menu-inferior"><small><?php print t('Short Courses') ?></small></a></li>
             <li><a href="/educacion-ejecutiva/calendario" class="atm-menu-inferior"><small><?php print t('Calendar') ?></small></a></li>
-            <li><a href="/educacion-ejecutiva/cursos-inhouse" class="atm-menu-inferior"><small>Cursos Inhouse</a></li>
+            <li><a href="/educacion-ejecutiva/cursos-inhouse" class="atm-menu-inferior"><small>Cursos Inhouse</small></a></li>
             <li><a href="/educacion-ejecutiva/diplomados" class="atm-menu-inferior"><small>Diplomados</small></a></li>
             <?php endif ?>
           </ul>

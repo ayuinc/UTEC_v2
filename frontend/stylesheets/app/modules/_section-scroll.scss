@@ -67,5 +67,13 @@
 			padding: $container-fluid;
 			background-color: rgba(white, 0.9);
 		}
+		.overlay {
+			&.flex-middle {
+				@include flex-middle-end;
+			}
+			.text-white {
+				color: $gray-darker !important;
+			}
+		}
 	}
 }
