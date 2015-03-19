@@ -642,8 +642,9 @@
 				<div class="logo">
 					<?php if ($language->language == 'en'): ?>
 						<a href="/en" class="atm-logo"><img src="/<?php print $theme_path; ?>/assets/img/icon_UTEC.png" alt="Logo UTEC"></a>
-					<?php endif ?>
+					<?php elseif ($language->language == 'es'): ?>
 						<a href="/" class="atm-logo"><img src="/<?php print $theme_path; ?>/assets/img/icon_UTEC.png" alt="Logo UTEC"></a>
+					<?php endif ?>
 				</div>
 			</div>
 			<div class="left hidden-xs hidden-sm">
