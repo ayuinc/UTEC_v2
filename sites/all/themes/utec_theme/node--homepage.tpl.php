@@ -16,7 +16,7 @@
 			<i class="icon-arrows-down bg-primary text-white"></i>
 		</a>
 	</div> -->
-	<?php if ($video_name != null) : ?>
+	<?php if ($video_name != '') : ?>
 	<video
 		id="videocover"
 		autoplay
@@ -31,7 +31,7 @@
     <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
   </video>
 	<?php endif; ?>
-	<?php if ($imagen != null and $video_name == null) : ?>
+	<?php if ($imagen != '' and $video_name == '') : ?>
   <div class="home-image">
   	<img class="img-responsive" src="<?php print file_create_url($imagen); ?>" alt="<?php print $title ?>" />
   </div>
