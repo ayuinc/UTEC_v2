@@ -1,4 +1,6 @@
 <?php $video_name = $node->field_video['und']['0']['filename']; ?>
+<?php $imagen = $node->field_imagen['und']['0']['uri']; ?>
+
 
 <div class="hero-unit video-bg "> 
 	<!-- <div class="overlay"></div> -->
@@ -14,6 +16,7 @@
 			<i class="icon-arrows-down bg-primary text-white"></i>
 		</a>
 	</div> -->
+	<?php if ($video_name != null) : ?>
 	<video
 		id="videocover"
 		autoplay
@@ -27,6 +30,12 @@
     <source src="/sites/all/themes/utec_theme/assets/video/UTEC_home.ogg" type='video/ogg' />
     <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
   </video>
+	<?php endif; ?>
+	<?php if ($imagen != null and $video_name == null) : ?>
+  <div class="home-image">
+  	<img class="img-responsive" src="<?php print file_create_url($imagen); ?>" alt="<?php print $title ?>" />
+  </div>
+	<?php endif; ?>
   <div class="video-placeholder visible-xs-block" style="background-image: url('/sites/all/themes/utec_theme/assets/img/project-bg-1.JPG');"></div>
   <div class="overlay flex-middle-end text-center text-white">
   	<div class="container relative home-introduccion normalize-text pv-70">
