@@ -34,11 +34,11 @@ $imagen = $node->field_image['und']['0']['uri'];
     <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
   </video>
 	<?php endif; ?>
-	<?php //if ($imagen != '' && $video_name == '') : ?>
+	<?php if ($imagen != '' && $video_name == '') : ?>
   <div class="home-image">
   	<img class="img-responsive" src="<?php print file_create_url($imagen); ?>" alt="<?php print $title ?>" />
   </div>
-	<?php //endif; ?>
+	<?php endif; ?>
   <div class="video-placeholder visible-xs-block" style="background-image: url('/sites/all/themes/utec_theme/assets/img/project-bg-1.JPG');"></div>
   <div class="overlay flex-middle-end text-center text-white">
   	<div class="container relative home-introduccion normalize-text pv-70">
