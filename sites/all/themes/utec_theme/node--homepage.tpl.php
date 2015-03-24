@@ -23,21 +23,21 @@ $texto2 = $node->field_texo['und']['1']['value'];
 	</div> -->
 	
 		<?php if ($video_name != '') : ?>
-		<video
-			id="videocover"
-			autoplay
-			loop
-			muted	
-	    class="video-js videocover vjs-default-skin"
-	    controls
-	    preload="auto">
-	    <a href="<?php print $link; ?>" target="_blank">
-		    <source src="/sites/all/themes/utec_theme/assets/video/UTEC_home.webm" type='video/webm' />
-		    <source src="/sites/all/themes/utec_theme/assets/video/UTEC_home.mp4" type='video/mp4' />
-		    <source src="/sites/all/themes/utec_theme/assets/video/UTEC_home.ogg" type='video/ogg' />
-		    <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
-	  	</a>
-	  </video>
+	  <a href="<?php print $link; ?>" target="_blank">
+			<video
+				id="videocover"
+				autoplay
+				loop
+				muted	
+		    class="video-js videocover vjs-default-skin"
+		    controls
+		    preload="auto">
+			    <source src="/sites/all/themes/utec_theme/assets/video/UTEC_home.webm" type='video/webm' />
+			    <source src="/sites/all/themes/utec_theme/assets/video/UTEC_home.mp4" type='video/mp4' />
+			    <source src="/sites/all/themes/utec_theme/assets/video/UTEC_home.ogg" type='video/ogg' />
+			    <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+		  </video>
+  	</a>
 		<?php endif; ?>
 		<?php if ($imagen != '' && $video_name == '') : ?>
 	  <div class="home-image">
