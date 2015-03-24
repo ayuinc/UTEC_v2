@@ -2,8 +2,8 @@
 $video_name = $node->field_video['und']['0']['filename']; 
 $imagen = $node->field_image['und']['0']['uri']; 
 $link = $node->field_link['und']['0']['value'];
-$textos = $node->field_texo;
-print_r($textos);
+$texto1 = $node->field_texo['und']['0']['value'];
+$texto2 = $node->field_texo['und']['1']['value'];
 ?>
 
 
@@ -47,10 +47,8 @@ print_r($textos);
 	  	<div class="container relative home-introduccion normalize-text pv-70">
 				<!-- <h3 class="thin lead h1"><?php //print t('UTEC, the open platform to innovate') ?></h3>
 				<h4 class="thin pv-7 uppercase"><?php //print t('- DISCOVER IT -') ?></h4> -->
-				<?php //foreach ($textos as $texto): ?>
-					<h3 class="thin lead h1"><?php print t('UTEC, the open platform to innovate') ?></h3>
-					<h4 class="thin pv-7 uppercase"><?php print t('- DISCOVER IT -') ?></h4>
-				<?php //endforeach ?>
+				<h3 class="thin lead h1"><?php print $texto1; ?></h3>
+				<h4 class="thin pv-7 uppercase"><?php print $texto2; ?></h4>
 			</div>
 	  </div>
   </a>
