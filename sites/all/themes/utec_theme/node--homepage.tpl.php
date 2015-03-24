@@ -1,7 +1,7 @@
 <?php 
 $video_name = $node->field_video['und']['0']['filename']; 
-$imagen = $node->field_imagen['und']['0']['uri']; 
-die(print_r($node->field_imagen));
+$imagen = $node->field_image['und']['0']['uri']; 
+
 ?>
 
 
