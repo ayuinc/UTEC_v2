@@ -1,5 +1,8 @@
-<?php $video_name = $node->field_video['und']['0']['filename']; ?>
-<?php $imagen = $node->field_imagen['und']['0']['uri']; ?>
+<?php 
+$video_name = $node->field_video['und']['0']['filename']; 
+$imagen = $node->field_imagen['und']['0']['uri']; 
+die(print_r($video_name));
+?>
 
 
 <div class="hero-unit video-bg "> 
