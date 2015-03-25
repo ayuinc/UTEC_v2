@@ -11,6 +11,7 @@
 		# code...
 	}
 	kpr($fields_esp);
+	kpr($fields_ing);
 	//print_r($menus);
 ?>
 
