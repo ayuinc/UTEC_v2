@@ -145,9 +145,6 @@
 	    
 	    $titulo_ing = $field_ing[$num_ing]->field_titulo_menu['und'][0]['value'];
 	    $cuerpo_ing = $field_ing[$num_ing]->field_cuerpo['und'][0]['value'];
-	    
-	    kpr($num_ing);
-	    kpr($field_ing);
 	  ?>
 	<div class="nav-display" id="nav-display-<?php print $count; ?>">
 		<div class="container relative">
