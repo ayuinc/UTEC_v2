@@ -6,12 +6,9 @@
 	$menus = menu_tree_output(i18n_menu_localize_tree($tree));
 	$fields_esp = $node->field_menu_content_esp['und'];
 	$fields_ing = $node->field_menu_content_ing['und'];
-	$all_fields = array();
-	foreach ($variable as $key => $value) {
-		# code...
-	}
-	kpr($fields_esp);
-	kpr($fields_ing);
+
+	// kpr($fields_esp);
+	// kpr($fields_ing);
 	//print_r($menus);
 ?>
 
@@ -135,16 +132,21 @@
 		</div>
 	</div>
 	<?php $count = 1; ?>
-	<?php foreach ($fields_esp as $fid) : ?>
+	<?php foreach ($fields_esp as $index => $fid) : ?>
 	  <?php 
 	    // print_r($fid['value']);
-	    $num = $fid['value'];
-	    $field = entity_load('field_collection_item', array($fid['value']));
-	    kpr($field);
-	    $nombre = $field[$num]->field_nombre['und'][0]['value'];
-	    $nombre_ingles = $field[$num]->field_nombre_ingles['und'][0]['value'];
-	    $link = $field[$num]->field_link_atajo['und'][0]['value'];
-	    $link_ingles = $field[$num]->field_link_atajo_ingles['und'][0]['value'];
+	    $num_esp = $fid['value'];
+		  $num_ing = $fields_esp[$index];
+	    $field_esp = entity_load('field_collection_item', array($num_esp));
+	    $field_ing = entity_load('field_collection_item', array($num_ing));
+
+	    $titulo_esp = $field_esp[$num]->field_titulo_menu['und'][0]['value'];
+	    $cuerpo_esp = $field_esp[$num]->field_cuerpo['und'][0]['value'];
+	    
+	    $titulo_ing = $field[$num]->field_titulo_menu['und'][0]['value'];
+	    $cuerpo_ing = $field[$num]->field_cuerpo['und'][0]['value'];
+	    
+	    // kpr($field);
 	  ?>
 	<div class="nav-display" id="nav-display-<?php print $count; ?>">
 		<div class="container relative">
@@ -153,8 +155,13 @@
 		<div class="container-sm">
 			<div class="nav-display-left">
 				<div>
-						<h3 class="h1"><?php print t('Learn') ?><br><span><?php print t('About') ?></span><?php print t(' Us') ?></h3>
-						<p><?php print t('The university that empowers ingenuity, innovation, and entrepreneurship.') ?></p>
+					<?php if ($language->language == 'es'): ?>
+						<?php print $titulo_esp ?>
+						<?php print $cuerpo_esp ?>
+					<?php elseif ($language->language == 'en'): ?>
+						<?php print $titulo_ing ?>
+						<?php print $cuerpo_ing ?>
+					<?php endif ?>
 				</div>
 			</div>
 			<div class="nav-display-right">
