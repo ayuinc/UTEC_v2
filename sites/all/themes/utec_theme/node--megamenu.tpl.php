@@ -136,7 +136,7 @@
 	  <?php 
 	    // print_r($fid['value']);
 	    $num_esp = $fid['value'];
-		  $num_ing = $fields_ing[$index];
+		  $num_ing = $fields_ing[$index]['value'];
 	    $field_esp = entity_load('field_collection_item', array($num_esp));
 	    $field_ing = entity_load('field_collection_item', array($num_ing));
 
