@@ -162,8 +162,8 @@
 				<div>
 					<?php $count2 = 0; ?>
 					<ul>
+						<?php kpr($menus); ?>
 					<?php foreach ($menus as $menu) :?>
-						<?php kpr($menu); ?>
 						<?php if ($count2 < 6) : ?>
 						<li>
 							
