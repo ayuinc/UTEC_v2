@@ -130,7 +130,7 @@
 		</div>
 	</div>
 	<?php $count = 1; ?>
-	<?php foreach ($fids as $fid) : ?>
+	<?php foreach ($fields_esp as $fid) : ?>
 	  <?php 
 	    // print_r($fid['value']);
 	    $num = $fid['value'];
