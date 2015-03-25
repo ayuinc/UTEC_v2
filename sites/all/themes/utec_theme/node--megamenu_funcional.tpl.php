@@ -4,8 +4,6 @@
 <?php 
 	$tree = menu_tree_all_data('main-menu'); 
 	$menus = menu_tree_output(i18n_menu_localize_tree($tree));
-	$fields_esp = $node->field_menu_content_esp['und'];
-	$fields_ing = $node->field_menu_content_ing['und'];
 	// kpr($menus);
 	//print_r($menus);
 ?>
@@ -61,9 +59,9 @@
 							<li class="pt-7">
 								<a href="/en/contact-us" class="text-gray atm-contacto"><?php print t('Contact us') ?></a>
 							</li>
-							<li class="pt-7">
+							<!-- <li class="pt-7">
 								<a href="/en/in-the-spotlight" class="text-gray atm-blog">Blog</a>
-							</li>
+							</li> -->
 						<?php endif ?>						
 						<li>
 							<?php print block_render('locale', 'language'); ?>
@@ -84,7 +82,11 @@
 		<div class="container">
 			<div class="left">
 				<div class="logo pv-21">
-					<a href="/" class="atm-logo"><img src="/<?php print $theme_path; ?>/assets/img/logo_vertical_UTEC-2015.png" alt="Logo UTEC" width="149" height="auto"></a>
+					<?php if ($language->language == 'en'): ?>
+						<a href="/en" class="atm-logo"><img src="/<?php print $theme_path; ?>/assets/img/logo_vertical_UTEC-2015.png" alt="Logo UTEC" width="149" height="auto"></a>	
+					<?php elseif ($language->language == 'es'): ?>
+						<a href="/" class="atm-logo"><img src="/<?php print $theme_path; ?>/assets/img/logo_vertical_UTEC-2015.png" alt="Logo UTEC" width="149" height="auto"></a>	
+					<?php endif ?>	
 				</div>
 			</div>
 			<div class="left">
@@ -129,37 +131,15 @@
 			</div>
 		</div>
 	</div>
-	<?php $count = 1; ?>
-	<?php foreach ($menus as $menu) :?>
-	<div class="nav-display" id="nav-display-<?php print $count; ?>">
+	<div class="nav-display" id="nav-display-1">
 		<div class="container relative">
 			<a href="#" class="nav-display-close">X</a>
 		</div>
 		<div class="container-sm">
 			<div class="nav-display-left">
 				<div>
-					<?php foreach ($fids as $fid) : ?>
-	          <?php 
-	            // print_r($fid['value']);
-	            $num = $fid['value'];
-	            $field = entity_load('field_collection_item', array($fid['value']));
-	            $nombre = $field[$num]->field_nombre['und'][0]['value'];
-	            $nombre_ingles = $field[$num]->field_nombre_ingles['und'][0]['value'];
-	            $link = $field[$num]->field_link_atajo['und'][0]['value'];
-	            $link_ingles = $field[$num]->field_link_atajo_ingles['und'][0]['value'];
-	          ?>
-	          <li>
-	            <?php if ($language->language == 'en') : ?>
-	              <a href="<?php print $link_ingles ?>"><?php print $nombre_ingles ?></a>
-	            <?php elseif ($language->language != 'en') : ?>
-	              <a href='<?php print $link ?>'><?php print $nombre ?></a>
-	            <?php endif; ?>
-	          </li>
-
-						<h3 class="h1"><?php print t('Learn') ?><br><span><?php print t('About') ?></span><?php print t(' Us') ?></h3>
-						<p><?php print t('The university that empowers ingenuity, innovation, and entrepreneurship.') ?></p>
-	        <?php endforeach; ?>  
-
+					<h3 class="h1"><?php print t('Learn') ?><br><span><?php print t('About') ?></span><?php print t(' Us') ?></h3>
+					<p><?php print t('The university that empowers ingenuity, innovation, and entrepreneurship.') ?></p>
 				</div>
 			</div>
 			<div class="nav-display-right">
@@ -172,6 +152,41 @@
 							<a href="/<?php print $language->language ?>/a-solid-foundation" class="atm-menu-secundario"><?php print t('A Solid Foundation') ?></a>
 							<?php endif ?>
 						</li>
+						<li>
+							<?php if ($language->language != 'en'): ?>
+							<a href="/autoridades" class="atm-menu-secundario"><?php print t('Authorities') ?></a>
+							<?php elseif ($language->language == 'en'): ?>
+							<a href="/<?php print $language->language ?>/authorities" class="atm-menu-secundario"><?php print t('Authorities') ?></a>
+							<?php endif ?>							
+						</li>
+						<li>
+							<?php if ($language->language != 'en'): ?>
+							<a href="/profesores" class="atm-menu-secundario"><?php print t('Faculty') ?></a>
+							<?php elseif ($language->language == 'en'): ?>
+							<a href="/<?php print $language->language ?>/faculty" class="atm-menu-secundario"><?php print t('Faculty') ?></a>
+							<?php endif ?>
+						</li>
+						<li>
+							<?php if ($language->language != 'en'): ?>
+							<a href="/ingenio-en-accion" class="atm-menu-secundario"><span><?php print t('Ingenuity') ?></span><?php print t('in action') ?></a>
+							<?php elseif ($language->language == 'en'): ?>
+							<a href="/<?php print $language->language ?>/ingenuity-in-action" class="atm-menu-secundario"><span><?php print t('Ingenuity') ?></span><?php print t('in action') ?></a>
+							<?php endif ?>							
+						</li>
+						<li>
+							<?php if ($language->language != 'en'): ?>
+								<a href="/metodologia-educativa" class="atm-menu-secundario"><span>Metodología</span>Educativa</a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/teaching-methodology" class="atm-menu-secundario"><span><?php print t('Teaching') ?></span><?php print t('Methodology') ?></a>
+							<?php endif ?>
+						</li>
+						<li>
+							<?php if ($language->language != 'en'): ?>
+								<a href="/noticias" class="atm-menu-secundario"><?php print t('News') ?></a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/news" class="atm-menu-secundario"><?php print t('News') ?></a>
+							<?php endif ?>
+						</li>						
 					</ul> 
 					<ul>
 						<li>
@@ -181,13 +196,441 @@
 								<a href="/<?php print $language->language ?>/events" class="atm-menu-secundario">UTEC Events</a>
 							<?php endif ?>							
 						</li>
+						<li>
+							<?php if ($language->language  != 'en'): ?>
+								<a href="/vida-estudiantil" class="atm-menu-secundario"><span>Vida</span> Estudiantil</a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/student-life" class="atm-menu-secundario"><span>Student</span> Life</a>
+							<?php endif ?>
+						</li>
+						<li>
+							<?php if ($language->language != 'en'): ?>
+								<a href="/campus-y-laboratorios" class="atm-menu-secundario"><span><?php print t('Campus and') ?></span><?php print t('Labs') ?></a>							
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/campus-and-labs" class="atm-menu-secundario"><span><?php print t('Campus and') ?></span><?php print t('Labs') ?></a>
+							<?php endif ?>							
+						</li>
+						<li>
+							<?php if ($language->language  != 'en'): ?>
+								<a href="/trabaja-en-utec" class="atm-menu-secundario"><span><?php print t('Work') ?></span><?php print t('at UTEC') ?></a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/work-at-utec" class="atm-menu-secundario"><span><?php print t('Work') ?></span><?php print t('at UTEC') ?></a>
+							<?php endif ?>						
+						</li>
+						<li>
+							<?php if ($language->language  != 'en'): ?>
+								<a href="/utec-garage" class="atm-menu-secundario"><span>Utec</span> garage</a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/utec-garage-open-platform-for-innovation" class="atm-menu-secundario"><span>Utec</span> garage</a>
+							<?php endif ?>													
+						</li>
+						<li>
+							<?php if ($language->language  != 'en'): ?>
+								<a href="/calendario-academico" class="atm-menu-secundario"><span>Calendario</span> Académico</a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/academic-calendar" class="atm-menu-secundario"><span>Academic</span> Calendar</a>
+							<?php endif ?>													
+						</li>						
+						<li>
+							<a href="http://utecventures.com/" rel="nofollow" target="_blank" ><span>Utec</span>Ventures</a>
+						</li>
+						<!--<li>
+							<a href="#" class="btn btn-primary btn-custom bold">Postular</a>
+						</li>-->
 					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
-	<?php $count++; ?>
-	<?php endforeach; ?>
+	<div class="nav-display" id="nav-display-2">
+		<div class="container relative">
+			<a href="#" class="nav-display-close">X</a>
+		</div>
+		<div class="container-sm">
+			<div class="nav-display-left">
+				<div>
+					<?php if ($language->language == 'en'): ?>
+						<h3 class="h1"><?php print t('Research') ?><br><span></span> <?php print t('Experience') ?></h3>
+					<?php elseif ($language->language != 'en'): ?>
+						<h3 class="h1"><?php print t('Experience') ?><br><span>en </span><?php print t('Research') ?></h3>
+					<?php endif ?>
+					<p><?php print t('The right path to finding better solutions.') ?></p>
+				</div>
+			</div>
+			<div class="nav-display-right">
+				<div>
+					<ul>
+						<li>
+							<?php if ($language->language  != 'en'): ?>
+								<a href="/investigacion" class="atm-menu-secundario"><?php print t('Research') ?></a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/research" class="atm-menu-secundario"><?php print t('Research') ?></a>
+							<?php endif ?>							
+						</li>
+						<li>
+							<?php if ($language->language  != 'en'): ?>
+								<a href="/proyectos" class="atm-menu-secundario"><?php print t('Projects') ?></a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/projects" class="atm-menu-secundario"><?php print t('Projects') ?></a>
+							<?php endif ?>							
+						</li>
+						<!-- <li> -->
+							<?php //if ($language->language  != 'en'): ?>
+								<!-- <a href="/publicaciones" class="atm-menu-secundario"><?php //print t('Publications') ?></a> -->
+							<?php //elseif ($language->language == 'en'): ?>
+								<!-- <a href="/<?php //print $language->language ?>/publications" class="atm-menu-secundario"><?php //print t('Publications') ?></a> -->
+							<?php //endif ?>						
+						<!-- </li> -->
+						<li>
+							<?php if ($language->language  != 'en'): ?>
+								<a href="/empresas-y-clientes" class="atm-menu-secundario"><span><?php print t('Companies') ?></span><?php print t('and clients') ?></a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/companies" class="atm-menu-secundario"><span><?php print t('Companies') ?></span><?php print t('and clients') ?></a>
+							<?php endif ?>								
+						</li>
+						<li>
+							<?php if ($language->language  != 'en'): ?>
+								<a href="/investigacion/contacto" class="atm-menu-secundario"><?php print t('Contact us') ?></a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/research/contact" class="atm-menu-secundario"><?php print t('Contact us') ?></a>
+							<?php endif ?>							
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="nav-display" id="nav-display-3">
+		<div class="container relative">
+			<a href="#" class="nav-display-close">X</a>
+		</div>
+		<div class="container-sm">
+			<div class="nav-display-left">
+				<div>
+					<?php if ($language->language  == 'en'): ?>
+						<h3 class="h1"><?php print t('Our ') ?> <span><?php print t('Academic') ?></span><br><?php print  t('Offer') ?></h3>
+					<?php elseif ($language->language != 'en'): ?>
+						<h3 class="h1">Nuestra <span>Oferta</span><br>Académica</h3>
+					<?php endif ?>
+					<p><?php print t('With our active learning methodology, our students experience engineering from day one.') ?></p>
+				</div>
+			</div>
+			<div class="nav-display-right">
+				<div>
+					<ul>
+						<li>
+							<?php if ($language->language  != 'en'): ?>
+								<a href="/ingenieria-industrial"  class="atm-menu-secundario">
+								<span><?php print t('Engineering') ?></span><?php print t('Industrial') ?>
+								</a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/industrial-engineering"  class="atm-menu-secundario">
+								<span><?php print t('Industrial') ?></span><?php print t('Engineering') ?>
+								</a>
+							<?php endif ?>
+						</li>
+						<li>
+							<?php if ($language->language  != 'en'): ?>
+								<a href="/ingenieria-de-la-energia" class="atm-menu-secundario">
+								<span>Ingeniería</span>de la Energía
+								</a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/energy-engineering" class="atm-menu-secundario">
+								<span>Energy</span>Engineering
+								</a>
+							<?php endif ?>
+						</li>
+						<li>
+							<?php if ($language->language  != 'en'): ?>
+								<a href="/ingenieria-quimica-industrial" class="atm-menu-secundario">
+								<span>Ingeniería</span>Química Industrial
+								</a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/industrial-chemical-engineering" class="atm-menu-secundario">
+								<span><?php print t('Industrial Chemical') ?></span><?php print t('Engineering') ?>
+								</a>
+							<?php endif ?>
+						</li>
+						<li>
+							<?php if ($language->language  != 'en'): ?>
+								<a href="/ingenieria-mecanica"  class="atm-menu-secundario">
+								<span><?php print t('Engineering') ?></span><?php print t('Mechanical') ?>
+								</a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/mechanical-engineering"  class="atm-menu-secundario">
+								<span><?php print t('Mechanical') ?></span><?php print t('Engineering') ?>
+								</a>
+							<?php endif ?>
+							</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<?php if ($language->language  != 'en'): ?>
+								<a href="/ingenieria-electronica"  class="atm-menu-secundario">
+								<span><?php print t('Engineering') ?></span><?php print t('Electronic') ?>
+								</a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/electronic-engineering"  class="atm-menu-secundario">
+								<span><?php print t('Electronic') ?></span><?php print t('Engineering') ?>
+								</a>
+							<?php endif ?>
+						</li>
+						<!--<li>
+							<a href="/carreras/menciones">Menciones</a>
+						</li>
+						<li>
+							<a href="/carreras/escuela-de-desarrollo"><span>Escuela de</span>Desarollo</a>
+						</li>-->
+						<li>
+							<?php if ($language->language  != 'en'): ?>
+								<a href="/modalidades-de-admision" class="btn btn-primary btn-custom bold atm-menu-secundario"><?php print t('Apply') ?></a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/methods-of-admission" class="btn btn-primary btn-custom bold atm-menu-secundario"><?php print t('Apply') ?></a>
+							<?php endif ?>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="nav-display" id="nav-display-4">
+		<div class="container relative">
+			<a href="#" class="nav-display-close">X</a>
+		</div>
+		<div class="container-sm">
+			<div class="nav-display-left">
+				<div>
+					<?php if ($language->language != 'en'): ?>
+						<h3 class="h1">Ingenio<br><span>vocación</span> y<br><span>aspiración</span><br>a la excelencia</h3>
+					<?php elseif ($language->language == 'en'): ?>
+						<h3 class="h1">Ingenuity,<br><span>dedication,</span> and<br><span>the pursuit</span><br>of excellence</h3>
+					<?php endif ?>
+					<p><?php print t("Our students' DNA: achieving highest academic achievement and personal development.") ?></p>
+				</div>
+			</div>
+			<div class="nav-display-right">
+				<div>
+					<ul>
+						<li>
+							<?php if ($language->language != 'en'): ?>
+								<a href="/modalidades-de-admision" class="atm-menu-secundario">
+								<span>Modalidades</span>de admisión
+								</a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/methods-of-admission" class="atm-menu-secundario">
+								Admissions
+								</a>
+							<?php endif ?>
+						</li>
+						<li>
+							<?php if ($language->language != 'en'): ?>
+								<a href="/charlas-informativas" class="atm-menu-secundario">
+								<span>Charlas</span>informativas
+								</a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/informative-talks" class="atm-menu-secundario">
+								<span>Informative</span>talks
+								</a>
+							<?php endif ?>
+						</li>
+						<li>
+							
+								<?php if ($language->language != 'en'): ?>
+									<a href="/informacion-economica" class="atm-menu-secundario">
+									<span>Información</span>económica
+									</a>
+								<?php elseif ($language->language == 'en'): ?>
+									<a href="/<?php print $language->language ?>/financial-information" class="atm-menu-secundario">
+									<span>Financial</span>information
+									</a>
+								<?php endif ?>
+							</a>
+						</li>
+						<li>
+							<?php if ($language->language != 'en'): ?>
+								<a href="/modalidades-de-admision" class="btn btn-primary btn-custom bold atm-menu-secundario"><?php print t('Apply') ?></a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/methods-of-admission" class="btn btn-primary btn-custom bold atm-menu-secundario"><?php print t('Apply') ?></a>
+							<?php endif ?>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<?php if ($language->language != 'en'): ?>
+								<a href="/calendario-de-admision" class="atm-menu-secundario">
+								<span>Calendario de</span>Admisión</a>
+								</a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/admissions-calendar" class="atm-menu-secundario">
+								<span>Admissions</span>Calendar
+								</a>
+							<?php endif ?>
+						</li>
+						<li>
+							<?php if ($language->language != 'en'): ?>
+								<a href="/visita-utec" class="atm-menu-secundario"><span><?php print t('Visit') ?></span>UTEC</a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/visit-utec" class="atm-menu-secundario"><span><?php print t('Visit') ?></span>UTEC</a>
+							<?php endif ?>
+						</li>
+						<li>
+							<?php if ($language->language != 'en'): ?>
+								<a href="/orientacion-vocacional" class="atm-menu-secundario">
+								<span>Orientación</span>Vocacional
+								</a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/career-guidance-and-orientation" class="atm-menu-secundario">
+								Guidance
+								</a>
+							<?php endif ?>
+						</li>
+						<li>
+							<?php if ($language->language != 'en'): ?>
+								<a href="/preguntas-frecuentes" class="atm-menu-secundario">
+								<span>Preguntas</span>Frecuentes
+								</a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/frequently-asked-questions" class="atm-menu-secundario">
+								<span>Frequently Asked</span>Questions
+								</a>
+							<?php endif ?>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="nav-display" id="nav-display-5">
+		<div class="container relative">
+			<a href="#" class="nav-display-close">X</a>
+		</div>
+		<div class="container-sm">
+			<div class="nav-display-left">
+				<div>
+					<?php if ($language->language != 'en'): ?>
+						<h3 class="h1"><span>Convenios y alianzas</span><br>internacionales</h3>
+						<p>Generamos conexiones con las mejores instituciones educativas del mundo.</p>
+					<?php elseif ($language->language == 'en'): ?>
+						<h3 class="h1"><span>International</span><br>alliances</h3>
+						<p>We've built strong relationships with the best educational institutions in the world.</p>
+					<?php endif ?>
+				</div>
+			</div>
+			<div class="nav-display-right">
+				<div>
+					<ul>
+						<li>
+							<?php if ($language->language != 'en'): ?>
+								<a href="/convenios-de-intercambio" class="atm-menu-secundario">
+								<span>Convenios de</span>Intercambio
+								</a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/alliances" class="atm-menu-secundario">
+								Alliances
+								</a>
+							<?php endif ?>							
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="nav-display" id="nav-display-6">
+		<div class="container relative">
+			<a href="#" class="nav-display-close">X</a>
+		</div>
+		<div class="container-sm">
+			<div class="nav-display-left">
+				<div>
+					<?php if ($language->language == 'en'): ?>
+						<h3 class="h1"><span>Executive</span><br>Education</h3>
+						<p>Strengthen your skills and achieve professional success.</p>
+					<?php elseif ($language->language != 'en'): ?>
+						<h3 class="h1"><span>Educación</span><br>Ejecutiva</h3>
+						<p>Potencia tus habilidades y alcanza el éxito profesional a través de nuestros cursos.</p>
+					<?php endif ?>
+				</div>
+			</div>
+			<div class="nav-display-right">
+				<div>
+					<ul>
+						<li>
+							<?php if ($language->language != 'en'): ?>
+							<a href="/educacion-ejecutiva" class="atm-menu-secundario"><?php print t('Executive Education') ?></a>
+							<?php elseif ($language->language == 'en'): ?>
+							<a href="/<?php print $language->language ?>/executive-education" class="atm-menu-secundario"><?php print t('Executive Education') ?></a>
+							<?php endif ?>
+						</li>
+						<li>
+							<?php if ($language->language != 'en'): ?>
+								<a href="/educacion-ejecutiva/cursos-cortos" class="atm-menu-secundario">
+								<span>Cursos</span>Cortos
+								</a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/executive-education/short-courses" class="atm-menu-secundario">
+								<span>Short</span>Courses
+								</a>
+							<?php endif ?>
+							</a>
+						</li>
+						<li>
+							<?php if ($language->language != 'en'): ?>
+								<a href="/educacion-ejecutiva/diplomados" class="atm-menu-secundario">
+									Diplomados
+								</a>
+							<?php elseif ($language->language == 'en'): ?>
+								<!-- <a href="/<?php //print $language->language ?>/executive-education/diploma" class="atm-menu-secundario">
+									Diploma
+								</a> -->
+							<?php endif ?>
+							</a>
+						</li>
+						<!--<li>
+							<?php if ($language->language != 'en'): ?>
+								<a href="/edp/cursos-online" class="atm-menu-secundario">
+									<span>Cursos</span>Online
+								</a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/spd/online-courses" class="atm-menu-secundario">
+									<span>Online</span>Courses
+								</a>
+							<?php endif ?>
+							</a>
+						</li>-->
+						<li>
+							<?php if ($language->language != 'en'): ?>
+								<a href="/educacion-ejecutiva/cursos-inhouse" class="atm-menu-secundario">
+									<span>Cursos</span>Inhouse
+								</a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/executive-education/inhouse-courses" class="atm-menu-secundario">
+									<span>Inhouse</span>Courses
+								</a>
+							<?php endif ?>
+							</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<?php if ($language->language != 'en'): ?>
+								<a href="/educacion-ejecutiva/calendario" class="atm-menu-secundario"><?php print t('Calendar') ?></a>
+							<?php elseif ($language->language == 'en'): ?>
+								<a href="/<?php print $language->language ?>/executive-education/calendar" class="atm-menu-secundario"><?php print t('Calendar') ?></a>
+							<?php endif ?>
+						</li>
+						<li>
+							<?php if ($language->language != 'en'): ?>
+								<a href="/educacion-ejecutiva/contacto" class="btn btn-primary btn-custom bold atm-menu-secundario"><?php print t('Contact us') ?></a>
+							<?php elseif ($language->language == 'en'): ?>
+								<!-- <a href="/<?php //print $language->language ?>/executive-education/contact" class="btn btn-primary btn-custom bold atm-menu-secundario"><?php //print t('Contact us') ?></a> -->
+							<?php endif ?>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 </div> <!-- END:Header -->
 
 
@@ -198,7 +641,11 @@
 		<div class="container">
 			<div class="left">
 				<div class="logo">
-					<a href="/" class="atm-logo"><img src="/<?php print $theme_path; ?>/assets/img/icon_UTEC.png" alt="Logo UTEC"></a>
+					<?php if ($language->language == 'en'): ?>
+						<a href="/en" class="atm-logo"><img src="/<?php print $theme_path; ?>/assets/img/icon_UTEC.png" alt="Logo UTEC"></a>
+					<?php elseif ($language->language != 'en'): ?>
+						<a href="/" class="atm-logo"><img src="/<?php print $theme_path; ?>/assets/img/icon_UTEC.png" alt="Logo UTEC"></a>
+					<?php endif ?>
 				</div>
 			</div>
 			<div class="left hidden-xs hidden-sm">
@@ -330,7 +777,7 @@
 							<?php if ($language->language  != 'en'): ?>
 								<a href="/utec-garage" class="atm-menu-secundario"><span>Utec</span> garage</a>
 							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/utec-garage" class="atm-menu-secundario"><span>Utec</span> garage</a>
+								<a href="/<?php print $language->language ?>/utec-garage-open-platform-for-innovation" class="atm-menu-secundario"><span>Utec</span> garage</a>
 							<?php endif ?>													
 						</li>
 						<li>
@@ -341,7 +788,7 @@
 							<?php endif ?>													
 						</li>						
 						<li>
-							<a href="http://utecventures.com/" target="_blank" rel="nofollow" class="atm-menu-secundario"><span>Utec</span>Ventures</a>
+							<a href="http://utecventures.com/" rel="nofollow" target="_blank"  class="atm-menu-secundario"><span>Utec</span>Ventures</a>
 						</li>
 						<!--<li>
 							<a href="#" class="btn btn-primary btn-custom bold">Postular</a>
@@ -376,13 +823,13 @@
 								<a href="/<?php print $language->language ?>/projects" class="atm-menu-secundario"><?php print t('Projects') ?></a>
 							<?php endif ?>							
 						</li>
-						<li>
+						<!-- <li>
 							<?php if ($language->language  != 'en'): ?>
 								<a href="/publicaciones" class="atm-menu-secundario"><?php print t('Publications') ?></a>
 							<?php elseif ($language->language == 'en'): ?>
 								<a href="/<?php print $language->language ?>/publications" class="atm-menu-secundario"><?php print t('Publications') ?></a>
 							<?php endif ?>						
-						</li>
+						</li> -->
 						<li>
 							<?php if ($language->language  != 'en'): ?>
 								<a href="/empresas-y-clientes" class="atm-menu-secundario"><span><?php print t('Companies') ?></span><?php print t('and clients') ?></a>
