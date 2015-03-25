@@ -143,8 +143,8 @@
 	    $titulo_esp = $field_esp[$num_esp]->field_titulo_menu['und'][0]['value'];
 	    $cuerpo_esp = $field_esp[$num_esp]->field_cuerpo['und'][0]['value'];
 	    
-	    $titulo_ing = $field[$num_ing]->field_titulo_menu['und'][0]['value'];
-	    $cuerpo_ing = $field[$num_ing]->field_cuerpo['und'][0]['value'];
+	    $titulo_ing = $field_ing[$num_ing]->field_titulo_menu['und'][0]['value'];
+	    $cuerpo_ing = $field_ing[$num_ing]->field_cuerpo['und'][0]['value'];
 	    
 	    // kpr($field);
 	  ?>
