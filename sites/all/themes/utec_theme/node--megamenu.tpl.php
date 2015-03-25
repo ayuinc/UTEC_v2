@@ -140,11 +140,11 @@
 	    $field_esp = entity_load('field_collection_item', array($num_esp));
 	    $field_ing = entity_load('field_collection_item', array($num_ing));
 
-	    $titulo_esp = $field_esp[$num]->field_titulo_menu['und'][0]['value'];
-	    $cuerpo_esp = $field_esp[$num]->field_cuerpo['und'][0]['value'];
+	    $titulo_esp = $field_esp[$num_esp]->field_titulo_menu['und'][0]['value'];
+	    $cuerpo_esp = $field_esp[$num_esp]->field_cuerpo['und'][0]['value'];
 	    
-	    $titulo_ing = $field[$num]->field_titulo_menu['und'][0]['value'];
-	    $cuerpo_ing = $field[$num]->field_cuerpo['und'][0]['value'];
+	    $titulo_ing = $field[$num_ing]->field_titulo_menu['und'][0]['value'];
+	    $cuerpo_ing = $field[$num_ing]->field_cuerpo['und'][0]['value'];
 	    
 	    // kpr($field);
 	  ?>
