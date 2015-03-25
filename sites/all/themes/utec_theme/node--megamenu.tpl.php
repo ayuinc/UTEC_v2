@@ -6,7 +6,7 @@
 	$menus = menu_tree_output(i18n_menu_localize_tree($tree));
 	$fields_esp = $node->field_menu_content_esp['und'];
 	$fields_ing = $node->field_menu_content_ing['und'];
-	// kpr($menus);
+	kpr($fields_esp);
 	//print_r($menus);
 ?>
 
@@ -135,7 +135,7 @@
 	    // print_r($fid['value']);
 	    $num = $fid['value'];
 	    $field = entity_load('field_collection_item', array($fid['value']));
-	    kpr($field);
+	    // kpr($field);
 	    $nombre = $field[$num]->field_nombre['und'][0]['value'];
 	    $nombre_ingles = $field[$num]->field_nombre_ingles['und'][0]['value'];
 	    $link = $field[$num]->field_link_atajo['und'][0]['value'];
