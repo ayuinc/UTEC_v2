@@ -6,10 +6,6 @@
 	$menus = menu_tree_output(i18n_menu_localize_tree($tree));
 	$fields_esp = $node->field_menu_content_esp['und'];
 	$fields_ing = $node->field_menu_content_ing['und'];
-
-	// kpr($fields_esp);
-	// kpr($fields_ing);
-	//print_r($menus);
 ?>
 
 <div id="header" class="hidden-xs hidden-sm"> <!-- HEADER -->
@@ -164,26 +160,25 @@
 			</div>
 			<div class="nav-display-right">
 				<div>
+					<?php $count2 = 0; ?>
+					<ul>
 					<?php foreach ($menus as $menu) :?>
-					<ul>
+						<?php kpr($menu); ?>
+						<?php if ($count2 < 6) : ?>
 						<li>
-							<?php if ($language->language != 'en'): ?>
-							<a href="/respaldo" class="atm-menu-secundario"><?php print t('A Solid Foundation') ?></a>
-							<?php elseif ($language->language == 'en'): ?>
-							<a href="/<?php print $language->language ?>/a-solid-foundation" class="atm-menu-secundario"><?php print t('A Solid Foundation') ?></a>
-							<?php endif ?>
+							
 						</li>
-					</ul> 
-					<ul>
+						<?php elseif($count2 >= 7 && $count2 < 8) : ?>
+						</ul> 
+						<ul>
+						<?php else : ?>
 						<li>
-							<?php if ($language->language != 'en'): ?>
-								<a href="/eventos" class="atm-menu-secundario">Eventos UTEC</a>
-							<?php elseif ($language->language == 'en'): ?>
-								<a href="/<?php print $language->language ?>/events" class="atm-menu-secundario">UTEC Events</a>
-							<?php endif ?>							
+							
 						</li>
-					</ul>
+						<?php endif; ?>
+						<?php $count2++; ?>
 					<?php endforeach; ?> 
+					</ul>
 				</div>
 			</div>
 		</div>
