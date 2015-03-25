@@ -70,19 +70,17 @@ $destinatarios = array(
     'ebardales@utec.edu.pe' => 'Ebert Alexander Bardales Castro',
     'ntubbeh@utec.edu.pe'  => 'Nader Tubbeh',
     'apacheco@utec.edu.pe'  => 'Angel Pacheco Masías',
-
 );
 
 
 if($origen == "Trabaja en UTEC" || $origen == "Work at UTEC")
 { 
+    unset($destinatarios);
     $destinatarios = array(
-    'informes@utec.edu.pe'  => 'Utec',
-    'webmastertecsup@gmail.com' => 'WebMaster',       
-    'rrhh@utec.edu.pe' => 'RRHH UTEC', 
-    'ebardales@utec.edu.pe' => 'Ebert Alexander Bardales Castro',
-    'ntubbeh@utec.edu.pe'  => 'Nader Tubbeh',
-    'apacheco@utec.edu.pe'  => 'Angel Pacheco Masías'
+    'webmastertecsup@gmail.com' => 'WebMaster', 
+    'rrhh@utec.edu.pe' => 'RRHH UTEC',
+    'apacheco@utec.edu.pe'  => 'Angel Pacheco Masías',
+    'seleccion@utec.edu.pe' => 'RRHH Seleccion'
     );
 }
 
