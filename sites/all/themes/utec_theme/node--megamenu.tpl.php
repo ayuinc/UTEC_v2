@@ -167,8 +167,8 @@
 				<div>
 					<?php $count2 = 0; ?>
 					<ul>
-					<?php foreach ($menus['#below'] as $menu) :?>
-						<?php foreach ($menu_childs as $child) : ?>
+					<?php foreach ($menus as $menu) :?>
+						<?php foreach ($menu['#below'] as $child) : ?>
 						<?php if ($count2 < 6) : ?>
 							<li>
 								<a href="<?php print $child['#href']; ?>" class="atm-menu-secundario"><?php print $child['#title']; ?></a>
