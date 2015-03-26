@@ -165,15 +165,15 @@
 			</div>
 			<div class="nav-display-right">
 				<div>
-					<?php $count2 = 0; ?>
 					<ul>
 					<?php foreach ($menus as $menu) :?>
+						<?php $count2 = 0; ?>
 						<?php foreach ($menu['#below'] as $child) : ?>
 						<?php if ($count2 < 6) : ?>
 							<li>
 								<a href="<?php print $child['#href']; ?>" class="atm-menu-secundario"><?php print $child['#title']; ?></a>
 							</li>
-						<?php elseif($count2 >= 7 && $count2 < 8) : ?>
+						<?php elseif($count2 >= 6 && $count2 < 8) : ?>
 						</ul> 
 						<ul>
 						<?php else : ?>
@@ -181,8 +181,8 @@
 								<a href="<?php print $child['#href']; ?>" class="atm-menu-secundario"><?php print $child['#title']; ?></a>
 							</li>
 						<?php endif; ?>
-						<?php endforeach; ?>	
 						<?php $count2++; ?>
+						<?php endforeach; ?>	
 						<?php break; ?>
 					<?php endforeach; ?> 
 					</ul>
