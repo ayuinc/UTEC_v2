@@ -9,7 +9,6 @@
   $name = $fields['name']->content;
 	$pic = $fields['picture']->content;
 
-
   if ($language->prefix) {
     $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/67/profesor-edp/'.$uid, $language->language); 
   }else
@@ -24,18 +23,3 @@
       <a href="<?php print $profesor_url ?>"><?php print $name ?></a>
   </div>
 </li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
