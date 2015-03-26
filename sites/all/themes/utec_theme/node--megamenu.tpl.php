@@ -94,36 +94,6 @@
 							<span><?php print t('We are Utec') ?></span>
 						</a>
 					</li>
-					<li>
-						<a href="#nav-display-2" class="atm-menu-principal">
-							<div><i class="icon-menu-investigacion"></i></div>
-							<span><?php print t('Research') ?></span>
-						</a>
-					</li>
-					<li>
-						<a href="#nav-display-3" class="atm-menu-principal">
-							<div><i class="icon-menu-carreras"></i></div>
-							<span><?php print t('Programs') ?></span>
-						</a>
-					</li>
-					<li>
-						<a href="#nav-display-4" class="atm-menu-principal">
-							<div><i class="icon-menu-admision"></i></div>
-							<span><?php print t('Admissions') ?></span>
-						</a>
-					</li>
-					<li>
-						<a href="#nav-display-5" class="atm-menu-principal">
-							<div><i class="icon-menu-convenios"></i></div>
-							<span><?php print t('Alliances') ?></span>
-						</a>
-					</li>
-					<li>
-						<a href="#nav-display-6" class="atm-menu-principal">
-							<div><i class="icon-menu-edp"></i></div>
-							<span><?php print t('Executive Education') ?></span>
-						</a>
-					</li>
 				</ul>
 			</div>
 		</div>
@@ -163,12 +133,11 @@
 				<div>
 					<?php $count2 = 0; ?>
 					<ul>
-
 					<?php foreach ($menus as $menu) :?>
+						<?php $menu['#below']; ?>
 						<?php if ($count2 < 6) : ?>
-						<li>
-							
-						</li>
+							<li>
+							</li>
 						<?php elseif($count2 >= 7 && $count2 < 8) : ?>
 						</ul> 
 						<ul>
