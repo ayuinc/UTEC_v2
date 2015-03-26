@@ -6,7 +6,7 @@
 	$menus = menu_tree_output(i18n_menu_localize_tree($tree));
 	$fields_esp = $node->field_menu_content_esp['und'];
 	$fields_ing = $node->field_menu_content_ing['und'];
-	kpr($menus['#below']);
+	//kpr($menus);
 ?>
 
 <div id="header" class="hidden-xs hidden-sm"> <!-- HEADER -->
@@ -83,7 +83,11 @@
 		<div class="container">
 			<div class="left">
 				<div class="logo pv-21">
-					<a href="/" class="atm-logo"><img src="/<?php print $theme_path; ?>/assets/img/logo_vertical_UTEC-2015.png" alt="Logo UTEC" width="149" height="auto"></a>
+					<?php if ($language->language == 'en'): ?>
+						<a href="/en" class="atm-logo"><img src="/<?php print $theme_path; ?>/assets/img/logo_vertical_UTEC-2015.png" alt="Logo UTEC" width="149" height="auto"></a>	
+					<?php elseif ($language->language == 'es'): ?>
+						<a href="/" class="atm-logo"><img src="/<?php print $theme_path; ?>/assets/img/logo_vertical_UTEC-2015.png" alt="Logo UTEC" width="149" height="auto"></a>	
+					<?php endif ?>	
 				</div>
 			</div>
 			<div class="left">
@@ -92,6 +96,36 @@
 						<a href="#nav-display-1" class="atm-menu-principal">
 							<div><i class="icon-menu-somos-utec"></i></div>
 							<span><?php print t('We are Utec') ?></span>
+						</a>
+					</li>
+					<li>
+						<a href="#nav-display-2" class="atm-menu-principal">
+							<div><i class="icon-menu-investigacion"></i></div>
+							<span><?php print t('Research') ?></span>
+						</a>
+					</li>
+					<li>
+						<a href="#nav-display-3" class="atm-menu-principal">
+							<div><i class="icon-menu-carreras"></i></div>
+							<span><?php print t('Programs') ?></span>
+						</a>
+					</li>
+					<li>
+						<a href="#nav-display-4" class="atm-menu-principal">
+							<div><i class="icon-menu-admision"></i></div>
+							<span><?php print t('Admissions') ?></span>
+						</a>
+					</li>
+					<li>
+						<a href="#nav-display-5" class="atm-menu-principal">
+							<div><i class="icon-menu-convenios"></i></div>
+							<span><?php print t('Alliances') ?></span>
+						</a>
+					</li>
+					<li>
+						<a href="#nav-display-6" class="atm-menu-principal">
+							<div><i class="icon-menu-edp"></i></div>
+							<span><?php print t('Executive Education') ?></span>
 						</a>
 					</li>
 				</ul>
@@ -134,7 +168,7 @@
 					<?php $count2 = 0; ?>
 					<ul>
 					<?php foreach ($menus['#below'] as $menu) :?>
-						
+						<?php foreach ($menu_childs as $child) : ?>
 						<?php if ($count2 < 6) : ?>
 							<li>
 								<a href="<?php print $child['#href']; ?>" class="atm-menu-secundario"><?php print $child['#title']; ?></a>
@@ -147,8 +181,9 @@
 								<a href="<?php print $child['#href']; ?>" class="atm-menu-secundario"><?php print $child['#title']; ?></a>
 							</li>
 						<?php endif; ?>
-	
+						<?php endforeach; ?>	
 						<?php $count2++; ?>
+						<?php break; ?>
 					<?php endforeach; ?> 
 					</ul>
 				</div>
