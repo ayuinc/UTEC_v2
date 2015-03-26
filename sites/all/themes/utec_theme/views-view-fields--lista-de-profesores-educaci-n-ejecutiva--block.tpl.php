@@ -19,7 +19,7 @@
   <div class="user-card user-card-round size lg">
     <div class="user-pic">
       <!--img src="<?php if($pic != ''){ print ($pic); } else { print ($pathfile.'pictures/'.$pic); } ?>" alt="<?php print $name; ?>"-->
-      <img src="<?php print $pic; ?>" alt="<?php print $name; ?>">
+      <?php print $pic; ?>
     </div>
     <div class="user-info">
       <a href="<?php print $profesor_url ?>"><?php print $name ?></a>
