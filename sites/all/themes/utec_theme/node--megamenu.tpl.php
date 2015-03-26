@@ -133,19 +133,21 @@
 				<div>
 					<?php $count2 = 0; ?>
 					<ul>
-					<?php foreach ($menus as $menu) :?>
-						<?php $menu['#below']; ?>
+					<?php foreach ($menus['#below'] as $menu) :?>
+						
 						<?php if ($count2 < 6) : ?>
 							<li>
+								<a href="<?php print $child['#href']; ?>" class="atm-menu-secundario"><?php print $child['#title']; ?></a>
 							</li>
 						<?php elseif($count2 >= 7 && $count2 < 8) : ?>
 						</ul> 
 						<ul>
 						<?php else : ?>
-						<li>
-							
-						</li>
+							<li>
+								<a href="<?php print $child['#href']; ?>" class="atm-menu-secundario"><?php print $child['#title']; ?></a>
+							</li>
 						<?php endif; ?>
+	
 						<?php $count2++; ?>
 					<?php endforeach; ?> 
 					</ul>
