@@ -5,6 +5,8 @@
   $path = $base_url.'/'.$theme_path;
   $pathfile = variable_get('file_public_path', conf_path() . '/files/'); 
 
+  kpr($fields);
+
 	$uid = $fields['field_profesor']->content;
 	$user = user_load($uid);
 
