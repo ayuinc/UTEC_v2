@@ -21,5 +21,6 @@
     <div class="user-info">
       <!--<a href="#">Rosa María Llosa Demartini</a>-->
       <a href="<?php print $profesor_url ?>"><?php print $name ?></a>
+    </div>
   </div>
 </li>
