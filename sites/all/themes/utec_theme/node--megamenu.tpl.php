@@ -166,12 +166,13 @@
 			<div class="nav-display-right">
 				<div>
 					<ul>
-					<?php foreach ($menus as $menu) :?>
+					<?php foreach ($menus as $index => $menu) :?>
 						<?php $count2 = 0; ?>
 						<?php foreach ($menu['#below'] as $child) : ?>
 						<?php if ($count2 < 6) : ?>
 							<li>
 								<a href="<?php print $child['#href']; ?>" class="atm-menu-secundario"><?php print $child['#title']; ?></a>
+								<a href="<?php print $child['#href']; ?>" class="atm-menu-secundario"><span><?php print t('Ingenuity') ?></span><?php print t('in action') ?></a>
 							</li>
 						<?php elseif($count2 >= 6 && $count2 < 8) : ?>
 						</ul> 

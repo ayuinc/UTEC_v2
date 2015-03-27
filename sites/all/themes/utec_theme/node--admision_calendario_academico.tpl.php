@@ -149,17 +149,17 @@
 					<tr>
 						<td class="highlight"><?php print t('Admission Exam') ?></td>
 						<td><?php print t('Registration Starts') ?></td>
-						<td>01/04/2014</td>
+						<td>27/03/2015</td>
 					</tr>	
 					<tr>
 						<td></td>
 						<td><?php print t('Registration Ends') ?></td>
-						<td>01/03/2015</td>
+						<td>16/07/2015</td>
 					</tr>	
 					<tr>
 						<td></td>
 						<td><?php print t('Admissions Exam') ?></td>
-						<td>04/03/2015</td>
+						<td>18/07/2015</td>
 					</tr>	
 					<tr>
 						<td></td>

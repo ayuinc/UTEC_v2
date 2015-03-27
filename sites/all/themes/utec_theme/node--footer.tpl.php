@@ -43,7 +43,7 @@
               <li><a href="/<?php print $language->language ?>/ingenuity-in-action" class="atm-menu-inferior"><small><?php print t('Ingenuity in Action') ?></small></a></li>
               <li><a href="/<?php print $language->language ?>/teaching-methodology" class="atm-menu-inferior"><small><?php print t('Teaching Methodology') ?></small></a></li>
               <li><a href="/<?php print $language->language ?>/news" class="atm-menu-inferior"><small></small><small><?php print t('News') ?></small></a></li>
-              <li><a href="/<?php print $language->language ?>/utec-events" class="atm-menu-inferior"><small>UTEC Events</small></a></li>
+              <li><a href="/<?php print $language->language ?>/events" class="atm-menu-inferior"><small>UTEC Events</small></a></li>
               <li><a href="/<?php print $language->language ?>/student-life" class="atm-menu-inferior"><small><?php print t('UTEC Life') ?></small></a></li>
               <li><a href="/<?php print $language->language ?>/campus-and-labs" class="atm-menu-inferior"><small><?php print t('Campus and Labs') ?></small></a></li>
               <li><a href="/<?php print $language->language ?>/work-at-utec" class="atm-menu-inferior"><small><?php print t('Work at UTEC') ?></small></a></li>
@@ -58,7 +58,7 @@
               <li><a href="/ingenio-en-accion" class="atm-menu-inferior"><small><?php print t('Ingenuity in Action') ?></small></a></li>
               <li><a href="/metodologia-educativa" class="atm-menu-inferior"><small>Metodología Educativa</small></a></li>
               <li><a href="/noticias" class="atm-menu-inferior"><small></small><small><?php print t('News') ?></small></a></li>
-              <li><a href="/eventos-utec" class="atm-menu-inferior"><small>Eventos UTEC</small></a></li>
+              <li><a href="/eventos" class="atm-menu-inferior"><small>Eventos UTEC</small></a></li>
               <li><a href="/vida-estudiantil" class="atm-menu-inferior"><small><?php print t('UTEC Life') ?></small></a></li>
               <li><a href="/campus-y-laboratorios" class="atm-menu-inferior"><small><?php print t('Campus and Labs') ?></small></a></li>
               <li><a href="/trabaja-en-utec" class="atm-menu-inferior"><small><?php print t('Work at UTEC') ?></small></a></li>
