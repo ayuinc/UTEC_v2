@@ -183,8 +183,8 @@
 							</li>
 						<?php endif; ?>
 						<?php $count2++; ?>
-						<?php endforeach; ?>
-            <?php unset([$index]); ?>	
+            <?php endforeach; ?>
+            <?php unset($menus[$index]); ?>	
 						<?php break; ?>
 					<?php endforeach; ?> 
 					</ul>
