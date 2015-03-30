@@ -176,14 +176,14 @@
             ?>
 						<?php if ($count2 <= 6) : ?>
 							<li>
-								<a href="/<?php print if($language->language == 'en'){print $language->language}."/".$href; ?>" class="atm-menu-secundario"><span><?php print $titles[0]; ?></span><?php print $titles[1]; ?> <?php print $titles[2]; ?> <?php print $titles[3]; ?> <?php print $titles[4]; ?></a>
+								<a href="/<?php if($language->language == 'en'){print ($language->language."/".$href);} ?>" class="atm-menu-secundario"><span><?php print $titles[0]; ?></span><?php print $titles[1]; ?> <?php print $titles[2]; ?> <?php print $titles[3]; ?> <?php print $titles[4]; ?></a>
 							</li>
 						<?php elseif($count2 > 6 && $count2 < 8) : ?>
 						</ul> 
 						<ul>
 						<?php else : ?>
 							<li>
-                <a href="/<?php print if($language->language == 'en'){print $language->language}."/".$href; ?>" class="atm-menu-secundario"><span><?php print $titles[0]; ?></span><?php print $titles[1]; ?> <?php print $titles[2]; ?> <?php print $titles[3]; ?> <?php print $titles[4]; ?></a>							
+                <a href="/<?php if($language->language == 'en'){print ($language->language."/".$href);} ?>" class="atm-menu-secundario"><span><?php print $titles[0]; ?></span><?php print $titles[1]; ?> <?php print $titles[2]; ?> <?php print $titles[3]; ?> <?php print $titles[4]; ?></a>							
               </li>
 						<?php endif; ?>
 						<?php $count2++; ?>
