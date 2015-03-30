@@ -145,9 +145,14 @@
 						<td></td>
 						<td><?php print t('Term 1 - Final Exam: April - June') ?></td>
 						<td>11/07/2015</td>
-					</tr>		
+					</tr>
 					<tr>
 						<td class="highlight"><?php print t('Admission Exam') ?></td>
+						<td><?php print t('Late Exam') ?></td>
+						<td>21/03/2015</td>
+					</tr>		
+					<tr>
+						<td></td>
 						<td><?php print t('Registration Starts') ?></td>
 						<td>27/03/2015</td>
 					</tr>	
@@ -161,11 +166,6 @@
 						<td><?php print t('Admissions Exam') ?></td>
 						<td>18/07/2015</td>
 					</tr>	
-					<tr>
-						<td></td>
-						<td><?php print t('Late Exam') ?></td>
-						<td>21/03/2015</td>
-					</tr>
 					<tr>
 						<td class="highlight"><?php print t('Top Academic Rankings') ?></td>
 						<td><?php print t('Registration Starts') ?></td>
