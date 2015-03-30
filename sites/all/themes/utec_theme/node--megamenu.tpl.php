@@ -174,16 +174,16 @@
               $titles = explode(" ", $child['#title']);
               $href = drupal_get_path_alias($child['#href'], $language->language)
             ?>
-						<?php if ($count2 <= 6) : ?>
+						<?php if ($count2 <= 5) : ?>
 							<li>
-								<a href="/<?php if($language->language == 'en'){print ($language->language."/".$href);} ?>" class="atm-menu-secundario"><span><?php print $titles[0]; ?></span><?php print $titles[1]; ?> <?php print $titles[2]; ?> <?php print $titles[3]; ?> <?php print $titles[4]; ?></a>
+								<a href="/<?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" class="atm-menu-secundario"><span><?php print $titles[0]; ?></span><?php print $titles[1]; ?> <?php print $titles[2]; ?> <?php print $titles[3]; ?> <?php print $titles[4]; ?></a>
 							</li>
-						<?php elseif($count2 > 6 && $count2 < 8) : ?>
+						<?php elseif($count2 > 5 && $count2 < 8) : ?>
 						</ul> 
 						<ul>
 						<?php else : ?>
 							<li>
-                <a href="/<?php if($language->language == 'en'){print ($language->language."/".$href);} ?>" class="atm-menu-secundario"><span><?php print $titles[0]; ?></span><?php print $titles[1]; ?> <?php print $titles[2]; ?> <?php print $titles[3]; ?> <?php print $titles[4]; ?></a>							
+                <a href="/<?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" class="atm-menu-secundario"><span><?php print $titles[0]; ?></span><?php print $titles[1]; ?> <?php print $titles[2]; ?> <?php print $titles[3]; ?> <?php print $titles[4]; ?></a>							
               </li>
 						<?php endif; ?>
 						<?php $count2++; ?>
