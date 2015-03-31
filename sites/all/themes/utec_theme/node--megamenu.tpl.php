@@ -82,13 +82,11 @@
 	<div class="nav-main">
 		<div class="container">
 			<div class="left">
-				<div class="logo pv-21">
-					<?php if ($language->language == 'en'): ?>
-						<a href="/en" class="atm-logo"><img src="/<?php print $theme_path; ?>/assets/img/logo_vertical_UTEC-2015.png" alt="Logo UTEC" width="149" height="auto"></a>	
-					<?php elseif ($language->language == 'es'): ?>
-						<a href="/" class="atm-logo"><img src="/<?php print $theme_path; ?>/assets/img/logo_vertical_UTEC-2015.png" alt="Logo UTEC" width="149" height="auto"></a>	
-					<?php endif ?>	
-				</div>
+        <div class="logo pv-21">
+          <a href="<?php print $front_page ?>" class="atm-logo">
+            <img src="<?php print $logo ?>" alt="Logo UTEC">
+          </a>
+        </div>
 			</div>
 			<div class="left">
 				<ul class="nav-display-triggers">
@@ -200,3 +198,122 @@
 	<?php endforeach; ?>
 </div> <!-- END:Header -->
 
+$menus = menu_tree_output(i18n_menu_localize_tree($tree));
+<div id="header-on-scroll"> <!-- HEADER-ON-SCROLL -->
+  <div class="nav-main">
+    <div class="container">
+      <div class="left">
+        <div class="logo">
+          <?php if ($language->language == 'en'): ?>
+            <a href="/en" class="atm-logo"><img src="/<?php print $theme_path; ?>/assets/img/icon_UTEC.png" alt="Logo UTEC"></a>
+          <?php elseif ($language->language != 'en'): ?>
+            <a href="/" class="atm-logo"><img src="/<?php print $theme_path; ?>/assets/img/icon_UTEC.png" alt="Logo UTEC"></a>
+          <?php endif ?>
+        </div>
+      </div>
+      <div class="left hidden-xs hidden-sm">
+        <ul class="nav-display-triggers">
+          <li>
+            <a href="#nav-shrink-display-1" class="atm-menu-principal">
+              <span><?php print t('We are Utec') ?></span>
+            </a>
+          </li>
+          <li>
+            <a href="#nav-shrink-display-2" class="atm-menu-principal">
+              <span><?php print t('Research') ?></span>
+            </a>
+          </li>
+          <li>
+            <a href="#nav-shrink-display-3" class="atm-menu-principal">
+              <span><?php print t('Programs') ?></span>
+            </a>
+          </li>
+          <li>
+            <a href="#nav-shrink-display-4" class="atm-menu-principal">
+              <span><?php print t('Admissions') ?></span>
+            </a>
+          </li>
+          <li>
+            <a href="#nav-shrink-display-5" class="atm-menu-principal">
+              <span><?php print t('Alliances') ?></span>
+            </a>
+          </li>
+          <li>
+            <a href="#nav-shrink-display-6" class="atm-menu-principal">
+              <span><?php print t('Executive Education') ?></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="right visible-xs-block visible-sm-block">
+        <a href="#" class="menu-trigger icon-menu"></a>
+      </div>
+    </div>
+  </div>
+  <?php $count = 1; ?>
+  <?php foreach ($fields_esp as $index => $fid) : ?>
+    <?php 
+      // print_r($fid['value']);
+      $num_esp = $fid['value'];
+      $num_ing = $fields_ing[$index]['value'];
+      $field_esp = entity_load('field_collection_item', array($num_esp));
+      $field_ing = entity_load('field_collection_item', array($num_ing));
+
+      $titulo_esp = $field_esp[$num_esp]->field_titulo_menu['und'][0]['value'];
+      $cuerpo_esp = $field_esp[$num_esp]->field_cuerpo['und'][0]['value'];
+      
+      $titulo_ing = $field_ing[$num_ing]->field_titulo_menu['und'][0]['value'];
+      $cuerpo_ing = $field_ing[$num_ing]->field_cuerpo['und'][0]['value'];
+    ?>
+  <div class="nav-display" id="nav-shrink-display-<?php print $count; ?>">
+    <div class="container relative">
+      <a href="#" class="nav-display-close">X</a>
+    </div>
+    <div class="container-sm">
+      <div class="nav-display-left">
+        <div>
+          <?php if ($language->language == 'es'): ?>
+            <?php print $titulo_esp ?>
+            <?php print $cuerpo_esp ?>
+          <?php elseif ($language->language == 'en'): ?>
+            <?php print $titulo_ing ?>
+            <?php print $cuerpo_ing ?>
+          <?php endif ?>
+        </div>
+      </div>
+      <div class="nav-display-right">
+        <div>
+          <ul>
+          <?php foreach ($menus as $index => $menu) :?>
+            <?php $count2 = 0; ?>
+            <?php foreach ($menu['#below'] as $child) : ?>
+            <?php
+              $titles = array();  
+              $titles = explode(" ", $child['#title']);
+              $href = drupal_get_path_alias($child['#href'], $language->language)
+            ?>
+            <?php if ($count2 <= 5) : ?>
+              <li>
+                <a href="/<?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" class="atm-menu-secundario"><span><?php print $titles[0]; ?></span><?php print $titles[1]; ?> <?php print $titles[2]; ?> <?php print $titles[3]; ?> <?php print $titles[4]; ?></a>
+              </li>
+            <?php elseif($count2 > 5 && $count2 < 8) : ?>
+            </ul> 
+            <ul>
+            <?php else : ?>
+              <li>
+                <a href="/<?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" class="atm-menu-secundario"><span><?php print $titles[0]; ?></span><?php print $titles[1]; ?> <?php print $titles[2]; ?> <?php print $titles[3]; ?> <?php print $titles[4]; ?></a>             
+              </li>
+            <?php endif; ?>
+            <?php $count2++; ?>
+            <?php endforeach; ?>
+            <?php unset($menus[$index]); ?> 
+            <?php break; ?>
+          <?php endforeach; ?> 
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <?php $count++; ?>
+  <?php endforeach; ?>
+</div> <!-- END:HEADER-ON-SCROLL -->
