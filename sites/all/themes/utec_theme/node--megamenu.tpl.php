@@ -198,7 +198,7 @@
 	<?php endforeach; ?>
 </div> <!-- END:Header -->
 
-$menus = menu_tree_output(i18n_menu_localize_tree($tree));
+<?php $menus = menu_tree_output(i18n_menu_localize_tree($tree)); ?>
 <div id="header-on-scroll"> <!-- HEADER-ON-SCROLL -->
   <div class="nav-main">
     <div class="container">
