@@ -1,5 +1,5 @@
 <?php 
-	global $language 
+	global $language; 
 	$tree = menu_tree_all_data('main-menu'); 
 	$menus = menu_tree_output(i18n_menu_localize_tree($tree));
 	$count = 1;
