@@ -4,6 +4,7 @@
 	$menus = menu_tree_output(i18n_menu_localize_tree($tree));
 	$count = 1;
 	$count2 = 1;
+	kpr($menus);
 ?>
 
 <div class="mobile-nav-display-triggers"> 
@@ -27,7 +28,7 @@
     $titles = array();  
     $titles = explode(" ", $menu['#title']);
   ?>
-	<h3 class="h1 pl-14"><?php print $titles[0]; ?><br><span><?php print $titles[1]; ?></span> <?php print $titles[2]; ?> <?php print $titles[3]; ?></h3>
+	<h3 class="h1 pl-14"><?php print $titles[0]; ?><br><span><?php print $titles[1]; ?> </span> <?php print $titles[2]; ?> <?php print $titles[3]; ?></h3>
 	<ul>
 		<?php foreach ($menu['#below'] as $child) : ?>
     <?php
