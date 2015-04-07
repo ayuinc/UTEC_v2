@@ -10,9 +10,11 @@
 <div class="mobile-nav-display-triggers"> 
   <ul>
   	<?php foreach ($menus as $index => $menu) :?>
+  	<?php if ($menu['#href']) : ?>
     <li>
       <a href="#mobile-nav-display-<?php print $count ?>" class="atm-menu-principal-movil"><?php print $menu['#title']; ?></a>
     </li>
+	  <?php endif; ?>
     <?php $count++; ?>
 		<?php endforeach; ?>   
 		<li>
