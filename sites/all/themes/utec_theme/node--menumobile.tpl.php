@@ -47,4 +47,5 @@
 		</li>-->
 	</ul>
 </div>
+<?php endforeach; ?>
 <?php $count2++; ?>
