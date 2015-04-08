@@ -214,8 +214,8 @@ function utec_theme_preprocess_node(&$variables){
   $theme_name = 'utec_theme';
 	$settings = variable_get('theme_' . $theme_name . '_settings', array());
 
-	if (isset($settings['logo_path'])) {
-	  $logo = file_create_url($settings['logo_path']);
+	if (isset($settings['default_logo'])) {
+	  $logo = file_create_url($settings['default_logo']);
 	}
 	die(kpr($logo));
 }
