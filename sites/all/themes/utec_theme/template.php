@@ -217,8 +217,9 @@ function utec_theme_preprocess_node(&$variables){
 	// die(kpr($settings));
 	if (isset($settings['logo_path'])) {
 	  $logo = file_create_url($settings['logo_path']);
+		$variables['logo'] = $logo;
 	}
-	die(kpr($logo));
+	// die(kpr($logo));
 }
 
 ?>
