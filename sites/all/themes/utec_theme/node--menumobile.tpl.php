@@ -4,18 +4,17 @@
 	$menus = menu_tree_output(i18n_menu_localize_tree($tree));
 	$count = 1;
 	$count2 = 1;
-	kpr($menus);
 ?>
 
 <div class="mobile-nav-display-triggers"> 
   <ul>
   	<?php foreach ($menus as $index => $menu) :?>
-  	<?php if ($menu['#href']) : ?>
-    <li>
-      <a href="#mobile-nav-display-<?php print $count ?>" class="atm-menu-principal-movil"><?php print $menu['#title']; ?></a>
-    </li>
-	  <?php endif; ?>
-    <?php $count++; ?>
+	  	<?php if ($menu['#href']) : ?>
+	    <li>
+	      <a href="#mobile-nav-display-<?php print $count ?>" class="atm-menu-principal-movil"><?php print $menu['#title']; ?></a>
+	    </li>
+		  <?php endif; ?>
+	    <?php $count++; ?>
 		<?php endforeach; ?>   
 		<li>
 			<?php print block_render('locale', 'language'); ?>
