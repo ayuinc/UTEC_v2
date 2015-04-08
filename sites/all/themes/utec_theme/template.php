@@ -210,4 +210,14 @@ function utec_theme_site_map_menu_link(array $variables) {
   return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
 }
 
+function utec_theme_preprocess_node(&$variables){
+  $theme_name = 'utec_theme';
+	$settings = variable_get('theme_' . $theme_name . '_settings', array());
+
+	die(kpr($settings));
+	if (isset($settings['logo_path'])) {
+	  $logo = file_create_url($settings['logo_path']);
+	}
+}
+
 ?>
