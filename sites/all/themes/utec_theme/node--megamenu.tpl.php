@@ -84,7 +84,7 @@
 			<div class="left">
         <div class="logo pv-21">
           <a href="<?php print $front_page; ?>" class="atm-logo">
-            <img src="<?php print $logo; ?>" alt="Logo UTEC">
+            <img src="<?php print $logo; ?>" alt="Logo UTEC" width="149" height="auto">
           </a>
         </div>
 			</div>
