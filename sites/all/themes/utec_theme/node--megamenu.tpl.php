@@ -9,6 +9,10 @@
 <?php 
 	$tree = menu_tree_all_data('main-menu'); 
 	$menus = menu_tree_output(i18n_menu_localize_tree($tree));
+
+  $tree_quick = menu_tree_all_data('menu-top-menu'); 
+  $menus_quick = menu_tree_output(i18n_menu_localize_tree($tree_quick));
+
 	$fields_esp = $node->field_menu_content_esp['und'];
 	$fields_ing = $node->field_menu_content_ing['und'];
 	//kpr($menus);
@@ -19,33 +23,15 @@
 		<div class="container">
 			<div class="left">
 				<ul class=" thin text-gray mr-ch-14 nav-list pt-7">
-					<?php if ($language->language != 'en'): ?>
-						<li>
-							<a href="/enlaces-rapidos/estudiantes" class="atm-menu-superior text-hover-primary"><?php print t('Students') ?></a>  
-						</li>
-						<li>
-							<a href="/enlaces-rapidos/profesores" class="atm-menu-superior text-hover-primary"><?php print t('Faculty') ?></a>
-						</li>
-						<li>
-							<a href="/enlaces-rapidos/empresas" class="atm-menu-superior text-hover-primary"><?php print t('Companies') ?></a>
-						</li>
-						<li>
-							<a href="/enlaces-rapidos/postulantes" class="atm-menu-superior text-hover-primary"><?php print t('Applicants') ?></a>
-						</li>
-					<?php elseif ($language->language == 'en'): ?>
-						<li>
-							<a href="/<?php print $language->language ?>/quick-links/students" class="atm-menu-superior text-hover-primary"><?php print t('Students') ?></a>
-						</li>
-						<li>
-							<a href="/<?php print $language->language ?>/quick-links/faculty" class="atm-menu-superior text-hover-primary"><?php print t('Faculty') ?></a>
-						</li>
-						<li>
-							<a href="/<?php print $language->language ?>/quick-links/companies" class="atm-menu-superior text-hover-primary"><?php print t('Companies') ?></a>
-						</li>
-						<li>
-							<a href="/<?php print $language->language ?>/quick-links/applicants" class="atm-menu-superior text-hover-primary"><?php print t('Applicants') ?></a>
-						</li>
-					<?php endif ?>
+          <?php foreach ($menus_quick as $key => $menu_quick) : ?>
+          <?php 
+            $title = $menu_quick['#title'];
+            $href = drupal_get_path_alias($menu_quick['#href'], $language->language);
+          ?>
+            <li>
+              <a href="/<?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" class="atm-menu-superior text-hover-primary"><?php print $title; ?></a>
+            </li>
+          <?php endforeach; ?>
 				</ul>
 			</div>
 			<div class="right">

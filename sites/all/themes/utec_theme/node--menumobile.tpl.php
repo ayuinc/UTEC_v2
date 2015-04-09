@@ -2,6 +2,12 @@
 	global $language; 
 	$tree = menu_tree_all_data('main-menu'); 
 	$menus = menu_tree_output(i18n_menu_localize_tree($tree));
+
+	$tree_quick = menu_tree_all_data('menu-top-menu'); 
+	$menus_quick = menu_tree_output(i18n_menu_localize_tree($tree_quick));
+
+	$fields_esp = $node->field_menu_content_esp['und'];
+	$fields_ing = $node->field_menu_content_ing['und'];
 	$count = 1;
 	$count2 = 1;
 ?>
