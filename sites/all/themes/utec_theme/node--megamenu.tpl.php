@@ -1,7 +1,7 @@
 <?php 
   global $language 
   global $base_url;
-  $url = base_path();
+  //$url = base_path();
   // die(print_r($url));
 ?>
 <?php $theme_path = drupal_get_path('theme', 'utec_theme'); ?>
