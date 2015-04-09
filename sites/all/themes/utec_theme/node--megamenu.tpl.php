@@ -1,6 +1,6 @@
 <?php 
   global $language 
-  global $base_url;
+  // global $base_url;
   //$url = base_path();
   // die(print_r($url));
 ?>
