@@ -22,8 +22,8 @@ $texto2 = $node->field_texo['und']['1']['value'];
 		</a>
 	</div> -->
 	
-		<?php if ($video_name != '') : ?>
-	  <div data-href="<?php print $link; ?>">
+	  <div>
+			<?php if ($video_name != '') : ?>
 			<video
 				id="videocover"
 				autoplay
@@ -46,7 +46,17 @@ $texto2 = $node->field_texo['und']['1']['value'];
 		  </div>
 			<?php endif; ?>
 		  <div class="video-placeholder visible-xs-block" style="background-image: url('/sites/all/themes/utec_theme/assets/img/project-bg-1.JPG');"></div>
-		  <div class="overlay flex-middle-end text-center text-white">
+		  <?php if ($link != '') : ?>
+		  <a href="<?php print $link; ?>" target="_blank" class="overlay flex-middle-end text-center text-white">
+		  	<div class="container relative home-introduccion normalize-text pv-70">
+					<!-- <h3 class="thin lead h1"><?php //print t('UTEC, the open platform to innovate') ?></h3>
+					<h4 class="thin pv-7 uppercase"><?php //print t('- DISCOVER IT -') ?></h4> -->
+					<h3 class="thin lead h1"><?php print $texto1; ?></h3>
+					<h4 class="thin pv-7 uppercase"><?php print $texto2; ?></h4>
+				</div>
+		  </a>
+			<?php else : ?>
+			<div class="overlay flex-middle-end text-center text-white">
 		  	<div class="container relative home-introduccion normalize-text pv-70">
 					<!-- <h3 class="thin lead h1"><?php //print t('UTEC, the open platform to innovate') ?></h3>
 					<h4 class="thin pv-7 uppercase"><?php //print t('- DISCOVER IT -') ?></h4> -->
@@ -54,6 +64,7 @@ $texto2 = $node->field_texo['und']['1']['value'];
 					<h4 class="thin pv-7 uppercase"><?php print $texto2; ?></h4>
 				</div>
 		  </div>
+		  <?php endif; ?>
   	</div>
   
   <a class="scroll-down scroll-down-sq size lg" href="#home-sec-1" rel="nofollow">

@@ -73,6 +73,9 @@
 			}
 			.text-white {
 				color: $gray-darker !important;
+				a {
+					color: $gray-darker !important;
+				}
 			}
 		}
 		.scroll-down {
