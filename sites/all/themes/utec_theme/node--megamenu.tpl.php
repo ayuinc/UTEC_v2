@@ -11,7 +11,7 @@
 	$menus = menu_tree_output(i18n_menu_localize_tree($tree));
 	$fields_esp = $node->field_menu_content_esp['und'];
 	$fields_ing = $node->field_menu_content_ing['und'];
-	//print_r($menus);
+	kpr($menus);
 ?>
 
 <div id="header" class="hidden-xs hidden-sm"> <!-- HEADER -->
