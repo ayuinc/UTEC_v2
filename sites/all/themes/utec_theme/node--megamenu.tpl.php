@@ -11,7 +11,7 @@
 	$menus = menu_tree_output(i18n_menu_localize_tree($tree));
 	$fields_esp = $node->field_menu_content_esp['und'];
 	$fields_ing = $node->field_menu_content_ing['und'];
-	kpr($menus);
+	//kpr($menus);
 ?>
 
 <div id="header" class="hidden-xs hidden-sm"> <!-- HEADER -->
@@ -175,11 +175,13 @@
             <?php
               $titles = array();  
               $titles = explode(" ", $child['#title']);
-              $href = drupal_get_path_alias($child['#href'], $language->language)
+              $href = drupal_get_path_alias($child['#href'], $language->language);
+              $classes = $child['#localized_options']['attributes']['class'];
             ?>
 						<?php if ($count2 <= 5) : ?>
 							<li>
-								<a href="/<?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" class="atm-menu-secundario"><span><?php print $titles[0]; ?></span><?php print $titles[1]; ?> <?php print $titles[2]; ?> <?php print $titles[3]; ?> <?php print $titles[4]; ?></a>
+								<a href="/<?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" class="<?php foreach ($classes as $key => $class){print $class;
+                } ?> atm-menu-secundario"><span><?php print $titles[0]; ?></span><?php print $titles[1]; ?> <?php print $titles[2]; ?> <?php print $titles[3]; ?> <?php print $titles[4]; ?></a>
 							</li>
 						<?php elseif($count2 > 5 && $count2 < 8) : ?>
 						</ul> 
