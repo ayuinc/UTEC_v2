@@ -121,7 +121,7 @@
 						</a>
 					<?php endif ?>
 					<hr class="hr-white">
-					<h4 class="lead thin"><?php print $field_subitulo_tres_acciones ?></h4>
+					<h4 class="lead thin mb-14"><?php print $field_subitulo_tres_acciones ?></h4>
 					<?php if ($field_link_tres_acciones!='')  { ?>
 						<?php if ($language->prefix == 'en'): ?>
 							<span class="btn btn-white btn-outline btn-sm see-more"><?php print t('Read more') ?></span>
