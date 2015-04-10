@@ -54,7 +54,7 @@
 			<?php print $field_introduccion_autor ?>
 		</div>
 	</div> -->
-	<div class="overlay flex-middle">
+	<div class="overlay flex-middle bg-gray-op">
 		<div class="container hero-text" 
 			<?php if ($language->prefix == 'en'): ?>
 				data-href="/en/<?php print $field_link_causa ?>"
