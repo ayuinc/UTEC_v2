@@ -41,9 +41,9 @@
 	</div>
 </div>
 	<?php if ($language->prefix == 'en'): ?>
-<div data-section-scroll="A special billboard" class="section-scroll-content scroll-down-white bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_foto_causa)?>);">
+<div data-section-scroll="A special billboard" class="section-scroll-content scroll-down-white bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_foto_causa)?>);">
 	<?php elseif ($language->prefix != 'en'): ?>
-<div data-section-scroll="Un panel" class="section-scroll-content scroll-down-white bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_foto_causa)?>);">
+<div data-section-scroll="Un panel" class="section-scroll-content scroll-down-white bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_foto_causa)?>);">
 	<?php endif ?>
 	<!-- <div class="container-sm text-center">
 		<h1 class="mb-7"><?php print $field_frase_autor ?></h1>
