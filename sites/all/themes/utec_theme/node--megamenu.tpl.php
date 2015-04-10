@@ -21,7 +21,9 @@
 
 	$fields_esp = $node->field_menu_content_esp['und'];
 	$fields_ing = $node->field_menu_content_ing['und'];
-	//kpr($menus);
+	
+  kpr($menus_quick_right);
+  kpr($menus_intranet);
 ?>
 
 <div id="header" class="hidden-xs hidden-sm"> <!-- HEADER -->
