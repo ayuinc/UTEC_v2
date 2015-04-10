@@ -65,6 +65,7 @@
           </div>
           <div class="col-sm-9">
             <h2 class="lead thin text-white h5 mt-0"><?php print $carrera_txt ?></h2>
+            <span class="btn btn-white btn-outline see-more bold mt-7 visible-xs-inline-block mt-14"><?php print t('See more') ?></span>
           </div>
         </div>
       </div>
