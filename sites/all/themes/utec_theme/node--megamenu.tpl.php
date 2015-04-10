@@ -169,10 +169,10 @@
 				<div>
 					<ul>
 					<?php foreach ($menus as $index => $menu) :?>
-          <?php if ($menu['#ref']) : ?>
+          <?php if ($menu['#href']) : ?>
 						<?php $count2 = 0; ?>
 						<?php foreach ($menu['#below'] as $child) : ?>
-            <?php if ($child['#ref']) : ?>
+            <?php if ($child['#href']) : ?>
               <?php
                 $titles = array();  
                 $titles = explode(" ", $child['#title']);
