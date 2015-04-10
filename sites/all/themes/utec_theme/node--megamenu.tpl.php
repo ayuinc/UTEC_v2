@@ -21,11 +21,7 @@
 
 	$fields_esp = $node->field_menu_content_esp['und'];
 	$fields_ing = $node->field_menu_content_ing['und'];
-	
-  kpr($menus);
-  kpr($menus_quick);
-  kpr($menus_quick_right);
-  kpr($menus_intranet);
+
 ?>
 
 <div id="header" class="hidden-xs hidden-sm"> <!-- HEADER -->
@@ -67,10 +63,6 @@
 
 						<li>
 							<?php print block_render('locale', 'language'); ?>
-							<!-- <a href="/en" class="btn btn-xs btn-custom btn-gray" rel="nofollow">EN</a> -->
-						</li>
-						<li>
-							<!-- <a href="/es" class="btn btn-xs btn-custom btn-gray" rel="nofollow">ES</a> -->
 						</li>
             <?php foreach ($menus_intranet as $key => $menu_intranet) : ?>
             <?php if ($menu_intranet['#href']) : ?>
