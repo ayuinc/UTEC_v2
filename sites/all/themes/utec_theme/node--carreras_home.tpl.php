@@ -83,6 +83,7 @@
       <div class="col-sm-9">
         <h3 class="lead h2 thin mb-14 h4"><?php print $malla_titulo ?></h3>
         <p clas="font-carreras"><?php print $malla_txt ?></p>
+        <span class="btn btn-gray-darker btn-outline see-more bold mt-7 visible-xs-inline-block mt-14"><?php print t('See more') ?></span>
       </div>
       <div class="col-sm-3 hidden-xs">
         <div class="size xl">
