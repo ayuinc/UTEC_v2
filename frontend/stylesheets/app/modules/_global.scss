@@ -90,7 +90,7 @@ $list-hover-height: 350px;
 	@include bg-img-control;
 	min-height: $bg-img-height;
 	@media #{$sm-down} {
-		background-position: 75% center;
+		background-position: 75% center !important;
 		&.bg-img-block-right {
 			background-position: right center;
 		}
