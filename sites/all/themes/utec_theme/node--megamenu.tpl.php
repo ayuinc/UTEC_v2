@@ -34,6 +34,7 @@
 			<div class="left">
 				<ul class=" thin text-gray mr-ch-14 nav-list pt-7">
           <?php foreach ($menus_quick as $key => $menu_quick) : ?>
+          <?php if ($menu_quick['#href']) : ?>
           <?php 
             $title = $menu_quick['#title'];
             $href = drupal_get_path_alias($menu_quick['#href'], $language->language);
@@ -41,6 +42,7 @@
             <li>
               <a href="/<?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" class="atm-menu-superior text-hover-primary"><?php print $title; ?></a>
             </li>
+          <?php endif; ?>
           <?php endforeach; ?>
 				</ul>
 			</div>
@@ -51,6 +53,7 @@
 							<?php print drupal_render(drupal_get_form('search_form')); ?>
 						</li>
             <?php foreach ($menus_quick_right as $key => $menu_quick_right) : ?>
+            <?php if ($menu_quick_right['#href']) : ?>
             <?php 
               $title = $menu_quick_right['#title'];
               $href = drupal_get_path_alias($menu_quick_right['#href'], $language->language);
@@ -59,6 +62,7 @@
                 <a href="/<?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" 
                   class="text-gray"><?php print $title; ?></a>
               </li>
+            <?php endif; ?>
             <?php endforeach; ?>	
 
 						<li>
@@ -69,6 +73,7 @@
 							<!-- <a href="/es" class="btn btn-xs btn-custom btn-gray" rel="nofollow">ES</a> -->
 						</li>
             <?php foreach ($menus_intranet as $key => $menu_intranet) : ?>
+            <?php if ($menu_intranet['#href']) : ?>
             <?php 
               $title2 = $menu_intranet['#title'];
               $href2 = drupal_get_path_alias($menu_intranet['#href'], $language->language);
@@ -76,6 +81,7 @@
               <li>
                 <a href="/<?php if($language->language == 'en'){print ($language->language."/");} print $href2; ?>" rel="nofollow" target="_blank" class="btn btn-xs btn-custom btn-gray atm-login"><?php print $title2; ?></a>
               </li>
+            <?php endif; ?>
             <?php endforeach; ?>
 						
 					</ul>
