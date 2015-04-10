@@ -49,9 +49,6 @@ $list-hover-height: 350px;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
-	@media #{$sm-down} {
-		background-position: 75% center;
-	}
 }
 
 .site-wrapper,
@@ -92,6 +89,12 @@ $list-hover-height: 350px;
 	position: relative;
 	@include bg-img-control;
 	min-height: $bg-img-height;
+	@media #{$sm-down} {
+		background-position: 75% center;
+		&.bg-img-block-right {
+			background-position: right center;
+		}
+	}
 	&.bg-img-block-sm,
 	&.bg-img-block-lg,
 	&.bg-img-block-xl {
