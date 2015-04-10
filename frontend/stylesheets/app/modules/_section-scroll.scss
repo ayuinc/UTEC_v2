@@ -62,26 +62,26 @@
 		&.flex-middle.bg-img-block {
 			padding: 0;
 			@include flex-middle-end;
-		} 
-		.container {
-			padding: $container-fluid;
-			background-color: rgba(white, 0.9);
-			.text-white {
-				color: $gray-darker !important;
-				a {
+			.container {
+				padding: $container-fluid;
+				background-color: rgba(white, 0.9);
+				.text-white {
 					color: $gray-darker !important;
+					a {
+						color: $gray-darker !important;
+					}
 				}
+				.btn-white {
+					color: $gray-darker !important;
+					border-color: $gray-darker !important;
+				}
+				// .btn-outline {
+				// 	color: $gray-dark;
+				// 	border-color: $gray-dark;
+				// 	// display: none;
+				// }
 			}
-			.btn-white {
-				color: $gray-darker !important;
-				border-color: $gray-darker !important;
-			}
-			// .btn-outline {
-			// 	color: $gray-dark;
-			// 	border-color: $gray-dark;
-			// 	// display: none;
-			// }
-		}
+		} 
 		// .overlay {
 		// 	&.flex-middle {
 		// 		@include flex-middle-end;
