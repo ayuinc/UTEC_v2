@@ -111,6 +111,7 @@
       <div class="col-sm-9">
         <h3 class="lead thin h4"><?php print $menciones_titulo ?></h3>
         <p clas="font-carreras"><?php print $menciones_txt ?></p>
+        <span class="btn btn-white btn-outline see-more bold mt-7 visible-xs-inline-block mt-14"><?php print t('See more') ?></span>
       </div>
     </div>
   </div>
