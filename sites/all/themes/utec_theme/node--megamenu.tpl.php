@@ -13,6 +13,9 @@
   $tree_quick = menu_tree_all_data('menu-top-menu'); 
   $menus_quick = menu_tree_output(i18n_menu_localize_tree($tree_quick));
 
+  $tree_quick_right = menu_tree_all_data('menu-top-menu-right'); 
+  $menus_quick_right = menu_tree_output(i18n_menu_localize_tree($tree_quick_right));
+
 	$fields_esp = $node->field_menu_content_esp['und'];
 	$fields_ing = $node->field_menu_content_ing['und'];
 	//kpr($menus);
@@ -40,21 +43,17 @@
 						<li class="form-search">
 							<?php print drupal_render(drupal_get_form('search_form')); ?>
 						</li>
-						<?php if ($language->language != 'en'): ?>
-							<li class="pt-7">
-								<a href="/contacto" class="text-gray atm-contacto"><?php print t('Contact us') ?></a>
-							</li>
-							<li class="pt-7">
-								<a href="/blog" class="text-gray atm-blog">Blog</a>
-							</li>
-						<?php elseif ($language->language == 'en'): ?>
-							<li class="pt-7">
-								<a href="/en/contact-us" class="text-gray atm-contacto"><?php print t('Contact us') ?></a>
-							</li>
-							<li class="pt-7">
-								<a href="/en/in-the-spotlight" class="text-gray atm-blog">Blog</a>
-							</li>
-						<?php endif ?>						
+            <?php foreach ($menus_quick_right as $key => $menu_quick_right) : ?>
+            <?php 
+              $title = $menu_quick_right['#title'];
+              $href = drupal_get_path_alias($menu_quick_right['#href'], $language->language);
+            ?>
+              <li class="pt-7">
+                <a href="/<?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" 
+                  class="text-gray"><?php print $title; ?></a>
+              </li>
+            <?php endforeach; ?>	
+
 						<li>
 							<?php print block_render('locale', 'language'); ?>
 							<!-- <a href="/en" class="btn btn-xs btn-custom btn-gray" rel="nofollow">EN</a> -->
