@@ -64,7 +64,7 @@
 						<li>
 							<!-- <a href="/es" class="btn btn-xs btn-custom btn-gray" rel="nofollow">ES</a> -->
 						</li>
-            <?php foreach ($menus_quick as $key => $menu_quick) : ?>
+            <?php foreach ($menus_intranet as $key => $menu_intranet) : ?>
             <?php 
               $title = $menu_quick['#title'];
               $href = drupal_get_path_alias($menu_quick['#href'], $language->language);
