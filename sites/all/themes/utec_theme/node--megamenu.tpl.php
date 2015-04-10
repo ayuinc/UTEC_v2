@@ -66,11 +66,11 @@
 						</li>
             <?php foreach ($menus_intranet as $key => $menu_intranet) : ?>
             <?php 
-              $title = $menu_intranet['#title'];
-              $href = drupal_get_path_alias($menu_intranet['#href'], $language->language);
+              $title2 = $menu_intranet['#title'];
+              $href2 = drupal_get_path_alias($menu_intranet['#href'], $language->language);
             ?>
               <li>
-                <a href="/<?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" rel="nofollow" target="_blank" class="btn btn-xs btn-custom btn-gray atm-login"><?php print $title; ?></a>
+                <a href="/<?php if($language->language == 'en'){print ($language->language."/");} print $href2; ?>" rel="nofollow" target="_blank" class="btn btn-xs btn-custom btn-gray atm-login"><?php print $title2; ?></a>
               </li>
             <?php endforeach; ?>
 						
