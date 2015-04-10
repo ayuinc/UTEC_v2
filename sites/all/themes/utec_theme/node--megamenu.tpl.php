@@ -16,6 +16,9 @@
   $tree_quick_right = menu_tree_all_data('menu-top-menu-right'); 
   $menus_quick_right = menu_tree_output(i18n_menu_localize_tree($tree_quick_right));
 
+  $tree_intranet = menu_tree_all_data('menu-top-menu-right-intranet'); 
+  $menus_intranet = menu_tree_output(i18n_menu_localize_tree($tree_intranet));
+
 	$fields_esp = $node->field_menu_content_esp['und'];
 	$fields_ing = $node->field_menu_content_ing['und'];
 	//kpr($menus);
@@ -61,9 +64,16 @@
 						<li>
 							<!-- <a href="/es" class="btn btn-xs btn-custom btn-gray" rel="nofollow">ES</a> -->
 						</li>
-						<li>
-							<a href="https://accounts.google.com/o/oauth2/auth?response_type=code&redirect_uri=http%3A%2F%2Futec-portal.appspot.com%2F&client_id=21208237274-d8jlir9qadpcp35mksh6takkemp9hdue.apps.googleusercontent.com&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&access_type=offline&approval_prompt=auto" target="_blank" class="btn btn-xs btn-custom btn-gray atm-login" rel="nofollow">Intranet</a>
-						</li>
+            <?php foreach ($menus_quick as $key => $menu_quick) : ?>
+            <?php 
+              $title = $menu_quick['#title'];
+              $href = drupal_get_path_alias($menu_quick['#href'], $language->language);
+            ?>
+              <li>
+                <a href="/<?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" rel="nofollow" target="_blank" class="btn btn-xs btn-custom btn-gray atm-login"><?php print $title; ?></a>
+              </li>
+            <?php endforeach; ?>
+						
 					</ul>
 				</div>
 			</div>
