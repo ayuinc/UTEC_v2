@@ -66,23 +66,39 @@
 		.container {
 			padding: $container-fluid;
 			background-color: rgba(white, 0.9);
-		}
-		.overlay {
-			&.flex-middle {
-				@include flex-middle-end;
-			}
 			.text-white {
 				color: $gray-darker !important;
 				a {
 					color: $gray-darker !important;
 				}
 			}
+			.btn-white {
+				color: $gray-darker !important;
+				border-color: $gray-darker !important;
+			}
+			// .btn-outline {
+			// 	color: $gray-dark;
+			// 	border-color: $gray-dark;
+			// 	// display: none;
+			// }
 		}
+		// .overlay {
+		// 	&.flex-middle {
+		// 		@include flex-middle-end;
+		// 	}
+		// }
 		.scroll-down {
-			display: none;
-		}
-		.btn-outline {
 			display: none;
 		}
 	}
 }
+
+
+
+
+
+
+
+
+
+
