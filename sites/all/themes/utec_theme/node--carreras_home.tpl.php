@@ -150,6 +150,7 @@
           </div>
           <div class="col-sm-9">
             <h3 class="lead thin h3 ph-14"><?php print $perfil_txt ?></h3>
+            <span class="btn btn-gray-darker btn-outline see-more bold mt-7 visible-xs-inline-block mt-14"><?php print t('See more') ?></span>
           </div>
         </div>
       </div>
