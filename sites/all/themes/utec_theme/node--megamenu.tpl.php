@@ -104,6 +104,7 @@
 							<span><?php print $menu['#title']; ?></span>
 						</a>
 					</li>
+          <?php $counter++; ?>
           <?php endif; ?>
           <?php endforeach; ?>
 				</ul>
