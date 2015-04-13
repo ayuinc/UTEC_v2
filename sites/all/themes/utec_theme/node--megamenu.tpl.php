@@ -10,6 +10,8 @@
 	$tree = menu_tree_all_data('main-menu'); 
 	$menus = menu_tree_output(i18n_menu_localize_tree($tree));
 
+  kpr($menus);
+
   $tree_quick = menu_tree_all_data('menu-top-menu'); 
   $menus_quick = menu_tree_output(i18n_menu_localize_tree($tree_quick));
 
@@ -92,42 +94,16 @@
 			</div>
 			<div class="left">
 				<ul class="nav-display-triggers">
+          <?php $counter = 1; ?>
+          <?php foreach ($menus as $index => $menu) :?>
+          <?php $classes = $menu['#localized_options']['attributes']['class']; ?>
 					<li>
-						<a href="#nav-display-1" class="atm-menu-principal">
-							<div><i class="icon-menu-somos-utec"></i></div>
-							<span><?php print t('We are Utec') ?></span>
+						<a href="#nav-display-<?php print $counter; ?>" class="atm-menu-principal">
+							<div><i class="<?php foreach ($classes as $key => $class){print $class.' ';} ?>"></i></div>
+							<span><?php print $menu['#title']; ?></span>
 						</a>
 					</li>
-					<li>
-						<a href="#nav-display-2" class="atm-menu-principal">
-							<div><i class="icon-menu-investigacion"></i></div>
-							<span><?php print t('Research') ?></span>
-						</a>
-					</li>
-					<li>
-						<a href="#nav-display-3" class="atm-menu-principal">
-							<div><i class="icon-menu-carreras"></i></div>
-							<span><?php print t('Programs') ?></span>
-						</a>
-					</li>
-					<li>
-						<a href="#nav-display-4" class="atm-menu-principal">
-							<div><i class="icon-menu-admision"></i></div>
-							<span><?php print t('Admissions') ?></span>
-						</a>
-					</li>
-					<li>
-						<a href="#nav-display-5" class="atm-menu-principal">
-							<div><i class="icon-menu-convenios"></i></div>
-							<span><?php print t('Alliances') ?></span>
-						</a>
-					</li>
-					<li>
-						<a href="#nav-display-6" class="atm-menu-principal">
-							<div><i class="icon-menu-edp"></i></div>
-							<span><?php print t('Executive Education') ?></span>
-						</a>
-					</li>
+          <?php endforeach; ?>
 				</ul>
 			</div>
 		</div>
