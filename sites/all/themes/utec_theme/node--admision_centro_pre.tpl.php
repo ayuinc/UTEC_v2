@@ -59,6 +59,11 @@ $modalida_ext_int = $node->field_modalidad_extensiva_intens['und']['0']['value']
 	          </div>
 	          <div class="col-sm-9">
 	            <h2 class="lead thin text-white h5 mt-0"><?php print $field_que_es_descripcion_cp ?></h2>
+	            <?php if ($language->language == 'en'): ?>
+              <span class="bold uppercase btn btn-white btn-outline see-more mt-7 visible-xs-inline-block mt-14"><?php print t('See more') ?></span>
+              <?php elseif ($language->language  != 'en'): ?>
+              <span class="bold uppercase btn btn-white btn-outline see-more mt-7 visible-xs-inline-block mt-14"><?php print t('See more') ?></span>
+              <?php endif ?>
 	          </div>
 	        </div>
 	      </div>

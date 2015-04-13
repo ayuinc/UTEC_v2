@@ -41,9 +41,9 @@
 	</div>
 </div>
 	<?php if ($language->prefix == 'en'): ?>
-<div data-section-scroll="A special billboard" class="section-scroll-content scroll-down-white bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_foto_causa)?>);">
+<div data-section-scroll="A special billboard" class="section-scroll-content scroll-down-white bg-img-block bg-img-block-lg bg-img-block-right" style="background-image: url(<?php print('/'.$pathfile.$field_foto_causa)?>);">
 	<?php elseif ($language->prefix != 'en'): ?>
-<div data-section-scroll="Un panel" class="section-scroll-content scroll-down-white bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_foto_causa)?>);">
+<div data-section-scroll="Un panel" class="section-scroll-content scroll-down-white bg-img-block bg-img-block-lg bg-img-block-right" style="background-image: url(<?php print('/'.$pathfile.$field_foto_causa)?>);">
 	<?php endif ?>
 	<!-- <div class="container-sm text-center">
 		<h1 class="mb-7"><?php print $field_frase_autor ?></h1>
@@ -54,7 +54,7 @@
 			<?php print $field_introduccion_autor ?>
 		</div>
 	</div> -->
-	<div class="overlay flex-middle">
+	<div class="overlay flex-middle bg-gray-op">
 		<div class="container hero-text" 
 			<?php if ($language->prefix == 'en'): ?>
 				data-href="/en/<?php print $field_link_causa ?>"
@@ -121,7 +121,7 @@
 						</a>
 					<?php endif ?>
 					<hr class="hr-white">
-					<h4 class="lead thin"><?php print $field_subitulo_tres_acciones ?></h4>
+					<h4 class="lead thin mb-14"><?php print $field_subitulo_tres_acciones ?></h4>
 					<?php if ($field_link_tres_acciones!='')  { ?>
 						<?php if ($language->prefix == 'en'): ?>
 							<span class="btn btn-white btn-outline btn-sm see-more"><?php print t('Read more') ?></span>
