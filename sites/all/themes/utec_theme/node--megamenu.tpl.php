@@ -10,7 +10,7 @@
 	$tree = menu_tree_all_data('main-menu'); 
 	$menus = menu_tree_output(i18n_menu_localize_tree($tree));
 
-  kpr($menus);
+  // kpr($menus);
 
   $tree_quick = menu_tree_all_data('menu-top-menu'); 
   $menus_quick = menu_tree_output(i18n_menu_localize_tree($tree_quick));
@@ -154,23 +154,28 @@
                 $titles = explode(" ", $child['#title']);
                 $href = drupal_get_path_alias($child['#href'], $language->language);
                 $classes = $child['#localized_options']['attributes']['class'];
+                $title = $child['#localized_options']['attributes']['title'];
+                $id = $child['#localized_options']['attributes']['id'];
+                $name = $child['#localized_options']['attributes']['name'];
+                $rel = $child['#localized_options']['attributes']['rel'];
+                $target = $child['#localized_options']['attributes']['target'];
               ?>
   						<?php if ($count2 <= 5) : ?>
   							<li>
   								<a href="/<?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" class="<?php foreach ($classes as $key => $class){print $class.' ';
-                  } ?>atm-menu-secundario"><span class="<?php if ($classes){print 'text-white';} ?>"><?php print $titles[0]; ?></span><?php print $titles[1]; ?> <?php print $titles[2]; ?> <?php print $titles[3]; ?> <?php print $titles[4]; ?></a>
+                  } ?>atm-menu-secundario" title="<?php print $title; ?>" id="<?php print $id; ?>" name="<?php print $name; ?>" rel="<?php print $rel; ?>" target="<?php print $target; ?>"><span class="<?php if ($classes){print 'text-white';} ?>"><?php print $titles[0]; ?></span><?php print $titles[1]; ?> <?php print $titles[2]; ?> <?php print $titles[3]; ?> <?php print $titles[4]; ?></a>
   							</li>
   						<?php elseif($count2 > 5 && $count2 < 7) : ?>
   						</ul>
   						<ul>
                 <li>
                   <a href="/<?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" class="<?php foreach ($classes as $key => $class){print $class.' ';
-                  } ?>atm-menu-secundario"><span class="<?php if ($classes){print 'text-white';} ?>"><?php print $titles[0]; ?></span><?php print $titles[1]; ?> <?php print $titles[2]; ?> <?php print $titles[3]; ?> <?php print $titles[4]; ?></a>             
+                  } ?>atm-menu-secundario" title="<?php print $title; ?>" id="<?php print $id; ?>" name="<?php print $name; ?>" rel="<?php print $rel; ?>" target="<?php print $target; ?>"><span class="<?php if ($classes){print 'text-white';} ?>"><?php print $titles[0]; ?></span><?php print $titles[1]; ?> <?php print $titles[2]; ?> <?php print $titles[3]; ?> <?php print $titles[4]; ?></a>
                 </li>
   						<?php else : ?>
   							<li>
                   <a href="/<?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" class="<?php foreach ($classes as $key => $class){print $class.' ';
-                  } ?>atm-menu-secundario"><span class="<?php if ($classes){print 'text-white';} ?>"><?php print $titles[0]; ?></span><?php print $titles[1]; ?> <?php print $titles[2]; ?> <?php print $titles[3]; ?> <?php print $titles[4]; ?></a>							
+                  } ?>atm-menu-secundario" title="<?php print $title; ?>" id="<?php print $id; ?>" name="<?php print $name; ?>" rel="<?php print $rel; ?>" target="<?php print $target; ?>"><span class="<?php if ($classes){print 'text-white';} ?>"><?php print $titles[0]; ?></span><?php print $titles[1]; ?> <?php print $titles[2]; ?> <?php print $titles[3]; ?> <?php print $titles[4]; ?></a>
                 </li>
               <?php endif; ?>
 						<?php endif; ?>
