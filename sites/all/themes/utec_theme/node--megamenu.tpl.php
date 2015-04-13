@@ -97,12 +97,14 @@
           <?php $counter = 1; ?>
           <?php foreach ($menus as $index => $menu) :?>
           <?php $classes = $menu['#localized_options']['attributes']['class']; ?>
+          <?php if ($menu['#title']) : ?>
 					<li>
 						<a href="#nav-display-<?php print $counter; ?>" class="atm-menu-principal">
 							<div><i class="<?php foreach ($classes as $key => $class){print $class.' ';} ?>"></i></div>
 							<span><?php print $menu['#title']; ?></span>
 						</a>
 					</li>
+          <?php endif; ?>
           <?php endforeach; ?>
 				</ul>
 			</div>
