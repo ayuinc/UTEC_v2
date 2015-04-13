@@ -200,46 +200,25 @@
   <div class="nav-main">
     <div class="container">
       <div class="left">
-        <div class="logo">
-          <?php if ($language->language == 'en'): ?>
-            <a href="/en" class="atm-logo"><img src="/<?php print $theme_path; ?>/assets/img/icon_UTEC.png" alt="Logo UTEC"></a>
-          <?php elseif ($language->language != 'en'): ?>
-            <a href="/" class="atm-logo"><img src="/<?php print $theme_path; ?>/assets/img/icon_UTEC.png" alt="Logo UTEC"></a>
-          <?php endif ?>
+        <div class="logo pv-21">
+          <a href="<?php print $front_page; ?>" class="atm-logo">
+            <img src="<?php print $logo; ?>" alt="Logo UTEC" width="149" height="auto">
+          </a>
         </div>
       </div>
       <div class="left hidden-xs hidden-sm">
         <ul class="nav-display-triggers">
+          <?php $counter = 1; ?>
+          <?php foreach ($menus as $index => $menu) :?>
+          <?php if ($menu['#title']) : ?>
           <li>
-            <a href="#nav-shrink-display-1" class="atm-menu-principal">
-              <span><?php print t('We are Utec') ?></span>
+            <a href="#nav-shrink-display-<?php print $counter; ?>" class="atm-menu-principal">
+              <span><?php print $menu['#title']; ?></span>
             </a>
           </li>
-          <li>
-            <a href="#nav-shrink-display-2" class="atm-menu-principal">
-              <span><?php print t('Research') ?></span>
-            </a>
-          </li>
-          <li>
-            <a href="#nav-shrink-display-3" class="atm-menu-principal">
-              <span><?php print t('Programs') ?></span>
-            </a>
-          </li>
-          <li>
-            <a href="#nav-shrink-display-4" class="atm-menu-principal">
-              <span><?php print t('Admissions') ?></span>
-            </a>
-          </li>
-          <li>
-            <a href="#nav-shrink-display-5" class="atm-menu-principal">
-              <span><?php print t('Alliances') ?></span>
-            </a>
-          </li>
-          <li>
-            <a href="#nav-shrink-display-6" class="atm-menu-principal">
-              <span><?php print t('Executive Education') ?></span>
-            </a>
-          </li>
+          <?php $counter++; ?>
+          <?php endif; ?>
+          <?php endforeach; ?>
         </ul>
       </div>
       <div class="right visible-xs-block visible-sm-block">
@@ -282,29 +261,45 @@
         <div>
           <ul>
           <?php foreach ($menus as $index => $menu) :?>
+          <?php if ($menu['#href']) : ?>
             <?php $count2 = 0; ?>
             <?php foreach ($menu['#below'] as $child) : ?>
-            <?php
-              $titles = array();  
-              $titles = explode(" ", $child['#title']);
-              $href = drupal_get_path_alias($child['#href'], $language->language)
-            ?>
-            <?php if ($count2 <= 5) : ?>
-              <li>
-                <a href="/<?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" class="atm-menu-secundario"><span><?php print $titles[0]; ?></span><?php print $titles[1]; ?> <?php print $titles[2]; ?> <?php print $titles[3]; ?> <?php print $titles[4]; ?></a>
-              </li>
-            <?php elseif($count2 > 5 && $count2 < 8) : ?>
-            </ul> 
-            <ul>
-            <?php else : ?>
-              <li>
-                <a href="/<?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" class="atm-menu-secundario"><span><?php print $titles[0]; ?></span><?php print $titles[1]; ?> <?php print $titles[2]; ?> <?php print $titles[3]; ?> <?php print $titles[4]; ?></a>             
-              </li>
+            <?php if ($child['#href']) : ?>
+              <?php
+                $titles = array();  
+                $titles = explode(" ", $child['#title']);
+                $href = drupal_get_path_alias($child['#href'], $language->language);
+                $classes = $child['#localized_options']['attributes']['class'];
+                $title = $child['#localized_options']['attributes']['title'];
+                $id = $child['#localized_options']['attributes']['id'];
+                $name = $child['#localized_options']['attributes']['name'];
+                $rel = $child['#localized_options']['attributes']['rel'];
+                $target = $child['#localized_options']['attributes']['target'];
+              ?>
+              <?php if ($count2 <= 5) : ?>
+                <li>
+                  <a href="/<?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" class="<?php foreach ($classes as $key => $class){print $class.' ';
+                  } ?>atm-menu-secundario" title="<?php print $title; ?>" id="<?php print $id; ?>" name="<?php print $name; ?>" rel="<?php print $rel; ?>" target="<?php print $target; ?>"><span class="<?php if ($classes){print 'text-white';} ?>"><?php print $titles[0]; ?></span><?php print $titles[1]; ?> <?php print $titles[2]; ?> <?php print $titles[3]; ?> <?php print $titles[4]; ?></a>
+                </li>
+              <?php elseif($count2 > 5 && $count2 < 7) : ?>
+              </ul>
+              <ul>
+                <li>
+                  <a href="/<?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" class="<?php foreach ($classes as $key => $class){print $class.' ';
+                  } ?>atm-menu-secundario" title="<?php print $title; ?>" id="<?php print $id; ?>" name="<?php print $name; ?>" rel="<?php print $rel; ?>" target="<?php print $target; ?>"><span class="<?php if ($classes){print 'text-white';} ?>"><?php print $titles[0]; ?></span><?php print $titles[1]; ?> <?php print $titles[2]; ?> <?php print $titles[3]; ?> <?php print $titles[4]; ?></a>
+                </li>
+              <?php else : ?>
+                <li>
+                  <a href="/<?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" class="<?php foreach ($classes as $key => $class){print $class.' ';
+                  } ?>atm-menu-secundario" title="<?php print $title; ?>" id="<?php print $id; ?>" name="<?php print $name; ?>" rel="<?php print $rel; ?>" target="<?php print $target; ?>"><span class="<?php if ($classes){print 'text-white';} ?>"><?php print $titles[0]; ?></span><?php print $titles[1]; ?> <?php print $titles[2]; ?> <?php print $titles[3]; ?> <?php print $titles[4]; ?></a>
+                </li>
+              <?php endif; ?>
             <?php endif; ?>
             <?php $count2++; ?>
             <?php endforeach; ?>
             <?php unset($menus[$index]); ?> 
             <?php break; ?>
+          <?php endif; ?>  
           <?php endforeach; ?> 
           </ul>
         </div>
