@@ -1,33 +1,5 @@
 <?php global $language ?>
 <!-- FOOTER -->
-	<!-- <div class="subscribe pv-7 bg-gray-darker hidden-xs">
-		<div class="container">
-			<ul class="grid-list grid-list-centered normalize-text">
-				<li>
-					<h3 class="thin text-white pt-7"><i class="icon-subscribe mr-7"></i><?php //print t('Subscribe to UTEC') ?></h3>
-				</li>
-				<li>
-					<div class="form-subscribe">
-						<form action="" class="form-inline mb-ch-0">
-							<div class="form-group">
-								<label for="subscribe_name" class="sr-only"><?php //print t('Name') ?></label>
-                <?php //if ($language->language == 'en'): ?>
-								  <input type="text" class="form-control" width="210" height="auto" placeholder="Name">
-                <?php //elseif ($language->language != 'en'): ?>
-                  <input type="text" class="form-control" width="210" height="auto" placeholder="Nombre">
-                <?php //endif ?>
-							</div>
-							<div class="form-group">
-								<label for="subscribe_email" class="sr-only"><?php //print t('Email') ?></label>
-								<input type="text" class="form-control" width="210" height="auto" placeholder="E-mail">
-								<button class="btn btn-outline btn-white"><i class="icon-arrows-right"></i></button>
-							</div>
-						</form>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div> -->
   <?php $node = node_load(919); ?>
   <?php //print_r($node); ?>
 	<div class="site-map pv-14 bg-gray-dark hidden-xs">
@@ -166,7 +138,7 @@
 				<span><strong><?php print t('P.') ?></strong>(511) 230-5020 - (511) 373 1000 - (511) 354-0070</span>
 				<span><strong><?php print t('W.') ?></strong>www.utec.edu.pe</span>
 				<span><strong><?php print t('C.') ?></strong><a href="mailto:informes@utec.edu.pe" class="text-gray-dark">informes@utec.edu.pe</a></span>
-        <div class="inline-block">
+        <div class="inline-block mt-14">
   				<!-- <a rel="nofollow" href="<?php //if ($language->language != 'en'): ?>/libro-de-reclamaciones <?php //else : ?>/en/book-of-complaints <?php //endif; ?>" class="btn btn-outline btn-xs btn-gray-dark mt-7-xs"><i class="icon-footer-book"></i></a> -->
   				<a rel="nofollow" href="https://www.facebook.com/utecuniversidad" target="_blank" class="atm-sociales btn btn-outline btn-xs btn-gray-dark mt-7-xs btn-rrss"><i class="icon-footer-facebook"></i></a>
   				<a rel="nofollow" href="https://twitter.com/utecedu" target="_blank" class="atm-sociales btn btn-outline btn-xs btn-gray-dark mt-7-xs btn-rrss"><i class="icon-footer-twitter"></i></a>
