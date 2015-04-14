@@ -66,8 +66,8 @@
 			<?php foreach ($menu['#below'] as $child) : ?>
 	    <?php if ($child['#href']) : ?>
 	      <?php
-	        $titles = array();  
-	        $titles = explode(" ", $child['#title']);
+	        $titles2 = array();  
+	        $titles2 = explode(" ", $child['#title']);
 	        $href = drupal_get_path_alias($child['#href'], $language->language);
 	        $classes = $child['#localized_options']['attributes']['class'];
 	        $title = $child['#localized_options']['attributes']['title'];
@@ -76,21 +76,9 @@
 	        $rel = $child['#localized_options']['attributes']['rel'];
 	        $target = $child['#localized_options']['attributes']['target'];
 	      ?>
-				<?php if ($count2 <= 5) : ?>
-					<li>
-						<a href="/<?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" class="atm-menu-secundario-movil"><span><?php print $titles2[0]; ?></span><?php print $titles2[1]; ?> <?php print $titles2[2]; ?> <?php print $titles2[3]; ?> <?php print $titles2[4]; ?></a>
-					</li>
-				<?php elseif($count2 > 5 && $count2 < 7) : ?>
-				</ul>
-				<ul>
-	        <li>
-						<a href="/<?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" class="atm-menu-secundario-movil"><span><?php print $titles2[0]; ?></span><?php print $titles2[1]; ?> <?php print $titles2[2]; ?> <?php print $titles2[3]; ?> <?php print $titles2[4]; ?></a>
-					</li>
-				<?php else : ?>
-	        <li>
-						<a href="/<?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" class="atm-menu-secundario-movil"><span><?php print $titles2[0]; ?></span><?php print $titles2[1]; ?> <?php print $titles2[2]; ?> <?php print $titles2[3]; ?> <?php print $titles2[4]; ?></a>
-					</li>
-	      <?php endif; ?>
+				<li>
+					<a href="/<?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" class="atm-menu-secundario-movil"><span><?php print $titles2[0]; ?></span><?php print $titles2[1]; ?> <?php print $titles2[2]; ?> <?php print $titles2[3]; ?> <?php print $titles2[4]; ?></a>
+				</li>
 			<?php endif; ?>
 			<?php $count2++; ?>
 	    <?php endforeach; ?>
