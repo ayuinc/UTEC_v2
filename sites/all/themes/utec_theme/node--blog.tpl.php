@@ -5,11 +5,12 @@
   $path = $base_url.'/'.$theme_path;
   $pathfile= variable_get('file_public_path', conf_path() . '/files/');
 
-  kpr($node);
+  // kpr($node);
 	$titulo = $node->title;	 		
 	$cuerpo = $node->body['und']['0']['value'];	
 	// $imagen = $node->field_imagen['und']['0']['filename'];
-	$imagen = $node->field_imagen['und']['0']['uri'];
+	// $imagen = $node->field_imagen['und']['0']['uri'];
+	$imagen = $node->field_image['und']['0']['uri'];
 	$blogger_name = $node->field_blogger['und']['0']['entity']->name;
 	$blogger_cargo = $node->field_blogger['und']['0']['entity']->field_descripci_n['und']['0']['value'];
 	$created = $node->created;
