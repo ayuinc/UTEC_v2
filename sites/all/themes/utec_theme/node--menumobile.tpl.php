@@ -36,6 +36,7 @@
 	</ul>
 </div>
 <?php $count = 1; ?>
+<?php kpr($fields_esp); ?>
 <?php foreach ($fields_esp as $index => $fid) : ?>
 	<?php 
 	  // print_r($fid['value']);
