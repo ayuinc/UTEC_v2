@@ -38,7 +38,6 @@
 	</ul>
 </div>
 <?php $count = 1; ?>
-<?php kpr($fields_esp); ?>
 <?php foreach ($fields_esp as $index => $fid) : ?>
 	<?php 
 	  // print_r($fid['value']);
@@ -57,10 +56,8 @@
 	  <a class="back"><?php print t('Go Back'); ?></a>
 		<?php if ($language->language == 'es'): ?>
 			<?php print $titulo_esp ?>
-			<?php print $cuerpo_esp ?>
 		<?php elseif ($language->language == 'en'): ?>
 			<?php print $titulo_ing ?>
-			<?php print $cuerpo_ing ?>
 		<?php endif ?>
 		<ul>
 		<?php foreach ($menus as $index => $menu) :?>
