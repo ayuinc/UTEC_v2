@@ -22,37 +22,6 @@
 	$count2 = 1;
 ?>
 
-<?php foreach ($menus as $index => $menu) :?>
-<div class="mobile-nav-display" id="mobile-nav-display-<?php print $count2 ?>">
-  <a class="back"><?php print t('Go Back') ?></a>
-  <?php
-    $titles = array();  
-    $titles = explode(" ", $menu['#title']);
-  ?>
-	<h3 class="h1 pl-14"><?php print $titles[0]; ?><br><span><?php print $titles[1]; ?> </span> <?php print $titles[2]; ?> <?php print $titles[3]; ?></h3>
-	<ul>
-		<?php foreach ($menu['#below'] as $child) : ?>
-    <?php
-      $titles2 = array();  
-      $titles2 = explode(" ", $child['#title']);
-      $href = drupal_get_path_alias($child['#href'], $language->language)
-    ?>
-		<li>
-			<a href="/<?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" class="atm-menu-secundario-movil"><span><?php print $titles2[0]; ?></span><?php print $titles2[1]; ?> <?php print $titles2[2]; ?> <?php print $titles2[3]; ?> <?php print $titles2[4]; ?></a>
-		</li>
-		<?php endforeach; ?>					
-		<li>
-			<a href="http://utecventures.com/" rel="nofollow" target="_blank"  class="atm-menu-secundario-movil"><span>Utec </span>Ventures</a>
-		</li>
-		<!--<li>
-			<a href="#" class="btn btn-primary btn-custom bold">Postular</a>
-		</li>-->
-	</ul>
-</div>
-<?php $count2++; ?>
-<?php endforeach; ?>
-
-
 <div class="mobile-nav-display-triggers"> 
 	<ul class="nav-display-triggers">
     <?php $counter = 1; ?>
