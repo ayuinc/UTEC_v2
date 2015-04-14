@@ -101,5 +101,5 @@
 	<?php endforeach; ?> 
 	</ul>
 	<?php $count++; ?>
-	<?php endforeach; ?>
 </div>
+<?php endforeach; ?>
