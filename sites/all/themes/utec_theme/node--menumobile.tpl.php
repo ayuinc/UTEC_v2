@@ -4,7 +4,7 @@
 	$tree = menu_tree_all_data('main-menu'); 
 	$menus = menu_tree_output(i18n_menu_localize_tree($tree));
 
-  // kpr($menus);
+  kpr($menus);
 
   $tree_quick = menu_tree_all_data('menu-top-menu'); 
   $menus_quick = menu_tree_output(i18n_menu_localize_tree($tree_quick));
@@ -51,7 +51,7 @@
 	  $cuerpo_ing = $field_ing[$num_ing]->field_cuerpo['und'][0]['value'];
 	?>
 	<div class="mobile-nav-display" id="mobile-nav-display-<?php print $count; ?>">
-	  <a class="back">Regresar</a>
+	  <a class="back"><?php print t('Go Back'); ?></a>
 		<?php if ($language->language == 'es'): ?>
 			<?php print $titulo_esp ?>
 			<?php print $cuerpo_esp ?>
