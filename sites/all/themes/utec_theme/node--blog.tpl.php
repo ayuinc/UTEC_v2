@@ -5,6 +5,7 @@
   $path = $base_url.'/'.$theme_path;
   $pathfile= variable_get('file_public_path', conf_path() . '/files/');
 
+  kpr($node);
 	$titulo = $node->title;	 		
 	$cuerpo = $node->body['und']['0']['value'];	
 	// $imagen = $node->field_imagen['und']['0']['filename'];
