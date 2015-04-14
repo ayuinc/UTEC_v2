@@ -23,7 +23,7 @@
 ?>
 
 <div class="mobile-nav-display-triggers"> 
-	<ul class="nav-display-triggers">
+	<ul>
     <?php $counter = 1; ?>
     <?php foreach ($menus as $index => $menu) :?>
     <?php $classes = $menu['#localized_options']['attributes']['class']; ?>
