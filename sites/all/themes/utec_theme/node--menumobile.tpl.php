@@ -15,8 +15,8 @@
   $tree_intranet = menu_tree_all_data('menu-top-menu-right-intranet'); 
   $menus_intranet = menu_tree_output(i18n_menu_localize_tree($tree_intranet));
 
-  $noode = node_load(3);
-  kpr($noode);
+  $node = node_load(3);
+  
 	$fields_esp = $node->field_menu_content_esp['und'];
 	$fields_ing = $node->field_menu_content_ing['und'];
 
