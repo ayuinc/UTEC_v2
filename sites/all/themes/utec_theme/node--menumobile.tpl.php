@@ -29,7 +29,7 @@
     <?php $classes = $menu['#localized_options']['attributes']['class']; ?>
     <?php if ($menu['#title']) : ?>
 		<li>
-      <a href="#mobile-nav-display-<?php print $counter ?>" class="atm-menu-principal-movil"><?php print $menu['#title']; ?></a>
+      <a href="#mobile-nav-display-<?php print $counter; ?>" class="atm-menu-principal-movil"><?php print $menu['#title']; ?></a>
     </li>
     <?php $counter++; ?>
     <?php endif; ?>
@@ -51,7 +51,7 @@
   $titulo_ing = $field_ing[$num_ing]->field_titulo_menu['und'][0]['value'];
   $cuerpo_ing = $field_ing[$num_ing]->field_cuerpo['und'][0]['value'];
 ?>
-<div class="mobile-nav-display" id="mobile-nav-display-1">
+<div class="mobile-nav-display" id="mobile-nav-display-<?php print $count; ?>">
   <a class="back">Regresar</a>
 	<?php if ($language->language == 'es'): ?>
 		<?php print $titulo_esp ?>
