@@ -94,6 +94,12 @@
 			</div>
 		</div>
 		<div class="row">
+			<div class="form-group col-sm-6">
+				<label for="" class="sr-only"><?php print t('High School') ?></label>
+				<input  id="colegio-procedencia" name="colegio" type="text" class="form-control" placeholder="<?php print t('High School') ?>">
+			</div>			
+		</div>
+		<div class="row">
 			<div class="form-group col-sm-12">
 				<label for="" class="sr-only"><?php print t('Message') ?></label>
 				<textarea class="form-control" placeholder="<?php print t('Message') ?>" name="consulta" id="consulta"></textarea>
@@ -140,7 +146,11 @@
 				<div class="form-group col-sm-6">
 					<label for="" class="sr-only"><?php print t('Phone') ?></label>
 					<input type="text" class="form-control" placeholder="<?php print t('Phone') ?>" name="telefono" id="telefono">
-				</div>				
+				</div>	
+				<div class="form-group col-sm-6">
+					<label for="" class="sr-only"><?php print t('High School') ?></label>
+					<input  id="colegio-procedencia" name="colegio" type="text" class="form-control" placeholder="<?php print t('High School') ?>">
+				</div>								
 			</div>
 			<div class="row">
 				<div class="form-group col-sm-12">

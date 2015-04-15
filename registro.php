@@ -1493,7 +1493,7 @@ $mail_1->Send();
 //consumir web service:
 $client = new nusoap_client( "http://app.utec.edu.pe/inscripcionutecws3/services/InscripcionServicePort?wsdl", true ); 
 
-$programacion = "2015-1";
+$programacion = "2015-2";
 
 $v0 = $familia;
 $v1 = utf8_decode($_POST['nombres']);
