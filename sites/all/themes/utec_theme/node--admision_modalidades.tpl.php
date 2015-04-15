@@ -108,7 +108,7 @@ $field_link_formulario_en = $node->field_link_formulario_en['und']['0']['value']
 			<div>
 				<?php if ($language->language  != 'en'): ?>
 					<a href="/modalidades-de-admision/bachillerato-internacional">
-						<h2 class="thin h4 lead lh-lg"><?php print t('Bachillerate Internacional') ?></h2>
+						<h2 class="thin h4 lead lh-lg"><?php print t('Bachillerato Internacional') ?></h2>
 					</a>
 				<?php elseif ($language->language == 'en'): ?>
 					<a href="/en/methods-of-admission/international-baccalaureate">
