@@ -28,7 +28,7 @@ $field_link_formulario_en = $node->field_link_formulario_en['und']['0']['value']
 			<div>
 				<?php if ($language->language  != 'en'): ?>
 					<a href="/modalidades-de-admision/primeros-puestos">
-						<h2 class="thin h4 lead lh-lg"><?php print t('Primeros puestos') ?></h2>
+						<h2 class="thin h4 lead lh-lg"><?php print t('Primeros Puestos') ?></h2>
 					</a>
 				<?php elseif ($language->language == 'en'): ?>
 					<a href="/en/methods-of-admission/top-academic-rankings">
