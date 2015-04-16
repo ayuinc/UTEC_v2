@@ -9,7 +9,7 @@
 	$cuerpo = $node->body['und']['0']['value'];	
 	// $imagen = $node->field_imagen['und']['0']['filename'];
 	$images = $node->field_image['und']; 
-	kpr($node);
+	// kpr($node);
 ?>
 
 <div class="container-sm">
