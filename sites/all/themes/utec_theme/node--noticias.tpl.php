@@ -7,7 +7,8 @@
   $category = $node->field_cate['und']['0']['taxonomy_term']->name;
 	$titulo = $node->title;	 		
 	$cuerpo = $node->body['und']['0']['value'];	
-	$imagen = $node->field_imagen['und']['0']['filename'];
+	// $imagen = $node->field_imagen['und']['0']['filename'];
+	$images = $node->field_image['und']; 
 	kpr($node);
 ?>
 
@@ -18,7 +19,7 @@
 		<div id="carousel-custom" class="carousel carousel-custom slide mb-42" data-ride="carousel">
 			<!-- Wrapper for slides -->
 		  <div class="carousel-inner" role="listbox">
-		  	<?php $images = $node->field_imagen['und']; $count=0; ?>
+		  	<?php $count = 0; ?>
 			  <?php foreach ($images as $image): ?>
 			  <div class="item <?php if($count == 0){print 'active';} ?>">
 			  	<div class="banner banner-label-bottom mb-7 ml-0">
