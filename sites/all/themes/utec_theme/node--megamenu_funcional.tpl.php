@@ -89,7 +89,7 @@
 					<?php endif ?>	
 				</div>
 			</div>
-			<div class="left">
+			<div class="right">
 				<ul class="nav-display-triggers">
 					<li>
 						<a href="#nav-display-1" class="atm-menu-principal">
@@ -660,7 +660,7 @@
 					<?php endif ?>
 				</div>
 			</div>
-			<div class="left hidden-xs hidden-sm">
+			<div class="right hidden-xs hidden-sm p-0">
 				<ul class="nav-display-triggers">
 					<li>
 						<a href="#nav-shrink-display-1" class="atm-menu-principal">

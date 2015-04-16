@@ -21,9 +21,9 @@ $field_link_formulario_en = $node->field_link_formulario_en['und']['0']['value']
 	<?php //endif; ?>
 	<ul class="grid-list grid-list-3 grid-list-1-xs grid-list-hover size sm">
 		<?php if ($language->language  != 'en'): ?>
-		<li data-href="/modalidades-de-admision/primeros-puestos" class="atm-blog" id="primeros-puestos">
+		<li data-href="/modalidades-de-admision/primeros-puestos" class="atm-blog text-gray-dark text-hover-white" id="primeros-puestos">
 		<?php elseif ($language->language == 'en'): ?>
-		<li data-href="/en/methods-of-admission/top-academic-rankings" class="atm-blog" id="primeros-puestos">
+		<li data-href="/en/methods-of-admission/top-academic-rankings" class="atm-blog text-gray-dark text-hover-white" id="primeros-puestos">
 		<?php endif ?>
 			<div>
 				<?php if ($language->language  != 'en'): ?>
@@ -41,9 +41,9 @@ $field_link_formulario_en = $node->field_link_formulario_en['und']['0']['value']
 			</div>
 		</li>
 		<?php if ($language->language  != 'en'): ?>
-		<li data-href="/modalidades-de-admision/alto-rendimiento" class="atm-blog" id="alto-rendimiento">
+		<li data-href="/modalidades-de-admision/alto-rendimiento" class="atm-blog text-gray-dark text-hover-white" id="alto-rendimiento">
 		<?php elseif ($language->language == 'en'): ?>
-		<li data-href="/en/methods-of-admission/high-performance-assessment" class="atm-blog" id="alto-rendimiento">
+		<li data-href="/en/methods-of-admission/high-performance-assessment" class="atm-blog text-gray-dark text-hover-white" id="alto-rendimiento">
 		<?php endif ?>		
 			<div>
 				<?php if ($language->language  != 'en'): ?>
@@ -61,9 +61,9 @@ $field_link_formulario_en = $node->field_link_formulario_en['und']['0']['value']
 			</div>
 		</li>
 		<?php if ($language->language  != 'en'): ?>
-		<li data-href="/modalidades-de-admision/traslado-externo" class="atm-blog" id="traslado">
+		<li data-href="/modalidades-de-admision/traslado-externo" class="atm-blog text-gray-dark text-hover-white" id="traslado">
 		<?php elseif ($language->language == 'en'): ?>
-		<li data-href="/en/methods-of-admission/transfer-students" class="atm-blog" id="traslado">
+		<li data-href="/en/methods-of-admission/transfer-students" class="atm-blog text-gray-dark text-hover-white" id="traslado">
 		<?php endif ?>				
 			<div>
 				<?php if ($language->language  != 'en'): ?>
@@ -81,9 +81,9 @@ $field_link_formulario_en = $node->field_link_formulario_en['und']['0']['value']
 			</div>
 		</li>
 		<?php if ($language->language  != 'en'): ?>
-		<li data-href="/modalidades-de-admision/centro-pre" class="atm-blog" id="centro-pre">
+		<li data-href="/modalidades-de-admision/centro-pre" class="atm-blog text-gray-dark text-hover-white" id="centro-pre">
 		<?php elseif ($language->language == 'en'): ?>
-		<li data-href="/en/methods-of-admission/pre-university-center" class="atm-blog" id="centro-pre">
+		<li data-href="/en/methods-of-admission/pre-university-center" class="atm-blog text-gray-dark text-hover-white" id="centro-pre">
 		<?php endif ?>			
 			<div>
 				<?php if ($language->language  != 'en'): ?>
@@ -101,9 +101,9 @@ $field_link_formulario_en = $node->field_link_formulario_en['und']['0']['value']
 			</div>
 		</li>
 		<?php if ($language->language  != 'en'): ?>
-		<li data-href="/modalidades-de-admision/bachillerato-internacional" class="atm-blog" id="bachillerato-internacional">
+		<li data-href="/modalidades-de-admision/bachillerato-internacional" class="atm-blog text-gray-dark text-hover-white" id="bachillerato-internacional">
 		<?php elseif ($language->language == 'en'): ?>
-		<li data-href="/en/methods-of-admission/international-baccalaureate" class="atm-blog" id="bachillerato-internacional">
+		<li data-href="/en/methods-of-admission/international-baccalaureate" class="atm-blog text-gray-dark text-hover-white" id="bachillerato-internacional">
 		<?php endif ?>		
 			<div>
 				<?php if ($language->language  != 'en'): ?>
@@ -121,9 +121,9 @@ $field_link_formulario_en = $node->field_link_formulario_en['und']['0']['value']
 			</div>
 		</li>
 		<?php if ($language->language  != 'en'): ?>
-		<li data-href="/modalidades-de-admision/examen-de-admision" class="atm-blog" id="examen-de-admision">
+		<li data-href="/modalidades-de-admision/examen-de-admision" class="atm-blog text-gray-dark text-hover-white" id="examen-de-admision">
 		<?php elseif ($language->language == 'en'): ?>
-		<li data-href="/en/methods-of-admission/admissions-exam" class="atm-blog" id="examen-de-admision">
+		<li data-href="/en/methods-of-admission/admissions-exam" class="atm-blog text-gray-dark text-hover-white" id="examen-de-admision">
 		<?php endif ?>			
 			<div>
 				<?php if ($language->language  != 'en'): ?>

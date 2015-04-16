@@ -29,43 +29,43 @@
 		min-height: 35px;
 		background: white;
 		.logo {
-			width: 280px;
+			width: 150px;
 			height: 106px;
 		}
-		.left {
-			> ul {
-				@include clearfix;
-				@include list-unstyled;
-				li {
-					float: left;
-					a {
+		.nav-display-triggers {
+			@include clearfix;
+			@include list-unstyled;
+			li {
+				float: left;
+				a {
+					display: block;
+					text-align: center;
+					padding: 21px 0;
+					padding: rem(21px) 0;
+					color: $gray;
+					background: white;
+					min-width: 135px;
+					min-width: rem(135px);
+					height: 106px;
+					&:hover,
+					&.active {
+						background: $gray-lighter;
+						color: $link-color;
+					}
+					div {
+						i {
+							font-size: $font-size-h1;
+						}
+					}
+					span {
 						display: block;
-						text-align: center;
-						padding: 21px 0;
-						padding: rem(21px) 0;
-						color: $gray;
-						background: white;
-						min-width: 135px;
-						min-width: rem(135px);
-						height: 106px;
-						&:hover,
-						&.active {
-							background: $gray-lighter;
-							color: $link-color;
-						}
-						div {
-							i {
-								font-size: $font-size-h1;
-							}
-						}
-						span {
-							display: block;
-							margin-top: $padding-base-vertical;
-							text-transform: uppercase;
-						}
+						margin-top: $padding-base-vertical;
+						text-transform: uppercase;
 					}
 				}
 			}
+		}
+		.left {
 		}
 		.right {
 		}
@@ -210,7 +210,7 @@ $header-on-scroll-height: 56px;
 		height: $header-on-scroll-height;
 		background-color: $gray-lighter;
 		.logo {
-			width: 280px;
+			width: 150px;
 			@media #{$sm-down} {
 				width: 100%;
 			}
@@ -221,40 +221,40 @@ $header-on-scroll-height: 56px;
 				height: auto;
 			}
 		}
-		.left {
-			> ul {
-				@include clearfix;
-				@include list-unstyled;
-				li {
-					float: left;
-					a {
+		.nav-display-triggers {
+			@include clearfix;
+			@include list-unstyled;
+			li {
+				float: left;
+				a {
+					display: block;
+					text-align: center;
+					padding: 12px 0;
+					padding: rem(12px) 0;
+					color: $gray;
+					background-color: $gray-lighter;
+					min-width: 135px;
+					min-width: rem(135px);
+					height: $header-on-scroll-height;
+					&:hover,
+					&.active {
+						background: $gray-lighter;
+						color: $link-color;
+					}
+					div {
+						i {
+							font-size: $font-size-h1;
+						}
+					}
+					span {
 						display: block;
-						text-align: center;
-						padding: 12px 0;
-						padding: rem(12px) 0;
-						color: $gray;
-						background-color: $gray-lighter;
-						min-width: 135px;
-						min-width: rem(135px);
-						height: $header-on-scroll-height;
-						&:hover,
-						&.active {
-							background: $gray-lighter;
-							color: $link-color;
-						}
-						div {
-							i {
-								font-size: $font-size-h1;
-							}
-						}
-						span {
-							display: block;
-							margin-top: $padding-base-vertical;
-							text-transform: uppercase;
-						}
+						margin-top: $padding-base-vertical;
+						text-transform: uppercase;
 					}
 				}
 			}
+		}
+		.left {
 		}
 		.right {
 			height: $header-on-scroll-height;			

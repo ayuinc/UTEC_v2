@@ -92,7 +92,7 @@
           </a>
         </div>
 			</div>
-			<div class="left">
+			<div class="right">
 				<ul class="nav-display-triggers">
           <?php $counter = 1; ?>
           <?php foreach ($menus as $index => $menu) :?>
@@ -206,7 +206,7 @@
           </a>
         </div>
       </div>
-      <div class="left hidden-xs hidden-sm">
+      <div class="right hidden-xs hidden-sm p-0">
         <ul class="nav-display-triggers">
           <?php $counter = 1; ?>
           <?php foreach ($menus as $index => $menu) :?>
