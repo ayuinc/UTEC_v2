@@ -1,7 +1,8 @@
 <?php 
 	$title = $fields['title']->content;
 	$body = $fields['body']->content;
-	$image = $fields['field_imagen']->content;
+	// $image = $fields['field_imagen']->content;
+	$image = $fields['field_image']->content;
 	$category = $fields['field_categor_a']->content;
 	$texto_corto = $fields['field_texto_corto']->content;
 	$path = $fields['path']->content;
