@@ -206,7 +206,7 @@
           </a>
         </div>
       </div>
-      <div class="right hidden-xs hidden-sm">
+      <div class="right hidden-xs hidden-sm p-0">
         <ul class="nav-display-triggers">
           <?php $counter = 1; ?>
           <?php foreach ($menus as $index => $menu) :?>

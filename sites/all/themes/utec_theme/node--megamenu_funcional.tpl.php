@@ -660,7 +660,7 @@
 					<?php endif ?>
 				</div>
 			</div>
-			<div class="right hidden-xs hidden-sm">
+			<div class="right hidden-xs hidden-sm p-0">
 				<ul class="nav-display-triggers">
 					<li>
 						<a href="#nav-shrink-display-1" class="atm-menu-principal">
