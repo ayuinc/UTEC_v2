@@ -27,6 +27,7 @@ if ($language->language == 'en') {
   //$profesor_url = "/" . drupal_get_path_alias('page/30/profesor-carrera/'.$uid.'/'.$carrera_id, $language->language);
   $profesor_url = "/" . drupal_get_path_alias('page/30/profesores/'.$uid, $language->language); 
 ?> 
+<?php if ($uid): ?>
 <li class="mb-ch-14" data-href="<?php print $profesor_url ?>">
   <div class="grid-list-pic" data-href="<?php print $profesor_url ?>">
     <img src="<?php if($pic != ''){print file_create_url($pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="<?php print $name; ?>" width="180px" height="auto" class="img-circle">
@@ -36,6 +37,7 @@ if ($language->language == 'en') {
   </a>
   <!-- <p class="font-profesores"><?php print $desc ?></p> -->
 </li>
+<?php endif ?>
 
 
 

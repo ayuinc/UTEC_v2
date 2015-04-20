@@ -11,9 +11,10 @@
 	<div class="separator-gray separator-lg"></div>
 	<p class="lead text-gray"><?php print $field_introduccion_su_profesores ?></p>
 	<ul class="grid-list grid-list-3 grid-list-1-xs isotope-grid grid-list-item-height grid-list-anchors pv-21 text-center">
-    <?php kpr($node->field_lista_profesores['und']); ?>
+    <?php //kpr($node->field_lista_profesores['und']); ?>
     <?php foreach ($node->field_lista_profesores['und'] as $key => $value) :?>
     <?php $name = $value['entity']->name; ?>   
+    <?php $status = $value['entity']->status; ?>   
 		<?php $pic = $value['entity']->picture->filename; ?>
 		<?php $uid = $value['entity']->uid; ?>
     <?php $desc = $value['entity']->field_descripci_n['und'][0]['value']; ?>		
@@ -25,6 +26,7 @@
 	      }else
 	        $profesor_url = "/" . drupal_get_path_alias('page/30/profesores/'.$uid, $language->language); 
 	    ?> 
+	    <?php if ($status == 1) : ?>
       <li class="mb-ch-14" data-href="<?php print $profesor_url; ?>">
 				<div class="grid-list-pic"><img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="<?php print $name ?>" width="180px" height="auto" class="img-circle"></div>
 				<div>
@@ -36,6 +38,7 @@
 					<?php endif; ?>
 				</div>
 			</li>
+			<?php endif; ?>
 		<?php endforeach ?>	
 	</ul>	
 </div>
