@@ -165,7 +165,6 @@
               ?>
               <?php if ($count2 <= 5) : ?>
                 <li>
-                  <?php print_r($external); ?>
   								<a href="<?php if ($external != 'http'){print '/';} ?><?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" 
                      class="<?php foreach ($classes as $key => $class){print $class.' ';
                   } ?>atm-menu-secundario" 
@@ -181,13 +180,11 @@
   						</ul>
   						<ul>
                 <li>
-                  <?php print_r($external); ?>
                   <a href="<?php if ($external != 'http'){print '/';} ?><?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" class="<?php foreach ($classes as $key => $class){print $class.' ';
                   } ?>atm-menu-secundario" title="<?php print $title; ?>" id="<?php print $id; ?>" name="<?php print $name; ?>" rel="<?php print $rel; ?>" target="<?php print $target; ?>"><span class="<?php if ($classes){print 'text-white';} ?>" style="<?php if ($classes){print 'color:white';} ?>"><?php print $titles[0]; ?></span><?php print $titles[1]; ?> <?php print $titles[2]; ?> <?php print $titles[3]; ?> <?php print $titles[4]; ?></a>
                 </li>
   						<?php else : ?>
   							<li>
-                  <?php print_r($external); ?>
                   <a href="<?php if ($external != 'http'){print '/';} ?><?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" class="<?php foreach ($classes as $key => $class){print $class.' ';
                   } ?>atm-menu-secundario" title="<?php print $title; ?>" id="<?php print $id; ?>" name="<?php print $name; ?>" rel="<?php print $rel; ?>" target="<?php print $target; ?>"><span class="<?php if ($classes){print 'text-white';} ?>" style="<?php if ($classes){print 'color:white';} ?>"><?php print $titles[0]; ?></span><?php print $titles[1]; ?> <?php print $titles[2]; ?> <?php print $titles[3]; ?> <?php print $titles[4]; ?></a>
                 </li>
@@ -289,6 +286,8 @@
                 $name = $child['#localized_options']['attributes']['name'];
                 $rel = $child['#localized_options']['attributes']['rel'];
                 $target = $child['#localized_options']['attributes']['target'];
+                $external = '';
+                $external = substr($child['#href'], 0, 4);
               ?>
               <?php if ($count2 <= 5) : ?>
                 <li>

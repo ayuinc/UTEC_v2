@@ -78,9 +78,11 @@
 	        $name = $child['#localized_options']['attributes']['name'];
 	        $rel = $child['#localized_options']['attributes']['rel'];
 	        $target = $child['#localized_options']['attributes']['target'];
+	        $external = '';
+          $external = substr($child['#href'], 0, 4);
 	      ?>
 				<li>
-					<a href="/<?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" class="<?php foreach ($classes as $key => $class){print $class.' ';} ?>atm-menu-secundario-movil"><span><?php print $titles2[0]; ?> </span><?php print $titles2[1]; ?> <?php print $titles2[2]; ?> <?php print $titles2[3]; ?> <?php print $titles2[4]; ?></a>
+					<a href="<?php if ($external != 'http'){print '/';} ?><?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" class="<?php foreach ($classes as $key => $class){print $class.' ';} ?>atm-menu-secundario-movil"><span><?php print $titles2[0]; ?> </span><?php print $titles2[1]; ?> <?php print $titles2[2]; ?> <?php print $titles2[3]; ?> <?php print $titles2[4]; ?></a>
 				</li>
 			<?php endif; ?>
 			<?php $count2++; ?>
