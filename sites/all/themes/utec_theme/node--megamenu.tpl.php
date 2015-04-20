@@ -194,7 +194,8 @@
 						<?php endif; ?>
 						<?php $count2++; ?>
             <?php endforeach; ?>
-            <?php unset($menus[$index]); ?>	
+            <?php unset($menus[$index]); ?> 
+            <?php unset($external); ?>	
 						<?php break; ?>
           <?php endif; ?>  
 					<?php endforeach; ?> 
