@@ -95,8 +95,8 @@
 		</div>
 		<div class="row">
 			<div class="form-group col-sm-6">
-				<label for="" class="sr-only"><?php print t('High School') ?></label>
-				<input  id="colegio-procedencia" name="colegio" type="text" class="form-control" placeholder="<?php print t('High School') ?>">
+				<label for="" class="sr-only"><?php print t('Colegio') ?></label>
+				<input  id="colegio-procedencia" name="colegio" type="text" class="form-control" placeholder="<?php print t('Colegio') ?>">
 			</div>			
 		</div>
 		<div class="row">
@@ -148,8 +148,8 @@
 					<input type="text" class="form-control" placeholder="<?php print t('Phone') ?>" name="telefono" id="telefono">
 				</div>	
 				<div class="form-group col-sm-6">
-					<label for="" class="sr-only"><?php print t('School') ?></label>
-					<input  id="colegio-procedencia" name="colegio" type="text" class="form-control" placeholder="<?php print t('School') ?>">
+					<label for="" class="sr-only"><?php print t('Colegio') ?></label>
+					<input  id="colegio-procedencia" name="colegio" type="text" class="form-control" placeholder="<?php print t('Colegio') ?>">
 				</div>								
 			</div>
 			<div class="row">
