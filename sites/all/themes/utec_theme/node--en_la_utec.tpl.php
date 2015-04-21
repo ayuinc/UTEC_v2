@@ -5,7 +5,7 @@
 
   $fields = entity_load('field_collection_item');
 
-  kpr($fields);
+  // kpr($fields);
 
   $derecho_superior_txt1 = $fields[1]->field_texto_superior_1['und'][0]['value'];
   $derecho_superior_txt1_ingles = $fields[1]->field_texto_superior_1_ingles['und'][0]['value'];
@@ -13,7 +13,7 @@
   $derecho_superior_txt2_ingles = $fields[1]->field_texto_superior_2_ingles['und'][0]['value'];
   $derecho_superior_link = $fields[1]->field_link['und'][0]['value'];
   $derecho_superior_link_ingles = $fields[1]->field_link_ingles['und'][0]['value'];
-  $derecho_superior_img = $fields[1]->field_image['und'][0]['filename'];
+  $derecho_superior_img = $fields[1]->field_image['und'][0]['uri'];
 
   $izquierdo_txt1 = $fields[2]->field_texto_superior_1['und'][0]['value'];
   $izquierdo_txt1_ingles = $fields[2]->field_texto_superior_1_ingles['und'][0]['value'];
@@ -21,7 +21,7 @@
   $izquierdo_txt2_ingles = $fields[2]->field_texto_superior_2_ingles['und'][0]['value'];
   $izquierdo_link = $fields[2]->field_link['und'][0]['value'];
   $izquierdo_link_ingles = $fields[2]->field_link_ingles['und'][0]['value'];
-  $izquierdo_img  = $fields[2]->field_image['und'][0]['filename'];
+  $izquierdo_img  = $fields[2]->field_image['und'][0]['uri'];
 
   $derecho_inferior_izq_txt1 = $fields[3]->field_texto_superior_1['und'][0]['value'];
   $derecho_inferior_izq_txt1_ingles = $fields[3]->field_texto_superior_1_ingles['und'][0]['value'];
@@ -29,7 +29,7 @@
   $derecho_inferior_izq_txt2_ingles = $fields[3]->field_texto_superior_2_ingles['und'][0]['value'];
   $derecho_inferior_izq_link = $fields[3]->field_link['und'][0]['value'];
   $derecho_inferior_izq_link_ingles = $fields[3]->field_link_ingles['und'][0]['value'];
-  $derecho_inferior_izq_img  = $fields[3]->field_image['und'][0]['filename'];
+  $derecho_inferior_izq_img  = $fields[3]->field_image['und'][0]['uri'];
 
   $derecho_inferior_der_txt1 = $fields[4]->field_texto_superior_1['und'][0]['value'];
   $derecho_inferior_der_txt1_ingles = $fields[4]->field_texto_superior_1_ingles['und'][0]['value'];
@@ -37,7 +37,7 @@
   $derecho_inferior_der_txt2_ingles = $fields[4]->field_texto_superior_2_ingles['und'][0]['value'];
   $derecho_inferior_der_link = $fields[4]->field_link['und'][0]['value'];
   $derecho_inferior_der_link_ingles = $fields[4]->field_link_ingles['und'][0]['value'];
-  $derecho_inferior_der_img  = $fields[4]->field_image['und'][0]['filename'];
+  $derecho_inferior_der_img  = $fields[4]->field_image['und'][0]['uri'];
 ?>
 <div>
   <div class="container">
@@ -64,7 +64,7 @@
         <?php } elseif ($language->language  != 'en') { ?>
           <div data-href="<?php print $izquierdo_link; ?>" class="anchor-block-1">    
         <?php } ?>  	        
-          <div class="pic" style="background-image: url(sites/default/files/<?php print $izquierdo_img; ?>);"></div>
+          <div class="pic" style="background-image: url(<?php print file_create_url($izquierdo_img); ?>);"></div>
           <div class="overlay">
             <?php if ($language->language == 'en') { ?>
               <a href="<?php print $izquierdo_link_ingles; ?>">
@@ -114,7 +114,7 @@
         <?php } elseif ($language->language  != 'en') { ?>
           <div data-href="<?php print $derecho_superior_link; ?>" class="anchor-block-2">    
         <?php } ?> 		      	        
-          <div class="pic" style="background-image: url(sites/default/files/<?php print $derecho_superior_img; ?>);"></div>
+          <div class="pic" style="background-image: url(<?php print file_create_url($derecho_superior_img); ?>);"></div>
           <div class="overlay">
             <?php if ($language->language == 'en') { ?>
               <a href="<?php print $derecho_superior_link_ingles; ?>">
@@ -162,7 +162,7 @@
         <?php } elseif ($language->language  != 'en') { ?>
           <div data-href="<?php print $derecho_inferior_izq_link; ?>" class="anchor-block-3">    
         <?php } ?>	      	
-          <div class="pic" style="background-image: url(sites/default/files/<?php print $derecho_inferior_izq_img; ?>);"></div>
+          <div class="pic" style="background-image: url(<?php print file_create_url($derecho_inferior_izq_img); ?>);"></div>
           <div class="overlay">
             <?php if ($language->language == 'en') { ?>
               <a href="<?php print $derecho_inferior_izq_link_ingles; ?>">
@@ -210,7 +210,7 @@
         <?php } elseif ($language->language  != 'en') { ?>
           <div data-href="<?php print $derecho_inferior_der_link; ?>" class="anchor-block-4">    
         <?php } ?> 		      		        
-          <div class="pic" style="background-image: url(sites/default/files/<?php print $derecho_inferior_der_img; ?>);"></div>
+          <div class="pic" style="background-image: url(<?php print file_create_url($derecho_inferior_der_img); ?>);"></div>
           <div class="overlay">
             <?php if ($language->language == 'en') { ?>
               <a href="<?php print $derecho_inferior_der_link_ingles; ?>">
