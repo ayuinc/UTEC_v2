@@ -8,12 +8,12 @@
 	$body = $fields['body']->content;
 	// $image = $fields['field_imagen']->content;
 	$image = $fields['field_image']->content;
-	$category = $fields['field_categor_a']->content;
+	$category = $fields['field_cate']->content;
 	$texto_corto = $fields['field_texto_corto']->content;
 	$path = $fields['path']->content;
 	$user_id = $fields['uid']->content;
 	$created = $fields['created']->content;
-	kpr($fields);
+	// kpr($fields);
 
 ?>
 <li class="banner banner-label-bottom mb-14 ml-0 ban-titulo" data-href="<?php print $path ?>">
