@@ -82,7 +82,7 @@
             <li><a href="/<?php print $language->language ?>/methods-of-admission" class="atm-menu-inferior"><small>Admissions</small></a></li>
             <li><a href="/<?php print $language->language ?>/informative-talks" class="atm-menu-inferior"><small><?php print t('Informative Talks') ?></small></a></li>
             <li><a href="/<?php print $language->language ?>/admissions-calendar" class="atm-menu-inferior"><small><?php print t('Admissions Calendar') ?></small></a></li>
-            <li><a href="/<?php print $language->language ?>/visit-utec" class="atm-menu-inferior"><small><?php print t('Visit UTEC') ?></small></a></li>
+            <!-- <li><a href="/<?php //print $language->language ?>/visit-utec" class="atm-menu-inferior"><small><?php //print t('Visit UTEC') ?></small></a></li> -->
             <li><a href="/<?php print $language->language ?>/financial-information" class="atm-menu-inferior"><small><?php print t('Financial Information') ?></small></a></li>
             <li><a href="/<?php print $language->language ?>/career-guidance-and-orientation" class="atm-menu-inferior"><small><?php print t('Guidance') ?></small></a></li>
             <li><a href="/<?php print $language->language ?>/frequently-asked-questions" class="atm-menu-inferior"><small><?php print t('FAQ') ?></small></a></li>
@@ -91,7 +91,7 @@
             <li><a href="/modalidades-de-admision" class="atm-menu-inferior"><small>Modalidades de Admisión</small></a></li>
             <li><a href="/charlas-informativas" class="atm-menu-inferior"><small><?php print t('Informative Talks') ?></small></a></li>
             <li><a href="/calendario-de-admision" class="atm-menu-inferior"><small><?php print t('Admissions Calendar') ?></small></a></li>
-            <li><a href="/visita-utec" class="atm-menu-inferior"><small><?php print t('Visit UTEC') ?></small></a></li>
+            <!-- <li><a href="/visita-utec" class="atm-menu-inferior"><small><?php //print t('Visit UTEC') ?></small></a></li> -->
             <li><a href="/informacion-economica" class="atm-menu-inferior"><small><?php print t('Financial Information') ?></small></a></li>
             <li><a href="/orientacion-vocacional" class="atm-menu-inferior"><small><?php print t('Guidance') ?></small></a></li>
             <li><a href="/preguntas-frecuentes" class="atm-menu-inferior"><small><?php print t('FAQ') ?></small></a></li>
