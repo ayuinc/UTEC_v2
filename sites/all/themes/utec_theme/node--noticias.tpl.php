@@ -24,7 +24,12 @@
 			  <?php foreach ($images as $image): ?>
 			  <?php 
 			  	$img_uri = $image['uri'];
-					$image_url = image_style_url($image_style, $img_uri);  
+			  	if ($image_style) {
+						$image_url = image_style_url($image_style, $img_uri);  
+			  	}
+			  	else{
+			  		$image_url = file_create_url($img_uri);
+			  	}
 				?>
 			  <div class="item <?php if($count == 0){print 'active';} ?>">
 			  	<div class="banner banner-label-bottom mb-7 ml-0">
