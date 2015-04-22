@@ -221,7 +221,7 @@ function utec_theme_preprocess_node(&$variables){
 		$variables['logo'] = $logo;
 	}
 
-	// $node = $variables['node'];
+	$node = $variables['node'];
 	kpr($node);
 	$field_name = 'field_image';
 	$bundle = 'article'; // Or whatever content type you need.
