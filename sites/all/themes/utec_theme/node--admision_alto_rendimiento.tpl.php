@@ -19,7 +19,8 @@ $field_opcion_6_alto = $node->field_opcion_1_alto['und']['0']['value'];
 $field_costa_alto = $node->field_costa_alto['und']['0']['value'];
 $field_temario_alto = $node->field_temario_alto['und']['0']['value'];
 $field_calendario_alto = $node->field_calendario_alto['und']['0']['value'];
-$field_banner_ad = $node->field_banner_ad['und']['0']['uri'];
+// $field_banner_ad = $node->field_banner_ad['und']['0']['uri'];
+$field_banner_ad = $node->field_image['und']['0']['uri'];
 $link_formulario = $node->field_link_a_formulario['und']['0']['value'];		
 
 ?>
