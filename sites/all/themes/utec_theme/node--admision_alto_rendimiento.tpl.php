@@ -19,7 +19,7 @@ $field_opcion_6_alto = $node->field_opcion_1_alto['und']['0']['value'];
 $field_costa_alto = $node->field_costa_alto['und']['0']['value'];
 $field_temario_alto = $node->field_temario_alto['und']['0']['value'];
 $field_calendario_alto = $node->field_calendario_alto['und']['0']['value'];
-$field_banner_ad = $node->field_banner_ad['und']['0']['filename'];
+$field_banner_ad = $node->field_banner_ad['und']['0']['uri'];
 $link_formulario = $node->field_link_a_formulario['und']['0']['value'];		
 
 ?>
@@ -28,7 +28,7 @@ $link_formulario = $node->field_link_a_formulario['und']['0']['value'];
 		<h1 class="light"><?php print t('High Performance Assessment'); ?></h1>
 		<div class="separator-gray separator-md"></div>
 		<?php if ($field_banner_ad): ?>
-		<img class="img-responsive mb-35" src="<?php print('/'.$pathfile.$field_banner_ad)?>" alt="<?php print t('High Performance Assessment'); ?>" />
+		<img class="img-responsive mb-35" src="<?php print file_create_url($field_banner_ad);?>" alt="<?php print t('High Performance Assessment'); ?>" />
 		<?php endif; ?>		
 		<div>
 		<p class="lead text-gray"><?php print $field_descripcion_corta_alto ?></p>
