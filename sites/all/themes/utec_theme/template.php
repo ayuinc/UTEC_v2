@@ -222,7 +222,7 @@ function utec_theme_preprocess_node(&$variables){
 	}
 
 	// $node = $variables['node'];
-	// die(print_r($node));
+	kpr($node);
 	$field_name = 'field_image';
 	$bundle = 'article'; // Or whatever content type you need.
 	$view_mode = 'default'; // Or whatever view mode you want to get settings for, e.g. teaser.
