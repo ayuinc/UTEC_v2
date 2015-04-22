@@ -20,15 +20,16 @@ $field_calendario_pago = $node->field_calendario_pago['und']['0']['value'];
 $field_calendario_lugar = $node->field_calendario_lugar['und']['0']['value'];
 $field_inscripcion_pre_extensive = $node->field_inscripcion_pre_extensive['und']['0']['value'];
 $field_inscripcion_pre_intensiva = $node->field_inscripcion_pre_intensiva['und']['0']['value'];
-$field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
+// $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
+$field_fotos_centro_pre = $node->field_image['und']['0']['uri'];
 $modalida_ext_int = $node->field_modalidad_extensiva_intens['und']['0']['value'];
 ?>
 
 	<div class="hero-unit"> <!-- HERO -->
 	  <?php if ($language->language == 'en'): ?>
-	  <div data-section-scroll="Overview" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.'/centro-pre/'.$field_fotos_centro_pre)?>);">
+	  <div data-section-scroll="Overview" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print file_create_url($field_fotos_centro_pre); ?>);">
 	  <?php elseif ($language->language  != 'en'): ?>
-	  <div data-section-scroll="Acerca de" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.'/centro-pre/'.$field_fotos_centro_pre)?>);">
+	  <div data-section-scroll="Acerca de" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print file_create_url($field_fotos_centro_pre); ?>);">
 	  <?php endif ?>
 	    <div class="overlay flex-middle">
 	    	<?php if ($language->language == 'en'): ?>
