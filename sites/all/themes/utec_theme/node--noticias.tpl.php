@@ -38,7 +38,7 @@
 				<?php endforeach; ?>
 			</div>
 			<!-- Controls -->
-			<?php $images = $node->field_imagen['und']['1']; ?>
+			<?php $images = $node->field_image['und']['1']; ?>
 			<?php if($images) : ?>
 			  <a class="left carousel-control" href="#carousel-custom" role="button" data-slide="prev">
 			    <span class="icon-prev hidden-xs" aria-hidden="true"></span>
