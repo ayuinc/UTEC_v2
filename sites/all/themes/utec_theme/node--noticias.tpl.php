@@ -9,7 +9,7 @@
 	$cuerpo = $node->body['und']['0']['value'];	
 	// $imagen = $node->field_imagen['und']['0']['filename'];
 	$images = $node->field_image['und']; 
-	print_r($image_style);
+	// print_r($image_style);
 
 ?>
 
