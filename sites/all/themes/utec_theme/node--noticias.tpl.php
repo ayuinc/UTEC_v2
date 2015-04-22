@@ -9,7 +9,8 @@
 	$cuerpo = $node->body['und']['0']['value'];	
 	// $imagen = $node->field_imagen['und']['0']['filename'];
 	$images = $node->field_image['und']; 
-	// kpr($node);
+	print_r($image_style);
+
 ?>
 
 <div class="container-sm">
@@ -21,9 +22,13 @@
 		  <div class="carousel-inner" role="listbox">
 		  	<?php $count = 0; ?>
 			  <?php foreach ($images as $image): ?>
+			  <?php 
+			  	$img_uri = $image['uri'];
+					$image_url = image_style_url($image_style, $img_uri);  
+				?>
 			  <div class="item <?php if($count == 0){print 'active';} ?>">
 			  	<div class="banner banner-label-bottom mb-7 ml-0">
-						<div class="banner-pic" style="background-image: url(<?php print '/'.$pathfile.'noticias/'.$image['filename'] ?>);">
+						<div class="banner-pic" style="background-image: url(<?php print $image_url ?>);">
 							<div class="banner-label bg-gray-darker text-white"><span><?php print $category ?></span></div>
 						</div>
 					</div>
