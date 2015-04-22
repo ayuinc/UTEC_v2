@@ -127,7 +127,7 @@
 				        $profesor_url = "/" . drupal_get_path_alias('page/67/profesor-edp/'.$profesor_id, $language->language); 
 				    ?> 
 						<li class="pl-21 text-gray">
-							<div class="mb-7">
+							<div class="mb-7 text-center-xs">
 								<a href="<?php print $profesor_url ?>" class="thin h3 text-hover-primary"><?php print $profesor_name ?></a>
 								<?php if ($language->language != 'en'): ?>
 								<span><?php print $profesor_cargo ?></span>
