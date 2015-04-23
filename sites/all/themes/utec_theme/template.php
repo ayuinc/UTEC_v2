@@ -210,6 +210,16 @@ function utec_theme_site_map_menu_link(array $variables) {
   return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
 }
 
+function utec_theme_menu_link(array $variables) {
+
+  $element = $variables['element'];
+  $sub_menu = '';
+
+  $output = l($element['#title'], $element['#href'], $element['#localized_options']);
+  // print_r($element);
+  return '<li>' . $output . $sub_menu . "</li>\n";
+}
+
 function utec_theme_preprocess_node(&$variables){
 	$variables ['front_page'] = url();
   $theme_name = 'utec_theme';
