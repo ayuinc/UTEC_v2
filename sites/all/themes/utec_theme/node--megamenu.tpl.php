@@ -10,7 +10,7 @@
 	$tree = menu_tree_all_data('main-menu'); 
 	$menus = menu_tree_output(i18n_menu_localize_tree($tree));
 
-  kpr($menus);
+  // kpr($menus);
 
   $tree_quick = menu_tree_all_data('menu-top-menu'); 
   $menus_quick = menu_tree_output(i18n_menu_localize_tree($tree_quick));
@@ -38,10 +38,11 @@
             $href = drupal_get_path_alias($menu_quick['#href'], $language->language);
             $external = '';
             $external = substr($menu_quick['#href'], 0, 4);
+            print render($menu_quick);
           ?>
-            <li>
-              <a href="<?php if ($external != 'http'){print '/';} ?><?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" class="atm-menu-superior text-hover-primary"><?php print $title; ?></a>
-            </li>
+            <!-- <li>
+              <a href="<?php //if ($external != 'http'){print '/';} ?><?php //if($language->language == 'en'){print ($language->language."/");} print $href; ?>" class="atm-menu-superior text-hover-primary"><?php //print $title; ?></a>
+            </li> -->
           <?php endif; ?>
           <?php endforeach; ?>
 				</ul>
@@ -59,11 +60,12 @@
               $href = drupal_get_path_alias($menu_quick_right['#href'], $language->language);
               $external = '';
               $external = substr($menu_quick_right['#href'], 0, 4);
+              print render($menu_quick_right);
             ?>
-              <li class="pt-7">
-                <a href="<?php if ($external != 'http'){print '/';} ?><?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" 
-                  class="text-gray"><?php print $title; ?></a>
-              </li>
+              <!-- <li class="pt-7">
+                <a href="<?php //if ($external != 'http'){print '/';} ?><?php //if($language->language == 'en'){print ($language->language."/");} print $href; ?>" 
+                  class="text-gray"><?php //print $title; ?></a>
+              </li> -->
             <?php endif; ?>
             <?php endforeach; ?>	
 
@@ -171,30 +173,34 @@
                 $external = substr($child['#href'], 0, 4);
               ?>
               <?php if ($count2 <= 5) : ?>
-                <li>
-  								<a href="<?php if ($external != 'http'){print '/';} ?><?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" 
-                     class="<?php foreach ($classes as $key => $class){print $class.' ';
+                <!-- <li>
+  								<a href="<?php //if ($external != 'http'){//print '/';} ?><?php //if($language->language == 'en'){//print ($language->language."/");} //print $href; ?>" 
+                     class="<?php //foreach ($classes as $key => $class){//print $class.' ';
                   } ?>atm-menu-secundario" 
-                     title="<?php print $title; ?>" 
-                     id="<?php print $id; ?>" 
-                     name="<?php print $name; ?>" 
-                     rel="<?php print $rel; ?>" 
-                     target="<?php print $target; ?>">
-                     <span class="<?php if ($classes){print 'text-white';} ?>" 
-                     style="<?php if ($classes){print 'color:white';} ?>"><?php print $titles[0]; ?></span><?php print $titles[1]; ?> <?php print $titles[2]; ?> <?php print $titles[3]; ?> <?php print $titles[4]; ?></a>
-                </li>
+                     title="<?php //print $title; ?>" 
+                     id="<?php //print $id; ?>" 
+                     name="<?php //print $name; ?>" 
+                     rel="<?php //print $rel; ?>" 
+                     target="<?php //print $target; ?>">
+                     
+                     <span class="<?php //if ($classes){print 'text-white';} ?>" 
+                     style="<?php //if ($classes){print 'color:white';} ?>"><?php //print $titles[0]; ?></span><?php //print $titles[1]; ?> <?php //print $titles[2]; ?> <?php //print $titles[3]; ?> <?php //print $titles[4]; ?></a>
+                </li> -->
+                <?php print render($child); ?>
   						<?php elseif($count2 > 5 && $count2 < 7) : ?>
   						</ul>
   						<ul>
-                <li>
-                  <a href="<?php if ($external != 'http'){print '/';} ?><?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" class="<?php foreach ($classes as $key => $class){print $class.' ';
-                  } ?>atm-menu-secundario" title="<?php print $title; ?>" id="<?php print $id; ?>" name="<?php print $name; ?>" rel="<?php print $rel; ?>" target="<?php print $target; ?>"><span class="<?php if ($classes){print 'text-white';} ?>" style="<?php if ($classes){print 'color:white';} ?>"><?php print $titles[0]; ?></span><?php print $titles[1]; ?> <?php print $titles[2]; ?> <?php print $titles[3]; ?> <?php print $titles[4]; ?></a>
-                </li>
+                <!-- <li>
+                  <a href="<?php //if ($external != 'http'){print '/';} ?><?php //if($language->language == 'en'){print ($language->language."/");} print $href; ?>" class="<?php //foreach ($classes as $key => $class){print $class.' ';
+                  } ?>atm-menu-secundario" title="<?php //print $title; ?>" id="<?php //print $id; ?>" name="<?php //print $name; ?>" rel="<?php //print $rel; ?>" target="<?php //print $target; ?>"><span class="<?php //if ($classes){print 'text-white';} ?>" style="<?php //if ($classes){print 'color:white';} ?>"><?php //print $titles[0]; ?></span><?php //print $titles[1]; ?> <?php //print $titles[2]; ?> <?php //print $titles[3]; ?> <?php //print $titles[4]; ?></a>
+                </li> -->
+                <?php print render($child); ?>
   						<?php else : ?>
-  							<li>
-                  <a href="<?php if ($external != 'http'){print '/';} ?><?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" class="<?php foreach ($classes as $key => $class){print $class.' ';
-                  } ?>atm-menu-secundario" title="<?php print $title; ?>" id="<?php print $id; ?>" name="<?php print $name; ?>" rel="<?php print $rel; ?>" target="<?php print $target; ?>"><span class="<?php if ($classes){print 'text-white';} ?>" style="<?php if ($classes){print 'color:white';} ?>"><?php print $titles[0]; ?></span><?php print $titles[1]; ?> <?php print $titles[2]; ?> <?php print $titles[3]; ?> <?php print $titles[4]; ?></a>
-                </li>
+  							<!-- <li>
+                  <a href="<?php //if ($external != 'http'){print '/';} ?><?php //if($language->language == 'en'){print ($language->language."/");} print $href; ?>" class="<?php //foreach ($classes as $key => $class){print $class.' ';
+                  } ?>atm-menu-secundario" title="<?php //print $title; ?>" id="<?php //print $id; ?>" name="<?php //print $name; ?>" rel="<?php //print $rel; ?>" target="<?php //print $target; ?>"><span class="<?php //if ($classes){print 'text-white';} ?>" style="<?php //if ($classes){print 'color:white';} ?>"><?php //print $titles[0]; ?></span><?php //print $titles[1]; ?> <?php //print $titles[2]; ?> <?php //print $titles[3]; ?> <?php //print $titles[4]; ?></a>
+                </li> -->
+                <?php print render($child); ?>
               <?php endif; ?>
 						<?php endif; ?>
 						<?php $count2++; ?>

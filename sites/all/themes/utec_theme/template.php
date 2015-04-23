@@ -214,9 +214,25 @@ function utec_theme_menu_link(array $variables) {
 
   $element = $variables['element'];
   $sub_menu = '';
+  $menuName = $variables['element']["#original_link"]["menu_name"];
 
-  $output = l($element['#title'], $element['#href'], $element['#localized_options']);
-  // print_r($element);
+  if ($menuName == 'main-menu') {
+    $sub_menu = drupal_render($element['#below']);
+
+    $titles = array();  
+    $titles = explode(" ", $element['#title']);
+
+    $ele_title = '<span>'.$titles[0].' '.'</span>'.$titles[1].' '.$titles[2].' '.$titles[3].' '.$titles[4];
+    $output = l($ele_title, $element['#href'], $element['#localized_options']);
+  }
+  else {
+	  if ($element['#below']) {
+	    $sub_menu = drupal_render($element['#below']);
+	  }
+
+	  $output = l($element['#title'], $element['#href'], $element['#localized_options']);
+	  // print_r($element);
+  }
   return '<li>' . $output . $sub_menu . "</li>\n";
 }
 
