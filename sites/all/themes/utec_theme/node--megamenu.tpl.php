@@ -77,10 +77,11 @@
               $href2 = drupal_get_path_alias($menu_intranet['#href'], $language->language);
               $external = '';
               $external = substr($menu_intranet['#href'], 0, 4);
+              // print render($menu_intranet);
             ?>
-              <li>
-                <a href="<?php if ($external != 'http' AND $language->language == 'en'){print '/';} ?><?php print $href2; ?>" rel="nofollow" target="_blank" class="btn btn-xs btn-custom btn-gray atm-login"><?php print $title2; ?></a>
-              </li>
+              <!-- <li> -->
+                <!-- <a href="<?php //if ($external != 'http' AND $language->language == 'en'){print '/';} ?><?php //print $href2; ?>" rel="nofollow" target="_blank" class="btn btn-xs btn-custom btn-gray atm-login"><?php //print $title2; ?></a> -->
+              <!-- </li> -->
             <?php endif; ?>
             <?php endforeach; ?>
 						
