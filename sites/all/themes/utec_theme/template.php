@@ -210,32 +210,32 @@ function utec_theme_site_map_menu_link(array $variables) {
   return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
 }
 
-// function utec_theme_menu_link(array $variables) {
-//   $element = $variables['element'];
-//   $sub_menu = '';
-//   $menuName = $variables['element']["#original_link"]["menu_name"];
+function utec_theme_menu_link(array $variables) {
+  $element = $variables['element'];
+  $sub_menu = '';
+  $menuName = $variables['element']["#original_link"]["menu_name"];
 
-//   if ($menuName == 'main-menu') {
-//     $sub_menu = drupal_render($element['#below']);
+  if ($menuName == 'main-menu') {
+    $sub_menu = drupal_render($element['#below']);
 
-//     $titles = array();  
-//     $titles = explode(" ", $element['#title']);
+    $titles = array();  
+    $titles = explode(" ", $element['#title']);
 
-//     $ele_title = '<span>'.$titles[0].' '.'</span>'.$titles[1].' '.$titles[2].' '.$titles[3].' '.$titles[4];
+    $ele_title = '<span>'.$titles[0].' '.'</span>'.$titles[1].' '.$titles[2].' '.$titles[3].' '.$titles[4];
     
 
-//     $output = l(''.$element['#title'].'', $element['#href'], $element['#localized_options']);
-//   }
-//   else {
-// 	  if ($element['#below']) {
-// 	    $sub_menu = drupal_render($element['#below']);
-// 	  }
+    $output = l(''.$element['#title'].'', $element['#href'], $element['#localized_options']);
+  }
+  else {
+	  if ($element['#below']) {
+	    $sub_menu = drupal_render($element['#below']);
+	  }
 
-// 	  $output = l($element['#title'], $element['#href'], $element['#localized_options']);
-// 	  // print_r($element);
-//   }
-//   return '<li>' . $output . $sub_menu . "</li>\n";
-// }
+	  $output = l($element['#title'], $element['#href'], $element['#localized_options']);
+	  // print_r($element);
+  }
+  return '<li>' . $output . $sub_menu . "</li>\n";
+}
 
 // function utec_theme_links($variables) {
 
