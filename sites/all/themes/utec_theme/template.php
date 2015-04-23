@@ -220,11 +220,11 @@ function utec_theme_menu_link(array $variables) {
 
     $titles = array();  
     $titles = explode(" ", $element['#title']);
-
+    $element['#localized_options']['html'] = TRUE;
     $ele_title = '<span>'.$titles[0].' '.'</span>'.$titles[1].' '.$titles[2].' '.$titles[3].' '.$titles[4];
     
 
-    $output = l('<span>'.$element['#title'].'</span>', $element['#href'], $element['#localized_options']);
+    $output = l($ele_title, $element['#href'], $element['#localized_options']);
   }
   else {
 	  if ($element['#below']) {
