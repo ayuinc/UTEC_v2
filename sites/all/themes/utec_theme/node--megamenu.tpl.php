@@ -34,15 +34,8 @@
           <?php foreach ($menus_quick as $key => $menu_quick) : ?>
           <?php if ($menu_quick['#href']) : ?>
           <?php 
-            $title = $menu_quick['#title'];
-            $href = drupal_get_path_alias($menu_quick['#href'], $language->language);
-            $external = '';
-            $external = substr($menu_quick['#href'], 0, 4);
             print render($menu_quick);
           ?>
-            <!-- <li>
-              <a href="<?php //if ($external != 'http'){print '/';} ?><?php //if($language->language == 'en'){print ($language->language."/");} print $href; ?>" class="atm-menu-superior text-hover-primary"><?php //print $title; ?></a>
-            </li> -->
           <?php endif; ?>
           <?php endforeach; ?>
 				</ul>
@@ -56,16 +49,8 @@
             <?php foreach ($menus_quick_right as $key => $menu_quick_right) : ?>
             <?php if ($menu_quick_right['#href']) : ?>
             <?php 
-              $title = $menu_quick_right['#title'];
-              $href = drupal_get_path_alias($menu_quick_right['#href'], $language->language);
-              $external = '';
-              $external = substr($menu_quick_right['#href'], 0, 4);
               print render($menu_quick_right);
             ?>
-              <!-- <li class="pt-7">
-                <a href="<?php //if ($external != 'http'){print '/';} ?><?php //if($language->language == 'en'){print ($language->language."/");} print $href; ?>" 
-                  class="text-gray"><?php //print $title; ?></a>
-              </li> -->
             <?php endif; ?>
             <?php endforeach; ?>	
 
@@ -75,15 +60,8 @@
             <?php foreach ($menus_intranet as $key => $menu_intranet) : ?>
             <?php if ($menu_intranet['#href']) : ?>
             <?php 
-              $title2 = $menu_intranet['#title'];
-              $href2 = drupal_get_path_alias($menu_intranet['#href'], $language->language);
-              $external = '';
-              $external = substr($menu_intranet['#href'], 0, 4);
               print render($menu_intranet);
             ?>
-              <!-- <li> -->
-                <!-- <a href="<?php //if ($external != 'http' AND $language->language == 'en'){print '/';} ?><?php //print $href2; ?>" rel="nofollow" target="_blank" class="btn btn-xs btn-custom btn-gray atm-login"><?php //print $title2; ?></a> -->
-              <!-- </li> -->
             <?php endif; ?>
             <?php endforeach; ?>
 						
@@ -122,8 +100,7 @@
 	</div>
 	<?php $count = 1; ?>
 	<?php foreach ($fields_esp as $index => $fid) : ?>
-	  <?php 
-	    // print_r($fid['value']);
+	  <?php
 	    $num_esp = $fid['value'];
 		  $num_ing = $fields_ing[$index]['value'];
 	    $field_esp = entity_load('field_collection_item', array($num_esp));
@@ -159,30 +136,13 @@
 						<?php $count2 = 0; ?>
 						<?php foreach ($menu['#below'] as $child) : ?>
             <?php if ($child['#href']) : ?>
-              <?php
-                $titles = array();  
-                $titles = explode(" ", $child['#title']);
-                $href = drupal_get_path_alias($child['#href'], $language->language);
-                $classes = $child['#localized_options']['attributes']['class'];
-                $title = $child['#localized_options']['attributes']['title'];
-                $id = $child['#localized_options']['attributes']['id'];
-                $name = $child['#localized_options']['attributes']['name'];
-                $rel = $child['#localized_options']['attributes']['rel'];
-                $target = $child['#localized_options']['attributes']['target'];
-                $external = '';
-                $external = substr($child['#href'], 0, 4);
-              ?>
               <?php if ($count2 <= 5) : ?>
-               
                 <?php print render($child); ?>
   						<?php elseif($count2 > 5 && $count2 < 7) : ?>
   						</ul>
   						<ul>
-                
                 <?php print render($child); ?>
   						<?php else : ?>
-  							
-                
                 <?php print render($child); ?>
               <?php endif; ?>
 						<?php endif; ?>
