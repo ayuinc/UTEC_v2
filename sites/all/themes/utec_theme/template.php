@@ -234,7 +234,12 @@ function utec_theme_menu_link(array $variables) {
 	  $output = l($element['#title'], $element['#href'], $element['#localized_options']);
 	  
   }
-  kpr($element['#attributes']);
+  foreach ($element['#attributes']['class'] as $key => $class) {
+  	if ($class == 'first' OR $class == 'leaf' OR $class == 'last') {
+  		$element['#attributes']['class'][$key] = '';	
+		}	
+  } 
+  
 	  return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
 }
 
