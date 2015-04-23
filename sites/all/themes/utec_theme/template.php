@@ -241,7 +241,7 @@ function utec_theme_links($variables) {
 
 	// kpr($variables);
 }
-function utec_theme_links__system_secondary_menu($variables){
+function utec_theme_links__system_main_menu($variables){
 	kpr($variables);
 }
 function utec_theme_preprocess_node(&$variables){
