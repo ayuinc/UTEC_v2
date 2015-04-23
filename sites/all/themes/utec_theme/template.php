@@ -210,9 +210,13 @@ function utec_theme_site_map_menu_link(array $variables) {
   return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
 }
 
+function utec_theme_links($variables) {
+
+	kpr($variables);
+}
+
 function utec_theme_menu_link(array $variables) {
   $element = $variables['element'];
-	kpr($element);
   $sub_menu = '';
   $menuName = $variables['element']["#original_link"]["menu_name"];
 
