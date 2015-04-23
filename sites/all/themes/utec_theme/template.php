@@ -211,8 +211,8 @@ function utec_theme_site_map_menu_link(array $variables) {
 }
 
 function utec_theme_menu_link(array $variables) {
-	kpr($variables);
   $element = $variables['element'];
+	kpr($element);
   $sub_menu = '';
   $menuName = $variables['element']["#original_link"]["menu_name"];
 
