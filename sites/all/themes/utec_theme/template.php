@@ -225,9 +225,9 @@ function utec_theme_menu_link(array $variables) {
   	if ($element['#localized_options']['attributes']['class'] != '') {
 	    $ele_title = '<span style="color:white">'.$titles[0].' '.'</span>'.$titles[1].' '.$titles[2].' '.$titles[3].' '.$titles[4];
   	}	
-		
-    $ele_title = '<span>'.$titles[0].' '.'</span>'.$titles[1].' '.$titles[2].' '.$titles[3].' '.$titles[4];
-
+		else{
+	    $ele_title = '<span>'.$titles[0].' '.'</span>'.$titles[1].' '.$titles[2].' '.$titles[3].' '.$titles[4];
+    }
     $output = l($ele_title, $element['#href'], $element['#localized_options']);
 	  
   }
