@@ -79,7 +79,7 @@
               $external = substr($menu_intranet['#href'], 0, 4);
             ?>
               <li>
-                <a href="<?php if ($external != 'http'){print '/';} ?><?php if($language->language == 'en'){print ($language->language."/");} print $href2; ?>" rel="nofollow" target="_blank" class="btn btn-xs btn-custom btn-gray atm-login"><?php print $title2; ?></a>
+                <a href="<?php if ($external != 'http' OR $language->language == 'en'){print '/';} ?><?php print $href2; ?>" rel="nofollow" target="_blank" class="btn btn-xs btn-custom btn-gray atm-login"><?php print $title2; ?></a>
               </li>
             <?php endif; ?>
             <?php endforeach; ?>
