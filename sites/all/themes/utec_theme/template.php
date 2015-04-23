@@ -221,8 +221,8 @@ function utec_theme_menu_link(array $variables) {
     $titles = array();  
     $titles = explode(" ", $element['#title']);
     $element['#localized_options']['html'] = TRUE;
-    kpr($element);
-    foreach ($element['#attributes']['class'] as $key => $class) {
+    // kpr($element);
+    foreach ($element['#localized_options']['attributes']['class'] as $key => $class) {
     	if ($class == 'btn' OR $class =='btn-primary' OR $class == 'btn-custom' OR $class == 'bold') {
 		    $ele_title = '<span style="color:white">'.$titles[0].' '.'</span>'.$titles[1].' '.$titles[2].' '.$titles[3].' '.$titles[4];
     		}	
