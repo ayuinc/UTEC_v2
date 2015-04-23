@@ -223,7 +223,7 @@ function utec_theme_menu_link(array $variables) {
     $element['#localized_options']['html'] = TRUE;
 
     foreach ($element['#attributes']['class'] as $key => $class) {
-    	if ($class == 'btn' AND $class =='btn-primary' AND $class == 'btn-custom' AND $class == 'bold') {
+    	if ($class == 'btn' OR $class =='btn-primary' OR $class == 'btn-custom' OR $class == 'bold') {
 		    $ele_title = '<span style="color:white">'.$titles[0].' '.'</span>'.$titles[1].' '.$titles[2].' '.$titles[3].' '.$titles[4];
     		}	
 	    $ele_title = '<span>'.$titles[0].' '.'</span>'.$titles[1].' '.$titles[2].' '.$titles[3].' '.$titles[4];
