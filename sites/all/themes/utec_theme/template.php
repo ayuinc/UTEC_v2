@@ -237,10 +237,10 @@ function utec_theme_menu_link(array $variables) {
   return '<li>' . $output . $sub_menu . "</li>\n";
 }
 
-function utec_theme_links($variables) {
+// function utec_theme_links($variables) {
 
-	// kpr($variables);
-}
+// 	// kpr($variables);
+// }
 function utec_theme_links__system_main_menu($variables){
 	kpr($variables);
 }
