@@ -223,6 +223,7 @@ function utec_theme_menu_link(array $variables) {
     $titles = explode(" ", $element['#title']);
 
     $ele_title = '<span>'.$titles[0].' '.'</span>'.$titles[1].' '.$titles[2].' '.$titles[3].' '.$titles[4];
+    $element['#title'] = $ele_title;
     kpr($element['#title']);
     $output = l($element['#title'], $element['#href'], $element['#localized_options']);
   }
