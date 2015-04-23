@@ -222,9 +222,9 @@ function utec_theme_menu_link(array $variables) {
     $titles = explode(" ", $element['#title']);
     $element['#localized_options']['html'] = TRUE;
     $ele_title = '<span>'.$titles[0].' '.'</span>'.$titles[1].' '.$titles[2].' '.$titles[3].' '.$titles[4];
-    
-
+   
     $output = l($ele_title, $element['#href'], $element['#localized_options']);
+	  
   }
   else {
 	  if ($element['#below']) {
@@ -232,18 +232,11 @@ function utec_theme_menu_link(array $variables) {
 	  }
 
 	  $output = l($element['#title'], $element['#href'], $element['#localized_options']);
-	  // print_r($element);
+	  
   }
-  return '<li>' . $output . $sub_menu . "</li>\n";
+	  return '<li>' . $output . $sub_menu . "</li>\n";
 }
 
-// function utec_theme_links($variables) {
-
-// 	// kpr($variables);
-// }
-function utec_theme_links__system_main_menu($variables){
-	kpr($variables);
-}
 function utec_theme_preprocess_node(&$variables){
 	$variables ['front_page'] = url();
   $theme_name = 'utec_theme';
