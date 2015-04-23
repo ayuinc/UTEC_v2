@@ -173,19 +173,7 @@
                 $external = substr($child['#href'], 0, 4);
               ?>
               <?php if ($count2 <= 5) : ?>
-                <!-- <li>
-  								<a href="<?php //if ($external != 'http'){//print '/';} ?><?php //if($language->language == 'en'){//print ($language->language."/");} //print $href; ?>" 
-                     class="<?php //foreach ($classes as $key => $class){//print $class.' ';
-                  } ?>atm-menu-secundario" 
-                     title="<?php //print $title; ?>" 
-                     id="<?php //print $id; ?>" 
-                     name="<?php //print $name; ?>" 
-                     rel="<?php //print $rel; ?>" 
-                     target="<?php //print $target; ?>">
-                     
-                     <span class="<?php //if ($classes){print 'text-white';} ?>" 
-                     style="<?php //if ($classes){print 'color:white';} ?>"><?php //print $titles[0]; ?></span><?php //print $titles[1]; ?> <?php //print $titles[2]; ?> <?php //print $titles[3]; ?> <?php //print $titles[4]; ?></a>
-                </li> -->
+               
                 <?php print render($child); ?>
   						<?php elseif($count2 > 5 && $count2 < 7) : ?>
   						</ul>
