@@ -7,16 +7,20 @@
 
 
 
-<?php $path = $base_url.'/'.$theme_path; ?>
-<?php $pathfile= variable_get('file_public_path', conf_path() . '/files/admision-generico/'); ?>
+<?php 
+ 
+ $path = $base_url.'/'.$theme_path;
+ $pathfile= variable_get('file_public_path', conf_path() . '/files/admision-generico/'); 
 
-<?php $titulo = $node->title; ?>   
-<?php $field_descripcion_corta_generica = $node->field_descripcion_corta_generica['und']['0']['value']; ?>
-<?php $field_contenido_generica = $node->field_contenido_generica['und']['0']['value']; ?>
-<?php $field_foto_generica_admision = $node->field_foto_generica_admision['und']['0']['filename']; ?>
-<?php $field_tiene_formulario = $node->field_tiene_formulario['und']['0']['value']; ?>
-<?php $field_calednario = $node->field_calednario['und']['0']['value']; ?>
-<?php $link_formulario = $node->field_link_a_formulario['und']['0']['value']; ?>
+ $titulo = $node->title;    
+ $field_descripcion_corta_generica = $node->field_descripcion_corta_generica['und']['0']['value']; 
+ $field_contenido_generica = $node->field_contenido_generica['und']['0']['value']; 
+ $field_foto_generica_admision = $node->field_image['und']['0']['uri']; 
+ $field_tiene_formulario = $node->field_tiene_formulario['und']['0']['value']; 
+ $field_calednario = $node->field_calednario['und']['0']['value']; 
+ $link_formulario = $node->field_link_a_formulario['und']['0']['value']; 
+
+?>
 
 
 <?php $url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>
@@ -35,7 +39,7 @@
 	<h1 class="light"><?php print $title ?></h1>
 	<div class="separator-gray separator-lg"></div>
 	<?php if ($field_foto_generica_admision!='') { ?>
-		<img src="<?php print('/'.$pathfile.$field_foto_generica_admision)?>" class="img-responsive mb-35" alt="<?php print $title ?>">
+		<img src="<?php print file_create_url($field_foto_generica_admision); ?>" class="img-responsive mb-35" alt="<?php print $title ?>">
 	<?php } ?>	
 	<?php if ($field_descripcion_corta_generica!='') { ?>
 		<p class="lead"><?php print $field_descripcion_corta_generica ?></p>

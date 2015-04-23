@@ -11,7 +11,8 @@ $field_como_postula_examen = $node->field_como_postula_examen['und']['0']['value
 $field_costos_examen = $node->field_costos_examen['und']['0']['value'];
 $field_temario_examen = $node->field_temario_examen['und']['0']['value'];
 $field_calendario_examen = $node->field_calendario_examen['und']['0']['value'];
-$field_banner_ad_1 = $node->field_banner_ad_1['und']['0']['filename'];
+// $field_banner_ad_1 = $node->field_banner_ad_1['und']['0']['filename'];
+$field_banner_ad_1 = $node->field_image['und']['0']['uri'];
 $link_formulario = $node->field_link_a_formulario['und']['0']['value'];	
 
 global $language; 
@@ -24,7 +25,7 @@ $idioma = $language->language;
 		<h1 class="light"><?php print t('Admissions Exam') ?></h1>
 		<div class="separator-gray separator-md"></div>
 		<?php if ($field_banner_ad_1): ?>
-		<img class="img-responsive mb-35" src="<?php print('/'.$pathfile.$field_banner_ad_1)?>" alt="<?php print t('Admissions Exam') ?>" />
+		<img class="img-responsive mb-35" src="<?php print file_create_url($field_banner_ad_1); ?>" alt="<?php print t('Admissions Exam') ?>" />
 		<?php endif; ?>			
 		<div>
 			<p class="lead text-gray"><?php print $field_descripcion_corta_examen ?></p>

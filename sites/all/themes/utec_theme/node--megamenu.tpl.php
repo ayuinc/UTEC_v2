@@ -36,9 +36,11 @@
           <?php 
             $title = $menu_quick['#title'];
             $href = drupal_get_path_alias($menu_quick['#href'], $language->language);
+            $external = '';
+            $external = substr($menu_quick['#href'], 0, 4);
           ?>
             <li>
-              <a href="/<?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" class="atm-menu-superior text-hover-primary"><?php print $title; ?></a>
+              <a href="<?php if ($external != 'http'){print '/';} ?><?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" class="atm-menu-superior text-hover-primary"><?php print $title; ?></a>
             </li>
           <?php endif; ?>
           <?php endforeach; ?>
@@ -55,9 +57,11 @@
             <?php 
               $title = $menu_quick_right['#title'];
               $href = drupal_get_path_alias($menu_quick_right['#href'], $language->language);
+              $external = '';
+              $external = substr($menu_quick_right['#href'], 0, 4);
             ?>
               <li class="pt-7">
-                <a href="/<?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" 
+                <a href="<?php if ($external != 'http'){print '/';} ?><?php if($language->language == 'en'){print ($language->language."/");} print $href; ?>" 
                   class="text-gray"><?php print $title; ?></a>
               </li>
             <?php endif; ?>
@@ -71,9 +75,11 @@
             <?php 
               $title2 = $menu_intranet['#title'];
               $href2 = drupal_get_path_alias($menu_intranet['#href'], $language->language);
+              $external = '';
+              $external = substr($menu_intranet['#href'], 0, 4);
             ?>
               <li>
-                <a href="/<?php if($language->language == 'en'){print ($language->language."/");} print $href2; ?>" rel="nofollow" target="_blank" class="btn btn-xs btn-custom btn-gray atm-login"><?php print $title2; ?></a>
+                <a href="<?php if ($external != 'http'){print '/';} ?><?php if($language->language == 'en'){print ($language->language."/");} print $href2; ?>" rel="nofollow" target="_blank" class="btn btn-xs btn-custom btn-gray atm-login"><?php print $title2; ?></a>
               </li>
             <?php endif; ?>
             <?php endforeach; ?>

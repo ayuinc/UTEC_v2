@@ -7,7 +7,7 @@
   $titulo = $node->title;
   $cuerpo = $node->body['und']['0']['value'];
   $logo = $node->field_image['und']['0']['filename'];
-  $banner = $node->field_banner['und']['0']['filename'];
+  $banner = $node->field_image_2['und']['0']['uri'];
   //$fids   = $node->field_convenio['und'];
   // print_r($node);
   
@@ -17,7 +17,7 @@
   <h1 class="light"><?php print $titulo ?></h1>
   <div class="separator-gray separator-sm"></div>
   <?php if ($banner!='')  { ?>
-  <img class="img-responsive" src="<?php print '/'.$pathfile.$banner ?>" alt="<?php print $titulo ?>">
+  <img class="img-responsive" src="<?php print file_create_url($banner); ?>" alt="<?php print $titulo ?>">
   <?php } ?>
   <p><?php print $cuerpo ?></p>
 </div>
