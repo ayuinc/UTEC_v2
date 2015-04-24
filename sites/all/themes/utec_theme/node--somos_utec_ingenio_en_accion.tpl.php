@@ -10,12 +10,12 @@
 <?php $field_titulo_del_autor = $node->field_titulo_del_autor['und']['0']['value']; ?>
 <?php $field_quote = $node->field_quote['und']['0']['value']; ?>
 <?php $field_introduccion_autor = $node->field_introduccion_autor['und']['0']['value']; ?>
-<?php $field_foto_causa = $node->field_foto_causa['und']['0']['filename']; ?>
+<?php $field_foto_causa = $node->field_image['und']['0']['uri']; ?>
 <?php $field_titulo_causa = $node->field_titulo_causa['und']['0']['value']; ?>
 <?php $field_descripcion_causa = $node->field_descripcion_causa['und']['0']['value']; ?>
 <?php $field_link_causa = $node->field_link_causa['und']['0']['value']; ?>
 <?php $field_frase_causa = $node->field_frase_causa['und']['0']['value']; ?>
-<?php $field_foto_tres_acciones = $node->field_foto_tres_acciones['und']['0']['filename']; ?>
+<?php $field_foto_tres_acciones = $node->field_image_2['und']['0']['uri']; ?>
 <?php $field_titulo_tres_acciones = $node->field_titulo_tres_acciones['und']['0']['value']; ?>
 <?php $field_subitulo_tres_acciones = $node->field_subitulo_tres_acciones['und']['0']['value']; ?>
 <?php $field_link_tres_acciones = $node->field_link_tres_acciones['und']['0']['value']; ?>
@@ -23,7 +23,7 @@
 <?php $field_subtitulo_proyecto = $node->field_subtitulo_proyecto['und']['0']['value']; ?>
 <?php $field_descripcion_proyecto = $node->field_descripcion_proyecto['und']['0']['value']; ?>
 <?php $field_link_proyecto = $node->field_link_proyecto['und']['0']['value']; ?>
-<?php $field_foto_redes_sociales = $node->field_foto_redes_sociales['und']['0']['filename']; ?>
+<?php $field_foto_redes_sociales = $node->field_image_3['und']['0']['uri']; ?>
 
 <?php if ($language->prefix == 'en'): ?>
   <div data-section-scroll="Overview" id="que-es" class="scroll-down-info section-scroll-content bg-img-block bg-img-block-lg hero-unit size lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
@@ -41,9 +41,9 @@
 	</div>
 </div>
 	<?php if ($language->prefix == 'en'): ?>
-<div data-section-scroll="A special billboard" class="section-scroll-content scroll-down-white bg-img-block bg-img-block-lg bg-img-block-right" style="background-image: url(<?php print('/'.$pathfile.$field_foto_causa)?>);">
+<div data-section-scroll="A special billboard" class="section-scroll-content scroll-down-white bg-img-block bg-img-block-lg bg-img-block-right" style="background-image: url(<?php print file_create_url($field_foto_causa); ?>);">
 	<?php elseif ($language->prefix != 'en'): ?>
-<div data-section-scroll="Un panel" class="section-scroll-content scroll-down-white bg-img-block bg-img-block-lg bg-img-block-right" style="background-image: url(<?php print('/'.$pathfile.$field_foto_causa)?>);">
+<div data-section-scroll="Un panel" class="section-scroll-content scroll-down-white bg-img-block bg-img-block-lg bg-img-block-right" style="background-image: url(<?php print file_create_url($field_foto_causa); ?>);">
 	<?php endif ?>
 	<!-- <div class="container-sm text-center">
 		<h1 class="mb-7"><?php print $field_frase_autor ?></h1>
@@ -97,9 +97,9 @@
 	</div>
 </div>
 	<?php if ($language->prefix == 'en'): ?>
-<div data-section-scroll="Three actions" class="section-scroll-content scroll-down-white bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_foto_tres_acciones)?>);">
+<div data-section-scroll="Three actions" class="section-scroll-content scroll-down-white bg-img-block bg-img-block-lg" style="background-image: url(<?php print file_create_url($field_foto_tres_acciones); ?>);">
 	<?php elseif ($language->prefix != 'en'): ?>
-<div data-section-scroll="Tres acciones" class="section-scroll-content scroll-down-white bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_foto_tres_acciones)?>);">
+<div data-section-scroll="Tres acciones" class="section-scroll-content scroll-down-white bg-img-block bg-img-block-lg" style="background-image: url(<?php print file_create_url($field_foto_tres_acciones); ?>);">
 	<?php endif ?>
 	<div class="overlay flex-middle">
 		<div class="container hero-text" 
@@ -180,9 +180,9 @@
 	</a> -->
 </div>
 	<?php if ($language->prefix != 'en'): ?>
-<div data-section-scroll="Descubre más" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_foto_redes_sociales)?>);">
+<div data-section-scroll="Descubre más" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print file_create_url($field_foto_redes_sociales); ?>);">
 	<?php elseif ($language->prefix == 'en'): ?>
-<div data-section-scroll="Find more" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_foto_redes_sociales)?>);">
+<div data-section-scroll="Find more" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print file_create_url($field_foto_redes_sociales); ?>);">
 	<?php endif ?>
 	<div class="overlay flex-middle">
 		<div class="container-xs text-white text-center hero-text relative on-top">

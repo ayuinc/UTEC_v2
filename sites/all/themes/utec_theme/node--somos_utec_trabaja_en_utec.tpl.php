@@ -9,7 +9,7 @@
 <?php $pathfile= variable_get('file_public_path', conf_path() . '/files/trabaja-utec/'); ?>
 <?php $title = $node->title; ?>  
 <?php $field_su_filosofia = $node->field_su_filosofia['und']['0']['value']; ?>
-<?php $field_su_foto = $node->field_su_foto['und']['0']['filename']; ?>
+<?php $field_su_foto = $node->field_image['und']['0']['uri']; ?>
 <?php $field_su_universidad = $node->field_su_universidad['und']['0']['value']; ?>
 <?php $field_transcendencia = $node->field_transcendencia['und']['0']['value']; ?>
 <?php $field_excelencia = $node->field_excelencia['und']['0']['value']; ?>
@@ -22,7 +22,7 @@
 	<div>
 		<h3><?php print t('Our philosophy') ?></h3>
 		<p><?php print $field_su_filosofia ?></p>
-		<img src="<?php print('/'.$pathfile.'trabaja-utec/'.$field_su_foto)?>" class="img-responsive" alt="<?php print $title ?>">
+		<img src="<?php print file_create_url($field_su_foto); ?>" class="img-responsive" alt="<?php print $title ?>">
 		<div>
 			<h3><?php print t('Universality') ?></h3>
 			<p><?php print $field_su_universidad ?></p>

@@ -1,7 +1,7 @@
 <?php $title = $node->title; ?>  
 <?php $field_titulo_del_evento = $node->field_titulo_del_evento['und']['0']['value']; ?>
 <?php $field_introduccion = $node->field_introduccion['und']['0']['value']; ?>
-<?php $field_foto = $node->field_foto['und']['0']['value']; ?>
+<?php $field_foto = $node->field_image['und']['0']['uri']; ?>
 <?php $field_contenido = $node->field_contenido['und']['0']['value']; ?>
 
 <div class="container-sm">
@@ -14,7 +14,7 @@
 	<?php } ?>
 	<?php if ($field_foto!='') { ?>
 	<div>
-		<img src="<?php print $field_foto ?>" class="img-responsive" alt="<?php print t('Academic Calendar') ?>">
+		<img src="<?php print file_create_url($field_foto); ?>" class="img-responsive" alt="<?php print t('Academic Calendar') ?>">
 	</div>
 	<?php } ?>
 	<div class="lead-ch p-ch-gray">

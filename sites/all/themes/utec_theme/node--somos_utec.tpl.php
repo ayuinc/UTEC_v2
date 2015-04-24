@@ -3,7 +3,7 @@
 $titulo = $node->title;
 $field_decripcion_corta_item = $node->field_decripcion_corta_item['und']['0']['value'];
 $field_imagen_item = $node->field_imagen_item['und']['0']['value'];
-$field_descripcion_imagen = $node->field_descripcion_imagen['und']['0']['filename'];
+$field_descripcion_imagen = $node->field_image['und']['0']['uri'];
 $field_contenido_item = $node->field_contenido_item['und']['0']['value'];
 
 ?>
@@ -15,7 +15,7 @@ $field_contenido_item = $node->field_contenido_item['und']['0']['value'];
         <div class="pv-ch-42 lead-ch p-ch-gray">
             <h3><?php print $field_decripcion_corta_item; ?></h3>
             <img src="<?php print $theme_path . "/" . $field_imagen_item; ?>" class="img-responsive" alt="<?php print $titulo; ?>">
-            <h3><?php print $field_descripcion_imagen ?></h3>
+            <h3><?php print file_create_url($field_descripcion_imagen); ?></h3>
             <img src="assets/img/bg_header-1.png" class="img-responsive" alt="<?php print $titulo; ?>">
             <h3>Lorem ipsum dolor sit amet, consectetur so adipisicing elit, sed sil do eiusmod
             tempor.</h3>
