@@ -10,7 +10,7 @@
 	$titulo = $node->title;   
 	$carrera_txt = $node->body['und']['0']['value'];
 	$carrera_link = $node->field_carrera_link['und']['0']['value'];
-	$field_carrera_imagen = $node->field_carrera_imagen['und']['0']['filename'];
+	$field_carrera_imagen = $node->field_image['und']['0']['uri'];
 	$malla_titulo = $node->field_malla_curricular_titulo['und']['0']['value'];
 	$malla_txt = $node->field_malla_curricular_body['und']['0']['value'];
 	$malla_link = $node->field_malla_curricular_link ['und']['0']['value'];
@@ -22,7 +22,7 @@
 	$profesor_link = $node->field_profesor_link ['und']['0']['value'];
 	$perfil_txt = $node->field_perfil_egresado_texto['und']['0']['value'];
 	$perfil_link = $node->field_perfil_egresado_link['und']['0']['value'];
-	$field_perfil_egresado_imagen = $node->field_perfil_egresado_imagen['und']['0']['filename'];
+	$field_perfil_egresado_imagen = $node->field_image_2['und']['0']['uri'];
 
   $carrera_id = $node->field_carrera_referencia['und']['0']['tid'];
 
@@ -50,7 +50,7 @@
   <?php elseif ($language->language != 'en'): ?>
     data-section-scroll="¿Qué es?" id="que-es"
   <?php endif ?>
-   class="scroll-down-white section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
+   class="scroll-down-white section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print file_create_url($field_carrera_imagen); ?>);">
     <div class="overlay flex-middle">
       <div class="container-sm hero-text" data-href="<?php print $carrera_link ?>">
         <h3 class="thin h3 text-white mb-7"><?php print t('What is') ?></h3>
@@ -137,7 +137,7 @@
     <i class="icon-arrows-down bg-info text-white"></i>
   </a> -->
 </div>
-<div data-section-scroll="<?php print t('Graduate profile') ?>" id="perfil-egresado" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print('/'.$pathfile.$field_perfil_egresado_imagen)?>);">
+<div data-section-scroll="<?php print t('Graduate profile') ?>" id="perfil-egresado" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print file_create_url($field_perfil_egresado_imagen); ?>);">
   <div class="container" data-href="<?php print $perfil_link ?>">
     <div class="row">
       <div class="col-sm-6 normalize-text">
