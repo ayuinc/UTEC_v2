@@ -16,6 +16,8 @@
 <tr>
 	<?php if ($count == 0) : ?>
 	<td class="highlight"><?php print $name; ?></td>
+	<?php else : ?>
+	<td></td>
 	<?php endif; 
 		$count ++;
 	?>
