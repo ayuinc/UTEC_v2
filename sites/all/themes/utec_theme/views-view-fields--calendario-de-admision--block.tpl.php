@@ -6,8 +6,8 @@
   $pathfile= variable_get('file_public_path', conf_path() . '/files/');
 
 	$name = $fields['title']->content;
-	$eventos = explode(" ", $fields['field_texo']->content);
-	$fechas = explode(" ", $fields['field_fecha']->content);
+	$eventos = explode("-", $fields['field_texo']->content);
+	$fechas = explode("-", $fields['field_fecha']->content);
   // kpr($fields['field_texo']);
 	$count = 0;
 ?>
