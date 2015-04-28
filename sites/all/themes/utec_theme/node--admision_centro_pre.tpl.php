@@ -27,9 +27,9 @@ $modalida_ext_int = $node->field_modalidad_extensiva_intens['und']['0']['value']
 
 	<div class="hero-unit"> <!-- HERO -->
 	  <?php if ($language->language == 'en'): ?>
-	  <div data-section-scroll="Overview" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print file_create_url($field_fotos_centro_pre); ?>);">
+	  <div data-section-scroll="Overview" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print image_style_url($image_style, $field_fotos_centro_pre); ?>);">
 	  <?php elseif ($language->language  != 'en'): ?>
-	  <div data-section-scroll="Acerca de" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print file_create_url($field_fotos_centro_pre); ?>);">
+	  <div data-section-scroll="Acerca de" id="que-es" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print image_style_url($image_style, $field_fotos_centro_pre); ?>);">
 	  <?php endif ?>
 	    <div class="overlay flex-middle">
 	    	<?php if ($language->language == 'en'): ?>
