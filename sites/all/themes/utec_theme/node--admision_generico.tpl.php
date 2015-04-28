@@ -39,7 +39,7 @@
 	<h1 class="light"><?php print $title ?></h1>
 	<div class="separator-gray separator-lg"></div>
 	<?php if ($field_foto_generica_admision!='') { ?>
-		<img src="<?php print file_create_url($field_foto_generica_admision); ?>" class="img-responsive mb-35" alt="<?php print $title ?>">
+		<img src="<?php print image_style_url($image_style, $field_foto_generica_admision); ?>" class="img-responsive mb-35" alt="<?php print $title ?>">
 	<?php } ?>	
 	<?php if ($field_descripcion_corta_generica!='') { ?>
 		<p class="lead"><?php print $field_descripcion_corta_generica ?></p>
