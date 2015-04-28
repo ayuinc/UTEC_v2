@@ -262,7 +262,7 @@ function utec_theme_preprocess_node(&$variables){
 	$node = $variables['node'];
 	$entity_type = 'node';
 	$field_name = 'field_image';
-	$field_name_2 = 'field_image_2';
+	// $field_name_2 = 'field_image_2';
 	$bundle = $node->type; // Or whatever content type you need.
 	$view_mode = 'default'; // Or whatever view mode you want to get settings for, e.g. teaser.
 
@@ -271,10 +271,10 @@ function utec_theme_preprocess_node(&$variables){
 	$image_style = $settings['image_style'];
 	$variables['image_style'] = $image_style;
 
-	$info2 = field_info_instance($entity_type, $field_name_2, $bundle);
-	$settings2 = $info2['display'][$view_mode]['settings'];
-	$image_style2 = $settings['image_style_2'];
-	$variables['image_style_2'] = $image_style2;
+	// $info2 = field_info_instance($entity_type, $field_name_2, $bundle);
+	// $settings2 = $info2['display'][$view_mode]['settings'];
+	// $image_style2 = $settings['image_style_2'];
+	// $variables['image_style_2'] = $image_style2;
 
 }
 
