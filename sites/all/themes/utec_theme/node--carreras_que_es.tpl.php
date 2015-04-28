@@ -21,7 +21,7 @@
 	</div> -->
 	<?php if ($infografia != '') { ?>
 	<div class="mb-63">
-		<img src="<?php print file_create_url($infografia); ?>" class="img-responsive" alt="<?php print $titulo ?>">
+		<img src="<?php print image_style_url($image_style, $infografia); ?>" class="img-responsive" alt="<?php print $titulo ?>">
 	</div>
 	<?php } ?>
 </div>
