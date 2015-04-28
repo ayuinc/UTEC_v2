@@ -50,7 +50,7 @@
   <?php elseif ($language->language != 'en'): ?>
     data-section-scroll="¿Qué es?" id="que-es"
   <?php endif ?>
-   class="scroll-down-white section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print file_create_url($field_carrera_imagen); ?>);">
+   class="scroll-down-white section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print image_style_url($image_style, $field_carrera_imagen); ?>);">
     <div class="overlay flex-middle">
       <div class="container-sm hero-text" data-href="<?php print $carrera_link ?>">
         <h3 class="thin h3 text-white mb-7"><?php print t('What is') ?></h3>
@@ -137,7 +137,7 @@
     <i class="icon-arrows-down bg-info text-white"></i>
   </a> -->
 </div>
-<div data-section-scroll="<?php print t('Graduate profile') ?>" id="perfil-egresado" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print file_create_url($field_perfil_egresado_imagen); ?>);">
+<div data-section-scroll="<?php print t('Graduate profile') ?>" id="perfil-egresado" class="section-scroll-content bg-img-block bg-img-block-lg flex-middle" style="background-image: url(<?php print image_style_url($image_style, $field_perfil_egresado_imagen); ?>);">
   <div class="container" data-href="<?php print $perfil_link ?>">
     <div class="row">
       <div class="col-sm-6 normalize-text">
