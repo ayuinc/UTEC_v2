@@ -273,7 +273,7 @@ function utec_theme_preprocess_node(&$variables){
 
 	$info2 = field_info_instance($entity_type, $field_name_2, $bundle);
 	$settings2 = $info2['display'][$view_mode]['settings'];
-	$image_style2 = $settings['image_style_2'];
+	$image_style2 = $settings2['image_style'];
 	$variables['image_style_2'] = $image_style2;
 	print_r($variables['image_style_2']);
 	print_r($variables['image_style']);
