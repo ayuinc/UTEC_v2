@@ -6,8 +6,8 @@
   $fields = entity_load('field_collection_item');
 
   // kpr($fields);
-  print_r(die($image_style));
-  print_r($image_style_2);
+  // print_r(die($image_style));
+  // print_r($image_style_2);
 
   $derecho_superior_txt1 = $fields[1]->field_texto_superior_1['und'][0]['value'];
   $derecho_superior_txt1_ingles = $fields[1]->field_texto_superior_1_ingles['und'][0]['value'];
