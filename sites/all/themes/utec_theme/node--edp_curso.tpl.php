@@ -8,7 +8,7 @@
 	$titulo = $node->title;	
 	$sub_titulo = $node->field_subtitulo['und']['0']['value'];		 		
 	$cuerpo = $node->body['und']['0']['value'];	
-	$imagen = $node->field_image['und']['0']['filename'];	
+	$imagen = $node->field_image['und']['0']['uri'];	
 	$texto_imagen = $node->field_texto_imagen['und']['0']['value'];
 	$fecha = $node->field_fecha['und']['0']['value'];		 		
 	$hora = $node->field_hora['und']['0']['value'];		 		
@@ -37,7 +37,7 @@
 	<div class="pv-ch-7 pv-ch-14-xs p-ch-gray">
 		<?php print $cuerpo ?>
 		<?php if ($imagen!='') { ?>
-			<img src="<?php print('/'.$pathfile.$imagen); ?>" alt="<?php print $titulo ?>" class="img-responsive">
+			<img src="<?php print image_style_url($image_style, $imagen); ?>" alt="<?php print $titulo ?>" class="img-responsive">
 			<span><?php print $texto_imagen ?></span>
 		<?php } ?>
 	</div>
