@@ -6,7 +6,7 @@
 
 	$titulo = $node->title;
 	$cuerpo = $node->body['und']['0']['value'];
-	$imagen = $node->field_image['und']['0']['filename'];
+	$imagen = $node->field_image['und']['0']['uri'];
 
 ?>
 <div class="container-sm">
@@ -16,7 +16,7 @@
 		<h3><?php print $cuerpo ?></h3>
 	</div>
 	<div class="mb-63">
-		<img src="<?php print('/'.$pathfile.$imagen)?>" class="img-responsive" alt="<?php print t('Graduate Profile') ?>">
+		<img src="<?php print image_style_url($image_style, $imagen); ?>" class="img-responsive" alt="<?php print t('Graduate Profile') ?>">
 	</div>
 </div>
 
