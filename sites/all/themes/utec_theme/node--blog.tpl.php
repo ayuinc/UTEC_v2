@@ -37,7 +37,7 @@
 </div>
 <?php if($imagen!='') : ?>
 <!-- <img class="img-responsive" src="<?php print '/'.$pathfile.'blog/'.$imagen ?>" alt="#"> -->
-<img class="img-responsive" src="<?php print file_create_url($imagen); ?>" alt="<?php print $title ?>" />
+<img class="img-responsive" src="<?php print image_style_url($image_style, $imagen); ?>" alt="<?php print $title ?>" />
 <?php endif ?>
 <h2 class="lead h3"><?php //print $title ?></h2>
 <p><?php print $cuerpo ?></p>
