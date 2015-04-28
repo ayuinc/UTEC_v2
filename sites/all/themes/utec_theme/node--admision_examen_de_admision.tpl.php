@@ -25,7 +25,7 @@ $idioma = $language->language;
 		<h1 class="light"><?php print t('Admissions Exam') ?></h1>
 		<div class="separator-gray separator-md"></div>
 		<?php if ($field_banner_ad_1): ?>
-		<img class="img-responsive mb-35" src="<?php print file_create_url($field_banner_ad_1); ?>" alt="<?php print t('Admissions Exam') ?>" />
+		<img class="img-responsive mb-35" src="<?php print image_style_url($image_style, $field_banner_ad_1); ?>" alt="<?php print t('Admissions Exam') ?>" />
 		<?php endif; ?>			
 		<div>
 			<p class="lead text-gray"><?php print $field_descripcion_corta_examen ?></p>
