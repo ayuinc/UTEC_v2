@@ -16,7 +16,7 @@
 	<div class="separator-gray separator-lg"></div>
 	<div class="pv-7">
 		<?php if ($field_foto_centro_pre) : ?>
-		<img src="<?php print file_create_url($field_foto_centro_pre); ?>" class="img-responsive" alt="<?php print $titulo ?>">
+		<img src="<?php print image_style_url($image_style, $field_foto_centro_pre); ?>" class="img-responsive" alt="<?php print $titulo ?>">
 		<?php endif; ?>
 	</div>	
 	<div class="pv-42">
