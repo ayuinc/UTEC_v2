@@ -22,7 +22,7 @@
 	<div>
 		<h3><?php print t('Our philosophy') ?></h3>
 		<p><?php print $field_su_filosofia ?></p>
-		<img src="<?php print file_create_url($field_su_foto); ?>" class="img-responsive" alt="<?php print $title ?>">
+		<img src="<?php print image_style_url($image_style, $field_su_foto); ?>" class="img-responsive" alt="<?php print $title ?>">
 		<div>
 			<h3><?php print t('Universality') ?></h3>
 			<p><?php print $field_su_universidad ?></p>
