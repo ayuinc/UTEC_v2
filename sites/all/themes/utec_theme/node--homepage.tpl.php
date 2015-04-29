@@ -41,7 +41,7 @@ $texto2 = $node->field_texo['und']['1']['value'];
 			<?php if ($imagen != '' && $video_name == '') : ?>
 		  <div class="home-image">
 		  	<a href="<?php print $link; ?>" target="_blank">
-			  	<img class="img-responsive" src="<?php print file_create_url($imagen); ?>" alt="<?php print $title ?>" />
+			  	<img class="img-responsive" src="<?php print image_style_url($image_style, $imagen); ?>" alt="<?php print $title ?>" />
 		  	</a>
 		  </div>
 			<?php endif; ?>
