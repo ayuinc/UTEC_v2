@@ -14,7 +14,7 @@
 	<?php } ?>
 	<?php if ($field_foto!='') { ?>
 	<div>
-		<img src="<?php print file_create_url($field_foto); ?>" class="img-responsive" alt="<?php print t('Academic Calendar') ?>">
+		<img src="<?php print image_style_url($image_style, $field_foto); ?>" class="img-responsive" alt="<?php print t('Academic Calendar') ?>">
 	</div>
 	<?php } ?>
 	<div class="lead-ch p-ch-gray">
