@@ -41,9 +41,9 @@
 	</div>
 </div>
 	<?php if ($language->prefix == 'en'): ?>
-<div data-section-scroll="A special billboard" class="section-scroll-content scroll-down-white bg-img-block bg-img-block-lg bg-img-block-right" style="background-image: url(<?php print file_create_url($field_foto_causa); ?>);">
+<div data-section-scroll="A special billboard" class="section-scroll-content scroll-down-white bg-img-block bg-img-block-lg bg-img-block-right" style="background-image: url(<?php print image_style_url($image_style, $field_foto_causa); ?>);">
 	<?php elseif ($language->prefix != 'en'): ?>
-<div data-section-scroll="Un panel" class="section-scroll-content scroll-down-white bg-img-block bg-img-block-lg bg-img-block-right" style="background-image: url(<?php print file_create_url($field_foto_causa); ?>);">
+<div data-section-scroll="Un panel" class="section-scroll-content scroll-down-white bg-img-block bg-img-block-lg bg-img-block-right" style="background-image: url(<?php print image_style_url($image_style, $field_foto_causa); ?>);">
 	<?php endif ?>
 	<!-- <div class="container-sm text-center">
 		<h1 class="mb-7"><?php print $field_frase_autor ?></h1>
@@ -97,9 +97,9 @@
 	</div>
 </div>
 	<?php if ($language->prefix == 'en'): ?>
-<div data-section-scroll="Three actions" class="section-scroll-content scroll-down-white bg-img-block bg-img-block-lg" style="background-image: url(<?php print file_create_url($field_foto_tres_acciones); ?>);">
+<div data-section-scroll="Three actions" class="section-scroll-content scroll-down-white bg-img-block bg-img-block-lg" style="background-image: url(<?php print image_style_url($image_style, $field_foto_tres_acciones); ?>);">
 	<?php elseif ($language->prefix != 'en'): ?>
-<div data-section-scroll="Tres acciones" class="section-scroll-content scroll-down-white bg-img-block bg-img-block-lg" style="background-image: url(<?php print file_create_url($field_foto_tres_acciones); ?>);">
+<div data-section-scroll="Tres acciones" class="section-scroll-content scroll-down-white bg-img-block bg-img-block-lg" style="background-image: url(<?php print image_style_url($image_style, $field_foto_tres_acciones); ?>);">
 	<?php endif ?>
 	<div class="overlay flex-middle">
 		<div class="container hero-text" 
@@ -180,9 +180,9 @@
 	</a> -->
 </div>
 	<?php if ($language->prefix != 'en'): ?>
-<div data-section-scroll="Descubre más" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print file_create_url($field_foto_redes_sociales); ?>);">
+<div data-section-scroll="Descubre más" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print image_style_url($image_style, $field_foto_redes_sociales); ?>);">
 	<?php elseif ($language->prefix == 'en'): ?>
-<div data-section-scroll="Find more" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print file_create_url($field_foto_redes_sociales); ?>);">
+<div data-section-scroll="Find more" class="section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print image_style_url($image_style, $field_foto_redes_sociales); ?>);">
 	<?php endif ?>
 	<div class="overlay flex-middle">
 		<div class="container-xs text-white text-center hero-text relative on-top">
