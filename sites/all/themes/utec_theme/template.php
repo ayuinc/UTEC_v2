@@ -260,7 +260,6 @@ function utec_theme_preprocess_node(&$variables){
 	}
 
 	$node = $variables['node'];
-	print_r($node);
 	$entity_type = 'node';
 	$field_name = 'field_image';
 	$field_name_2 = 'field_image_2';
@@ -284,9 +283,6 @@ function utec_theme_preprocess_node(&$variables){
 	$image_style3 = $settings3['image_style'];
 	$variables['image_style_3'] = $image_style3;
 
-	print_r($variables['image_style_3']);
-	print_r($variables['image_style_2']);
-	print_r($variables['image_style']);
 }
 
 ?>

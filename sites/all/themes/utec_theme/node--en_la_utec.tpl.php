@@ -40,6 +40,16 @@
   $derecho_inferior_der_link = $fields[4]->field_link['und'][0]['value'];
   $derecho_inferior_der_link_ingles = $fields[4]->field_link_ingles['und'][0]['value'];
   $derecho_inferior_der_img  = $fields[4]->field_image['und'][0]['uri'];
+
+  $bundle_names = array('field_bloque_derecho',
+                      'field_bloque_izquierdo',
+                      'field_bloque_derecho_inferior',
+                      'field_bloque_derecho_inferior_de');
+  $entity_type = 'field_collection_item';
+  // $bundle_names = 'field_some_field'; // Field name the collection is attached to
+  $field_name = 'field_image'; // Field name within the field collection
+
+  // $info = field_info_instance($entity_type, $field_name, $bundle_name);
 ?>
 <div>
   <div class="container">
@@ -65,8 +75,15 @@
 	      	<div data-href="<?php print $izquierdo_link_ingles; ?>" class="anchor-block-1">
         <?php } elseif ($language->language  != 'en') { ?>
           <div data-href="<?php print $izquierdo_link; ?>" class="anchor-block-1">    
-        <?php } ?>  	        
-          <div class="pic" style="background-image: url(<?php print file_create_url($izquierdo_img); ?>);"></div>
+        <?php } ?> 
+        <?php foreach ($bundle_names as $bundle_name) : ?> 	
+        <?php 
+          $info = field_info_instance($entity_type, $field_name, $bundle_name);
+          $settings = $info['display'][$view_mode]['settings'];
+          $image_style = $settings['image_style'];
+        ?>        
+          <div class="pic" style="background-image: url(<?php print image_style_url($image_style, $izquierdo_img); ?>);"></div>
+        <?php endforeach; ?>  
           <div class="overlay">
             <?php if ($language->language == 'en') { ?>
               <a href="<?php print $izquierdo_link_ingles; ?>">
