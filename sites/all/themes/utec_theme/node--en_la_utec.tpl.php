@@ -134,7 +134,7 @@
         <?php } elseif ($language->language  != 'en') { ?>
           <div data-href="<?php print $derecho_superior_link; ?>" class="anchor-block-2">    
         <?php } ?> 		      	        
-          <div class="pic" style="background-image: url(<?php print file_create_url($derecho_superior_img); ?>);"></div>
+          <div class="pic" style="background-image: url(<?php print image_style_url($image_style1, $derecho_superior_img); ?>);"></div>
           <div class="overlay">
             <?php if ($language->language == 'en') { ?>
               <a href="<?php print $derecho_superior_link_ingles; ?>">
@@ -182,7 +182,7 @@
         <?php } elseif ($language->language  != 'en') { ?>
           <div data-href="<?php print $derecho_inferior_izq_link; ?>" class="anchor-block-3">    
         <?php } ?>	      	
-          <div class="pic" style="background-image: url(<?php print file_create_url($derecho_inferior_izq_img); ?>);"></div>
+          <div class="pic" style="background-image: url(<?php print image_style_url($image_style3, $derecho_inferior_izq_img); ?>);"></div>
           <div class="overlay">
             <?php if ($language->language == 'en') { ?>
               <a href="<?php print $derecho_inferior_izq_link_ingles; ?>">
@@ -230,7 +230,7 @@
         <?php } elseif ($language->language  != 'en') { ?>
           <div data-href="<?php print $derecho_inferior_der_link; ?>" class="anchor-block-4">    
         <?php } ?> 		      		        
-          <div class="pic" style="background-image: url(<?php print file_create_url($derecho_inferior_der_img); ?>);"></div>
+          <div class="pic" style="background-image: url(<?php print image_style_url($image_style4, $derecho_inferior_der_img); ?>);"></div>
           <div class="overlay">
             <?php if ($language->language == 'en') { ?>
               <a href="<?php print $derecho_inferior_der_link_ingles; ?>">
