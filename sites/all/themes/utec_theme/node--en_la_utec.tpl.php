@@ -1,45 +1,9 @@
 <?php global $language ?>
 <?php 
 
-	global $base_url;
+  global $base_url;
 
   $fields = entity_load('field_collection_item');
-
-  // kpr($fields);
-  // print_r(die($image_style));
-  // print_r($image_style_2);
-
-  $derecho_superior_txt1 = $fields[1]->field_texto_superior_1['und'][0]['value'];
-  $derecho_superior_txt1_ingles = $fields[1]->field_texto_superior_1_ingles['und'][0]['value'];
-  $derecho_superior_txt2 = $fields[1]->field_texto_superior_2['und'][0]['value'];
-  $derecho_superior_txt2_ingles = $fields[1]->field_texto_superior_2_ingles['und'][0]['value'];
-  $derecho_superior_link = $fields[1]->field_link['und'][0]['value'];
-  $derecho_superior_link_ingles = $fields[1]->field_link_ingles['und'][0]['value'];
-  $derecho_superior_img = $fields[1]->field_image['und'][0]['uri'];
-
-  $izquierdo_txt1 = $fields[2]->field_texto_superior_1['und'][0]['value'];
-  $izquierdo_txt1_ingles = $fields[2]->field_texto_superior_1_ingles['und'][0]['value'];
-  $izquierdo_txt2 = $fields[2]->field_texto_superior_2['und'][0]['value'];
-  $izquierdo_txt2_ingles = $fields[2]->field_texto_superior_2_ingles['und'][0]['value'];
-  $izquierdo_link = $fields[2]->field_link['und'][0]['value'];
-  $izquierdo_link_ingles = $fields[2]->field_link_ingles['und'][0]['value'];
-  $izquierdo_img  = $fields[2]->field_image['und'][0]['uri'];
-
-  $derecho_inferior_izq_txt1 = $fields[3]->field_texto_superior_1['und'][0]['value'];
-  $derecho_inferior_izq_txt1_ingles = $fields[3]->field_texto_superior_1_ingles['und'][0]['value'];
-  $derecho_inferior_izq_txt2 = $fields[3]->field_texto_superior_2['und'][0]['value'];
-  $derecho_inferior_izq_txt2_ingles = $fields[3]->field_texto_superior_2_ingles['und'][0]['value'];
-  $derecho_inferior_izq_link = $fields[3]->field_link['und'][0]['value'];
-  $derecho_inferior_izq_link_ingles = $fields[3]->field_link_ingles['und'][0]['value'];
-  $derecho_inferior_izq_img  = $fields[3]->field_image['und'][0]['uri'];
-
-  $derecho_inferior_der_txt1 = $fields[4]->field_texto_superior_1['und'][0]['value'];
-  $derecho_inferior_der_txt1_ingles = $fields[4]->field_texto_superior_1_ingles['und'][0]['value'];
-  $derecho_inferior_der_txt2 = $fields[4]->field_texto_superior_2['und'][0]['value'];
-  $derecho_inferior_der_txt2_ingles = $fields[4]->field_texto_superior_2_ingles['und'][0]['value'];
-  $derecho_inferior_der_link = $fields[4]->field_link['und'][0]['value'];
-  $derecho_inferior_der_link_ingles = $fields[4]->field_link_ingles['und'][0]['value'];
-  $derecho_inferior_der_img  = $fields[4]->field_image['und'][0]['uri'];
 
   $bundle_names = array('field_bloque_derecho',
                       'field_bloque_izquierdo',
@@ -48,8 +12,52 @@
   $entity_type = 'field_collection_item';
   // $bundle_names = 'field_some_field'; // Field name the collection is attached to
   $field_name = 'field_image'; // Field name within the field collection
+  $view_mode = 'default';
 
-  // $info = field_info_instance($entity_type, $field_name, $bundle_name);
+  $derecho_superior_txt1 = $fields[1]->field_texto_superior_1['und'][0]['value'];
+  $derecho_superior_txt1_ingles = $fields[1]->field_texto_superior_1_ingles['und'][0]['value'];
+  $derecho_superior_txt2 = $fields[1]->field_texto_superior_2['und'][0]['value'];
+  $derecho_superior_txt2_ingles = $fields[1]->field_texto_superior_2_ingles['und'][0]['value'];
+  $derecho_superior_link = $fields[1]->field_link['und'][0]['value'];
+  $derecho_superior_link_ingles = $fields[1]->field_link_ingles['und'][0]['value'];
+  $derecho_superior_img = $fields[1]->field_image['und'][0]['uri'];
+  $info1 = field_info_instance($entity_type, $field_name, 'field_bloque_derecho');
+  $settings1 = $info1['display'][$view_mode]['settings'];
+  $image_style1 = $settings1['image_style'];
+
+  $izquierdo_txt1 = $fields[2]->field_texto_superior_1['und'][0]['value'];
+  $izquierdo_txt1_ingles = $fields[2]->field_texto_superior_1_ingles['und'][0]['value'];
+  $izquierdo_txt2 = $fields[2]->field_texto_superior_2['und'][0]['value'];
+  $izquierdo_txt2_ingles = $fields[2]->field_texto_superior_2_ingles['und'][0]['value'];
+  $izquierdo_link = $fields[2]->field_link['und'][0]['value'];
+  $izquierdo_link_ingles = $fields[2]->field_link_ingles['und'][0]['value'];
+  $izquierdo_img  = $fields[2]->field_image['und'][0]['uri'];
+  $info2 = field_info_instance($entity_type, $field_name, 'field_bloque_izquierdo');
+  $settings2 = $info2['display'][$view_mode]['settings'];
+  $image_style2 = $settings2['image_style'];
+
+  $derecho_inferior_izq_txt1 = $fields[3]->field_texto_superior_1['und'][0]['value'];
+  $derecho_inferior_izq_txt1_ingles = $fields[3]->field_texto_superior_1_ingles['und'][0]['value'];
+  $derecho_inferior_izq_txt2 = $fields[3]->field_texto_superior_2['und'][0]['value'];
+  $derecho_inferior_izq_txt2_ingles = $fields[3]->field_texto_superior_2_ingles['und'][0]['value'];
+  $derecho_inferior_izq_link = $fields[3]->field_link['und'][0]['value'];
+  $derecho_inferior_izq_link_ingles = $fields[3]->field_link_ingles['und'][0]['value'];
+  $derecho_inferior_izq_img  = $fields[3]->field_image['und'][0]['uri'];
+  $info3 = field_info_instance($entity_type, $field_name, 'field_bloque_derecho_inferior');
+  $settings3 = $info3['display'][$view_mode]['settings'];
+  $image_style3 = $settings3['image_style'];
+
+  $derecho_inferior_der_txt1 = $fields[4]->field_texto_superior_1['und'][0]['value'];
+  $derecho_inferior_der_txt1_ingles = $fields[4]->field_texto_superior_1_ingles['und'][0]['value'];
+  $derecho_inferior_der_txt2 = $fields[4]->field_texto_superior_2['und'][0]['value'];
+  $derecho_inferior_der_txt2_ingles = $fields[4]->field_texto_superior_2_ingles['und'][0]['value'];
+  $derecho_inferior_der_link = $fields[4]->field_link['und'][0]['value'];
+  $derecho_inferior_der_link_ingles = $fields[4]->field_link_ingles['und'][0]['value'];
+  $derecho_inferior_der_img  = $fields[4]->field_image['und'][0]['uri'];
+  $info4 = field_info_instance($entity_type, $field_name, 'field_bloque_derecho_inferior_de');
+  $settings4 = $info['display'][$view_mode]['settings'];
+  $image_style4 = $settings4['image_style'];
+
 ?>
 <div>
   <div class="container">
@@ -75,15 +83,8 @@
 	      	<div data-href="<?php print $izquierdo_link_ingles; ?>" class="anchor-block-1">
         <?php } elseif ($language->language  != 'en') { ?>
           <div data-href="<?php print $izquierdo_link; ?>" class="anchor-block-1">    
-        <?php } ?> 
-        <?php foreach ($bundle_names as $bundle_name) : ?> 	
-        <?php 
-          $info = field_info_instance($entity_type, $field_name, $bundle_name);
-          $settings = $info['display'][$view_mode]['settings'];
-          $image_style = $settings['image_style'];
-        ?>        
-          <div class="pic" style="background-image: url(<?php print image_style_url($image_style, $izquierdo_img); ?>);"></div>
-        <?php endforeach; ?>  
+        <?php } ?>         
+          <div class="pic" style="background-image: url(<?php print image_style_url($image_style2, $izquierdo_img); ?>);"></div>
           <div class="overlay">
             <?php if ($language->language == 'en') { ?>
               <a href="<?php print $izquierdo_link_ingles; ?>">
