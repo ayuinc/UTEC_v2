@@ -5,10 +5,6 @@
 
   $fields = entity_load('field_collection_item');
 
-  $bundle_names = array('field_bloque_derecho',
-                      'field_bloque_izquierdo',
-                      'field_bloque_derecho_inferior',
-                      'field_bloque_derecho_inferior_de');
   $entity_type = 'field_collection_item';
   // $bundle_names = 'field_some_field'; // Field name the collection is attached to
   $field_name = 'field_image'; // Field name within the field collection
