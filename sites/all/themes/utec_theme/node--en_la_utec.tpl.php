@@ -55,7 +55,7 @@
   $derecho_inferior_der_link_ingles = $fields[4]->field_link_ingles['und'][0]['value'];
   $derecho_inferior_der_img  = $fields[4]->field_image['und'][0]['uri'];
   $info4 = field_info_instance($entity_type, $field_name, 'field_bloque_derecho_inferior_de');
-  $settings4 = $info['display'][$view_mode]['settings'];
+  $settings4 = $info4['display'][$view_mode]['settings'];
   $image_style4 = $settings4['image_style'];
 
 ?>
