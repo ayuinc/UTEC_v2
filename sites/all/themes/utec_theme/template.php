@@ -240,11 +240,9 @@ function utec_theme_menu_link(array $variables) {
 	  
   }
   if ($menuName == 'menu-footer-menu') {
-  	if ($element['#below']) {
-	  	$element['#localized_options']['html'] = TRUE;
-	  	$ele_title = '<small>'.$element['#title'].'</small>';
-	  	$output = l($ele_title, $element['#href'], $element['#localized_options']);
-  	}
+  	$element['#localized_options']['html'] = TRUE;
+  	$ele_title = '<small>'.$element['#title'].'</small>';
+  	$output = l($ele_title, $element['#href'], $element['#localized_options']);
   }
   foreach ($element['#attributes']['class'] as $key => $class) {
   	if ($class == 'first' OR $class == 'leaf' OR $class == 'last') {

@@ -13,7 +13,16 @@
         <?php foreach ($menus as $index => $menu) :?>
         <?php $classes = $menu['#localized_options']['attributes']['class']; ?>
         <?php if ($menu['#title']) : ?>
-        <?php print render($menu); ?>
+        <li>
+          <ul>
+            <li class="title text-gray-lighter"><?php print $menu['#title']; ?></li>
+            <?php foreach ($menu['#below'] as $child) : ?>
+            <?php if ($child['#href']) : ?>
+              <?php print render($child); ?>
+            <?php endif; ?>  
+            <?php endforeach; ?>
+          </ul>
+        </li>
         <?php $counter++; ?>
         <?php endif; ?>
         <?php endforeach; ?>                       
