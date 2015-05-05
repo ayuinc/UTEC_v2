@@ -1,16 +1,9 @@
 <?php 
-  global $language 
-  // global $base_url;
-  //$url = base_path();
-  // die(print_r($url));
-?>
-<?php $theme_path = drupal_get_path('theme', 'utec_theme'); ?>
+  global $language;
+  $theme_path = drupal_get_path('theme', 'utec_theme'); 
 
-<?php 
 	$tree = menu_tree_all_data('main-menu'); 
 	$menus = menu_tree_output(i18n_menu_localize_tree($tree));
-
-  // kpr($menus);
 
   $tree_quick = menu_tree_all_data('menu-top-menu'); 
   $menus_quick = menu_tree_output(i18n_menu_localize_tree($tree_quick));
