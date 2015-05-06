@@ -3,6 +3,7 @@
   $tree = menu_tree_all_data('menu-footer-menu'); 
   $menus = menu_tree_output(i18n_menu_localize_tree($tree));
   $sub_footer = $node->body['und']['0']['value'];
+  $copyright = $node->field_cuerpo['und']['0']['value'];
 ?>
 <!-- FOOTER -->
   <?php $node = node_load(919); ?>
@@ -30,7 +31,16 @@
       </ul> 
 		</div>
 	</div>
-  <?php print $sub_footer; ?>
+  <div class="address pv-14 bg-gray-lighter">
+    <div class="container">
+      <nav class="text-center ml-ch-14 text-gray">
+        <?php print $sub_footer; ?>
+        <div class="inline-block mt-14">
+          <?php print $copyright; ?>
+        </div>
+      </nav>
+    </div>
+  </div>
 <script>
   (function(d) {
     var config = {
