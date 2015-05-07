@@ -32,6 +32,7 @@
 							<span><?php print $parte; ?></span>
 							<?php endif ?>
 							<?php endforeach; ?>
+							<span></span>
 						</a>
 					</h2>
 				</div>
