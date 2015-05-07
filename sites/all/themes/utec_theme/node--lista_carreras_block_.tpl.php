@@ -6,8 +6,8 @@
   $links = $node->field_carrera_link['und'];
   $iconos = $node->field_texo['und'];
 
-  $titles = explode(' ', $title)
-  $titles1 = explode(' ', $title, 2)
+  $titles = explode(' ', $title);
+  $titles1 = explode(' ', $title, 2);
   print_r($titles1);
 ?>
 <div class="pv-42" id="home-sec-1">
