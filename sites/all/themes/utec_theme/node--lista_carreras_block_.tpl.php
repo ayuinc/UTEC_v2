@@ -5,9 +5,6 @@
   $carreras = $node->field_nombre['und'];
   $links = $node->field_carrera_link['und'];
   $iconos = $node->field_texo['und'];
-
-  kpr($node);
-
   $titles = explode(' ', $title, 3);
 
 ?>
