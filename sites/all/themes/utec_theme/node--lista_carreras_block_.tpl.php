@@ -8,13 +8,13 @@
 
   kpr($node);
 
-  $titles = explode(' ', $title);
-  $titles1 = explode(' ', $title, 2);
-  print_r($titles1);
+  $titles = explode(' ', $title, 3);
+  print_r($titles)
+
 ?>
 <div class="pv-42" id="home-sec-1">
 	<div class="container">
-		<h3 class="h2 lead medium mb-7"><span class="text-gray-darker"><?php print $titles[0].'/'.$titles[1]; ?></span> <span class="text-gray"><?php foreach ($titles as $key => $title){if($title != $titles[0] or $title != $title[1]){print $title;}} ?></span></h3>
+		<h3 class="h2 lead medium mb-7"><span class="text-gray-darker"><?php print $titles[0]; ?></span> <span class="text-gray"><?php print $titles[1]; ?></span></h3>
 		<h4 class="lead mb-35"><?php print $cuerpo; ?></h4>
 		<ul class="grid-list grid-list-5 grid-list-1-xs grid-list-1-landscape pt-21 list-carreras text-center text-left-xs mb-ch-21-xs">
 			<?php foreach ($carreras as $key => $carrera) : ?>
