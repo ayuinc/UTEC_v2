@@ -9,7 +9,6 @@
   kpr($node);
 
   $titles = explode(' ', $title, 3);
-  print_r($titles)
 
 ?>
 <div class="pv-42" id="home-sec-1">
@@ -20,7 +19,7 @@
 			<?php foreach ($carreras as $key => $carrera) : ?>
 			<?php 
 				$partes = array();
-				$partes = explode(' ', $carrera); 
+				$partes = explode(' ', $carrera['value']); 
 			?>
 			<li>
 				<div>
