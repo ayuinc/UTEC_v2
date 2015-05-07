@@ -20,9 +20,9 @@
 			?>
 			<li>
 				<div>
-					<div><a href="/<?php if ($language->language=="en") {print $language->language;} print '/'.$links[$key]['value']; ?>" class="atm-item-carrera"><i class="<?php print $iconos[$key]['value']; ?>"></i></a></div>
+					<div><a href="<?php if ($language->language=="en") {print '/'.$language->language;} print '/'.$links[$key]['value']; ?>" class="atm-item-carrera"><i class="<?php print $iconos[$key]['value']; ?>"></i></a></div>
 					<h2>
-						<a href="/<?php print $language->language.'/'.$links[$key]['value']; ?>" class="atm-item-carrera">
+						<a href="<?php if ($language->language=="en") {print '/'.$language->language;} print '/'.$links[$key]['value']; ?>" class="atm-item-carrera">
 							<span><?php print $partes[0]; ?></span>
 							<span><?php print $partes[1]; ?></span>
 							<span></span>
