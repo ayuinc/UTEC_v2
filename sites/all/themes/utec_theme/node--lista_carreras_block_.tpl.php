@@ -19,7 +19,7 @@
 			<?php foreach ($carreras as $key => $carrera) : ?>
 			<?php 
 				$partes = array();
-				$partes = explode(' ', $carrera['value']); 
+				$partes = explode(' ', $carrera['value'], 2); 
 			?>
 			<li>
 				<div>
@@ -27,11 +27,7 @@
 					<h2>
 						<a href="/<?php print $language->language.'/'.$links[$key]['value']; ?>" class="atm-item-carrera">
 							<span><?php print $partes[0]; ?></span>
-							<?php foreach ($partes as $key => $parte) : ?>
-							<?php if ($parte != $partes[0]): ?>
-							<span><?php print $parte; ?></span>
-							<?php endif ?>
-							<?php endforeach; ?>
+							<span><?php print $partes[1]; ?></span>
 							<span></span>
 						</a>
 					</h2>
