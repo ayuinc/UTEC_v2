@@ -134,7 +134,7 @@
 	<div class="address pv-14 bg-gray-lighter">
 		<div class="container">
 			<nav class="text-center ml-ch-14 text-gray">
-				<span><?php print t('Calle Medrano Silva S/N con Av. Grau y Malecón Armendáriz S/N.') ?></span>
+				<span><?php print t('Jr. Medrano Silva esquina con Av. Miguel Grau, Barranco') ?></span>
 				<span><strong><?php print t('P.') ?></strong>(511) 230-5020 - (511) 373 1000 - (511) 354-0070</span>
 				<span><strong><?php print t('W.') ?></strong>www.utec.edu.pe</span>
 				<span><strong><?php print t('C.') ?></strong><a href="mailto:informes@utec.edu.pe" class="text-gray-dark">informes@utec.edu.pe</a></span>
