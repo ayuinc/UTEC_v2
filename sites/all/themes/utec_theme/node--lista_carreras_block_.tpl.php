@@ -6,6 +6,8 @@
   $links = $node->field_carrera_link['und'];
   $iconos = $node->field_texo['und'];
 
+  kpr($node);
+
   $titles = explode(' ', $title);
   $titles1 = explode(' ', $title, 2);
   print_r($titles1);
