@@ -48,6 +48,11 @@
 	<form action="/registro.php" data-submit="Formulario de inscripcion" method="post" id="formRegistro" name="formRegistro">
 		<input type="hidden" name="origen" value="<?php print $titulo; ?>">
 		<input type="hidden" name="idioma" value="<?php print $idioma; ?>">
+		<div class="text-left">
+			  <label>
+						<?php print $cuerpo; ?>
+			  </label>	
+	    </div>
 
 		<div class="row">
 			<div class="form-group col-sm-6">
@@ -104,6 +109,11 @@
 		<div class="text-right">
 			<button type="submit" class="btn btn-primary btn-lg"><?php print t('Send') ?></button>
 		</div>
+		<div class="text-left">
+			  <label>
+						Al hacer clic en ENVIAR el usuario acepta <a href="http://app.utec.edu.pe/admision/terminos-y-condiciones.pdf" target="_blank">las condiciones de uso.</a>
+			  </label>	
+	    </div>			
 	</form>						
 </div>	
 <?php } ?>
@@ -114,7 +124,12 @@
 	<form action="/registro.php" data-submit="Formulario de inscripcion" method="post" id="formRegistro" name="formRegistro">
 			<input type="hidden" name="origen" value="<?php print $titulo; ?>">
 			<input type="hidden" name="idioma" value="<?php print $idioma; ?>">			
-
+			<div class="text-left">
+				  <label>
+							<?php print $cuerpo; ?>
+				  </label>	
+		    </div>
+	    
 			<div class="row">
 				<div class="form-group col-sm-6">
 					<label for="" class="sr-only"><?php print t('Name') ?></label>
@@ -157,6 +172,11 @@
 			<div class="text-right">
 				<button type="submit" class="btn btn-primary btn-lg"><?php print t('Send') ?></button>
 			</div>
+			<div class="text-left">
+				  <label>
+							Al hacer clic en ENVIAR el usuario acepta <a href="http://app.utec.edu.pe/admision/terminos-y-condiciones.pdf" target="_blank">las condiciones de uso.</a>
+				  </label>	
+		    </div>				
 	</form>						
 </div>
 <?php } ?>
