@@ -1081,7 +1081,7 @@ if($idioma == "es")
                           $contenidorpta.="<p>1. Efectúa el depósito bancario por el Derecho de Inscripción al Concurso de Primeros Puestos. BCP cuenta corriente soles N° 193-1976235-0-68. El costo es de S/.450.
                           <br/>2. Presenta los siguientes documentos en la Oficina de Admisión:</p>";
                           $contenidorpta.="<p><ul>
-                                          <li>Voucher del depósito bancario (o envío del voucher electrónico al e-mailinscripciones@utec.edu.pe).</li>
+                                          <li>Voucher del depósito bancario (o envío del voucher electrónico al e-mail inscripciones@utec.edu.pe).</li>
                                           <li>Constancia original que acredite haber obtenido el primero o segundo puesto de tu promoción, con la firma y sello de la dirección del colegio de procedencia, así como de la UGEL correspondiente.</li>
                                           <li>Certificados originales de estudios de los cinco años de Educación Secundaria. En caso no hayas culminado tus estudios, puedes presentar tus certificados de 1ro. a 4to. y libreta de notas de 5to. de secundaria.</li>
                                           <li>Copia del Documento Nacional de Identidad.</li>
