@@ -257,7 +257,7 @@
 		</div>
 		<div class="text-left">
 			  <label>
-						Al hacer clic en ENVIAR el usuario acepta <a href="http://app.utec.edu.pe/admision/terminos-y-condiciones.pdf" target="_blank">las condiciones de uso.</a>
+						Al hacer clic en ENVIAR el usuario acepta <a href="http://app.utec.edu.pe/documentacion/terminos-y-condiciones.pdf" target="_blank">las condiciones de uso.</a>
 			  </label>	
 	    </div>			
 	</form>						

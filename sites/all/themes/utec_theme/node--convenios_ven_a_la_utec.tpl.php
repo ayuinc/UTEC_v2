@@ -62,6 +62,11 @@
 			<div class="text-left">
 				<button type="submit" class="btn btn-primary btn-lg"><?php print t('Send') ?></button>
 			</div>
+			<div class="text-left">
+				  <label>
+							Al hacer clic en ENVIAR el usuario acepta <a href="http://app.utec.edu.pe/documentacion/terminos-y-condiciones.pdf" target="_blank">las condiciones de uso.</a>
+				  </label>	
+		    </div>				
 	</form>						
 	<p class="text-gray pt-42">De conformidad con los artículos lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut at, veritatis tempore ipsa voluptate neque lorem exercitationem impedit aperiam? Veritatis recusandae dolorem, ullam repellendus minus expedita consequatur doloremque iusto fugiat maxime!</p>
 </div>

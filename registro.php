@@ -896,7 +896,7 @@ if($idioma == "es")
                                             <li>Certificados originales de estudios de los cinco años de Educación Secundaria</li>
                                             <li>Copia del Documento Nacional de Identidad.</li>
                                             <li>Dos fotografías actuales, tamaño carné, en fondo blanco.</li>
-                                            <li>Declaración jurada familiar. <a href='http://www.utec.edu.pe/admision/Documentos%20compartidos/Declaraci%C3%B3n%20Jurada%20Familiar.pdf' target='_blank'>Descargar formato.</a></li>
+                                            <li>Declaración jurada familiar. <a href='http://app.utec.edu.pe/documentacion/Declaracion_Jurada_Familiar.pdf' target='_blank'>Descargar formato.</a></li>
                                             </ul></p>";
 
                             $contenidorpta.="<p>
@@ -945,7 +945,7 @@ if($idioma == "es")
                                           <li>Certificados originales de estudios de los cinco años de Educación Secundaria. En caso no hayas culminado tus estudios, puedes presentar tus certificados de 1ro. a 4to. y libreta de notas de 5to. de secundaria.</li>
                                           <li>Constancia original que acredite pertenecer al tercio superior de tu promoción y/o promedio no menor de 15 en los tres últimos años de tu educación secundaria.</li>
                                           <li>Dos fotografías actuales, tamaño carné, en fondo blanco.</li>
-                                          <li>Declaración jurada familiar. <a href='http://www.utec.edu.pe/admision/Documentos%20compartidos/Declaraci%C3%B3n%20Jurada%20Familiar.pdf' target='_blank'>Descargar formato.</a></li>
+                                          <li>Declaración jurada familiar. <a href='http://app.utec.edu.pe/documentacion/Declaracion_Jurada_Familiar.pdf' target='_blank'>Descargar formato.</a></li>
                                           </ul></p>";
 
                           $contenidorpta.="<p>Preséntate en nuestra oficina de Admisión (Av. Prolongación San Martín 207, Barranco) con los documentos indicados como requisito de inscripción.</p>";
@@ -989,8 +989,8 @@ if($idioma == "es")
                                           <li>Certificados originales de estudios de los cinco años de Educación Secundaria. En caso no hayas culminado tus estudios, puedes presentar tus certificados de 1ro. a 4to. y libreta de notas de 5to. de secundaria.</li>
                                           <li>Copia del Documento Nacional de Identidad.</li>
                                           <li>Dos fotografías actuales, tamaño carné, en fondo blanco.</li>
-                                          <li>Diploma de Bachillerato Internacional con la obtención de las puntuaciones que se consignan en el siguiente documento: <a href='http://www.utec.edu.pe/admision/Documentos%20compartidos/Bachillerato%20Internacional.pdf' target='_blank'>Bachillerato Internacional.pdf</a></li>
-                                          <li>Declaración jurada familiar. <a href='http://www.utec.edu.pe/sites/default/files/examen-admision-pdf/Declaraci%C3%B3n%20Jurada%20Familiar_1.pdf' target='_blank'>Descargar formato.</a></li>
+                                          <li>Diploma de Bachillerato Internacional con la obtención de las puntuaciones que se consignan en el siguiente documento: <a href='http://app.utec.edu.pe/documentacion/Bachillerato_Internacional.pdf' target='_blank'>Bachillerato Internacional.pdf</a></li>
+                                          <li>Declaración jurada familiar. <a href='http://app.utec.edu.pe/documentacion/Declaracion_Jurada_Familiar.pdf' target='_blank'>Descargar formato.</a></li>
                                           </ul></p>";
 
                           $contenidorpta.="<p>Preséntate en nuestra oficina de Admisión (Av. Prolongación San Martín 207, Barranco) con los documentos indicados como requisito de inscripción.</p>";
@@ -1033,7 +1033,7 @@ if($idioma == "es")
                                           <li>Voucher del depósito por el pago total del programa o la primera cuota de éste. También puedes enviar el voucher electrónico al e-mail inscripciones@utec.edu.pe.</li>
                                           <li>Copia del Documento Nacional de Identidad.</li>
                                           <li>Dos fotografías actuales, tamaño carné, en fondo blanco.</li>
-                                          <li>Declaración jurada familiar. <a href='http://www.utec.edu.pe/admision/Documentos%20compartidos/Declaraci%C3%B3n%20Jurada%20Familiar.pdf' target='_blank'>Descargar formato.</a></li>
+                                          <li>Declaración jurada familiar. <a href='http://app.utec.edu.pe/documentacion/Declaracion_Jurada_Familiar.pdf' target='_blank'>Descargar formato.</a></li>
                                           </ul></p>";
 
                           $contenidorpta.="
@@ -1086,7 +1086,7 @@ if($idioma == "es")
                                           <li>Certificados originales de estudios de los cinco años de Educación Secundaria. En caso no hayas culminado tus estudios, puedes presentar tus certificados de 1ro. a 4to. y libreta de notas de 5to. de secundaria.</li>
                                           <li>Copia del Documento Nacional de Identidad.</li>
                                           <li>Dos fotografías actuales, tamaño carné, en fondo blanco.</li>
-                                          <li>Declaración jurada familiar. <a href='http://www.utec.edu.pe/admision/Documentos%20compartidos/Declaraci%C3%B3n%20Jurada%20Familiar.pdf' target='_blank'>Descargar formato.</a></li>
+                                          <li>Declaración jurada familiar. <a href='http://app.utec.edu.pe/documentacion/Declaracion_Jurada_Familiar.pdf' target='_blank'>Descargar formato.</a></li>
                                           </ul></p>";
 
                           $contenidorpta.="            
@@ -1141,7 +1141,7 @@ if($idioma == "es")
                                                   <li>Sílabos originales sellados y visados por la Universidad de procedencia.</li>
                                                   <li>Constancia original de ingreso a la Universidad de procedencia.</li>
                                                   <li>Constancia de no haber sido separado de la Universidad de procedencia por medida disciplinaria o asuntos académicos.</li>
-                                                  <li>Declaración jurada familiar. <a href='http://www.utec.edu.pe/admision/Documentos%20compartidos/Declaraci%C3%B3n%20Jurada%20Familiar.pdf' target='_blank'>Descargar formato.</a></li>
+                                                  <li>Declaración jurada familiar. <a href='http://app.utec.edu.pe/documentacion/Declaracion_Jurada_Familiar.pdf' target='_blank'>Descargar formato.</a></li>
                                               </ul></p>";
                           
                           $contenidorpta.= "<p>En caso hubieras dejado de estudiar tres años o más luego de haber egresado de la educación secundaria deberás presentar certificado original y vigente de antecedentes policiales, penales y judiciales.</p>";
@@ -1220,7 +1220,7 @@ if($idioma == "en")
                                             <li>Original transcripts of the five years of secondary education</li>
                                             <li>Copy of National Identity Card, passport or immigration.</li>
                                             <li>Two recent photographs, passport size, on white background.</li>
-                                            <li>Family affidavit. <a href='http://www.utec.edu.pe/admision/Documentos%20compartidos/Declaraci%C3%B3n%20Jurada%20Familiar.pdf' target='_blank'>Descargar formato.</a></li>
+                                            <li>Family affidavit. <a href='http://app.utec.edu.pe/documentacion/Declaracion_Jurada_Familiar.pdf' target='_blank'>Download.</a></li>
                                             </ul></p>";
 
                             $contenidorpta.="<p>
@@ -1268,7 +1268,7 @@ if($idioma == "en")
                                           <li>Original studies certificate for the six years of high school.Copy of official ID. If you haven't finished high school, you can submit your certificates from 7th to 10th grade and your scores from 11th and 12th grade.</li>
                                           <li>Certificate as proof that the applicant belonged to the upper third of his/her class with an average minimum grade of B-.</li>                                 
                                           <li>Two recent photographs, passport size, on white background.</li>
-                                          <li>Family affidavit. <a href='http://www.utec.edu.pe/admision/Documentos%20compartidos/Declaraci%C3%B3n%20Jurada%20Familiar.pdf' target='_blank'>Descargar formato.</a></li>
+                                          <li>Family affidavit. <a href='http://app.utec.edu.pe/documentacion/Declaracion_Jurada_Familiar.pdf' target='_blank'>Download.</a></li>
                                           </ul></p>";
 
                           $contenidorpta.="<p>Come to our Admissions Office (Av. Prolongation San Martín 207, Barranco) with the documents listed as a requirement of registration.</p>";
@@ -1308,11 +1308,11 @@ if($idioma == "en")
                                           <br/>2. Come to the in-person registration at the Admissions Office and present the following documents:</p>";
                           $contenidorpta.="<p><ul>
                                           <li>The bank deposit receipt for the registration into the High Performance Assessment or send the electronic receipt by e-mail to inscripciones@utec.edu.pe.</li>
-                                          <li>Original studies certificate for the six years of high school.Copy of official ID. If you haven't finished high school, you can submit your certificates from 7th to 10th grade and your scores from 11th and 12th grade.</li>
+                                          <li>Original studies certificate for the six years of high school. Copy of official ID. If you haven't finished high school, you can submit your certificates from 7th to 10th grade and your scores from 11th and 12th grade.</li>
                                           <li>Copy of National Identity Card, passport or immigration.</li>
                                           <li>Two recent photographs, passport size, on white background.</li>
-                                          <li>International Baccalaureate Diploma with obtaining scores entered in the following document: <a href='http://www.utec.edu.pe/admision/Documentos%20compartidos/Bachillerato%20Internacional.pdf' target='_blank'>International Baccalaureate.pdf</a></li>
-                                          <li>Family affidavit. <a href='http://www.utec.edu.pe/admision/Documentos%20compartidos/Declaraci%C3%B3n%20Jurada%20Familiar.pdf' target='_blank'>Descargar formato.</a></li>                                          
+                                          <li>International Baccalaureate Diploma with obtaining scores entered in the following document: <a href='http://app.utec.edu.pe/documentacion/Bachillerato_Internacional.pdf' target='_blank'>International Baccalaureate.pdf</a></li>
+                                          <li>Family affidavit. <a href='http://app.utec.edu.pe/documentacion/Declaracion_Jurada_Familiar.pdf' target='_blank'>Download.</a></li>                                          
                                           </ul></p>";
 
                           $contenidorpta.="<p>Come to our Admissions Office (Av. Prolongation San Martín 207, Barranco) with the documents listed as a requirement of registration.</p>";
@@ -1354,7 +1354,7 @@ if($idioma == "en")
                                           <li>Submit bank deposit voucher for full payment of the program or the first installment of this or sending e-voucher to mail: inscripciones@utec.edu.pe</li>
                                           <li>Copy of National Identity Card, passport or immigration.</li>
                                           <li>Two recent photographs, passport size, on white background.</li>
-                                          <li>Family affidavit. <a href='http://www.utec.edu.pe/admision/Documentos%20compartidos/Declaraci%C3%B3n%20Jurada%20Familiar.pdf' target='_blank'>Descargar formato.</a></li>                                          
+                                          <li>Family affidavit. <a href='http://app.utec.edu.pe/documentacion/Declaracion_Jurada_Familiar.pdf' target='_blank'>Download.</a></li>                                          
                                           </ul></p>";
 
                           $contenidorpta.="
@@ -1406,7 +1406,7 @@ if($idioma == "en")
                                           <li>Original studies certificate for the six years of high school. Copy of official ID. If you haven't finished high school, you can submit your certificates from 7th to 10th grade and your scores from 11th and 12th grade.</li>
                                           <li>Copy of National Identity Card, passport or immigration.</li>
                                           <li>Two recent photographs, passport size, on white background.</li>
-                                          <li>Family affidavit. <a href='http://www.utec.edu.pe/admision/Documentos%20compartidos/Declaraci%C3%B3n%20Jurada%20Familiar.pdf' target='_blank'>Descargar formato.</a></li>                                          
+                                          <li>Family affidavit. <a href='http://app.utec.edu.pe/documentacion/Declaracion_Jurada_Familiar.pdf' target='_blank'>Download.</a></li>                                          
                                           </ul></p>";
 
                           $contenidorpta.="            
@@ -1458,7 +1458,7 @@ if($idioma == "en")
                                                   <li>Syllabus original sealed and endorsed by the University of origin.</li>
                                                   <li>Original Proof of admission to the University of origin.</li>
                                                   <li>Proof of not being separated from the University of origin for disciplinary or academic issues.</li>
-                                                  <li>Family affidavit. <a href='http://www.utec.edu.pe/admision/Documentos%20compartidos/Declaraci%C3%B3n%20Jurada%20Familiar.pdf' target='_blank'>Descargar formato.</a></li>                                          
+                                                  <li>Family affidavit. <a href='http://app.utec.edu.pe/documentacion/Declaracion_Jurada_Familiar.pdf' target='_blank'>Download.</a></li>                                          
                                               </ul></p>";
                           
                           $contenidorpta.= "<p>If you had left school three years or more after having graduated from high school you must submit the original certificate and police force, criminal and court records.</p>";

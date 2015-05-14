@@ -62,6 +62,11 @@
 		<div class="text-right">
 			<button type="submit" class="btn btn-primary btn-lg" onclick="contacto_general();"><?php print t('Send') ?></button>
 		</div>
+			<div class="text-left">
+				  <label>
+							Al hacer clic en ENVIAR el usuario acepta <a href="http://app.utec.edu.pe/documentacion/terminos-y-condiciones.pdf" target="_blank">las condiciones de uso.</a>
+				  </label>	
+		    </div>			
 	</form>	
 	<?php } else { ?>
 		<?php print $field_iframe ?>
