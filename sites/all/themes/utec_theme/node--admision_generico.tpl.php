@@ -17,7 +17,7 @@
  $field_tiene_formulario = $node->field_tiene_formulario['und']['0']['value']; 
  $field_calednario = $node->field_calednario['und']['0']['value']; 
  $link_formulario = $node->field_link_a_formulario['und']['0']['value']; 
-
+ 
 ?>
 
 <?php $url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>

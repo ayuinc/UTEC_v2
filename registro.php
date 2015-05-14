@@ -990,7 +990,7 @@ if($idioma == "es")
                                           <li>Copia del Documento Nacional de Identidad.</li>
                                           <li>Dos fotografías actuales, tamaño carné, en fondo blanco.</li>
                                           <li>Diploma de Bachillerato Internacional con la obtención de las puntuaciones que se consignan en el siguiente documento: <a href='http://www.utec.edu.pe/admision/Documentos%20compartidos/Bachillerato%20Internacional.pdf' target='_blank'>Bachillerato Internacional.pdf</a></li>
-                                          <li>Declaración jurada familiar. <a href='http://www.utec.edu.pe/admision/Documentos%20compartidos/Declaraci%C3%B3n%20Jurada%20Familiar.pdf' target='_blank'>Descargar formato.</a></li>
+                                          <li>Declaración jurada familiar. <a href='http://www.utec.edu.pe/sites/default/files/examen-admision-pdf/Declaraci%C3%B3n%20Jurada%20Familiar_1.pdf' target='_blank'>Descargar formato.</a></li>
                                           </ul></p>";
 
                           $contenidorpta.="<p>Preséntate en nuestra oficina de Admisión (Av. Prolongación San Martín 207, Barranco) con los documentos indicados como requisito de inscripción.</p>";
@@ -1218,7 +1218,7 @@ if($idioma == "en")
                             <br/>2. Present the following documents to the Office of Admissions:</p>";
                             $contenidorpta.="<p><ul><li>Voucher bank deposit (or the electronic voucher sent to e-mail inscripciones@utec.edu.pe)</li>
                                             <li>Original transcripts of the five years of secondary education</li>
-                                            <li>Copy of National Identity.</li>
+                                            <li>Copy of National Identity Card, passport or immigration.</li>
                                             <li>Two recent photographs, passport size, on white background.</li>
                                             <li>Family affidavit. <a href='http://www.utec.edu.pe/admision/Documentos%20compartidos/Declaraci%C3%B3n%20Jurada%20Familiar.pdf' target='_blank'>Descargar formato.</a></li>
                                             </ul></p>";
@@ -1265,16 +1265,11 @@ if($idioma == "en")
                                           <br/>2. Come to the in-person registration at the Admissions Office and present the following documents:</p>";
                           $contenidorpta.="<p><ul>
                                           <li>The bank deposit receipt for the registration into the High Performance Assessment or send the electronic receipt by e-mail to inscripciones@utec.edu.pe</li>
-                                          <li>Original studies certificate for the six years of high school.Copy of official ID.</li>
-                                          <li>A family sworn statement.</li>
-                                          <li>Resolution from CONADIS that certifies that the applicant is disabled.</li>
-                                          <li>Certificate as proof that the applicant belonged to the upper third of his/her class with an average minimum grade of B-.</li>
+                                          <li>Original studies certificate for the six years of high school.Copy of official ID. If you haven't finished high school, you can submit your certificates from 7th to 10th grade and your scores from 11th and 12th grade.</li>
+                                          <li>Certificate as proof that the applicant belonged to the upper third of his/her class with an average minimum grade of B-.</li>                                 
+                                          <li>Two recent photographs, passport size, on white background.</li>
+                                          <li>Family affidavit. <a href='http://www.utec.edu.pe/admision/Documentos%20compartidos/Declaraci%C3%B3n%20Jurada%20Familiar.pdf' target='_blank'>Descargar formato.</a></li>
                                           </ul></p>";
-
-                          $contenidorpta.="<p>
-                           En caso apliques por la modalidad de Bachillerato Internacional, presentar diploma de Bachillerato Internacional con la obtención de las 
-                           puntuaciones que se consignan en el siguiente documento: <a href='http://www.utec.edu.pe/admision/Documentos%20compartidos/Bachillerato%20Internacional.pdf' target='_blank'>Bachillerato Internacional.pdf</a>      
-                           </p>";
 
                           $contenidorpta.="<p>Come to our Admissions Office (Av. Prolongation San Martín 207, Barranco) with the documents listed as a requirement of registration.</p>";
                           $contenidorpta.="<p>Contact UTEC easier:<br/><a href='http://guia.com.pe/estara/estara_popup.asp?advertiseId=411234&status=P&phone=51013731000&addressId=876727&' target='_blank'><img src='http://app.utec.edu.pe/admision/img/llama_gratis.jpg' alt='LLama gratis'></a></p>";
@@ -1297,7 +1292,6 @@ if($idioma == "en")
             }
 
 
-
             if($origen == "pagina-inscripcion-bachillerato")
             {
                           $contenidorpta = "";
@@ -1313,12 +1307,12 @@ if($idioma == "en")
                           $contenidorpta.="<p>1. The Registration Fee is S/. 450. It must be paid in: Bank account in nuevos soles Nª 193-1976235-0-68 at the  Banco de Crédito del Perú. 
                                           <br/>2. Come to the in-person registration at the Admissions Office and present the following documents:</p>";
                           $contenidorpta.="<p><ul>
-                                          <li>The bank deposit receipt for the registration into the High Performance Assessment or send the electronic receipt by e-mail to inscripciones@utec.edu.pe</li>
-                                          <li>Original studies certificate for the six years of high school.Copy of official ID.</li>
-                                          <li>A family sworn statement.</li>
-                                          <li>Resolution from CONADIS that certifies that the applicant is disabled.</li>
-                                          <li>Certificate as proof that the applicant belonged to the upper third of his/her class with an average minimum grade of B-.</li>
+                                          <li>The bank deposit receipt for the registration into the High Performance Assessment or send the electronic receipt by e-mail to inscripciones@utec.edu.pe.</li>
+                                          <li>Original studies certificate for the six years of high school.Copy of official ID. If you haven't finished high school, you can submit your certificates from 7th to 10th grade and your scores from 11th and 12th grade.</li>
+                                          <li>Copy of National Identity Card, passport or immigration.</li>
+                                          <li>Two recent photographs, passport size, on white background.</li>
                                           <li>International Baccalaureate Diploma with obtaining scores entered in the following document: <a href='http://www.utec.edu.pe/admision/Documentos%20compartidos/Bachillerato%20Internacional.pdf' target='_blank'>International Baccalaureate.pdf</a></li>
+                                          <li>Family affidavit. <a href='http://www.utec.edu.pe/admision/Documentos%20compartidos/Declaraci%C3%B3n%20Jurada%20Familiar.pdf' target='_blank'>Descargar formato.</a></li>                                          
                                           </ul></p>";
 
                           $contenidorpta.="<p>Come to our Admissions Office (Av. Prolongation San Martín 207, Barranco) with the documents listed as a requirement of registration.</p>";
@@ -1352,14 +1346,15 @@ if($idioma == "en")
                           $contenidorpta.="<p>Hello ".strtoupper($_POST['nombres']).",</p>
                           <p><h2>Thank you for your interest in UTEC!</h2>
                           <br/> We have received your data correctly.
-                          <br /> To complete your enrollment in the Pre University Center, you must follow these steps::</p>";
+                          <br /> To complete your enrollment in the Pre University Center, you must follow these steps:</p>";
 
-                          $contenidorpta.="<p>1. Performs the bank deposit for full payment of the program or the first installment of this or sending e-voucher to mail: inscripciones@utec.edu.pe. Banco de Credito BCP has in national currency: 193-1976235-0-68. 
+                          $contenidorpta.="<p>1. Performs the bank deposit for full payment of the program or the first installment of this or sending e-voucher to mail: inscripciones@utec.edu.pe. Banco de Credito BCP has in national currency: 193-1976235-0-68.  
                                           <br/>2. Submit the following documents to the Admissions Office:</p>";
                           $contenidorpta.="<p><ul>
                                           <li>Submit bank deposit voucher for full payment of the program or the first installment of this or sending e-voucher to mail: inscripciones@utec.edu.pe</li>
                                           <li>Copy of National Identity Card, passport or immigration.</li>
                                           <li>Two recent photographs, passport size, on white background.</li>
+                                          <li>Family affidavit. <a href='http://www.utec.edu.pe/admision/Documentos%20compartidos/Declaraci%C3%B3n%20Jurada%20Familiar.pdf' target='_blank'>Descargar formato.</a></li>                                          
                                           </ul></p>";
 
                           $contenidorpta.="
@@ -1408,9 +1403,10 @@ if($idioma == "en")
                           $contenidorpta.="<p><ul>
                                           <li>Voucher bank deposit (or sending e-voucher to e-mail inscripciones@utec.edu.pe).</li>
                                           <li>Original certificate attesting to have obtained the first or second position of your promotion, with the signature and seal of the school board of origin as well as the corresponding UGELs.</li>
-                                          <li>Original transcripts of the five years of secondary education. If you have not yet completed your studies, you can submit these documents until January 15, 2015.</li>
-                                          <li>Copy of National Identity.</li>
+                                          <li>Original studies certificate for the six years of high school. Copy of official ID. If you haven't finished high school, you can submit your certificates from 7th to 10th grade and your scores from 11th and 12th grade.</li>
+                                          <li>Copy of National Identity Card, passport or immigration.</li>
                                           <li>Two recent photographs, passport size, on white background.</li>
+                                          <li>Family affidavit. <a href='http://www.utec.edu.pe/admision/Documentos%20compartidos/Declaraci%C3%B3n%20Jurada%20Familiar.pdf' target='_blank'>Descargar formato.</a></li>                                          
                                           </ul></p>";
 
                           $contenidorpta.="            
@@ -1455,14 +1451,14 @@ if($idioma == "en")
                           $contenidorpta.= "<p>1. Performs the bank deposit for the right Transfer Student. BCP current account No. 193-1976235-0-68 soles. The cost is S / .580.
                                             <br/>2. Present the following documents to the Office of Admissions:</p>";
                           $contenidorpta.= "<p><ul><li>Voucher bank deposit (or sending e-voucher to e-mail inscripciones@utec.edu.pe).</li>
-                                                  <li>Copy of National Identity.</li>
+                                                  <li>Copy of National Identity Card, passport or immigration.</li>
                                                   <li>Original transcripts of the five years of secondary education.</li>
                                                   <li>Two recent photographs, passport size, on white background.</li>
-                                                  <li>Original certificates of college and notes evidencing have at least 36 academic credits in the University of origin. 
-                                                  Only considered approved as a regular undergraduate student at the University of origin, under the modality credits.</li>
+                                                  <li>Original certificates of college and notes evidencing have at least 72 academic credits in the University of origin. Only considered approved as a regular undergraduate student at the University of origin, under the modality credits.</li>
                                                   <li>Syllabus original sealed and endorsed by the University of origin.</li>
                                                   <li>Original Proof of admission to the University of origin.</li>
                                                   <li>Proof of not being separated from the University of origin for disciplinary or academic issues.</li>
+                                                  <li>Family affidavit. <a href='http://www.utec.edu.pe/admision/Documentos%20compartidos/Declaraci%C3%B3n%20Jurada%20Familiar.pdf' target='_blank'>Descargar formato.</a></li>                                          
                                               </ul></p>";
                           
                           $contenidorpta.= "<p>If you had left school three years or more after having graduated from high school you must submit the original certificate and police force, criminal and court records.</p>";

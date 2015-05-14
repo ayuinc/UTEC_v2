@@ -22,7 +22,7 @@
 	// print_r($node);
 	//EXAMEN ADMISION
 ?>
-
+ 
 <div class="container-sm mb-35">
 	<h1 class="light"><?php print $titulo_usuario; ?></h1>
 	<div class="separator-gray separator-lg"></div>

@@ -21,7 +21,7 @@
 	
 	// print_r($node);
 	//CENTRO PRE
-?>
+?> 
 
 <div class="container-sm mb-35">
 	<h1 class="light"><?php print $titulo_usuario; ?></h1>

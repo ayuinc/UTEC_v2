@@ -18,7 +18,7 @@ $link_formulario = $node->field_link_a_formulario['und']['0']['value'];
 global $language; 
 $idioma = $language->language;		
 
-?>
+?> 
 
 	<div class="container-sm">
 	<div class="mb-21">

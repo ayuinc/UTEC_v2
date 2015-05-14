@@ -7,7 +7,7 @@ $field_forma_de_pago_inscripcion = $node->field_forma_de_pago_inscripcion['und']
 $field_detalles_inscripcion = $node->field_detalles_inscripcion['und']['0']['value'];
 $field_condiciones_inscripcion = $node->field_condiciones_inscripcion['und']['0']['value'];
 
-
+ 
 
 ?>
 <div class="container-sm">

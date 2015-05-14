@@ -9,7 +9,7 @@ $idioma = $language->language;
 <?php $path = $base_url.'/'.$theme_path; ?>
 <?php $pathfile= variable_get('file_public_path', conf_path() . '/files/'); ?>
 
-
+ 
 <?php
 $titulo = $node->title;   
 $field_que_es_descripcion_cp = $node->field_que_es_descripcion_cp['und']['0']['value'];

@@ -15,7 +15,7 @@
 <?php $field_excelencia = $node->field_excelencia['und']['0']['value']; ?>
 <?php $field_su_creatividad = $node->field_su_creatividad['und']['0']['value']; ?>
 <?php $field_su_contacto = $node->field_su_contacto['und']['0']['value']; ?>
-
+ 
 <div class="container-sm">
 	<h1 class="light"><?php print $title ?></h1>
 	<div class="separator-gray separator-sm"></div>

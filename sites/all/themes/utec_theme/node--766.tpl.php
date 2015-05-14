@@ -12,7 +12,7 @@
 	
 	// print_r($node);
 ?>
-
+ 
 <div class="container-sm">
 	<h1 class="light"><?php print $titulo_usuario; ?></h1>
 	<div clsass="separator-gray separator-lg"></div>

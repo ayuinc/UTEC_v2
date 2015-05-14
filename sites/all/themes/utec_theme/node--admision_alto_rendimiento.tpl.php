@@ -142,7 +142,7 @@ $link_formulario = $node->field_link_a_formulario['und']['0']['value'];
 			<?php print $field_calendario_alto ?>
 			</div>
 		</div>
-	</div>
+	</div> 
 
 	<h3><?php print t("For more information:"); ?></h3>
 	<form action="/registro.php" data-submit="Formulario de inscripcion" method="post" id="formRegistro" name="formRegistro">
