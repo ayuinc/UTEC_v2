@@ -860,7 +860,7 @@ if($idioma == "es")
                              <p>¿Quieres conocer más acerca de UTEC?</p>
                              <p><ul>
                              <li><a href='https://www.youtube.com/watch?v=E7orILoYKSI&feature=youtu.be' target='_blank'>Conoce nuestro nuevo campus en Barranco, próximo a inaugurarse.</a></li>
-                             <li><a href='http://www.utec.edu.pe/carreras/default.aspx#.VD2hCfl5O5I' target='_blank'>Conoce nuestras carreras.</a></li>
+                             <li><a href='http://www.utec.edu.pe/' target='_blank'>Conoce nuestras carreras.</a></li>
                              <li>Síguenos en <a href='https://www.facebook.com/utecuniversidad' target='_blank'>Facebook</a>, <a href='https://twitter.com/utecedu' target='_blank'>Twitter</a> y <a href='https://www.youtube.com/user/universidadutec' target='_blank'>Youtube</a>.</li></ul></p><br/>";
 
             $contenidorpta.="<p>Comunícate con UTEC más fácil:<br/><a href='http://guia.com.pe/estara/estara_popup.asp?advertiseId=411234&status=P&phone=51013731000&addressId=876727&' target='_blank'><img src='http://app.utec.edu.pe/admision/img/llama_gratis.jpg' alt='LLama gratis'></a></p>";
@@ -869,13 +869,13 @@ if($idioma == "es")
             $contenidorpta.="<p>
             <img src='http://app.utec.edu.pe/admision/img/pieWEB.jpg' alt='pieWEB' usemap='#Map'>
             <map name='Map' id='Map'>
-            <area shape='rect' coords='19,33,107,67' href='http://www.utec.edu.pe/carreras/ingenieria-industrial/default.aspx#.VE5bZfmG96A' target='_blank' alt='Ingeniería Industrial' />
-            <area shape='rect' coords='487,31,595,69' href='http://www.utec.edu.pe/carreras/ingenieria-quimica/default.aspx#.VE5bjPmG96A' target='_blank' alt='Ingeniería Química Industrial' />
-            <area shape='rect' coords='132,36,230,67' href='http://www.utec.edu.pe/carreras/ingenieria-mecanica/default.aspx#.VE6dZ_mG96A' target='_blank' alt='Ingeniería Mecánica' />
-            <area shape='rect' coords='257,36,348,66' href='http://www.utec.edu.pe/carreras/ingenieria-energia/default.aspx#.VE6dlPmG96A' target='_blank' alt='Ingeniería de la Energía' />
-            <area shape='rect' coords='374,34,467,67' href='http://www.utec.edu.pe/carreras/ingenieria-electronica/default.aspx#.VE6dufmG96A' target='_blank' alt='Ingeniería Electrónica' />
+            <area shape='rect' coords='19,33,107,67' href='http://www.utec.edu.pe/ingenieria-industrial' target='_blank' alt='Ingeniería Industrial' />
+            <area shape='rect' coords='487,31,595,69' href='http://www.utec.edu.pe/ingenieria-quimica-industrial' target='_blank' alt='Ingeniería Química Industrial' />
+            <area shape='rect' coords='132,36,230,67' href='http://www.utec.edu.pe/ingenieria-mecanica' target='_blank' alt='Ingeniería Mecánica' />
+            <area shape='rect' coords='257,36,348,66' href='http://www.utec.edu.pe/ingenieria-de-la-energia' target='_blank' alt='Ingeniería de la Energía' />
+            <area shape='rect' coords='374,34,467,67' href='http://www.utec.edu.pe/ingenieria-electronica' target='_blank' alt='Ingeniería Electrónica' />
             <area shape='rect' coords='48,121,198,140' href='mailto:informes@utec.edu.pe?Subject=Consulta Información' target='_top' />
-            <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
+            <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/' target='_blank' alt='UTEC' />
             </map>
             </p>"; 
 
@@ -914,15 +914,15 @@ if($idioma == "es")
                             $contenidorpta.="<p>
                             <img src='http://app.utec.edu.pe/admision/img/pieWEB.jpg' alt='pieWEB' usemap='#Map'>
                             <map name='Map' id='Map'>
-                            <area shape='rect' coords='19,33,107,67' href='http://www.utec.edu.pe/carreras/ingenieria-industrial/default.aspx#.VE5bZfmG96A' target='_blank' alt='Ingeniería Industrial' />
-                            <area shape='rect' coords='487,31,595,69' href='http://www.utec.edu.pe/carreras/ingenieria-quimica/default.aspx#.VE5bjPmG96A' target='_blank' alt='Ingeniería Química Industrial' />
-                            <area shape='rect' coords='132,36,230,67' href='http://www.utec.edu.pe/carreras/ingenieria-mecanica/default.aspx#.VE6dZ_mG96A' target='_blank' alt='Ingeniería Mecánica' />
-                            <area shape='rect' coords='257,36,348,66' href='http://www.utec.edu.pe/carreras/ingenieria-energia/default.aspx#.VE6dlPmG96A' target='_blank' alt='Ingeniería de la Energía' />
-                            <area shape='rect' coords='374,34,467,67' href='http://www.utec.edu.pe/carreras/ingenieria-electronica/default.aspx#.VE6dufmG96A' target='_blank' alt='Ingeniería Electrónica' />
+                            <area shape='rect' coords='19,33,107,67' href='http://www.utec.edu.pe/ingenieria-industrial' target='_blank' alt='Ingeniería Industrial' />
+                            <area shape='rect' coords='487,31,595,69' href='http://www.utec.edu.pe/ingenieria-quimica-industrial' target='_blank' alt='Ingeniería Química Industrial' />
+                            <area shape='rect' coords='132,36,230,67' href='http://www.utec.edu.pe/ingenieria-mecanica' target='_blank' alt='Ingeniería Mecánica' />
+                            <area shape='rect' coords='257,36,348,66' href='http://www.utec.edu.pe/ingenieria-de-la-energia' target='_blank' alt='Ingeniería de la Energía' />
+                            <area shape='rect' coords='374,34,467,67' href='http://www.utec.edu.pe/ingenieria-electronica' target='_blank' alt='Ingeniería Electrónica' />
                             <area shape='rect' coords='48,121,198,140' href='mailto:informes@utec.edu.pe?Subject=Consulta Información' target='_top' />
-                            <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
+                            <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/' target='_blank' alt='UTEC' />
                             </map>
-                            </p>";   
+                            </p>";  
             }
 
 
@@ -955,18 +955,18 @@ if($idioma == "es")
                           </td></tr>
                           </table>";
                           
-                          $contenidorpta.="<p>
-                          <img src='http://app.utec.edu.pe/admision/img/pieWEB.jpg' alt='pieWEB' usemap='#Map'>
-                          <map name='Map' id='Map'>
-                          <area shape='rect' coords='19,33,107,67' href='http://www.utec.edu.pe/carreras/ingenieria-industrial/default.aspx#.VE5bZfmG96A' target='_blank' alt='Ingeniería Industrial' />
-                          <area shape='rect' coords='487,31,595,69' href='http://www.utec.edu.pe/carreras/ingenieria-quimica/default.aspx#.VE5bjPmG96A' target='_blank' alt='Ingeniería Química Industrial' />
-                          <area shape='rect' coords='132,36,230,67' href='http://www.utec.edu.pe/carreras/ingenieria-mecanica/default.aspx#.VE6dZ_mG96A' target='_blank' alt='Ingeniería Mecánica' />
-                          <area shape='rect' coords='257,36,348,66' href='http://www.utec.edu.pe/carreras/ingenieria-energia/default.aspx#.VE6dlPmG96A' target='_blank' alt='Ingeniería de la Energía' />
-                          <area shape='rect' coords='374,34,467,67' href='http://www.utec.edu.pe/carreras/ingenieria-electronica/default.aspx#.VE6dufmG96A' target='_blank' alt='Ingeniería Electrónica' />
-                          <area shape='rect' coords='48,121,198,140' href='mailto:informes@utec.edu.pe?Subject=Consulta Información' target='_top' />
-                          <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
-                          </map>
-                          </p>";   
+                            $contenidorpta.="<p>
+                            <img src='http://app.utec.edu.pe/admision/img/pieWEB.jpg' alt='pieWEB' usemap='#Map'>
+                            <map name='Map' id='Map'>
+                            <area shape='rect' coords='19,33,107,67' href='http://www.utec.edu.pe/ingenieria-industrial' target='_blank' alt='Ingeniería Industrial' />
+                            <area shape='rect' coords='487,31,595,69' href='http://www.utec.edu.pe/ingenieria-quimica-industrial' target='_blank' alt='Ingeniería Química Industrial' />
+                            <area shape='rect' coords='132,36,230,67' href='http://www.utec.edu.pe/ingenieria-mecanica' target='_blank' alt='Ingeniería Mecánica' />
+                            <area shape='rect' coords='257,36,348,66' href='http://www.utec.edu.pe/ingenieria-de-la-energia' target='_blank' alt='Ingeniería de la Energía' />
+                            <area shape='rect' coords='374,34,467,67' href='http://www.utec.edu.pe/ingenieria-electronica' target='_blank' alt='Ingeniería Electrónica' />
+                            <area shape='rect' coords='48,121,198,140' href='mailto:informes@utec.edu.pe?Subject=Consulta Información' target='_top' />
+                            <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/' target='_blank' alt='UTEC' />
+                            </map>
+                            </p>";  
             }
 
 
@@ -1000,18 +1000,18 @@ if($idioma == "es")
                           </td></tr>
                           </table>";
                           
-                          $contenidorpta.="<p>
-                          <img src='http://app.utec.edu.pe/admision/img/pieWEB.jpg' alt='pieWEB' usemap='#Map'>
-                          <map name='Map' id='Map'>
-                          <area shape='rect' coords='19,33,107,67' href='http://www.utec.edu.pe/carreras/ingenieria-industrial/default.aspx#.VE5bZfmG96A' target='_blank' alt='Ingeniería Industrial' />
-                          <area shape='rect' coords='487,31,595,69' href='http://www.utec.edu.pe/carreras/ingenieria-quimica/default.aspx#.VE5bjPmG96A' target='_blank' alt='Ingeniería Química Industrial' />
-                          <area shape='rect' coords='132,36,230,67' href='http://www.utec.edu.pe/carreras/ingenieria-mecanica/default.aspx#.VE6dZ_mG96A' target='_blank' alt='Ingeniería Mecánica' />
-                          <area shape='rect' coords='257,36,348,66' href='http://www.utec.edu.pe/carreras/ingenieria-energia/default.aspx#.VE6dlPmG96A' target='_blank' alt='Ingeniería de la Energía' />
-                          <area shape='rect' coords='374,34,467,67' href='http://www.utec.edu.pe/carreras/ingenieria-electronica/default.aspx#.VE6dufmG96A' target='_blank' alt='Ingeniería Electrónica' />
-                          <area shape='rect' coords='48,121,198,140' href='mailto:informes@utec.edu.pe?Subject=Consulta Información' target='_top' />
-                          <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
-                          </map>
-                          </p>";   
+                            $contenidorpta.="<p>
+                            <img src='http://app.utec.edu.pe/admision/img/pieWEB.jpg' alt='pieWEB' usemap='#Map'>
+                            <map name='Map' id='Map'>
+                            <area shape='rect' coords='19,33,107,67' href='http://www.utec.edu.pe/ingenieria-industrial' target='_blank' alt='Ingeniería Industrial' />
+                            <area shape='rect' coords='487,31,595,69' href='http://www.utec.edu.pe/ingenieria-quimica-industrial' target='_blank' alt='Ingeniería Química Industrial' />
+                            <area shape='rect' coords='132,36,230,67' href='http://www.utec.edu.pe/ingenieria-mecanica' target='_blank' alt='Ingeniería Mecánica' />
+                            <area shape='rect' coords='257,36,348,66' href='http://www.utec.edu.pe/ingenieria-de-la-energia' target='_blank' alt='Ingeniería de la Energía' />
+                            <area shape='rect' coords='374,34,467,67' href='http://www.utec.edu.pe/ingenieria-electronica' target='_blank' alt='Ingeniería Electrónica' />
+                            <area shape='rect' coords='48,121,198,140' href='mailto:informes@utec.edu.pe?Subject=Consulta Información' target='_top' />
+                            <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/' target='_blank' alt='UTEC' />
+                            </map>
+                            </p>";  
             }
 
 
@@ -1054,18 +1054,18 @@ if($idioma == "es")
                           $contenidorpta.="<p>Comunícate con UTEC más fácil:<br/><a href='http://guia.com.pe/estara/estara_popup.asp?advertiseId=411234&status=P&phone=51013731000&addressId=876727&' target='_blank'><img src='http://app.utec.edu.pe/admision/img/llama_gratis.jpg' alt='LLama gratis'></a></p>";
                           //$contenidorpta.="<p>Oficina de Admisión<br /><strong>UTEC -  Universidad de Ingeniería & Tecnología</strong><br />Telf: (511) 373 1000<br />Av. Prolongación San Martín, 207, Barranco<br />informes@utec.edu.pe<br />www.utec.edu.pe</p>";
                           $contenidorpta.="<p><img src='http://app.utec.edu.pe/admision/img/logo_utec.png' alt='Logo Utec' style='width: 150px;'><br/><b>UTEC - Universidad de Ingeniería & Tecnología</b></p>";
-                          $contenidorpta.="<p>
-                          <img src='http://app.utec.edu.pe/admision/img/pieWEB.jpg' alt='pieWEB' usemap='#Map'>
-                          <map name='Map' id='Map'>
-                          <area shape='rect' coords='19,33,107,67' href='http://www.utec.edu.pe/carreras/ingenieria-industrial/default.aspx#.VE5bZfmG96A' target='_blank' alt='Ingeniería Industrial' />
-                          <area shape='rect' coords='487,31,595,69' href='http://www.utec.edu.pe/carreras/ingenieria-quimica/default.aspx#.VE5bjPmG96A' target='_blank' alt='Ingeniería Química Industrial' />
-                          <area shape='rect' coords='132,36,230,67' href='http://www.utec.edu.pe/carreras/ingenieria-mecanica/default.aspx#.VE6dZ_mG96A' target='_blank' alt='Ingeniería Mecánica' />
-                          <area shape='rect' coords='257,36,348,66' href='http://www.utec.edu.pe/carreras/ingenieria-energia/default.aspx#.VE6dlPmG96A' target='_blank' alt='Ingeniería de la Energía' />
-                          <area shape='rect' coords='374,34,467,67' href='http://www.utec.edu.pe/carreras/ingenieria-electronica/default.aspx#.VE6dufmG96A' target='_blank' alt='Ingeniería Electrónica' />
-                          <area shape='rect' coords='48,121,198,140' href='mailto:informes@utec.edu.pe?Subject=Consulta Información' target='_top' />
-                          <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
-                          </map>
-                          </p>";
+                            $contenidorpta.="<p>
+                            <img src='http://app.utec.edu.pe/admision/img/pieWEB.jpg' alt='pieWEB' usemap='#Map'>
+                            <map name='Map' id='Map'>
+                            <area shape='rect' coords='19,33,107,67' href='http://www.utec.edu.pe/ingenieria-industrial' target='_blank' alt='Ingeniería Industrial' />
+                            <area shape='rect' coords='487,31,595,69' href='http://www.utec.edu.pe/ingenieria-quimica-industrial' target='_blank' alt='Ingeniería Química Industrial' />
+                            <area shape='rect' coords='132,36,230,67' href='http://www.utec.edu.pe/ingenieria-mecanica' target='_blank' alt='Ingeniería Mecánica' />
+                            <area shape='rect' coords='257,36,348,66' href='http://www.utec.edu.pe/ingenieria-de-la-energia' target='_blank' alt='Ingeniería de la Energía' />
+                            <area shape='rect' coords='374,34,467,67' href='http://www.utec.edu.pe/ingenieria-electronica' target='_blank' alt='Ingeniería Electrónica' />
+                            <area shape='rect' coords='48,121,198,140' href='mailto:informes@utec.edu.pe?Subject=Consulta Información' target='_top' />
+                            <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/' target='_blank' alt='UTEC' />
+                            </map>
+                            </p>";  
             }
 
 
@@ -1103,18 +1103,18 @@ if($idioma == "es")
                           </td></tr>
                           </table>";
                           
-                          $contenidorpta.="<p>
-                          <img src='http://app.utec.edu.pe/admision/img/pieWEB.jpg' alt='pieWEB' usemap='#Map'>
-                          <map name='Map' id='Map'>
-                          <area shape='rect' coords='19,33,107,67' href='http://www.utec.edu.pe/carreras/ingenieria-industrial/default.aspx#.VE5bZfmG96A' target='_blank' alt='Ingeniería Industrial' />
-                          <area shape='rect' coords='487,31,595,69' href='http://www.utec.edu.pe/carreras/ingenieria-quimica/default.aspx#.VE5bjPmG96A' target='_blank' alt='Ingeniería Química Industrial' />
-                          <area shape='rect' coords='132,36,230,67' href='http://www.utec.edu.pe/carreras/ingenieria-mecanica/default.aspx#.VE6dZ_mG96A' target='_blank' alt='Ingeniería Mecánica' />
-                          <area shape='rect' coords='257,36,348,66' href='http://www.utec.edu.pe/carreras/ingenieria-energia/default.aspx#.VE6dlPmG96A' target='_blank' alt='Ingeniería de la Energía' />
-                          <area shape='rect' coords='374,34,467,67' href='http://www.utec.edu.pe/carreras/ingenieria-electronica/default.aspx#.VE6dufmG96A' target='_blank' alt='Ingeniería Electrónica' />
-                          <area shape='rect' coords='48,121,198,140' href='mailto:informes@utec.edu.pe?Subject=Consulta Información' target='_top' />
-                          <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
-                          </map>
-                          </p>";   
+                            $contenidorpta.="<p>
+                            <img src='http://app.utec.edu.pe/admision/img/pieWEB.jpg' alt='pieWEB' usemap='#Map'>
+                            <map name='Map' id='Map'>
+                            <area shape='rect' coords='19,33,107,67' href='http://www.utec.edu.pe/ingenieria-industrial' target='_blank' alt='Ingeniería Industrial' />
+                            <area shape='rect' coords='487,31,595,69' href='http://www.utec.edu.pe/ingenieria-quimica-industrial' target='_blank' alt='Ingeniería Química Industrial' />
+                            <area shape='rect' coords='132,36,230,67' href='http://www.utec.edu.pe/ingenieria-mecanica' target='_blank' alt='Ingeniería Mecánica' />
+                            <area shape='rect' coords='257,36,348,66' href='http://www.utec.edu.pe/ingenieria-de-la-energia' target='_blank' alt='Ingeniería de la Energía' />
+                            <area shape='rect' coords='374,34,467,67' href='http://www.utec.edu.pe/ingenieria-electronica' target='_blank' alt='Ingeniería Electrónica' />
+                            <area shape='rect' coords='48,121,198,140' href='mailto:informes@utec.edu.pe?Subject=Consulta Información' target='_top' />
+                            <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/' target='_blank' alt='UTEC' />
+                            </map>
+                            </p>";  
             }
 
 
@@ -1153,18 +1153,18 @@ if($idioma == "es")
                           </td></tr>
                           </table>";
                           
-                          $contenidorpta.="<p>
-                          <img src='http://app.utec.edu.pe/admision/img/pieWEB.jpg' alt='pieWEB' usemap='#Map'>
-                          <map name='Map' id='Map'>
-                          <area shape='rect' coords='19,33,107,67' href='http://www.utec.edu.pe/carreras/ingenieria-industrial/default.aspx#.VE5bZfmG96A' target='_blank' alt='Ingeniería Industrial' />
-                          <area shape='rect' coords='487,31,595,69' href='http://www.utec.edu.pe/carreras/ingenieria-quimica/default.aspx#.VE5bjPmG96A' target='_blank' alt='Ingeniería Química Industrial' />
-                          <area shape='rect' coords='132,36,230,67' href='http://www.utec.edu.pe/carreras/ingenieria-mecanica/default.aspx#.VE6dZ_mG96A' target='_blank' alt='Ingeniería Mecánica' />
-                          <area shape='rect' coords='257,36,348,66' href='http://www.utec.edu.pe/carreras/ingenieria-energia/default.aspx#.VE6dlPmG96A' target='_blank' alt='Ingeniería de la Energía' />
-                          <area shape='rect' coords='374,34,467,67' href='http://www.utec.edu.pe/carreras/ingenieria-electronica/default.aspx#.VE6dufmG96A' target='_blank' alt='Ingeniería Electrónica' />
-                          <area shape='rect' coords='48,121,198,140' href='mailto:informes@utec.edu.pe?Subject=Consulta Información' target='_top' />
-                          <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
-                          </map>
-                          </p>";  
+                            $contenidorpta.="<p>
+                            <img src='http://app.utec.edu.pe/admision/img/pieWEB.jpg' alt='pieWEB' usemap='#Map'>
+                            <map name='Map' id='Map'>
+                            <area shape='rect' coords='19,33,107,67' href='http://www.utec.edu.pe/ingenieria-industrial' target='_blank' alt='Ingeniería Industrial' />
+                            <area shape='rect' coords='487,31,595,69' href='http://www.utec.edu.pe/ingenieria-quimica-industrial' target='_blank' alt='Ingeniería Química Industrial' />
+                            <area shape='rect' coords='132,36,230,67' href='http://www.utec.edu.pe/ingenieria-mecanica' target='_blank' alt='Ingeniería Mecánica' />
+                            <area shape='rect' coords='257,36,348,66' href='http://www.utec.edu.pe/ingenieria-de-la-energia' target='_blank' alt='Ingeniería de la Energía' />
+                            <area shape='rect' coords='374,34,467,67' href='http://www.utec.edu.pe/ingenieria-electronica' target='_blank' alt='Ingeniería Electrónica' />
+                            <area shape='rect' coords='48,121,198,140' href='mailto:informes@utec.edu.pe?Subject=Consulta Información' target='_top' />
+                            <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/' target='_blank' alt='UTEC' />
+                            </map>
+                            </p>";  
             }
 }
 
@@ -1182,7 +1182,7 @@ if($idioma == "en")
                              <p>Do you want to know more about UTEC?</p>
                              <p><ul>
                              <li><a href='https://www.youtube.com/watch?v=E7orILoYKSI&feature=youtu.be' target='_blank'>Do you know our new campus in Barranco?</a></li>
-                             <li><a href='http://www.utec.edu.pe/carreras/default.aspx#.VD2hCfl5O5I' target='_blank'>Do you know more about our careers?</a></li>
+                             <li><a href='http://www.utec.edu.pe/' target='_blank'>Do you know more about our careers?</a></li>
                              <li>Follow us on <a href='https://www.facebook.com/utecuniversidad' target='_blank'>Facebook</a>, <a href='https://twitter.com/utecedu' target='_blank'>Twitter</a> and <a href='https://www.youtube.com/user/universidadutec' target='_blank'>Youtube</a>.</li></ul></p><br/>";
 
             $contenidorpta.="<p>Contact UTEC easier:<br/><a href='http://guia.com.pe/estara/estara_popup.asp?advertiseId=411234&status=P&phone=51013731000&addressId=876727&' target='_blank'><img src='http://app.utec.edu.pe/admision/img/llama_gratis.jpg' alt='LLama gratis'></a></p>";
@@ -1191,15 +1191,15 @@ if($idioma == "en")
             $contenidorpta.="<p>
             <img src='http://app.utec.edu.pe/admision/img/pieWEB.jpg' alt='pieWEB' usemap='#Map'>
             <map name='Map' id='Map'>
-            <area shape='rect' coords='19,33,107,67' href='http://www.utec.edu.pe/carreras/ingenieria-industrial/default.aspx#.VE5bZfmG96A' target='_blank' alt='Ingeniería Industrial' />
-            <area shape='rect' coords='487,31,595,69' href='http://www.utec.edu.pe/carreras/ingenieria-quimica/default.aspx#.VE5bjPmG96A' target='_blank' alt='Ingeniería Química Industrial' />
-            <area shape='rect' coords='132,36,230,67' href='http://www.utec.edu.pe/carreras/ingenieria-mecanica/default.aspx#.VE6dZ_mG96A' target='_blank' alt='Ingeniería Mecánica' />
-            <area shape='rect' coords='257,36,348,66' href='http://www.utec.edu.pe/carreras/ingenieria-energia/default.aspx#.VE6dlPmG96A' target='_blank' alt='Ingeniería de la Energía' />
-            <area shape='rect' coords='374,34,467,67' href='http://www.utec.edu.pe/carreras/ingenieria-electronica/default.aspx#.VE6dufmG96A' target='_blank' alt='Ingeniería Electrónica' />
+            <area shape='rect' coords='19,33,107,67' href='http://www.utec.edu.pe/ingenieria-industrial' target='_blank' alt='Ingeniería Industrial' />
+            <area shape='rect' coords='487,31,595,69' href='http://www.utec.edu.pe/ingenieria-quimica-industrial' target='_blank' alt='Ingeniería Química Industrial' />
+            <area shape='rect' coords='132,36,230,67' href='http://www.utec.edu.pe/ingenieria-mecanica' target='_blank' alt='Ingeniería Mecánica' />
+            <area shape='rect' coords='257,36,348,66' href='http://www.utec.edu.pe/ingenieria-de-la-energia' target='_blank' alt='Ingeniería de la Energía' />
+            <area shape='rect' coords='374,34,467,67' href='http://www.utec.edu.pe/ingenieria-electronica' target='_blank' alt='Ingeniería Electrónica' />
             <area shape='rect' coords='48,121,198,140' href='mailto:informes@utec.edu.pe?Subject=Consulta Información' target='_top' />
-            <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
+            <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/' target='_blank' alt='UTEC' />
             </map>
-            </p>"; 
+            </p>";  
 
 
             if($origen == "pagina-inscripcion-examen-admision")
@@ -1237,15 +1237,15 @@ if($idioma == "en")
                             $contenidorpta.="<p>
                             <img src='http://app.utec.edu.pe/admision/img/pieWEB.jpg' alt='pieWEB' usemap='#Map'>
                             <map name='Map' id='Map'>
-                            <area shape='rect' coords='19,33,107,67' href='http://www.utec.edu.pe/carreras/ingenieria-industrial/default.aspx#.VE5bZfmG96A' target='_blank' alt='Ingeniería Industrial' />
-                            <area shape='rect' coords='487,31,595,69' href='http://www.utec.edu.pe/carreras/ingenieria-quimica/default.aspx#.VE5bjPmG96A' target='_blank' alt='Ingeniería Química Industrial' />
-                            <area shape='rect' coords='132,36,230,67' href='http://www.utec.edu.pe/carreras/ingenieria-mecanica/default.aspx#.VE6dZ_mG96A' target='_blank' alt='Ingeniería Mecánica' />
-                            <area shape='rect' coords='257,36,348,66' href='http://www.utec.edu.pe/carreras/ingenieria-energia/default.aspx#.VE6dlPmG96A' target='_blank' alt='Ingeniería de la Energía' />
-                            <area shape='rect' coords='374,34,467,67' href='http://www.utec.edu.pe/carreras/ingenieria-electronica/default.aspx#.VE6dufmG96A' target='_blank' alt='Ingeniería Electrónica' />
+                            <area shape='rect' coords='19,33,107,67' href='http://www.utec.edu.pe/ingenieria-industrial' target='_blank' alt='Ingeniería Industrial' />
+                            <area shape='rect' coords='487,31,595,69' href='http://www.utec.edu.pe/ingenieria-quimica-industrial' target='_blank' alt='Ingeniería Química Industrial' />
+                            <area shape='rect' coords='132,36,230,67' href='http://www.utec.edu.pe/ingenieria-mecanica' target='_blank' alt='Ingeniería Mecánica' />
+                            <area shape='rect' coords='257,36,348,66' href='http://www.utec.edu.pe/ingenieria-de-la-energia' target='_blank' alt='Ingeniería de la Energía' />
+                            <area shape='rect' coords='374,34,467,67' href='http://www.utec.edu.pe/ingenieria-electronica' target='_blank' alt='Ingeniería Electrónica' />
                             <area shape='rect' coords='48,121,198,140' href='mailto:informes@utec.edu.pe?Subject=Consulta Información' target='_top' />
-                            <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
+                            <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/' target='_blank' alt='UTEC' />
                             </map>
-                            </p>";   
+                            </p>";    
             }
 
 
@@ -1277,18 +1277,18 @@ if($idioma == "en")
                           </td></tr>
                           </table>";
                           
-                          $contenidorpta.="<p>
-                          <img src='http://app.utec.edu.pe/admision/img/pieWEB.jpg' alt='pieWEB' usemap='#Map'>
-                          <map name='Map' id='Map'>
-                          <area shape='rect' coords='19,33,107,67' href='http://www.utec.edu.pe/carreras/ingenieria-industrial/default.aspx#.VE5bZfmG96A' target='_blank' alt='Ingeniería Industrial' />
-                          <area shape='rect' coords='487,31,595,69' href='http://www.utec.edu.pe/carreras/ingenieria-quimica/default.aspx#.VE5bjPmG96A' target='_blank' alt='Ingeniería Química Industrial' />
-                          <area shape='rect' coords='132,36,230,67' href='http://www.utec.edu.pe/carreras/ingenieria-mecanica/default.aspx#.VE6dZ_mG96A' target='_blank' alt='Ingeniería Mecánica' />
-                          <area shape='rect' coords='257,36,348,66' href='http://www.utec.edu.pe/carreras/ingenieria-energia/default.aspx#.VE6dlPmG96A' target='_blank' alt='Ingeniería de la Energía' />
-                          <area shape='rect' coords='374,34,467,67' href='http://www.utec.edu.pe/carreras/ingenieria-electronica/default.aspx#.VE6dufmG96A' target='_blank' alt='Ingeniería Electrónica' />
-                          <area shape='rect' coords='48,121,198,140' href='mailto:informes@utec.edu.pe?Subject=Consulta Información' target='_top' />
-                          <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
-                          </map>
-                          </p>";   
+                            $contenidorpta.="<p>
+                            <img src='http://app.utec.edu.pe/admision/img/pieWEB.jpg' alt='pieWEB' usemap='#Map'>
+                            <map name='Map' id='Map'>
+                            <area shape='rect' coords='19,33,107,67' href='http://www.utec.edu.pe/ingenieria-industrial' target='_blank' alt='Ingeniería Industrial' />
+                            <area shape='rect' coords='487,31,595,69' href='http://www.utec.edu.pe/ingenieria-quimica-industrial' target='_blank' alt='Ingeniería Química Industrial' />
+                            <area shape='rect' coords='132,36,230,67' href='http://www.utec.edu.pe/ingenieria-mecanica' target='_blank' alt='Ingeniería Mecánica' />
+                            <area shape='rect' coords='257,36,348,66' href='http://www.utec.edu.pe/ingenieria-de-la-energia' target='_blank' alt='Ingeniería de la Energía' />
+                            <area shape='rect' coords='374,34,467,67' href='http://www.utec.edu.pe/ingenieria-electronica' target='_blank' alt='Ingeniería Electrónica' />
+                            <area shape='rect' coords='48,121,198,140' href='mailto:informes@utec.edu.pe?Subject=Consulta Información' target='_top' />
+                            <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/' target='_blank' alt='UTEC' />
+                            </map>
+                            </p>";     
             }
 
 
@@ -1321,18 +1321,18 @@ if($idioma == "en")
                           </td></tr>
                           </table>";
                           
-                          $contenidorpta.="<p>
-                          <img src='http://app.utec.edu.pe/admision/img/pieWEB.jpg' alt='pieWEB' usemap='#Map'>
-                          <map name='Map' id='Map'>
-                          <area shape='rect' coords='19,33,107,67' href='http://www.utec.edu.pe/carreras/ingenieria-industrial/default.aspx#.VE5bZfmG96A' target='_blank' alt='Ingeniería Industrial' />
-                          <area shape='rect' coords='487,31,595,69' href='http://www.utec.edu.pe/carreras/ingenieria-quimica/default.aspx#.VE5bjPmG96A' target='_blank' alt='Ingeniería Química Industrial' />
-                          <area shape='rect' coords='132,36,230,67' href='http://www.utec.edu.pe/carreras/ingenieria-mecanica/default.aspx#.VE6dZ_mG96A' target='_blank' alt='Ingeniería Mecánica' />
-                          <area shape='rect' coords='257,36,348,66' href='http://www.utec.edu.pe/carreras/ingenieria-energia/default.aspx#.VE6dlPmG96A' target='_blank' alt='Ingeniería de la Energía' />
-                          <area shape='rect' coords='374,34,467,67' href='http://www.utec.edu.pe/carreras/ingenieria-electronica/default.aspx#.VE6dufmG96A' target='_blank' alt='Ingeniería Electrónica' />
-                          <area shape='rect' coords='48,121,198,140' href='mailto:informes@utec.edu.pe?Subject=Consulta Información' target='_top' />
-                          <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
-                          </map>
-                          </p>";   
+                            $contenidorpta.="<p>
+                            <img src='http://app.utec.edu.pe/admision/img/pieWEB.jpg' alt='pieWEB' usemap='#Map'>
+                            <map name='Map' id='Map'>
+                            <area shape='rect' coords='19,33,107,67' href='http://www.utec.edu.pe/ingenieria-industrial' target='_blank' alt='Ingeniería Industrial' />
+                            <area shape='rect' coords='487,31,595,69' href='http://www.utec.edu.pe/ingenieria-quimica-industrial' target='_blank' alt='Ingeniería Química Industrial' />
+                            <area shape='rect' coords='132,36,230,67' href='http://www.utec.edu.pe/ingenieria-mecanica' target='_blank' alt='Ingeniería Mecánica' />
+                            <area shape='rect' coords='257,36,348,66' href='http://www.utec.edu.pe/ingenieria-de-la-energia' target='_blank' alt='Ingeniería de la Energía' />
+                            <area shape='rect' coords='374,34,467,67' href='http://www.utec.edu.pe/ingenieria-electronica' target='_blank' alt='Ingeniería Electrónica' />
+                            <area shape='rect' coords='48,121,198,140' href='mailto:informes@utec.edu.pe?Subject=Consulta Información' target='_top' />
+                            <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/' target='_blank' alt='UTEC' />
+                            </map>
+                            </p>";     
             }
 
 
@@ -1374,18 +1374,18 @@ if($idioma == "en")
                           $contenidorpta.="<p>Contact UTEC easier: <br/><a href='http://guia.com.pe/estara/estara_popup.asp?advertiseId=411234&status=P&phone=51013731000&addressId=876727&' target='_blank'><img src='http://app.utec.edu.pe/admision/img/llama_gratis.jpg' alt='LLama gratis'></a></p>";
                           //$contenidorpta.="<p>Oficina de Admisión<br /><strong>UTEC -  Universidad de Ingeniería & Tecnología</strong><br />Telf: (511) 373 1000<br />Av. Prolongación San Martín, 207, Barranco<br />informes@utec.edu.pe<br />www.utec.edu.pe</p>";
                           $contenidorpta.="<p><img src='http://app.utec.edu.pe/admision/img/logo_utec.png' alt='Logo Utec' style='width: 150px;'><br/><b>UTEC - Universidad de Ingeniería & Tecnología</b></p>";
-                          $contenidorpta.="<p>
-                          <img src='http://app.utec.edu.pe/admision/img/pieWEB.jpg' alt='pieWEB' usemap='#Map'>
-                          <map name='Map' id='Map'>
-                          <area shape='rect' coords='19,33,107,67' href='http://www.utec.edu.pe/carreras/ingenieria-industrial/default.aspx#.VE5bZfmG96A' target='_blank' alt='Ingeniería Industrial' />
-                          <area shape='rect' coords='487,31,595,69' href='http://www.utec.edu.pe/carreras/ingenieria-quimica/default.aspx#.VE5bjPmG96A' target='_blank' alt='Ingeniería Química Industrial' />
-                          <area shape='rect' coords='132,36,230,67' href='http://www.utec.edu.pe/carreras/ingenieria-mecanica/default.aspx#.VE6dZ_mG96A' target='_blank' alt='Ingeniería Mecánica' />
-                          <area shape='rect' coords='257,36,348,66' href='http://www.utec.edu.pe/carreras/ingenieria-energia/default.aspx#.VE6dlPmG96A' target='_blank' alt='Ingeniería de la Energía' />
-                          <area shape='rect' coords='374,34,467,67' href='http://www.utec.edu.pe/carreras/ingenieria-electronica/default.aspx#.VE6dufmG96A' target='_blank' alt='Ingeniería Electrónica' />
-                          <area shape='rect' coords='48,121,198,140' href='mailto:informes@utec.edu.pe?Subject=Consulta Información' target='_top' />
-                          <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
-                          </map>
-                          </p>";
+                            $contenidorpta.="<p>
+                            <img src='http://app.utec.edu.pe/admision/img/pieWEB.jpg' alt='pieWEB' usemap='#Map'>
+                            <map name='Map' id='Map'>
+                            <area shape='rect' coords='19,33,107,67' href='http://www.utec.edu.pe/ingenieria-industrial' target='_blank' alt='Ingeniería Industrial' />
+                            <area shape='rect' coords='487,31,595,69' href='http://www.utec.edu.pe/ingenieria-quimica-industrial' target='_blank' alt='Ingeniería Química Industrial' />
+                            <area shape='rect' coords='132,36,230,67' href='http://www.utec.edu.pe/ingenieria-mecanica' target='_blank' alt='Ingeniería Mecánica' />
+                            <area shape='rect' coords='257,36,348,66' href='http://www.utec.edu.pe/ingenieria-de-la-energia' target='_blank' alt='Ingeniería de la Energía' />
+                            <area shape='rect' coords='374,34,467,67' href='http://www.utec.edu.pe/ingenieria-electronica' target='_blank' alt='Ingeniería Electrónica' />
+                            <area shape='rect' coords='48,121,198,140' href='mailto:informes@utec.edu.pe?Subject=Consulta Información' target='_top' />
+                            <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/' target='_blank' alt='UTEC' />
+                            </map>
+                            </p>";    
 
             }
 
@@ -1422,18 +1422,18 @@ if($idioma == "en")
                           </td></tr>
                           </table>";
                           
-                          $contenidorpta.="<p>
-                          <img src='http://app.utec.edu.pe/admision/img/pieWEB.jpg' alt='pieWEB' usemap='#Map'>
-                          <map name='Map' id='Map'>
-                          <area shape='rect' coords='19,33,107,67' href='http://www.utec.edu.pe/carreras/ingenieria-industrial/default.aspx#.VE5bZfmG96A' target='_blank' alt='Ingeniería Industrial' />
-                          <area shape='rect' coords='487,31,595,69' href='http://www.utec.edu.pe/carreras/ingenieria-quimica/default.aspx#.VE5bjPmG96A' target='_blank' alt='Ingeniería Química Industrial' />
-                          <area shape='rect' coords='132,36,230,67' href='http://www.utec.edu.pe/carreras/ingenieria-mecanica/default.aspx#.VE6dZ_mG96A' target='_blank' alt='Ingeniería Mecánica' />
-                          <area shape='rect' coords='257,36,348,66' href='http://www.utec.edu.pe/carreras/ingenieria-energia/default.aspx#.VE6dlPmG96A' target='_blank' alt='Ingeniería de la Energía' />
-                          <area shape='rect' coords='374,34,467,67' href='http://www.utec.edu.pe/carreras/ingenieria-electronica/default.aspx#.VE6dufmG96A' target='_blank' alt='Ingeniería Electrónica' />
-                          <area shape='rect' coords='48,121,198,140' href='mailto:informes@utec.edu.pe?Subject=Consulta Información' target='_top' />
-                          <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
-                          </map>
-                          </p>";   
+                            $contenidorpta.="<p>
+                            <img src='http://app.utec.edu.pe/admision/img/pieWEB.jpg' alt='pieWEB' usemap='#Map'>
+                            <map name='Map' id='Map'>
+                            <area shape='rect' coords='19,33,107,67' href='http://www.utec.edu.pe/ingenieria-industrial' target='_blank' alt='Ingeniería Industrial' />
+                            <area shape='rect' coords='487,31,595,69' href='http://www.utec.edu.pe/ingenieria-quimica-industrial' target='_blank' alt='Ingeniería Química Industrial' />
+                            <area shape='rect' coords='132,36,230,67' href='http://www.utec.edu.pe/ingenieria-mecanica' target='_blank' alt='Ingeniería Mecánica' />
+                            <area shape='rect' coords='257,36,348,66' href='http://www.utec.edu.pe/ingenieria-de-la-energia' target='_blank' alt='Ingeniería de la Energía' />
+                            <area shape='rect' coords='374,34,467,67' href='http://www.utec.edu.pe/ingenieria-electronica' target='_blank' alt='Ingeniería Electrónica' />
+                            <area shape='rect' coords='48,121,198,140' href='mailto:informes@utec.edu.pe?Subject=Consulta Información' target='_top' />
+                            <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/' target='_blank' alt='UTEC' />
+                            </map>
+                            </p>";     
             }
 
 
@@ -1469,24 +1469,22 @@ if($idioma == "en")
                           </td></tr>
                           </table>";
                           
-                          $contenidorpta.="<p>
-                          <img src='http://app.utec.edu.pe/admision/img/pieWEB.jpg' alt='pieWEB' usemap='#Map'>
-                          <map name='Map' id='Map'>
-                          <area shape='rect' coords='19,33,107,67' href='http://www.utec.edu.pe/carreras/ingenieria-industrial/default.aspx#.VE5bZfmG96A' target='_blank' alt='Ingeniería Industrial' />
-                          <area shape='rect' coords='487,31,595,69' href='http://www.utec.edu.pe/carreras/ingenieria-quimica/default.aspx#.VE5bjPmG96A' target='_blank' alt='Ingeniería Química Industrial' />
-                          <area shape='rect' coords='132,36,230,67' href='http://www.utec.edu.pe/carreras/ingenieria-mecanica/default.aspx#.VE6dZ_mG96A' target='_blank' alt='Ingeniería Mecánica' />
-                          <area shape='rect' coords='257,36,348,66' href='http://www.utec.edu.pe/carreras/ingenieria-energia/default.aspx#.VE6dlPmG96A' target='_blank' alt='Ingeniería de la Energía' />
-                          <area shape='rect' coords='374,34,467,67' href='http://www.utec.edu.pe/carreras/ingenieria-electronica/default.aspx#.VE6dufmG96A' target='_blank' alt='Ingeniería Electrónica' />
-                          <area shape='rect' coords='48,121,198,140' href='mailto:informes@utec.edu.pe?Subject=Consulta Información' target='_top' />
-                          <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/Utec.aspx' target='_blank' alt='UTEC' />
-                          </map>
-                          </p>"; 
+                            $contenidorpta.="<p>
+                            <img src='http://app.utec.edu.pe/admision/img/pieWEB.jpg' alt='pieWEB' usemap='#Map'>
+                            <map name='Map' id='Map'>
+                            <area shape='rect' coords='19,33,107,67' href='http://www.utec.edu.pe/ingenieria-industrial' target='_blank' alt='Ingeniería Industrial' />
+                            <area shape='rect' coords='487,31,595,69' href='http://www.utec.edu.pe/ingenieria-quimica-industrial' target='_blank' alt='Ingeniería Química Industrial' />
+                            <area shape='rect' coords='132,36,230,67' href='http://www.utec.edu.pe/ingenieria-mecanica' target='_blank' alt='Ingeniería Mecánica' />
+                            <area shape='rect' coords='257,36,348,66' href='http://www.utec.edu.pe/ingenieria-de-la-energia' target='_blank' alt='Ingeniería de la Energía' />
+                            <area shape='rect' coords='374,34,467,67' href='http://www.utec.edu.pe/ingenieria-electronica' target='_blank' alt='Ingeniería Electrónica' />
+                            <area shape='rect' coords='48,121,198,140' href='mailto:informes@utec.edu.pe?Subject=Consulta Información' target='_top' />
+                            <area shape='rect' coords='221,123,344,141' href='http://www.utec.edu.pe/' target='_blank' alt='UTEC' />
+                            </map>
+                            </p>";    
             }
 }
 
 //mail($mailrpta,$subjectCliente,$contenidorpta,$headers);
-
-
 
 $mail_1->Body = $contenidorpta;
 if (!$mail_1->Send()) {
@@ -1494,8 +1492,6 @@ if (!$mail_1->Send()) {
 } else {
     echo "Enviado 2 Ok";
 }
-
-
 
 //consumir web service:
 $client = new nusoap_client( "http://app.utec.edu.pe/inscripcionutecws3/services/InscripcionServicePort?wsdl", true ); 
