@@ -256,7 +256,7 @@ if($idioma == "es")
 
 
         if( $origen == "Charlas Informativas" || $origen == "Contacto" || $origen == "Visita UTEC" || 
-            $origen == "Trabaja en UTEC" || $origen == "Orientación Vocacional" || $origen == "EDP" )
+            $origen == "Trabaja en UTEC" || $origen == "Orientacion Vocacional" || $origen == "EDP" )
         {
             $fromTelemarketing = "informes@utec.edu.pe";
             $fromNameTelemarketing = "UTEC";
@@ -299,7 +299,7 @@ if($idioma == "es")
                 $origen = "pagina-trabaja-en-utec";  
             }
 
-            if($origen == "Orientación Vocacional")
+            if($origen == "Orientacion Vocacional")
             {
                 $tituloTelemarketing = "Orientación Vocacional UTEC - Datos Personales";
                 $subjectTelemarketing = "Solicitud - Orientación Vocacional UTEC";
