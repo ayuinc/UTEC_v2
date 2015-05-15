@@ -30,7 +30,7 @@
  $iconos = $node->field_texo['und']; 
  $texto_cuadros = $node->field_cuerpo['und']; 
  $anotaciones_cuadros = $node->field_nombre['und']; 
- $costos_temarios = $node->field_contenido['und']; 
+ $costos_temarios = $node->field_contenido['und']['value']; 
 
 ?>
 
@@ -59,7 +59,8 @@
 		<?php foreach ($anotaciones_cuadros as $key => $anotaciones_cuadro) : ?>
 		<p><?php print $anotaciones_cuadro['value']; ?></p>
 		<?php endforeach; ?>
-	<?php } ?>	
+	<?php } ?>
+	<?php print $costos_temarios; ?>	
 </div>
 
 <div class="container-sm mb-35">	
