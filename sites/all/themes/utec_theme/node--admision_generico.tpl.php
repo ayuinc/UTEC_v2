@@ -18,6 +18,11 @@
  $field_calednario = $node->field_calednario['und']['0']['value']; 
  $link_formulario = $node->field_link_a_formulario['und']['0']['value']; 
 
+ $iconos = $node->field_texo['und']; 
+ $texto_cuadros = $node->field_cuerpo['und']; 
+ $anotaciones_cuadros = $node->field_nombre['und']; 
+ $costos_temarios = $node->field_contenido['und']; 
+
 ?>
 
 <?php $url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>
@@ -34,7 +39,17 @@
 		<p class="lead"><?php print $field_descripcion_corta_generica ?></p>
 	<?php } ?>	
 	<?php if ($field_contenido_generica!='') { ?>
-		<p class="lead text-gray mb-42"><?php print $field_contenido_generica ?></p>
+		<?php print $field_contenido_generica ?>
+		<div>
+			<ul class="grid-list grid-list-3 grid-list-1-xs grid-list-hover size sm text-center pv-42 mb-ch-21 isotope-grid">\
+				<?php foreach ($texto_cuadros as $key => $texto_cuadro) : ?>
+				<li><div><div class="mb-7 size lg text-primary <?php print $iconos[$key]['value']; ?>"></div><span><?php print $texto_cuadro['value']; ?></span></div></li>
+				<?php endforeach; ?>
+			</ul>
+		</div>
+		<?php foreach ($anotaciones_cuadros as $key => $anotaciones_cuadro) : ?>
+		<p><?php print $anotaciones_cuadro['value']; ?></p>
+		<?php endforeach; ?>
 	<?php } ?>	
 </div>
 
