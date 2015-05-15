@@ -30,7 +30,7 @@
  $iconos = $node->field_texo['und']; 
  $texto_cuadros = $node->field_cuerpo['und']; 
  $anotaciones_cuadros = $node->field_nombre['und']; 
- $costos_temarios = $node->field_contenido['und']['value']; 
+ $costos_temarios = $node->field_contenido['und'][0]['value']; 
 
 ?>
 
