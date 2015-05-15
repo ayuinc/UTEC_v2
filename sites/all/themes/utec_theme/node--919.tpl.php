@@ -9,7 +9,7 @@
 	
 	//kpr($node);
 	//print_r($form);
-?>
+?> 
 
 <div class="subscribe pv-7 bg-gray-darker hidden-xs">
 		<div class="container">

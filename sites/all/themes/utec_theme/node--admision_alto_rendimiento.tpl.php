@@ -142,12 +142,17 @@ $link_formulario = $node->field_link_a_formulario['und']['0']['value'];
 			<?php print $field_calendario_alto ?>
 			</div>
 		</div>
-	</div>
+	</div> 
 
 	<h3><?php print t("For more information:"); ?></h3>
 	<form action="/registro.php" data-submit="Formulario de inscripcion" method="post" id="formRegistro" name="formRegistro">
 		<input type="hidden" name="origen" value="<?php print $title; ?>">
 		<input type="hidden" name="idioma" value="<?php print $idioma; ?>">		
+		<div class="text-left">
+			  <label>
+						<?php print $cuerpo; ?>
+			  </label>	
+	    </div>
 
 		<div class="row">
 			<div class="form-group col-sm-6">
@@ -198,6 +203,11 @@ $link_formulario = $node->field_link_a_formulario['und']['0']['value'];
 		<div class="text-right">
 			<button type="submit" class="btn btn-primary btn-lg"><?php print t('Send') ?></button>
 		</div>
+		<div class="text-left">
+					  <label>
+					  			<?php print t('By clicking SEND, the user accepts') ?> <a href="http://app.utec.edu.pe/documentacion/terminos-y-condiciones.pdf" target="_blank"><?php print t('the terms and conditions detailed here.') ?></a>
+					  </label>	
+	    </div>			
 	</form>						
 
 	</div>

@@ -17,6 +17,15 @@
  $field_tiene_formulario = $node->field_tiene_formulario['und']['0']['value']; 
  $field_calednario = $node->field_calednario['und']['0']['value']; 
  $link_formulario = $node->field_link_a_formulario['und']['0']['value']; 
+ 
+	$unwanted_array = array(    'Š'=>'S', 'š'=>'s', 'Ž'=>'Z', 'ž'=>'z', 'À'=>'A', 'Á'=>'A', 'Â'=>'A', 'Ã'=>'A', 'Ä'=>'A', 'Å'=>'A', 'Æ'=>'A', 'Ç'=>'C', 'È'=>'E', 'É'=>'E',
+	                            'Ê'=>'E', 'Ë'=>'E', 'Ì'=>'I', 'Í'=>'I', 'Î'=>'I', 'Ï'=>'I', 'Ñ'=>'N', 'Ò'=>'O', 'Ó'=>'O', 'Ô'=>'O', 'Õ'=>'O', 'Ö'=>'O', 'Ø'=>'O', 'Ù'=>'U',
+	                            'Ú'=>'U', 'Û'=>'U', 'Ü'=>'U', 'Ý'=>'Y', 'Þ'=>'B', 'ß'=>'Ss', 'à'=>'a', 'á'=>'a', 'â'=>'a', 'ã'=>'a', 'ä'=>'a', 'å'=>'a', 'æ'=>'a', 'ç'=>'c',
+	                            'è'=>'e', 'é'=>'e', 'ê'=>'e', 'ë'=>'e', 'ì'=>'i', 'í'=>'i', 'î'=>'i', 'ï'=>'i', 'ð'=>'o', 'ñ'=>'n', 'ò'=>'o', 'ó'=>'o', 'ô'=>'o', 'õ'=>'o',
+	                            'ö'=>'o', 'ø'=>'o', 'ù'=>'u', 'ú'=>'u', 'û'=>'u', 'ý'=>'y', 'ý'=>'y', 'þ'=>'b', 'ÿ'=>'y' );
+	$titulo = strtr( $titulo, $unwanted_array );
+	
+
 
  $iconos = $node->field_texo['und']; 
  $texto_cuadros = $node->field_cuerpo['und']; 
@@ -63,6 +72,11 @@
 	<form action="/registro.php" data-submit="Formulario de inscripcion" method="post" id="formRegistro" name="formRegistro">
 		<input type="hidden" name="origen" value="<?php print $titulo; ?>">
 		<input type="hidden" name="idioma" value="<?php print $idioma; ?>">
+		<div class="text-left">
+			  <label>
+						<?php print $cuerpo; ?>
+			  </label>	
+	    </div>
 
 		<div class="row">
 			<div class="form-group col-sm-6">
@@ -119,6 +133,11 @@
 		<div class="text-right">
 			<button type="submit" class="btn btn-primary btn-lg"><?php print t('Send') ?></button>
 		</div>
+		<div class="text-left">
+					  <label>
+					  			<?php print t('By clicking SEND, the user accepts') ?> <a href="http://app.utec.edu.pe/documentacion/terminos-y-condiciones.pdf" target="_blank"><?php print t('the terms and conditions detailed here.') ?></a>
+					  </label>		
+	    </div>			
 	</form>						
 </div>	
 <?php } ?>
@@ -129,7 +148,12 @@
 	<form action="/registro.php" data-submit="Formulario de inscripcion" method="post" id="formRegistro" name="formRegistro">
 			<input type="hidden" name="origen" value="<?php print $titulo; ?>">
 			<input type="hidden" name="idioma" value="<?php print $idioma; ?>">			
-
+			<div class="text-left">
+				  <label>
+							<?php print $cuerpo; ?>
+				  </label>	
+		    </div>
+	    
 			<div class="row">
 				<div class="form-group col-sm-6">
 					<label for="" class="sr-only"><?php print t('Name') ?></label>
@@ -172,6 +196,11 @@
 			<div class="text-right">
 				<button type="submit" class="btn btn-primary btn-lg"><?php print t('Send') ?></button>
 			</div>
+			<div class="text-left">
+					  <label>
+					  			<?php print t('By clicking SEND, the user accepts') ?> <a href="http://app.utec.edu.pe/documentacion/terminos-y-condiciones.pdf" target="_blank"><?php print t('the terms and conditions detailed here.') ?></a>
+					  </label>	
+		    </div>				
 	</form>						
 </div>
 <?php } ?>

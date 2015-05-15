@@ -9,7 +9,7 @@ $idioma = $language->language;
 <?php $path = $base_url.'/'.$theme_path; ?>
 <?php $pathfile= variable_get('file_public_path', conf_path() . '/files/'); ?>
 
-
+ 
 <?php
 $titulo = $node->title;   
 $field_que_es_descripcion_cp = $node->field_que_es_descripcion_cp['und']['0']['value'];
@@ -194,6 +194,11 @@ $modalida_ext_int = $node->field_modalidad_extensiva_intens['und']['0']['value']
 			<form action="/registro.php" data-submit="Formulario de inscripcion" method="post" id="formRegistro" name="formRegistro">
 				<input type="hidden" name="origen" value="<?php print $titulo; ?>">
 				<input type="hidden" name="idioma" value="<?php print $idioma; ?>">		
+				<div class="text-left">
+					  <label>
+								<?php print $cuerpo; ?>
+					  </label>	
+			    </div>
 
 				<div class="row">
 					<div class="form-group col-sm-6">
@@ -245,6 +250,11 @@ $modalida_ext_int = $node->field_modalidad_extensiva_intens['und']['0']['value']
 				<div class="text-right">
 					<button type="submit" class="btn btn-primary btn-lg" onclick="centro_pre();"><?php print t('Send') ?></button>
 				</div>
+				<div class="text-left">
+					  <label>
+					  			<?php print t('By clicking SEND, the user accepts') ?> <a href="http://app.utec.edu.pe/documentacion/terminos-y-condiciones.pdf" target="_blank"><?php print t('the terms and conditions detailed here.') ?></a>
+					  </label>	
+			    </div>					
 			</form>		
 		</div>
 	</div>

@@ -7,7 +7,7 @@
 	$links = $node->field_link['und'];
 	$field_link_a_formulario_es = $node->field_link_a_formulario_es['und']['0']['value'];  
 	$field_link_formulario_en = $node->field_link_formulario_en['und']['0']['value'];  
-?>
+?> 
 
 <div class="container-sm">
 		<h1 class="light"><?php print $titulo; ?></h1>

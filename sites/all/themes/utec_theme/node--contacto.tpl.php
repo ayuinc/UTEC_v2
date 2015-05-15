@@ -62,6 +62,11 @@
 		<div class="text-right">
 			<button type="submit" class="btn btn-primary btn-lg" onclick="contacto_general();"><?php print t('Send') ?></button>
 		</div>
+			<div class="text-left">
+					  <label>
+					  			<?php print t('By clicking SEND, the user accepts') ?> <a href="http://app.utec.edu.pe/documentacion/terminos-y-condiciones.pdf" target="_blank"><?php print t('the terms and conditions detailed here.') ?></a>
+					  </label>	
+		    </div>			
 	</form>	
 	<?php } else { ?>
 		<?php print $field_iframe ?>

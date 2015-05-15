@@ -14,7 +14,7 @@
 	// print_r($node);
 	//ALTO RENDIMIENTO
 ?>
-
+ 
 <div class="container-sm mb-35">
 	<h1 class="light"><?php print $titulo_usuario; ?></h1>
 	<div class="separator-gray separator-lg"></div>
@@ -24,6 +24,11 @@
 	<form action="/registro.php" class="mb-ch-28" data-submit="Formulario de inscripcion" method="post" id="formRegistro" name="formRegistro">
 		<input type="hidden" name="origen" value="<?php print $title; ?>">
 		<input type="hidden" name="idioma" value="<?php print $idioma; ?>">
+		<div class="text-left">
+			  <label>
+						<?php print $cuerpo; ?>
+			  </label>	
+	    </div>
 			
 		<div class="row">
 			<div class="form-group col-sm-4">
@@ -250,6 +255,10 @@
 		<div class="text-right">
 			<button  id="" type="submit" class="btn btn-primary btn-lg"><?php print t('Send') ?></button>
 		</div>
+		<div class="text-left">
+			  <label>
+						By clicking SEND, the user accepts <a href="http://app.utec.edu.pe/documentacion/terminos-y-condiciones.pdf" target="_blank">the terms and conditions detailed here.</a>			  </label>	
+	    </div>				
 	</form>						
 </div>
 
