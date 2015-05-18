@@ -25,7 +25,7 @@ $field_fotos_centro_pre = $node->field_image['und']['0']['uri'];
 $modalida_ext_int = $node->field_modalidad_extensiva_intens['und']['0']['value'];
 
 $titulo_bloque = $node->field_texo['und']['0']['value'];
-$contenido_bloque = $node->field_contenido['und'];
+$contenido_bloques = $node->field_contenido['und'];
 ?>
 
 	<div class="hero-unit"> <!-- HERO -->
@@ -83,12 +83,9 @@ $contenido_bloque = $node->field_contenido['und'];
 		</div>
 		<div class="pt-42">
 			<div class="container">
-
-
-
 				<h2 class="thin lead"><?php print $titulo_bloque; ?></h2>
 				<ul class="grid-list grid-list-4 grid-list-1-xs size sm isotope-grid list-hover list-hover-gray-light">
-					<?php foreach ($contenido_bloque as $key => $value) : ?>
+					<?php foreach ($contenido_bloques as $key => $contenido_bloque) : ?>
 					<li>
 						<div>
 							<?php print $contenido_bloque['value']; ?>
@@ -96,9 +93,6 @@ $contenido_bloque = $node->field_contenido['und'];
 					</li>
 					<?php endforeach; ?>
 				</ul>
-
-
-
 			</div>
 		</div>
 	</div>
