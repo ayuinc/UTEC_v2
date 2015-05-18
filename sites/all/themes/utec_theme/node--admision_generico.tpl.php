@@ -50,7 +50,7 @@
 	<?php if ($field_contenido_generica!='') { ?>
 		<?php print $field_contenido_generica ?>
 		<div>
-			<ul class="grid-list grid-list-3 grid-list-1-xs grid-list-hover size sm text-center pv-42 mb-ch-21 isotope-grid">\
+			<ul class="grid-list grid-list-3 grid-list-1-xs grid-list-hover size sm text-center pv-42 mb-ch-21 isotope-grid">
 				<?php foreach ($texto_cuadros as $key => $texto_cuadro) : ?>
 				<li><div><div class="mb-7 size lg text-primary <?php print $iconos[$key]['value']; ?>"></div><span><?php print $texto_cuadro['value']; ?></span></div></li>
 				<?php endforeach; ?>
@@ -204,6 +204,74 @@
 		    </div>				
 	</form>						
 </div>
+<?php } ?>
+
+<?php if ($field_tiene_formulario == "si alto rendimiento") { ?>
+<h3><?php print t("For more information:"); ?></h3>
+<form action="/registro.php" data-submit="Formulario de inscripcion" method="post" id="formRegistro" name="formRegistro">
+	<input type="hidden" name="origen" value="<?php print $title; ?>">
+	<input type="hidden" name="idioma" value="<?php print $idioma; ?>">		
+	<div class="text-left">
+		  <label>
+					<?php print $cuerpo; ?>
+		  </label>	
+    </div>
+
+	<div class="row">
+		<div class="form-group col-sm-6">
+			<label for="" class="sr-only"><?php print t("Name") ?></label>
+			<input id="nombres" name="nombres" type="text" class="form-control" placeholder="<?php print t("Name") ?>">
+		</div>
+		<div class="form-group col-sm-6">
+			<label for="" class="sr-only"><?php print t("Middle Name") ?></label>
+			<input id="apellidop" name="apellidop" type="text" class="form-control" placeholder="<?php print t("Middle Name") ?>">
+		</div>
+	</div>
+	<div class="row">
+		<div class="form-group col-sm-6">
+			<label for="" class="sr-only"><?php print t("Last Name") ?></label>
+			<input id="apellidom" name="apellidom" type="text" class="form-control" placeholder="<?php print t("Last Name") ?>">
+		</div>			
+		<div class="form-group col-sm-6">
+			<label for="" class="sr-only"><?php print t('E-Mail') ?></label>
+			<input id="email" name="email" type="text" class="form-control" placeholder="<?php print t('E-Mail') ?>">
+		</div>
+	</div>
+	<div class="row">
+		<div class="form-group col-sm-6">
+			<label for="" class="sr-only"><?php print t('Phone') ?></label>
+			<input id="telefono" name="telefono" type="text" class="form-control" placeholder="<?php print t('Phone') ?>">
+		</div>
+		<div class="form-group col-sm-6">
+			<label for="" class="sr-only"><?php print t('Undergrad Program') ?></label>
+			<select name="carrera" id="carrera" class="form-control select-override">
+				<option value=""><?php print t('Undergrad Program') ?></option>
+			  	<option value="15970"><?php print t('Industrial Engineering') ?></option>
+	            <option value="14864"><?php print t('Mechanical Engineering') ?></option>
+	            <option value="15968"><?php print t('Energy Engineering') ?></option>
+	            <option value="15964"><?php print t('Electronic Engineering') ?></option>
+	            <option value="15966"><?php print t('Industrial and Chemical Engineering') ?></option>
+			</select>
+		</div>
+	</div>		
+	<div class="row">
+		<div class="form-group col-sm-12">
+			<label for="" class="sr-only"><?php print t('Message') ?></label>
+			<textarea class="form-control" placeholder="<?php print t('Message') ?>" name="consulta" id="consulta"></textarea>
+		</div>
+	</div>
+	<div class="row errordiv">
+		<div id="errordiv" class="col-sm-12 form-group"></div>			
+	</div>		
+	<div class="text-right">
+		<button type="submit" class="btn btn-primary btn-lg"><?php print t('Send') ?></button>
+	</div>
+	<div class="text-left">
+				  <label>
+				  			<?php print t('By clicking SEND, the user accepts') ?> <a href="http://app.utec.edu.pe/documentacion/terminos-y-condiciones.pdf" target="_blank"><?php print t('the terms and conditions detailed here.') ?></a>
+				  </label>	
+    </div>			
+</form>
 <?php } ?>
 
 <div id="section-scroll" class="hidden-sm hidden-xs">
