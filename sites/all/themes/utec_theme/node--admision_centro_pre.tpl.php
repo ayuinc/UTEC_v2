@@ -91,7 +91,7 @@ $contenido_bloque = $node->field_contenido['und'];
 					<?php foreach ($contenido_bloque as $key => $value) : ?>
 					<li>
 						<div>
-							<?php print $contenido_bloque; ?>
+							<?php print $contenido_bloque['value']; ?>
 						</div>
 					</li>
 					<?php endforeach; ?>
