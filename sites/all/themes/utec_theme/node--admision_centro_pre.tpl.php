@@ -91,8 +91,7 @@ $contenido_bloque = $node->field_contenido['und'];
 					<?php foreach ($contenido_bloque as $key => $value) : ?>
 					<li>
 						<div>
-							<h3 class="lead"><?php print t('Spatial Intelligence') ?></h3>
-							<p><?php print t('Understanding of physical phenomena and applying fundamentals to the real world laws.') ?></p>
+							<?php print $contenido_bloque; ?>
 						</div>
 					</li>
 					<?php endforeach; ?>
