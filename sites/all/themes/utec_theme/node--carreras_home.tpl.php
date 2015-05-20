@@ -11,15 +11,19 @@
 	$carrera_txt = $node->body['und']['0']['value'];
 	$carrera_link = $node->field_carrera_link['und']['0']['value'];
 	$field_carrera_imagen = $node->field_image['und']['0']['uri'];
-	$malla_titulo = $node->field_malla_curricular_titulo['und']['0']['value'];
+  $malla_titulo = $node->field_malla_curricular_titulo['und']['0']['value'];
+	$malla_sub_titulo = $node->field_malla_curricular_sub_titul['und']['0']['value'];
 	$malla_txt = $node->field_malla_curricular_body['und']['0']['value'];
-	$malla_link = $node->field_malla_curricular_link ['und']['0']['value'];
-	$menciones_titulo = $node->field_menciones_titulo  ['und']['0']['value'];
+	$malla_link = $node->field_malla_curricular_link['und']['0']['value'];
+  $menciones_titulo = $node->field_menciones_titulo['und']['0']['value'];
+	$menciones_sub_titulo = $node->field_menciones_sub_titulo['und']['0']['value'];
 	$menciones_txt = $node->field_menciones_body['und']['0']['value'];
-	$menciones_link = $node->field_menciones_link  ['und']['0']['value'];
+	$menciones_link = $node->field_menciones_link['und']['0']['value'];
 	// $profesor_titulo = $node->field_profesor['und']['0']['value'];
+  $profesor_titulo = $node->field_titulo_profesores['und']['0']['value'];
 	$profesor_txt = $node->field_profesor_texto['und']['0']['value'];
-	$profesor_link = $node->field_profesor_link ['und']['0']['value'];
+	$profesor_link = $node->field_profesor_link['und']['0']['value'];
+  $perfil_titulo = $node->field_perfil_egresado_titulo['und']['0']['value'];
 	$perfil_txt = $node->field_perfil_egresado_texto['und']['0']['value'];
 	$perfil_link = $node->field_perfil_egresado_link['und']['0']['value'];
 	$field_perfil_egresado_imagen = $node->field_image_2['und']['0']['uri'];
@@ -77,11 +81,11 @@
 </div> <!-- END:Hero -->
 <div data-section-scroll="<?php print t('Curricular Structure') ?>" id="malla-curricular" class="scroll-down-info malla-curricular section-scroll-content minh-560 flex-middle-center">
   <div class="container-sm text-right normalize-text" data-href="<?php print $malla_link ?>">
-    <h2 class="lead thin h1"><a href="<?php print $malla_link ?>" class="text-hover-primary text-gray-dark"><?php print t('Curricular Structure') ?></a></h2>
+    <h2 class="lead thin h1"><a href="<?php print $malla_link ?>" class="text-hover-primary text-gray-dark"><?php print $malla_sub_titulo; ?></a></h2>
     <hr class="hr-gray">
     <div class="row mt-28">
       <div class="col-sm-9">
-        <h3 class="lead h2 thin mb-14 h4"><?php print $malla_titulo ?></h3>
+        <h3 class="lead h2 thin mb-14 h4"><?php print $malla_sub_titulo ?></h3>
         <p clas="font-carreras"><?php print $malla_txt ?></p>
         <span class="btn btn-gray-darker btn-outline see-more bold mt-7 visible-xs-inline-block mt-14"><?php print t('See more') ?></span>
       </div>
@@ -99,7 +103,7 @@
 </div>
 <div data-section-scroll="<?php print t('Minors') ?>" id="menciones" class="scroll-down-info section-scroll-content minh-560 flex-middle-center bg-info-op">
   <div class="container-sm text-left text-white normalize-text" data-href="<?php print $menciones_link ?>">
-    <h2 class="lead thin h1"><a href="<?php print $menciones_link ?>" class="text-hover-primary text-white"><?php print t('Minors') ?></a></h2>
+    <h2 class="lead thin h1"><a href="<?php print $menciones_link ?>" class="text-hover-primary text-white"><?php print $menciones_titulo ?></a></h2>
     <hr class="hr-white">
     <div class="row mt-28">
       <div class="col-sm-3 hidden-xs">
@@ -109,7 +113,7 @@
         </div>
       </div>
       <div class="col-sm-9">
-        <h3 class="lead thin h4"><?php print $menciones_titulo ?></h3>
+        <h3 class="lead thin h4"><?php print $menciones_sub_titulo ?></h3>
         <p clas="font-carreras"><?php print $menciones_txt ?></p>
         <span class="btn btn-white btn-outline see-more bold mt-7 visible-xs-inline-block mt-14"><?php print t('See more') ?></span>
       </div>
@@ -121,7 +125,7 @@
 </div>
 <div data-section-scroll="<?php print t('Faculty') ?>" id="profesores" class="scroll-down-info section-scroll-content minh-560 flex-middle-center">
   <div class="container-sm text-center normalize-text php-7">
-    <h2 class="lead thin h1 text-hover-primary"><?php print t('Faculty') ?></h2>
+    <h2 class="lead thin h1 text-hover-primary"><?php print $profesor_titulo; ?></h2>
     <hr class="hr-gray">
     <div class="size xl mt-28">
       <i class="icon-carreras-profesores"></i>
@@ -141,7 +145,7 @@
   <div class="container" data-href="<?php print $perfil_link ?>">
     <div class="row">
       <div class="col-sm-6 normalize-text">
-        <h2 class="thin h1"><a href="<?php print $perfil_link ?>" class="text-hover-primary text-gray-dark"><?php print t('Graduate profile') ?></a></h2>
+        <h2 class="thin h1"><a href="<?php print $perfil_link ?>" class="text-hover-primary text-gray-dark"><?php print $perfil_titulo; ?></a></h2>
         <hr class="hr-gray">
         <div class="row">
           <div class="col-sm-3 hidden-xs">
