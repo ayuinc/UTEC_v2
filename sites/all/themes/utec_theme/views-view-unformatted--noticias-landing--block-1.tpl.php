@@ -8,9 +8,6 @@
  */
 ?>
 
-  <div>
-    <h3 class="text-primary"><?php print t('Latest news') ?></h3>
-  </div>
   <ul class="grid-list grid-list-2 grid-list-1-xs isotope-grid list-hover list-hover-unstyled">
     <?php foreach ($rows as $id => $row): ?>
       <?php print $row;?>
