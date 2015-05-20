@@ -2,9 +2,11 @@
   global $language;
   $tree = menu_tree_all_data('menu-footer-menu'); 
   $menus = menu_tree_output(i18n_menu_localize_tree($tree));
-  $sub_footer = $node->body['und']['0']['value'];
+  $direccion = $node->body['und']['0']['value'];
   $iconos = $node->field_texto_corto['und']['0']['value'];
   $copyright = $node->field_cuerpo['und']['0']['value'];
+  $field_links = $node->field_link_red_social['und'];
+  $field_iconos = $node->field_iconos_redes['und'];
 ?>
 <!-- FOOTER -->
   <?php $node = node_load(919); ?>
@@ -35,9 +37,13 @@
   <div class="address pv-14 bg-gray-lighter">
     <div class="container">
       <nav class="text-center ml-ch-14 text-gray">
-        <?php print $sub_footer; ?>
+        <?php print $direccion; ?>
         <div class="inline-block mt-14">
-          <?php print $iconos; ?>
+        	<?php foreach ($field_links as $key => $field_link) : ?>
+        	<a rel="nofollow" href="<?php print $field_link['value']; ?>" target="_blank" class="atm-sociales btn btn-outline btn-xs btn-gray-dark mt-7-xs btn-rrss">
+        		<i class="<?php print $field_icono[$key]['value']; ?>"></i>
+        	</a>
+	        <?php endforeach; ?>
         </div>
       </nav>
     </div>
