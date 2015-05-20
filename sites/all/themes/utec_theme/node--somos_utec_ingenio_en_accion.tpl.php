@@ -1,29 +1,37 @@
-<?php global $language ?>
-<?php global $base_url; ?>
-<?php global $theme_path; ?>
-<?php $path = $base_url.'/'.$theme_path; ?>
-<?php $pathfile= variable_get('file_public_path', conf_path() . '/files/'); ?>
+<?php 
+ global $language;
+ global $base_url;
+ global $theme_path;
+ $path = $base_url.'/'.$theme_path;
+ $pathfile= variable_get('file_public_path', conf_path() . '/files/');
 
-<?php $title = $node->title; ?>  
-<?php $field_frase_autor = $node->field_frase_autor['und']['0']['value']; ?>
-<?php $field_nombre_autor = $node->field_nombre_autor['und']['0']['value']; ?>
-<?php $field_titulo_del_autor = $node->field_titulo_del_autor['und']['0']['value']; ?>
-<?php $field_quote = $node->field_quote['und']['0']['value']; ?>
-<?php $field_introduccion_autor = $node->field_introduccion_autor['und']['0']['value']; ?>
-<?php $field_foto_causa = $node->field_image['und']['0']['uri']; ?>
-<?php $field_titulo_causa = $node->field_titulo_causa['und']['0']['value']; ?>
-<?php $field_descripcion_causa = $node->field_descripcion_causa['und']['0']['value']; ?>
-<?php $field_link_causa = $node->field_link_causa['und']['0']['value']; ?>
-<?php $field_frase_causa = $node->field_frase_causa['und']['0']['value']; ?>
-<?php $field_foto_tres_acciones = $node->field_image_2['und']['0']['uri']; ?>
-<?php $field_titulo_tres_acciones = $node->field_titulo_tres_acciones['und']['0']['value']; ?>
-<?php $field_subitulo_tres_acciones = $node->field_subitulo_tres_acciones['und']['0']['value']; ?>
-<?php $field_link_tres_acciones = $node->field_link_tres_acciones['und']['0']['value']; ?>
-<?php $field_titulo_proyecto = $node->field_titulo_proyecto['und']['0']['value']; ?>
-<?php $field_subtitulo_proyecto = $node->field_subtitulo_proyecto['und']['0']['value']; ?>
-<?php $field_descripcion_proyecto = $node->field_descripcion_proyecto['und']['0']['value']; ?>
-<?php $field_link_proyecto = $node->field_link_proyecto['und']['0']['value']; ?>
-<?php $field_foto_redes_sociales = $node->field_image_3['und']['0']['uri']; ?>
+ $title = $node->title;  
+ $field_frase_autor = $node->field_frase_autor['und']['0']['value'];
+ $field_nombre_autor = $node->field_nombre_autor['und']['0']['value'];
+ $field_titulo_del_autor = $node->field_titulo_del_autor['und']['0']['value'];
+ $field_quote = $node->field_quote['und']['0']['value'];
+ $field_introduccion_autor = $node->field_introduccion_autor['und']['0']['value'];
+ $field_foto_causa = $node->field_image['und']['0']['uri'];
+ $field_titulo_causa = $node->field_titulo_causa['und']['0']['value'];
+ $field_descripcion_causa = $node->field_descripcion_causa['und']['0']['value'];
+ $field_link_causa = $node->field_link_causa['und']['0']['value'];
+ $field_frase_causa = $node->field_frase_causa['und']['0']['value'];
+ $field_foto_tres_acciones = $node->field_image_2['und']['0']['uri'];
+ $field_titulo_tres_acciones = $node->field_titulo_tres_acciones['und']['0']['value'];
+ $field_subitulo_tres_acciones = $node->field_subitulo_tres_acciones['und']['0']['value'];
+ $field_link_tres_acciones = $node->field_link_tres_acciones['und']['0']['value'];
+ $field_titulo_proyecto = $node->field_titulo_proyecto['und']['0']['value'];
+ $field_subtitulo_proyecto = $node->field_subtitulo_proyecto['und']['0']['value'];
+ $field_descripcion_proyecto = $node->field_descripcion_proyecto['und']['0']['value'];
+ $field_link_proyecto = $node->field_link_proyecto['und']['0']['value'];
+ $field_foto_redes_sociales = $node->field_image_3['und']['0']['uri']; 
+ $descubre_titulo_1 = $node->field_descubre_mas_titulo_1['und']['0']['value'];
+ $descubre_titulo_2 = $node->field_descubre_mas_titulo_2['und']['0']['value'];
+ $descubre_titulo_3 = $node->field_descubre_mas_titulo_3['und']['0']['value'];
+ $social_links = $node->field_link_red_social['und'];
+ $clase_botones = $node->field_clase_boton['und'];
+ $clase_iconos = $node->field_clase_icono['und'];
+?>
 
 <?php if ($language->prefix == 'en'): ?>
   <div data-section-scroll="Overview" id="que-es" class="scroll-down-info section-scroll-content bg-img-block bg-img-block-lg hero-unit size lg" style="background-image: url(<?php print('/'.$pathfile.$field_carrera_imagen)?>);">
@@ -186,15 +194,14 @@
 	<?php endif ?>
 	<div class="overlay flex-middle">
 		<div class="container-xs text-white text-center hero-text relative on-top">
-			<h2 class="h3 mb-0"><?php print t('We call it:') ?></h2> <h1 class="thin mt-0"><?php print t('Ingenuity in Action') ?></h1>
-			<p class="thin font-carreras"><?php print t('Discover more of #IngenuityInAction:') ?></p>
+			<h2 class="h3 mb-0"><?php print $descubre_titulo_1; ?></h2> <h1 class="thin mt-0"><?php print $descubre_titulo_2; ?></h1>
+			<p class="thin font-carreras"><?php print $descubre_titulo_3; ?></p>
 			<ul class="grid-list grid-list-centered">
-				<li class="p-0">
-					<a href="https://www.facebook.com/ingenioenaccion" class="btn btn-facebook btn-circle"><i class="icon-footer-facebook"></i></a>
-				</li>
+				<?php foreach ($social_links as $key => $social_link) : ?>
 				<li class="pl-7">
-					<a href="https://twitter.com/UTECedu" class="btn btn-twitter btn-circle"><i class="icon-footer-twitter"></i></a>
+					<a href="<?php print $social_link['value']; ?>" class="btn <?php print $clase_botones[$key]['value']; ?> btn-circle"><i class="<?php print $clase_iconos[$key]['value']; ?>"></i></a>
 				</li>
+				<?php endforeach; ?>
 			</ul>
 		</div>
 	</div>
