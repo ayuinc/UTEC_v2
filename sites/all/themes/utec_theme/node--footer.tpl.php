@@ -41,7 +41,7 @@
         <div class="inline-block mt-14">
         	<?php foreach ($field_links as $key => $field_link) : ?>
         	<a rel="nofollow" href="<?php print $field_link['value']; ?>" target="_blank" class="atm-sociales btn btn-outline btn-xs btn-gray-dark mt-7-xs btn-rrss">
-        		<i class="<?php print $field_icono[$key]['value']; ?>"></i>
+        		<i class="<?php print $field_iconos[$key]['value']; ?>"></i>
         	</a>
 	        <?php endforeach; ?>
         </div>
