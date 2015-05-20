@@ -199,7 +199,7 @@
 			<ul class="grid-list grid-list-centered">
 				<?php foreach ($social_links as $key => $social_link) : ?>
 				<li class="pl-7">
-					<a href="<?php print $social_link['value']; ?>" class="btn <?php print $clase_botones[$key]['value']; ?> btn-circle"><i class="<?php print $clase_iconos[$key]['value']; ?>"></i></a>
+					<a href="<?php print $social_link['value']; ?>" class="btn <?php print $clase_botones[$key]['value']; ?> btn-circle" target="_blank"><i class="<?php print $clase_iconos[$key]['value']; ?>"></i></a>
 				</li>
 				<?php endforeach; ?>
 			</ul>
