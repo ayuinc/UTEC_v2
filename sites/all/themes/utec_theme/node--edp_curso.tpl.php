@@ -106,6 +106,7 @@
 			<?php 
 				  $profesor_name = $profesor['entity']->name;
 				  $profesor_id = $profesor['entity']->uid;
+				  $uid = $profesor['entity']->uid;
 				  $profesor_cargo = $profesor['entity']->field_descripci_n['und']['0']['value'];
 				  $profesor_cargo_ingles = $profesor['entity']->field_descripci_n_ingles['und']['0']['value'];
 				  $profesor_resenia = $profesor['entity']->field_rese_a['und']['0']['value'];
