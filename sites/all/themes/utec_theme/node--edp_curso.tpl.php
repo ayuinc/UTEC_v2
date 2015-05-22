@@ -17,7 +17,6 @@
   $duracion = $node->field_duracion['und']['0']['value'];
   $dirigido = $node->field_dirigido_a['und']['0']['value'];	
   $profesores = $node->field_profesor['und'];
-  kpr($profesores);
   $field_requisito = $node->field_requisito['und']['0']['value'];
   $field_temario = $node->field_temario['und']['0']['value'];
   $field_inscribete = $node->field_inscribete['und']['0']['value'];
