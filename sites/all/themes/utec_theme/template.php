@@ -26,16 +26,6 @@
 	}
 
 	drupal_add_css("//vjs.zencdn.net/4.10/video-js.css", 'external');	
-	
-	//drupal_add_js('try{Typekit.load();}catch(e){}', 'inline');
-
-  //drupal_add_js('//use.typekit.net/fct8sgn.js', array(
-  	//'type' => 'external',
-	  //'scope' => 'header',
-	  //'group' => JS_THEME,
-	  //'every_page' => TRUE,
-	  //'weight' => 1,
-	//));
 
 	drupal_add_js('//vjs.zencdn.net/4.10/video.js', array(
 		'type' => 'external',
@@ -64,133 +54,7 @@
 	  'group' => JS_THEME,
 	  'every_page' => TRUE,
 	  'weight' => 2,
-	));
-
-	// drupal_add_js(path_to_theme() . '/js/app/vendor/TweenMax.min.js', array(
-	//   'scope' => 'footer',
-	//   'group' => JS_THEME,
-	//   'every_page' => TRUE,
-	//   'weight' => 2,
-	// ));
-
-	// drupal_add_js(path_to_theme() . '/js/app/vendor/ScrollToPlugin.min.js', array(
-	//   'scope' => 'footer',
-	//   'group' => JS_THEME,
-	//   'every_page' => TRUE,
-	//   'weight' => 3,
-	// ));
-
-	// drupal_add_js(path_to_theme() . '/js/app/vendor/jquery.scrollmagic.min.js', array(
-	//   'scope' => 'footer',
-	//   'group' => JS_THEME,
-	//   'every_page' => TRUE,
-	//   'weight' => 4,
-	// ));
-
-	// drupal_add_js(path_to_theme() . '/js/b3/transition.js', array(
-	//   'scope' => 'footer',
-	//   'group' => JS_THEME,
-	//   'every_page' => TRUE,
-	//   'weight' => 5,
-	// ));
-
-	// drupal_add_js(path_to_theme() . '/js/b3/carousel.js', array(
-	//   'scope' => 'footer',
-	//   'group' => JS_THEME,
-	//   'every_page' => TRUE,
-	//   'weight' => 6,
-	// ));
-
-	// drupal_add_js(path_to_theme() . '/js/app/lib/nav-control.js', array(
-	//   'scope' => 'footer',
-	//   'group' => JS_THEME,
-	//   'every_page' => TRUE,
-	//   'weight' => 7,
-	// ));
-
-	// drupal_add_js(path_to_theme() . '/js/app/lib/layout-control.js', array(
-	//   'scope' => 'footer',
-	//   'group' => JS_THEME,
-	//   'every_page' => TRUE,
-	//   'weight' => 8,
-	// ));
-
-	// drupal_add_js(path_to_theme() . '/js/app/lib/scroll-control.js', array(
-	//   'scope' => 'footer',
-	//   'group' => JS_THEME,
-	//   'every_page' => TRUE,
-	//   'weight' => 9,
-	// ));
-
-	// drupal_add_js(path_to_theme() . '/js/app/lib/section-scroll.js', array(
-	//   'scope' => 'footer',
-	//   'group' => JS_THEME,
-	//   'every_page' => TRUE,
-	//   'weight' => 10,
-	// ));
-
-	// drupal_add_js(path_to_theme() . '/js/app/lib/videojs.js', array(
-	//   'scope' => 'footer',
-	//   'group' => JS_THEME,
-	//   'every_page' => TRUE,
-	//   'weight' => 11,
-	// ));
-
-	// drupal_add_js(path_to_theme() . '/js/app/vendor/imagesloaded.pkgd.min.js', array(
-	//   'scope' => 'footer',
-	//   'group' => JS_THEME,
-	//   'every_page' => TRUE,
-	//   'weight' => 12,
-	// ));
-
-	// drupal_add_js(path_to_theme() . '/js/app/vendor/isotope.pkgd.min.js', array(
-	//   'scope' => 'footer',
-	//   'group' => JS_THEME,
-	//   'every_page' => TRUE,
-	//   'weight' => 13,
-	// ));
-
-	// drupal_add_js(path_to_theme() . '/js/app/lib/isotope.js', array(
-	//   'scope' => 'footer',
-	//   'group' => JS_THEME,
-	//   'every_page' => TRUE,
-	//   'weight' => 14,
-	// ));
-
-	// drupal_add_js(path_to_theme() . '/js/app/vendor/jquery.validate.js', array(
-	//   'scope' => 'footer',
-	//   'group' => JS_THEME,
-	//   'every_page' => TRUE,
-	//   'weight' => 15,
-	// ));	
-
-	// drupal_add_js(path_to_theme() . '/js/app/lib/forms-control.js', array(
-	//   'scope' => 'footer',
-	//   'group' => JS_THEME,
-	//   'every_page' => TRUE,
-	//   'weight' => 16,
-	// ));	
-
-	// drupal_add_js(path_to_theme() . '/js/app/vendor/ScrambleTextPlugin.min.js', array(
-	//   'scope' => 'footer',
-	//   'group' => JS_THEME,
-	//   'every_page' => TRUE,
-	//   'weight' => 17,
-	// ));	
-
-	// drupal_add_js(path_to_theme() . '/js/app/lib/tickerscrambler.js', array(
-	//   'scope' => 'footer',
-	//   'group' => JS_THEME,
-	//   'every_page' => TRUE,
-	//   'weight' => 18,
-	// ));	
-	
-	// drupal_add_js(path_to_theme() . '/js/app/lib/tickerscrambler_en.js', array(
-	//   'scope' => 'footer',
-	//   'group' => JS_THEME,
-	//   'every_page' => TRUE,
-	//   'weight' => 18,
-	// ));		
+	));		
 
 function utec_theme_site_map_menu_link(array $variables) {
 
@@ -288,6 +152,14 @@ function utec_theme_preprocess_node(&$variables){
 	$image_style3 = $settings3['image_style'];
 	$variables['image_style_3'] = $image_style3;
 
+}
+
+/**
+ * Implements hook_preprocess().
+ */
+function utec_theme_preprocess(&$variables, $hook) {
+
+  
 }
 
 ?>
