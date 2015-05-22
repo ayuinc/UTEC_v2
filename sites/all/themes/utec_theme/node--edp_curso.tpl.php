@@ -111,6 +111,13 @@
 				  $profesor_resenia = $profesor['entity']->field_rese_a['und']['0']['value'];
 				  $profesor_resenia_ingles = $profesor['entity']->field_rese_a_ingles['und']['0']['value'];
 				  $profesor_pic = $profesor['entity']->picture->filename;
+				  $profesor_roles = $profesor['roles'];
+				  $profe_rol = '';
+				  foreach ($profesor_roles as $key => $profesor_rol) {
+				  	if ($profesor_rol == 'Profesor') {
+					  	$profe_rol = 'Profesor';
+				  	}
+				  }
 			?>
 			<div>
 				<?php if($profesor_name) : ?>
@@ -122,10 +129,18 @@
 						</li>
 						<?php endif  ?>
 						<?php 
-				      if ($language->language == 'en') {
-				        $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/67/profesor-edp/'.$profesor_id, $language->language); 
-				      }else
-				        $profesor_url = "/" . drupal_get_path_alias('page/67/profesor-edp/'.$profesor_id, $language->language); 
+
+						  if ($language->prefix) {
+						  	if ($profe_rol == 'Profesor') {
+							    $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/profesores/'.$uid, $language->language); 
+						  	}
+						    $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/67/profesor-edp/'.$uid, $language->language); 
+						  }else
+						  	if ($profe_rol == 'Profesor') {
+							    $profesor_url = "/" . drupal_get_path_alias('page/30/profesores/'.$uid, $language->language); 
+						  	}
+						    $profesor_url = "/" . drupal_get_path_alias('page/67/profesor-edp/'.$uid, $language->language); 
+
 				    ?> 
 						<li class="pl-21 text-gray">
 							<div class="mb-7 text-center-xs">
