@@ -134,13 +134,16 @@
 						  	if ($profe_rol == 'Profesor') {
 							    $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/profesores/'.$uid, $language->language); 
 						  	}
-						    $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/67/profesor-edp/'.$uid, $language->language); 
+						  	else{
+							    $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/67/profesor-edp/'.$uid, $language->language); 
+						  	}
 						  }else
 						  	if ($profe_rol == 'Profesor') {
 							    $profesor_url = "/" . drupal_get_path_alias('page/30/profesores/'.$uid, $language->language); 
 						  	}
-						    $profesor_url = "/" . drupal_get_path_alias('page/67/profesor-edp/'.$uid, $language->language); 
-
+						  	else{
+							    $profesor_url = "/" . drupal_get_path_alias('page/67/profesor-edp/'.$uid, $language->language); 
+						  	}		
 				    ?> 
 						<li class="pl-21 text-gray">
 							<div class="mb-7 text-center-xs">
