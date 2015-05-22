@@ -111,7 +111,7 @@
 				  $profesor_resenia = $profesor['entity']->field_rese_a['und']['0']['value'];
 				  $profesor_resenia_ingles = $profesor['entity']->field_rese_a_ingles['und']['0']['value'];
 				  $profesor_pic = $profesor['entity']->picture->filename;
-				  $profesor_roles = $profesor['roles'];
+				  $profesor_roles = $profesor['entity']->roles;
 				  $profe_rol = '';
 				  foreach ($profesor_roles as $key => $profesor_rol) {
 				  	if ($profesor_rol == 'Profesor') {
