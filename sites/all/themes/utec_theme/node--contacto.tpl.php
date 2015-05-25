@@ -1,11 +1,8 @@
-<?php $titulo = $node->title; ?>   
-<?php $body = $node->body['und']['0']['value']; ?>
-<?php $field_iframe = $node->field_iframe['und']['0']['value']; ?>
 <?php 
-		global $language; 
-		$idioma = $language->language;		
+	$titulo = $node->title;   
+ 	$body = $node->body['und']['0']['value'];
+ 	$field_iframe = $node->field_iframe['und']['0']['value']; 
 ?>
-
 
 <div class="container-sm">
 	<h1 class="light"><?php print $title ?></h1>

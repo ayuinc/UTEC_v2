@@ -1,5 +1,4 @@
 <?php 
-  global $language;
   $tree = menu_tree_all_data('menu-footer-menu'); 
   $menus = menu_tree_output(i18n_menu_localize_tree($tree));
   $direccion = $node->body['und']['0']['value'];
@@ -9,8 +8,6 @@
   $field_iconos = $node->field_iconos_redes['und'];
 ?>
 <!-- FOOTER -->
-  <?php $node = node_load(919); ?>
-  <?php //print_r($node); ?>
 	<div class="site-map pv-14 bg-gray-dark hidden-xs">
 		<div class="container">
 			<ul class="grid-list grid-list-6 grid-list-2-xs">

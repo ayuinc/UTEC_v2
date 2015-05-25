@@ -1,6 +1,4 @@
 <?php 
-  global $language;
-  $theme_path = drupal_get_path('theme', 'utec_theme'); 
 
 	$tree = menu_tree_all_data('main-menu'); 
 	$menus = menu_tree_output(i18n_menu_localize_tree($tree));
@@ -162,7 +160,7 @@
       <div class="left">
         <div class="logo pv-21">
           <a href="<?php print $front_page; ?>" class="atm-logo">
-            <img src="/<?php print $theme_path; ?>/assets/img/icon_UTEC.png" alt="Logo UTEC">
+            <img src="/<?php print $theme_path_utec; ?>/assets/img/icon_UTEC.png" alt="Logo UTEC">
           </a>
         </div>
       </div>

@@ -1,8 +1,4 @@
-<?php 
-  global $base_url;
-  global $theme_path;
-  $path = $base_url.'/'.$theme_path;
-  $pathfile= variable_get('file_public_path', conf_path() . '/files/');
+<?php
 
 	$titulo = $node->title;
 	$cuerpo = $node->body['und']['0']['value'];
@@ -16,9 +12,6 @@
 	<div class="pv-42">
 		<?php print $cuerpo ?>
 	</div>
-	<!-- <div class="mb-63">
-		<img src="<?php //print('/'.$pathfile.$imagen)?>" class="img-responsive">
-	</div> -->
 	<?php if ($infografia != '') { ?>
 	<div class="mb-63">
 		<img src="<?php print image_style_url($image_style_2, $infografia); ?>" class="img-responsive" alt="<?php print $titulo ?>">

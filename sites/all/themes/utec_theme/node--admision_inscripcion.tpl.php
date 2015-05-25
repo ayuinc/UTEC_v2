@@ -1,13 +1,10 @@
-<?php 
-// $video_name = $node->field_video['und']['0']['filename'];
+<?php
 
 $titulo = $node->title;   
 $field_pago_inscripcion = $node->field_pago_inscripcion['und']['0']['value'];
 $field_forma_de_pago_inscripcion = $node->field_forma_de_pago_inscripcion['und']['0']['value'];
 $field_detalles_inscripcion = $node->field_detalles_inscripcion['und']['0']['value'];
 $field_condiciones_inscripcion = $node->field_condiciones_inscripcion['und']['0']['value'];
-
- 
 
 ?>
 <div class="container-sm">

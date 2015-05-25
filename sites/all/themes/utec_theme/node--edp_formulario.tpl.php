@@ -1,15 +1,10 @@
-<?php global $base_url; ?>
-<?php global $theme_path; ?>
-<?php $path = $base_url.'/'.$theme_path; ?>
-<?php $pathfile= variable_get('file_public_path', conf_path() . '/files/edp-formulario/'); ?>
+<?php 
 
-<?php $titulo = $node->title; ?>   
-<?php $body = $node->body['und']['0']['value']; ?>
-<?php $field_foto_edp_formulario‎ = $node->field_image['und']['0']['uri']; ?>
+ $titulo = $node->title;   
+ $body = $node->body['und']['0']['value'];
+ $field_foto_edp_formulario‎ = $node->field_image['und']['0']['uri']; 
 
-
-<?php $url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>
-<?php $end = end((explode('/', $url))); ?>
+?>
 
 <div class="container-sm">
 	<h1 class="light"><?php print $title ?></h1>

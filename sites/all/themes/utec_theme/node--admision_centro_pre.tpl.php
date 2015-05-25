@@ -1,31 +1,19 @@
-
-<?php global $base_url; ?>
-<?php global $theme_path; ?>
-
-<?php 
-// global $language; 
-$idioma = $language->language;	
-?>
-<?php $path = $base_url.'/'.$theme_path; ?>
-<?php $pathfile= variable_get('file_public_path', conf_path() . '/files/'); ?>
-
- 
 <?php
-$titulo = $node->title;   
-$field_que_es_descripcion_cp = $node->field_que_es_descripcion_cp['und']['0']['value'];
-$field_que_es_intro_cp = $node->field_que_es_intro_cp['und']['0']['value'];
-$field_calendario_fecha = $node->field_calendario_fecha['und']['0']['value'];
-$field_calendario_hora = $node->field_calendario_hora['und']['0']['value'];
-$field_calendario_pago = $node->field_calendario_pago['und']['0']['value'];
-$field_calendario_lugar = $node->field_calendario_lugar['und']['0']['value'];
-$field_inscripcion_pre_extensive = $node->field_inscripcion_pre_extensive['und']['0']['value'];
-$field_inscripcion_pre_intensiva = $node->field_inscripcion_pre_intensiva['und']['0']['value'];
-// $field_fotos_centro_pre = $node->field_fotos_centro_pre['und']['0']['filename'];
-$field_fotos_centro_pre = $node->field_image['und']['0']['uri'];
-$modalida_ext_int = $node->field_modalidad_extensiva_intens['und']['0']['value'];
 
-$titulo_bloque = $node->field_texo['und']['0']['value'];
-$contenido_bloques = $node->field_contenido['und'];
+	$titulo = $node->title;   
+	$field_que_es_descripcion_cp = $node->field_que_es_descripcion_cp['und']['0']['value'];
+	$field_que_es_intro_cp = $node->field_que_es_intro_cp['und']['0']['value'];
+	$field_calendario_fecha = $node->field_calendario_fecha['und']['0']['value'];
+	$field_calendario_hora = $node->field_calendario_hora['und']['0']['value'];
+	$field_calendario_pago = $node->field_calendario_pago['und']['0']['value'];
+	$field_calendario_lugar = $node->field_calendario_lugar['und']['0']['value'];
+	$field_inscripcion_pre_extensive = $node->field_inscripcion_pre_extensive['und']['0']['value'];
+	$field_inscripcion_pre_intensiva = $node->field_inscripcion_pre_intensiva['und']['0']['value'];
+	$field_fotos_centro_pre = $node->field_image['und']['0']['uri'];
+	$modalida_ext_int = $node->field_modalidad_extensiva_intens['und']['0']['value'];
+
+	$titulo_bloque = $node->field_texo['und']['0']['value'];
+	$contenido_bloques = $node->field_contenido['und'];
 ?>
 
 	<div class="hero-unit"> <!-- HERO -->

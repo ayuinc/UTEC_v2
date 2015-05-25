@@ -1,5 +1,7 @@
-<?php $titulo = $node->title; ?>   
-<?php $field_introduccion_calendario = $node->field_introduccion_calendario['und']['0']['value']; ?>
+<?php 
+	$titulo = $node->title;  
+	$field_introduccion_calendario = $node->field_introduccion_calendario['und']['0']['value']; 
+?>
 
 <div class="container-sm">
 	<h1 class="light"><?php print t('Admission Calendar') ?></h1>

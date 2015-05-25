@@ -1,9 +1,6 @@
-<?php global $language ?>
-<?php 
-// $video_name = $node->field_video['und']['0']['filename'];
+<?php
 
-$titulo = $node->title;   
-// $banner = $node->field_banner['und']['0']['uri']; 
+$titulo = $node->title;  
 $banner = $node->field_image['und']['0']['uri']; 
 $field_link_a_formulario_es = $node->field_link_a_formulario_es['und']['0']['value'];  
 $field_link_formulario_en = $node->field_link_formulario_en['und']['0']['value'];  

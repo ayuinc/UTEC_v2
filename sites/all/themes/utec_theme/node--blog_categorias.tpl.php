@@ -1,13 +1,3 @@
-<?php
-global $language;
-/**
- * @file
- * Default simple view template to display a list of rows.
- *
- * @ingroup views_templates
- */
-?>	
-
 <div class="sidebar-block">
 	<div>
 		<div class="title">

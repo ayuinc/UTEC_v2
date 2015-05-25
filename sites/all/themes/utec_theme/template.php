@@ -160,8 +160,17 @@ function utec_theme_preprocess_node(&$variables){
 function utec_theme_preprocess(&$variables, $hook) {
 
 	global $language;
+  global $base_url; 
+  global $theme_path; 
+  $path = $base_url.'/'.$theme_path;
+  $pathfile= variable_get('file_public_path', conf_path() . '/files/');
+  $theme_path_utec = drupal_get_path('theme', 'utec_theme'); 
   $variables['language'] = $language;
-  
+  $variables['idioma'] = $language->language;
+  $variables['path'] = $path;
+  $variables['pathfile'] = $pathfile;
+  $variables['theme_path_utec'] = $theme_path_utec;
+
 }
 
 ?>

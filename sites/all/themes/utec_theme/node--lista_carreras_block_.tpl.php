@@ -1,5 +1,5 @@
 <?php 
-	global $language; 
+
   $title = $node->title;
   $cuerpo = $node->body['und']['0']['value'];
   $carreras = $node->field_nombre['und'];

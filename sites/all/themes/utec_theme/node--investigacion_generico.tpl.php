@@ -1,15 +1,14 @@
-<?php global $base_url; ?>
-<?php global $theme_path; ?>
-<?php $path = $base_url.'/'.$theme_path; ?>
-<?php $pathfile= variable_get('file_public_path', conf_path() . '/files/investigacion-generico/'); ?>
+<?php 
 
-<?php $title = $node->title; ?>  
-<?php $field_introduccion_inv_generico = $node->field_introduccion_inv_generico['und']['0']['value']; ?>
-<?php $field_contenido_inv_generico = $node->field_contenido_inv_generico['und']['0']['value']; ?>
-<?php $field_foto_inv_generico = $node->field_image['und']['0']['uri']; ?>
+ $title = $node->title;  
+ $field_introduccion_inv_generico = $node->field_introduccion_inv_generico['und']['0']['value'];
+ $field_contenido_inv_generico = $node->field_contenido_inv_generico['und']['0']['value'];
+ $field_foto_inv_generico = $node->field_image['und']['0']['uri'];
 
-<?php $url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>
-<?php $end = end((explode('/', $url))); ?>
+ $url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+ $end = end((explode('/', $url))); 
+
+ ?>
 
 <div class="container-sm mb-35">
 	<h1 class="light"><?php print $title ?></h1>

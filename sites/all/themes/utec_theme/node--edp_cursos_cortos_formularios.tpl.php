@@ -1,9 +1,9 @@
-<?php $titulo = $node->field_nombre_curso['und']['0']['value'];  ?>   
-<?php $body = $node->body['und']['0']['value']; ?>
-<?php $field_iframe_cursos = $node->field_iframe_cursos['und']['0']['value']; ?>
 <?php 
-		global $language; 
-		$idioma = $language->language;		
+
+	$titulo = $node->field_nombre_curso['und']['0']['value'];     
+ 	$body = $node->body['und']['0']['value']; 
+ 	$field_iframe_cursos = $node->field_iframe_cursos['und']['0']['value']; 
+ 	
 ?>
 
 

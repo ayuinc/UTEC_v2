@@ -1,8 +1,4 @@
 <?php 
-  global $base_url;
-  global $theme_path;
-  $path = $base_url.'/'.$theme_path;
-  $pathfile= variable_get('file_public_path', conf_path() . '/files/investigacion-publicaciones');
 
 	$titulo = $node->title;
 	$investigador = $node->field_investigador['und']['0']['value'];		 		
@@ -12,8 +8,7 @@
 	$anio = $node->field_a_o['und']['0']['value'];
 	$link = $node->field_link['und']['0']['value'];
 	$field_pdf_publicaciones_= $node->field_pdf_publicaciones_['und']['0']['value']['filename'];
-	
-	//print_r($node);
+
 ?>
 
 <li data-href="<?php print $link ?>">
@@ -40,9 +35,3 @@
 		<p><span class="bold"><?php print t('Published: ') ?></span><span><?php print $publicado ?></span></p>
 	<?php } ?>
 </li>
-<!-- <p><span class="lead bold">Año: </span><span class="lead"><?php print $anio ?></span></p> -->
-
-
-
-
-

@@ -1,13 +1,10 @@
 <?php 
-// $video_name = $node->field_video['und']['0']['filename'];
 
 $titulo = $node->title;   
 $field_fecha_calendario = $node->field_fecha_calendario['und']['0']['value'];
-
+$count=0; 
 
 ?>
-
-<?php $count=0; ?>
 
 <?php if ($count==0) { ?>
 <div class="gbo calendar">

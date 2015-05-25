@@ -1,12 +1,7 @@
-<?php global $language ?>
 <?php 
 
-  global $base_url;
-
   $fields = entity_load('field_collection_item');
-
   $entity_type = 'field_collection_item';
-  // $bundle_names = 'field_some_field'; // Field name the collection is attached to
   $field_name = 'field_image'; // Field name within the field collection
   $view_mode = 'default';
 

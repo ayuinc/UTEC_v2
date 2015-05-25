@@ -1,33 +1,19 @@
 <?php 
-// $video_name = $node->field_video['und']['0']['filename'];
-global $base_url;
-global $theme_path;
-$path = $base_url.'/'.$theme_path;
-$pathfile= variable_get('file_public_path', conf_path() . '/files/admision-examen/'); 
 
-$titulo = $node->title;   
-$field_descripcion_corta_examen = $node->field_descripcion_corta_examen['und']['0']['value'];
-$field_como_postula_examen = $node->field_como_postula_examen['und']['0']['value'];
-$field_costos_examen = $node->field_costos_examen['und']['0']['value'];
-$field_temario_examen = $node->field_temario_examen['und']['0']['value'];
-$field_calendario_examen = $node->field_calendario_examen['und']['0']['value'];
-// $field_banner_ad_1 = $node->field_banner_ad_1['und']['0']['filename'];
-$field_banner_ad_1 = $node->field_image['und']['0']['uri'];
-$link_formulario = $node->field_link_a_formulario['und']['0']['value'];	
-
-global $language; 
-$idioma = $language->language;		
-
+	$titulo = $node->title;   
+	$field_descripcion_corta_examen = $node->field_descripcion_corta_examen['und']['0']['value'];
+	$field_como_postula_examen = $node->field_como_postula_examen['und']['0']['value'];
+	$field_costos_examen = $node->field_costos_examen['und']['0']['value'];
+	$field_temario_examen = $node->field_temario_examen['und']['0']['value'];
+	$field_calendario_examen = $node->field_calendario_examen['und']['0']['value'];
+	$field_banner_ad_1 = $node->field_image['und']['0']['uri'];
+	$link_formulario = $node->field_link_a_formulario['und']['0']['value'];	
 	$unwanted_array = array(    'Š'=>'S', 'š'=>'s', 'Ž'=>'Z', 'ž'=>'z', 'À'=>'A', 'Á'=>'A', 'Â'=>'A', 'Ã'=>'A', 'Ä'=>'A', 'Å'=>'A', 'Æ'=>'A', 'Ç'=>'C', 'È'=>'E', 'É'=>'E',
 	                            'Ê'=>'E', 'Ë'=>'E', 'Ì'=>'I', 'Í'=>'I', 'Î'=>'I', 'Ï'=>'I', 'Ñ'=>'N', 'Ò'=>'O', 'Ó'=>'O', 'Ô'=>'O', 'Õ'=>'O', 'Ö'=>'O', 'Ø'=>'O', 'Ù'=>'U',
 	                            'Ú'=>'U', 'Û'=>'U', 'Ü'=>'U', 'Ý'=>'Y', 'Þ'=>'B', 'ß'=>'Ss', 'à'=>'a', 'á'=>'a', 'â'=>'a', 'ã'=>'a', 'ä'=>'a', 'å'=>'a', 'æ'=>'a', 'ç'=>'c',
 	                            'è'=>'e', 'é'=>'e', 'ê'=>'e', 'ë'=>'e', 'ì'=>'i', 'í'=>'i', 'î'=>'i', 'ï'=>'i', 'ð'=>'o', 'ñ'=>'n', 'ò'=>'o', 'ó'=>'o', 'ô'=>'o', 'õ'=>'o',
 	                            'ö'=>'o', 'ø'=>'o', 'ù'=>'u', 'ú'=>'u', 'û'=>'u', 'ý'=>'y', 'ý'=>'y', 'þ'=>'b', 'ÿ'=>'y' );
 	$titulo = strtr( $titulo, $unwanted_array );
-	
-
-
-
 
 ?> 
 

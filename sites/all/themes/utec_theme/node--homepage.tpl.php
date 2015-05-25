@@ -1,27 +1,14 @@
 <?php 
-$video_name = $node->field_video['und']['0']['filename']; 
-$imagen = $node->field_image['und']['0']['uri']; 
-$link = $node->field_link['und']['0']['value'];
-$texto1 = $node->field_texo['und']['0']['value'];
-$texto2 = $node->field_texo['und']['1']['value'];
+
+	$video_name = $node->field_video['und']['0']['filename']; 
+	$imagen = $node->field_image['und']['0']['uri']; 
+	$link = $node->field_link['und']['0']['value'];
+	$texto1 = $node->field_texo['und']['0']['value'];
+	$texto2 = $node->field_texo['und']['1']['value'];
+
 ?>
 
-
-<div class="hero-unit video-bg "> 
-	<!-- <div class="overlay"></div> -->
-	<!-- <div class="bg-img-block bg-img-block-lg flex-middle">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6">
-					<h2 class="thin text-white lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit repellat dolorem alias minus accusamus.</h2>
-				</div>
-			</div>
-		</div>
-		<a class="scroll-down scroll-down-sq size lg" href="#sec-1" rel="nofollow">
-			<i class="icon-arrows-down bg-primary text-white"></i>
-		</a>
-	</div> -->
-	
+<div class="hero-unit video-bg "> 	
 	  <div>
 			<?php if ($video_name != '') : ?>
 			<video

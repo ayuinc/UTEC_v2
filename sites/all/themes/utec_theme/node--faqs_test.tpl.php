@@ -1,5 +1,4 @@
-<?php 
-// $video_name = $node->field_video['und']['0']['filename'];
+<?php
 
 $titulo = $node->title;   
 $carrera_txt = $node->body['und']['0']['value'];

@@ -1,16 +1,3 @@
-<?php 
-  global $base_url;
-  global $theme_path;
-  $path = $base_url.'/'.$theme_path;
-  $pathfile= variable_get('file_public_path', conf_path() . '/files/');
-
-	// $titulo = $node->title;
-	// $name = $node->webform['components'];
-	
-	//kpr($node);
-	//print_r($form);
-?> 
-
 <div class="subscribe pv-7 bg-gray-darker hidden-xs">
 		<div class="container">
 			<ul class="grid-list grid-list-centered normalize-text">

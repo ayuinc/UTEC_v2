@@ -1,5 +1,4 @@
-<?php 
-	global $language;
+<?php
 	$titulo = $node->title;   
 	$cuerpo = $node->body['und']['0']['value']; 
 	$modalidades = $node->field_texo['und']; 
