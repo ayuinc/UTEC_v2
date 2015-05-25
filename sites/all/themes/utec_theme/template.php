@@ -159,6 +159,8 @@ function utec_theme_preprocess_node(&$variables){
  */
 function utec_theme_preprocess(&$variables, $hook) {
 
+	global $language;
+  $variables['language'] = $language;
   
 }
 
