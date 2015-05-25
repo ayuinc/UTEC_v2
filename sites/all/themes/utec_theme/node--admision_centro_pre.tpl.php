@@ -1,9 +1,9 @@
-<?php global $language ?>
+
 <?php global $base_url; ?>
 <?php global $theme_path; ?>
 
 <?php 
-global $language; 
+// global $language; 
 $idioma = $language->language;	
 ?>
 <?php $path = $base_url.'/'.$theme_path; ?>
