@@ -1,14 +1,13 @@
 <?php 
+
 	$title = $fields['title']->content;
 	$body = $fields['body']->content;
-	// $image = $fields['field_imagen']->content;
 	$image = $fields['field_image']->content;
 	$category = $fields['field_cate']->content;
 	$texto_corto = $fields['field_texto_corto']->content;
 	$path = $fields['path']->content;
 	$dest = $fields['field_destacado']->content;
-	global $count;
-	//kpr($fields);
+
 ?>
 <?php //print_r($zebra) ?>
 <div class="mb-ch-14">

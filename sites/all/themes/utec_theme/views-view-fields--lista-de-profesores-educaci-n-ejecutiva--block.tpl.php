@@ -1,9 +1,4 @@
 <?php 
-  global $language;
-  global $base_url;
-  global $theme_path;
-  $path = $base_url.'/'.$theme_path;
-  $pathfile = variable_get('file_public_path', conf_path() . '/files/'); 
 
   $uid = $fields['uid']->content;
   $name = $fields['name']->content;
@@ -17,7 +12,6 @@
 
 <li class="mb-ch-14 isotope-item" data-href="<?php print $profesor_url ?>" style="position: absolute; left: 0px; top: 0px;">
     <div class="grid-list-pic">
-      <!--img src="<?php if($pic != ''){ print ($pic); } else { print ($pathfile.'pictures/'.$pic); } ?>" alt="<?php print $name; ?>"-->
       <?php print $pic; ?>
     </div>
     <div class="user-info">

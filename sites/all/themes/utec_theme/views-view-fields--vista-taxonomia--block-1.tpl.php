@@ -1,8 +1,4 @@
 <?php 
-  global $base_url;
-  global $theme_path;
-  $path = $base_url.'/'.$theme_path;
-  $pathfile = variable_get('file_public_path', conf_path() . '/files/'); 
 
 	$title = $fields['title']->content;
 	$body = $fields['body']->content;
@@ -12,14 +8,12 @@
 	$path = $fields['path']->content;
 	$user_id = $fields['uid']->content;
 	$created = $fields['created']->content;
-
 	$blogger_id = $fields['field_blogger']->content;
 	$blogger = user_load($blogger_id);
 	$user_name = $blogger->name;
 	$user_image = $blogger->picture->filename;
 	$user_charge = $blogger->field_descripci_n['und']['0']['value'];
 
-	//kpr($fields);
 ?>
 <?php $path_i18 = drupal_get_path_alias($path, $language->language); ?>
 <?php if ($language->language != 'en'): ?>

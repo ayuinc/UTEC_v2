@@ -1,7 +1,3 @@
-<?php 
-	global $language;
-?>
-
 <?php if ($language->language != 'en'): ?>
 	<h3 class="light">Todos los posts</h3>
 <?php elseif ($language->language == 'en'): ?>

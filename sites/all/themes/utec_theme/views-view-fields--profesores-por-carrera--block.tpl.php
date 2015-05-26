@@ -1,14 +1,8 @@
 <?php 
-  global $language;
-  global $base_url;
-  global $theme_path;
-  $path = $base_url.'/'.$theme_path;
-  $pathfile = variable_get('file_public_path', conf_path() . '/files/'); 
 
   $uid = $fields['field_profesor']->content;
 	$term_name = $fields['field_carrera_referencia']->content;
 	$user = user_load($uid);
-
 	$name = $user->name;
 	$pic = $user->picture->uri;
 	$desc = $user->field_descripci_n['und']['0']['value'];
@@ -17,14 +11,12 @@
     $carrera_id = $value->tid;
   }
 
-	//print_r($carrera);
 ?>
 
 <?php 
 if ($language->language == 'en') {
   $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/profesores/'.$uid, $language->language); 
 }else
-  //$profesor_url = "/" . drupal_get_path_alias('page/30/profesor-carrera/'.$uid.'/'.$carrera_id, $language->language);
   $profesor_url = "/" . drupal_get_path_alias('page/30/profesores/'.$uid, $language->language); 
 ?> 
 <?php if ($uid): ?>
@@ -35,7 +27,6 @@ if ($language->language == 'en') {
   <a href="<?php print $profesor_url ?>">
     <?php print $name ?>
   </a>
-  <!-- <p class="font-profesores"><?php print $desc ?></p> -->
 </li>
 <?php endif ?>
 

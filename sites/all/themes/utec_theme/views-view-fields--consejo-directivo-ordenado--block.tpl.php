@@ -1,17 +1,10 @@
-<?php 
-  global $language;
-  global $base_url;
-  global $theme_path;
-  $path = $base_url.'/'.$theme_path;
-  $pathfile = variable_get('file_public_path', conf_path() . '/files/'); 
+<?php  
 
 	$uid = $fields['field_profesor']->content;
 	$user = user_load($uid);
-
 	$name = $user->name;
 	$pic = $user->picture->uri;
 	$desc = $user->field_descripci_n['und']['0']['value'];
-	//kpr($user);
   $desc        = $user->field_descripci_n_consejo_dir['und'][0]['value'];
   $desc_ingles = $user->field_descripci_n_consejo_dir_in['und']['0']['value'];
 
