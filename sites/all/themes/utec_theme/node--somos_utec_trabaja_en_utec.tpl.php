@@ -1,20 +1,15 @@
-<?php global $base_url; ?>
-<?php global $theme_path; ?>
-<?php 
-		global $language; 
-		$idioma = $language->language;	
-?>
+<?php
+ 
+	$title = $node->title;  
+	$field_su_filosofia = $node->field_su_filosofia['und']['0']['value'];
+	$field_su_foto = $node->field_image['und']['0']['uri'];
+	$field_su_universidad = $node->field_su_universidad['und']['0']['value'];
+	$field_transcendencia = $node->field_transcendencia['und']['0']['value'];
+	$field_excelencia = $node->field_excelencia['und']['0']['value'];
+	$field_su_creatividad = $node->field_su_creatividad['und']['0']['value'];
+	$field_su_contacto = $node->field_su_contacto['und']['0']['value']; 
 
-<?php $path = $base_url.'/'.$theme_path; ?>
-<?php $pathfile= variable_get('file_public_path', conf_path() . '/files/trabaja-utec/'); ?>
-<?php $title = $node->title; ?>  
-<?php $field_su_filosofia = $node->field_su_filosofia['und']['0']['value']; ?>
-<?php $field_su_foto = $node->field_image['und']['0']['uri']; ?>
-<?php $field_su_universidad = $node->field_su_universidad['und']['0']['value']; ?>
-<?php $field_transcendencia = $node->field_transcendencia['und']['0']['value']; ?>
-<?php $field_excelencia = $node->field_excelencia['und']['0']['value']; ?>
-<?php $field_su_creatividad = $node->field_su_creatividad['und']['0']['value']; ?>
-<?php $field_su_contacto = $node->field_su_contacto['und']['0']['value']; ?>
+?>
  
 <div class="container-sm">
 	<h1 class="light"><?php print $title ?></h1>

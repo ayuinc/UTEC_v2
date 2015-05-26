@@ -1,4 +1,5 @@
 <?php 
+  print_r($language);
   global $base_url;
   global $theme_path;
   $path = $base_url.'/'.$theme_path;

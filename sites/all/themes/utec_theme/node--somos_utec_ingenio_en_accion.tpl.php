@@ -1,9 +1,4 @@
 <?php 
- global $language;
- global $base_url;
- global $theme_path;
- $path = $base_url.'/'.$theme_path;
- $pathfile= variable_get('file_public_path', conf_path() . '/files/');
 
  $title = $node->title;  
  $field_frase_autor = $node->field_frase_autor['und']['0']['value'];
@@ -31,6 +26,7 @@
  $social_links = $node->field_link_red_social['und'];
  $clase_botones = $node->field_clase_boton['und'];
  $clase_iconos = $node->field_clase_icono['und'];
+ 
 ?>
 
 <?php if ($language->prefix == 'en'): ?>

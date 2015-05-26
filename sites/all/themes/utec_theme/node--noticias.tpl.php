@@ -1,15 +1,9 @@
-<?php 
-  global $base_url;
-  global $theme_path;
-  $path = $base_url.'/'.$theme_path;
-  $pathfile= variable_get('file_public_path', conf_path() . '/files/');
+<?php
 
   $category = $node->field_cate['und']['0']['taxonomy_term']->name;
 	$titulo = $node->title;	 		
-	$cuerpo = $node->body['und']['0']['value'];	
-	// $imagen = $node->field_imagen['und']['0']['filename'];
-	$images = $node->field_image['und']; 
-	// print_r($image_style);
+	$cuerpo = $node->body['und']['0']['value'];
+	$images = $node->field_image['und'];
 
 ?>
 
@@ -37,7 +31,6 @@
 							<div class="banner-label bg-gray-darker text-white"><span><?php print $category ?></span></div>
 						</div>
 					</div>
-			    <!-- <img src="<?php print '/'.$pathfile.'noticias/'.$image['filename'] ?>" alt="..." height="479" width="720"> -->
 			  </div>
 			  <?php $count++; ?>
 				<?php endforeach; ?>

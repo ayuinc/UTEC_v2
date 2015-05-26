@@ -1,15 +1,10 @@
 <?php 
-  global $base_url;
-  global $theme_path;
-  $path = $base_url.'/'.$theme_path;
-  $pathfile = variable_get('file_public_path', conf_path() . '/files/');
 
   $titulo = $node->title;
   $field_introduccion_respaldo = $node->field_introduccion_respaldo['und']['0']['value'];
   $fids   = $node->field_empresa_respaldo['und'];
 
   $entity_type = 'field_collection_item';
-  // $bundle_names = 'field_some_field'; // Field name the collection is attached to
   $field_name = 'field_logo_respaldo'; // Field name within the field collection
   $view_mode = 'default';
 
@@ -26,8 +21,7 @@
     <div>
       <ul class="grid-list grid-list-2 grid-list-1-xs grid-list-hover grid-list-hover-white">
         <?php foreach ($fids as $fid) : ?>
-          <?php 
-          // print_r($fid['value']);
+          <?php
             $num = $fid['value'];
             $field = entity_load('field_collection_item', array($fid['value']));
             $image = $field[$num]->field_logo_respaldo['und'][0]['uri']; 

@@ -1,10 +1,7 @@
 <?php 
-	global $language; 
 
 	$tree = menu_tree_all_data('main-menu'); 
 	$menus = menu_tree_output(i18n_menu_localize_tree($tree));
-
-  //kpr($menus);
 
   $tree_quick = menu_tree_all_data('menu-top-menu'); 
   $menus_quick = menu_tree_output(i18n_menu_localize_tree($tree_quick));
@@ -42,8 +39,7 @@
 </div>
 <?php $count = 1; ?>
 <?php foreach ($fields_esp as $index => $fid) : ?>
-	<?php 
-	  // print_r($fid['value']);
+	<?php
 	  $num_esp = $fid['value'];
 	  $num_ing = $fields_ing[$index]['value'];
 	  $field_esp = entity_load('field_collection_item', array($num_esp));

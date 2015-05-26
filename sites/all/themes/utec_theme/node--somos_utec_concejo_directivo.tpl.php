@@ -1,10 +1,9 @@
-<?php global $base_url; ?>
-<?php global $theme_path; ?>
-<?php global $language; ?>
-<?php $path = $base_url.'/'.$theme_path; ?>
-<?php $pathfile= variable_get('file_public_path', conf_path() . '/files/'); ?>
-<?php $title = $node->title; ?>  
-<?php $field_introduccion_concejo = $node->field_introduccion_concejo['und']['0']['value']; ?>
+<?php 
+
+	$title = $node->title;
+  $field_introduccion_concejo = $node->field_introduccion_concejo['und']['0']['value']; 
+  
+?>
 
 <div class="container-sm">
 	<h1 class="light"><?php print t('Board of Directors') ?></h1>
