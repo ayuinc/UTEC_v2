@@ -1,6 +1,4 @@
-
 <?php
-global $language;
 /**
  * @file
  * Default simple view template to display a list of rows.

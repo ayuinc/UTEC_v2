@@ -1,6 +1,3 @@
-<?php 
-
-?>
 <div class="container-sm">
 	<h1 class="light"><?php print t('Blog posts'); ?></h1>
 	<div class="separator-gray separator-sm"></div>
