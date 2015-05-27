@@ -11,7 +11,7 @@
 	<h1 class="light"><?php print $view->display['block']->display_options['title']; ?></h1>
 	<div class="separator-gray separator-lg"></div>
 	<h3></h3>	
-	<?php //kpr($view->display['block']->display_options['title']); ?>
+	<?php kpr($view->display['block']); ?>
 	<div class="pv-35">
 		<div class="table-responsive table-custom">
 			<table class="table">
