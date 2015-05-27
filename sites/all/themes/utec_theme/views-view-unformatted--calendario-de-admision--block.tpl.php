@@ -11,7 +11,7 @@
 	<h1 class="light"><?php print t('Calendario de Admisión'); ?></h1>
 	<div class="separator-gray separator-lg"></div>
 	<h3></h3>	
-	<?php kpr($view->display); ?>
+	<?php kpr($view->display->block); ?>
 	<div class="pv-35">
 		<div class="table-responsive table-custom">
 			<table class="table">
