@@ -8,10 +8,10 @@
  */
 ?>
 <div class="container-sm">
-	<h1 class="light"><?php print $view->display['block']->display_options['title']; ?></h1>
+	<h1 class="light"><?php print $view->build_info['title']; ?></h1>
 	<div class="separator-gray separator-lg"></div>
 	<h3></h3>	
-	<?php kpr($view->display['block']); ?>
+	<?php kpr($view); ?>
 	<div class="pv-35">
 		<div class="table-responsive table-custom">
 			<table class="table">
