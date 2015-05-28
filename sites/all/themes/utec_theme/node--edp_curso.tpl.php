@@ -1,4 +1,9 @@
 <?php 
+  global $base_url;
+  global $theme_path;
+  global $language;
+  $path = $base_url.'/'.$theme_path;
+  $pathfile= variable_get('file_public_path', conf_path() . '/files/');
 
 	$titulo = $node->title;	
 	$sub_titulo = $node->field_subtitulo['und']['0']['value'];		 		
@@ -100,19 +105,11 @@
 			<?php 
 				  $profesor_name = $profesor['entity']->name;
 				  $profesor_id = $profesor['entity']->uid;
-				  $uid = $profesor['entity']->uid;
 				  $profesor_cargo = $profesor['entity']->field_descripci_n['und']['0']['value'];
 				  $profesor_cargo_ingles = $profesor['entity']->field_descripci_n_ingles['und']['0']['value'];
 				  $profesor_resenia = $profesor['entity']->field_rese_a['und']['0']['value'];
 				  $profesor_resenia_ingles = $profesor['entity']->field_rese_a_ingles['und']['0']['value'];
 				  $profesor_pic = $profesor['entity']->picture->filename;
-				  $profesor_roles = $profesor['entity']->roles;
-				  $profe_rol = '';
-				  foreach ($profesor_roles as $key => $profesor_rol) {
-				  	if ($profesor_rol == 'Profesor') {
-					  	$profe_rol = 'Profesor';
-				  	}
-				  }
 			?>
 			<div>
 				<?php if($profesor_name) : ?>
@@ -124,21 +121,10 @@
 						</li>
 						<?php endif  ?>
 						<?php 
-
-						  if ($language->prefix) {
-						  	if ($profe_rol == 'Profesor') {
-							    $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/profesores/'.$uid, $language->language); 
-						  	}
-						  	else{
-							    $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/67/profesor-edp/'.$uid, $language->language); 
-						  	}
-						  }else
-						  	if ($profe_rol == 'Profesor') {
-							    $profesor_url = "/" . drupal_get_path_alias('page/30/profesores/'.$uid, $language->language); 
-						  	}
-						  	else{
-							    $profesor_url = "/" . drupal_get_path_alias('page/67/profesor-edp/'.$uid, $language->language); 
-						  	}		
+				      if ($language->language == 'en') {
+				        $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/67/profesor-edp/'.$profesor_id, $language->language); 
+				      }else
+				        $profesor_url = "/" . drupal_get_path_alias('page/67/profesor-edp/'.$profesor_id, $language->language); 
 				    ?> 
 						<li class="pl-21 text-gray">
 							<div class="mb-7 text-center-xs">
