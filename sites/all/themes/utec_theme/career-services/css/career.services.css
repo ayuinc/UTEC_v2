@@ -1,0 +1,268 @@
+body.node-type-page-subhome .body {
+  padding-top: 0;
+}
+
+/* Block Bean - Banner Top */
+
+.block-bean-banner-top {
+  padding-bottom: 7rem;
+}
+
+.pane-bean-banner-top h2.pane-title {
+  display: none;
+}
+
+.view-more a {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 0px;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.42857;
+  padding: 6px 12px;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.block-banner-top .view-more a:hover {
+  border: 2px solid #00BFDF;
+  background-color: #00BFDF;
+}
+
+.block-banner-top .pb-28 {
+  padding-bottom: 7rem !important;
+}
+
+/* Block Bean - Menu Fixed */
+
+.block-menu-fixed {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 14px;
+}
+
+.block-menu-fixed ul {
+  background-color: transparent !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+}
+
+/* Block Bean - Informative One */
+
+@media only screen and (min-width: 1200px) {
+  .anchor-img-grid.anchor-img-grid-1 .anchor-block-2 {
+    width: 484px;
+    height: 242px;
+  }
+}
+
+/* Block Bean - Informative Two */
+
+.bean-block-informative-two .grid-list-item .item-pic {
+  height: 130px;
+  width: 130px;
+}
+
+.bean-block-informative-two ul.grid-list.grid-list-3 > li {
+  margin-bottom: 10px;
+  padding: 0.1rem 0.3rem !important;
+}
+
+.bean-block-informative-two .pt-14 {
+  padding-top: 0.5rem;
+}
+
+/* Block Views - Tips Last */
+
+.block-views-view-tips-block-tips-last .title.block-title {
+  display: block;
+}
+
+.block-views-view-tips-block-tips-last .thin p {
+  font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
+  font-weight: 100;
+  font-style: normal;
+  line-height: 1.75rem;
+}
+
+.view-more-blue a {
+  background-color: transparent;
+  border: 1px solid #00BFDF;
+  padding: 14px 10px;
+}
+
+.view-more-blue a:hover {
+  background-color: #00BFDF;
+  color: #fff;
+}
+
+/* Block Views - Tips Last */
+
+.block-views-view-tips-block-tips-last > h2 {
+  font-weight: 300;
+}
+
+.view-display-id-page_tips_home .views-row-odd {
+  clear: both;
+}
+
+/* Node - Tip */
+
+.node-career-services {
+  width: 748px;
+  padding-left: 14px !important;
+  padding-right: 14px !important;
+  margin: 0 auto !important;
+}
+
+.node-page-tip .minh-350 {
+  min-height: 0 !important;
+}
+
+.container-sm {
+  height: auto;
+  width: 748px;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin: 0 auto;
+}
+
+body.node-type-page-informative-one h4.text-gray p, 
+body.node-type-page-informative-two h4.text-gray p, 
+body.node-type-page-tip h4.text-gray p {
+  font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
+  font-weight: 100;
+  font-style: normal;
+  line-height: 1.75rem;
+}
+
+/* Node - Informative Two */
+
+body.node-type-page-informative-two .entities a {
+  position: relative;
+}
+
+.bean-block-informative-two li.grid-list-item {
+  overflow: hidden;
+}
+
+.bean-block-informative-two li.grid-list-item > a {
+  position: relative;
+}
+
+.bean-block-informative-two li.grid-list-item .overlay:hover,  
+body.node-type-page-informative-two .overlay:hover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(50, 50, 50, 0.4);
+}
+
+/* Block Questions - Relation */
+
+.pane-view-questions {
+  width: 748px;
+  padding-left: 14px !important;
+  padding-right: 14px !important;
+  margin: 0 auto !important;
+}
+
+.pane-view-questions h2.pane-title {
+  margin-bottom: 0;
+  margin-top: 20px;
+  padding-bottom: 2rem !important;
+  padding-top: 4.5rem !important;
+}
+
+.pane-view-questions > h3 {
+  color: inherit;
+  font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
+  font-weight: 300;
+  font-size: 1.71429rem;
+  font-style: normal;
+  line-height: 1.1;
+  padding-top: 0.5rem !important;
+}
+
+.pane-view-questions .views-row {
+  list-style: none;
+  margin-left: 0;
+}
+
+.pane-view-questions .views-row > h4 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.pane-view-questions .views-row > h4, 
+.pane-view-questions .views-row > h4 p {
+  font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
+  font-weight: 100;
+  font-size: 1.28571rem;
+  font-style: normal;
+  line-height: 1.75rem;
+}
+
+/* Block Tips - Relation */
+
+.view-display-id-block_tips_relation .views-row-odd {
+  clear: both;
+}
+
+body.node-type-page-informative-one .pane-view-tips h1 {
+  color: #191919;
+  margin-bottom: 0rem !important;
+  padding-bottom: 2.5rem !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-top: 4.5rem !important;
+  font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
+  font-weight: 300;
+  font-size: 2.57143rem;
+  font-style: normal;
+}
+
+.view-display-id-block_tips_relation .thin p {
+  font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
+  font-weight: 100;
+  font-style: normal;
+  line-height: 1.75rem;
+}
+
+/* Menu - Bottom */
+
+.menu-bottom {
+  padding-bottom: 7.0% !important;
+}
+
+.menu-bottom li {
+  cursor: pointer;
+}
+
+.menu-bottom li:hover a .border-grey {
+  border: none;
+}
+
+.menu-bottom li a:hover h5, 
+.menu-bottom li a:hover h6 {
+  color: #fff;
+}
+
+/* Helpers */
+
+.clearfix:after {
+  content: " "; /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
