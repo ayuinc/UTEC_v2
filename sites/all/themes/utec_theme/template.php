@@ -74,6 +74,26 @@ function utec_theme_site_map_menu_link(array $variables) {
   return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
 }
 
+/**
+ * Implements theme_menu_tree().
+ */
+function utec_theme_menu_tree($variables) {
+  if ($variables['theme_hook_original'] == 'menu_tree__menu_m_menu_bottom') {
+    $menu = '<div class="menu-bottom">';
+    $menu .= '<div class="container-sm">'; 
+    $menu .= '<ul class="pt-42 pl-49-xs pr-49-xs text-center text-gray-dark grid-list grid-list-4  grid-list-1-xs grid-list-hover">' . $variables ['tree'] . '</ul>';
+    $menu .= '</div';
+    $menu .= '</div';
+    return $menu;
+  }
+  else {
+    return '<ul class="menu">' . $variables ['tree'] . '</ul>';
+  }
+}
+
+/**
+ * Implements theme_menu_link().
+ */
 function utec_theme_menu_link(array $variables) {
   $element = $variables['element'];
   $sub_menu = '';
@@ -112,9 +132,27 @@ function utec_theme_menu_link(array $variables) {
   	if ($class == 'first' OR $class == 'leaf' OR $class == 'last') {
   		$element['#attributes']['class'][$key] = '';	
 		}	
-  } 
+  }
   
-	  return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
+  if ($menuName == 'menu-m-menu-bottom') {
+    $link = '<li class="grid-list-2-xs">';
+    $link .= l(
+      '<div class="p-14 border-grey p-35-xs minh-140 minh-210-xs flex-middle-center">' . 
+      '<h5 class="thin">' . $element['#title'] . '</h5>' . 
+      '<h6 class="text-primary m-0 light">Leer más<p class="pl-7 m-0 icon-arrows-right h6 inline-block"></p></h6>' . 
+      '</div>',
+      $element['#href'], 
+      array(
+        'html' => TRUE
+      )
+    );
+    $link .= "</li>\n";
+
+    return $link;
+  }
+  else {
+    return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
+  }
 }
 
 function utec_theme_preprocess_node(&$variables){
@@ -173,4 +211,13 @@ function utec_theme_preprocess(&$variables, $hook) {
 
 }
 
+/**
+ * Implements hook_preprocess_panels_pane().
+ */
+function utec_theme_preprocess_panels_pane(&$variables) {
+  // dpm('type: ' . $variables['pane']->type);
+  if ($variables['pane']->type == 'block') {
+    dpm('subtype: ' . $variables['pane']->subtype);
+  }
+}
 ?>
