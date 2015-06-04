@@ -39,7 +39,6 @@ Career Services
 	border: 1px solid $gray-light;
 }
 
-
 .grid-list-hover > li:hover{
 	.border-grey{
 		border: none;
@@ -104,14 +103,10 @@ Career Services
   text-align: left;
 }
 
-#te-preparamos .anchor-img-grid .anchor-img-grid-1 .anchor-block-1{
-	@media only screen and (max-width: 1200px) {
-  		width: 484px;
-  		height: 484px;
-  	}
+#te-preparamos .anchor-block-1{
+	width: 484px;
+	height: 484px;
 }
-
-
 
 #te-preparamos .anchor-block-2{
 	@media only screen and (max-width: 480px) {
@@ -139,4 +134,3 @@ Career Services
 		padding-right: 10px;
 	}
 }
-
