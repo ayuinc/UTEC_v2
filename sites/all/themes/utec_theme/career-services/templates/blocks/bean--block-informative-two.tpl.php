@@ -19,7 +19,7 @@
             <ul class="grid-list grid-list-3 p-ch-7">
             <?php foreach($content['field_btg_infotwo_linkimage_1']['#items'] as $item): ?>
               <li class="grid-list-item">
-              <?php if (!$item['url']): ?>
+              <?php if ($item['url']): ?>
                 <?php
                   print l(
                     '<div class="item-pic flex-column-center flex-aling-center">' . 
@@ -84,8 +84,8 @@
             </span>
             <ul class="grid-list grid-list-3 p-ch-7">
             <?php foreach($content['field_btg_infotwo_linkimage_2']['#items'] as $item): ?>
-              <?php if (!$item['url']): ?>
               <li class="grid-list-item">
+              <?php if ($item['url']): ?>
                 <?php
                   print l(
                     '<div class="item-pic flex-column-center flex-aling-center">' . 
@@ -104,7 +104,6 @@
                     )
                   );
                 ?>
-              </li>
               <?php else: ?>
                 <div class="item-pic flex-column-center flex-aling-center">
                 <?php
@@ -116,6 +115,7 @@
                 ?>
                 </div>
               <?php endif; ?>
+              </li>
             <?php endforeach; ?>
             </ul>
             <?php foreach($content['field_btg_infotwo_link_2']['#items'] as $item): ?>
