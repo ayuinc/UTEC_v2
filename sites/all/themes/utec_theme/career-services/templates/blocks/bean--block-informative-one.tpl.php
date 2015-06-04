@@ -23,7 +23,7 @@
             </div>
             <?php
               print l(
-                '<div class="overlay"><h2 class="light">' . $item['title'] . '</h2></div>', 
+                '<div class="overlay overlay-anchor"><h2 class="light">' . $item['title'] . '</h2></div>', 
                 $item['url'], 
                 array(
                   'html' => TRUE
