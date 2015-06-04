@@ -105,8 +105,8 @@ Career Services
 
 #te-preparamos .anchor-img-grid .anchor-img-grid-1 .anchor-block-1{
 	@media only screen and (max-width: 1200px) {
-	  	width: 484px;
-	  	height: 484px;
+	  	width: 484px !important;
+	  	height: 484px !important;
 	}
 }
 
@@ -116,8 +116,8 @@ Career Services
 }
 
 #te-preparamos .anchor-block-1 .overlay{
-	width: 484px;
-	height: 484px;
+	width: 484px !important;
+	height: 484px !important;
 }
 
 #te-preparamos .anchor-block-2{
