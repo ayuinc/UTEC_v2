@@ -1,4 +1,4 @@
-<div class="container-md">
+<div id="te-preparamos" class="container-md">
   <div class="<?php print $classes; ?> pt-28 pb-42 clearfix"<?php print $attributes; ?>>
     <h2 class="lead medium mb-7">
       <span class="text-gray-darker"><?php print $title; ?></span>
