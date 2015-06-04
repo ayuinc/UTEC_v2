@@ -103,6 +103,13 @@ Career Services
   text-align: left;
 }
 
+#te-preparamos .anchor-img-grid .anchor-img-grid-1 .anchor-block-1{
+	@media only screen and (max-width: 1200px) {
+	  	width: 484px;
+	  	height: 484px;
+	}
+}
+
 .overlay .overlay-anchor{
 	width: 456px;
 	height: 456px;
