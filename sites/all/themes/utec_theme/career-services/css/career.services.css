@@ -56,6 +56,14 @@ body.node-type-page-subhome .body {
   padding: 0 !important;
 }
 
+.block-menu-fixed ul a {
+  color: #323232 !important;
+}
+
+.block-menu-fixed ul a:hover {
+  color: #00BFDF !important;
+}
+
 /* Block Bean - Informative One */
 
 @media only screen and (min-width: 1200px) {
@@ -115,6 +123,10 @@ body.node-type-page-subhome .body {
   clear: both;
 }
 
+.view-display-id-block_tips_home .views-row-odd {
+  clear: both;
+}
+
 /* Node - Tip */
 
 .node-career-services {
@@ -135,7 +147,16 @@ body.node-type-page-subhome .body {
   padding-right: 14px;
   margin: 0 auto;
 }
-
+/*
+#block-views-1e19f2119931097dcc8f79026202e646 {
+  width: 968px;
+  padding-bottom: 3rem;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 3rem;
+  margin: 0 auto;
+}
+*/
 body.node-type-page-informative-one h4.text-gray p, 
 body.node-type-page-informative-two h4.text-gray p, 
 body.node-type-page-tip h4.text-gray p {
@@ -265,4 +286,10 @@ body.node-type-page-informative-one .pane-view-tips h1 {
   display: block;
   height: 0;
   clear: both;
+}
+
+/* Admin Menu */
+
+#admin-menu {
+  z-index: 9999;
 }

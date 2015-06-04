@@ -24,7 +24,11 @@
   </div>
 
   <?php print render($content['links']); ?>
-
   <?php print render($content['comments']); ?>
 
 </div>
+
+<?php drupal_add_js(drupal_get_path('theme', 'utec_theme') .'/js/app/vendor/TweenMax.min.js'); ?>
+<?php drupal_add_js(drupal_get_path('theme', 'utec_theme') .'/js/app/vendor/ScrollToPlugin.min.js'); ?>
+<?php drupal_add_js(drupal_get_path('theme', 'utec_theme') .'/js/app/vendor/jquery.scrollmagic.min.js'); ?>
+<?php drupal_add_js(drupal_get_path('theme', 'utec_theme') .'/js/app/lib/scroll-control.js'); ?>

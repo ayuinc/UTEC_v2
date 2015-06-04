@@ -1,4 +1,4 @@
-<?php if ($view->current_display == 'block_tips_last'): ?>
+<?php if (in_array($view->current_display, array('block_tips_last', 'block_tips_last_english'))): ?>
 <div class="view-more-blue text-center pt-21">
   <?php
     print l(
@@ -10,7 +10,7 @@
     );
   ?>
 </div>
-<?php elseif ($view->current_display == 'block_tips_relation'): ?>
+<?php elseif (in_array($view->current_display, array('block_tips_relation', 'block_tips_relation_english'))): ?>
 <div class="row text-center">
   <div class="view-more-blue btn btn-bg-outline-primary thin lead btn-gray mb-35">
     <?php
@@ -27,7 +27,7 @@
 <?php else: ?>
 <div class="more-link">
   <a href="<?php print $more_url ?>">
-    <?php print $link_text; ?>marco
+    <?php print $link_text; ?>
   </a>
 </div>
 <?php endif; ?>
