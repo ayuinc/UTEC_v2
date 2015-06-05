@@ -5,6 +5,9 @@ engine = phptemplate
 
 stylesheets[all][] = stylesheets/main.pkgd.min.css
 stylesheets[all][] = stylesheets/utec_course_netsuite.css
+stylesheets[all][] = career-services/css/career.services.css
+
+scripts[] = career-services/js/career.services.js
 
 plugins[panels][layouts] = plugins/layouts
 
