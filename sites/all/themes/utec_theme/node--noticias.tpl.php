@@ -4,7 +4,7 @@
 	$titulo = $node->title;	 		
 	$cuerpo = $node->body['und']['0']['value'];
 	$images = $node->field_image['und'];
-
+	kpr($node);
 ?>
 
 <div class="container-sm">
