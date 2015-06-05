@@ -6,6 +6,7 @@
 	$links = $node->field_link['und'];
 	$field_link_a_formulario_es = $node->field_link_a_formulario_es['und']['0']['value'];  
 	$field_link_formulario_en = $node->field_link_formulario_en['und']['0']['value'];  
+	$id = $node->field_id_del_link['und']['0']['value']; 
 ?> 
 
 <div class="container-sm">
@@ -13,9 +14,9 @@
 	<div class="separator-gray separator-lg"></div>
 	<ul class="grid-list grid-list-3 grid-list-1-xs grid-list-hover size sm">
 	<?php foreach ($modalidades as $key => $modalidad) : ?>	
-		<li data-href="<?php if ($language->language!="es") {print '/'.$language->language;} print '/'.$links[$key]['value']; ?>" class="atm-blog text-gray-dark text-hover-white">
+		<li data-href="<?php if ($language->language!="es") {print '/'.$language->language;} print '/'.$links[$key]['value']; ?>" class="text-gray-dark text-hover-white">
 			<div>
-				<a href="<?php if ($language->language!="es") {print '/'.$language->language;} print '/'.$links[$key]['value']; ?>">
+				<a href="<?php if ($language->language!="es") {print '/'.$language->language;} print '/'.$links[$key]['value']; ?>" class="atm-blog" id="<?php print $id; ?>">
 					<h2 class="thin h4 lead lh-lg"><?php print $modalidad['value']; ?></h2>
 				</a>
 				<div class="size lg">
