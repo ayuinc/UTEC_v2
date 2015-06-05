@@ -8,7 +8,7 @@
 	$path = $fields['path']->content;
 	$user_id = $fields['uid']->content;
 	$created = $fields['created']->content;
-
+	kpr($fields);
 ?>
 <li class="banner banner-label-bottom mb-14 ml-0 ban-titulo" data-href="<?php print $path ?>">
 	<div class="banner-pic" style="background-image: url(<?php print $image?>);">
