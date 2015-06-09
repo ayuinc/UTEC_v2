@@ -7,9 +7,8 @@
 	// kpr($node);
 	$term = i18n_taxonomy_localize_terms($category);
 	kpr($term);
-	$name = $term->name;
-	$translated_term = i18n_taxonomy_term_get_translation($category, $language->language);
-	kpr($translated_term);
+	$term_name = $term->name;
+
 ?>
 
 <div class="container-sm">
@@ -33,7 +32,7 @@
 			  <div class="item <?php if($count == 0){print 'active';} ?>">
 			  	<div class="banner banner-label-bottom mb-7 ml-0">
 						<div class="banner-pic" style="background-image: url(<?php print $image_url ?>);">
-							<div class="banner-label bg-gray-darker text-white"><span><?php print $category ?></span></div>
+							<div class="banner-label bg-gray-darker text-white"><span><?php print $term_name ?></span></div>
 						</div>
 					</div>
 			  </div>
