@@ -8,7 +8,8 @@
 	$term = i18n_taxonomy_localize_terms($category);
 	kpr($term);
 	$name = $term->name;
-	kpr($name);
+	$translated_term = i18n_taxonomy_term_get_translation($category, $language->language);
+	kpr($translated_term);
 ?>
 
 <div class="container-sm">
