@@ -106,7 +106,14 @@ function utec_theme_menu_link(array $variables) {
     $titles = explode(" ", $element['#title']);
     $element['#localized_options']['html'] = TRUE;
     kpr($element);
-  	if ($element['#localized_options']['attributes']['class'] == array()) {
+    $classes = $element['#localized_options']['attributes']['class'];
+    $btn = "";
+    foreach ($classes as $class) {
+    	if ($class = 'btn') {
+	    	$btn = $class;
+    	}
+    }
+  	if ($btn == "") {
 	    $ele_title = '<span style="color:white">'.$titles[0].' '.'</span>'.$titles[1].' '.$titles[2].' '.$titles[3].' '.$titles[4];
   	}	
 		else{
