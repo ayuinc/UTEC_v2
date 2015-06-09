@@ -105,7 +105,7 @@ function utec_theme_menu_link(array $variables) {
     $titles = array();  
     $titles = explode(" ", $element['#title']);
     $element['#localized_options']['html'] = TRUE;
-    kpr($element);
+    // kpr($element);
     $classes = $element['#localized_options']['attributes']['class'];
     $btn = "";
     foreach ($classes as $class) {
