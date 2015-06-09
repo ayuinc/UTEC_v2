@@ -109,11 +109,11 @@ Career Services
 	height: 456px;
 }
 
-#te-preparamos .anchor-block-2{
-	@media only screen and (max-width: 480px) {
-  	width: 100%;
-  	height: 187px;
-  }
+#te-preparamos{
+	.anchor-block-2{
+		width: 100%;
+		height: 187px;
+	}
 }
 
 #te-conectamos .item-pic,
