@@ -113,7 +113,7 @@ function utec_theme_menu_link(array $variables) {
 	    	$btn = $class;
     	}
     }
-  	if ($btn == "") {
+  	if ($btn != "") {
 	    $ele_title = '<span style="color:white">'.$titles[0].' '.'</span>'.$titles[1].' '.$titles[2].' '.$titles[3].' '.$titles[4];
   	}	
 		else{
