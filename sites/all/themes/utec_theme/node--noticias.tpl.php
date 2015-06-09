@@ -1,6 +1,6 @@
 <?php
 
-  $category = $node->field_cate['und']['0']['taxonomy_term']->tid;
+  $category = $node->field_cate['und']['0']['taxonomy_term'];
 	$titulo = $node->title;	 		
 	$cuerpo = $node->body['und']['0']['value'];
 	$images = $node->field_image['und'];
