@@ -4,11 +4,8 @@
 	$titulo = $node->title;	 		
 	$cuerpo = $node->body['und']['0']['value'];
 	$images = $node->field_image['und'];
-	// kpr($node);
 	$term = i18n_taxonomy_localize_terms($category);
-	kpr($term);
 	$term_name = $term->name;
-
 ?>
 
 <div class="container-sm">
