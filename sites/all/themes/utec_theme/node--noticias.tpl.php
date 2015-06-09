@@ -5,6 +5,9 @@
 	$cuerpo = $node->body['und']['0']['value'];
 	$images = $node->field_image['und'];
 	kpr($node);
+	$term = i18n_taxonomy_localize_terms($category);
+	$name = $term->name;
+	kpr($name);
 ?>
 
 <div class="container-sm">
