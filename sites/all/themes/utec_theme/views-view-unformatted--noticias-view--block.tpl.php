@@ -9,7 +9,7 @@
 <div class="pv-28" id="noticias">
 	<div class="container">
 			<h2 class="lead h3 medium mb-0"><span class="text-gray-darker"><?php print $view->get_title(); ?></span></h2>
-			<h4 class="lead mb-56 mt-0"><?php print $view->display['block']->display_options['header']['area']['content']; ?></h4>
+			<h4 class="lead mb-56 mt-0"><?php print t($view->display['block']->display_options['header']['area']['content']); ?></h4>
 			<?php //global $count; ?>
 	    <?php foreach ($rows as $id => $row): ?>
 			    <?php print $row; ?>
