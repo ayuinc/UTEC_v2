@@ -8245,6 +8245,8 @@ Career Services
     .item-pic {
       width: 80px;
       height: 80px; } }
+  .item-pic:hover {
+    opacity: 0.8; }
 
 .bg-center {
   background-position: center center;
