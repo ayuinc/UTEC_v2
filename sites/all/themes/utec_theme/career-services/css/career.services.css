@@ -278,6 +278,39 @@ body.node-type-page-informative-one .pane-view-tips h1 {
   color: #fff;
 }
 
+/* Form Career Services */
+
+.btn-bg-outline-primary {
+  border: 1px solid #00BFDF;
+  color: #00BFDF;
+  background-color: transparent;
+}
+
+.btn-bg-outline-primary:hover {
+  background: #00BFDF;
+  color: #fff;
+}
+
+/* Modal */
+
+#myModal {
+  z-index: 20000;
+  background-color: rgba(128, 128, 128, 0.6);
+}
+
+.modal {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+
 /* Helpers */
 
 .clearfix:after {
