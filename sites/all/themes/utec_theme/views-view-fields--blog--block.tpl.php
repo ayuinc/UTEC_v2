@@ -12,7 +12,7 @@
 	$user_name = $blogger->name;
 	$user_image = $blogger->picture->filename;
 	$user_charge = $blogger->field_descripci_n['und']['0']['value'];
-	kpr($header);
+	kpr($view);
 ?>
 <div class="pv-21">
 	<div class="container">			
