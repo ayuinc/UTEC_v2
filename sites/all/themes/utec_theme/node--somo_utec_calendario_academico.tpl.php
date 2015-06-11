@@ -9,7 +9,7 @@
 ?>
 
 <div class="container-sm">
-	<h1 class="light"><?php print t('Academic Calendar') ?></h1>
+	<h1 class="light"><?php print $title; ?></h1>
 	<div class="separator-gray separator-lg"></div>
 	<?php if ($field_titulo_del_evento!='') { ?>
 	<div class="pv-42 lead-ch">
