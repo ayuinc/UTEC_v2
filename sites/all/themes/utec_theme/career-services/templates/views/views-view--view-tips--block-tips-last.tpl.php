@@ -44,9 +44,20 @@
     </div>
   <?php endif; ?>
 
-  <?php if ($more): ?>
-    <?php print $more; ?>
-  <?php endif; ?>
+  <div class="view-more-blue text-center pt-21">
+    <?php
+      print l(
+        'VER MÁS TIPS <i class="pl-7 m-0 icon-arrows-right h6 inline-block"></i>', 
+        'bolsa-de-trabajo/tips', 
+        array(
+          'html' => TRUE
+        )
+      );
+    ?>
+  </div>
+  <?php //if ($more): ?>
+    <?php //print $more; ?>
+  <?php //endif; ?>
 
   <?php if ($footer): ?>
     <div class="view-footer">

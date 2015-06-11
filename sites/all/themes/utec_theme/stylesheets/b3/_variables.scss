@@ -12,7 +12,7 @@ $bootstrap-sass-asset-helper: (twbs-font-path("") != unquote('twbs-font-path("")
 //
 //## Gray and brand colors for use across Bootstrap.
 
-$gray-base:              #333 !default;
+$gray-base:              #000 !default;
 $gray-darker:            #191919 !default; // #222
 $gray-dark:              #323232 !default;   // #333
 $gray:                   #8f8d8e !default; // #555
@@ -113,7 +113,8 @@ $breakpoints-sufix-list:
 	'xs', 
 	'sm', 
 	'md', 
-	'lg';
+	'lg',
+	'landscape'; 
 
 // EMB:REF
 $text-elements-list: 
@@ -159,7 +160,7 @@ $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
 
-$font-size-base:          16px !default;
+$font-size-base:          14px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 
@@ -171,7 +172,7 @@ $font-size-h5:            $font-size-base !default;
 $font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
 
 //** Unit-less `line-height` for use in components like buttons.
-$line-height-base:        1.458571429 !default; // 20/14
+$line-height-base:        1.428571429 !default; // 20/14
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
 $line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
 
@@ -454,7 +455,7 @@ $container-md:                 $container-desktop !default;
 // Large screen / wide desktop
 $container-large-desktop:      (1140px + $grid-gutter-width) !default;
 //** For `$screen-lg-min` and up.
-$container-lg:                 $container-large-desktop !default;
+$container-lg:                 $container-large-desktop !default; 
 
 
 //== Navbar
