@@ -26,7 +26,7 @@
           <div class="col-sm-8">
             <?php print $content['left-side']; ?>
           </div>
-          <div class="col-sm-4 mb-ch-42">
+          <div class="col-sm-4 mb-ch-42 mtp-7">
             <?php print $content['right-side']; ?>
           </div>
         </div>
