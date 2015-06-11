@@ -56,7 +56,7 @@
       <?php if ($item['url']): ?>
         <?php
           print l(
-            '<div class="pic-teconectamos border-grey">' . 
+            '<div class="pic-teconectamos">' . 
             theme('image_style', array(
               'style_name' => '160x160', 
               'path' => $item['uri'], 
@@ -73,7 +73,7 @@
           );
         ?>
       <?php else: ?>
-        <div class="pic-teconectamos border-grey">
+        <div class="pic-teconectamos">
         <?php 
           print theme('image_style', array(
             'style_name' => '160x160', 
