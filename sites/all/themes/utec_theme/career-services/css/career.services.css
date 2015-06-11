@@ -326,3 +326,113 @@ body.node-type-page-informative-one .pane-view-tips h1 {
 #admin-menu {
   z-index: 9999;
 }
+
+/* Modal */
+
+.modal-backdrop {
+  display: none !important;
+}
+
+#myModal {
+  background-color: rgba(128, 128, 128, 0.6);
+  padding-left: 17px;
+  z-index: 20000;
+}
+
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+
+.modal.fade .modal-dialog {
+  -webkit-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -moz-transition: -moz-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-dialog {
+    width: 600px;
+    margin: 30px auto;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .modal-lg {
+    width: 900px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  background-clip: padding-box;
+  outline: 0;
+}
+
+.text-gray-darker {
+  color: #191919;
+}
+
+.pv-14 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.btn-selected {
+  background-color: #e3e3e3;
+  border: 1px solid #e3e3e3;
+}
+
+.btn-notselected {
+  background-color: white;
+  border: 1px solid #e3e3e3;
+}
+
+.mt-21 {
+  margin-top: 21px !important;
+  margin-top: 1.5rem !important;
+}
+
+.input-center {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#myModal .close {
+  cursor: pointer;
+}
+
+.btn-modal {
+  cursor: pointer;
+}

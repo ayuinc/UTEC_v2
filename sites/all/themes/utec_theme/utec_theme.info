@@ -5,8 +5,11 @@ engine = phptemplate
 
 stylesheets[all][] = stylesheets/main.pkgd.min.css
 stylesheets[all][] = stylesheets/utec_course_netsuite.css
+stylesheets[all][] = stylesheets/b3/_modals.css
 stylesheets[all][] = career-services/css/career.services.css
 
+scripts[] = js/b3/modal.js
+scripts[] = js/app/lib/login-option.js
 scripts[] = career-services/js/career.services.js
 
 plugins[panels][layouts] = plugins/layouts
