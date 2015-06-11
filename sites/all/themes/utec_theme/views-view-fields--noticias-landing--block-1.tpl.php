@@ -1,5 +1,4 @@
 <?php 
-
 	$title = $fields['title']->content;
 	$body = $fields['body']->content;
 	$image = $fields['field_image']->content;
