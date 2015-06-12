@@ -9,7 +9,7 @@
     <?php print $row;?>
 	<?php endforeach; ?>
 </ul>
-<div>
+<div class="mtp-7">
 <?php if ($language->language != 'en'): ?>
 	<a href="/blog/todos-los-posts" class="btn btn-custom btn-primary see-more uppercase">Ver todos</a>
 <?php elseif ($language->language == 'en'): ?>
