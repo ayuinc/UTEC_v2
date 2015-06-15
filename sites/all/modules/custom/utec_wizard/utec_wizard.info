@@ -1,0 +1,8 @@
+name = UTEC - Wizard
+description = Wizard identifies the url parameter to render the corresponding block wizard
+package = UTEC
+version = 0.1
+core = 7.x
+
+dependencies[] = block
+dependencies[] = bean

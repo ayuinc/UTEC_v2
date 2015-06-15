@@ -1,0 +1,72 @@
+<?php
+
+/**
+ * Implementation of hook_help
+ */
+function utec_wizard_help($path, $arg) {
+  $output = '';
+   
+  switch ($path) {
+    case 'admin/help#utec_wizard':
+      $output .= '<p>Identifica el parametro wizard de la url para renderizar el bloque wizard que corresponda.</p>';
+  }
+      
+  return $output;
+}
+
+/**
+ * Implementation of hook_init().
+ */
+function utec_wizard_init() {
+
+  if (isset($_GET['wizard'])) {
+    $wizard = $_GET['wizard'];
+    if ($wizard) {
+
+      // Verificar si existe un bloque Bean con el valor de parámetro Wizard enviado
+      $output = db_query("
+        SELECT p.entity_type, p.bundle, b.delta 
+        FROM bean b 
+        INNER JOIN field_data_field_bt_popup_parametter p 
+        ON b.bid = p.entity_id 
+        WHERE p.entity_type = :type 
+        AND p.bundle = :bundle 
+        AND p.field_bt_popup_parametter_value = :parametter",
+        array(':type' => 'bean', 
+              ':bundle' => 'block_popup', 
+              ':parametter' => $wizard
+        )
+      )->fetchAssoc();
+
+      if ($output) {
+
+        // Cargar archivo js
+        drupal_add_js(drupal_get_path('theme', 'utec_theme') . '/wizard/js/wizard.js',
+                      array('type' => 'file', 'scope' => 'header', 'weight' => 1));
+
+        // Cargar archivo css
+        drupal_add_css(drupal_get_path('theme', 'utec_theme') . '/wizard/css/wizard.css',
+                      array('type' => 'file', 'scope' => 'header', 'weight' => 1));
+
+        // Renderizar bloque Bean
+        $blockObject = block_load($output['entity_type'], $output['delta']);
+        $block = _block_get_renderable_array(_block_render_blocks(array($blockObject)));
+        print drupal_render($block);
+
+      }
+
+    }
+  }
+
+}
+
+/**
+ * Implementation of hook_permission().
+ */
+function utec_wizard_permission() {
+  return array(
+    'UTEC Wizard' => array(
+      'title' => t('UTEC Wizard - Popup'),
+    ),
+  );
+}

@@ -28,14 +28,14 @@
         <h2 class="lead medium mb-0 pb-28"><span class="text-gray-darker">Acceso rápido a </span><span class="text-gray">Career Services</span></h2>
         <div class="row">
           <div class="col-sm-6 pv-7-xs">
-            <a class="btn-alumnos text-gray-dark  text-center" data-toggle="modal" data-target="#myModal" href="#">
+            <a class="btn-alumnos btn-modal text-gray-dark  text-center" data-toggle="modal" data-target="#myModal" href="#">
               <div class="btn-bg-outline-primary">
                 <h3 class="pv-14 m-0 light">Alumnos<p class="pl-7 m-0 icon-arrows-right h6 inline-block"></p></h3>
               </div>
             </a>
           </div>
           <div class="col-sm-6 pv-7-xs">
-            <a class="btn-empresas text-gray-dark text-center" data-toggle="modal" data-target="#myModal" href="#">
+            <a class="btn-empresas btn-modal text-gray-dark text-center" data-toggle="modal" data-target="#myModal" href="#">
               <div class="btn-bg-outline-primary">
                 <h3 class="pv-14 m-0 light">Empresas<p class="pl-7 m-0 icon-arrows-right h6 inline-block"></p></h3>
               </div>
