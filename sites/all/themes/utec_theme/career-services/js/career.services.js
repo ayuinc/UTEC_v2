@@ -19,21 +19,21 @@
 
       });
 
-      $('.btn-modal h4').click(function() {
+      $('.btn-modal h4, .btn-modal h3').click(function() {
         $('.btn-modal h4').addClass('btn-notselected');
         $('.btn-modal h4').removeClass('btn-selected');
       });
 
-      $('.btn-alumnos h4').click(function() {
-        $(this).removeClass('btn-notselected');
-        $(this).addClass('btn-selected');
+      $('.btn-alumnos h4, .btn-alumnos h3').click(function() {
+        $('.btn-alumnos h4').removeClass('btn-notselected');
+        $('.btn-alumnos h4').addClass('btn-selected');
         $(".form-modal").addClass('hidden');
         $(".form-alumnos").removeClass('hidden');
       });
 
-      $('.btn-empresas h4').click(function() {
-        $(this).removeClass('btn-notselected');
-        $(this).addClass('btn-selected');
+      $('.btn-empresas h4, .btn-empresas h3').click(function() {
+        $('.btn-empresas h4').removeClass('btn-notselected');
+        $('.btn-empresas h4').addClass('btn-selected');
         $(".form-modal").addClass('hidden');
         $(".form-empresas").removeClass('hidden');
       });

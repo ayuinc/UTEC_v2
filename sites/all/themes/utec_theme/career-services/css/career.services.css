@@ -437,3 +437,10 @@ body.node-type-page-informative-one .pane-view-tips h1 {
 .btn-modal {
   cursor: pointer;
 }
+
+/* Others */
+
+.atss, 
+#section-scroll.block-menu-fixed {
+  z-index: 9997;
+}
