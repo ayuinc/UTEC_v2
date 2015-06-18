@@ -5,7 +5,7 @@
 	$field_foto_campus = $node->field_image['und']['0']['uri'];
 	$field_contenido_campus = $node->field_contenido_campus['und']['0']['value'];
 	$field_introduccion_labs = $node->field_introduccion_labs['und']['0']['value'];
-	$field_foto_labs = $node->field_image['und']['0']['uri'];
+	$field_foto_labs = $node->field_image_2['und']['0']['uri'];
 	$field_contenido_labs = $node->field_contenido_labs['und']['0']['value']; 
 
 ?>
