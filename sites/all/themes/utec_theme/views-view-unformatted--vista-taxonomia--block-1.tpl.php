@@ -1,8 +1,7 @@
 <div class="container-sm">
 	<?php 
 		$term = taxonomy_term_load($view->args[0]);
-		$translated_term = i18n_taxonomy_localize_terms($term);
-		print $translated_term->name; 
+		$translated_term = i18n_taxonomy_localize_terms($term); 
 	?>
 	<h1 class="light"><?php print $translated_term->name; ?></h1>
 	<div class="separator-gray separator-sm"></div>
