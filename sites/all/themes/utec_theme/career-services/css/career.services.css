@@ -67,7 +67,7 @@ body.node-type-page-subhome .body {
 /* Block Bean - Informative One */
 
 @media only screen and (min-width: 1200px) {
-  .anchor-img-grid.anchor-img-grid-1 .anchor-block-2, 
+  .bean-block-informative-one .anchor-img-grid.anchor-img-grid-1 .anchor-block-2, 
   #te-preparamos .anchor-img-grid.anchor-img-grid-1 .anchor-block-2 {
     width: 484px;
     height: 242px;
