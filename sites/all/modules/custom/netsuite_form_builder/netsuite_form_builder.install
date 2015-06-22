@@ -55,8 +55,7 @@ function netsuite_form_builder_schema() {
       ),
       'path_netsuite' => array(
         'description' => t('Allow enter the path iframe.'),
-        'type' => 'varchar',
-        'length' => 255,
+        'type' => 'text',
         'not null' => TRUE,
       ),
       'uid' => array(
@@ -82,11 +81,15 @@ function netsuite_form_builder_schema() {
         'type' => 'text',
         'not null' => TRUE,
       ),
+      'parameters_datalayer' => array(
+        'description' => t('Block params datalayer'),
+        'type' => 'text',
+        'not null' => TRUE,
+      ),
     ),
     'unique keys' => array(
       'delta' => array('delta'),
-      'form_id' => array('form_id'),
-  ),
+    ),
     'primary key' => array('nsid'),
   );
   

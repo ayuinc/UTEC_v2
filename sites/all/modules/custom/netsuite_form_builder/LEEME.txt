@@ -1,0 +1,75 @@
+NETSUITE FORM BUILDER
+=====================
+
+netsuite_form_builder
+---------------------
+  -Este modulo nos permite crear bloques para mostrar en cada uno un formulario de netsuite.
+  -Basta con instalar el modulo y sus dependencias claro esta. Dependencias: entity, token.
+  -Luego de instalar el modulo en el item de estructura del menú administrativo nos aparece el siguiente enlace "Block Netsuite".
+  -Al dar click en el enlace "Block Netsuite" nos lleva a una pagina donde se muestra un listado de todos los bloques netsuite que crearemos. Justo en la parte superior del listado aparece otro enlace "Add Block Netsuite" el cual nos lleva a la interfaz que describimos a continuación.
+    -Interfaz de usuario para poder crear estos bloques. En esta interfaz nos piden llenar los siguientes campos.
+      -Título -- campo requerido
+        -Es el titulo para nuestro bloque, este aparecerá en el listado de los bloques.
+      -Nombre de maquina -- campo requerido
+        -Es el nombre de sistema del bloque, debe ser único.
+      -Ruta del formulario netsuite. -- campo requerido
+        -Es la ruta del formulario netsuite.
+      -Parámetros
+        -Son los parámetros que se agregan a la ruta del formulario.
+      -Parámetros datalayer
+        -Son parámetros que se imprimen como variables en el Drupal.settings 
+      -descripción
+        -Es un texto descriptivo para el bloque.
+  -cuando ya existan bloques creados en el listado junto a cada bloque nos aparece las opciones para editar o eliminar.
+
+  -El modulo tambien muestra una pagina de gracias cuando se envia algun formulario. Esta pagina gracias es un tipo de contenido que cuenta con un tpl particular page--thank-you-page.tpl.php. Podemos crear muchas paginas de gracias por la interfaz de drupal y asi poder cambiar su contenido. Este tpl debe estar contenido en el tema del sitio y solo imprimir el content. Por ejemplo: <?php print render($page['content']); ?>
+
+  -Se realizo un tpl para el formulario netsuite "utec pregrado" el cual contiene codigo javascript para poder recuperar el valor de una carrera seleccionada en el formulario.
+  -Luego con un metodo de cross domain "nested frame" podemos recibir ese valor de la carrera y manejarlo en drupal.
+
+  -Ademas cuenta con un archivo javascript que establece la siguente variable Drupal.settings.netsuite_form_builder.carrera
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+utec_ede
+--------
+  -Este modulo nos brinda una pagina de inscripción a determinado curso en el cual se muestran 2 formularios:
+    -El primero para inscripción de persona natural
+    -El segundo para inscripción de persona jurídica
+  -Ademas de contar con 2 radio button para poder hacer un switch entre un formulario  y el otro
+  -En este caso para que funcione bien el modulo, los nombres de maquina de cada uno de los bloques debe ser:
+    -Para el formulario de persona natural = netsuite_block_1
+    -Para el formulario de persona jurídica = netsuite_block_2
+  -Por otro lado esta pagina de inscripción tiene un control de acceso, para ello la pagina recibe un parametro(id del nodo). Con este id se comprueba si el node es de tipo course_edp.
+
+----------------------------------------------------------------------------------------------------------------------------
+
+utec_lp_selectblock
+-------------------
+  -Este modulo nos selecciona de forma automática un bloque con un formulario de contacto.
+    -Formulario de contacto autenticado
+    -Formulario de contacto no-autenticado
+  -Para lograr que el modulo sepa que bloque mostrar. Lo que hace es verificar si por el método get es enviado el parámetro "firstname". De ese modo sabe que bloque mostrar.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ACTUALIZAR
+==========
+  -Al actualizar de la version 0.1 a la version 0.2
+ 
+IMPORTANTE :
+----------
+Ejecutar estas sentencias solo si se tiene instalada la versión 0.1 netsuite_form_builder.
+
+---Cambia el tipo de campo de de VARCHAR a TEXT para el campo path_netsuite de la tabla netsuite_block.
+ALTER TABLE netsuite_block MODIFY COLUMN path_netsuite text NOT NULL;
+
+------------------------------------------------------------------------
+
+---Quita el constraint UNIQUE del campo form_id.
+ALTER TABLE netsuite_block DROP INDEX form_id;
+
+------------------------------------------------------------------------
+
+---Agrega el campo parameters_datalayer en la tabla netsuite_block.
+ALTER TABLE netsuite_block ADD COLUMN parameters_datalayer text NOT NULL;

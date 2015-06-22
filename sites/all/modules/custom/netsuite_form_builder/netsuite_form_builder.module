@@ -16,6 +16,62 @@ function netsuite_form_builder_entity_info() {
 }
 
 /**
+ * Implements hook_init().
+ */
+function netsuite_form_builder_init() {
+  $node = menu_get_object();
+  if (!empty($node)) {
+    if ($node->type == 'thank_you_page') {
+      drupal_add_js(drupal_get_path('module', 'netsuite_form_builder') . '/js/utec_netsuite_datalayer.js', 'file');
+    }
+  }
+}
+
+/**
+ * Implements hook_menu().
+ */
+function netsuite_form_builder_menu() {
+
+  $items['netsuite-nested-frame-career'] = array(
+    'title' => 'Proxy',
+    'page callback' => 'netsuite_form_builder_nested_frame',
+    'access arguments' => array('access administration pages'),
+    'type' => MENU_NORMAL_ITEM,
+  );
+
+  return $items;
+}
+
+/**
+ * javascript function that adds to the nested frame.
+ */
+function netsuite_form_builder_nested_frame() {
+  $output = '<!DOCTYPE html>
+  <html>
+    <head>
+      <script>
+        window.onload = function (){
+          var result, pairs;
+          var querystring = window.location.href.split("?")[1] || false;
+          //Ensure querystring exists and has valid result identifier
+          if(!querystring || querystring.indexOf("result=") === -1){ return false; }
+          //Ensure all ampersands are single (not entities) so we can split using "&"
+          querystring = querystring.replace(/&/g, "&");
+          //Create an array of value pairs. This gives us flexibility
+          //to add more items to the querystring later.
+          pairs = querystring.split("&");
+          result = pairs[0].replace("result=", "");
+          top.netsuite_form_builder_set_career(result);
+        };
+      </script>
+    </head>
+    <body>
+    </body>
+  </html>';
+  print $output; exit;
+}
+
+/**
  * Implements hook_block_info().
  */  
 function netsuite_form_builder_block_info() {
@@ -40,6 +96,9 @@ function netsuite_form_builder_block_info() {
  * Implements hook_block_view().
  */
 function netsuite_form_builder_block_view($delta = '') {
+  drupal_add_js(drupal_get_path('module', 'netsuite_form_builder') . '/js/netsuite_form_builder_set_career_datalayer.js', 'file');
+  global $language;  
+
   $node = menu_get_object();
 
   if ($node == NULL) {
@@ -54,8 +113,44 @@ function netsuite_form_builder_block_view($delta = '') {
   $result = $query->execute();
   $object_content_id_netsuite_block = array_shift($result['netsuite_block']);
   $netsuite_block = entity_load('netsuite_block', array($object_content_id_netsuite_block->nsid));
+
   $into_netsuite_block = array_shift($netsuite_block);
   $block['subject'] = $into_netsuite_block->title;
+
+  if (@unserialize($into_netsuite_block->path_netsuite) !== FALSE) {
+    $paths = unserialize($into_netsuite_block->path_netsuite);
+    $path = $paths[$language->language];
+  }
+  else {
+    $path = $into_netsuite_block->path_netsuite; 
+  }
+
+  // Pasando variables php a js
+  if (@unserialize($into_netsuite_block->parameters_datalayer) !== FALSE) {
+    $parameters_datalayer = unserialize($into_netsuite_block->parameters_datalayer);
+    $form = $parameters_datalayer['form'];
+    $course = $parameters_datalayer['curso'];
+  }
+  else {
+    $form = '';
+    $course = '';
+  }
+
+  if (isset($_GET['firstname'])) {
+    $usuario_estado = 'identificado';
+  }
+  else {
+    $usuario_estado = 'no-identificado';
+  }
+
+  $datalayer_settings = array(
+    'form' => $form,
+    'curso' => token_replace($course, array('node' => $node)),
+    'usuario_estado' => $usuario_estado,
+  );
+
+  drupal_add_js(array('netsuite_form_builder' => $datalayer_settings), 'setting');
+
   $params = unserialize($into_netsuite_block->parameters);
   $params_in_path = '';
 
@@ -75,6 +170,9 @@ function netsuite_form_builder_block_view($delta = '') {
   }
   else if(strpos($referer, 'bing') !== FALSE) {
     $origin = 'Search';
+  }
+  else if(strpos($referer, 'utec.edu') !== FALSE) {
+    $origin = 'Organico';
   }
   else {
     $origin = 'Referral';
@@ -99,13 +197,13 @@ function netsuite_form_builder_block_view($delta = '') {
       $params_in_path .= '&' . $key . '=' . token_replace($param, array('node' => $node));
     }
   }
-  $utf8URLEncoding = array('á', 'é', 'í', 'ó', 'ú', 'Á', 'É', 'Í', 'Ó', 'Ú', 'ñ', 'Ñ');
-  $winURLEnconding = array('%E1', '%E9', '%ED', '%F3', '%FA', '%C1', '%C9', '%CD', '%D3', '%DA', '%F1', '%D1');
+  $utf8URLEncoding = array('á', 'é', 'í', 'ó', 'ú', 'Á', 'É', 'Í', 'Ó', 'Ú', 'ñ', 'Ñ', ' ');
+  $winURLEnconding = array('%E1', '%E9', '%ED', '%F3', '%FA', '%C1', '%C9', '%CD', '%D3', '%DA', '%F1', '%D1', '%20');
 
   $params_in_path = str_replace($utf8URLEncoding, $winURLEnconding, $params_in_path);
 
   $variables = array(
-    'path_netsuite' => $into_netsuite_block->path_netsuite,
+    'path_netsuite' => $path,
     'parameters' => $params_in_path,
   );
 

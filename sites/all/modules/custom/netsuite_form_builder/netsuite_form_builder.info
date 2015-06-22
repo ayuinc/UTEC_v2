@@ -2,7 +2,7 @@ name = Netsuite form builder
 description = Netsuite allows you to create forms.
 package = Netsuite Form Builder
 core = 7.x
-version = 0.1
+version = 0.2
 
 files[] = netsuite_form_builder.install
 files[] = netsuite_form_builder.module

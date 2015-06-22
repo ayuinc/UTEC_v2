@@ -1,0 +1,527 @@
+<?php
+
+/**
+ * Implements hook_menu();
+ */
+function netsuite_form_builder_ui_menu() {
+  $items = array();
+
+  $items['admin/structure/netsuite-block'] = array(
+    'title' => t('Block Netsuite'),
+    'description' => t('Administer blocks NetSuite.'),
+    'page callback' => 'netsuite_form_builder_ui_admin_page',
+    'access arguments' => array('administer blocks netsuite'),
+  );
+
+  $items['admin/structure/netsuite-block/add'] = array(
+    'title' => t('Add Block Netsuite'),
+    'description' => t('Allow add block NetSuite.'),
+    'page callback' => array('drupal_get_form'),
+    'page arguments' => array('netsuite_form_builder_ui_form'),
+    'access arguments' => array('administer blocks netsuite'),
+    'type' => MENU_LOCAL_ACTION,
+  );
+
+  $items['admin/structure/netsuite-block/%/edit'] = array(
+    'title' => t('Edit Block Netsuite'),
+    'description' => t('Allow edit block NetSuite.'),
+    'page callback' => array('drupal_get_form'),
+    'page arguments' => array('netsuite_form_builder_ui_form', 3),
+    'access arguments' => array('administer blocks netsuite'),
+  );
+
+  $items['admin/structure/netsuite-block/%/delete'] = array(
+    'title' => t('Delete'),
+    'page callback' => array('drupal_get_form'),
+    'page arguments' => array('netsuite_form_builder_ui_delete_confirm', 3),
+    'access arguments' => array('administer blocks netsuite'),
+  );
+  
+  return $items;
+}
+
+/**
+ * Function that displays a list of all blocks NetSuite world.
+ */
+function netsuite_form_builder_ui_admin_page() {
+  $netsuite_block = entity_load('netsuite_block');  
+  
+  uasort($netsuite_block, 'netsuite_form_builder_ui_comparation_order_entity_netsuite');
+
+  $rows = array();  
+  foreach ($netsuite_block as $key => $block) {
+    $user = user_load($block->uid);
+    $changed = date('Y-m-d H:i', $block->changed);
+    $edit = l(t('edit'), 'admin/structure/netsuite-block/' . $block->delta . '/edit');
+    $delete = l(t('delete'), 'admin/structure/netsuite-block/' . $block->delta . '/delete');
+    $rows[] = array($block->title, $changed, $user->name, $edit, $delete); 
+  }
+
+  $header = array(t('Title'), t('Updated'), t('Author'), array('data' => t('Operations'), 'colspan' => '2'));
+
+  $build['netsuite_table'] = array(
+    '#theme' => 'table',
+    '#header' => $header,
+    '#rows' => $rows,
+    '#empty' => t('There are no Block Netsuite Available'),
+  );
+
+  return $build;
+}
+
+/**
+ * Implements hook_form().
+ */
+function netsuite_form_builder_ui_form($form, &$form_state, $delta_block_netsuite = NULL) {
+  global $language;  
+
+  if (!is_null($delta_block_netsuite)) {
+    $query = new EntityFieldQuery();
+    $query->entityCondition('entity_type', 'netsuite_block');
+    $query->propertyCondition('delta', $delta_block_netsuite);
+    $result = $query->execute();
+
+    $object_nsid = array_shift($result['netsuite_block']);
+    $block_netsuite = entity_load('netsuite_block', array($object_nsid->nsid));
+    $object_block_netsuite = array_shift($block_netsuite);
+    
+    $parameters = unserialize($object_block_netsuite->parameters);
+    
+    $i = 1;
+    $all_params = array();
+    foreach ($parameters as $key => $param) {
+      $all_params['new_param_' . $i]['param'] = $key;
+      $all_params['new_param_' . $i]['value'] = $param;
+      $i++;
+    }
+
+    $parameters_datalayer = unserialize($object_block_netsuite->parameters_datalayer);
+    
+    $a = 1;
+    $all_params_datalayer = array();
+    if (!empty($parameters_datalayer)) {
+      foreach ($parameters_datalayer as $key => $param_datalayer) {
+        $all_params_datalayer['new_param_datalayer_' . $a]['param_datalayer'] = $key;
+        $all_params_datalayer['new_param_datalayer_' . $a]['value_datalayer'] = $param_datalayer;
+        $a++;
+      }
+    }
+
+    if (@unserialize($object_block_netsuite->path_netsuite) !== FALSE) {
+      $paths = unserialize($object_block_netsuite->path_netsuite);
+    }
+    else {
+      $paths[$language->language] = $object_block_netsuite->path_netsuite;
+    }
+  }
+
+  $form['title'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Title'),
+    '#default_value' => isset($object_block_netsuite) ? $object_block_netsuite->title : '',
+    '#required' => TRUE,
+  );
+  
+  $form['machine_name'] = array(
+    '#type' => 'machine_name',
+    '#default_value' => isset($object_block_netsuite) ? $object_block_netsuite->delta : '',
+    '#maxlength' => 32,
+    '#machine_name' => array(
+      'exists' => 'netsuite_form_builder_ui_exists_machine_name',
+      'source' => array('title'),
+    ),
+    '#disabled' => !isset($object_block_netsuite) ? FALSE : TRUE,
+  );
+
+  $all_languages = netsuite_form_builder_ui_list_language_ordered();
+  foreach ($all_languages as $lang) {
+    $form['path_' . $lang->language] = array(
+      '#type' => $language->language == $lang->language ? 'textfield' : 'hidden',
+      '#title' => t('Path form netsuite - ' . $lang->name . '(' . $lang->language . ')'),
+      '#default_value' => isset($object_block_netsuite) ? isset($paths[$lang->language]) ? $paths[$lang->language] : '' : '',
+      '#required' => $language->language == $lang->language ? TRUE : FALSE, 
+    );
+  }
+
+  $header = array(
+    'param' => array('data' => 'Param'),
+    'equal' => array('data' => ''),
+    'value' => array('data' => 'Value'),
+  );  
+
+  if (!isset($object_block_netsuite)) {
+    if (!isset($form_state['num_new_params'])) {
+      $form_state['num_new_params'] = 1;
+    }
+  }
+  else {
+    if (!isset($form_state['num_new_params'])) {
+      $form_state['num_new_params'] = count($all_params);
+    }
+  }
+  
+  for ($i = 1; $i <= $form_state['num_new_params']; $i++) {
+    $param = array(
+      '#type' => 'textfield',
+      '#default_value' => isset($object_block_netsuite) ? $all_params['new_param_' . $i]['param'] : '',
+    );
+    
+    $equal = array(
+      '#markup' => '=',
+    );
+
+    $value = array(
+      '#type' => 'textfield',
+      '#default_value' => isset($object_block_netsuite) ? $all_params['new_param_' . $i]['value'] : '',
+    );
+
+    $rows['new_param_' . $i] = array(
+      'data' => array(
+        'param' => array('data' => &$param),
+        'equal' => array('data' => &$equal),
+        'value' => array('data' => &$value),
+      ),
+    );
+
+    $data_to_send['new_param_' . $i] = array(
+      'param' => &$param,
+      'equal' => &$equal,
+      'value' => &$value,
+    );  
+    unset($param);
+    unset($equal);
+    unset($value);
+  }    
+
+  $form['parameters_table'] = array(
+    '#tree' => TRUE,
+    '#theme' => 'table',
+    '#header' => $header,
+    'values' => $data_to_send,
+    '#rows' => &$rows,
+    '#prefix' => '<div id="parameters-table">',
+    '#suffix' => '</div>',
+  );
+
+  $form['add_param'] = array(
+    '#type' => 'button',
+    '#value' => t('Add new param'),
+    '#href' => '',
+    '#ajax' => array(
+      'callback' => 'netsuite_form_builder_ui_ajax_add_param',
+      'wrapper' => 'parameters-table',
+    ),
+  );
+
+  $header_datalayer = array(
+    'param_datalayer' => array('data' => 'Param Datalayer'),
+    'equal_datalayer' => array('data' => ''),
+    'value_datalayer' => array('data' => 'Value Datalayer'),
+  );  
+
+  if (!isset($object_block_netsuite)) {
+    if (!isset($form_state['num_new_params_datalayer'])) {
+      $form_state['num_new_params_datalayer'] = 2;
+    }
+  }
+  else {
+    if (!isset($form_state['num_new_params_datalayer'])) {
+      $form_state['num_new_params_datalayer'] = 2;
+    }
+  }
+  
+  $params_datalayer = array('1' => 'form', '2' => 'curso');
+  for ($i = 1; $i <= $form_state['num_new_params_datalayer']; $i++) {
+    if (!isset($all_params_datalayer['new_param_datalayer_' . $i]['param_datalayer'])) {
+      $param_datalayer_edit = $params_datalayer[$i];
+      $value_datalayer_edit = '';
+    }
+    else {
+      $param_datalayer_edit = $all_params_datalayer['new_param_datalayer_' . $i]['param_datalayer'];
+      $value_datalayer_edit = $all_params_datalayer['new_param_datalayer_' . $i]['value_datalayer'];
+    }
+    $param_datalayer = array(
+      '#type' => 'textfield',
+      '#default_value' => isset($object_block_netsuite) ? $param_datalayer_edit : $params_datalayer[$i],
+      '#disabled' => TRUE,
+    );
+    
+    $equal_datalayer = array(
+      '#markup' => '=',
+    );
+
+    $value_datalayer = array(
+      '#type' => 'textfield',
+      '#default_value' => isset($object_block_netsuite) ? $value_datalayer_edit : '',
+    );
+
+    $rows_datalayer['new_param_datalayer_' . $i] = array(
+      'data' => array(
+        'param_datalayer' => array('data' => &$param_datalayer),
+        'equal_datalayer' => array('data' => &$equal_datalayer),
+        'value_datalayer' => array('data' => &$value_datalayer),
+      ),
+    );
+
+    $data_to_send_datalayer['new_param_datalayer_' . $i] = array(
+      'param_datalayer' => &$param_datalayer,
+      'equal_datalayer' => &$equal_datalayer,
+      'value_datalayer' => &$value_datalayer,
+    );  
+    unset($param_datalayer);
+    unset($equal_datalayer);
+    unset($value_datalayer);
+  }    
+
+  $form['parameters_datalayer_table'] = array(
+    '#tree' => TRUE,
+    '#theme' => 'table',
+    '#header' => $header_datalayer,
+    'values' => $data_to_send_datalayer,
+    '#rows' => &$rows_datalayer,
+    '#prefix' => '<div id="parameters-datalayer-table">',
+    '#suffix' => '</div>',
+  );
+  
+  /*$form['add_param_datalayer'] = array(
+    '#type' => 'button',
+    '#value' => t('Add new param datalayer'),
+    '#href' => '',
+    '#ajax' => array(
+      'callback' => 'netsuite_form_builder_ui_ajax_add_param_datalayer',
+      'wrapper' => 'parameters-datalayer-table',
+    ),
+  );*/
+
+  if (isset($form_state['values']['op'])) {
+    if ($form_state['values']['op'] == 'Add new param') {
+      $form_state['num_new_params']++;
+    }
+    else {
+      $form_state['num_new_params_datalayer']++;
+    }
+  }
+  else {
+    $form_state['num_new_params']++;
+    $form_state['num_new_params_datalayer']++;
+  }
+
+  $form['description'] = array(
+    '#title' => t('Description'),
+    '#type' => 'textarea',
+    '#default_value' => isset($object_block_netsuite) ? $object_block_netsuite->description_block : '',
+  );
+
+  $form['actions'] = array(
+    '#type' => 'actions'
+  );
+
+  $form['actions']['save'] = array(
+    '#type' => 'submit',
+    '#value' => t('Save'),
+    '#submit' => !isset($object_block_netsuite) ? array('netsuite_form_builder_ui_save') : array('netsuite_form_builder_ui_update'),
+  );
+
+  return $form;
+}
+
+/**
+ * Ajax function that lets you add parameters.
+ */
+function netsuite_form_builder_ui_ajax_add_param($form, &$form_state) {
+  return $form['parameters_table'];
+}
+
+/**
+ * Ajax function that lets you add parameters datalayer.
+ */
+function netsuite_form_builder_ui_ajax_add_param_datalayer($form, &$form_state) {
+  return $form['parameters_datalayer_table'];
+}
+
+/**
+ * Function to save a new block NetSuit.
+ */
+function netsuite_form_builder_ui_save($form, $form_state) {
+  global $user;
+  $parameters = array();
+  $parameters_datalayer = array();
+
+  $all_languages = netsuite_form_builder_ui_list_language_ordered();
+
+  $path_lang = array();
+  foreach ($all_languages as $lang) {
+    $path_lang[$lang->language] = $form_state['values']['path_' . $lang->language];
+  }
+
+  foreach ($form_state['input']['parameters_table']['values'] as $param) {
+    if (!empty($param['param']) || !empty($param['value'])) {
+      $parameters[$param['param']] = $param['value'];
+    }
+  }
+  
+  $i = 0;
+  $params_datalayer = array('1' => 'form', '2' => 'curso');
+  foreach ($form_state['input']['parameters_datalayer_table']['values'] as $value_datalayer) {
+    $i++;
+    $parameters_datalayer[$params_datalayer[$i]] = $value_datalayer['value_datalayer'];
+  }
+
+  $netsuite_block = db_insert('netsuite_block');
+  $netsuite_block->fields(array(
+    'form_id' => rand(1, 1000),
+    'comp_id' => 3965245,
+    'delta' => $form_state['values']['machine_name'],
+    'title' => $form_state['values']['title'],
+    'description_block' => $form_state['values']['description'],
+    'active_netsuite' => 1,
+    'path_netsuite' => serialize($path_lang),
+    'uid' => $user->uid,
+    'created' => REQUEST_TIME,
+    'changed' => REQUEST_TIME,
+    'parameters' => serialize($parameters),
+    'parameters_datalayer' => serialize($parameters_datalayer),
+  ))->execute();
+
+  return drupal_set_message(t('Block saved'), 'status');
+}
+
+/**
+ * Function to update a block NetSuite.
+ */
+function netsuite_form_builder_ui_update($form, $form_state) {
+  $parameters = array();
+  $parameters_datalayer = array();
+  $all_languages = netsuite_form_builder_ui_list_language_ordered();
+
+  $path_lang = array();
+  foreach ($all_languages as $lang) {
+    $path_lang[$lang->language] = $form_state['values']['path_' . $lang->language];
+  }
+
+  foreach ($form_state['input']['parameters_table']['values'] as $param) {
+    if (!empty($param['param']) || !empty($param['value'])) {
+      $parameters[$param['param']] = $param['value'];
+    }
+  }
+
+  $i = 0;
+  $params_datalayer = array('1' => 'form', '2' => 'curso');
+  foreach ($form_state['input']['parameters_datalayer_table']['values'] as $value_datalayer) {
+    $i++;
+    $parameters_datalayer[$params_datalayer[$i]] = $value_datalayer['value_datalayer'];
+  }
+
+  $netsuite_block = db_update('netsuite_block');
+  $netsuite_block->fields(array(
+    'title' => $form_state['values']['title'],
+    'description_block' => $form_state['values']['description'],
+    'path_netsuite' => serialize($path_lang),
+    'changed' => REQUEST_TIME,
+    'parameters' => serialize($parameters),
+    'parameters_datalayer' => serialize($parameters_datalayer),
+  ))
+  ->condition('delta', $form_state['values']['machine_name'], '=')
+  ->execute();
+  
+  drupal_goto('admin/structure/netsuite-block');
+  return drupal_set_message(t('Block updated'), 'status');
+}
+
+/**
+ * Function that checks if the machine name is already in use.
+ */
+function netsuite_form_builder_ui_exists_machine_name($form, $form_state) {
+  $netsuite_blocks = entity_load('netsuite_block');
+
+  $query = new EntityFieldQuery();
+  $query->entityCondition('entity_type', 'netsuite_block');
+  $query->propertyCondition('delta', $form_state['#value']);
+  $result = $query->execute();
+
+  if (!empty($result)) {
+    return TRUE;
+  }
+  else {
+    return FALSE;
+  }
+}
+
+/**
+ * Function that leads to a confirmation page to sign remove a block NetSuite.
+ */
+function netsuite_form_builder_ui_delete_confirm($form, &$form_state, $delta_block_netsuite) {
+  $form = array();
+  $form['delta'] = array(
+    '#type' => 'hidden',
+    '#value' => $delta_block_netsuite,
+  );
+  $question = t('Are you sure you want to delete the block netsuite?');
+  $path = 'admin/structure/netsuite-block';
+  return confirm_form($form, $question, $path, $description = NULL, $yes = 'Delete', $no = NULL, $name = 'confirm');
+}
+
+/**
+ * Function block eliminates NetSuite.
+ */
+function netsuite_form_builder_ui_delete_confirm_submit($form, &$form_state) {
+  $delta = $form_state['values']['delta'];
+
+  $delete_block_netsuite = db_delete('netsuite_block');
+  $delete_block_netsuite->condition('delta', $delta)
+    ->execute();
+
+  drupal_goto('admin/structure/netsuite-block');
+  return drupal_set_message(t('Block deleted'), 'status');
+}
+
+/**
+ * Implements hook_permission().
+ */
+function netsuite_form_builder_ui_permission() {
+  return array(
+    'administer blocks netsuite' => array(
+      'title' => t('Allows management Netsuite block.'),
+    ),
+  );
+}
+
+/**
+ * Function that returns the list of languages, whose first element is the language of the site.
+ */
+function netsuite_form_builder_ui_list_language_ordered() {
+  global $language;
+  $all_languages = language_list();
+  foreach ($all_languages as $lang) {
+    if ($lang->language == $language->language) {
+      $all_languages[$lang->language]->order = 1;
+    }
+    else {
+      $all_languages[$lang->language]->order = 2;
+    }
+  }
+  
+  uasort($all_languages, 'netsuite_form_builder_ui_comparation_order_language');
+
+  return $all_languages; 
+}
+
+/**
+ * Function to compare uasort function in php and have ordered languages.
+ */
+function netsuite_form_builder_ui_comparation_order_language($a, $b) {
+    if ($a->order == $b->order) {
+        return 0;
+    }
+    return ($a->order < $b->order) ? -1 : 1;
+}
+
+/**
+ * Function to compare uasort function in php and have ordered the entity netsuite_block.
+ */
+function netsuite_form_builder_ui_comparation_order_entity_netsuite($a, $b) {
+    if ($a->changed == $b->changed) {
+        return 0;
+    }
+    return ($a->changed > $b->changed) ? -1 : 1;
+}
