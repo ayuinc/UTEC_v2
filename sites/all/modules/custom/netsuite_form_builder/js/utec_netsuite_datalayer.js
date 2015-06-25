@@ -1,8 +1,5 @@
 //jQuery(document).ready(function ($) {
-  netsuite_form_builder = window.parent.Drupal.settings.netsuite_form_builder;
-  console.log('Uno');
-  console.log('Netsuite Form Builder = ' + netsuite_form_builder);
-  
+  netsuite_form_builder = window.parent.Drupal.settings.netsuite_form_builder;  
   if (typeof netsuite_form_builder != "undefined") {
     var dataLayer = dataLayer || [{"event": "formSubmit", "estado": "Success"}];
     var form = window.parent.Drupal.settings.netsuite_form_builder.form;
@@ -27,9 +24,9 @@
     }
 
     //Just to debug
-    console.debug('Curso = ' + dataLayer[0]["curso"]);
-    console.debug('Form = ' + dataLayer[0]["form"]);
-    console.debug('Tipo = ' + dataLayer[0]["tipo"]);
+    //console.debug('Curso = ' + dataLayer[0]["curso"]);
+    //console.debug('Form = ' + dataLayer[0]["form"]);
+    //console.debug('Tipo = ' + dataLayer[0]["tipo"]);
 
     dataLayer.forEach(function(item) {
       for (var property in item) {
