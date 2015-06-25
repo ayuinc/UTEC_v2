@@ -1,0 +1,9 @@
+name = Netsuite form builder UI
+description = Provides an interface for the administration of the blocks NetSuite.
+package = Netsuite Form Builder
+core = 7.x
+version = 0.1
+
+files[] = netsuite_form_builder_ui.module
+
+dependencies[] = netsuite_form_builder
