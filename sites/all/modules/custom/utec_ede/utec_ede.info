@@ -2,7 +2,7 @@ name = UTEC Educación Ejecutiva
 description = Permite crear rutas para inscribirse a un curso.
 package = UTEC
 core = 7.x
-version = 0.1
+version = 0.2
 
 files[] = utec_ede.module
 
