@@ -175,7 +175,7 @@ function netsuite_form_builder_block_view($delta = '') {
   else if(strpos($referer, 'bing') !== FALSE) {
     $origin = 'Search';
   }
-  else if(strpos($referer, 'utec.edu') !== FALSE) {
+  else if(strpos($referer, $_SERVER['SERVER_NAME']) !== FALSE) {
     $origin = 'Organico';
   }
   else {
