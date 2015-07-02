@@ -23,6 +23,7 @@ function netsuite_form_builder_init() {
   if (!empty($node)) {
     if ($node->type == 'thank_you_page') {
       drupal_add_js(drupal_get_path('module', 'netsuite_form_builder') . '/js/utec_netsuite_datalayer.js', 'file');
+      drupal_add_css(drupal_get_path('module', 'netsuite_form_builder') . '/css/netsuite_form_builder.css', 'file');
     } 
   }
 }
