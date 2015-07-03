@@ -1,187 +1,43 @@
-<?php
- 
-	$title = $node->title;  
-	$field_su_filosofia = $node->field_su_filosofia['und']['0']['value'];
-	$field_su_foto = $node->field_image['und']['0']['uri'];
-	$field_su_universidad = $node->field_su_universidad['und']['0']['value'];
-	$field_transcendencia = $node->field_transcendencia['und']['0']['value'];
-	$field_excelencia = $node->field_excelencia['und']['0']['value'];
-	$field_su_creatividad = $node->field_su_creatividad['und']['0']['value'];
-	$field_su_contacto = $node->field_su_contacto['und']['0']['value']; 
+<?php 
 
+  $titulo = $node->title;
+  $field_introduccion_respaldo = $node->field_introduccion_respaldo['und']['0']['value'];
+  $fids   = $node->field_empresa_respaldo['und'];
+
+  $entity_type = 'field_collection_item';
+  $field_name = 'field_logo_respaldo'; // Field name within the field collection
+  $view_mode = 'default';
+
+  $info = field_info_instance($entity_type, $field_name, 'field_empresa_respaldo');
+  $settings = $info['display'][$view_mode]['settings'];
+  $image_style = $settings['image_style'];
 ?>
- 
+
 <div class="container-sm">
-	<h1 class="light">Ofertas Laborales</h1>
-	<div class="separator-gray separator-sm"></div>
-	<div style="padding-bottom:20px;">
-		<h3><?php print t('Our philosophy') ?></h3>
-		<p><?php print $field_su_filosofia ?></p>
-		<img src="<?php print image_style_url($image_style, $field_su_foto); ?>" class="img-responsive" alt="<?php print $title ?>">
-		
-	</div>
-	<!--
-	<h1 class="light"><?php print $title ?></h1>
-	<div>
-		<h3><?php print t('Our philosophy') ?></h3>
-		<p><?php print $field_su_filosofia ?></p>
-		<img src="<?php print image_style_url($image_style, $field_su_foto); ?>" class="img-responsive" alt="<?php print $title ?>">
-		<div>
-			<h3><?php print t('Universality') ?></h3>
-			<p><?php print $field_su_universidad ?></p>
-		</div>
-		<div>
-			<h3><?php print t('Transcendence') ?></h3>
-			<p><?php print $field_transcendencia ?></p>
-		</div>
-		<div>
-			<h3><?php print t('Excellence') ?></h3>
-			<p><?php print $field_excelencia ?></p>
-		</div>
-		<div>
-			<h3><?php print t('Creativity') ?></h3>
-			<p><?php print $field_su_creatividad ?></p>
-		</div>
-		<div>
-			<h3><?php print t('Contact') ?></h3>
-			<?php print $field_su_contacto ?>
-		</div>
-	</div>
-	-->
-
-
-	<div>
-		       	<script type="text/javascript" id="rbox-loader-script">
-				_rbox = { host_protocol:document.location.protocol, ready:function(cb){this.onready=cb;} };
-				(function(d, e) {
-				    var s, t, i, src=['/static/client-src-served/widget/22481/rbox_api.js', '/static/client-src-served/widget/22481/rbox_impl.js'];
-				    t = d.getElementsByTagName(e); t=t[t.length - 1];
-				    for(i=0; i<src.length; i++) {
-				        s = d.createElement(e); s.src = _rbox.host_protocol + '//w.recruiterbox.com' + src[i];
-				        t.parentNode.insertBefore(s, t.nextSibling);
-				    }})(document, 'script');
-				</script>
-
-	</div>	
-
+  <h1 class="light"><?php print $titulo ?></h1>
+  <div class="separator-gray separator-sm"></div>
+  <p class="lead text-gray"><?php print $field_introduccion_respaldo ?></p>
+  <div class="pv-ch-42">
+    <div>
+      <ul class="grid-list grid-list-2 grid-list-1-xs grid-list-hover grid-list-hover-white">
+        <?php foreach ($fids as $fid) : ?>
+          <?php
+            $num = $fid['value'];
+            $field = entity_load('field_collection_item', array($fid['value']));
+            $image = $field[$num]->field_logo_respaldo['und'][0]['uri']; 
+            $link = $field[$num]->field_link_respaldo['und'][0]['value'];
+          ?>
+        <li data-href="<?php print $link ?>" target="_blank" rel="nofollow">
+          <div>
+            <img src="<?php print image_style_url($image_style, $image)?>" alt="<?php print $titulo ?>" width="70%" height="auto">
+          </div>
+        </li>
+        <?php endforeach; ?>
+      </ul>
+    </div>
+  </div>
 </div>
 
-		
 
-<div class="container-sm"> 
-	
-	<!--
-	<h3><?php print t('Apply') ?></h3>
-	<form action="/registro.php" data-submit="Formulario de inscripcion" method="post"  id="formRegistro" name="formRegistro">
-		<input type="hidden" name="origen" value="<?php print $title; ?>">
-		<input type="hidden" name="idioma" value="<?php print $idioma; ?>">	
-		<div class="text-left">
-			  <label>
-						<?php print $cuerpo; ?>
-			  </label>	
-	    </div>
 
-		<div class="row">
-			<div class="form-group col-sm-6">
-				<label for="" class="sr-only"><?php print t('Name') ?></label>
-				<input id="nombres" name="nombres" type="text" class="form-control" placeholder="<?php print t('Name') ?>">
-			</div>
-			<div class="form-group col-sm-6">
-				<label for="" class="sr-only"><?php print t('Middle name') ?></label>
-				<input id="apellidop" name="apellidop" type="text" class="form-control" placeholder="<?php print t('Middle name') ?>">
-			</div>
 
-		</div>
-		<div class="row">
-			<div class="form-group col-sm-6">
-				<label for="" class="sr-only"><?php print t('Last name') ?></label>
-				<input id="apellidom" name="apellidom" type="text" class="form-control" placeholder="<?php print t('Last name') ?>">
-			</div>			
-			<div class="form-group col-sm-6">
-				<label for="" class="sr-only">Email</label>
-				<input id="email" name="email" type="text" class="form-control" placeholder="Email">
-			</div>
-		</div>
-		<div class="row">
-			<div class="form-group col-sm-6">
-				<label for="" class="sr-only"><?php print t('Phone') ?></label>
-				<input id="telefono" name="telefono" type="text" class="form-control" placeholder="<?php print t('Phone') ?>">
-			</div>
-		</div>		
-		<div class="row">
-			<div class="form-group col-sm-12">
-				<label for="" class="sr-only"><?php print t('Message') ?></label>
-				<textarea class="form-control" placeholder="<?php print t('Message') ?>" name="consulta" id="consulta"></textarea>
-			</div>
-		</div>
-		<div class="row errordiv">
-			<div id="errordiv" class="col-sm-12 form-group"></div>			
-		</div>			
-		<div class="text-right">
-			<button type="submit" class="btn btn-primary btn-lg"><?php print t('Send') ?></button>
-		</div>
-		</form>	
-<div class="text-left">
-					  <label>
-					  			<?php print t('By clicking SEND, the user accepts') ?> <a href="http://app.utec.edu.pe/documentacion/terminos-y-condiciones.pdf" target="_blank"><?php print t('the terms and conditions detailed here.') ?></a>
-					  </label>	
-		    </div>
--->
-			
-    
-						
-</div>	
-
-<script type="text/javascript">
-jQuery(function() {                        
-    jQuery('#formRegistro').validate( {
-	      rules: {
-	        "nombres": { required: true }, "apellidop": { required: true }, "apellidom": { required: true }, "carrera": { required: true },	
-	        "tipo-documento": { required: true }, "documento": { required: true }, "pais": { required: true }, "ciudad": { required: true },	
-	        "dia": { required: true }, "mes": { required: true }, "ano": { required: true }, "depto": { required: true }, "provincia": { required: true },	
-	        "distrito": { required: true }, "direccion-actual": { required: true },	"email": { required: true }, "telefono": { required: true },	
-			"ano-culminacion": { required: true }, "colegio-procedencia": { required: true }, 
-			"estudios-dpto": { required: true }, "estudios-provincia": { required: true },
-	        "estudios-distrito": { required: true }, "estudios-rendimiento": { required: true }
-	      },
-	      <?php if ($idioma == "es") { ?>
-	      messages: {
-		    "nombres": { required: "Completa tus nombres. <br />" }, "apellidop": { required: "Completa tu apellido paterno. <br /> " },		
-		    "apellidom": { required: "Completa tu apellido materno. <br /> " }, "carrera": { required: "Selecciona tu carrera. <br /> " },	
-		    "tipo-documento": { required: "Selecciona tu tipo de documento. <br /> " }, "documento": { required: "Completa tu documento. <br /> " },	
-		    "pais": { required: "Completa tu país. <br /> " }, "ciudad": { required: "Completa tu ciudad. <br /> " }, 
-		    "dia": { required: "Completa tu día de nacimiento. <br /> " }, "mes": { required: "Completa tu mes de nacimiento. <br /> " },
-		    "ano": { required: "Completa tu año de nacimiento. <br /> " }, "depto": { required: "Completa tu departamento. <br /> " },
-		    "provincia": { required: "Completa tu provincia. <br /> " }, "distrito": { required: "Completa tu distrito. <br /> " },
-		    "direccion-actual": { required: "Completa tu domicilio. <br /> " }, "email": { required: "Completa tu e-mail. <br /> " },
-	      	"telefono": { required: "Completa tu telefono. <br /> " }, "ano-culminacion": { required: "Completa tu año de culminación. <br /> " }, 
-	      	"colegio-procedencia": { required: "Completa tu colegio de procedencia. <br /> " },
-		    "estudios-dpto": { required: "Completa el departamento de tu colegio. <br /> " }, "estudios-provincia": { required: "Completa la provincia de tu colegio. <br /> " },
-		    "estudios-distrito": { required: "Completa el distrito de tu colegio. <br /> " }, "estudios-rendimiento": { required: "Selecciona tu rendimiento académico. <br /> " }
-		  },
-		  <?php } ?>
-	      <?php if ($idioma == "en") { ?>
-	      messages: {
-		    "nombres": { required: "Fill in your name. <br />" }, "apellidop": { required: "Fill in your middle name. <br /> " },
-		    "apellidom": { required: "Fill in your last name. <br /> " }, "carrera": { required: "Select your undergrad program. <br /> " },
-		    "tipo-documento": { required: "Select your document type. <br /> " }, "documento": { required: "Fill in your document. <br /> " },
-		    "pais": { required: "Fill in your country. <br /> " }, "ciudad": { required: "Fill in your city. <br /> " },
-		    "dia": { required: "Fill in your day of birth. <br /> " }, "mes": { required: "Fill in your month of birth. <br /> " },
-		    "ano": { required: "Fill in your year of birth. <br /> " }, "depto": { required: "Fill in your department. <br /> " },
-		    "provincia": { required: "Fill in your province. <br /> " }, "distrito": { required: "Fill in your district. <br /> " },
-		    "direccion-actual": { required: "Fill in your address. <br /> " }, "email": { required: "Fill in your e-mail. <br /> " },
-	      	"telefono": { required: "Fill in your phone. <br /> " }, "ano-culminacion": { required: "Select your year of completion. <br /> " }, 
-	      	"colegio-procedencia": { required: "Fill in your school of origin. <br /> " },
-		    "estudios-dpto": { required: "Fill in the department of your school. <br /> " }, "estudios-provincia": { required: "Fill in the province of your school. <br /> " },
-		    "estudios-distrito": { required: "Fill in the district of your school. <br /> " }, "estudios-rendimiento": { required: "Select your academic performance. <br /> " }
-		  },
-		  <?php } ?>
-	      errorPlacement: function( error, element ) {
-	        	error.insertAfter( '#errordiv' );
-	      },
-	      submitHandler: function( form ) {                                                 
-	      		form.submit();
-	      }
-    });
-});
-</script>
