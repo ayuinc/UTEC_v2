@@ -1,4 +1,3 @@
-jQuery(document).ready(function ($) {
   netsuite_form_builder = window.parent.Drupal.settings.netsuite_form_builder;
   if (typeof netsuite_form_builder != "undefined") {
     var form = window.parent.Drupal.settings.netsuite_form_builder.form;
@@ -32,4 +31,3 @@ jQuery(document).ready(function ($) {
       }
     });
   }
-});
