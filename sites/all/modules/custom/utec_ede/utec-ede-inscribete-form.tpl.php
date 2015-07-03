@@ -21,9 +21,6 @@
       <div id="tab-person-legal-content" class="form-tab-content hide">
         <?php print drupal_render($output['netsuite_form_builder_netsuite_block_2']); ?>    
       </div>
-      <!--
-<p><b>Al hacer clic en ENVIAR, el usuario acepta <a href="http://app.utec.edu.pe/admision/terminos-y-condiciones.pdf" target="_blank">las condiciones detalladas aquí</a></b></p>
-    -->
     </div>
 
   </div>

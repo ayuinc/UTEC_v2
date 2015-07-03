@@ -23,7 +23,8 @@ function netsuite_form_builder_init() {
   if (!empty($node)) {
     if ($node->type == 'thank_you_page') {
       drupal_add_js(drupal_get_path('module', 'netsuite_form_builder') . '/js/utec_netsuite_datalayer.js', 'file');
-    }
+      drupal_add_css(drupal_get_path('module', 'netsuite_form_builder') . '/css/netsuite_form_builder.css', 'file');
+    } 
   }
 }
 
@@ -143,13 +144,16 @@ function netsuite_form_builder_block_view($delta = '') {
     $usuario_estado = 'no-identificado';
   }
 
+  $courseValue = token_replace($course, array('node' => $node));
   $datalayer_settings = array(
     'form' => $form,
-    'curso' => token_replace($course, array('node' => $node)),
+    'curso' => $courseValue,
     'usuario_estado' => $usuario_estado,
   );
 
   drupal_add_js(array('netsuite_form_builder' => $datalayer_settings), 'setting');
+
+  drupal_add_js("var dataLayer = [];dataLayer.push({'nombre_curso': '" . $courseValue . "'});", array('scope' => 'header', 'type' => 'inline'));
 
   $params = unserialize($into_netsuite_block->parameters);
   $params_in_path = '';
@@ -171,7 +175,7 @@ function netsuite_form_builder_block_view($delta = '') {
   else if(strpos($referer, 'bing') !== FALSE) {
     $origin = 'Search';
   }
-  else if(strpos($referer, 'utec.edu') !== FALSE) {
+  else if(strpos($referer, $_SERVER['SERVER_NAME']) !== FALSE) {
     $origin = 'Organico';
   }
   else {

@@ -23,6 +23,11 @@
 	  $search_box = drupal_render(drupal_get_form('search_form'));
 	  //die(print_r($search_box));
 	  $variables['search_box'] = $search_box;
+
+    if (isset($variables['node'])) {
+      // If the node type is "blog_madness" the template suggestion will be "page--blog-madness.tpl.php".
+      $variables['theme_hook_suggestions'][] = 'page__'. $variables['node']->type;
+    }
 	}
 
 	drupal_add_css("//vjs.zencdn.net/4.10/video-js.css", 'external');	
