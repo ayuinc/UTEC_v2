@@ -1,29 +1,34 @@
   netsuite_form_builder = window.parent.Drupal.settings.netsuite_form_builder;
+  console.log('Uno');
+  console.log('Netsuite Form Builder = ' + netsuite_form_builder);
+  
   if (typeof netsuite_form_builder != "undefined") {
+    var dataLayer = dataLayer || [{"event": "formSubmit", "estado": "Success"}];
     var form = window.parent.Drupal.settings.netsuite_form_builder.form;
     var curso = window.parent.Drupal.settings.netsuite_form_builder.curso;
     var usuario_estado = window.parent.Drupal.settings.netsuite_form_builder.usuario_estado;
     var tipo = window.parent.Drupal.settings.netsuite_form_builder.tipo;
-    var dataLayer = dataLayer || [];
     var carrera = "";
-    var netsuite_values = {"event": "formSubmit", "estado": "Success"};
-
     if (form != "") {
-      netsuite_values['form'] = form;
+      dataLayer[0]["form"] = form;
     }
     if (curso != "") {
-      netsuite_values['curso'] = curso;
+      dataLayer[0]["curso"] = curso;
     }
     if (usuario_estado != "" && typeof usuario_estado != "undefined") {
-      netsuite_values['usuario_estado'] = usuario_estado;
+      dataLayer[0]["usuario_estado"] = usuario_estado;
     }
     if (carrera != "" && typeof carrera != "undefined") {
-      netsuite_values['carrera'] = carrera;
+      dataLayer[0]["carrera"] = carrera;
     }
     if (tipo != "" && typeof tipo != "undefined") {
-      netsuite_values['tipo'] = tipo;
+      dataLayer[0]["tipo"] = tipo;
     }
-    dataLayer.push(netsuite_values);
+
+    //Just to debug
+    console.debug('Curso = ' + dataLayer[0]["curso"]);
+    console.debug('Form = ' + dataLayer[0]["form"]);
+    console.debug('Tipo = ' + dataLayer[0]["tipo"]);
 
     dataLayer.forEach(function(item) {
       for (var property in item) {
