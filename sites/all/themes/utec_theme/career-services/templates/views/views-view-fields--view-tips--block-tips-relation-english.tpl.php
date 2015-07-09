@@ -7,7 +7,7 @@ print l(
     '</div>' . 
     '<div class="p-21">' . 
     '<h3 class="medium m-0 text-gray-dark">' . $fields['title']->content . '</h3>' . 
-    '<h4 class="thin text-gray-dark lh-lg">' . $fields['body']->content . '</h4>' . 
+    '<h4 class="thin text-gray-dark lh-lg">' . $fields['field_ct_teaser']->content . '</h4>' . 
     '<span>' . 
     '<h4 class="text-primary m-0 light">' . 
     '<span>' . 
