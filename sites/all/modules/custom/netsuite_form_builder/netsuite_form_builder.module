@@ -149,11 +149,14 @@ function netsuite_form_builder_block_view($delta = '') {
     'form' => $form,
     'curso' => $courseValue,
     'usuario_estado' => $usuario_estado,
+    'bandera' => 0,
   );
 
   drupal_add_js(array('netsuite_form_builder' => $datalayer_settings), 'setting');
 
-  drupal_add_js("var dataLayer = [];dataLayer.push({'nombre_curso': '" . $courseValue . "'});", array('scope' => 'header', 'type' => 'inline'));
+  if(netsuite_form_builder_is_ejecuted_before() == 1) {
+    drupal_add_js("var dataLayer = [];dataLayer.push({'nombre_curso': '" . $courseValue . "'});", array('scope' => 'header', 'type' => 'inline'));
+  }
 
   $params = unserialize($into_netsuite_block->parameters);
   $params_in_path = '';
@@ -260,4 +263,11 @@ function netsuite_form_builder_variable($name, $value = NULL) {
   }
   
   return $var[$name];
+}
+
+function netsuite_form_builder_is_ejecuted_before() {
+   static $a = 0;
+   $a++;
+   
+   return $a;
 }
