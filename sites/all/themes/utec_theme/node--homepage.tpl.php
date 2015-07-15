@@ -8,7 +8,9 @@
 
 ?>
 
-<div class="hero-unit video-bg "> 	
+<div class="hero-unit video-bg ">
+<?php print_r($video_name); ?> 	
+<?php print_r($node->field_video); ?> 	
 	  <div>
 			<?php if ($video_name != '') : ?>
 			<video
