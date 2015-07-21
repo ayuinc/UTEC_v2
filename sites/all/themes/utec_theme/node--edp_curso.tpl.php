@@ -252,8 +252,16 @@
 					<?php
 							//capturamos la ruta de inscripción de formulario
 							$url = drupal_get_path_alias('node/'.$nid, $language->language);
+							
+							$partes =  split('/' , $url);
 							//$path_url = split('/brochure', $url);
-							$path_url = split('/temario', $url);
+							if($partes[1] == 'diplomados'){
+								$path_url = split('/brochure', $url);
+							}else{
+								$path_url = split('/temario', $url);
+							}
+//print_r($partes);
+							//$path_url = split('/temario', $url);
 							$path = $path_url[0];
 					?>
 					<li data-href="<?php print base_path() . $path . '/formulario-de-inscripcion'; ?>">
