@@ -480,16 +480,19 @@ body.node-type-page-informative-one .pane-view-tips h1 {
     width: 100%;
   }
   .node-page-informative-one.node-career-services, 
-  .node-page-informative-two.node-career-services {
+  .node-page-informative-two.node-career-services, 
+  .node-page-tip.node-career-services {
     max-width: 748px;
     width: auto;
   }
   .node-page-informative-one.node-career-services .minh-350, 
-  .node-page-informative-two.node-career-services .minh-350 {
+  .node-page-informative-two.node-career-services .minh-350, 
+  .node-page-tip.node-career-services .minh-350 {
     min-height: 0 !important;
   }
   .node-page-informative-one .field-item img, 
-  .node-page-informative-two .field-item img {
+  .node-page-informative-two .field-item img, 
+  .node-page-tip .field-item img {
     height: auto;
     width: 100%;
   }
@@ -506,7 +509,7 @@ body.node-type-page-informative-one .pane-view-tips h1 {
 
 @media only screen and (max-width: 480px) {
   .anchor-img-grid [class*="anchor-block-"] .overlay {
-    opacity: 0;
+    /*opacity: 0;*/
   }
   .anchor-img-grid.anchor-img-grid-1 .anchor-block-1 {
     height: auto;
