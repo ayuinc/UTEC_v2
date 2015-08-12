@@ -444,3 +444,89 @@ body.node-type-page-informative-one .pane-view-tips h1 {
 #section-scroll.block-menu-fixed {
   z-index: 9997;
 }
+
+.block-bean-banner-top .img-placeholder img {
+  height: auto;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  #te-preparamos .anchor-block-2 {
+    height: 242px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .block-bean-banner-top {
+    padding-bottom: 0;
+  }
+  .block-bean-banner-top .hero-unit.video-bg {
+    height: auto !important;
+  }
+  .block-bean-banner-top .hero-unit .overlay {
+    height: auto !important;
+  }
+  .block-bean-banner-top .block-banner-top .pb-28 {
+    padding-bottom: 7rem !important;
+  }
+  .bean-block-informative-two .grid-list-item .item-pic {
+    height: auto;
+    max-height: 130px;
+    max-width: 130px;
+    width: 100%;
+  }
+  .bean-block-informative-two .grid-list-item .item-pic img {
+    height: auto;
+    width: 100%;
+  }
+  .node-page-informative-one.node-career-services, 
+  .node-page-informative-two.node-career-services {
+    max-width: 748px;
+    width: auto;
+  }
+  .node-page-informative-one.node-career-services .minh-350, 
+  .node-page-informative-two.node-career-services .minh-350 {
+    min-height: 0 !important;
+  }
+  .node-page-informative-one .field-item img, 
+  .node-page-informative-two .field-item img {
+    height: auto;
+    width: 100%;
+  }
+  .anchor-img-grid.anchor-img-grid-1 .anchor-block-1 {
+    height: 484px;
+    margin: 0 auto;
+    width: 484px;
+  }
+  #te-preparamos .anchor-block-2 {
+    margin: 0 auto;
+    width: 484px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .anchor-img-grid [class*="anchor-block-"] .overlay {
+    opacity: 0;
+  }
+  .anchor-img-grid.anchor-img-grid-1 .anchor-block-1 {
+    height: auto;
+    width: 100%;
+  }
+  #te-preparamos .anchor-block-1 .overlay {
+    height: auto;
+    width: auto;
+  }
+  #te-preparamos .anchor-block-2 {
+    height: auto;
+    width: 100%;
+  }
+  .anchor-img-grid [class*="anchor-block-"] .pic {
+    margin: 14px;
+    position: static;
+  }
+  .anchor-img-grid.anchor-img-grid-1 .anchor-block-1 img, 
+  #te-preparamos .anchor-block-2 img {
+    height: auto;
+    width: 100%;
+  }
+}
