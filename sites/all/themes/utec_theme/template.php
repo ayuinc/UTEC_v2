@@ -100,6 +100,8 @@ function utec_theme_menu_tree($variables) {
  * Implements theme_menu_link().
  */
 function utec_theme_menu_link(array $variables) {
+
+  global $language;
   $element = $variables['element'];
   $sub_menu = '';
   $menuName = $variables['element']["#original_link"]["menu_name"];
@@ -147,11 +149,19 @@ function utec_theme_menu_link(array $variables) {
   }
   
   if ($menuName == 'menu-m-menu-bottom') {
+  	
+    if ($language->language == 'en') {
+      $text = 'View more';
+  	}
+  	else {
+  	  $text = 'Leer más';
+  	}
+
     $link = '<li class="grid-list-2-xs">';
     $link .= l(
       '<div class="p-14 border-grey p-35-xs minh-140 minh-210-xs flex-middle-center">' . 
       '<h5 class="thin">' . $element['#title'] . '</h5>' . 
-      '<h6 class="text-primary m-0 light">Leer más<p class="pl-7 m-0 icon-arrows-right h6 inline-block"></p></h6>' . 
+      '<h6 class="text-primary m-0 light">' . $text . '<p class="pl-7 m-0 icon-arrows-right h6 inline-block"></p></h6>' . 
       '</div>',
       $element['#href'], 
       array(
@@ -209,7 +219,7 @@ function utec_theme_preprocess_node(&$variables){
  */
 function utec_theme_preprocess(&$variables, $hook) {
 
-	global $language;
+  global $language;
   global $base_url; 
   global $theme_path; 
   $path = $base_url.'/'.$theme_path;
