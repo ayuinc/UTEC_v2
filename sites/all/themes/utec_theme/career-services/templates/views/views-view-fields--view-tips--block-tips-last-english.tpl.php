@@ -10,7 +10,7 @@
     '<h4 class="thin lh-lg">' . $fields['field_ct_teaser']->content . '</h4>' . 
     '<span>' . 
     '<h4 class="text-primary pl-7 pt-14 pb-7 m-0 light">' . 
-    'Leer más<p class="pl-7 m-0 icon-arrows-right h6 inline-block"></p>' . 
+    'View more<p class="pl-7 m-0 icon-arrows-right h6 inline-block"></p>' . 
     '</h4>' . 
     '</span>' . 
     '</div>' . 
