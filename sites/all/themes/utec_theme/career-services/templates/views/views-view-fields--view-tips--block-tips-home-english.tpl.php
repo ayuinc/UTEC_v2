@@ -11,7 +11,7 @@ print l(
     '<span>' . 
     '<h4 class="text-primary m-0 light">' . 
     '<span>' . 
-    'View more<p class="pl-7 m-0 icon-arrows-right h6 inline-block"></p>' . 
+    t('View more') . '<p class="pl-7 m-0 icon-arrows-right h6 inline-block"></p>' . 
     '</h4>' . 
     '</span>' . 
     '</div>' . 
