@@ -516,6 +516,15 @@ body.node-type-page-informative-one .pane-view-tips h1 {
     margin: 0 auto;
     width: 484px;
   }
+  .view-view-tips .views-row > .minh-490 a .minh-210, 
+  .view-view-tips .views-row > .col-sm-4 a .minh-210 {
+    min-height: 0 !important
+  }
+  .view-view-tips .views-row > .minh-490 a img, 
+  .view-view-tips .views-row > .col-sm-4 a img {
+    height: auto;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -528,6 +537,11 @@ body.node-type-page-informative-one .pane-view-tips h1 {
   .view-view-tips .bg-center, 
   .view-view-tips .bg-img-block {
     text-align: center;
+  }
+  .view-view-tips .views-row > .col-sm-4 a .minh-560 {
+    min-height: 0 !important;
+    padding-bottom: 10px;
+    padding-top: 10px;
   }
 }
 
