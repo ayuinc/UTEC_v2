@@ -549,7 +549,7 @@ body.node-type-page-informative-one .pane-view-tips h1 {
     padding-bottom: 15px;
     padding-top: 15px;
   }
-  .view-view-tips .views-row > .col-sm-6 a img
+  .view-view-tips .views-row > .col-sm-6 a img, 
   .view-view-tips .views-row > .col-sm-4 a img {
     height: auto;
     width: auto;
