@@ -26,6 +26,7 @@
     <?php endforeach; ?>
   </ul>
   <div class="text-center pv-7"> 
-    <button type="button" class="col-xs-12 btn btn-alumnos btn-primary uppercase atm-scroll-item" data-toggle="modal" data-target="#myModal">LOGIN</button>
+    <!--button type="button" class="col-xs-12 btn btn-alumnos btn-primary uppercase atm-scroll-item" data-toggle="modal" data-target="#myModal">LOGIN</button-->
+    <a href="http://utec.bumeran.com.pe/" class="col-xs-12 btn btn-alumnos btn-primary uppercase atm-scroll-item" target="_blank">LOGIN</a>
   </div>
 </div>
