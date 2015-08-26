@@ -506,6 +506,12 @@ body.node-type-page-informative-one .pane-view-tips h1 {
 }
 
 @media only screen and (max-width: 992px) {
+  #header-on-scroll {
+    display: block !important;
+  }
+  .career-services-margin-top {
+    padding-top: 55px !important;
+  }
   .container-md, 
   .container-sm {
     margin-left: 1%;

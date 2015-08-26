@@ -1,4 +1,4 @@
-<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> pt-63-xs clearfix"<?php print $attributes; ?>>
+<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> career-services-margin-top clearfix"<?php print $attributes; ?>>
 
   <?php print $user_picture; ?>
 
