@@ -12,6 +12,7 @@ body.node-type-page-subhome .body {
   display: none;
 }
 
+.bean-block-banner-top h1.lead, 
 .bean-block-banner-top p.text-white {
   font-weight: bold;
 }
@@ -66,6 +67,10 @@ body.node-type-page-subhome .body {
 
 .block-menu-fixed ul a:hover {
   color: #00BFDF !important;
+}
+
+.block-menu-fixed .text-center .lead {
+  display: none;
 }
 
 /* Block Bean - Informative One */
@@ -476,6 +481,30 @@ body.node-type-page-informative-one .pane-view-tips h1 {
   }
 }
 
+@media only screen and (max-width: 1000px) {
+  .block-menu-fixed {
+    display: block !important;
+    margin: 0 1%;
+    padding-left: 14px;
+    padding-right: 14px;
+    position: static !important;
+    width: 98%;
+  }
+  .block-menu-fixed ul.p-14 {
+    display: none;
+  }
+  .block-menu-fixed .text-center {
+    text-align: left;
+  }
+  .block-menu-fixed .text-center a.col-xs-12 {
+    margin-top: 15px;
+    width: auto;
+  }
+  .block-menu-fixed .text-center .lead {
+    display: block;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   .container-md, 
   .container-sm {
@@ -580,7 +609,7 @@ body.node-type-page-informative-one .pane-view-tips h1 {
 }
 
 @media only screen and (max-width: 480px) {
-  h1.lead {
+  .bean-block-banner-top h1.lead {
     font-size: 1.5em !important;
   }
   #te-preparamos .anchor-img-grid [class*="anchor-block-"] .overlay {
