@@ -44,7 +44,7 @@
     <?php
       print l(
         'VER MÁS TIPS <i class="pl-7 m-0 icon-arrows-right h6 inline-block"></i>', 
-        'bolsa-de-trabajo/tips', 
+        'career-services/tips', 
         array(
           'html' => TRUE
         )

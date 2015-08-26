@@ -1,4 +1,4 @@
-<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> pt-63-xs clearfix"<?php print $attributes; ?>>
 
   <?php print $user_picture; ?>
 
@@ -23,7 +23,7 @@
       print render($content);
     ?>
 
-    <div class="container-md">
+    <!--div class="container-md">
       <div class="pv-42">
         <h2 class="lead medium mb-0 pb-28"><span class="text-gray-darker">Acceso rápido a </span><span class="text-gray">Career Services</span></h2>
         <div class="row">
@@ -43,7 +43,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div-->
 
   </div>
 
@@ -53,10 +53,10 @@
 </div>
 
 <!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog modal-lg pt-63">
+<!--div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg pt-63"-->
     <!-- Modal content-->
-    <div class="modal-content minh-490">
+    <!--div class="modal-content minh-490">
       <div class="text-right pr-21  pt-21">
         <a class="close bg-primary text-white pv-7 ph-14 text-grey" data-dismiss="modal">&times;</a>
       </div>
@@ -64,19 +64,19 @@
       <div class="container-sm">
         <div class="row minh-210 ph-70 pv-21-xs">
           <div class="col-md-6 p-0">
-            <a class="text-center btn-modal btn-alumnos">     
+            <a class="text-center btn-modal btn-alumnos"-->
               <!-- <h4 class="bg-gray-lighter light bg-hover-white pv-14 text-gray-darker">Alumnos</h4> -->
-              <h4 class="btn-selected light pv-14 text-gray-darker">Alumnos</h4>
+              <!--h4 class="btn-selected light pv-14 text-gray-darker">Alumnos</h4>
             </a>
           </div>
           <div class="col-md-6 p-0">
             <a class="text-center btn-modal btn-empresas">      
               <!-- <h4 class="bg-white light bg-hover-white pv-14 text-gray-darker">Empresas</h4> -->
-              <h4 class="btn-notselected light pv-14 text-gray-darker">Empresas</h4>
+              <!--h4 class="btn-notselected light pv-14 text-gray-darker">Empresas</h4>
             </a>
           </div>
           <!-- Form Alumnos -->
-          <form role="form" id="form-alumnos" method="post" class="form-modal form-alumnos" accept-charset="UTF-8">
+          <!--form role="form" id="form-alumnos" method="post" class="form-modal form-alumnos" accept-charset="UTF-8">
             <div class="form-group col-sm-12">
               <input type="email" class="form-control light input-center mt-21" width="210" height="auto" placeholder="correo electrónico" required="">
             </div>
@@ -90,7 +90,7 @@
           </form>
           <!-- END: Form Alumnos -->
           <!-- Form Empresas -->
-          <form role="form" id="form-empresas" method="post" class="form-modal form-empresas hidden" accept-charset="UTF-8">
+          <!--form role="form" id="form-empresas" method="post" class="form-modal form-empresas hidden" accept-charset="UTF-8">
             <div class="form-group col-sm-12">
               <input type="email" class="form-control light input-center mt-21" width="210" height="auto" placeholder="correo electrónico" required="">
             </div>
@@ -105,7 +105,7 @@
           </form>
           <!-- END: Form Empresas -->
           <!-- Form Recupera -->
-          <form role="form" method="post" id="form-recupera" class="form-modal form-recupera hidden" accept-charset="UTF-8">
+          <!--form role="form" method="post" id="form-recupera" class="form-modal form-recupera hidden" accept-charset="UTF-8">
             <div class="form-group col-sm-12">
               <input type="text" class="form-control light input-center mt-21" width="210" height="auto" placeholder="correo electrónico" required="">
             </div>
@@ -115,11 +115,11 @@
             </div>
           </form>
           <!-- END: Form Recupera -->
-        </div>
+        <!--/div>
       </div>
     </div>
   </div>
-</div>
+</div-->
 <!-- END: Modal -->
 
 <?php drupal_add_js(drupal_get_path('theme', 'utec_theme') .'/js/app/vendor/TweenMax.min.js'); ?>

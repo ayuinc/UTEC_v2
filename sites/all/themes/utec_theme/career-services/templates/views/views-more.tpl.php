@@ -3,7 +3,7 @@
   <?php
     print l(
       $link_text . ' <i class="pl-7 m-0 icon-arrows-right h6 inline-block"></i>', 
-      'bolsa-de-trabajo/tips', 
+      'career-services/tips', 
       array(
         'html' => TRUE
       )
@@ -16,7 +16,7 @@
     <?php
       print l(
         $link_text . ' <i class="pl-7 m-0 icon-arrows-right h6 inline-block"></i>', 
-        'bolsa-de-trabajo/tips', 
+        'career-services/tips', 
         array(
           'html' => TRUE
         )
