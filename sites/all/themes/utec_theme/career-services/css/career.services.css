@@ -167,29 +167,6 @@ body.node-type-page-subhome .body {
   margin: 0 auto;
 }
 */
-body.node-type-page-informative-one p, 
-body.node-type-page-informative-two p, 
-body.node-type-page-tip p, 
-.view-display-id-block_tips_relation p,
-.view-display-id-block_tips_relation h4.text-gray-dark, 
-.view-display-id-block_tips_relation_english p, 
-.view-display-id-block_tips_relation_english h4.text-gray-dark, 
-body.node-type-page-informative-one li, 
-body.node-type-page-informative-two li, 
-body.node-type-page-tip li, 
-.view-display-id-block_tips_relation .p-21 li, 
-.view-display-id-block_tips_relation .p-21 h4.text-gray-dark, 
-.view-display-id-block_tips_relation_english .p-21 li, 
-.view-display-id-block_tips_relation_english .p-21 h4.text-gray-dark {
-  font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
-  /*font-weight: 100;
-  font-style: normal;
-  line-height: 1.75rem;*/
-  color: #323232 !important;
-  font-weight: 300 !important;
-  font-size: 14px !important;
-  line-height: 1.42857 !important;
-}
 
 /* Node - Informative Two */
 
@@ -460,6 +437,34 @@ body.node-type-page-informative-one .pane-view-tips h1 {
 
 .btn-modal {
   cursor: pointer;
+}
+body.node-type-page-informative-one .node p, 
+body.node-type-page-informative-two .node p, 
+body.node-type-page-tip .node p, 
+.pane-view-questions .views-row > h4, 
+.pane-view-questions .views-row > h4 p, 
+.view-display-id-block_tips_relation h4.text-gray-dark, 
+.view-display-id-block_tips_relation_english h4.text-gray-dark, 
+body.node-type-page-informative-one .node li, 
+body.node-type-page-informative-two .node li, 
+body.node-type-page-tip .node li, 
+.pane-view-questions .views-row > li, 
+.view-display-id-block_tips_relation .p-21 li, 
+.view-display-id-block_tips_relation .p-21 h4.text-gray-dark, 
+.view-display-id-block_tips_relation_english .p-21 li, 
+.view-display-id-block_tips_relation_english .p-21 h4.text-gray-dark {
+  font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
+  /*font-weight: 100;
+  font-style: normal;
+  line-height: 1.75rem;*/
+  color: #323232;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.42857;
+}
+
+.pane-menu-menu-m-menu-bottom .title.text-gray-lighter {
+  color: #f1f1f1;
 }
 
 /* Others */
