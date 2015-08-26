@@ -25,10 +25,10 @@
       </li>
     <?php endforeach; ?>
   </ul>
-  <div class="text-center pv-7"> 
+  <div class="text-center pv-7">
     <h2 class="lead medium mb-7">
-      <span class="text-gray-darker">Consulta o registra</span>
-      <span class="text-gray"> una propuesta de trabajo</span>
+      <span class="text-gray-darker"><?php print t('Check or query'); ?></span>
+      <span class="text-gray"> <?php print t('a employment proposal'); ?></span>
     </h2>
     <!--button type="button" class="col-xs-12 btn btn-alumnos btn-primary uppercase atm-scroll-item" data-toggle="modal" data-target="#myModal">LOGIN</button-->
     <a href="http://utec.bumeran.com.pe/" class="col-xs-12 btn btn-alumnos btn-primary uppercase atm-scroll-item" target="_blank">LOGIN</a>
