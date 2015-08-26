@@ -12,8 +12,7 @@ body.node-type-page-subhome .body {
   display: none;
 }
 
-.block-bean-banner-top .text-white, 
-.pane-bean-banner-top .text-white {
+.bean-block-banner-top p.text-white {
   font-weight: bold;
 }
 
@@ -163,13 +162,28 @@ body.node-type-page-subhome .body {
   margin: 0 auto;
 }
 */
-body.node-type-page-informative-one h4.text-gray p, 
-body.node-type-page-informative-two h4.text-gray p, 
-body.node-type-page-tip h4.text-gray p {
+body.node-type-page-informative-one p, 
+body.node-type-page-informative-two p, 
+body.node-type-page-tip p, 
+.view-display-id-block_tips_relation p,
+.view-display-id-block_tips_relation h4.text-gray-dark, 
+.view-display-id-block_tips_relation_english p, 
+.view-display-id-block_tips_relation_english h4.text-gray-dark, 
+body.node-type-page-informative-one li, 
+body.node-type-page-informative-two li, 
+body.node-type-page-tip li, 
+.view-display-id-block_tips_relation .p-21 li, 
+.view-display-id-block_tips_relation .p-21 h4.text-gray-dark, 
+.view-display-id-block_tips_relation_english .p-21 li, 
+.view-display-id-block_tips_relation_english .p-21 h4.text-gray-dark {
   font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
-  font-weight: 100;
+  /*font-weight: 100;
   font-style: normal;
-  line-height: 1.75rem;
+  line-height: 1.75rem;*/
+  color: #323232 !important;
+  font-weight: 300 !important;
+  font-size: 14px !important;
+  line-height: 1.42857 !important;
 }
 
 /* Node - Informative Two */
@@ -601,8 +615,13 @@ body.node-type-page-informative-one .pane-view-tips h1 {
 
 @media only screen and (max-width: 412px) {
   .view-view-tips .views-row.col-sm-6 > .banner a img, 
-  .view-view-tips .views-row > .col-sm-4 a img, 
   .view-view-tips .views-row > .minh-490 a .minh-210 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .view-view-tips .views-row > .col-sm-4 a img {
     width: 100%;
   }
 }
