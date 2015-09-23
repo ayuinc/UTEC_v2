@@ -8,8 +8,9 @@
 
 ?>
 <div class="pv-42" id="home-sec-1">
-	<div class="container">
-		<h3 class="h2 lead medium mb-7"><span class="text-gray-darker"><?php print $title ?></span></h3>
+	<div class="container-sm">
+		<h2 class="light"><?php print $title ?></h2>
+	  <div class="separator-gray separator-sm"></div>
 		<h4 class="lead mb-35"><?php print $cuerpo; ?></h4>
 		<ul class="grid-list grid-list-5 grid-list-1-xs grid-list-1-landscape pt-21 list-carreras text-center text-left-xs mb-ch-21-xs">
 			<?php foreach ($carreras as $key => $carrera) : ?>

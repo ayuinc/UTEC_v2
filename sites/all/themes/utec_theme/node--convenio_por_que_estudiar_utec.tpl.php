@@ -8,7 +8,7 @@
 ?>
 
 <div class="container-sm">
-  <h1 class="light"><?php print $titulo ?></h1>
+  <h2 class="light"><?php print $titulo ?></h2>
   <div class="separator-gray separator-sm"></div>
   <div class="p-ch-gray-dark">
     <div class="pv-ch-7">
