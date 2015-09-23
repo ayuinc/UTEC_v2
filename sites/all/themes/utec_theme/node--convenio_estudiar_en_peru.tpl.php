@@ -12,7 +12,7 @@
       <div class="container-sm hero-text">
         <h2 class="light text-white"><?php print $titulo ?> </h2>
         <div class="separator-white separator-sm"></div>
-        <div class="text-white light h2"><?php print $descripcion ?></div>
+        <div class="text-white light h4"><?php print $descripcion ?></div>
       </div>
     </div>
   </div>
