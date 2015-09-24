@@ -22,5 +22,3 @@
 	<a href="/autoridades/eduardo-hochschild-beeck">Eduardo Hochschild Beeck</a>
 	<span>Presidente del Consejo Directivo</span>					
 </div>
-
-

@@ -1,4 +1,11 @@
-
+<div class="pv-21">
+	<div class="container">
+		<h3 class="h2 lead medium mb-56"><span class="text-gray-darker"><?php print $view->get_title(); ?></span></h3>			
+		<?php foreach ($rows as $id => $row): ?>
+	    <?php print $row;?>
+		<?php endforeach; ?> 
+	</div>
+</div>
 
 <!-- ----------------------------------------------------- -->
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -11,24 +18,19 @@
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <div class="grid-list-pic">
-				<img src="/sites/default/files/pictures/picture-26-1419635360.jpg" alt="Eduardo Hochschild Beeck" width="98px" height="auto" class="img-circle">
+    <?php $count = 0; ?>
+    <?php foreach ($rows as $id => $row): ?>
+			<?php if (fmod($count, 3) == 0) : ?>
+			<div class="item active">
+			<?php endif; ?>  
+				<div class="banner banner-label-bottom mb-7 ml-0">
+			    <?php print $row;?>
+				</div>
+	    <?php if (fmod($count, 3) == 3) : ?> 
 			</div>
-			<div>
-				<a href="/autoridades/eduardo-hochschild-beeck">Eduardo Hochschild Beeck</a>
-				<span>Presidente del Consejo Directivo</span>					
-			</div>
-    </div>
-    <div class="item">
-      <div class="grid-list-pic">
-				<img src="/sites/default/files/pictures/picture-26-1419635360.jpg" alt="Eduardo Hochschild Beeck" width="98px" height="auto" class="img-circle">
-			</div>
-			<div>
-				<a href="/autoridades/eduardo-hochschild-beeck">Eduardo Hochschild Beeck</a>
-				<span>Presidente del Consejo Directivo</span>					
-			</div>
-    </div>
+			<?php endif; ?> 
+			<?php $count++; ?>
+    <?php endforeach; ?>
   </div>
 
   <!-- Controls -->
