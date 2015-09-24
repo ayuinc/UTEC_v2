@@ -18,13 +18,13 @@
     <?php $count = 0; ?>
     <?php foreach ($rows as $id => $row): ?>
 			<?php if (fmod($count, 3) == 0) : ?>
-			<div class="item active">
+			<ul class="item grid-list grid-list-3 grid-list-1-xs grid-list-item-height grid-list-anchors pv-21 text-center">
 			<?php endif; ?>  
-				<div class="">
+				<li class="mb-ch-14">
 			    <?php print $row;?>
-				</div>
+				</li>
 	    <?php if (fmod($count, 3) == 2) : ?> 
-			</div>
+			</ul>
 			<?php endif; ?> 
 			<?php $count++; ?>
     <?php endforeach; ?>
