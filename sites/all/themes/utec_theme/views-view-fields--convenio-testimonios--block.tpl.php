@@ -15,9 +15,9 @@
 	// kpr($view->display['block']->display_options['header']['area']['content']);
 ?>
 
-<div class="grid-list-pic">
+
 	<img src="/sites/default/files/pictures/picture-26-1419635360.jpg" alt="Eduardo Hochschild Beeck" width="98px" height="auto" class="img-circle">
-</div>
+
 <div>
 	<a href="/autoridades/eduardo-hochschild-beeck">Eduardo Hochschild Beeck</a>
 	<span>Presidente del Consejo Directivo</span>					

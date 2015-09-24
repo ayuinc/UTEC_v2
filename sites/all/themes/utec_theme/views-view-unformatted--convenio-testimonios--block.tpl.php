@@ -23,7 +23,7 @@
 			<?php if (fmod($count, 3) == 0) : ?>
 			<div class="item active">
 			<?php endif; ?>  
-				<div class="banner banner-label-bottom mb-7 ml-0">
+				<div class="">
 			    <?php print $row;?>
 				</div>
 	    <?php if (fmod($count, 3) == 3) : ?> 
