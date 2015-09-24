@@ -12,18 +12,23 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="..." alt="...">
-      <div class="carousel-caption">
-        ...
-      </div>
+      <div class="grid-list-pic">
+				<img src="/sites/default/files/pictures/picture-26-1419635360.jpg" alt="Eduardo Hochschild Beeck" width="98px" height="auto" class="img-circle">
+			</div>
+			<div>
+				<a href="/autoridades/eduardo-hochschild-beeck">Eduardo Hochschild Beeck</a>
+				<span>Presidente del Consejo Directivo</span>					
+			</div>
     </div>
     <div class="item">
-      <img src="..." alt="...">
-      <div class="carousel-caption">
-        ...
-      </div>
+      <div class="grid-list-pic">
+				<img src="/sites/default/files/pictures/picture-26-1419635360.jpg" alt="Eduardo Hochschild Beeck" width="98px" height="auto" class="img-circle">
+			</div>
+			<div>
+				<a href="/autoridades/eduardo-hochschild-beeck">Eduardo Hochschild Beeck</a>
+				<span>Presidente del Consejo Directivo</span>					
+			</div>
     </div>
-    ...
   </div>
 
   <!-- Controls -->
