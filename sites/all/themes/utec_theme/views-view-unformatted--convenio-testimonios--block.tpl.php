@@ -17,7 +17,7 @@
     <?php $count = 0; ?>
     <?php foreach ($rows as $id => $row): ?>
 			<?php if (fmod($count, 3) == 0) : ?>
-			<div class="item">
+			<div class="item <?php ($count == 0) ? print 'active' : '' ; ?>">
 			<?php endif; ?>  
 				<div class="">
 			    <?php print $row;?>
