@@ -17,9 +17,9 @@
     <?php $count = 0; ?>
     <?php foreach ($rows as $id => $row): ?>
 			<?php if (fmod($count, 3) == 0) : ?>
-			<div class="item grid-list grid-list-3 grid-list-1-xs grid-list-item-height grid-list-anchors pv-21 text-center next left">
+			<div class="item">
 			<?php endif; ?>  
-				<div class="mb-ch-14">
+				<div class="">
 			    <?php print $row;?>
 				</div>
 	    <?php if (fmod($count, 3) == 2) : ?> 
