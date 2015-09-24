@@ -1,8 +1,7 @@
 <div class="pv-21">
-	<div class="container">
+	<div class="container-sm">
 		<h3 class="h2 lead medium mb-56"><span class="text-gray-darker"><?php print $view->get_title(); ?></span></h3>			
-	</div>
-</div>
+
 
 <!-- ----------------------------------------------------- -->
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -18,13 +17,13 @@
     <?php $count = 0; ?>
     <?php foreach ($rows as $id => $row): ?>
 			<?php if (fmod($count, 3) == 0) : ?>
-			<ul class="item grid-list grid-list-3 grid-list-1-xs grid-list-item-height grid-list-anchors pv-21 text-center">
+			<div class="item grid-list grid-list-3 grid-list-1-xs grid-list-item-height grid-list-anchors pv-21 text-center next left">
 			<?php endif; ?>  
-				<li class="mb-ch-14">
+				<div class="mb-ch-14">
 			    <?php print $row;?>
-				</li>
+				</div>
 	    <?php if (fmod($count, 3) == 2) : ?> 
-			</ul>
+			</div>
 			<?php endif; ?> 
 			<?php $count++; ?>
     <?php endforeach; ?>
@@ -42,7 +41,8 @@
 </div>	
 
 
-
+	</div>
+</div>
 
 
 
