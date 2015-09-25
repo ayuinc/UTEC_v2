@@ -19,7 +19,9 @@
       <div class="item active">
         <div class="banner-label-bottom mb-7 ml-0">
           <?php foreach ($files as $key => $file): ?>
-          <a href="<?php print file_create_url($file['uri']) ?>"><?php print $file['filename'] ?></a>
+          <div>
+            <a href="<?php print file_create_url($file['uri']) ?>"><?php print $file['filename'] ?></a>
+          </div>
           <?php endforeach ?>
           </div>
         </div>
