@@ -24,9 +24,6 @@
         <li role="presentation" class="<?php ($count == 0) ? print 'active' : '' ; ?>"><a href="#tab-<?php print $count ?>" aria-controls="tab-<?php print $count ?>" role="tab" data-toggle="tab"><?php print $tab_title['value'] ?></a></li>
         <?php $count++; ?>
         <?php endforeach ?>
-        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
-        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
       </ul>
 
       <!-- Tab panes -->
