@@ -2,7 +2,7 @@
 	
 	$titulo = $node->title;   
 	$descripcion = $node->body['und']['0']['value'];
-	$files = $node->field_archivo_pdf['und']['0'];
+	$files = $node->field_archivo_pdf['und'];
   // kpr($node);
 
 ?>
