@@ -2,8 +2,8 @@
 	
 	$titulo = $node->title;   
 	$descripcion = $node->body['und']['0']['value'];
-	$imagen = $node->field_image['und']['0']['uri'];
-  kpr($node);
+	$file = file_create_url($node->field_archivo_pdf['und']['0']['uri']);
+  // kpr($node);
 
 ?>
 
@@ -18,7 +18,7 @@
     <div class="carousel-inner" role="listbox">
       <div class="item active">
         <div class="banner banner-label-bottom mb-7 ml-0">
-          <div class="banner-pic" style="background-image: url(<?php print image_style_url($image_style, $imagen); ?>);">
+          <a href="<?php print $file ?>"></a>
           </div>
         </div>
       </div>
