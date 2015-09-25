@@ -16,7 +16,7 @@
     </div>
     <!-- Wrapper for slides -->
     <div class="row">
-      <?php foreach ($$imagenes as $key => $$imagen): ?>
+      <?php foreach ($$imagenes as $key => $imagen): ?>
       <div class="col-md-3">
         <div class="banner banner-label-bottom mb-7 ml-0">
           <div class="banner-pic" style="background-image: url(<?php print image_style_url($image_style, $imagen); ?>);">
