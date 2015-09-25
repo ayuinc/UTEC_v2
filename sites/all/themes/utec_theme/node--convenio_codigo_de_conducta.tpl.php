@@ -2,7 +2,7 @@
 	
 	$titulo = $node->title;   
 	$descripcion = $node->body['und']['0']['value'];
-	$file = file_create_url($node->field_archivo_pdf['und']['0']['uri']);
+	$files = $node->field_archivo_pdf['und']['0'];
   // kpr($node);
 
 ?>
@@ -18,7 +18,9 @@
     <div class="carousel-inner" role="listbox">
       <div class="item active">
         <div class="banner banner-label-bottom mb-7 ml-0">
-          <a href="<?php print $file ?>"></a>
+          <?php foreach ($files as $key => $file): ?>
+          <a href="<?php print $file['uri'] ?>"><?php print $file['filename'] ?></a>
+          <?php endforeach ?>
           </div>
         </div>
       </div>
