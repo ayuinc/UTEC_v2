@@ -55,7 +55,7 @@
 	));
 
   drupal_add_js(path_to_theme() . '/js/b3/tab.js', array(
-    'scope' => 'footer',
+    'scope' => 'header',
     'group' => JS_THEME,
     'every_page' => TRUE,
     'weight' => 2,
