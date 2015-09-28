@@ -3,7 +3,7 @@
 	$titulo = $node->title;   
   $titulos = $node->field_texo['und'];
   $contenido = $node->field_cuerpo['und'];
-  $$descripcion = $node->body['und']['value'];
+  $$descripcion = $node->body['und']['0']['value'];
   $imagen1 = $node->field_image['und']['0']['uri'];
   $imagen2 = $node->field_imagen_mutliple_1['und']['0']['uri'];
   $imagen3 = $node->field_imagen_3['und']['0']['uri'];
