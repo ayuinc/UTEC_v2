@@ -17,7 +17,7 @@
   <div class="row">
     <div class="col-md-4">
       <div class="pic" style="background-image: url(<?php print image_style_url($image_style, $imagen1); ?>);"></div>
-      <div class="overlay">
+      <div class="">
         <div>
           <?php print $titulos['0']['value']; ?>                
         </div>
@@ -28,7 +28,7 @@
     </div>
     <div class="col-md-8">
       <div class="pic" style="background-image: url(<?php print image_style_url($image_style_mul, $imagen2); ?>);"></div>
-      <div class="overlay">
+      <div class="">
         <div>
           <?php print $titulos['1']['value']; ?>                
         </div>
@@ -41,7 +41,7 @@
   <div class="row">
     <div class="col-md-4">
       <div class="pic" style="background-image: url(<?php print image_style_url($image_style_3, $imagen3); ?>);"></div>
-      <div class="overlay">
+      <div class="">
         <div>
           <?php print $titulos['2']['value']; ?>                
         </div>
@@ -54,7 +54,7 @@
       <div class="row">
         <div class="col-md-6">
           <div class="pic" style="background-image: url(<?php print image_style_url($image_style_4, $imagen4); ?>);"></div>
-          <div class="overlay">
+          <div class="">
             <div>
               <?php print $titulos['3']['value']; ?>                
             </div>
@@ -65,7 +65,7 @@
         </div>
         <div class="col-md-6">
           <div class="pic" style="background-image: url(<?php print image_style_url($image_style_5, $imagen5); ?>);"></div>
-          <div class="overlay">
+          <div class="">
             <div>
               <?php print $titulos['4']['value']; ?>                
             </div>
@@ -78,7 +78,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="pic" style="background-image: url(<?php print image_style_url($image_style_6, $imagen6); ?>);"></div>
-          <div class="overlay">
+          <div class="">
             <div>
               <?php print $titulos['5']['value']; ?>                
             </div>
