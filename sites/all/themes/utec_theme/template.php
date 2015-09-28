@@ -199,11 +199,11 @@ function utec_theme_preprocess_node(&$variables){
 	$entity_type = 'node';
 	$field_name = 'field_image';
 	$field_name_2 = 'field_image_2';
-  $field_name_3 = 'field_image_3';
+  $field_name_3 = 'field_imagen_3';
   $field_name_mul = 'field_imagen_mutliple_1';
-  $field_name_4 = 'field_image_4';
-  $field_name_5 = 'field_image_5';
-  $field_name_6 = 'field_image_6';
+  $field_name_4 = 'field_imagen_4';
+  $field_name_5 = 'field_imagen_5';
+  $field_name_6 = 'field_imagen_6';
 
 	$bundle = $node->type; // Or whatever content type you need.
 	$view_mode = 'default'; // Or whatever view mode you want to get settings for, e.g. teaser.
