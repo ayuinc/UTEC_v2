@@ -16,17 +16,17 @@
 
 <div class="row">
   <div class="col-md-4"><?php print image_style_url($image_style, $imagen1); ?></div>
-  <div class="col-md-8"><?php print image_style_url($image_style, $imagen2); ?></div>
+  <div class="col-md-8"><?php print image_style_url($image_style_mul, $imagen2); ?></div>
 </div>
 <div class="row">
-  <div class="col-md-4"><?php print image_style_url($image_style, $imagen3); ?></div>
+  <div class="col-md-4"><?php print image_style_url($image_style_3, $imagen3); ?></div>
   <div class="col-md-8">
     <div class="row">
-      <div class="col-md-6"><?php print image_style_url($image_style, $imagen4); ?></div>
-      <div class="col-md-6"><?php print image_style_url($image_style, $imagen5); ?></div>
+      <div class="col-md-6"><?php print image_style_url($image_style_4, $imagen4); ?></div>
+      <div class="col-md-6"><?php print image_style_url($image_style_5, $imagen5); ?></div>
     </div>
     <div class="row">
-      <div class="col-md-12"><?php print image_style_url($image_style, $imagen6); ?></div>
+      <div class="col-md-12"><?php print image_style_url($image_style_6, $imagen6); ?></div>
     </div>
   </div>
 </div>  

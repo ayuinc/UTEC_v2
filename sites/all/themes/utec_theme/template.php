@@ -199,7 +199,12 @@ function utec_theme_preprocess_node(&$variables){
 	$entity_type = 'node';
 	$field_name = 'field_image';
 	$field_name_2 = 'field_image_2';
-	$field_name_3 = 'field_image_3';
+  $field_name_3 = 'field_image_3';
+  $field_name_mul = 'field_imagen_mutliple_1';
+  $field_name_4 = 'field_image_4';
+  $field_name_5 = 'field_image_5';
+  $field_name_6 = 'field_image_6';
+
 	$bundle = $node->type; // Or whatever content type you need.
 	$view_mode = 'default'; // Or whatever view mode you want to get settings for, e.g. teaser.
 
@@ -215,9 +220,29 @@ function utec_theme_preprocess_node(&$variables){
 	$variables['image_style_2'] = $image_style2;
 
 	$info3 = field_info_instance($entity_type, $field_name_3, $bundle);
-	$settings3 = $info3['display'][$view_mode]['settings'];
-	$image_style3 = $settings3['image_style'];
-	$variables['image_style_3'] = $image_style3;
+  $settings3 = $info3['display'][$view_mode]['settings'];
+  $image_style3 = $settings3['image_style'];
+  $variables['image_style_3'] = $image_style3;
+
+  $info_mul = field_info_instance($entity_type, $field_name_mul, $bundle);
+  $settings_mul = $info_mul['display'][$view_mode]['settings'];
+  $image_style_mul = $settings_mul['image_style'];
+  $variables['image_style_mul'] = $image_style_mul;
+
+  $info4 = field_info_instance($entity_type, $field_name_4, $bundle);
+  $settings4 = $info4['display'][$view_mode]['settings'];
+  $image_style4 = $settings4['image_style'];
+  $variables['image_style_4'] = $image_style4;
+
+  $info5 = field_info_instance($entity_type, $field_name_5, $bundle);
+	$settings5 = $info5['display'][$view_mode]['settings'];
+	$image_style5 = $settings5['image_style'];
+	$variables['image_style_5'] = $image_style5;
+
+  $info6 = field_info_instance($entity_type, $field_name_6, $bundle);
+  $settings6 = $info6['display'][$view_mode]['settings'];
+  $image_style6 = $settings6['image_style'];
+  $variables['image_style_6'] = $image_style6;
 
 }
 
