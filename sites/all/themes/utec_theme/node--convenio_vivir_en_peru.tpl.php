@@ -138,7 +138,7 @@
         <?php endforeach ?>
       </div>
     </div>
-    <div id="carousel-bloque4" class="carousel carousel-bloque4 slide mb-42" data-ride="carousel">
+    <div id="carousel-bloque4" class="carousel carousel-custom slide mb-42" data-ride="carousel">
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <?php $count = 0; ?>
@@ -214,7 +214,7 @@
         <?php endforeach ?>
       </div>
     </div>
-    <div id="carousel-bloque6" class="carousel carousel-bloque6 slide mb-42" data-ride="carousel">
+    <div id="carousel-bloque6" class="carousel carousel-custom slide mb-42" data-ride="carousel">
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <?php $count = 0; ?>
