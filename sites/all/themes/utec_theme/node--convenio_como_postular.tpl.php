@@ -21,7 +21,11 @@
       <ul class="nav nav-tabs" role="tablist">
         <?php $count = 0; ?>
         <?php foreach ($tab_titles as $key => $tab_title): ?>
-        <li role="presentation" class="<?php ($count == 0) ? print 'active' : '' ; ?>"><a href="#tab-<?php print $count ?>" aria-controls="tab-<?php print $count ?>" role="tab" data-toggle="tab"><?php print $tab_title['value'] ?></a></li>
+        <li role="presentation" class="<?php ($count == 0) ? print 'active' : '' ; ?>">
+          <a href="#tab-<?php print $count ?>" aria-controls="tab-<?php print $count ?>" role="tab" data-toggle="tab">
+            <?php print $tab_title['value'] ?>
+          </a>
+        </li>
         <?php $count++; ?>
         <?php endforeach ?>
       </ul>
@@ -36,4 +40,5 @@
       </div>
     </div>
   </div>
+</div>
 
