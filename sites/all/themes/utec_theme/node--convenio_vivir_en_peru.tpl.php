@@ -58,7 +58,7 @@
         <?php foreach ($imagenes_bloque_2 as $key => $imagen_bloque_2): ?>
         <div class="item <?php ($count == 0) ? print 'active' : '' ; ?>">
           <div class="banner banner-label-bottom mb-7 ml-0">
-            <div class="banner-pic" style="background-image: url(<?php print image_style_url($image_style, $imagen_bloque_2); ?>);">
+            <div class="banner-pic" style="background-image: url(<?php print image_style_url($image_style, $imagen_bloque_2['uri']); ?>);">
             </div>
           </div>
         </div>
