@@ -173,7 +173,7 @@
     <ul>
       <li class="text-center">
         <div class="grid-list-pic">
-          <i class="<?php print $imagen_bloque_5['value']; ?>"></i>
+          <i class="<?php print $imagen_bloque_5['value']; ?>" style="font-size:5rem"></i>
         </div>
       </li>           
       <li class="pl-21 text-gray">
