@@ -102,8 +102,8 @@
       <!-- Tab panes -->
       <div class="tab-content">
         <?php $count = 0; ?>
-        <?php foreach ($titulos_tab_bloque_3 as $key => $titulo_tab_bloque_3): ?>
-        <div role="tabpanel" class="tab-pane <?php ($count == 0) ? print 'active' : '' ; ?>" id="tab-<?php print $count ?>"><?php print $titulo_tab_bloque_3['value'] ?></div>
+        <?php foreach ($cuerpos_tab_bloque_3 as $key => $cuerpo_tab_bloque_3): ?>
+        <div role="tabpanel" class="tab-pane <?php ($count == 0) ? print 'active' : '' ; ?>" id="tab-<?php print $count ?>"><?php print $cuerpo_tab_bloque_3['value'] ?></div>
         <?php $count++; ?>
         <?php endforeach ?>
       </div>
