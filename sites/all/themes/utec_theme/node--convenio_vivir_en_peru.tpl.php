@@ -24,7 +24,7 @@
 
   $titulo_bloque_6 = $node->field_hora['und']['0']['value'];     
   $titulos_tab_bloque_6 = $node->field_titulo_tab_bloque_6['und'];    
-  $contenidos_tab_bloque_6 = $node->field_contenido_tab_bloque_6['und'];   
+  $cuerpos_tab_bloque_6 = $node->field_contenido_tab_bloque_6['und'];   
   $imagenes_bloque_6 = $node->field_imagenes_bloque_6['und'];
 
   kpr($node);
