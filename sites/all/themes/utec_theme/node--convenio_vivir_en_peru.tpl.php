@@ -142,10 +142,10 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <?php $count = 0; ?>
-        <?php foreach ($imagenes_bloque_4 as $key => $imagenes_bloque_4): ?>
+        <?php foreach ($imagenes_bloque_4 as $key => $imagen_bloque_4): ?>
         <div class="item <?php ($count == 0) ? print 'active' : '' ; ?>">
           <div class="banner banner-label-bottom mb-7 ml-0">
-            <div class="banner-pic" style="background-image: url(<?php print image_style_url($image_style, $imagenes_bloque_4); ?>);">
+            <div class="banner-pic" style="background-image: url(<?php print image_style_url($image_style, $imagen_bloque_4['uri']); ?>);">
             </div>
           </div>
         </div>
@@ -218,10 +218,10 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <?php $count = 0; ?>
-        <?php foreach ($imagenes_bloque_6 as $key => $imagenes_bloque_6): ?>
+        <?php foreach ($imagenes_bloque_6 as $key => $imagen_bloque_6): ?>
         <div class="item <?php ($count == 0) ? print 'active' : '' ; ?>">
           <div class="banner banner-label-bottom mb-7 ml-0">
-            <div class="banner-pic" style="background-image: url(<?php print image_style_url($image_style, $imagenes_bloque_6); ?>);">
+            <div class="banner-pic" style="background-image: url(<?php print image_style_url($image_style, $imagen_bloque_6['uri']); ?>);">
             </div>
           </div>
         </div>
