@@ -54,12 +54,12 @@
 	  'weight' => 2,
 	));
 
-  drupal_add_js(path_to_theme() . '/js/b3/tab.js', array(
-    'scope' => 'footer',
-    'group' => JS_THEME,
-    'every_page' => TRUE,
-    'weight' => 4,
-  ));
+  // drupal_add_js(path_to_theme() . '/js/b3/tab.js', array(
+  //   'scope' => 'footer',
+  //   'group' => JS_THEME,
+  //   'every_page' => TRUE,
+  //   'weight' => 4,
+  // ));
 
   drupal_add_js(path_to_theme() . '/js/bootstrap.js', array(
     'scope' => 'footer',
