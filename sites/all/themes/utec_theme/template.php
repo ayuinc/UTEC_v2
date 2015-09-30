@@ -58,7 +58,14 @@
     'scope' => 'footer',
     'group' => JS_THEME,
     'every_page' => TRUE,
-    'weight' => 2,
+    'weight' => 4,
+  ));
+
+  drupal_add_js(path_to_theme() . '/js/bootstrap.js', array(
+    'scope' => 'footer',
+    'group' => JS_THEME,
+    'every_page' => TRUE,
+    'weight' => 3,
   ));
 
 	drupal_add_js(path_to_theme() . '/js/app/lib/searchform.js', array(
