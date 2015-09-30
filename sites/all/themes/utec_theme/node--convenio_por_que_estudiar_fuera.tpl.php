@@ -25,7 +25,7 @@
   <div class="anchor-img-grid anchor-img-grid-1">
     <div class="row">
       <div class="col-md-4">
-        <div class="anchor-block-3">
+        <div class="anchor-block-3" style="width:280px;height:280px">
           <div class="pic" style="background-image: url(<?php print image_style_url($image_style, $imagen1); ?>);"></div>
           <div class="overlay">
             <div>
@@ -38,7 +38,7 @@
         </div>
       </div>
       <div class="col-md-8">
-        <div class="anchor-block-2">
+        <div class="anchor-block-2" style="width:517px;height:280px">
           <div class="pic" style="background-image: url(<?php print image_style_url($image_style_mul, $imagen2); ?>);"></div>
           <div class="overlay">
             <div>
@@ -53,7 +53,7 @@
     </div>
     <div class="row">
       <div class="col-md-4">
-        <div class="anchor-block-1">
+        <div class="anchor-block-1" style="width:280px;height:560px;">
           <div class="pic" style="background-image: url(<?php print image_style_url($image_style_3, $imagen3); ?>);"></div>
           <div class="overlay">
             <div>
@@ -68,7 +68,7 @@
       <div class="col-md-8">
         <div class="row">
           <div class="col-md-6">
-            <div class="anchor-block-3">
+            <div class="anchor-block-3" style="width:280px;height:280px">
               <div class="pic" style="background-image: url(<?php print image_style_url($image_style_4, $imagen4); ?>);"></div>
               <div class="overlay">
                 <div>
@@ -81,7 +81,7 @@
             </div>
           </div>
           <div class="col-md-6">
-            <div class="anchor-block-3">
+            <div class="anchor-block-3" style="width:280px;height:280px">
               <div class="pic" style="background-image: url(<?php print image_style_url($image_style_5, $imagen5); ?>);"></div>
               <div class="overlay">
                 <div>
@@ -96,13 +96,15 @@
         </div>
         <div class="row">
           <div class="col-md-12">
-            <div class="pic" style="background-image: url(<?php print image_style_url($image_style_6, $imagen6); ?>);"></div>
-            <div class="overlay">
-              <div>
-                <?php print $titulos['5']['value']; ?>                
-              </div>
-              <div class="">
-                <?php print $contenido['5']['value']; ?>             
+            <div class="anchor-block-3" style="width:517px;height:280px">
+              <div class="pic" style="background-image: url(<?php print image_style_url($image_style_6, $imagen6); ?>);"></div>
+              <div class="overlay">
+                <div>
+                  <?php print $titulos['5']['value']; ?>                
+                </div>
+                <div class="">
+                  <?php print $contenido['5']['value']; ?>             
+                </div>
               </div>
             </div>
           </div>
