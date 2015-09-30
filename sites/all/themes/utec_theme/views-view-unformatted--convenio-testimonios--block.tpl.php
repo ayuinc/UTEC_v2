@@ -1,7 +1,8 @@
 <div class="pv-21">
 	<div class="container-sm">
 		<h3 class="h2 lead medium mb-56"><span class="text-gray-darker"><?php print $view->get_title(); ?></span></h3>
-		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		<div class="separator-gray separator-sm"></div>
+		<div id="carousel-example-generic" class="carousel-custom slide" data-ride="carousel">
 		  <!-- Indicators -->
 		  <ol class="carousel-indicators">
 		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
