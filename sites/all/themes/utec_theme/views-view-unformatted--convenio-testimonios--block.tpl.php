@@ -1,6 +1,6 @@
 <div class="pv-21">
 	<div class="container-sm">
-		<h3 class="h2 lead medium mb-56"><span class="text-gray-darker"><?php print $view->get_title(); ?></span></h3>
+		<h2 class="light"><?php print $view->get_title(); ?></h2>
 		<div class="separator-gray separator-sm"></div>
 		<div id="carousel-example-generic" class="carousel-custom slide" data-ride="carousel">
 		  <!-- Indicators -->
