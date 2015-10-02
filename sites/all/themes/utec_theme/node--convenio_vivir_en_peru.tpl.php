@@ -27,7 +27,7 @@
   $cuerpos_tab_bloque_6 = $node->field_contenido_tab_bloque_6['und'];   
   $imagenes_bloque_6 = $node->field_imagenes_bloque_6['und'];
 
-  kpr($node);
+  // kpr($node);
 
 ?>
 <!-- CABECERA -->
