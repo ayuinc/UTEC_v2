@@ -8,6 +8,7 @@
  */
 ?>
 <div class="container-sm">
+	kpr($view);
 	<h1 class="light"><?php print $view->get_title(); ?></h1>
 	<div class="separator-gray separator-lg"></div>
 	<h3></h3>
