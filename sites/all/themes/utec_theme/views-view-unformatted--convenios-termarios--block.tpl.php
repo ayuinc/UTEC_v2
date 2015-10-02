@@ -8,8 +8,7 @@
  */
 ?>
 <div class="container-sm">
-	<?php  kpr($view); ?>
-	<h1 class="light"><?php print $view->get_title(); ?></h1>
+	<h1 class="light"><?php print $view->result['0']['field_field_carrera_referencia']['0']['rendered']['#markup']; ?></h1>
 	<div class="separator-gray separator-lg"></div>
 	<h3></h3>
 	<div class="pv-35">
