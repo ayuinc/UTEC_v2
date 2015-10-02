@@ -5,6 +5,8 @@
 	$creditos = $fields['field_n_mero_creditos']->content;
 	$prerequisitos = $fields['field_requisitos']->content;
 	$objetivos = $fields['body']->content;
+	$carrera = $fields['field_carrera_referencia']->content;
+	kpr($carrera);
 
 ?>
 
