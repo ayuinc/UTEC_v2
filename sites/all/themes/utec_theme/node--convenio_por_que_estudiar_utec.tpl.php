@@ -7,7 +7,7 @@
 
 ?>
 
-<div class="container-sm">
+<div class="container-sm" id="studyinutec">
   <h2 class="light"><?php print $titulo ?></h2>
   <div class="separator-gray separator-sm"></div>
   <div class="p-ch-gray-dark">
@@ -25,4 +25,5 @@
     </div>
     <!-- Controls --> 
   </div>
+  <a class="scroll-down scroll-down-sq size lg" href="#course" rel="nofollow"><i class="icon-arrows-down"></i></a>
 </div>

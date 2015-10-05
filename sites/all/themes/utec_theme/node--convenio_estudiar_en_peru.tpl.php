@@ -15,5 +15,6 @@
         <div class="text-white light h4"><?php print $descripcion ?></div>
       </div>
     </div>
+    <a class="scroll-down scroll-down-sq size lg" href="#studyabroad" rel="nofollow"><i class="icon-arrows-down"></i></a>
   </div>
 </div> <!-- END:Hero -->

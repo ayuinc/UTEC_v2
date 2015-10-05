@@ -14,7 +14,7 @@
 
 ?>
 
-<div class="container-sm">
+<div class="container-sm" id="studyabroad">
   <h2 class="light"><?php print $titulo ?></h2>
   <div class="separator-gray separator-sm"></div>
   <div class="p-ch-gray-dark">
@@ -111,5 +111,6 @@
         </div>
       </div>
     </div>  
-  </div>  
+  </div>
+  <a class="scroll-down scroll-down-sq size lg" href="#studyinutec" rel="nofollow"><i class="icon-arrows-down"></i></a>
 </div>  
