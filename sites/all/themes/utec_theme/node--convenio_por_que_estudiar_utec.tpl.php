@@ -15,6 +15,7 @@
       <?php print $descripcion ?>   
     </div>
     <!-- Wrapper for slides -->
+    <?php if ($imagen): ?>
     <div class="carousel-inner" role="listbox">
       <div class="item active">
         <div class="banner banner-label-bottom mb-7 ml-0">
@@ -23,7 +24,7 @@
         </div>
       </div>
     </div>
-    <!-- Controls --> 
+    <?php endif ?>
   </div>
   <a class="scroll-down scroll-down-sq size lg" href="#course" rel="nofollow"><i class="icon-arrows-down"></i></a>
 </div>

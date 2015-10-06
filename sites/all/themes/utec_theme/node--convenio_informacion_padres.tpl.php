@@ -16,6 +16,7 @@
       <?php print $descripcion ?>   
     </div>
     <!-- Wrapper for slides -->
+    <?php if ($imagen): ?>
     <div class="carousel-inner" role="listbox">
       <div class="item active">
         <div class="banner banner-label-bottom mb-7 ml-0">
@@ -24,6 +25,7 @@
         </div>
       </div>
     </div>
+    <?php endif ?>
     <div class="pv-ch-7">
       <?php print $contenido ?>   
     </div>

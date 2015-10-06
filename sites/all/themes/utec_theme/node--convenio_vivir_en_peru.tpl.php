@@ -56,12 +56,14 @@
       <div class="carousel-inner" role="listbox">
         <?php $count = 0; ?>
         <?php foreach ($imagenes_bloque_2 as $key => $imagen_bloque_2): ?>
+        <?php if ($imagen_bloque_2): ?>
         <div class="item <?php ($count == 0) ? print 'active' : '' ; ?>">
           <div class="banner banner-label-bottom mb-7 ml-0">
             <div class="banner-pic" style="background-image: url(<?php print image_style_url($image_style, $imagen_bloque_2['uri']); ?>);">
             </div>
           </div>
         </div>
+        <?php endif ?>
         <?php $count ++; ?>
         <?php endforeach ?>
       </div>
@@ -143,12 +145,14 @@
       <div class="carousel-inner" role="listbox">
         <?php $count = 0; ?>
         <?php foreach ($imagenes_bloque_4 as $key => $imagen_bloque_4): ?>
+        <?php if ($imagen_bloque_4): ?>
         <div class="item <?php ($count == 0) ? print 'active' : '' ; ?>">
           <div class="banner banner-label-bottom mb-7 ml-0">
             <div class="banner-pic" style="background-image: url(<?php print image_style_url($image_style, $imagen_bloque_4['uri']); ?>);">
             </div>
           </div>
         </div>
+        <?php endif ?>
         <?php $count ++; ?>
         <?php endforeach ?>
       </div>
@@ -219,12 +223,14 @@
       <div class="carousel-inner" role="listbox">
         <?php $count = 0; ?>
         <?php foreach ($imagenes_bloque_6 as $key => $imagen_bloque_6): ?>
+        <?php if ($imagen_bloque_6): ?>
         <div class="item <?php ($count == 0) ? print 'active' : '' ; ?>">
           <div class="banner banner-label-bottom mb-7 ml-0">
             <div class="banner-pic" style="background-image: url(<?php print image_style_url($image_style, $imagen_bloque_6['uri']); ?>);">
             </div>
           </div>
         </div>
+        <?php endif ?>
         <?php $count ++; ?>
         <?php endforeach ?>
       </div>
