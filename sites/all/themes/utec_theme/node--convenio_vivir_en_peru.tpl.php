@@ -2,7 +2,7 @@
 	
 	$titulo = $node->title;   
 	$descripcion_general = $node->body['und']['0']['value'];
-	$imagen_cabecera = $node->field_image['und']['0']['uri'];
+	$imagen_cabecera = $node->field_image_2['und']['0']['uri'];
 
   $titulo_bloque_2 = $node->field_texo['und']['0']['value'];
   $cuerpo_bloque_2 = $node->field_descripci_n['und']['0']['value'];
