@@ -8,7 +8,7 @@
 
 ?>
 
-	<div class="container-sm" id="course">
+	<div class="container-sm section-scroll-content" id="course">
 		<h2 class="light"><?php print $title ?></h2>
 	  <div class="separator-gray separator-sm"></div>
 		<h4 class="mb-35"><?php print $cuerpo; ?></h4>
