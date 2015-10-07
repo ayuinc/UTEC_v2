@@ -28,15 +28,15 @@
         <div class="anchor-block-4" style="width: 245px; height: 242px;">    
           <div class="pic" style="background-image: url(<?php print image_style_url($image_style, $imagen1); ?>);"></div>
           <div class="overlay" style="background-color: rgba(0,0,0,0.50); opacity: 1;">
-            <h4><?php print $titulos['0']['value']; ?></h4>
-            <h4><?php print $contenido['0']['value']; ?></h4>
+            <h5><?php print $titulos['0']['value']; ?></h5>
+            <h5><?php print $contenido['0']['value']; ?></h5>
           </div>
         </div>
         <div class="anchor-block-4" style="width: 245px; height: 484px;">    
           <div class="pic" style="background-image: url(<?php print image_style_url($image_style_3, $imagen3); ?>);"></div>
           <div class="overlay" style="background-color: rgba(0,0,0,0.50); opacity: 1;">
-            <h4><?php print $titulos['2']['value']; ?></h4>
-            <h4><?php print $contenido['2']['value']; ?> </h4>
+            <h5><?php print $titulos['2']['value']; ?></h5>
+            <h5><?php print $contenido['2']['value']; ?> </h5>
           </div>
         </div>
       </div>
@@ -44,29 +44,29 @@
         <div class="anchor-block-2" style="width: 487px; height: 242px;">    
           <div class="pic" style="background-image: url(<?php print image_style_url($image_style_mul, $imagen2); ?>);"></div>
           <div class="overlay" style="background-color: rgba(0,0,0,0.50); opacity: 1;">
-            <h4><?php print $titulos['1']['value']; ?></h4>
-            <h4><?php print $contenido['1']['value']; ?></h4>
+            <h5><?php print $titulos['1']['value']; ?></h5>
+            <h5><?php print $contenido['1']['value']; ?></h5>
           </div>
         </div>
         <div class="anchor-block-3" style="width: 243px; height: 242px;">    
           <div class="pic" style="background-image: url(<?php print image_style_url($image_style_4, $imagen4); ?>);"></div>
           <div class="overlay" style="background-color: rgba(0,0,0,0.50); opacity: 1;">
-            <h4><?php print $titulos['3']['value']; ?> s</h4>
-            <h4><?php print $contenido['3']['value']; ?></h4>
+            <h5><?php print $titulos['3']['value']; ?> s</h5>
+            <h5><?php print $contenido['3']['value']; ?></h5>
           </div>
         </div>
         <div class="anchor-block-4" style="width: 243px; height: 242px;">    
           <div class="pic" style="background-image: url(<?php print image_style_url($image_style_5, $imagen5); ?>);"></div>
           <div class="overlay" style="background-color: rgba(0,0,0,0.50); opacity: 1;">
-            <h4><?php print $titulos['4']['value']; ?></h4>
-            <h4><?php print $contenido['4']['value']; ?></h4>
+            <h5><?php print $titulos['4']['value']; ?></h5>
+            <h5><?php print $contenido['4']['value']; ?></h5>
           </div>
         </div>
         <div class="anchor-block-2" style=" float: left; width: 487px; height: 242px;">    
           <div class="pic" style="background-image: url(<?php print image_style_url($image_style_6, $imagen6); ?>);"></div>
           <div class="overlay" style="background-color: rgba(0,0,0,0.50); opacity: 1;">
-            <h4><?php print $titulos['5']['value']; ?></h4>
-            <h4><?php print $contenido['5']['value']; ?> </h4>
+            <h5><?php print $titulos['5']['value']; ?></h5>
+            <h5><?php print $contenido['5']['value']; ?> </h5>
           </div>
         </div>
       </div>
