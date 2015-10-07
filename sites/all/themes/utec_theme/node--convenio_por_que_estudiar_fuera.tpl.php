@@ -83,8 +83,8 @@
       </ul>
     </nav>
     <div class="content-wrap" style="background-color: white; color: black;">
-      <section id="section-linebox-1" class=""><p style="color: black;">1</p></section>
-      <section id="section-linebox-2" class="content-current"><p style="color: black;">2</p></section>
+      <section id="section-linebox-1" class="content-current"><p style="color: black;">1</p></section>
+      <section id="section-linebox-2" class=""><p style="color: black;">2</p></section>
       <section id="section-linebox-3" class=""><p style="color: black;">3</p></section>
       <section id="section-linebox-4" class=""><p style="color: black;">4</p></section>
       <section id="section-linebox-5" class=""><p style="color: black;">5</p></section>
