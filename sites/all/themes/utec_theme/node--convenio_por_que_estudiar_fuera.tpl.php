@@ -75,21 +75,21 @@
   <div class="tabs tabs-style-linebox">
     <nav>
       <ul>
-        <li><a href="#section-linebox-5"><span>Airline</span></a></li>
-        <li><a href="#section-linebox-4"><span>Schedule</span></a></li>
-        <li><a href="#section-linebox-2"><span>Deals</span></a></li>
-        <li><a href="#section-linebox-3"><span>Drinks</span></a></li>
-        <li><a href="#section-linebox-5"><span>Settings</span></a></li>
+        <li class="tab-current"><a href="#section-linebox-5"><span>Airline</span></a></li>
+        <li class=""><a href="#section-linebox-4"><span>Schedule</span></a></li>
+        <li class=""><a href="#section-linebox-2"><span>Deals</span></a></li>
+        <li class=""><a href="#section-linebox-3"><span>Drinks</span></a></li>
+        <li class=""><a href="#section-linebox-5"><span>Settings</span></a></li>
       </ul>
     </nav>
     <div class="content-wrap" style="background-color: white; color: black;">
-      <section id="section-linebox-1"><p style="color: black;">1</p></section>
-      <section id="section-linebox-2"><p style="color: black;">2</p></section>
-      <section id="section-linebox-3"><p style="color: black;">3</p></section>
-      <section id="section-linebox-4"><p style="color: black;">4</p></section>
-      <section id="section-linebox-5"><p style="color: black;">5</p></section>
+      <section id="section-linebox-1" class="content-current"><p style="color: black;">1</p></section>
+      <section id="section-linebox-2" class=""><p style="color: black;">2</p></section>
+      <section id="section-linebox-3" class=""><p style="color: black;">3</p></section>
+      <section id="section-linebox-4" class=""><p style="color: black;">4</p></section>
+      <section id="section-linebox-5" class=""><p style="color: black;">5</p></section>
     </div><!-- /content -->
-  </div><!-- /tabs -->
+  </div>
   
   
 
