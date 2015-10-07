@@ -7,7 +7,7 @@
 
 ?>
 <div class="hero-unit"> <!-- HERO -->
-  <div class="scroll-down-white section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print image_style_url($image_style, $imagen); ?>);">
+  <div class="scroll-down-white section-scroll-content bg-img-block bg-img-block-lg" style="background-size: cover; background-position: center; background-image: url(<?php print image_style_url($image_style, $imagen); ?>);">
     <div class="overlay flex-middle">
       <div class="container-sm hero-text">
         <h1 class="light text-white"><?php print $titulo ?> </h1>
