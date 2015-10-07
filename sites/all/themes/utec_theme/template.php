@@ -69,14 +69,14 @@
   )); 
 
   drupal_add_js(path_to_theme() . '/js/app/lib/modernizr.custom.js', array(
-    'scope' => 'header',
+    'scope' => 'footer',
     'group' => JS_THEME,
     'every_page' => TRUE,
     'weight' => 3,
   ));
 
   drupal_add_js('(function() {[].slice.call( document.querySelectorAll( ".tabs" ) ).forEach( function( el ) {new CBPFWTabs( el );});})();',
-    array('type' => 'inline', 'scope' => 'footer', 'weight' => 1)
+    array('type' => 'inline', 'scope' => 'footer', 'weight' => 10)
   ); 	
 
 function utec_theme_site_map_menu_link(array $variables) {
