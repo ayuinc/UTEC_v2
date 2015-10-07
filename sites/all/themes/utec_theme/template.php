@@ -47,7 +47,7 @@
 	  'weight' => 1,
 	));
 
-	drupal_add_js(path_to_theme() . '/js/app/lib/utecc.min.js', array(
+	drupal_add_js(path_to_theme() . '/js/app/lib/utec.min.js', array(
 	  'scope' => 'footer',
 	  'group' => JS_THEME,
 	  'every_page' => TRUE,
@@ -61,6 +61,13 @@
 	  'weight' => 2,
 	));	
 
+  drupal_add_js(path_to_theme() . '/js/app/lib/modernizr.custom.js', array(
+    'scope' => 'footer',
+    'group' => JS_THEME,
+    'every_page' => TRUE,
+    'weight' => 3,
+  ));
+
   drupal_add_js(path_to_theme() . '/js/app/lib/cbpFWTabs.js', array(
     'scope' => 'footer',
     'group' => JS_THEME,
@@ -68,12 +75,7 @@
     'weight' => 4,
   )); 
 
-  drupal_add_js(path_to_theme() . '/js/app/lib/modernizr.custom.js', array(
-    'scope' => 'footer',
-    'group' => JS_THEME,
-    'every_page' => TRUE,
-    'weight' => 3,
-  ));
+  
 
   drupal_add_js('(function() {[].slice.call( document.querySelectorAll( ".tabs" ) ).forEach( function( el ) {new CBPFWTabs( el );});})();',
     array('type' => 'inline', 'scope' => 'footer', 'group' => JS_THEME, 'weight' => 10)
