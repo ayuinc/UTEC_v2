@@ -40,11 +40,12 @@
         <div class="text-white light h4"><?php print $descripcion_general ?></div>
       </div>
     </div>
+    <a class="scroll-down scroll-down-sq size lg" href="#block2" rel="nofollow"><i class="icon-arrows-down"></i></a>
   </div>
 </div> <!-- END:Hero -->
 
 <!-- BLOQUE 2 -->
-<div class="container-sm">
+<div class="container-sm section-scroll-content" id="block2">
   <h2 class="light"><?php print $titulo_bloque_2 ?></h2>
   <div class="separator-gray separator-sm"></div>
   <div class="p-ch-gray-dark">
@@ -78,9 +79,10 @@
       </a>  
     </div>
   </div>
+  <a class="scroll-down scroll-down-sq size lg" href="#block3" rel="nofollow"><i class="icon-arrows-down"></i></a>
 </div>
 <!-- BLOQUE 3 -->
-<div class="container-sm">
+<div class="container-sm section-scroll-content" id="block3">
   <h2 class="light"><?php print $titulo_bloque_3 ?></h2>
   <div class="separator-gray separator-sm"></div>
   <div class="p-ch-gray-dark">
@@ -111,9 +113,10 @@
       </div>
     </div>
   </div>
+  <a class="scroll-down scroll-down-sq size lg" href="#block4" rel="nofollow"><i class="icon-arrows-down"></i></a>
 </div>
 <!-- BLOQUE 4 -->
-<div class="container-sm">
+<div class="container-sm section-scroll-content" id="block4">
   <h2 class="light"><?php print $titulo_bloque_4 ?></h2>
   <div class="separator-gray separator-sm"></div>
   <div class="p-ch-gray-dark">
@@ -167,9 +170,10 @@
       </a>  
     </div>
   </div>
+  <a class="scroll-down scroll-down-sq size lg" href="#block5" rel="nofollow"><i class="icon-arrows-down"></i></a>
 </div>
 <!-- BLOQUE 5 -->
-<div class="container-sm">
+<div class="container-sm section-scroll-content" id="block5">
   <h2 class="light"><?php print $titulo_bloque_5 ?></h2>
   <div class="separator-gray separator-sm"></div>
   <?php foreach ($imagenes_bloque_5 as $key => $imagen_bloque_5): ?> 
@@ -189,9 +193,10 @@
     </ul>
   </div>
   <?php endforeach ?>
+  <a class="scroll-down scroll-down-sq size lg" href="#block6" rel="nofollow"><i class="icon-arrows-down"></i></a>
 </div>
 <!-- BLOQUE 6 -->
-<div class="container-sm">
+<div class="container-sm section-scroll-content" id="block6">
   <h2 class="light"><?php print $titulo_bloque_6 ?></h2>
   <div class="separator-gray separator-sm"></div>
   <div class="p-ch-gray-dark">
