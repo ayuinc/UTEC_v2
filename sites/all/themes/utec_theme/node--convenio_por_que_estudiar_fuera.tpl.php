@@ -22,7 +22,7 @@
       <?php print $descripcion ?>   
     </div> 
   </div>
-  <div class="anchor-img-grid anchor-img-grid-1">
+  <div class="anchor-img-grid anchor-img-grid-1 ph-21">
     <div class="row">
       <div class="col-md-4">
         <div class="anchor-block-4" style="width: 245px; height: 242px;">    
