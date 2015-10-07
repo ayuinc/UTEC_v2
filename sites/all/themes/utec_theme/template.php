@@ -61,22 +61,15 @@
 	  'weight' => 2,
 	));	
 
-<<<<<<< HEAD
-  drupal_add_js(path_to_theme() . '/js/app/lib/vendor/cbpFWTabs.js', array(
-=======
-  drupal_add_js(path_to_theme() . '/js/app/lib/modernizr.custom.js', array(
->>>>>>> bedce8382a87d909d90d0f5cf173c3aca49179bd
+  drupal_add_js(path_to_theme() . '/js/app/vendor/cbpFWTabs.js', array(
+
     'scope' => 'footer',
     'group' => JS_THEME,
     'every_page' => TRUE,
     'weight' => 3,
   ));
 
-<<<<<<< HEAD
-  drupal_add_js(path_to_theme() . '/js/app/lib/vendor/modernizr.custom.js', array(
-=======
-  drupal_add_js(path_to_theme() . '/js/app/lib/cbpFWTabs.js', array(
->>>>>>> bedce8382a87d909d90d0f5cf173c3aca49179bd
+  drupal_add_js(path_to_theme() . '/js/app/vendor/modernizr.custom.js', array(
     'scope' => 'footer',
     'group' => JS_THEME,
     'every_page' => TRUE,
