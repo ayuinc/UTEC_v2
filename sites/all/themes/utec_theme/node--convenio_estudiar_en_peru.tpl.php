@@ -10,7 +10,7 @@
   <div class="scroll-down-white section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print image_style_url($image_style, $imagen); ?>);">
     <div class="overlay flex-middle">
       <div class="container-sm hero-text">
-        <h2 class="light text-white"><?php print $titulo ?> </h2>
+        <h1 class="light text-white"><?php print $titulo ?> </h1>
         <div class="separator-white separator-sm"></div>
         <div class="text-white light h4"><?php print $descripcion ?></div>
       </div>
