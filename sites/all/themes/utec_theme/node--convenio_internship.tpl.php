@@ -7,7 +7,7 @@
 
 ?>
 
-<div class="container-sm" id="internship">
+<div class="container-sm section-scroll-content" id="internship">
   <h2 class="light"><?php print $titulo ?></h2>
   <div class="separator-gray separator-sm"></div>
   <div class="p-ch-gray-dark">

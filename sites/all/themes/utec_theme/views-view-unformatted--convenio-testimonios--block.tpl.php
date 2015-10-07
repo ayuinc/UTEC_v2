@@ -1,5 +1,5 @@
 <div class="pv-21">
-	<div class="container-sm" id="testimonies">
+	<div class="container-sm section-scroll-content" id="testimonies">
 		<h2 class="light"><?php print $view->get_title(); ?></h2>
 		<div class="separator-gray separator-sm"></div>
 		<div id="carousel-example-generic" class="carousel-custom slide" data-ride="carousel">

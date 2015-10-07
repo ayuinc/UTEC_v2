@@ -14,7 +14,7 @@
   
 ?>
 
-<div class="container-sm" id="studyabroad">
+<div class="container-sm section-scroll-content" id="studyabroad">
   <h2 class="light"><?php print $titulo ?></h2>
   <div class="separator-gray separator-sm"></div>
   <div class="p-ch-gray-dark">
