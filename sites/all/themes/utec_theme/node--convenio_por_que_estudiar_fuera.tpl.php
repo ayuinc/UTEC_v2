@@ -77,9 +77,9 @@
       <ul>
         <li class="tab-current"><a href="#section-linebox-5"><span>Airline</span></a></li>
         <li class=""><a href="#section-linebox-4"><span>Schedule</span></a></li>
-        <li class=""><a href="#section-linebox-2"><span>Deals</span></a></li>
-        <li class=""><a href="#section-linebox-3"><span>Drinks</span></a></li>
-        <li class=""><a href="#section-linebox-5"><span>Settings</span></a></li>
+        <li class=""><a href="#section-linebox-3"><span>Deals</span></a></li>
+        <li class=""><a href="#section-linebox-2"><span>Drinks</span></a></li>
+        <li class=""><a href="#section-linebox-1"><span>Settings</span></a></li>
       </ul>
     </nav>
     <div class="content-wrap" style="background-color: white; color: black;">
