@@ -69,7 +69,7 @@
   )); 
 
   drupal_add_js(path_to_theme() . '/js/app/lib/modernizr.custom.js', array(
-    'scope' => 'footer',
+    'scope' => 'header',
     'group' => JS_THEME,
     'every_page' => TRUE,
     'weight' => 3,
