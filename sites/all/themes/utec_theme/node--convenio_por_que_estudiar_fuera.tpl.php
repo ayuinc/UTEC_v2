@@ -11,7 +11,7 @@
   $imagen5 = $node->field_imagen_5['und']['0']['uri'];
 	$imagen6 = $node->field_imagen_6['und']['0']['uri'];
   // kpr($node);
-
+  
 ?>
 
 <div class="container-sm" id="studyabroad">
@@ -25,92 +25,54 @@
   <div class="anchor-img-grid anchor-img-grid-1">
     <div class="row">
       <div class="col-md-4">
-        <div class="anchor-block-3" style="width:280px;height:280px">
+        <div class="anchor-block-4" style="width: 245px; height: 242px;">    
           <div class="pic" style="background-image: url(<?php print image_style_url($image_style, $imagen1); ?>);"></div>
           <div class="overlay">
-            <div>
-              <?php print $titulos['0']['value']; ?>                
-            </div>
-            <div class="">
-              <?php print $contenido['0']['value']; ?>             
-            </div>
+            <h4><?php print $titulos['0']['value']; ?></h4>
+            <h3 class="h2"><?php print $contenido['0']['value']; ?></h3>
           </div>
         </div>
-      </div>
-      <div class="col-md-8">
-        <div class="anchor-block-2" style="width:517px;height:280px">
-          <div class="pic" style="background-image: url(<?php print image_style_url($image_style_mul, $imagen2); ?>);"></div>
-          <div class="overlay">
-            <div>
-              <?php print $titulos['1']['value']; ?>                
-            </div>
-            <div class="">
-              <?php print $contenido['1']['value']; ?>             
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="anchor-block-1" style="width:280px;height:560px;">
+        <div class="anchor-block-4" style="width: 245px; height: 484px;">    
           <div class="pic" style="background-image: url(<?php print image_style_url($image_style_3, $imagen3); ?>);"></div>
           <div class="overlay">
-            <div>
-              <?php print $titulos['2']['value']; ?>                
-            </div>
-            <div class="">
-              <?php print $contenido['2']['value']; ?>             
-            </div>
+            <h4><?php print $titulos['2']['value']; ?></h4>
+            <h3 class="h2"><?php print $contenido['2']['value']; ?> </h3>
           </div>
         </div>
       </div>
       <div class="col-md-8">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="anchor-block-3" style="width:280px;height:280px">
-              <div class="pic" style="background-image: url(<?php print image_style_url($image_style_4, $imagen4); ?>);"></div>
-              <div class="overlay">
-                <div>
-                  <?php print $titulos['3']['value']; ?>                
-                </div>
-                <div class="">
-                  <?php print $contenido['3']['value']; ?>             
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="anchor-block-3" style="width:280px;height:280px">
-              <div class="pic" style="background-image: url(<?php print image_style_url($image_style_5, $imagen5); ?>);"></div>
-              <div class="overlay">
-                <div>
-                  <?php print $titulos['4']['value']; ?>                
-                </div>
-                <div class="">
-                  <?php print $contenido['4']['value']; ?>             
-                </div>
-              </div>
-            </div>
+        <div class="anchor-block-2" style="width: 487px; height: 242px;">    
+          <div class="pic" style="background-image: url(<?php print image_style_url($image_style_mul, $imagen2); ?>);"></div>
+          <div class="overlay">
+            <h4><?php print $titulos['1']['value']; ?></h4>
+            <h3 class="h2"><?php print $contenido['1']['value']; ?></h3>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="anchor-block-3" style="width:517px;height:280px">
-              <div class="pic" style="background-image: url(<?php print image_style_url($image_style_6, $imagen6); ?>);"></div>
-              <div class="overlay">
-                <div>
-                  <?php print $titulos['5']['value']; ?>                
-                </div>
-                <div class="">
-                  <?php print $contenido['5']['value']; ?>             
-                </div>
-              </div>
-            </div>
+        <div class="anchor-block-3" style="width: 243px; height: 242px;">    
+          <div class="pic" style="background-image: url(<?php print image_style_url($image_style_4, $imagen4); ?>);"></div>
+          <div class="overlay">
+            <h4><?php print $titulos['3']['value']; ?> s</h4>
+            <h3 class="h2"><?php print $contenido['3']['value']; ?></h3>
+          </div>
+        </div>
+        <div class="anchor-block-4" style="width: 243px; height: 242px;">    
+          <div class="pic" style="background-image: url(<?php print image_style_url($image_style_5, $imagen5); ?>);"></div>
+          <div class="overlay">
+            <h4><?php print $titulos['4']['value']; ?></h4>
+            <h3 class="h2"><?php print $contenido['4']['value']; ?></h3>
+          </div>
+        </div>
+        <div class="anchor-block-2" style=" float: left; width: 487px; height: 242px;">    
+          <div class="pic" style="background-image: url(<?php print image_style_url($image_style_6, $imagen6); ?>);"></div>
+          <div class="overlay">
+            <h4><?php print $titulos['5']['value']; ?></h4>
+            <h3 class="h2"><?php print $contenido['5']['value']; ?> </h3>
           </div>
         </div>
       </div>
-    </div>  
-  </div>
+    </div>    
+  </div>       
   <a class="scroll-down scroll-down-sq size lg" href="#studyinutec" rel="nofollow"><i class="icon-arrows-down"></i></a>
-</div>  
+</div>
+        
+  
