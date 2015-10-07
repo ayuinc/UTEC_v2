@@ -65,15 +65,19 @@
     'scope' => 'footer',
     'group' => JS_THEME,
     'every_page' => TRUE,
-    'weight' => 4,
+    'weight' => 2,
   )); 
 
   drupal_add_js(path_to_theme() . '/js/app/lib/modernizr.custom.js', array(
-    'scope' => 'footer',
+    'scope' => 'header',
     'group' => JS_THEME,
     'every_page' => TRUE,
     'weight' => 3,
-  )); 	
+  ));
+
+  drupal_add_js('(function() {[].slice.call( document.querySelectorAll( ".tabs" ) ).forEach( function( el ) {new CBPFWTabs( el );});})();',
+    array('type' => 'inline', 'scope' => 'footer', 'weight' => 5)
+  ); 	
 
 function utec_theme_site_map_menu_link(array $variables) {
 
