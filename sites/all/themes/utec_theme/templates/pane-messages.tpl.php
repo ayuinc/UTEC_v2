@@ -9,7 +9,8 @@
 <?php endif; ?>
 
 <?php if (!empty($messages)): ?>
-  <?php print $messages; ?>
+  <?php //print $messages; ?>
+  <div>Gracias por escribir!</div>
 <?php endif; ?>
 
 <?php if (!empty($help)): ?>
