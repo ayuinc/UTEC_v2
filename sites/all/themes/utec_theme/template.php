@@ -289,9 +289,9 @@ function utec_theme_preprocess_panels_pane(&$variables) {
   }
 }
 
-function utec_theme_status_messages($variables) {
-  $display = $variables['display'];
-  dpm($display);
+// function utec_theme_status_messages($variables) {
+//   $display = $variables['display'];
+//   dpm($display);
 
-}
+// }
 ?>
