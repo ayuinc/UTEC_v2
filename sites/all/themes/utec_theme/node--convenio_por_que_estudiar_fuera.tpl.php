@@ -70,29 +70,6 @@
       </div>
     </div>   
   </div> 
-
-  <!-- PRUEBA TABS -->
-  <div class="tabs tabs-style-linebox">
-    <nav>
-      <ul>
-        <li class="tab-current"><a href="#section-linebox-5"><span>Airline</span></a></li>
-        <li class=""><a href="#section-linebox-4"><span>Schedule</span></a></li>
-        <li class=""><a href="#section-linebox-2"><span>Deals</span></a></li>
-        <li class=""><a href="#section-linebox-3"><span>Drinks</span></a></li>
-        <li class=""><a href="#section-linebox-1"><span>Settings</span></a></li>
-      </ul>
-    </nav>
-    <div class="content-wrap bg-gray-lighter" style="color: black;">
-      <section id="section-linebox-1" class="content-current"><p style="color: black;">1</p></section>
-      <section id="section-linebox-2" class=""><p style="color: black;">2</p></section>
-      <section id="section-linebox-3" class=""><p style="color: black;">3</p></section>
-      <section id="section-linebox-4" class=""><p style="color: black;">4</p></section>
-      <section id="section-linebox-5" class=""><p style="color: black;">5</p></section>
-    </div><!-- /content -->
-  </div>
-  
-  
-
   <a class="scroll-down scroll-down-sq size lg" href="#studyinutec" rel="nofollow"><i class="icon-arrows-down"></i></a>
 </div>
         
