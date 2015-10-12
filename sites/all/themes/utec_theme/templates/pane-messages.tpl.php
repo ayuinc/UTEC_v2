@@ -29,7 +29,7 @@
 	  </div>
 	</div>
 	<!-- Button trigger modal -->
-	<button style="display:none;" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#thanks">
+	<button id="button" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#thanks">
 	</button>
 <?php endif; ?>
 

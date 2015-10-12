@@ -1,3 +1,3 @@
-$(function() { 
-	$( "#button" ).trigger( "click" );
-});
+(function ($) {
+  $( "#button" ).trigger( "click" );
+}(jQuery));
