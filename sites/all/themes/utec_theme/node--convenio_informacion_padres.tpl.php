@@ -8,7 +8,7 @@
 
 ?>
 
-<div class="container-sm">
+<div class="container-sm section-scroll-content" id="parents">
   <h2 class="light"><?php print $titulo ?></h2>
   <div class="separator-gray separator-sm"></div>
   <div class="p-ch-gray-dark">
@@ -16,6 +16,7 @@
       <?php print $descripcion ?>   
     </div>
     <!-- Wrapper for slides -->
+    <?php if ($imagen): ?>
     <div class="carousel-inner" role="listbox">
       <div class="item active">
         <div class="banner banner-label-bottom mb-7 ml-0">
@@ -24,8 +25,10 @@
         </div>
       </div>
     </div>
+    <?php endif ?>
     <div class="pv-ch-7">
       <?php print $contenido ?>   
     </div>
   </div>
+  <a class="scroll-down scroll-down-sq size lg" href="#internship" rel="nofollow"><i class="icon-arrows-down"></i></a>
 </div>

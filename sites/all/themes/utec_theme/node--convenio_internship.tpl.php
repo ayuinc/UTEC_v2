@@ -7,7 +7,7 @@
 
 ?>
 
-<div class="container-sm">
+<div class="container-sm section-scroll-content" id="internship">
   <h2 class="light"><?php print $titulo ?></h2>
   <div class="separator-gray separator-sm"></div>
   <div class="p-ch-gray-dark">
@@ -17,12 +17,14 @@
     <!-- Wrapper for slides -->
     <div class="row">
       <?php foreach ($imagenes as $key => $imagen): ?>
+      <?php if ($imagen): ?>
       <div class="col-md-3">
         <div class="banner banner-label-bottom mb-7 ml-0">
           <div class="banner-pic" style="background-image: url(<?php print image_style_url($image_style, $imagen['uri']); ?>);">
           </div>
         </div>
       </div>
+      <?php endif ?>
       <?php endforeach ?>
     </div>  
   </div>

@@ -2,7 +2,7 @@
 	
 	$titulo = $node->title;   
 	$descripcion_general = $node->body['und']['0']['value'];
-	$imagen_cabecera = $node->field_image['und']['0']['uri'];
+	$imagen_cabecera = $node->field_image_2['und']['0']['uri'];
 
   $titulo_bloque_2 = $node->field_texo['und']['0']['value'];
   $cuerpo_bloque_2 = $node->field_descripci_n['und']['0']['value'];
@@ -27,12 +27,12 @@
   $cuerpos_tab_bloque_6 = $node->field_contenido_tab_bloque_6['und'];   
   $imagenes_bloque_6 = $node->field_imagenes_bloque_6['und'];
 
-  kpr($node);
+  // kpr($node);
 
 ?>
 <!-- CABECERA -->
 <div class="hero-unit"> <!-- HERO -->
-  <div class="scroll-down-white section-scroll-content bg-img-block bg-img-block-lg" style="background-image: url(<?php print image_style_url($image_style_2, $imagen_cabecera); ?>);">
+  <div class="scroll-down-white section-scroll-content bg-img-block bg-img-block-lg" style="background-size: cover; background-position: center; background-image: url(<?php print image_style_url($image_style_2, $imagen_cabecera); ?>);">
     <div class="overlay flex-middle">
       <div class="container-sm hero-text">
         <h2 class="light text-white"><?php print $titulo ?> </h2>
@@ -40,11 +40,12 @@
         <div class="text-white light h4"><?php print $descripcion_general ?></div>
       </div>
     </div>
+    <a class="scroll-down scroll-down-sq size lg" href="#block2" rel="nofollow"><i class="icon-arrows-down"></i></a>
   </div>
 </div> <!-- END:Hero -->
 
 <!-- BLOQUE 2 -->
-<div class="container-sm">
+<div class="container-sm section-scroll-content" id="block2">
   <h2 class="light"><?php print $titulo_bloque_2 ?></h2>
   <div class="separator-gray separator-sm"></div>
   <div class="p-ch-gray-dark">
@@ -56,12 +57,14 @@
       <div class="carousel-inner" role="listbox">
         <?php $count = 0; ?>
         <?php foreach ($imagenes_bloque_2 as $key => $imagen_bloque_2): ?>
+        <?php if ($imagen_bloque_2): ?>
         <div class="item <?php ($count == 0) ? print 'active' : '' ; ?>">
           <div class="banner banner-label-bottom mb-7 ml-0">
             <div class="banner-pic" style="background-image: url(<?php print image_style_url($image_style, $imagen_bloque_2['uri']); ?>);">
             </div>
           </div>
         </div>
+        <?php endif ?>
         <?php $count ++; ?>
         <?php endforeach ?>
       </div>
@@ -76,9 +79,10 @@
       </a>  
     </div>
   </div>
+  <a class="scroll-down scroll-down-sq size lg" href="#block3" rel="nofollow"><i class="icon-arrows-down"></i></a>
 </div>
 <!-- BLOQUE 3 -->
-<div class="container-sm">
+<div class="container-sm section-scroll-content" id="block3">
   <h2 class="light"><?php print $titulo_bloque_3 ?></h2>
   <div class="separator-gray separator-sm"></div>
   <div class="p-ch-gray-dark">
@@ -109,9 +113,10 @@
       </div>
     </div>
   </div>
+  <a class="scroll-down scroll-down-sq size lg" href="#block4" rel="nofollow"><i class="icon-arrows-down"></i></a>
 </div>
 <!-- BLOQUE 4 -->
-<div class="container-sm">
+<div class="container-sm section-scroll-content" id="block4">
   <h2 class="light"><?php print $titulo_bloque_4 ?></h2>
   <div class="separator-gray separator-sm"></div>
   <div class="p-ch-gray-dark">
@@ -143,12 +148,14 @@
       <div class="carousel-inner" role="listbox">
         <?php $count = 0; ?>
         <?php foreach ($imagenes_bloque_4 as $key => $imagen_bloque_4): ?>
+        <?php if ($imagen_bloque_4): ?>
         <div class="item <?php ($count == 0) ? print 'active' : '' ; ?>">
           <div class="banner banner-label-bottom mb-7 ml-0">
             <div class="banner-pic" style="background-image: url(<?php print image_style_url($image_style, $imagen_bloque_4['uri']); ?>);">
             </div>
           </div>
         </div>
+        <?php endif ?>
         <?php $count ++; ?>
         <?php endforeach ?>
       </div>
@@ -163,9 +170,10 @@
       </a>  
     </div>
   </div>
+  <a class="scroll-down scroll-down-sq size lg" href="#block5" rel="nofollow"><i class="icon-arrows-down"></i></a>
 </div>
 <!-- BLOQUE 5 -->
-<div class="container-sm">
+<div class="container-sm section-scroll-content" id="block5">
   <h2 class="light"><?php print $titulo_bloque_5 ?></h2>
   <div class="separator-gray separator-sm"></div>
   <?php foreach ($imagenes_bloque_5 as $key => $imagen_bloque_5): ?> 
@@ -185,9 +193,10 @@
     </ul>
   </div>
   <?php endforeach ?>
+  <a class="scroll-down scroll-down-sq size lg" href="#block6" rel="nofollow"><i class="icon-arrows-down"></i></a>
 </div>
 <!-- BLOQUE 6 -->
-<div class="container-sm">
+<div class="container-sm section-scroll-content" id="block6">
   <h2 class="light"><?php print $titulo_bloque_6 ?></h2>
   <div class="separator-gray separator-sm"></div>
   <div class="p-ch-gray-dark">
@@ -219,12 +228,14 @@
       <div class="carousel-inner" role="listbox">
         <?php $count = 0; ?>
         <?php foreach ($imagenes_bloque_6 as $key => $imagen_bloque_6): ?>
+        <?php if ($imagen_bloque_6): ?>
         <div class="item <?php ($count == 0) ? print 'active' : '' ; ?>">
           <div class="banner banner-label-bottom mb-7 ml-0">
             <div class="banner-pic" style="background-image: url(<?php print image_style_url($image_style, $imagen_bloque_6['uri']); ?>);">
             </div>
           </div>
         </div>
+        <?php endif ?>
         <?php $count ++; ?>
         <?php endforeach ?>
       </div>

@@ -1,7 +1,8 @@
 <div class="pv-21">
-	<div class="container-sm">
-		<h3 class="h2 lead medium mb-56"><span class="text-gray-darker"><?php print $view->get_title(); ?></span></h3>
-		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+	<div class="container-sm section-scroll-content" id="testimonies">
+		<h2 class="light"><?php print $view->get_title(); ?></h2>
+		<div class="separator-gray separator-sm"></div>
+		<div id="carousel-example-generic" class="carousel-custom slide" data-ride="carousel">
 		  <!-- Indicators -->
 		  <ol class="carousel-indicators">
 		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -26,14 +27,16 @@
 		  </div>
 		  <!-- Controls -->
 		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		    <span class="icon-prev hidden-xs" aria-hidden="true"></span>
 		    <span class="sr-only">Previous</span>
 		  </a>
 		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		    <span class="icon-next hidden-xs" aria-hidden="true"></span>
 		    <span class="sr-only">Next</span>
 		  </a>
 		</div>
+		<a href=""></a>
+		<a class="scroll-down scroll-down-sq size lg" href="#apply" rel="nofollow"><i class="icon-arrows-down"></i></a>
 	</div>
 </div>
 

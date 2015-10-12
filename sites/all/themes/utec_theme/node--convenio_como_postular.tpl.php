@@ -9,7 +9,7 @@
 
 ?>
 
-<div class="container-sm">
+<div class="container-sm section-scroll-content" id="apply">
   <h2 class="light"><?php print $titulo ?></h2>
   <div class="separator-gray separator-sm"></div>
   <div class="p-ch-gray-dark">
@@ -17,28 +17,32 @@
       <?php print $descripcion ?>   
     </div>
     <div>
-      <!-- Nav tabs -->
-      <ul class="nav nav-tabs" role="tablist">
-        <?php $count = 0; ?>
-        <?php foreach ($tab_titles as $key => $tab_title): ?>
-        <li role="presentation" class="<?php ($count == 0) ? print 'active' : '' ; ?>">
-          <a href="#tab-<?php print $count ?>" aria-controls="tab-<?php print $count ?>" role="tab" data-toggle="tab">
-            <?php print $tab_title['value'] ?>
-          </a>
-        </li>
-        <?php $count++; ?>
-        <?php endforeach ?>
-      </ul>
-
-      <!-- Tab panes -->
-      <div class="tab-content">
-        <?php $count = 0; ?>
-        <?php foreach ($tab_contents as $key => $tab_content): ?>
-        <div role="tabpanel" class="tab-pane <?php ($count == 0) ? print 'active' : '' ; ?>" id="tab-<?php print $count ?>"><?php print $tab_content['value'] ?></div>
-        <?php $count++; ?>
-        <?php endforeach ?>
+      <!-- TABS -->
+      <div class="tabs tabs-style-linebox">
+        <nav>
+          <ul>
+            <?php $count = 0; ?>
+            <?php foreach ($tab_titles as $key => $tab_title): ?>
+            <li class="<?php ($count == 0) ? print 'tab-current' : '' ; ?>">
+              <a href="#section-linebox-<?php print $count; ?>"><span><?php print $tab_title['value'] ?></span>
+              </a>
+            </li>
+            <?php $count++; ?>
+            <?php endforeach ?>
+          </ul>
+        </nav>
+        <div class="content-wrap bg-gray-lighter" style="color: black;">
+          <?php $count = 0; ?>
+          <?php foreach ($tab_contents as $key => $tab_content): ?>
+          <section id="section-linebox-<?php print $count; ?>" class="<?php ($count == 0) ? print 'content-current' : '' ; ?>">
+            <p style="color: black;"><?php print $tab_content['value'] ?></p>
+          </section>
+          <?php $count++;?>
+          <?php endforeach ?>
+        </div><!-- /content -->
       </div>
     </div>
   </div>
+  <a class="scroll-down scroll-down-sq size lg" href="#codeofconduct" rel="nofollow"><i class="icon-arrows-down"></i></a>
 </div>
 

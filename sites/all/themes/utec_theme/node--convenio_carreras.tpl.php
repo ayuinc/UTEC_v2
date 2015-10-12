@@ -7,8 +7,8 @@
   $iconos = $node->field_texo['und'];
 
 ?>
-<div class="pv-42" id="home-sec-1">
-	<div class="container-sm">
+
+	<div class="container-sm section-scroll-content" id="course">
 		<h2 class="light"><?php print $title ?></h2>
 	  <div class="separator-gray separator-sm"></div>
 		<h4 class="mb-35" style="line-height: 1.3;"><?php print $cuerpo; ?></h4>
@@ -32,5 +32,6 @@
 			</li>
 			<?php endforeach; ?>
 		</ul>
+		<a class="scroll-down scroll-down-sq size lg" href="#studentlife" rel="nofollow"><i class="icon-arrows-down"></i></a>
 	</div>
-</div>
+
