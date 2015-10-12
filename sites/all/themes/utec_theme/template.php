@@ -288,4 +288,8 @@ function utec_theme_preprocess_panels_pane(&$variables) {
     dpm('subtype: ' . $variables['pane']->subtype);
   }
 }
+
+function utec_theme_status_messages($variables) {
+  kpr($variables);
+}
 ?>
