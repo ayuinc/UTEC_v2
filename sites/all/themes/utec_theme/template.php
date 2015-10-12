@@ -290,6 +290,8 @@ function utec_theme_preprocess_panels_pane(&$variables) {
 }
 
 function utec_theme_status_messages($variables) {
-  kpr($variables);
+  $display = $variables['display'];
+  kpr($$display);
+
 }
 ?>
