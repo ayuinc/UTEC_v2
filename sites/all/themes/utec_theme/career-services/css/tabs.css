@@ -92,11 +92,11 @@
 
 .content-wrap section p {
 	margin: 0;
-	padding: 0.75em 0;
-	color: rgba(40,44,42,0.05);
-	font-weight: 900;
-	font-size: 4em;
-	line-height: 1;
+    padding: 0.75em 0;
+    line-height: 1.2;
+    text-align: left;
+    color: gray !important;
+    font-size: 16px;
 }
 
 /* Fallback */
@@ -125,13 +125,13 @@
 }
 
 .tabs-style-linebox nav ul li {
-	margin: 0 0.5em;
+	
 	-webkit-flex: none;
 	flex: none;
 }
 
 .tabs-style-linebox nav a {
-	padding: 0 1.5em;
+	padding: 0 0.5em;
 	color: #74777b;
 	font-weight: 700;
 	-webkit-transition: color 0.3s;
