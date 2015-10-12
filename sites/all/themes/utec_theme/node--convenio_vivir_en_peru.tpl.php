@@ -51,7 +51,7 @@
     <div class="pv-ch-7">
       <?php print $cuerpo_bloque_2 ?>   
     </div>
-    <div id="carousel-custom" class="carousel carousel-custom slide mb-42" data-ride="carousel">
+    <div id="carousel-custom" class="carousel carousel-custom slide mb-42 mt-28" data-ride="carousel">
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <?php $count = 0; ?>
@@ -138,7 +138,7 @@
         <?php endforeach ?>
       </div>
     </div>
-    <div id="carousel-bloque4" class="carousel carousel-custom slide mb-42" data-ride="carousel">
+    <div id="carousel-bloque4" class="carousel carousel-custom slide mb-42 mt-35" data-ride="carousel">
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <?php $count = 0; ?>
