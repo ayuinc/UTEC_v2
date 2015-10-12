@@ -35,7 +35,7 @@
 		    <span class="sr-only">Next</span>
 		  </a>
 		</div>
-		<a href=""></a>
+		<a href="page/27/testimonies"><?php print t('View more testimonies'); ?></a>
 		<a class="scroll-down scroll-down-sq size lg" href="#apply" rel="nofollow"><i class="icon-arrows-down"></i></a>
 	</div>
 </div>
