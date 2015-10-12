@@ -76,7 +76,12 @@
     'weight' => 4,
   )); 
 
-  
+  drupal_add_js(path_to_theme() . '/js/app/lib/utec-convenios.js', array(
+    'scope' => 'footer',
+    'group' => JS_THEME,
+    'every_page' => TRUE,
+    'weight' => 5,
+  )); 
 
   drupal_add_js('(function() {[].slice.call( document.querySelectorAll( ".tabs" ) ).forEach( function( el ) {new CBPFWTabs( el );});})();',
     array('type' => 'inline', 'scope' => 'footer', 'group' => JS_THEME, 'weight' => 10)

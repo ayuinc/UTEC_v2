@@ -10,9 +10,8 @@
 
 <?php if (!empty($messages)): ?>
   <?php //print $messages; ?>
-  <div>Gracias por escribir!</div>
   <!-- Modal -->
-	<div class="modal fade in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal fade" id="thanks" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">
 	      <div class="modal-header">
@@ -20,7 +19,7 @@
 	        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
 	      </div>
 	      <div class="modal-body">
-	        ...
+	        <div>Gracias por escribir!</div>
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -29,6 +28,9 @@
 	    </div>
 	  </div>
 	</div>
+	<!-- Button trigger modal -->
+	<button style="display:none;" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#thanks">
+	</button>
 <?php endif; ?>
 
 <?php if (!empty($help)): ?>
