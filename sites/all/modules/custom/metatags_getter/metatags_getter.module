@@ -1,4 +1,4 @@
 <?php
 function metatags_getter_metatag_info() {
-  kpr($info);
+  return print_r($info);
 }
