@@ -27,7 +27,7 @@
       <div class="anchor-block-4" style="width: 245px; height: 242px;">    
         <div class="pic" style="background-image: url(<?php print image_style_url($image_style, $imagen1); ?>);"></div>
         <div class="overlay-grid-six" style="background-color: rgba(0,0,0,0.50); opacity: 1; padding: 14px;">
-          <h5 class="medium text-left mb-7 mt-35"><?php print $titulos['0']['value']; ?></h5>
+          <h5 class="medium text-left mb-7 mt-56"><?php print $titulos['0']['value']; ?></h5>
           <div class="separator-white mt-7 separator-xs "></div>
           <h5 class="thin text-left"><?php print $contenido['0']['value']; ?></h5>
         </div>
