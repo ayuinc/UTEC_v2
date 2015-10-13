@@ -295,5 +295,5 @@ function utec_theme_preprocess_panels_pane(&$variables) {
 }
 
 function utec_theme_preprocess_html(&$variables) {
-  print_r($metadata);
+  print_r($variables);
 }
