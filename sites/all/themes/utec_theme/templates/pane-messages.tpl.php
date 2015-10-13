@@ -11,7 +11,7 @@
 <?php if (!empty($messages)): ?>
   <?php //print $messages; ?>
 	<!-- Button trigger modal -->
-	<button id="button" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+	<button style="display:none" id="button" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
 	  Launch demo modal
 	</button>
 
