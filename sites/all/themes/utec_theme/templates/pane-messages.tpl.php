@@ -25,10 +25,11 @@
 	      </div>
 	      <div class="modal-body">
 				  <?php //print_r($url); ?>
-	        
-	        <a href="https://www.facebook.com/sharer/sharer.php?u=<?php print drupal_get_path_alias('',$idioma); ?>">Share on Facebook</a>
+	        <?php $path_i18 = drupal_get_path_alias('', $language->language); ?>
+	        <div class="carlos"><?php print $variables['page']['content']['metatags']['global']['og:title']; ?></div>
+	        <a href="https://www.facebook.com/sharer/sharer.php?u=<?php print $url.'/'.$language->language.'/'.$path_i18; ?>">Share on Facebook</a>
 	      	<a href="https://twitter.com/home?status=<?php print $og_description ?>">Share on Twitter</a>
-	      	<a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php print drupal_get_path_alias('',$idioma); ?>&title=<?php print $og_title ?>&summary=&source=">Share on LinkedIn</a>
+	      	<a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php print $url.'/'.$language->language.'/'.$path_i18; ?>&title=<?php print $og_title ?>&summary=&source=">Share on LinkedIn</a>
 	      	<a href="https://plus.google.com/share?url=<?php print $url ?>">Share on Google+</a>
 	      </div>
 	      <div class="modal-footer">
