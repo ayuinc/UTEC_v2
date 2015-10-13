@@ -282,7 +282,7 @@ function utec_theme_preprocess(&$variables, $hook) {
   $variables['pathfile'] = $pathfile;
   $variables['theme_path_utec'] = $theme_path_utec;
   $variables['url'] = $base_url;
-  kpr($variables);
+  // kpr($variables);
 }
 
 /**
