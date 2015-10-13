@@ -16,6 +16,7 @@
 			<table class="table">
 				<thead>
 					<tr>
+						<td><?php print t('Semester') ?></td>
 						<td><?php print t('Courses') ?></td>
 						<td><?php print t('Credits') ?></td>
 						<td><?php print t('Prerequisites') ?></td>
