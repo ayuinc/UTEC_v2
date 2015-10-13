@@ -10,6 +10,7 @@
 
 <?php if (!empty($messages)): ?>
   <?php //print $messages; ?>
+  <?php kpr($info); ?>
 	<!-- Button trigger modal -->
 	<button style="display:none" id="button" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
 	  Launch demo modal
@@ -28,7 +29,6 @@
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	        <button type="button" class="btn btn-primary">Save changes</button>
 	      </div>
 	    </div>
 	  </div>
