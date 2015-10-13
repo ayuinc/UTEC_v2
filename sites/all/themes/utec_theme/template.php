@@ -281,7 +281,7 @@ function utec_theme_preprocess(&$variables, $hook) {
   $variables['path'] = $path;
   $variables['pathfile'] = $pathfile;
   $variables['theme_path_utec'] = $theme_path_utec;
-  $variables['url'] = $base_url.'/'.current_path();
+  $variables['url'] = $base_url;
 
 }
 
