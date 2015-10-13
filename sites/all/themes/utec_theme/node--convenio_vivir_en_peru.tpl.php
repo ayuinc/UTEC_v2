@@ -97,7 +97,7 @@
             <?php $count = 0; ?>
             <?php foreach ($titulos_tab_bloque_3 as $key => $titulo_tab_bloque_3): ?>
             <li class="<?php ($count == 0) ? print 'tab-current' : '' ; ?>">
-              <a href="#section-linebox-<?php print $count; ?>"><span><?php print $titulo_tab_bloque_3['value'] ?></span>
+              <a href="#bloque-tres-<?php print $count; ?>"><span><?php print $titulo_tab_bloque_3['value'] ?></span>
               </a>
             </li>
             <?php $count++; ?>
@@ -107,7 +107,7 @@
         <div class="content-wrap bg-gray-lighter" style="color: black;">
           <?php $count = 0; ?>
           <?php foreach ($cuerpos_tab_bloque_3 as $key => $cuerpo_tab_bloque_3): ?>
-          <section id="section-linebox-<?php print $count; ?>" class="<?php ($count == 0) ? print 'content-current' : '' ; ?>">
+          <section id="bloque-tres-<?php print $count; ?>" class="<?php ($count == 0) ? print 'content-current' : '' ; ?>">
             <p style="color: black;"><?php print $cuerpo_tab_bloque_3['value'] ?></p>
           </section>
           <?php $count++;?>
@@ -133,7 +133,7 @@
             <?php $count = 0; ?>
             <?php foreach ($titulos_tab_bloque_4 as $key => $titulo_tab_bloque_4): ?>
             <li class="<?php ($count == 0) ? print 'tab-current' : '' ; ?>">
-              <a href="#section-linebox-<?php print $count; ?>"><span><?php print $titulo_tab_bloque_4['value'] ?></span>
+              <a href="#bloque-cuatro-<?php print $count; ?>"><span><?php print $titulo_tab_bloque_4['value'] ?></span>
               </a>
             </li>
             <?php $count++; ?>
@@ -143,7 +143,7 @@
         <div class="content-wrap bg-gray-lighter" style="color: black;">
           <?php $count = 0; ?>
           <?php foreach ($cuerpos_tab_bloque_4 as $key => $cuerpo_tab_bloque_4): ?>
-          <section id="section-linebox-<?php print $count; ?>" class="<?php ($count == 0) ? print 'content-current' : '' ; ?>">
+          <section id="bloque-cuatro-<?php print $count; ?>" class="<?php ($count == 0) ? print 'content-current' : '' ; ?>">
             <p style="color: black;"><?php print $cuerpo_tab_bloque_4['value'] ?></p>
           </section>
           <?php $count++;?>
@@ -216,7 +216,7 @@
             <?php $count = 0; ?>
             <?php foreach ($titulos_tab_bloque_6 as $key => $titulo_tab_bloque_6): ?>
             <li class="<?php ($count == 0) ? print 'tab-current' : '' ; ?>">
-              <a href="#section-linebox-<?php print $count; ?>"><span><?php print $titulo_tab_bloque_6['value'] ?></span>
+              <a href="#bloque-seis-<?php print $count; ?>"><span><?php print $titulo_tab_bloque_6['value'] ?></span>
               </a>
             </li>
             <?php $count++; ?>
@@ -226,7 +226,7 @@
         <div class="content-wrap bg-gray-lighter" style="color: black;">
           <?php $count = 0; ?>
           <?php foreach ($cuerpos_tab_bloque_6 as $key => $cuerpo_tab_bloque_6): ?>
-          <section id="section-linebox-<?php print $count; ?>" class="<?php ($count == 0) ? print 'content-current' : '' ; ?>">
+          <section id="bloque-seis-<?php print $count; ?>" class="<?php ($count == 0) ? print 'content-current' : '' ; ?>">
             <p style="color: black;"><?php print $cuerpo_tab_bloque_6['value'] ?></p>
           </section>
           <?php $count++;?>
