@@ -10,7 +10,6 @@
 
 <?php if (!empty($messages)): ?>
   <?php //print $messages; ?>
-  <?php kpr($info); ?>
 	<!-- Button trigger modal -->
 	<button style="display:none" id="button" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
 	  Launch demo modal
@@ -25,6 +24,7 @@
 	        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
 	      </div>
 	      <div class="modal-body">
+				  <?php print_r($info); ?>
 	        ...
 	      </div>
 	      <div class="modal-footer">
