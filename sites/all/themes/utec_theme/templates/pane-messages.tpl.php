@@ -24,7 +24,7 @@
 	        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
 	      </div>
 	      <div class="modal-body">
-				  <?php print_r($info); ?>
+				  <?php print_r($path); ?>
 	        ...
 	      </div>
 	      <div class="modal-footer">

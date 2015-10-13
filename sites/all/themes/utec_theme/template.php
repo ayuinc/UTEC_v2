@@ -295,5 +295,8 @@ function utec_theme_preprocess_panels_pane(&$variables) {
 }
 
 function utec_theme_preprocess_html(&$variables) {
-  kpr($variables);
+  // kpr($variables);
+  // $variables['og_title'] = $variables['page']['content']['metatags']['global']['og:title'];
+  // $variables['og_title'] = $variables['page']['content']['metatags']['global']['og:description']['#attached']['drupal_add_html_head'][0][0]['#value'];
+  
 }
