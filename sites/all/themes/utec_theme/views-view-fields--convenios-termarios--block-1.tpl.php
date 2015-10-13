@@ -7,10 +7,16 @@
 	$prerequisitos = $fields['field_requisitos']->content;
 	$objetivos = $fields['body']->content;
 	$carrera = $fields['field_carrera_referencia']->content;
-
-
+	$count = 0;
 ?>
-
+<?php if ($count == 0): ?>	
+<tr>
+	<td><?php print $carrera; ?></td>
+	<td></td>
+	<td></td>
+</tr>
+<?php $count++; ?>
+<?php endif ?>
 <tr>
 	<td><?php print $semestre ?></td>
 	<td><?php print $curso ?></td>
