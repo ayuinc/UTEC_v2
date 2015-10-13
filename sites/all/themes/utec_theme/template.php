@@ -281,6 +281,7 @@ function utec_theme_preprocess(&$variables, $hook) {
   $variables['path'] = $path;
   $variables['pathfile'] = $pathfile;
   $variables['theme_path_utec'] = $theme_path_utec;
+  $variables['url'] = current_path();
 
 }
 
@@ -298,5 +299,5 @@ function utec_theme_preprocess_html(&$variables) {
   // kpr($variables);
   // $variables['og_title'] = $variables['page']['content']['metatags']['global']['og:title'];
   // $variables['og_title'] = $variables['page']['content']['metatags']['global']['og:description']['#attached']['drupal_add_html_head'][0][0]['#value'];
-  
+
 }
