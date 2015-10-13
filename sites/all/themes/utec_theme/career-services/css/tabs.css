@@ -55,7 +55,7 @@
 	overflow: hidden;
 	/*text-overflow: ellipsis;
 	white-space: nowrap;*/
-	line-height: 0.8;
+	line-height: 1.2;
     height: 49px;
 }
 
@@ -132,7 +132,7 @@
 }
 
 .tabs-style-linebox nav a {
-	padding: 0 0.5em;
+	padding: 0.9em 0.5em;
 	color: #74777b;
 	font-weight: 700;
 	-webkit-transition: color 0.3s;
