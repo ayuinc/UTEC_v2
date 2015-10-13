@@ -24,8 +24,12 @@
 	        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
 	      </div>
 	      <div class="modal-body">
-				  <?php print_r($path); ?>
-	        ...
+				  <?php //print_r($url); ?>
+	        
+	        <a href="https://www.facebook.com/sharer/sharer.php?u=<?php print drupal_get_path_alias('',$idioma); ?>">Share on Facebook</a>
+	      	<a href="https://twitter.com/home?status=<?php print $og_description ?>">Share on Twitter</a>
+	      	<a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php print drupal_get_path_alias('',$idioma); ?>&title=<?php print $og_title ?>&summary=&source=">Share on LinkedIn</a>
+	      	<a href="https://plus.google.com/share?url=<?php print $url ?>">Share on Google+</a>
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
