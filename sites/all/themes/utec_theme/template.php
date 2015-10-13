@@ -23,7 +23,7 @@
 	  $search_box = drupal_render(drupal_get_form('search_form'));
 
 	  $variables['search_box'] = $search_box;
-    kpr($metadata);
+
     if (isset($variables['node'])) {
       // If the node type is "blog_madness" the template suggestion will be "page--blog-madness.tpl.php".
       $variables['theme_hook_suggestions'][] = 'page__'. $variables['node']->type;
@@ -294,3 +294,6 @@ function utec_theme_preprocess_panels_pane(&$variables) {
   }
 }
 
+function utec_theme_preprocess_html(&$variables) {
+  print_r($metadata);
+}
