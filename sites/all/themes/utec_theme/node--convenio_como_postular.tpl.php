@@ -16,6 +16,7 @@
     <div class="pv-ch-7">
       <?php print $descripcion ?>   
     </div>
+    
     <div>
       <!-- TABS -->
       <div class="tabs tabs-style-linebox">
@@ -42,6 +43,7 @@
         </div><!-- /content -->
       </div>
     </div>
+
   </div>
   <a class="scroll-down scroll-down-sq size lg" href="#codeofconduct" rel="nofollow"><i class="icon-arrows-down"></i></a>
 </div>
