@@ -53,9 +53,10 @@
 	position: relative;
 	display: block;
 	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	line-height: 2.5;
+	/*text-overflow: ellipsis;
+	white-space: nowrap;*/
+	line-height: 0.8;
+    height: 49px;
 }
 
 .tabs nav a span {
@@ -126,8 +127,8 @@
 
 .tabs-style-linebox nav ul li {
 	
-	-webkit-flex: none;
-	flex: none;
+	/*-webkit-flex: none;
+	flex: none;*/
 }
 
 .tabs-style-linebox nav a {
@@ -174,8 +175,8 @@
   content: '';
   -webkit-transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
-  -webkit-transform: translate3d(0,-650%,0);
-  transform: translate3d(0,-650%,0);
+  -webkit-transform: translate3d(0,-750%,0);
+   transform: translate3d(0,-750%,0);
 }
 
 @media screen and (max-width: 58em) {

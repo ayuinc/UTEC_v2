@@ -126,26 +126,29 @@
   <div class="separator-gray separator-sm"></div>
   <div class="p-ch-gray-dark">
     <div>
-      <!-- Nav tabs -->
-      <ul class="nav nav-tabs" role="tablist">
-        <?php $count = 0; ?>
-        <?php foreach ($titulos_tab_bloque_4 as $key => $titulo_tab_bloque_4): ?>
-        <li role="presentation" class="<?php ($count == 0) ? print 'active' : '' ; ?>">
-          <a href="#tab-<?php print $count ?>" aria-controls="tab-<?php print $count ?>" role="tab" data-toggle="tab">
-            <?php print $titulo_tab_bloque_4['value'] ?>
-          </a>
-        </li>
-        <?php $count++; ?>
-        <?php endforeach ?>
-      </ul>
 
-      <!-- Tab panes -->
-      <div class="tab-content">
-        <?php $count = 0; ?>
-        <?php foreach ($cuerpos_tab_bloque_4 as $key => $cuerpo_tab_bloque_4): ?>
-        <div role="tabpanel" class="tab-pane <?php ($count == 0) ? print 'active' : '' ; ?>" id="tab-<?php print $count ?>"><?php print $cuerpo_tab_bloque_4['value'] ?></div>
-        <?php $count++; ?>
-        <?php endforeach ?>
+      <div class="tabs tabs-style-linebox">
+        <nav>
+          <ul>
+            <?php $count = 0; ?>
+            <?php foreach ($titulos_tab_bloque_4 as $key => $titulo_tab_bloque_4): ?>
+            <li class="<?php ($count == 0) ? print 'tab-current' : '' ; ?>">
+              <a href="#section-linebox-<?php print $count; ?>"><span><?php print $titulo_tab_bloque_4['value'] ?></span>
+              </a>
+            </li>
+            <?php $count++; ?>
+            <?php endforeach ?>
+          </ul>
+        </nav>
+        <div class="content-wrap bg-gray-lighter" style="color: black;">
+          <?php $count = 0; ?>
+          <?php foreach ($cuerpos_tab_bloque_4 as $key => $cuerpo_tab_bloque_4): ?>
+          <section id="section-linebox-<?php print $count; ?>" class="<?php ($count == 0) ? print 'content-current' : '' ; ?>">
+            <p style="color: black;"><?php print $cuerpo_tab_bloque_4['value'] ?></p>
+          </section>
+          <?php $count++;?>
+          <?php endforeach ?>
+        </div><!-- /content -->
       </div>
     </div>
     <div id="carousel-bloque4" class="carousel carousel-custom slide mb-42 mt-35" data-ride="carousel">
@@ -206,26 +209,29 @@
   <div class="separator-gray separator-sm"></div>
   <div class="p-ch-gray-dark">
     <div>
-      <!-- Nav tabs -->
-      <ul class="nav nav-tabs" role="tablist">
-        <?php $count = 0; ?>
-        <?php foreach ($titulos_tab_bloque_6 as $key => $titulo_tab_bloque_6): ?>
-        <li role="presentation" class="<?php ($count == 0) ? print 'active' : '' ; ?>">
-          <a href="#tab-<?php print $count ?>" aria-controls="tab-<?php print $count ?>" role="tab" data-toggle="tab">
-            <?php print $titulo_tab_bloque_6['value'] ?>
-          </a>
-        </li>
-        <?php $count++; ?>
-        <?php endforeach ?>
-      </ul>
 
-      <!-- Tab panes -->
-      <div class="tab-content">
-        <?php $count = 0; ?>
-        <?php foreach ($cuerpos_tab_bloque_6 as $key => $cuerpo_tab_bloque_6): ?>
-        <div role="tabpanel" class="tab-pane <?php ($count == 0) ? print 'active' : '' ; ?>" id="tab-<?php print $count ?>"><?php print $cuerpo_tab_bloque_6['value'] ?></div>
-        <?php $count++; ?>
-        <?php endforeach ?>
+      <div class="tabs tabs-style-linebox">
+        <nav>
+          <ul>
+            <?php $count = 0; ?>
+            <?php foreach ($titulos_tab_bloque_6 as $key => $titulo_tab_bloque_6): ?>
+            <li class="<?php ($count == 0) ? print 'tab-current' : '' ; ?>">
+              <a href="#section-linebox-<?php print $count; ?>"><span><?php print $titulo_tab_bloque_6['value'] ?></span>
+              </a>
+            </li>
+            <?php $count++; ?>
+            <?php endforeach ?>
+          </ul>
+        </nav>
+        <div class="content-wrap bg-gray-lighter" style="color: black;">
+          <?php $count = 0; ?>
+          <?php foreach ($cuerpos_tab_bloque_6 as $key => $cuerpo_tab_bloque_6): ?>
+          <section id="section-linebox-<?php print $count; ?>" class="<?php ($count == 0) ? print 'content-current' : '' ; ?>">
+            <p style="color: black;"><?php print $cuerpo_tab_bloque_6['value'] ?></p>
+          </section>
+          <?php $count++;?>
+          <?php endforeach ?>
+        </div><!-- /content -->
       </div>
     </div>
     <div id="carousel-bloque6" class="carousel carousel-custom slide mb-42" data-ride="carousel">
