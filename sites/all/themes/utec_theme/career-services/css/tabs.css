@@ -55,7 +55,7 @@
 	overflow: hidden;
 	/*text-overflow: ellipsis;
 	white-space: nowrap;*/
-	line-height: 1.2;
+	line-height: 0.8;
     height: 49px;
 }
 
