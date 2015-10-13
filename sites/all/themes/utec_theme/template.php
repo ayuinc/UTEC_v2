@@ -19,11 +19,11 @@
 
 	//Search
 	function utec_theme_preprocess_page(&$variables){
-	  //die('entro!!!');
-	  $search_box = drupal_render(drupal_get_form('search_form'));
-	  //die(print_r($search_box));
-	  $variables['search_box'] = $search_box;
 
+	  $search_box = drupal_render(drupal_get_form('search_form'));
+
+	  $variables['search_box'] = $search_box;
+    kpr($metadata);
     if (isset($variables['node'])) {
       // If the node type is "blog_madness" the template suggestion will be "page--blog-madness.tpl.php".
       $variables['theme_hook_suggestions'][] = 'page__'. $variables['node']->type;
