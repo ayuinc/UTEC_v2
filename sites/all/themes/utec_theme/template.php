@@ -19,9 +19,9 @@
 
 	//Search
 	function utec_theme_preprocess_page(&$variables){
-	  //die('entro!!!');
+
 	  $search_box = drupal_render(drupal_get_form('search_form'));
-	  //die(print_r($search_box));
+
 	  $variables['search_box'] = $search_box;
 
     if (isset($variables['node'])) {
@@ -76,7 +76,12 @@
     'weight' => 4,
   )); 
 
-  
+  drupal_add_js(path_to_theme() . '/js/app/lib/utec-convenios.js', array(
+    'scope' => 'footer',
+    'group' => JS_THEME,
+    'every_page' => TRUE,
+    'weight' => 5,
+  )); 
 
   drupal_add_js('(function() {[].slice.call( document.querySelectorAll( ".tabs" ) ).forEach( function( el ) {new CBPFWTabs( el );});})();',
     array('type' => 'inline', 'scope' => 'footer', 'group' => JS_THEME, 'weight' => 10)
@@ -288,4 +293,7 @@ function utec_theme_preprocess_panels_pane(&$variables) {
     dpm('subtype: ' . $variables['pane']->subtype);
   }
 }
-?>
+
+function utec_theme_preprocess_html(&$variables) {
+  kpr($variables);
+}
