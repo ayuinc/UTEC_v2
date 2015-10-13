@@ -234,7 +234,7 @@
         </div><!-- /content -->
       </div>
     </div>
-    <div id="carousel-bloque6" class="carousel carousel-custom slide mb-42" data-ride="carousel">
+    <div id="carousel-bloque6" class="carousel carousel-custom slide mb-42 mt-42" data-ride="carousel">
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <?php $count = 0; ?>
