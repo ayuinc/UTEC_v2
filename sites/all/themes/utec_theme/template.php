@@ -294,6 +294,3 @@ function utec_theme_preprocess_panels_pane(&$variables) {
   }
 }
 
-function utec_theme_metatag_info() {
-  print_r($info);
-}
