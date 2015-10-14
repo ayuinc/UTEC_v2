@@ -244,3 +244,18 @@
     height: 300px !important;
 	}
 }
+
+.grid-1{
+	width: 243px;
+  height: 242px;
+}
+
+.grid-2{
+	width: 486px;
+  height: 242px;
+}
+
+.grid-3{
+	width: 243px;
+  height: 484px;
+}
