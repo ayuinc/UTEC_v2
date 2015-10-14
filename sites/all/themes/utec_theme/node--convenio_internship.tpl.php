@@ -20,7 +20,7 @@
       <?php if ($imagen): ?>
       <div class="col-md-3">
         <div class="banner banner-label-bottom mb-7 ml-0">
-          <div class="banner-pic" style="background-image: url(<?php print image_style_url($image_style, $imagen['uri']); ?>);">
+          <div class="banner-pic" style="background-image: url(<?php print image_style_url($image_style, $imagen['uri']); ?>); border: #ddd 1px solid;">
           </div>
         </div>
       </div>
