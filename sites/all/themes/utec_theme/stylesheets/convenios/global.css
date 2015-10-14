@@ -266,3 +266,28 @@ textarea,
 }
 
 
+/*Icons*/
+
+.icon-taxes:before {
+  content: "\e807"; }
+
+.all-class:before {
+  content: "\e806"; }
+
+.icon-exchange:before {
+  content: "\e800"; }
+
+.icon-cards:before {
+  content: "\e804"; }
+
+.icon-tip:before {
+  content: "\e805"; }
+
+.icon-safety:before {
+  content: "\e801"; }
+
+.icon-water:before {
+  content: "\e802"; }
+
+.icon-money:before {
+  content: "\e803"; }

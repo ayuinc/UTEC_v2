@@ -4488,8 +4488,8 @@ h6 {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../assets/icons/icomoon-23.01.15.eot?-6ygl8i");
-  src: url("../assets/icons/icomoon-23.01.15.eot?#iefix-6ygl8i") format("embedded-opentype"), url("../assets/icons/icomoon-23.01.15.woff?-6ygl8i") format("woff"), url("../assets/icons/icomoon-23.01.15.ttf?-6ygl8i") format("truetype"), url("../assets/icons/icomoon-23.01.15.svg?-6ygl8i#icomoon") format("svg");
+  src: url("../assets/icons/icomoon.eot?-cksa35");
+  src: url("../assets/icons/icomoon.eot?#iefix-cksa35") format("embedded-opentype"), url("../assets/icons/icomoon.woff?-cksa35") format("woff"), url("../assets/icons/icomoon.ttf?-cksa35") format("truetype"), url("../assets/icons/icomoon.svg?-cksa35#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 [class^="icon-"], [class*=" icon-"] {
@@ -4503,36 +4503,6 @@ h6 {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
-
-.icon-admisiones-alto-rendimiento:before {
-  content: "\e600"; }
-
-.icon-admisiones-bachillerato:before {
-  content: "\e601"; }
-
-.icon-admisiones-centro-pre:before {
-  content: "\e602"; }
-
-.icon-admisiones-examen:before {
-  content: "\e603"; }
-
-.icon-admisiones-primeros-puestos:before {
-  content: "\e604"; }
-
-.icon-admisiones-traslado:before {
-  content: "\e605"; }
-
-.icon-menu:before {
-  content: "\e9bd"; }
-
-.icon-footer-instagram:before {
-  content: "\ea90"; }
-
-.icon-footer-youtube:before {
-  content: "\ea99"; }
-
-.icon-spinner9:before {
-  content: "\e982"; }
 
 .icon-inscripcion-promedio:before {
   content: "\e628"; }
@@ -4557,6 +4527,24 @@ h6 {
 
 .icon-inscripcion-resolucion:before {
   content: "\e62f"; }
+
+.icon-admisiones-alto-rendimiento:before {
+  content: "\e600"; }
+
+.icon-admisiones-bachillerato:before {
+  content: "\e601"; }
+
+.icon-admisiones-centro-pre:before {
+  content: "\e602"; }
+
+.icon-admisiones-examen:before {
+  content: "\e603"; }
+
+.icon-admisiones-primeros-puestos:before {
+  content: "\e604"; }
+
+.icon-admisiones-traslado:before {
+  content: "\e605"; }
 
 .icon-arrow-down:before {
   content: "\e606"; }
@@ -4659,6 +4647,30 @@ h6 {
 
 .icon-search:before {
   content: "\e623"; }
+
+.icon-taxes:before {
+  content: "\e807"; }
+
+.all-class:before {
+  content: "\e806"; }
+
+.icon-exchange:before {
+  content: "\e800"; }
+
+.icon-cards:before {
+  content: "\e804"; }
+
+.icon-tip:before {
+  content: "\e805"; }
+
+.icon-safety:before {
+  content: "\e801"; }
+
+.icon-water:before {
+  content: "\e802"; }
+
+.icon-money:before {
+  content: "\e803"; }
 
 .site-wrapper.ie .site-menu {
   display: none; }
