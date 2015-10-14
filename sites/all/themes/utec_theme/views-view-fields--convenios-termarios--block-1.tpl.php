@@ -9,10 +9,10 @@
 	$carrera = $fields['field_carrera_referencia']->content;
 	$count = $fields['counter']->content;
 	// print_r($fields);
-	// $count = 1;
+	$counter = 1;
 
 ?>
-<?php if ($count == 1): ?>	
+<?php if ($counter == 1): ?>	
 <tr>
 	<td><?php print $carrera; ?></td>
 	<td></td>
