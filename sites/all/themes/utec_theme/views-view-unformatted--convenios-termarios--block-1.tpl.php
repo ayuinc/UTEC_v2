@@ -25,7 +25,9 @@
 				</thead>
 				<tbody>
 					<?php $count = 1; ?>
+					kpr($rows);
 					<?php foreach ($rows as $id => $row): ?>
+
 				    <?php print $row;?>
 					<?php endforeach; ?> 																																																						
 				</tbody>
