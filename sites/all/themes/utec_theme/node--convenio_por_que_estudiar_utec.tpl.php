@@ -2,7 +2,10 @@
 	
 	$titulo = $node->title;   
 	$descripcion = $node->body['und']['0']['value'];
-	$imagen = $node->field_image['und']['0']['uri'];
+  $imagen = $node->field_image['und']['0']['uri'];
+	$video_uri = $node->field_video['und']['0']['uri'];
+  $video_url = file_create_url($video_uri);
+  $video_name = $node->field_video['und']['0']['filename'];
   // kpr($node->field_image);
 
 ?>
@@ -15,16 +18,27 @@
       <?php print $descripcion ?>   
     </div>
     <!-- Wrapper for slides -->
-    <?php if ($imagen): ?>
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <div class="banner banner-label-bottom mb-7 ml-0">
-          <div class="banner-pic" style="background-image: url(<?php print image_style_url($image_style, $imagen); ?>);">
-          </div>
-        </div>
+    <div>
+      <?php if ($video_name != '') : ?>
+      <video
+        id="videocover"
+        autoplay
+        loop
+        muted 
+        class="video-js videocover vjs-default-skin"
+        controls
+        preload="auto">
+          <source src="<?php print $video_url; ?>" type='video/webm' />
+          <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+      </video>
+      <?php endif; ?>
+      <?php if ($imagen != '' && $video_name == '') : ?>
+      <div class="home-image">
+        <img class="img-responsive" src="<?php print image_style_url($image_style, $imagen); ?>" alt="<?php print $title ?>" />
       </div>
+      <?php endif; ?>
     </div>
-    <?php endif ?>
   </div>
   <a class="scroll-down scroll-down-sq size lg" href="#course" rel="nofollow"><i class="icon-arrows-down"></i></a>
 </div>
+

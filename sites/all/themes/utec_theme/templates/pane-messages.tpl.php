@@ -24,7 +24,13 @@
 	        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
 	      </div>
 	      <div class="modal-body">
-				  <?php //print_r($url); ?>
+				  <?php 
+				  	$node = node_load(1382);
+				  	kpr($node);
+				  	$title = $node->title;
+				  	$description = $node->body['und']['0']['value'];
+
+				  ?>
 	        <?php $path_i18 = drupal_get_path_alias('', $language->language); ?>
 	        <div class="carlos"><?php print $variables['page']['content']['metatags']['global']['og:title']; ?></div>
 	        <a href="https://www.facebook.com/sharer/sharer.php?u=<?php print $url.'/'.$language->language.'/'.$path_i18; ?>">Share on Facebook</a>
