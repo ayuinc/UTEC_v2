@@ -18,7 +18,7 @@
       <?php print $descripcion ?>   
     </div>
     <!-- Wrapper for slides -->
-    <div>
+    <div id="video-why-study-utec">
       <?php if ($video_name != '') : ?>
       <video
         id="video"
@@ -31,7 +31,7 @@
       </video>
       <!-- Video Controls -->
       <div id="video-controls">
-        <button type="button" id="play-pause" style="background-color:transparent;border:none;"><i class="icon-play"></i></button>
+        <button type="button" id="play-pause" style="background-color:transparent;border:none;"><i class="icon-play" style="font-size: 89px; color: white;"></i></button>
       </div>
       <?php endif; ?>
       <?php if ($imagen != '' && $video_name == '') : ?>
