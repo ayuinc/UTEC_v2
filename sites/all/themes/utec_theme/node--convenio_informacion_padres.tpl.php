@@ -20,7 +20,7 @@
     <div class="carousel-inner" role="listbox">
       <div class="item active">
         <div class="banner banner-label-bottom mb-7 ml-0">
-          <div class="banner-pic" style="background-image: url(<?php print image_style_url($image_style, $imagen); ?>);">
+          <div class="banner-pic mb-28" style="background-image: url(<?php print image_style_url($image_style, $imagen); ?>);">
           </div>
         </div>
       </div>
