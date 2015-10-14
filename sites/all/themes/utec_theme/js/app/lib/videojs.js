@@ -24,12 +24,14 @@
 
           // Update the button text to 'Pause'
           playButton.addClass = "icon-pause";
+          playButton.removeClass = "icon-play";
         } else {
           // Pause the video
           video.pause();
 
           // Update the button text to 'Play'
           playButton.addClass = "icon-play";
+          playButton.removeClass = "icon-pause";
         }
       });
     });
