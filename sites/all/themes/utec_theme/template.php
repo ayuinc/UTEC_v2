@@ -81,6 +81,13 @@
     'group' => JS_THEME,
     'every_page' => TRUE,
     'weight' => 5,
+  ));
+
+  drupal_add_js(path_to_theme() . '/js/app/lib/videojs.js', array(
+    'scope' => 'footer',
+    'group' => JS_THEME,
+    'every_page' => TRUE,
+    'weight' => 6,
   )); 
 
   drupal_add_js('(function() {[].slice.call( document.querySelectorAll( ".tabs" ) ).forEach( function( el ) {new CBPFWTabs( el );});})();',
