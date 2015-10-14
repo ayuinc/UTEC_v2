@@ -23,13 +23,13 @@
           video.play();
 
           // Update the button text to 'Pause'
-          playButton.innerHTML = "Pause";
+          playButton.addClass = "icon-pause";
         } else {
           // Pause the video
           video.pause();
 
           // Update the button text to 'Play'
-          playButton.innerHTML = "Play";
+          playButton.addClass = "icon-play";
         }
       });
     });

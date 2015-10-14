@@ -31,7 +31,7 @@
       </video>
       <!-- Video Controls -->
       <div id="video-controls">
-        <button type="button" id="play-pause">Play</button>
+        <button type="button" id="play-pause" style="background-color:transparent;border:none;"><i class="icon-play"></i></button>
       </div>
       <?php endif; ?>
       <?php if ($imagen != '' && $video_name == '') : ?>
