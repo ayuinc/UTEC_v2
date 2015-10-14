@@ -22,7 +22,7 @@
       <?php if ($video_name != '') : ?>
       <video
         id="videocover"
-        autoplay
+        
         loop
         muted 
         class="video-js videocover vjs-default-skin"
