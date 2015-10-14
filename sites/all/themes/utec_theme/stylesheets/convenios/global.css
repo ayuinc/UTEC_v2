@@ -271,7 +271,7 @@ textarea,
 	visibility: hidden;
 }
 
-#video-why-study-utec video:hover #video-controls {
+#video-why-study-utec:hover #video-controls {
 	visibility: visible !important;
 }
 
