@@ -22,7 +22,6 @@
       <?php if ($video_name != '') : ?>
       <video
         id="videocover"
-        
         loop
         muted 
         class="video-js videocover vjs-default-skin"
@@ -31,6 +30,10 @@
           <source src="<?php print $video_url; ?>" type='video/webm' />
           <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
       </video>
+      <!-- Video Controls -->
+      <div id="video-controls">
+        <button type="button" id="play-pause">Play</button>
+      </div>
       <?php endif; ?>
       <?php if ($imagen != '' && $video_name == '') : ?>
       <div class="home-image">
