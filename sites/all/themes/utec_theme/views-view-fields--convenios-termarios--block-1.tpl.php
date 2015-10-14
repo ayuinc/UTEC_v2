@@ -7,8 +7,9 @@
 	$prerequisitos = $fields['field_requisitos']->content;
 	$objetivos = $fields['body']->content;
 	$carrera = $fields['field_carrera_referencia']->content;
-	print_r($fields);
-	$count = 1;
+	$count = $fields['counter']->content;
+	// print_r($fields);
+	// $count = 1;
 
 ?>
 <?php if ($count == 1): ?>	
