@@ -17,6 +17,7 @@
     <div class="pv-ch-7">
       <?php print $descripcion ?>   
     </div>
+    <!-- Wrapper for slides -->
     <div>
       <?php if ($video_name != '') : ?>
       <video
@@ -35,7 +36,9 @@
       <div class="home-image">
         <img class="img-responsive" src="<?php print image_style_url($image_style, $imagen); ?>" alt="<?php print $title ?>" />
       </div>
+      <?php endif; ?>
     </div>
   </div>
   <a class="scroll-down scroll-down-sq size lg" href="#course" rel="nofollow"><i class="icon-arrows-down"></i></a>
 </div>
+
