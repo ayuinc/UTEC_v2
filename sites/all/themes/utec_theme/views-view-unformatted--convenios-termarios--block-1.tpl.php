@@ -24,6 +24,7 @@
 					</tr>
 				</thead>
 				<tbody>
+					<?php $count = 1; ?>
 					<?php foreach ($rows as $id => $row): ?>
 				    <?php print $row;?>
 					<?php endforeach; ?> 																																																						

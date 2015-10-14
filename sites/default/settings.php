@@ -217,7 +217,7 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'utec_db',
+      'database' => 'db_utec',
       'username' => 'root',
       'password' => 'R5vibxUv9S',
       'host' => 'localhost',
