@@ -259,5 +259,10 @@
 	}
 }
 
+.page-page-27 #contact-us input,
+textarea,
+.grippie {
+	width: 50% !important;
+}
 
 
