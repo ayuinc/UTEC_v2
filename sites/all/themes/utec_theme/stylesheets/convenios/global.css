@@ -235,3 +235,29 @@
     color: white;
     background-color: rgba(50,50,50,0.9);
 }
+
+.grid-1{
+	width: 243px !important;
+  height: 242px !important;
+}
+
+.grid-2{
+	width: 486px !important;
+  height: 242px !important;
+}
+
+.grid-3{
+	width: 243px !important;
+  height: 484px !important;
+}
+
+
+@media only screen and (max-width: 480px){
+	.grid-1, .grid-2, .grid-3 {
+    width: 100% !important;
+    height: 374px !important;
+	}
+}
+
+
+
