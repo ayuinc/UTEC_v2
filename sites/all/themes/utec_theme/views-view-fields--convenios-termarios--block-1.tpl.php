@@ -8,7 +8,7 @@
 	$objetivos = $fields['body']->content;
 	$carrera = $fields['field_carrera_referencia']->content;
 	kpr($fields);
-	$count = 0;
+	$count = 1;
 
 ?>
 <?php if ($count == 1): ?>	
