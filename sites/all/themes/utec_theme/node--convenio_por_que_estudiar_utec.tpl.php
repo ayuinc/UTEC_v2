@@ -21,7 +21,7 @@
     <div>
       <?php if ($video_name != '') : ?>
       <video
-        id="videocover"
+        id="video"
         loop
         muted 
         class="video-js videocover vjs-default-skin"
