@@ -7,7 +7,7 @@
 	$prerequisitos = $fields['field_requisitos']->content;
 	$objetivos = $fields['body']->content;
 	$carrera = $fields['field_carrera_referencia']->content;
-	$count = 0;
+	// $count = 0;
 ?>
 <?php if ($count == 0): ?>	
 <tr>
