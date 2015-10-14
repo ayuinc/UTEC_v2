@@ -273,8 +273,12 @@ textarea,
 
 #video-why-study-utec video:hover .video-controls {
 	visibility: visible !important;
-	
+}
 
+#video-controls {
+	position: relative;
+   top: -250px;
+   left: 318px;
 }
 
 
