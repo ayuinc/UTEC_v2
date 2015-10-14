@@ -267,11 +267,11 @@ textarea,
 
 /*video*/
 
-#video-why-study-utec .video-controls {
+#video-why-study-utec #video-controls {
 	visibility: hidden;
 }
 
-#video-why-study-utec video:hover .video-controls {
+#video-why-study-utec video:hover #video-controls {
 	visibility: visible !important;
 }
 
