@@ -217,10 +217,10 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'utec_db',
+      'database' => 'db_utec',
       'username' => 'root',
       'password' => 'R5vibxUv9S',
-      'host' => 'localhost',
+      'host' => '104.236.86.120',
       'port' => '',
       'driver' => 'mysql',
       'prefix' => '',
