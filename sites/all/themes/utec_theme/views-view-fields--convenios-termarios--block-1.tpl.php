@@ -7,7 +7,7 @@
 	$prerequisitos = $fields['field_requisitos']->content;
 	$objetivos = $fields['body']->content;
 	$carrera = $fields['field_carrera_referencia']->content;
-	kpr($fields);
+	print_r($fields);
 	$count = 1;
 
 ?>
