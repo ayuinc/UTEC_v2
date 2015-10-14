@@ -265,6 +265,23 @@ textarea,
 	width: 50% !important;
 }
 
+/*video*/
+
+#video-why-study-utec #video-controls {
+	visibility: hidden;
+}
+
+#video-why-study-utec video:hover #video-controls {
+	visibility: visible !important;
+}
+
+#video-why-study-utec #video-controls {
+	position: relative;
+   top: -250px;
+   left: 318px;
+}
+
+
 
 /*Icons*/
 
