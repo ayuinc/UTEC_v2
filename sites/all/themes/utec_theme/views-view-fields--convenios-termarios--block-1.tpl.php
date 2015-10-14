@@ -7,11 +7,12 @@
 	$prerequisitos = $fields['field_requisitos']->content;
 	$objetivos = $fields['body']->content;
 	$carrera = $fields['field_carrera_referencia']->content;
-	// $count = 0;
+	global $count;
 	print $count;
 
 ?>
 <?php if ($count == 1): ?>	
+	print $count;
 <tr>
 	<td><?php print $carrera; ?></td>
 	<td></td>
