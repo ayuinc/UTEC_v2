@@ -18,7 +18,8 @@
   $imagenes_bloque_4 = $node->field_imagenes_bloque_4['und'];
 
   $titulo_bloque_5 = $node->field_mes['und']['0']['value'];    
-  $imagenes_bloque_5 = $node->field_clase_icono['und'];    
+  // $imagenes_bloque_5 = $node->field_clase_icono['und'];    
+  $imagenes_bloque_5 = $node->field_imagenes_bloque_5['und'];    
   $titulos_bloque_5  = $node->field_titulos_bloque_5['und'];     
   $contenidos_bloque_5 = $node->field_contenido_bloque_5['und'];
 
@@ -189,7 +190,8 @@
     <ul>
       <li class="text-center">
         <div class="grid-list-pic">
-          <i class="<?php print $imagen_bloque_5['value']; ?>" style="font-size:5rem"></i>
+          <!-- <i class="<?php //print $imagen_bloque_5['value']; ?>" style="font-size:5rem"></i> -->
+          <img src="<?php print image_style_url($image_styles_5, $imagen_bloque_5['uri']); ?>" alt="">
         </div>
       </li>           
       <li class="pl-21 text-gray">
