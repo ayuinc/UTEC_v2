@@ -98,7 +98,7 @@
             <?php $count = 0; ?>
             <?php foreach ($titulos_tab_bloque_3 as $key => $titulo_tab_bloque_3): ?>
             <li class="<?php ($count == 0) ? print 'tab-current' : '' ; ?>">
-              <a href="#bloque-tres-<?php print $count; ?>"><span><?php print $titulo_tab_bloque_3['value'] ?></span>
+              <a href="bloque-tres-<?php print $count; ?>"><span><?php print $titulo_tab_bloque_3['value'] ?></span>
               </a>
             </li>
             <?php $count++; ?>
@@ -126,33 +126,40 @@
   <h2 class="light"><?php print $titulo_bloque_4 ?></h2>
   <div class="separator-gray separator-sm"></div>
   <div class="p-ch-gray-dark">
-    <div>
-
-      <div class="tabs tabs-style-linebox">
-        <nav>
-          <ul>
-            <?php $count = 0; ?>
-            <?php foreach ($titulos_tab_bloque_4 as $key => $titulo_tab_bloque_4): ?>
-            <li class="<?php ($count == 0) ? print 'tab-current' : '' ; ?>">
-              <a href="#bloque-cuatro-<?php print $count; ?>"><span><?php print $titulo_tab_bloque_4['value'] ?></span>
-              </a>
-            </li>
-            <?php $count++; ?>
-            <?php endforeach ?>
-          </ul>
-        </nav>
-        <div class="content-wrap bg-gray-lighter" style="color: black;">
-          <?php $count = 0; ?>
-          <?php foreach ($cuerpos_tab_bloque_4 as $key => $cuerpo_tab_bloque_4): ?>
-          <section id="bloque-cuatro-<?php print $count; ?>" class="<?php ($count == 0) ? print 'content-current' : '' ; ?>">
-            <p style="color: black;"><?php print $cuerpo_tab_bloque_4['value'] ?></p>
-          </section>
-          <?php $count++;?>
-          <?php endforeach ?>
-        </div><!-- /content -->
-      </div>
-    </div>
     <div id="carousel-bloque4" class="carousel carousel-custom slide mb-42 mt-35" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <?php $count = 0; ?>
+        <?php foreach ($imagenes_bloque_4 as $key => $imagen_bloque_4): ?>
+        <li data-target="#carousel-bloque4" data-slide-to="<?php print $count ?>" class="<?php ($count == 0) ? print 'active' : '' ; ?>"></li>
+        <?php $count++; ?>
+        <?php endforeach ?>
+      </ol>
+      <div>
+        <div class="tabs tabs-style-linebox">
+          <nav>
+            <ul>
+              <?php $count = 0; ?>
+              <?php foreach ($titulos_tab_bloque_4 as $key => $titulo_tab_bloque_4): ?>
+              <li class="<?php ($count == 0) ? print 'tab-current' : '' ; ?>">
+                <a href="bloque-cuatro-<?php print $count; ?>"><span><?php print $titulo_tab_bloque_4['value'] ?></span>
+                </a>
+              </li>
+              <?php $count++; ?>
+              <?php endforeach ?>
+            </ul>
+          </nav>
+          <div class="content-wrap bg-gray-lighter" style="color: black;">
+            <?php $count = 0; ?>
+            <?php foreach ($cuerpos_tab_bloque_4 as $key => $cuerpo_tab_bloque_4): ?>
+            <section id="bloque-cuatro-<?php print $count; ?>" class="<?php ($count == 0) ? print 'content-current' : '' ; ?>">
+              <p style="color: black;"><?php print $cuerpo_tab_bloque_4['value'] ?></p>
+            </section>
+            <?php $count++;?>
+            <?php endforeach ?>
+          </div><!-- /content -->
+        </div>
+      </div>
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <?php $count = 0; ?>
@@ -219,7 +226,7 @@
             <?php $count = 0; ?>
             <?php foreach ($titulos_tab_bloque_6 as $key => $titulo_tab_bloque_6): ?>
             <li class="<?php ($count == 0) ? print 'tab-current' : '' ; ?>">
-              <a href="#bloque-seis-<?php print $count; ?>"><span><?php print $titulo_tab_bloque_6['value'] ?></span>
+              <a href="bloque-seis-<?php print $count; ?>"><span><?php print $titulo_tab_bloque_6['value'] ?></span>
               </a>
             </li>
             <?php $count++; ?>
