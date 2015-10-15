@@ -52,7 +52,7 @@
             <?php $count = 0; ?>
             <?php foreach ($tab_titles as $key => $tab_title): ?>
             <li class="<?php ($count == 0) ? print 'tab-current' : '' ; ?>">
-              <a href="#section-linebox-<?php print $count; ?>"><span><?php print $tab_title['value'] ?></span>
+              <a href="section-linebox-<?php print $count; ?>"><span><?php print $tab_title['value'] ?></span>
               </a>
             </li>
             <?php $count++; ?>
