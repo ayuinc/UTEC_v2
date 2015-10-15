@@ -42,7 +42,7 @@
         var id = $(this).parent().parent().parent().parent().parent().parent().attr('id');
         console.log(id);
         var selector = $(this).parent().index();
-        var click = $("#"+id+" .carousel-custom ol li[data-slide-to='"+selector+"']");
+        var click = $("##"+id+" .carousel-custom ol li[data-slide-to='"+selector+"']");
         console.log(click);
         $(click).trigger( "click" );
         // console.log(click);
