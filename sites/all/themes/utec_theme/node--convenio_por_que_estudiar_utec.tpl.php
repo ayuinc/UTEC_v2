@@ -18,7 +18,7 @@
       <?php print $descripcion ?>   
     </div>
     <!-- Wrapper for slides -->
-    <div id="video-why-study-utec">
+    <div id="video-why-study-utec" class="hidden-xs hidden-sm">
       <?php if ($video_name != '') : ?>
       <video
         id="video"

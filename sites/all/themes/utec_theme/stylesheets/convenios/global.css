@@ -89,6 +89,9 @@
 
 .content-wrap section.content-current {
 	display: block;
+	border-left: #00BFDF 1px solid;
+  border-right: #00BFDF 1px solid;
+  border-bottom: #00BFDF 1px solid;
 }
 
 .content-wrap section p {
@@ -137,6 +140,7 @@
 	font-weight: 700;
 	-webkit-transition: color 0.3s;
 	transition: color 0.3s;
+	border-bottom: #00BFDF 1px solid;
 }
 
 .tabs-style-linebox nav a:hover,
@@ -146,6 +150,9 @@
 
 .tabs-style-linebox nav li.tab-current a {
 	color: black;
+	border-left: #00BFDF 3px solid;
+  border-right: #00BFDF 3px solid;
+  border-bottom: none;
 }
 
 .tabs-style-linebox nav a:hover::before,
