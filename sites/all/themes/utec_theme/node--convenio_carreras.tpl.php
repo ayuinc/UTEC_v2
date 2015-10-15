@@ -5,7 +5,6 @@
   $carreras = $node->field_nombre['und'];
   $links = $node->field_carrera_link['und'];
   $iconos = $node->field_texo['und'];
-  kpr($links);
 ?>
 
 	<div class="container-sm section-scroll-content" id="course">
