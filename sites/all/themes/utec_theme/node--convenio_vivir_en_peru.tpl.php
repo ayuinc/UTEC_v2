@@ -219,6 +219,14 @@
   <div class="separator-gray separator-sm"></div>
   <div class="p-ch-gray-dark">
     <div id="carousel-bloque6" class="carousel carousel-custom slide mb-42 mt-42" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <?php $count = 0; ?>
+        <?php foreach ($imagenes_bloque_4 as $key => $imagen_bloque_4): ?>
+        <li data-target="#carousel-bloque6" data-slide-to="<?php print $count ?>" class="<?php ($count == 0) ? print 'active' : '' ; ?>"></li>
+        <?php $count++; ?>
+        <?php endforeach ?>
+      </ol>
       <div>
         <div class="tabs tabs-style-linebox">
           <nav>

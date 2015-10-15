@@ -40,6 +40,7 @@
       // Trigger Tabs with slider in living in peru
       $(".carousel-custom a").on("click", function(){
         var id = $(this).parent().parent().parent().parent().parent().parent().attr('id');
+        console.log(id);
         var selector = $(this).parent().index();
         var click = $("#"+id+" .carousel-custom ol li[data-slide-to='"+selector+"']");
         $(click).trigger( "click" );
