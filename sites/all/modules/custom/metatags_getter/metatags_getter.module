@@ -1,4 +1,0 @@
-<?php
-function metatags_getter_metatag_info() {
-  return print_r($info);
-}
