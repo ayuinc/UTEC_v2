@@ -98,7 +98,7 @@
             <?php $count = 0; ?>
             <?php foreach ($titulos_tab_bloque_3 as $key => $titulo_tab_bloque_3): ?>
             <li class="<?php ($count == 0) ? print 'tab-current' : '' ; ?>">
-              <a href="#bloque-tres-<?php print $count; ?>"><span><?php print $titulo_tab_bloque_3['value'] ?></span>
+              <a href="bloque-tres-<?php print $count; ?>"><span><?php print $titulo_tab_bloque_3['value'] ?></span>
               </a>
             </li>
             <?php $count++; ?>
@@ -134,7 +134,7 @@
             <?php $count = 0; ?>
             <?php foreach ($titulos_tab_bloque_4 as $key => $titulo_tab_bloque_4): ?>
             <li class="<?php ($count == 0) ? print 'tab-current' : '' ; ?>">
-              <a href="#bloque-cuatro-<?php print $count; ?>"><span><?php print $titulo_tab_bloque_4['value'] ?></span>
+              <a href="bloque-cuatro-<?php print $count; ?>"><span><?php print $titulo_tab_bloque_4['value'] ?></span>
               </a>
             </li>
             <?php $count++; ?>
@@ -219,7 +219,7 @@
             <?php $count = 0; ?>
             <?php foreach ($titulos_tab_bloque_6 as $key => $titulo_tab_bloque_6): ?>
             <li class="<?php ($count == 0) ? print 'tab-current' : '' ; ?>">
-              <a href="#bloque-seis-<?php print $count; ?>"><span><?php print $titulo_tab_bloque_6['value'] ?></span>
+              <a href="bloque-seis-<?php print $count; ?>"><span><?php print $titulo_tab_bloque_6['value'] ?></span>
               </a>
             </li>
             <?php $count++; ?>
