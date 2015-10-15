@@ -45,7 +45,7 @@
     </div>
 
     <div class="hidden-lg">
-      <!-- TABS -->
+      
       <div class="tabs tabs-style-linebox" id="collapse-myTab">
         <nav>
           <ul>
