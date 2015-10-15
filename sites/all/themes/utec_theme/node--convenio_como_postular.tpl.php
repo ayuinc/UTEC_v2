@@ -16,8 +16,8 @@
     <div class="pv-ch-7">
       <?php print $descripcion ?>   
     </div>
-    
-    <div>
+
+    <div class="hidden-xs hidden-sm">
       <!-- TABS -->
       <div class="tabs tabs-style-linebox">
         <nav>
@@ -25,7 +25,7 @@
             <?php $count = 0; ?>
             <?php foreach ($tab_titles as $key => $tab_title): ?>
             <li class="<?php ($count == 0) ? print 'tab-current' : '' ; ?>">
-              <a href="section-linebox-<?php print $count; ?>"><span><?php print $tab_title['value'] ?></span>
+              <a href="#section-linebox-<?php print $count; ?>"><span><?php print $tab_title['value'] ?></span>
               </a>
             </li>
             <?php $count++; ?>
@@ -43,6 +43,34 @@
         </div><!-- /content -->
       </div>
     </div>
+
+    <div class="hidden-lg">
+      <!-- TABS -->
+      <div class="tabs tabs-style-linebox" id="collapse-myTab">
+        <nav>
+          <ul>
+            <?php $count = 0; ?>
+            <?php foreach ($tab_titles as $key => $tab_title): ?>
+            <li class="<?php ($count == 0) ? print 'tab-current' : '' ; ?>">
+              <a href="#section-linebox-<?php print $count; ?>"><span><?php print $tab_title['value'] ?></span>
+              </a>
+            </li>
+            <?php $count++; ?>
+            <?php endforeach ?>
+          </ul>
+        </nav>
+        <div class="content-wrap bg-gray-lighter" style="color: black;">
+          <?php $count = 0; ?>
+          <?php foreach ($tab_contents as $key => $tab_content): ?>
+          <section id="section-linebox-<?php print $count; ?>" class="<?php ($count == 0) ? print 'content-current' : '' ; ?>">
+            <p style="color: black;"><?php print $tab_content['value'] ?></p>
+          </section>
+          <?php $count++;?>
+          <?php endforeach ?>
+        </div><!-- /content -->
+      </div>
+    </div>
+
 
   </div>
   <a class="scroll-down scroll-down-sq size lg" href="#codeofconduct" rel="nofollow"><i class="icon-arrows-down"></i></a>
