@@ -1,7 +1,22 @@
 <?php
 
-$url = 'https://openexchangerates.org/api/latest.json?app_id=bb8d470009bf4de6bbf903f6332bb2a3';
-
-$array = drupal_http_request($url);
-
-print_r($array);
+/**
+ * HTTP requests return a array of the decode JSON
+ *
+ * @param string $url
+ *  A string containing a fully qualified URI.
+ *
+ * @return array
+ *  Array json decode
+ */
+function utec_currency_json_request($url) {
+  $request = drupal_http_request($url);
+  if (REQUEST_SUCCESSFULL != $request->code) {
+    drupal_set_message('Unable load: ' .$url, 'error');
+    watchdog('Unable Load', 'Not load this url: '.$url);
+    return '';
+  }
+  $json_response = drupal_json_decode($request->data);
+  print_r($json_response);
+  return $json_response;
+}
