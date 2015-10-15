@@ -11,15 +11,12 @@
 	// print_r($fields);
 	$counter = 1;
 
-?>
-<?php if ($counter == 1): ?>	
+?>	
 <tr>
 	<td><?php print $carrera; ?></td>
 	<td></td>
 	<td></td>
 </tr>
-<?php $count++; ?>
-<?php endif ?>
 <tr>
 	<td><?php print $semestre ?></td>
 	<td><?php print $curso ?></td>
