@@ -184,7 +184,7 @@
 <!-- BLOQUE 5 -->
 <div class="container-sm section-scroll-content" id="block5">
   <h2 class="light"><?php print $titulo_bloque_5 ?></h2>
-  <div class="separator-gray separator-sm"></div>
+  <div class="separator-gray separator-sm mb-70"></div>
   <?php foreach ($imagenes_bloque_5 as $key => $imagen_bloque_5): ?> 
   <div class="list-custom-left">
     <ul>
