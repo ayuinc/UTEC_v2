@@ -34,6 +34,11 @@
           playButton.removeClass = "icon-pause";
         }
       });
+      // Trigger Tabs with slider in living in peru
+      $('.carousel.carousel-custom .tabs li').on("click", function(){
+        var selector = $(this);
+        console.log(selector); 
+      });
     });
 
   }).call(this);
