@@ -1,0 +1,4 @@
+name = Currency Exchange Udpdater
+description = Allow to get the updated currency exchange.
+core = 7.x
+
