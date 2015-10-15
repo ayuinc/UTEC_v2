@@ -127,17 +127,22 @@
   <div class="separator-gray separator-sm"></div>
   <div class="p-ch-gray-dark">
     <div id="carousel-bloque4" class="carousel carousel-custom slide mb-42 mt-35" data-ride="carousel">
-      
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <?php $count = 0; ?>
+        <?php foreach ($imagenes_bloque_4 as $key => $imagen_bloque_4): ?>
+        <li data-target="#carousel-bloque4" data-slide-to="<?php print $count ?>" class="<?php ($count == 0) ? print 'active' : '' ; ?>"></li>
+        <?php $count++; ?>
+        <?php endforeach ?>
+      </ol>
       <div>
         <div class="tabs tabs-style-linebox">
           <nav>
-            <ul class="carousel-indicators">
+            <ul>
               <?php $count = 0; ?>
               <?php foreach ($titulos_tab_bloque_4 as $key => $titulo_tab_bloque_4): ?>
               <li class="<?php ($count == 0) ? print 'tab-current' : '' ; ?>">
-                <li data-target="#carousel-bloque4" data-slide-to="<?php print $count ?>" class="<?php ($count == 0) ? print 'active' : '' ; ?>"></li>
-                <a href="bloque-cuatro-<?php print $count; ?>">
-                  <span><?php print $titulo_tab_bloque_4['value'] ?></span>
+                <a href="bloque-cuatro-<?php print $count; ?>"><span><?php print $titulo_tab_bloque_4['value'] ?></span>
                 </a>
               </li>
               <?php $count++; ?>
