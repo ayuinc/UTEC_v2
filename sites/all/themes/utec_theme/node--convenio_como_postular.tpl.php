@@ -52,7 +52,7 @@
             <?php $count = 0; ?>
             <?php foreach ($tab_titles as $key => $tab_title): ?>
             <li class="<?php ($count == 0) ? print 'tab-current' : '' ; ?>">
-              <a href="section-linebox-<?php print $count; ?>"><span><?php print $tab_title['value'] ?></span>
+              <a href="bloque-linebox-<?php print $count; ?>"><span><?php print $tab_title['value'] ?></span>
               </a>
             </li>
             <?php $count++; ?>
@@ -62,7 +62,7 @@
         <div class="content-wrap bg-gray-lighter" style="color: black;">
           <?php $count = 0; ?>
           <?php foreach ($tab_contents as $key => $tab_content): ?>
-          <section id="section-linebox-<?php print $count; ?>" class="<?php ($count == 0) ? print 'content-current' : '' ; ?>">
+          <section id="bloque-linebox-<?php print $count; ?>" class="<?php ($count == 0) ? print 'content-current' : '' ; ?>">
             <p style="color: black;"><?php print $tab_content['value'] ?></p>
           </section>
           <?php $count++;?>
