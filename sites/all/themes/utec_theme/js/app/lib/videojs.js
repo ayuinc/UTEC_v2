@@ -40,8 +40,9 @@
       // Trigger Tabs with slider in living in peru
       $(".carousel-custom a").on("click", function(){
         var selector = $(this).parent().index();
+        var click = $(".carousel-custom ol").index(selector);
     
-        console.log(selector);
+        console.log(click);
       });
     });
 
