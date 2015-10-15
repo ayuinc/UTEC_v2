@@ -24,8 +24,41 @@ function utec_currency_json_request($url) {
   return $json_response;
 }
 
+/**
+ * Get the PEN currency exchage from array
+ *
+ * @param string $url
+ *  A string containing a fully qualified URI.
+ *
+ * @return integer
+ *  Integer with de currency.
+ */
 function utec_pen_request($url) {
 	$pen = utec_currency_json_request($url);
 	return $pen['rates']['PEN'];
 }
-print_r(utec_pen_request($url));
+
+function currency_exchange_template_preprocess_node(&$variables) {
+	$pen = utec_pen_request($url);
+	$variables['pen'] = $pen;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
