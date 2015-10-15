@@ -38,7 +38,7 @@ function utec_pen_request($url) {
 	return $pen['rates']['PEN'];
 }
 
-function template_preprocess_node(&$variables) {
+function currency_exchange_template_preprocess_node(&$variables) {
 	$pen = utec_pen_request($url);
 	$variables['pen'] = $pen;
 }
