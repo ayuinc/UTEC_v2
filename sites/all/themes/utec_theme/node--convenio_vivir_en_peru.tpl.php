@@ -201,6 +201,7 @@
         </div>                             
       </li>
     </ul>
+    <hr class="text-gray-dark" style="border-top: 1px solid #ddd !important;">
   </div>
   <?php endforeach ?>
   <a class="scroll-down scroll-down-sq size lg" href="#block6" rel="nofollow"><i class="icon-arrows-down"></i></a>
