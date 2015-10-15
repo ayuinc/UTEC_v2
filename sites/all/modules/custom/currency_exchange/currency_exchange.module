@@ -23,4 +23,9 @@ function utec_currency_json_request($url) {
 
   return $json_response;
 }
-print_r(utec_currency_json_request($url));
+
+function utec_pen_request($url) {
+	$pen = utec_currency_json_request($url);
+	return $pen['rates']['PEN'];
+}
+print_r(utec_pen_request($url));
