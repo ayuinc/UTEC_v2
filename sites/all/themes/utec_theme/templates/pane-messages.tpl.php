@@ -26,7 +26,6 @@
 	      <div class="modal-body">
 				  <?php 
 				  	$node = node_load(1382);
-				  	kpr($node);
 				  	$title = $node->title;
 				  	$description = $node->body['und']['0']['value'];
 

@@ -16,6 +16,8 @@
 	<td><?php print $carrera; ?></td>
 	<td></td>
 	<td></td>
+	<td></td>
+	<td></td>
 </tr>
 <tr>
 	<td><?php print $semestre ?></td>
