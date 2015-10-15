@@ -187,6 +187,10 @@
    transform: translate3d(0,-750%,0);
 }
 
+.tab-current table.table {
+	    font-size: 0.8em;
+}
+
 @media screen and (max-width: 58em) {
 	.tabs-style-linebox nav ul {
 		display: block;
@@ -202,6 +206,7 @@
 .content-current li {
     text-align: left;
     color: gray !important;
+    font-size: 0.8em !important;
 }
 
 .overlay-grid-six {
