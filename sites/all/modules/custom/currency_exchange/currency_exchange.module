@@ -1,5 +1,5 @@
 <?php
-
+define('REQUEST_SUCCESSFULL', 200);
 $url = 'https://openexchangerates.org/api/latest.json?app_id=bb8d470009bf4de6bbf903f6332bb2a3';
 
 
