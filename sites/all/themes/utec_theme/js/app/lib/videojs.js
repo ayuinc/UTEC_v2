@@ -35,7 +35,7 @@
         }
       });
       // Trigger Tabs with slider in living in peru
-      $(".carousel-custom .tabs li a").on("click", function(){
+      $(".carousel-custom a").on("click", function(){
         alert("entro");
         var selector = $(this);
         console.log(selector); 
