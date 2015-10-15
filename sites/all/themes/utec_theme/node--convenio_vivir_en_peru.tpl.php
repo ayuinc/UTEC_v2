@@ -46,7 +46,7 @@
 </div> <!-- END:Hero -->
 
 <!-- BLOQUE 2 -->
-<div class="container-sm section-scroll-content" id="block2">
+<div class="container-sm section-scroll-content pt-28" id="block2">
   <h2 class="light"><?php print $titulo_bloque_2 ?></h2>
   <div class="separator-gray separator-sm"></div>
   <div class="p-ch-gray-dark">
@@ -176,14 +176,7 @@
         <?php endforeach ?>
       </div>
       <!-- Controls --> 
-      <a class="left carousel-control" href="#carousel-bloque4" role="button" data-slide="prev">
-        <span class="icon-prev hidden-xs" aria-hidden="true"></span>
-        <span class="sr-only">Previews</span>
-      </a>
-      <a class="right carousel-control" href="#carousel-bloque4" role="button" data-slide="next">
-        <span class="icon-next hidden-xs" aria-hidden="true"></span>
-        <span class="sr-only">Siguiente</span>
-      </a>  
+       
     </div>
   </div>
   <a class="scroll-down scroll-down-sq size lg" href="#block5" rel="nofollow"><i class="icon-arrows-down"></i></a>
@@ -261,14 +254,7 @@
         <?php endforeach ?>
       </div>
       <!-- Controls --> 
-      <a class="left carousel-control" href="#carousel-bloque6" role="button" data-slide="prev">
-        <span class="icon-prev hidden-xs" aria-hidden="true"></span>
-        <span class="sr-only">Previews</span>
-      </a>
-      <a class="right carousel-control" href="#carousel-bloque6" role="button" data-slide="next">
-        <span class="icon-next hidden-xs" aria-hidden="true"></span>
-        <span class="sr-only">Siguiente</span>
-      </a>  
+      
     </div>
   </div>
 </div>
