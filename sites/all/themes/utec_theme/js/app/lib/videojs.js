@@ -44,8 +44,8 @@
         var selector = $(this).parent().index();
         var click = $(".carousel-custom ol li[data-slide-to='"+selector+"']");
         var click2 = $("#"+id+" .carousel-custom ol li[data-slide-to='"+selector+"']");
-        console.log(click);
-        $(click).trigger( "click" );
+        console.log(click2);
+        $(click2).trigger( "click" );
         // console.log(click);
       });
     });
