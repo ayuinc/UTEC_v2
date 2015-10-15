@@ -2,5 +2,6 @@
 
 $url = 'https://openexchangerates.org/api/latest.json?app_id=bb8d470009bf4de6bbf903f6332bb2a3';
 
-$array = json_decode($url, true);
+$array = drupal_http_request($url);
+
 print_r($array);
