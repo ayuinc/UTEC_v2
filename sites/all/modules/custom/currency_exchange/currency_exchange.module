@@ -33,26 +33,17 @@ function utec_currency_json_request($url) {
  * @return integer
  *  Integer with de currency.
  */
-function utec_pen_request() {
+function utec_pen_request($url) {
 	$pen = utec_currency_json_request($url);
 	return $pen['rates']['PEN'];
 }
 
+	$pen = utec_pen_request($url);
+	print_r($pen);
 function utec_send_pen_theme() {	
-	$pen = utec_pen_request();
-	return theme('currency_exchange',array('results' => $pen));
+	// return 
 }
 
-function currency_exchange_theme() {
-  return array(
-    'utec_theme' => array(
-      'template' => 'node--convenio_vivir_en_peru',
-      'variables' => array(
-        'results' => NULL,
-      ),
-     ),
-  );
-}
 
 
 

@@ -2,7 +2,7 @@
 	<div class="container-sm section-scroll-content hidden-xs" id="testimonies">
 		<h2 class="light"><?php print $view->get_title(); ?></h2>
 		<div class="separator-gray separator-sm"></div>
-		<div id="carousel-example-generic" class="carousel-custom slide" data-ride="carousel">
+		<div id="carousel-example-generic" class="carousel carousel-custom slide" data-ride="carousel">
 		  <!-- Indicators -->
 		  <ol class="carousel-indicators">
 		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -42,7 +42,7 @@
 	<div class="container-sm section-scroll-content hidden-lg" id="testimonies">
 		<h2 class="light"><?php print $view->get_title(); ?></h2>
 		<div class="separator-gray separator-sm"></div>
-		<div id="carousel-example-generic" class="carousel-custom slide" data-ride="carousel">
+		<div id="carousel-example-generic" class="carousel carousel-custom slide" data-ride="carousel">
 		  <!-- Indicators -->
 		  <ol class="carousel-indicators">
 		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
