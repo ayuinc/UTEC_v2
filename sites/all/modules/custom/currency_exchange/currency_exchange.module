@@ -33,7 +33,7 @@ function utec_currency_json_request($url) {
  * @return integer
  *  Integer with de currency.
  */
-function utec_pen_request() {
+function utec_pen_request($url) {
 	$pen = utec_currency_json_request($url);
 	return $pen['rates']['PEN'];
 }
