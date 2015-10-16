@@ -10,8 +10,8 @@ function currency_exchange_view($node, $view_mode){
 	// die('entro');
 	$node = node_load(1352);
 	// field_tipo_de_cambio
-	$node->pen['und']['0']['value'] = $rate;
-	return kpr($node);
+	// $node->pen['und']['0']['value'] = $rate;
+	kpr($node);
 
 }
 
