@@ -1,6 +1,6 @@
 <?php
 
-module_load_include('module', 'era', 'era.module')
+module_load_include('module', 'era', 'era.module');
 $pen = era_get_currencies();
 print_r($pen);
 
