@@ -23,4 +23,53 @@ function utec_currency_json_request($url) {
 
   return $json_response;
 }
-print_r(utec_currency_json_request($url));
+
+/**
+ * Get the PEN currency exchage from array
+ *
+ * @param string $url
+ *  A string containing a fully qualified URI.
+ *
+ * @return integer
+ *  Integer with de currency.
+ */
+function utec_pen_request() {
+	$pen = utec_currency_json_request($url);
+	return $pen['rates']['PEN'];
+}
+
+function utec_send_pen_theme() {	
+	$pen = utec_pen_request();
+	return theme('currency_exchange',array('results' => $pen));
+}
+
+function currency_exchange_theme() {
+  return array(
+    'utec_theme' => array(
+      'template' => 'node--convenio_vivir_en_peru',
+      'variables' => array(
+        'results' => NULL,
+      ),
+     ),
+  );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
