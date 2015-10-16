@@ -36,8 +36,8 @@
 		  </a>
 		</div>
 		<div class="text-center mt-42"><a href="studying-in-peru/testimonies" class="h4 text-primary"><?php print t('View more testimonies'); ?></a></div>
-		<a class="scroll-down scroll-down-sq size lg" href="#apply" rel="nofollow"><i class="icon-arrows-down"></i></a>
 	</div>
+		<a class="scroll-down scroll-down-sq size lg" href="#apply" rel="nofollow"><i class="icon-arrows-down"></i></a>
 
 	<div class="container-sm section-scroll-content hidden-lg" id="testimonies">
 		<h2 class="light"><?php print $view->get_title(); ?></h2>
