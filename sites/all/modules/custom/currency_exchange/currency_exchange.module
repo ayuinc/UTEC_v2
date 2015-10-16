@@ -1,49 +1,7 @@
 <?php
-define('REQUEST_SUCCESSFULL', 200);
-$url = 'https://openexchangerates.org/api/latest.json?app_id=bb8d470009bf4de6bbf903f6332bb2a3';
 
-
-/**
- * HTTP requests return a array of the decode JSON
- *
- * @param string $url
- *  A string containing a fully qualified URI.
- *
- * @return array
- *  Array json decode
- */
-function utec_currency_json_request($url) {
-  $request = drupal_http_request($url);
-  if (REQUEST_SUCCESSFULL != $request->code) {
-    drupal_set_message('Unable load: ' .$url, 'error');
-    watchdog('Unable Load', 'Not load this url: '.$url);
-    return '';
-  }
-  $json_response = drupal_json_decode($request->data);
-
-  return $json_response;
-}
-
-/**
- * Get the PEN currency exchage from array
- *
- * @param string $url
- *  A string containing a fully qualified URI.
- *
- * @return integer
- *  Integer with de currency.
- */
-function utec_pen_request($url) {
-	$pen = utec_currency_json_request($url);
-	return $pen['rates']['PEN'];
-}
-
-	// $pen = utec_pen_request($url);
-	// print_r($pen);
-function utec_send_pen_theme() {	
-	// return 
-}
-
+$pen = era_get_currencies();
+print_r($pen);
 
 
 
