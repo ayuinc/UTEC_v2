@@ -38,7 +38,7 @@ function utec_pen_request($url) {
 	return $pen['rates']['PEN'];
 }
 
-	$pen = utec_pen_request();
+	$pen = utec_pen_request($url);
 	print_r($pen);
 function utec_send_pen_theme() {	
 	// return 
