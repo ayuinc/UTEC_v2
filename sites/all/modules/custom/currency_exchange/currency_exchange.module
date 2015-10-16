@@ -15,9 +15,11 @@ function currency_exchange_view($node, $view_mode){
 
 }
 
+function template_preprocess_currency(&$variables) {
+  $variables['pen'] = $rate;
+}
 
 
-currency_exchange_view();
 
 
 
