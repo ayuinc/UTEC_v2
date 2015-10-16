@@ -40,7 +40,8 @@ function utec_pen_request() {
 
 function utec_send_pen_theme() {	
 	$pen = utec_pen_request();
-	return theme('currency_exchange',array('results' => $pen));
+	print_r($pen);
+	return theme('node--convenio_vivir_en_peru',array('results' => $pen));
 }
 
 function currency_exchange_theme() {
