@@ -45,7 +45,7 @@ function utec_send_pen_theme() {
 
 function currency_exchange_theme() {
   return array(
-    'currency_exchange' => array(
+    'utec_theme' => array(
       'template' => 'node--convenio_vivir_en_peru',
       'variables' => array(
         'results' => NULL,
