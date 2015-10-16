@@ -1,7 +1,7 @@
 <?php
 
 module_load_include('module', 'era');
-$pen = era_get_currencies();
+$pen = era_get_openexchangecurrencies_data();
 print_r($pen);
 
 
