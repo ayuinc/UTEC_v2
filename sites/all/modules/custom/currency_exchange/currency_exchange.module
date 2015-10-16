@@ -1,7 +1,7 @@
 <?php
 
-$pen = era_get_currencies();
-print_r($pen);
+// $pen = era_get_currencies();
+// print_r($pen);
 
 
 
