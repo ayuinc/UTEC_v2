@@ -3,11 +3,11 @@
 module_load_include('module', 'era');
 
 $pen = era_get_rates();
-print_r($pen);
+$rate = $pen['rates']['PEN'];
 
+$node = node_load(1352);
 
-
-
+$node->pen['und']['0']['value'] = $rate;
 
 
 
