@@ -38,22 +38,12 @@ function utec_pen_request() {
 	return $pen['rates']['PEN'];
 }
 
-function utec_send_pen_theme() {	
 	$pen = utec_pen_request();
 	print_r($pen);
-	return theme('node--convenio_vivir_en_peru',array('results' => $pen));
+function utec_send_pen_theme() {	
+	// return 
 }
 
-function currency_exchange_theme() {
-  return array(
-    'utec_theme' => array(
-      'template' => 'node--convenio_vivir_en_peru',
-      'variables' => array(
-        'results' => NULL,
-      ),
-     ),
-  );
-}
 
 
 
