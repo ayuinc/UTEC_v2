@@ -161,7 +161,7 @@
         </div>
       </div>
       <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
+      <div class="carousel-inner mt-42" role="listbox">
         <?php $count = 0; ?>
         <?php foreach ($imagenes_bloque_4 as $key => $imagen_bloque_4): ?>
         <?php if ($imagen_bloque_4): ?>
@@ -246,7 +246,7 @@
         </div>
       </div>
       <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
+      <div class="carousel-inner mt-42" role="listbox">
         <?php $count = 0; ?>
         <?php foreach ($imagenes_bloque_6 as $key => $imagen_bloque_6): ?>
         <?php if ($imagen_bloque_6): ?>
