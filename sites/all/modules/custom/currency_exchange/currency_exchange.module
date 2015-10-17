@@ -11,20 +11,11 @@ function currency_send_rate($pen){
 // $rate = $pen['rates']['PEN'];
 	// die(print_r($rate));
 
-
-function currency_exchange_view($node, $view_mode){
-	// die('entro');
-	// $node = entity_load('node', 1352);
-	// field_tipo_de_cambio
-	// $node->pen['und']['0']['value'] = $rate;
-	kpr($node);
-
-}
-
 function currency_exchange_preprocess(&$variables) {
 	$rate = currency_send_rate($pen);
+	die(print_r($rate))
   $variables['xpen'] = $rate;
-	die(print_r($variables));
+	print_r($variables);
 }
 
 
