@@ -19,7 +19,7 @@ function currency_exchange_preprocess(&$variables, $hook) {
 	$rate2 = currency_send_rate($rate);
 	// die(print_r($hook));
   $variables['xpen'] = 'rate';
-	print_r($variables);
+	// print_r($variables);
 }
 
 
