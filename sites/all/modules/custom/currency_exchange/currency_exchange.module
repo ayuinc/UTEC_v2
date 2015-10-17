@@ -15,7 +15,7 @@ function currency_send_rate($rate){
 // $rate = $pen['rates']['PEN'];
 	// die(print_r($rate));
 
-function currency_exchange_preprocess_node(&$variables, $rate) {
+function currency_exchange_preprocess_node(&$variables, $node, $rate) {
 	$rate2 = currency_send_rate($rate);
 	die(print_r($rate2));
 	 // Specific to 'foo'.
