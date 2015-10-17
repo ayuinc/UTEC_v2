@@ -8,7 +8,7 @@
 
 ?>
 
-<div class="container-sm section-scroll-content" id="parents">
+<div class="container-sm section-scroll-content  pt-21 pb-63" id="parents">
   <h2 class="light"><?php print $titulo ?></h2>
   <div class="separator-gray separator-sm"></div>
   <div class="p-ch-gray-dark">
