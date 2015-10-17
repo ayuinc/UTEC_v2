@@ -16,8 +16,8 @@ function currency_send_rate($rate){
 	// die(print_r($rate));
 
 function currency_exchange_preprocess(&$variables) {
-	$rate = currency_send_rate($pen);
-	die(print_r($rate));
+	$rate2 = currency_send_rate($rate);
+	die(print_r($rate2));
   $variables['xpen'] = $rate;
 	print_r($variables);
 }
