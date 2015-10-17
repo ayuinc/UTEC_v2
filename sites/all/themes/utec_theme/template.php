@@ -210,7 +210,7 @@ function utec_theme_menu_link(array $variables) {
   }
 }
 
-function utec_theme_preprocess_foo(&$variables) {
+function utec_theme_preprocess_node(&$variables) {
   die('entro');
   print_r($variables);
   
