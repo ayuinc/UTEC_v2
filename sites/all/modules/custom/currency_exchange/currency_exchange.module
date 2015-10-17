@@ -15,13 +15,13 @@ function currency_send_rate($rate){
 // $rate = $pen['rates']['PEN'];
 	// die(print_r($rate));
 
-function currency_exchange_preprocess_node(&$variables) {
+function currency_exchange_preprocess_node(&$variables, $rate) {
 	$rate2 = currency_send_rate($rate);
-	// die(print_r($hook));
+	die(print_r($rate2));
 	 // Specific to 'foo'.
   // if ($hook == 'foo') {
     
-	  $variables['xpen'] = 'rate';
+	  $variables['xpen'] = $rate2;
   
 	// print_r($variables);
 }
