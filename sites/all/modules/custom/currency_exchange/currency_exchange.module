@@ -3,10 +3,10 @@
 module_load_include('module', 'era');
 $pen = era_get_rates();
 
-	die(print_r($pen));
-function currency_send_rate($pen){
-	die(print_r($pen));
 	$rate = $pen['rates']['PEN'];
+	die(print_r($rate));
+function currency_send_rate($rate){
+	die(print_r($rate));
 	return $rate;
 }
 
