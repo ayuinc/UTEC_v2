@@ -15,7 +15,7 @@ function currency_exchange_view($node, $view_mode){
 
 }
 
-function currency_exchange_preprocess_currency(&$variables) {
+function currency_exchange_preprocess(&$variables) {
 	die('entro');
   $variables['pen'] = $rate;
 }
