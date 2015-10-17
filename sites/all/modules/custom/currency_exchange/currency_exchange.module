@@ -17,12 +17,12 @@ $pen = era_get_rates();
 
 function currency_exchange_preprocess_node(&$variables) {
 	global $rate;
-	$rate2 = currency_send_rate($rate);
-	die(print_r($rate2));
+	// $rate2 = currency_send_rate($rate);
+	die(print_r($rate));
 	 // Specific to 'foo'.
   // if ($hook == 'foo') {
     
-	  $variables['xpen'] = $rate2;
+	  $variables['xpen'] = $rate;
   
 	// print_r($variables);
 }
