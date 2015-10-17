@@ -4,7 +4,8 @@ module_load_include('module', 'era');
 $pen = era_get_rates();
 
 function currency_send_rate($pen){
-	return $rate = $pen['rates']['PEN'];
+	$rate = $pen['rates']['PEN'];
+	return $rate;
 }
 
 // $rate = $pen['rates']['PEN'];
@@ -20,7 +21,7 @@ function currency_exchange_view($node, $view_mode){
 
 }
 
-function currency_exchange_preprocess(&$variables, $rate) {
+function currency_exchange_preprocess(&$variables) {
 	$rate = currency_send_rate($pen);
   $variables['xpen'] = $rate;
 	die(print_r($variables));
