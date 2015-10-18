@@ -211,7 +211,7 @@ function utec_theme_menu_link(array $variables) {
 }
 
 function utec_theme_preprocess_node(&$variables){
-  // print_r($variables);
+  print_r($variables['xpen']);
 	$variables ['front_page'] = url();
   $theme_name = 'utec_theme';
 	$settings = variable_get('theme_' . $theme_name . '_settings', array());

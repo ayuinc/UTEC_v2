@@ -1,10 +1,6 @@
 <?php
 
 // $rate = '';
-module_load_include('module', 'era');
-$pen = era_get_rates();
-
-	$rate = $pen['rates']['PEN'];
 	// die(print_r($variables));
 // function currency_send_rate($rate){
 // 	// global $rate;
@@ -16,7 +12,9 @@ $pen = era_get_rates();
 	// die(print_r($rate));
 
 function currency_exchange_preprocess_node(&$variables) {
-	global $rate;
+	module_load_include('module', 'era');
+	$pen = era_get_rates();
+	$rate = $pen['rates']['PEN'];
 	// $rate2 = currency_send_rate($rate);
 	// die(print_r($rate));
 	 // Specific to 'foo'.
