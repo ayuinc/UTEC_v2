@@ -6,7 +6,8 @@ function currency_exchange_preprocess_node(&$variables) {
 	module_load_include('module', 'era');
 	$pen = era_get_rates();
 	$rate = $pen['rates']['PEN'];
-  $variables['currency'] = $rate;
+	$rate_rounded = round($rate, 2);
+  $variables['currency'] = $rate_rounded;
 
 }
 
