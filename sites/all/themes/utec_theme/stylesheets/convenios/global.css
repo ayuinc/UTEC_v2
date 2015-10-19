@@ -300,3 +300,20 @@ textarea,
 
 .all_classes:before {
   content: "\e808"; }
+
+#contact-us {
+	background-color: #5C5C5C;
+  padding: 35px 0;
+}
+
+#contact-us .field-item.even {
+	width: 50%;
+  float: right;
+  padding: 28px 49px 28px 63px;
+}
+
+#contact-us .field-item.even p {
+	  float: right;
+    position: relative;
+    text-align: center;
+}
