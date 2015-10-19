@@ -9,10 +9,6 @@ $(document).scroll(function() {
 
 });
 
-$(document).ready(function() {
-  $("#contact-us").parent().addClass("container-sm");
-}); 
-
 
 //Menu
 $(".menu-toggle").on('click', function() {
