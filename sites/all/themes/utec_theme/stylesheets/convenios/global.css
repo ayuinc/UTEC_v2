@@ -312,7 +312,7 @@ textarea,
   padding: 28px 49px 28px 63px;
 }
 
-#contact-us .field-item.even p {
+#contact-us .field-name-field-footer-webform .field-item.even p {
 	  float: right;
     position: relative;
     text-align: center;

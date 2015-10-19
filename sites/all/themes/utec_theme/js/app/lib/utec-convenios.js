@@ -1,6 +1,6 @@
 (function ($) {
   $( "#button" ).trigger( "click" );
 
-	$("#contact-us").parent().addClass("container-sm");
-	
+	$("#contact-us").children().addClass("container-sm");
+
 }(jQuery));
