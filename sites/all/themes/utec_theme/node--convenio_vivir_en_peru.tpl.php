@@ -29,7 +29,7 @@
   $imagenes_bloque_6 = $node->field_imagenes_bloque_6['und'];
 
   // $pen = $node->pen['und']['0']['value'];
-  // kpr($node);
+  print_r($currency);
 
 ?>
 <!-- CABECERA -->
@@ -199,7 +199,11 @@
       <li class="pl-21 text-gray">
         <div class="mb-7 text-center-xs">
           <div class="thin h3"><?php print $titulos_bloque_5[$key]['value']; ?></div>
-          <div><?php print $contenidos_bloque_5[$key]['value']; ?></div>              
+          <?php if ($titulos_bloque_5[$key]['value']=='Currency Exchange'): ?>
+          <div><?php print 'S/. '.$currency.' '.$contenidos_bloque_5[$key]['value']; ?></div> 
+          <?php else: ?>   
+          <div><?php print $contenidos_bloque_5[$key]['value']; ?></div>          
+          <?php endif ?>
         </div>                             
       </li>
     </ul>

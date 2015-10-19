@@ -19,7 +19,9 @@
 
 	//Search
 	function utec_theme_preprocess_page(&$variables){
-
+    kpr($variables);
+    // module_load_include('module', 'metatag');
+    // $output = metatag_metatags_view();
 	  $search_box = drupal_render(drupal_get_form('search_form'));
 
 	  $variables['search_box'] = $search_box;
@@ -208,12 +210,6 @@ function utec_theme_menu_link(array $variables) {
   else {
     return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
   }
-}
-
-function utec_theme_preprocess_currency(&$variables) {
-  
-  print_r($variables);
-  
 }
 
 function utec_theme_preprocess_node(&$variables){
