@@ -307,7 +307,7 @@ function utec_theme_preprocess_panels_pane(&$variables) {
   if ($variables['pane']->type == 'block') {
     dpm('subtype: ' . $variables['pane']->subtype);
   }
-  print_r($variables);
+  // print_r($variables);
 }
 
 function utec_theme_preprocess_html(&$variables) {
