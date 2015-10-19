@@ -311,10 +311,10 @@ function utec_theme_preprocess_panels_pane(&$variables) {
 
 function utec_theme_preprocess_html(&$variables) {
   // kpr($variables);
-  $variables['og_title'] = $variables['page']['content']['metatags']['global']['og:title'];
-  $variables['og_description'] = $variables['page']['content']['metatags']['global']['og:description']['#attached']['drupal_add_html_head'][0][0]['#value'];
-  _utec_theme_metatags_var('og_title', $variables['og_title']);
-  _utec_theme_metatags_var('og_description', $variables['og_description']);
+  $og_title = $variables['page']['content']['metatags']['global']['og:title'];
+  $og_description = $variables['page']['content']['metatags']['global']['og:description']['#attached']['drupal_add_html_head'][0][0]['#value'];
+  _utec_theme_metatags_var('og_title', $og_title);
+  _utec_theme_metatags_var('og_description', $og_description);
 
 }
 
