@@ -28,7 +28,7 @@
 				  	$node = node_load(1382);
 				  	$title = $node->title;
 				  	$description = $node->body['und']['0']['value'];
-				  	print_r($variables);
+				  	// print_r($variables);
 				  ?>
 	        <?php $path_i18 = drupal_get_path_alias('', $language->language); ?>
 	        <div class="carlos"><?php print $variables['page']['content']['metatags']['global']['og:title']; ?></div>
