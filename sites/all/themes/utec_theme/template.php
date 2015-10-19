@@ -19,7 +19,9 @@
 
 	//Search
 	function utec_theme_preprocess_page(&$variables){
+    kpr($variables);
     // module_load_include('module', 'metatag');
+    // $output = metatag_metatags_view();
 	  $search_box = drupal_render(drupal_get_form('search_form'));
 
 	  $variables['search_box'] = $search_box;
