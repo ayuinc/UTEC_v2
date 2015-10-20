@@ -20,12 +20,12 @@
 //Send metatags values to pane preprocess
 function _utec_theme_var($var_name, $new_val = NULL) {
   $vars = &drupal_static(__FUNCTION__, array());
+  die('entro'.$vars);
 
   // If a new value has been passed
   if ($new_val) {
     $vars[$var_name] = $new_val;
   }
-  die('entro'.$vars[$var_name]);
   return isset($vars[$var_name]) ? $vars[$var_name] : NULL;
 }
 
