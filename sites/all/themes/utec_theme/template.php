@@ -15,19 +15,7 @@
 	    'content' => 'width=device-width, initial-scale=1.0, user-scalable=no',
 	  ),
 	);
-	drupal_add_html_head($viewport, 'viewport');
-// _utec_theme_var('nuevo','valor');
-//Send metatags values to pane preprocess
-function _utec_theme_var($var_name, $new_val = NULL) {
-  $vars = &drupal_static(__FUNCTION__, array());
-
-  // If a new value has been passed
-  if ($new_val) {
-    $vars[$var_name] = $new_val;
-    // print_r($vars);
-  }
-  return isset($vars[$var_name]) ? $vars[$var_name] : NULL;
-}
+	drupal_add_html_head($viewport, 'viewport'); 
 
   /**
    * Implements hook_preprocess_panels_pane().
@@ -41,11 +29,12 @@ function _utec_theme_var($var_name, $new_val = NULL) {
 
     //Search
   function utec_theme_preprocess_page(&$variables){
+  module_load_include('module', 'metatags_panemessages');
       // kpr($variables);
   $og_title = $variables['page']['content']['metatags']['global']['og:title'];
   $og_description = $variables['page']['content']['metatags']['global']['og:description']['#attached']['drupal_add_html_head'][0][0]['#value'];
   // die($og_description);
-  $variables['og_description'] = _utec_theme_var('og_description', $og_description);
+  $variables['og_description'] = _metatags_panemessages_var('og_description', $og_description);
   // $variables['og_description'] = _utec_theme_var('og_description', $og_description);
 
 
@@ -57,16 +46,7 @@ function _utec_theme_var($var_name, $new_val = NULL) {
       // If the node type is "blog_madness" the template suggestion will be "page--blog-madness.tpl.php".
       $variables['theme_hook_suggestions'][] = 'page__'. $variables['node']->type;
     }
-    
-    function utec_theme_preprocess_pane_messages(&$vars){
-
-      $vars['og_description'] = _utec_theme_var('og_description');
-        kpr($vars);
-
-    }
   }
-
-
 
 	drupal_add_css("//vjs.zencdn.net/4.10/video-js.css", 'external');	
 

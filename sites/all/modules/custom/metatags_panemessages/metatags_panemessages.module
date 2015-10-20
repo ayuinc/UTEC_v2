@@ -1,0 +1,21 @@
+<?php
+
+function _metatags_panemessages_var($var_name, $new_val = NULL) {
+  $vars = &drupal_static(__FUNCTION__, array());
+
+  // If a new value has been passed
+  if ($new_val) {
+    $vars[$var_name] = $new_val;
+    // print_r($vars);
+  }
+  return isset($vars[$var_name]) ? $vars[$var_name] : NULL;
+}
+
+function metatags_panemessages_preprocess_pane_messages(&$vars){
+  $vars['og_description'] = _metatags_panemessages_var('og_description');
+    kpr($vars);
+
+}
+
+
+
