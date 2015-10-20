@@ -16,9 +16,44 @@
 	  ),
 	);
 	drupal_add_html_head($viewport, 'viewport');
+_utec_theme_var('nuevo','valor');
+//Send metatags values to pane preprocess
+function _utec_theme_var($var_name, $new_val = NULL) {
+  $vars = &drupal_static(__FUNCTION__, array());
+  die(print_r($vars));
+
+  // If a new value has been passed
+  if ($new_val) {
+    $vars[$var_name] = $new_val;
+  }
+  return isset($vars[$var_name]) ? $vars[$var_name] : NULL;
+}
+
+  /**
+   * Implements hook_preprocess_panels_pane().
+   */
+  function utec_theme_preprocess_panels_pane(&$variables) {
+    // dpm('type: ' . $variables['pane']->type);
+    if ($variables['pane']->type == 'block') {
+      dpm('subtype: ' . $variables['pane']->subtype);
+    }
+    $var = _utec_theme_var('og_title');
+    
+    // print_r($variables);
+    // $variables['og_description'] = _utec_theme_var('og_description');
+  }
 
 	//Search
 	function utec_theme_preprocess_page(&$variables){
+
+      // kpr($variables);
+  $og_title = $variables['page']['content']['metatags']['global']['og:title'];
+  $og_description = $variables['page']['content']['metatags']['global']['og:description']['#attached']['drupal_add_html_head'][0][0]['#value'];
+  // die($og_description);
+  $variables['og_title'] = _utec_theme_var('og_title', $og_title);
+  // $variables['og_description'] = _utec_theme_var('og_description', $og_description);
+
+
 	  $search_box = drupal_render(drupal_get_form('search_form'));
 
 	  $variables['search_box'] = $search_box;
@@ -296,36 +331,8 @@ function utec_theme_preprocess(&$variables, $hook) {
   // kpr($variables);
 }
 
-/**
- * Implements hook_preprocess_panels_pane().
- */
-function utec_theme_preprocess_panels_pane(&$variables) {
-  // dpm('type: ' . $variables['pane']->type);
-  if ($variables['pane']->type == 'block') {
-    dpm('subtype: ' . $variables['pane']->subtype);
-  }
-  $variables['og_title'] = _utec_theme_metatags_var('og_title');
-  $variables['og_description'] = _utec_theme_metatags_var('og_description');
-  print_r($variables);
-}
-
 function utec_theme_preprocess_html(&$variables) {
-  // kpr($variables);
-  $og_title = $variables['page']['content']['metatags']['global']['og:title'];
-  $og_description = $variables['page']['content']['metatags']['global']['og:description']['#attached']['drupal_add_html_head'][0][0]['#value'];
-  _utec_theme_metatags_var('og_title', $og_title);
-  _utec_theme_metatags_var('og_description', $og_description);
 
 }
 
-//Send metatags values to pane preprocess
-function _utec_theme_metatags_var($var_name, $new_val = NULL) {
-  $vars = &drupal_static(__FUNCTION__, array());
 
-  // If a new value has been passed
-  if ($new_val) {
-    $vars[$var_name] = $new_val;
-  }
-
-  return isset($vars[$var_name]) ? $vars[$var_name] : NULL;
-}
