@@ -17,15 +17,29 @@
 	);
 	drupal_add_html_head($viewport, 'viewport');
 
+  /**
+   * Implements hook_preprocess_panels_pane().
+   */
+  function utec_theme_preprocess_panels_pane(&$variables) {
+    // dpm('type: ' . $variables['pane']->type);
+    if ($variables['pane']->type == 'block') {
+      dpm('subtype: ' . $variables['pane']->subtype);
+    }
+    $var = _utec_theme_metatags_var('og_title');
+    die($var);
+    // print_r($variables);
+    // $variables['og_description'] = _utec_theme_metatags_var('og_description');
+  }
+
 	//Search
 	function utec_theme_preprocess_page(&$variables){
-    
+
       // kpr($variables);
   $og_title = $variables['page']['content']['metatags']['global']['og:title'];
   $og_description = $variables['page']['content']['metatags']['global']['og:description']['#attached']['drupal_add_html_head'][0][0]['#value'];
   // die($og_description);
   $variables['og_title'] = _utec_theme_metatags_var('og_title', $og_title);
-  $variables['og_description'] = _utec_theme_metatags_var('og_description', $og_description);
+  // $variables['og_description'] = _utec_theme_metatags_var('og_description', $og_description);
 
 
 	  $search_box = drupal_render(drupal_get_form('search_form'));
@@ -303,19 +317,6 @@ function utec_theme_preprocess(&$variables, $hook) {
   $variables['theme_path_utec'] = $theme_path_utec;
   $variables['url'] = $base_url;
   // kpr($variables);
-}
-
-/**
- * Implements hook_preprocess_panels_pane().
- */
-function utec_theme_preprocess_panels_pane(&$variables) {
-  // dpm('type: ' . $variables['pane']->type);
-  if ($variables['pane']->type == 'block') {
-    dpm('subtype: ' . $variables['pane']->subtype);
-  }
-  $variables['og_title'] = _utec_theme_metatags_var('og_title');
-  $variables['og_description'] = _utec_theme_metatags_var('og_description');
-  print_r($variables);
 }
 
 function utec_theme_preprocess_html(&$variables) {
