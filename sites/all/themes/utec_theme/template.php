@@ -26,7 +26,7 @@
       dpm('subtype: ' . $variables['pane']->subtype);
     }
     $var = _utec_theme_metatags_var('og_title');
-    die($var);
+    die('entro'.$var);
     // print_r($variables);
     // $variables['og_description'] = _utec_theme_metatags_var('og_description');
   }
