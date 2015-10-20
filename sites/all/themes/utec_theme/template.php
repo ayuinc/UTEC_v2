@@ -37,12 +37,12 @@ function _utec_theme_var($var_name, $new_val = NULL) {
     if ($variables['pane']->type == 'block') {
       dpm('subtype: ' . $variables['pane']->subtype);
     }
-    $variables['og_description'] = _utec_theme_var('og_description');
-    
-    // print_r($variables);
-    // $variables['og_description'] = _utec_theme_var('og_description');
   }
+  
+  function template_preprocess_pane_messages(&$variables){
+    $variables['og_description'] = _utec_theme_var('og_description');
 
+  }
 	//Search
 	function utec_theme_preprocess_page(&$variables){
 
