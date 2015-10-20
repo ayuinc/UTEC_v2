@@ -25,6 +25,10 @@ function metatags_panemessages_preprocess_page(&$variables){
 	// die(print_r($variables));
 	$variables['og_description'] = _metatags_panemessages_var('og_description', $og_description);
 	// $variables['og_description'] = _utec_theme_var('og_description', $og_description);
+  $nodes = $node['nid']['1382'];
+  $types = $node['node_type']['convenio_modal'];
+  $content = metatags_panemessages_node_load($nodes, $types);
+  die(print_r($content));
 }
 
 function metatags_panemessages_process_pane_messages(&$variables){
