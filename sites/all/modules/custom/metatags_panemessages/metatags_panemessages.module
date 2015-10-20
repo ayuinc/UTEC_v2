@@ -18,11 +18,11 @@ function metatags_panemessages_process_node(&$variables){
 }
 
 function metatags_panemessages_preprocess_page(&$variables){
-    die('page');
+    // die('page');
 	  // kpr($variables);
 	$og_title = $variables['page']['content']['metatags']['global']['og:title'];
 	$og_description = $variables['page']['content']['metatags']['global']['og:description']['#attached']['drupal_add_html_head'][0][0]['#value'];
-	// die($og_description);
+	die($og_description);
 	$variables['og_description'] = _metatags_panemessages_var('og_description', $og_description);
 	// $variables['og_description'] = _utec_theme_var('og_description', $og_description);
 }
