@@ -41,8 +41,8 @@ function _utec_theme_var($var_name, $new_val = NULL) {
   
   function utec_theme_preprocess_pane_messages(&$variables){
     
-      kpr($variables);
     $variables['og_description'] = _utec_theme_var('og_description');
+      kpr($variables);
 
   }
   //Search
