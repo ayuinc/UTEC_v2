@@ -38,14 +38,8 @@ function _utec_theme_var($var_name, $new_val = NULL) {
       dpm('subtype: ' . $variables['pane']->subtype);
     }
   }
-  
-  function utec_theme_preprocess_pane_messages(&$vars){
-    print_r('pane');
-    $vars['og_description'] = _utec_theme_var('og_description');
-      // kpr($vars);
 
-  }
-  //Search
+    //Search
   function utec_theme_preprocess_page(&$variables){
     print_r('page');
 
@@ -57,15 +51,23 @@ function _utec_theme_var($var_name, $new_val = NULL) {
   // $variables['og_description'] = _utec_theme_var('og_description', $og_description);
 
 
-	  $search_box = drupal_render(drupal_get_form('search_form'));
+    $search_box = drupal_render(drupal_get_form('search_form'));
 
-	  $variables['search_box'] = $search_box;
+    $variables['search_box'] = $search_box;
 
     if (isset($variables['node'])) {
       // If the node type is "blog_madness" the template suggestion will be "page--blog-madness.tpl.php".
       $variables['theme_hook_suggestions'][] = 'page__'. $variables['node']->type;
     }
-	}
+  }
+  
+  function utec_theme_preprocess_pane_messages(&$vars){
+    print_r('pane');
+    $vars['og_description'] = _utec_theme_var('og_description');
+      // kpr($vars);
+
+  }
+
 
 	drupal_add_css("//vjs.zencdn.net/4.10/video-js.css", 'external');	
 
