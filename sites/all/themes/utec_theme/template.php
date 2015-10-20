@@ -24,7 +24,7 @@ function _utec_theme_var($var_name, $new_val = NULL) {
   // If a new value has been passed
   if ($new_val) {
     $vars[$var_name] = $new_val;
-    // die(print_r($vars));
+    print_r($vars);
   }
   return isset($vars[$var_name]) ? $vars[$var_name] : NULL;
 }
