@@ -28,7 +28,7 @@
 				  	$node = node_load(1382);
 				  	$title = $node->title;
 				  	$description = $node->body['und']['0']['value'];
-				  	print_r($variables);
+				  	// print_r($variables);
 				  	print_r($og_description);
 				  ?>
 	        <?php $path_i18 = drupal_get_path_alias('', $language->language); ?>
