@@ -57,14 +57,15 @@ function _utec_theme_var($var_name, $new_val = NULL) {
       // If the node type is "blog_madness" the template suggestion will be "page--blog-madness.tpl.php".
       $variables['theme_hook_suggestions'][] = 'page__'. $variables['node']->type;
     }
+    
+    function utec_theme_preprocess_pane_messages(&$vars){
+
+      $vars['og_description'] = _utec_theme_var('og_description');
+        kpr($vars);
+
+    }
   }
 
-  function utec_theme_preprocess_pane_messages(&$vars){
-
-    $vars['og_description'] = _utec_theme_var('og_description');
-      // kpr($vars);
-
-  }
 
 
 	drupal_add_css("//vjs.zencdn.net/4.10/video-js.css", 'external');	
