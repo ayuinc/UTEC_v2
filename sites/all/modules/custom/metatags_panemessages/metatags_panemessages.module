@@ -11,9 +11,9 @@ function _metatags_panemessages_var($var_name, $new_val = NULL) {
   return isset($vars[$var_name]) ? $vars[$var_name] : NULL;
 }
 
-function metatags_panemessages_preprocess_node(&$variables){
+function metatags_panemessages_process_node(&$variables){
   $variables['og_description'] = _metatags_panemessages_var('og_description');
-    // kpr($variables);
+    print_r($variables['og_description']);
 
 }
 
