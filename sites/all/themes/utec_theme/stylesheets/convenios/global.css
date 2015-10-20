@@ -304,6 +304,7 @@ textarea,
 #contact-us {
 	background-color: #5C5C5C;
   padding: 35px 0;
+  margin-bottom: -70px;
 }
 
 #contact-us .submitted {
