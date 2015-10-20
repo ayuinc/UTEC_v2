@@ -366,7 +366,7 @@ textarea,
 	display: none;
 }
 
-#contact-us .webform-submit {
+#contact-us > .webform-submit {
 	width: 121px !important;
   font-size: 1rem;
   -webkit-appearance: none;
