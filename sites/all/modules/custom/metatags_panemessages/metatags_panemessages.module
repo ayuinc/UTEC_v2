@@ -13,7 +13,7 @@ function _metatags_panemessages_var($var_name, $new_val = NULL) {
 
 function metatags_panemessages_preprocess_node(&$variables){
   $variables['og_description'] = _metatags_panemessages_var('og_description');
-    kpr($variables);
+    // kpr($variables);
 
 }
 
