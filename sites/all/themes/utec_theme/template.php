@@ -16,16 +16,16 @@
 	  ),
 	);
 	drupal_add_html_head($viewport, 'viewport');
-_utec_theme_var('nuevo','valor');
+// _utec_theme_var('nuevo','valor');
 //Send metatags values to pane preprocess
 function _utec_theme_var($var_name, $new_val = NULL) {
   $vars = &drupal_static(__FUNCTION__, array());
-  die(print_r($vars));
 
   // If a new value has been passed
   if ($new_val) {
     $vars[$var_name] = $new_val;
   }
+    die(print_r($vars));
   return isset($vars[$var_name]) ? $vars[$var_name] : NULL;
 }
 
@@ -50,7 +50,7 @@ function _utec_theme_var($var_name, $new_val = NULL) {
   $og_title = $variables['page']['content']['metatags']['global']['og:title'];
   $og_description = $variables['page']['content']['metatags']['global']['og:description']['#attached']['drupal_add_html_head'][0][0]['#value'];
   // die($og_description);
-  $variables['og_title'] = _utec_theme_var('og_title', $og_title);
+  _utec_theme_var('og_title', $og_title);
   // $variables['og_description'] = _utec_theme_var('og_description', $og_description);
 
 
