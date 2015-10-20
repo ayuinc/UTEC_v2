@@ -314,12 +314,16 @@ textarea,
 	display: none;
 }
 
-#contact-us .field-name-field-introduccion-webform {
+#contact-us .field-name-field-introduccion-webform .field-label {
 	display: none;
 }
 
 #contact-us .field-name-field-introduccion-webform h2 {
 	color: white;
+}
+
+#contact-us .field-name-field-introduccion-webform .separator-gray {
+	margin-bottom: 49px !important;
 }
 
 #contact-us .field-name-field-footer-webform .field-item.even {
