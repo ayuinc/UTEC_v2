@@ -24,7 +24,7 @@ function _utec_theme_var($var_name, $new_val = NULL) {
   // If a new value has been passed
   if ($new_val) {
     $vars[$var_name] = $new_val;
-    print_r($vars);
+    // print_r($vars);
   }
   return isset($vars[$var_name]) ? $vars[$var_name] : NULL;
 }
@@ -40,13 +40,14 @@ function _utec_theme_var($var_name, $new_val = NULL) {
   }
   
   function utec_theme_preprocess_pane_messages(&$vars){
-
+    print_r('pane')
     $vars['og_description'] = _utec_theme_var('og_description');
-      kpr($vars);
+      // kpr($vars);
 
   }
   //Search
   function utec_theme_preprocess_page(&$variables){
+    print_r('page')
 
       // kpr($variables);
   $og_title = $variables['page']['content']['metatags']['global']['og:title'];
