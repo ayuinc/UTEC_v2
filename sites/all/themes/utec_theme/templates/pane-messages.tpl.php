@@ -34,10 +34,10 @@
 				  ?>
 	        <?php $path_i18 = drupal_get_path_alias('', $language->language); ?>
 	        <div class="carlos"><?php print $variables['page']['content']['metatags']['global']['og:title']; ?></div>
-	        <a href="https://www.facebook.com/sharer/sharer.php?u=<?php print $url.'/'.$language->language.'/'.$path_i18; ?>"><img src="$directory sites/all/themes/utec_theme/assets/img/facebook.png"></a>
-	      	<a href="https://twitter.com/home?status=<?php print $og_description ?>"><img src="$directory sites/all/themes/utec_theme/assets/img/twitter.png"></a>
-	      	<a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php print $url.'/'.$language->language.'/'.$path_i18; ?>&title=<?php print $og_title ?>&summary=&source="><img src="$directory sites/all/themes/utec_theme/assets/img/linkedin.png"></a>
-	      	<a href="https://plus.google.com/share?url=<?php print $url ?>"><img src="$directory sites/all/themes/utec_theme/assets/img/gplus.png"></a>
+	        <a href="https://www.facebook.com/sharer/sharer.php?u=<?php print $url.'/'.$language->language.'/'.$path_i18; ?>"><img src="$directory/sites/all/themes/utec_theme/assets/img/facebook.png"></a>
+	      	<a href="https://twitter.com/home?status=<?php print $og_description ?>"><img src="$directory/sites/all/themes/utec_theme/assets/img/twitter.png"></a>
+	      	<a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php print $url.'/'.$language->language.'/'.$path_i18; ?>&title=<?php print $og_title ?>&summary=&source="><img src="$directory/sites/all/themes/utec_theme/assets/img/linkedin.png"></a>
+	      	<a href="https://plus.google.com/share?url=<?php print $url ?>"><img src="$directory/sites/all/themes/utec_theme/assets/img/gplus.png"></a>
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
