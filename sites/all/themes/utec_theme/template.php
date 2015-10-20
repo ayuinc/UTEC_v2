@@ -334,7 +334,7 @@ function utec_theme_preprocess(&$variables, $hook) {
 }
 
 function utec_theme_preprocess_html(&$variables) {
-
+  $variables['og_description'] = _utec_theme_var('og_description', 'floraso');
 }
 
 
