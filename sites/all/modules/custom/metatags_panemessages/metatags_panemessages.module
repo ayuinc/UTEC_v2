@@ -28,7 +28,7 @@ function metatags_panemessages_preprocess_page(&$variables){
   $nodes = $node['nid']['1382'];
   $types = $node['node_type']['convenio_modal'];
   $content = node_load(1382);
-  $content->og_description['og_description'] = 'eribverivbreiv'; 
+  $content->og_description = $og_description; 
   print_r($content);
 }
 
