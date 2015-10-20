@@ -16,7 +16,7 @@
 	  ),
 	);
 	drupal_add_html_head($viewport, 'viewport');
-
+_utec_theme_var('nuevo','valor');
 //Send metatags values to pane preprocess
 function _utec_theme_var($var_name, $new_val = NULL) {
   $vars = &drupal_static(__FUNCTION__, array());
