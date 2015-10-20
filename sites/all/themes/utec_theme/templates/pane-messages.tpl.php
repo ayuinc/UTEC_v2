@@ -21,9 +21,11 @@
 	    <div class="modal-content">
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+	        <h1 class="modal-title medium text-center" id="myModalLabel">Thanks for contacting us</h1>
 	      </div>
-	      <div class="modal-body">
+	      <div class="modal-body text-center">
+	      	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+	      	<a href="#" class="text-primary">Back to homepage</a>
 				  <?php 
 				  	$node = node_load(1382);
 				  	$title = $node->title;
