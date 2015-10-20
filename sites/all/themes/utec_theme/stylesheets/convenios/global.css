@@ -310,6 +310,18 @@ textarea,
 	display: none;
 }
 
+#contact-us .form-type-item {
+	display: none;
+}
+
+#contact-us .field-name-field-introduccion-webform {
+	display: none;
+}
+
+#contact-us .field-name-field-introduccion-webform h2 {
+	color: white;
+}
+
 #contact-us .field-name-field-footer-webform .field-item.even {
 	width: 50%;
   float: right;
