@@ -349,3 +349,33 @@ textarea,
     border-left: 1px solid white;
     color: white;
 }
+
+#contact-us #edit-submitted-name,
+#edit-submitted-subject,
+#edit-submitted-messaje {
+	padding: 5px;
+  background: #858585;
+  color: white;
+  -webkit-appearance: none;
+  appearanc: none;
+  -moz-appearance: none;
+  border: 1px gray solid;
+}
+
+#contact-us .grippie {
+	display: none;
+}
+
+#contact-us .webform-submit {
+	width: 121px !important;
+  font-size: 1rem;
+  -webkit-appearance: none;
+  appearance: none;
+  -moz-appearance: none;
+  border: none;
+  padding: 7px 7px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #00BFDF;
+  border-color: #00a9c6;
+}
