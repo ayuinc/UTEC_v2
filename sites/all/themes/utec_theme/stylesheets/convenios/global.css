@@ -306,14 +306,30 @@ textarea,
   padding: 35px 0;
 }
 
+#contact-us .submitted {
+	display: none;
+}
+
 #contact-us .field-name-field-footer-webform .field-item.even {
 	width: 50%;
   float: right;
   padding: 28px 49px 28px 63px;
 }
 
+#contact-us .field-name-field-footer-webform .field-label {
+	display: none;
+}
+
+#contact-us .pane-title {
+	display: none;
+}
+
 #contact-us .field-name-field-footer-webform .field-item.even p {
 	  float: right;
     position: relative;
     text-align: center;
+    padding-left: 7px;
+    padding: 28px 21px 35px 21px;
+    border-left: 1px solid white;
+    color: white;
 }
