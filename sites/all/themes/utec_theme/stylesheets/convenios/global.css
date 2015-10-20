@@ -275,7 +275,7 @@
 .page-page-27 #contact-us input,
 textarea,
 .grippie {
-	width: 50% !important;
+	width: 50%;
 }
 
 /*video*/
@@ -360,6 +360,17 @@ textarea,
   appearanc: none;
   -moz-appearance: none;
   border: 1px gray solid;
+}
+
+#contact-us #edit-submitted-messaje {
+	padding: 5px;
+  background: #858585;
+  color: white;
+  -webkit-appearance: none;
+  appearanc: none;
+  -moz-appearance: none;
+  border: 1px gray solid;
+  width: 50% !important;
 }
 
 #contact-us .grippie {
