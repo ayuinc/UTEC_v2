@@ -41,7 +41,7 @@ function _utec_theme_var($var_name, $new_val = NULL) {
 
     //Search
   function utec_theme_preprocess_page(&$variables){
-    print_r('page');
+    die(print_r('page'));
 
       // kpr($variables);
   $og_title = $variables['page']['content']['metatags']['global']['og:title'];
@@ -60,9 +60,9 @@ function _utec_theme_var($var_name, $new_val = NULL) {
       $variables['theme_hook_suggestions'][] = 'page__'. $variables['node']->type;
     }
   }
-  
+
   function utec_theme_preprocess_pane_messages(&$vars){
-    print_r('pane');
+    die(print_r('pane'));
     $vars['og_description'] = _utec_theme_var('og_description');
       // kpr($vars);
 
