@@ -30,5 +30,5 @@ function metatags_panemessages_preprocess_page(&$variables){
 function metatags_panemessages_process_pane_messages(&$variables){
   // die('entro');
   $variables['og_description'] = _metatags_panemessages_var('og_description');
-    die(print_r($variables['og_description']));
+    // die(print_r($variables['og_description']));
 }
