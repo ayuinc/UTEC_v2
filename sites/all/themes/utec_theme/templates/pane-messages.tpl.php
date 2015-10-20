@@ -29,8 +29,8 @@
 				  	$title = $node->title;
 				  	$description = $node->body['und']['0']['value'];
 				  	// print_r($variables);
-				  	print_r($og_description);
-				  	$directory
+
+				  	print_r($node);
 				  ?>
 	        <?php $path_i18 = drupal_get_path_alias('', $language->language); ?>
 	        <div class="carlos"><?php print $variables['page']['content']['metatags']['global']['og:title']; ?></div>

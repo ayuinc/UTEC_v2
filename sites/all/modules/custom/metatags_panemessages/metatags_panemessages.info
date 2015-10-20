@@ -1,0 +1,5 @@
+name = Metatags Pane Message adder
+description = Allow to add metatags to modal after contact us is submmitted.
+core = 7.x
+dependencies[] = metatag
+

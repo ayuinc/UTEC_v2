@@ -15,19 +15,7 @@
 	    'content' => 'width=device-width, initial-scale=1.0, user-scalable=no',
 	  ),
 	);
-	drupal_add_html_head($viewport, 'viewport');
-// _utec_theme_var('nuevo','valor');
-//Send metatags values to pane preprocess
-function _utec_theme_var($var_name, $new_val = NULL) {
-  $vars = &drupal_static(__FUNCTION__, array());
-
-  // If a new value has been passed
-  if ($new_val) {
-    $vars[$var_name] = $new_val;
-    // print_r($vars);
-  }
-  return isset($vars[$var_name]) ? $vars[$var_name] : NULL;
-}
+	drupal_add_html_head($viewport, 'viewport'); 
 
   /**
    * Implements hook_preprocess_panels_pane().
@@ -38,33 +26,27 @@ function _utec_theme_var($var_name, $new_val = NULL) {
       dpm('subtype: ' . $variables['pane']->subtype);
     }
   }
-  
-  function utec_theme_preprocess_pane_messages(&$variables){
 
-    $variables['og_description'] = _utec_theme_var('og_description');
-      kpr($variables);
-
-  }
-  //Search
+    //Search
   function utec_theme_preprocess_page(&$variables){
-
+  module_load_include('module', 'metatags_panemessages');
       // kpr($variables);
   $og_title = $variables['page']['content']['metatags']['global']['og:title'];
   $og_description = $variables['page']['content']['metatags']['global']['og:description']['#attached']['drupal_add_html_head'][0][0]['#value'];
   // die($og_description);
-  $variables['og_description'] = _utec_theme_var('og_description', $og_description);
+  $variables['og_description'] = _metatags_panemessages_var('og_description', $og_description);
   // $variables['og_description'] = _utec_theme_var('og_description', $og_description);
 
 
-	  $search_box = drupal_render(drupal_get_form('search_form'));
+    $search_box = drupal_render(drupal_get_form('search_form'));
 
-	  $variables['search_box'] = $search_box;
+    $variables['search_box'] = $search_box;
 
     if (isset($variables['node'])) {
       // If the node type is "blog_madness" the template suggestion will be "page--blog-madness.tpl.php".
       $variables['theme_hook_suggestions'][] = 'page__'. $variables['node']->type;
     }
-	}
+  }
 
 	drupal_add_css("//vjs.zencdn.net/4.10/video-js.css", 'external');	
 
@@ -333,8 +315,5 @@ function utec_theme_preprocess(&$variables, $hook) {
   // kpr($variables);
 }
 
-function utec_theme_preprocess_html(&$variables) {
-  $variables['og_description'] = _utec_theme_var('og_description', 'floraso');
-}
 
 
