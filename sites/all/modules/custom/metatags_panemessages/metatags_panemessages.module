@@ -28,7 +28,7 @@ function metatags_panemessages_preprocess_page(&$variables){
   $nodes = $node['nid']['1382'];
   $types = $node['node_type']['convenio_modal'];
   $content = node_load_multiple($nodes);
-  die(print_r($content));
+  print_r($content);
 }
 
 function metatags_panemessages_process_pane_messages(&$variables){
