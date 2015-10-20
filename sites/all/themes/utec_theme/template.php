@@ -24,7 +24,7 @@ function _utec_theme_var($var_name, $new_val = NULL) {
   // If a new value has been passed
   if ($new_val) {
     $vars[$var_name] = $new_val;
-    die(print_r($vars));
+    // die(print_r($vars));
   }
   return isset($vars[$var_name]) ? $vars[$var_name] : NULL;
 }
@@ -37,7 +37,7 @@ function _utec_theme_var($var_name, $new_val = NULL) {
     if ($variables['pane']->type == 'block') {
       dpm('subtype: ' . $variables['pane']->subtype);
     }
-    $var = _utec_theme_var('og_title');
+    $variables['og_description'] = _utec_theme_var('og_description');
     
     // print_r($variables);
     // $variables['og_description'] = _utec_theme_var('og_description');
@@ -46,11 +46,11 @@ function _utec_theme_var($var_name, $new_val = NULL) {
 	//Search
 	function utec_theme_preprocess_page(&$variables){
 
-      // kpr($variables);
+      kpr($variables);
   $og_title = $variables['page']['content']['metatags']['global']['og:title'];
   $og_description = $variables['page']['content']['metatags']['global']['og:description']['#attached']['drupal_add_html_head'][0][0]['#value'];
   // die($og_description);
-  _utec_theme_var('og_title', $og_description);
+  _utec_theme_var('og_description', $og_description);
   // $variables['og_description'] = _utec_theme_var('og_description', $og_description);
 
 
