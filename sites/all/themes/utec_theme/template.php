@@ -25,7 +25,7 @@ function _utec_theme_var($var_name, $new_val = NULL) {
   if ($new_val) {
     $vars[$var_name] = $new_val;
   }
-
+  die('entro'.$vars[$var_name]);
   return isset($vars[$var_name]) ? $vars[$var_name] : NULL;
 }
 
@@ -38,7 +38,7 @@ function _utec_theme_var($var_name, $new_val = NULL) {
       dpm('subtype: ' . $variables['pane']->subtype);
     }
     $var = _utec_theme_var('og_title');
-    die('entro'.$var);
+    
     // print_r($variables);
     // $variables['og_description'] = _utec_theme_var('og_description');
   }
