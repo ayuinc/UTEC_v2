@@ -33,7 +33,7 @@
 				  	$description = $node->body['und']['0']['value'];
 				  	// print_r($variables);
 
-				  	print_r($node);
+				  	// print_r($node);
 				  	$path_img = $directory.'/sites/all/themes/utec_theme/assets/img/';
 				  ?>
 	        <?php $path_i18 = drupal_get_path_alias('', $language->language); ?>
