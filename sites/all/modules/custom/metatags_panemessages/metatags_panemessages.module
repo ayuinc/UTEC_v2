@@ -26,13 +26,13 @@ function metatags_panemessages_preprocess_page(&$variables){
 	$variables['og_description'] = _metatags_panemessages_var('og_description', $og_description);
 	// $variables['og_description'] = _utec_theme_var('og_description', $og_description);
 
-  // $node = node_load(1382);
+  $node = node_load(1382);
   // $node->og_description = $og_description; 
   
-  // $node->title = $og_description;
-  // $node->field_link[0][0]['value'] = $og_description;
-  // // print_r($content);
-  // node_save($node);
+  $node->title = $og_description;
+  $node->field_link['und'][0]['value'] = $og_description;
+  // print_r($content);
+  node_save($node);
 }
 
 function metatags_panemessages_process_pane_messages(&$variables){
