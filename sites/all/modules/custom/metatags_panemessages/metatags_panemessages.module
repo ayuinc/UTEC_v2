@@ -2,7 +2,7 @@
 
 function metatags_panemessages_preprocess_page(&$variables){
 
-  // kpr($variables);
+  kpr($variables);
 	$twitter_desc = $variables['page']['content']['metatags']['global']['twitter:description']['#attached']['drupal_add_html_head'][0][0]['#value'];
 
   if ($variables['user']->roles[1]) {
