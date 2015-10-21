@@ -28,7 +28,7 @@ function metatags_panemessages_preprocess_page(&$variables){
 
   $node = node_load(1382);
   // $node->og_description = $og_description; 
-  $node->twitter[$node->language][0]['value']   = 'eegeg';
+  $node->body[$node->language][0]['value']   = 'eegeg';
   // print_r($content);
   node_save($node);
 }
