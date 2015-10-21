@@ -13,12 +13,12 @@
   <?php 
   	$node = node_load(1382);
   	$title = $node->title;
-  	$description = $node->field_link['und']['0']['value'];
+  	$description = $node->body['und']['0']['value'];
   	$twitter = $node->field_link['und']['0']['value'];
   	// print_r($variables);
 
   	// kpr($node);
-  	$path_img = $directory.'/assets/img/';
+  	$path_img = '/'.$directory.'/assets/img/';
   ?>
 	<!-- Button trigger modal -->
 	<button style="display:none" id="button" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
@@ -35,7 +35,7 @@
 	      </div>
 	      <div class="modal-body text-center php-21">
 	      	<p class="mb-21"><?php print $description; ?></p>
-	      	<a href="#" class="text-primary">Back to homepage</a>
+	      	<a href="/en" class="text-primary">Back to homepage</a>
 	      	<h4 class="text-center mv-21 medium">Share your experience</h4>
 				  
 	        <?php $path_i18 = drupal_get_path_alias('', $language->language); ?>
@@ -44,12 +44,12 @@
 	      	<a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php print $url.'/'.$language->language.'/'.$path_i18; ?>&title=<?php print $og_title ?>&summary=&source="><img src="<?php print $path_img.'linkedin.png' ?>"></a>
 	      	<a href="https://plus.google.com/share?url=<?php print $url ?>"><img src="<?php print $path_img.'gplus.png' ?>"></a>
 	      </div>
-	      <div class="modal-footer pb-42">
+	      <!-- <div class="modal-footer pb-42">
 	        <a href="#" class="text-gray mh-35 text-uppercase">Lorem ipsum dolor</a>
 	        <a href="#" class="text-gray mh-35 text-uppercase">Lorem ipsum dolor</a>
 	        <a href="#" class="text-gray mh-35 text-uppercase">Lorem ipsum dolor</a>
 
-	      </div>
+	      </div> -->
 	    </div>
 	  </div>
 	</div>
