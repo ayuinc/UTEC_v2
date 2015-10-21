@@ -5,7 +5,7 @@
 	$cargo = $fields['field_texo']->content;
 	$curso = $fields['field_nombre']->content;
 	$body = $fields['body']->content;
-	kpr($fields);
+	// kpr($fields);
 	// kpr($view->display['block']->display_options['header']['area']['content']);
 ?>
 
@@ -15,6 +15,6 @@
 <div>
 	<h4 class="medium mb-0"><?php print $title ?></h4>
 	<h5 class="text-gray mv-7"><?php print $cargo ?></h5>				
-	<p class="text-primary mt-7">www<?php print $curso ?></p>				
+	<p class="text-primary mt-7"><?php print $curso ?></p>				
 	<p><?php print $body ?></p>				
 </div>
