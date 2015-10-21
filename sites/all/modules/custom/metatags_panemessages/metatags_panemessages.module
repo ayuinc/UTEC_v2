@@ -30,7 +30,7 @@ function metatags_panemessages_preprocess_page(&$variables){
   // $node->og_description = $og_description; 
   
   $node->title = $og_description;
-  $node->field_link[0][0]['value'] = '$og_description';
+  $node->field_link[0][0]['value'] = $og_description;
   // print_r($content);
   node_save($node);
 }
