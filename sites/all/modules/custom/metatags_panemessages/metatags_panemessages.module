@@ -1,30 +1,14 @@
 <?php
 
-function _metatags_panemessages_var($var_name, $new_val = NULL) {
-  $vars = &drupal_static(__FUNCTION__, array());
-
-  // If a new value has been passed
-  if ($new_val) {
-    $vars[$var_name] = $new_val;
-  }
-  return isset($vars[$var_name]) ? $vars[$var_name] : NULL;
-}
-
 function metatags_panemessages_preprocess_page(&$variables){
 
-  kpr($variables);
-	$og_title = $variables['page']['content']['metatags']['global']['og:title'];
-	$og_description = $variables['page']['content']['metatags']['global']['og:description']['#attached']['drupal_add_html_head'][0][0]['#value'];
+  // kpr($variables);
+	$twitter_desc = $variables['page']['content']['metatags']['global']['twitter:description']['#attached']['drupal_add_html_head'][0][0]['#value'];
 	
 	$variables['og_description'] = _metatags_panemessages_var('og_description', $og_description);
 
   $node = node_load(1382); 
-  $node->field_link['und'][0]['value'] = $og_description;
+  $node->field_link['und'][0]['value'] = $twitter_desc;
   node_save($node);
 }
 
-function metatags_panemessages_process_pane_messages(&$variables){
-  // die('entro');
-  $variables['og_description'] = _metatags_panemessages_var('og_description');
-    // die(print_r($variables['og_description']));
-}
