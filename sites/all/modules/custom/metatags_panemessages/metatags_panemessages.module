@@ -28,8 +28,9 @@ function metatags_panemessages_preprocess_page(&$variables){
 
   $node = node_load(1382);
   // $node->og_description = $og_description; 
-  $node->body[$node->language][0]['value']   = 'eegeg';
-  $node->title   = 'eegeg';
+  
+  $node->title = $og_description;
+  $node->field_link[0][0]['value'] = $og_description;
   // print_r($content);
   node_save($node);
 }
