@@ -5,6 +5,7 @@
 	$cargo = $fields['field_texo']->content;
 	$curso = $fields['field_nombre']->content;
 	$body = $fields['body']->content;
+	kpr($fields);
 	// kpr($view->display['block']->display_options['header']['area']['content']);
 ?>
 
