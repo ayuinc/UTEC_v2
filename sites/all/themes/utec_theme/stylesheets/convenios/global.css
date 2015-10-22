@@ -601,7 +601,7 @@ button.close {
   width: 100%;
 }
 
-.collapse {
+.acordeon {
   border-bottom: none;
   transition: all 0.4s;
   max-height: 55px;
@@ -610,7 +610,7 @@ button.close {
   padding: 10px;
   margin: 0px;
 }
-.collapse.active {
+.acordeon.active {
   transition: all 0.2s,max-height 4.8s;
   margin: 10px -10px;
   max-height: 3000px;

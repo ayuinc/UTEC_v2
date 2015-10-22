@@ -51,7 +51,7 @@
           <ul>
             <?php $count = 0; ?>
             <?php foreach ($tab_titles as $key => $tab_title): ?>
-            <li class=" collapse <?php ($count == 0) ? print 'tab-current' : '' ; ?>">
+            <li class="acordeon <?php ($count == 0) ? print 'tab-current' : '' ; ?>">
               <a href="bloque-linebox-<?php print $count; ?>"><span><?php print $tab_title['value'] ?> <i class="more-less glyphicon glyphicon-plus"></i></span>
               </a>
               <div class="content-wrap bg-gray-lighter" style="color: black;">
