@@ -46,7 +46,7 @@
 
     <div class="hidden-lg">
       
-      <div class="tabs tabs-style-linebox panel-group" id="collapse-myTab">
+      <div class="tabs tabs-style-linebox ">
         <nav>
           <ul>
             <?php $count = 0; ?>

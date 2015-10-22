@@ -604,7 +604,7 @@ button.close {
 .collapse {
   border-bottom: none;
   transition: all 0.4s;
-  max-height: 285px;
+  max-height: 55px;
   overflow: hidden;
   cursor: pointer;
   padding: 10px;
