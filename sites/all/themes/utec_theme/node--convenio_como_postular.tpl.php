@@ -51,7 +51,7 @@
           <ul>
             <?php $count = 0; ?>
             <?php foreach ($tab_titles as $key => $tab_title): ?>
-            <li class="<?php ($count == 0) ? print 'tab-current' : '' ; ?> panel-heading">
+            <li class="panel-heading <?php ($count == 0) ? print 'tab-current' : '' ; ?>">
               <a href="bloque-linebox-<?php print $count; ?>" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span><?php print $tab_title['value'] ?> <i class="more-less glyphicon glyphicon-plus"></i></span>
               </a>
               
