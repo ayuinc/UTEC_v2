@@ -29,7 +29,7 @@
   $imagenes_bloque_6 = $node->field_imagenes_bloque_6['und'];
 
   // $pen = $node->pen['und']['0']['value'];
-  print_r($currency);
+  // print_r($currency);
 
 ?>
 <!-- CABECERA -->
