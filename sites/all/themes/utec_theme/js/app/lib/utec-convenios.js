@@ -16,7 +16,7 @@
 	  $(this).find('.down').toggleClass("hide"); 
 	});
 	
-	  document.getElementById("webform-client-form-1353").onsubmit=function() { // needs an ID
+	  $("webform-client-form-1353").onsubmit=function() { // needs an ID
 	    alert(this.submitted[name]);
 	    var val = this.submitted[name].value; // 'this' is the form 
 	    var val2 = this.submitted[subject].value;
