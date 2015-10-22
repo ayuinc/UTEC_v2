@@ -3,13 +3,14 @@
 
 	$("#contact-us").children().addClass("container-sm");
 
-	function toggleIcon(e) {
-        $(e.target)
-            .prev('.panel-heading')
-            .find(".more-less")
-            .toggleClass('glyphicon-plus glyphicon-minus');
-    }
-    $('.panel-group').on('hidden.bs.collapse', toggleIcon);
-    $('.panel-group').on('shown.bs.collapse', toggleIcon);
+	$('.collapse').on('click',function(e){
+	  e.preventDefault();
+	  $(this).toggleClass('active');
+	});
+	/*COLLAPSE CHANGE BUTTON*/
+	$(".collapse").click(function(){
+	  $(this).find('.up').toggleClass("hide");  
+	  $(this).find('.down').toggleClass("hide"); 
+	});
 
 }(jQuery));

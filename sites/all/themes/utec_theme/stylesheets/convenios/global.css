@@ -596,3 +596,25 @@ button.close {
     width: 900px;
   }
 }
+
+.wrap {
+  width: 100%;
+}
+
+.collapse {
+  border-bottom: none;
+  transition: all 0.4s;
+  max-height: 285px;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0px;
+}
+.collapse.active {
+  transition: all 0.2s,max-height 4.8s;
+  margin: 10px -10px;
+  max-height: 3000px;
+  padding: 10px 20px;
+  z-index: 200;
+  color: #444;
+}

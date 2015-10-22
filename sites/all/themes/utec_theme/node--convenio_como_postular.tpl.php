@@ -51,23 +51,23 @@
           <ul>
             <?php $count = 0; ?>
             <?php foreach ($tab_titles as $key => $tab_title): ?>
-            <li class="panel-heading <?php ($count == 0) ? print 'tab-current' : '' ; ?>">
+            <li class="panel-heading collapse <?php ($count == 0) ? print 'tab-current' : '' ; ?>">
               <a href="bloque-linebox-<?php print $count; ?>" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span><?php print $tab_title['value'] ?> <i class="more-less glyphicon glyphicon-plus"></i></span>
               </a>
-              
+              <div class="content-wrap bg-gray-lighter" style="color: black;" id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <?php $count = 0; ?>
+                <?php foreach ($tab_contents as $key => $tab_content): ?>
+                <section id="bloque-linebox-<?php print $count; ?>" class="<?php ($count == 0) ? print 'content-current' : '' ; ?>">
+                  <p style="color: black;"><?php print $tab_content['value'] ?></p>
+                </section>
+                <?php $count++;?>
+                <?php endforeach ?>
+              </div><!-- /content -->
             </li>
             <?php $count++; ?>
             <?php endforeach ?>
 
-            <div class="content-wrap bg-gray-lighter" style="color: black;" id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-            <?php $count = 0; ?>
-            <?php foreach ($tab_contents as $key => $tab_content): ?>
-            <section id="bloque-linebox-<?php print $count; ?>" class="<?php ($count == 0) ? print 'content-current' : '' ; ?>">
-              <p style="color: black;"><?php print $tab_content['value'] ?></p>
-            </section>
-            <?php $count++;?>
-            <?php endforeach ?>
-              </div><!-- /content -->
+            
           </ul>
         </nav>
       </div>
