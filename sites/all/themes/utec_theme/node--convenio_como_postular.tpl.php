@@ -54,7 +54,12 @@
             <li class="<?php ($count == 0) ? print 'tab-current' : '' ; ?> panel-heading">
               <a href="bloque-linebox-<?php print $count; ?>" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span><?php print $tab_title['value'] ?> <i class="more-less glyphicon glyphicon-plus"></i></span>
               </a>
-              <div class="content-wrap bg-gray-lighter" style="color: black;" id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+              
+            </li>
+            <?php $count++; ?>
+            <?php endforeach ?>
+
+            <div class="content-wrap bg-gray-lighter" style="color: black;" id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
             <?php $count = 0; ?>
             <?php foreach ($tab_contents as $key => $tab_content): ?>
             <section id="bloque-linebox-<?php print $count; ?>" class="<?php ($count == 0) ? print 'content-current' : '' ; ?>">
@@ -63,27 +68,12 @@
             <?php $count++;?>
             <?php endforeach ?>
               </div><!-- /content -->
-            </li>
-            <?php $count++; ?>
-            <?php endforeach ?>
           </ul>
         </nav>
       </div>
     </div>
 
-   <div class="panel panel-default">
-      <div class="panel-heading" role="tab" id="headingOne">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          <i class="more-less glyphicon glyphicon-plus"></i>
-            Collapsible Group Item #1
-        </a>
-      </div>
-      <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-        <div class="panel-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-        </div>
-      </div>
-    </div>
+  
 
 
   </div>
