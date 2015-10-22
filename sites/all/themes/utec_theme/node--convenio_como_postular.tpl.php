@@ -57,9 +57,7 @@
             </li>
             <?php $count++; ?>
             <?php endforeach ?>
-          </ul>
-        </nav>
-        <div class="content-wrap bg-gray-lighter" style="color: black;">
+            <div class="content-wrap bg-gray-lighter" style="color: black;">
           <?php $count = 0; ?>
           <?php foreach ($tab_contents as $key => $tab_content): ?>
           <section id="bloque-linebox-<?php print $count; ?>" class="<?php ($count == 0) ? print 'content-current' : '' ; ?>">
@@ -67,7 +65,9 @@
           </section>
           <?php $count++;?>
           <?php endforeach ?>
-        </div><!-- /content -->
+            </div><!-- /content -->
+          </ul>
+        </nav>
       </div>
     </div>
 
