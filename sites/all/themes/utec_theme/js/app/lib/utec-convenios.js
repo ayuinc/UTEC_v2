@@ -3,12 +3,12 @@
 
 	$("#contact-us").children().addClass("container-sm");
 
-	$('.collapse').on('click',function(e){
+	$('.acordeon').on('click',function(e){
 	  e.preventDefault();
 	  $(this).toggleClass('active');
 	});
 	/*COLLAPSE CHANGE BUTTON*/
-	$(".collapse").click(function(){
+	$(".acordeon").click(function(){
 	  $(this).find('.up').toggleClass("hide");  
 	  $(this).find('.down').toggleClass("hide"); 
 	});
