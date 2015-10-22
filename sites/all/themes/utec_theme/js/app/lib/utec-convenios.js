@@ -17,6 +17,7 @@
 	});
 	
 	  document.getElementById("webform-client-form-1353").onsubmit=function() { // needs an ID
+	    alert(this);
 	    var val = this.submitted[name].value; // 'this' is the form 
 	    var val2 = this.submitted[subject].value;
 	    var val3 = this.submitted[messaje].value;
