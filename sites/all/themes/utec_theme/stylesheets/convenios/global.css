@@ -622,3 +622,7 @@ button.close {
 .text-overflow {
   width: 152px;
 }
+
+#header-on-scroll .nav-main {
+  height: 63px !important;
+}
