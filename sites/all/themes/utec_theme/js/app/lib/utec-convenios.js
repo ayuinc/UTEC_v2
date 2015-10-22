@@ -1,7 +1,20 @@
 (function ($) {
+
   $( "#button" ).trigger( "click" );
 	$("#contact-us").children().addClass("container-sm");
+	$( "#button" ).trigger( "click" );
 
+	$("#contact-us").children().addClass("container-sm");
+
+	$('.acordeon').on('click',function(e){
+	  e.preventDefault();
+	  $(this).toggleClass('active');
+	});
+	/*COLLAPSE CHANGE BUTTON*/
+	$(".acordeon").click(function(){
+	  $(this).find('.up').toggleClass("hide");  
+	  $(this).find('.down').toggleClass("hide"); 
+	});
 	
 	  document.getElementById("webform-client-form-1353").onsubmit=function() { // needs an ID
 	    var val = this.submitted[name].value; // 'this' is the form 

@@ -46,30 +46,34 @@
 
     <div class="hidden-lg">
       
-      <div class="tabs tabs-style-linebox" id="collapse-myTab">
+      <div class="tabs tabs-style-linebox ">
         <nav>
           <ul>
             <?php $count = 0; ?>
             <?php foreach ($tab_titles as $key => $tab_title): ?>
-            <li class="<?php ($count == 0) ? print 'tab-current' : '' ; ?>">
-              <a href="bloque-linebox-<?php print $count; ?>"><span><?php print $tab_title['value'] ?></span>
+            <li class="acordeon <?php ($count == 0) ? print 'tab-current' : '' ; ?>">
+              <a href="bloque-linebox-<?php print $count; ?>"><span><?php print $tab_title['value'] ?> <i class="more-less glyphicon glyphicon-plus"></i></span>
               </a>
+              <div class="content-wrap bg-gray-lighter" style="color: black;">
+                <?php $count = 0; ?>
+                <?php foreach ($tab_contents as $key => $tab_content): ?>
+                <section id="bloque-linebox-<?php print $count; ?>" class="<?php ($count == 0) ? print 'content-current' : '' ; ?>">
+                  <p style="color: black;"><?php print $tab_content['value'] ?></p>
+                </section>
+                <?php $count++;?>
+                <?php endforeach ?>
+              </div><!-- /content -->
             </li>
             <?php $count++; ?>
             <?php endforeach ?>
+
+            
           </ul>
         </nav>
-        <div class="content-wrap bg-gray-lighter" style="color: black;">
-          <?php $count = 0; ?>
-          <?php foreach ($tab_contents as $key => $tab_content): ?>
-          <section id="bloque-linebox-<?php print $count; ?>" class="<?php ($count == 0) ? print 'content-current' : '' ; ?>">
-            <p style="color: black;"><?php print $tab_content['value'] ?></p>
-          </section>
-          <?php $count++;?>
-          <?php endforeach ?>
-        </div><!-- /content -->
       </div>
     </div>
+
+  
 
 
   </div>
