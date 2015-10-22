@@ -79,7 +79,7 @@
 					<li>
 						<a href="#nav-display-<?php print $counter; ?>" class="atm-menu-principal">
 							<div><i class="<?php foreach ($classes as $key => $class){print $class.' ';} ?>"></i></div>
-							<span><?php print $menu['#title']; ?></span>
+							<span class="text-overflow"><?php print $menu['#title']; ?></span>
 						</a>
 					</li>
           <?php $counter++; ?>
@@ -171,7 +171,7 @@
           <?php if ($menu['#title']) : ?>
           <li>
             <a href="#nav-shrink-display-<?php print $counter; ?>" class="atm-menu-principal">
-              <span><?php print $menu['#title']; ?></span>
+              <span class="text-overflow"><?php print $menu['#title']; ?></span>
             </a>
           </li>
           <?php $counter++; ?>
