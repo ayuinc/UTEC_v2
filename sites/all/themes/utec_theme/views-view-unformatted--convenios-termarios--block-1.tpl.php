@@ -34,6 +34,7 @@
 					<?php endforeach; ?>
 					<tr>
 			      <td><?php print t('Total credits') ?></td>
+			      <td></td>
 			      <td><?php print $total; ?></td>
 			      <td></td>
 			      <td></td>
