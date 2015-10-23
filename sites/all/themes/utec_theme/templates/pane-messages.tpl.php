@@ -17,7 +17,7 @@
   	$twitter = $node->field_link['und']['0']['value'];
   	// print_r($variables);
 
-  	kpr($node);
+  	// kpr($node);
   	$path_img = '/'.$directory.'/assets/img/';
   ?>
 	<!-- Button trigger modal -->
