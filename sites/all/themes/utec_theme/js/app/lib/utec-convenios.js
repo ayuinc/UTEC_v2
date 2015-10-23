@@ -9,17 +9,16 @@
 
 	
 	/*COLLAPSE CHANGE BUTTON*/
-	$('span').on('click', function (event) {
-	  $(this).parent().parent().toggleClass('tab-current').siblings().removeClass('tab-current');
-	  event.preventDefault();
+	$('.closeall').click(function(){
+	  $('.panel-collapse.in')
+	    .collapse('hide');
+	});
+	$('.openall').click(function(){
+	  $('.panel-collapse:not(".in")')
+	    .collapse('show');
 	});
 
-	/*COLLAPSE CHANGE BUTTON*/
-	$('.change-arrow').click(function(){
-	  $(this).parent().find('#up').toggleClass("hidden");
-	  $(this).parent().find('#down').toggleClass("hidden"); 
-	});
-
+	
 	document.getElementById("webform-client-form-1353").onsubmit=function() { // needs an ID
     
     var val = document.getElementById('edit-submitted-name'); // 'this' is the form 
