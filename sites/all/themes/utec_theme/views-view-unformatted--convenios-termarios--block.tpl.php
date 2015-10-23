@@ -29,7 +29,7 @@
 				</tbody>
 				<tfoot>
 					<?php foreach ($rows as $id => $row): ?>
-				    <?php $total =+ $view->result[$id]->field_n_mero_creditos['0']['rendered']['#markup'];?>
+				    <?php $total = $total + $view->result[$id]->field_n_mero_creditos['0']['rendered']['#markup'];?>
 					<?php endforeach; ?>
 					<tr>
 			      <td>Total</td>
