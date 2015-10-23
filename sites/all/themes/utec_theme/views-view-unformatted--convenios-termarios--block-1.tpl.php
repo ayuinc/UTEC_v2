@@ -12,7 +12,7 @@
 	<div class="separator-gray separator-lg"></div>
 	<h3></h3>
 	<div class="pv-35 table-all-course">
-		<div class="table-responsive table-custom">
+		<div class=" table-custom">
 			<table class="table">
 				<thead>
 					<tr class="text-center">
