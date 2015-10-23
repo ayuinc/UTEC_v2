@@ -39,6 +39,7 @@
 			      <td></td>
 			      <td><?php print $total; ?></td>
 			      <td></td>
+			      <td></td>
 			    </tr>
 				</tfoot>
 			</table>			
