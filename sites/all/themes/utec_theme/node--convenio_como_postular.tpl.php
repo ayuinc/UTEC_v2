@@ -51,7 +51,7 @@
         <div class="panel panel-default" style="min-height: 30px;">
           <div class="panel-heading" role="tab" id="heading<?php print $count; ?>">
             <h4 class="panel-title">
-              <a role="button" data-toggle="collapse" data-parent="#accordion" href="collapse<?php print $count; ?>" aria-expanded="false" aria-controls="collapse<?php print $count; ?>">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php print $count; ?>" aria-expanded="false" aria-controls="collapse<?php print $count; ?>">
                 <?php print $tab_title['value'] ?>
               </a>
             </h4>
