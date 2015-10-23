@@ -15,7 +15,7 @@
 		<div class="table-responsive table-custom">
 			<table class="table">
 				<thead>
-					<tr>
+					<tr class="text-center">
 						<td><?php print t('Semester') ?></td>
 						<td><?php print t('Career') ?></td>
 						<td><?php print t('Courses') ?></td>
@@ -33,7 +33,7 @@
 					<?php foreach ($rows as $id => $row): ?>
 				    <?php $total += $view->result[$id]->field_field_n_mero_creditos['0']['rendered']['#markup'];?>
 					<?php endforeach; ?>
-					<tr>
+					<tr class="text-center">
 			      <td><?php print t('Total credits') ?></td>
 			      <td></td>
 			      <td></td>
