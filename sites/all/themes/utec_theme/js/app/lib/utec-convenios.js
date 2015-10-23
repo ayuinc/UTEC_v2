@@ -27,7 +27,7 @@
     var val3 = document.getElementById('edit-submitted-messaje');
     var htmlString = "<span id='message-err'>Text required</span>";
     if (val.value==null || val.value.trim()=="") { 
-    	var text = document.getElementById('message-err');
+	  	var text = document.getElementById('message-err');
     	if (text != null) {
 	    	text.parentNode.removeChild(text);
     	}
@@ -35,6 +35,7 @@
       val.focus();
       return false; // cancel submission
     }
+    var text = document.getElementById('message-err');
     text.parentNode.removeChild(text);
     if (val2.value==null || val2.value.trim()=="") { 
     	var text2 = document.getElementById('message-err');
@@ -45,6 +46,7 @@
       val2.focus();
       return false; // cancel submission
     }
+    var text2 = document.getElementById('message-err');
     text2.parentNode.removeChild(text2);
     if (val3.value==null || val3.value.trim()=="") { 
     	var text3 = document.getElementById('message-err');
@@ -55,6 +57,7 @@
       val3.focus();
       return false; // cancel submission
     }
+    var text3 = document.getElementById('message-err');
     text3.parentNode.removeChild(text3);
     return true; // allow submit
   }
