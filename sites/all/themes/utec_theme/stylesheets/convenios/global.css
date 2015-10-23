@@ -650,8 +650,8 @@ button.close {
   display: block;
   height: 100%;
   position: absolute;
-  width: 50px;
-  text-align: center;
+  width: 100%;
+  font-size: 1em !important;
 }
 
 .depth-1 > li.sub > a > span::after {
