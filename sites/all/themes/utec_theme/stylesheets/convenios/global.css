@@ -920,3 +920,8 @@ button.close {
       background-color: #a94442; }
   .panel-danger > .panel-footer + .panel-collapse > .panel-body {
     border-bottom-color: #ebccd1; }
+
+.bg-cyan {
+  background-color: #00BFDF !important;
+  color: white !important;
+}
