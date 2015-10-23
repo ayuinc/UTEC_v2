@@ -57,7 +57,7 @@
               <div class="content-wrap bg-gray-lighter depth-2" style="color: black;">
                 <?php $count = 0; ?>
                 <?php foreach ($tab_contents as $key => $tab_content): ?>
-                <section id="bloque-linebox-<?php print $count; ?>" class=" <?php ($count == 0) ? print 'content-current' : '' ; ?>">
+                <section id="bloque-linebox-<?php print $count; ?>" class="">
                   <p style="color: black;"><?php print $tab_content['value'] ?></p>
                 </section>
                 <?php $count++;?>
