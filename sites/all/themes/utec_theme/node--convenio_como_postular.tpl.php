@@ -44,34 +44,26 @@
       </div>
     </div>
 
-    <div class="hidden-lg"> 
-
+    <div class="hidden-lg">   
       <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-        
-        
+        <?php $count = 0; ?>
+        <?php foreach ($tab_titles as $key => $tab_title): ?>
         <div class="panel panel-default">
-          <div class="panel-heading" role="tab" id="headingOne"> 
-          <?php $count = 0; ?>
-          <?php foreach ($tab_titles as $key => $tab_title): ?>
+          <div class="panel-heading" role="tab" id="heading<?php print $count; ?>">
             <h4 class="panel-title">
-              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-<?php print $count; ?>" aria-expanded="true" aria-controls="collapseOne">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="collapse<?php print $count; ?>" aria-expanded="true" aria-controls="collapse<?php print $count; ?>">
                 <?php print $tab_title['value'] ?>
               </a>
             </h4>
-          <?php $count++; ?>
-          <?php endforeach ?>
           </div>
-
-          <?php $count = 0; ?>
-          <?php foreach ($tab_contents as $key => $tab_content): ?>
-          <div id="collapse-<?php print $count; ?>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+          <div id="collapse<?php print $count; ?>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading<?php print $count; ?>">
             <div class="panel-body">
-              <?php print $tab_content['value'] ?>
+              <?php print $tab_contents[$key]['value'] ?>
             </div>
           </div>
-          <?php $count++;?>
-          <?php endforeach ?>
         </div>
+        <?php $count++;?>
+        <?php endforeach ?>
       </div>
     </div>
 
