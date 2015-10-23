@@ -674,13 +674,11 @@ button.close {
 li.tab-current .depth-2 {
   display: block !important;
   list-style: none;
-  margin: 0 20px 13px;
   padding: 0;
 }
 
 .depth-2 a {
   display: inline-block;
-  font-size: 13px;
   line-height: 1.2;
   padding: 5px 0;
   text-decoration: none;
