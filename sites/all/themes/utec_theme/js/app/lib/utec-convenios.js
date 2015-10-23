@@ -7,7 +7,18 @@
 	  $(this).toggleClass('active');
 	});
 
-  $("a[href*=#]:not([href=#])").off("click");
+  $("a[href*=#]:not([href=#])").off("click").click(function() { 
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    } 
+  });
 	$("a[href*=#]:not([href=#])").unbind("click");
 
   var form = document.getElementById("webform-client-form-1353");
