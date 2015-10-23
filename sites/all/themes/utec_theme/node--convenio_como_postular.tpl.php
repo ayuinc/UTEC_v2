@@ -54,10 +54,10 @@
             <li class="first sub <?php ($count == 0) ? print 'tab-current' : '' ; ?>">
               <a href="bloque-linebox-<?php print $count; ?>"><span><?php print $tab_title['value'] ?></i></span>
               </a>
-              <div class="content-wrap bg-gray-lighter" style="color: black;">
+              <div class="content-wrap bg-gray-lighter depth-2" style="color: black;">
                 <?php $count = 0; ?>
                 <?php foreach ($tab_contents as $key => $tab_content): ?>
-                <section id="bloque-linebox-<?php print $count; ?>" class="depth-2 <?php ($count == 0) ? print 'content-current' : '' ; ?>">
+                <section id="bloque-linebox-<?php print $count; ?>" class=" <?php ($count == 0) ? print 'content-current' : '' ; ?>">
                   <p style="color: black;"><?php print $tab_content['value'] ?></p>
                 </section>
                 <?php $count++;?>
