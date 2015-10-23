@@ -24,24 +24,24 @@ if (!String.trim) {
 }
 window.onload=function() {
   document.getElementById("webform-client-form-1353").onsubmit=function() { // needs an ID
-    console.log(this);
-    var val = document.getElementById('edit-submitted-name').value; // 'this' is the form 
-    var val2 = document.getElementById('edit-submitted-subject').value;
-    var val3 = document.getElementById('edit-submitted-messaje').value;
     
-    if (val==null || val.trim()=="") { 
-      alert('Please enter something');
-      this.submitted[name].focus();
+    var val = document.getElementById('edit-submitted-name'); // 'this' is the form 
+    var val2 = document.getElementById('edit-submitted-subject');
+    var val3 = document.getElementById('edit-submitted-messaje');
+    
+    if (val.value==null || val.value.trim()=="") { 
+      val.after('<span>Text required</span>');
+      val.focus();
       return false; // cancel submission
     }
-    if (val2==null || val2.trim()=="") { 
-      alert('Please enter something');
-      this.submitted[subject].focus();
+    if (val2.value==null || val2.value.trim()=="") { 
+      val2.after('<span>Text required</span>');
+      val2.focus();
       return false; // cancel submission
     }
-    if (val3==null || val3.trim()=="") { 
-      alert('Please enter something');
-      this.submitted[messaje].focus();
+    if (val3.value==null || val3.value.trim()=="") { 
+      val3.after('<span>Text required</span>');
+      val3.focus();
       return false; // cancel submission
     }
     return true; // allow submit
