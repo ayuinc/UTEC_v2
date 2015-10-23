@@ -36,7 +36,9 @@
       return false; // cancel submission
     }
     var text = document.getElementById('message-err');
-    text.parentNode.removeChild(text);
+    if (text != null) {
+	    text.parentNode.removeChild(text);
+	  }
     if (val2.value==null || val2.value.trim()=="") { 
     	var text2 = document.getElementById('message-err');
     	if (text2 != null) {
@@ -47,7 +49,9 @@
       return false; // cancel submission
     }
     var text2 = document.getElementById('message-err');
-    text2.parentNode.removeChild(text2);
+    if (text2 != null) {
+	    text2.parentNode.removeChild(text2);
+	  }
     if (val3.value==null || val3.value.trim()=="") { 
     	var text3 = document.getElementById('message-err');
     	if (text3 != null) {
@@ -58,7 +62,9 @@
       return false; // cancel submission
     }
     var text3 = document.getElementById('message-err');
-    text3.parentNode.removeChild(text3);
+    if (text3 != null) {
+	    text3.parentNode.removeChild(text3);
+	  }
     return true; // allow submit
   }
 	
