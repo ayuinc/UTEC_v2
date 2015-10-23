@@ -17,6 +17,7 @@
 				<thead>
 					<tr>
 						<td><?php print t('Semester') ?></td>
+						<td><?php print t('Career') ?></td>
 						<td><?php print t('Courses') ?></td>
 						<td><?php print t('Credits') ?></td>
 						<td><?php print t('Prerequisites') ?></td>
@@ -35,8 +36,8 @@
 					<tr>
 			      <td><?php print t('Total credits') ?></td>
 			      <td></td>
-			      <td><?php print $total; ?></td>
 			      <td></td>
+			      <td><?php print $total; ?></td>
 			      <td></td>
 			    </tr>
 				</tfoot>
