@@ -18,6 +18,10 @@
 	
 	
 }(jQuery));
+// add trim to older IEs
+if (!String.trim) {
+  String.prototype.trim = function() {return this.replace(/^\s+|\s+$/g, "");};
+}
 window.onload=function() {
   document.getElementById("webform-client-form-1353").onsubmit=function() { // needs an ID
     alert(this.submitted[name]);
