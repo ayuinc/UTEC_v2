@@ -926,11 +926,12 @@ button.close {
   color: white !important;
 }
 
-// TABLAS
-
 .table-all-course {
     margin-top: 21px !important;
 }
+
+// TABLAS
+
 
 @media 
 only screen and (max-width: 760px),
