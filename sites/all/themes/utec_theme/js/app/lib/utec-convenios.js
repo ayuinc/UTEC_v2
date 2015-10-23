@@ -7,18 +7,22 @@
 	  $(this).toggleClass('active');
 	});
 
-	
-	/*COLLAPSE CHANGE BUTTON*/
-	$('.closeall').click(function(){
-	  $('.panel-collapse.in')
-	    .collapse('hide');
-	});
-	$('.openall').click(function(){
-	  $('.panel-collapse:not(".in")')
-	    .collapse('show');
-	});
 
-	
+	/*COLLAPSE CHANGE BUTTON*/
+	$('.collapse').collapse();
+
+	// $('.closeall').click(function(){
+	//   $('.panel-collapse.in')
+	//     .collapse('hide');
+	// });
+	// $('.openall').click(function(){
+	//   $('.panel-collapse:not(".in")')
+	//     .collapse('show');
+	// });
+
+
+
+
 	document.getElementById("webform-client-form-1353").onsubmit=function() { // needs an ID
     
     var val = document.getElementById('edit-submitted-name'); // 'this' is the form 

@@ -44,26 +44,25 @@
       </div>
     </div>
 
-    <div class="hidden-lg">
-      
+    <div class="hidden-lg"> 
 
-
-      <div class="panel-group" id="accordion">
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
         <div class="panel panel-default">
-          <div class="panel-heading">
-            <?php $count = 0; ?>
-            <?php foreach ($tab_titles as $key => $tab_title): ?>
+          <div class="panel-heading" role="tab" id="headingOne"> 
+          <?php $count = 0; ?>
+          <?php foreach ($tab_titles as $key => $tab_title): ?>
             <h4 class="panel-title">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse-<?php print $count; ?>">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-<?php print $count; ?>" aria-expanded="true" aria-controls="collapseOne">
                 <?php print $tab_title['value'] ?>
               </a>
             </h4>
-            <?php $count++; ?>
-            <?php endforeach ?>
+          <?php $count++; ?>
+          <?php endforeach ?>
           </div>
+
           <?php $count = 0; ?>
           <?php foreach ($tab_contents as $key => $tab_content): ?>
-          <div id="collapse-<?php print $count; ?>" class="panel-collapse collapse in">
+          <div id="collapse-<?php print $count; ?>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
             <div class="panel-body">
               <?php print $tab_content['value'] ?>
             </div>
@@ -72,13 +71,7 @@
           <?php endforeach ?>
         </div>
       </div>
-
-
-
     </div>
-
-  
-
 
   </div>
   <a class="scroll-down scroll-down-sq size lg" href="#codeofconduct" rel="nofollow"><i class="icon-arrows-down"></i></a>
