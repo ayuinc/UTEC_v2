@@ -18,7 +18,9 @@
 	    .collapse('show');
 	});
 
-	
+	$('#accordion').collapse();
+
+
 	document.getElementById("webform-client-form-1353").onsubmit=function() { // needs an ID
     
     var val = document.getElementById('edit-submitted-name'); // 'this' is the form 
