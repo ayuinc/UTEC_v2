@@ -2,10 +2,6 @@
 
   $( "#button" ).trigger( "click" );
 	$("#contact-us").children().addClass("container-sm");
-	// $( "#button" ).trigger( "click" );
-
-	$("#contact-us").children().addClass("container-sm");
-
 	$('.acordeon').on('click',function(e){
 	  e.preventDefault();
 	  $(this).toggleClass('active');
