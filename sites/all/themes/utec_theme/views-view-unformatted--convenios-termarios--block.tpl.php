@@ -28,14 +28,14 @@
 					<?php endforeach; ?> 																																																						
 				</tbody>
 				<tfoot>
-						<?php print_r($rows); ?>
 					<?php foreach ($rows as $id => $row): ?>
-				    <?php $total = $view->result[$id]->field_n_mero_creditos['0']['rendered']['#markup'];?>
-						<?php print $total; ?>
+				    <?php $total += $view->result[$id]->field_field_n_mero_creditos['0']['rendered']['#markup'];?>
 					<?php endforeach; ?>
 					<tr>
-			      <td>Total</td>
+			      <td><?php print t('Total credits') ?></td>
 			      <td><?php print $total; ?></td>
+			      <td></td>
+			      <td></td>
 			    </tr>
 				</tfoot>
 			</table>			
