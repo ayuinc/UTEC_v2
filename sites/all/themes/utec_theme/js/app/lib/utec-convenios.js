@@ -35,19 +35,19 @@
       val.focus();
       return false; // cancel submission
     }
-    val.parentNode.removeChild(val);
+    val.parentNode.removeChild(htmlString);
     if (val2.value==null || val2.value.trim()=="") { 
       val2.insertAdjacentHTML('afterend', htmlString);
       val2.focus();
       return false; // cancel submission
     }
-    val.parentNode.removeChild(val2);
+    val2.parentNode.removeChild(htmlString);
     if (val3.value==null || val3.value.trim()=="") { 
       val3.insertAdjacentHTML('afterend', htmlString);
       val3.focus();
       return false; // cancel submission
     }
-    val.parentNode.removeChild(val3);
+    val3.parentNode.removeChild(htmlString);
     return true; // allow submit
   }
 	
