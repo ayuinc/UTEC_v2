@@ -7,7 +7,9 @@
 	  $(this).toggleClass('active');
 	});
 
-	$(".panel-group a").off("click");
+  $(".panel-group a").off("click");
+	$(".panel-group a").unbind("click");
+  
 
 	document.getElementById("webform-client-form-1353").onsubmit=function() { // needs an ID
     
