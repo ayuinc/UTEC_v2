@@ -29,7 +29,7 @@
     var val = document.getElementById('edit-submitted-name'); // 'this' is the form 
     var val2 = document.getElementById('edit-submitted-subject');
     var val3 = document.getElementById('edit-submitted-messaje');
-    var htmlString = "<span>Text required</span>"
+    var htmlString = "<span>Text required</span>";
     if (val.value==null || val.value.trim()=="") { 
       val.insertAdjacentHTML('afterend', htmlString);
       val.focus();
