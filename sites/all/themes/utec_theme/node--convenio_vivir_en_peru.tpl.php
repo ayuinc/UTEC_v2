@@ -42,7 +42,7 @@
         <div class="text-white light h4"><?php print $descripcion_general ?></div>
       </div>
     </div>
-    <a class="scroll-down scroll-down-sq size lg" href="#block2" rel="nofollow"><i class="icon-arrows-down"></i></a>
+    <a class="scroll-down scroll-down-sq size lg" href="#block2" rel="nofollow"><i class="icon-arrows-down bg-cyan"></i></a>
   </div>
 </div> <!-- END:Hero -->
 
