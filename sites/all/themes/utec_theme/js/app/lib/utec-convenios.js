@@ -15,15 +15,7 @@
 	  $(this).find('.up').toggleClass("hide");  
 	  $(this).find('.down').toggleClass("hide"); 
 	});
-	
-	
-}(jQuery));
-// add trim to older IEs
-if (!String.trim) {
-  String.prototype.trim = function() {return this.replace(/^\s+|\s+$/g, "");};
-}
-window.onload=function() {
-  document.getElementById("webform-client-form-1353").onsubmit=function() { // needs an ID
+	document.getElementById("webform-client-form-1353").onsubmit=function() { // needs an ID
     
     var val = document.getElementById('edit-submitted-name'); // 'this' is the form 
     var val2 = document.getElementById('edit-submitted-subject');
@@ -46,4 +38,12 @@ window.onload=function() {
     }
     return true; // allow submit
   }
+	
+}(jQuery));
+// add trim to older IEs
+if (!String.trim) {
+  String.prototype.trim = function() {return this.replace(/^\s+|\s+$/g, "");};
+}
+window.onload=function() {
+  
 }
