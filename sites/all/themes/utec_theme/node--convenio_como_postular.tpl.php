@@ -56,7 +56,7 @@
               </a>
             </h4>
           </div>
-          <div id="collapse<?php print $count; ?>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading<?php print $count; ?>">
+          <div id="collapse<?php print $count; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading<?php print $count; ?>">
             <div class="panel-body">
               <?php print $tab_contents[$key]['value'] ?>
             </div>
