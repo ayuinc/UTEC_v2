@@ -22,8 +22,8 @@
 </tr> -->
 <tr>
 	<td><?php print $semestre ?></td>
-	<td><?php print $carrera ?></td>
 	<td><?php print $curso ?></td>
+	<td><?php print $carrera ?></td>
 	<td><?php print $creditos ?></td>	
 	<td><?php print $prerequisitos ?></td>	
 	<td><?php print $objetivos ?></td>	
