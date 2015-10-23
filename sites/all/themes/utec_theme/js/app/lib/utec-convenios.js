@@ -25,9 +25,9 @@ if (!String.trim) {
 window.onload=function() {
   document.getElementById("webform-client-form-1353").onsubmit=function() { // needs an ID
     console.log(this);
-    var val = this.submitted[name].value; // 'this' is the form 
-    var val2 = this.submitted[subject].value;
-    var val3 = this.submitted[messaje].value;
+    var val = this.document.getElementById('edit-submitted-name').value; // 'this' is the form 
+    var val2 = this.document.getElementById('edit-submitted-subject').value;
+    var val3 = this.document.getElementById('edit-submitted-messaje').value;
     
     if (val==null || val.trim()=="") { 
       alert('Please enter something');
