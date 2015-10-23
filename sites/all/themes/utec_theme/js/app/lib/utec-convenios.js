@@ -9,7 +9,7 @@
 
 
 	/*COLLAPSE CHANGE BUTTON*/
-	$('.collapse').collapse();
+	// $('.collapse').collapse();
 
 	// $('.closeall').click(function(){
 	//   $('.panel-collapse.in')
