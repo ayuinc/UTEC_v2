@@ -926,19 +926,11 @@ button.close {
   color: white !important;
 }
 
-.table-all-course {
-    margin-top: 21px !important;
-}
-
-// TABLAS
-
-
-@media 
-only screen and (max-width: 760px),
+@media only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px)  {
   /* Force table to not be like tables anymore */
   .table-all-course {
-    margin-top: 21px !important;
+    margin-top: 14px !important;
     
     /* Hide table headers (but not display: none;, for accessibility) */
     thead tr { 
@@ -982,3 +974,7 @@ only screen and (max-width: 760px),
     td:nth-of-type(10):before { content: "Arbitrary Data"; }*/
   }
 }
+
+// TABLAS
+
+
