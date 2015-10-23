@@ -25,25 +25,31 @@
     var val = document.getElementById('edit-submitted-name'); // 'this' is the form 
     var val2 = document.getElementById('edit-submitted-subject');
     var val3 = document.getElementById('edit-submitted-messaje');
-    var htmlString = "<span>Text required</span>";
+    var htmlString = "<span id='message-err'>Text required</span>";
     if (val.value==null || val.value.trim()=="") { 
+    	var text = document.getElementById('message-err');
+    	text.parentNode.removeChild(text);
       val.insertAdjacentHTML('afterend', htmlString);
       val.focus();
       return false; // cancel submission
     }
-    val.parentNode.removeChild(htmlString);
+    text.parentNode.removeChild(text);
     if (val2.value==null || val2.value.trim()=="") { 
+    	var text2 = document.getElementById('message-err');
+    	text2.parentNode.removeChild(text2);
       val2.insertAdjacentHTML('afterend', htmlString);
       val2.focus();
       return false; // cancel submission
     }
-    val2.parentNode.removeChild(htmlString);
+    text2.parentNode.removeChild(text2);
     if (val3.value==null || val3.value.trim()=="") { 
+    	var text3 = document.getElementById('message-err');
+    	text3.parentNode.removeChild(text3);
       val3.insertAdjacentHTML('afterend', htmlString);
       val3.focus();
       return false; // cancel submission
     }
-    val3.parentNode.removeChild(htmlString);
+    text3.parentNode.removeChild(text3);
     return true; // allow submit
   }
 	
