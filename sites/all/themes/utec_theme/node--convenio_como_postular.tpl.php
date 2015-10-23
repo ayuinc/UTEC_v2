@@ -47,6 +47,7 @@
     <div class="hidden-lg"> 
 
       <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        
         <div class="panel panel-default">
           <div class="panel-heading" role="tab" id="headingOne"> 
           <?php $count = 0; ?>
@@ -70,6 +71,7 @@
           <?php $count++;?>
           <?php endforeach ?>
         </div>
+      
       </div>
     </div>
 
