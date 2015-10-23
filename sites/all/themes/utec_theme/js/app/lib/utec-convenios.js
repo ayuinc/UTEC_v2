@@ -7,21 +7,7 @@
 	  $(this).toggleClass('active');
 	});
 
-
-	/*COLLAPSE CHANGE BUTTON*/
-	// $('.collapse').collapse();
-
-	// $('.closeall').click(function(){
-	//   $('.panel-collapse.in')
-	//     .collapse('hide');
-	// });
-	// $('.openall').click(function(){
-	//   $('.panel-collapse:not(".in")')
-	//     .collapse('show');
-	// });
-
-
-
+	$(".panel-group a").off("click");
 
 	document.getElementById("webform-client-form-1353").onsubmit=function() { // needs an ID
     
