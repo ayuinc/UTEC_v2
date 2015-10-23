@@ -29,22 +29,25 @@
     var val = document.getElementById('edit-submitted-name'); // 'this' is the form 
     var val2 = document.getElementById('edit-submitted-subject');
     var val3 = document.getElementById('edit-submitted-messaje');
-    var htmlString = "<span>Text reuired</span>"
+    var htmlString = "<span>Text required</span>"
     if (val.value==null || val.value.trim()=="") { 
       val.insertAdjacentHTML('afterend', htmlString);
       val.focus();
       return false; // cancel submission
     }
+    val.parentNode.removeChild(val);
     if (val2.value==null || val2.value.trim()=="") { 
       val2.insertAdjacentHTML('afterend', htmlString);
       val2.focus();
       return false; // cancel submission
     }
+    val.parentNode.removeChild(val2);
     if (val3.value==null || val3.value.trim()=="") { 
       val3.insertAdjacentHTML('afterend', htmlString);
       val3.focus();
       return false; // cancel submission
     }
+    val.parentNode.removeChild(val3);
     return true; // allow submit
   }
 	
