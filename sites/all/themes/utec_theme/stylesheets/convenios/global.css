@@ -655,11 +655,11 @@ button.close {
 }
 
 .depth-1 > li.sub > a > span::after {
-  content: "+";
+  content: "";
 }
 
 .depth-1 > li.active.sub > a > span::after {
-  content: "-";
+  content: "";
 }
 
 .depth-1 > li > a:hover,
@@ -672,7 +672,7 @@ button.close {
 }
 
 li.active .depth-2 {
-  display: block;
+  display: block !important;
   list-style: none;
   margin: 0 20px 13px;
   padding: 0;
