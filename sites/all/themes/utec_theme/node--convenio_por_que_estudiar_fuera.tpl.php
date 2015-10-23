@@ -26,7 +26,7 @@
     <div class="col-md-4">
       <div class="anchor-block-4 grid-six-movil grid-1">    
         <div class="pic" style="background-image: url(<?php print image_style_url($image_style, $imagen1); ?>);"></div>
-        <div class="overlay-grid-six" style="background-color: rgba(0,0,0,0.50); opacity: 1; padding: 14px;">
+        <div class="overlay-grid-six" style="background-color: rgba(0,0,0,0.2); opacity: 1; padding: 14px;">
           <h5 class="bold text-left mb-7 mt-56"><?php print $titulos['0']['value']; ?></h5>
           <div class="separator-white mt-7 separator-xs "></div>
           <h5 class="thin text-left"><?php print $contenido['0']['value']; ?></h5>
@@ -34,7 +34,7 @@
       </div>
       <div class="anchor-block-4 grid-six-movil grid-3">    
         <div class="pic" style="background-image: url(<?php print image_style_url($image_style_3, $imagen3); ?>);"></div>
-        <div class="overlay-grid-six" style="background-color: rgba(0,0,0,0.50); opacity: 1; padding: 14px;">
+        <div class="overlay-grid-six" style="background-color: rgba(0,0,0,0.2); opacity: 1; padding: 14px;">
           <h5 class="bold text-left mb-7 mt-70"><?php print $titulos['2']['value']; ?></h5>
           <div class="separator-white mt-7 separator-xs "></div>
           <h5 class="thin text-left"><?php print $contenido['2']['value']; ?> </h5>
@@ -44,7 +44,7 @@
     <div class="col-md-8">
       <div class="anchor-block-2 grid-six-movil grid-2">    
         <div class="pic" style="background-image: url(<?php print image_style_url($image_style_mul, $imagen2); ?>);"></div>
-        <div class="overlay-grid-six" style="background-color: rgba(0,0,0,0.50); opacity: 1; padding: 14px;">
+        <div class="overlay-grid-six" style="background-color: rgba(0,0,0,0.2); opacity: 1; padding: 14px;">
           <h5 class="bold text-left mb-7 "><?php print $titulos['1']['value']; ?></h5>
           <div class="separator-white mt-7 separator-xs "></div>
           <h5 class="thin text-left"><?php print $contenido['1']['value']; ?></h5>
@@ -52,7 +52,7 @@
       </div>
       <div class="anchor-block-3 grid-six-movil grid-1">    
         <div class="pic" style="background-image: url(<?php print image_style_url($image_style_4, $imagen4); ?>);"></div>
-        <div class="overlay-grid-six" style="background-color: rgba(0,0,0,0.50); opacity: 1; padding: 14px;">
+        <div class="overlay-grid-six" style="background-color: rgba(0,0,0,0.2); opacity: 1; padding: 14px;">
           <h5 class="bold text-left mb-7 "><?php print $titulos['3']['value']; ?> s</h5>
           <div class="separator-white mt-7 separator-xs "></div>
           <h5 class="thin text-left"><?php print $contenido['3']['value']; ?></h5>
@@ -60,7 +60,7 @@
       </div>
       <div class="anchor-block-4 grid-six-movil grid-1">    
         <div class="pic" style="background-image: url(<?php print image_style_url($image_style_5, $imagen5); ?>);"></div>
-        <div class="overlay-grid-six" style="background-color: rgba(0,0,0,0.50); opacity: 1; padding: 14px;">
+        <div class="overlay-grid-six" style="background-color: rgba(0,0,0,0.2); opacity: 1; padding: 14px;">
           <h5 class="bold text-left mb-7 "><?php print $titulos['4']['value']; ?></h5>
           <div class="separator-white mt-7 separator-xs "></div>
           <h5 class="thin text-left"><?php print $contenido['4']['value']; ?></h5>
@@ -68,7 +68,7 @@
       </div>
       <div class="anchor-block-2 grid-six-movil grid-2" style="float: left;">    
         <div class="pic" style="background-image: url(<?php print image_style_url($image_style_6, $imagen6); ?>);"></div>
-        <div class="overlay-grid-six" style="background-color: rgba(0,0,0,0.50); opacity: 1; padding: 14px;">
+        <div class="overlay-grid-six" style="background-color: rgba(0,0,0,0.2); opacity: 1; padding: 14px;">
           <h5 class="bold text-left mb-7 "><?php print $titulos['5']['value']; ?></h5>
           <div class="separator-white mt-7 separator-xs "></div>
           <h5 class="thin text-left"><?php print $contenido['5']['value']; ?> </h5>
