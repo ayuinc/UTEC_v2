@@ -14,7 +14,7 @@
 	
 	/*COLLAPSE CHANGE BUTTON*/
 	$('span').on('click', function (event) {
-	  $(this).parent().parent().toggleClass('active').siblings().removeClass('active');
+	  $(this).parent().parent().toggleClass('tab-current').siblings().removeClass('tab-current');
 	  event.preventDefault();
 	});
 
