@@ -119,12 +119,12 @@
     </div>
     <div class="hidden-lg">   
       <?php $count = 0; ?>
-      <div class="panel-group" id="accordion<?php print $count; ?>" role="tablist" aria-multiselectable="true">
+      <div class="panel-group" id="accordion0" role="tablist" aria-multiselectable="true">
         <?php foreach ($titulos_tab_bloque_3 as $key => $titulo_tab_bloque_3): ?>
         <div class="panel panel-default" style="min-height: 30px;">
           <div class="panel-heading" role="tab" id="heading<?php print $count; ?>">
             <h4 class="panel-title">
-              <a role="button" data-toggle="collapse" data-parent="#accordion<?php print $count; ?>" href="#collapse<?php print $count; ?>" aria-expanded="false" aria-controls="collapse<?php print $count; ?>">
+              <a role="button" data-toggle="collapse" data-parent="#accordion0" href="#collapse<?php print $count; ?>" aria-expanded="false" aria-controls="collapse<?php print $count; ?>">
                 <?php print $titulo_tab_bloque_3['value'] ?>
               </a>
             </h4>
