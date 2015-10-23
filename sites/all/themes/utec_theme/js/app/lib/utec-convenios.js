@@ -19,7 +19,7 @@
       }
     } 
   });
-	$("a[href*=#]:not([href=#])").unbind("click");
+	// $("a[href*=#]:not([href=#])").unbind("click");
 
   var form = document.getElementById("webform-client-form-1353");
   if (form!=null) {
