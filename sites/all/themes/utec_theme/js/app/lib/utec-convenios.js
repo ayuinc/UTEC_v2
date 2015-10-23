@@ -2,12 +2,8 @@
 
   $( "#button" ).trigger( "click" );
 	$("#contact-us").children().addClass("container-sm");
-	$('.acordeon').on('click',function(e){
-	  e.preventDefault();
-	  $(this).toggleClass('active');
-	});
 
-  $("a[href*=#]:not([href=#])").off("click");
+  // $("a[href*=#]:not([href=#])").off("click");
 	// $("a[href*=#]:not([href=#])").unbind("click");
 
   var form = document.getElementById("webform-client-form-1353");
