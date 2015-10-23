@@ -2,7 +2,7 @@
 
   $( "#button" ).trigger( "click" );
 	$("#contact-us").children().addClass("container-sm");
-	$( "#button" ).trigger( "click" );
+	// $( "#button" ).trigger( "click" );
 
 	$("#contact-us").children().addClass("container-sm");
 
