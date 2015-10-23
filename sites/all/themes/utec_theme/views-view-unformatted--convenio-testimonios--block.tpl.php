@@ -16,7 +16,7 @@
 					<?php if (fmod($count, 3) == 0) : ?>
 					<div class="row item <?php ($count == 0) ? print 'active' : '' ; ?>">
 					<?php endif; ?>  
-						<div class="col-sm-4">
+						<div class="col-sm-4 <?php ($count == 1) : print 'col-sm-offset-2' ? print ''; ?>">
 					    <?php print $row;?>
 						</div>
 			    <?php if (fmod($count, 3) == 2) : ?> 
