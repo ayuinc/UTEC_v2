@@ -48,17 +48,17 @@
 
       <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
         <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne"> 
           <?php $count = 0; ?>
           <?php foreach ($tab_titles as $key => $tab_title): ?>
-          <div class="panel-heading" role="tab" id="headingOne"> 
             <h4 class="panel-title">
               <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-<?php print $count; ?>" aria-expanded="true" aria-controls="collapseOne">
                 <?php print $tab_title['value'] ?>
               </a>
             </h4>
-          </div>
           <?php $count++; ?>
           <?php endforeach ?>
+          </div>
 
           <?php $count = 0; ?>
           <?php foreach ($tab_contents as $key => $tab_content): ?>
