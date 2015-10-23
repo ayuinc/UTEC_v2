@@ -48,13 +48,13 @@
       
       <div class="tabs tabs-style-linebox ">
         <nav>
-          <ul>
+          <ul class="depth-1">
             <?php $count = 0; ?>
             <?php foreach ($tab_titles as $key => $tab_title): ?>
-            <li class="acordeon <?php ($count == 0) ? print 'tab-current' : '' ; ?>">
+            <li class="first sub <?php ($count == 0) ? print 'tab-current' : '' ; ?>">
               <a href="bloque-linebox-<?php print $count; ?>"><span><?php print $tab_title['value'] ?> <i class="more-less glyphicon glyphicon-plus"></i></span>
               </a>
-              <div class="content-wrap bg-gray-lighter" style="color: black;">
+              <div class="content-wrap bg-gray-lighter depth-2" style="color: black;">
                 <?php $count = 0; ?>
                 <?php foreach ($tab_contents as $key => $tab_content): ?>
                 <section id="bloque-linebox-<?php print $count; ?>" class="<?php ($count == 0) ? print 'content-current' : '' ; ?>">
@@ -66,9 +66,9 @@
             </li>
             <?php $count++; ?>
             <?php endforeach ?>
-
-            
           </ul>
+
+
         </nav>
       </div>
     </div>

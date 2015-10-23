@@ -10,12 +10,21 @@
 	  e.preventDefault();
 	  $(this).toggleClass('active');
 	});
+
+	
 	/*COLLAPSE CHANGE BUTTON*/
-	$(".acordeon").click(function(){
-	  $(this).find('.up').toggleClass("hide");  
-	  $(this).find('.down').toggleClass("hide"); 
+	$('span').on('click', function (event) {
+	  $(this).parent().parent().toggleClass('active').siblings().removeClass('active');
+	  event.preventDefault();
+	});
+
+	/*COLLAPSE CHANGE BUTTON*/
+	$('.change-arrow').click(function(){
+	  $(this).parent().find('#up').toggleClass("hidden");
+	  $(this).parent().find('#down').toggleClass("hidden"); 
 	});
 	
+
 	  document.getElementById("webform-client-form-1353").onsubmit=function() { // needs an ID
 	    var val = this.submitted[name].value; // 'this' is the form 
 	    var val2 = this.submitted[subject].value;
