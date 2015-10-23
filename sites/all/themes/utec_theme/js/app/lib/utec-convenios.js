@@ -7,8 +7,8 @@
 	  $(this).toggleClass('active');
 	});
 
-  $(".panel-group a").off("click");
-	$(".panel-group a").unbind("click");
+  $(".panel-group a[href*=#]:not([href=#])").off("click");
+	$(".panel-group a[href*=#]:not([href=#])").unbind("click");
 
   var form = document.getElementById("webform-client-form-1353");
   if (form!=null) {
