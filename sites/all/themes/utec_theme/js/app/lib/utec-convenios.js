@@ -28,7 +28,9 @@
     var htmlString = "<span id='message-err'>Text required</span>";
     if (val.value==null || val.value.trim()=="") { 
     	var text = document.getElementById('message-err');
-    	text.parentNode.removeChild(text);
+    	if (text != null) {
+	    	text.parentNode.removeChild(text);
+    	}
       val.insertAdjacentHTML('afterend', htmlString);
       val.focus();
       return false; // cancel submission
@@ -36,7 +38,9 @@
     text.parentNode.removeChild(text);
     if (val2.value==null || val2.value.trim()=="") { 
     	var text2 = document.getElementById('message-err');
-    	text2.parentNode.removeChild(text2);
+    	if (text2 != null) {
+	    	text2.parentNode.removeChild(text2);
+	    }
       val2.insertAdjacentHTML('afterend', htmlString);
       val2.focus();
       return false; // cancel submission
@@ -44,7 +48,9 @@
     text2.parentNode.removeChild(text2);
     if (val3.value==null || val3.value.trim()=="") { 
     	var text3 = document.getElementById('message-err');
-    	text3.parentNode.removeChild(text3);
+    	if (text3 != null) {
+	    	text3.parentNode.removeChild(text3);
+	    }
       val3.insertAdjacentHTML('afterend', htmlString);
       val3.focus();
       return false; // cancel submission
