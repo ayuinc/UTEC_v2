@@ -941,7 +941,7 @@ button.close {
     
     tr { border: 1px solid #ccc; }
     
-    td { 
+    .titulo { 
       /* Behave  like a "row" */
       border: none !important;
       border-bottom: 1px solid #eee !important; 
