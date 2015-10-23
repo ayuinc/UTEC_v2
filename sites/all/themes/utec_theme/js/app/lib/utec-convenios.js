@@ -29,19 +29,19 @@
     var val = document.getElementById('edit-submitted-name'); // 'this' is the form 
     var val2 = document.getElementById('edit-submitted-subject');
     var val3 = document.getElementById('edit-submitted-messaje');
-    
+    var htmlString = "<span>Text reuired</span>"
     if (val.value==null || val.value.trim()=="") { 
-      val.after('<span>Text required</span>');
+      val.insertAdjacentHTML('afterend', htmlString);
       val.focus();
       return false; // cancel submission
     }
     if (val2.value==null || val2.value.trim()=="") { 
-      val2.after('<span>Text required</span>');
+      val2.insertAdjacentHTML('afterend', htmlString);
       val2.focus();
       return false; // cancel submission
     }
     if (val3.value==null || val3.value.trim()=="") { 
-      val3.after('<span>Text required</span>');
+      val3.insertAdjacentHTML('afterend', htmlString);
       val3.focus();
       return false; // cancel submission
     }
