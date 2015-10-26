@@ -11,7 +11,7 @@
 	<h1 class="light"><?php print $view->result['0']->field_field_carrera_referencia['0']['rendered']['#markup']; ?></h1>
 	<div class="separator-gray separator-lg"></div>
 	<h3></h3>
-	<div class="pv-35">
+	<div class="pv-70">
 		<div class="table-responsive table-custom">
 			<table class="table">
 				<thead>
