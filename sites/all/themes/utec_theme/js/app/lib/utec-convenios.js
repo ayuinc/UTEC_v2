@@ -5,6 +5,20 @@
 
   // $("a[href*=#]:not([href=#])").off("click");
 	// $("a[href*=#]:not([href=#])").unbind("click");
+  // Trigger Tabs with slider in living in peru
+  $(".carousel-custom a").on("click", function(){
+    var id = $(this).parent().parent().parent().parent().parent().parent().attr('id');
+    var selector = $(this).parent().index();
+    var click = $("#"+id+" li[data-slide-to='"+selector+"']");
+    $(click).trigger( "click" );
+  });
+
+  // $('.panel-default a[role="button"]').on("click", function(){
+  //   var id = $(this).parent().parent().parent().parent().attr('id');
+  //   var selector = $(this).parent().index();
+  //   var click = $("#"+id+" li[data-slide-to='"+selector+"']");
+  //   $(click).trigger( "click" );
+  // });
 
   var form = document.getElementById("webform-client-form-1353");
   if (form!=null) {
@@ -60,6 +74,4 @@
 if (!String.trim) {
   String.prototype.trim = function() {return this.replace(/^\s+|\s+$/g, "");};
 }
-window.onload=function() {
-  
-}
+
