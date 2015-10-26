@@ -87,7 +87,6 @@
 </div>
 <!-- BLOQUE 3 -->
 <div class="container-sm section-scroll-content pt-35" id="block3">
-<<<<<<< HEAD
   <div class="mh-21">
     <h2 class="light"><?php print $titulo_bloque_3 ?></h2>
     <div class="separator-gray separator-sm"></div>
@@ -95,62 +94,6 @@
       <!-- <div class="pv-ch-7"> -->
         <?php //print $descripcion ?>   
       <!-- </div> -->
-=======
-  <h2 class="light"><?php print $titulo_bloque_3 ?></h2>
-  <div class="separator-gray separator-sm"></div>
-  <div class="p-ch-gray-dark">
-    <!-- <div class="pv-ch-7"> -->
-      <?php //print $descripcion ?>   
-    <!-- </div> -->
-
-    <div class="hidden-xs hidden-sm">
-      <div class="tabs tabs-style-linebox">
-        <nav>
-          <ul>
-            <?php $count = 0; ?>
-            <?php foreach ($titulos_tab_bloque_3 as $key => $titulo_tab_bloque_3): ?>
-            <li class="<?php ($count == 0) ? print 'tab-current' : '' ; ?>">
-              <a href="bloque-tres-<?php print $count; ?>"><span><?php print $titulo_tab_bloque_3['value'] ?></span>
-              </a>
-            </li>
-            <?php $count++; ?>
-            <?php endforeach ?>
-          </ul>
-        </nav>
-        <div class="content-wrap bg-gray-lighter" style="color: black;">
-          <?php $count = 0; ?>
-          <?php foreach ($cuerpos_tab_bloque_3 as $key => $cuerpo_tab_bloque_3): ?>
-          <section id="bloque-tres-<?php print $count; ?>" class="<?php ($count == 0) ? print 'content-current' : '' ; ?>">
-            <p style="color: black;"><?php print $cuerpo_tab_bloque_3['value'] ?></p>
-          </section>
-          <?php $count++;?>
-          <?php endforeach ?>
-        </div><!-- /content -->
-      </div>
-    </div>
-    <div class="hidden-lg">   
-      <?php $count = 0; ?>
-      <div class="panel-group" id="accordion0" role="tablist" aria-multiselectable="true">
-        <?php foreach ($titulos_tab_bloque_3 as $key => $titulo_tab_bloque_3): ?>
-        <div class="panel panel-default" style="min-height: 30px;">
-          <div class="panel-heading" role="tab" id="heading<?php print $count; ?>">
-            <h4 class="panel-title">
-              <a role="button" data-target="#collapse<?php print $count; ?>" data-toggle="collapse" data-parent="#accordion0" aria-expanded="false" aria-controls="collapse<?php print $count; ?>" style="cursor:pointer;">
-                <?php print $titulo_tab_bloque_3['value'] ?>
-              </a>
-            </h4>
-          </div>
-          <div id="collapse<?php print $count; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading<?php print $count; ?>">
-            <div class="panel-body">
-              <?php print $cuerpos_tab_bloque_3[$key]['value'] ?>
-            </div>
-          </div>
-        </div>
-        <?php $count++;?>
-        <?php endforeach ?>
-      </div>
-    </div>
->>>>>>> 7f992d91b873db72036b5bbc1a5f139d3a4dcf9e
 
       <div class="hidden-xs hidden-sm">
         <div class="tabs tabs-style-linebox">
@@ -362,25 +305,6 @@
             </div><!-- /content -->
           </div>
         </div>
-<<<<<<< HEAD
-        <div class="hidden-lg">   
-          <?php $count = 0; ?>
-          <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
-            <?php foreach ($titulos_tab_bloque_6 as $key => $titulo_tab_bloque_6): ?>
-            <div class="panel panel-default" style="min-height: 30px;">
-              <div class="panel-heading" role="tab" id="heading2<?php print $count; ?>">
-                <h4 class="panel-title">
-                  <a role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse2<?php print $count; ?>" aria-expanded="false" aria-controls="collapse2<?php print $count; ?>">
-                    <?php print $titulo_tab_bloque_6['value'] ?>
-                    <span class="pull-right text-primary">+</span>
-                  </a>
-                </h4>
-              </div>
-              <div id="collapse2<?php print $count; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2<?php print $count; ?>">
-                <div class="panel-body">
-                  <?php print $cuerpos_tab_bloque_6[$key]['value'] ?>
-                </div>
-=======
       </div>
       <div class="hidden-lg">   
         <?php $count = 0; ?>
@@ -391,13 +315,13 @@
               <h4 class="panel-title">
                 <a role="button" data-toggle="collapse" data-parent="#accordion2" data-target="#collapse2<?php print $count; ?>" aria-expanded="false" aria-controls="collapse2<?php print $count; ?>" style="cursor:pointer">
                   <?php print $titulo_tab_bloque_6['value'] ?>
+                  <span class="pull-right text-primary">+</span>
                 </a>
               </h4>
             </div>
             <div id="collapse2<?php print $count; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2<?php print $count; ?>">
               <div class="panel-body">
                 <?php print $cuerpos_tab_bloque_6[$key]['value'] ?>
->>>>>>> 7f992d91b873db72036b5bbc1a5f139d3a4dcf9e
               </div>
             </div>
             <?php $count++;?>
