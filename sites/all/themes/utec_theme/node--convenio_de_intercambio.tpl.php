@@ -8,10 +8,12 @@
 ?>
 
 <div class="container-sm">
-  <h1 class="light"><?php print $titulo ?></h1>
-  <div class="separator-gray separator-sm"></div>
-  <?php if ($banner!='')  { ?>
-  <img class="img-responsive" src="<?php print image_style_url($image_style_2, $banner); ?>" alt="<?php print $titulo ?>">
-  <?php } ?>
-  <p><?php print $cuerpo ?></p>
+  <div class="mh-21">
+    <h1 class="light"><?php print $titulo ?></h1>
+    <div class="separator-gray separator-sm"></div>
+    <?php if ($banner!='')  { ?>
+    <img class="img-responsive" src="<?php print image_style_url($image_style_2, $banner); ?>" alt="<?php print $titulo ?>">
+    <?php } ?>
+    <p><?php print $cuerpo ?></p>
+  </div>
 </div>

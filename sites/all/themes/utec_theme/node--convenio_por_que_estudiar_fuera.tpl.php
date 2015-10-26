@@ -15,10 +15,10 @@
 ?>
 
 <div class="container-sm section-scroll-content pt-28" id="studyabroad">
-  <h2 class="light"><?php print $titulo ?></h2>
-  <div class="separator-gray separator-sm"></div>
+  <h2 class="light mh-21"><?php print $titulo ?></h2>
+  <div class="separator-gray separator-sm ml-21"></div>
   <div class="p-ch-gray-dark">
-    <div class="pv-ch-7">
+    <div class="pv-ch-7 mh-21">
       <?php print $descripcion ?>   
     </div> 
   </div>
