@@ -961,14 +961,23 @@ button.close {
     margin-bottom: 11px;
   }
 
+  .table-all-course .curso-xs {
+    font-size: 2em !important;
+  }
+
+  .table-all-course ul li::before {
+    color: #00BFDF !important;
+  }
+
   .table-all-course table .titulo-tabla[data-title]:before,
   .table-all-course table td[data-title]:before {
     content: attr(data-title) ":\00A0";
     font-weight: bold;
+    color: gray !important;
   }
 
   .table-all-course table td {
-    border: none;
+    border: none !important;
     margin-bottom: 6px;
     color: #444;
   }

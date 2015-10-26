@@ -22,7 +22,7 @@
 </tr> -->
 <tr>
 	<td data-title="Semester"><?php print $semestre ?></td>
-	<td data-title="Courses"><?php print $curso ?></td>
+	<td class="curso-xs"><?php print $curso ?></td>
 	<td data-title="Careers"><?php print $carrera ?></td>
 	<td data-title="Credits"><?php print $creditos ?></td>	
 	<td data-title="Prerequisites"><?php print $prerequisitos ?></td>	
