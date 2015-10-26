@@ -12,7 +12,7 @@
 
 <tr>
 	<td class="curso-xs"><?php print $curso; ?></td>
-	<td data-title="Credits"><?php print $creditos ?></td>	
+	<td data-title="Credits" class="text-center"><?php print $creditos ?></td>	
 	<td data-title="Prerequisites"><?php print $prerequisitos ?></td>	
 	<td data-title="Objectives"><?php print $objetivos ?></td>	
 </tr>
