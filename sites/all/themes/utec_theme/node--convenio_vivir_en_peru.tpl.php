@@ -187,14 +187,14 @@
         <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
           <?php foreach ($titulos_tab_bloque_4 as $key => $titulo_tab_bloque_4): ?>
           <div class="panel panel-default" style="min-height: 30px;">
-            <div class="panel-heading" role="tab" id="heading<?php print $count; ?>">
+            <div class="panel-heading" role="tab" id="heading1<?php print $count; ?>">
               <h4 class="panel-title">
-                <a role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapse<?php print $count; ?>" aria-expanded="false" aria-controls="collapse<?php print $count; ?>">
+                <a role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapse1<?php print $count; ?>" aria-expanded="false" aria-controls="collapse1<?php print $count; ?>">
                   <?php print $titulo_tab_bloque_4['value'] ?>
                 </a>
               </h4>
             </div>
-            <div id="collapse<?php print $count; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading<?php print $count; ?>">
+            <div id="collapse1<?php print $count; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1<?php print $count; ?>">
               <div class="panel-body">
                 <?php print $cuerpos_tab_bloque_4[$key]['value'] ?>
               </div>
@@ -299,14 +299,14 @@
         <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
           <?php foreach ($titulos_tab_bloque_6 as $key => $titulo_tab_bloque_6): ?>
           <div class="panel panel-default" style="min-height: 30px;">
-            <div class="panel-heading" role="tab" id="heading<?php print $count; ?>">
+            <div class="panel-heading" role="tab" id="heading2<?php print $count; ?>">
               <h4 class="panel-title">
-                <a role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse<?php print $count; ?>" aria-expanded="false" aria-controls="collapse<?php print $count; ?>">
+                <a role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse2<?php print $count; ?>" aria-expanded="false" aria-controls="collapse2<?php print $count; ?>">
                   <?php print $titulo_tab_bloque_6['value'] ?>
                 </a>
               </h4>
             </div>
-            <div id="collapse<?php print $count; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading<?php print $count; ?>">
+            <div id="collapse2<?php print $count; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2<?php print $count; ?>">
               <div class="panel-body">
                 <?php print $cuerpos_tab_bloque_6[$key]['value'] ?>
               </div>
