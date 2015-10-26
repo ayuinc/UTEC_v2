@@ -29,6 +29,6 @@
       <?php endforeach ?>
     </div>  
   </div>
-    <a class="scroll-down scroll-down-sq size lg mb-14" href="#testimonies" rel="nofollow"><i class="icon-arrows-down"></i></a>
+    <!-- <a class="scroll-down scroll-down-sq size lg mb-14" href="#testimonies" rel="nofollow"><i class="icon-arrows-down"></i></a> -->
   </div>
 </div>
