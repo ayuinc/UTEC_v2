@@ -936,56 +936,53 @@ button.close {
   color: white !important;
 }
 
-@media only screen and (max-width: 760px),
-(min-device-width: 768px) and (max-device-width: 1024px)  {
-    
-  .table-all-course thead tr { 
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
-  
-  .table-all-course tr { border: 1px solid #ccc; }
-  
-  .table-all-course .titulo { 
-    border: none !important;
-    border-bottom: 1px solid #eee !important; 
-    position: relative !important;
-    padding-left: 50% !important; 
-  }
-  
-  .table-all-course td:before { 
-    position: absolute;
-    top: 6px;
-    left: 6px;
-    width: 45%; 
-    padding-right: 10px; 
-  }
-    
-  .table-all-course td:nth-of-type(1):before { content: "Semester"; }
-  .table-all-course td:nth-of-type(2):before { content: "Courses"; }
-  .table-all-course td:nth-of-type(3):before { content: "Careers"; }
-  .table-all-course td:nth-of-type(4):before { content: "Credits"; }
-  .table-all-course td:nth-of-type(5):before { content: "Prerequisites"; }
-  .table-all-course td:nth-of-type(6):before { content: "Objectives"; }
-  /*td:nth-of-type(7):before { content: "Date of Birth"; }
-  td:nth-of-type(8):before { content: "Dream Vacation City"; }
-  td:nth-of-type(9):before { content: "GPA"; }
-  td:nth-of-type(10):before { content: "Arbitrary Data"; }*/
 
-
-  .table-all-course thead tr { 
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
+@media screen and (max-width: 480px) {
+  .table-all-course table,
+  .table-all-course tbody {
+    display: block;
+    width: 100%;
   }
 
-  .table-all-course tr { 
-    border: 1px solid #ccc; 
-   }
+  .table-all-course thead { display: none; }
 
+  .table-all-course table tr,
+  .table-all-course table .titulo-tabla,
+  .table-all-course table td {
+    display: block;
+    padding: 0;
+    text-align: left;
+    white-space: normal;
+  }
+
+  .table-all-course table tr {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 11px;
+    margin-bottom: 11px;
+  }
+
+  .table-all-course table .titulo-tabla[data-title]:before,
+  .table-all-course table td[data-title]:before {
+    content: attr(data-title) ":\00A0";
+    font-weight: bold;
+  }
+
+  .table-all-course table td {
+    border: none;
+    margin-bottom: 6px;
+    color: #444;
+  }
+
+  .table-all-course table td:empty { display: none; }
+
+  .table-all-course table td:first-child {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #333;
+  }
+  .table-all-course table td:first-child:before { content: ''; }
 }
 
-// TABLAS
 
 

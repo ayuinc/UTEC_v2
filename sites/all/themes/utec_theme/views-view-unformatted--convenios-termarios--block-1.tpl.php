@@ -16,12 +16,12 @@
 			<table class="table">
 				<thead>
 					<tr class="text-center">
-						<td class="titulo"><?php print t('Semester') ?></td>
-						<td class="titulo"><?php print t('Courses') ?></td>
-						<td class="titulo"><?php print t('Careers') ?></td>
-						<td class="titulo"><?php print t('Credits') ?></td>
-						<td class="titulo"><?php print t('Prerequisites') ?></td>
-						<td class="titulo"><?php print t('Objectives') ?></td>
+						<td class="titulo-tabla"><?php print t('Semester') ?></td>
+						<td class="titulo-tabla"><?php print t('Courses') ?></td>
+						<td class="titulo-tabla"><?php print t('Careers') ?></td>
+						<td class="titulo-tabla"><?php print t('Credits') ?></td>
+						<td class="titulo-tabla"><?php print t('Prerequisites') ?></td>
+						<td class="titulo-tabla"><?php print t('Objectives') ?></td>
 					</tr>
 				</thead>
 				<tbody>
@@ -34,12 +34,12 @@
 				    <?php $total += $view->result[$id]->field_field_n_mero_creditos['0']['rendered']['#markup'];?>
 					<?php endforeach; ?>
 					<tr class="text-center">
-			      <td class="titulo"><?php print t('Total credits') ?></td>
-			      <td class="titulo"></td>
-			      <td class="titulo"></td>
-			      <td class="titulo"><?php print $total; ?></td>
-			      <td class="titulo"></td>
-			      <td class="titulo"></td>
+			      <td class="titulo-tabla"><?php print t('Total credits') ?></td>
+			      <td></td>
+			      <td></td>
+			      <td><?php print $total; ?></td>
+			      <td></td>
+			      <td></td>
 			    </tr>
 				</tfoot>
 			</table>			
