@@ -37,7 +37,7 @@
 			      <td class="titulo-tabla"><?php print t('Total credits') ?></td>
 			      <td></td>
 			      <td></td>
-			      <td><?php print $total; ?></td>
+			      <td data-title="Total credits"><?php print $total; ?></td>
 			      <td></td>
 			      <td></td>
 			    </tr>
