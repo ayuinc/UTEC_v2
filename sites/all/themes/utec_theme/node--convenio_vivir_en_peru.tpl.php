@@ -131,6 +131,7 @@ data-toggle="collapse" data-parent="#accordion0" aria-expanded="false"
 aria-controls="collapse<?php print $count; ?>"
 style="cursor:pointer;">
 <?php print $titulo_tab_bloque_3['value'] ?>
+<span class="pull-right text-primary">&#43;</span>
 </a>
 </h4>
 </div>
@@ -206,6 +207,7 @@ data-target="#collapse1<?php print $count; ?>" aria-expanded="false"
 aria-controls="collapse1<?php print $count; ?>"
 style="cursor:pointer">
 <?php print $titulo_tab_bloque_4['value'] ?>
+<span class="pull-right text-primary">&#43;</span>
 </a>
 </h4>
 </div>
@@ -333,6 +335,7 @@ data-target="#collapse2<?php print $count; ?>" aria-expanded="false"
 aria-controls="collapse2<?php print $count; ?>"
 style="cursor:pointer">
 <?php print $titulo_tab_bloque_6['value'] ?>
+<span class="pull-right text-primary">&#43;</span>
 </a>
 </h4>
 </div>
