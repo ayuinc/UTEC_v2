@@ -13,10 +13,9 @@
     $(click).trigger( "click" );
   });
 
-  $(".change").click(function(){
+  $(".collapsed").click(function(){
    $(this).find('.up').toggleClass("hide");  
-   $(this).find('.down').toggleClass("hide"); 
-    
+   $(this).find('.down').toggleClass("hide");  
   });
 
   // $('.panel-default a[role="button"]').on("click", function(){
