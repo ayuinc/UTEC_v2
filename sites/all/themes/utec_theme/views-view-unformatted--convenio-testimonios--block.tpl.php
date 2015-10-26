@@ -73,7 +73,9 @@
 		<div class="text-center mt-21"><a href="page/27/testimonies" class="h4 text-primary"><?php print t('View more testimonies'); ?></a></div>
 		<!-- <a class="scroll-down scroll-down-sq size lg" href="#apply" rel="nofollow"><i class="icon-arrows-down"></i></a> -->
 	</div>
-	<a href="/en/studying-in-peru#contact-us" class="btn btn-lg btn-primary btn-custom bold"><span style="color:white">Apply</span></a>
+	<div class="container-sm section-scroll-content text-center">
+		<a href="/en/studying-in-peru#contact-us" class="btn btn-lg btn-primary btn-custom bold"><span style="color:white">Apply</span></a>
+	</div>
 	<a class="scroll-down scroll-down-sq size lg" href="#apply" rel="nofollow"><i class="icon-arrows-down"></i></a>
 </div>
 
