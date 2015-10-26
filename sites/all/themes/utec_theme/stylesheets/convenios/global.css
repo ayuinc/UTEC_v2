@@ -343,7 +343,7 @@ textarea,
 
 @media only screen and (max-width: 480px) {
   .img-student-utec {
-    background-size: contain !important;
+    background-size: cover !important;
     min-height: 150px !important;
   }
 }
