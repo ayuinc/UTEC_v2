@@ -11,15 +11,15 @@
 	<h1 class="light"><?php print $view->result['0']->field_field_carrera_referencia['0']['rendered']['#markup']; ?></h1>
 	<div class="separator-gray separator-lg"></div>
 	<h3></h3>
-	<div class="pv-35">
-		<div class="table-responsive table-custom">
+	<div class="pv-35 table-all-course">
+		<div class="table-custom">
 			<table class="table">
 				<thead>
 					<tr class="text-center">
-						<td><?php print t('Courses') ?></td>
-						<td><?php print t('Credits') ?></td>
-						<td><?php print t('Prerequisites') ?></td>
-						<td><?php print t('Objectives') ?></td>
+						<td class="titulo-tabla"><?php print t('Courses') ?></td>
+						<td class="titulo-tabla"><?php print t('Credits') ?></td>
+						<td class="titulo-tabla"><?php print t('Prerequisites') ?></td>
+						<td class="titulo-tabla"><?php print t('Objectives') ?></td>
 					</tr>
 				</thead>
 				<tbody>
@@ -32,8 +32,8 @@
 				    <?php $total += $view->result[$id]->field_field_n_mero_creditos['0']['rendered']['#markup'];?>
 					<?php endforeach; ?>
 					<tr class="text-center">
-			      <td><?php print t('Total credits') ?></td>
-			      <td><?php print $total; ?></td>
+			      <td class="hidden-xs"><?php print t('Total credits') ?></td>
+			      <td data-title="Total credits"><?php print $total; ?></td>
 			      <td></td>
 			      <td></td>
 			    </tr>

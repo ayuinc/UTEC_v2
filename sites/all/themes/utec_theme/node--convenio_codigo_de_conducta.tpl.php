@@ -8,6 +8,7 @@
 ?>
 
 <div class="container-sm section-scroll-content pt-35" id="codeofconduct">
+  <div class="mh-21">
   <h2 class="light"><?php print $titulo ?></h2>
   <div class="separator-gray separator-sm"></div>
   <div class="p-ch-gray-dark">
@@ -30,4 +31,5 @@
     <!-- Controls --> 
   <a class="scroll-down scroll-down-sq size lg" href="#parents" rel="nofollow"><i class="icon-arrows-down"></i></a>
   </div>
+
 </div>

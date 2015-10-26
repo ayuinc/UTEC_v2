@@ -26,14 +26,14 @@
 	</button>
 
 	<!-- Modal -->
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="pl-0 modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	  <div class="modal-dialog modal-lg" role="document">
 	    <div class="modal-content">
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 	        <h1 class="modal-title medium text-center mt-56 lead" id="myModalLabel"><?php print $title; ?></h1>
 	      </div>
-	      <div class="modal-body text-center php-21">
+	      <div class="modal-body text-center php-21 mb-42">
 	      	<p class="mb-21"><?php print $description; ?></p>
 	      	<a href="/en" class="text-primary">Back to homepage</a>
 	      	<h4 class="text-center mv-21 medium">Share your experience</h4>

@@ -20,6 +20,8 @@
   //   $(click).trigger( "click" );
   // });
 
+  var pymChild = new pym.Child();
+
   var form = document.getElementById("webform-client-form-1353");
   if (form!=null) {
   	document.getElementById("webform-client-form-1353").onsubmit=function() { // needs an ID

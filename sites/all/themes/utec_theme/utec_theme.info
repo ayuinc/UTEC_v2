@@ -11,6 +11,7 @@ stylesheets[all][] = stylesheets/convenios/global.css
 
 scripts[] = js/b3/modal.js
 scripts[] = js/b3/collapse.js
+scripts[] = js/b3/pym.js
 scripts[] = js/app/lib/login-option.js
 scripts[] = career-services/js/career.services.js
 
