@@ -1004,5 +1004,14 @@ button.close {
   .table-all-course table td:first-child:before { content: ''; }
 }
 
+.icon-mas {
+  content: "\002B";
+}
 
+.icon-menos {
+  content: "\2212";
+}
 
+a.collapsed {
+  content: "";
+}

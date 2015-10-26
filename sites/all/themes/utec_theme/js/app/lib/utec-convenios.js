@@ -13,6 +13,12 @@
     $(click).trigger( "click" );
   });
 
+  $(".change").click(function(){
+   $(this).find('.up').toggleClass("hide");  
+   $(this).find('.down').toggleClass("hide"); 
+    
+  });
+
   // $('.panel-default a[role="button"]').on("click", function(){
   //   var id = $(this).parent().parent().parent().parent().attr('id');
   //   var selector = $(this).parent().index();
