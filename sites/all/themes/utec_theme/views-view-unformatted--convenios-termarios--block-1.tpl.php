@@ -34,7 +34,7 @@
 				    <?php $total += $view->result[$id]->field_field_n_mero_creditos['0']['rendered']['#markup'];?>
 					<?php endforeach; ?>
 					<tr class="text-center">
-			      <td class="titulo-tabla"><?php print t('Total credits') ?></td>
+			      <td class="hidden-xs"><?php print t('Total credits') ?></td>
 			      <td></td>
 			      <td></td>
 			      <td data-title="Total credits"><?php print $total; ?></td>
