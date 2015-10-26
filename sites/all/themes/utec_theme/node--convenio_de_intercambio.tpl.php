@@ -8,7 +8,7 @@
 ?>
 
 <div class="container-sm">
-  <div class="mh-21">
+  <div class="">
     <h1 class="light"><?php print $titulo ?></h1>
     <div class="separator-gray separator-sm"></div>
     <?php if ($banner!='')  { ?>
