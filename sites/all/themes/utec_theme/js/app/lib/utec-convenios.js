@@ -14,13 +14,13 @@
   });
 
   $(".panel-heading").click(function(){
-   var this = $(this); 
+   var current = $(this); 
    $(".panel-heading span.down").addClass("hide");
    $(".panel-heading span.up").removeClass("hide");
    // $(this).find('.up').toggleClass("hide");  
    // $(this).find('.down').toggleClass("hide");
-    console.log(this.next().next());
-   if (this.next().next().hasClass("collapsed")) {
+    console.log(current.next().next());
+   if (current.next().next().hasClass("collapsed")) {
       $(this).addClass("border-active");
    } else {
       $(this).removeClass("border-active"); 
