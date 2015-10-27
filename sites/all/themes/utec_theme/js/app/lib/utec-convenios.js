@@ -19,8 +19,8 @@
    $(".panel-heading span.up").removeClass("hide");
    // $(this).find('.up').toggleClass("hide");  
    // $(this).find('.down').toggleClass("hide");
-    console.log(current.next().next());
-   if (current.next().next().hasClass("collapsed")) {
+
+   if (current.children().children().hasClass("collapsed")) {
       $(this).addClass("border-active");
    } else {
       $(this).removeClass("border-active"); 
