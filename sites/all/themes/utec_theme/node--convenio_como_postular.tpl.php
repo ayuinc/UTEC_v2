@@ -55,8 +55,8 @@
                 <a role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse<?php print $count; ?>" aria-expanded="false" aria-controls="collapse<?php print $count; ?>" style="cursor:pointer">
                   <?php print $tab_title['value'] ?>
                   <span class="pull-right change text-primary">
-                   <a class="up hide pull-right text-primary"> + </a>
-                   <a class="down pull-right text-primary">-</a>
+                   <a class="up pull-right color-cyan"> &#43; </a>
+                   <a class="down hide pull-right color-cyan">&#8722;</a>
                   </span>
                 </a>
               </h4>
