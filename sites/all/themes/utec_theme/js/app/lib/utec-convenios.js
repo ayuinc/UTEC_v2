@@ -19,6 +19,7 @@
    if (current.children().children().hasClass("collapsed")) {
       $(".panel-heading").removeClass("border-active"); 
       $(".panel-heading span.down").addClass("hide");
+      $(".panel-heading span.up").removeClass("hide");
       $(this).addClass("border-active");
       $(this).find('.up').addClass("hide");
       $(this).find('.down').removeClass("hide");
