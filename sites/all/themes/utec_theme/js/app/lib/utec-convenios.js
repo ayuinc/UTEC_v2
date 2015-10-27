@@ -18,9 +18,9 @@
    $(this).find('.up').toggleClass("hide");  
    $(this).find('.down').toggleClass("hide");
    if ($(this).hasClass("collapsed")) {
-      $(this).addClass("border-active");
+      $(this).removeClass("border-active");
    } else {
-      $(this).removeClass("border-active"); 
+      $(this).addClass("border-active"); 
    }
    
   });
