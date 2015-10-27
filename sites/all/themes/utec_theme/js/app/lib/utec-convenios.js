@@ -23,7 +23,8 @@
    if (current.children().children().hasClass("collapsed")) {
       $(this).addClass("border-active");
    } else {
-      $(this).removeClass("border-active"); 
+      $(".panel-heading").removeClass("border-active"); 
+      $(this).removeClass("border-active");
    }
    
   });
