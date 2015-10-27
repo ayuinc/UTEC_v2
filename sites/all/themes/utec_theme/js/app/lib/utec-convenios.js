@@ -20,12 +20,12 @@
       $(".panel-heading").removeClass("border-active"); 
       $(".panel-heading span.down").addClass("hide");
       $(this).addClass("border-active");
-      $(this)find('.up').addClass("hide");
-      $(this)find('.down').removeClass("hide");
+      $(this).find('.up').addClass("hide");
+      $(this).find('.down').removeClass("hide");
 
    } else {
       $(".panel-heading span.down").addClass("hide");
-      $(this)find('.up').removeClass("hide");
+      $(this).find('.up').removeClass("hide");
       $(this).removeClass("border-active");
    }
    
