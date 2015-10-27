@@ -14,7 +14,7 @@
   });
 
   $(".panel-heading").click(function(){
-   // $(this).parents("#accordion").find(".panel-heading").removeClass("border-active");
+   $(".panel-heading").find('.down').toggleClass("hide");
    $(this).find('.up').toggleClass("hide");  
    $(this).find('.down').toggleClass("hide");
    if ($(this).hasClass("collapsed")) {
