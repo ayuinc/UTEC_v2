@@ -1004,6 +1004,10 @@ button.close {
   .table-all-course table td:first-child:before { content: ''; }
 }
 
+.display-block {
+  display: block !important;
+}
+
 .color-cyan {
   color: #00BFDF !important;
 }
