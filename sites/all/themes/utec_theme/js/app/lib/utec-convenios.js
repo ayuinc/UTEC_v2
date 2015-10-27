@@ -14,7 +14,7 @@
   });
 
   $(".panel-heading").click(function(){
-   $(".panel-heading").find('.down').toggleClass("hide");
+   $(".panel-heading span.down").addClass("hide");
    $(this).find('.up').toggleClass("hide");  
    $(this).find('.down').toggleClass("hide");
    if ($(this).hasClass("collapsed")) {
