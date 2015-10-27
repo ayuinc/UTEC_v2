@@ -19,6 +19,10 @@
    $(this).toggleClass("border-active");
   });
 
+  $( ".up" ).click(function() {
+    $( ".tabs-active" ).trigger( "click" );
+  });
+
   // $('.panel-default a[role="button"]').on("click", function(){
   //   var id = $(this).parent().parent().parent().parent().attr('id');
   //   var selector = $(this).parent().index();
