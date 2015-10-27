@@ -15,15 +15,17 @@
 
   $(".panel-heading").click(function(){
    var current = $(this); 
-   $(".panel-heading span.down").addClass("hide");
-   $(".panel-heading span.up").removeClass("hide");
-   // $(this).find('.up').toggleClass("hide");  
-   // $(this).find('.down').toggleClass("hide");
 
    if (current.children().children().hasClass("collapsed")) {
-      $(this).addClass("border-active");
-   } else {
       $(".panel-heading").removeClass("border-active"); 
+      $(".panel-heading span.down").addClass("hide");
+      $(this).addClass("border-active");
+      $(this)find('.up').addClass("hide");
+      $(this)find('.down').removeClass("hide");
+
+   } else {
+      $(".panel-heading span.down").addClass("hide");
+      $(this)find('.up').removeClass("hide");
       $(this).removeClass("border-active");
    }
    
