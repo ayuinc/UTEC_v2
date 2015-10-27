@@ -16,7 +16,7 @@
   $(".panel-heading").click(function(){
    $(this).find('.up').toggleClass("hide");  
    $(this).find('.down').toggleClass("hide");
-   $("#heading").addClass("border-active");
+   $(this).toggleClass("border-active");
   });
 
   // $('.panel-default a[role="button"]').on("click", function(){
