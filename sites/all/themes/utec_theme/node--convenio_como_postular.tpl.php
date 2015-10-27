@@ -53,11 +53,9 @@
             <div class="panel-heading" role="tab" id="heading<?php print $count; ?>">
               <h4 class="panel-title">
                 <a role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse<?php print $count; ?>" aria-expanded="false" aria-controls="collapse<?php print $count; ?>" style="cursor:pointer">
-                  <span class="tabs-active"><?php print $tab_title['value'] ?></span>
-                  <div class="pull-right change text-primary">
-                   <a class="up pull-right color-cyan tab-"> &#43; </a>
-                   <a class="down hide pull-right color-cyan tab-">&#8722;</a>
-                  </div>
+                  <?php print $tab_title['value'] ?>
+                   <span class="up pull-right color-cyan tab-"> &#43; </span>
+                   <span class="down hide pull-right color-cyan tab-">&#8722;</span>
                 </a>
               </h4>
             </div>
