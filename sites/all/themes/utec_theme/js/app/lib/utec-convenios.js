@@ -17,8 +17,15 @@
    $(this).parents("#accordion").find(".panel-heading").removeClass("border-active");
    $(this).find('.up').toggleClass("hide");  
    $(this).find('.down').toggleClass("hide");
-   $(this).toggleClass("border-active");
+   if ($(this).hasClass("collapsed")) {
+      $(this).addClass("border-active");
+   } else {
+      $(this).removeClass("border-active"); 
+   }
+   
   });
+
+
 
 
 
