@@ -1,4 +1,4 @@
-<div class="pv-21">
+<div class="">
 	<div class="container-sm">
 		<h2 class="light"><?php print $view->get_title(); ?></h2>
 		<div class="separator-gray separator-sm"></div>
