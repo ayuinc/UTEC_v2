@@ -129,12 +129,10 @@ aria-multiselectable="true">
 <a role="button" data-target="#collapse<?php print $count; ?>"
 data-toggle="collapse" data-parent="#accordion0" aria-expanded="false"
 aria-controls="collapse<?php print $count; ?>"
-style="cursor:pointer;">
+style="cursor:pointer;" class="display-block">
 <?php print $titulo_tab_bloque_3['value'] ?>
-<span class="pull-right change text-primary">
- <a class="up pull-right color-cyan"> &#43; </a>
- <a class="down hide pull-right color-cyan">&#8722;</a>
-</span>
+<span class="up pull-right color-cyan tab-"> &#43; </span>
+<span class="down hide pull-right color-cyan tab-">&#8722;</span>
 </a>
 </h4>
 </div>
@@ -208,12 +206,10 @@ aria-multiselectable="true">
 <a role="button" data-toggle="collapse" data-parent="#accordion1"
 data-target="#collapse1<?php print $count; ?>" aria-expanded="false"
 aria-controls="collapse1<?php print $count; ?>"
-style="cursor:pointer">
+style="cursor:pointer" class="display-block">
 <?php print $titulo_tab_bloque_4['value'] ?>
-<span class="pull-right change text-primary">
- <a class="up pull-right color-cyan"> &#43; </a>
- <a class="down hide pull-right color-cyan">&#8722;</a>
-</span>
+<span class="up pull-right color-cyan tab-"> &#43; </span>
+<span class="down hide pull-right color-cyan tab-">&#8722;</span>
 </a>
 </h4>
 </div>
@@ -339,12 +335,10 @@ aria-multiselectable="true">
 <a role="button" data-toggle="collapse" data-parent="#accordion2"
 data-target="#collapse2<?php print $count; ?>" aria-expanded="false"
 aria-controls="collapse2<?php print $count; ?>"
-style="cursor:pointer">
+style="cursor:pointer" class="display-block">
 <?php print $titulo_tab_bloque_6['value'] ?>
-<span class="pull-right change text-primary">
- <a class="up pull-right color-cyan"> &#43; </a>
- <a class="down hide pull-right color-cyan">&#8722;</a>
-</span>
+<span class="up pull-right color-cyan tab-"> &#43; </span>
+<span class="down hide pull-right color-cyan tab-">&#8722;</span>
 </a>
 </h4>
 </div>
