@@ -34,7 +34,7 @@ image_style_url($image_style_2, $imagen_cabecera); ?>);">
 <div class="container-sm hero-text">
 <h2 class="light text-white"><?php print $titulo ?> </h2>
 <div class="separator-white separator-sm"></div>
-<div class="text-white light h4"><?php print $descripcion_general ?></div>
+<div class="text-white light h4 lh-1-xs"><?php print $descripcion_general ?></div>
 </div>
 </div>
 <a class="scroll-down scroll-down-sq size lg" href="#block2"

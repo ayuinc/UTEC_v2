@@ -1022,3 +1022,9 @@ button.close {
   border-bottom: none !important;
   border-radius: 0 !important;
 }
+
+@media screen and (max-width: 480px) {
+  .lh-1-xs {
+    line-height: 1.1
+  }
+}
