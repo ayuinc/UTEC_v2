@@ -13,6 +13,16 @@
     $(click).trigger( "click" );
   });
 
+  $(".panel-heading").click(function(){
+   $(this).find('.up').toggleClass("hide");  
+   $(this).find('.down').toggleClass("hide");
+   $(this).toggleClass("border-active");
+  });
+
+  // $( ".down" ).click(function() {
+  //   $( ".collapsed" ).trigger( "click" );
+  // });
+
   // $('.panel-default a[role="button"]').on("click", function(){
   //   var id = $(this).parent().parent().parent().parent().attr('id');
   //   var selector = $(this).parent().index();

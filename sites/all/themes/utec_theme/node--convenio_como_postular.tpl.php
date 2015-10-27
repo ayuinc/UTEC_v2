@@ -52,9 +52,10 @@
           <div class="panel panel-default" style="min-height: 30px;">
             <div class="panel-heading" role="tab" id="heading<?php print $count; ?>">
               <h4 class="panel-title">
-                <a role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse<?php print $count; ?>" aria-expanded="false" aria-controls="collapse<?php print $count; ?>" style="cursor:pointer">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse<?php print $count; ?>" aria-expanded="false" aria-controls="collapse<?php print $count; ?>" style="cursor:pointer;" class="display-block">
                   <?php print $tab_title['value'] ?>
-                  <span class="pull-right text-primary">+</span>
+                   <span class="up pull-right color-cyan tab-"> &#43; </span>
+                   <span class="down hide pull-right color-cyan tab-">&#8722;</span>
                 </a>
               </h4>
             </div>

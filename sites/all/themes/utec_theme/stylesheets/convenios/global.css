@@ -1004,5 +1004,19 @@ button.close {
   .table-all-course table td:first-child:before { content: ''; }
 }
 
+.display-block {
+  display: block !important;
+}
 
+.color-cyan {
+  color: #00BFDF !important;
+}
 
+.border-active {
+  border-top: 4px solid #00BFDF !important;
+  border-left: 1px solid #00BFDF !important;
+  border-right: 1px solid #00BFDF !important;
+  background: none !important;
+  border-bottom: none !important;
+  border-radius: 0 !important;
+}
