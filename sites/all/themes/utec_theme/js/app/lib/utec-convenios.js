@@ -14,8 +14,8 @@
   });
 
   $(".panel-heading").click(function(){
-   $(this).find('.up').toggleClass("hide");  
-   $(this).find('.down').toggleClass("hide"); 
+   $(this).find('.up').toggleClass("hide").addClass("border-active");  
+   $(this).find('.down').toggleClass("hide");
   });
 
   // $('.panel-default a[role="button"]').on("click", function(){
