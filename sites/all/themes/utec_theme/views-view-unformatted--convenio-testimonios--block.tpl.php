@@ -1,5 +1,6 @@
 <div class="pv-21">
-	<div class="container-sm section-scroll-content hidden-xs pt-14" id="testimonies">
+	<div class="container-sm section-scroll-content  pt-14" id="testimonies">
+		<div class="hidden-xs">
 		<h2 class="light"><?php print $view->get_title(); ?></h2>
 		<div class="separator-gray separator-sm"></div>
 		<div id="carousel-example-generic" class="carousel carousel-custom slide" data-ride="carousel">
@@ -36,6 +37,7 @@
 		  </a>
 		</div>
 		<div class="text-center mt-42"><a href="studying-in-peru/testimonies" class="h4 text-primary"><?php print t('View more testimonies'); ?></a></div>
+		</div>
 	</div>
 		
 	<div class="container-sm section-scroll-content hidden-lg" id="">
@@ -53,7 +55,7 @@
 		    <?php $count = 0; ?>
 		    <?php foreach ($rows as $id => $row): ?>
 					<div class="row item <?php ($count == 0) ? print 'active' : '' ; ?>">
-						<div class="col-sm-12">
+						<div class="col-sm-12 ph-70">
 					    <?php print $row;?>
 						</div>
 					</div>
