@@ -4,6 +4,6 @@
 	$body = $fields['body']->content;
 ?>
 
-<h5><?php print $title ?></h5>
+<!-- <h5><?php //print $title ?></h5> -->
 <p><?php print $body ?></p>
 
