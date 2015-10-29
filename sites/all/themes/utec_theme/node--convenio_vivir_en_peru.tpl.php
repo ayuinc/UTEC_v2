@@ -43,6 +43,8 @@ rel="nofollow"><i class="icon-arrows-down bg-cyan"></i></a>
 </div> <!-- END:Hero -->
 <!-- BLOQUE 2 -->
 <div class="container-sm section-scroll-content pt-28 pb-56" id="block2">
+  <div class="mh-21">
+  
 <h2 class="light"><?php print $titulo_bloque_2 ?></h2>
 <div class="separator-gray separator-sm"></div>
 <div class="p-ch-gray-dark">
@@ -83,8 +85,10 @@ role="button" data-slide="next">
 <a class="scroll-down scroll-down-sq size lg" href="#block3"
 rel="nofollow"><i class="icon-arrows-down"></i></a>
 </div>
+</div>
 <!-- BLOQUE 3 -->
 <div class="container-sm section-scroll-content pt-35" id="block3">
+<div class="mh-21">
 <h2 class="light"><?php print $titulo_bloque_3 ?></h2>
 <div class="separator-gray separator-sm"></div>
 <div class="p-ch-gray-dark">
@@ -152,8 +156,10 @@ collapse" role="tabpanel" aria-labelledby="heading<?php print $count;
 <a class="scroll-down scroll-down-sq size lg" href="#block4"
 rel="nofollow"><i class="icon-arrows-down"></i></a>
 </div>
+</div>
 <!-- BLOQUE 4 -->
 <div class="container-sm section-scroll-content pt-35 pb-63" id="block4">
+<div class="mh-21">
 <h2 class="light"><?php print $titulo_bloque_4 ?></h2>
 <div class="separator-gray separator-sm"></div>
 <div class="p-ch-gray-dark">
@@ -247,8 +253,10 @@ image_style_url($image_style, $imagen_bloque_4['uri']); ?>);">
 <a class="scroll-down scroll-down-sq size lg" href="#block5"
 rel="nofollow"><i class="icon-arrows-down"></i></a>
 </div>
+</div>
 <!-- BLOQUE 5 -->
 <div class="container-sm section-scroll-content pt-35" id="block5">
+<div class="mh-21">
 <h2 class="light"><?php print $titulo_bloque_5 ?></h2>
 <div class="separator-gray separator-sm mb-70"></div>
 <div><?php print $results; ?></div>
@@ -281,8 +289,10 @@ $imagen_bloque_5['uri']); ?>" alt="">
 <a class="scroll-down scroll-down-sq size lg" href="#block6"
 rel="nofollow"><i class="icon-arrows-down"></i></a>
 </div>
+</div>
 <!-- BLOQUE 6 -->
 <div class="container-sm section-scroll-content pt-35" id="block6">
+<div class="mh-21">
 <h2 class="light"><?php print $titulo_bloque_6 ?></h2>
 <div class="separator-gray separator-sm"></div>
 <div class="p-ch-gray-dark">
@@ -371,6 +381,7 @@ image_style_url($image_style, $imagen_bloque_6['uri']); ?>);">
 <?php endforeach ?>
 </div>
 <!-- Controls -->
+</div>
 </div>
 </div>
 </div>
