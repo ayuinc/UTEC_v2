@@ -14,7 +14,7 @@
   
 ?>
 
-<div class="container-sm section-scroll-content pt-28" id="studyabroad">
+<div class="container-sm section-scroll-content pt-28 pb-70" id="studyabroad">
   <h2 class="light mh-21"><?php print $titulo ?></h2>
   <div class="separator-gray separator-sm ml-21"></div>
   <div class="p-ch-gray-dark">
@@ -53,7 +53,7 @@
       <div class="anchor-block-3 grid-six-movil grid-1">    
         <div class="pic" style="background-image: url(<?php print image_style_url($image_style_4, $imagen4); ?>);"></div>
         <div class="overlay-grid-six" style="background-color: rgba(0,0,0,0.2); opacity: 1; padding: 14px;">
-          <h5 class="bold text-title text-left mb-7 "><?php print $titulos['3']['value']; ?> s</h5>
+          <h5 class="bold text-title text-left mb-7 "><?php print $titulos['3']['value']; ?> </h5>
           <div class="separator-white mt-7 separator-xs "></div>
           <h5 class="thin text-content text-left lh-1-xs"><?php print $contenido['3']['value']; ?></h5>
         </div>

@@ -7,7 +7,7 @@
   $iconos = $node->field_texo['und'];
 ?>
 
-	<div class="container-sm section-scroll-content pt-35 pb-70" id="course">
+	<div class="container-sm section-scroll-content pt-14 pb-63" id="course">
 		<div class="mh-21">
 		  <h2 class="light"><?php print $title ?></h2>
 		  <div class="separator-gray separator-sm"></div>

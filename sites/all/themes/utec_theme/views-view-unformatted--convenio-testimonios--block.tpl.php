@@ -1,5 +1,5 @@
 <div class="pv-21">
-	<div class="container-sm section-scroll-content  pt-14" id="testimonies">
+	<div class="container-sm section-scroll-content pt-14 pb-70" id="testimonies">
 		<div class="hidden-xs">
 		<h2 class="light"><?php print $view->get_title(); ?></h2>
 		<div class="separator-gray separator-sm"></div>
@@ -25,7 +25,7 @@
 					<?php endif; ?> 
 					<?php $count++; ?>
 		    <?php endforeach; ?>
-		  </div>
+		  </div> 
 		  <!-- Controls -->
 		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
 		    <span class="icon-prev hidden-xs" aria-hidden="true"></span>

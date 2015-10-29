@@ -9,7 +9,7 @@
 
 ?>
 
-<div class="container-sm section-scroll-content  pt-35" id="apply">
+<div class="container-sm section-scroll-content  pt-7" id="apply">
   <div class="mh-21">
     <h2 class="light"><?php print $titulo ?></h2>
     <div class="separator-gray separator-sm"></div>

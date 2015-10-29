@@ -87,7 +87,7 @@ rel="nofollow"><i class="icon-arrows-down"></i></a>
 </div>
 </div>
 <!-- BLOQUE 3 -->
-<div class="container-sm section-scroll-content pt-35" id="block3">
+<div class="container-sm section-scroll-content pt-35 pb-70" id="block3">
 <div class="mh-21">
 <h2 class="light"><?php print $titulo_bloque_3 ?></h2>
 <div class="separator-gray separator-sm"></div>
@@ -158,7 +158,7 @@ rel="nofollow"><i class="icon-arrows-down"></i></a>
 </div>
 </div>
 <!-- BLOQUE 4 -->
-<div class="container-sm section-scroll-content pt-35 pb-63" id="block4">
+<div class="container-sm section-scroll-content pt-7 pb-63" id="block4">
 <div class="mh-21">
 <h2 class="light"><?php print $titulo_bloque_4 ?></h2>
 <div class="separator-gray separator-sm"></div>
@@ -248,6 +248,16 @@ image_style_url($image_style, $imagen_bloque_4['uri']); ?>);">
 <?php endforeach ?>
 </div>
 <!-- Controls -->
+<a class="left carousel-control" href="#carousel-custom" role="button"
+data-slide="prev">
+<span class="icon-prev hidden-xs" aria-hidden="true"></span>
+<span class="sr-only">Previews</span>
+</a>
+<a class="right carousel-control" href="#carousel-custom"
+role="button" data-slide="next">
+<span class="icon-next hidden-xs" aria-hidden="true"></span>
+<span class="sr-only">Siguiente</span>
+</a>
 </div>
 </div>
 <a class="scroll-down scroll-down-sq size lg" href="#block5"
@@ -255,7 +265,7 @@ rel="nofollow"><i class="icon-arrows-down"></i></a>
 </div>
 </div>
 <!-- BLOQUE 5 -->
-<div class="container-sm section-scroll-content pt-35" id="block5">
+<div class="container-sm section-scroll-content pt-35 pb-70" id="block5">
 <div class="mh-21">
 <h2 class="light"><?php print $titulo_bloque_5 ?></h2>
 <div class="separator-gray separator-sm mb-70"></div>
@@ -291,7 +301,7 @@ rel="nofollow"><i class="icon-arrows-down"></i></a>
 </div>
 </div>
 <!-- BLOQUE 6 -->
-<div class="container-sm section-scroll-content pt-35" id="block6">
+<div class="container-sm section-scroll-content pt-14" id="block6">
 <div class="mh-21">
 <h2 class="light"><?php print $titulo_bloque_6 ?></h2>
 <div class="separator-gray separator-sm"></div>
@@ -381,6 +391,16 @@ image_style_url($image_style, $imagen_bloque_6['uri']); ?>);">
 <?php endforeach ?>
 </div>
 <!-- Controls -->
+<a class="left carousel-control" href="#carousel-custom" role="button"
+data-slide="prev">
+<span class="icon-prev hidden-xs" aria-hidden="true"></span>
+<span class="sr-only">Previews</span>
+</a>
+<a class="right carousel-control" href="#carousel-custom"
+role="button" data-slide="next">
+<span class="icon-next hidden-xs" aria-hidden="true"></span>
+<span class="sr-only">Siguiente</span>
+</a>
 </div>
 </div>
 </div>
