@@ -232,32 +232,33 @@ collapse" role="tabpanel" aria-labelledby="heading1<?php print $count;
 </div>
 </div>
 <!-- Wrapper for slides -->
-<div class="carousel-inner mt-42" role="listbox">
-<?php $count = 0; ?>
-<?php foreach ($imagenes_bloque_4 as $key => $imagen_bloque_4): ?>
-<?php if ($imagen_bloque_4): ?>
-<div class="item <?php ($count == 0) ? print 'active' : '' ; ?>">
-<div class="banner banner-label-bottom mb-7 ml-0">
-<div class="banner-pic" style="background-image: url(<?php print
-image_style_url($image_style, $imagen_bloque_4['uri']); ?>);">
-</div>
-</div>
-</div>
-<?php endif ?>
-<?php $count ++; ?>
-<?php endforeach ?>
+<div id="carrusel-bloque-4" class="carrusel-4">
+	<div class="carousel-inner mt-42" role="listbox" >
+		<a class="left carousel-control" href="#carousel-bloque4" role="button" data-slide="prev">
+			<span class="icon-prev hidden-xs" aria-hidden="true"></span>
+			<span class="sr-only">Previews</span>
+		</a>
+		<?php $count = 0; ?>
+		<?php foreach ($imagenes_bloque_4 as $key => $imagen_bloque_4): ?>
+		<?php if ($imagen_bloque_4): ?>
+		<div class="item <?php ($count == 0) ? print 'active' : '' ; ?>">
+			<div class="banner banner-label-bottom mb-7 ml-0">
+				<div class="banner-pic" style="background-image: url(<?php print image_style_url($image_style, $imagen_bloque_4['uri']); ?>);">
+				</div>
+			</div>
+		</div>
+		<?php endif ?>
+		<?php $count ++; ?>
+		<?php endforeach ?>
+		<a class="right carousel-control" href="#carousel-bloque4" role="button" data-slide="next">
+			<span class="icon-next hidden-xs" aria-hidden="true"></span>
+			<span class="sr-only">Siguiente</span>
+		</a>
+	</div>
 </div>
 <!-- Controls -->
-<a class="left carousel-control" href="#carousel-custom" role="button"
-data-slide="prev">
-<span class="icon-prev hidden-xs" aria-hidden="true"></span>
-<span class="sr-only">Previews</span>
-</a>
-<a class="right carousel-control" href="#carousel-custom"
-role="button" data-slide="next">
-<span class="icon-next hidden-xs" aria-hidden="true"></span>
-<span class="sr-only">Siguiente</span>
-</a>
+
+
 </div>
 </div>
 <a class="scroll-down scroll-down-sq size lg" href="#block5"
@@ -306,8 +307,7 @@ rel="nofollow"><i class="icon-arrows-down"></i></a>
 <h2 class="light"><?php print $titulo_bloque_6 ?></h2>
 <div class="separator-gray separator-sm"></div>
 <div class="p-ch-gray-dark">
-<div id="carousel-bloque6" class="carousel carousel-custom slide mb-42
-mt-42" data-ride="carousel">
+<div id="carousel-bloque6" class="carousel carousel-custom slide mb-42 mt-42" data-ride="carousel">
 <!-- Indicators -->
 <ol class="carousel-indicators">
 <?php $count = 0; ?>
@@ -375,6 +375,13 @@ collapse" role="tabpanel" aria-labelledby="heading2<?php print $count;
 </div>
 </div>
 <!-- Wrapper for slides -->
+<div id="carrusel-bloque-6" class="carrusel-6">
+	
+<a class="left carousel-control" href="#carousel-bloque6" role="button"
+data-slide="prev">
+<span class="icon-prev hidden-xs" aria-hidden="true"></span>
+<span class="sr-only">Previews</span>
+</a>
 <div class="carousel-inner mt-42" role="listbox">
 <?php $count = 0; ?>
 <?php foreach ($imagenes_bloque_6 as $key => $imagen_bloque_6): ?>
@@ -390,17 +397,15 @@ image_style_url($image_style, $imagen_bloque_6['uri']); ?>);">
 <?php $count ++; ?>
 <?php endforeach ?>
 </div>
-<!-- Controls -->
-<a class="left carousel-control" href="#carousel-custom" role="button"
-data-slide="prev">
-<span class="icon-prev hidden-xs" aria-hidden="true"></span>
-<span class="sr-only">Previews</span>
-</a>
-<a class="right carousel-control" href="#carousel-custom"
+<a class="right carousel-control" href="#carousel-bloque6"
 role="button" data-slide="next">
 <span class="icon-next hidden-xs" aria-hidden="true"></span>
 <span class="sr-only">Siguiente</span>
 </a>
+</div>
+<!-- Controls -->
+
+
 </div>
 </div>
 </div>

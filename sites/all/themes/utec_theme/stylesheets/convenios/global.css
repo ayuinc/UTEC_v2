@@ -1028,3 +1028,8 @@ button.close {
     line-height: 1.1 !important;
   }
 }
+
+#carrusel-bloque-4.carrusel-4,
+#carrusel-bloque-6 .carrusel-6 {
+  position: relative;
+}
