@@ -361,6 +361,8 @@ textarea,
 @media only screen and (max-width: 480px) {
   #contact-us .field-name-field-footer-webform .field-item.even {
     padding: 0px;
+    float: left;
+    width: 50%;
   }
 }
 
@@ -368,12 +370,24 @@ textarea,
  #contact-us .field-name-field-footer-webform .field-item.even p {
     float: right;
     position: relative;
-    text-align: center;
     padding-left: 7px;
-    padding: 35px 7px 35px 21px !important;
     border-left: none !important;
-    color: white;
-    left: 12px;
+    width: 100%;
+    padding: 21px 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #contact-us #edit-submitted-messaje {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .page-page-27 #contact-us input, 
+  textarea, 
+  .grippie {
+    width: 100%;
   }
 }
 

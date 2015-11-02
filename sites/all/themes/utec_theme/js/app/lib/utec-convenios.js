@@ -32,7 +32,17 @@
    
   });
 
+  if (document.documentElement.clientWidth < 480) {
+    var contenedor_footer = $("#contact-us").find(".content");
+    var footer_webform = $(contenedor_footer).children(".field-name-field-footer-webform");
+    footer_webform.remove();
 
+    $(contenedor_footer).children(".webform-client-form-1353").after(footer_webform);
+  }
+
+  
+
+  
 
 
 
