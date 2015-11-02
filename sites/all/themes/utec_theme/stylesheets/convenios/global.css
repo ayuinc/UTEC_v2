@@ -328,7 +328,7 @@ textarea,
 }
 
 #contact-us .field-name-field-footer-webform .field-item.even {
-	width: 50%;
+	width: 100%;
   float: right;
   padding: 28px 49px 28px 63px;
 }
@@ -372,8 +372,8 @@ textarea,
     position: relative;
     padding-left: 7px;
     border-left: none !important;
-    width: 100%;
-    padding: 21px 0;
+    border-top: 1px solid white;
+    width: 100% !important;
   }
 }
 
