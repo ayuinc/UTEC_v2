@@ -1030,6 +1030,7 @@ button.close {
 }
 
 #carrusel-bloque-4.carrusel-4,
-#carrusel-bloque-6 .carrusel-6 {
+#carrusel-bloque-6.carrusel-6 {
   position: relative;
 }
+

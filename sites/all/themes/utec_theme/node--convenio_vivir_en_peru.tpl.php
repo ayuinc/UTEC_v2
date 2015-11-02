@@ -233,11 +233,11 @@ collapse" role="tabpanel" aria-labelledby="heading1<?php print $count;
 </div>
 <!-- Wrapper for slides -->
 <div id="carrusel-bloque-4" class="carrusel-4">
-	<div class="carousel-inner mt-42" role="listbox" >
 		<a class="left carousel-control" href="#carousel-bloque4" role="button" data-slide="prev">
 			<span class="icon-prev hidden-xs" aria-hidden="true"></span>
 			<span class="sr-only">Previews</span>
 		</a>
+	<div class="carousel-inner mt-42" role="listbox" >
 		<?php $count = 0; ?>
 		<?php foreach ($imagenes_bloque_4 as $key => $imagen_bloque_4): ?>
 		<?php if ($imagen_bloque_4): ?>
@@ -250,11 +250,11 @@ collapse" role="tabpanel" aria-labelledby="heading1<?php print $count;
 		<?php endif ?>
 		<?php $count ++; ?>
 		<?php endforeach ?>
+	</div>
 		<a class="right carousel-control" href="#carousel-bloque4" role="button" data-slide="next">
 			<span class="icon-next hidden-xs" aria-hidden="true"></span>
 			<span class="sr-only">Siguiente</span>
 		</a>
-	</div>
 </div>
 <!-- Controls -->
 
