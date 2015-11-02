@@ -379,7 +379,7 @@ textarea,
 
 @media only screen and (max-width: 480px) {
   #contact-us #edit-submitted-messaje {
-    width: 100%;
+    width: 100% !important;
   }
 }
 
@@ -429,7 +429,7 @@ textarea,
   appearanc: none;
   -moz-appearance: none;
   border: 1px gray solid;
-  width: 50% !important;
+  width: 50%;
 }
 
 #contact-us .grippie {
