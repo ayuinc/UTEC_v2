@@ -398,6 +398,11 @@ textarea,
     margin-bottom: -54px;
   }
 }
+@media only screen and (max-width: 480px) {
+ #contact-us .webform-submit {
+    width: 100%;
+  }
+} 
 
 #contact-us .field-name-field-footer-webform .field-item.even p {
 	  float: right;
