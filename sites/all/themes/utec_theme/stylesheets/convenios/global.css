@@ -362,7 +362,7 @@ textarea,
   #contact-us .field-name-field-footer-webform .field-item.even {
     padding: 0px;
     float: left;
-    width: 50%;
+    width: 100%;
   }
 }
 
@@ -387,7 +387,7 @@ textarea,
   .page-page-27 #contact-us input, 
   textarea, 
   .grippie {
-    width: 100%;
+    width: 100% !important;
   }
 }
 
