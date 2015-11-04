@@ -30,7 +30,7 @@
 <div class="container-sm form-custom">
 <?php 
   // Renderizar bloque
-  $blockObject = block_load('netsuite_form_builder', 'credit_registration_program_eval');
+  $blockObject = block_load('netsuite_form_builder', 'information_request_university');
   $block = _block_get_renderable_array(_block_render_blocks(array($blockObject)));
   print drupal_render($block);
 ?>
