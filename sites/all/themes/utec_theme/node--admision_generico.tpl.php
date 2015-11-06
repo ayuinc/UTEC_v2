@@ -84,6 +84,12 @@
 	  $block = _block_get_renderable_array(_block_render_blocks(array($blockObject)));
 	  print drupal_render($block);
 	?>
+	<?php elseif (in_array($node->nid, array(1387))): ?>
+	<?php 
+    // Renderizar bloque
+    $blockObject = block_load('netsuite_form_builder', 'information_request_university');
+    $block = _block_get_renderable_array(_block_render_blocks(array($blockObject)));
+    print drupal_render($block);
 	<?php endif; ?>
 </div>	
 <?php } ?>
