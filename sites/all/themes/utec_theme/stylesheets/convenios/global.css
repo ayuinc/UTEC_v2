@@ -404,6 +404,12 @@ textarea,
   }
 }
 
+@media only screen and (max-width: 480px) {
+ .page-page-living-peru #contact-us {
+    margin-bottom: -52px;
+  }
+}
+
 .page-page-living-peru #contact-us {
   margin-bottom: -70px;
 }
