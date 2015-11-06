@@ -136,7 +136,8 @@ function netsuite_form_builder_ui_form($form, &$form_state, $delta_block_netsuit
   $all_languages = netsuite_form_builder_ui_list_language_ordered();
   foreach ($all_languages as $lang) {
     $form['path_' . $lang->language] = array(
-      '#type' => $language->language == $lang->language ? 'textfield' : 'hidden',
+      //'#type' => $language->language == $lang->language ? 'textfield' : 'hidden',
+      '#type' => 'textfield',
       '#title' => t('Path form netsuite - ' . $lang->name . '(' . $lang->language . ')'),
       '#default_value' => isset($object_block_netsuite) ? isset($paths[$lang->language]) ? $paths[$lang->language] : '' : '',
       '#required' => $language->language == $lang->language ? TRUE : FALSE, 

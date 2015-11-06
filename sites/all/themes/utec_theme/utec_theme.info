@@ -8,6 +8,7 @@ stylesheets[all][] = stylesheets/utec_course_netsuite.css
 stylesheets[all][] = stylesheets/b3/_modals.css
 stylesheets[all][] = career-services/css/career.services.css
 stylesheets[all][] = stylesheets/convenios/global.css
+stylesheets[all][] = stylesheets/netsuite_form_builder.css
 
 scripts[] = js/b3/modal.js
 scripts[] = js/b3/collapse.js
