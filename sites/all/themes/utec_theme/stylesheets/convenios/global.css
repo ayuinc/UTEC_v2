@@ -1046,6 +1046,14 @@ button.close {
   .lh-1-xs {
     line-height: 1.1 !important;
   }
+
+  .page-page-27 #contact-us textarea {
+    width: 50% !important;
+    padding: 5px;
+    background: #858585;
+    color: white;
+    border: none;
+  }
 }
 
 #carrusel-bloque-4.carrusel-4,
