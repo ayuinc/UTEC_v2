@@ -90,13 +90,22 @@
 
 <?php if ($field_tiene_formulario == "Si") { ?>
 <div class="container-sm form-custom">
-	<h3><?php print t("For more information:") ?></h3>
+	<h3><?php print t("For more information:") ?></h3>	
+	<?php if (in_array($node->nid, array(1383))): ?>
+	<?php 
+	  // Renderizar bloque
+	  $blockObject = block_load('netsuite_form_builder', 'credit_program');
+	  $block = _block_get_renderable_array(_block_render_blocks(array($blockObject)));
+	  print drupal_render($block);
+	?>
+  <?php else: //Esta condicion no debería estar vacía, al igual que el delta del formulario ?>
 	<?php 
 	  // Renderizar bloque
 	  $blockObject = block_load('netsuite_form_builder', '');
 	  $block = _block_get_renderable_array(_block_render_blocks(array($blockObject)));
 	  print drupal_render($block);
 	?>
+	<?php endif; ?>
 </div>
 <?php } ?>
 
