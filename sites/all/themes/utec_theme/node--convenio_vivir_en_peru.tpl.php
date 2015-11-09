@@ -166,14 +166,7 @@ rel="nofollow"><i class="icon-arrows-down"></i></a>
 <div id="carousel-bloque4" class="carousel carousel-custom slide mb-42
 mt-35" data-ride="carousel">
 <!-- Indicators -->
-<ol class="carousel-indicators">
-<?php $count = 0; ?>
-<?php foreach ($imagenes_bloque_4 as $key => $imagen_bloque_4): ?>
-<li data-target="#carousel-bloque4" data-slide-to="<?php print $count
-?>" class="<?php ($count == 0) ? print 'active' : '' ; ?>"></li>
-<?php $count++; ?>
-<?php endforeach ?>
-</ol>
+
 <div class="hidden-xs hidden-sm">
 <div class="tabs tabs-style-linebox">
 <nav>
@@ -309,14 +302,7 @@ rel="nofollow"><i class="icon-arrows-down"></i></a>
 <div class="p-ch-gray-dark">
 <div id="carousel-bloque6" class="carousel carousel-custom slide mb-42 mt-42" data-ride="carousel">
 <!-- Indicators -->
-<ol class="carousel-indicators">
-<?php $count = 0; ?>
-<?php foreach ($imagenes_bloque_4 as $key => $imagen_bloque_4): ?>
-<li data-target="#carousel-bloque6" data-slide-to="<?php print $count
-?>" class="<?php ($count == 0) ? print 'active' : '' ; ?>"></li>
-<?php $count++; ?>
-<?php endforeach ?>
-</ol>
+
 <div class="hidden-xs hidden-sm">
 <div class="tabs tabs-style-linebox">
 <nav>
