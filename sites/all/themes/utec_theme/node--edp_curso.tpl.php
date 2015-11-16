@@ -265,6 +265,9 @@
 							$path = $path_url[0];
 							print_r($url);
 					?>
+					<?php 
+					print_r($node->field_inscripciones_cerradas['und'][0]['value']);
+					 ?>
 					<li data-href="<?php print base_path() . $path . '/formulario-de-inscripcion'; ?>">
 						<div>
 							<div class="size sm">
