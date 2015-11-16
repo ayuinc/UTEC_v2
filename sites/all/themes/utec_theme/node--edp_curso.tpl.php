@@ -263,6 +263,7 @@
 //print_r($partes);
 							//$path_url = split('/temario', $url);
 							$path = $path_url[0];
+							print_r($path);
 					?>
 					<li data-href="<?php print base_path() . $path . '/formulario-de-inscripcion'; ?>">
 						<div>
