@@ -21,7 +21,7 @@
 	$detalles = $node->field_menu_edp_detalles['und'];
 	$link = $node->field_link['und']['0']['value'];
 	$url = drupal_get_path_alias('node/'.$nid, $language->language);
-	print_r($url);
+	print_r($url);	
 ?>
 
 
@@ -186,6 +186,7 @@
 					<?php if ($tid == '90') :?>
 						<?php $nid = $detalle['entity']->nid;?>
 						<?php $path = drupal_get_path_alias('node/'.$nid, $language->language); ?>
+						<?php print_r($path); ?>
 						<?php if ($language->language != 'en'): ?>
 						<li data-href="/<?php print $path; ?>">
 						<?php elseif ($language->language == 'en'): ?>
