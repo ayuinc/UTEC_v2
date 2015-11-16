@@ -185,7 +185,6 @@
 					<?php if ($tid == '90') :?>
 						<?php $nid = $detalle['entity']->nid;?>
 						<?php $path = drupal_get_path_alias('node/'.$nid, $language->language); ?>
-						<?php print_r($path); ?>
 						<?php if ($language->language != 'en'): ?>
 						<li data-href="/<?php print $path; ?>">
 						<?php elseif ($language->language == 'en'): ?>
@@ -265,7 +264,7 @@
 							}
 //print_r($partes);
 							//$path_url = split('/temario', $url);
-							$path = $url[2];
+							$path = $partes[2];
 							print_r($path);
 					?>
 					<li data-href="<?php print base_path() . $path . '/formulario-de-inscripcion'; ?>">
