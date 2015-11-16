@@ -20,8 +20,7 @@
   $nodo_id = $node->field_menu_edp_detalles['und']['0']['entity']->nid;
 	$detalles = $node->field_menu_edp_detalles['und'];
 	$link = $node->field_link['und']['0']['value'];
-	$url = drupal_get_path_alias('node/'.$nid, $language->language);
-	print_r($url);	
+	$url = drupal_get_path_alias('node/'.$nid, $language->language);	
 ?>
 
 
@@ -249,7 +248,9 @@
 						</li>
 					<?php endif; ?>
 				<?php endforeach; ?>
-				
+					<?php  
+						$partes =  split('/' , $url);
+					?>
 				  <?php if (!$node->field_inscripciones_cerradas['und'][0]['value']): ?>
 					<?php
 							//capturamos la ruta de inscripción de formulario
@@ -264,12 +265,9 @@
 							}
 //print_r($partes);
 							//$path_url = split('/temario', $url);
-							$path = $path_url[0];
-							print_r($url);
+							$path = $url[2];
+							print_r($path);
 					?>
-					<?php 
-					print_r($node->field_inscripciones_cerradas['und'][0]['value']);
-					 ?>
 					<li data-href="<?php print base_path() . $path . '/formulario-de-inscripcion'; ?>">
 						<div>
 							<div class="size sm">
