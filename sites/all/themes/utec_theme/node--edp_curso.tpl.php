@@ -262,12 +262,11 @@
 							}else{
 								$path_url = split('/temario', $url);
 							}
-//print_r($partes);
 							//$path_url = split('/temario', $url);
 							$path = $partes[2];
 							print_r($path);
 					?>
-					<li data-href="<?php print base_path() . $path . '/formulario-de-inscripcion'; ?>">
+					<li data-href="<?php print $url . '/formulario-de-inscripcion'; ?>">
 						<div>
 							<div class="size sm">
 								<i class="text-primary icon-admisiones-centro-pre"></i>
