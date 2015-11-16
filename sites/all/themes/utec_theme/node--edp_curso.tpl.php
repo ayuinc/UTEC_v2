@@ -167,8 +167,8 @@
 						$tid = $detalle['entity']->field_tipo_de_detalle['und']['0']['tid'];
 					?>
 					<?php if ($tid == '88') :?>
-						<?php $nid = $detalle['entity']->nid;?>
-						<?php $path = drupal_get_path_alias('node/'.$nid, $language->language); ?>
+						<?php $snid = $detalle['entity']->nid;?>
+						<?php $path = drupal_get_path_alias('node/'.$snid, $language->language); ?>
 						<?php if ($language->language != 'en'): ?>
 						<li data-href="/<?php print $path; ?>">
 						<?php elseif ($language->language == 'en'): ?>
@@ -183,8 +183,8 @@
 						</li>
 					<?php endif; ?>
 					<?php if ($tid == '90') :?>
-						<?php $nid = $detalle['entity']->nid;?>
-						<?php $path = drupal_get_path_alias('node/'.$nid, $language->language); ?>
+						<?php $snid = $detalle['entity']->nid;?>
+						<?php $path = drupal_get_path_alias('node/'.$snid, $language->language); ?>
 						<?php if ($language->language != 'en'): ?>
 						<li data-href="/<?php print $path; ?>">
 						<?php elseif ($language->language == 'en'): ?>
@@ -199,8 +199,8 @@
 						</li>
 					<?php endif; ?>
 					<?php if ($tid == '92') :?>
-						<?php $nid = $detalle['entity']->nid;?>
-						<?php $path = drupal_get_path_alias('node/'.$nid, $language->language); ?>
+						<?php $snid = $detalle['entity']->nid;?>
+						<?php $path = drupal_get_path_alias('node/'.$snid, $language->language); ?>
 						<?php if ($language->language != 'en'): ?>
 						<li data-href="/<?php print $path; ?>">
 						<?php elseif ($language->language == 'en'): ?>
@@ -231,8 +231,8 @@
 						</li-->
 					<?php //endif; ?>
 					<?php if ($tid == '89') :?>
-						<?php $nid = $detalle['entity']->nid;?>
-						<?php $path = drupal_get_path_alias('node/'.$nid, $language->language); ?>
+						<?php $snid = $detalle['entity']->nid;?>
+						<?php $path = drupal_get_path_alias('node/'.$snid, $language->language); ?>
 						<?php if ($language->language != 'en'): ?>
 						<li data-href="/<?php print $path; ?>">
 						<?php elseif ($language->language == 'en'): ?>
