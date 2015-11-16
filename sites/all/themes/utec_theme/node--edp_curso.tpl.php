@@ -20,7 +20,7 @@
   $nodo_id = $node->field_menu_edp_detalles['und']['0']['entity']->nid;
 	$detalles = $node->field_menu_edp_detalles['und'];
 	$link = $node->field_link['und']['0']['value'];
-	
+	print_r($link);
 ?>
 
 
