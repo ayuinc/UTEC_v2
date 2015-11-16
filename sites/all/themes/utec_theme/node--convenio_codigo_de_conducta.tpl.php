@@ -7,7 +7,7 @@
 
 ?>
 
-<div class="container-sm section-scroll-content pt-35" id="codeofconduct">
+<div class="container-sm section-scroll-content pt-35 pb-21" id="codeofconduct">
   <div class="mh-21">
   <h2 class="light"><?php print $titulo ?></h2>
   <div class="separator-gray separator-sm"></div>

@@ -10,7 +10,7 @@
 
 ?>
 
-<div class="container-sm section-scroll-content pt-42 pb-21" id="studyinutec">
+<div class="container-sm section-scroll-content pt-21 pb-7" id="studyinutec">
   <h2 class="light mh-21"><?php print $titulo ?></h2>
   <div class="separator-gray separator-sm ml-21"></div>
   <div class="p-ch-gray-dark">

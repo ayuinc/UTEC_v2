@@ -17,18 +17,34 @@
 		<?php $uid = $value['entity']->uid; ?>
     <?php $desc = $value['entity']->field_descripci_n['und'][0]['value']; ?>		
     <?php $desc_ingles = $value['entity']->field_descripci_n_ingles['und']['0']['value']; ?>
+    <?php $career = $value['entity']->field_user_career['und']['0']['value']; ?>
+    <?php $career_english = $value['entity']->field_user_career_en['und']['0']['value']; ?>
+    <?php $email = $value['entity']->mail; ?>
 			<?php 
 	      if ($language->language == 'en') {
 	        $profesor_url = "/" . $language->prefix . "/" . drupal_get_path_alias('page/30/profesores/'.$uid, $language->language); 
-	      }else
+	      }
+        else {
 	        $profesor_url = "/" . drupal_get_path_alias('page/30/profesores/'.$uid, $language->language); 
+        }
 	    ?> 
 	    <?php if ($status == 1) : ?>
       <li class="mb-ch-14" data-href="<?php print $profesor_url; ?>">
 				<div class="grid-list-pic"><img src="/<?php if($pic != ''){print($pathfile.'pictures/'.$pic);} else {print($pathfile.'pictures/'.'user.jpg'); }?>" alt="<?php print $name ?>" width="180px" height="auto" class="img-circle"></div>
 				<div>
-					<a href="<?php print $profesor_url; ?>"><?php print $name ?></a>
-				</div>
+				  <a href="<?php print $profesor_url; ?>"><?php print $name ?></a>
+          <span>
+          <?php
+            if ($language->language == 'en') {
+              print $career_english;
+            }
+            else {
+              print $career;
+            }
+          ?>
+          </span>
+          <a href="mailto:<?php print $email; ?>"><?php print $email; ?></a>
+        </div>
 			</li>
 			<?php endif; ?>
 		<?php endforeach ?>	

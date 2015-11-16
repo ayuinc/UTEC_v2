@@ -11,13 +11,13 @@
 	<h1 class="light"><?php print $view->get_title(); ?></h1>
 	<div class="separator-gray separator-lg"></div>
 	<div class="list-custom pv-42 lead-ch p-ch-gray">
-		<ul>
+		<!-- <ul> -->
 	    <?php foreach ($rows as $id => $row): ?>
-	    	<li>
+	    	<!-- <li> -->
 			    <?php print $row; ?>
-			  </li>
+			  <!-- </li> -->
 			<?php endforeach; ?>
-		</ul>
+		<!-- </ul> -->
 	</div>
 </div>
 

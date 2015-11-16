@@ -42,7 +42,9 @@ rel="nofollow"><i class="icon-arrows-down bg-cyan"></i></a>
 </div>
 </div> <!-- END:Hero -->
 <!-- BLOQUE 2 -->
-<div class="container-sm section-scroll-content pt-28 pb-56" id="block2">
+<div class="container-sm section-scroll-content pt-28 pb-35" id="block2">
+  <div class="mh-21">
+  
 <h2 class="light"><?php print $titulo_bloque_2 ?></h2>
 <div class="separator-gray separator-sm"></div>
 <div class="p-ch-gray-dark">
@@ -83,11 +85,13 @@ role="button" data-slide="next">
 <a class="scroll-down scroll-down-sq size lg" href="#block3"
 rel="nofollow"><i class="icon-arrows-down"></i></a>
 </div>
+</div>
 <!-- BLOQUE 3 -->
-<div class="container-sm section-scroll-content pt-35" id="block3">
+<div class="container-sm section-scroll-content pt-21 pb-70" id="block3">
+<div class="mh-21">
 <h2 class="light"><?php print $titulo_bloque_3 ?></h2>
 <div class="separator-gray separator-sm"></div>
-<div class="p-ch-gray-dark">
+<div class="p-ch-gray-dark mb-14">
 <!-- <div class="pv-ch-7"> -->
 <?php //print $descripcion ?>
 <!-- </div> -->
@@ -152,22 +156,17 @@ collapse" role="tabpanel" aria-labelledby="heading<?php print $count;
 <a class="scroll-down scroll-down-sq size lg" href="#block4"
 rel="nofollow"><i class="icon-arrows-down"></i></a>
 </div>
+</div>
 <!-- BLOQUE 4 -->
-<div class="container-sm section-scroll-content pt-35 pb-63" id="block4">
+<div class="container-sm section-scroll-content pt-21 pb-35" id="block4">
+<div class="mh-21">
 <h2 class="light"><?php print $titulo_bloque_4 ?></h2>
 <div class="separator-gray separator-sm"></div>
 <div class="p-ch-gray-dark">
 <div id="carousel-bloque4" class="carousel carousel-custom slide mb-42
 mt-35" data-ride="carousel">
 <!-- Indicators -->
-<ol class="carousel-indicators">
-<?php $count = 0; ?>
-<?php foreach ($imagenes_bloque_4 as $key => $imagen_bloque_4): ?>
-<li data-target="#carousel-bloque4" data-slide-to="<?php print $count
-?>" class="<?php ($count == 0) ? print 'active' : '' ; ?>"></li>
-<?php $count++; ?>
-<?php endforeach ?>
-</ol>
+
 <div class="hidden-xs hidden-sm">
 <div class="tabs tabs-style-linebox">
 <nav>
@@ -226,29 +225,42 @@ collapse" role="tabpanel" aria-labelledby="heading1<?php print $count;
 </div>
 </div>
 <!-- Wrapper for slides -->
-<div class="carousel-inner mt-42" role="listbox">
-<?php $count = 0; ?>
-<?php foreach ($imagenes_bloque_4 as $key => $imagen_bloque_4): ?>
-<?php if ($imagen_bloque_4): ?>
-<div class="item <?php ($count == 0) ? print 'active' : '' ; ?>">
-<div class="banner banner-label-bottom mb-7 ml-0">
-<div class="banner-pic" style="background-image: url(<?php print
-image_style_url($image_style, $imagen_bloque_4['uri']); ?>);">
-</div>
-</div>
-</div>
-<?php endif ?>
-<?php $count ++; ?>
-<?php endforeach ?>
+<div id="carrusel-bloque-4" class="carrusel-4">
+		<a class="left carousel-control" href="#carousel-bloque4" role="button" data-slide="prev">
+			<span class="icon-prev hidden-xs" aria-hidden="true"></span>
+			<span class="sr-only">Previews</span>
+		</a>
+	<div class="carousel-inner mt-42" role="listbox" >
+		<?php $count = 0; ?>
+		<?php foreach ($imagenes_bloque_4 as $key => $imagen_bloque_4): ?>
+		<?php if ($imagen_bloque_4): ?>
+		<div class="item <?php ($count == 0) ? print 'active' : '' ; ?>">
+			<div class="banner banner-label-bottom mb-7 ml-0">
+				<div class="banner-pic" style="background-image: url(<?php print image_style_url($image_style, $imagen_bloque_4['uri']); ?>);">
+				</div>
+			</div>
+		</div>
+		<?php endif ?>
+		<?php $count ++; ?>
+		<?php endforeach ?>
+	</div>
+		<a class="right carousel-control" href="#carousel-bloque4" role="button" data-slide="next">
+			<span class="icon-next hidden-xs" aria-hidden="true"></span>
+			<span class="sr-only">Siguiente</span>
+		</a>
 </div>
 <!-- Controls -->
+
+
 </div>
 </div>
 <a class="scroll-down scroll-down-sq size lg" href="#block5"
 rel="nofollow"><i class="icon-arrows-down"></i></a>
 </div>
+</div>
 <!-- BLOQUE 5 -->
-<div class="container-sm section-scroll-content pt-35" id="block5">
+<div class="container-sm section-scroll-content pt-21 pb-70" id="block5">
+<div class="mh-21">
 <h2 class="light"><?php print $titulo_bloque_5 ?></h2>
 <div class="separator-gray separator-sm mb-70"></div>
 <div><?php print $results; ?></div>
@@ -281,22 +293,16 @@ $imagen_bloque_5['uri']); ?>" alt="">
 <a class="scroll-down scroll-down-sq size lg" href="#block6"
 rel="nofollow"><i class="icon-arrows-down"></i></a>
 </div>
+</div>
 <!-- BLOQUE 6 -->
-<div class="container-sm section-scroll-content pt-35" id="block6">
+<div class="container-sm section-scroll-content pt-14 pb-14" id="block6">
+<div class="mh-21">
 <h2 class="light"><?php print $titulo_bloque_6 ?></h2>
 <div class="separator-gray separator-sm"></div>
 <div class="p-ch-gray-dark">
-<div id="carousel-bloque6" class="carousel carousel-custom slide mb-42
-mt-42" data-ride="carousel">
+<div id="carousel-bloque6" class="carousel carousel-custom slide mb-42 mt-42" data-ride="carousel">
 <!-- Indicators -->
-<ol class="carousel-indicators">
-<?php $count = 0; ?>
-<?php foreach ($imagenes_bloque_4 as $key => $imagen_bloque_4): ?>
-<li data-target="#carousel-bloque6" data-slide-to="<?php print $count
-?>" class="<?php ($count == 0) ? print 'active' : '' ; ?>"></li>
-<?php $count++; ?>
-<?php endforeach ?>
-</ol>
+
 <div class="hidden-xs hidden-sm">
 <div class="tabs tabs-style-linebox">
 <nav>
@@ -355,6 +361,13 @@ collapse" role="tabpanel" aria-labelledby="heading2<?php print $count;
 </div>
 </div>
 <!-- Wrapper for slides -->
+<div id="carrusel-bloque-6" class="carrusel-6">
+	
+<a class="left carousel-control" href="#carousel-bloque6" role="button"
+data-slide="prev">
+<span class="icon-prev hidden-xs" aria-hidden="true"></span>
+<span class="sr-only">Previews</span>
+</a>
 <div class="carousel-inner mt-42" role="listbox">
 <?php $count = 0; ?>
 <?php foreach ($imagenes_bloque_6 as $key => $imagen_bloque_6): ?>
@@ -370,7 +383,16 @@ image_style_url($image_style, $imagen_bloque_6['uri']); ?>);">
 <?php $count ++; ?>
 <?php endforeach ?>
 </div>
+<a class="right carousel-control" href="#carousel-bloque6"
+role="button" data-slide="next">
+<span class="icon-next hidden-xs" aria-hidden="true"></span>
+<span class="sr-only">Siguiente</span>
+</a>
+</div>
 <!-- Controls -->
+
+
+</div>
 </div>
 </div>
 </div>
