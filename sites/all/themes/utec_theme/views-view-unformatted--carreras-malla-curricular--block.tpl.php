@@ -10,7 +10,7 @@
 <div class="container">
 	<h1 class="thin lead"><?php print t('Curricular Structure') ?></h1>
 	<div class="separator-gray separator-lg"></div>
-	<h3 class="lead thin"><?php print t('Semester') ?> 2015 - I</h3>
+	<h3 class="lead thin"><?php print t('Semester') ?> 2016 - I</h3>
 	<div>
 		<ul class="grid-list grid-list-1-xs malla-curricular-ref p-ch-0 mr-ch-28">
 		<?php if ($language->language == 'es'): ?>
